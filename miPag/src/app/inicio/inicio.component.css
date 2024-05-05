@@ -1,0 +1,57 @@
+/*----------------------------------------------------
+ 1.	Section Begin
+------------------------------------------------------*/
+section#begin {
+    width: 100%;
+}
+
+.btn-translate {
+    position: fixed;
+    z-index: 2000;
+    top: 68px;
+    right: 28px;
+}
+
+.btn-translate:before {
+    content:"";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: rgba(60, 64, 67, 0.15) 0px 4px 8px 3px, rgba(60, 64, 67, 0.3) 0px 1px 3px;
+}
+
+.btn-translate img {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    display: grid;
+    place-content: center;
+    height: 94vh;
+    background: url(../../assets/images/businessBig.webp) no-repeat center;
+    background-size: cover;
+}
+
+header .heading {
+    text-align: center;
+    border: 3px solid #fff;
+    padding:  3vh 4vw;
+    background-color: black;
+    opacity: 0.8;    
+    color: #fff;
+}
+
+.heading h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.heading h2 {
+    font-weight: 300;
+    margin: 0;
+}
