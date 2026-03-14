@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+/* --- Estructura Base de Títulos de Sección --- */
+.heading {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.heading p {
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-top: 6vh;
+}
+
+/*----------------------------------------------------
+ WhatsApp Button
+------------------------------------------------------*/
+.btn-whatsapp {
+    position: fixed;
+    z-index: 2000;
+    bottom: 80px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+}
+
+.btn-whatsapp:before,
+.btn-whatsapp:after {
+    content:"";
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    width: 60px;  /* Aumentamos a 60px para que no se vean "pequeñas" */
+    height: 60px;
+    margin-top: -30px; /* Mitad del width/height para centrar */
+    margin-left: -30px;
+
+    border-radius: 50%;
+    background-color: #00e676;
+    opacity: 0;
+    animation: onda 1.7s infinite;
+}
+
+.btn-whatsapp:before {
+    animation-delay: 1s;
+}
+
+.btn-whatsapp:after {
+    animation-delay: 1.3s;
+}
+
+.btn-whatsapp img {
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+
+/* Es vital agregar la definición de la onda para que el código anterior funcione */
+@keyframes onda {
+  0% { transform: scale(1); opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* --- RESPONSIVE GLOBAL --- */
+@media screen and (max-width: 576px) {
+    /* Ajusta el tamaño de los h3 en toda la app para celulares */
+    body h3 {
+        display: block;
+        font-size: 1.17em;
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+    /* Posiciona el botón de WhatsApp para que no estorbe en pantallas pequeñas */
+    .btn-whatsapp {
+        bottom: 10vh; /* Mantiene tu ajuste original para móviles */
+        right: 15vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Reduce el tamaño de la fuente de los títulos principales en tablets/celulares */
+    .heading h1 { font-size: 25px; margin: 0; }
+    .heading h2 { font-size: 18px; font-weight: 300; margin: 0; }
+}

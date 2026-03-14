@@ -28,3 +28,22 @@ header .heading {
     font-weight: 300;
     margin: 0;
 }
+
+/* --- RESPONSIVE HERO --- */
+@media screen and (max-width: 768px) {
+    header {
+        display: grid;
+        place-content: center;
+        height: 94vh;
+        background: url(/images/businessSmall.webp) no-repeat center;
+        background-size: cover;
+    }
+    header .heading {
+        text-align: center;
+        border: 3px solid #fff;
+        padding:  2vh 3vw;
+        background-color: black;
+        opacity: 0.8;    
+        color: #fff;
+    }
+}

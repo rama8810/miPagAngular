@@ -28,4 +28,16 @@ export class HeaderComponent {
       }
     }
   }
+  // Por defecto, en celulares el menú empieza colapsado (escondido)
+  isMenuCollapsed = true;
+
+  // Esta función invierte el estado (si está abierto lo cierra, y viceversa)
+  toggleMenu() {
+    this.isMenuCollapsed = !this.isMenuCollapsed;
+  }
+
+  // Esta función fuerza el cierre (útil para cuando el usuario hace clic en un link)
+  closeMenu() {
+    this.isMenuCollapsed = true;
+  }
 }

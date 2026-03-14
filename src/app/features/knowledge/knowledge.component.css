@@ -13,29 +13,44 @@ section#knowledge .row {
 }
 
 .skillArea {
-    display: grid;
-    place-content: center;
+    text-align: center;
+}
+
+circle-progress {
+    display: block;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+::ng-deep circle-progress svg {
+    display: block;
+    margin: 0 auto;
 }
 
 .skillArea h2 {
-    margin-top: 0.2em;
     font-size: 20px;    
-    text-align: center;
-    padding-bottom: 2vh;
     font-weight: bold;
-}
-
-.skillArea .chart {
-    position: relative;       
-    width: 125px;
-    height: 125px;
-    font-size: 30px;
     text-align: center;
-    line-height: 125px;
+    line-height: 1; 
+    
+    /* Tus reglas elásticas basadas en la matemática de las DevTools */
+    margin-top: 0.2em !important;      /* Genera tus 4px de la imagen */
+    margin-bottom: 0.5rem !important;  /* Genera tus 8px de la imagen */
+    padding-top: 0 !important;
+    padding-bottom: 2vh !important;    /* Genera tus 16.48px (o proporcionales) de la imagen */
 }
 
-.skillArea canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* --- RESPONSIVE KNOWLEDGE --- */
+@media screen and (max-width: 768px) {
+    .skillArea h2 {
+        display: block;
+        font-size: 1.17em;
+        margin-top: 0.2em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;  
+        text-align: center;
+        padding-bottom: 1vh;
+    }
 }
