@@ -9,9 +9,9 @@ import { FooterComponent } from './core/footer/footer.component';
 @Component({
   selector: 'app-root',
   imports: [HeaderComponent, HeroComponent, AboutComponent, KnowledgeComponent, ContactComponent, FooterComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
 })
-export class App {
+export class AppComponent {
   protected readonly title = signal('miPagAngular');
 }
