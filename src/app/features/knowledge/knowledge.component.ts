@@ -14,6 +14,12 @@ export class KnowledgeComponent implements OnInit, OnDestroy{
   constructor(private el: ElementRef) {}
 
   ngOnInit() {
+    // Detectamos si es una pantalla móvil (menor a 768px)
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+  // Definimos el umbral: 0.2 para móvil, 0.5 para desktop
+  const thresholdValue = isMobile ? 0.2 : 0.5;
+
     this.observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -22,7 +28,7 @@ export class KnowledgeComponent implements OnInit, OnDestroy{
           this.isVisible = false;
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: thresholdValue });
 
     this.observer.observe(this.el.nativeElement);
   }
