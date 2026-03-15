@@ -22,7 +22,7 @@ export class KnowledgeComponent implements OnInit, OnDestroy{
           this.isVisible = false;
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.5 });
 
     this.observer.observe(this.el.nativeElement);
   }

@@ -1,3 +1,17 @@
+/* --- COMPORTAMIENTO NATIVO DE SCROLL RESPONSIVO --- */
+html {
+    scroll-behavior: smooth;
+    /* Protegemos el espacio exacto del menú cuando ya se hizo scroll en escritorio */
+    scroll-padding-top: 56px; 
+}
+
+@media (max-width: 768px) {
+    html {
+        /* Protegemos el espacio exacto del menú en celulares y tablets */
+        scroll-padding-top: 54px; 
+    }
+}
+
 /* --- Estructura Base de Títulos de Sección --- */
 .heading {
     text-align: center;
