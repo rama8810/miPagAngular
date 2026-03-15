@@ -3,29 +3,53 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
 footer a {
     margin-right: 10px;
 }
 
-footer i {
-    color: #101010;
+/* --- Uso de Stacked Icons (Iconos Apilados) FontAwesome 4 para manejar múltiples colores --- */
+/* --- 1. ESTADO NORMAL --- */
+/* GitHub */
+footer a.btn-github .stack-icon {
+    color: #212529; 
+}
+footer a.btn-github .stack-bg {
+    color: #ffffff; 
+    transition: color 0.3s ease;
+}
+/* LinkedIn */
+footer a.btn-linkedin .stack-icon {
+    color: #0A66C2; 
+}
+footer a.btn-linkedin .stack-bg {
+    color: #ffffff; 
+    transition: color 0.3s ease;
 }
 
-footer i.fa-github:hover {
-    color: #fff;
+
+/* --- 2. ESTADO HOVER --- */
+/* GitHub */
+footer a.btn-github:hover .stack-bg  {
+    color: #212529; 
+}
+footer a.btn-github:hover .stack-icon {
+    color: #ffffff; 
 }
 
-footer i.fa-linkedin-square:hover {
-    color: #0A66C2;
+/* LinkedIn */
+footer a.btn-linkedin:hover .stack-bg {
+    color: #0A66C2; 
+}
+footer a.btn-linkedin:hover .stack-icon {
+    color: #ffffff; 
 }
 
+/* --- 3. RESPONSIVE (Celulares) --- */
 @media screen and (max-width: 768px) {
-    footer i.fa-github {
-        color: #fff;
-    }
+    /* Forzamos los colores de hover porque en móvil no hay cursor */
+    footer a.btn-github .stack-bg { color: #212529; }
+    footer a.btn-github .stack-icon { color: #ffffff; }
     
-    footer i.fa-linkedin-square {
-        color: #0A66C2;
-    }
+    footer a.btn-linkedin .stack-bg { color: #0A66C2; }
+    footer a.btn-linkedin .stack-icon { color: #ffffff; }
 }
