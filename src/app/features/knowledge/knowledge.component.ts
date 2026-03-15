@@ -18,7 +18,7 @@ export class KnowledgeComponent implements OnInit, OnDestroy{
   const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
   // Definimos el umbral: 0.2 para móvil, 0.5 para desktop
-  const thresholdValue = isMobile ? 0.2 : 0.5;
+  const thresholdValue = isMobile ? 0.1 : 0.5;
 
     this.observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
