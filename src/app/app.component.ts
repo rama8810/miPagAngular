@@ -13,5 +13,5 @@ import { FooterComponent } from './core/footer/footer.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  protected readonly title = signal('miPagAngular');
+  protected readonly title = signal('Rodolfo Andrés Meléndez Ardila');
 }
