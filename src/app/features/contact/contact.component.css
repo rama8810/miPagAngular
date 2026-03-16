@@ -1,20 +1,21 @@
+/* ==========================================================
+   CONTACT COMPONENT - MOBILE FIRST
+========================================================== */
+
+/* --- BASE (MÓVILES: max-width 576px originalmente) --- */
 section#contact {
     background: #2d6d92;
     color: #fff;
-    padding-bottom: 60px;
-}
-
-section#contact .heading {
-    padding-bottom: 20px;
 }
 
 section#contact a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease; /* Pequeña mejora para suavizar tu hover */
 }
 
 section#contact a:hover {
-    color:#212529;
+    color: #212529;
     text-decoration: none;
 }
 
@@ -24,85 +25,95 @@ section#contact .e-mail:before {
     direction: rtl;
 }
 
+.contactInfo, .writeMe {
+    margin-left: 1.25rem; /* 20px */
+    margin-right: 1.25rem; /* 20px */
+    padding-bottom: 1.25rem; /* 20px */
+}
+
+.icon-spacing {
+    margin-right: 0.5rem; 
+}
+
 /*----------------------------------------------------
  Form conForm
 ------------------------------------------------------*/
-#conForm input{
-	background: #fff;
-	color:#434b53;
-	padding:10px 20px;
-	border:none;    
-	margin-bottom:20px;
-	outline:none;
-	font-style:italic;
+#conForm input,
+#conForm textarea {
+    background: #fff;
+    color: #434b53;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border: none;    
+    margin-bottom: 1.25rem; /* 20px */
+    outline: none;
+    font-style: italic;
     font-weight: bold;
+    box-sizing: border-box; /* Protege el input para que no se salga de la pantalla en celulares */
 }
 
-#conForm input::placeholder {
-    color: rgba(33,37,41,0.45);
-}
-
-#conForm input.name {
-	margin-right: 3%;
-}
-
-#conForm textarea{
-	background: #fff;
-	color:#434b53;
-	padding:10px 20px;
-	border:none;
-	margin-bottom:20px;
-	outline:none;
-	height:100px;
-	font-style:italic;
-    font-weight: bold;
-}
-
+#conForm input::placeholder,
 #conForm textarea::placeholder {
     color: rgba(33,37,41,0.45);
 }
 
-#conForm .submitBnt{
-	background:#212529;
-	font-family: 'Open Sans', sans-serif;
-	color:#fff;
-	font-size:16px;
-	font-weight:700;
-	text-align:center;
-	float:right;
-    margin-left: 3%;
+#conForm textarea {
+    height: 6.25rem; /* 100px */
+    resize: vertical; /* Evita que el usuario estire el recuadro a los lados rompiendo tu diseño */
 }
 
+/* El botón Submit en celulares */
+#conForm .submitBnt {
+    background: #212529;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1rem; /* 16px */
+    font-weight: 700;
+    text-align: center;
+    margin-left: 0; /* En celulares no lleva margen izquierdo */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* ¡Recuperamos tu color naranja original! */
 #conForm .submitBnt:hover {
-	background:#f5534b;
+    background: #f5534b; 
 }
 
-.icon-spacing {
-    margin-right: 0.5rem; /* Usar rem o em es mejor para la accesibilidad que los px */
-}
 
-@media screen and (max-width: 576px) {
-    section#contact {
-        padding-bottom: 40px;
-    }
-    #conForm .submitBnt{
-        margin-left: 0;
-    }
-    .contactInfo, .writeMe {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-bottom: 20px;
-    }
-}
+/* ==========================================================
+   MEDIA QUERIES - ESCALANDO A PANTALLAS MÁS GRANDES
+========================================================== */
 
+/* --- TABLETS (min-width: 576px) --- */
 @media screen and (min-width: 576px) {
+    section#contact {
+        padding-bottom: 3.75rem; /* 60px (Tu espacio original en pantallas grandes) */
+    }
+    
+    .contactInfo, .writeMe {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Tu lógica original para que "Verifica" y "Enviar" quepan perfectos */
     #conForm input.col-sm-6 {
         width: 48.5%;
     }
+
+    #conForm .submitBnt {
+        float: right;
+        margin-left: 3%; /* Restauramos el margen que le daba espacio frente a "Verifica" */
+    }
 }
 
+/* --- ESCRITORIO (min-width: 992px) --- */
 @media screen and (min-width: 992px) {
+    /* Tu lógica original para que "Nombre" y "Email" quepan perfectos */
     #conForm input.col-lg-6 {
         width: 48.5%;
+    }
+    
+    #conForm input.name {
+        margin-right: 3%;
     }
 }
