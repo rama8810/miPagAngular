@@ -1,42 +1,60 @@
+/* ==========================================================
+   ABOUT COMPONENT - MOBILE FIRST
+========================================================== */
+
+/* --- BASE (MÓVIL) --- */
 section#aboutMe {
-    background-color: #2d6d92  ;
+    background-color: #2d6d92;
     color: #fff;
-    padding-bottom: 6vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    margin: 0;
-    min-width: 100%;
 }
 
-section#aboutMe .container{
+section#aboutMe .container {
     max-width: 1100px;
 }
 
 .bntDownload {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem; /* ~16px */
     font-weight: 700;
     background: #212529;
-    padding: 16px 22px;
+    padding: 1rem 1.375rem; /* ~16px 22px */
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    font-style:italic;
+    font-style: italic;
+    transition: background 0.3s ease; /* Transición suave al pasar el mouse */
 }
 
-div#imagenYo{
+.bntDownload:hover {
+    background: #1a1e21; /* Pequeño feedback visual */
+}
+
+div#imagenYo {
     display: grid;    
     place-items: center;
+    margin-top: 2rem; /* Separamos la imagen del texto en móviles */
 }
 
 .img-circle {
     border-radius: 50%;
-    height: 40vh; 
+    /* Tamaño fijo responsivo en lugar de vh para evitar deformaciones */
+    width: 16rem; 
+    height: 16rem;
+    object-fit: cover; /* Garantiza que la foto no se achate aunque cambien sus dimensiones */
 }
 
-/* --- RESPONSIVE ABOUT --- */
-@media screen and (max-width: 992px) {  
+/* --- ESCRITORIO --- */
+@media screen and (min-width: 768px) {
+    section#aboutMe {
+        padding: 4rem 0; /* Más aire en pantallas grandes */
+    }
+    
     div#imagenYo {
-        margin-top: 3vh;
+        margin-top: 0; /* En PC la imagen va al lado, no abajo, así que quitamos el margen */
+    }
+
+    .img-circle {
+        width: 18rem; /* Aumentamos ligeramente la foto en PC */
+        height: 18rem;
     }
 }

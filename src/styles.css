@@ -1,59 +1,85 @@
+/* ==========================================================
+   ESTILOS GLOBALES - ENFOQUE MOBILE-FIRST
+   1rem = 16px (Aproximadamente)
+========================================================== */
+
 /* --- COMPORTAMIENTO NATIVO DE SCROLL RESPONSIVO --- */
 html {
     scroll-behavior: smooth;
-    /* Protegemos el espacio exacto del menú cuando ya se hizo scroll en escritorio */
-    scroll-padding-top: 56px; 
+    /* Base (Celulares): Protegemos el espacio del menú (~54px) */
+    scroll-padding-top: 3.375rem; 
 }
 
-@media (max-width: 768px) {
-    html {
-        /* Protegemos el espacio exacto del menú en celulares y tablets */
-        scroll-padding-top: 54px; 
+/* --- ESTRUCTURA BASE DE TÍTULOS DE SECCIÓN (MÓVILES) --- */
+.heading {
+    text-align: center;
+    padding-bottom: 1.25rem; /* ~20px */
+}
+
+/* Títulos principales de cada sección */
+.heading h2.title {
+    font-size: 2.5rem; /* ~40px en celulares (Lo subí un poco para que destaque bien en móvil) */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem; /* Un pequeño margen para separarlo del subtítulo */
+}
+
+/* Subtítulos de cada sección */
+.heading p {
+    text-align: center;
+    font-size: 1.375rem; /* ~22px en celulares (Tamaño de lectura base) */
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+body h3 {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* ==========================================================
+   RITMO VERTICAL GLOBAL (MÓDULOS DE CONTENIDO)
+========================================================== */
+/* Base (Celulares y Tablets pequeñas) */
+section {
+    padding: 3rem 1rem; /* 3rem de aire arriba/abajo y 1rem seguro a los lados */
+    width: 100%;
+    box-sizing: border-box; /* Evita que el padding rompa el ancho en celulares */
+}
+
+/* Escalado para Tablets grandes y Escritorio */
+@media screen and (min-width: 768px) {
+    section {
+        padding: 4rem 0; /* Mayor respiración en PC, los lados los maneja Bootstrap */
     }
 }
 
-/* --- Estructura Base de Títulos de Sección --- */
-.heading {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.heading h2.title {
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 0;
-    padding-top: 6vh;
-}
-
-.heading h2,
-.heading p {
-    text-align: center;
-}
-
 /*----------------------------------------------------
- WhatsApp Button
+  WHATSAPP BUTTON (MÓVILES)
 ------------------------------------------------------*/
 .btn-whatsapp {
     position: fixed;
     z-index: 2000;
-    bottom: 80px;
-    right: 28px;
-    width: 60px;
-    height: 60px;
+    /* Posición en celulares */
+    bottom: 10vh; 
+    right: 15vw;
+    /* Tamaño fijo responsivo (~60px) - No crecerá infinitamente en PC */
+    width: 3.75rem; 
+    height: 3.75rem;
 }
 
 .btn-whatsapp:before,
 .btn-whatsapp:after {
     content:"";
     position: absolute;
-    
     top: 50%;
     left: 50%;
-    width: 60px;  /* Aumentamos a 60px para que no se vean "pequeñas" */
-    height: 60px;
-    margin-top: -30px; /* Mitad del width/height para centrar */
-    margin-left: -30px;
-
+    width: 3.75rem;  
+    height: 3.75rem;
+    margin-top: -1.875rem; /* Mitad para centrar perfectamente */
+    margin-left: -1.875rem;
     border-radius: 50%;
     background-color: #00e676;
     opacity: 0;
@@ -72,33 +98,33 @@ html {
     position: relative;
     z-index: 2;
     display: block;
+    width: 100%; /* Ajusta la imagen al contenedor */
+    height: auto;
 }
 
-/* Es vital agregar la definición de la onda para que el código anterior funcione */
+/* Animación de la onda */
 @keyframes onda {
   0% { transform: scale(1); opacity: 0; }
   50% { opacity: 0.5; }
   100% { transform: scale(1.6); opacity: 0; }
 }
 
-/* --- RESPONSIVE GLOBAL --- */
-@media screen and (max-width: 576px) {
-    /* Ajusta el tamaño de los h3 en toda la app para celulares */
-    body h3 {
-        display: block;
-        font-size: 1.17em;
-        margin-bottom: 1em;
-        font-weight: bold;
-    }
-    /* Posiciona el botón de WhatsApp para que no estorbe en pantallas pequeñas */
+/* ==========================================================
+   MEDIA QUERIES - ESCALANDO A PANTALLAS MÁS GRANDES
+========================================================== */
+
+/* --- TABLETS PEQUEÑAS EN ADELANTE (min-width: 576px) --- */
+@media screen and (min-width: 576px) {
+    /* Posiciona el botón de WhatsApp en su esquina para pantallas grandes */
     .btn-whatsapp {
-        bottom: 10vh; /* Mantiene tu ajuste original para móviles */
-        right: 15vw;
+        bottom: 5rem; /* ~80px */
+        right: 1.75rem; /* ~28px */
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* Reduce el tamaño de la fuente de los títulos principales en tablets/celulares */
-    .heading h1 { font-size: 25px; margin: 0; }
-    .heading h2 { font-size: 18px; font-weight: 300; margin: 0; }
+/* --- TABLETS Y ESCRITORIO (min-width: 768px) --- */
+@media screen and (min-width: 768px) {
+    html {
+        scroll-padding-top: 3.5rem; 
+    }
 }
