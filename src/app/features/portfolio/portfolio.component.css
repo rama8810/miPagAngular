@@ -1,0 +1,93 @@
+section#portfolio {
+    /* Usamos tu padding global definido en styles.css para secciones */
+    background-color: var(--color-portfolio-lightgray); /* Un fondo gris muy sutil para diferenciarlo de "knowledge" y "contact" */
+}
+
+section#portfolio .heading {
+    color: var(--color-primary-blue);
+}
+
+.project-showcase {
+    margin-top: 2rem;
+}
+
+.client-name {
+    color: var(--color-primary-blue);
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
+}
+
+.role-badge {
+    display: inline-block;
+    color: var(--color-primary-blue);
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.project-description {
+    color: var(--color-text-gray);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.tech-item {
+    background-color: var(--color-primary-blue-transparent); /* Tu primary-blue con transparencia */
+    color: var(--color-primary-blue);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-visit {
+    display: inline-block;
+    background-color: var(--color-primary-blue);
+    color: var(--color-white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-visit:hover {
+    background-color: var(--color-dark-hover);
+    color: var(--color-white);
+}
+
+.project-image {
+    padding: 2rem;
+}
+
+.mockup-shadow {
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Sombra elegante para resaltar la imagen */
+    transition: transform 0.3s ease;
+}
+
+.mockup-shadow:hover {
+    transform: translateY(-5px);
+}
+
+/* Ajustes Mobile-First */
+@media screen and (max-width: 767px) {
+    .project-info {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .tech-stack {
+        justify-content: center;
+    }
+}
