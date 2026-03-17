@@ -4,18 +4,18 @@
 
 /* --- BASE (MÓVILES: max-width 576px originalmente) --- */
 section#contact {
-    background: #2d6d92;
-    color: #fff;
+    background: var(--color-primary-blue);
+    color: var(--color-white);
 }
 
 section#contact a {
-    color: #fff;
+    color: var(--color-white);
     text-decoration: none;
     transition: color 0.3s ease; /* Pequeña mejora para suavizar tu hover */
 }
 
 section#contact a:hover {
-    color: #212529;
+    color: var(--color-dark-bg);
     text-decoration: none;
 }
 
@@ -40,8 +40,8 @@ section#contact .e-mail:before {
 ------------------------------------------------------*/
 #conForm input,
 #conForm textarea {
-    background: #fff;
-    color: #434b53;
+    background: var(--color-white);
+    color: var(--color-text-gray);
     padding: 0.625rem 1.25rem; /* 10px 20px */
     border: none;    
     margin-bottom: 1.25rem; /* 20px */
@@ -53,7 +53,7 @@ section#contact .e-mail:before {
 
 #conForm input::placeholder,
 #conForm textarea::placeholder {
-    color: rgba(33,37,41,0.45);
+    color: var(--color-placeholder);
 }
 
 #conForm textarea {
@@ -63,9 +63,9 @@ section#contact .e-mail:before {
 
 /* El botón Submit en celulares */
 #conForm .submitBnt {
-    background: #212529;
+    background: var(--color-dark-bg);
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: var(--color-white);
     font-size: 1rem; /* 16px */
     font-weight: 700;
     text-align: center;
@@ -76,7 +76,7 @@ section#contact .e-mail:before {
 
 /* ¡Recuperamos tu color naranja original! */
 #conForm .submitBnt:hover {
-    background: #f5534b; 
+    background: var(--color-accent-orange); 
 }
 
 

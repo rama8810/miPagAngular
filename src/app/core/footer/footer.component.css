@@ -1,5 +1,5 @@
 footer {
-    background-color: #212529;
+    background-color: var(--color-dark-bg);
     text-align: center;
     padding: 20px 0;
 }
@@ -11,18 +11,18 @@ footer a {
 /* --- 1. ESTADO NORMAL --- */
 /* GitHub */
 footer a.btn-github .stack-icon {
-    color: #212529; 
+    color: var(--color-dark-bg); 
 }
 footer a.btn-github .stack-bg {
-    color: #ffffff; 
+    color: var(--color-white); 
     transition: color 0.3s ease;
 }
 /* LinkedIn */
 footer a.btn-linkedin .stack-icon {
-    color: #0A66C2; 
+    color: var(--color-linkedin); 
 }
 footer a.btn-linkedin .stack-bg {
-    color: #ffffff; 
+    color: var(--color-white); 
     transition: color 0.3s ease;
 }
 
@@ -30,26 +30,26 @@ footer a.btn-linkedin .stack-bg {
 /* --- 2. ESTADO HOVER --- */
 /* GitHub */
 footer a.btn-github:hover .stack-bg  {
-    color: #212529; 
+    color: var(--color-dark-bg); 
 }
 footer a.btn-github:hover .stack-icon {
-    color: #ffffff; 
+    color: var(--color-white); 
 }
 
 /* LinkedIn */
 footer a.btn-linkedin:hover .stack-bg {
-    color: #0A66C2; 
+    color: var(--color-linkedin); 
 }
 footer a.btn-linkedin:hover .stack-icon {
-    color: #ffffff; 
+    color: var(--color-white); 
 }
 
 /* --- 3. RESPONSIVE (Celulares) --- */
 @media screen and (max-width: 768px) {
     /* Forzamos los colores de hover porque en móvil no hay cursor */
-    footer a.btn-github .stack-bg { color: #212529; }
-    footer a.btn-github .stack-icon { color: #ffffff; }
+    footer a.btn-github .stack-bg { color: var(--color-dark-bg); }
+    footer a.btn-github .stack-icon { color: var(--color-white); }
     
-    footer a.btn-linkedin .stack-bg { color: #0A66C2; }
-    footer a.btn-linkedin .stack-icon { color: #ffffff; }
+    footer a.btn-linkedin .stack-bg { color: var(--color-linkedin); }
+    footer a.btn-linkedin .stack-icon { color: var(--color-white); }
 }
