@@ -12,7 +12,7 @@ export class HeaderComponent {
   // @HostListener reemplaza a tu antiguo window.onscroll
   @HostListener('window:scroll')
   onWindowScroll() {
-    const sections = ['begin', 'aboutMe', 'knowledge', 'contact'];
+    const sections = ['begin', 'aboutMe', 'knowledge', 'portfolio', 'contact'];
     const scrollPosition = window.scrollY + 150; // Mismo offset que tenías en tu script original
 
     for (let section of sections) {
