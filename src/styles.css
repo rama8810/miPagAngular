@@ -1,4 +1,33 @@
 /* ==========================================================
+   VARIABLES GLOBALES DE COLOR
+========================================================== */
+:root {
+    /* Colores Principales */
+    --color-primary-blue: #2d6d92;
+    --color-dark-bg: #212529;
+    --color-dark-hover: #1a1e21;
+    --color-white: #ffffff;
+    
+    /* Colores de Acento y Formularios */
+    --color-accent-orange: #f5534b;
+    --color-text-gray: #434b53;
+    --color-placeholder: rgba(33, 37, 41, 0.45);
+    
+    /* Colores de Marcas / Redes Sociales */
+    --color-whatsapp: #00e676;
+    --color-linkedin: #0A66C2;
+    
+    /* Transparencias (Overlays) */
+    --overlay-nav: rgba(0, 0, 0, 0.4);
+    --overlay-hero: rgba(0, 0, 0, 0.8);
+
+    /* --- Espaciados y Ritmo --- */
+    --section-padding-mobile: 3rem 1rem;
+    --section-padding-desktop: 4rem 0;
+    --about-padding-tablet: 4rem;
+}
+
+/* ==========================================================
    ESTILOS GLOBALES - ENFOQUE MOBILE-FIRST
    1rem = 16px (Aproximadamente)
 ========================================================== */
@@ -44,7 +73,7 @@ body h3 {
 ========================================================== */
 /* Base (Celulares y Tablets pequeñas) */
 section {
-    padding: 3rem 1rem; /* 3rem de aire arriba/abajo y 1rem seguro a los lados */
+    padding: var(--section-padding-mobile); /* 3rem de aire arriba/abajo y 1rem seguro a los lados */
     width: 100%;
     box-sizing: border-box; /* Evita que el padding rompa el ancho en celulares */
 }
@@ -52,7 +81,7 @@ section {
 /* Escalado para Tablets grandes y Escritorio */
 @media screen and (min-width: 768px) {
     section {
-        padding: 4rem 0; /* Mayor respiración en PC, los lados los maneja Bootstrap */
+        padding: var(--section-padding-desktop); /* Mayor respiración en PC, los lados los maneja Bootstrap */
     }
 }
 
@@ -81,7 +110,7 @@ section {
     margin-top: -1.875rem; /* Mitad para centrar perfectamente */
     margin-left: -1.875rem;
     border-radius: 50%;
-    background-color: #00e676;
+    background-color: var(--color-whatsapp);
     opacity: 0;
     animation: onda 1.7s infinite;
 }

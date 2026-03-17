@@ -1,6 +1,6 @@
 /* Le da el tono más oscuro al recuadro de la sección activa y resalta el texto */
 .navbar-nav .nav-link.active {
-    background-color: rgba(0, 0, 0, 0.4); /* El tono oscuro de fondo */
+    background-color: var(--overlay-nav); /* El tono oscuro de fondo */
     border-radius: 5px; /* Bordes ligeramente redondeados (opcional, típico de Bootstrap) */
-    color: #fff !important; /* Texto en blanco brillante para resaltar */
+    color: var(--color-white) !important; /* Texto en blanco brillante para resaltar */
 }
