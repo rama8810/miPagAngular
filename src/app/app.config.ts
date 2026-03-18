@@ -1,11 +1,11 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners, importProvidersFrom } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideBrowserGlobalErrorListeners(), provideRouter(routes),
+  providers: [provideBrowserGlobalErrorListeners(), provideRouter(routes, withInMemoryScrolling({ anchorScrolling: 'enabled' })),
     importProvidersFrom(
       NgCircleProgressModule.forRoot({
         // --- Dimensiones ---
