@@ -1,4 +1,5 @@
-import { Component, ElementRef, OnInit, OnDestroy } from '@angular/core';
+import { Component, ElementRef, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @Component({
@@ -7,33 +8,35 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
   templateUrl: './knowledge.component.html',
   styleUrl: './knowledge.component.css',
 })
-export class KnowledgeComponent implements OnInit, OnDestroy{
+export class KnowledgeComponent implements OnInit, OnDestroy {
   isVisible = false;
   private observer: IntersectionObserver | undefined;
 
-  constructor(private el: ElementRef) {}
+  constructor(
+    private el: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngOnInit() {
-    // Detectamos si es una pantalla móvil (menor a 768px)
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    // Zona de ejecución segura: Aísla las APIs nativas del motor Node.js
+    if (isPlatformBrowser(this.platformId)) {
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const thresholdValue = isMobile ? 0.2 : 0.5;
 
-  // Definimos el umbral: 0.2 para móvil, 0.5 para desktop
-  const thresholdValue = isMobile ? 0.2 : 0.5;
+      this.observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          this.isVisible = entry.isIntersecting;
+        });
+      }, { threshold: thresholdValue });
 
-    this.observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          this.isVisible = true;
-        } else {
-          this.isVisible = false;
-        }
-      });
-    }, { threshold: thresholdValue });
-
-    this.observer.observe(this.el.nativeElement);
+      this.observer.observe(this.el.nativeElement);
+    }
   }
 
   ngOnDestroy() {
-    this.observer?.disconnect();
+    // Prevención de fugas de memoria (Memory Leaks) al destruir el componente en el cliente
+    if (isPlatformBrowser(this.platformId)) {
+      this.observer?.disconnect();
+    }
   }
 }

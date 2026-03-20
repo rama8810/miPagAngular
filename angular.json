@@ -9,10 +9,11 @@
   "projects": {
     "miPagAngular": {
       "projectType": "application",
-      "schematics": {"@schematics/angular:component": {
+      "schematics": {
+        "@schematics/angular:component": {
           "type": "Component"
-          }
-        },
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -28,8 +29,13 @@
                 "input": "public"
               }
             ],
-            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", 
-                      "src/styles.css"]
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css", 
+              "src/styles.css"
+            ],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": false
           },
           "configurations": {
             "production": {
