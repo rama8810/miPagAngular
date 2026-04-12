@@ -1,0 +1,109 @@
+<nav class="tool-nav">
+  <a routerLink="/" class="back-button">
+    <span class="arrow">←</span> Volver al Portafolio
+  </a>
+</nav>
+
+<section class="dashboard-container">
+  <header class="dashboard-header">
+    <h2>Dashboard Financiero TRM</h2>
+    <p>Comportamiento del USD frente al Peso Colombiano (Datos Oficiales Superfinanciera)</p>
+  </header>
+  
+  <ng-container *ngIf="dashboardData$ | async as vm; else loading">
+      <div class="data-card main-card section-spaced">
+        <h3>Tasa Representativa del Mercado</h3>
+        <p class="rate">
+          {{ vm.tasaActual | currency:'COP':'symbol-narrow':'1.2-2' }}
+        </p>
+        <p [ngClass]="{'text-success': vm.variacionUltimoDia < 0, 'text-danger': vm.variacionUltimoDia > 0}">
+          <span *ngIf="vm.variacionUltimoDia > 0">▲ Sube </span>
+          <span *ngIf="vm.variacionUltimoDia < 0">▼ Baja </span>
+          {{ Math.abs(vm.variacionUltimoDia) | currency:'COP':'symbol-narrow':'1.2-2' }} respecto al día anterior
+        </p>
+        <div class="vigencia-box">
+          <p class="vigencia-text">
+            <strong>Vigencia oficial:</strong><br>
+            Desde {{ vm.vigenciaDesde }} hasta {{ vm.vigenciaHasta }}
+          </p>
+        </div>
+      </div>
+
+      <div class="chart-wrapper section-spaced">
+      
+        <div class="chart-header">
+          <h4 class="chart-title">Historial de Fluctuación (TRM)</h4>
+          
+          <div class="time-controls" *ngIf="isBrowser">
+            <div class="input-group">
+              <label>Desde</label>
+              <input type="date" #dateStart [min]="fechaMinima" [max]="fechaMaxima" [value]="fechaSeleccionadaInicio">
+            </div>
+            <div class="input-group">
+              <label>Hasta</label>
+              <input type="date" #dateEnd [min]="fechaMinima" [max]="fechaMaxima" [value]="fechaSeleccionadaFin">
+            </div>
+            <button class="btn-filter" (click)="actualizarRangoPorFecha(dateStart.value, dateEnd.value)">
+              Aplicar Rango
+            </button>
+          </div>
+        </div>
+      
+        <ng-container *ngIf="isBrowser">
+          <div echarts [options]="vm.chartOptions" class="echarts-container"></div>
+        </ng-container>
+      </div>
+
+      <div class="data-card streaks-card">
+        <h3>Análisis de Tendencia</h3>
+        
+        <div class="current-streak" *ngIf="vm.rachaActual">
+          <h4>Estado Actual</h4>
+          <div class="badge" [ngClass]="vm.rachaActual.tipo === 'alza' ? 'badge-danger' : 'badge-success'">
+            {{ vm.rachaActual.dias }} Días consecutivos a la {{ vm.rachaActual.tipo === 'alza' ? 'alza ▲' : 'baja ▼' }}
+          </div>
+          <p class="streak-dates">Desde el {{ vm.rachaActual.fechaInicio }}</p>
+          <p class="streak-prices current-price-streak">
+            {{ vm.rachaActual.precioInicial | currency:'COP':'symbol-narrow':'1.2-2' }} 
+            <span class="arrow-right">→</span> 
+            {{ vm.rachaActual.precioFinal | currency:'COP':'symbol-narrow':'1.2-2' }}
+          </p>
+        </div>
+
+        <div class="historical-streaks">
+          <div class="streak-column">
+            <h4>Top Histórico Alzas</h4>
+            <ul class="streak-list">
+              <li *ngFor="let racha of vm.topRachasAlza">
+                <strong>{{ racha.dias }} días</strong>
+                <span class="streak-dates-small">{{ racha.fechaInicio }} a {{ racha.fechaFin }}</span>
+                <span class="streak-prices">
+                  {{ racha.precioInicial | currency:'COP':'symbol-narrow':'1.0-0' }} → {{ racha.precioFinal | currency:'COP':'symbol-narrow':'1.0-0' }}
+                </span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="streak-column">
+            <h4>Top Histórico Bajas</h4>
+            <ul class="streak-list">
+              <li *ngFor="let racha of vm.topRachasBaja">
+                <strong>{{ racha.dias }} días</strong>
+                <span class="streak-dates-small">{{ racha.fechaInicio }} a {{ racha.fechaFin }}</span>
+                <span class="streak-prices">
+                  {{ racha.precioInicial | currency:'COP':'symbol-narrow':'1.0-0' }} → {{ racha.precioFinal | currency:'COP':'symbol-narrow':'1.0-0' }}
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>  
+  </ng-container>
+
+  <ng-template #loading>
+    <div class="loading-state">
+      <p>Consultando base de datos gubernamental...</p>
+    </div>
+  </ng-template>
+</section>

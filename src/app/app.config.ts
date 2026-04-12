@@ -4,7 +4,9 @@ import {
   importProvidersFrom,
 } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 import { routes } from './app.routes';
 import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
@@ -13,7 +15,11 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes, withInMemoryScrolling({ anchorScrolling: 'enabled' })),
+    provideHttpClient(withFetch()),
     importProvidersFrom(
+      NgxEchartsModule.forRoot({
+        echarts: () => import('echarts')
+      }),
       NgCircleProgressModule.forRoot({
         // --- Dimensiones ---
         radius: 55,
