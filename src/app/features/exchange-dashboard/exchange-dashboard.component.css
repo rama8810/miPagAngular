@@ -182,6 +182,8 @@
 
 .chart-header {
   display: flex;
+  flex-direction: column; /* Apilamos Título y Filtros verticalmente */
+  align-items: center;
   justify-content: space-between; /* Empuja el título a la izq y controles a la der */
   align-items: center;
   flex-wrap: wrap; 
@@ -199,6 +201,7 @@
 
 .time-controls {
   display: flex;
+  flex-direction: column;
   gap: 0.1rem;
   align-items: center;
   background: transparent;
@@ -210,6 +213,7 @@
 .input-group {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 0.4rem;
 }
@@ -241,6 +245,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  width: 180px;
 }
 
 .btn-filter:hover { background-color: #004494; }
@@ -248,4 +253,26 @@
 .echarts-container {
   width: 100%;
   height: 450px; 
+}
+
+@media (min-width: 768px) {
+  .time-controls {
+    flex-direction: row; /* Volvemos a poner todo en una sola línea */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .input-group {
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .input-group input {
+    width: 120px; /* Un poco más compacto en PC */
+  }
+
+  .btn-filter {
+    width: auto; /* El botón vuelve a su tamaño natural en PC */
+    padding: 0.25rem 1rem;
+  }
 }
