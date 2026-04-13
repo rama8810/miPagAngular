@@ -6,34 +6,40 @@
 
 <section class="dashboard-container">
   <header class="dashboard-header">
-    <h2>Tech News Hub</h2>
-    <p>El pulso tecnológico global. Top 15 artículos de Y Combinator actualizados diariamente.</p>
+    <h2>Tech News Hub (AI Curated)</h2>
+    <p>El pulso tecnológico global. Artículos seleccionados y analizados diariamente por IA.</p>
   </header>
 
   <ng-container *ngIf="news$ | async as news; else loading">
-    <div class="news-list section-spaced">
-      
+    
+    <div *ngIf="news.length === 0" class="empty-state section-spaced">
+      <p>La IA está analizando las noticias más recientes. Por favor, regresa en unos minutos.</p>
+    </div>
+
+    <div *ngIf="news.length > 0" class="news-list section-spaced">
       <article class="news-card" *ngFor="let item of news; let i = index">
         <div class="news-rank">{{ i + 1 }}</div>
         
         <div class="news-content">
-          <a [href]="item.url ? item.url : 'https://news.ycombinator.com/item?id=' + item.id" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="news-title">
-            {{ item.title }}
-          </a>
+          <span class="category-badge">{{ item.categoria }}</span>
+          <h3 class="news-title-es">{{ item.titulo_es }}</h3>
+          <p class="news-analysis">{{ item.resumen }}</p>
           
           <div class="news-meta">
-            <span class="score badge-score">▲ {{ item.score }} puntos</span>
-            <span class="author">por <strong>{{ item.by }}</strong></span>
+            <span class="score badge-score tooltip-container" data-tooltip="Votos de la comunidad de desarrolladores de HackerNews">
+              ▲ {{ item.score }} puntos
+            </span>
             <span class="separator">•</span>
-            <span class="time">{{ item.time * 1000 | date:'dd MMM yyyy, HH:mm' }}</span>
+            <span class="time">{{ item.time * 1000 | date:'dd MMM yyyy' }}</span>
+            <span class="separator">•</span>
+            <a [href]="item.url" target="_blank" rel="noopener noreferrer" class="original-link">
+              Leer fuente original (Inglés) ↗
+            </a>
           </div>
         </div>
       </article>
-
     </div>
+
   </ng-container>
 
   <ng-template #loading>
@@ -41,5 +47,5 @@
       <div class="spinner"></div>
       <p>Consultando la red de Y Combinator...</p>
     </div>
-  </ng-template>
+  </ng-template>  
 </section>

@@ -1,23 +1,27 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HackerNewsService, NoticiaIA } from '../../core/services/hacker-news.service';
 import { Observable } from 'rxjs';
-import { RouterLink } from '@angular/router';
-import { HackerNewsService, HNItem } from '../../core/services/hacker-news.service';
+import { Title } from '@angular/platform-browser'; // Importación correcta
 
 @Component({
   selector: 'app-tech-news',
-  imports: [CommonModule, RouterLink],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './tech-news.component.html',
-  styleUrl: './tech-news.component.css',
+  styleUrls: ['./tech-news.component.css']
 })
 export class TechNewsComponent implements OnInit {
+  // Inyectamos cada servicio por separado (Clean Code)
   private hnService = inject(HackerNewsService);
-  
-  // Observable que contendrá nuestras noticias
-  news$: Observable<HNItem[]> | undefined;
+  private titleService = inject(Title);
+
+  news$!: Observable<NoticiaIA[]>;
 
   ngOnInit(): void {
-    // Solicitamos el Top 15 de noticias al inicializar el componente
-    this.news$ = this.hnService.getTopStories(15);
+    this.news$ = this.hnService.getTopStories();
+    
+    // Ahora this.titleService sí existe y funciona
+    this.titleService.setTitle(`Tech News Hub | ${new Date().toLocaleDateString()}`);
   }
 }
