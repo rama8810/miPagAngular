@@ -11,5 +11,10 @@ export const routes: Routes = [
     path: 'dolar-dashboard',
     title: 'Comportamiento USD/COP | Ingrama',
     loadComponent: () => import('./features/exchange-dashboard/exchange-dashboard.component').then(m => m.ExchangeDashboardComponent)
+  },
+    {
+    path: 'tech-news',
+    title: 'Tech News | Ingrama',
+    loadComponent: () => import('./features/tech-news/tech-news.component').then(m => m.TechNewsComponent)
   }
 ];

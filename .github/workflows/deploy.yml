@@ -4,6 +4,10 @@ on:
   push:
     branches: ["main"] # Se ejecuta cada vez que subes código a la rama main
   workflow_dispatch:
+  schedule:
+    # Se ejecuta todos los días a las 11:00 UTC (6:00 AM hora de Colombia)
+    # Sintaxis: Minuto Hora Día Mes DíaSemana
+    - cron: '0 1 * * *'
 
 permissions:
   contents: read

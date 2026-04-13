@@ -1,0 +1,45 @@
+<nav class="tool-nav">
+  <a routerLink="/" class="back-button">
+    <span class="arrow">←</span> Volver al Portafolio
+  </a>
+</nav>
+
+<section class="dashboard-container">
+  <header class="dashboard-header">
+    <h2>Tech News Hub</h2>
+    <p>El pulso tecnológico global. Top 15 artículos de Y Combinator actualizados diariamente.</p>
+  </header>
+
+  <ng-container *ngIf="news$ | async as news; else loading">
+    <div class="news-list section-spaced">
+      
+      <article class="news-card" *ngFor="let item of news; let i = index">
+        <div class="news-rank">{{ i + 1 }}</div>
+        
+        <div class="news-content">
+          <a [href]="item.url ? item.url : 'https://news.ycombinator.com/item?id=' + item.id" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="news-title">
+            {{ item.title }}
+          </a>
+          
+          <div class="news-meta">
+            <span class="score badge-score">▲ {{ item.score }} puntos</span>
+            <span class="author">por <strong>{{ item.by }}</strong></span>
+            <span class="separator">•</span>
+            <span class="time">{{ item.time * 1000 | date:'dd MMM yyyy, HH:mm' }}</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </ng-container>
+
+  <ng-template #loading>
+    <div class="loading-state section-spaced">
+      <div class="spinner"></div>
+      <p>Consultando la red de Y Combinator...</p>
+    </div>
+  </ng-template>
+</section>

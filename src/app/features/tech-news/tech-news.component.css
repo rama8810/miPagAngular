@@ -1,0 +1,150 @@
+/* Reutilizamos clases estructurales de tu dashboard para mantener coherencia visual */
+.dashboard-container { 
+  max-width: 1000px; /* Un poco más angosto para una mejor lectura de texto */
+  margin: 0 auto; 
+  padding: 4rem 2rem; 
+  text-align: left; /* Alineamos a la izquierda para el blog */
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dashboard-header h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header p {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+.section-spaced {
+  margin-top: 2rem;
+}
+
+/* =========================================
+   Lista de Noticias
+   ========================================= */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.news-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-color: #0056b3; /* Tu color azul corporativo */
+}
+
+.news-rank {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #dee2e6;
+  min-width: 50px;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.news-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.news-card:hover .news-title {
+  color: #0056b3;
+}
+
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.badge-score {
+  background-color: #f8f9fa;
+  color: #e67e22; /* Color naranja clásico de HackerNews */
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid #ffeddb;
+}
+
+.separator {
+  color: #ced4da;
+}
+
+/* =========================================
+   Estado de Carga
+   ========================================= */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  color: #6c757d;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0056b3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* =========================================
+   Responsive (Móviles)
+   ========================================= */
+@media (max-width: 768px) {
+  .news-card {
+    padding: 1rem;
+    align-items: flex-start; /* Alineamos arriba si el título es largo */
+  }
+  
+  .news-rank {
+    font-size: 1.4rem;
+    min-width: 35px;
+    margin-right: 0.5rem;
+  }
+  
+  .news-title {
+    font-size: 1.05rem;
+  }
+}
