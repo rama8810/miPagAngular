@@ -5,7 +5,7 @@ on:
     branches: ["main"] # Se ejecuta cada vez que subes código a la rama main
   workflow_dispatch:
   schedule:
-    # Se ejecuta todos los días a las 11:00 UTC (6:00 AM hora de Colombia)
+    # Se ejecuta todos los días despues de las 8:37 UTC (3:37 hora de Colombia) segun disponibilidad de git hubs actions
     # Sintaxis: Minuto Hora Día Mes DíaSemana
     - cron: '37 8 * * *'
 
