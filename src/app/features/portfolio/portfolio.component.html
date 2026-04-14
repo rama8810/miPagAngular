@@ -1,38 +1,43 @@
-<section id="portfolio">
+<section id="portfolio" class="section-spaced">
+  <div class="container">
+
     <div class="heading">
-        <h2 class="title" translate="no">PROYECTO DESTACADO</h2>
-        <p>Soluciones web en producción</p>
+      <h2 class="title ">Portafolio</h2>
+      <p>demostraciones practicas de desarrollo web, arquitectura frontend, integración de APIs y uso de IA</p>
     </div>
     
-    <div class="container">
-        <div class="row align-items-center project-showcase">
-            <div class="col-md-6 project-info">
-                <h3 class="client-name">Dental Center Bucaramanga</h3>
-                <span class="role-badge">Consultor Técnico & Webmaster</span>
-                
-                <p class="project-description">
-                    Implementación integral de plataforma digital corporativa para el sector salud. 
-                    El proyecto abarcó desde la recuperación, personalización y adaptación de la interfaz gráfica 
-                    basada en CMS, hasta la configuración completa de infraestructura, gestión de 
-                    registros DNS, despliegue en hosting y optimización continua de rendimiento 
-                    para asegurar alta disponibilidad.
-                </p>
-                
-                <div class="tech-stack">
-                    <span class="tech-item">WordPress</span>
-                    <span class="tech-item">SEO</span>
-                    <span class="tech-item">Gestión DNS & Hosting</span>
-                    <span class="tech-item">Mantenimiento</span>
-                </div>
-
-                <a href="https://dentalcenterbga.com/" target="_blank" rel="noopener noreferrer" class="btn-visit">
-                    Visitar Sitio Web
-                </a>
-            </div>
-            
-            <div class="col-md-6 project-image">
-                <img src="/images/mockup-dentalcenter.webp" alt="Plataforma Dental Center Bucaramanga" class="img-fluid mockup-shadow" width="1920" height="1440" loading="lazy">
-            </div>
+    <div class="portfolio-grid project-showcase">
+      <div class="project-card mockup-shadow" *ngFor="let project of projects">
+        
+        <div class="project-image-container">
+          <img [src]="project.image" [alt]="project.title" loading="lazy">
         </div>
+        
+        <div class="project-info">
+          <h3 class="client-name">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          
+          <div class="tech-stack">
+            <span class="tech-item" *ngFor="let tag of project.tags">{{ tag }}</span>
+          </div>
+          
+          <ng-container *ngIf="project.isInternal; else external">
+            <a [routerLink]="project.link" class="btn-visit">
+              {{ project.buttonText || 'Visitar sitio web' }}
+            </a>
+          </ng-container>
+          
+          <ng-template #external>
+            <a [href]="project.link" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-visit">
+              {{ project.buttonText || 'Visitar sitio web' }}
+            </a>
+          </ng-template>
+        </div>
+
+      </div>
     </div>
+  </div>
 </section>

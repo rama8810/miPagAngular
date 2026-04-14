@@ -1,5 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { HackerNewsService, NoticiaIA } from '../../core/services/hacker-news.service';
 import { Observable } from 'rxjs';
 import { Title } from '@angular/platform-browser'; // Importación correcta
@@ -7,7 +8,7 @@ import { Title } from '@angular/platform-browser'; // Importación correcta
 @Component({
   selector: 'app-tech-news',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './tech-news.component.html',
   styleUrls: ['./tech-news.component.css']
 })

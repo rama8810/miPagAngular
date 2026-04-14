@@ -1,38 +1,90 @@
+/* =========================================
+   1. VARIABLES Y CONTENEDORES GLOBALES
+   ========================================= */
 section#portfolio {
-    /* Usamos tu padding global definido en styles.css para secciones */
-    background-color: var(--color-portfolio-lightgray); /* Un fondo gris muy sutil para diferenciarlo de "knowledge" y "contact" */
-}
-
-section#portfolio .heading {
+    background-color: var(--color-portfolio-lightgray);
+    padding: 80px 0; /* Asegura el espaciado vertical */
     color: var(--color-primary-blue);
 }
 
-.project-showcase {
+section#portfolio p {
+    color: var(--color-primary-blue);
+}
+
+/* Grilla Responsiva para los 4 proyectos */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
     margin-top: 2rem;
+}
+
+/* =========================================
+   2. LA TARJETA Y LA SOMBRA (Tu diseño original)
+   ========================================= */
+.project-card {
+    background-color: var(--color-white, #ffffff);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.mockup-shadow {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mockup-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   3. CONTROL DE IMÁGENES
+   ========================================= */
+.project-image-container {
+    width: 100%;
+    height: 220px; /* Altura estricta para evitar imágenes gigantes */
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta perfectamente sin deformar */
+    object-position: top center;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image-container img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   4. TEXTOS Y TAGS (Tu diseño original)
+   ========================================= */
+.project-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que el contenedor crezca */
 }
 
 .client-name {
     color: var(--color-primary-blue);
-    font-size: 1.8rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.5rem; /* Ligeramente menor para encajar en tarjeta */
+    margin-bottom: 0.8rem;
     font-weight: 700;
-}
-
-.role-badge {
-    display: inline-block;
-    color: var(--color-primary-blue);
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1.5rem;
 }
 
 .project-description {
     color: var(--color-text-gray);
     line-height: 1.7;
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    flex-grow: 1; /* Empuja el botón hacia abajo */
 }
 
 .tech-stack {
@@ -43,7 +95,7 @@ section#portfolio .heading {
 }
 
 .tech-item {
-    background-color: var(--color-primary-blue-transparent); /* Tu primary-blue con transparencia */
+    background-color: var(--color-primary-blue-transparent);
     color: var(--color-primary-blue);
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
@@ -51,41 +103,34 @@ section#portfolio .heading {
     font-weight: 600;
 }
 
+/* =========================================
+   5. BOTONES (Tu diseño original)
+   ========================================= */
 .btn-visit {
     display: inline-block;
+    text-align: center;
     background-color: var(--color-primary-blue);
-    color: var(--color-white);
+    color: var(--color-white, #ffffff);
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: auto; /* Alinea los botones al fondo */
 }
 
 .btn-visit:hover {
     background-color: var(--color-dark-hover);
-    color: var(--color-white);
+    color: var(--color-white, #ffffff);
 }
+/* Se eliminó el bloque .btn-source no solicitado */
 
-.project-image {
-    padding: 2rem;
-}
-
-.mockup-shadow {
-    border-radius: 8px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Sombra elegante para resaltar la imagen */
-    transition: transform 0.3s ease;
-}
-
-.mockup-shadow:hover {
-    transform: translateY(-5px);
-}
-
-/* Ajustes Mobile-First */
+/* =========================================
+   6. AJUSTES MOBILE-FIRST
+   ========================================= */
 @media screen and (max-width: 767px) {
     .project-info {
         text-align: center;
-        margin-bottom: 2rem;
     }
     .tech-stack {
         justify-content: center;
