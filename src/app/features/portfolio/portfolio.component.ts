@@ -25,12 +25,12 @@ export class PortfolioComponent {
       description: 'Plataforma corporativa para el sector salud, implementación end-to-end. Integra diseño basado en CMS, gestión completa de infraestructura (DNS/Hosting) y optimización continua del rendimiento.',
       image: 'images/dentalcenter.webp',
       link: 'https://dentalcenterbga.com/',
-      tags: ['WordPress', 'Gestión DNS/Hosting', 'SEO'],
+      tags: ['WordPress', 'SEO', 'Gestión DNS/Hosting'],
       isInternal: false
     },
     {
       title: 'Tech News Hub (AI)',
-      description: 'Curador inteligente de noticias tecnológicas. Orquesta servicios entre APIs mediante Node.js, utiliza modelos de Gemini para escoger, categorizar, traducir y resumir noticias importadas de HackerNews, Configurada con flujos de GitHub Actions para actualizaciones diarias desatendidas.',
+      description: 'Curador inteligente de noticias tecnológicas. Orquesta servicios entre APIs con Node.js. Integra modelos de Gemini para selección, categorización y síntesis de contenido en español proveniente de HackerNews. Implementa workflows con GitHub Actions para garantizar actualizaciones diarias autónomas.',
       image: 'images/techNews.webp', // Sugiero capturar un pantallazo luego
       link: '/tech-news',
       tags: ['Gen IA', 'Node.js', 'Orquestación APIs'],
@@ -41,7 +41,7 @@ export class PortfolioComponent {
       description: 'Dashboard de análisis y visualización de indicadores financieros. Consume APIs de datos gubernamentales abiertos para procesar series históricas, utilizando ECharts para la generación de gráficos interactivos',
       image: 'images/dashboardDolar.webp', 
       link: '/dolar-dashboard',
-      tags: ['API Rest', 'Visualización de Datos', 'ECharts'],
+      tags: ['API Rest', 'ECharts', 'Visualización de Datos'],
       isInternal: true
     },
     {
