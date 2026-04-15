@@ -50,55 +50,131 @@
         </div>
       
         <ng-container *ngIf="isBrowser">
-          <div echarts [options]="vm.chartOptions" class="echarts-container"></div>
+          <div echarts 
+            [options]="vm.chartOptions" 
+            [merge]="(zoomUpdate$ | async)!" 
+            class="chart-container">
+          </div>
         </ng-container>
       </div>
 
-      <div class="data-card streaks-card">
-        <h3>Análisis de Tendencia</h3>
-        
-        <div class="current-streak" *ngIf="vm.rachaActual">
-          <h4>Estado Actual</h4>
-          <div class="badge" [ngClass]="vm.rachaActual.tipo === 'alza' ? 'badge-danger' : 'badge-success'">
-            {{ vm.rachaActual.dias }} Días consecutivos a la {{ vm.rachaActual.tipo === 'alza' ? 'alza ▲' : 'baja ▼' }}
+      <div class="data-card info-card section-spaced">
+        <h3>¿Cómo leer esta gráfica?</h3>
+        <div class="info-grid">
+          <div class="info-item">
+            <div class="legend-color legend-blue"></div>
+            <div class="info-text">
+              <strong>TRM Bruta:</strong> Es el precio oficial y exacto del dólar cada día. Su fluctuación natural genera los picos visibles en la gráfica.
+            </div>
           </div>
-          <p class="streak-dates">Desde el {{ vm.rachaActual.fechaInicio }}</p>
-          <p class="streak-prices current-price-streak">
-            {{ vm.rachaActual.precioInicial | currency:'COP':'symbol-narrow':'1.2-2' }} 
-            <span class="arrow-right">→</span> 
-            {{ vm.rachaActual.precioFinal | currency:'COP':'symbol-narrow':'1.2-2' }}
-          </p>
+          <div class="info-item">
+            <div class="legend-color legend-gold"></div>
+            <div class="info-text">
+              <strong>Tendencia (Línea Base):</strong> Filtra el "ruido" diario calculando un promedio con mayor peso en los días recientes. Indica la dirección real del mercado (alcista o bajista).
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="legend-color legend-red dashed"></div>
+            <div class="info-text">
+              <strong>Techo (Sobrecompra):</strong> Límite estadístico superior. Si la TRM (Azul) toca o supera esta línea discontinua, el dólar está inusualmente caro y es probable que baje.
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="legend-color legend-green dashed"></div>
+            <div class="info-text">
+              <strong>Suelo (Sobreventa):</strong> Límite estadístico inferior. Si la TRM cae por debajo de esta línea, el dólar está inusualmente barato frente a su historial reciente y podría rebotar al alza.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="data-card streaks-card">
+        <h3>Análisis de Tendencia e Ingeniería Financiera</h3>
+        
+        <div class="current-streak" [ngClass]="vm.esAlza ? 'bg-trend-up' : 'bg-trend-down'">
+          <h4>Fuerza de Tendencia (Velocidad del Mercado)</h4>
+          <div class="badge" [ngClass]="vm.esAlza ? 'badge-danger' : 'badge-success'">
+            {{ vm.estadoTendencia }}
+          </div>
+          
+          <div class="momentum-compare">
+            <div class="compare-item">
+              <span>EMA Hoy:</span>
+              <strong>{{ vm.emaActual | currency:'COP':'symbol-narrow':'1.2-2' }}</strong>
+            </div>
+            <div class="compare-item">
+              <span>EMA Ayer:</span>
+              <strong>{{ vm.emaAyer | currency:'COP':'symbol-narrow':'1.2-2' }}</strong>
+            </div>
+            <div class="compare-item result">
+              <span>Velocidad:</span>
+              <strong>{{ vm.momentumActual | number:'1.2-2' }} COP/día</strong>
+            </div>
+          </div>
+          
+          <div class="metric-explanation">
+            <strong>¿Qué es el Momentum?</strong> Mide la velocidad de cambio. 
+            Si hay <strong>Aceleración</strong>, el precio gana fuerza en su dirección. 
+            Si hay <strong>Desaceleración</strong>, el precio sigue su rumbo pero está perdiendo impulso (está frenando).
+          </div>
         </div>
 
         <div class="historical-streaks">
-          <div class="streak-column">
-            <h4>Top Histórico Alzas</h4>
-            <ul class="streak-list">
-              <li *ngFor="let racha of vm.topRachasAlza">
-                <strong>{{ racha.dias }} días</strong>
-                <span class="streak-dates-small">{{ racha.fechaInicio }} a {{ racha.fechaFin }}</span>
-                <span class="streak-prices">
-                  {{ racha.precioInicial | currency:'COP':'symbol-narrow':'1.0-0' }} → {{ racha.precioFinal | currency:'COP':'symbol-narrow':'1.0-0' }}
-                </span>
-              </li>
-            </ul>
+          <div class="streak-column flex-column-layout" [ngClass]="vm.esAlza ? 'border-red' : 'border-green'">
+            <div class="column-header">
+              <h4>Volatilidad (Riesgo σ)</h4>
+              <div class="main-metric">
+                <strong>{{ vm.volatilidadActual | currency:'COP':'symbol-narrow':'1.2-2' }}</strong>
+                <span class="sub-label">Desviación Estándar (20d)</span>
+              </div>
+              <div class="status-label">{{ vm.estadoVolatilidad }}</div>
+            </div>
+
+            <div class="metric-explanation small-text explanation-bottom">
+              <strong>¿Qué mide la Volatilidad?</strong> Es el "ruido". 
+              Indica qué tan lejos saltan los precios respecto a su promedio.<br>
+              <strong>Escala:</strong> Alta (> $50) es mercado errático. Baja (< $20) es calma total.
+              <details class="math-details" *ngIf="vm.detallesVolatilidad as vol">
+                <summary>Ver fórmula exacta de hoy</summary>
+                <div class="math-box">
+                  <code>σ = √ [ Σ(Precio - Media)² / N ]</code>
+                  <hr>
+                  <strong>Datos utilizados (Últimos {{ vol.n }} días):</strong><br>
+                  • <strong>Media Simple:</strong> {{ vol.media20d | currency:'COP':'symbol-narrow':'1.2-2' }}<br>
+                  • <strong>N (Días):</strong> {{ vol.n }}<br>
+                  • <strong>Resultado (σ):</strong> {{ vm.volatilidadActual | number:'1.2-2' }} COP
+                </div>
+              </details>
+            </div>
           </div>
           
-          <div class="streak-column">
-            <h4>Top Histórico Bajas</h4>
-            <ul class="streak-list">
-              <li *ngFor="let racha of vm.topRachasBaja">
-                <strong>{{ racha.dias }} días</strong>
-                <span class="streak-dates-small">{{ racha.fechaInicio }} a {{ racha.fechaFin }}</span>
-                <span class="streak-prices">
-                  {{ racha.precioInicial | currency:'COP':'symbol-narrow':'1.0-0' }} → {{ racha.precioFinal | currency:'COP':'symbol-narrow':'1.0-0' }}
-                </span>
-              </li>
-            </ul>
+          <div class="streak-column flex-column-layout">
+            <div class="column-header">
+              <h4>Línea Base (EMA 20)</h4>
+              <div class="main-metric">
+                <strong>{{ vm.emaActual | currency:'COP':'symbol-narrow':'1.2-2' }}</strong>
+                <span class="sub-label">Media Móvil Exponencial</span>
+              </div>
+            </div>
+            
+            <div class="metric-explanation small-text explanation-bottom">
+              <strong>¿Qué es la EMA?</strong> Es un filtro que elimina los picos engañosos de un solo día para mostrar la dirección real del último mes.
+              <details class="math-details" *ngIf="vm.detallesEma as ema">
+                <summary>Ver fórmula exacta de hoy</summary>
+                <div class="math-box">
+                  <code>EMA = (Hoy × K) + (Ayer × (1 - K))</code>
+                  <hr>
+                  <strong>Datos utilizados:</strong><br>
+                  • <strong>K (Ponderación 20d):</strong> {{ ema.k | percent:'1.2-2' }}<br>
+                  • <strong>Precio Hoy:</strong> {{ ema.precioHoy | currency:'COP':'symbol-narrow':'1.2-2' }}<br>
+                  • <strong>EMA Ayer:</strong> {{ ema.emaAyer | currency:'COP':'symbol-narrow':'1.2-2' }}<br>
+                  • <strong>Resultado (EMA Hoy):</strong> {{ vm.emaActual | currency:'COP':'symbol-narrow':'1.2-2' }}
+                </div>
+              </details>
+            </div>
           </div>
         </div>
-
-      </div>  
+      </div>    
   </ng-container>
 
   <ng-template #loading>
