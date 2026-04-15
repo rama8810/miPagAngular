@@ -37,8 +37,8 @@ export class PortfolioComponent {
       isInternal: true
     },
     {
-      title: 'Dashboard Financiero TRM',
-      description: 'Dashboard de análisis y visualización de indicadores financieros. Consume APIs de datos gubernamentales abiertos para procesar series históricas, utilizando ECharts para la generación de gráficos interactivos',
+      title: 'Dashboard de la TRM (USD/COP)',
+      description: 'Dashboard de análisis y visualización de la Tasa Representativa del Mercado (TRM). Consume APIs de datos gubernamentales abiertos para procesar series históricas, utilizando ECharts para la generación de gráficos interactivos',
       image: 'images/dashboardDolar.webp', 
       link: '/dolar-dashboard',
       tags: ['API Rest', 'ECharts', 'Visualización de Datos'],

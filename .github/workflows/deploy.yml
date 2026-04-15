@@ -2,12 +2,12 @@ name: Deploy Angular to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # Se ejecuta cada vez que subes código a la rama main
+    branches: ["main"] # Se ejecuta por tus cambios de código
+  workflow_run:
+    workflows: ["Update Tech News Data"] # Se ejecuta en cadena cuando el curador termina
+    types:
+      - completed
   workflow_dispatch:
-  schedule:
-    # Se ejecuta todos los días despues de las 8:37 UTC (3:37 hora de Colombia) segun disponibilidad de git hubs actions
-    # Sintaxis: Minuto Hora Día Mes DíaSemana
-    - cron: '37 8 * * *'
 
 permissions:
   contents: read
@@ -24,6 +24,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    # Garantiza que solo se despliegue si el robot curador no falló
+    if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -36,14 +39,9 @@ jobs:
           
       - name: Install dependencies
         run: npm ci
-
-      - name: Ejecutar Curador de Noticias IA
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} 
-        run: node scripts/curar-noticias.js
         
       - name: Build Angular Project
-        # Compila el proyecto para producción
+        # Compila el proyecto limpio, sin llamar a Gemini
         run: npm run build -- --configuration production
         
       - name: Setup Pages
