@@ -1,47 +1,254 @@
 [
   {
-    "id": 47776796,
-    "url": "https://prog21.dadgum.com/30.html",
-    "score": 19,
-    "time": 1776246079,
-    "titulo_es": "No se trata de la tecnología por sí misma",
-    "resumen": "El artículo desmitifica la complejidad de construir compiladores, argumentando que la dificultad percibida proviene de libros de texto excesivamente teóricos y densos. Propone un enfoque práctico basado en la implementación paso a paso, recomendando recursos como la serie de Jack Crenshaw y el marco 'Nanopass'. Se destaca la importancia de las representaciones internas como el Árbol de Sintaxis Abstracta (AST) y se sugiere que el uso de lenguajes de alto nivel facilita enormemente la creación de transformaciones modulares y simples en el código.",
+    "id": 47788542,
+    "url": "https://darkbloom.dev",
+    "score": 244,
+    "time": 1776312399,
+    "titulo_es": "Darkbloom: Una red de inferencia descentralizada",
+    "resumen": "Darkbloom es una red de computación distribuida diseñada para ejecutar inferencia de IA aprovechando el hardware inactivo de los chips Apple Silicon. La arquitectura permite reducir costos hasta en un 70% respecto a proveedores centralizados, ofreciendo una API compatible con OpenAI para tareas de chat, imagen y voz. Implementa un modelo de seguridad robusto basado en cifrado de extremo a extremo y atestación de hardware mediante el Secure Enclave de Apple, lo que garantiza que los operadores de los nodos no puedan acceder a los datos procesados.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47747770,
+    "url": "https://jsomers.net/blog/the-paper-computer",
+    "score": 147,
+    "time": 1776056268,
+    "titulo_es": "Computación sin pantallas: Una visión de la interacción física potenciada por la IA",
+    "resumen": "El artículo explora una visión de la computación que busca reducir la dependencia de las pantallas mediante el uso de Inteligencia Artificial para integrar flujos de trabajo físicos (como escritura manual, tarjetas de notas y organización espacial) con sistemas digitales. El autor argumenta que la IA moderna permite que objetos tangibles y espacios físicos actúen como interfaces de usuario, combinando la flexibilidad y el enfoque de lo analógico con la persistencia y conectividad de lo virtual, evitando así las distracciones intrínsecas de los dispositivos móviles modernos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47769089,
+    "url": "https://www.dbreunig.com/2026/04/14/cybersecurity-is-proof-of-work-now.html",
+    "score": 412,
+    "time": 1776190094,
+    "titulo_es": "La economía de la seguridad de los tokens",
+    "resumen": "El artículo analiza el impacto de 'Mythos', un nuevo modelo de lenguaje de Anthropic diseñado específicamente para tareas de ciberseguridad. Introduce una nueva métrica de seguridad basada en el gasto de tokens, sugiriendo que la protección de sistemas se convertirá en una competencia de presupuesto computacional similar al 'proof of work' de las criptomonedas. Se discute cómo esto afecta la relevancia del código abierto y cómo el endurecimiento de la seguridad (hardening) se integrará como una fase crítica en el flujo de trabajo de los desarrolladores que utilizan agentes de IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47788473,
+    "url": "https://github.com/Nightmare-Eclipse/RedSun",
+    "score": 81,
+    "time": 1776311661,
+    "titulo_es": "La vulnerabilidad Red Sun en Windows Defender",
+    "resumen": "El artículo describe un fallo de seguridad crítico en Windows Defender relacionado con el manejo de archivos maliciosos que poseen etiquetas de nube (cloud tags). En lugar de eliminar la amenaza, el antivirus reescribe el archivo malicioso en su ubicación original al detectar dicha etiqueta. Este comportamiento errático puede ser explotado mediante una Prueba de Concepto (PoC) para sobrescribir archivos del sistema y obtener privilegios de administrador.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47750486,
+    "url": "https://heather.cafe/posts/too_much_xor_swap_trick/",
+    "score": 53,
+    "time": 1776079342,
+    "titulo_es": "El truco del intercambio XOR",
+    "resumen": "El artículo explora en profundidad el operador lógico y bitwise XOR (OR exclusivo), explicando sus fundamentos matemáticos y su comportamiento en programación. Se detalla el 'XOR swap trick', una técnica clásica de manipulación de bits que permite intercambiar el contenido de dos variables sin requerir una variable temporal, fundamentándose en propiedades algebraicas de cancelación. Finalmente, el autor analiza la viabilidad práctica de este truco comparando el código ensamblador generado por compiladores modernos frente al método tradicional de intercambio.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 47774789,
-    "url": "https://iczelia.net/posts/e16-20-year-old-bug/",
-    "score": 143,
-    "time": 1776228420,
-    "titulo_es": "Depurando un error de 18 años en Enlightenment E16: Cuando el algoritmo de Newton falla",
-    "resumen": "El artículo detalla la investigación y corrección de un error crítico de regresión en el gestor de ventanas Enlightenment E16 que provocaba el bloqueo de la sesión X11. Tras un análisis con GDB, se descubrió que el problema residía en una implementación del algoritmo de Newton para el truncamiento de títulos de ventana (middle-ellipsis). La falta de un límite de iteraciones y una tolerancia de salida demasiado estricta causaban una oscilación infinita al intentar ajustar cadenas de texto largas. El autor propone cambios defensivos para asegurar la convergencia del bucle de renderizado.",
+    "id": 47738673,
+    "url": "https://stevehanov.ca/blog/fast-and-easy-levenshtein-distance-using-a-trie",
+    "score": 59,
+    "time": 1775995243,
+    "titulo_es": "Búsqueda incremental de coincidencias aproximadas usando la distancia de Levenshtein y Tries",
+    "resumen": "El artículo explora la optimización de la búsqueda de texto difuso (fuzzy matching) mediante el algoritmo de distancia de Levenshtein. El autor detalla cómo la implementación tradicional O(N*M) puede mejorarse significativamente al integrar la lógica de cálculo incremental dentro de una estructura de datos tipo Trie. Este enfoque permite buscar coincidencias en diccionarios extensos (2.6 millones de palabras) en milisegundos, optimizando el procesamiento de prefijos comunes y eliminando la necesidad de sistemas de caché complejos o hardware de alto rendimiento.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 47776557,
-    "url": "https://super-memory.com/articles/sleep.htm",
-    "score": 11,
-    "time": 1776244278,
-    "titulo_es": "La Ciencia de Dormir Bien: Una Guía Integral",
-    "resumen": "El artículo, escrito originalmente hace una década y actualizado con el progreso en la ciencia del sueño, enfatiza la importancia fundamental del sueño para la salud, el cerebro, la memoria y el aprendizaje. Destaca que, a pesar de los desafíos del mundo moderno y ciertos hábitos de estilo de vida, un sueño de alta calidad es alcanzable para la mayoría de las personas con conocimiento y determinación. El autor, interesado en memoria, aprendizaje y sueño, comparte su experiencia y observaciones sobre cómo el conocimiento del sueño puede resolver problemas y cómo la era industrializada presenta obstáculos. El texto compila información biológica sobre el sueño, argumentando que merece el máximo respeto y que seguir reglas específicas puede mejorar drásticamente su calidad, lo que a su vez potencia las capacidades mentales. Se mencionan herramientas como SleepChart y SuperMemo y se invita a la colaboración para enriquecer el contenido, con la advertencia de que el artículo es extenso y se sugiere comenzar por el resumen o los puntos destacados.",
+    "id": 47780456,
+    "url": "https://cal.com/blog/cal-com-goes-closed-source-why",
+    "score": 310,
+    "time": 1776266806,
+    "titulo_es": "Cal.com pasa a ser código cerrado ante las amenazas de seguridad impulsadas por la IA",
+    "resumen": "Cal.com ha anunciado su transición de un modelo de código abierto a uno de código cerrado, citando la evolución de la Inteligencia Artificial como el principal factor de riesgo. La empresa argumenta que los modelos de IA avanzados ahora pueden escanear sistemáticamente bases de código abiertas para identificar y explotar vulnerabilidades de forma automatizada, lo que compromete la seguridad de los datos de los usuarios. Aunque mantendrán 'Cal.diy' bajo licencia MIT para la comunidad, el núcleo de producción será privado para mitigar el riesgo de ataques a gran escala que utilizan herramientas de IA para descubrir fallos de seguridad complejos en tiempo récord.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47786164,
+    "url": "https://theleo.zone/posts/pager/",
+    "score": 132,
+    "time": 1776292074,
+    "titulo_es": "Navegación de texto en la terminal: Creación de componentes de visor y paginadores personalizados",
+    "resumen": "El autor detalla su experiencia desarrollando 'lore', un paginador de terminal, y un componente de visor ('viewport') reutilizable en Go para aplicaciones TUI. Explica conceptos técnicos fundamentales como el manejo de códigos de escape ANSI para estilos, la interacción con la variable de entorno PAGER, el uso de pipes para la comunicación entre procesos y cómo las aplicaciones de terminal gestionan la visualización de grandes volúmenes de datos mediante el uso de pantallas alternativas (alt screen).",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47782570,
+    "url": "https://www.eff.org/deeplinks/2026/04/google-broke-its-promise-me-now-ice-has-my-data",
+    "score": 1479,
+    "time": 1776275066,
+    "titulo_es": "Google entregó datos de usuario a ICE sin notificación previa, contraviniendo sus políticas de privacidad",
+    "resumen": "El artículo expone una brecha en los protocolos de privacidad de Google, donde la empresa entregó datos de cuenta (direcciones IP, registros de sesión y ubicaciones) a las autoridades de inmigración (ICE) bajo una citación administrativa sin notificar al usuario afectado, Amandla Thomas-Johnson. Este incidente rompe una política de notificación previa de casi una década, impidiendo que el usuario impugnara la solicitud legal. La Electronic Frontier Foundation (EFF) ha presentado quejas formales por prácticas comerciales engañosas, destacando los riesgos de la creación de perfiles de vigilancia mediante metadatos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47774039,
+    "url": "https://boat.horse/clock/index.html",
+    "score": 14,
+    "time": 1776220745,
+    "titulo_es": "Reloj Alfabético",
+    "resumen": "Descripción de un sistema de visualización de tiempo basado en el ordenamiento lexicográfico de su representación textual en inglés. El software propone dos modos de funcionamiento: 'Three-Hand', que ordena de forma independiente los componentes de hora, minutos y segundos; y 'Combined', un algoritmo que organiza alfabéticamente los 43,200 estados temporales posibles de un ciclo de 12 horas, posicionando una aguja única según el índice resultante de dicha ordenación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47749548,
+    "url": "https://gpfault.net/posts/sph.html",
+    "score": 96,
+    "time": 1776071145,
+    "titulo_es": "Introducción a los armónicos esféricos en gráficos por computadora en tiempo real",
+    "resumen": "El artículo proporciona una explicación técnica sobre los armónicos esféricos, presentándolos como una herramienta matemática para aproximar funciones continuas definidas en una esfera mediante una suma ponderada de polinomios. En el contexto del desarrollo de software gráfico, estos permiten modelar de manera eficiente la iluminación compleja (radiancia e irradiancia) y otras propiedades geométricas como el grosor de una malla para simular efectos como el esparcimiento subsuperficial (subsurface scattering). El texto busca desmitificar el concepto para programadores de gráficos, enfocándose en su aplicación práctica y evaluación algebraica sobre la rigurosidad matemática.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47780971,
+    "url": "https://github.com/saffron-health/libretto",
+    "score": 102,
+    "time": 1776268674,
+    "titulo_es": "Libretto: Un kit de herramientas para integraciones web robustas mediante agentes de IA",
+    "resumen": "Libretto es una herramienta de código abierto desarrollada por Saffron Health para facilitar la creación y el mantenimiento de integraciones en el navegador. Proporciona a los agentes de programación un navegador en vivo y una interfaz de línea de comandos (CLI) optimizada para automatizar flujos de trabajo, generar scripts de Playwright mediante la observación de acciones del usuario y realizar ingeniería inversa de APIs analizando peticiones de red. Además, utiliza modelos de lenguaje (LLMs) para el análisis de capturas de pantalla, identificación de selectores y diagnóstico autónomo de errores, permitiendo gestionar sesiones autenticadas de forma eficiente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47777897,
+    "url": "https://tratt.net/laurie/blog/2026/retrofitting_jit_compilers_into_c_interpreters.html",
+    "score": 84,
+    "time": 1776254424,
+    "titulo_es": "Conversión automática de intérpretes de C en máquinas virtuales con compilación JIT",
+    "resumen": "El artículo presenta 'yk', un sistema en etapa alfa que permite transformar intérpretes de lenguajes escritos en C (como Lua y MicroPython) en máquinas virtuales con compilación JIT mediante modificaciones mínimas al código fuente original. A diferencia de implementaciones JIT manuales y complejas como LuaJIT, 'yk' facilita la obtención de mejoras de rendimiento (entre 2x y 4x en ciertos benchmarks) manteniendo la compatibilidad total con las versiones de referencia y reduciendo drásticamente el esfuerzo de mantenimiento. El autor destaca que, con solo unas 400 líneas de código adicionales, es posible posicionar a estos lenguajes en un punto óptimo entre rendimiento y facilidad de actualización tecnológica.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47781286,
+    "url": "https://medicalxpress.com/news/2026-04-crispr-bold-silencing-syndrome-extra.html",
+    "score": 159,
+    "time": 1776269988,
+    "titulo_es": "Un enfoque modificado de CRISPR/Cas9 para silenciar la triplicación en el síndrome de Down: Un camino terapéutico a través de XIST",
+    "resumen": "Investigadores del Beth Israel Deaconess Medical Center y la Facultad de Medicina de Harvard han demostrado una prueba de concepto para una terapia génica que silencia el cromosoma 21 adicional responsable del síndrome de Down. Utilizando una versión modificada de la técnica CRISPR/Cas9, el equipo logró insertar el gen XIST —que silencia naturalmente uno de los cromosomas X en hembras biológicas— en el cromosoma 21 excedente de células madre humanas. Los experimentos mostraron una eficiencia de integración del 20 al 40% del gen XIST (de 14 kb), permitiendo desactivar gran parte de la actividad genética del cromosoma extra sin dañar otros. Este avance representa una vía potencial para el tratamiento de aneuploidías, aunque requiere validación adicional en modelos animales para confirmar su seguridad y eficacia clínica.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 47775628,
-    "url": "https://github.com/steipete/wacli",
-    "score": 94,
-    "time": 1776236685,
-    "titulo_es": "WhatsApp CLI: Herramienta de Línea de Comandos para WhatsApp",
-    "resumen": "El artículo describe WhatsApp CLI, una herramienta de línea de comandos (CLI) de terceros construida sobre la biblioteca whatsmeow. Se enfoca en la implementación principal del protocolo WhatsApp Web para interactuar con WhatsApp. Destaca la funcionalidad de sincronización de mensajes, incluyendo la recuperación de mensajes históricos a través de solicitudes de sincronización a demanda al dispositivo principal. Se menciona que la herramienta se inspira en un proyecto similar, whatsapp-cli de Vicente Reig. La configuración del directorio de almacenamiento por defecto es ~/.wacli, con la opción de anularlo. Se aclara que es una herramienta no oficial y no afiliada a WhatsApp.",
+    "id": 47754055,
+    "url": "https://superheroetc.wordpress.com/2017/05/31/pokemon-evolution-vs-darwinian-evolution/",
+    "score": 6,
+    "time": 1776096176,
+    "titulo_es": "Evolución Pokémon frente a la evolución darwiniana: un análisis comparativo",
+    "resumen": "El artículo explora la discrepancia conceptual entre la 'evolución' dentro de la franquicia Pokémon y la evolución biológica real basada en las teorías de Darwin. El autor define la 'P-evolución' como un proceso de transformación instantáneo gatillado por experiencia o ítems, contrastándola con la 'D-evolución' (evolución darwiniana), que es un proceso gradual de modificación a través de generaciones. Se argumenta que el fenómeno en Pokémon se asemeja más a la metamorfosis biológica o a etapas de madurez (larva, capullo, adulto) que al concepto científico de evolución de las especies.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 47787127,
+    "url": "https://github.com/macOS26/Agent",
+    "score": 49,
+    "time": 1776298780,
+    "titulo_es": "Agent!: Un agente de IA nativo para macOS con control total del sistema y desarrollo de software",
+    "resumen": "Agent! es una aplicación nativa para macOS que integra 17 proveedores de LLM (incluyendo Claude, GPT y modelos locales como Ollama) para ejecutar tareas autónomas. El software permite la manipulación de código con ediciones precisas, integración con Xcode, ejecución de comandos mediante un daemon con privilegios de root y control de cualquier aplicación de Mac a través de la API de Accesibilidad. Destaca por su arquitectura de bucle de tareas que razona, ejecuta y corrige errores automáticamente, ofreciendo una alternativa privada y sin suscripciones a herramientas como Claude Code o Cursor.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47782256,
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-mac-os/",
+    "score": 140,
+    "time": 1776273952,
+    "titulo_es": "La aplicación Gemini ahora es una experiencia nativa en macOS",
+    "resumen": "La aplicación Gemini, que proporciona asistencia de Inteligencia Artificial, ahora está disponible como una experiencia nativa en macOS (versión 15 y superior). Permite a los usuarios acceder a la IA directamente desde su escritorio con un atajo de teclado (Opción + Espacio) para compartir pantalla y obtener ayuda contextual con archivos locales, resúmenes, fórmulas o generación de imágenes/videos. La aplicación es gratuita y representa el primer paso hacia un asistente de escritorio más personal y proactivo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47787877,
+    "url": "https://spectrum.ieee.org/iran-internet-blackout-satellite-tv",
+    "score": 97,
+    "time": 1776305810,
+    "titulo_es": "Archivos ocultos en transmisiones de TV satelital mantienen el flujo de información",
+    "resumen": "El artículo describe la tecnología Toosheh, desarrollada por NetFreedom Pioneers, que permite la transmisión de archivos a través de señales de TV satelital ordinarias. Esta solución se implementó en Irán durante periodos de cierre total de las comunicaciones impuestos por el gobierno, incluyendo apagones de internet, redes VPN, telefonía móvil y fija. El sistema aprovecha la alta penetración de antenas parabólicas en el país para sortear la censura y el control gubernamental sobre la infraestructura de internet, la cual es más centralizada en Irán.  La tecnología busca contrarrestar las restricciones de acceso a la información, especialmente en momentos de agitación política y social, proporcionando un canal para la difusión de información confiable.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47778086,
+    "url": "https://www.dbpro.app/blog/do-you-even-need-a-database",
+    "score": 239,
+    "time": 1776255971,
+    "titulo_es": "Archivos vs. Bases de Datos: ¿Cuándo usar cada uno?",
+    "resumen": "El artículo explora la naturaleza fundamental de las bases de datos como archivos en disco y compara estrategias de almacenamiento de datos para aplicaciones, especialmente en etapas tempranas. Presenta un análisis comparativo de rendimiento en Go, Bun (TypeScript) y Rust para operaciones de lectura y escritura en datos. Se evalúan tres enfoques: escaneo lineal de archivos JSONL (O(n)), carga de todos los datos en memoria (hash map) para acceso O(1) y búsqueda binaria en archivos ordenados con un índice de ancho fijo (O(log n)) para acceso eficiente sin cargar todo en RAM. Los benchmarks con la herramienta `wrk` demuestran que el escaneo lineal se degrada significativamente con el tamaño de los datos, mientras que la búsqueda binaria en disco ofrece un rendimiento robusto y plano, incluso con un millón de registros. Se concluye que para muchas aplicaciones, especialmente las de menor escala o en fases iniciales, utilizar archivos propios puede ser una alternativa viable y eficiente a una base de datos tradicional, destacando la importancia de elegir la estrategia de almacenamiento adecuada según la escala y los requisitos de rendimiento.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 47775653,
-    "url": "https://www.maiobarbero.dev/articles/ai-assisted-workflow/",
-    "score": 34,
-    "time": 1776236898,
-    "titulo_es": "Cómo construí un flujo de trabajo estructurado de desarrollo asistido por IA",
-    "resumen": "El artículo describe un flujo de trabajo para el desarrollo de software que prioriza el pensamiento y la planificación antes de la implementación, utilizando la IA como una herramienta para explorar y validar el diseño en lugar de saltarse el proceso de diseño. El proceso comienza con un documento de pensamiento en lenguaje natural, seguido de una entrevista estructurada con una IA para refinar el plan, identificar supuestos y validar el modelo mental. El resultado es un documento de requisitos de producto (PRD) estructurado que detalla el problema, la solución, las historias de usuario, las decisiones de implementación y los elementos fuera de alcance. Este PRD se utiliza luego para crear problemas de desarrollo con 'cortes verticales' que abarcan todas las capas de integración. Los problemas se clasifican como 'AFK' (asistencia de IA para implementación completa) o 'HITL' (intervención humana necesaria), priorizando AFK para mantener el impulso del desarrollo y minimizar los cuellos de botella en la atención del líder técnico.",
+    "id": 47737663,
+    "url": "https://x86.fr/intel-xpress-resurrection-reviving-a-forgotten-eisa-beast/",
+    "score": 46,
+    "time": 1775986331,
+    "titulo_es": "Restauración de un Intel Xpress: Una Plataforma de PC Modular de Principios de los 90",
+    "resumen": "El artículo documenta la restauración de un Intel Xpress Desktop, un sistema modular de principios de los 90 diseñado para uso profesional y empresarial, posicionado entre un PC y una estación de trabajo. Detalla la placa base con 6 ranuras EISA, construida alrededor de dos chipsets principales: el Xpress (MECA, RCA, DPP, CLASIC) para el núcleo del sistema, memoria y E/S integradas, y un chipset EISA (EBC, ISP, EBB) para la gestión del bus de expansión. Se destaca la conectividad modular para CPU y RAM, la compatibilidad con procesadores 486 y Pentium iniciales, y las características específicas del chipset, como el manejo de memoria ECC y la arquitectura de E/S. Se mencionan las versiones Deskside/LX y Deskside/MX, así como su uso por HP en la línea NetServer.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47787947,
+    "url": "https://github.com/SethPyle376/hiraeth",
+    "score": 23,
+    "time": 1776306498,
+    "titulo_es": "Hiraeth: Emulador AWS Local para Pruebas de Integración Rápidas",
+    "resumen": "Hiraeth es un emulador local de AWS diseñado para acelerar las pruebas de integración, centrándose inicialmente en SQS. Permite la integración con el AWS SDK a través de un endpoint HTTP local, almacena el estado en SQLite y ofrece una interfaz web opcional para depuración. Está destinado exclusivamente a entornos de desarrollo y prueba, no para producción. La configuración se simplifica con Docker Compose, exponiendo el endpoint compatible con AWS en `http://localhost:4566` y la UI de administración en `http://localhost:4567`. Los datos de SQLite se persisten en un volumen Docker llamado `hiraeth-data`. Las imágenes de lanzamiento son multiarquitectura y se publican en GitHub Container Registry. La UI, aunque no usa autenticación SigV4, permite inspeccionar, purgar y eliminar colas y mensajes, y se basa en assets de CDN. El desarrollo del proyecto emplea herramientas de IA para tareas como generación de código y pruebas, pero el código principal es escrito a mano y todo cambio es revisado humanamente. Las pruebas y el mantenimiento del código de base de datos se realizan mediante SQLx.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47738081,
+    "url": "https://aalonso.dev/blog/2023/how-to-fix-monitor-that-goes-black-off-due-to-static-electricity-in-chair/",
+    "score": 129,
+    "time": 1775989628,
+    "titulo_es": "Solución a descargas electrostáticas y picos de EMI en monitores externos al usar sillas de oficina",
+    "resumen": "El artículo describe un problema recurrente de descargas electrostáticas y picos de Interferencia Electromagnética (EMI) que causan interrupciones (pantalla negra, parpadeo, apagado) en monitores externos conectados a un MacBook Pro. El autor identifica la silla de oficina con elevador de gas como la fuente principal, ya que puede generar electricidad estática y picos de EMI al sentarse o levantarse. Como soluciones, propone: 1. Reducir la estática de la silla conectándola a tierra con una cadena metálica al suelo. 2. Mitigar los picos de EMI rodeando los cables de video (especialmente DisplayPort o aquellos usados con adaptadores) con anillos de ferrita. Si bien la solución no elimina completamente el problema, lo reduce significativamente, especialmente al levantarse lentamente. Se menciona que el problema es particularmente notable con cables DisplayPort y adaptadores, y hay referencias de soporte de DisplayLink al respecto.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47788385,
+    "url": "https://sleepingrobots.com/dreams/stop-using-ollama/",
+    "score": 504,
+    "time": 1776310511,
+    "titulo_es": "La historia de Ollama y por qué las alternativas son mejores",
+    "resumen": "El artículo critica a Ollama por su falta de atribución a llama.cpp, el motor de inferencia C++ creado por Georgi Gerganov que impulsa a Ollama. A pesar de que llama.cpp es la base de su funcionalidad, Ollama no dio crédito adecuado durante años, incumpliendo la licencia MIT. Recientemente, Ollama ha reemplazado llama.cpp por una implementación personalizada sobre ggml, buscando mayor estabilidad para socios empresariales. Sin embargo, esta transición ha reintroducido errores y problemas que llama.cpp ya había resuelto. El autor argumenta que Ollama ha dependido de la tecnología de otros mientras buscaba financiación de capital de riesgo, desviándose de su misión inicial de \"Docker para LLMs\" y que existen mejores alternativas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47787957,
+    "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
+    "score": 21,
+    "time": 1776306616,
+    "titulo_es": "Construyendo una Biblioteca de Tailscale en Rust",
+    "resumen": "El artículo anuncia la versión experimental de una biblioteca Rust para Tailscale, llamada `libtailscale`. El objetivo es permitir que los desarrolladores integren la funcionalidad de Tailscale directamente en sus aplicaciones, superando las limitaciones de la instalación como una aplicación cliente o el uso de `tsnet` (una biblioteca Go) en entornos no compatibles con el tiempo de ejecución de Go. Inicialmente, hay bindings para Python, Elixir y C, además del uso nativo en Rust. La motivación principal es hacer que la conectividad segura y sencilla de Tailscale sea accesible en diversos lenguajes y entornos donde la manipulación de la red a nivel del sistema operativo es inviable o inconveniente. Se menciona el problema con `libtailscale` anterior, que incluía un tiempo de ejecución de Go, causando conflictos con otros lenguajes. La nueva `libtailscale` en Rust busca resolver esto, facilitando la integración en aplicaciones como Django, Godot, y otras que requieren una solución de red privada sin la complejidad de una instalación separada para el usuario final.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47730799,
+    "url": "https://www.b-list.org/weblog/2026/mar/23/20-year-library/",
+    "score": 14,
+    "time": 1775916765,
+    "titulo_es": "Evolución del cliente Python Akismet: de Michael Foord a una reescritura completa",
+    "resumen": "El artículo narra la historia y el desarrollo del cliente Python Akismet. Originalmente creado por Michael Foord en 2005 como un wrapper para el servicio web Akismet anti-spam, el proyecto fue mantenido posteriormente por el autor. La evolución incluyó la portabilidad a Python 3, la adopción del manejo de configuración basado en variables de entorno y la dependencia de la biblioteca `requests` para las peticiones HTTP, culminando en Akismet 1.0 en 2017. Más recientemente, a partir de 2024, se emprendió una reescritura completa para abordar nuevas funcionalidades de la API de Akismet, como la devolución detallada de resultados en lugar de solo booleanos para la verificación de comentarios (comment-check). Este proceso de reescritura buscó simplificar la configuración y la arquitectura interna, reflejando las mejores prácticas modernas de desarrollo de software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47785948,
+    "url": "https://www.bbc.com/news/technology-39576394",
+    "score": 100,
+    "time": 1776290744,
+    "titulo_es": "Reclusos Construyen PCs y Acceden a la Red de la Prisión",
+    "resumen": "Dos reclusos en una prisión de Ohio utilizaron componentes de computadoras destinadas al reciclaje para construir sus propias PCs. Los dispositivos, ocultos en el techo de una sala de formación, se conectaron a la red de la prisión, generando alertas por niveles inusuales de actividad en Internet. La investigación posterior reveló que las máquinas contenían software, material pornográfico y artículos sobre la fabricación de drogas y explosivos, además de registros de pases de acceso a áreas de la prisión. Un empleado de TI también fue investigado por incumplimiento de políticas. El incidente destaca vulnerabilidades en la seguridad de la red y la supervisión de programas de trabajo en entornos correccionales, llevando a una revisión de las salvaguardas tecnológicas y la supervisión de programas.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47788177,
+    "url": "https://www.sandordargo.com/blog/2026/04/15/cpp26-structured-bindings-condition",
+    "score": 7,
+    "time": 1776308764,
+    "titulo_es": "Declaraciones de enlace estructurado en condiciones en C++26",
+    "resumen": "El artículo detalla una mejora significativa introducida en C++26: la capacidad de utilizar declaraciones de enlace estructurado directamente en condiciones (por ejemplo, en sentencias if y while). Anteriormente, los enlaces estructurados solo podían usarse para declarar variables, no en contextos condicionales. La nueva funcionalidad, derivada de la propuesta P0963R3, permite descomponer un objeto en variables nombradas y, simultáneamente, verificar si el objeto descompuesto es contextualmemente convertible a `bool`. La secuencia de evaluación es: 1) Inicializar el objeto. 2) Evaluar la condición (mediante conversión a `bool`). 3) Introducir e inicializar los enlaces estructurados. Esta característica mejora la expresividad y legibilidad, especialmente útil para manejar tipos de resultados que combinan estado y datos (como `std::optional` o `std::expected`), reduciendo el código repetitivo y mejorando la localidad. Se considera una evolución pragmática y bien integrada de la característica de enlaces estructurados introducida en C++17.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47776796,
+    "url": "https://prog21.dadgum.com/30.html",
+    "score": 486,
+    "time": 1776246079,
+    "titulo_es": "El Arte de Escribir Compiladores: De 'Let's Build a Compiler!' a Frameworks de Nanopases",
+    "resumen": "El artículo discute la complejidad percibida en la escritura de compiladores y cómo superarla. Critica la amplitud de los libros tradicionales sobre compiladores, que abruman a los principiantes. Se recomienda la serie 'Let's Build a Compiler!' de Jack Crenshaw por su enfoque simplificado, similar a la clase de compiladores de Turbo Pascal, interrelacionando el parseo y la generación de código. Se señala la omisión de una representación interna (como un árbol de sintaxis abstracta) en la serie de Crenshaw, pero se destaca que esto es más manejable en lenguajes de alto nivel como Python, Ruby, Erlang, Haskell y Lisp, que facilitan la manipulación de estructuras de datos tipo árbol. Posteriormente, se introduce el concepto del artículo 'A Nanopass Framework for Compiler Education' de Sarkar, Waddell y Dybvig, que propone un compilador como una serie de transformaciones simples y separadas de una representación interna. Se sugiere que este enfoque, implementado en Scheme, permite una mayor modularidad y simplicidad. Finalmente, el autor, James Hague, un diseñador de videojuegos, sugiere que después de entender estos enfoques introductorios, se puede abordar material más avanzado como el 'Dragon Book'.",
     "categoria": "Desarrollo de Software"
   }
 ]
