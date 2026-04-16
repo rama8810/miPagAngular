@@ -123,11 +123,13 @@ export class ExchangeDashboardComponent {
         legend: { 
           data: ['TRM (Bruta)', 'Tendencia (EMA 20)', 'Volatilidad (Techo)', 'Volatilidad (Suelo)'],
           top: 0,
-          padding: [10, 0, 0, 0] 
+          left: 'center',
+          type: 'scroll',
+          padding: [5, 0, 0, 0] 
         },
-        grid: { left: '6%', right: '12%', bottom: '16%', containLabel: true },
+        grid: { top: 50, left: '6%', right: '12%', bottom: '16%', containLabel: true },
         dataZoom: [
-          { type: 'slider', show: true, start: 90, end: 100 },
+          { type: 'slider', show: true, start: 90, end: 100, left: '2%', right: '2%', bottom: '1%' },
           { type: 'inside', start: 90, end: 100 }
         ],
         xAxis: { 
