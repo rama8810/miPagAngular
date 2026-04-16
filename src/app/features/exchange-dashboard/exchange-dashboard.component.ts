@@ -127,9 +127,9 @@ export class ExchangeDashboardComponent {
           type: 'scroll',
           padding: [5, 0, 0, 0] 
         },
-        grid: { top: 50, left: '6%', right: '12%', bottom: '16%', containLabel: true },
+        grid: { top: 50, left: '6%', right: '13%', bottom: '16%', containLabel: true },
         dataZoom: [
-          { type: 'slider', show: true, start: 90, end: 100, left: '2%', right: '2%', bottom: '1%' },
+          { type: 'slider', show: true, start: 90, end: 100, left: '2%', right: '2%', bottom: '6%' },
           { type: 'inside', start: 90, end: 100 }
         ],
         xAxis: { 
