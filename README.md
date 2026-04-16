@@ -1,59 +1,53 @@
-# MiPagAngular
+# Portafolio Profesional: Arquitectura Angular Híbrida & Automatización con IA
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
+Este proyecto representa una implementación de ingeniería avanzada utilizando **Angular 21**, diseñada bajo un modelo de **Arquitectura Híbrida** que optimiza la entrega de contenido y la interactividad mediante la combinación de SSR y CSR.
 
-## Development server
+## 🏗️ Arquitectura de Renderizado Híbrido
+A diferencia de las aplicaciones tradicionales, este proyecto utiliza un flujo de renderizado optimizado:
 
-To start a local development server, run:
+1.  **SSR (Server-Side Rendering):** El servidor genera el HTML inicial de forma síncrona. Esto garantiza que el contenido (noticias, portafolio, divisas) esté disponible inmediatamente para motores de búsqueda (SEO) y usuarios con conexiones lentas.
+2.  **Hidratación de Cliente:** Una vez que el navegador carga el bundle de JavaScript, la aplicación realiza el proceso de hidratación, transformando el HTML estático en una **SPA (Single Page Application)** interactiva.
+3.  **CSR (Client-Side Rendering):** Tras la carga inicial, toda la navegación y gestión de estados se maneja dinámicamente en el cliente, proporcionando una experiencia de usuario fluida y sin recargas de página.
 
-```bash
-ng serve
-```
+## 🤖 Automatización e Inteligencia Artificial
+* **Agente de Curación IA:** Script especializado en Node.js (`scripts/curar-noticias.js`) que integra la **API de Gemini (Vertex AI)**.
+* **Procesamiento Autónomo:** El agente filtra, categoriza y resume noticias de tecnología, almacenando los resultados en `news.json` de forma diaria.
+* **Pipeline de Datos:** Los cambios son detectados por el sistema de CI/CD para mantener el estado de la aplicación siempre actualizado.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## ⚙️ DevOps y Tooling Local
+Se han implementado flujos de trabajo específicos para resolver la divergencia de ramas causada por la automatización del bot de noticias.
 
-## Code scaffolding
+### CI/CD (GitHub Actions)
+* **`deploy.yml`:** Automatiza la compilación y publicación en GitHub Pages.
+* **`update-news.yml`:** Ejecuta el Cron Job diario para la actualización de datos mediante IA.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Herramientas de Consola (Bash Scripts)
+Para mantener la integridad del repositorio local, se deben utilizar los siguientes comandos personalizados:
 
-```bash
-ng generate component component-name
-```
+* **Sincronización de Datos (`bash sDev.sh`):**
+    Prepara el entorno local descargando las actualizaciones que el bot de IA realizó en la nube hacia la rama de desarrollo. Evita conflictos de árbol Git.
+* **Despliegue y Commit (`bash sMain.sh "mensaje"`):**
+    Sincroniza el desarrollo local, realiza el merge a la rama principal y activa el despliegue automático hacia la web.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Stack Tecnológico
+* **Framework:** Angular 21 (Standalone Components).
+* **Estilos:** CSS3 con metodología modular.
+* **Backend & API:** Node.js (Scripts), Gemini API.
+* **Performance:** Angular Universal (SSR), Prerendering, WebP.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 💻 Comandos del Framework (Angular CLI)
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* **Servidor de Desarrollo:** ```bash
+    ng serve
+    ```
+* **Generación de Componentes:** ```bash
+    ng generate component <nombre>
+    ```
+* **Compilación de Producción:** ```bash
+    ng build
+    ```
+* **Pruebas Unitarias:** ```bash
+    ng test
+    ```

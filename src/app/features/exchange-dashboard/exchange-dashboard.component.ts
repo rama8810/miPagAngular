@@ -122,7 +122,7 @@ export class ExchangeDashboardComponent {
         tooltip: { trigger: 'axis' },
         legend: { 
           data: ['TRM (Bruta)', 'Tendencia (EMA 20)', 'Volatilidad (Techo)', 'Volatilidad (Suelo)'],
-          bottom: 0,
+          top: 0,
           padding: [10, 0, 0, 0] 
         },
         grid: { left: '6%', right: '12%', bottom: '16%', containLabel: true },
