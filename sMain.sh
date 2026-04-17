@@ -6,7 +6,7 @@ git add .
 git commit -m "$1"
 
 # 2. Sincronización (Equivalente al botón Sync de VS Code: Pull + Push)
-git pull origin develop --rebase
+git pull origin develop
 git push origin develop
 
 # 3. Fusión con la rama de producción
