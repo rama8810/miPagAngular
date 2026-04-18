@@ -62,3 +62,7 @@ Para recibir (descargar el avance):
 ## Limpieza obligatoria:
 Una vez el trabajo se complete y se suba a producción usando sMain.s, se debe borrar la rama remota para mantener el repositorio limpio:
 |👉 Comando: git push origin --delete develop|
+
+* **Pruebas Unitarias:** ```bash
+    ng test
+    ```

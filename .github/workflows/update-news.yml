@@ -37,4 +37,6 @@ jobs:
           git add src/assets/data/news.json
           # Si no hay noticias nuevas, evita que el workflow falle
           git commit -m "🤖 Auto-update: Curación diaria de noticias JSON en main" || echo "No hay cambios para hacer commit"
+          # Capa de seguridad: Descarga cambios recientes (ej. hechos por sMain.sh) antes de empujar
+          git pull origin main --rebase
           git push origin main
