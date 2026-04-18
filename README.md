@@ -54,7 +54,7 @@ Sincronizar y Subir: Cuando termines una funcionalidad probada localmente, ejecu
 Solo en casos esporádicos donde necesites delegar o compartir código incompleto con otro compañero sin afectar la página web oficial o el desarrollo vaya a tomar mucho tiempo, utilizaremos la rama remota origin develop:
 
 Para enviar (respaldar o compartir):
-|👉 Comando: git push origin develop|
+``|👉 Comando: git push origin develop|``
 
 Para recibir (descargar el avance):
 |👉 Comando: git pull origin develop --rebase|
