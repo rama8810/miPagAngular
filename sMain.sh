@@ -5,14 +5,12 @@
 git add .
 git commit -m "$1"
 
-# 2. Sincronización (Equivalente al botón Sync de VS Code: Pull + Push)
-git pull origin develop
-git push origin develop
+# 2. Sincronizar y Desplegar a Producción (Main es la fuente de la verdad)
+echo "🔄 Sincronizando con origin/main..."
+git pull origin main --rebase
 
-# 3. Fusión con la rama de producción
-git switch main
-git merge develop -m "$1"
-git push origin main
+# 3. Sube la rama local actual (develop) directamente a la rama de producción (main) en el remoto
+echo "🚀 Desplegando a producción (main)..."
+git push origin HEAD:main
 
-# 4. Retorno al entorno de trabajo
-git switch develop
+echo "✅ Código en producción y entorno local actualizado."
