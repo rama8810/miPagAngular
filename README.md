@@ -1,22 +1,22 @@
 # Portafolio Profesional: Arquitectura Angular Híbrida & Automatización con IA
 
-Este proyecto representa una implementación de ingeniería avanzada utilizando **Angular 21**, diseñada bajo un modelo de **Arquitectura Híbrida** que optimiza la entrega de contenido y la interactividad mediante la combinación de SSR y CSR.
+Este proyecto representa una implementación de ingeniería utilizando **Angular 21**, diseñada bajo un modelo de **Arquitectura Híbrida** que optimiza la entrega de contenido y la interactividad mediante la combinación de SSR y CSR.
 
 ## 🏗️ Arquitectura de Renderizado Híbrido
 A diferencia de las aplicaciones tradicionales, este proyecto utiliza un flujo de renderizado optimizado:
 
-1.  **SSR (Server-Side Rendering): El servidor genera el HTML inicial de forma síncrona. Esto garantiza que el contenido (noticias, portafolio, divisas) esté disponible inmediatamente para motores de búsqueda (SEO) y usuarios con conexiones lentas.
+1.  **SSR (Server-Side Rendering):** El servidor genera el HTML inicial de forma síncrona. Esto garantiza que el contenido (noticias, portafolio, divisas) esté disponible inmediatamente para motores de búsqueda (SEO) y usuarios con conexiones lentas.
 
-2.  **Hidratación de Cliente: Una vez que el navegador carga el bundle de JavaScript, la aplicación realiza el proceso de hidratación, transformando el HTML estático en una SPA (Single Page Application) interactiva.
+2.  **Hidratación de Cliente:** Una vez que el navegador carga el bundle de JavaScript, la aplicación realiza el proceso de hidratación, transformando el HTML estático en una SPA (Single Page Application) interactiva.
 
-3.  **CSR (Client-Side Rendering): Tras la carga inicial, toda la navegación y gestión de estados se maneja dinámicamente en el cliente, proporcionando una experiencia de usuario fluida y sin recargas de página.
+3.  **CSR (Client-Side Rendering):** Tras la carga inicial, toda la navegación y gestión de estados se maneja dinámicamente en el cliente, proporcionando una experiencia de usuario fluida y sin recargas de página.
 
 ## 🤖 Automatización e Inteligencia Artificial
-Agente de Curación IA: Script especializado en Node.js (scripts/curar-noticias.js) que integra la API de Gemini (Vertex AI).
+-  **Agente de Curación IA:** Script especializado en Node.js (scripts/curar-noticias.js) que actúa como puente ETL, integrando la API de HackerNews con la API de Gemini (Vertex AI).
 
-Procesamiento Autónomo: El agente filtra, categoriza y resume noticias de tecnología, almacenando los resultados en news.json de forma diaria.
+-  **Procesamiento Autónomo:** El agente utiliza la IA para filtrar, categorizar y resumir noticias de tecnología, almacenando los resultados en news.json de forma diaria.
 
-Pipeline de Datos: Los cambios son detectados por el sistema de CI/CD para mantener el estado de la aplicación siempre actualizado.
+-  **Pipeline de Datos:** Los cambios son detectados por el sistema de CI/CD para mantener el estado de la aplicación siempre actualizado.
 
 ## ⚙️ DevOps y Tooling Local
 Se han implementado flujos de trabajo específicos para mantener la integridad del repositorio y sincronizar la automatización del bot de noticias.
@@ -31,9 +31,9 @@ Para mantener la integridad del repositorio local y enviar a producción, se deb
 
 Despliegue y Commit:
 Sincroniza el desarrollo local descargando los datos de la IA, realiza el merge a la rama principal y activa el despliegue automático hacia la web.
-👉 Comando: bash sMain.sh "tu mensaje aquí"
+| 👉 Comando: bash sMain.sh "tu mensaje aquí" | 
 
-## 🛠️ Stack Tecnológico
+### 🛠️ Stack Tecnológico
 Framework: Angular 21 (Standalone Components).
 
 Estilos: CSS3 con metodología modular.
@@ -42,18 +42,10 @@ Backend & API: Node.js (Scripts), Gemini API.
 
 Performance: Angular Universal (SSR), Prerendering, WebP.
 
-| Acción | Comando |
-| :--- | :--- |
-| **Servidor de Desarrollo** | `ng serve` |
-| **Generación de Componentes** | `ng generate component <nombre>` |
-| **Compilación de Producción** | `ng build` |
-| **Pruebas Unitarias** | `ng test` |
-
-
 ## 🛠 Flujo de Trabajo del Equipo (Git Workflow)
 Este proyecto utiliza Trunk-Based Development. Para evitar conflictos de historial y mantener una línea de tiempo limpia, todo el equipo debe adherirse estrictamente al siguiente flujo directo a producción:
 
-## 🚨 Reglas de Prevención y Pruebas Locales
+### 🚨 Reglas de Prevención y Pruebas Locales
 Para evitar historiales contaminados y despliegues fallidos, es obligatorio seguir estas normas antes de subir código:
 
 Pruebas en Múltiples Dispositivos (Mobile/Tablet): Está estrictamente prohibido usar la rama de producción para probar UI. Utiliza el servidor local expuesto a la red Wi-Fi.
