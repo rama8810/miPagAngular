@@ -22,14 +22,12 @@ A diferencia de las aplicaciones tradicionales, este proyecto utiliza un flujo d
 Se han implementado flujos de trabajo específicos para mantener la integridad del repositorio y sincronizar la automatización del bot de noticias.
 
 -  **CI/CD (GitHub Actions)**
-deploy.yml: Automatiza la compilación y publicación en GitHub Pages.
+**deploy.yml:** Automatiza la compilación y publicación en GitHub Pages.
 
-update-news.yml: Ejecuta el Cron Job diario para la actualización de datos mediante IA.
+**update-news.yml:** Ejecuta el Cron Job diario para la actualización de datos mediante IA.
 
 -  **Herramientas de Consola (Bash Scripts)**
-Para garantizar la integridad del repositorio y automatizar el paso a producción de cualquier cambio se debe utilizar el siguiente comando personalizado
-| 👉 Comando: bash sMain.sh "tu mensaje aquí" | 
-Sincroniza el local descargando el archivo con los datos de depurados por la IA y carga los cambios a la rama principal, lo que activa el despliegue automático hacia la web.
+Para garantizar la integridad del repositorio y automatizar el paso a producción de cualquier cambio se sincroniza el local descargando el archivo con los datos depurados por la IA y carga los cambios a la rama principal, lo que activa el despliegue automático hacia la web.
 
 ## 🛠 Flujo de Trabajo del Equipo (Git Workflow)
 Este proyecto utiliza Trunk-Based Development. Para evitar conflictos de historial y mantener una línea de tiempo limpia, todo el equipo debe adherirse estrictamente al siguiente flujo directo a producción:
@@ -37,37 +35,28 @@ Este proyecto utiliza Trunk-Based Development. Para evitar conflictos de histori
 ### 🚨 Reglas de Prevención y Pruebas Locales
 Para evitar historiales contaminados y despliegues fallidos, es obligatorio seguir estas normas antes de subir código:
 
-Pruebas en Múltiples Dispositivos (Mobile/Tablet): Está estrictamente prohibido usar la rama de producción para probar UI. Utiliza el servidor local expuesto a la red Wi-Fi.
-|👉 Comando: ng serve --host 0.0.0.0|
+👉 **Pruebas en Múltiples Dispositivos (Mobile/Tablet):** Está estrictamente prohibido usar la rama de producción para probar UI. Utiliza el servidor local expuesto a la red Wi-Fi.
+`` ng serve --host 0.0.0.0``
 (Accede desde cualquier dispositivo ingresando la IP local de tu PC, ej: 192.168.1.x:4200)
 
-Puntos de Restauración (Savepoints): Si vas a realizar una refactorización crítica o un rediseño agresivo, CREA UN MENSAJE DE COMMIT EXPLICITO Y DE ADVERTENCIA DE FACIL UBICACION.
-|👉 Comando: bash sMain "BREAKING CHANGE: mensaje explícito de tu rediseño crítico"|
+👉 **Puntos de Restauración (Savepoints):** Si vas a realizar una refactorización crítica o un rediseño agresivo, CREA UN MENSAJE DE COMMIT EXPLICITO Y DE ADVERTENCIA DE FACIL UBICACION.
+`` bash sMain "BREAKING CHANGE: mensaje explícito de tu rediseño crítico"``
 
 Flujo de Trabajo Estandarizado (Uso Diario)
 Rama base: Todo el desarrollo local se realiza SIEMPRE sobre la rama local develop.
 
-Sincronizar y Subir: Cuando termines una funcionalidad probada localmente, ejecuta el script en la raíz del proyecto para mandarlo a producción (main):
-|👉 Comando: bash sMain.sh "feat: descripción de tu código terminado"|
+👉 **Sincronizar y Subir:** Cuando termines una funcionalidad probada localmente, ejecuta el script en la raíz del proyecto para mandarlo a producción (main):
+`` bash sMain.sh "feat: descripción de tu cambio terminado"``
 
 ## ⚠️ Excepción: Tareas Largas o Compartidas (WIP)
 Solo en casos esporádicos donde necesites delegar o compartir código incompleto con otro compañero sin afectar la página web oficial o el desarrollo vaya a tomar mucho tiempo, utilizaremos la rama remota origin develop:
 
-Para enviar (respaldar o compartir):
-``|👉 Comando: git push origin develop|``
+👉 **Para enviar (respaldar o compartir):** 
+ `` git push origin develop``
 
-Para recibir (descargar el avance):
-|👉 Comando: git pull origin develop --rebase|
+👉 **Para recibir (descargar el avance):** 
+ `` git pull origin develop --rebase``
 
 ## Limpieza obligatoria:
-Una vez el trabajo se complete y se suba a producción usando sMain.s, se debe borrar la rama remota para mantener el repositorio limpio:
-|👉 Comando: git push origin --delete develop|
-
-* **Pruebas Unitarias:** ```    
-    bash ng test```
-
-* **Pruebas Unitarias:** ``    
-    bash ng test```
-
-* **Pruebas Unitarias:** `    
-    probando```bash ng test
+👉 **Una vez el trabajo se complete y se suba a producción usando sMain.sh**, se debe borrar la rama remota para mantener el repositorio limpio:  
+ `` git push origin --delete develop``
