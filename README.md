@@ -64,10 +64,10 @@ Una vez el trabajo se complete y se suba a producción usando sMain.s, se debe b
 |👉 Comando: git push origin --delete develop|
 
 * **Pruebas Unitarias:** ```    
-    ```bash ng test
+    bash ng test```
 
 * **Pruebas Unitarias:** ``    
-    ```bash ng test
+    bash ng test```
 
 * **Pruebas Unitarias:** `    
-    ```bash ng test
+    probando```bash ng test
