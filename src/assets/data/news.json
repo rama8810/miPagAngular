@@ -1,20 +1,335 @@
 [
   {
-    "id": 47813668,
-    "url": "https://abuseofnotation.github.io/category-theory-illustrated/04_order/",
-    "score": 76,
-    "time": 1776494447,
-    "titulo_es": "Fundamentos de la Teoría del Orden en Matemáticas y Programación",
-    "resumen": "El artículo explora la naturaleza matemática de los órdenes, definidos como conjuntos con relaciones binarias que rigen la organización de elementos. Se centra específicamente en el orden lineal y las cuatro leyes fundamentales que lo componen: reflexividad, transitividad, antisimetría y totalidad. Además, vincula estos conceptos matemáticos con el desarrollo de software, explicando que para que una función de comparación sea consistente y determinista, debe adherirse estrictamente a estos principios algebraicos.",
+    "id": 47793161,
+    "url": "https://kotaku.com/video-game-devs-explain-how-pausing-works-and-sometimes-it-gets-weird-2000686339",
+    "score": 94,
+    "time": 1776348310,
+    "titulo_es": "Cómo funciona realmente la pausa en los videojuegos: Perspectivas de desarrolladores",
+    "resumen": "El artículo analiza las diversas implementaciones técnicas detrás de la funcionalidad de pausa en el desarrollo de videojuegos. Explora métodos que van desde la manipulación del factor de escala de tiempo (timescale) en motores como Unity y Unreal para ralentizar o detener el juego, hasta la gestión de múltiples capas de estados de pausa concurrentes para manejar eventos como desconexiones de periféricos o menús del sistema. Además, describe optimizaciones de renderizado donde se captura una imagen fija del juego para ocultar el cese de procesamiento de objetos en segundo plano, revelando que una característica aparentemente simple requiere soluciones de arquitectura complejas para evitar conflictos de estado.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47819453,
+    "url": "https://www.nist.gov/news-events/news/2026/04/any-color-you-nist-scientists-create-any-wavelength-lasers-tiny-circuits",
+    "score": 306,
+    "time": 1776545657,
+    "titulo_es": "Cualquier color que desees: Científicos del NIST crean láseres de cualquier longitud de onda en circuitos diminutos",
+    "resumen": "Investigadores del NIST han desarrollado un método innovador para fabricar circuitos integrados fotónicos mediante el depósito de patrones complejos de materiales especializados, como niobiato de litio y pentóxido de tantalio, sobre obleas de silicio. Estos chips de fotónica utilizan láseres, guías de onda y filtros para procesar información mediante luz en lugar de electrones. La técnica permite generar una amplia gama de longitudes de onda en dispositivos compactos, eliminando la necesidad de láseres voluminosos y costosos, lo que representa un avance crítico para el escalado de computadoras cuánticas, relojes atómicos ópticos e infraestructura de inteligencia artificial.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47806021,
+    "url": "https://antithesis.com/blog/2026/skiptrees/",
+    "score": 70,
+    "time": 1776434247,
+    "titulo_es": "Las Skiplists y su aplicación práctica en problemas de bases de datos analíticas",
+    "resumen": "El artículo explica qué son las 'skiplists' (listas de omisión), definiéndolas como estructuras de datos probabilísticas que actúan como reemplazo de los árboles de búsqueda binaria con una complejidad de O(log n). El autor describe un caso de uso real en la empresa Antithesis, donde se enfrentaron a la ineficiencia de realizar búsquedas puntuales (point lookups) en Google BigQuery para recorrer jerarquías de árboles de eventos. Mientras que los punteros tradicionales a padres obligarían a realizar escaneos completos de tablas por cada nivel, la implementación de una generalización de skiplists permite optimizar el rendimiento en entornos de bases de datos analíticas diseñadas para procesamiento masivo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47818485,
+    "url": "https://sentinelcolorado.com/uncategorized/a-college-instructor-turns-to-typewriters-to-curb-ai-written-work-and-teach-life-lessons/",
+    "score": 277,
+    "time": 1776538800,
+    "titulo_es": "Máquinas de escribir en Cornell: Una respuesta analógica frente al auge de la IA generativa",
+    "resumen": "El artículo describe una iniciativa pedagógica en la Universidad de Cornell donde se utilizan máquinas de escribir manuales para tareas de idiomas. Esta medida surge como respuesta directa al uso de inteligencia artificial generativa y herramientas de traducción automática por parte de los estudiantes, lo que dificultaba la evaluación del aprendizaje real. La transición a métodos 'analógicos' busca eliminar distracciones digitales, evitar el plagio asistido por IA y fomentar un proceso de escritura y pensamiento crítico sin asistencia algorítmica, reflejando una tendencia creciente en instituciones educativas para mitigar el impacto de la IA en la integridad académica.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47817132,
+    "url": "https://www.righto.com/2026/04/B-52-star-tracker-angle-computer.html",
+    "score": 333,
+    "time": 1776529607,
+    "titulo_es": "Historia de la computación: el computador de ángulos y la navegación celestial",
+    "resumen": "El artículo detalla el funcionamiento del 'Angle Computer', un sofisticado computador analógico electromecánico diseñado para el bombardero B-52 en los años 60. Ante la limitación de las computadoras digitales de la época, este dispositivo realizaba cálculos trigonométricos modelando físicamente la esfera celeste para rastrear estrellas de forma automatizada. El sistema, denominado Astro Compass, utilizaba componentes como el 'Astro Tracker', servomecanismos y sincronizadores para proporcionar navegación precisa e inmune a interferencias, permitiendo determinar la posición y el rumbo mediante la observación de astros.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47791771,
+    "url": "https://jackpritz.com/blog/updating-gun-rocket-through-10-years-of-unity-engine",
+    "score": 79,
+    "time": 1776340800,
+    "titulo_es": "Actualizando un proyecto a través de 10 años de versiones del motor Unity",
+    "resumen": "El artículo describe el proceso técnico de migración de un videojuego legado, Gun Rocket, desde versiones antiguas de Unity (4.6 y 5.5) hacia las plataformas modernas. El autor analiza la evolución histórica de Unity, explicando los cambios en sus esquemas de versionado —desde numeración simple a versiones basadas en el año y el reciente salto a la serie 6000—. Además, aborda problemas de compatibilidad con APIs de Windows, fallos en registros (logs) y desafíos en la validación de licencias de software antiguo que precede a la existencia de Unity Hub.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47797987,
+    "url": "https://vlad.website/binary-dependencies-identifying-the-hidden-packages-we-all-depend-on/",
+    "score": 18,
+    "time": 1776366320,
+    "titulo_es": "Dependencias binarias fantasma",
+    "resumen": "El artículo analiza el riesgo que representan las 'dependencias binarias fantasma', paquetes precompilados de los que depende un proyecto sin que esta relación quede registrada en los archivos de manifiesto estándar como pyproject.toml o package.json. Esta falta de trazabilidad en la cadena de suministro de software impide la identificación de vulnerabilidades y la gestión de parches de seguridad en infraestructuras críticas. El autor propone el desarrollo de herramientas especializadas para detectar y registrar estas dependencias, fomentando una mejor interoperabilidad entre los gestores de paquetes del lenguaje y del sistema operativo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47822356,
+    "url": "https://www.eff.org/deeplinks/2026/04/keep-pushing-we-get-10-more-days-reform-section-702",
+    "score": 52,
+    "time": 1776582317,
+    "titulo_es": "Reforma de la Sección 702: La lucha por la privacidad y contra la vigilancia masiva en EE. UU.",
+    "resumen": "El artículo aborda la batalla legislativa en los Estados Unidos sobre la reautorización de la Sección 702 de la Ley de Vigilancia de Inteligencia Extranjera (FISA). Detalla cómo la NSA recolecta comunicaciones internacionales masivas, incluyendo datos de ciudadanos estadounidenses, y permite que agencias como el FBI accedan a esta información sin una orden judicial basada en causa probable. Se destaca la necesidad de reformas para cerrar vacíos legales y abordar interpretaciones secretas de la ley que vulneran la privacidad digital de periodistas, activistas y ciudadanos comunes.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47822414,
+    "url": "https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years",
+    "score": 35,
+    "time": 1776583124,
+    "titulo_es": "Los fabricantes de memoria solo cubrirán el 60 por ciento de la demanda para finales de 2027",
+    "resumen": "El mercado de memorias DRAM enfrenta una crisis de suministro prolongada, con proyecciones que indican que los principales fabricantes (Samsung, SK Hynix y Micron) solo alcanzarán a cubrir el 60% de la demanda global para 2027. Aunque se planea la apertura de nuevas plantas de fabricación, la mayoría no estarán operativas hasta finales de la década. Un factor crítico es la priorización de la memoria de alto ancho de banda (HBM) destinada a centros de datos de IA, lo que desplaza la producción de DRAM estándar y encarece los dispositivos electrónicos de consumo como portátiles y teléfonos.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47821429,
+    "url": "https://apenwarr.ca/log/20170810",
+    "score": 47,
+    "time": 1776567043,
+    "titulo_es": "El mundo en el que IPv6 era un buen diseño",
+    "resumen": "Análisis arquitectónico sobre la evolución de los protocolos de red y la transición de la conmutación de circuitos hacia las redes de área local (LAN). Explica cómo el cambio en el hardware subyacente y la aparición de los dominios de difusión obligaron a una mayor complejidad en el diseño de IPv6 respecto a IPv4, redefiniendo el direccionamiento en las capas del modelo OSI y la gestión de protocolos de transporte como TCP BBR.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47790337,
+    "url": "https://entropicthoughts.com/si-units-for-request-rate",
+    "score": 69,
+    "time": 1776328925,
+    "titulo_es": "Tasas de solicitud: La importancia de las unidades y el periodo de medición",
+    "resumen": "El artículo aborda la importancia de estandarizar la medición de la tasa de solicitudes en periodos fijos, preferiblemente segundos, para evitar distorsiones en dashboards y métricas. El autor analiza el uso de unidades del Sistema Internacional, sugiriendo que el Hertz (Hz) es adecuado para cargas de trabajo periódicas (como pruebas de carga constantes), mientras que el Becquerel (Bq) es más representativo para el tráfico orgánico aleatorio que sigue una distribución de Poisson, facilitando además la notación de altos volúmenes de tráfico.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47815118,
+    "url": "https://kdenlive.org/news/2026/state-2026/",
+    "score": 398,
+    "time": 1776512557,
+    "titulo_es": "Kdenlive en 2025: Un año de desarrollo, estabilidad y nuevas funciones",
+    "resumen": "El artículo detalla la evolución técnica de Kdenlive durante 2025 y las proyecciones para 2026, destacando un equilibrio entre la implementación de nuevas funcionalidades y la estabilidad del sistema. Entre los hitos técnicos se incluyen la reescritura de la integración de OpenTimelineIO en C++, una mejora del 300% en el rendimiento de generación de formas de onda de audio y la incorporación de segmentación de objetos basada en el modelo de IA SAM2. Arquitectónicamente, el proyecto ha avanzado en la refactorización del sistema de docking, mejoras en la interfaz para pantallas HiDPI y la optimización del framework MLT para soportar color de 10/12 bits y estándares OpenFX.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47779659,
+    "url": "https://fset.common-lisp.dev/Modern-CL/Top_html/index.html",
+    "score": 153,
+    "time": 1776263918,
+    "titulo_es": "Introducción y Bombo Obligatorio",
+    "resumen": "Documento introductorio para la documentación de FSet v2.4.2, una biblioteca de colecciones funcionales escrita para Common Lisp. El texto establece los términos de la licencia Creative Commons CC BY-NC-SA 4.0, la autoría manual de Scott L. Burson sin intervención de IA, y las plataformas de colaboración en GitLab y GitHub.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47820195,
+    "url": "https://abacusnoir.com/2026/04/18/zero-copy-gpu-inference-from-webassembly-on-apple-silicon/",
+    "score": 80,
+    "time": 1776552373,
+    "titulo_es": "Memoria compartida de copia cero entre WebAssembly y GPU en Apple Silicon",
+    "resumen": "El artículo describe una arquitectura técnica para eliminar la sobrecarga de serialización y copia de datos entre módulos WebAssembly y la GPU aprovechando la Arquitectura de Memoria Unificada (UMA) de Apple Silicon. El autor demuestra cómo es posible mapear memoria física compartida utilizando mmap, envolver dicho puntero en un buffer de Metal mediante el método 'bytesNoCopy' e integrarlo en el runtime Wasmtime usando el trait 'MemoryCreator'. Esto permite que el sandbox de Wasm y el acelerador de hardware operen sobre los mismos bytes físicos, logrando una comunicación de latencia casi nula ideal para inferencia de IA de alto rendimiento.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47815774,
+    "url": "https://isayeter.com/posts/digitalocean-to-hetzner-migration/",
+    "score": 778,
+    "time": 1776518944,
+    "titulo_es": "Migración de producción real de DigitalOcean a servidores dedicados de Hetzner con tiempo de inactividad cero",
+    "resumen": "Análisis técnico de una migración de infraestructura a gran escala que involucra 248 GB de datos en 30 bases de datos MySQL y 34 sitios Nginx. El proceso detalla el paso de instancias en la nube a servidores dedicados de Hetzner para optimizar costos, abordando la actualización de CentOS 7 (EOL) a AlmaLinux 9.7. La estrategia de migración de seis fases incluye replicación maestro-esclavo para bases de datos en tiempo real, sincronización de archivos con rsync, gestión de TTL de DNS y el uso de Nginx como proxy inverso para redirigir el tráfico residual, garantizando una transición sin interrupciones para el usuario final.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 47819369,
+    "url": "https://byroot.github.io/ruby/performance/2026/04/18/faster-paths.html",
+    "score": 100,
+    "time": 1776544949,
+    "titulo_es": "Optimización de CI en Intercom: Mejorando el tiempo de arranque de Ruby con Bootsnap",
+    "resumen": "Análisis técnico sobre la optimización del rendimiento en sistemas de Integración Continua (CI) para aplicaciones monolíticas de gran escala. El autor explica que, en entornos con alta paralelización (como el de Intercom con 1350 workers), el tiempo de configuración inicial de cada proceso es un factor crítico que impacta tanto en el costo como en la experiencia del desarrollador. El foco principal es la reducción del tiempo de arranque de Ruby, abordando la ineficiencia algorítmica O(N*M) de la búsqueda de archivos en el $LOAD_PATH y destacando el papel de la gema Bootsnap para mitigar este problema mediante el almacenamiento en caché.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47796496,
+    "url": "https://github.com/riyaneel/Tachyon/tree/main/docs/adr",
+    "score": 43,
+    "time": 1776359630,
+    "titulo_es": "Registros de Decisiones de Arquitectura (ADR) para Tachyon",
+    "resumen": "El texto describe la estructura y el propósito de los Architecture Decision Records (ADR) para el proyecto Tachyon. Estos documentos registran decisiones de diseño cruciales, su contexto y consecuencias, estableciendo un historial inmutable donde las decisiones superadas se vinculan a sus reemplazos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47818700,
+    "url": "https://samhenri.gold/blog/20260418-claude-design/",
+    "score": 303,
+    "time": 1776539964,
+    "titulo_es": "El Futuro del Diseño de Interfaces: Del Caos de Figma a la Verdad del Código",
+    "resumen": "El artículo analiza la evolución de las herramientas de diseño de interfaces, centrándose en el auge y las limitaciones de Figma. Señala que la complejidad de los sistemas de diseño de Figma, con sus componentes, estilos y variables propietarias, se ha vuelto difícil de gestionar y automatizar. Contrasta esto con el entrenamiento de modelos de IA, que se basó en código en lugar de las primitivas de Figma, lo que sugiere que la fuente de verdad tenderá a migrar de nuevo hacia el código a medida que los diseñadores se vuelvan más competentes en su escritura y las herramientas de IA mejoren. Propone que el futuro del diseño de herramientas se bifurcará en dos caminos: herramientas que se integran profundamente con el código (como Claude Design, que se alinea con el principio de 'verdad a los materiales') y herramientas que persisten en el paradigma de Figma. El autor critica la arquitectura de Figma por ser una aproximación con pérdida y la compara desfavorablemente con el trabajo directo en el medio de implementación final (código).",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 47819823,
+    "url": "https://blog.marcoinacio.com/posts/my-first-impressions-rocm-strix-halo/",
+    "score": 44,
+    "time": 1776549048,
+    "titulo_es": "Primeras impresiones y configuración de ROCm y Strix Halo con PyTorch y Llama.cpp en Ubuntu",
+    "resumen": "El artículo detalla la configuración inicial para utilizar ROCm y el hardware Strix Halo en Ubuntu 24.04 LTS, enfocándose en la optimización de la memoria compartida entre CPU y GPU (128GB) mediante GTT y actualizaciones de BIOS. Se describe la instalación y configuración de PyTorch y Llama.cpp para ejecutar modelos de IA como Qwen3.6, incluyendo la gestión de dependencias y la optimización del tamaño de GTT. Se menciona el uso de Podman para ejecutar Opencode y se proporciona un archivo de configuración para Llama.cpp. La experiencia general es positiva, destacando el buen funcionamiento a pesar de algunas dificultades iniciales.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47816629,
+    "url": "https://github.com/drasimwagan/mdv",
+    "score": 113,
+    "time": 1776525879,
+    "titulo_es": "MDV: Un Superset de Markdown para Documentos, Dashboards y Presentaciones",
+    "resumen": "MDV es un superset de CommonMark diseñado para crear documentos, dashboards y presentaciones. Permite la inclusión de gráficos, tarjetas KPI, tablas y regiones estilizadas utilizando bloques de código delimitados y estilos nombrados, sin la complejidad de selectores, clases o expresiones. Se renderiza en HTML autocontenido (con SVG para gráficos) y PDF, y ofrece una vista previa en vivo dentro de VS Code. Su desarrollo se centra en la simplicidad y la extensibilidad a través de temas y estilos, con un roadmap y especificaciones detallados disponibles en su documentación. Requiere Node.js v20 o superior.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 47820531,
+    "url": "https://science.nasa.gov/blogs/voyager/2026/04/17/nasa-shuts-off-instrument-on-voyager-1-to-keep-spacecraft-operating/",
+    "score": 172,
+    "time": 1776556065,
+    "titulo_es": "NASA apaga instrumento de Voyager 1 para extender su vida útil debido a la escasez de energía",
+    "resumen": "El artículo describe la decisión de los ingenieros del Jet Propulsion Laboratory (JPL) de la NASA de apagar el experimento de Partículas Cargadas de Baja Energía (LECP) a bordo de la nave espacial Voyager 1. Esta medida se toma para conservar energía, ya que la nave, lanzada en 1977, está experimentando una disminución de potencia debido al decaimiento de su generador termoeléctrico de radioisótopos. El LECP ha operado casi continuamente durante casi 49 años, midiendo partículas cargadas en el medio interestelar. La decisión de apagar el LECP se basó en un plan preestablecido por los equipos de ciencia e ingeniería para extender la vida útil de la misión y mantener operativos otros dos instrumentos científicos clave. La reducción de energía se hizo necesaria tras una caída inesperada de potencia durante una maniobra planificada. Los ingenieros confían en que esta medida proporcione un año adicional de operación, mientras desarrollan una solución más ambiciosa llamada \"The Big Bang\" para extender aún más las operaciones de ambas sondas Voyager, priorizando la implementación en Voyager 2 debido a sus mayores márgenes de energía y proximidad a la Tierra.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 47807809,
-    "url": "https://github.com/paniclock/paniclock/",
-    "score": 196,
-    "time": 1776443924,
-    "titulo_es": "PanicLock: Utilidad de Barra de Menú para Desactivar Touch ID Instantáneamente en macOS",
-    "resumen": "PanicLock es una utilidad para la barra de menú de macOS diseñada para deshabilitar instantáneamente Touch ID y bloquear la pantalla con una sola acción (clic, atajo de teclado o cierre de tapa). Aborda la falta de una función nativa en macOS para desactivar Touch ID rápidamente en situaciones sensibles donde los datos biométricos podrían ser comprometidos (ej. control de fronteras). La herramienta permite la reactivación de Touch ID solo tras iniciar sesión con contraseña, sin cerrar la sesión o apagar el sistema. Requiere una instalación única de un helper privilegiado para modificar la configuración de tiempo de espera de Touch ID. La aplicación también soporta el cierre automático de tapa para deshabilitar Touch ID y bloquear la pantalla. Las características adicionales incluyen la instalación vía Homebrew y un proceso de compilación, firma, notarización y empaquetado automatizado. Es importante notar que PanicLock solo deshabilita Touch ID; otros métodos de desbloqueo (Apple Watch, llaves de seguridad) seguirán funcionando.",
+    "id": 47784250,
+    "url": "https://www.sciencedaily.com/releases/2026/04/260414075641.htm",
+    "score": 103,
+    "time": 1776282376,
+    "titulo_es": "Hormigas Cono limpian Hormigas Arrebatadoras más grandes en un descubrimiento sin precedentes",
+    "resumen": "El artículo describe un comportamiento simbiótico recién descubierto en el sureste de Arizona, donde una especie de hormiga cono (género Dorymyrmex) limpia limpiamente a hormigas arrebatadoras (Pogonomyrmex barbatus) mucho más grandes. Las hormigas cono trepan sobre las arrebatadoras, lamiendo y mordisqueando sus cuerpos, incluso dentro de sus mandíbulas abiertas. Este comportamiento, observado por el entomólogo Mark Moffett, es el primer ejemplo conocido de una especie de hormiga limpiando a una mucho más grande, similar a los peces limpiadores en el océano. Las hormigas arrebatadoras permanecen inmóviles durante la limpieza, que puede durar desde segundos hasta varios minutos. Se postula que las hormigas cono se alimentan de partículas ricas en energía, como restos de semillas, que obtienen de las hormigas arrebatadoras. Para las hormigas arrebatadoras, esta limpieza podría ayudar a eliminar desechos, esporas y parásitos de áreas de difícil acceso. El descubrimiento subraya la gran cantidad de comportamientos animales aún desconocidos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 47816625,
+    "url": "https://www.fuzix.org/",
+    "score": 102,
+    "time": 1776525858,
+    "titulo_es": "Fuzix Kernel 0.4: Mejoras en el Kernel, Soporte de Procesadores y Formatos Ejecutables",
+    "resumen": "El lanzamiento 0.4 del kernel Fuzix introduce mejoras significativas, incluyendo un núcleo de kernel sin cambios sustanciales pero con correcciones de errores e interfaces mejoradas. La capa de red ha sido completamente rediseñada para ser más modular, permitiendo su ejecución en un espacio de direcciones separado en máquinas de 8 bits. Los formatos ejecutables han sido unificados para los procesadores 8080, 8085 y Z80, permitiendo la ejecución directa de binarios 8080 en 8085 y Z80. Los formatos para 68HC11 y 6803 también presentan diferencias, pero la ABI de syscalls permite la compatibilidad de binarios 6803 en 68HC11. Los binarios de 32 bits ahora utilizan el formato a.out con extensiones para mapas de relocalización, reemplazando el formato binflt de Linux. El proceso de compilación se ha simplificado con un objetivo 'make diskimage' que integra todas las partes del sistema de arranque, aunque el entorno de compilación aún presenta desafíos con toolchains a menudo oscuros o inestables. Se han resuelto problemas de nomenclatura relacionados con el proyecto N8VEM, ahora renombrado 'Retrobrew', y se ha establecido una distinción clara entre RC2014 (producto) y RCbus (estándar del bus). Se ha añadido soporte para procesadores Hitachi 6303 y Motorola 6803 con el compilador CC68, y para la línea de procesadores 6800 con GCC, además de mejoras en el soporte para Motorola 68000 series. El soporte para 65C816 se realiza tratándolo como un 65C02 con extensiones debido a la falta de un compilador abierto.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47767397,
+    "url": "https://nand2mario.github.io/posts/2026/80386_memory_pipeline/",
+    "score": 107,
+    "time": 1776182449,
+    "titulo_es": "Experimentación con Retro Gaming y Computación: El Núcleo FPGA 386 y su Pipeline de Memoria",
+    "resumen": "El artículo detalla la construcción y el funcionamiento de un núcleo FPGA 386 capaz de ejecutar DOS y aplicaciones clásicas como Norton Commander y Doom, funcionando actualmente a 75 MHz en una DE10-Nano. Se enfoca en el subsistema crítico de rendimiento del pipeline de memoria del 80386. Explora cómo el procesador 80386 maneja la traducción de direcciones virtuales a físicas de manera eficiente, a pesar de la aparente complejidad del proceso (cálculo de dirección efectiva, reubicación de segmento, verificación de límites, búsqueda TLB y lecturas de tabla de páginas). Se destaca que el 80386 logra esto mediante un pipeline de memoria cuidadosamente solapado, que utiliza pre-cálculo, pipelining y paralelismo para acortar drásticamente el caso común, logrando completar la ruta de acceso a memoria en aproximadamente 1.5 ciclos. Se examina la microarquitectura del pipeline de acceso a memoria, cómo la microcódigo impulsa el proceso y los logros de temporización en RTL. Se desglosa el proceso de segmentación y paginación, mostrando cómo se transforman las direcciones lógicas en lineales y luego en físicas. Se enfatiza la urgencia del pipeline de memoria, observando cómo la ejecución de instrucciones consecutivas deja muy poco margen para la latencia, requiriendo que el hardware de direcciones reaccione inmediatamente en los límites de instrucción.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47812341,
+    "url": "https://victorpoughon.github.io/interval-calculator/",
+    "score": 300,
+    "time": 1776474943,
+    "titulo_es": "Calculadora de Uniones de Intervalos",
+    "resumen": "Este artículo presenta una calculadora que implementa la Aritmética de Uniones de Intervalos. Esta aritmética extiende la aritmética de intervalos tradicional al permitir la representación de conjuntos de números como uniones disjuntas de intervalos. La principal ventaja de la aritmética de uniones de intervalos es que se mantiene cerrada, incluso al permitir la división por intervalos que contienen cero, y satisface la propiedad de inclusión: el resultado de una expresión calculada sobre números reales seleccionados de las uniones de entrada estará contenido en la unión de intervalos resultante. La calculadora soporta expresiones complejas, anidamiento de intervalos (donde los intervalos anidados se interpretan como el límite superior del intervalo exterior) y opera con precisión IEEE 754 de doble precisión, aplicando redondeo hacia afuera para garantizar que los resultados contengan el valor verdadero (con precisión infinita). Soporta tanto intervalos [a, b] como números sueltos (interpretados como intervalos [n, n]). La calculadora está disponible en modo de precisión completa y sin él, y tanto el motor como la calculadora son de código abierto.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 47767398,
+    "url": "https://lisyarus.github.io/blog/posts/its-ok-to-compare-floating-points-for-equality.html",
+    "score": 201,
+    "time": 1776182449,
+    "titulo_es": "No está bien comparar números de punto flotante usando épsilons.",
+    "resumen": "El artículo argumenta que la práctica común de comparar números de punto flotante para igualdad utilizando una pequeña tolerancia (epsilon) es a menudo una mala solución. El autor, con más de 15 años de experiencia en dominios como geometría, gráficos y física, afirma haber encontrado solo uno o dos casos donde la comparación con epsilon es realmente necesaria. Generalmente, existen soluciones mejores, ya sea reestructurando el código o comparando directamente los números de punto flotante (x == y). Se explica que los números de punto flotante, aunque inexactos debido a la representación finita de los números reales, son deterministas y siguen estándares. La \"inexactitud\" no implica aleatoriedad, sino aproximaciones cercanas al resultado verdadero. Las operaciones aritméticas con punto flotante producen el resultado representable más cercano al valor exacto, aunque la asociatividad no siempre se cumple (ej. (a+b)+c != a+(b+c)). El problema principal con las comparaciones epsilon, según el autor, radica en que enmascaran la verdadera naturaleza de la inexactitud, pueden ser problemáticas en diferentes partes de un programa que usan distintas tolerancias (ej. distancia de Manhattan vs. L-inf), y a menudo hay enfoques más simples y robustos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47804423,
+    "url": "https://danielmangum.com/posts/floating-point-cortex-m/",
+    "score": 52,
+    "time": 1776421969,
+    "titulo_es": "Comprensión de las ABI de punto flotante en Arm y su impacto en el desarrollo de microcontroladores",
+    "resumen": "El artículo explora las diferencias entre las ABI de punto flotante 'hard', 'softfp' y 'soft' en procesadores Arm, específicamente en el contexto del desarrollo para microcontroladores como el nRF52840 y el ESP32-S3. Detalla cómo el compilador Arm utiliza registros de propósito general (GPRs) o registros de punto flotante (FPU) para pasar argumentos a subrutinas, dependiendo de la ABI configurada. Se explica que las ABI 'hard' permiten el uso de registros de punto flotante para argumentos y operaciones, mientras que 'softfp' permite operaciones de punto flotante pero pasa argumentos a través de GPRs, y 'soft' restringe tanto el paso de argumentos como las operaciones de punto flotante, recurriendo a emulación por software. El texto ilustra cómo mezclar estas ABI puede causar errores de enlazador y cómo configurar el compilador, usando el ejemplo de Zephyr y el nRF52840, para habilitar o deshabilitar la unidad de punto flotante (FPU) y seleccionar la ABI adecuada. Se muestra el impacto de la configuración de la FPU en la compilación y el uso de funciones de librería para operaciones de punto flotante.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47817349,
+    "url": "https://github.com/NikolayS/pgque",
+    "score": 117,
+    "time": 1776531046,
+    "titulo_es": "PgQue: Una cola de eventos duradera en PostgreSQL sin hinchazón",
+    "resumen": "PgQue es una solución de cola de eventos diseñada para PostgreSQL que emula el modelo de log de Kafka en lugar de una cola de mensajes tradicional. Se implementa puramente en SQL y PL/pgSQL, lo que permite su uso en cualquier plataforma PostgreSQL 14+ (gestionada o autoalojada) sin extensiones C ni daemons externos. A diferencia de otras colas en base de datos que usan `SKIP LOCKED` y operaciones `UPDATE`/`DELETE` que generan hinchazón de tabla y presión de VACUUM, PgQue utiliza un modelo de lotes basado en snapshots y rotación de tablas con `TRUNCATE`. Esto evita la generación de tuplas muertas, la presión de VACUUM y la degradación del rendimiento bajo carga sostenida. Cada consumidor mantiene su propio cursor independiente sobre un log de eventos compartido, permitiendo el fan-out nativo sin duplicación de datos ni límites de lote atómicos. El compromiso principal es una latencia de entrega de extremo a extremo de aproximadamente 1-2 segundos. Es ideal para escenarios que priorizan la estabilidad y la ausencia de hinchazón bajo carga intensa, en lugar de la latencia de dispatch de un solo dígito de milisegundos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47778938,
+    "url": "https://eshelyaron.com/posts/2026-04-15-towards-trust-in-emacs.html",
+    "score": 182,
+    "time": 1776260955,
+    "titulo_es": "Presentación de trust-manager: un paquete de gestión de confianza para Emacs",
+    "resumen": "El artículo introduce 'trust-manager', un nuevo paquete para Emacs diseñado para simplificar y mejorar la gestión de la confianza de archivos. Históricamente, Emacs (hasta la versión 30) trataba todos los archivos como confiables, lo que llevaba a vulnerabilidades de seguridad como la ejecución de código arbitrario (CVE-2024-53920). Emacs 30 introdujo un mecanismo explícito de confianza, marcando todos los archivos como no confiables por defecto para mejorar la seguridad. Sin embargo, esta medida por defecto causa fricción, ya que funciones importantes como el backend Emacs Lisp de Flymake se deshabilitan en archivos no confiables, y los usuarios carecen de una forma sencilla de marcar un archivo como confiable al instante. Esto ha llevado a muchos usuarios a deshabilitar el mecanismo de confianza o a configuraciones excesivamente permisivas. 'trust-manager' aborda este problema permitiendo la concesión de confianza 'just-in-time' (justo a tiempo) con mínima fricción. Al habilitar 'trust-manager-mode', el paquete pregunta al usuario si confía en un proyecto la primera vez que visita un archivo de él, recordando la decisión para futuras visitas. También confía automáticamente en archivos y directorios esenciales como el init file, custom file y directorios en el load-path. Adicionalmente, introduce un indicador en la barra de estado para buffers no confiables (un '?' rojo) que permite al usuario marcar el buffer como confiable con un clic, re-habilitando las funciones afectadas. Las preferencias de confianza se almacenan en 'trust-manager-trust-alist' y pueden ser gestionadas mediante comandos dedicados.",
     "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47806725,
+    "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+    "score": 1196,
+    "time": 1776438249,
+    "titulo_es": "Claude Design: Colaboración Visual Asistida por IA para Diseño y Prototipado",
+    "resumen": "Claude Design es un nuevo producto de Anthropic Labs que permite a los usuarios colaborar con Claude Opus 4.7 para crear trabajos visuales pulidos, incluyendo diseños, prototipos, diapositivas, one-pagers y más. La herramienta está impulsada por el modelo de visión más avanzado de Anthropic y está disponible para suscriptores de Claude Pro, Max, Team y Enterprise. Permite a diseñadores experimentados explorar múltiples direcciones y a no diseñadores (fundadores, PMs, marketers) producir material visual a partir de descripciones. Claude Design facilita la exploración amplia y la producción de trabajo visual a través de la conversación, comentarios en línea, ediciones directas y deslizadores personalizados. Puede aplicar automáticamente sistemas de diseño de equipo leyendo código y archivos de diseño, asegurando consistencia. Las funcionalidades incluyen la importación desde indicaciones de texto, imágenes, documentos (DOCX, PPTX, XLSX), bases de código y captura web. Permite refinamiento con controles granulares como comentarios inline y ajustes de diseño en vivo. Soporta colaboración con opciones de compartir a nivel de organización. Los diseños pueden exportarse como URLs internas, carpetas, o a formatos como Canva, PDF, PPTX y HTML. Una vez finalizado el diseño, se puede transferir a Claude Code para su desarrollo. Se planea una mayor integración con herramientas externas. El acceso está incluido en los planes de suscripción, con opciones de uso adicional. Para organizaciones Enterprise, debe ser habilitado por los administradores.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47802930,
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/LittleLanguagesVsOpPrecedence",
+    "score": 15,
+    "time": 1776406335,
+    "titulo_es": "Bloqueo de User-Agent genéricos para mitigar el spam de crawlers de LLM",
+    "resumen": "El artículo describe una estrategia para mitigar el impacto de crawlers de alto volumen, que a menudo se utilizan para entrenar modelos de lenguaje grandes (LLM), mediante el bloqueo de peticiones HTTP con encabezados User-Agent genéricos o sospechosos. El autor, un administrador de un blog y wiki (Wandering Thoughts y CSpace), ha implementado esta medida debido a la plaga de crawlers que se hacen pasar por agentes legítimos o utilizan identificadores demasiado amplios (ej. \"Go-http-client/1.1\"). Se establece la política de que todos los encabezados User-Agent deben identificar claramente su propósito y, para los no navegadores, deben especificar el software y el usuario que lo emplea. Se considera inaceptable un User-Agent que solo indique compatibilidad sin una URL explícita que describa la actividad o el software (ej. \"Mozilla/5.0 (compatible; mysoftware)\"). El objetivo es reducir la carga en los servidores y mejorar la experiencia de los usuarios legítimos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47817581,
+    "url": "https://spectrum.ieee.org/state-of-ai-index-2026",
+    "score": 92,
+    "time": 1776532364,
+    "titulo_es": "La inversión en IA se dispara mientras el impacto de la IA en el empleo y la percepción pública sigue siendo mixto",
+    "resumen": "El artículo, basado en el informe AI Index 2026 de la Universidad de Stanford, detalla el rápido avance de la Inteligencia Artificial (IA) y su creciente inversión, especialmente por parte de grandes empresas que se dirigen a OPAs. Se observa un liderazgo de Estados Unidos en la liberación de modelos de IA, aunque China está acortando distancias. La mayoría de los modelos notables provienen de la industria, lo que representa una tendencia a largo plazo. Paralelamente, China lidera en el despliegue de robótica industrial. La capacidad de cómputo para IA se ha triplicado anualmente desde 2022, beneficiando principalmente a NVIDIA, seguida por Amazon y Google. Sin embargo, la IA genera preocupación por su impacto ambiental, con emisiones de carbono significativas asociadas al entrenamiento de modelos de lenguaje grandes, como Grok 4, cuyas estimaciones de emisiones varían considerablemente pero apuntan a cifras elevadas. Las emisiones por inferencia también aumentan, con una gran disparidad en eficiencia entre modelos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47819738,
+    "url": "https://www.nature.com/articles/d41586-026-01099-2",
+    "score": 19,
+    "time": 1776548326,
+    "titulo_es": "La detección de un ave rara resalta la promesa de la \"ADN ambiental\"",
+    "resumen": "El artículo explora el campo emergente del ADN ambiental (eDNA) aéreo, que implica la detección de material genético en el aire. Los científicos están aprendiendo a medir el ADN aéreo para evaluar la biodiversidad, monitorear especies, detectar invasores y evaluar esfuerzos de conservación. Si bien la técnica muestra un gran potencial para vincular la biodiversidad global con análisis rápidos y de campo, existen desafíos como la tasa de decaimiento y la distancia de viaje del ADN aéreo. También existen preocupaciones éticas sobre la privacidad, como la posibilidad de revelar etnia o trastornos genéticos. El artículo detalla cómo el ADN puede dispersarse en el aire desde diversas fuentes (exhalaciones, escamas, etc.) y permanecer en partículas de polvo, viajando distancias considerables. Investigaciones tempranas en invernaderos y análisis de aire descubrieron ADN más allá de lo esperado, lo que sugiere el potencial de eDNA aéreo para mapear comunidades enteras. Un descubrimiento clave fue la detección de ADN de tigre cerca de Cambridge, lo que alertó a la comunidad científica sobre las amplias aplicaciones de esta tecnología.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 47817639,
+    "url": "https://www.johndcook.com/blog/2026/04/17/fp4/",
+    "score": 48,
+    "time": 1776532862,
+    "titulo_es": "Números de punto flotante de 4 bits: Explorando el formato FP4",
+    "resumen": "El artículo explora la necesidad y la implementación de formatos de números de punto flotante de baja precisión, específicamente el formato FP4 (4 bits), impulsada por las demandas de las redes neuronales y la inteligencia artificial. Contrasta los formatos tradicionales de 32 y 64 bits con las necesidades emergentes de menor precisión para optimizar el uso de memoria en modelos con un gran número de parámetros. Se detallan las diferentes configuraciones del formato FP4 (E3M0, E2M1, E1M2, E0M3), explicando la notación ExMy, el papel del bit de signo, el sesgo (bias) en la interpretación del exponente y la fórmula de conversión a un valor real. Se destaca el formato E2M1 como el más común y soportado por hardware de Nvidia. Se discute la representación de cero y se menciona la existencia de herramientas como la biblioteca Pychop para emular estos formatos reducidos. Finalmente, se alude a la existencia de otros formatos de 4 bits, como NF4, y se especula sobre las razones detrás de las elecciones de formato por parte de los fabricantes de hardware.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47820046,
+    "url": "https://www.bbc.com/future/article/20260417-fatherhood-how-the-male-brain-and-body-prepare-for-childcare",
+    "score": 138,
+    "time": 1776551087,
+    "titulo_es": "La Biología del Padre: Cambios Hormonales y Neurales en la Paternidad",
+    "resumen": "El artículo explora las transformaciones biológicas, hormonales y neurales que experimentan los hombres al convertirse en padres, de manera análoga a las mujeres con la maternidad. Investigaciones iniciales en animales y estudios posteriores en humanos, como el liderado por Lee Gettler en Filipinas, demuestran que la paternidad activa y el cuidado infantil conllevan cambios significativos en los niveles de testosterona, vasopresina y prolactina. Estos hallazgos sugieren que la capacidad de ser un padre protector y nutridor tiene una base biológica profundamente arraigada, no es meramente una decisión cultural. La implicación clave es que el padre involucrado experimenta una transición biológica que se intensifica con un mayor compromiso en el cuidado del bebé.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 47788207,
+    "url": "https://sandboxspirit.com/blog/simple-geometry-of-roads/",
+    "score": 135,
+    "time": 1776308990,
+    "titulo_es": "Generación de carreteras mediante perfiles y arcos circulares",
+    "resumen": "El artículo describe un método para la generación procedural de carreteras en gráficos por computadora, utilizando un enfoque basado en 'perfiles' que actúan como puntos de control, similar a los puntos de control de las splines de Bézier. La geometría de la carretera se interpola a partir de estos perfiles. El problema principal se reduce a conectar dos perfiles (representados por puntos y vectores de dirección) con arcos y líneas suaves y paralelos. Se detalla una solución geométrica que utiliza la construcción de un 'filete de dos líneas', donde la carretera se compone de un arco circular que se une tangencialmente a la dirección del primer perfil, seguido de una línea recta que se une tangencialmente a la dirección del segundo perfil. Esta construcción garantiza que los arcos sean paralelos siempre que los perfiles tengan la misma longitud.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47810533,
+    "url": "https://www.rtrvr.ai/blog/ai-subroutines-zero-token-deterministic-automation",
+    "score": 40,
+    "time": 1776459798,
+    "titulo_es": "Grabación y Reproducción Determinista de Tareas de Navegador para Agentes Web",
+    "resumen": "El artículo presenta una arquitectura para grabar tareas de navegador una vez y reproducirlas como herramientas internas de un agente web. La clave de la solución es que tanto la grabación como la reproducción ocurren dentro del propio navegador del usuario, propagando automáticamente la autenticación (cookies, tokens CSRF, etc.) sin necesidad de extracción o reconstrucción de sesiones. Esto evita el alto costo, la latencia y el determinismo inherente a los enfoques basados en APIs externas o scrapers de terceros. Adicionalmente, se aborda el problema del ruido en las solicitudes de red, implementando un mecanismo de clasificación y filtrado para seleccionar las solicitudes más relevantes antes de enviarlas al LLM. Se priorizan las interacciones de primera parte y mutables, y se incluye un mecanismo de \"interruptor de circuito\" para evitar la reproducción de solicitudes que dependen de identificadores volátiles (como `queryId` o `doc_id`), optando por una reproducción basada puramente en el DOM en tales casos para garantizar la fiabilidad a largo plazo.",
+    "categoria": "Desarrollo de Software"
   }
 ]
