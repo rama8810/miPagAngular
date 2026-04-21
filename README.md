@@ -22,6 +22,7 @@ A diferencia de las aplicaciones tradicionales, este proyecto utiliza un flujo d
 Se han implementado flujos de trabajo específicos para mantener la integridad del repositorio y sincronizar la automatización del bot de noticias.
 
 -  **CI/CD (GitHub Actions)**
+
 **deploy.yml:** Automatiza la compilación y publicación en GitHub Pages.
 
 **update-news.yml:** Ejecuta el Cron Job diario para la actualización de datos mediante IA.
