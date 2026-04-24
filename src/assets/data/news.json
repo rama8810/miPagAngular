@@ -1,254 +1,299 @@
 [
   {
-    "id": 47872324,
-    "url": "https://crawshaw.io/blog/building-a-cloud",
-    "score": 355,
-    "time": 1776919459,
-    "titulo_es": "Por qué estoy construyendo exe.dev: Una visión personal sobre el futuro de la nube",
-    "resumen": "El autor describe su motivación para crear exe.dev, criticando las abstracciones actuales de la computación en la nube. Argumenta que las máquinas virtuales (VM) modernas están mal diseñadas al estar ligadas rígidamente a recursos de CPU/memoria, y cuestiona las limitaciones de los sistemas PaaS y el rendimiento de los dispositivos de almacenamiento en bloque remotos. Su objetivo es devolver la potencia y flexibilidad de la computación tradicional a la infraestructura moderna.",
+    "id": 47887683,
+    "url": "https://www.bbc.com/news/articles/c4gx1n0dl9no",
+    "score": 25,
+    "time": 1777022277,
+    "titulo_es": "Policía de Corea del Sur arresta a un hombre por difundir una imagen generada por IA que desvió la búsqueda de un lobo fugitivo",
+    "resumen": "Un ciudadano de 40 años fue detenido tras utilizar herramientas de inteligencia artificial para crear una imagen falsa de un lobo escapado en Daejeon. El contenido sintético indujo al error a las autoridades, quienes emitieron alertas de emergencia y desviaron operativos de búsqueda basados en la desinformación. El caso destaca las implicaciones legales del uso malintencionado de IA generativa, resultando en una investigación por obstrucción de funciones gubernamentales mediante engaño, identificada gracias al análisis de registros de uso de software de IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47884971,
+    "url": "https://api-docs.deepseek.com/",
+    "score": 974,
+    "time": 1776999681,
+    "titulo_es": "Compatibilidad de la API de DeepSeek con los formatos de OpenAI y Anthropic",
+    "resumen": "La API de DeepSeek mantiene total compatibilidad con los formatos y SDKs de OpenAI y Anthropic mediante ajustes de configuración. Se establece un calendario de depreciación para los modelos deepseek-chat y deepseek-reasoner programado para julio de 2026, los cuales corresponden actualmente a las versiones 'v4-flash' con y sin modo de razonamiento. El acceso requiere una clave API y soporta tanto respuestas estándar como en streaming.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47887334,
+    "url": "https://github.com/matz/spinel",
+    "score": 43,
+    "time": 1777019327,
+    "titulo_es": "Spinel: Compilador de Ruby a código nativo con inferencia de tipos de programa completo",
+    "resumen": "Spinel es un compilador autoalojado que traduce código fuente de Ruby a ejecutables nativos mediante la generación de código C optimizado. Utiliza inferencia de tipos en todo el programa para alcanzar un rendimiento aproximadamente 11.6 veces superior a miniruby en cargas de trabajo intensivas. El sistema incluye un recolector de basura (GC) de tipo mark-and-sweep, soporte para fibras (concurrencia cooperativa), asignación en pila para objetos pequeños y optimizaciones avanzadas para cadenas y hashes. Está diseñado para compilar un subconjunto robusto de Ruby, enfocándose en la eficiencia de ejecución y la reducción de asignaciones de memoria.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 47846688,
-    "url": "https://simonomi.dev/blog/color-code-your-bytes/",
-    "score": 84,
-    "time": 1776765129,
-    "titulo_es": "Por qué los editores hexadecimales necesitan más colores",
-    "resumen": "El artículo analiza cómo el uso de esquemas de color avanzados en editores hexadecimales mejora drásticamente la capacidad del cerebro humano para identificar patrones en datos binarios. La autora propone un sistema de 18 grupos cromáticos basados en el nible superior de cada byte, permitiendo distinguir visualmente estructuras complejas como enteros de 32 bits, gradientes de offsets, datos comprimidos mediante algoritmos de Huffman y mapas de bits, facilitando así las tareas de ingeniería inversa y depuración.",
+    "id": 47886773,
+    "url": "https://www.cambra.dev/blog/announcement/",
+    "score": 54,
+    "time": 1777015351,
+    "titulo_es": "Hacia un modelo de programación coherente para el desarrollo de software de internet",
+    "resumen": "El artículo analiza la desconexión entre la elegancia de los lenguajes de programación y la tediosa realidad de operar infraestructuras de datos complejas. El autor sostiene que la fragmentación tecnológica actual genera sistemas frágiles y propone un nuevo modelo de programación a través de su proyecto 'Cambra'. El objetivo es unificar el stack de software de internet en un sistema coherente que elimine la complejidad accidental, permitiendo a los ingenieros razonar mejor sobre sus programas y automatizar tareas de verificación y optimización mediante el uso de modelos abstractos más potentes.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47886517,
+    "url": "https://ynarwal.github.io/how-llms-work/",
+    "score": 42,
+    "time": 1777013333,
+    "titulo_es": "Una guía completa sobre cómo se construyen los grandes modelos de lenguaje",
+    "resumen": "El artículo describe el ciclo de vida técnico de un LLM, abarcando desde la recolección de datos masivos y el filtrado en datasets de alta calidad como FineWeb, hasta el proceso de tokenización mediante Byte Pair Encoding (BPE). Explica el pre-entrenamiento de arquitecturas Transformer para la predicción estadística de tokens y la importancia del post-entrenamiento, que incluye el Ajuste Fino Supervisado (SFT) y el Aprendizaje por Refuerzo a partir de Retroalimentación Humana (RLHF) para transformar un modelo base en un asistente funcional.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47878905,
+    "url": "https://www.anthropic.com/engineering/april-23-postmortem",
+    "score": 744,
+    "time": 1776966518,
+    "titulo_es": "Investigación y resolución de la degradación de calidad en Claude Code",
+    "resumen": "El artículo detalla un análisis técnico sobre la pérdida de calidad en Claude Code, vinculada a tres cambios específicos: el ajuste del parámetro de esfuerzo de razonamiento (test-time-compute) a un nivel medio para reducir latencia, modificaciones en el SDK de agentes y una gestión agresiva del 'prompt caching' que eliminaba el historial de razonamiento en sesiones inactivas. Como solución, se restauraron los niveles de esfuerzo más altos por defecto y se ajustaron las políticas de persistencia de caché para recuperar la inteligencia del modelo sin exceder los límites de latencia.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47876043,
+    "url": "https://socket.dev/blog/bitwarden-cli-compromised",
+    "score": 755,
+    "time": 1776953828,
+    "titulo_es": "Compromiso del CLI de Bitwarden en una campaña de ataque a la cadena de suministro de Checkmarx",
+    "resumen": "Se ha detectado una vulnerabilidad crítica en la versión 2026.4.0 del paquete npm de Bitwarden CLI (@bitwarden/cli), originada por un compromiso en las GitHub Actions de su pipeline CI/CD. El ataque inyectó código malicioso en el archivo 'bw1.js' para exfiltrar credenciales, secretos de nube y tokens de acceso. Esta campaña está vinculada técnicamente con el incidente de Checkmarx y utiliza infraestructura compartida para la exfiltración. Se recomienda la rotación inmediata de secretos de CI/CD, auditoría de logs de red hacia dominios sospechosos y la eliminación del paquete afectado en entornos de desarrollo y producción.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47885668,
+    "url": "https://felixbarbalet.com/familiarity-is-the-enemy/",
+    "score": 45,
+    "time": 1777006134,
+    "titulo_es": "Mis reflexiones sobre por qué los sistemas de conocimiento empresarial han fallado durante sesenta años y qué podría reemplazarlos finalmente",
+    "resumen": "El artículo analiza el fracaso histórico de los sistemas de gestión del conocimiento empresarial (EKM), argumentando que las empresas priorizan la 'seguridad' de comprar a grandes consultoras por encima de la innovación técnica. El autor destaca cómo la adopción actual de la IA en estos sistemas suele ser superficial ('añadir IA a la wiki') y repite errores del pasado. Se critica la brecha entre el valor potencial de los activos de información y el valor real extraído, señalando que la elección de la tecnología es causal en el éxito del sistema y que el mercado prefiere pagar por curvas de aprendizaje de grandes firmas en lugar de productos funcionales de empresas pequeñas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47882697,
+    "url": "https://github.com/refactoringhq/tolaria",
+    "score": 205,
+    "time": 1776981719,
+    "titulo_es": "Tolaria: Aplicación de escritorio para la gestión de bases de conocimientos en Markdown",
+    "resumen": "Tolaria es una herramienta de código abierto para macOS diseñada para gestionar bases de conocimiento personales mediante archivos Markdown. El proyecto está construido sobre un stack tecnológico moderno que incluye Tauri, React y TypeScript. Permite la gestión de grandes volúmenes de notas (más de 10,000) e incluye un entorno de desarrollo con modo 'mock' para el navegador y ejecución nativa, distribuido bajo la licencia AGPL-3.0.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47885377,
+    "url": "https://www.nature.com/articles/s41467-026-71264-8",
+    "score": 152,
+    "time": 1777003482,
+    "titulo_es": "El café influye en el eje microbiota-intestino-cerebro y en el rendimiento cognitivo de forma independiente a la cafeína",
+    "resumen": "Este estudio técnico analiza el impacto del café en el eje microbiota-intestino-cerebro, identificando cambios significativos en la composición del microbioma fecal y en los niveles de metabolitos como el GABA y ácidos fenólicos. Los hallazgos sugieren que el consumo de café altera la abundancia de especies como Cryptobacterium y Eggerthella, afectando funciones cognitivas como la memoria, la impulsividad y la reactividad emocional. La investigación destaca que gran parte de estos efectos son independientes de la cafeína y presentan cierta reversibilidad tras periodos de abstinencia, subrayando una conexión intrínseca entre los fitoquímicos del café y la salud neurobiológica.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 47881198,
+    "url": "https://joshblais.com/blog/using-the-internet-like-its-1999/",
+    "score": 165,
+    "time": 1776975269,
+    "titulo_es": "Usa el internet como si fuera 1999",
+    "resumen": "Análisis crítico sobre la degradación de la web contemporánea, la cual ha transitado de una arquitectura basada en protocolos abiertos y soberanía del usuario hacia ecosistemas cerrados, dominados por algoritmos de recomendación, interfaces saturadas de JavaScript y contenido sintético generado por modelos de lenguaje (LLM). El autor propone una vuelta técnica a la capa de protocolos (RSS, SMTP, XMPP) y la interacción directa con los datos para mitigar la polución de información, recuperando el control sobre la atención y la privacidad en el desarrollo y consumo de software web.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47881786,
+    "url": "https://developers.googleblog.com/torchtpu-running-pytorch-natively-on-tpus-at-google-scale/",
+    "score": 138,
+    "time": 1776977607,
+    "titulo_es": "TorchTPU: Integración Nativa de PyTorch en la Infraestructura de IA de Google TPU",
+    "resumen": "El artículo describe TorchTPU, una nueva pila de software diseñada para permitir que PyTorch, un popular framework de aprendizaje automático, funcione de manera nativa y eficiente en las Tensor Processing Units (TPUs) de Google. Dada la creciente necesidad de sistemas distribuidos y miles de aceleradores para modelos de IA a gran escala, TorchTPU se enfoca en la usabilidad, portabilidad y rendimiento. La integración se realiza a nivel profundo utilizando la interfaz \"PrivateUse1\" de PyTorch, priorizando la experiencia de ejecución 'eager' (impaciente). Se implementan tres modos de ejecución 'eager': Debug Eager (operación por operación, síncrona), Strict Eager (operación por operación, asíncrona) y Fused Eager (fusión automática de operaciones para optimizar la ejecución en el hardware TPU). La arquitectura del TPU se describe como una red integrada con Inter-Chip Interconnect (ICI) y unidades especializadas como TensorCores y SparseCores, que TorchTPU busca aprovechar al máximo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47875843,
+    "url": "https://biobank.rocher.lc",
+    "score": 130,
+    "time": 1776952683,
+    "titulo_es": "Exposición de Datos de UK Biobank en GitHub y el Uso de Notificaciones de Retirada por Derechos de Autor",
+    "resumen": "El artículo detalla cómo datos sensibles de participantes de UK Biobank, que incluyen información genética, de salud y estilo de vida, han sido expuestos accidentalmente en repositorios públicos de GitHub. A pesar de los estrictos acuerdos que prohíben compartir datos, investigadores y estudiantes han subido información a GitHub. UK Biobank ha respondido utilizando notificaciones de retirada por derechos de autor (DMCA), un mecanismo típicamente empleado para software pirata, para solicitar la eliminación de estos datos. El proceso ha resultado en 110 notificaciones dirigidas a 197 repositorios de código por 170 desarrolladores a nivel mundial. Se observa que estas notificaciones a menudo se centran en archivos específicos, como notebooks de Jupyter o R, archivos genéticos (PLINK, BGEN), y datasets tabulares (CSV, TSV), en lugar de repositorios completos, posiblemente para cumplir con los requisitos de las notificaciones de derechos de autor. La efectividad de estas notificaciones es cuestionable, y se ha demostrado que la re-identificación de participantes es posible incluso con información limitada. El artículo critica a UK Biobank por subestimar los riesgos de re-identificación y sugiere la necesidad de mayor humildad y colaboración con expertos en privacidad. La ausencia de un equivalente directo a la DMCA en el Reino Unido para brechas de privacidad limita la rapidez de acción de las plataformas. La actividad de las notificaciones se detuvo temporalmente y se reanudó tras la revelación pública de la exposición de datos por parte de The Guardian, lo que pone de manifiesto la inadecuación del enfoque actual para proteger la privacidad de los datos de salud.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47885596,
+    "url": "https://lwn.net/Articles/1069399/",
+    "score": 218,
+    "time": 1777005517,
+    "titulo_es": "Lanzamiento de Ubuntu 26.04 LTS (\"Resolute Raccoon\")",
+    "resumen": "Ubuntu 26.04 LTS \"Resolute Raccoon\" ha sido lanzado, introduciendo mejoras significativas en seguridad, rendimiento y usabilidad. Incluye cifrado de disco completo con respaldo de TPM, mayor uso de componentes seguros en memoria, controles de permisos de aplicaciones mejorados y soporte Livepatch para sistemas Arm. El lanzamiento coincide con las nuevas versiones de las distribuciones derivadas oficiales como Edubuntu, Kubuntu, Lubuntu, entre otras. Las versiones de escritorio, servidor, nube, WSL y Core recibirán 5 años de actualizaciones de mantenimiento, mientras que las demás distribuciones tendrán 3 años de soporte. Se menciona una solución para usuarios de Arch Linux con Xfce y gcr4 que implica añadir la unidad `gcr-ssh-agent.socket` a las unidades de usuario de systemd para gestionar la variable de entorno SSH_AUTH_SOCK.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 47877715,
+    "url": "https://drobinin.com/posts/my-phone-replaced-a-brass-plug/",
+    "score": 141,
+    "time": 1776961627,
+    "titulo_es": "Del campo de tiro a la cocina: automatizando la puntuación de disparos con visión por computadora",
+    "resumen": "El artículo narra la experiencia de un ingeniero de iOS que, motivado por su pasión por la cocina de caza, decidió aprender a cazar ciervos. Este proceso lo llevó a enfrentarse a la tarea de cazar y, posteriormente, a la necesidad de puntuar sus disparos de forma precisa. Inicialmente, el método manual de insertar tapones de latón en los agujeros de bala para determinar la puntuación era laborioso y propenso a errores, especialmente con disparos en las líneas de los anillos. Para automatizar este proceso, el autor recurrió a sus habilidades de desarrollo de software. Exploró el uso del framework Vision de Apple para la detección de objetos, pero se encontró con dificultades, ya que los detectores de objetos están entrenados para identificar elementos presentes, no para detectar la ausencia de material (agujeros). Las técnicas convencionales como la escala de grises o la inversión de imágenes tampoco fueron suficientes para manejar disparos en las líneas de los anillos. Finalmente, reconoció que un enfoque más robusto implicaría el modelado de la geometría conocida del objetivo para identificar la estructura de los anillos y luego buscar los agujeros dentro de ella. Al darse cuenta de que no era necesario reinventar la rueda, buscó soluciones existentes en el campo de la visión por computadora, descubriendo un artículo de investigación de 2012 sobre la puntuación automática de objetivos de tiro.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47865822,
+    "url": "https://github.com/Infisical/agent-vault",
+    "score": 107,
+    "time": 1776875128,
+    "titulo_es": "Agent Vault: Proxy de Credenciales HTTP y Bóveda para Agentes de IA",
+    "resumen": "Agent Vault es un broker de credenciales de código abierto de Infisical diseñado para gestionar de forma segura las credenciales de los agentes de IA. A diferencia de los métodos tradicionales que entregan credenciales directamente, Agent Vault opera como un proxy HTTP que se sitúa entre los agentes y las APIs a las que acceden. Los agentes nunca ven las credenciales; en su lugar, envían solicitudes a través del proxy local de Agent Vault, que inyecta las credenciales necesarias en la capa de red. Esto mitiga el riesgo de exfiltración de secretos, especialmente importante dado que los agentes de IA son sistemas no deterministas vulnerables a la inyección de prompts. El sistema soporta macOS y Linux, requiere Go 1.25+ y Node.js 22+, y expone una API HTTP (puerto 14321) y un proxy HTTPS transparente (puerto 14322). Se puede iniciar un agente con `agent-vault run` o dentro de contenedores con sandboxing avanzado para una seguridad reforzada. El proyecto se distribuye bajo la licencia MIT, con funcionalidades empresariales premium en el directorio `ee`. Se encuentra en desarrollo activo y se recomienda revisar la documentación de seguridad antes de su despliegue.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47846307,
+    "url": "https://www.hackster.io/news/a-diy-watch-you-can-actually-wear-8f91c2dac682",
+    "score": 189,
+    "time": 1776761553,
+    "titulo_es": "LILYGO T-Watch Ultra: Un smartwatch programable resistente con capacidades avanzadas",
+    "resumen": "El artículo presenta el T-Watch Ultra de LILYGO, un smartwatch de código abierto diseñado para superar las limitaciones de los wearables DIY en durabilidad y funcionalidad. Equipado con un microcontrolador ESP32-S3, 16MB de flash y 8MB de PSRAM, soporta tareas de IA gracias a sus instrucciones vectoriales. Incluye una pantalla AMOLED de 2.01 pulgadas, batería de 1100mAh, Wi-Fi, Bluetooth 5.0 LE, un transceptor LoRa SX1262 para comunicación de largo alcance, módulo GNSS MIA-M10Q, sensor Bosch BHI260AP, NFC, RTC, motor de vibración, ranura microSD, micrófono y amplificador de audio. La gestión de energía es asistida por un PMU AXP2101 y cuenta con un puerto USB Tipo-C. Su carcasa con certificación IP65 lo protege contra agua, polvo y derrames. Es programable a través de Arduino IDE, ESP-IDF y MicroPython, facilitando el desarrollo de aplicaciones complejas y sistemas de comunicación off-grid. Está disponible en pre-venta por $78.32.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47874647,
+    "url": "https://github.com/russellromney/honker",
+    "score": 261,
+    "time": 1776945191,
+    "titulo_es": "Honker: Extensión SQLite para Pub/Sub, Colas de Tareas y Streams de Eventos",
+    "resumen": "Honker es una extensión para SQLite y sus bindings de lenguaje que introduce semánticas de publicación/suscripción (NOTIFY/LISTEN) similares a las de PostgreSQL. Proporciona funcionalidades integradas de pub/sub duradero, colas de tareas y streams de eventos directamente en el archivo SQLite, eliminando la necesidad de sondeo (polling) por parte del cliente o de un demonio/broker externo. Funciona aprovechando las notificaciones del archivo WAL de SQLite para lograr una entrega de eventos push con baja latencia.  La principal ventaja de Honker es que permite que las operaciones de la cola de tareas y las escrituras de negocio se realicen dentro de la misma transacción de SQLite, garantizando la atomicidad y simplificando la gestión de datos y la infraestructura. Se integra con varios lenguajes como Rust, Python, Node.js, Bun, Ruby, Go, Elixir y C++, actuando como una capa fina sobre la extensión cargable de SQLite.  Ofrece características como la recuperación de trabajos atómica, iteradores asíncronos para reclamar tareas (`claim()`), gestión de offsets para streams y la capacidad de compartir canales de datos entre diferentes lenguajes gracias a esquemas compatibles. Honker está diseñado para escenarios donde SQLite es la base de datos principal y se requiere funcionalidad de cola de tareas y mensajería sin añadir complejidad de sistemas distribuidos adicionales.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47865868,
+    "url": "https://wheelfront.com/this-alberta-startup-sells-no-tech-tractors-for-half-price/",
+    "score": 2197,
+    "time": 1776875365,
+    "titulo_es": "Ursa Ag: Tractores con motores Cummins remanufacturados y mecánica simple desafían a los gigantes agrícolas",
+    "resumen": "El artículo describe cómo Ursa Ag, un fabricante canadiense, está ganando terreno en el mercado agrícola al ofrecer tractores con motores diésel Cummins de 12 válvulas remanufacturados y sistemas puramente mecánicos, eliminando la electrónica compleja y el software propietario. Estos tractores, que cuestan aproximadamente la mitad que los modelos de marcas establecidas como John Deere, apelan a agricultores frustrados por la dificultad y el costo de reparar maquinaria moderna, la cual requiere software especializado y autorizaciones de distribuidores. La simplicidad mecánica de los tractores de Ursa Ag, que utilizan bombas Bosch P-pumps sin ECU, permite reparaciones sencillas y rápidas por parte de mecánicos independientes o los propios agricultores, reduciendo drásticamente el tiempo de inactividad. A pesar de su pequeña escala y red de distribución limitada, Ursa Ag ha experimentado una alta demanda, especialmente en el mercado estadounidense, lo que plantea interrogantes sobre su capacidad para escalar la producción y distribución frente a los grandes fabricantes con cadenas de suministro y redes de concesionarios establecidas. La estrategia de Ursa Ag se basa en la premisa de que muchos agricultores prefieren la fiabilidad y reparabilidad de la tecnología probada y de bajo mantenimiento en lugar de la complejidad y el alto costo de las máquinas modernas cargadas de software.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47877644,
+    "url": "https://www.githubstatus.com/incidents/myrbk7jvvs6p",
+    "score": 249,
+    "time": 1776961315,
+    "titulo_es": "Reenviar OTP y notificaciones de incidentes",
+    "resumen": "El artículo describe funcionalidades relacionadas con el reenvío de códigos OTP (One-Time Password) y la configuración de notificaciones para incidentes. Incluye opciones para reenviar OTP después de un tiempo de espera, la especificación de una URL para webhooks, y la suscripción a actualizaciones de incidentes a través de correo electrónico y/o mensajes de texto. También menciona la recepción de guías técnicas y mejores prácticas por correo electrónico dos veces al mes. El enfoque está en la gestión de seguridad de autenticación (OTP) y la comunicación de eventos del sistema (notificaciones de incidentes).",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47873694,
+    "url": "https://ar-ms.me/thoughts/c-compiler-1-zig/",
+    "score": 163,
+    "time": 1776936047,
+    "titulo_es": "Primera incursión en el lenguaje de programación Zig",
+    "resumen": "El artículo describe el proceso de aprendizaje del lenguaje de programación Zig a través de la escritura de un proyecto llamado 'paella', inspirado en el libro 'Writing a C Compiler' de Nora Sandler. El autor detalla su experiencia explorando las características y la sintaxis de Zig, utilizando este esfuerzo como una forma de adquirir nuevas habilidades y pasar el tiempo durante un período de inactividad laboral. El contenido se presenta como una serie de escritos recopilados, con la posibilidad de futuras continuaciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47872324,
+    "url": "https://crawshaw.io/blog/building-a-cloud",
+    "score": 1063,
+    "time": 1776919459,
+    "titulo_es": "Por qué estoy construyendo exe.dev: Una perspectiva personal sobre la computación en la nube",
+    "resumen": "El autor, cofundador de una startup exitosa, inicia un nuevo proyecto, exe.dev, impulsado por su pasión intrínseca por hacer que las computadoras funcionen. Expresa una profunda insatisfacción con el estado actual de la computación en la nube, argumentando que las abstracciones proporcionadas (como las máquinas virtuales atadas a recursos específicos o las plataformas como servicio [PaaS] de propósito específico) son fundamentalmente inadecuadas y limitantes. Critica cómo las VMs están ligadas a CPU/memoria, impidiendo la flexibilidad de ejecutar múltiples instancias en el hardware disponible sin penalizaciones de rendimiento o complejidad adicional. Desaprueba las abstracciones de PaaS por ser propietarias, menos potentes que una computadora real y propensas a limitaciones imprevistas que obstaculizan el desarrollo. Señala el problema con el almacenamiento en la nube, donde los dispositivos de bloque remotos o S3 son inferiores a los discos locales para ciertas cargas de trabajo, especialmente en comparación con el rendimiento de los discos duros tradicionales. En esencia, el autor busca construir una plataforma que ofrezca una forma más directa, flexible y potente de interactuar con la computación, similar a la experiencia de tener control total sobre el hardware local, pero aprovechando las ventajas de la nube.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47849628,
+    "url": "https://semiengineering.com/advanced-packaging-limits-come-into-focus/",
+    "score": 41,
+    "time": 1776783040,
+    "titulo_es": "Los Límites Mecánicos y de Control de Procesos Moldean la Fabricación a Escala de Empaquetado de Semiconductores",
+    "resumen": "El artículo describe cómo los avances en el empaquetado de semiconductores, impulsados por las demandas de diseños de IA y HPC cada vez más complejos, están alcanzando los límites de los enfoques tradicionales. Ya no es la densidad de interconexión el único cuello de botella; los desafíos mecánicos y de control de procesos, como la deformación (warpage), la fragilidad del vidrio, el rendimiento de los enlaces híbridos y la variación en la unión temporal, se están volviendo críticos. Estos problemas surgen de la creciente heterogeneidad, tamaño y delgadez de las estructuras de empaquetado. La deformación, en particular, se destaca como un problema central, impulsado por desequilibrios termo-mecánicos y de rigidez inherentes a las capas de materiales con diferentes propiedades (como las temperaturas de transición vítrea y los coeficientes de expansión térmica). Estos factores, junto con el encogimiento por curado y la densidad metálica, complican la fabricación a escala y elevan el empaquetado de un detalle de implementación a un factor central en el rendimiento general del sistema, afectando la entrega de energía, la gestión térmica y la viabilidad económica.",
+    "categoria": "Hardware"
   },
   {
     "id": 47868867,
     "url": "https://techcrunch.com/2026/04/22/apple-fixes-bug-that-cops-used-to-extract-deleted-chat-messages-from-iphones/",
-    "score": 609,
+    "score": 857,
     "time": 1776889651,
-    "titulo_es": "Apple corrige fallo en iOS que permitía a fuerzas de seguridad recuperar mensajes eliminados",
-    "resumen": "Apple lanzó una actualización de seguridad para iOS y iPadOS tras descubrirse que el contenido de las notificaciones se almacenaba en una base de datos local del sistema por hasta un mes, incluso si los mensajes originales (de apps como Signal o WhatsApp) eran eliminados o configurados para desaparecer. Esta vulnerabilidad permitía el uso de herramientas forenses para extraer datos sensibles. La solución técnica impide que las notificaciones marcadas para eliminación persistan en la caché del sistema operativo, una medida que también fue aplicada de forma retroactiva a iOS 18.",
+    "titulo_es": "Apple lanza actualización para arreglar un error que permitía extraer mensajes borrados en iPhones",
+    "resumen": "Apple ha lanzado una actualización de software para iPhones y iPads que corrige una vulnerabilidad de seguridad. El error permitía a las fuerzas del orden público extraer mensajes que habían sido eliminados o configurados para desaparecer automáticamente de aplicaciones de mensajería. Esto ocurría porque las notificaciones que mostraban el contenido de los mensajes se almacenaban en caché en el dispositivo hasta por un mes. La corrección aborda un problema reportado previamente, donde se demostró que el FBI podía recuperar mensajes borrados de Signal de un iPhone utilizando herramientas forenses, debido a que el contenido de las notificaciones se guardaba en la base de datos del teléfono. La corrección fue solicitada por Signal y Apple la ha aplicado tanto en las versiones más recientes como en iOS 18.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 47866697,
-    "url": "https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/",
-    "score": 704,
-    "time": 1776879303,
-    "titulo_es": "Vulnerabilidad de privacidad en Firefox: Identificación de procesos mediante IndexedDB",
-    "resumen": "Se ha identificado una vulnerabilidad de privacidad en navegadores basados en Firefox que permite a sitios web derivar un identificador único, determinista y estable a nivel de proceso. El fallo reside en la API indexedDB.databases(), la cual devolvía metadatos en un orden que reflejaba estados internos de almacenamiento del proceso en lugar de una ordenación canónica. Esto permite el rastreo cruzado (cross-origin tracking) incluso en el modo de Navegación Privada y en Tor Browser, rompiendo las garantías de anonimato y persistiendo tras el cierre de pestañas o la creación de nuevas identidades. Mozilla ha solucionado el problema en las versiones Firefox 150 y ESR 140.10.0 (Bug 2024220) aplicando una ordenación neutral a los resultados antes de ser entregados a la API.",
-    "categoria": "Ciberseguridad"
+    "id": 47846688,
+    "url": "https://simonomi.dev/blog/color-code-your-bytes/",
+    "score": 575,
+    "time": 1776765129,
+    "titulo_es": "Coloreando Hex Dumps: Mejorando la Visualización de Datos Binarios",
+    "resumen": "El artículo explora la importancia de la visualización de datos binarios mediante el uso de resaltado por colores en editores hexadecimales. Contrasta la dificultad de identificar patrones en hexdumps monocromáticos con la claridad que ofrecen los resaltados de color. Se presentan varios ejemplos de archivos (incluyendo datos de juegos de Nintendo DS) donde los colores ayudan a distinguir patrones como secuencias de bytes, estructuras de datos (enteros de 32 bits), magic bytes, compresión Huffman y datos de bitmap. El autor propone un esquema de codificación por colores más granular que los enfoques comunes (que categorizan por rangos amplios como bytes nulos o ASCII imprimible), utilizando 18 grupos basados en el primer nybble (0x, 1x, etc.) más categorías para 00 y FF. Esta mayor granularidad permite la detección de patrones más complejos y la diferenciación de diferentes tipos de datos (como texto ASCII vs. UTF-8 no ASCII) que serían difíciles de percibir en un formato monocromático.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 47824943,
-    "url": "https://maurycyz.com/projects/mcufont/",
-    "score": 632,
-    "time": 1776611968,
-    "titulo_es": "Diseño de fuentes de píxeles ultra-compactas para microcontroladores de 8 bits",
-    "resumen": "El artículo describe el desarrollo de fuentes de matriz de puntos optimizadas para dispositivos con recursos extremadamente limitados, como el microcontrolador AVR128DA28. Se centra en una fuente de 5x5 píxeles que ocupa solo 350 bytes, analizando cómo el ancho constante facilita la programación y la gestión de memoria en pantallas OLED de baja resolución. Además, explora los límites de la legibilidad al reducir la escala a dimensiones de hasta 2x2 píxeles.",
+    "id": 47887448,
+    "url": "https://nltimes.nl/2026/04/24/netherlands-reaches-deal-european-cloud-company-decrease-us-tech-reliance",
+    "score": 6,
+    "time": 1777020290,
+    "titulo_es": "Gobierno holandés firma contrato con plataforma cloud europea STACKIT para reducir dependencia de empresas tecnológicas estadounidenses",
+    "resumen": "El gobierno de los Países Bajos ha firmado un acuerdo con STACKIT, una plataforma de nube europea, con el objetivo principal de migrar sus ministerios y servicios gubernamentales a una infraestructura cloud dentro de la Unión Europea. Esta iniciativa busca disminuir la dependencia de proveedores tecnológicos estadounidenses como Microsoft, Amazon y Google, quienes actualmente proveen la mayor parte de los sistemas digitales del gobierno. El contrato garantiza que los datos holandeses se almacenarán en la UE y establece mecanismos de control para asegurar el cumplimiento de los acuerdos por parte de STACKIT. Además, contempla cláusulas para escenarios en los que el proveedor pase a manos extranjeras, permitiendo al gobierno holandés modificar o rescindir el contrato. Esta medida responde a advertencias de reguladores sobre la excesiva dependencia de empresas estadounidenses, cuya legislación podría permitir al gobierno de EE. UU. acceder a datos almacenados en el extranjero. La decisión se alinea con una tendencia gubernamental más amplia hacia la soberanía digital y la resiliencia, buscando fortalecer la autonomía en la gestión de la infraestructura digital y estimular el mercado europeo de servicios en la nube bajo condiciones favorables para las organizaciones del gobierno central.",
     "categoria": "Hardware"
+  },
+  {
+    "id": 47875025,
+    "url": "https://tenphi.me/blog/why-i-spent-years-trying-to-make-css-states-predictable/",
+    "score": 66,
+    "time": 1776947838,
+    "titulo_es": "Tasty: Haciendo el estado del componente predecible",
+    "resumen": "El artículo aborda la complejidad del manejo del estado de los componentes en CSS, donde la especificidad y el orden de las reglas pueden llevar a conflictos inesperados y dificultades en la personalización. El autor introduce 'Tasty', una herramienta que permite definir estados de componentes de forma declarativa a través de un 'state map'. Tasty compila estas definiciones en selectores que no se solapan, eliminando la ambigüedad y los conflictos derivados de la cascada y la especificidad. Esto facilita la extensión y el mantenimiento de los componentes al prever la prioridad de los estados y hacerla inequívoca en el CSS generado, simplificando la gestión de interacciones complejas entre estados como hover, disabled, dark mode, breakpoints, etc.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 47848162,
+    "url": "https://www.scientificamerican.com/article/how-a-renaissance-gambling-dispute-spawned-probability-theory/",
+    "score": 111,
+    "time": 1776776399,
+    "titulo_es": "Cómo una disputa de juego renacentista engendró la teoría de la probabilidad",
+    "resumen": "El artículo explora cómo un antiguo problema sobre la división justa de las apuestas en un juego de azar interrumpido, conocido como el \"problema de los puntos\", impulsó el desarrollo de la teoría de la probabilidad. Inicialmente abordado por Luca Pacioli y Niccolò Fontana \"Tartaglia\" con soluciones insatisfactorias, el problema fue finalmente resuelto por Blaise Pascal y Pierre de Fermat. Su correspondencia y análisis sentaron las bases de la teoría de la probabilidad moderna y las metodologías de evaluación de riesgos, que siguen siendo fundamentales para la toma de decisiones en campos tan diversos como las finanzas y los seguros.",
+    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 47872452,
     "url": "https://arstechnica.com/staff/2026/04/our-newsroom-ai-policy/",
-    "score": 55,
+    "score": 196,
     "time": 1776921245,
-    "titulo_es": "Cómo Ars Technica utiliza, y no utiliza, la inteligencia artificial generativa",
-    "resumen": "Ars Technica define su postura oficial y ética sobre el uso de IA generativa en su flujo editorial. El medio enfatiza que la autoría de sus contenidos es estrictamente humana, relegando las herramientas de IA a funciones auxiliares de apoyo como corrección gramatical, análisis de datos y asistencia en investigación bajo supervisión directa. Se prohíbe explícitamente el uso de IA para la generación autónoma de artículos, imágenes o la atribución de fuentes sin verificación humana, garantizando la transparencia frente al lector.",
+    "titulo_es": "Cómo Ars Technica usa y no usa la IA generativa",
+    "resumen": "El artículo detalla la política editorial de Ars Technica respecto al uso de IA generativa. Se enfatiza que el contenido principal (reportajes, análisis, comentarios) es siempre de autoría humana. La IA se considera una herramienta de apoyo, utilizada bajo supervisión humana y con rigurosos estándares. Sus aplicaciones incluyen asistencia en investigación (resumen de documentos, búsqueda en datasets, verificación de hechos), sugerencias de edición (gramática, estilo, estructura), pero nunca para generar contenido original o atribuir declaraciones a fuentes. Cualquier uso de IA en el flujo de trabajo debe ser transparente para los editores, y los autores son plenamente responsables del contenido final. Se prohíbe explícitamente el uso de IA como autor, ilustrador o videógrafo, y no se publican afirmaciones basadas únicamente en resúmenes generados por IA. Si la IA es el tema del reportaje, su resultado se presentará como material de ejemplo con una divulgación clara.",
     "categoria": "IA"
   },
   {
-    "id": 47846718,
-    "url": "https://www.quantamagazine.org/what-physical-life-force-turns-biologys-wheels-20260420/",
-    "score": 78,
-    "time": 1776765349,
-    "titulo_es": "La ingeniería perfecta del motor flagelar bacteriano",
-    "resumen": "El artículo detalla los avances científicos en la comprensión del motor flagelar bacteriano, una máquina molecular biológica capaz de girar a cientos de revoluciones por segundo. Explica cómo la evolución ha perfeccionado este sistema de propulsión y procesamiento de señales, y cómo investigaciones recientes (finalizadas en 2026) han logrado descifrar su estructura mecánica, incluyendo los engranajes moleculares que operan mediante la 'fuerza motriz protónica'. El texto aborda el debate sobre la complejidad irreducible y confirma el origen evolutivo de esta sofisticada pieza de ingeniería biofísica.",
+    "id": 47881672,
+    "url": "https://www.githubstatus.com/incidents/zsg1lk7w13cf",
+    "score": 55,
+    "time": 1776977148,
+    "titulo_es": "Reenviar OTP y notificaciones de incidentes",
+    "resumen": "El artículo describe funcionalidades relacionadas con la seguridad y la usabilidad en el desarrollo de software. Específicamente, detalla mecanismos para reenviar Códigos de Verificación Única (OTP) que se envían por correo electrónico o mensaje de texto, incluyendo temporizadores de espera. También aborda la configuración de webhooks para notificaciones de incidentes, permitiendo a los usuarios suscribirse a actualizaciones por correo electrónico y/o mensajes de texto sobre la creación y resolución de incidentes, especialmente en el contexto de Pull Requests. Se menciona la posibilidad de recibir notificaciones por correo electrónico sobre fallos en endpoints.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47880189,
+    "url": "https://www.bbc.com/news/articles/c9d4zgnqpqeo",
+    "score": 210,
+    "time": 1776971380,
+    "titulo_es": "Hallazgo de Axolotl Mexicano en el Reino Unido: Implicaciones Científicas y de Conservación",
+    "resumen": "El artículo detalla el inusual descubrimiento de un axolotl mexicano (Ambystoma mexicanum), un anfibio en peligro crítico de extinción, en el Río Ogmore, Bridgend, Gales. Este hallazgo marca la primera documentación de un axolotl en estado salvaje en el Reino Unido, destacando la preocupante disminución de su población a nivel mundial (entre 50 y 1,000 individuos). El axolotl, llamado 'Dippy' por la niña que lo encontró, Evie, presentaba daños en cola y estómago, sugiriendo un posible abandono por parte de sus dueños. La niña, fascinada por la naturaleza, lo rescató y su familia lo llevó a casa para cuidarlo, investigando activamente sus necesidades específicas. El caso resalta la creciente popularidad de los axolotls como mascotas, impulsada por su aparición en videojuegos como Minecraft y Roblox, lo que a menudo lleva a una tenencia irresponsable y al abandono. Expertos del National Centre for Reptile Welfare (NCRW) y la RSPCA advierten sobre la dificultad de mantener a estos animales, ya que requieren condiciones ambientales, dietéticas y de comportamiento específicas, similares a las de su hábitat natural. El abandono de especies no nativas en la naturaleza es ilegal y perjudicial para el ecosistema. Los axolotls, como salamandras neoténicas, retienen sus características larvales (incluyendo branquias externas) durante toda su vida y poseen una notable capacidad de regeneración. La historia subraya la importancia de la educación sobre la tenencia responsable de mascotas exóticas y los esfuerzos de conservación para especies amenazadas.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 47866913,
-    "url": "https://nrehiew.github.io/blog/minimal_editing/",
-    "score": 367,
-    "time": 1776880277,
-    "titulo_es": "El problema del exceso de edición en la programación asistida por IA",
-    "resumen": "El artículo define y analiza el fenómeno del 'over-editing' (exceso de edición), donde los modelos de lenguaje de gran tamaño (LLMs) reescriben funciones completas y alteran estructuras de código innecesariamente para corregir errores menores. Este comportamiento genera dificultades en las revisiones de código y la mantenibilidad en entornos de desarrollo 'brown-field'. La investigación propone una nueva metodología de evaluación utilizando 400 problemas de BigCodeBench, corrompidos programáticamente para establecer un 'cambio mínimo' de referencia, permitiendo medir no solo la corrección funcional (Pass@1) sino también la fidelidad estructural del modelo al código original.",
-    "categoria": "IA"
+    "id": 47885042,
+    "url": "https://xark.es/b/mythos-firefox-150",
+    "score": 74,
+    "time": 1777000350,
+    "titulo_es": "Análisis Crítico de las Afirmaciones sobre IA en la Investigación de Vulnerabilidades: Mythos y Firefox",
+    "resumen": "El artículo evalúa de manera crítica las afirmaciones de Anthropic sobre su herramienta Mythos para la investigación de vulnerabilidades, particularmente en el contexto de Firefox. Contrasta el efecto mediático inicial con la evidencia pública disponible, señalando que las cifras de bugs encontrados (como los 271 en Firefox 150) no se traducen directamente en vulnerabilidades explotables de alto impacto. Se argumenta que el número total de hallazgos, que incluye una amplia gama de problemas de memoria y contribuciones de diversas fuentes, no debe confundirse con un listado limpio de vulnerabilidades críticas directamente descubiertas por la IA. El autor detalla el proceso de análisis de los commits, CVEs y bugs de Firefox, destacando la discrepancia entre las cifras publicitadas y la complejidad de la contabilidad real. Se enfatiza la importancia de distinguir entre encontrar un bug, una vulnerabilidad explotable y un componente de una cadena de explotación. La conclusión principal es que, si bien la IA claramente asiste en la identificación de problemas, la evidencia pública actual no respalda las afirmaciones más audaces sobre un cambio de paradigma inmediato en la ciberseguridad gracias a estas herramientas, y la interpretabilidad de los resultados para observadores externos es limitada.",
+    "categoria": "Ciberseguridad"
   },
   {
-    "id": 47871195,
-    "url": "https://tempest.homemade.systems",
-    "score": 78,
-    "time": 1776906152,
-    "titulo_es": "TEMPEST vs TEMPEST: Un análisis del código y la técnica",
-    "resumen": "Se describe una obra literaria técnica dedicada a la ingeniería inversa y el análisis de código de los videojuegos 'Tempest' (1981) y 'Tempest 2000' (1994). El estudio profundiza en la implementación de bajo nivel utilizando lenguajes ensamblador 6502 y Motorola 68K, desglosando mecánicas de juego y arquitectura de software histórica.",
+    "id": 47884872,
+    "url": "https://github.com/Nimaoth/Nev",
+    "score": 15,
+    "time": 1776998702,
+    "titulo_es": "Nev: Un editor de texto rápido y enfocado en el teclado para desarrollo",
+    "resumen": "Nev es un editor de texto de código abierto desarrollado en Nim, diseñado para ser rápido y controlado por teclado. Opera tanto en la terminal como en una interfaz gráfica (GUI). Integra características avanzadas inspiradas en Neovim, Helix y Zed, incluyendo herramientas para desarrolladores como integración con Git, resaltado de sintaxis mediante Treesitter, soporte para Language Server Protocol (LSP), depuración con Debug Adapter Protocol (DAP) y un sistema de plugins basado en WebAssembly (WASM). El proyecto se encuentra en desarrollo activo y se licencia bajo MIT. Se proporciona documentación para su instalación, uso (cheatsheet, guía de inicio) y contribución, además de un servidor de Discord para soporte.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47865661,
-    "url": "https://martinfowler.com/fragments/2026-04-02.html",
-    "score": 265,
-    "time": 1776874283,
-    "titulo_es": "Deuda cognitiva y el cambio de paradigma hacia la verificación en el desarrollo asistido por IA",
-    "resumen": "El artículo analiza cómo la proliferación de código generado por LLM está transformando la ingeniería de software, introduciendo el concepto de 'deuda cognitiva' y la 'teoría tri-sistema de cognición'. Plantea que, a medida que los agentes de IA reducen el coste de producción de código, el factor crítico y costoso se desplaza hacia la verificación y el diseño de sistemas de calidad. El autor destaca que el juicio humano sigue siendo insustituible para definir la 'corrección' en contextos complejos y propone una reorganización de los equipos de desarrollo centrada en la validación en lugar de la ejecución.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47871519,
-    "url": "https://antiz.fr/blog/archlinux-now-has-a-reproducible-docker-image/",
-    "score": 59,
-    "time": 1776909548,
-    "titulo_es": "Arch Linux lanza una imagen de Docker con reproducibilidad bit a bit",
-    "resumen": "Arch Linux ha alcanzado un hito técnico al ofrecer una imagen de Docker bit a bit reproducible bajo el tag 'repro'. Para garantizar este nivel de determinismo, se han eliminado las claves de pacman de la imagen base, requiriendo que los usuarios inicialicen el llavero manualmente mediante 'pacman-key'. La integridad del proceso se valida a través de la igualdad de digests y el uso de diffoci, representando un avance significativo en la iniciativa de builds reproducibles de la distribución.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 47866750,
-    "url": "https://zed.dev/blog/parallel-agents",
-    "score": 229,
-    "time": 1776879537,
-    "titulo_es": "Zed ahora permite orquestar múltiples agentes en paralelo con su nueva barra lateral de hilos",
-    "resumen": "El editor de código Zed ha introducido capacidades de orquestación de agentes paralelos, permitiendo que múltiples instancias de IA trabajen simultáneamente en una sola ventana. La nueva barra lateral de hilos ('Threads Sidebar') centraliza la gestión de proyectos, permitiendo controlar el acceso de los agentes a repositorios específicos y supervisar su ejecución en tiempo real. Esta actualización promueve la 'ingeniería agéntica', un enfoque que equilibra la artesanía del software con herramientas de IA, todo integrado en una interfaz optimizada a 120 fps que reorganiza los paneles del entorno para mejorar el flujo de trabajo con agentes.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47823655,
-    "url": "https://spritetm.github.io/plexus_20_emu/",
-    "score": 19,
-    "time": 1776599612,
-    "titulo_es": "Emulador del sistema Plexus P/20",
-    "resumen": "Este proyecto es un emulador fiel del servidor Unix Plexus P/20 de los años 80, que originalmente operaba con una placa base de procesador dual 68010 y SystemV Unix. Escrito en C y portado a la web mediante WebAssembly y Emscripten, el emulador integra xterm.js para la interfaz de terminal y funciona en tiempo real dentro del navegador.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47864393,
-    "url": "https://www.adriankrebs.ch/blog/design-slop/",
-    "score": 310,
-    "time": 1776869072,
-    "titulo_es": "Un intento de detectar patrones de diseño de IA en las páginas de Show HN",
-    "resumen": "El artículo analiza la proliferación de proyectos en Hacker News con una estética visual genérica atribuida al uso de herramientas de IA como Claude Code. El autor propone un método de puntuación técnica basado en la identificación de patrones recurrentes en CSS, tipografías, paletas de colores y estructuras de diseño (como bordes laterales coloreados) que caracterizan los resultados predeterminados de los LLM, evaluando 500 sitios para cuantificar la influencia de la inteligencia artificial en el desarrollo frontend actual.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47863324,
-    "url": "https://www.psu.edu/news/earth-and-mineral-sciences/story/treetops-glowing-during-storms-captured-film-first-time",
-    "score": 235,
-    "time": 1776864520,
-    "titulo_es": "Investigadores de Penn State documentan por primera vez descargas de corona en la naturaleza",
-    "resumen": "Expertos en meteorología y ciencia atmosférica de Penn State han logrado la primera observación directa de descargas de corona en entornos naturales. Estas descargas eléctricas, que ocurren en las puntas de las hojas de los árboles durante tormentas, emiten luz ultravioleta que descompone el vapor de agua para generar hidroxilo, el principal oxidante de la atmósfera. Este descubrimiento confirma una teoría de hace más de 70 años y subraya la importancia de los bosques en la limpieza de gases de efecto invernadero y contaminantes atmosféricos.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47871817,
-    "url": "https://www.scattered-thoughts.net/writing/borrow-checking-without-type-checking/",
-    "score": 60,
-    "time": 1776912917,
-    "titulo_es": "Zest: Un lenguaje experimental con semántica de valores mutable y préstamos dinámicos",
-    "resumen": "El artículo describe Zest, un lenguaje de programación experimental que implementa semántica de valores mutables mediante un sistema de propiedad única y préstamos dinámicos. A diferencia de lenguajes como Rust que usan comprobación estática, Zest explora un modelo híbrido inspirado en Julia y Zig, permitiendo la transición entre código interpretado dinámicamente y código compilado estáticamente. El autor se centra en resolver el problema de la eficiencia en el manejo de referencias y punteros interiores, utilizando semántica de movimiento para evitar copias costosas de memoria en el heap y mantener la integridad de los valores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47840252,
-    "url": "https://verus-lang.github.io/verus/guide/",
-    "score": 56,
-    "time": 1776717725,
-    "titulo_es": "Introducción a Verus: Verificación de Correctitud para Código Rust",
-    "resumen": "Verus es una herramienta de verificación estática diseñada para garantizar la correctitud funcional de sistemas de bajo nivel escritos en Rust. Utiliza pruebas de teoremas asistidas por computadora y el solucionador SMT Z3 para validar que el código cumple con especificaciones definidas por el usuario, como precondiciones y postcondiciones, sin añadir comprobaciones en tiempo de ejecución. La herramienta aprovecha el sistema de tipos avanzado de Rust, incluyendo tipos lineales y el sistema de préstamos (borrowing), para simplificar el razonamiento sobre la memoria y el aliasing, permitiendo tratar el código de sistemas como si fuera funcional para facilitar su verificación formal.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47872306,
-    "url": "https://craigmod.com/essays/ipad_neo/",
-    "score": 16,
-    "time": 1776919231,
-    "titulo_es": "El Futuro de iPadOS y MacBook: Una Visión Arquitectónica",
-    "resumen": "El artículo explora la evolución y el potencial futuro de los dispositivos iPad y MacBook desde una perspectiva arquitectónica de software y hardware. Se critica la dirección actual de iPadOS por mantener una experiencia de usuario limitada y no aprovechar completamente el potente hardware subyacente, comparándolo desfavorablemente con el potencial de un sistema operativo más abierto y capaz. Se aboga por un iPadOS que sea una experiencia táctil única, distinta de los sistemas operativos de escritorio tradicionales, centrándose en la interacción intuitiva y la creatividad. Paralelamente, se señala la demora en la aparición de máquinas tipo MacBook que integren el poder del hardware de iPad con la flexibilidad de macOS, criticando los MacBooks anteriores por su rendimiento deficiente y diseño limitado. La pieza destaca la tensión entre el hardware potente de los iPads y las restricciones del software, sugiriendo que los iPads actuales, a pesar de su potencia, son limitados para flujos de trabajo profesionales, con excepciones notables como Procreate. Finalmente, se vislumbra un futuro donde la línea entre estas plataformas se desdibuja, con la llegada de hardware Mac potente.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 47868063,
-    "url": "https://www.anthropocenemagazine.org/2025/04/new-study-compares-growing-corn-for-energy-to-solar-production-its-no-contest/",
-    "score": 88,
-    "time": 1776885706,
-    "titulo_es": "Transición de tierras de maíz para etanol a energía solar para aumentar la producción de energía y la seguridad alimentaria en EE. UU.",
-    "resumen": "Un estudio publicado en PNAS investiga la viabilidad de convertir tierras de cultivo de maíz destinadas a la producción de etanol en instalaciones de energía solar. Los investigadores identificaron que aproximadamente 391,137 hectáreas (3.2% del total) de tierras de maíz para etanol están estratégicamente ubicadas cerca de sitios de transmisión eléctrica. La conversión de esta pequeña porción de tierra a energía solar podría igualar la producción anual de energía de todo el cultivo de maíz para etanol en EE. UU., aumentando la participación de la energía solar en la matriz energética del 3.9% al 13%. El estudio también señala que cubrir el 46% de estas tierras con paneles solares podría alcanzar el objetivo de descarbonización de EE. UU. para 2050. Además, esta transición reduciría significativamente el uso de fertilizantes (nitrógeno y fósforo) y la necesidad de riego, al tiempo que liberaría tierras para otros usos, como la agricultura tradicional de alimentos o la plantación de vegetación nativa bajo los paneles.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47870709,
-    "url": "https://jtomschroeder.com/blog/approximating-tanh/",
-    "score": 44,
-    "time": 1776901598,
-    "titulo_es": "Encuesta de aproximaciones rápidas de tanh usando series de Taylor, aproximantes de Padé, splines y técnicas de manipulación a nivel de bits como K-TanH y Schraudolph",
-    "resumen": "El artículo explora diversas técnicas para aproximar eficientemente la función tangente hiperbólica (tanh), crucial en campos como las redes neuronales y el procesamiento de señales de audio, donde la velocidad es un factor determinante. Se analizan métodos matemáticos tradicionales como las series de Taylor y los aproximantes de Padé, así como las funciones spline que dividen el dominio en subintervalos. Además, se profundiza en aproximaciones que explotan la representación de punto flotante IEEE-754, incluyendo el método K-TanH, que utiliza operaciones enteras y una tabla de consulta (LUT) para lograr alta velocidad con una precisión aceptable, lo que lo hace ideal para implementaciones en hardware y aprendizaje profundo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47870108,
-    "url": "https://microsoft.github.io/teams-sdk/blog/bring-your-agent-to-teams/",
-    "score": 60,
-    "time": 1776896728,
-    "titulo_es": "Integración de Agentes y Bots con Microsoft Teams usando el SDK HTTP Server Adapter",
-    "resumen": "El artículo describe cómo integrar agentes y bots existentes (construidos con LangChain, Slack Bolt, o desplegados en Azure AI Foundry) con Microsoft Teams sin necesidad de reescribir su lógica principal. El enfoque se centra en el uso del adaptador HTTP Server de los Teams SDK, que permite que aplicaciones web existentes (como Express.js o FastAPI) se comuniquen con Teams a través de un endpoint específico (/api/messages). El SDK maneja la verificación de solicitudes y el enrutamiento de mensajes. Se detallan tres escenarios de integración: un bot de Slack compartido, una cadena de LangChain y un agente de Azure AI Foundry. El proceso de configuración implica obtener una URL pública (usando Dev Tunnels o ngrok), registrar el bot con el CLI del SDK (que automatiza la configuración de AAD, secretos y manifiestos), y finalmente cargar la aplicación en Teams para pruebas. La filosofía subyacente es que el servidor del desarrollador es independiente y el SDK actúa como una capa de adaptación para la integración con Teams.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47859861,
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260421-00/?p=112247",
-    "score": 213,
-    "time": 1776839885,
-    "titulo_es": "Por qué los compiladores x86 prefieren XOR para poner a cero un registro",
-    "resumen": "El artículo explora la preferencia histórica de los compiladores x86 por la instrucción 'xor eax, eax' para poner un registro a cero, en lugar de alternativas como 'mov eax, 0' o 'sub eax, eax'. Se explica que 'xor eax, eax' es la forma más compacta de lograr cero en x86 al evitar la codificación de constantes de cuatro bytes. Aunque 'sub eax, eax' tiene un comportamiento de flags similar o incluso mejor (limpiando AF, a diferencia de XOR que lo deja indefinido), 'xor' prevaleció debido a una combinación de factores históricos y percepción de 'inteligencia'. La ubicuidad de este idiom llevó a Intel a optimizar la detección de 'xor r, r' y 'sub r, r' en la decodificación de instrucciones, haciéndolas más eficientes, incluso hasta el punto de \"ejecutarse en cero ciclos\" al ser renombradas a un registro interno de cero. A pesar de las optimizaciones posteriores para ambas instrucciones, la preocupación de que otros fabricantes de CPU pudieran haber especializado solo 'xor' mantiene a esta última como la opción predominante. Se mencionan casos específicos como Itanium y arquitecturas de Intel más recientes (Silvermont, E cores) que presentan variaciones en la implementación de estas optimizaciones.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 47836035,
-    "url": "https://effekt-lang.org/blog/recursion-schemes/",
-    "score": 28,
-    "time": 1776700099,
-    "titulo_es": "Implementación con Efectos de los Esquemas de Recurrencia",
-    "resumen": "El artículo explora una implementación alternativa de los esquemas de recurrencia (recursion schemes) en el lenguaje Effekt, centrándose en el uso de estructuras de datos refuncionalizadas y efectos/manejadores (effects/handlers) en lugar de los tipos recursivamente infinitos y functors tradicionales de lenguajes como Haskell. Se presentan ejemplos prácticos con términos lambda, demostrando cómo se pueden implementar catamorfismos (folds) y anacarmorfismos (unfolds) de forma efímera. El catamorfismo permite generalizar plegados sobre estructuras de datos, donde el manejador recibe los resultados de las llamadas recursivas. El anacarmorfismo, dual al catamorfismo, se utiliza para desplegar estructuras a partir de una semilla, gestionando efectos como `emit` o `cons` para generar la siguiente etapa del proceso. La aproximación con efectos y manejadores en Effekt ofrece una alternativa expresiva y potente para trabajar con patrones de recursión, incluso sin soporte para tipos infinitos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47862626,
-    "url": "https://buttondown.com/jaffray/archive/columnar-storage-is-normalization/",
-    "score": 110,
-    "time": 1776861014,
-    "titulo_es": "Row-Oriented vs. Column-Oriented Data Storage in Databases",
-    "resumen": "El artículo explora las diferencias fundamentales entre el almacenamiento de datos orientado a filas y el orientado a columnas dentro del ámbito de las bases de datos relacionales. Explica que, si bien el motor SQL opera sobre una abstracción relacional indiferente a la representación física, el rendimiento de las consultas se ve drásticamente afectado. El almacenamiento orientado a filas facilita la adición y recuperación de filas completas, ya que los datos de una fila están contiguos en el almacenamiento. Sin embargo, es ineficiente para consultas que solo requieren subconjuntos de columnas (ej. histogramas de color de mascotas). Por el contrario, el almacenamiento orientado a columnas optimiza la lectura de columnas específicas al agrupar todos los valores de una columna. No obstante, la recuperación o modificación de filas individuales se vuelve más compleja, requiriendo la reconstrucción de la fila a partir de diferentes ubicaciones de almacenamiento. El autor propone dos analogías para entender esta optimización: 1) como un nivel de codificación subyacente que un motor de consulta no distingue lógicamente, solo por rendimiento; y 2) como una forma extrema de normalización de bases de datos, donde cada columna puede verse como una tabla separada con una clave primaria implícita (posición ordinal) y un atributo. Reconstruir una fila desde un formato columnar se asemeja conceptualmente a una operación de JOIN.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47862497,
-    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/eighth-generation-tpu-agentic-era/",
-    "score": 432,
-    "time": 1776860129,
-    "titulo_es": "Google lanza la octava generación de Tensor Processor Units (TPUs) especializadas para IA",
-    "resumen": "Google ha anunciado la octava generación de sus Tensor Processor Units (TPUs) personalizadas, divididas en dos chips especializados: TPU 8t para entrenamiento de modelos masivos y TPU 8i para inferencia de alta velocidad. Estos chips están diseñados para potenciar la próxima generación de supercomputación en cargas de trabajo de IA, incluyendo el desarrollo y la ejecución de agentes de IA complejos. La TPU 8t ofrece un alto rendimiento computacional y ancho de banda para el entrenamiento, reduciendo ciclos de desarrollo de meses a semanas. La TPU 8i se enfoca en el ancho de banda de memoria para cargas de trabajo de inferencia sensibles a la latencia. Ambos chips, desarrollados en colaboración con Google DeepMind y resultado de más de una década de desarrollo, buscan mejorar drásticamente la eficiencia energética y el rendimiento absoluto mediante la co-creación de hardware, red y software adaptados a las necesidades de la IA. Organizaciones como Citadel Securities ya están utilizando TPUs para sus cargas de trabajo de IA de vanguardia.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 47862230,
-    "url": "https://lwn.net/Articles/1068928/",
-    "score": 115,
-    "time": 1776858487,
-    "titulo_es": "Compatibilidad de Kernels Linux modernos con hardware PCMCIA",
-    "resumen": "El artículo discute la viabilidad de ejecutar distribuciones Linux modernas (basadas en kernels recientes) en hardware antiguo, específicamente laptops de 1998 con tarjetas Ethernet PCMCIA. Se plantea la preocupación de que los kernels modernos requieran más recursos, haciendo inviable su uso en hardware limitado. Las respuestas sugieren que, aunque el soporte para PCMCIA en sí mismo puede haber disminuido o no haber sido mantenido adecuadamente por voluntarios debido a la falta de evolución de estándares y la desaparición de fabricantes, existen soluciones como adaptadores PCI con slots PCMCIA. Se destaca que la falta de mantenimiento de drivers para hardware obsoleto, especialmente para equipos industriales con ciclos de vida muy largos, es un problema clave, y que la expectativa de que voluntarios mantengan este software de forma gratuita no es razonable. Se menciona la posibilidad de que los fabricantes incorporen el coste de mantenimiento de software en el precio del hardware o que los usuarios actuales asuman esa responsabilidad.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 47871918,
-    "url": "https://www.latent.space/p/ainews-tasteful-tokenmaxxing",
-    "score": 10,
-    "time": 1776913999,
-    "titulo_es": "Análisis del panorama de la IA: Tokenmaxxing, nuevos modelos y avances en hardware",
-    "resumen": "El artículo discute las tendencias actuales en inteligencia artificial, centrándose en el concepto de \"Tokenmaxxing\" y cómo las empresas buscan maximizar el uso de IA sin incurrir en desperdicios significativos. Se mencionan los nuevos Google TPUv8 como un avance en hardware que refuerza la ventaja de Google en el entrenamiento y servicio de modelos. Se destacan modelos de IA de código abierto como Qwen3.6-27B de Alibaba, que muestra un rendimiento superior en evaluaciones de codificación y capacidades multimodales, y el OpenAI Privacy Filter, una herramienta para la detección y enmascaramiento de PII, útil en pipelines empresariales y de agentes. Xiaomi presenta MiMo-V2.5, enfocado en agentes autónomos y procesamiento de largo alcance. Finalmente, se mencionan las novedades de Google Cloud Next, incluyendo TPU v8 y Gemini Enterprise Agent Platform.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47865642,
-    "url": "https://github.com/besimple-oss/broccoli",
-    "score": 63,
-    "time": 1776874196,
-    "titulo_es": "Automatización de Flujos de Trabajo de Ingeniería con Broccoli, Claude y Codex",
-    "resumen": "El artículo detalla la configuración y el despliegue de Broccoli, una herramienta que integra inteligencia artificial (IA) para automatizar el ciclo de vida del desarrollo de software. Utiliza modelos de IA como Claude y Codex, desplegados en Google Cloud Platform (GCP) a través de Cloud Run y Cloud SQL. El proceso abarca desde la creación de un proyecto GCP, la configuración de secretos en Secret Manager (incluyendo credenciales de GitHub, Linear y OpenAI/Anthropic), hasta la integración con GitHub Apps para la gestión de eventos y la automatización de Pull Requests. Se describen dos rutas de despliegue: una automática asistida por un script de despliegue de GCP y otra manual paso a paso. Se enfatiza la importancia de la seguridad al manejar secretos y se explica cómo Broccoli transforma tickets de Linear en Pull Requests listos para ser enviados, utilizando webhooks y contratos de estado para la comunicación entre servicios.",
-    "categoria": "IA"
   }
 ]
