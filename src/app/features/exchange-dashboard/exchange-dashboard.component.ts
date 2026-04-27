@@ -193,11 +193,12 @@ export class ExchangeDashboardComponent {
     this.fechaSeleccionadaFin = fechaFin;
 
     const startIdx = this.datosCargados.findIndex(d => d.fechaDesde >= fechaInicio);
-    const endIdx = this.datosCargados.findIndex(d => d.fechaDesde >= fechaFin);
+    const endIdx = this.datosCargados.findLastIndex(d => d.fechaDesde <= fechaFin);
 
     if (startIdx !== -1 && endIdx !== -1) {
-      const startPct = (startIdx / this.datosCargados.length) * 100;
-      const endPct = (endIdx / this.datosCargados.length) * 100;
+      const maxIdx = this.datosCargados.length - 1;
+      const startPct = (startIdx / maxIdx) * 100;
+      const endPct = (endIdx / maxIdx) * 100;
 
       this.zoomSubject.next({
         dataZoom: [
