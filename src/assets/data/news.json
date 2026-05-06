@@ -1,281 +1,317 @@
 [
   {
-    "id": 48019163,
-    "url": "https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state",
-    "score": 147,
-    "time": 1777965963,
-    "titulo_es": "Reducción del exceso de tamaño en Rust asíncrono: Optimizando el compilador para sistemas embebidos",
-    "resumen": "El artículo analiza el problema del 'bloat' o crecimiento excesivo del tamaño binario generado por las abstracciones asíncronas de Rust, un factor crítico en microcontroladores con recursos limitados. El autor examina la transformación de funciones 'async' en máquinas de estado mediante la representación intermedia MIR (Mid-level Intermediate Representation), identificando que estados como 'Returned' y 'Panicked' introducen rutas de código costosas. Se propone una optimización del compilador para evitar pánicos innecesarios en builds de producción y eliminar estados redundantes cuando se usa 'panic=abort', logrando reducciones de entre un 2% y un 5% en el tamaño del firmware.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 47962032,
-    "url": "https://distr.sh/blog/running-docker-in-production/",
-    "score": 22,
-    "time": 1777555303,
-    "titulo_es": "Docker Compose sigue siendo viable para producción en 2026: cerrando las brechas operativas",
-    "resumen": "El artículo analiza la viabilidad de Docker Compose para ejecutar cargas de trabajo de producción modernas, centrándose en la necesidad de resolver manualmente las carencias operativas que herramientas como Kubernetes gestionan automáticamente. El autor detalla problemas recurrentes como los contenedores huérfanos que consumen recursos, riesgos de seguridad en el socket de Docker y fallos en las comprobaciones de estado. Se destaca el uso del flag '--remove-orphans' como solución técnica fundamental para reconciliar el estado del host con el archivo declarativo YAML.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48019025,
-    "url": "https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html",
-    "score": 56,
-    "time": 1777964725,
-    "titulo_es": "10 lecciones para la programación basada en agentes",
-    "resumen": "El artículo analiza el paradigma emergente del 'agentic coding' o programación asistida por agentes, destacando que los modelos de lenguaje actuales exhiben una competencia superior en tareas de desarrollo comparado con otros dominios. El autor compila diez lecciones fundamentales y duraderas diseñadas para optimizar la interacción con herramientas de IA como Codex o Claude Code, planteando estas directrices como una guía esencial para navegar el futuro de la ingeniería de software potenciada por agentes autónomos.",
+    "id": 48031684,
+    "url": "https://blog.cloudflare.com/agents-stripe-projects/",
+    "score": 342,
+    "time": 1778037033,
+    "titulo_es": "Cloudflare y Stripe permiten que agentes de IA aprovisionen y desplieguen aplicaciones de forma autónoma",
+    "resumen": "Cloudflare ha anunciado una colaboración estratégica con Stripe para habilitar flujos de trabajo autónomos para agentes de IA (coding agents). Mediante un nuevo protocolo de descubrimiento, autorización y pago, los agentes pueden ahora crear cuentas en Cloudflare, gestionar suscripciones facturables, registrar dominios y obtener tokens de API para el despliegue de aplicaciones sin que el usuario deba intervenir manualmente en dashboards o procesos de configuración. Esta integración utiliza estándares como OAuth, OIDC y el Model Context Protocol (MCP) de Cloudflare para permitir que los agentes actúen como clientes completos en nombre del usuario, facilitando un ciclo de despliegue desde cero hasta producción en una sola ejecución.",
     "categoria": "IA"
   },
   {
-    "id": 48017907,
-    "url": "https://sethmlarson.dev/hand-drawn-qr-codes",
-    "score": 111,
-    "time": 1777953721,
-    "titulo_es": "Dibujando un código QR a mano en papel cuadriculado",
-    "resumen": "El autor explora los aspectos técnicos de los códigos QR de 'versión 1' (21x21 píxeles), detallando las restricciones de capacidad de datos y los métodos de codificación. Explica cómo optimizar una URL utilizando el conjunto de caracteres alfanuméricos en lugar de binarios para superar el límite de 17 bytes, el uso de la biblioteca de Python 'qrcode' para generar referencias y la importancia de elementos estructurales como los patrones de posición, las líneas de tiempo y los niveles de corrección de errores en la reconstrucción manual de datos sobre una cuadrícula física.",
+    "id": 48031261,
+    "url": "https://us.starlabs.systems/pages/starfighter",
+    "score": 360,
+    "time": 1778033024,
+    "titulo_es": "StarFighter: El portátil de alto rendimiento para Linux con materiales premium y firmware abierto",
+    "resumen": "El StarFighter es una estación de trabajo portátil de gama alta optimizada para ecosistemas Linux. El dispositivo integra procesadores Intel Core Ultra o Ryzen 9, soportando hasta 64 GB de memoria LPDDR5X a 7500MT/s y una pantalla mate de 16 pulgadas con resolución 4K a 120Hz. Desde la perspectiva de arquitectura de hardware, destaca por su enfoque en la seguridad física y la personalización del bajo nivel, incluyendo una cámara web magnética extraíble, interruptores de corte físico (KillSwitch) para conectividad inalámbrica y firmware abierto personalizable (POST en 0.76s) con soporte para Measured Boot y actualizaciones vía LVFS.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48005432,
+    "url": "https://www.aaedmusa.com/projects/cara2",
+    "score": 168,
+    "time": 1777877170,
+    "titulo_es": "CARA 2.0: Construcción de un robot cuadrúpedo de bajo costo con actuadores de transmisión capstán",
+    "resumen": "El artículo describe el desarrollo de CARA 2.0, un robot cuadrúpedo diseñado como proyecto de fin de carrera con un presupuesto inferior a $1000. El autor detalla la implementación de actuadores de tipo Quasi Direct Drive (QDD), los cuales utilizan motores brushless de alto par con cajas de cambios de baja relación para lograr eficiencia y transparencia en el movimiento. Se presenta una comparativa técnica de hardware entre la versión anterior y la nueva, destacando la transición a componentes más económicos pero potentes, como el motor TYI 5008 y el controlador FOC MKS XDrive Mini, reduciendo significativamente los costos de fabricación sin comprometer el rendimiento dinámico.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 47998638,
+    "url": "https://coe.gatech.edu/news/2026/04/batteries-not-included-or-required-these-smart-home-sensors",
+    "score": 40,
+    "time": 1777825954,
+    "titulo_es": "Investigadores crean etiquetas metálicas simples con huellas dactilares ultrasónicas únicas para detectar movimientos",
+    "resumen": "Investigadores de Georgia Tech han desarrollado sensores de bajo costo, sin baterías y del tamaño de una moneda, fabricados con metal y diseñados para el reconocimiento de actividades. Estas etiquetas utilizan la geometría y resonancia física para emitir pulsos ultrasónicos únicos (superiores a 20 kHz) al ser accionadas mecánicamente por el movimiento de puertas, cajones o equipos de gimnasio. Un dispositivo portátil cercano captura estas frecuencias específicas, permitiendo identificar acciones precisas sin comprometer la privacidad ni requerir algoritmos complejos de inteligencia artificial, facilitando aplicaciones en hogares inteligentes, cuidado de ancianos y logística industrial.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48032461,
+    "url": "https://katedaviesdesigns.com/2026/04/29/knitting-bullshit/",
+    "score": 79,
+    "time": 1778044438,
+    "titulo_es": "Tejiendo palabrería: La proliferación de contenido de baja calidad generado por IA",
+    "resumen": "El artículo analiza críticamente la producción masiva de contenido automatizado, denominado 'slop', a través del caso de Inception Point AI. Explora cómo el uso de inteligencia artificial para generar miles de podcasts semanales sin supervisión editorial humana degrada la calidad de la información. El autor utiliza el concepto filosófico de 'bullshit' para describir la falta de compromiso con la verdad y la realidad en estos modelos de negocio que priorizan el volumen y el arbitraje publicitario sobre la integridad del contenido.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48032976,
+    "url": "https://draxinar.github.io/articles/2026-05-01-uodemo-reverse-engineering.html",
+    "score": 48,
+    "time": 1778049089,
+    "titulo_es": "Ingeniería inversa completa del servidor de demostración de Ultima Online de 1998",
+    "resumen": "Un desarrollador ha completado la ingeniería inversa total del servidor de Ultima Online (1998) tras 10 años de trabajo, traduciendo aproximadamente 5,000 funciones de MSVC x86 a C99 portátil mediante comparación instrucción por instrucción. El proyecto reconstruyó la jerarquía de clases de C++, corrigió errores históricos de estabilidad y restauró sistemas desactivados como el motor de ecología de depredadores y presas. Además, se implementó un sistema de cuentas y se desarrollaron herramientas para la gestión de datos del mapa, utilizando LLMs en las etapas finales para acelerar la traducción del código.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48024540,
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/",
+    "score": 580,
+    "time": 1777997657,
+    "titulo_es": "Gemma 4 introduce drafters de Predicción Multi-Token (MTP) para reducir la latencia y acelerar la inferencia",
+    "resumen": "El artículo describe la implementación de drafters de Predicción Multi-Token (MTP) en la familia de modelos Gemma 4 para mitigar los cuellos de botella de ancho de banda de memoria durante la inferencia. Mediante el uso de decodificación especulativa, un modelo ligero 'predice' múltiples tokens futuros que el modelo principal verifica en paralelo, logrando un aumento de velocidad de hasta 3 veces sin pérdida de calidad. Se detallan optimizaciones arquitectónicas como el uso compartido de activaciones y KV cache, además de mejoras de rendimiento específicas para hardware NVIDIA y Apple Silicon.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48033689,
+    "url": "https://www.terrygodier.com/the-boring-internet",
+    "score": 19,
+    "time": 1778055823,
+    "titulo_es": "Un ensayo sobre lo que persiste",
+    "resumen": "El artículo analiza la arquitectura del internet moderno a través de un modelo de tres capas: plataformas, servicios y protocolos. El autor argumenta que mientras las plataformas comerciales están degradándose debido a la monetización agresiva y el contenido generado por IA, el 'internet real' persiste en la capa de protocolos fundamentales (como SMTP y HTTP). Estos protocolos, diseñados originalmente por ingenieros para resolver problemas técnicos específicos sin modelos de negocio restrictivos, representan una infraestructura resiliente, descentralizada y duradera que ninguna entidad corporativa posee por completo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48011077,
+    "url": "https://www.happydaze.se/wolf/",
+    "score": 16,
+    "time": 1777912755,
+    "titulo_es": "Wolfenstein 3D para Gameboy Color en cartucho personalizado con coprocesador",
+    "resumen": "El artículo describe el desarrollo de un cartucho personalizado (Revisión D) para ejecutar Wolfenstein 3D en Gameboy Color. Destaca el reemplazo del chip Nintendo MBC1 por un CPLD ATF1502 programable para gestionar el cambio de bancos de ROM y RAM sin canibalizar hardware original. Se detalla la arquitectura técnica que involucra un coprocesador KE04, la optimización de memoria entre la ROM de la Z80 y el KE04 para mapas y texturas, y la implementación de características de juego como música, colisiones y un sistema de contraseñas.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48028842,
+    "url": "https://nonogra.ph/write-some-software-give-it-away-for-free-05-05-2026",
+    "score": 271,
+    "time": 1778016410,
+    "titulo_es": "El desarrollo de software como hobby frente a la monetización y el capital de riesgo",
+    "resumen": "El artículo presenta una reflexión filosófica sobre el desarrollo de software, contrastando la creación de herramientas de código abierto como Nonograph frente a la tendencia de 'enshittification' impulsada por el capital de riesgo. El autor argumenta que tratar la programación como un vehículo de autoexploración y un hobby, en lugar de una meta financiera, permite crear software de mayor calidad, libre de características hostiles para el usuario y modelos de suscripción innecesarios.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48024859,
+    "url": "https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/",
+    "score": 401,
+    "time": 1777998888,
+    "titulo_es": "Comparativa de rendimiento: Agentes de IA basados en visión frente a herramientas de API",
+    "resumen": "El artículo presenta un benchmark técnico comparando dos métodos para que agentes de IA (Claude Sonnet) operen paneles de administración: mediante visión/navegador y mediante llamadas directas a la API. Los resultados demuestran que los agentes de visión son significativamente más costosos y lentos, consumiendo entre 400k y 750k tokens y tomando hasta 22 minutos por tarea. Además, se identificaron fallos críticos de fiabilidad en la visión, como la incapacidad de manejar paginación o elementos fuera del área visible, lo que obliga a crear prompts extremadamente específicos que incrementan la complejidad de ingeniería frente a la eficiencia de las interfaces API estructuradas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48031109,
+    "url": "https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63",
+    "score": 156,
+    "time": 1778031524,
+    "titulo_es": "Telus utiliza IA para modificar el acento de los agentes de sus centros de llamadas en tiempo real",
+    "resumen": "La empresa Telus ha implementado una tecnología de conversión de voz (S2S) desarrollada por Tomato.ai para alterar los acentos de sus agentes internacionales con el fin de reducir la 'fricción' percibida por el cliente. Técnicamente, el sistema combina reconocimiento automático de voz (ASR), modelos de conversión de identidad y acento, y vocoders neuronales, enfrentando desafíos operativos de baja latencia y robustez ante el ruido ambiental. La implementación ha generado una fuerte reacción pública y críticas de grupos laborales que exigen transparencia y denuncian la práctica como engañosa.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48032265,
+    "url": "https://yuanchuan.dev/multi-stroke-text-effect-in-css",
+    "score": 54,
+    "time": 1778042605,
+    "titulo_es": "Recreación de efectos de texto retro con múltiples capas de contorno en CSS",
+    "resumen": "El artículo describe una técnica experimental para replicar efectos tipográficos retro utilizando la propiedad CSS 'text-stroke'. Mediante el apilamiento de elementos y la variación incremental del grosor del contorno, se logra un efecto de capas concéntricas. El autor analiza las diferencias de renderizado entre motores, destacando que Firefox ofrece resultados más suaves que Chrome o Safari, y advierte sobre problemas de rendimiento significativos en producción al escalar el tamaño de fuente, comparables a la carga computacional de los filtros CSS.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48023861,
+    "url": "https://susam.net/inverse-laws-of-robotics.html",
+    "score": 452,
+    "time": 1777994838,
+    "titulo_es": "Leyes Inversas de la Robótica",
+    "resumen": "El artículo analiza el impacto de la adopción masiva de la IA generativa y los riesgos asociados a la confianza ciega en sus resultados. Propone la creación de las 'Leyes Inversas de la Robótica' para guiar el juicio humano, advirtiendo específicamente contra la antropomorfización de los modelos de lenguaje. El autor sostiene que el diseño actual de los chatbots fomenta una autoridad injustificada y sugiere que estos sistemas deberían ser tratados como herramientas estadísticas en lugar de agentes con moral o intenciones.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48003549,
+    "url": "https://tautme.github.io/phone-sensors/sensor-etch.html",
+    "score": 57,
+    "time": 1777857905,
+    "titulo_es": "Requisitos de seguridad y pruebas de red para aplicaciones web",
+    "resumen": "El artículo describe los requisitos técnicos para una aplicación que utiliza APIs del navegador para acceder a periféricos (cámara y micrófono) y sensores de movimiento. Destaca la necesidad de un contexto seguro (HTTPS o localhost) y detalla un proceso de prueba de velocidad que consume 512 KB cada 15 segundos a través de la red de Cloudflare.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48032617,
+    "url": "https://microsoft.github.io/bocpy/",
+    "score": 21,
+    "time": 1778045688,
+    "titulo_es": "Concurrencia Orientada a Comportamientos (BOC): Un Nuevo Paradigma para Python sin Bloqueos ni Deadlocks",
+    "resumen": "El artículo describe la Concurrencia Orientada a Comportamientos (BOC), un paradigma diseñado para simplificar la programación paralela en Python mediante la propiedad temporal única de los datos. A diferencia de los hilos tradicionales que requieren bloqueos (locks) y condiciones manuales, BOC utiliza 'cowns' (variables de propiedad concurrente) y decoradores '@when' para automatizar el acceso seguro a los datos a través de múltiples intérpretes. Esto elimina los riesgos de deadlocks y facilita el aprovechamiento de múltiples núcleos al transformar la gestión de concurrencia en una organización lógica del flujo de datos.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 48019219,
     "url": "https://www.thatprivacyguy.com/blog/chrome-silent-nano-install/",
-    "score": 235,
+    "score": 1457,
     "time": 1777966495,
-    "titulo_es": "Google Chrome descarga modelos de IA de 4 GB sin consentimiento: Un análisis de privacidad e impacto ambiental",
-    "resumen": "El artículo expone cómo Google Chrome distribuye automáticamente el modelo de lenguaje Gemini Nano (un archivo de 4 GB llamado weights.bin) en los dispositivos de los usuarios sin solicitar permiso previo. Se detalla que el navegador reinstala el modelo si el usuario lo elimina manualmente, salvo que se realicen configuraciones técnicas avanzadas. El autor argumenta que esta práctica infringe el RGPD y la Directiva ePrivacy en Europa, además de generar un impacto ambiental masivo, estimado en hasta 60,000 toneladas de emisiones de CO2 debido a la escala de la distribución del binario.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48017813,
-    "url": "https://www.dragonsreach.it/2026/05/04/cve-2026-31431-copy-fail-rootless-containers/",
-    "score": 108,
-    "time": 1777952588,
-    "titulo_es": "Análisis del exploit 'Copy Fail' (CVE-2026-31431) y su contención en entornos Podman rootless",
-    "resumen": "El artículo presenta un análisis técnico profundo de la vulnerabilidad CVE-2026-31431, denominada 'Copy Fail'. El autor detalla el proceso de ingeniería inversa de un binario ELF comprimido (usando la técnica de ELF golfing) que busca la escalada de privilegios mediante la corrupción de la caché de páginas y el reemplazo de utilidades del sistema como '/usr/bin/su'. Además, se describe la validación del exploit en un entorno controlado de Fedora y cómo la arquitectura de Podman rootless logra mitigar la amenaza al nivel del kernel.",
+    "titulo_es": "Google Chrome y la distribución forzada de Gemini Nano: Privacidad, legalidad e impacto ambiental",
+    "resumen": "El artículo analiza la descarga no consentida de 'weights.bin' (un modelo LLM de 4 GB para Gemini Nano) en Google Chrome. Se detalla cómo el navegador utiliza la infraestructura de actualización para escribir en disco sin permiso del usuario, reinstalando el archivo si es eliminado. Desde una perspectiva de arquitectura de software y legalidad, se considera una violación de los límites de confianza entre proveedores, el RGPD y la Directiva ePrivacy, además de denunciar el impacto ambiental masivo debido al coste energético de distribuir estos binarios a escala global.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48017948,
-    "url": "https://github.com/angelos-p/llm-from-scratch",
-    "score": 263,
-    "time": 1777954157,
-    "titulo_es": "Taller de nanoGPT: Construye un modelo de lenguaje de 10 millones de parámetros desde cero",
-    "resumen": "Este taller técnico proporciona una guía práctica para implementar una versión simplificada de nanoGPT de Andrej Karpathy, optimizada para ejecutarse en hardware local (MacBook/Colab) en menos de una hora. El contenido cubre la arquitectura completa de un pipeline de entrenamiento de LLM con PyTorch, incluyendo la implementación del modelo, el proceso de entrenamiento acelerado por GPU (MPS/CUDA) y la tokenización a nivel de caracteres, culminando en un modelo capaz de generar texto con estilo shakespeariano.",
+    "id": 47997915,
+    "url": "https://academy.dair.ai/blog/wiki-builder-claude-code-plugin",
+    "score": 62,
+    "time": 1777822128,
+    "titulo_es": "Wiki Builder: Automatización de bases de conocimientos para LLM mediante plugins de Claude Code",
+    "resumen": "Wiki Builder es una herramienta de código abierto diseñada para simplificar la creación de bases de conocimientos gestionadas por agentes de IA. Funciona como un plugin de Claude Code que automatiza el andamiaje (scaffolding) de directorios, la configuración de prompts y la gestión de flujos de trabajo iterativos. La herramienta permite definir sabores de wiki (investigación, producto, dominio, etc.) a través de archivos de configuración local, asegurando la trazabilidad de fuentes y la consistencia estructural mediante scripts de inicialización y plantillas de prompts especializadas para la compilación y validación de información.",
     "categoria": "IA"
   },
   {
-    "id": 47990491,
-    "url": "https://nautil.us/farewell-to-a-giant-of-botany-1280409",
-    "score": 28,
-    "time": 1777755828,
-    "titulo_es": "Peter Raven, el conservacionista transformador y padre de la “coevolución”, falleció esta semana",
-    "resumen": "El artículo rinde homenaje a la vida y el legado de Peter Raven, destacado botánico que transformó el Jardín Botánico de Missouri en un centro de investigación de clase mundial. Se destaca su contribución científica fundamental al co-acuñar el término 'coevolución' en un estudio sobre la interacción entre plantas y herbívoros. Además, se mencionan sus múltiples distinciones, incluyendo la Medalla Nacional de Ciencia, y su impacto tanto en la comunidad local de St. Louis como en proyectos de conservación global.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48015397,
-    "url": "https://addyosmani.com/blog/agent-skills/",
-    "score": 257,
-    "time": 1777930842,
-    "titulo_es": "Agent Skills: Imponiendo el rigor de la ingeniería senior en los agentes de codificación de IA",
-    "resumen": "El artículo aborda la tendencia de los agentes de IA a priorizar la finalización rápida de tareas sobre las buenas prácticas de ingeniería. Propone el proyecto 'Agent Skills' como un andamiaje que obliga a los agentes a seguir un flujo de trabajo estructurado basado en el SDLC (ciclo de vida de desarrollo de software), incluyendo la creación de especificaciones, planes, pruebas y revisiones. El enfoque principal es transformar reglas pasivas en flujos de trabajo activos con criterios de salida claros para asegurar que la IA produzca software fiable y verificable, emulando el comportamiento de un ingeniero senior.",
+    "id": 48024358,
+    "url": "https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing",
+    "score": 224,
+    "time": 1777996986,
+    "titulo_es": "MindDump: Biocomputación y la frontera ética de la Inteligencia Artificial",
+    "resumen": "El autor reflexiona sobre la evolución de la IA y el surgimiento de biocomputadores mediante el entrenamiento de neuronas humanas cultivadas en laboratorio para jugar DOOM. Se analiza el paralelismo entre los mecanismos de recompensa de los modelos de lenguaje (LLM) y la respuesta biológica neuronal, cuestionando la definición de conciencia, la eficiencia energética frente al silicio y las implicaciones éticas de crear sistemas biológicos procesadores de datos.",
     "categoria": "IA"
   },
   {
-    "id": 47993585,
-    "url": "https://unsung.aresluna.org/mouse-pointer-as-a-mere-mortal/",
-    "score": 17,
-    "time": 1777785445,
-    "titulo_es": "Interacciones sagradas y el secuestro del puntero del ratón",
-    "resumen": "El artículo analiza la ética y el diseño de la experiencia de usuario (UX) enfocándose en la manipulación del cursor por parte de las aplicaciones. Compara la reacción negativa ante Lightroom moviendo automáticamente el puntero con proyectos experimentales donde el cursor actúa como un elemento lúdico. Además, menciona prototipos de Figma sobre la gestión de cursores colaborativos, planteando un debate técnico sobre qué elementos de la interfaz deben permanecer bajo control exclusivo del usuario (interacciones sagradas) y cuáles pueden ser intervenidos por el software.",
+    "id": 48023533,
+    "url": "https://www.anthropic.com/news/finance-agents",
+    "score": 241,
+    "time": 1777993547,
+    "titulo_es": "Claude Mejora las Finanzas con Agentes de IA, Integración con Microsoft 365 y Nuevos Conectores",
+    "resumen": "El artículo anuncia el lanzamiento de diez plantillas de agentes de IA listas para usar, diseñadas para agilizar tareas financieras críticas como la creación de pitchbooks, la revisión de KYC y el cierre de mes. Estos agentes, disponibles como plugins en Claude Cowork y Claude Code, o como cookbooks para Claude Managed Agents, permiten la implementación rápida en entornos financieros. La integración con Microsoft 365 (Excel, PowerPoint, Word, Outlook) permite un flujo de trabajo contextual entre aplicaciones, eliminando la necesidad de reexplicar información. Se amplía el ecosistema de partners con nuevos conectores y aplicaciones MCP, proporcionando acceso seguro y en tiempo real a datos financieros y herramientas de proveedores. Estas capacidades se optimizan con Claude Opus 4.7, destacando su rendimiento superior en tareas financieras. Cada plantilla de agente es una arquitectura de referencia que incluye habilidades (instrucciones y conocimiento del dominio), conectores (acceso a datos) y subagentes (modelos de Claude para subtareas específicas), permitiendo a las empresas adaptarlas a sus convenciones y políticas. Los agentes pueden operar como plugins junto al analista o como agentes gestionados de forma autónoma en la Claude Platform, con opciones de supervisión y aprobación para los usuarios. La integración permite a Claude interactuar directamente con documentos de Microsoft Office, actuando como asistente para triaje de correos, redacción de respuestas, creación de modelos financieros, auditoría de fórmulas, generación de presentaciones y edición de documentos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48026021,
+    "url": "https://arxiv.org/abs/2604.26752",
+    "score": 149,
+    "time": 1778003551,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo de Nuevas Funcionalidades",
+    "resumen": "El artículo describe arXivLabs, un marco de colaboración diseñado para permitir a individuos y organizaciones desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. arXivLabs se basa en los valores de apertura, comunidad, excelencia y privacidad de los datos del usuario, trabajando únicamente con socios que adhieren a estos principios. Se anima a los interesados con ideas de proyectos que aporten valor a la comunidad de arXiv a explorar las oportunidades que ofrece arXivLabs.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47996740,
+    "url": "https://mohibulsblog.netlify.app/java/100daysofjava/graph/",
+    "score": 57,
+    "time": 1777814759,
+    "titulo_es": "Atlas Interactivo de 100 Días de Java",
+    "resumen": "Este artículo describe un atlas interactivo que mapea 100 publicaciones sobre aprendizaje de Java. La estructura del mapa se basa en el orden de lectura, referencias internas y temas compartidos entre las publicaciones. Cada nodo representa una publicación individual, y el grafo funciona como un índice para explorar la serie por conceptos, complementando la lectura secuencial. Las conexiones se establecen por la secuencia diaria, enlaces explícitos entre publicaciones (referencias) y por la similitud de temas de nivel superior (enlaces temáticos). Los datos para generar este grafo provienen de las propias publicaciones del blog, su metadato (temas/categorías) y los enlaces Markdown. Se proporciona una lista de respaldo de las publicaciones para acceso directo, especialmente útil si la visualización interactiva no está disponible o para navegación rápida en dispositivos móviles.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48026207,
+    "url": "https://variety.com/2026/digital/news/meta-ai-mark-zuckerberg-copyright-infringement-lawsuit-publishers-scott-turow-1236738383/",
+    "score": 391,
+    "time": 1778004265,
+    "titulo_es": "Meta demandada por infracción de derechos de autor en el entrenamiento de IA",
+    "resumen": "Meta y Mark Zuckerberg enfrentan una demanda por parte de cinco editoriales y el autor Scott Turow, quienes alegan que la compañía copió ilegalmente millones de libros y artículos para entrenar sus sistemas de inteligencia artificial, Llama. Los demandantes argumentan que Meta eludió deliberadamente las protecciones de derechos de autor y consideró la posibilidad de licenciar el material antes de optar por una estrategia de 'pirateo' bajo instrucción personal de Zuckerberg, citando la famosa frase 'muévete rápido y rompe cosas'. La demanda, presentada en el Distrito Sur de Nueva York, busca daños monetarios no especificados. Meta, por su parte, planea defenderse agresivamente, argumentando que el entrenamiento de IA con material protegido por derechos de autor puede considerarse 'uso justo', basándose en fallos judiciales anteriores que han respaldado esta postura en casos similares.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48021561,
+    "url": "https://walletwallet.alen.ro/blog/ios-27-wallet-create-pass/",
+    "score": 405,
+    "time": 1777984108,
+    "titulo_es": "Apple permite a los usuarios crear pases para Wallet en iOS 17 sin necesidad de ser desarrolladores",
+    "resumen": "Apple introducirá en iOS 17 la función 'Crear un pase' dentro de la app Wallet, eliminando la dependencia de desarrolladores y cuentas específicas. Los usuarios podrán escanear códigos QR de tarjetas físicas o crear pases desde cero usando un editor de diseño. Esta funcionalidad, que no requerirá cuentas de desarrollador, certificados ni Pass Type ID, permitirá a los usuarios generar pases personalizados para programas de fidelización, tickets, etc., directamente desde la app. El proceso utilizará plantillas predefinidas con estilos, imágenes, colores y campos de texto ajustables, facilitando la organización visual de los pases dentro de Wallet. Esta medida busca democratizar la creación de pases, abordando la baja adopción por parte de pequeñas empresas debido a la complejidad técnica previa, y compite directamente con herramientas de terceros como WalletWallet. Los detalles finales se conocerán tras la preview de iOS 17 en WWDC y las betas para desarrolladores.",
     "categoria": "Frontend"
   },
   {
-    "id": 48002890,
-    "url": "https://afilina.com/why-phpc-tv",
-    "score": 18,
-    "time": 1777852385,
-    "titulo_es": "El nacimiento de phpc.tv: Una alternativa descentralizada para la comunidad PHP",
-    "resumen": "Relato sobre la creación de phpc.tv, una plataforma de compartición de videos basada en PeerTube y diseñada específicamente para la comunidad de programadores PHP. El autor describe la transición hacia el software de código abierto y federado como respuesta a la degradación de plataformas centralizadas como YouTube, buscando un espacio libre de algoritmos y publicidad para discutir frameworks, paquetes y herramientas del lenguaje PHP.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48008104,
-    "url": "https://www.nature.com/articles/s43016-025-01173-4",
-    "score": 61,
-    "time": 1777899316,
-    "titulo_es": "Capacidades nacionales para alcanzar las pautas dietéticas basadas únicamente en la producción nacional",
-    "resumen": "El artículo analiza la capacidad de 186 países para ser autosuficientes en siete grupos de alimentos esenciales según la dieta Livewell de la WWF, utilizando datos de la FAO de 2020. Los resultados revelan que más de un tercio de las naciones no logran cubrir más de dos grupos alimentarios mediante producción local, destacando una alta vulnerabilidad ante choques globales como la pandemia de COVID-19 o el conflicto en Ucrania. Se examina además la diversidad de respuesta comercial y la resiliencia de los sistemas alimentarios frente a la dependencia de importaciones.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48009983,
-    "url": "https://www.nber.org/papers/w35117",
-    "score": 292,
-    "time": 1777908766,
-    "titulo_es": "Choques en la demanda laboral y declive cognitivo: evidencia causal",
-    "resumen": "Este estudio investiga el impacto de la participación laboral en el deterioro cognitivo de adultos mayores en EE. UU. Utilizando datos del HRS y un modelo de variables instrumentales (instrumento de Bartik), los investigadores proporcionan evidencia causal de que la salida prematura del mercado laboral, impulsada por choques negativos en la demanda de empleo local, acelera significativamente el declive cognitivo. Los hallazgos se concentran en hombres de 51 a 64 años, sugiriendo que prolongar la vida laboral actúa como un factor protector para la salud cerebral.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 47988439,
-    "url": "https://thebuild.com/blog/2026/05/01/pgxbackup-continuity-support-for-pgbackrest/",
-    "score": 55,
-    "time": 1777742743,
-    "titulo_es": "PGX anuncia pgxbackup: continuidad para el soporte de pgBackRest",
-    "resumen": "PGX ha lanzado pgxbackup, un fork de código abierto de pgBackRest, para garantizar el mantenimiento y la evolución de esta herramienta estándar de respaldo y recuperación para PostgreSQL. El proyecto surge ante la reducción del mantenimiento activo de la versión original y mantendrá funcionalidades críticas como backups paralelos, recuperación de punto en el tiempo (PITR), cifrado y gestión de repositorios. El cambio de nombre responde a una petición del autor original, David Steele, para diferenciar los forks del proyecto base.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48006403,
-    "url": "https://blog.appsignal.com/2026/04/30/setting-up-server-monitoring-for-a-rails-app-on-hatchbox.html",
-    "score": 3,
-    "time": 1777887091,
-    "titulo_es": "Visibilidad Profunda para Servidores Ruby on Rails con Hatchbox y AppSignal",
-    "resumen": "El artículo se centra en la importancia de la monitorización profunda de servidores para aplicaciones Ruby on Rails, y cómo la integración de Hatchbox y AppSignal proporciona esta visibilidad. Hatchbox gestiona y coordina servidores Rails, mientras que AppSignal ofrece monitorización de rendimiento de aplicaciones (APM) y métricas a nivel de servidor (CPU, memoria, red, disco). La integración simplificada permite a los desarrolladores detectar problemas como fugas de memoria, picos de CPU y consumo de disco antes de que se conviertan en crisis. Se detalla la interpretación de métricas de memoria, incluyendo el concepto de 'drift' frente a las fugas de memoria y la identificación de reinicios de procesos por caídas repentinas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48014868,
-    "url": "https://www.os2museum.com/wp/when-networking-doesnt-work/",
-    "score": 64,
-    "time": 1777928179,
-    "titulo_es": "Resolución de problemas de conectividad IPMI en Windows 11 y 10 debido a la descarga de checksum UDP en la recepción",
-    "resumen": "El artículo detalla la resolución de un problema de conectividad de red con módulos IPMI (Intelligent Platform Management Interface) en sistemas Windows 11 y Windows 10. El autor experimentó que el software de gestión IPMI no podía comunicarse con un módulo SMDC (Server Management Daughter Card) a pesar de que Wireshark mostraba tráfico de red saliente y entrante. Las investigaciones posteriores con PktMon revelaron que la pila TCP/IP de Windows estaba descartando los paquetes UDP entrantes debido a un presunto 'checksum' inválido, a pesar de que Wireshark validaba los checksums como correctos. La causa raíz se identificó en la descarga de validación de checksum UDP en la recepción (UDP Rx checksum offloading) de las tarjetas de red Intel (I211 y 82579LM). Desactivar esta funcionalidad en los controladores de red de los sistemas afectados resolvió el problema, permitiendo la comunicación con el módulo IPMI y el funcionamiento correcto de las máquinas virtuales. Se contrasta esta experiencia con un portátil Windows 10 con hardware de red diferente que no presentaba el problema, y se aclara que la descarga de checksum UDP en recepción no es inherentemente defectuosa, sino que depende de la interacción específica entre el hardware de red, el controlador y la pila de red de Windows.",
+    "id": 47993240,
+    "url": "https://bumbershootsoft.wordpress.com/2026/05/02/comparing-the-z80-and-6502-to-their-relatives/",
+    "score": 125,
+    "time": 1777781168,
+    "titulo_es": "Comparación de CPUs históricas: 8080, Z80 y 6502 en el contexto de la descompresión LZ4",
+    "resumen": "El artículo detalla la adaptación de un descompresor LZ4 a diversas arquitecturas de CPU históricas, centrándose en el Z80. Se explora la relación de compatibilidad binaria entre el 8080 y el Z80, destacando las diferencias en sus conjuntos de instrucciones y sintaxis de ensamblador. Se menciona que el Z80, como sucesor directo del 8080, mantiene compatibilidad pero añade instrucciones y simplifica la sintaxis (ej. consolidando varias instrucciones del 8080 en LD). También se compara la sintaxis del Z80 con la del 6502, notando similitudes como el uso de paréntesis para la indirección y la aparición de anomalías de parseo en ensambladores que intentan reconciliar ambas sintaxis. Se discuten herramientas y enfoques para programar el 8080 utilizando ensambladores Z80 o específicos de 8080. El artículo sirve como preludio a una discusión más profunda sobre las implementaciones específicas y cómo las diferencias de CPU afectan el código.",
     "categoria": "Hardware"
   },
   {
-    "id": 48018034,
-    "url": "https://www.2dcurves.com/",
+    "id": 48025687,
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260505-00/?p=112298",
+    "score": 344,
+    "time": 1778002098,
+    "titulo_es": "La historia del conflicto cultural y la clave Tab en OS/2",
+    "resumen": "El artículo narra una anécdota del desarrollo conjunto del sistema operativo OS/2 entre Microsoft e IBM, destacando el choque cultural entre ambas empresas. Un punto específico de fricción fue la elección de la tecla 'TAB' para navegar entre campos en los cuadros de diálogo. La burocracia y la estructura jerárquica de IBM chocaron con la agilidad y la toma de decisiones descentralizada de Microsoft, representada por un colega de Bill Gates. A pesar de los intentos de IBM por escalar la decisión a través de múltiples niveles gerenciales, la postura de Microsoft, finalmente comunicada de forma poco corporativa pero efectiva, prevaleció, permitiendo el uso de la tecla 'TAB'. El relato ilustra las diferencias organizacionales y culturales que afectaron la colaboración y sugiere que enfoques distintos pueden tener mérito.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48033721,
+    "url": "https://www.xda-developers.com/fedora-becoming-default-linux-recommendation-ubuntu-fault/",
+    "score": 11,
+    "time": 1778056074,
+    "titulo_es": "Ubuntu vs. Fedora: La Evolución de las Distribuciones Linux y la Entrega de Aplicaciones",
+    "resumen": "El artículo analiza la evolución de las distribuciones Linux, posicionando a Fedora como la recomendación emergente frente a Ubuntu. Critica las decisiones de Canonical, particularmente la introducción de Snap como un sistema de empaquetado propietario y restrictivo, en contraste con el estándar abierto Flatpak. Se destaca cómo esta división perjudica al ecosistema Linux en general, fragmentando los esfuerzos para solucionar la 'app gap'. Además, se señala la creciente 'inflación' de requisitos de hardware en Ubuntu, que se aleja de su histórica ventaja de ser ligero y compatible con hardware antiguo, comparándolo desfavorablemente con Windows en este aspecto. Se menciona el aumento del requisito de RAM para Ubuntu 26.04 como un ejemplo de esta tendencia.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48019025,
+    "url": "https://www.dbreunig.com/2026/05/04/10-lessons-for-agentic-coding.html",
+    "score": 243,
+    "time": 1777964725,
+    "titulo_es": "10 Lecciones para la Programación con Agentes",
+    "resumen": "El artículo discute el auge de la programación con agentes (agentic coding), destacando la creciente competencia de los modelos de frontera (frontier models) en tareas de codificación. Presenta una lista de 10 lecciones o directrices generales para quienes se inician en el uso de agentes de codificación como Codex, Claude Code o Pi. El autor enfatiza que estas lecciones buscan ser duraderas y aplicables a medida que las capacidades de los modelos y las herramientas evolucionan, señalando la convergencia de ideas similares entre diferentes practicantes en este campo emergente.",
+    "categoria": "IA"
+  },
+  {
+    "id": 47994946,
+    "url": "https://physicsworld.com/a/researchers-print-structural-colour-with-an-inkjet-printer/",
+    "score": 62,
+    "time": 1777798730,
+    "titulo_es": "Tinta de nanopartículas de silicio para impresión de color estructural",
+    "resumen": "Investigadores de la Universidad de Kobe han desarrollado una tinta de nanopartículas de silicio resonantes de Mie que permite imprimir color estructural, el cual utiliza nanoestructuras en lugar de pigmentos para producir colores brillantes y duraderos. Esta tinta utiliza nanopartículas de silicio esféricas (100-200 nm de diámetro) recubiertas con cáscaras de sílice para prevenir la agregación durante el secado y mantener la integridad del color. Las partículas de silicio tienen un alto índice de refracción y bajo coeficiente de extinción, reflejando longitudes de onda específicas para generar color. La tinta, formulada como una emulsión acrílica a base de agua, puede ser impresa en superficies planas y tridimensionales mediante impresoras de inyección de tinta, superando las limitaciones de iridiscencia de otros métodos y abriendo posibilidades para aplicaciones a gran escala.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48017907,
+    "url": "https://sethmlarson.dev/hand-drawn-qr-codes",
+    "score": 212,
+    "time": 1777953721,
+    "titulo_es": "Creación manual de un código QR",
+    "resumen": "El artículo detalla el proceso de creación manual de un código QR en papel cuadriculado, utilizando un bloc de notas con cuadrículas de 10x10 y 2x10. El autor explica cómo adaptar un código QR de versión 1 (21x21 píxeles), que normalmente soporta URLs de hasta 17 bytes, para incluir un dominio más largo como 'sethmlarson.dev' (23 bytes) utilizando el juego de caracteres alfanumérico que incluye caracteres como ':' y '/'. Se menciona la creación de una referencia con el paquete 'qrcode' de Python y el uso de la opción '-n' con 'echo'. El proceso implicó dibujar los patrones de posicionamiento, las líneas de temporización y los datos, probando la legibilidad con un escáner QR a medida que se avanzaba. Se destaca que incluso con un error menor en los datos, el código seguía siendo escaneable debido al nivel de corrección de errores. Finalmente, se describe la experiencia de escanear el código QR físico, notando la sensibilidad a la curvatura del papel y el éxito al colgarlo del monitor.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 47962032,
+    "url": "https://distr.sh/blog/running-docker-in-production/",
+    "score": 398,
+    "time": 1777555303,
+    "titulo_es": "Docker Compose en Producción: Superando las Brechas Operacionales para 2026",
+    "resumen": "El artículo argumenta que Docker Compose puede ser utilizado en entornos de producción hasta 2026, siempre y cuando se aborden proactivamente las brechas operacionales que deja. Estas brechas incluyen la gestión de contenedores huérfanos tras modificaciones en el archivo `docker-compose.yaml`, el llenado del disco, la falta de mecanismos de auto-reparación (healing) tras fallos detectados por health checks, el uso de etiquetas de imagen como `:latest` que pueden llevar a inconsistencias, y la seguridad del socket de Docker. Se enfatiza que Docker Compose, al carecer de un plano de control o un planificador nativo como Kubernetes, delega estas responsabilidades operativas al usuario o agente que lo gestiona. Se proponen soluciones y patrones para mitigar estos riesgos, como el uso del flag `--remove-orphans` para limpiar contenedores y redes obsoletas, aunque se señala que la gestión manual de volúmenes huérfanos sigue siendo necesaria. El público objetivo principal son despliegues en un solo nodo, servicios de 'long-tail' que no justifican Kubernetes, o dispositivos de borde.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48020063,
+    "url": "https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/",
+    "score": 364,
+    "time": 1777973422,
+    "titulo_es": "La Adopción de IA en Organizaciones: Del Uso Individual al Aprendizaje Organizacional",
+    "resumen": "El artículo aborda la compleja fase intermedia de la adopción de Inteligencia Artificial (IA) en las organizaciones, destacando que las mejoras en la productividad individual logradas con herramientas como GitHub Copilot, ChatGPT Enterprise, Claude o Gemini no se traducen automáticamente en beneficios organizacionales. Se describe cómo el uso de la IA se vuelve omnipresente, pero desigual y a menudo oculto, lo que dificulta la comparación y la conexión con el aprendizaje institucional.  Mientras que la primera fase de adopción es similar a otros despliegues empresariales (licencias, capacitación, redes de campeones), la segunda fase (el 'medio desordenado') presenta escenarios diversos: un equipo usa Copilot como autocompletado, otro integra Claude Code en flujos de trabajo rigurosos, un product owner prototipa software, un ingeniero senior delega análisis complejos, un desarrollador junior genera código sin comprender las suposiciones arquitectónicas subyacentes, y un equipo de soporte automatiza tareas repetitivas.  El autor se enfoca en la dificultad de transferir el conocimiento y el aprendizaje de estos descubrimientos individuales y de equipo al nivel organizacional, a pesar de los mecanismos existentes como comunidades de práctica o demostraciones. Se sugiere que el trabajo significativo con IA ocurre en el contexto del trabajo real (revisiones de código, propuestas, prototipos, incidentes) y no necesariamente a través de canales formales, incluso explorando enfoques como 'fábricas oscuras' para la generación de componentes de producto.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48027369,
+    "url": "https://lowendbox.com/blog/while-the-king-lives-an-old-c-programming-prank-in-gnu-hello-from-1993/",
     "score": 31,
-    "time": 1777955252,
-    "titulo_es": "Colección de Curvas Matemáticas Bidimensionales",
-    "resumen": "El artículo describe una colección de 939 curvas matemáticas bidimensionales. Se detalla que estas curvas pueden ser identificadas por nombre (A-Z), por su tipo de ecuación (algebraicas o trascendentales), o por su método de derivación. También se menciona información de fondo y derechos de autor.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48014325,
-    "url": "https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story",
-    "score": 167,
-    "time": 1777925513,
-    "titulo_es": "Fable trabaja en la Productividad del Desarrollador en Stripe",
-    "resumen": "El artículo se centra en Fable, una iniciativa o equipo dentro de Stripe, cuyo objetivo principal es mejorar la productividad de los desarrolladores. Se menciona a Anna Mason como escritora técnica en Stripe, indicando que trabaja en toda la organización de ingeniería. Además, se invita a explorar guías y ejemplos para integrar Stripe, lo que sugiere un enfoque en las herramientas y flujos de trabajo para desarrolladores que utilizan la plataforma de Stripe.",
+    "time": 1778009522,
+    "titulo_es": "La Evolución de GNU Hello: De un Programa Simple a un Gigante de Código y su Relación con el C Preprocesador",
+    "resumen": "El artículo rastrea la historia evolutiva del programa GNU Hello, desde sus humildes orígenes como un ejemplo simple de \"Hello, world!\" en C hasta su estado actual con casi 40,000 líneas de código. Se explora el uso del preprocesador de C para crear código obfuscado, como la línea \"char c[] = \\\"hello\\\", *p = c; main() { printf(&\\\"%s\\n\\\", (p+=0x1f) ); }\\n\"; y se menciona la \"Ley de Zawinski\" sobre la tendencia de los programas a expandirse para leer correo. El artículo detalla la adición de funcionalidades como la lectura de correo (`--mail`) y la opción `--traditional` en versiones tempranas de GNU Hello, contrastando su complejidad actual con la simplicidad de su propósito original. Se destaca la proliferación de código y la infraestructura de GNU (autoconf) necesaria para un programa que originalmente se resolvía en unas pocas líneas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48018080,
-    "url": "https://www.theregister.com/2026/05/04/uk_online_safety_act_age_checks_subvert/",
-    "score": 102,
-    "time": 1777955784,
-    "titulo_es": "Las medidas de verificación de edad del Reino Unido para la Ley de Seguridad en Línea no están logrando mantener a los niños alejados del contenido dañino",
-    "resumen": "El artículo discute la ineficacia de las recientes medidas de verificación de edad implementadas en el Reino Unido bajo la Ley de Seguridad en Línea (OSA) para proteger a los menores del contenido en línea perjudicial. La investigación de Internet Matters, que encuestó a más de 1000 niños y padres, revela que una parte significativa de los niños (46%) considera que las verificaciones de edad son fáciles de eludir, utilizando métodos como la falsificación de cumpleaños, el uso de identidades ajenas o incluso trucos visuales como dibujarse un bigote para engañar a los sistemas de detección. A pesar de la existencia de estas medidas, casi la mitad de los niños (49%) han encontrado contenido dañino en línea recientemente. El informe también señala que un número considerable de padres (17% activamente, 9% pasivamente) facilitan o ignoran la elusión de estas restricciones por parte de sus hijos. Se concluye que la OSA está fallando en su objetivo principal de mantener a los niños alejados del contenido inapropiado, y se hace un llamado a gobiernos e industria para implementar soluciones de seguridad integradas desde el diseño.",
-    "categoria": "Ciberseguridad"
+    "id": 48033807,
+    "url": "https://haskellforall.com/2026/05/a-bidirectional-typechecking-puzzle",
+    "score": 4,
+    "time": 1778056925,
+    "titulo_es": "Un rompecabezas de verificación de tipos bidireccional en el lenguaje de programación Grace",
+    "resumen": "El artículo describe un problema de verificación de tipos bidireccional encontrado en el lenguaje de programación Grace, que se basa en un sistema de verificación de tipos bidireccional. El problema surge de cómo Grace infiere el tipo de las listas, lo que lleva a una inferencia de tipo incorrecta para listas de registros con campos opcionales. El sistema bidireccional, aunque beneficioso en otros aspectos, no maneja bien la inferencia de supertipos para listas. La solución temporal inicial del autor implicaba inferir el tipo de la lista basándose en el primer elemento, lo que provocaba errores. El artículo también explica cómo la verificación de tipos en Grace no solo detecta errores, sino que también realiza 'elaboración', insertando coerciones para ajustar subtipos a supertipos, como se demuestra con valores opcionales y registros. El problema con las listas de registros se manifiesta porque el tipo inferido de la lista no se ajusta correctamente a las expectativas, afectando la evaluación posterior.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48017641,
-    "url": "https://github.com/yattsu/biscuit",
-    "score": 50,
-    "time": 1777950596,
-    "titulo_es": "Firmware Personalizado para Dispositivo E-Paper Xteink X4",
-    "resumen": "El artículo describe Biscuit, un firmware personalizado para el dispositivo e-paper Xteink X4, que lo transforma de un simple lector electrónico en un dispositivo inteligente multifuncional. Basado en CrossPoint Reader, Biscuit aprovecha la pantalla de tinta electrónica de 4.26 pulgadas y los siete botones físicos para ofrecer una interfaz de usuario basada en actividades. La pantalla de inicio es un panel de control con ocho mosaicos, que van desde lectura hasta utilidades de seguridad, productividad, juegos y herramientas de red. El firmware incluye funciones como la exploración de objetivos, análisis de perfiles y herramientas de ataque en el módulo 'Offense', así como un modo 'Ghost Mode' para la gestión de identidad de red. Admite renderizado EPUB, sincronización con Calibre y KOReader. La arquitectura del firmware se basa en el patrón Activity con un ActivityManager para gestionar las pantallas, y comparte radio WiFi y BLE a través de RadioManager. Las traducciones se gestionan mediante archivos YAML. El dispositivo utiliza un SoC ESP32-C3 y admite almacenamiento a través de MicroSD. Se proporciona un enlace para depuración y reversión al firmware de fábrica.",
+    "id": 48032014,
+    "url": "https://books.worksinprogress.co/book/maintenance-of-everything/communities-of-practice/the-soul-of-maintaining-a-new-machine/3",
+    "score": 10,
+    "time": 1778040102,
+    "titulo_es": "Cómo el conocimiento social y las \"historias de guerra\" de los técnicos de Xerox impulsaron la resolución de problemas complejos de hardware",
+    "resumen": "El artículo describe cómo los equipos de técnicos de servicio de Xerox en la década de 1980 dependían en gran medida de la colaboración social y las \"historias de guerra\" (narrativas de resolución de problemas) para mantener las complejas y temperamental fotocopiadoras Xerox. El trabajo del antropólogo Julian Orr reveló que el conocimiento operativo central de los técnicos era social, no procedimental, y que la divergencia entre la teoría institucionalizada de Xerox sobre el trabajo y la práctica real de los técnicos estaba obstaculizando a la empresa. Las \"historias de guerra\" no solo resolvían problemas técnicos desconcertantes, sino que también establecían la contribución del técnico a la comunidad, especialmente cuando los problemas eran causados por el comportamiento del usuario. El artículo destaca la ingenuidad de los mantenedores profesionales en entornos de alta ambigüedad y la resistencia al cambio de las teorías institucionales erróneas.",
     "categoria": "Hardware"
-  },
-  {
-    "id": 48009840,
-    "url": "https://electrek.co/2026/05/02/tesla-1966-mustang-ev-conversion-full-self-driving/",
-    "score": 173,
-    "time": 1777908173,
-    "titulo_es": "Ford Mustang 1966 convertido a Tesla con Full Self-Driving",
-    "resumen": "Un taller de repuestos de Tesla en Sacramento ha convertido con éxito un Ford Mustang de 1966 en un vehículo totalmente funcional con tecnología Tesla. El proyecto, que costó aproximadamente $40,000 y tomó dos años, integra el tren motriz dual-motor, la pantalla táctil de 15 pulgadas y el sistema \"Full Self-Driving\" (Supervised) de un Model 3. El vehículo modificado alcanza una eficiencia de 258 Wh/mi, comparable a la de un Model 3 real, y utiliza el conjunto de cámaras de Tesla para habilitar Autopilot, Sentry Mode y FSD. El interior se ha actualizado con la pantalla táctil del Model 3, el volante yoke del Cybertruck y asientos calefactados/refrigerados. Este proyecto destaca la portabilidad del hardware y software de Tesla, y su viabilidad para conversiones de vehículos clásicos, demostrando que el sistema FSD puede operar en vehículos no Tesla, a pesar de la reticencia de los fabricantes a licenciar la tecnología.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 47998158,
-    "url": "http://oldvcr.blogspot.com/2026/05/testing-macos-on-apple-network-server.html",
-    "score": 86,
-    "time": 1777823373,
-    "titulo_es": "Análisis de ROMs de Apple Network Server y su impacto en el rendimiento de hardware",
-    "resumen": "El artículo detalla la experiencia de probar diferentes versiones de ROMs (preproducción 1.1.20 y 2.0) en un Apple Network Server (ANS). Se exploran las diferencias en la funcionalidad de Open Firmware, como la redirección de salida serial y la gestión del árbol de dispositivos. Se observan problemas significativos con las ROMs 2.0, incluyendo la falta de soporte para dispositivos SCSI internos (como la unidad CD-ROM), fallos en el arranque de AIX y problemas con la red Ethernet integrada, requiriendo el uso de una tarjeta Ethernet adicional. Las ROMs 1.1.20, por otro lado, muestran una lista de alias de dispositivos más completa y permiten arrancar sistemas como AIX. El rendimiento general es notablemente inferior con las ROMs 2.0, atribuyéndose parcialmente a problemas con la caché L2 y la velocidad de la RAM. Se concluye que, para un rendimiento óptimo de Mac OS en el ANS, las ROMs de preproducción son preferibles, mientras que las ROMs 2.0, a pesar de soportar más hardware del ANS, introducen una penalización de rendimiento considerable y parecen incompletas.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48011904,
-    "url": "https://www.b-list.org/weblog/2026/apr/09/llms/",
-    "score": 161,
-    "time": 1777915779,
-    "titulo_es": "Modelos de Lenguaje Grandes y el Futuro de la Programación",
-    "resumen": "El artículo discute el impacto de los Modelos de Lenguaje Grandes (LLMs) en el desarrollo de software. Contrasta el entusiasmo actual con la noción de que no existe una 'bala de plata' para mejorar drásticamente la productividad en el software, un concepto introducido por Fred Brooks. El autor se enfoca en los LLMs y su uso para la generación de código, diferenciándolo de términos más amplios como 'IA'. Se analizan las dificultades inherentes (esencia) y accidentales en el desarrollo de software, sugiriendo que los LLMs podrían abordar algunas de las accidentales, pero las esenciales, como la complejidad intrínseca del software, permanecen. El enfoque está en la tecnología y la profesión de la programación, evitando debates filosóficos o aplicados a otros campos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48008083,
-    "url": "https://github.com/pyinfra-dev/pyinfra/releases/tag/v3.8.0",
-    "score": 284,
-    "time": 1777899226,
-    "titulo_es": "Gran lanzamiento con correcciones y mejoras, transición a SemVer completo",
-    "resumen": "El artículo anuncia un importante lanzamiento de software que incluye numerosas correcciones y mejoras generales. Se destaca la adopción completa de la versión SemVer (Semantic Versioning), especificando que el sufijo '.0' en la versión 3.8.0 y futuras versiones indicará cambios significativos. Se agradece la contribución de los desarrolladores. La lista de áreas impactadas incluye 'Core', 'Operations/facts', 'Connectors', 'Docs/meta' y 'Other'. Se mencionan repetidos errores al cargar contenido, sugiriendo una posible inestabilidad en la interfaz de presentación del anuncio o en la carga de recursos asociados.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48011184,
-    "url": "https://wwj.dev/posts/i-am-worried-about-bun/",
-    "score": 493,
-    "time": 1777913100,
-    "titulo_es": "La adquisición de Bun por Anthropic y las preocupaciones sobre el futuro de su desarrollo",
-    "resumen": "El artículo expresa preocupación por el futuro de Bun, un runtime de JavaScript conocido por su velocidad y eficiencia, tras su adquisición por Anthropic en diciembre de 2025. Si bien la adquisición prometía mantener Bun de código abierto y con el mismo equipo de desarrollo, centrado en la compatibilidad con Node.js y el alto rendimiento, el autor observa una degradación en la calidad del producto Claude Code de Anthropic, que utiliza Bun como ejecutable.  Problemas como la reducción del esfuerzo de razonamiento por defecto, bugs en sesiones y cambios en los prompts han afectado negativamente la calidad de Claude Code.  Además, la gestión de costos y restricciones para \"harnesses\" de terceros como OpenClaw ha generado controversia, llegando incluso a afectar solicitudes simples de Claude Code y a generar cargos adicionales inesperados. El autor teme que la falta de atención de Anthropic al producto Claude Code, a pesar de tener un incentivo directo para mantener Bun excelente, pueda ser un presagio de un menor compromiso con el desarrollo y mantenimiento de Bun a largo plazo, impactando su viabilidad como alternativa seria a Node.js.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48009020,
-    "url": "https://blog.alcazarsec.com/tech/posts/how-moneros-proof-of-work-works",
-    "score": 284,
-    "time": 1777903850,
-    "titulo_es": "RandomX: La Prueba de Trabajo de Monero Diseñada para CPUs",
-    "resumen": "El artículo describe RandomX, el algoritmo de prueba de trabajo (Proof of Work) de Monero, diseñado específicamente para ser eficiente en CPUs de propósito general y resistente a hardware especializado como ASICs. A diferencia de sistemas como el de Bitcoin que se basan en funciones hash fijas, RandomX ejecuta programas aleatorios en una máquina virtual, exigiendo un uso intensivo de memoria (tanto caché como DRAM) y diversas características de la CPU. Este enfoque busca descentralizar la minería al hacer que el trabajo sea más similar a una carga de trabajo de CPU normal, dificultando la optimización con hardware dedicado. RandomX utiliza la memoria de forma intensiva, primero generando una caché de 256 MiB a través de Argon2d (una función de hash de contraseñas y derivación de claves que consume mucha memoria) y luego construyendo un conjunto de datos de 2 GiB a partir de esta caché. Este conjunto de datos es de solo lectura durante el proceso de hashing y fuerza un tráfico regular de DRAM, convirtiendo el acceso a la memoria en uno de los principales cuellos de botella del algoritmo, además de las operaciones aritméticas. La clave para generar estas estructuras de memoria se deriva de un hash de un bloque anterior y se actualiza cada 2048 bloques, lo que significa que las estructuras pesadas se reconstruyen aproximadamente cada 2.8 días, mientras que los intentos de hash individuales cambian constantemente el nonce.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48016534,
-    "url": "https://daringfireball.net/2026/05/y_combinators_stake_in_openai",
-    "score": 333,
-    "time": 1777939741,
-    "titulo_es": "Participación de Y Combinator en OpenAI y la confianza de Sam Altman",
-    "resumen": "El artículo discute la aparente omisión de divulgar la participación de Y Combinator (YC) en OpenAI, valorada en miles de millones de dólares, en el contexto de las declaraciones de Paul Graham sobre la confiabilidad de Sam Altman. Se destaca que Altman, como ex presidente de YC, tiene una participación indirecta en OpenAI a través de su propiedad en YC. El autor cuestiona si esta participación financiera, estimada en más de $5 mil millones para YC (y por extensión para Altman y los fundadores de YC como Graham), podría haber influido en las opiniones públicas de Graham sobre Altman, especialmente en relación con la investigación sobre la confiabilidad de Altman en The New Yorker y la reciente crisis en OpenAI.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48017298,
-    "url": "https://margaretstorey.com/blog/2026/02/18/cognitive-debt-revisited/",
-    "score": 197,
-    "time": 1777946901,
-    "titulo_es": "La Deuda Cognitiva Amplificada por la IA: Manteniendo la Comprensión Compartida en un Mundo de Rápida Evolución del Software",
-    "resumen": "El artículo explora el concepto de 'deuda cognitiva', definida como la brecha acumulada entre la estructura evolutiva de un sistema y la comprensión compartida de un equipo sobre su funcionamiento y cómo modificarlo. Se argumenta que la IA Generativa y Agente, al acelerar la producción de código y la evolución de la estructura del software, puede amplificar significativamente esta deuda cognitiva. La deuda cognitiva, a diferencia de la deuda técnica que reside en el código, se aloja en las personas y se manifiesta en la dificultad para mantener un modelo mental coherente del sistema, lo que lleva a la pérdida de 'sentido profundo' y a la desconexión entre las decisiones y la intención original. La sobrecarga de conocimiento y la fatiga de la IA son síntomas de este problema. El artículo enfatiza que, si bien las buenas prácticas de ingeniería como especificaciones claras, revisiones rigurosas y documentación explícita pueden mitigar la deuda cognitiva, las presiones de velocidad y la adopción de IA están cambiando los incentivos. La solución implica no solo refactorizar código o actualizar documentos, sino reconstruir la 'teoría distribuida' del sistema, capturando la intención, el razonamiento detrás de las decisiones y las restricciones clave. Se sugiere que el uso deliberado de la IA podría ayudar a hacer visible el trabajo cognitivo y a externalizar la intención y la comprensión compartida, convirtiéndose en un cuello de botella para el rendimiento a medida que se reduce la fricción técnica. La gestión intencionada de la deuda cognitiva, similar a cómo se gestiona la deuda técnica, será crucial para los equipos de alto rendimiento en la era de la IA.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48009747,
-    "url": "https://www.fuelinsight.co.uk",
-    "score": 178,
-    "time": 1777907721,
-    "titulo_es": "Análisis de Precios de Combustible en el Reino Unido y Uso de Google Analytics",
-    "resumen": "El artículo describe el uso de Google Analytics para comprender el comportamiento del usuario en un sitio web, asegurando que no se recopilan datos personales sin consentimiento. Detalla métricas de análisis de mercado de precios de combustible en el Reino Unido, incluyendo el pulso de precios de 24 horas, precios promedio diarios de los últimos 30 días y un resumen de las estaciones que han reportado precios en los últimos 7 días. Se explica que los precios reportados por los operadores a través del esquema 'UK Fuel Finder' pueden estar desactualizados (marcados en ámbar) si no han cambiado en más de 3 días.  No se enfoca en desarrollo de software, IA, ciberseguridad, distribuciones Linux, ciencia, matemáticas, hardware o frontend, sino en la recopilación y presentación de datos de mercado con un componente de análisis web.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48010266,
-    "url": "https://sierra.ai/blog/better-customer-experiences-built-on-sierra",
-    "score": 105,
-    "time": 1777909897,
-    "titulo_es": "Sierra Recauda $950 Millones y Alcanza Más de $15 Mil Millones en Valoración para Liderar la Transformación de la Experiencia del Cliente con IA",
-    "resumen": "El artículo detalla la significativa financiación y el crecimiento de Sierra, una empresa que se enfoca en la inteligencia artificial para transformar las experiencias de los clientes. Sierra ha recaudado $950 millones de inversores como Tiger Global y GV, alcanzando una valoración de más de $15 mil millones. Con más de $1 mil millones disponibles para inversión, la empresa busca establecerse como el estándar global para empresas que desean modernizar sus interacciones con los clientes mediante IA.  La plataforma de Sierra permite la creación y despliegue rápido de agentes de IA que manejan interacciones complejas en diversas industrias, desde finanzas hasta salud y comercio minorista. Se destaca la evolución acelerada de la IA, la capacidad de los agentes para ir más allá del soporte básico y gestionar relaciones proactivas con los clientes, optimizando la satisfacción y los objetivos comerciales. El artículo enfatiza la rapidez con la que las empresas pueden implementar estas soluciones, citando ejemplos como Nordstrom, Singtel y Cigna, que lograron resultados notables en pocas semanas. Sierra ha experimentado un crecimiento exponencial, alcanzando $100 millones en ARR en siete trimestres desde su lanzamiento en febrero de 2024 y más de $150 millones en ARR al ingresar a su tercer año, posicionándose como una de las empresas de software empresarial de más rápido crecimiento. La visión de Sierra es reimaginar el software para la era de los agentes, donde los resultados se describen y los agentes inteligentes se encargan de la ejecución y mejora continua.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48014197,
-    "url": "https://arxiv.org/abs/2510.19315",
-    "score": 55,
-    "time": 1777924988,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo de Nuevas Funcionalidades en arXiv",
-    "resumen": "arXivLabs es un marco colaborativo diseñado para permitir el desarrollo y la implementación directa de nuevas funcionalidades en la plataforma arXiv. Fomenta la participación de individuos y organizaciones, promoviendo los valores de apertura, comunidad, excelencia y privacidad de datos del usuario. El programa se compromete a trabajar únicamente con socios que adhieran a estos principios, ofreciendo una vía para que las ideas de proyectos que aporten valor a la comunidad de arXiv sean exploradas y desarrolladas.",
-    "categoria": "Desarrollo de Software"
   }
 ]
