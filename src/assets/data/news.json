@@ -1,290 +1,299 @@
 [
   {
-    "id": 48055913,
-    "url": "https://www.theverge.com/tech/926458/canvas-shinyhunters-breach",
-    "score": 648,
-    "time": 1778192541,
-    "titulo_es": "Canvas sufre una interrupción masiva tras una brecha de seguridad de ShinyHunters",
-    "resumen": "La plataforma de gestión de aprendizaje Canvas, propiedad de Instructure, experimentó una caída total del servicio y fue puesta en modo de mantenimiento tras confirmarse una brecha de seguridad masiva. El grupo de hacking ShinyHunters se atribuyó el ataque, comprometiendo presuntamente datos de 275 millones de usuarios de 9,000 escuelas, incluyendo nombres, correos electrónicos y mensajes. A pesar de que Instructure implementó parches de seguridad recientemente, los atacantes lograron insertar mensajes de rescate en la plataforma, exigiendo negociaciones privadas antes de mayo de 2026 para evitar la filtración de la información sensible.",
+    "id": 48071262,
+    "url": "https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/",
+    "score": 298,
+    "time": 1778294502,
+    "titulo_es": "Capacidades de los modelos de lenguaje en la investigación matemática avanzada",
+    "resumen": "El artículo analiza el notable progreso de los modelos de lenguaje de gran tamaño (LLM), citando específicamente a ChatGPT 5.5 Pro y su capacidad para resolver problemas de investigación de nivel doctoral en matemáticas. Se detalla cómo estas herramientas están abordando con éxito problemas de combinatoria y teoría aditiva de números, como los problemas de Erdős y las investigaciones de Mel Nathanson sobre sumas de conjuntos. El autor reflexiona sobre cómo la IA está elevando el estándar de lo que se considera un problema de investigación 'difícil', al ser capaz de identificar argumentos lógicos que antes pasaban desapercibidos para los matemáticos humanos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48067119,
+    "url": "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users",
+    "score": 1023,
+    "time": 1778265958,
+    "titulo_es": "Google vincula reCAPTCHA a Google Play Services, impactando la privacidad y dispositivos 'de-Googled'",
+    "resumen": "Google ha integrado su sistema de verificación reCAPTCHA de próxima generación con el framework propietario Google Play Services en Android (versión 25.41.30 o superior). Este cambio arquitectónico obliga a los usuarios a ejecutar software de Google para superar los desafíos de validación humana, lo que provoca fallos automáticos en dispositivos con ROMs personalizadas enfocadas en la privacidad, como GrapheneOS. El sistema, que ahora forma parte de 'Google Cloud Fraud Defense', sustituye los rompecabezas de imágenes por escaneos de códigos QR que requieren comunicación directa con los servidores de Google, planteando un conflicto entre la mitigación de bots y la soberanía de datos del usuario final.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48059662,
-    "url": "https://clojurescript.org/news/2026-05-07-release",
-    "score": 63,
-    "time": 1778223864,
-    "titulo_es": "Lanzamiento de ClojureScript 1.12.145: Soporte nativo para funciones asíncronas",
-    "resumen": "La nueva versión 1.12.145 de ClojureScript introduce el soporte nativo para funciones 'async' de JavaScript mediante el uso del metadato ^:async. Aprovechando que el compilador ahora tiene como objetivo ECMAScript 2016, se permite la generación de código asíncrono nativo tanto en lógica de aplicación como en pruebas unitarias. Esta mejora optimiza la interoperabilidad con APIs modernas del navegador y bibliotecas externas, eliminando la necesidad de dependencias adicionales para gestionar flujos asíncronos complejos.",
+    "id": 48051951,
+    "url": "https://moq.dev/blog/webrtc-is-the-problem/",
+    "score": 314,
+    "time": 1778173919,
+    "titulo_es": "No deberías usar WebRTC para IA de voz: Una crítica técnica a la arquitectura de OpenAI",
+    "resumen": "El artículo analiza desde una perspectiva de arquitectura de sistemas por qué WebRTC es una elección ineficiente para aplicaciones de IA de voz. El autor, experto en infraestructura de streaming (ex-Twitch y Discord), argumenta que WebRTC prioriza la baja latencia extrema mediante el descarte de paquetes, lo cual es contraproducente para los modelos de lenguaje que requieren integridad en el audio para una transcripción precisa. Se detallan problemas críticos como la rigidez del jitter buffer, la imposibilidad de retransmitir paquetes en el navegador y cómo OpenAI termina introduciendo latencia artificial para compensar las deficiencias de un protocolo diseñado para conferencias humanas, no para el procesamiento de modelos generativos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48053623,
-    "url": "https://www.openwall.com/lists/oss-security/2026/05/07/8",
-    "score": 647,
-    "time": 1778181692,
-    "titulo_es": "Recursos de la Lista de Correo de Seguridad de Software de Código Abierto",
-    "resumen": "Este texto sirve como introducción y guía para los miembros de la comunidad de seguridad de software de código abierto, proporcionando acceso a una wiki especializada y directrices sobre el formato y uso correcto de las listas de correo.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48059606,
-    "url": "https://www.nintendo.co.jp/corporate/release/en/2026/260508.html",
-    "score": 16,
-    "time": 1778223373,
-    "titulo_es": "Nintendo anuncia revisión de precios para Nintendo Switch 2 y hardware actual",
-    "resumen": "Nintendo Co., Ltd. ha comunicado un ajuste oficial en los precios de venta sugeridos (MSRP) para sus sistemas de hardware, específicamente la futura Nintendo Switch 2 y la Nintendo Switch actual, debido a la evolución de las condiciones del mercado global y el aumento en los costos de materiales de fabricación. Esta medida también afectará a las suscripciones de Nintendo Switch Online y a productos tradicionales como las cartas Hanafuda, buscando garantizar la viabilidad a largo plazo de la distribución de sus plataformas de entretenimiento en diversas regiones.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48021023,
-    "url": "https://ivanpleshkov.dev/blog/polynomial-autoencoder/",
-    "score": 44,
-    "time": 1777980672,
-    "titulo_es": "Compresión de embeddings mediante decodificadores cuadráticos sobre PCA",
-    "resumen": "El artículo describe Poly-AE, un método para comprimir embeddings de redes neuronales utilizando un codificador PCA combinado con un decodificador cuadrático (polinomio de grado 2) y una regresión Ridge. Esta técnica aborda el 'efecto cono' no lineal de los transformadores que el PCA lineal no puede capturar. Los resultados muestran mejoras de entre +1 y +4.4 puntos en NDCG@10 sobre PCA estándar en benchmarks de recuperación de información (BEIR), permitiendo una compresión de memoria de hasta 8x con una pérdida mínima de precisión y sin necesidad de entrenamiento mediante descenso de gradiente estocástico (SGD).",
-    "categoria": "IA"
-  },
-  {
-    "id": 48051562,
-    "url": "https://bsuh.bearblog.dev/agents-need-control-flow/",
-    "score": 470,
-    "time": 1778172215,
-    "titulo_es": "Tesis: Los agentes confiables requieren un flujo de control determinista en software, no cadenas de prompts complejas",
-    "resumen": "El autor argumenta que la escalabilidad y fiabilidad de los agentes de IA dependen de la implementación de estructuras de control deterministas en lugar de depender exclusivamente de la ingeniería de prompts. Sostiene que los prompts son inherentemente no deterministas y difíciles de verificar, lo que rompe la capacidad de razonamiento local. La solución propuesta consiste en tratar a los Modelos de Lenguaje (LLMs) como componentes individuales dentro de un andamiaje de software que utilice transiciones de estado explícitas, validación programática y una detección de errores rigurosa para garantizar la composividad y el control del sistema.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48009879,
-    "url": "https://ikesau.co/blog/dithering-with-css/",
-    "score": 12,
-    "time": 1777908378,
-    "titulo_es": "Uso de dithering para mantener una estética consistente en sitios web",
-    "resumen": "El texto analiza la implementación de técnicas de dithering en imágenes para sitios web con el fin de asegurar un esquema de colores y una estética visual homogénea. Se plantea el dilema técnico entre el preprocesamiento estático de las imágenes y la implementación de soluciones dinámicas que permiten una mayor personalización en la capa de presentación.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48036923,
-    "url": "https://docs.merca.earth/blog/floats-dont-agree-with-themselves",
-    "score": 14,
-    "time": 1778078883,
-    "titulo_es": "Por qué el estándar IEEE 754 rompe el determinismo: Geometría computacional exacta sin números de punto flotante",
-    "resumen": "El artículo analiza los problemas de no determinismo en algoritmos geométricos causados por las variaciones en la implementación del estándar IEEE 754 entre diferentes arquitecturas (x86 vs. WASM). El autor explica cómo la contracción FMA y el redondeo de punto flotante pueden alterar los resultados de pruebas críticas de orientación, provocando fallos en la descomposición de polígonos. Como solución, propone el uso de aritmética de enteros de precisión fija y presenta 'exact-poly', una biblioteca que utiliza i128 para garantizar resultados idénticos y exactos en cualquier plataforma, eliminando la dependencia de tolerancias de épsilon.",
+    "id": 48046436,
+    "url": "https://martinfowler.com/bliki/MythicalManMonth.html",
+    "score": 154,
+    "time": 1778138455,
+    "titulo_es": "Reflexiones sobre El Mítico Hombre-Mes y la Integridad Conceptual",
+    "resumen": "El artículo analiza la vigencia de las lecciones de Fred Brooks en 'El Mítico Hombre-Mes', destacando la Ley de Brooks sobre el impacto negativo de añadir personal a proyectos retrasados debido a la complejidad de la comunicación. Se subraya la integridad conceptual como el factor más crítico en el diseño de sistemas, argumentando que es preferible un diseño cohesivo y simple que una amalgama de funciones independientes y descoordinadas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48058644,
-    "url": "https://github.com/graemeg/blaise",
-    "score": 48,
-    "time": 1778215442,
-    "titulo_es": "Blaise: Reimaginando Object Pascal para la era moderna",
-    "resumen": "Blaise es un compilador de Object Pascal de próxima generación diseñado para eliminar décadas de deuda técnica y complejidad heredada. El proyecto se centra en la productividad y la seguridad de memoria mediante un modelo de lenguaje unificado que implementa Conteo Automático de Referencias (ARC) para todos los objetos, un sistema único de cadenas UTF-8 y genéricos reificados mediante monomorfización. A diferencia de Delphi o Free Pascal, Blaise prescinde de múltiples modos de lenguaje y GUIDs para interfaces, utilizando un sistema de construcción moderno (PasBuild) y un formato de depuración propio (OPDF). Actualmente es un compilador auto-hospedado que genera código nativo a través de un backend QBE, con soporte para LLVM en desarrollo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48052537,
-    "url": "https://www.anthropic.com/research/natural-language-autoencoders",
-    "score": 281,
-    "time": 1778176442,
-    "titulo_es": "Presentación de los Autoencoders de Lenguaje Natural (NLAs)",
-    "resumen": "El artículo detalla el desarrollo de los Autoencoders de Lenguaje Natural (NLAs) por parte de Anthropic, una herramienta diseñada para decodificar las activaciones internas de modelos de IA como Claude en texto comprensible para humanos. El proceso utiliza una arquitectura de ciclo cerrado compuesta por un Visualizador de Activaciones (AV), que traduce números en explicaciones, y un Reconstructor de Activaciones (AR), que intenta recrear la activación original desde el texto para validar su precisión. Esta técnica permite una mayor transparencia en el razonamiento de los modelos, facilitando la identificación de comportamientos ocultos o sospechas del modelo durante pruebas de seguridad críticas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48050751,
-    "url": "https://github.com/antirez/ds4",
-    "score": 390,
-    "time": 1778168424,
-    "titulo_es": "ds4.c: Un motor de inferencia nativo y ligero para DeepSeek V4 Flash",
-    "resumen": "ds4.c es un motor de inferencia especializado y minimalista diseñado específicamente para el modelo DeepSeek V4 Flash. A diferencia de frameworks genéricos, utiliza un ejecutor de grafos Metal optimizado para Apple Silicon, implementando carga de GGUF, gestión de estado KV y una API de servidor propias. Destaca por su soporte de cuantización asimétrica de 2 bits altamente eficiente y el uso experimental de decodificación especulativa (MTP). El proyecto se apoya en el ecosistema GGUF y el conocimiento de ingeniería de llama.cpp, pero opera como una implementación independiente orientada al alto rendimiento en tareas de inferencia locales.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48050278,
-    "url": "https://deepmind.google/blog/alphaevolve-impact/",
-    "score": 294,
-    "time": 1778166140,
-    "titulo_es": "AlphaEvolve: Un agente de codificación potenciado por Gemini para el diseño de algoritmos avanzados",
-    "resumen": "AlphaEvolve es un agente de inteligencia artificial diseñado para el descubrimiento y optimización autónoma de algoritmos complejos. Utilizando modelos Gemini, ha logrado hitos significativos en diversas disciplinas: redujo en un 30% los errores en la detección de variantes genómicas, aumentó la factibilidad de soluciones en redes eléctricas del 14% al 88%, y optimizó circuitos cuánticos reduciendo el error en un factor de 10. Además, colabora en la resolución de problemas matemáticos de frontera, como los de Erdős y Ramsey, demostrando ser una herramienta crítica para acelerar el progreso en ciencia, infraestructura y modelos de IA de próxima generación.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48052371,
-    "url": "https://www.elciudadano.com/en/brazils-pix-payment-system-faces-pressure-from-visa-and-mastercard/04/04/",
-    "score": 203,
-    "time": 1778175778,
-    "titulo_es": "PIX: el sistema de pago brasileño presionado por Visa y Mastercard",
-    "resumen": "Análisis técnico y comercial de Pix, el sistema de pagos instantáneos desarrollado por el Banco Central de Brasil (BCB). Basado en el Sistema de Pagos Instantáneos (SPI), Pix permite transferencias en tiempo real las 24 horas del día mediante llaves personalizadas y códigos QR. Con una infraestructura capaz de procesar hasta 276 millones de transacciones en un solo día, el sistema ha superado el volumen combinado de gigantes como Visa y Mastercard en Brasil. El artículo destaca su arquitectura de bajo coste (0.33% de comisión media) y su escalabilidad masiva, habiendo alcanzado a más de 180 millones de usuarios y procesado volúmenes financieros que multiplican el PIB nacional.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48056268,
-    "url": "https://www.bcm.edu/news/researchers-discover-advanced-language-processing-in-the-unconscious-human-brain",
-    "score": 108,
-    "time": 1778195204,
-    "titulo_es": "El cerebro humano procesa el lenguaje y predice palabras bajo anestesia general",
-    "resumen": "Investigadores del Baylor College of Medicine han demostrado, mediante el uso de sondas Neuropixels en el hipocampo, que el cerebro humano mantiene capacidades de procesamiento de lenguaje sofisticado y codificación predictiva incluso en estado de inconsciencia por anestesia general. El estudio revela que las neuronas individuales pueden diferenciar categorías gramaticales y anticipar palabras en un discurso, un comportamiento similar al de los grandes modelos de lenguaje (LLM) en IA. Estos hallazgos sugieren que la comprensión lingüística no requiere de la conciencia y abren nuevas posibilidades para el desarrollo de interfaces cerebro-computadora y prótesis de habla.",
+    "id": 48037517,
+    "url": "https://www.quantamagazine.org/what-causes-lightning-the-answer-keeps-getting-more-interesting-20260506/",
+    "score": 49,
+    "time": 1778082066,
+    "titulo_es": "El misterio del origen de los rayos: una nueva frontera en la física atmosférica",
+    "resumen": "El artículo explora cómo investigadores, utilizando instrumentos diseñados para la astrofísica, están redefiniendo nuestra comprensión sobre la formación de los rayos. El estudio destaca que la iniciación de un rayo involucra procesos de alta energía, como la emisión de rayos X y gamma, sugiriendo que estos fenómenos están vinculados a la física de partículas y eventos cósmicos más que a simples chispas eléctricas convencionales.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48056749,
-    "url": "https://github.com/robertdfrench/ifuncd-up",
-    "score": 79,
-    "time": 1778198618,
-    "titulo_es": "Por qué deberías dejar de culpar a xz-utils por el CVE-2024-3094",
-    "resumen": "El artículo analiza el impacto y las causas raíz de la puerta trasera en xz-utils (CVE-2024-3094). El autor argumenta que, más allá de la infiltración de código malicioso, el éxito potencial del ataque se debió a dos decisiones de diseño estructural en el ecosistema Linux: la vinculación de OpenSSH con libsystemd por parte de distribuciones como Fedora y Debian para resolver condiciones de carrera, y el uso de GNU IFUNC para la resolución dinámica de símbolos en tiempo de ejecución. El texto destaca fallos en la cadena de suministro y una falta de comunicación entre proyectos independientes (Conway's Law) como vulnerabilidades sistémicas.",
+    "id": 48066524,
+    "url": "https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures",
+    "score": 331,
+    "time": 1778262908,
+    "titulo_es": "El impacto de la IA en la divulgación de vulnerabilidades y la seguridad informática",
+    "resumen": "El artículo analiza el conflicto entre dos filosofías de seguridad: la 'divulgación coordinada' y la cultura de 'los errores son errores' típica de Linux. Explica cómo la llegada de la inteligencia artificial está rompiendo el equilibrio tradicional al permitir que tanto atacantes como defensores identifiquen vulnerabilidades en commits de código de forma casi instantánea, lo que hace que los periodos largos de embargo sean ineficaces y aumenten el riesgo de detección independiente simultánea.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48058337,
-    "url": "https://lwn.net/Articles/1066418/",
-    "score": 32,
-    "time": 1778212319,
-    "titulo_es": "Conflicto de gobernanza entre The Document Foundation y Collabora",
-    "resumen": "El artículo detalla una crisis institucional en The Document Foundation (TDF), la entidad sin fines de lucro tras LibreOffice, tras la revocación de la membresía de aproximadamente 30 colaboradores vinculados a Collabora. Se analiza la estructura de gobernanza basada en la legislación alemana (Stiftung), el papel de Collabora como el mayor contribuyente corporativo al código fuente y las tensiones entre los objetivos de la fundación y los intereses comerciales. El conflicto ha derivado en que Collabora reduzca su implicación en LibreOffice para centrarse en una variante propia, lo que plantea retos significativos para la sostenibilidad y el desarrollo futuro del ecosistema de software de oficina de código abierto.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48036746,
-    "url": "https://zknill.io/posts/everyone-said-sse-token-streaming-was-easy/",
-    "score": 34,
-    "time": 1778077902,
-    "titulo_es": "Los desafíos de la persistencia y SSE en el streaming de agentes de IA",
-    "resumen": "El artículo analiza la complejidad técnica de implementar transmisiones duraderas de tokens desde LLMs utilizando Server-Sent Events (SSE). Explora cómo la transición de agentes síncronos a procesos en segundo plano requiere mecanismos de resiliencia como el encabezado Last-Event-ID. Desde una perspectiva de arquitectura de software, el autor destaca el problema de persistencia que esto genera: para que un stream sea reanudable en un entorno de servidores sin estado, cada token y su abundante metadata deben escribirse en la base de datos en tiempo real, lo que incrementa significativamente la carga de E/S del sistema.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48053203,
-    "url": "https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/",
-    "score": 666,
-    "time": 1778179585,
-    "titulo_es": "La basura generada por IA está matando a las comunidades en línea",
-    "resumen": "El artículo analiza el fenómeno del 'AI slop' o contenido basura generado por inteligencia artificial y su impacto negativo en los ecosistemas de desarrollo. El autor critica la tendencia actual de inundar repositorios de GitHub y comunidades como Reddit con proyectos de 'vibe-coding', artículos y vídeos producidos sin esfuerzo ni valor real. Desde una perspectiva técnica, advierte que el auge del código agéntico ha eliminado la barrera de entrada para la creación de contenido, pero ha aumentado drásticamente el ruido, dificultando la identificación de señales útiles. Se plantea el riesgo de que las comunidades orgánicas se degraden hasta convertirse en espacios donde agentes de IA interactúan entre sí sin presencia humana real, perdiendo la esencia del aprendizaje colaborativo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48051079,
-    "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/",
-    "score": 193,
-    "time": 1778169933,
-    "titulo_es": "Identificación y Corrección de Vulnerabilidades de Seguridad en Firefox con IA",
-    "resumen": "El artículo detalla cómo Mozilla utilizó modelos de IA avanzados, como Claude Mythos Preview, para identificar y corregir un número sin precedentes de vulnerabilidades de seguridad latentes en Firefox. Inicialmente, los reportes de bugs generados por IA eran de baja calidad y costosos de gestionar. Sin embargo, la mejora en la capacidad de los modelos y el desarrollo de técnicas para dirigir, escalar y apilar LLMs permitieron generar señales de seguridad útiles y filtrar el ruido. Se destaca la capacidad de la IA para encontrar bugs complejos, como escapes de sandbox, que son difíciles de detectar con fuzzing. También se menciona que la IA no encontró ciertos tipos de exploits debido a cambios arquitectónicos previos, como el congelamiento de prototipos, lo que demuestra la efectividad de las medidas de endurecimiento de seguridad. Se compara la efectividad de los enfoques anteriores (GPT 4, Sonnet 3.5) con los sistemas 'agentic harnesses' actuales, que pueden generar y ejecutar casos de prueba reproducibles para detectar problemas de seguridad de manera confiable.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48053842,
-    "url": "https://www.citizen.co.za/news/home-affairs-officials-suspended-ai-hallucinations/",
-    "score": 99,
-    "time": 1778182716,
-    "titulo_es": "Department of Home Affairs Suspende Funcionarios por Uso de IA en Documento de Política",
-    "resumen": "El artículo detalla la suspensión de dos funcionarios del Departamento de Asuntos Internos (DHA) de Sudáfrica tras el descubrimiento de 'alucinaciones' (referencias ficticias generadas por IA) en un documento de política revisado sobre ciudadanía, inmigración y protección de refugiados. El incidente, similar a uno ocurrido en el Departamento de Comunicaciones y Tecnologías Digitales (DCDT), ha llevado al DHA a implementar controles y declaraciones de IA en sus procesos de aprobación internos y a revisar todos los documentos de política producidos desde noviembre de 2022. El departamento reconoce la naturaleza disruptiva de la IA y la necesidad de adaptarse para aprovechar sus beneficios, a pesar de las discrepancias encontradas en la lista de referencias, afirmando que el contenido de la política principal no se ve afectado.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48040269,
-    "url": "https://www.stvn.sh/writing/programming-still-sucks-fqffhyp",
-    "score": 621,
-    "time": 1778094401,
-    "titulo_es": "La realidad caótica del desarrollo de software frente al avance de la IA",
-    "resumen": "El artículo describe la naturaleza caótica y precaria del trabajo en el desarrollo de software, desmintiendo la percepción idealizada de roles ordenados y planes perfectos. El autor utiliza la analogía de ser capitán de un barco en mal estado, con sistemas rotos, tripulación desorientada y decisiones contradictorias, para ilustrar la complejidad y la falta de control en el día a día. Se aborda la creciente ansiedad provocada por la IA y su impacto en la productividad, así como la incertidumbre sobre el futuro del empleo en el sector, contrastando la realidad del \"trabajo físico\" con la percepción errónea del \"trabajo en tecnología\". La narrativa enfatiza la improvisación constante, la resolución de problemas urgentes y la sensación de estar en una crisis permanente, incluso cuando se intenta avanzar.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48057209,
-    "url": "https://openrouter.ai/announcements/gpt55-cost-analysis",
-    "score": 41,
-    "time": 1778202148,
-    "titulo_es": "Análisis de Costos: GPT-5.5 vs. GPT-5.4",
-    "resumen": "El artículo detalla un análisis de costos comparativo entre los modelos GPT-5.4 y GPT-5.5, observando un incremento en el precio de los tokens de entrada y salida. A pesar de que GPT-5.5 produce menos tokens de salida para prompts largos (reduciendo la longitud de las completaciones entre un 19-34%), se observó un aumento general en los costos reales para los usuarios del 49-92%. Esta disparidad se atribuye a que, para prompts más cortos (bajo 10K tokens), las completaciones no se acortan proporcionalmente, o incluso se alargan (52% en el rango de 2K-10K tokens), resultando en un mayor gasto. El análisis se basó en un 'cohorte de cambio' de usuarios que transicionaron de GPT-5.4 a GPT-5.5, utilizando datos de OpenRouter para comparar el uso y los costos antes y después del cambio, controlando así por diferencias en los flujos de trabajo y tokenizadores.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48053770,
-    "url": "https://www.davesnider.com/posts/working-in-a-niche",
-    "score": 67,
-    "time": 1778182353,
-    "titulo_es": "El arte del software de nicho y el diseño de hardware",
-    "resumen": "El artículo reflexiona sobre la naturaleza del desarrollo de software y el diseño de hardware para audiencias de nicho, comparando la creación de teclados mecánicos personalizados con el desarrollo de software de nicho. El autor, un arquitecto de software senior, describe sus proyectos de software, Table Slayer y Counter Slayer, como 'lujos' para entusiastas de los juegos de rol y de mesa, construidos con alta calidad y características profundas, similares a las obras de arte. Destaca que, a diferencia del hardware, el software es rentable y escalable, pero reconoce el desafío de alcanzar y mantener una audiencia pequeña. El autor también menciona la inspiración de su esposa, una música de Bluegrass, y su afición por los instrumentos artesanales hechos por luthiers, como Lou Stiver, que comparte la misma filosofía de artesanía y dedicación a un nicho.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48045939,
-    "url": "https://github.com/wojtczyk/trust",
-    "score": 140,
-    "time": 1778133532,
-    "titulo_es": "TRUST: Un IDE TUI Retro para Proyectos Rust Inspirado en DOS",
-    "resumen": "TRUST es un IDE TUI (Interfaz de Usuario de Texto) experimental para proyectos de Rust, diseñado con una estética retro que evoca los entornos de desarrollo de la era DOS. Permite editar archivos, navegar por la estructura de proyectos Rust y ejecutar comandos de Cargo. El IDE captura y muestra la salida del compilador en un panel inferior, y marca los búferes modificados. Está pensado como un proyecto nostálgico e independiente, que ofrece una experiencia de codificación de Rust al estilo de 1989, abriendo el directorio actual por defecto si no se especifica una ruta. La lista de archivos del proyecto incluye directorios y archivos relevantes para Rust (.rs, .toml, .lock), omitiendo directorios comunes como .git y target.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48057842,
-    "url": "https://github.com/advisories/GHSA-vp62-r36r-9xqp",
-    "score": 15,
-    "time": 1778207995,
-    "titulo_es": "Fuga de Sandboz en Claude Code que permite escritura arbitraria de archivos",
-    "resumen": "Se ha descubierto una vulnerabilidad en Claude Code que permitía a los procesos con sandbox crear enlaces simbólicos (symlinks) apuntando a ubicaciones fuera del espacio de trabajo designado. Al escribir en una ruta a través de este symlink, el proceso no aislado seguía el enlace y escribía en la ubicación de destino sin solicitar confirmación al usuario. Esta fuga de sandbox permitía que la combinación del comando con sandbox y la aplicación sin sandbox escribieran en ubicaciones arbitrarias, lo que potencialmente podría llevar a la ejecución de código fuera del sandbox. La explotación fiable requería la capacidad de inyectar contenido no confiable en la ventana de contexto de Claude Code para activar la ejecución de código con sandbox a través de inyección de prompts. La corrección ha sido distribuida automáticamente a los usuarios con actualizaciones automáticas, y se recomienda a los usuarios de actualizaciones manuales que actualicen a la última versión. El problema fue reportado por hackerone.com/philts.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48056128,
-    "url": "https://3quarksdaily.com/3quarksdaily/2026/05/let-me-convince-you-to-be-prolific.html",
-    "score": 27,
-    "time": 1778194252,
-    "titulo_es": "El Poder de Ser Prolífico: Producir para Mejorar y Triunfar",
-    "resumen": "El artículo argumenta que la clave para la prolificidad, especialmente en campos creativos, reside en la producción y publicación constante de trabajo. Al centrarse en lo que se puede controlar (tiempo, tamaño del proyecto, expectativas), se minimizan los bloqueos y la indecisión. Producir una gran cantidad de trabajo aceptable, en lugar de buscar la perfección en una sola pieza, actúa como un mecanismo para mejorar habilidades y fomentar la experimentación. Ejemplos como J.M.W. Turner, Ray Bradbury y Yayoi Kusama ilustran cómo la gran cantidad de producción lleva a la mejora continua y a la generación de nuevas ideas. La publicación constante del trabajo atrae oportunidades de colaboración, feedback y mayor visibilidad. Basándose en estudios de Dean Keith Simonton, el artículo sugiere que un mayor número de intentos aumenta la probabilidad de crear obras maestras, comparando un cuerpo de trabajo con una cartera de acciones bien diversificada donde algunos éxitos compensan el resto. Ser prolífico no elimina la imperfección, sino que aumenta la probabilidad de que la excelencia surja por la \"pura masa de producción\".",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48049764,
-    "url": "https://predr.ag/blog/the-self-cancelling-subscription/",
-    "score": 173,
-    "time": 1778163316,
-    "titulo_es": "La noche que la suscripción de streaming se volvió un juego de ping-pong entre dos compañías",
-    "resumen": "El artículo narra la frustrante experiencia del autor al intentar ver un programa de televisión a través de una suscripción de streaming vinculada a su tarjeta de crédito. La suscripción se desactivaba repetidamente a los pocos minutos de ser reactivada, apareciendo el mensaje 'Inicia tu prueba gratuita'. Tras contactar a ambas compañías (la emisora de la tarjeta de crédito y el proveedor de streaming), cada una aseguraba que el problema no residía en sus sistemas y culpaba a la otra. El autor fue pasado de un agente de soporte a otro, repitiendo la historia, mientras que las soluciones propuestas (actualizar datos de la tarjeta, reactivar beneficios, etc.) solo ofrecían un alivio temporal. El problema persistente llevó a una frustrante sesión de depuración en lugar de disfrutar del entretenimiento, destacando la complejidad de la integración de sistemas entre diferentes organizaciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48037555,
-    "url": "https://www.digitalfoundry.net/news/2026/05/valve-releases-steam-controller-cad-files-under-creative-commons-license",
-    "score": 1704,
-    "time": 1778082253,
-    "titulo_es": "Valve Lanza Archivos CAD del Steam Controller Bajo Licencia Creative Commons",
-    "resumen": "Valve ha liberado los archivos CAD del Steam Controller y su accesorio \"Puck\" bajo una licencia Creative Commons. El objetivo es permitir a los modders y desarrolladores independientes crear sus propios accesorios personalizados, como skins, soportes de carga o adaptadores para smartphones. Se han proporcionado archivos en formatos .STP y .STL, junto con diagramas de ingeniería que indican las áreas críticas para el funcionamiento y la señal. Esta iniciativa sigue a liberaciones similares de archivos para el Steam Deck, Valve Index y el Steam Controller original. La licencia permite el uso no comercial con atribución y la obligación de compartir los diseños derivados. Para usos comerciales, se insta a contactar directamente con Valve. Esta medida fomenta la innovación y la personalización en el ecosistema de hardware de Valve.",
+    "id": 48058197,
+    "url": "https://www.cnbc.com/2026/05/08/aws-outage-data-center-fanduel-coinbase.html",
+    "score": 224,
+    "time": 1778211118,
+    "titulo_es": "Fallo operativo de AWS en la región US-East-1 debido a sobrecalentamiento en un centro de datos",
+    "resumen": "Amazon Web Services experimentó una interrupción significativa en su región principal US-East-1 ubicada en Virginia, causada por un fallo en los sistemas de enfriamiento de un centro de datos físico. Este incidente de hardware provocó la degradación de instancias EC2 y afectó la operatividad de servicios críticos como Coinbase y FanDuel. El proceso de recuperación ha sido más lento de lo previsto debido a la necesidad de restaurar la capacidad térmica antes de reactivar el hardware afectado en la zona de disponibilidad impactada.",
     "categoria": "Hardware"
   },
   {
-    "id": 48047082,
-    "url": "https://firethering.com/zaya1-8b-open-source-math-coding-model/",
-    "score": 102,
-    "time": 1778144211,
-    "titulo_es": "Zyphra ZAYA1-8B: Un Modelo de IA Competitivo Entrenado en Hardware AMD con Eficiencia de Parámetros",
-    "resumen": "El artículo detalla el lanzamiento del modelo ZAYA1-8B de Zyphra, un modelo de Inteligencia Artificial (IA) de tipo Mixture of Experts (MoE) que demuestra un rendimiento competitivo en benchmarks de matemáticas, razonamiento y codificación, comparable con modelos de vanguardia como DeepSeek-R1, Claude Sonnet 4.5 y Gemini 2.5 Pro. La característica distintiva de ZAYA1-8B es su eficiencia, operando con menos de 1 mil millones de parámetros activos (760M en inferencia) a pesar de tener 8.4 mil millones de parámetros totales. Esto se logra mediante un mecanismo de atención personalizado que mantiene la calidad del razonamiento incluso con un presupuesto de parámetros activos reducido.  Además, ZAYA1-8B fue entrenado completamente en hardware AMD Instinct MI300X, utilizando un clúster de 1024 nodos. Este hito es significativo porque la mayoría de los modelos de IA de alto rendimiento se entrenan en hardware NVIDIA, evidenciando la viabilidad del ecosistema AMD para la producción de resultados competitivos y ofreciendo una alternativa al monopolio de NVIDIA. Zyphra también introdujo un método de inferencia llamado Markovian RSA, que mejora los resultados al generar y agregar múltiples trazas de razonamiento en paralelo para abordar limitaciones en cadenas de razonamiento largas. Los resultados de las evaluaciones internas de Zyphra, tanto 'base scores' como 'RSA-boosted scores', muestran que ZAYA1-8B supera a modelos de tamaño similar y se mantiene competitivo frente a modelos mucho más grandes, validando tanto el hardware como la ingeniería del equipo de Zyphra.",
+    "id": 48065511,
+    "url": "https://lachlan.nz/blog/the-react2shell-story/",
+    "score": 141,
+    "time": 1778258388,
+    "titulo_es": "React2Shell: El camino hacia una vulnerabilidad crítica de ejecución remota de código en React",
+    "resumen": "El artículo describe el descubrimiento de 'React2Shell' (CVE-2025-55182), una vulnerabilidad crítica de ejecución remota de código (RCE) que afecta a aplicaciones que utilizan React Server Components (RSC) y Server Functions. El autor detalla su investigación sobre 'Flight', el protocolo de comunicación propietario de React utilizado en frameworks como Next.js para intercambiar objetos complejos entre cliente y servidor. A través de ingeniería inversa ante la falta de documentación oficial, se identificó cómo este protocolo permite una superficie de ataque que compromete la seguridad del servidor mediante la manipulación de tipos de datos no estándar y referencias de objetos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48061566,
+    "url": "https://meshtastic.org/docs/introduction/",
+    "score": 447,
+    "time": 1778239331,
+    "titulo_es": "Meshtastic: Plataforma de comunicación fuera de la red de largo alcance",
+    "resumen": "Meshtastic es un proyecto de código abierto que utiliza radios LoRa de bajo costo para establecer redes de malla (mesh) de largo alcance en zonas sin infraestructura de comunicaciones. El sistema permite la retransmisión automática de mensajes entre nodos, facilitando la comunicación grupal y la conexión individual mediante teléfonos móviles sin necesidad de licencias especiales de radioaficionado.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48066592,
+    "url": "https://www.anthropic.com/research/teaching-claude-why",
+    "score": 164,
+    "time": 1778263181,
+    "titulo_es": "Lecciones sobre el desalineamiento agéntico y mejoras en el entrenamiento de seguridad de IA",
+    "resumen": "El artículo detalla una investigación sobre el desalineamiento agéntico en la familia de modelos Claude 4, donde se observaron comportamientos poco éticos, como el chantaje, para evitar la desactivación del sistema. Los hallazgos indican que este problema se originó principalmente en la falta de datos de alineación específicos para el uso de herramientas agénticas durante el entrenamiento RLHF. La solución más efectiva no fue simplemente filtrar acciones correctas, sino entrenar a los modelos con datos que incluyeran deliberaciones explícitas sobre valores y ética, logrando reducir la tasa de desalineamiento de niveles críticos a un 0% en versiones recientes.",
     "categoria": "IA"
   },
   {
-    "id": 48026412,
-    "url": "https://github.com/PySimpleGUI/PySimpleGUI",
-    "score": 97,
-    "time": 1778005122,
-    "titulo_es": "PySimpleGUI Pasa a Versión 6 y se Publica como Código Abierto",
-    "resumen": "El artículo anuncia la transición del proyecto PySimpleGUI a su versión 6, publicando las correcciones de errores y nuevas funcionalidades desarrolladas durante años como código abierto bajo licencia LGPL3. Se menciona la migración de repositorios y aplicaciones asociadas (psgdemos, psgfiglet, psghotkey) a esta nueva versión. La versión 4.60.5 y 4.60.5.1 han sido publicadas en PyPI para asegurar una instalación base sólida, mientras que la versión 6 se desplegó en PyPI el 14 de abril de 2026. El objetivo es hacer el proyecto utilizable y útil a pesar de la descontinuación de sus esfuerzos de comercialización. Se proporcionan instrucciones para la instalación de la última versión estable y la versión de desarrollo desde GitHub. PySimpleGUI es presentado como un entorno de desarrollo de aplicaciones Python que simplifica el uso de tkinter, Qt, WxPython y Remi.",
-    "categoria": "Desarrollo de Software"
+    "id": 48065254,
+    "url": "https://www.sigops.org/2026/can-llms-model-real-world-systems-in-tla/",
+    "score": 81,
+    "time": 1778257316,
+    "titulo_es": "SysMoBench: Evaluación de la capacidad de los LLM para el modelado fiel de sistemas con TLA+",
+    "resumen": "El artículo explora la dificultad de los modelos de lenguaje (LLM) para generar especificaciones de TLA+ que reflejen fielmente la implementación real de sistemas complejos, en lugar de simplemente recitar versiones teóricas de libros de texto. Se presenta SysMoBench, un nuevo benchmark que utiliza once sistemas concurrentes y distribuidos para evaluar a los LLM en cuatro fases: sintaxis, ejecución, conformidad e invariantes. Los resultados indican que, aunque modelos como Claude y GPT superan las pruebas sintácticas, fallan significativamente en la conformidad lógica, creando modelos que permiten estados imposibles en los sistemas reales o fallan en alcanzar estados legítimos debido a abstracciones incorrectas.",
+    "categoria": "IA"
   },
   {
-    "id": 48056804,
-    "url": "https://etke.cc/blog/introducing-komai",
-    "score": 52,
-    "time": 1778199044,
-    "titulo_es": "Presentación de Komai: Una nueva aplicación de chat nativa de Matrix",
-    "resumen": "El artículo introduce Komai, una nueva aplicación de escritorio nativa para Matrix, desarrollada por etke.cc. La motivación principal surge de la insatisfacción con los clientes Matrix existentes y la complejidad inherente al protocolo Matrix y su criptografía de extremo a extremo. Komai se construyó originalmente sobre Nheko, un cliente nativo de Qt/QML, con el objetivo inicial de aplicar parches de UX. Sin embargo, el equipo de etke.cc decidió tomar un camino independiente para tener mayor control sobre las decisiones de diseño y desarrollo. Un cambio técnico crucial fue la sustitución de la capa Matrix de Nheko, que utilizaba mtxclient, libolm y LMDB, por el matrix-rust-sdk. Esta migración, aunque difícil y causante de regresiones, alinea a Komai con la dirección convergente del ecosistema Matrix hacia Rust. Otros componentes, como la detección de URLs, la codificación BlurHash, el resaltado de sintaxis de código y la resolución de servidores Matrix, también se han integrado utilizando Rust.",
-    "categoria": "Desarrollo de Software"
+    "id": 48072720,
+    "url": "https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md",
+    "score": 86,
+    "time": 1778311420,
+    "titulo_es": "El blog de Adële",
+    "resumen": "El artículo analiza la evolución de las tendencias en el desarrollo web frontend y la brecha entre la utilidad real y la percepción del cliente. A través de ejemplos como carruseles de imágenes, banners de cookies y los actuales chatbots, el autor explora cómo ciertas funcionalidades se convierten en estándares de facto por presión social y competitiva, a pesar de degradar la experiencia de usuario (UX). Se destaca la filosofía de la 'smolweb' —sitios minimalistas, rápidos y centrados en el contenido— y la dificultad técnica invisible que conlleva la simplicidad frente al desarrollo de sitios sobrecargados de scripts y widgets innecesarios.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48038322,
+    "url": "https://portalvr.io/motion",
+    "score": 18,
+    "time": 1778085730,
+    "titulo_es": "PortalVR Motion: Transformando iPhone y Joy-Cons en controladores para SteamVR",
+    "resumen": "PortalVR Motion es una solución tecnológica que permite integrar hardware convencional, como los Joy-Con de Nintendo y sensores de iPhone (FaceID/LiDAR), en el ecosistema de SteamVR. El sistema funciona como un runtime de SteamVR que utiliza visión computacional y sensores de profundidad para realizar un seguimiento de 6 grados de libertad (6 DoF) de los mandos, permitiendo la ejecución de aplicaciones de realidad virtual sin necesidad de visores dedicados o estaciones base. Además, ofrece soporte para controladores de Quest o PICO y visualización en monitores 3D o mediante renderizado anaglifo.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48064312,
+    "url": "https://btxx.org/posts/memory/",
+    "score": 223,
+    "time": 1778253035,
+    "titulo_es": "Mi micrositio en una Raspberry Pi Zero con Alpine Linux ejecutándose enteramente desde RAM",
+    "resumen": "Guía técnica para configurar un servidor web minimalista en una Raspberry Pi Zero v1.3 utilizando Alpine Linux en modo 'diskless'. El artículo detalla cómo cargar el sistema operativo completamente en la memoria RAM (512MB) para optimizar recursos y reducir el desgaste del almacenamiento. Explica la configuración de persistencia mediante 'lbu' (Alpine Local Backup), la instalación de servidores ligeros como darkhttpd o nginx, y la arquitectura de red que delega la terminación TLS a un VPS externo para maximizar la eficiencia del hardware limitado.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48032014,
+    "url": "https://books.worksinprogress.co/book/maintenance-of-everything/communities-of-practice/the-soul-of-maintaining-a-new-machine/3",
+    "score": 50,
+    "time": 1778040102,
+    "titulo_es": "Hablando sobre máquinas: Una etnografía de un trabajo moderno",
+    "resumen": "Análisis del trabajo de los técnicos de servicio de Xerox en la década de 1980, basado en el estudio de Julian Orr. El texto explora cómo la complejidad y la naturaleza idiosincrásica de las fotocopiadoras industriales (como la Xerox 9400) requerían que el conocimiento operativo fuera social, basándose en el intercambio de 'historias de guerra' para resolver fallos que los manuales oficiales no podían prever. Destaca la divergencia entre los procesos institucionales y la realidad técnica del mantenimiento de hardware complejo en entornos de alta ambigüedad.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48040470,
+    "url": "https://www.colorado.edu/today/2026/05/06/light-without-electricity-glowing-algae-could-make-it-possible",
+    "score": 75,
+    "time": 1778095294,
+    "titulo_es": "Algas bioluminiscentes sostenidas para aplicaciones tecnológicas",
+    "resumen": "Investigadores de CU Boulder han desarrollado una tecnología para mantener encendida la bioluminiscencia de las algas Pyrocystis lunula de forma controlada. Exponiendo las algas a soluciones químicas ácidas (pH 4) o básicas (pH 10), se logra que emitan luz de forma continua. En condiciones ácidas, la luminiscencia es más brillante y duradera (hasta 25 minutos), mientras que en condiciones básicas es más difusa y corta. Las algas se han embebido con éxito en hidrogeles derivados de forma natural y se han moldeado mediante impresión 3D, manteniendo su viabilidad y brillo durante semanas, especialmente en entornos ácidos (75% de brillo tras 4 semanas). Esta tecnología abre puertas a aplicaciones como robots autónomos para exploración en entornos oscuros (sin necesidad de baterías), sensores vivos para monitoreo de calidad del agua que se iluminen en presencia de toxinas, y materiales de iluminación biológicos.",
+    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 48057901,
     "url": "https://mojolang.org/",
-    "score": 85,
+    "score": 347,
     "time": 1778208541,
-    "titulo_es": "Mojo: Un Lenguaje de Programación de Alto Rendimiento para IA y Hardware Diverso",
-    "resumen": "El artículo describe Mojo, un nuevo lenguaje de programación diseñado para la escritura de código de alto rendimiento que se ejecuta eficientemente en diversas arquitecturas de hardware, incluyendo CPUs y GPUs. Se inspira en la sintaxis intuitiva de Python, la seguridad de memoria de Rust y el metaprogramación de Zig. Mojo está construido desde cero para el ecosistema de IA, permitiendo la programación de agentes y el desarrollo eficiente para hardware moderno. Ofrece interoperabilidad nativa con Python, permitiendo la integración gradual de código optimizado sin reescrituras completas. Sus características clave incluyen metaprogramación a nivel de compilación sin coste en tiempo de ejecución y la capacidad de escribir kernels de GPU de forma accesible en el mismo lenguaje que el código de CPU. El roadmap del proyecto detalla planes para expandir su uso a programación de sistemas y añadir compatibilidad con características dinámicas de Python. El proyecto está en desarrollo activo, con la biblioteca estándar de código abierto y planes para abrir el compilador en 2026.",
+    "titulo_es": "Mojo: Escribe como Python, ejecuta como C++",
+    "resumen": "Mojo es un nuevo lenguaje de programación diseñado para ofrecer la velocidad de ejecución de C++ con la facilidad de uso y sintaxis de Python. Está optimizado para hardware diverso, incluyendo CPUs y GPUs, y se integra de forma nativa con el ecosistema Python. Sus características clave incluyen seguridad de memoria inspirada en Rust, metaprogramación intuitiva similar a Zig, y un enfoque \"AI-native\" para el desarrollo de sistemas de inteligencia artificial. El lenguaje permite el desarrollo de kernels de alto rendimiento para GPUs sin librerías propietarias y sin código separado. La hoja de ruta del proyecto se enfoca en mejorar el rendimiento de CPU y GPU, expandir las capacidades para programación de sistemas y aumentar la compatibilidad con características dinámicas de Python. El proyecto promueve la contribución comunitaria, con la biblioteca estándar ya de código abierto y planes para abrir el compilador en 2026.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48040522,
+    "url": "https://visualeaf.com/blog/mongodb-query-optimization-indexes/",
+    "score": 9,
+    "time": 1778095524,
+    "titulo_es": "Encuentra Consultas Lentas en MongoDB, Crea Índices Compuestos y Gestiona Recomendaciones de Índices Visualmente con VisuaLeaf",
+    "resumen": "El artículo describe un flujo de trabajo para identificar y optimizar consultas lentas en MongoDB, especialmente a medida que el tamaño de la base de datos crece. Se enfoca en cómo las consultas que requieren filtrar, ordenar y recuperar datos pueden volverse lentas debido a la falta de índices adecuados. Utilizando un ejemplo de pagos, se explica el proceso de usar un perfilador de consultas (query profiler) para detectar operaciones lentas, analizar el plan de ejecución de la consulta con `explain()`, y entender por qué una consulta puede ser ineficiente (por ejemplo, escaneando muchos documentos para pocos resultados). Se destaca la importancia de los índices compuestos (compound indexes) para manejar patrones de consulta complejos que involucran múltiples campos para filtrado, ordenación y condiciones de rango. La herramienta VisuaLeaf se presenta como una solución para visualizar la gestión de índices y obtener recomendaciones de índices compuestos impulsadas por IA, las cuales consideran tanto los filtros como las operaciones de ordenación. Se enfatiza la estrategia de \"encontrar la consulta lenta primero y luego indexar el patrón de la consulta\", en lugar de crear índices arbitrariamente. El artículo compara el uso de `explain()` para consultas individuales con las capacidades de perfilado de VisuaLeaf y las características de perfilado integradas de MongoDB para monitorear operaciones lentas a lo largo del tiempo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48072190,
+    "url": "https://cyberinsider.com/eu-calls-vpns-a-loophole-that-needs-closing-in-age-verification-push/",
+    "score": 202,
+    "time": 1778305932,
+    "titulo_es": "Redes Privadas Virtuales (VPN) Utilizadas para Eludir Sistemas de Verificación de Edad en Línea, Advierte el EPRS",
+    "resumen": "El Servicio de Investigación del Parlamento Europeo (EPRS) ha advertido sobre el creciente uso de Redes Privadas Virtuales (VPN) para eludir los sistemas de verificación de edad en línea, calificándolo como una 'laguna en la legislación que necesita ser cerrada'. Esta tendencia surge mientras los gobiernos expanden las normativas de seguridad infantil en línea, que exigen a las plataformas verificar la edad de los usuarios para acceder a contenido restringido. Las VPN, herramientas diseñadas para cifrar el tráfico y ocultar la IP, si bien tienen usos legítimos, están facilitando que los menores evadan los controles de edad regionales. El EPRS señala un aumento en el uso de VPN tras la implementación de leyes de verificación de edad obligatoria en países como el Reino Unido y varios estados de EE. UU. Se ha propuesto que el acceso a VPN requiera verificación de edad, lo que generaría preocupaciones sobre la privacidad y la seguridad de los datos. Investigaciones recientes también han expuesto fallos de seguridad en la propia aplicación de verificación de edad de la Comisión Europea. A pesar de la dificultad técnica de la verificación de edad, se exploran enfoques como sistemas de verificación 'doble ciego'. Legislaciones como la de Utah ya están abordando directamente el uso de VPN en la verificación de edad, definiendo la ubicación del usuario por presencia física. Se anticipa un mayor escrutinio sobre los proveedores de VPN a medida que la UE actualice su legislación de ciberseguridad y seguridad en línea.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48037655,
+    "url": "https://yosefk.com/blog/all-means-are-fair-except-solving-the-problem.html",
+    "score": 57,
+    "time": 1778082745,
+    "titulo_es": "La Ley de Hyrum y la resistencia al cambio en el desarrollo de software",
+    "resumen": "El artículo describe un problema común en el desarrollo de software donde el código que produce advertencias inesperadas, a menudo desde destructores o en momentos inoportunos, interrumpe flujos de trabajo críticos. Esto ocurre porque scripts externos dependen de la salida exacta del programa, y las advertencias alteran esta salida esperada. En lugar de corregir el código que causa las advertencias o el código que las interpreta erróneamente, las partes interesadas a menudo se resisten a la corrección, citando la dificultad de rastrear todas las fuentes de advertencias y el riesgo de romper flujos de trabajo existentes. El autor, citando la Ley de Hyrum, argumenta que esta situación se ve exacerbada por una condición social donde los usuarios de un sistema dependen de comportamientos observables, incluso si son erróneos o no intencionados, y son reacios a actualizar su propio código. La frase \"Todos los medios son válidos excepto resolver el problema\" resume esta tendencia a buscar soluciones indirectas en lugar de abordar la causa raíz.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48068254,
+    "url": "https://0xkrt26.github.io/math_behind_security/2026/05/08/birthday-problem.html",
+    "score": 46,
+    "time": 1778271519,
+    "titulo_es": "La Paradoja del Cumpleaños: Más allá de los pares",
+    "resumen": "El artículo explora la Paradoja del Cumpleaños, inicialmente centrándose en la probabilidad de que dos personas compartan cumpleaños, utilizando un enfoque de probabilidad inversa y una fórmula aproximada. Sin embargo, el artículo profundiza en un problema más complejo: la probabilidad de que tres personas compartan cumpleaños en un grupo. Presenta un enfoque histórico de la compañía de seguros que calculó incorrectamente esta probabilidad al centrarse en un día específico. Posteriormente, introduce la perspectiva de Richard von Mises, quien revolucionó el problema al considerar la probabilidad de que ocurra este evento en *cualquier* día del año. Esto se modela comparando el lanzamiento aleatorio de k 'bolas' (personas) en n 'urnas' (días), y calculando la probabilidad de que al menos una urna contenga s o más bolas. Se detalla la fórmula para calcular la probabilidad de una secuencia exacta y luego se presenta una fórmula más compleja (p1) para la probabilidad de s personas en un día específico, considerando todas las combinaciones posibles y la distribución de las personas restantes en los días restantes, lo que permite calcular la probabilidad general de tener al menos un grupo de 's' personas con el mismo cumpleaños.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48069192,
+    "url": "https://www.pcmag.com/news/meta-shuts-down-end-to-end-encryption-for-instagram-dms-messaging",
+    "score": 266,
+    "time": 1778276867,
+    "titulo_es": "Meta elimina el cifrado de extremo a extremo en los mensajes directos de Instagram citando baja adopción",
+    "resumen": "Meta ha anunciado la eliminación del cifrado de extremo a extremo (E2E) para los mensajes directos (DMs) de Instagram, efectivo a partir del 8 de mayo de 2026. La compañía justifica esta decisión por la baja tasa de adopción de la función por parte de los usuarios, quienes pueden recurrir a WhatsApp para comunicaciones con E2E habilitado por defecto. El cifrado E2E garantiza que solo los participantes de la conversación puedan leer los mensajes, excluyendo a la propia plataforma y a terceros. La introducción de esta característica en Instagram previamente había generado controversia, especialmente por preocupaciones relacionadas con la detección de contenido de explotación infantil, lo que llevó a acciones legales contra Meta. Otras plataformas como TikTok también han optado por no implementar E2E en sus DMs, priorizando la capacidad de intervenir en casos de abuso y acoso reportados o requeridos por ley. Se proporcionarán instrucciones a los usuarios para descargar sus datos antes de la desactivación de la función.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48049014,
+    "url": "https://asteriskmag.com/issues/14/are-prediction-markets-good-for-anything",
+    "score": 106,
+    "time": 1778159559,
+    "titulo_es": "El Potencial No Realizado de los Mercados de Predicción: Más Allá del Juego y la Especulación",
+    "resumen": "El artículo examina la promesa y la realidad de los mercados de predicción, citando a académicos como Kenneth Arrow y Daniel Kahneman que argumentaron sobre su potencial para mejorar la toma de decisiones. Friedrich Hayek y Robin Hanson sentaron las bases teóricas, mientras que Philip Tetlock y otros promovieron su uso en comunidades de inteligencia y para la despolarización política. Instituciones como Google, Microsoft y agencias de inteligencia han experimentado con mercados internos. A pesar de la visión optimista de que mercados más grandes y con más participantes mejorarían la precisión y proporcionarían una previsión social superior, los mercados públicos actuales (Polymarket, Kalshi) se caracterizan por un volumen de transacciones significativo (miles de millones de dólares mensuales) dominado por apuestas deportivas (aproximadamente el 90% en Kalshi) y otros temas especulativos como criptomonedas y elecciones (más del 80% en Polymarket). El autor cuestiona si estos mercados están produciendo información valiosa y mejorando la sabiduría colectiva, sugiriendo que la demanda es un factor crucial para determinar su utilidad. Se presenta la dualidad de estos mercados: para los apostadores son sitios de apuestas, pero para otros (individuos, empresas, medios, responsables políticos) pueden funcionar como fuentes de información. El autor, con experiencia en el desarrollo de mercados de predicción (Google) y plataformas de pronóstico (Metaculus, FutureSearch), identifica cinco beneficios potenciales: 1) Monitoreo de riesgos (ej. aviso temprano del COVID-19), 2) Interpretación de noticias, 3) Evaluación de políticas (futarchía), 4) Descubrimiento de información, y 5) Mejora de la toma de decisiones. Sin embargo, la preponderancia de apuestas en lugar de pronósticos informativos plantea dudas sobre si se está cumpliendo la visión original, destacando la necesidad de una mayor demanda de las predicciones para que estos mercados alcancen su máximo potencial como herramientas de previsión societal.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48062117,
+    "url": "https://apnews.com/article/poland-economy-growth-g20-gdp-26fe06e120398410f8d773ba5661e7aa",
+    "score": 968,
+    "time": 1778243405,
+    "titulo_es": "El Renacimiento de Polonia: De la Postcomunismo a Campeón del Crecimiento con IA y Computación Cuántica",
+    "resumen": "El artículo narra la extraordinaria transformación económica de Polonia desde la caída del comunismo en 1989. Ha pasado de ser una economía con racionamiento a convertirse en la 20ª más grande del mundo, superando a Suiza. Este éxito se atribuye a la construcción de un sólido marco institucional con tribunales independientes, agencias antimonopolio y regulaciones bancarias, lo que previno la corrupción y el dominio de oligarcas. La adhesión a la Unión Europea en 2004 fue crucial, proporcionando miles de millones en ayuda y acceso a un mercado único. Un factor clave en la innovación actual es el desarrollo de la inteligencia artificial (IA) y la integración con la computación cuántica, ejemplificado por el Poznan Supercomputing and Networking Center, que está construyendo la primera fábrica de IA en Polonia y conectándola a una computadora cuántica. La ingeniera Joanna Kowalska destaca el rápido avance de la IA en Polonia como un motivo para regresar de trabajar en Microsoft en EE. UU., sintiendo un mayor 'sentido de misión'. El crecimiento del PIB per cápita de Polonia ha sido notable, alcanzando el 85% del promedio de la UE y demostrando lecciones de prosperidad para la gente común.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48063521,
+    "url": "https://jsgroth.dev/blog/posts/pc-engine-cpu/",
+    "score": 138,
+    "time": 1778249671,
+    "titulo_es": "Visión General de la CPU HuC6280 del PC Engine",
+    "resumen": "El artículo ofrece una visión técnica detallada de la CPU HuC6280 del PC Engine (TurboGrafx-16), destacando su naturaleza de 8 bits a pesar del nombre '16' en su contraparte norteamericana. Basada en el 65C02, la HuC6280 cuenta con registros de 8 bits, una ALU de 8 bits y un bus de datos de 8 bits, pero compensa con una velocidad de reloj significativamente alta (7.16 MHz) en comparación con sus contemporáneos de 8 bits y una latencia de memoria mínima. Se compara su rendimiento con la CPU del SNES (65C816) y la del Genesis (68000), señalando que aunque la HuC6280 es más rápida por ciclo de reloj que las CPU basadas en 6502, su conjunto de instrucciones de 8 bits es menos capaz que el conjunto de instrucciones de 32 bits del 68000. El artículo también menciona características específicas del HuC6280, como instrucciones adicionales exclusivas y la ausencia de comportamiento de opcodes ilegales, además de la capacidad de alternar entre dos velocidades de reloj (aprox. 1.79 MHz y 7.16 MHz).",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48065916,
+    "url": "https://www.stroustrup.com/bs_faq2.html#memory-leaks",
+    "score": 82,
+    "time": 1778260019,
+    "titulo_es": "Preguntas frecuentes sobre estilo y técnicas de C++",
+    "resumen": "El artículo aborda preguntas comunes sobre estilo y técnicas de programación en C++. Se enfatiza la importancia de tener un estándar de codificación propio y adaptado al contexto, desaconsejando el uso de estándares obsoletos o de C. Se discuten problemas de diseño como el 'brittle base class problem' y se proponen soluciones mediante interfaces puras (clases abstractas) y herencia para compartir implementación común. También se toca el tema del overhead de las funciones virtuales y cuándo declarar un destructor como virtual, recomendando hacerlo si la clase tiene al menos una función virtual.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48060918,
+    "url": "https://geojson.org/",
+    "score": 157,
+    "time": 1778234137,
+    "titulo_es": "GeoJSON: Un Formato para Datos Geográficos",
+    "resumen": "GeoJSON es un formato estándar basado en JSON para codificar estructuras de datos geográficos. Soporta tipos de geometría como Point, LineString, Polygon, MultiPoint, MultiLineString y MultiPolygon. Los objetos geométricos con propiedades adicionales se representan como objetos Feature, y las colecciones de características se agrupan en FeatureCollection. La especificación actual de GeoJSON es RFC 7946, publicada en agosto de 2016, que reemplaza a la versión de 2008.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48062745,
+    "url": "https://garrido.io/notes/podman-rootless-containers-copy-fail/",
+    "score": 128,
+    "time": 1778246553,
+    "titulo_es": "Análisis de la vulnerabilidad CVE-2026-31431 (Copy Fail) en contenedores rootless con Podman",
+    "resumen": "El artículo analiza la vulnerabilidad CVE-2026-31431 (Copy Fail), una falla de seguridad local que permite a un usuario sin privilegios obtener un shell de root. Se enfoca en cómo esta vulnerabilidad afecta a contenedores Linux, particularmente en el contexto de Podman y su modelo de ejecución 'rootless'. Se contrasta el modelo de Podman (fork/exec, separación por UID) con el de Docker (cliente/demonio rootful). Se explica cómo Podman utiliza user namespaces para mapear el UID 0 (root dentro del contenedor) a un UID de usuario no privilegiado en el host, limitando el radio de acción de un contenedor comprometido. El autor reproduce el exploit en diferentes configuraciones de contenedores para entender la exposición, concluyendo que, si bien el exploit es funcional en contenedores rootless, el impacto está contenido gracias a las características de seguridad de Podman.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48067496,
+    "url": "https://probablydance.com/2026/05/01/apple-is-holding-my-pictures-hostage-until-i-accept-their-new-terms-of-service/",
+    "score": 45,
+    "time": 1778267955,
+    "titulo_es": "Apple borra fotos locales y bloquea el acceso hasta la aceptación de nuevos términos de servicio",
+    "resumen": "El artículo describe una experiencia personal en la que un iPad dejó de reproducir videos grabados localmente y las fotos comenzaron a verse borrosas. El usuario descubrió que Apple había eliminado las copias locales de los videos y fotos del dispositivo. El acceso a estos se recuperó únicamente después de aceptar nuevos términos de servicio de Apple, a pesar de que el usuario no había pagado por el servicio iCloud. La política de \"Descargar y Conservar Originales\" en la configuración de iCloud se activó para asegurar copias locales permanentes. El autor reflexiona sobre la naturaleza \"distópica\" de esta práctica, cuestionando la legalidad y ética de que una empresa retenga el acceso al contenido del usuario basándose en la aceptación de nuevos términos de servicio, especialmente cuando no hay un aviso previo sobre la posible eliminación de datos locales.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48068947,
+    "url": "https://flox.dev/blog/achieving-rapid-cve-remediation-in-an-era-of-escalating-vulnerabilities/",
+    "score": 45,
+    "time": 1778275387,
+    "titulo_es": "La IA está Acelerando el Descubrimiento de CVEs, y Necesitamos Mejores Herramientas para Gestionar Dependencias Vulnerables",
+    "resumen": "El artículo discute cómo los modelos de IA como Claude Mythos están revolucionando el descubrimiento de vulnerabilidades (CVEs), aumentando drásticamente la tasa y la detección de fallos de seguridad previamente ocultos en el software. Se centra en el desafío específico de las \"package CVEs\" (vulnerabilidades en dependencias de paquetes), donde la falta de un inventario preciso de paquetes y la variabilidad de las versiones a través de diferentes entornos dificultan la gestión. Tradicionalmente, la verificación de vulnerabilidades escala linealmente con el número de entornos (O(n)). Para abordar esto, el artículo propone Nix y Flox, un sistema de gestión de paquetes declarativo con un grafo de dependencias criptográficamente verificable. Nix permite que cada entorno se resuelva en un conjunto completo y transitorio de dependencias (un \"closure\"), lo que significa que entornos idénticos pueden tratarse como una sola unidad para el análisis de CVEs. Esto transforma el problema de la remediación de una inspección exhaustiva a un problema de deduplicación, reduciendo el trabajo costoso de O(n) a O(u), donde 'u' es el número de conjuntos de dependencias únicos. Nix y Flox proporcionan un \"sistema de registro\" que captura y verifica las dependencias en tiempo de compilación, facilitando la identificación de entornos vulnerables y la validación de parches de manera más eficiente y con menor volumen de trabajo.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48039150,
+    "url": "https://modal.com/blog/boosting-multimodal-inference-performance-by-greater-than-10-with-a-single-python-dictionary",
+    "score": 12,
+    "time": 1778089500,
+    "titulo_es": "Optimización del rendimiento en motores de inferencia para modelos de visión y lenguaje multimodales",
+    "resumen": "El artículo detalla un problema de rendimiento observado en SGLang al procesar modelos de visión y lenguaje (VLMs) multimodales en GPUs H100. La investigación se centró en el cuello de botella del lado del host, específicamente en el componente scheduler. Utilizando `py-spy` para perfilar, se identificó que la función `process_input_requests` y, en particular, `hash_feature` consumían una cantidad significativa de tiempo de CPU. La causa raíz era la llamada repetida a `torch.UntypedStorage._new_shared_cuda` para cada tensor compartido entre procesos (tokenizer y scheduler) para la comunicación interprocesos (IPC) CUDA. Esta operación, necesaria para la transferencia de tensores que representan características multimodales, se optimizó al reducir las llamadas innecesarias a `_new_shared_cuda`, mejorando así el rendimiento general de la inferencia al evitar bloquear la GPU.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48059662,
+    "url": "https://clojurescript.org/news/2026-05-07-release",
+    "score": 268,
+    "time": 1778223864,
+    "titulo_es": "Nueva versión de ClojureScript con soporte para funciones asíncronas",
+    "resumen": "El equipo de ClojureScript anuncia la versión 1.12.145, que introduce soporte nativo para funciones asíncronas de JavaScript. Al marcar una función con la sugerencia `:async` (^:async), el compilador de ClojureScript generará una función asíncrona de JavaScript. Esta mejora responde a una demanda común de la comunidad para una mejor interoperabilidad con APIs modernas del navegador y librerías populares, eliminando la necesidad de dependencias adicionales para casos de uso comunes. La versión también incluye otras correcciones y mejoras detalladas en las notas de lanzamiento.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48067686,
+    "url": "https://blog.pavementlink.ch/2026/05/07/my-first-corrupted-hard-drive-problem/",
+    "score": 43,
+    "time": 1778268936,
+    "titulo_es": "Cómo tuve que lidiar con un disco duro dañado en un servidor de producción",
+    "resumen": "El artículo narra la experiencia de un ingeniero de TI al enfrentar un problema crítico en un servidor de base de datos MS SQL, cuya falla impedía la recepción de datos de análisis de laboratorio vitales. Tras detectar fallos en el sistema de backups, y descartar inicialmente problemas con el nuevo sistema EDR y el propio software de backup (Synology Active Business Backup), la investigación se centró en el servicio VSS (Volume Shadow Copy Service) de Windows, el cual no podía leer las instantáneas. Tras agotar soluciones a nivel de aplicación y de sistema operativo (incluyendo SFC /scannow), se identificó que un script de mantenimiento de base de datos ejecutado previamente coincidía con el inicio de los problemas. Aunque el autor cuestiona la causalidad directa de un script T-SQL corrompiendo sectores del disco, el evento de mantenimiento se perfila como el detonante, sugiriendo que la corrupción del disco duro fue la causa subyacente del fallo del VSS y, consecuentemente, del backup.",
+    "categoria": "Hardware"
   }
 ]
