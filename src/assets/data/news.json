@@ -1,299 +1,272 @@
 [
   {
-    "id": 48080587,
-    "url": "https://github.com/imtomt/ymawky",
-    "score": 283,
-    "time": 1778382104,
-    "titulo_es": "ymawky: Un servidor web escrito íntegramente en ensamblador ARM64 para macOS",
-    "resumen": "ymawky es un servidor web minimalista desarrollado a bajo nivel utilizando únicamente lenguaje ensamblador ARM64 y llamadas al sistema (syscalls), sin depender de la biblioteca estándar de C (libc). Implementa un modelo de ejecución de un proceso por conexión (fork-per-connection) y está diseñado específicamente para ejecutarse en Apple Silicon. Su funcionalidad principal es la entrega de archivos estáticos, incluyendo la detección de tipos MIME mediante extensiones y el manejo de errores HTTP a través de plantillas HTML personalizables. El proyecto destaca por su enfoque en la arquitectura de sistemas y la optimización extrema, aunque advierte sobre limitaciones de portabilidad y seguridad intrínsecas a su desarrollo manual.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48080702,
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/",
-    "score": 93,
-    "time": 1778383322,
-    "titulo_es": "Actualizaciones mayores en la herramienta File Search de la API de Gemini: soporte multimodal, metadatos y citaciones",
-    "resumen": "Google ha introducido tres mejoras clave en la herramienta File Search de la API de Gemini para optimizar sistemas de Generación Aumentada por Recuperación (RAG). Estas incluyen soporte multimodal nativo mediante el modelo Gemini Embedding 2 para procesar texto e imágenes simultáneamente, la capacidad de aplicar metadatos personalizados para filtrar información a gran escala y la implementación de citaciones a nivel de página para garantizar la trazabilidad y veracidad de las respuestas generadas.",
+    "id": 48085821,
+    "url": "https://unix.foo/posts/local-ai-needs-to-be-norm/",
+    "score": 1255,
+    "time": 1778433568,
+    "titulo_es": "El caso a favor de la IA local: Por qué el procesamiento en el dispositivo es el futuro del desarrollo de aplicaciones",
+    "resumen": "El artículo analiza la arquitectura de software moderna criticando la tendencia de integrar APIs de IA en la nube (OpenAI/Anthropic) para funcionalidades que podrían ejecutarse localmente. Desde una perspectiva de ingeniería, el autor argumenta que delegar estas tareas a la nube convierte características de UX simples en sistemas distribuidos complejos, costosos y frágiles, con graves implicaciones para la privacidad de los datos. Se propone el uso de modelos locales aprovechando el hardware especializado como el Neural Engine de Apple. Técnicamente, se describe un flujo de trabajo para el resumen de contenido extenso mediante la fragmentación de texto (chunking) y procesamiento de doble pasada, demostrando que la IA local es superior para transformar datos propiedad del usuario de forma rápida, privada y sin dependencias de red o de facturación externa.",
     "categoria": "IA"
   },
   {
-    "id": 48037223,
-    "url": "https://lemire.me/blog/2025/12/04/we-see-something-that-works-and-then-we-understand-it/",
-    "score": 94,
-    "time": 1778080523,
-    "titulo_es": "Vemos algo que funciona, y luego lo entendemos",
-    "resumen": "El artículo critica el 'thinkism' y el modelo de cascada (Waterfall) en la ingeniería de software, argumentando que la innovación no sigue un camino lineal desde el diseño abstracto hacia la implementación. Daniel Lemire sostiene que, en la práctica profesional y la I+D, la observación y el éxito empírico preceden a menudo a la comprensión teórica. El autor enfatiza que la experiencia y la experimentación directa son motores de progreso más efectivos que el análisis exhaustivo previo, advirtiendo que incluso la IA tiene límites al carecer de esta interacción práctica con la complejidad del mundo real.",
+    "id": 48090029,
+    "url": "https://blog.k10s.dev/im-going-back-to-writing-code-by-hand/",
+    "score": 450,
+    "time": 1778462631,
+    "titulo_es": "El God Object se consumió a sí mismo: Lecciones de 7 meses de desarrollo asistido por IA",
+    "resumen": "Relato técnico sobre la creación de k10s, un dashboard TUI para Kubernetes especializado en GPUs, desarrollado mediante 'vibe-coding' con Claude. El autor detalla cómo la alta velocidad inicial de entrega de funcionalidades ocultó una degradación arquitectónica crítica, resultando en un 'God Object' de casi 1700 líneas con un manejo de estado altamente acoplado y frágil. La conclusión principal subraya que, aunque la IA es excepcional para implementar características aisladas, carece de visión arquitectónica a largo plazo, lo que hace indispensable la intervención humana para imponer restricciones de diseño y evitar el colapso técnico del proyecto.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48074265,
-    "url": "https://blog.archive.org/2026/05/06/internet-archive-switzerland-expanding-a-global-mission-to-preserve-knowledge/",
-    "score": 612,
-    "time": 1778328030,
-    "titulo_es": "Internet Archive Suiza: Nueva fundación para la preservación digital y el archivo de modelos de IA",
-    "resumen": "Se anuncia la creación de Internet Archive Suiza, una fundación independiente sin fines de lucro con sede en San Galo. La organización se centrará en la preservación de archivos digitales en peligro y, de manera destacada, en el archivo de la ola actual de inteligencia artificial generativa. A través del proyecto 'Gen AI Archive', en colaboración con la Universidad de San Galo, la fundación busca establecer estándares para la preservación de modelos de IA, integrándolos en una red global de bibliotecas digitales resilientes.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48076173,
-    "url": "https://chrismorgan.info/no-query-strings",
-    "score": 413,
-    "time": 1778344116,
-    "titulo_es": "Sin cadenas de consulta: Prohibición de parámetros de seguimiento en URLs",
-    "resumen": "El autor describe su implementación técnica para bloquear parámetros de consulta (query strings) no autorizados, como etiquetas UTM y de referencia, con el fin de proteger la privacidad del usuario y mantener la integridad de sus URLs. El artículo detalla el uso de Caddyfile para la configuración del servidor, los desafíos encontrados con las reglas de reescritura 'try_files' y el comportamiento inconsistente de herramientas como curl ante rutas con caracteres especiales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48076651,
-    "url": "https://zed.dev/theme-builder",
-    "score": 221,
-    "time": 1778347839,
-    "titulo_es": "Configuración y personalización del generador de temas en el editor Zed",
-    "resumen": "El texto describe las capacidades y elementos de configuración del generador de temas para el editor de código Zed. Detalla la personalización de componentes de la interfaz de usuario como el fondo de paneles, guías de indentación, bordes de paneles enfocados y la integración con el flujo de trabajo para configurar el workbench del desarrollador.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48039249,
-    "url": "https://evilgeniuslabs.ca/blog/visual-basic-history-chapter-1-launch",
-    "score": 108,
-    "time": 1778089949,
-    "titulo_es": "Una historia de Visual Basic: Capítulo 1 - Orígenes",
-    "resumen": "El artículo presenta el inicio de una serie documental técnica sobre la historia y evolución de Visual Basic (VB), centrada en su linaje de ingeniería y en los desarrolladores que lo hicieron posible. El primer capítulo cubre desde la creación de Dartmouth BASIC en 1964 hasta el lanzamiento de VB 1.0 en 1991 y su versión para MS-DOS en 1992. El autor se propone rescatar las contribuciones de figuras clave como Alan Cooper y Greg Whitten, analizando cómo la integración de una interfaz visual sobre el lenguaje BASIC transformó el desarrollo de aplicaciones en el ecosistema Windows.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48076815,
-    "url": "https://github.com/nooga/let-go",
-    "score": 170,
-    "time": 1778349133,
-    "titulo_es": "let-go: Un compilador de bytecode y máquina virtual para un dialecto de Clojure en Go",
-    "resumen": "let-go es un compilador de bytecode y una máquina virtual (VM) de alto rendimiento para un dialecto de Clojure, escrito en Go. Destaca por su rapidez (7ms de arranque en frío) y su tamaño compacto (binario de ~10MB). Ofrece una compatibilidad del 95.4% con la suite de pruebas estándar de Clojure, soporte para pods de Babashka y la capacidad de generar ejecutables independientes o aplicaciones web mediante WebAssembly (WASM). Además, incluye un servidor nREPL integrado para el desarrollo interactivo con editores como Emacs, VS Code y Neovim.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48071262,
-    "url": "https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/",
-    "score": 632,
-    "time": 1778294502,
-    "titulo_es": "Evaluación de las capacidades de investigación matemática en modelos de lenguaje de gran tamaño",
-    "resumen": "El artículo analiza el avance significativo de los modelos de lenguaje de gran tamaño (LLM) en la resolución de problemas matemáticos de nivel de doctorado. El autor destaca cómo estas herramientas han pasado de simplemente identificar soluciones existentes en la literatura a proponer razonamientos originales y resolver problemas de combinatoria y teoría aditiva de números que investigadores humanos habían pasado por alto. Se examina específicamente la capacidad de la IA para abordar problemas sobre conjuntos de sumas (sumsets) propuestos por Mel Nathanson, planteando que el umbral de lo que se considera un problema de investigación 'difícil' debe elevarse ante el potencial de estas tecnologías.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48048902,
-    "url": "https://lisyarus.github.io/blog/posts/making-your-own-programming-language.html",
-    "score": 98,
-    "time": 1778158881,
-    "titulo_es": "Creando mi propio lenguaje de programación: motivaciones y desafíos técnicos",
-    "resumen": "El autor describe su incursión en el diseño de un lenguaje de programación propio, motivado por la búsqueda de una solución óptima para el 'modding' de videojuegos. Analiza las deficiencias de opciones existentes como Lua, debido a problemas de sandboxing y rendimiento en sistemas ECS, y de C++, por su complejidad de distribución y falta de aislamiento de seguridad. El proyecto busca equilibrar la facilidad de uso para desarrolladores de mods con la seguridad y la eficiencia de ejecución nativa.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48075366,
-    "url": "https://blog.kronis.dev/blog/apple-is-increasing-my-cortisol-levels",
-    "score": 290,
-    "time": 1778337658,
-    "titulo_es": "Los desafíos de la distribución de software independiente y el ecosistema de Apple",
-    "resumen": "El artículo analiza las barreras técnicas y económicas que enfrenta un desarrollador al intentar distribuir una utilidad escrita en Go (ccode) para múltiples plataformas. Se centra especialmente en las dificultades impuestas por Apple, incluyendo el sistema de cuarentena de macOS, el elevado costo anual del Apple Developer Program para proyectos de pequeña escala y los problemas de usabilidad en el proceso de verificación de identidad, reflexionando sobre cómo estos factores dificultan la existencia de software artesanal o de bajo costo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48073246,
-    "url": "https://arxiv.org/abs/2604.15597",
-    "score": 411,
-    "time": 1778316274,
-    "titulo_es": "Introducción a arXivLabs: Marco de desarrollo colaborativo",
-    "resumen": "arXivLabs es un marco de trabajo (framework) diseñado para que desarrolladores y organizaciones colaboren en la creación e implementación de nuevas funcionalidades dentro de la plataforma arXiv. El ecosistema se basa en principios de código abierto, excelencia técnica y privacidad de datos, permitiendo a la comunidad proponer proyectos que aporten valor al repositorio científico mediante el desarrollo de software especializado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48072190,
-    "url": "https://cyberinsider.com/eu-calls-vpns-a-loophole-that-needs-closing-in-age-verification-push/",
-    "score": 556,
-    "time": 1778305932,
-    "titulo_es": "Reguladores de la UE advierten sobre el uso de VPN para eludir los sistemas de verificación de edad",
-    "resumen": "El Servicio de Investigación del Parlamento Europeo (EPRS) ha señalado a las redes privadas virtuales (VPN) como un vacío legal crítico que permite a menores omitir las restricciones de edad en línea. El artículo analiza la tensión técnica y legal entre la protección de menores y el derecho a la privacidad, destacando que el requerimiento de identidad para acceder a VPNs podría comprometer el anonimato. Además, se mencionan fallos de seguridad en apps oficiales de verificación y la implementación de legislaciones en lugares como Utah y el Reino Unido para mitigar el uso de estas herramientas con el fin de evadir controles parentales.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48078575,
-    "url": "https://github.com/ThatXliner/rust-but-lisp",
-    "score": 134,
-    "time": 1778363187,
-    "titulo_es": "rlisp: Semántica de Rust con sintaxis de Lisp",
-    "resumen": "rlisp es un compilador experimental que mapea las semánticas de Rust (ownership, borrowing, lifetimes, tipos genéricos) a una sintaxis basada en s-expressions de Lisp. El proyecto actúa como un generador de código que transforma expresiones-s en código fuente .rs para ser procesado por rustc, aprovechando así el sistema de tipos y el borrow checker original. Destaca por simplificar la creación de macros mediante transformaciones de s-expressions en tiempo de compilación (evitando la complejidad de proc_macro) y por ofrecer edición estructural y una sintaxis uniforme para todos los elementos del lenguaje.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48074952,
-    "url": "https://matduggan.com/the-intolerable-hypocrisy-of-cyberlibertarianism/",
-    "score": 337,
-    "time": 1778334512,
-    "titulo_es": "Es JSON hasta el fondo",
-    "resumen": "Análisis histórico y crítico sobre los fundamentos arquitectónicos e ideológicos del Internet moderno. El autor explora la transición desde la era analógica hacia la infraestructura digital, examinando cómo la 'Declaración de Independencia del Ciberespacio' de John Perry Barlow influyó en la concepción de la identidad digital y la descentralización. El texto establece una base para discutir cómo estos pilares filosóficos moldearon la estructura técnica y el ecosistema de desarrollo de software actual.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48077395,
-    "url": "https://juretriglav.si/surfel-based-global-illumination-on-the-web/",
-    "score": 59,
-    "time": 1778353774,
-    "titulo_es": "¿Podemos usar WebGPU para calcular iluminación global en tiempo real con parches de superficie (surfels)?",
-    "resumen": "Este artículo técnico explora la viabilidad de implementar tuberías de renderizado de alta carga computacional directamente en la web mediante el uso de WebGPU. Se centra específicamente en el cálculo de iluminación global en tiempo real utilizando 'surfels' (surface patches). El autor combina una narrativa sobre la física de los fotones y la óptica histórica con el desafío de ingeniería de lograr una reflexión difusa eficiente en navegadores modernos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48038573,
-    "url": "https://www.righto.com/2024/02/the-first-microcomputer-transfluxor.html",
-    "score": 59,
-    "time": 1778086803,
-    "titulo_es": "El Arma Micro Computer: Historia y Arquitectura de una Computadora Aeroespacial Vintage",
-    "resumen": "El artículo analiza el Arma Micro Computer, un sistema de computación aeroespacial de la década de 1960 fabricado con componentes discretos. Destaca su inusual arquitectura serial de 22 bits y su construcción basada en lógica de diodos y transistores (DTL) sobre obleas miniaturizadas. A pesar de operar a 1 MHz con un rendimiento de 36,000 operaciones por segundo, incluía un conjunto de 19 instrucciones avanzadas (como raíz cuadrada y división) ejecutadas en paralelo. Su diseño robusto utilizaba líneas de retardo magnetostrictivas para el almacenamiento de registros, permitiéndole funcionar en condiciones extremas de temperatura, vacío y choques mecánicos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48080221,
-    "url": "https://www.reidatcheson.com/sparse/linear/cholesky/2026/04/09/etree.html",
-    "score": 31,
-    "time": 1778377975,
-    "titulo_es": "Derivación del árbol de eliminación para el algoritmo de Cholesky disperso",
-    "resumen": "El artículo describe la importancia y el funcionamiento del árbol de eliminación en la factorización de Cholesky para matrices dispersas (A = LL^T). Explica cómo esta estructura de datos, de complejidad O(n), permite identificar el 'fill-in' (elementos no nulos adicionales) y definir el grafo de dependencias de tareas (DAG) de forma eficiente antes de realizar el cálculo numérico. El autor detalla el proceso de poda de dependencias redundantes en el grafo de columnas para obtener un árbol que optimiza la preasignación de memoria y la ejecución del algoritmo.",
+    "id": 48090521,
+    "url": "https://www.openculture.com/2024/10/the-greatest-shot-in-television.html",
+    "score": 199,
+    "time": 1778467414,
+    "titulo_es": "La mejor toma de la televisión: James Burke y el lanzamiento perfectamente sincronizado en 'Connections'",
+    "resumen": "El artículo analiza un clip icónico de la serie documental 'Connections' (1978), donde el historiador de la ciencia James Burke explica los principios de la propulsión de cohetes mediante el almacenamiento y la ignición de gases licuados (hidrógeno y oxígeno). Se destaca la proeza técnica de sincronizar una explicación científica compleja con el lanzamiento real de un cohete Saturno V en una sola toma, sirviendo como culminación de un viaje narrativo que conecta diversos hitos de la evolución tecnológica y científica de la humanidad.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48076465,
-    "url": "https://www.copahost.com/blog/cpanels-black-week-three-new-vulnerabilities-patched-after-ransomware-attack-on-44000-servers/",
-    "score": 127,
-    "time": 1778346406,
-    "titulo_es": "cPanel lanza parches de seguridad de emergencia tras ataque de ransomware",
-    "resumen": "El artículo detalla el lanzamiento de tres nuevas vulnerabilidades de seguridad por parte de cPanel (CVE-2026-29201, CVE-2026-29202, CVE-2026-29203), dos de las cuales tienen una puntuación CVSS de 8.8 (Alta severidad). Estos parches de emergencia se lanzaron poco después de que una vulnerabilidad anterior (CVE-2026-41940) provocara el compromiso de 44,000 servidores de hosting y el despliegue de ransomware. Las nuevas vulnerabilidades incluyen lectura arbitraria de archivos (Moderate), ejecución de código Perl arbitrario a través de la API create_user (High) y manejo inseguro de enlaces simbólicos que puede llevar a escalada de privilegios o denegación de servicio (High). El artículo enfatiza la gravedad de estas fallas, especialmente en entornos de hosting compartido, y la importancia de aplicar los parches rápidamente dada la explotación activa de vulnerabilidades previas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48081942,
-    "url": "https://www.waltonfamilyfoundation.org/about-us/newsroom/gen-z-resentment-toward-ai-grows-as-adoption-stagnates-and-workplace-fears-mount",
-    "score": 13,
-    "time": 1778400195,
-    "titulo_es": "La Generación Z muestra creciente enojo hacia la IA, preocupada por su impacto en el aprendizaje y el trabajo",
-    "resumen": "El artículo detalla un cambio significativo en la percepción de la Generación Z (Gen Z) hacia la Inteligencia Artificial (IA). Aunque una mayoría (51%) todavía utiliza IA semanalmente, el crecimiento de adopción se ha ralentizado drásticamente. El sentimiento positivo ha disminuido considerablemente, con un 31% reportando ira hacia la tecnología, un aumento respecto al año anterior. La principal preocupación se centra en el ámbito laboral, donde el 48% cree que los riesgos de la IA superan sus beneficios, a pesar de reconocer su utilidad para acelerar tareas. Existe un temor generalizado (80%) de que la dependencia de la IA para la velocidad perjudique el aprendizaje futuro. A pesar de la escepticismo, los estudiantes de K-12 (52%) y los jóvenes trabajadores (48%) reconocen la necesidad de habilidades en IA para la educación superior y sus futuras carreras. En el ámbito educativo, aunque las políticas y el acceso a herramientas de IA han aumentado, los estudiantes muestran cautela y hay una percepción creciente de deshonestidad académica, con un 41% creyendo que sus compañeros usan IA para trabajos escolares sin permiso. La Gen Z también prioriza los servicios humanos sobre los de IA en áreas como tutoría o asesoramiento financiero, indicando una preferencia por la conexión humana. La encuesta de Gallup, realizada a 1572 jóvenes de 14 a 29 años, sugiere una reevaluación del rol de la IA, con un llamado a una integración más reflexiva y a escuchar las preocupaciones de esta generación sobre el impacto a largo plazo en el aprendizaje, la confianza y la preparación profesional.",
+    "id": 48089091,
+    "url": "https://jola.dev/posts/running-local-models-on-m4",
+    "score": 353,
+    "time": 1778454550,
+    "titulo_es": "Experimentando con modelos de IA locales: Configuración, desafíos y flujos de trabajo",
+    "resumen": "Análisis técnico sobre la implementación de modelos de lenguaje locales (LLMs) utilizando herramientas como LM Studio y Ollama. El autor evalúa el rendimiento de modelos específicos como Qwen 3.5 9B (Q4) en hardware limitado (MacBook Pro 24GB), optimizando parámetros de inferencia como la ventana de contexto de 128K, la temperatura y el 'thinking mode'. Se discute la transición de un flujo de trabajo basado en modelos SOTA propietarios hacia uno local e interactivo que, aunque requiere mayor supervisión humana, mejora la privacidad y fomenta un compromiso cognitivo más profundo en tareas de desarrollo de software.",
     "categoria": "IA"
   },
   {
-    "id": 48049828,
-    "url": "https://kohlschuetter.github.io/blog/posts/2026/05/07/serial-ttl-connector/",
-    "score": 87,
-    "time": 1778163595,
-    "titulo_es": "Conectores Julet como una alternativa robusta para interfaces seriales TTL en hardware embebido",
-    "resumen": "El artículo describe la problemática de conectar de forma no permanente a interfaces seriales TTL (RX, TX, GND) en dispositivos embebidos, como Raspberry Pi o routers con OpenWrt, utilizando cables Dupont. Estas conexiones son poco fiables y frágiles. Propone una solución utilizando conectores Julet, comúnmente encontrados en e-bikes y clasificados como IP68, que son más robustos y fiables. Detalla el uso de conectores Julet M6, la preparación de cables pigtail con pre-estañado, la herramienta de crimpado necesaria y cómo asegurar la conexión con bridas para alivio de tensión. Establece una convención para la asignación de pines (RX, TX, GND) basada en los colores de los cables y la presencia de una flecha indicadora en los conectores Dupont, enfatizando la simplicidad y robustez del sistema plug-and-play. Se menciona que estos conectores también son capaces de transportar alta tensión (48V) en aplicaciones de e-bikes, pero se enfocan en su aplicación para interfaces seriales.",
-    "categoria": "Hardware"
+    "id": 48058260,
+    "url": "https://tautme.github.io/phone-sensors/accel-tuner.html",
+    "score": 39,
+    "time": 1778211788,
+    "titulo_es": "Detección de tono mediante vibraciones del cuerpo de la guitarra utilizando sensores de movimiento",
+    "resumen": "El texto describe un método técnico para medir la frecuencia de vibración de las cuerdas de una guitarra utilizando los sensores internos de un teléfono móvil. El proceso implica el análisis de trazas de vibración en múltiples ejes, el cálculo de la magnitud vectorial combinada (|a|) y la implementación de algoritmos de corrección de alias para identificar el tono exacto a partir de la señal del eje con mayor intensidad.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48088576,
+    "url": "https://cyber.netsecops.io/articles/obsidian-plugin-abused-in-campaign-to-deploy-phantom-pulse-rat/",
+    "score": 239,
+    "time": 1778450563,
+    "titulo_es": "Plugin de Obsidian abusado en campaña de ingeniería social para distribuir el nuevo RAT PHANTOMPULSE",
+    "resumen": "Investigadores de seguridad identificaron la campaña REF6598 que utiliza la aplicación Obsidian para desplegar un Troyano de Acceso Remoto (RAT) llamado PHANTOMPULSE. Dirigido a sectores financieros y de criptomonedas en Windows y macOS, el ataque emplea ingeniería social para inducir a las víctimas a habilitar plugins maliciosos en bóvedas compartidas. PHANTOMPULSE destaca por su sofisticación técnica, utilizando la cadena de bloques de Ethereum para resolver dinámicamente las direcciones de sus servidores de comando y control (C2), permitiendo la exfiltración de datos, captura de pulsaciones y ejecución de comandos arbitrarios.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48089289,
+    "url": "https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs",
+    "score": 192,
+    "time": 1778456395,
+    "titulo_es": "Por qué su agente de codificación de IA debe reducir los costos de mantenimiento",
+    "resumen": "Análisis crítico sobre la productividad en el desarrollo de software frente al uso de agentes de IA. El autor argumenta que aumentar la velocidad de escritura de código sin reducir proporcionalmente los costos de mantenimiento es contraproducente a largo plazo. Mediante modelos de 'Wisdom of the Crowd', se demuestra cómo la acumulación de deuda técnica, corrección de errores y actualizaciones de dependencias puede consumir la totalidad del tiempo de un equipo en pocos años, especialmente si el código generado por IA es más difícil de mantener o no se revisa adecuadamente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48086082,
+    "url": "https://nesbitt.io/2026/02/03/incident-report-cve-2024-yikes.html",
+    "score": 561,
+    "time": 1778434990,
+    "titulo_es": "Reporte de Incidente: Ataque Catastrófico a la Cadena de Suministro mediante Dependencias Comprometidas",
+    "resumen": "Relato satírico de un incidente de seguridad multicapa que comienza con el robo físico de hardware y un ataque de phishing a un mantenedor de paquetes crítico en el ecosistema JavaScript. La vulnerabilidad escaló mediante la inyección de código malicioso en una librería de compresión de Rust (vulpine-lz4), la cual es una dependencia transitiva de herramientas de construcción en Python (snekpack). El ataque permitió la exfiltración masiva de credenciales de desarrollo, la manipulación de entornos de CI/CD y la distribución de malware que afecta a millones de usuarios finales mediante backdoors y shells inversas.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48091737,
+    "url": "https://daniel.haxx.se/blog/2026/05/11/mythos-finds-a-curl-vulnerability/",
+    "score": 218,
+    "time": 1778481548,
+    "titulo_es": "La auditoría de curl con Mythos: IA aplicada a la detección de vulnerabilidades",
+    "resumen": "Daniel Stenberg, líder del proyecto curl, describe la experiencia de someter el código fuente de la herramienta a un análisis de seguridad utilizando Mythos, el avanzado modelo de IA de Anthropic especializado en detectar fallos críticos. A través del proyecto Glasswing de la Linux Foundation, se realizó un escaneo de 178,000 líneas de código en las librerías principales. El artículo contextualiza este análisis dentro de una estrategia de seguridad madura que ya integra otras herramientas de IA como AISLE, Zeropath y OpenAI Codex, las cuales han contribuido a la resolución de cientos de bugs y múltiples CVEs en el último año. Se enfatiza que la IA funciona como un complemento a las revisiones humanas y al fuzzing intensivo para fortalecer la resiliencia del software.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48091085,
+    "url": "https://matt.might.net/articles/implementing-a-programming-language/",
+    "score": 58,
+    "time": 1778474080,
+    "titulo_es": "Implementación de un lenguaje de programación: el intérprete de 7 líneas",
+    "resumen": "El artículo describe el proceso de creación de un intérprete minimalista para el cálculo lambda utilizando el lenguaje Scheme. A través de un enfoque técnico basado en el patrón de diseño eval/apply, el autor demuestra cómo un sistema de solo siete líneas puede ser Turing-completo. Se exploran conceptos fundamentales de la teoría de la computación, como la equivalencia entre el cálculo lambda de Alonzo Church y las máquinas de Turing, además de mencionar herramientas avanzadas como las codificaciones de Church y el combinador Y para alcanzar la recursividad y la gestión de datos en lenguajes funcionales.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48070571,
+    "url": "https://www.wired.com/story/mexican-science-transforms-scorpion-venom-and-habanero-chile-into-antibiotics-against-resistant-bacteria/",
+    "score": 9,
+    "time": 1778287342,
+    "titulo_es": "Investigadores de la UNAM desarrollan nuevos antibióticos a partir de veneno de escorpión y chiles habaneros",
+    "resumen": "Un equipo del Instituto de Biotecnología de la UNAM ha logrado aislar y sintetizar benzoquinonas a partir del veneno del escorpión Diplocentrus melici, las cuales han demostrado ser eficaces contra patógenos como Mycobacterium tuberculosis y Staphylococcus aureus. Paralelamente, se identificó el péptido defensina J1-1 en el chile habanero, utilizando ingeniería genética y procesos de fermentación sumergida para producir el fármaco XisHar J1-1, efectivo contra la bacteria multirresistente Pseudomonas aeruginosa. Estos hallazgos representan avances significativos en biotecnología para combatir la resistencia bacteriana.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48090276,
+    "url": "https://github.com/adamjgmiller/adamsreview",
+    "score": 41,
+    "time": 1778465189,
+    "titulo_es": "Revisión de código multietapa para Claude Code",
+    "resumen": "Descripción técnica de un pipeline de seis comandos diseñado como plugin para Claude Code. El sistema implementa una revisión de código avanzada mediante detección paralela con sub-agentes, pases de validación y un bucle de corrección automatizado que detecta y revierte regresiones antes de realizar commits. Utiliza un estado persistente en formato JSON para gestionar el historial de revisiones, scripts auxiliares gestionados por uv/python y se integra en el flujo de trabajo de pull requests para superar las capacidades de herramientas estándar de revisión de código por IA.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48092367,
+    "url": "https://mipmip.org/advfamily/advfamily.html",
+    "score": 6,
+    "time": 1778487392,
+    "titulo_es": "Crónica incompleta de Colossal Cave Adventure de Crowther y Woods",
+    "resumen": "Documento histórico que cataloga la evolución, versiones y adaptaciones (ports) de Colossal Cave Adventure, la obra fundacional de la ficción interactiva. Se detalla el árbol genealógico del software, analizando las diversas ramas de desarrollo y la migración del código original a múltiples sistemas, lo que representa un registro crítico sobre la portabilidad y el mantenimiento de software histórico.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48089049,
+    "url": "https://dunkels.com/adam/claude-user-space-ip-stack-ping/",
+    "score": 98,
+    "time": 1778454151,
+    "titulo_es": "Claude Code como un stack de IP en espacio de usuario",
+    "resumen": "El artículo describe un experimento técnico en el que se utiliza Claude Code para emular un stack de protocolos IP directamente desde el modelo de lenguaje. Mediante la lectura de bytes de un dispositivo /dev/tun0 y el uso de un script auxiliar en Python, el LLM procesa paquetes, calcula checksums y genera respuestas ICMP echo (ping) válidas. Aunque el tiempo de respuesta es de 45 segundos, el experimento demuestra la capacidad de los LLMs para ejecutar lógica de bajo nivel tratando el Markdown como código ejecutable.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48073201,
+    "url": "http://fourlightyears.blogspot.com/2026/05/i-returned-to-aws-and-was-reminded-hard.html",
+    "score": 784,
+    "time": 1778315861,
+    "titulo_es": "El fin de una era con AWS: de evangelista a la frustración por bloqueos de cuenta",
+    "resumen": "Relato de un arquitecto sobre su desencanto con AWS tras 15 años de uso. Describe cómo, tras retomar la plataforma para realizar pruebas de IA con Claude en Bedrock y ejecutar benchmarks de rendimiento en instancias de 192 núcleos, su cuenta fue suspendida preventivamente por sospecha de brecha de seguridad. El incidente provocó la interrupción de servicios críticos de negocio como WorkMail y evidenció la ineficacia del soporte técnico básico ante emergencias operativas, subrayando la fragilidad de la relación entre el desarrollador y el proveedor de nube.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48092028,
+    "url": "https://discuss.privacyguides.net/t/google-account-registration-now-requires-sending-an-sms-via-phone-instead-of-receiving-an-sms/36082",
+    "score": 10,
+    "time": 1778484414,
+    "titulo_es": "Google reemplaza la verificación por SMS con códigos QR para la creación de nuevas cuentas",
+    "resumen": "Google ha implementado una nueva medida de seguridad que sustituye los códigos de verificación por SMS entrantes por el escaneo de códigos QR durante el registro de cuentas. Este proceso activa el envío de un SMS desde el dispositivo del usuario hacia Google para validar la propiedad del número. El objetivo principal es mitigar ataques de phishing y restringir el uso de servicios de números virtuales (SMS pooling) por parte de bots y revendedores de cuentas. El cambio genera debate técnico sobre la privacidad, el rastreo de identidad mediante tarjetas SIM vinculadas a documentos oficiales y la exclusión de usuarios con dispositivos no inteligentes.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48059761,
+    "url": "https://github.com/phel-lang/phel-lang/releases/tag/v0.36.0",
+    "score": 33,
+    "time": 1778224704,
+    "titulo_es": "Registro de cambios: de v0.35.0 a v0.36.0",
+    "resumen": "Esta actualización de software introduce variables de primera clase y una torre numérica que incluye Ratios, BigInteger y BigDecimal. Se han integrado nuevos tipos de datos como Uuid, PhpClass, MapEntry y Queue, además de optimizar la velocidad de los escaneos en el entorno REPL y la ejecución de pruebas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48093446,
+    "url": "https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/",
+    "score": 10,
+    "time": 1778497504,
+    "titulo_es": "Mi nombre es ri611: La realidad del entrenamiento de modelos de IA y el 'red teaming'",
+    "resumen": "El artículo describe la experiencia técnica y laboral de un redactor profesional trabajando como anotador de datos y miembro de un 'red team' para modelos de lenguaje extenso (LLM). Detalla procesos de RLHF (aprendizaje por refuerzo a partir de retroalimentación humana), evaluación de naturalidad del lenguaje, etiquetado de datos multimedia y pruebas de seguridad para identificar vulnerabilidades en los filtros de seguridad de las IA (probiendo la generación de contenido peligroso o violento). Además, analiza el ecosistema de plataformas de microtareas como Mercor, Outlier y Turing en el ciclo de desarrollo de software de IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48061602,
+    "url": "https://www.joachimschipper.nl/Stop%20MITM%20on%20the%20first%20SSH%20connection,%20on%20any%20VPS%20or%20cloud%20provider.html",
+    "score": 122,
+    "time": 1778239598,
+    "titulo_es": "Prevención de ataques SSH en la primera conexión con cloud-init",
+    "resumen": "Este artículo presenta una técnica innovadora para proteger la primera conexión SSH a una nueva máquina virtual, incluso en proveedores de nube que carecen de soluciones propietarias. Utilizando cloud-init, se inyecta una clave SSH de host temporal (privada) a través de cloud-init y se confía en ella solo el tiempo suficiente para generar y recuperar las claves SSH de host definitivas (a largo plazo). El script implementa esta técnica de forma segura, manteniendo la clave temporal en un directorio aislado y nunca en el archivo known_hosts del administrador. La ventaja principal es que el atacante nunca obtiene material de clave valioso en un momento oportuno, ya que la clave temporal se descarta y la clave definitiva se genera en la VM. Esta técnica hace que las filtraciones de userdata de cloud-init sean inofensivas, ya que las claves privadas de larga duración nunca se exponen en este canal. A diferencia de la simple aceptación de la advertencia de Trust On First Use (TOFU) de SSH, que deja al usuario vulnerable a ataques de intermediario, esta solución protege activamente la primera conexión sin depender de la detección manual del ataque por parte del administrador. Se confía en la seguridad del protocolo e implementación de OpenSSH.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48056639,
+    "url": "https://thenarwhal.ca/bird-banding-ontario/",
+    "score": 58,
+    "time": 1778197791,
+    "titulo_es": "Noches Estrelladas con Búhos Serranos: Ciencia de Anillamiento de Aves y Conservación en Peligro",
+    "resumen": "El artículo describe un evento en el Observatorio de Aves del Punto Príncipe Eduardo, Ontario, enfocado en el anillamiento de búhos serranos y otras aves para monitorear su migración, patrones de vida y salud poblacional. Se destaca la importancia de las estaciones de anillamiento para la recopilación de datos científicos y la conservación de hábitats. Se expone la preocupación generada por la propuesta de eliminación del área de misión de ecosistemas en el presupuesto federal de EE. UU. para 2026, que podría afectar gravemente los esfuerzos de anillamiento de aves en Norteamérica, incluyendo la disponibilidad de datos cruciales para Canadá en estimaciones de población, protección de hábitats y regulaciones de caza. A pesar de las amenazas, el evento tuvo lugar, culminando con la captura y liberación de un búho serrano, y se resalta el valor de la participación pública y la educación en la ornitología.",
+    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 48081469,
     "url": "https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html",
-    "score": 7,
+    "score": 243,
     "time": 1778394050,
-    "titulo_es": "La Parálisis de Tarea y el Uso de IA para Superarla en el Desarrollo de Software",
-    "resumen": "El artículo explora la lucha personal del autor con la \"parálisis de tarea\", una dificultad para iniciar y ejecutar tareas, y cómo la inteligencia artificial, específicamente Claude, ha surgido como una herramienta para superar este obstáculo en el desarrollo de software. El autor, quien sospecha tener TDAH, describe su necesidad de novedad, la dificultad para mantener trabajos a largo plazo y la tendencia a tener ideas estratégicas pero fallar en la ejecución. La IA se presenta como una solución para la \"parálisis de tarea\" al encargarse de la parte tediosa de la implementación, permitiendo al autor centrarse en la ideación. Sin embargo, también se discuten las preocupaciones éticas sobre el impacto de la IA en el empleo y la creatividad, así como el riesgo de caer en un ciclo adictivo de uso de IA debido a la gratificación instantánea y los costos asociados.",
+    "titulo_es": "Parálisis de Tarea y la Atracción de la IA en el Desarrollo de Software",
+    "resumen": "El artículo explora la experiencia personal del autor lidiando con lo que describe como 'parálisis de tarea', una condición que le impide iniciar y ejecutar tareas, especialmente en el desarrollo de software. Contrasta esto con la 'parálisis por análisis'. El autor detalla cómo las herramientas de IA generativa, específicamente Claude, le ayudan a superar esta parálisis al encargarse de la implementación de código, permitiéndole centrarse en la ideación y estrategia. Sin embargo, también expresa preocupación por los efectos negativos de la IA en el empleo y la propiedad intelectual, y advierte sobre la naturaleza adictiva de la IA como fuente de gratificación rápida (dopamina) debido a la brevedad del ciclo idea-resultado, llevando a un gasto considerable en tokens y créditos de API.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48067119,
-    "url": "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users",
-    "score": 1464,
-    "time": 1778265958,
-    "titulo_es": "Google reCAPTCHA vincula la verificación de \"no soy un robot\" a Google Play Services, afectando a los teléfonos sin Google",
-    "resumen": "El artículo detalla cómo la última versión del sistema reCAPTCHA de Google para Android ahora requiere la ejecución de Google Play Services (versión 25.41.30 o superior) para completar las verificaciones de seguridad, especialmente cuando se detecta actividad sospechosa que activa la solicitud de escaneo de códigos QR. Esto impide que los usuarios de teléfonos Android \"des-Googlizados\", como aquellos con GrapheneOS u otras ROMs personalizadas que eliminan el software de Google, puedan probar que son humanos. La obligatoriedad de Play Services, en contraste con la implementación en iOS que no requiere apps adicionales de Google, sugiere que la medida está más orientada al control del ecosistema de Google que a la seguridad. Al vincular la verificación de acceso a sitios web con el uso de software propietario de Google y la transmisión de datos a sus servidores, se penaliza a los usuarios que optan por eliminar estos servicios por preocupaciones sobre la privacidad y las prácticas de datos. El artículo critica esta decisión como una forma de vigilancia y control, argumentando que desalienta a una audiencia interesada en la privacidad y establece un precedente para el acceso a contenido web básico.",
-    "categoria": "Ciberseguridad"
+    "id": 48088151,
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises",
+    "score": 265,
+    "time": 1778447818,
+    "titulo_es": "Los consumidores de Maryland se enfrentan a miles de millones en costes de mejora de la red para centros de datos de IA, argumenta un organismo de control",
+    "resumen": "El artículo detalla una disputa regulatoria en Maryland, donde el Estado, a través de la Oficina del Defensor del Pueblo de las Personas (OPC), se opone a los planes de PJM Interconnection, LLC de repercutir 2.000 millones de dólares de las mejoras de la red eléctrica a los consumidores. Estas mejoras se están realizando para dar cabida a la creciente demanda de los centros de datos, impulsada en gran medida por los sistemas de IA. La OPC argumenta que esta asignación de costes es injusta, ya que los consumidores de Maryland no han causado la necesidad de estas infraestructuras y no se beneficiarán de ellas de forma significativa, mientras que estados con una mayor concentración de centros de datos no soportan una carga similar. La OPC aboga por que los costes se repercutan directamente a las empresas que impulsan la demanda o que se aplique el \"compromiso de protección de los consumidores\" prometido por las empresas tecnológicas. El artículo también señala la creciente oposición pública y las moratorias a la construcción de centros de datos debido a su elevada demanda de energía y al impacto en la calidad de vida, destacando la tensión entre la expansión de la IA y la infraestructura de soporte.",
+    "categoria": "Hardware"
   },
   {
-    "id": 48078811,
-    "url": "https://reclaimthenet.org/france-moves-to-break-encrypted-messaging",
-    "score": 196,
-    "time": 1778364875,
-    "titulo_es": "Parlamento francés respalda idea de romper cifrado de mensajes, expertos advierten sobre puertas traseras",
-    "resumen": "El parlamento francés, a través de su delegación de inteligencia, ha respaldado la propuesta de permitir el acceso a mensajes cifrados de plataformas como WhatsApp, Signal y Telegram. La medida busca otorgar a magistrados y agentes de inteligencia la capacidad de acceder a contenido que actualmente es inaccesible incluso para las propias plataformas. Los defensores argumentan que la incapacidad de acceder a estas comunicaciones es un obstáculo para la justicia y los servicios de inteligencia. Sin embargo, criptógrafos y expertos técnicos señalan que esta propuesta ignora el diseño fundamental del cifrado de extremo a extremo, donde las claves de descifrado residen en los dispositivos de los usuarios y no en los servidores de las empresas. Debilitar esta protección podría crear vulnerabilidades significativas, permitiendo el abuso, filtraciones o hackeos a gran escala, exponiendo las comunicaciones no solo a los investigadores sino también a actores malintencionados. Se menciona una técnica existente, RDI (recopilación de datos digitales), que permite la interceptación remota del dispositivo, pero se considera insuficiente. Un intento previo de legislar medidas técnicas obligatorias para las plataformas fue rechazado por la Asamblea Nacional debido a objeciones técnicas sobre la viabilidad y las implicaciones de seguridad de crear puertas traseras.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48074087,
-    "url": "https://dillo-browser.org/lab/web-fork/",
-    "score": 127,
-    "time": 1778326387,
-    "titulo_es": "Propuesta para una especificación web simplificada y robusta",
-    "resumen": "El documento propone la creación de una especificación web alternativa, centrada en la simplicidad y la robustez, para superar las limitaciones de la actual. Los objetivos clave incluyen una especificación corta y manejable (ej. 1.44 MiB comprimida), el uso de versionado semántico estricto (major.minor.patch) para garantizar la compatibilidad y evitar cambios retroactivos, y una gramática formal no ambigua para facilitar el parsing y la validación. Se enfatiza la inmutabilidad de las versiones publicadas y la prohibición explícita de renderizar páginas no conformes para forzar la corrección de errores en futuras versiones. Se plantea la dificultad del parsing de formatos como HTML/XML y la necesidad de considerar lenguajes más sencillos. Se aborda la problemática de la captura del estándar por entidades con fines de lucro, lo que ha llevado a una complejidad desmedida.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48037517,
-    "url": "https://www.quantamagazine.org/what-causes-lightning-the-answer-keeps-getting-more-interesting-20260506/",
-    "score": 202,
-    "time": 1778082066,
-    "titulo_es": "Cómo se inician los rayos",
-    "resumen": "El artículo explora la investigación actual sobre la iniciación de los rayos, destacando cómo los físicos, incluidos aquellos con experiencia en astrofísica, están aplicando instrumentos y conceptos de la física de alta energía, asociados con fenómenos cósmicos como supernovas y colisionadores de partículas, para desentrañar los misterios de las tormentas eléctricas terrestres. Se discuten nuevos hallazgos como la detección de rayos X y rayos gamma procedentes de las nubes de tormenta, y se cuestiona la visión tradicional de los rayos como simples chispas eléctricas, sugiriendo una comprensión más compleja que abarca todo el canon de la física.",
+    "id": 48082396,
+    "url": "https://allendowney.github.io/ThinkLinearAlgebra/index.html",
+    "score": 205,
+    "time": 1778406033,
+    "titulo_es": "Piensa en Álgebra Lineal",
+    "resumen": "El artículo describe 'Think Linear Algebra', un libro introductorio al álgebra lineal enfocado en la aplicación práctica y el aprendizaje basado en código. Utiliza Python y bibliotecas como NumPy y SciPy para resolver problemas del mundo real en áreas como el modelado de tráfico, simulación de aves, análisis de circuitos eléctricos, gráficos computacionales, ciencia de datos e ingeniería. El libro adopta un enfoque \"code-first\" y \"case-based\", comenzando con aplicaciones significativas y construyendo la teoría según sea necesario, lo que lo hace accesible para aquellos que han tenido dificultades con la instrucción matemática tradicional o prefieren un método más intuitivo y práctico. Los lectores aprenderán a formular problemas utilizando vectores y matrices, resolverlos con algoritmos de álgebra lineal, simular sistemas, calcular proyecciones, resolver ecuaciones y visualizar conceptos matemáticos a través de ejemplos interactivos en Jupyter notebooks. Se enfatiza la relevancia del álgebra lineal para el machine learning, la computación científica y los gráficos, y se proporciona bajo una licencia Creative Commons.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48077966,
-    "url": "https://undecidability.net/senior/",
-    "score": 47,
-    "time": 1778358667,
-    "titulo_es": "Ascenso a Ingeniero de Software Senior en Dos Años y Medio",
-    "resumen": "El artículo narra la experiencia de un ingeniero de software que, tras comenzar su carrera en julio de 2023, logró el título de Ingeniero de Software Senior en enero de 2026, un ascenso en dos años y medio. El autor reflexiona sobre la posibilidad de alcanzar este nivel de 'senior' tan temprano en la carrera, la estrategia empleada para lograrlo (inspirado por un mentor y con un objetivo de ascenso rápido), y los desafíos encontrados, incluyendo la negación inicial de la promoción a pesar de la habilidad técnica, requiriendo el envío de más proyectos. A pesar de la frustración inicial, el autor se recuperó, ajustó el plan con su manager y finalmente obtuvo la promoción. El texto también aborda la importancia de tener un mentor sólido, la propia ambición y cómo la compañía maneja sus niveles de carrera (ASE -> SE -> SSE -> Staff SE).",
+    "id": 48071262,
+    "url": "https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/",
+    "score": 694,
+    "time": 1778294502,
+    "titulo_es": "La capacidad de los Modelos de Lenguaje Grandes para resolver problemas matemáticos de investigación",
+    "resumen": "El artículo discute la creciente capacidad de los Modelos de Lenguaje Grandes (LLMs), específicamente ChatGPT 5.5 Pro, para resolver problemas matemáticos de nivel de investigación. Inicialmente, se pensaba que los LLMs simplemente encontraban soluciones en la literatura existente o deducían resultados fácilmente de conocimientos conocidos. Sin embargo, la evidencia sugiere que los LLMs ahora pueden identificar argumentos para problemas que han sido pasados por alto por matemáticos humanos. El autor explora esto a través de la resolución de problemas en teoría de números aditiva, examinando la cardinalidad de conjuntos de sumas (sumsets) y cómo los LLMs abordan preguntas abiertas en esta área. Se plantea la cuestión de si los LLMs están generando ideas verdaderamente originales o recombinando conocimiento existente, aunque se señala que gran parte de las matemáticas humanas también consiste en esta recombinación.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48083007,
+    "url": "https://mathoverflow.net/questions/43690/whats-a-mathematician-to-do",
+    "score": 164,
+    "time": 1778412410,
+    "titulo_es": "¿Qué puede aportar un individuo a las matemáticas?",
+    "resumen": "El artículo aborda la pregunta sobre cómo un individuo, especialmente uno sin un talento especial percibido, puede contribuir a las matemáticas. Sostiene que la contribución principal de las matemáticas a la humanidad no radica en la creación de teoremas o en la comprensión de obras maestras, sino en la claridad y el entendimiento que genera. Se enfatiza que el valor de las matemáticas reside en su capacidad para desafiar la comprensión, impulsar el desarrollo y, en última instancia, contribuir al bienestar mundial. El texto también destaca la naturaleza psicológica de las matemáticas, su dependencia de la mente humana y los desafíos inherentes a la transmisión del conocimiento matemático, señalando que la comprensión puede deteriorarse con el tiempo debido a la jubilación de expertos, la pérdida de conocimiento o la primacía de formas simbólicas sobre las conceptuales en la comunicación.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48064789,
+    "url": "https://www.databricks.com/blog/how-lakebase-architecture-delivers-5x-faster-postgres-writes",
+    "score": 113,
+    "time": 1778255172,
+    "titulo_es": "Resolviendo el cuello de botella de rendimiento estructural en PostgreSQL administrado",
+    "resumen": "El artículo detalla cómo una arquitectura de lakehouse, separando cómputo y almacenamiento, aborda un cuello de botella histórico en PostgreSQL relacionado con las escrituras de página completa (FPW). Tradicionalmente, PostgreSQL utiliza FPW para garantizar la durabilidad de los datos ante fallos de disco, copiando páginas completas (8KB) al Write-Ahead Log (WAL) la primera vez que se modifican después de un checkpoint. Si bien esto asegura la recuperación ante fallos, incrementa significativamente el volumen del WAL, especialmente en cargas de trabajo con muchas escrituras. La arquitectura de lakehouse, al ser stateless y no depender de un disco local para el cómputo, elimina la necesidad de FPW para prevenir páginas corruptas (torn pages). Sin embargo, desactivar FPW de forma ingenua crearía un problema de latencia en lecturas, ya que reconstruir una página requeriría reproducir una cadena potencialmente infinita de deltas. La solución implementada es la 'image generation pushdown', donde el componente de almacenamiento (pageserver) reconstruye las páginas solicitadas por el cómputo, partiendo de la imagen materializada más reciente y aplicando los deltas del WAL. Esto mantiene las cadenas de deltas acotadas y las lecturas rápidas, logrando una mejora de 5x en el rendimiento de escritura, reducción de 2x en la latencia de cola de lectura y 94% en el tráfico WAL.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48080662,
-    "url": "https://github.com/aniongithub/devcontainer-mcp",
-    "score": 7,
-    "time": 1778382925,
-    "titulo_es": "devcontainer-mcp: Entornos de Desarrollo para Agentes de IA",
-    "resumen": "El artículo describe devcontainer-mcp, un servidor MCP (Machine Configuration Protocol) que permite a los agentes de codificación de IA crear, gestionar y operar dentro de contenedores de desarrollo (devcontainers). Utiliza tres backends: Docker local, DevPod y GitHub Codespaces. El agente puede construir, probar y desplegar código en un entorno aislado, manteniendo el sistema anfitrión limpio. Funciona con clientes compatibles con MCP como GitHub Copilot, Claude y Cursor. El sistema expone herramientas MCP que permiten a los agentes interactuar con el ciclo de vida de los devcontainers, incluyendo su creación, actualización y resolución de errores. Soporta la ejecución dentro de WSL2 y detecta CLIs de backend como devpod y gh, proporcionando instrucciones de instalación si faltan. Maneja la autenticación para Codespaces de forma segura, evitando la exposición de tokens crudos. El fallo en la creación o actualización de entornos devuelve la salida completa del build al agente, permitiendo la iteración y corrección dinámica del entorno de desarrollo. El proyecto se autogestiona utilizando su propio devcontainer.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48075528,
-    "url": "https://stonetools.ghost.io/pipedream-archimedes/",
-    "score": 80,
-    "time": 1778338876,
-    "titulo_es": "Un vistazo a la arquitectura Archimedes, el sistema operativo RISC OS y la suite de productividad PipeDream",
-    "resumen": "El artículo detalla la historia del Acorn Archimedes, destacando su innovador hardware basado en el procesador ARM, que fue adelantado a su tiempo y sentó las bases para la arquitectura móvil moderna. Se describe el desarrollo de su sistema operativo, RISC OS, que evolucionó desde un sistema provisional llamado Arthur y se convirtió en un sistema multitarea cooperativo con una interfaz gráfica WIMP distintiva que introdujo características como docks y menús contextuales, además de ser pionero en renderizado de fuentes escalables y anti-aliased. Finalmente, se presenta PipeDream, una suite de productividad revolucionaria que desafió las convenciones al integrar de forma fluida funciones de procesamiento de texto, hojas de cálculo y bases de datos en una única aplicación, ofreciendo una experiencia de usuario y funcionalidad únicas incluso comparadas con herramientas modernas.",
+    "id": 48084432,
+    "url": "https://www.tomshardware.com/3d-printing/louis-rossmann-tells-3d-printer-maker-bambu-lab-to-go-bleep-yourself-over-its-lawsuit-against-enthusiast-right-to-repair-advocate-offers-to-pay-the-legal-fees-for-a-threatened-orcaslicer-developer",
+    "score": 549,
+    "time": 1778424425,
+    "titulo_es": "La controversia de Bambu Lab se intensifica con el apoyo a un desarrollador amenazado",
+    "resumen": "El artículo detalla la escalada de la disputa entre Bambu Lab y la comunidad de 'Derecho a Reparar'. Louis Rossmann ha ofrecido $10,000 para cubrir los gastos legales de Pawel Jarczak, un desarrollador de software independiente que cesó su proyecto \"OrcaSlicer-BambuLab\" tras recibir una carta de cese y desistimiento de Bambu Lab. Este proyecto buscaba restaurar el control directo entre las impresoras 3D de Bambu Lab y OrcaSlicer. Bambu Lab había declarado previamente que tales integraciones de terceros representaban un riesgo para su infraestructura, citando un gran volumen de solicitudes 'no autorizadas'. Rossmann insta a Jarczak a restaurar su proyecto en GitHub y está movilizando a la comunidad para financiar la defensa legal de Jarczak, argumentando el principio del 'Derecho a Reparar': los usuarios deben tener la libertad de reparar y modificar los productos que poseen. El artículo también menciona la dificultad de reparar y modificar impresoras Bambu Lab, citando ejemplos específicos y la evolución de sus modelos para mejorar la reparabilidad.",
     "categoria": "Hardware"
   },
   {
-    "id": 48048679,
-    "url": "https://learn.sparkfun.com/tutorials/how-leds-are-made/all",
-    "score": 135,
-    "time": 1778157585,
-    "titulo_es": "Un vistazo a la fabricación de LEDs en la fábrica de YunSun",
-    "resumen": "El artículo detalla el proceso de fabricación de LEDs de paso de orificio (PTH) en la fábrica de YunSun. Se describe la recepción y manipulación de los dies de LED de Taiwán, su adhesión a los marcos de plomo metálicos preformados, la unión de cables de oro finos entre el die y el ánodo, el encapsulado con resina epoxi para dar forma al LED y el curado final mediante horneado. Se mencionan aspectos como la manipulación de los dies en \"aire abierto\" (no en sala limpia), la máquina de unión de cables, el uso de moldes para dar forma a los LEDs (incluyendo formas personalizadas) y la importancia de los marcos de plomo para el soporte y las pruebas. También se hace una digresión sobre los displays de 7 segmentos, aclarando que no utilizan LEDs de tamaño completo sino dies directamente montados en PCB.",
-    "categoria": "Hardware"
+    "id": 48082968,
+    "url": "https://brennan.io/2026/05/09/pinball-and-escrow/",
+    "score": 336,
+    "time": 1778412122,
+    "titulo_es": "Space Cadet Pinball: Un Clásico de Windows XP para Linux",
+    "resumen": "El artículo detalla cómo los usuarios de Linux pueden instalar y jugar al clásico juego \"Space Cadet Pinball\" de Windows XP. Explica el uso de Flatpak como método de instalación sencillo, incluyendo la opción de usar recursos de \"Full Tilt! Pinball\" para resoluciones más altas. Se discute la ingeniería inversa necesaria para portar el juego y las diferencias entre las versiones de datos. También se menciona la portabilidad del juego a otras plataformas (macOS, Android, Nintendo Switch) y se reflexiona sobre la legalidad de descargar datos de juegos comerciales y la importancia de remunerar a los desarrolladores.",
+    "categoria": "Distribuciones Linux"
   },
   {
-    "id": 48080368,
-    "url": "https://arxiv.org/abs/2605.06647",
-    "score": 8,
-    "time": 1778379390,
-    "titulo_es": "arXivLabs: Un marco para el desarrollo de nuevas funciones de arXiv",
-    "resumen": "arXivLabs es un marco colaborativo que permite a desarrolladores y organizaciones crear y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza la adhesión a los valores de apertura, comunidad, excelencia y privacidad de datos del usuario. El programa busca socios que deseen agregar valor a la comunidad de arXiv mediante el desarrollo de proyectos.",
-    "categoria": "Desarrollo de Software"
+    "id": 48087339,
+    "url": "https://dogdogfish.com/blog/2026/05/10/the-struggle-is-gone/",
+    "score": 32,
+    "time": 1778443350,
+    "titulo_es": "El desvanecimiento de la lucha en la era de la IA y su impacto en el aprendizaje",
+    "resumen": "El artículo reflexiona sobre la importancia de la \"lucha\" o el esfuerzo sostenido para el aprendizaje profundo, contrastando experiencias personales en física y programación con la disponibilidad inmediata de respuestas a través de herramientas de IA como ChatGPT. El autor argumenta que la facilidad para obtener soluciones rápidas con IA elimina la fricción psicológica necesaria para el desarrollo de la resiliencia, la creatividad y la iniciativa, comparando esta situación con la crianza de niños que evitan el aburrimiento con dispositivos electrónicos. Si bien reconoce que la IA puede acelerar el aprendizaje para los más motivados, advierte que la mayoría de las personas tenderán a elegir el camino de menor resistencia, optando por la consulta rápida en lugar del esfuerzo prolongado, lo que podría llevar a un aprendizaje menos robusto y efectivo. Se plantea la dificultad intrínseca de luchar contra la tendencia humana a evitar el malestar psicológico cuando una solución fácil está al alcance.",
+    "categoria": "IA"
   },
   {
-    "id": 48080675,
-    "url": "https://github.com/narcotic-sh/modafinil",
-    "score": 7,
-    "time": 1778383023,
-    "titulo_es": "Aplicación de barra de menú de macOS para evitar que el MacBook se duerma con la tapa cerrada",
-    "resumen": "El artículo describe una aplicación de barra de menú para macOS diseñada para evitar que un MacBook entre en suspensión cuando la tapa está cerrada. Permite que la pantalla se apague normalmente para conservar batería y reducir el calor. La motivación principal es permitir que los agentes de codificación sigan ejecutándose mientras el usuario transporta el MacBook. La instalación se realiza a través de un archivo .dmg. Requiere el permiso de 'Actividad en segundo plano de la aplicación' (Configuración del Sistema -> General -> Elementos de inicio y extensiones), que debería solicitarse automáticamente al primer inicio. La aplicación se activa/desactiva con un clic izquierdo y ofrece un menú contextual (clic derecho) para salir o desinstalar. Ha sido probada en Apple Silicon con macOS 13 o superior.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48075144,
-    "url": "https://cyberinsider.com/grapheneos-fixes-android-vpn-leak-google-refused-to-patch/",
-    "score": 286,
-    "time": 1778335870,
-    "titulo_es": "GrapheneOS Soluciona Vulnerabilidad Crítica de Fuga de VPN en Android que Podría Exponer la IP Real del Usuario",
-    "resumen": "El artículo detalla una vulnerabilidad crítica descubierta en Android 16, que permite a aplicaciones maliciosas o con permisos mínimos exponer la dirección IP real de un usuario incluso cuando se utilizan VPNs con protecciones 'Always-On' y 'Block connections without VPN' habilitadas. La falla, relacionada con una nueva optimización de cierre de conexión QUIC introducida en el stack de red de Android, permitía a procesos privilegiados del sistema enviar paquetes a través de la interfaz de red física en lugar del túnel VPN. El investigador de seguridad 'lowlevel/Yusuf' descubrió que una API vulnerable permitía registrar cargas útiles UDP arbitrarias en 'system_server'. Al destruir el socket UDP de una aplicación, 'system_server' transmitía esta carga útil directamente a la red física, eludiendo las restricciones de la VPN. Google inicialmente clasificó el problema como 'Won't Fix', pero GrapheneOS, un sistema operativo centrado en la privacidad, ha lanzado una actualización (versión 2026050400) que deshabilita la optimización 'registerQuicConnectionClosePayload', solucionando efectivamente la vulnerabilidad en sus dispositivos Pixel soportados. La actualización también incluye el parche de seguridad de mayo de 2026, mejoras en 'hardened_malloc', actualizaciones del kernel Linux y correcciones para otras vulnerabilidades. Se menciona una mitigación temporal para usuarios de Android stock a través de ADB deshabilitando un flag de 'DeviceConfig', pero esta solución no es persistente.",
-    "categoria": "Ciberseguridad"
+    "id": 48080702,
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/",
+    "score": 148,
+    "time": 1778383322,
+    "titulo_es": "Nuevas actualizaciones en la herramienta Gemini API File Search para RAG",
+    "resumen": "El artículo anuncia tres actualizaciones importantes para la herramienta Gemini API File Search: soporte multimodal (procesamiento conjunto de texto e imágenes), metadatos personalizados (etiquetas clave-valor para filtrar datos) y citas a nivel de página (referencias a la fuente original de la información). Estas mejoras están diseñadas para facilitar la construcción de sistemas de Retrieval-Augmented Generation (RAG) más eficientes, estructurados y verificables, permitiendo a los desarrolladores indexar y buscar datos de manera más granular y contextual. La herramienta ahora aprovecha el modelo Gemini Embedding 2 para comprender datos visuales, los metadatos customizados permiten acotar las búsquedas reduciendo ruido, y las citas a nivel de página mejoran la transparencia y la confianza del usuario al poder verificar la procedencia de las respuestas. El objetivo es simplificar la infraestructura de almacenamiento y recuperación de datos para que los desarrolladores puedan centrarse en la construcción de sus aplicaciones.",
+    "categoria": "IA"
   }
 ]
