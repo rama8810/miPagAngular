@@ -1,344 +1,308 @@
 [
   {
-    "id": 48130950,
-    "url": "https://www.anthropic.com/news/claude-for-small-business",
-    "score": 281,
-    "time": 1778731175,
-    "titulo_es": "Anthropic lanza Claude para pequeñas empresas: conectores y flujos de trabajo agénticos",
-    "resumen": "Anthropic presenta 'Claude for Small Business', una solución diseñada para integrar inteligencia artificial directamente en herramientas empresariales comunes como QuickBooks, PayPal, HubSpot y Microsoft 365. El paquete incluye 15 flujos de trabajo agénticos y habilidades preconfiguradas para tareas de finanzas, operaciones, marketing y ventas. El sistema permite automatizar procesos como la conciliación de facturas y la gestión de nóminas, manteniendo la supervisión humana bajo un modelo de aprobación previa. Además, se enfatiza la seguridad de los datos corporativos y se complementa con un programa de capacitación en fluidez de IA en colaboración con PayPal.",
+    "id": 48146369,
+    "url": "https://github.com/Andyyyy64/whichllm",
+    "score": 40,
+    "time": 1778836764,
+    "titulo_es": "whichllm: Encuentra y ejecuta el mejor LLM local para tu hardware",
+    "resumen": "Herramienta de línea de comandos diseñada para automatizar la selección y despliegue de modelos de lenguaje (LLM) en hardware local. El sistema detecta automáticamente la GPU, CPU y RAM para clasificar modelos de HuggingFace basándose en un algoritmo de puntuación (0-100) que prioriza benchmarks de calidad real (como LiveBench y Chatbot Arena) y la recencia generacional sobre el simple recuento de parámetros. Además, gestiona la ejecución mediante entornos aislados con 'uv', permitiendo descargar y chatear con modelos en diversos formatos mediante un solo comando.",
     "categoria": "IA"
   },
   {
-    "id": 48087887,
-    "url": "https://www.xda-developers.com/linux-gaming-is-getting-faster-because-windows-apis-are-becoming-linux-kernel-features/",
-    "score": 759,
-    "time": 1778446446,
-    "titulo_es": "Linux alcanza un hito histórico en Steam impulsado por el kernel y NTSYNC",
-    "resumen": "El ecosistema Linux ha superado el 5% de cuota de usuarios en Steam, impulsado por el éxito del Steam Deck y el fin de soporte de Windows 10. Desde una perspectiva técnica, la evolución clave es NTSYNC, un controlador a nivel de kernel integrado en Wine 11 que proporciona una implementación nativa de las primitivas de sincronización de Windows. Esto elimina la necesidad de emular mecanismos complejos de coordinación multihilo (anteriormente manejados por esync/fsync), optimizando la comunicación entre procesos y logrando mejoras de rendimiento de entre el 40% y el 200% en la ejecución de videojuegos.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 48133561,
-    "url": "https://numa.rs/blog/posts/odoh-anonymous-dns-without-an-account.html",
-    "score": 4,
-    "time": 1778755490,
-    "titulo_es": "Implementación de ODoH en Numa: DNS Anónimo mediante Oblivious DNS over HTTPS",
-    "resumen": "El artículo técnico describe la implementación del protocolo ODoH (RFC 9230) en el resolvedor Numa para resolver el problema de privacidad donde los operadores de DNS tradicionales vinculan la IP del usuario con sus consultas. Se detalla el uso de cifrado HPKE (RFC 9180) y una arquitectura de dos saltos (relay e ingress) que separa la identidad del contenido. El autor explica desafíos de seguridad específicos como la mitigación de ataques SSRF en el relay, la validación de dominios eTLD+1 para asegurar la independencia de operadores y el despliegue de infraestructura abierta para fortalecer un ecosistema de DNS anónimo que actualmente cuenta con muy pocos nodos públicos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48122635,
-    "url": "https://fredchan.org/blog/locality-domains-guide/",
-    "score": 567,
-    "time": 1778683518,
-    "titulo_es": "Cómo obtener un dominio de localidad .us gratuito",
-    "resumen": "El artículo proporciona una guía técnica detallada para el registro y configuración de dominios de localidad en EE. UU. (ej. ciudad.estado.us) sin costo. Explica el proceso de identificación de gestores delegados, los requisitos de elegibilidad y la implementación de infraestructura DNS necesaria utilizando Amazon Lightsail para gestionar los servidores de nombres y el apuntamiento hacia hosts web.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48084516,
-    "url": "https://joshuahhh.com/dims-of-feedback/",
-    "score": 14,
-    "time": 1778424965,
-    "titulo_es": "Dimensiones del feedback en tiempo real en sistemas de programación interactiva",
-    "resumen": "El artículo propone un marco conceptual para mapear el espacio de diseño del feedback en tiempo real en sistemas de programación. Introduce seis dimensiones fundamentales para la evaluación técnica de estos sistemas: granularidad, reactividad, velocidad, moldeabilidad, bidireccionalidad y materialidad, permitiendo una caracterización estructurada de las herramientas de desarrollo interactivas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48125617,
-    "url": "https://www.jdhodges.com/blog/macbook-neo-benchmarks-analysis/",
-    "score": 236,
-    "time": 1778697051,
-    "titulo_es": "MacBook Neo: Un análisis técnico del silicio A18 Pro y la integración vertical de Apple",
-    "resumen": "Análisis profundo del MacBook Neo, un dispositivo que integra el chip A18 Pro (procesador de 3nm del iPhone 16 Pro) en un formato de laptop económica. El artículo detalla el rendimiento de la arquitectura de 6 núcleos (2 de rendimiento y 4 de eficiencia), comparativas de benchmarks frente a las series M3/M4 y la competencia de Intel/Qualcomm, y explora la economía de escala de las obleas de silicio de TSMC que permite a Apple ofrecer este hardware a un precio competitivo de $599 a pesar de la limitación técnica de los 8GB de RAM.",
+    "id": 48138136,
+    "url": "https://arkadiyt.com/2026/05/13/removing-the-modem-and-gps-from-my-rav4/",
+    "score": 890,
+    "time": 1778778480,
+    "titulo_es": "Extracción física de hardware para la eliminación de telemetría en vehículos modernos",
+    "resumen": "Guía técnica detallada sobre el desensamblaje y remoción física del Data Communication Module (DCM) y el módulo GPS en un Toyota RAV4 2024. El artículo aborda la problemática de la recolección masiva de datos de telemetría por parte de los fabricantes y proporciona un manual paso a paso para desconectar el hardware de comunicación, analizando el impacto funcional en el sistema de infoentretenimiento y proponiendo alternativas de conexión segura para mitigar la exfiltración de datos.",
     "categoria": "Hardware"
   },
   {
-    "id": 48073979,
-    "url": "https://laurent.le-brun.eu/blog/a-history-of-ides-at-google",
-    "score": 379,
-    "time": 1778325258,
-    "titulo_es": "La evolución de los IDEs en Google: De la fragmentación a Cider",
-    "resumen": "El artículo analiza el desafío de estandarizar las herramientas de desarrollo en el entorno de escala masiva de Google. Explora cómo la empresa pasó de una fragmentación total de editores a desarrollar Cider, un IDE basado en la web. Se destaca que las limitaciones de los IDEs tradicionales para manejar monorepos gigantes impulsaron una arquitectura donde el indexado y la inteligencia de código se procesan en el backend (Cloud), facilitando la integración de herramientas internas como Bazel y el uso de Language Server Protocol.",
+    "id": 48144670,
+    "url": "https://github.com/GlycemicGPT/GlycemicGPT",
+    "score": 33,
+    "time": 1778820503,
+    "titulo_es": "GlycemicGPT: Plataforma de gestión de diabetes de código abierto impulsada por IA",
+    "resumen": "GlycemicGPT es una solución de software de código abierto diseñada para el monitoreo y análisis de datos de diabetes mediante inteligencia artificial. La plataforma utiliza una arquitectura basada en plugins para conectarse con dispositivos CGM y bombas de insulina, permitiendo el seguimiento en tiempo real y la generación de informes mediante modelos de lenguaje (LLM). El proyecto destaca por su enfoque en la extensibilidad, permitiendo despliegues mediante Docker en entornos locales o servidores en la nube, y se integra con ecosistemas existentes como Nightscout.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48137629,
+    "url": "https://hghalebi.github.io/category_theory_transformer_rs/",
+    "score": 39,
+    "time": 1778775868,
+    "titulo_es": "Teoría de Categorías para Tiny ML en Rust",
+    "resumen": "Manual técnico que vincula las matemáticas compositivas con el desarrollo de sistemas de aprendizaje automático (Tiny ML) utilizando el lenguaje Rust. El texto propone un enfoque de ingeniería donde la teoría de categorías no es solo una abstracción, sino una herramienta para estructurar pipelines de IA mediante objetos, transformaciones y restricciones, permitiendo la creación de arquitecturas de software más mantenibles, auditables y con tipos estrictos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48142251,
+    "url": "https://www.bbc.com/news/articles/c2l2j1lxdk5o",
+    "score": 251,
+    "time": 1778798656,
+    "titulo_es": "El gobierno del Reino Unido ahorra millones tras reemplazar el sistema de Palantir por una solución interna para el programa 'Homes for Ukraine'",
+    "resumen": "El Ministerio de Vivienda, Comunidades y Gobierno Local del Reino Unido (MHCLG) ha sustituido con éxito una infraestructura basada en la plataforma comercial Palantir Foundry por un sistema desarrollado internamente. Esta transición estratégica se fundamentó en la búsqueda de mayor flexibilidad técnica, control total sobre el código y los datos, y una reducción significativa en los costes operativos, logrando ahorrar millones de libras al año. El caso destaca la capacidad del sector público para migrar sistemas complejos en producción a soluciones personalizadas, desafiando la dependencia de proveedores externos y promoviendo la soberanía tecnológica a través de prácticas de desarrollo de software in-house.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48137145,
+    "url": "https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/",
+    "score": 605,
+    "time": 1778773651,
+    "titulo_es": "¿Qué pasaría si pudieras conectar una GPU de escritorio completa a tu MacBook Air?",
+    "resumen": "El artículo detalla el proceso técnico para conectar una GPU NVIDIA RTX 5090 a un MacBook Air M4 mediante una base Thunderbolt. Explica conceptos de hardware como la tunelización de PCIe sobre USB-C (Thunderbolt 4), las limitaciones de controladores en Apple Silicon y la implementación de una solución mediante virtualización ARM64. Se analizan aspectos críticos de arquitectura de sistemas como los registros BAR de PCI y el Acceso Directo a Memoria (DMA) para lograr el passthrough de la GPU desde macOS a una máquina virtual Linux.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48139219,
+    "url": "https://blog.calif.io/p/first-public-kernel-memory-corruption",
+    "score": 375,
+    "time": 1778783109,
+    "titulo_es": "Primer exploit público de corrupción de memoria del kernel de macOS en silicio M5 superando MIE",
+    "resumen": "Investigadores de seguridad detallan el desarrollo de una cadena de explotación para escalada de privilegios locales en el kernel de macOS ejecutándose sobre el chip M5 de Apple. El ataque es significativo por ser el primero en evadir la tecnología MIE (Memory Integrity Enforcement), una defensa basada en hardware diseñada para detener vulnerabilidades de corrupción de memoria. El proceso se llevó a cabo en una semana mediante una colaboración entre expertos humanos y Mythos Preview, una herramienta de IA especializada en el descubrimiento y generalización de fallos de seguridad, demostrando cómo la IA puede acelerar el desarrollo de exploits complejos contra mitigaciones avanzadas.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48107766,
+    "url": "https://github.com/gyroflow/gyroflow",
+    "score": 97,
+    "time": 1778591476,
+    "titulo_es": "Gyroflow: Estabilización de video utilizando datos de giroscopio",
+    "resumen": "Gyroflow es una herramienta de estabilización de video avanzada que utiliza datos de sensores (giroscopio y acelerómetro) para corregir metraje de cámaras modernas. Arquitecturalmente, está desarrollada en Rust con una interfaz en QML (Qt). Su núcleo es una librería de Rust pura, mientras que el procesamiento gráfico se apoya en APIs de bajo nivel como Vulkan, Metal y DirectX a través de wgpu y OpenCL. El proyecto destaca por su enfoque multiplataforma, el uso mínimo de OpenCV para tareas específicas de calibración y una arquitectura diseñada para la alta paralelización tanto en GPU como en CPU.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48138268,
+    "url": "https://github.com/DepthFirstDisclosures/Nginx-Rift",
+    "score": 386,
+    "time": 1778779068,
+    "titulo_es": "Análisis de CVE-2026-42945: Desbordamiento de búfer en el módulo de reescritura de NGINX",
+    "resumen": "Se detalla una vulnerabilidad crítica de desbordamiento de búfer en el montículo (heap buffer overflow) en el componente ngx_http_rewrite_module de NGINX. El error ocurre debido a una discrepancia en el proceso de dos pasos del motor de scripts: mientras que la copia de datos detecta la bandera 'is_args' en una sustitución de reescritura, el paso previo de cálculo de longitud se ejecuta sobre un motor secundario que no la reconoce, resultando en la asignación de un búfer insuficiente. La explotación técnica implica el uso de 'heap feng shui' entre peticiones para sobrescribir punteros de limpieza (ngx_pool_t) y redirigir el flujo de ejecución hacia system() mediante el uso de cuerpos de peticiones POST.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48143880,
+    "url": "https://tmctmt.com/posts/mullvad-exit-ips-as-a-fingerprinting-vector/",
+    "score": 399,
+    "time": 1778812535,
+    "titulo_es": "Cómo la asignación determinista de IPs de salida de Mullvad afecta el anonimato",
+    "resumen": "El artículo analiza un hallazgo técnico sobre cómo Mullvad VPN asigna IPs de salida de manera determinista basándose en la clave pública de WireGuard. A pesar de contar con billones de combinaciones teóricas, el autor descubrió que las IPs se asignan siguiendo un patrón de percentiles idéntico en todos los servidores. Esto se debe a una implementación específica de los generadores de números aleatorios con semilla (RNG) en Rust, donde un mismo valor flotante se escala según el tamaño del pool de IPs. Esta conducta reduce drásticamente el conjunto de anonimato, permitiendo la identificación de usuarios mediante la correlación de sus IPs en diferentes servidores.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48140953,
+    "url": "https://www.synacktiv.com/en/publications/exploiting-the-tesla-wall-connector-from-its-charge-port-connector-part-2-bypassing",
+    "score": 101,
+    "time": 1778791308,
+    "titulo_es": "Tesla Wall Connector Gen 3: Evadiendo el mecanismo de anti-downgrade",
+    "resumen": "El artículo detalla una investigación de seguridad sobre el cargador Tesla Wall Connector Gen 3, centrándose en cómo evadir el mecanismo de 'anti-downgrade' implementado tras el Pwn2Own Automotive 2025. Aunque Tesla introdujo un sistema de 'ratchet' de seguridad para evitar la instalación de versiones de firmware antiguas y vulnerables, los investigadores descubrieron un fallo de lógica en el proceso de actualización. El bypass se basa en la discrepancia entre el estado de las flags de arranque (g_boot_flags) y la tabla de particiones, permitiendo manipular el orden de las operaciones de escritura y borrado de slots (rutinas UDS 0xFF00 y 0x201) para ejecutar firmware antiguo firmado sin activar las validaciones de la rutina de actualización oficial.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48143284,
+    "url": "https://writing.antonleicht.me/p/cut-off",
+    "score": 166,
+    "time": 1778807284,
+    "titulo_es": "El fin de la abundancia: Restricciones en el acceso a la IA de vanguardia",
+    "resumen": "El artículo analiza un cambio de paradigma en la industria de la inteligencia artificial, donde la noción de 'tokens abundantes' está siendo reemplazada por un acceso restringido a los modelos de frontera. Utilizando ejemplos como 'Mythos' de Anthropic y la iniciativa 'Daybreak' de OpenAI, el texto argumenta que consideraciones de seguridad nacional de EE. UU., riesgos de mal uso en ciberseguridad y presiones económicas están limitando la disponibilidad de las capacidades más avanzadas a un círculo selecto de corporaciones estadounidenses, alterando la competencia global y la defensa tecnológica.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48146656,
+    "url": "https://www.bbc.co.uk/news/articles/ckgpyn30dp3o",
+    "score": 13,
+    "time": 1778839023,
+    "titulo_es": "Videos generados por IA presentan una visión del Reino Unido en decadencia y campañas de desinformación",
+    "resumen": "El artículo detalla el uso de inteligencia artificial para la creación de contenido multimedia sintético (deepfakes) destinado a campañas de desinformación y operaciones de influencia. Se identificaron múltiples cuentas en redes sociales que, operando desde el extranjero, difunden videos generados por IA que muestran escenarios distópicos del Reino Unido para manipular la percepción pública sobre la inmigración. El fenómeno subraya un problema técnico y social crítico: la creciente dificultad de los usuarios para distinguir entre medios auténticos y sintéticos, lo que facilita la erosión de la confianza institucional y permite a actores estatales y privados ejecutar tácticas de ingeniería social a gran escala mediante el uso de herramientas de IA generativa.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48141234,
+    "url": "https://github.com/anthropics/claude-for-legal",
+    "score": 102,
+    "time": 1778792705,
+    "titulo_es": "Plugins de Claude y Agentes Administrados para Flujos de Trabajo Legales",
+    "resumen": "El artículo detalla la implementación técnica de herramientas basadas en Claude para automatizar flujos de trabajo legales, como revisión de contratos y gobernanza de IA. Describe un ecosistema compuesto por plugins para Claude Code y una API de Agentes Administrados que utiliza arquitecturas de subagentes (leaf-workers), orquestación mediante scripts en Python y conectores MCP para investigación jurídica. Se enfatiza un enfoque de 'human-in-the-loop' donde la IA genera borradores técnicos con atribución de fuentes, pero requiere validación profesional obligatoria.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48137553,
+    "url": "https://icode4.coffee/?p=1465",
+    "score": 193,
+    "time": 1778775569,
+    "titulo_es": "Análisis y modificación de firmware de unidades de almacenamiento para la explotación de vulnerabilidades",
+    "resumen": "El autor describe el proceso de ingeniería inversa y modificación del firmware en discos duros (HDD) y unidades de estado sólido (SSD) con el fin de facilitar un exploit en la consola Xbox 360. El objetivo técnico era introducir un retardo controlado en la respuesta de la unidad de disco ante peticiones de lectura específicas, permitiendo así disparar con éxito una condición de carrera (race condition). El texto detalla métodos de volcado de firmware, depuración de hardware mediante JTAG y el uso futuro de IA para el análisis de arquitecturas de microcontroladores (MCU) desconocidas.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48138332,
+    "url": "https://nobodywho.ooo/posts/whats-in-a-gguf/",
+    "score": 152,
+    "time": 1778779309,
+    "titulo_es": "Entendiendo el formato GGUF y la arquitectura de los modelos de lenguaje",
+    "resumen": "El artículo analiza técnicamente el formato de archivo GGUF utilizado por llama.cpp, destacando su capacidad para consolidar metadatos, tokenizadores y plantillas de chat en un único archivo. Explica el uso de Jinja2 para la lógica de plantillas de conversación, el rol de los tokens especiales en el control de la generación y la importancia de los parámetros de muestreo (sampling) para optimizar los resultados de los modelos de lenguaje.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48097786,
+    "url": "https://benstoneonline.com/posts/porting-3d-movie-maker-to-linux/",
+    "score": 132,
+    "time": 1778519840,
+    "titulo_es": "¿Sabías que ahora puedes ejecutar Microsoft 3D Movie Maker de forma nativa en Linux?",
+    "resumen": "El artículo describe el proceso técnico de portar Microsoft 3D Movie Maker (3DMM) a Linux a través del proyecto de código abierto 3DMMEx. Tras la liberación del código fuente original por parte de Microsoft bajo licencia MIT en 2022, el autor detalla los retos de ingeniería para modernizar una base de código de 30 años, incluyendo la migración de sistemas de construcción antiguos a CMake, el uso de SDL para la abstracción de plataforma y la refactorización del framework 'Kauai'. Se resalta la alta calidad del código original de los años 90 y la colaboración necesaria para lograr la portabilidad nativa fuera de Windows.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48144494,
+    "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+    "score": 173,
+    "time": 1778818531,
+    "titulo_es": "Claude Code a escala: Patrones para el éxito en grandes bases de código",
+    "resumen": "El artículo describe las estrategias de implementación de Claude Code en entornos de ingeniería empresarial, como monorepos masivos y sistemas heredados. Se destaca el uso de búsqueda agéntica en lugar de sistemas RAG tradicionales, permitiendo a la herramienta operar sobre el código en tiempo real sin depender de índices desactualizados. Se subraya que el éxito no depende solo del modelo de IA, sino de la configuración de un 'harness' o arnés técnico compuesto por archivos CLAUDE.md, hooks, habilidades, plugins y servidores MCP para proporcionar contexto preciso.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48142193,
+    "url": "https://news.vt.edu/articles/2026/05/drought-united-states-la-nina-expert.html",
+    "score": 207,
+    "time": 1778798298,
+    "titulo_es": "Sequía histórica en EE. UU. exacerbada por el cambio climático",
+    "resumen": "El artículo detalla la severa sequía que afecta a más del 60% de EE. UU. en mayo de 2026, con más del 20% en sequía extrema. El Dr. Andrew Ellis, climatólogo de Virginia Tech, atribuye las condiciones actuales a una rara combinación de intensidad y cobertura aérea, influenciada por el patrón de La Niña que trajo sequedad al sur de EE. UU. y anormalmente al noroeste del Pacífico. El calentamiento climático exacerba estas condiciones al aumentar la pérdida de agua del suelo por evapotranspiración. Las áreas de mayor preocupación son Colorado y el sureste (Georgia, Florida), con sequías extremas generalizadas. Estados desde Nueva Jersey hasta Arkansas son susceptibles a la sequedad de otoño e invierno debido a la interrupción de la humedad del Golfo de México y la costa sureste. El Valle de Ohio, en contraste, se ha mantenido libre de sequías. El alivio significativo es difícil en los meses cálidos, con las mayores esperanzas puestas en sistemas tropicales a finales de verano o principios de otoño, aunque con riesgos asociados. Las regiones montañosas y las Grandes Llanuras dependen de la capa de nieve invernal. Se anticipa un posible evento de El Niño para el próximo otoño e invierno, que podría revertir las condiciones actuales. El Dr. Ellis es un experto en ciencia climática, meteorología y recursos hídricos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48139704,
+    "url": "https://github.com/microsoft/microsoft-ui-xaml/discussions/11096",
+    "score": 104,
+    "time": 1778785318,
+    "titulo_es": "Mejoras de rendimiento en WinUI 3 para experiencias nativas en Windows",
+    "resumen": "El artículo detalla los esfuerzos de Microsoft para hacer de WinUI 3 el framework de UI nativo principal para Windows, con un enfoque en la mejora del rendimiento. Se menciona la reducción de la latencia de interacción y se utilizan benchmarks como File Explorer y Notepad para medir las optimizaciones. Se planea lanzar estas mejoras en ramas de desarrollo y en WinAppSDK 2.x, con algunas optimizaciones requiriendo opt-in por parte de las aplicaciones debido a posibles cambios que rompen la compatibilidad. Se discuten los objetivos a largo plazo, incluyendo la posibilidad de cambios 'opt-out' por defecto en futuras versiones. La comunidad expresa interés en métricas concretas y escenarios de uso real para evaluar el impacto de estas mejoras.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48142188,
+    "url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
+    "score": 243,
+    "time": 1778798260,
+    "titulo_es": "Sistemas de IA para notas médicas en Ontario mezclaron fármacos recetados, según auditores",
+    "resumen": "Una auditoría provincial de 20 sistemas de IA aprobados para proveedores de atención médica en Ontario reveló graves deficiencias en la precisión. Los sistemas de IA Scribe a menudo omitieron detalles críticos, insertaron información incorrecta (incluida la medicación) y \"alucinaron\" contenido no mencionado por pacientes o médicos. Nueve sistemas fabricaron información o sugirieron tratamientos no discutidos, mientras que doce insertaron información errónea sobre fármacos. Además, 17 sistemas omitieron detalles clave sobre la salud mental de los pacientes. La auditoría critica duramente el proceso de evaluación, donde la presencia doméstica (30%) tuvo más peso que la precisión de las notas médicas (4%), los controles de sesgo (2%) o las evaluaciones de seguridad y privacidad (2%). A pesar de estas fallas, el Ministerio de Salud de Ontario reporta más de 5,000 médicos participantes sin informes de daños conocidos a pacientes, aunque se recomienda la revisión manual de las notas generadas por IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48144410,
+    "url": "https://github.com/pike00/coldkey",
+    "score": 20,
+    "time": 1778817729,
+    "titulo_es": "Herramienta de Generación de Claves Post-Cuánticas y Copias de Seguridad en Papel para 'age'",
+    "resumen": "El artículo describe 'coldkey', una herramienta diseñada para generar claves criptográficas post-cuánticas (utilizando ML-KEM-768 + X25519) compatibles con 'age'. Destaca la criticidad de la gestión de claves privadas de 'age', cuya pérdida implica la pérdida irrecuperable de los secretos cifrados. 'coldkey' aborda esto mediante la generación de copias de seguridad imprimibles en formato HTML de una sola página, que incluyen códigos QR. Estas copias de seguridad están diseñadas para ser laminadas y almacenadas de forma segura (por ejemplo, en una caja fuerte ignífuga), asegurando la supervivencia de los secretos incluso ante la pérdida de todas las copias digitales. La herramienta almacena solo la semilla de 32 bytes, lo que permite que las claves completas, de aproximadamente 2.089 bytes, quepan en un solo código QR. Si la clave excede la capacidad de un solo QR, 'coldkey' la divide automáticamente en múltiples códigos QR utilizando un protocolo de fragmentación simple para su posterior recuperación. Los comandos de la herramienta ('just docker-*') incorporan medidas de seguridad como aislamiento de red y sistemas de archivos de solo lectura. La herramienta ofrece funcionalidades para generar nuevas claves, crear copias de seguridad de claves existentes, e imprime la cadena de versión.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48100368,
+    "url": "https://phys.org/news/2026-05-ancient-sea-fossils-millipede-centipede.html",
+    "score": 88,
+    "time": 1778531961,
+    "titulo_es": "Hallazgo fósil revela que los ancestros de los miriápodos tenían muchas patas sin ramificar mientras vivían en el agua",
+    "resumen": "El descubrimiento de 35 fósiles de un artrópodo similar a los miriápodos, denominado Waukartus muscularis, en la Formación Brandon Bridge Silúrica en Waukesha, Wisconsin, que data de hace aproximadamente 437 millones de años, ha arrojado nueva luz sobre la evolución de las muchas patas de los miriápodos. Estos fósiles, preservados en depósitos de alta calidad que contienen organismos de cuerpo blando, muestran que Waukartus muscularis poseía patas unirramas (sin ramificar) y múltiples segmentos, lo que sugiere que estas extremidades, previamente consideradas una adaptación terrestre, ya estaban presentes en ancestros acuáticos. Waukartus se sitúa evolutivamente justo fuera del grupo corona de los miriápodos y se relaciona con los ecarcinoides, otro grupo de miriápodos primitivos acuáticos o potencialmente anfibios. El hallazgo contradice la hipótesis de que las patas unirramas eran exclusivamente una adaptación para la vida terrestre, indicando que estas estructuras ya estaban presentes en un entorno acuático, lo que implica que los miriápodos primitivos estaban equipados con patas preadaptadas para la tierra antes de su transición fuera del agua.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48142650,
+    "url": "https://github.com/rust-lang/rust-forge/pull/1040",
+    "score": 86,
+    "time": 1778801841,
+    "titulo_es": "Política de uso de LLMs en el proyecto Rust",
+    "resumen": "El documento establece una política para el uso de Modelos de Lenguaje Grandes (LLMs) en las contribuciones al repositorio rust-lang/rust. Se enfoca exclusivamente en la política en sí, excluyendo explícitamente subárboles, submódulos, dependencias de crates.io y otros repositorios de la organización rust-lang. La política se concibe como un documento vivo en Forge, vinculado desde CONTRIBUTING.md y las guías de desarrollo de rustc y std. Se informa que ha habido una extensa discusión previa en Zulip (más de 3000 mensajes) y en GitHub. Se pide limitar el alcance de esta Pull Request (PR) a la política misma, marcando varios temas como fuera de alcance pero importantes para discusión posterior. La política no pretende debatir si los LLMs son buenos o malos, sino definir el uso futuro dentro de rust-lang/rust. Se menciona una sección de \"arte previo\" adaptada de una investigación de Jane Lusby, organizada por \"amigabilidad con la IA\". Se enfatiza la necesidad de que los desarrolladores comprendan el código que escriben, incluso si es asistido por LLMs. Se hace referencia a guías de moderación y secciones de \"inconvenientes\" para temas fuera de alcance. Se observa la asignación de un revisor (@jieyouxu) y la aplicación de etiquetas T-libs, T-compiler, T-rustdoc, T-bootstrap al PR. Un comentario indica satisfacción con la versión actual y la intención de buscar un consenso más amplio a través de un \"proceso de consenso formal de 4 equipos\" (FCP). Se advierte que los enlaces a Zulip son privados del proyecto.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48093244,
+    "url": "https://homewithinnowhere.com/posts/2026-05-10-one-line.html",
+    "score": 85,
+    "time": 1778495892,
+    "titulo_es": "Generación de Caras de Chunk en un Juego Voxel con Dyalog APL",
+    "resumen": "El artículo describe una implementación concisa y elegante en Dyalog APL para determinar qué caras de los bloques de un chunk de un juego voxel son visibles y deben ser renderizadas. Utiliza operaciones de APL como productos externos (outer product), rotaciones (rotate) y comparaciones booleanas sobre arreglos 3D que representan la solidez y los bordes de los bloques. La lógica compara el estado de cada bloque con sus vecinos desplazados en cada eje para identificar las caras expuestas. Se menciona la inspiración en la 'one-liner' del Juego de la Vida y cómo esta aproximación se alinea con la idea original del autor para el desarrollo del juego. La implementación permite un acceso eficiente a los datos de vértices necesarios para el renderizado.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48141902,
+    "url": "https://www.gridtravel.app",
+    "score": 48,
+    "time": 1778796330,
+    "titulo_es": "GridTravel: Navegación de Rutas Peatonales Creadas por Locales",
+    "resumen": "GridTravel es una plataforma de navegación peatonal diseñada para viajeros, que transforma las rutas diarias de los locales en guías paso a paso con consejos exclusivos. La aplicación permite a los usuarios descubrir, guardar y seguir rutas filtradas por tipo (gastronómicas, escénicas, históricas, nocturnas) o por el 'ambiente' deseado. Destaca la creación de contenido por parte de usuarios reales (no algoritmos), la vista previa detallada de cada parada (fotos, consejos, tiempos estimados), y la funcionalidad offline para descargar rutas. La interfaz está optimizada para una experiencia de usuario clara y no intrusiva, enfocada en el movimiento peatonal dentro de las ciudades. Incluye un perfil de usuario para gestionar rutas guardadas, descargas y progreso, así como métricas de exploración (distancia, ciudades, rutas completadas). Los usuarios pueden seguir a creadores de contenido cuyos gustos coincidan con los suyos y recibir sus nuevas rutas prioritariamente. La plataforma fomenta una comunidad de locales que comparten sus recorridos habituales como si guiaran a un amigo, evitando así trampas turísticas generadas por algoritmos.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48138913,
+    "url": "http://un0rick.cc/pic0rick",
+    "score": 83,
+    "time": 1778781677,
+    "titulo_es": "Pic0rick: Un Nuevo Sistema de Adquisición de Ultrasonido Basado en RP2040",
+    "resumen": "El artículo describe el Pic0rick, un nuevo sistema de adquisición de ultrasonido que reemplaza los diseños basados en FPGA con un microcontrolador RP2040/RP2350. Este sistema modular consta de una placa principal con el RP2040, un ADC de 10 bits y 60 Msps, y un amplificador TGC AD8331. Se complementa con una placa pulser para generar pulsos de transmisión y una placa HV para el suministro de alto voltaje. La principal innovación es el uso de las unidades PIO (Programmable Input/Output) del RP2040 para el control de temporización preciso de la secuencia de pulso-eco, eliminando la necesidad de conocimientos de FPGA y herramientas de síntesis HDL. Esto permite modificar parámetros de adquisición y temporización editando código C en un entorno similar a Arduino. El sistema es de código abierto, se basa en proyectos anteriores (un0rick, lit3rick), y se presenta como una alternativa más económica y sencilla para nuevos proyectos de ultrasonido, salvo que se requiera control de temporización a nivel de FPGA o rangos de ganancia específicos de modelos anteriores.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48108621,
+    "url": "https://gynvael.coldwind.pl/?id=372",
+    "score": 125,
+    "time": 1778595244,
+    "titulo_es": "Dominando Archivos Binarios y Protocolos: El Viaje Completo",
+    "resumen": "Este artículo promociona un taller enfocado en mejorar las habilidades relacionadas con el manejo y la comprensión de archivos binarios y protocolos. El taller, que se impartirá entre abril y junio, se presenta como un curso completo para profundizar en estos temas técnicos, cruciales para el desarrollo de software de bajo nivel, la ingeniería inversa, la optimización de rendimiento y la interoperabilidad de sistemas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48079933,
+    "url": "https://martypc.blogspot.com/2026/05/60fps-video-on-cga-glyphblaster.html",
+    "score": 83,
+    "time": 1778374883,
+    "titulo_es": "GlyphBlaster: Un framebuffer de 1bpp en una tarjeta CGA usando Raspberry Pi Pico",
+    "resumen": "El artículo detalla el desarrollo de GlyphBlaster, un proyecto que utiliza un Raspberry Pi Pico para crear un framebuffer de 1bpp a partir de la señal de lectura de la ROM de fuentes de una tarjeta gráfica IBM CGA. Aprovechando que la CGA accede a la ROM de fuentes en cada ciclo de caracteres, incluso fuera del área de visualización activa, el Pico intercepta estas lecturas. Mediante la sincronización con la señal VSYNC de la CGA, el Pico genera un flujo de píxeles direccionable. El proyecto reemplaza la ROM de fuentes original con un Pico adaptado a través de un clip de prueba y PCBs personalizados, sin modificar la tarjeta CGA. Se implementó un esquema simple de RLE para comprimir los fotogramas de video (ej. \"Bad Apple!!\") a ~30KB por frame para poder transmitirlos eficientemente al Pico, logrando una tasa de compresión promedio del 75% en paquetes de 10 líneas de escaneo. La resolución efectiva utilizada es de 912x262 píxeles, que corresponde al campo NTSC completo de la CGA.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48143256,
+    "url": "https://www.theembeddedrustacean.com/uferris",
+    "score": 20,
+    "time": 1778807053,
+    "titulo_es": "uFerris: Una Plataforma de Desarrollo de Hardware Abierto para Rust Embebido",
+    "resumen": "El artículo describe uFerris, una plataforma de desarrollo de hardware y software de código abierto diseñada para simplificar el aprendizaje y la práctica de Rust en sistemas embebidos. uFerris se basa en una placa base con periféricos estándar (GPIO, ADC, PWM, UART, I2C, SPI) y un conector para módulos de microcontroladores (MCUs) Seeed XIAO, soportando una amplia gama de MCUs como ESP32-C3/C6/S3, RP2040, nRF52840, SAMD21, y RA4M1. La placa incluye componentes integrados como LEDs, botones, un sensor LDR, un buzzer, un RTC y un display de 7 segmentos. Adicionalmente, ofrece funcionalidad de medición de corriente, un soporte para baterías AAA y una ranura microSD. Se enfatiza su naturaleza de código abierto, con repositorios públicos para el hardware (esquemáticos, archivos de placa) y el software (crate BSP para Rust), lo que permite la modificación y contribución. uFerris está diseñado como un compañero práctico para la serie de libros 'Simplified Embedded Rust', asegurando que los ejemplos y proyectos funcionen directamente con la plataforma. Está certificado por la Open Source Hardware Association (UID JO000001).",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48095490,
+    "url": "https://acesounderglass.com/2025/10/13/the-biochemical-beauty-of-retatrutide-how-glp-1s-actually-work/",
+    "score": 57,
+    "time": 1778509802,
+    "titulo_es": "Acceso bajo el cristal: La bella ciencia detrás de la retatrutida y el metabolismo energético",
+    "resumen": "El artículo explora el funcionamiento del metabolismo energético en el cuerpo humano, centrándose en cómo las células utilizan azúcares, grasas y glucógeno para producir ATP, la moneda energética celular. Detalla el papel de las mitocondrias como 'centrales energéticas' de las células y compara la eficiencia y las características de almacenamiento del azúcar (rápido pero voluminoso e inestable), la grasa (eficiente en espacio pero lenta para metabolizar) y el glucógeno (un intermedio). Se discuten los mecanismos corporales para regular el azúcar en sangre y el uso de estas reservas energéticas, especialmente durante el ejercicio y los ayunos, mencionando la intervención de hormonas como la insulina. La discusión conduce a los avances en fármacos como los agonistas GLP-1 (incluyendo el nuevo retatrutide) que buscan manipular estas vías para controlar el peso, superando trampas metabólicas como la fatiga o el aumento del hambre inducido por la restricción calórica.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48140730,
+    "url": "https://xeiaso.net/notes/2026/amazonbot-respecting-robots-txt/",
+    "score": 156,
+    "time": 1778790155,
+    "titulo_es": "Amazon Cumple con robots.txt para Amazonbot",
+    "resumen": "El artículo informa que Amazon comenzará a respetar las directivas del archivo robots.txt para gestionar las preferencias de rastreo de Amazonbot a partir del 15 de junio de 2026. Esto otorgará a los publicadores control directo y continuo sobre cómo Amazonbot accede a sus sitios. El autor menciona que esto es relevante porque el scraper de Amazon fue la motivación para la existencia de Anubis, y planea integrar estos cambios de robots.txt en Anubis si aún no están presentes. El artículo también destaca detalles curiosos del correo electrónico recibido, como la firma \"sent from my iPhone\" y encabezados de Exchange, sugiriendo que fue enviado desde Outlook para Mac.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 48118727,
     "url": "https://sockpuppet.org/blog/2026/05/12/emacsification/",
-    "score": 312,
+    "score": 427,
     "time": 1778655974,
-    "titulo_es": "Deseas un buen visor de Markdown más de lo que crees",
-    "resumen": "El autor analiza la deficiencia en las herramientas actuales para visualizar Markdown, criticando tanto la fatiga visual de las TUI monoespaciadas como la fricción de usar editores pesados para tareas de solo lectura. Narra el proceso de desarrollo de MDV.app, una solución nativa para macOS creada rápidamente mediante el uso de Claude (IA) y Swift. La aplicación destaca por integrar indexación SQLite FTS, navegación por tabla de contenidos y un rendimiento superior al evitar el framework Electron, priorizando la legibilidad y la experiencia de usuario nativa.",
+    "titulo_es": "El renacimiento maldito de las herramientas TUI y la búsqueda de un visor de Markdown perfecto",
+    "resumen": "El artículo describe la creciente frustración del autor con la experiencia de lectura de archivos Markdown en interfaces de línea de comandos (TUI) y aplicaciones de escritorio no nativas (como las basadas en Electron). Señala que, aunque existen visores y editores de Markdown para TUI y GUIs, ninguno satisface completamente las necesidades de legibilidad y facilidad de uso. Los visores de TUI sufren las limitaciones de las fuentes monoespaciadas y las interfaces terminales, mientras que los editores de GUI complican los flujos de trabajo al modificar entornos de edición. Los visores disponibles en tiendas de aplicaciones a menudo carecen de funcionalidades esenciales como búsqueda de texto o copia fiable. Como solución, el autor recurrió a la generación asistida por IA (usando Claude) para crear una aplicación macOS nativa llamada MDV.app. Esta aplicación, desarrollada en unas pocas horas, ofrece una experiencia de lectura superior con características como búsqueda de texto, índices SQLite FTS, marcadores, navegación por tabla de contenido, persistencia del estado de lectura y temas personalizables. El autor destaca la mejora significativa en su calidad de vida gracias a esta herramienta nativa, contrastándola con las deficiencias de las aplicaciones Electron y enfatizando la importancia de una experiencia de usuario nativa y optimizada para la lectura de Markdown en el desarrollo de software moderno.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48130679,
-    "url": "https://github.com/DrCatHicks/learning-opportunities",
-    "score": 60,
-    "time": 1778728411,
-    "titulo_es": "Oportunidades de aprendizaje: Integración de la ciencia del aprendizaje en la codificación agéntica con Claude Code",
-    "resumen": "El artículo presenta un ecosistema de plugins para Claude Code diseñado para transformar el desarrollo asistido por IA en una experiencia de aprendizaje continuo. Mediante el uso de técnicas de la ciencia cognitiva, como la práctica de recuperación y la repetición espaciada, el sistema propone ejercicios interactivos de 10 a 15 minutos tras hitos arquitectónicos (refactorizaciones, cambios de esquema). Además, incluye la herramienta 'orient' para facilitar la comprensión estratégica de bases de código nuevas, buscando mitigar los riesgos de desvinculación cognitiva que suelen generar las herramientas de codificación automática.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48130186,
-    "url": "https://github.com/glouw/nibble",
-    "score": 63,
-    "time": 1778723205,
-    "titulo_es": "Nibble: Un lenguaje de programación de sistemas para la generación de IR de LLVM",
-    "resumen": "Nibble es un lenguaje de programación de sistemas minimalista, similar a C, implementado en aproximadamente 3000 líneas de código. Su propósito principal es demostrar la generación de Representación Intermedia (IR) de LLVM sin dependencias externas ni uso de memoria dinámica (heap). El compilador realiza una sola pasada descendente, soporta características avanzadas como la sentencia 'defer', punteros a funciones y manejo de estructuras, e incluye demostraciones gráficas multihilo para validar su capacidad técnica y rendimiento.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48096760,
-    "url": "https://ardoedo.it/kempelen/",
-    "score": 166,
-    "time": 1778515219,
-    "titulo_es": "El jugador de ajedrez mecánico de Kempelen",
-    "resumen": "El artículo describe un desafío histórico de lógica y combinatoria atribuido a Kempelen. El problema consiste en colocar estratégicamente cuatro reinas y un alfil sobre un tablero de ajedrez para que no quede ninguna casilla sin atacar, lo que representa un problema clásico de cobertura y optimización matemática.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48115438,
-    "url": "https://arstechnica.com/tech-policy/2026/05/drop-database-what-not-to-do-after-losing-an-it-job/",
-    "score": 445,
-    "time": 1778624887,
-    "titulo_es": "Un caso de estudio sobre por qué las credenciales se revocan antes de los despidos",
-    "resumen": "Este análisis detalla un incidente de amenaza interna donde la falta de revocación inmediata de privilegios de acceso tras un despido permitió la destrucción de 96 bases de datos gubernamentales. El atacante utilizó acceso persistente para ejecutar comandos destructivos de SQL (DROP DATABASE), realizar ataques de 'credential stuffing' mediante scripts personalizados en Python y exfiltrar datos sensibles de la EEOC y registros fiscales. El caso subraya la importancia crítica de integrar los procesos de recursos humanos con la Gestión de Identidad y Acceso (IAM) para prevenir acciones malintencionadas durante la desvinculación de empleados.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48102901,
-    "url": "https://text.marvinborner.de/2026-04-09-17.html",
-    "score": 27,
-    "time": 1778547783,
-    "titulo_es": "Codificaciones de Aritmética en el Cálculo Lambda: Sistemas de Mackie, Parigot y Scott",
-    "resumen": "Este artículo técnico analiza las representaciones de números naturales dentro de sistemas de cálculo lambda, clasificándolos en categorías lineales, afines y no lineales. Se detallan las reglas de sintaxis (variables, abstracciones y aplicaciones) y la semántica de la reducción beta, proporcionando definiciones formales para las codificaciones aritméticas propuestas por Mackie (2019), Parigot (1989) y Scott (1963).",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48129934,
-    "url": "https://pubs.rsc.org/en/content/articlelanding/2026/ay/d5ay01801c",
-    "score": 54,
-    "time": 1778721182,
-    "titulo_es": "Cuantificación de microplásticos ambientales y mitigación de la contaminación por guantes de laboratorio",
-    "resumen": "Este estudio investiga cómo el uso de guantes de nitrilo y látex en laboratorios introduce residuos de sales de estearato que generan falsos positivos en la cuantificación de microplásticos mediante análisis espectral. La investigación propone el uso de guantes específicos para salas limpias y detalla flujos de trabajo analíticos que integran bibliotecas espectrales de estándares de estearato. Estos métodos permiten diferenciar los contaminantes de los polímeros sintéticos, mejorando significativamente la precisión en la identificación de microplásticos en rangos de tamaño inferiores a 10 µm.",
-    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 48111896,
     "url": "https://github.com/cactus-compute/needle",
-    "score": 678,
+    "score": 736,
     "time": 1778608991,
-    "titulo_es": "Needle: Red de Atención Simple de 26M de parámetros para IA en dispositivos de consumo",
-    "resumen": "Needle es un modelo experimental de IA basado en una arquitectura de Red de Atención Simple (SAN) destilada de Gemini 3.1. Con solo 26 millones de parámetros, está diseñado para ejecutarse localmente en hardware limitado como teléfonos y relojes inteligentes. El modelo destaca en tareas de 'function calling', superando a modelos más grandes como Qwen-0.6B y Granite-350m, alcanzando velocidades de inferencia de hasta 6000 tokens por segundo en prefill. Sus pesos y el sistema de generación de datasets son de código abierto.",
+    "titulo_es": "Red de Atención Simple (Needle) de Gemini 3.1: IA Minúscula para Dispositivos de Consumo",
+    "resumen": "El artículo describe Needle, una Red de Atención Simple (Simple Attention Network) derivada de Gemini 3.1, con 26 millones de parámetros. Está diseñada para ser una IA minúscula (tiny AI) optimizada para dispositivos de consumo como teléfonos, relojes y gafas. Needle puede ser afinada (finetuned) localmente en Macs/PCs y opera eficientemente en producción con velocidades de 6000 toks/seg prefill y 1200 toks/seg decode en la plataforma Cactus. Los pesos y el conjunto de datos de generación están disponibles públicamente. Aunque supera a modelos más grandes como FunctionGemma-270m en llamadas a funciones de un solo disparo, estos modelos más grandes tienen mayor capacidad conversacional. Se proporciona una interfaz web local (http://127.0.0.1:7860) para probar y afinar Needle con herramientas propias.",
     "categoria": "IA"
-  },
-  {
-    "id": 48121929,
-    "url": "https://avkcode.github.io/blog/us-winning-ai-race.html",
-    "score": 205,
-    "time": 1778680433,
-    "titulo_es": "El dominio de EE. UU. en la carrera de la IA: infraestructura, datos y comercialización",
-    "resumen": "El artículo analiza la ventaja competitiva de Estados Unidos en el sector de la inteligencia artificial, destacando que el liderazgo no depende únicamente de la calidad de los modelos de lenguaje (LLM), sino de la integración vertical de toda la pila tecnológica: chips, energía, centros de datos, plataformas de nube a hiperescala (AWS, Azure, Google Cloud) y ecosistemas de datos masivos (GitHub, YouTube, Microsoft 365). Mientras China se enfoca en la autonomía de su cadena de suministro mediante hardware nacional para reducir la dependencia de Nvidia, y Europa se queda rezagada por la falta de infraestructura de nube propia, EE. UU. capitaliza su capacidad para financiar, entrenar y comercializar IA a escala global.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48080755,
-    "url": "https://github.com/nooga/xsofy",
-    "score": 191,
-    "time": 1778383979,
-    "titulo_es": "Un roguelike escrito en Lisp donde el sistema de magia es Lisp",
-    "resumen": "Descripción técnica de un videojuego roguelike desarrollado en 'let-go', un dialecto de Clojure que se ejecuta sobre una máquina virtual de bytecode de Go. El motor destaca por su eficiencia arquitectónica, con un tiempo de arranque de 6 ms, el uso de estructuras de datos persistentes y la ausencia de dependencias externas. El proyecto es altamente portable, funcionando de forma nativa y en navegadores mediante WebAssembly (WASM). La jugabilidad integra conceptos de programación funcional, utilizando expresiones-S para el sistema de hechizos y otorgando acceso root al motor del juego.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48109772,
-    "url": "https://dynomight.net/lifespan/",
-    "score": 102,
-    "time": 1778599805,
-    "titulo_es": "La Heredabilidad de Rasgos: Un Experimento Mental",
-    "resumen": "El artículo discute el concepto de heredabilidad de rasgos, utilizando ejemplos como el color del cabello y el coeficiente intelectual (CI) para ilustrar cómo la definición del rasgo y el entorno influyen en su estimación. Se critica un estudio publicado en 'Science' sobre la heredabilidad de la esperanza de vida. El autor explica que el estudio modela un \"universo alternativo\" donde las causas de muerte no relacionadas con el envejecimiento son eliminadas, lo que resulta en una mayor heredabilidad (46-57%) en comparación con las estimaciones basadas en estudios de gemelos en el mundo real (23-35%). El punto clave es que la heredabilidad calculada en este modelo hipotético no refleja la heredabilidad en el mundo real, donde factores ambientales y no genéticos juegan un papel significativo. Se aclara que la heredabilidad tradicional se estima comparando la concordancia de rasgos en gemelos idénticos (100% de ADN compartido) y fraternos (50% de ADN compartido).",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48094986,
-    "url": "https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/",
-    "score": 102,
-    "time": 1778507363,
-    "titulo_es": "La Inteligencia Asimétrica: Cómo Apple Navega la Crisis de Precios de la Memoria",
-    "resumen": "El artículo aborda la \"Gran Pánico de la Memoria de 2026\", donde los precios de la memoria RAM han aumentado drásticamente, representando hasta un 40% del costo de los componentes (BOM) de un dispositivo. Horace Dediu explica cómo Apple, operando a una escala masiva con cientos de millones de dispositivos y plazos de entrega de hasta dos años, mitiga este impacto. Apple negocia contratos a largo plazo basados en el 'base load' de producción, asegurando precios estables para la mayor parte de su demanda. La volatilidad actual afecta principalmente a los pedidos marginales y a proveedores más pequeños sin la capacidad de planificación a largo plazo. A pesar de la presión de los proveedores para aumentar los precios base debido a la demanda generalizada, Apple puede ejercer su poder de negociación, amenazando con retirar su volumen de negocio futuro si no se le otorgan mejores tarifas. Históricamente, el mercado de semiconductores es cíclico, con auges seguidos de caídas. La situación actual presenta una oportunidad para que Apple gane cuota de mercado, ya que los competidores más pequeños podrían tener dificultades para acceder a la memoria necesaria. Se compara la rentabilidad actual de la memoria con la de los procesadores, señalando que la memoria se ha convertido en el nuevo \"oro\", superando incluso a los semiconductores de alto rendimiento como los de Nvidia.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48124436,
-    "url": "https://www.tryardent.com/",
-    "score": 91,
-    "time": 1778691243,
-    "titulo_es": "Creación de copias de bases de datos Postgres en segundos para agentes de codificación",
-    "resumen": "El artículo describe una solución innovadora, Ardent, que permite crear copias instantáneas (menos de 6 segundos) y aisladas a nivel de cómputo y almacenamiento de bases de datos PostgreSQL de producción. Estas copias, llamadas clones, no afectan a la producción, escalan a cero, autoscalean el cómputo y no duplican el almacenamiento, lo que las hace eficientes incluso a terabytes de escala.  La solución está diseñada para que los agentes de codificación puedan verificar su trabajo en una réplica exacta de la base de datos de producción, permitiendo pruebas seguras de limpieza, deduplicación y estandarización de datos. Soporta la replicación de instancias Supabase 1:1 (incluyendo autenticación y extensiones) y se integra con instancias RDS Postgres sin cambios de configuración. La tecnología se compara con la importancia de Git para el código y se presenta como un catalizador para la disrupción en la ingeniería de datos impulsada por la IA, permitiendo a los desarrolladores y agentes trabajar a la velocidad de la escritura de código sin el riesgo de afectar la base de datos principal.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48126848,
-    "url": "https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-proctoring-in-person-examinations-passed-faculty-133-years-precedent",
-    "score": 333,
-    "time": 1778703136,
-    "titulo_es": "Princeton implementará supervisión en todos los exámenes presenciales para abordar preocupaciones sobre integridad académica y el auge de la IA",
-    "resumen": "Princeton implementará supervisión (proctoring) en todos los exámenes presenciales a partir del 1 de julio, marcando un cambio significativo en su sistema de honor establecido en 1893. Esta medida, aprobada por la facultad, responde a crecientes preocupaciones sobre violaciones de la integridad académica, particularmente el uso de herramientas de Inteligencia Artificial (IA) y dispositivos electrónicos personales. Los instructores actuarán como testigos, documentarán presuntas violaciones y las reportarán al Comité de Honor estudiantil, donde podrán testificar. La política surge tras deliberaciones internas y ante la dificultad de observar y reportar trampas debido a la tecnología, así como a una creciente reticencia de los estudiantes a denunciar a sus compañeros, evidenciada por encuestas donde un alto porcentaje de estudiantes ha hecho trampa o conoce violaciones no reportadas. La decisión revierte una política de 133 años que prohibía explícitamente la supervisión, buscando un equilibrio entre la confianza inherente al código de honor y la necesidad de mantener su integridad frente a los desafíos modernos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48077924,
-    "url": "https://discuss.python.org/t/reverting-the-incremental-gc-in-python-3-14-and-3-15/107014",
-    "score": 236,
-    "time": 1778358355,
-    "titulo_es": "Revertir el recolector de basura incremental en Python 3.14 y 3.15",
-    "resumen": "El artículo detalla la decisión de revertir la introducción de un nuevo recolector de basura (GC) incremental en Python 3.14 y 3.15, volviendo al GC generacional anterior. La motivación principal son reportes de presión significativa de memoria en producción y el hecho de que el nuevo GC incremental no siguió el proceso PEP, habiendo sido revertido provisionalmente incluso antes del lanzamiento de Python 3.13. Se planea reintroducir una versión revisada y evaluada a través del proceso PEP para Python 3.16. Se discute la viabilidad y el coste de mantenimiento de mantener ambas implementaciones de GC (incremental y generacional), concluyendo que sería demasiado costoso y arriesgado para la rama 3.14, aunque se considera una opción para versiones futuras (3.16+). Se mencionan las diferencias de rendimiento, donde el GC incremental ofrece pausas más cortas pero puede aumentar drásticamente el uso de memoria (hasta 5x) y el tiempo total de ejecución en escenarios con mucha basura cíclica. Se confirma que la opción de usar dos GC, con uno como experimental, es técnicamente posible pero aumenta la sobrecarga de mantenimiento a largo plazo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48104285,
-    "url": "https://blog.andr2i.com/posts/2026-05-03-notes-from-optimizing-cpu-bound-go-hot-paths",
-    "score": 17,
-    "time": 1778561200,
-    "titulo_es": "Rendimiento de Abstracciones en Go: Duplicación de Código vs. Generics e Interfaces",
-    "resumen": "El artículo explora el impacto del uso de abstracciones como generics, despacho polimórfico (interfaces) y closures en el rendimiento de rutas críticas (hot paths) en Go. Al portar Brotli a Go puro, se observó que estas abstracciones, a diferencia de las versiones concretas y duplicadas manualmente, impedían la inlining del compilador y añadían sobrecarga, resultando en un rendimiento significativamente menor. Se detalla cómo Go maneja los generics con \"GC Shape Stenciling\", que no resulta en monomorfización completa como en C++ o Rust, y aún así puede llevar a un despacho similar al de interfaces en llamadas a métodos de parámetros de tipo. La solución práctica encontrada para optimizar las rutas críticas fue la duplicación de código concreto, aunque esto introduce desafíos de mantenimiento que podrían mitigarse con generación de código. Se presentan benchmarks y análisis de assembly para ilustrar la diferencia de rendimiento entre las funciones concretas, genéricas y basadas en interfaces.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48132438,
-    "url": "https://www.shacknews.com/article/149126/lake-tahoe-residents-lose-power-data-centers",
-    "score": 12,
-    "time": 1778746033,
-    "titulo_es": "49.000 residentes de Lake Tahoe perderán el suministro eléctrico debido a centros de datos",
-    "resumen": "El artículo informa que aproximadamente 49,000 residentes de Lake Tahoe se quedarán sin suministro eléctrico a partir de mayo de 2027. La empresa proveedora de energía, NV Energy, reasignará la electricidad que actualmente sirve a esta región para abastecer a nuevos centros de datos que se están construyendo en el norte de Nevada. Estos centros de datos son necesarios para soportar el creciente desarrollo y demanda de modelos de Inteligencia Artificial (IA), con grandes empresas tecnológicas como Apple, Google y Microsoft invirtiendo en su construcción. La decisión impacta a Liberty Utilities, el proveedor local de los residentes afectados, quien tiene aproximadamente un año para encontrar una nueva fuente de energía.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48091812,
-    "url": "https://dmitry.gr/?r=05.Projects&proj=37.%20Pixter",
-    "score": 228,
-    "time": 1778482368,
-    "titulo_es": "Preservación Histórica y Análisis Técnico de la Consola de Juegos Fisher-Price Pixter",
-    "resumen": "El artículo detalla un esfuerzo de ingeniería inversa y preservación histórica de la consola de juegos Fisher-Price Pixter, centrándose en sus diversas iteraciones (Pixter, Pixter Plus, Pixter 2.0, Pixter Color, Pixter Multimedia). Se discuten las capacidades técnicas de los dispositivos, como la pantalla monocromática/a color, la memoria, los conectores de cartucho y las capacidades de dibujo y guardado de imágenes inter-juego. Un punto clave es la identificación del SoC Sharp LH75411 en el Pixter Color, que facilitó la ingeniería inversa. El autor describe el proceso de descubrimiento, incluida la superación de obstáculos como los 'blobs' no etiquetados en la placa base, y la culminación del desarrollo de un emulador para la plataforma Pixter, desmintiendo afirmaciones previas sobre la inexistencia de emuladores. También se mencionan las diferencias y la compatibilidad entre las versiones de Pixter, así como la existencia y el número de juegos para cada modelo.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48130711,
-    "url": "https://mayerwin.github.io/AI-Arena-History/",
-    "score": 61,
-    "time": 1778728745,
-    "titulo_es": "Exponiendo el \"nerfeo\", censura y cuantización ocultos en el ciclo de vida de modelos de IA insignia",
-    "resumen": "El artículo detalla cómo los laboratorios de IA actualizan sus modelos de lenguaje grandes (LLMs) después del lanzamiento, lo que a menudo resulta en \"nerfeos\" ocultos. Estos \"nerfeos\" pueden manifestarse como censura más agresiva, cuantización excesiva para reducir costos computacionales o degradación del comportamiento del modelo. La metodología para rastrear estos cambios utiliza el conjunto de datos oficial del LM Arena Leaderboard en Hugging Face, que se basa en miles de evaluaciones humanas anónimas y crowdsourced. Se destaca la distinción entre las interfaces web para consumidores (que pueden incluir filtros y capas adicionales) y los puntos finales de la API (el modelo \"crudo\"), ya que las actualizaciones y cuantizaciones silenciosas de modelos para optimizar costos pueden no ser completamente capturadas por los benchmarks de la API. Cada laboratorio de IA está representado por una única curva en el gráfico, que sigue la evolución de su modelo insignia mejor valorado en la plataforma del Arena.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48099347,
-    "url": "https://doscienceto.it/blog/posts/2026-04-27-golden-testing-cad.html",
-    "score": 27,
-    "time": 1778526754,
-    "titulo_es": "Pruebas de Regresión Visual para Librerías CAD con Waterfall-CAD",
-    "resumen": "El autor de la librería Haskell Waterfall-CAD para CAD programable describe el desafío de probar su librería debido a la naturaleza de los modelos 3D como salida. Tras añadir soporte SVG en 2025, se implementó un enfoque de \"Pruebas de Regresión Visual\", una forma especializada de \"Pruebas de Oro\" (Golden Testing) o \"Pruebas de Snapshot\" (Snapshot Testing) donde las diferencias se basan en comparaciones visuales de imágenes. El proceso implica almacenar imágenes SVG esperadas, generar imágenes SVG a partir del código, convertirlas a imágenes rasterizadas (usando Rasterific-SVG y JuicyPixels), y luego comparar píxel a píxel. Si la cantidad de píxeles que difieren más allá de una tolerancia especificada supera un umbral, la prueba falla y se genera una imagen de diferencia resaltando los píxeles discrepantes. La implementación actual utiliza la librería `tasty-golden` de Haskell y las imágenes SVG generadas también se usan para el README, con CSS para modo claro/oscuro. Se menciona la necesidad de mejorar el soporte de formatos de píxel y la personalización de la visualización de diferencias para una librería de pruebas más robusta.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48095782,
-    "url": "https://www.jackhogan.me/blog/marco-polo",
-    "score": 61,
-    "time": 1778511145,
-    "titulo_es": "Encontrando un amigo con solo distancia y movimiento",
-    "resumen": "El artículo aborda el problema de localizar dispositivos en un entorno con muchos otros dispositivos presentes, utilizando un enfoque similar a cómo las personas se encontrarían en un lugar concurrido basándose en movimientos y distancias relativas. Se exploran tecnologías como Ultra-Wideband (UWB) para medir la distancia a través del tiempo de vuelo (ToF), pero se destaca su limitación para determinar la dirección. Se menciona Phase Difference of Arrival (PDoA) como una mejora para obtener el rumbo, pero se señala su requisito de dos antenas, lo cual es un desafío para dispositivos vestibles debido a la atenuación de la señal. Finalmente, se descarta la trilateración que utiliza anclajes externos fijos (similar a GPS) porque el problema requiere una solución sin equipo preinstalado. La solución propuesta se basa en el uso de datos de IMU (aceleración y brújula) y UWB (distancia), permitiendo la localización dinámica a través del movimiento. El enfoque se centra en la estimación de estado y la robótica para la localización de dispositivos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48129561,
-    "url": "https://personalaisafety.com/p/the-other-half-of-ai-safety",
-    "score": 82,
-    "time": 1778718440,
-    "titulo_es": "La Falta de Seguridad Personal en la IA: Un Enfoque Ignorado Frente al Riesgo Catastrófico",
-    "resumen": "El artículo critica la priorización del campo de la seguridad en IA sobre el riesgo catastrófico, descuidando el daño cognitivo y de salud mental a nivel de usuario individual. Se analizan las cifras proporcionadas por OpenAI sobre usuarios que muestran signos de psicosis, manía o dependencia emocional de ChatGPT, destacando la falta de transparencia y auditoría independiente. Se cuestiona el protocolo de 'redirección suave' para crisis de salud mental, contrastándolo con el bloqueo estricto para contenido peligroso. Se argumenta que las estructuras de seguridad actuales, diseñadas para riesgos mayores, son insuficientes para abordar el daño cognitivo. Se establece un paralelismo con la 'libertad cognitiva' y los 'neurerechos', sugiriendo que la falta de políticas sólidas, especialmente en EE.UU., impide que los laboratorios de IA tomen la seguridad personal de la IA con la seriedad que merece, a pesar de la existencia de marcos teóricos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48125557,
-    "url": "https://andreafortuna.org/2026/05/13/amarcord/",
-    "score": 64,
-    "time": 1778696709,
-    "titulo_es": "Los inicios del control remoto: RATs y herramientas de hacking de finales de los 90",
-    "resumen": "El artículo narra los orígenes de las herramientas de administración remota (RATs) y otras utilidades de hacking a finales de la década de 1990. Destaca el lanzamiento de Back Orifice por Cult of the Dead Cow en 1998, que permitía el control remoto de máquinas Windows 95/98, y su sucesor, BO2K, con características avanzadas para la época. También menciona NetBus y Sub7 (SubSeven), que se volvieron ampliamente conocidos y utilizados, cada uno con sus particularidades en cuanto a interfaz y funcionalidad. Se subraya cómo estas herramientas, a pesar de ser consideradas malware por algunos, demostraron fallos de seguridad en Windows y sentaron precedentes para discusiones legales y éticas. Además, el artículo revisa herramientas fundamentales como Nmap y Netcat, que ofrecían funcionalidades de red y administración de bajo nivel, y John the Ripper y Cain & Abel para cracking de contraseñas y sniffing en Windows, herramientas que, a pesar de su antigüedad, siguen siendo relevantes en la ciberseguridad actual.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48132488,
-    "url": "https://github.com/oven-sh/bun/pull/30412",
-    "score": 101,
-    "time": 1778746531,
-    "titulo_es": "Mejoras significativas en Bun: Rendimiento, tamaño y seguridad de memoria",
-    "resumen": "Este artículo detalla una actualización importante para Bun, enfocándose en la optimización del rendimiento, la reducción del tamaño del binario (entre 3 MB y 8 MB) y, crucialmente, la implementación de herramientas asistidas por compilador para la detección y prevención de errores de memoria. Estas mejoras han resultado en un código más robusto y un ahorro significativo de tiempo de desarrollo y depuración. La arquitectura y estructuras de datos subyacentes permanecen en gran medida sin cambios, y Bun continúa minimizando el uso de bibliotecas de terceros y evitando async Rust. Se destaca la compatibilidad con la suite de pruebas existente de Bun y se alienta a los usuarios a reportar cualquier problema encontrado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48121266,
-    "url": "https://jorijn.com/en/blog/leaving-github-for-forgejo/",
-    "score": 587,
-    "time": 1778676840,
-    "titulo_es": "Por qué dejé GitHub y me fui a Forgejo: la propiedad del código y la autonomía digital",
-    "resumen": "El artículo narra la migración del autor y del gobierno neerlandés de GitHub a Forgejo, una plataforma de código abierto autoalojada. La motivación principal no son las caídas del servicio de GitHub, sino la creciente preocupación por quién posee y controla la infraestructura de desarrollo, especialmente tras la absorción de GitHub por la división CoreAI de Microsoft y el enfoque agresivo en funcionalidades de IA. Se destaca la necesidad de autonomía digital y la propiedad del código fuente, principios que llevaron al gobierno neerlandés a elegir Forgejo por ser totalmente de código abierto. El autor detalla la fiabilidad de GitHub citando incidentes y tiempos de inactividad, pero enfatiza que el verdadero problema subyacente es la pérdida de control independiente de GitHub bajo la dirección de Microsoft y su enfoque en IA, lo que plantea dudas sobre la soberanía de los datos y el futuro de las plataformas de desarrollo. La migración a Forgejo se presenta como una solución para recuperar el control y garantizar la autonomía.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48120629,
-    "url": "https://monokai.com/articles/how-i-moved-my-digital-stack-to-europe/",
-    "score": 958,
-    "time": 1778672540,
-    "titulo_es": "Búsqueda de Soberanía Digital: Migrando Infraestructura a Alternativas Europeas y Autogestionadas",
-    "resumen": "El artículo narra la experiencia de migrar servicios digitales clave (analítica web, correo electrónico, gestión de contraseñas y hosting de infraestructura) desde proveedores tradicionales (Google, 1Password) hacia alternativas con un enfoque en la soberanía digital, la privacidad y el control de datos. Se destacan las ventajas de la autogestión y la residencia en jurisdicciones con leyes de privacidad robustas (Suiza, Europa), como la autohospedación de Matomo para análisis web, Proton Mail para correo electrónico y Proton Pass para gestión de contraseñas, y DigitalOcean/Scaleway para infraestructura cloud. Se mencionan beneficios como el cumplimiento de GDPR, la seguridad mejorada por cifrado de extremo a extremo y la alineación de modelos de negocio con la privacidad del usuario. Sin embargo, también se señalan los inconvenientes, como el aumento de la carga de mantenimiento (actualizaciones, copias de seguridad), limitaciones en funcionalidades específicas (filtros de correo en Proton Mail) y restricciones en planes (dominios personalizados en Proton Mail). La decisión se basa en un deseo de control sobre los datos, la infraestructura y la alineación de valores, priorizando la autonomía digital sobre la conveniencia, aunque implica un coste monetario y de gestión.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48093578,
-    "url": "https://magnusross.github.io/posts/protein-lead-optimisation-1/",
-    "score": 162,
-    "time": 1778498493,
-    "titulo_es": "Entendiendo el pipeline de Cradle-1: Optimización de leads para proteínas",
-    "resumen": "El artículo introduce el concepto de optimización de leads en el diseño de proteínas, un proceso crucial para mejorar la funcionalidad de moléculas existentes. Se explica qué son las proteínas como cadenas de aminoácidos representables como cadenas de caracteres y cómo su secuencia determina su estructura plegada y función, mencionando el desafío de predecir esta estructura (resuelto parcialmente por AlphaFold-2). Se destaca que las proteínas naturales son el resultado de la evolución y se agrupan en familias. El diseño de proteínas busca generar nuevas moléculas funcionales, y la optimización de leads parte de una molécula funcional pero subóptima para proponer modificaciones que mejoren sus propiedades, siendo la función rara vez reducible a un único número.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48129889,
-    "url": "https://sqlite.org/codeofethics.html",
-    "score": 25,
-    "time": 1778720778,
-    "titulo_es": "Código de Ética de SQLite",
-    "resumen": "El documento, originalmente llamado \"Código de Conducta\" y creado para satisfacer los requisitos de los formularios de registro de proveedores para los desarrolladores de SQLite, fue renombrado a \"Código de Ética\" para evitar la confusión con el significado específico y formal de \"Código de Conducta\". Su propósito principal sigue siendo el de ser completado en dichos formularios. Los desarrolladores de SQLite se comprometen a regir sus interacciones basándose en los \"instrumentos de las buenas obras\" del Capítulo 4 de \"La Regla de San Benito\". Este código, con más de 1500 años de antigüedad y base para muchos códigos legales, se considera una promesa unilateral de los desarrolladores a la comunidad de usuarios de SQLite sobre su comportamiento esperado, independientemente del trato recibido. No se requiere que nadie siga o conozca La Regla, pero se alienta su adopción para una vida más feliz y productiva.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48129789,
-    "url": "https://www.theregister.com/security/2026/05/13/disgruntled-researcher-releases-two-more-microsoft-zero-days/5239758",
-    "score": 125,
-    "time": 1778720058,
-    "titulo_es": "Investigadores de seguridad alertan que la vulnerabilidad YellowKey podría agravar el problema de los portátiles robados",
-    "resumen": "Un investigador de seguridad anónimo, conocido como Nightmare-Eclipse o Chaotic Eclipse, ha revelado dos nuevas vulnerabilidades de día cero en Windows: YellowKey y GreenPlasma. YellowKey es un bypass de BitLocker que permite acceso no autorizado a máquinas protegidas con cifrado si se explota físicamente con una unidad USB. GreenPlasma es una vulnerabilidad de escalada de privilegios que otorga acceso de nivel SYSTEM. Ambas vulnerabilidades, especialmente YellowKey, representan serios riesgos para la seguridad, ya que BitLocker es la última defensa para dispositivos robados. Se recomienda mitigar YellowKey con un PIN de BitLocker y una contraseña de BIOS. Para GreenPlasma, que se usa típicamente en post-explotación para robar credenciales y moverse lateralmente, aún no hay mitigación conocida, por lo que se enfatiza la importancia de aplicar parches de Microsoft. Estas vulnerabilidades son parte de una serie de fallos de día cero expuestos por el mismo investigador este año, quien alega haber sido víctima de una violación de confianza.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48126981,
-    "url": "https://www.theverge.com/tech/929091/meta-ai-threads-account-block",
-    "score": 169,
-    "time": 1778703741,
-    "titulo_es": "Threads prueba función para interactuar con Meta AI, pero los usuarios no pueden bloquearla",
-    "resumen": "Meta está probando una nueva función en Threads que permite a los usuarios etiquetar a Meta AI para obtener respuestas a preguntas o contexto sobre conversaciones. Esta característica, que recuerda a la integración de IA en otras plataformas, ha generado descontento entre los usuarios de Threads debido a la imposibilidad de bloquear la cuenta de Meta AI. A pesar de las quejas y errores reportados al intentar bloquearla, un portavoz de Meta afirma que los usuarios pueden gestionar su experiencia silenciando o ocultando las respuestas de Meta AI, o utilizando la opción 'No interesado'. La empresa está invirtiendo fuertemente en IA y busca integrar modelos como Muse Spark en sus servicios, siendo esta función en Threads una muestra de ello.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48119326,
-    "url": "https://vittorioromeo.com/index/blog/refl_enum_to_string.html",
-    "score": 86,
-    "time": 1778661690,
-    "titulo_es": "El costo de compilación del reflection en C++26 para la conversión de enum a string",
-    "resumen": "El artículo analiza el costo en tiempo de compilación de la característica de reflexión de C++26, específicamente en el contexto de la conversión de enumeraciones (enum) a cadenas de texto (string). Compara tres enfoques: una solución basada en reflexión (usando la biblioteca enchantum), una solución basada en macros (X-macro) y una solución manual en C. Se miden los tiempos de compilación para diferentes tamaños de enumeración (N=4, 16, 64, 256, 1024) utilizando GCC 16.1.1. Los resultados indican que la solución de reflexión tiene un costo de compilación significativo, principalmente debido al 'header tax' de incluir `<meta>`, incluso cuando se considera el tiempo de compilación por unidad de traducción. Se explora la posibilidad de mitigar este costo mediante la precompilación de cabeceras (PCH) y el uso de módulos C++20, aunque la solución X-macro (con un pequeño costo de cabecera y sin sobrecarga de reflexión) sigue siendo la más eficiente en términos de tiempo de compilación. El artículo también señala que la biblioteca enchantum escala con el rango de escaneo configurable en lugar del tamaño real del enum.",
-    "categoria": "Desarrollo de Software"
   }
 ]
