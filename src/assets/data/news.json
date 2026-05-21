@@ -1,263 +1,254 @@
 [
   {
-    "id": 48205415,
-    "url": "https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html",
-    "score": 47,
-    "time": 1779271468,
-    "titulo_es": "Construyendo un motor de consenso multi-Paxos en Rust utilizando agentes de IA",
-    "resumen": "El autor detalla su experiencia de tres meses desarrollando un motor de consenso distribuido multi-Paxos en Rust, equivalente a la Replicated State Library (RSL) de Azure, utilizando agentes de codificación de IA como Claude Code y Codex. Logró implementar más de 130,000 líneas de código y optimizar el rendimiento de 23,000 a 300,000 operaciones por segundo. El artículo destaca la importancia del uso de contratos de código generados por IA para definir precondiciones, postcondiciones e invariantes, los cuales se convirtieron en pruebas unitarias y de base de propiedades que detectaron fallas críticas de seguridad de Paxos antes de la producción.",
+    "id": 48220647,
+    "url": "https://blog.flipper.net/flipper-one-we-need-your-help/",
+    "score": 41,
+    "time": 1779361418,
+    "titulo_es": "Por fin listos para hablar sobre Flipper One: una plataforma de hardware abierta basada en Linux",
+    "resumen": "Flipper One es un nuevo proyecto que consiste en una plataforma de hardware Linux totalmente abierta, diseñada para funcionar con el kernel mainline nativo de Linux sin parches propietarios del fabricante. Basado en el SoC Rockchip RK3576 y desarrollado en colaboración con Collabora, Flipper One ofrece expansión de hardware de alta velocidad mediante PCI Express, USB 3.0 y SATA, además de múltiples interfaces de red (2x Gigabit Ethernet, Wi-Fi 6E y soporte para módems 5G M.2). A diferencia de Flipper Zero, Flipper One está orientado a capas superiores de red y ejecución de sistemas operativos completos, y su desarrollo se está llevando a cabo bajo un modelo de transparencia total, publicando debas de arquitectura, rastreadores de tareas y documentación preliminar.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48220696,
+    "url": "https://blog.changs.co.uk/python-315-features-that-didnt-make-the-headlines.html",
+    "score": 23,
+    "time": 1779361811,
+    "titulo_es": "Explorando las nuevas e interesantes características de Python 3.15",
+    "resumen": "El artículo detalla varias características técnicas de Python 3.15, destacando mejoras en la concurrencia y asincronía. Entre los cambios clave se encuentran la simplificación de la cancelación ordenada en 'asyncio.TaskGroup' sin lanzar excepciones, la actualización de 'ContextDecorator' para manejar correctamente el ciclo de vida completo de funciones asíncronas y generadores, y la introducción de nuevas herramientas en el módulo 'threading' ('serialize_iterator', 'synchronized_iterator' y 'concurrent_tee') para garantizar la seguridad de hilos en iteradores sin necesidad de alterar abstracciones complejas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48203698,
-    "url": "https://blog.habets.se/2026/05/Everything-in-C-is-undefined-behavior.html",
-    "score": 242,
-    "time": 1779257242,
-    "titulo_es": "Nadie puede escribir C o C++ correcto: El omnipresente peligro del comportamiento indefinido",
-    "resumen": "El artículo analiza de forma crítica la imposibilidad práctica de escribir código C o C++ libre de errores debido a la omnipresencia del comportamiento indefinido (UB). Explica que el UB no es simplemente una herramienta para que el compilador realice optimizaciones agresivas, sino una premisa fundamental donde el compilador asume la validez del código, lo que puede provocar fallos silenciosos o catastróficos. A través de ejemplos técnicos de alineación de punteros en arquitecturas como x86, SPARC y ARM bajo el estándar C23, el autor ilustra cómo un código aparentemente funcional puede fallar ante cambios de compilador o de hardware.",
+    "id": 48219918,
+    "url": "https://github.com/helvesec/rmux",
+    "score": 70,
+    "time": 1779355320,
+    "titulo_es": "RMUX: Multiplexor de Rust universal para la era de los agentes",
+    "resumen": "RMUX es un multiplexor de terminal escrito en Rust y diseñado para ser compatible con los 90 comandos de tmux. Su arquitectura está orientada tanto a desarrolladores humanos como a flujos de trabajo automatizados y agentes de IA, permitiendo ejecutar procesos de larga duración de forma desatendida, recuperar sesiones y controlar aplicaciones de CLI o TUI mediante código. Ofrece un SDK fuertemente tipado en Rust, persistencia de sesiones, capturas estructuradas de estado, soporte nativo multiplataforma (incluyendo Windows Named Pipes sin requerir WSL) e integración con la biblioteca Ratatui mediante un protocolo local unificado impulsado por un demonio de fondo.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48196570,
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-    "score": 826,
-    "time": 1779212625,
-    "titulo_es": "Gemini 3.5 está diseñado para ayudarte a ejecutar flujos de trabajo complejos y agénticos",
-    "resumen": "Presentación de la familia de modelos Gemini 3.5, comenzando con el lanzamiento de Gemini 3.5 Flash. Este modelo está optimizado para ejecutar flujos de trabajo complejos y tareas de codificación de largo horizonte con alta velocidad (hasta 4 veces más rápido en tokens de salida) y bajo costo. Integrado con el arnés Antigravity, permite el despliegue de subagentes colaborativos para resolver problemas como la transformación de bases de código heredadas a Next.js, la generación de interfaces web interactivas y la automatización de flujos de trabajo empresariales complejos. Socios comerciales como Shopify y Macquarie Bank ya están pilotando estas capacidades para optimizar pronósticos de crecimiento y procesamiento de documentos extensos.",
+    "id": 48220105,
+    "url": "https://blog.google/products/ads-commerce/google-marketing-live-search-ads/",
+    "score": 138,
+    "time": 1779356986,
+    "titulo_es": "Google Ads: Creado con Gemini, probamos nuevos formatos de anuncios en la Búsqueda y expandimos nuestro piloto de Ofertas Directas para conectar marcas con consumidores",
+    "resumen": "Google detalla la integración de sus modelos de IA Gemini dentro de la infraestructura de Google Ads para habilitar experiencias de búsqueda conversacionales y dinámicas. Se introducen nuevos formatos de anuncios basados en agentes inteligentes, tales como 'Conversational Discovery Ads', 'Highlighted Answers' y anuncios de 'Shopping' optimizados con explicadores generados por IA que justifican de forma independiente por qué un producto se ajusta al usuario. Asimismo, se presenta 'Business Agent for Leads', un agente conversacional para la captura de clientes potenciales en tiempo real dentro del anuncio, y mejoras en el programa de 'Direct Offers' con flujos de checkout nativo y ofertas empaquetadas.",
     "categoria": "IA"
   },
   {
-    "id": 48197370,
-    "url": "https://blog.google/products-and-platforms/products/search/search-io-2026/",
-    "score": 577,
-    "time": 1779215667,
-    "titulo_es": "Llevamos nuestras capacidades de modelos avanzados a la Búsqueda con nuevas funciones de IA",
-    "resumen": "Google anuncia la integración global de Gemini 3.5 Flash como el modelo predeterminado para su 'AI Mode' en el motor de búsqueda. Se introduce un nuevo cuadro de búsqueda inteligente y multimodal que permite entradas de texto, imágenes, archivos, videos y pestañas de Chrome, ofreciendo sugerencias dinámicas basadas en la intención del usuario. Además, se presentan los 'agentes de búsqueda' (Search agents), herramientas autónomas capaces de procesar información de la web de forma continua (24/7) para realizar monitoreo de datos en tiempo real y ejecutar tareas complejas como reservas de servicios locales.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48192383,
-    "url": "https://github.com/antoinezambelli/forge",
-    "score": 517,
-    "time": 1779193387,
-    "titulo_es": "Forge: Una capa de fiabilidad para la llamada a herramientas de LLMs autoalojados",
-    "resumen": "Forge es un framework de Python diseñado para mejorar la fiabilidad de los modelos de lenguaje grandes (LLM) autoalojados en flujos de trabajo de agentes de múltiples pasos. Permite elevar el rendimiento de modelos locales pequeños (como de 8B de parámetros) mediante el uso de guardrails (corrección de análisis sintáctico, reintentos guiados y cumplimiento de pasos) y una gestión eficiente de contexto optimizada para VRAM. Ofrece tres modalidades de uso: un motor de ejecución de flujos de trabajo (WorkflowRunner), middleware de guardrails para bucles de orquestación existentes y un servidor proxy compatible con la API de OpenAI que intercepta de forma transparente las llamadas para aplicar las reglas de validación.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48200569,
-    "url": "https://github.com/wiltodelta/remove-ai-watermarks",
-    "score": 304,
-    "time": 1779229831,
-    "titulo_es": "Eliminación de marcas de agua de IA visibles e invisibles en imágenes generadas",
-    "resumen": "Descripción técnica de una herramienta CLI de Python diseñada para eliminar de forma exhaustiva marcas de agua de imágenes generadas por modelos de IA (como Gemini, DALL-E y Midjourney). El pipeline de eliminación procesa elementos visibles mediante detección dinámica por correlación cruzada normalizada (NCC) e inpainting con máscara de gradiente. Para las marcas de agua invisibles en el dominio de la frecuencia (como SynthID v2), emplea un proceso de regeneración basado en difusión (SDXL) asistido por YOLO para la detección y preservación de rostros mediante máscaras elípticas. Finalmente, elimina metadatos (EXIF/XMP, C2PA) y ofrece la opción de inyectar aberración cromática y grano para evadir clasificadores de imágenes de IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48192224,
-    "url": "https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/",
-    "score": 683,
-    "time": 1779192258,
-    "titulo_es": "Apple presenta nuevas funciones de accesibilidad y actualizaciones impulsadas por Apple Intelligence",
-    "resumen": "Apple ha anunciado un conjunto de actualizaciones de accesibilidad integradas con 'Apple Intelligence'. Estas mejoras incluyen descripciones de imágenes detalladas en VoiceOver y Magnifier mediante modelos de visión artificial, navegación por comandos de voz utilizando procesamiento de lenguaje natural en Voice Control, y mayor adaptabilidad de formatos complejos en Accessibility Reader. Adicionalmente, se introduce la generación de subtítulos en el dispositivo mediante IA local y el control de sillas de ruedas motorizadas a través del seguimiento ocular en Apple Vision Pro.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48197995,
-    "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
-    "score": 270,
-    "time": 1779218052,
-    "titulo_es": "Mistral AI adquiere Emmi AI en una de las operaciones más estratégicas de IA industrial en Europa",
-    "resumen": "La empresa líder europea de inteligencia artificial, Mistral AI, ha anunciado la adquisición de Emmi AI, una compañía especializada en IA aplicada a la ingeniería y simulación física (Physics AI). Emmi AI es reconocida por desarrollar arquitecturas avanzadas como AB-UPT para dinámica de fluidos computacional (CFD) a gran escala y NeuralDEM, un modelo de código abierto para simulación en tiempo real de flujos de partículas. Con esta integración, Mistral AI busca consolidar su plataforma de IA industrial para sectores de alta tecnología como automoción, semiconductores y aeroespacial, expandiendo su presencia de investigación y talento con una nueva sede en Linz, Austria.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48196867,
-    "url": "https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/",
-    "score": 250,
-    "time": 1779213790,
-    "titulo_es": "Google presenta Antigravity CLI y unifica sus herramientas de desarrollo en una plataforma multi-agente",
-    "resumen": "Google anuncia la transición de Gemini CLI y las extensiones de IDE Gemini Code Assist hacia 'Google Antigravity', su nueva plataforma de desarrollo orientada a sistemas multi-agente. A partir del 18 de junio de 2026, los servicios gratuitos y las suscripciones individuales de Gemini Code Assist y Gemini CLI dejarán de funcionar para dar paso a Antigravity CLI y Antigravity 2.0. Esta nueva CLI conservará capacidades críticas como Agent Skills, Hooks y Extensiones (ahora plugins), unificando el backend para soportar flujos de trabajo donde múltiples agentes de IA colaboran entre sí. Los clientes corporativos con licencias Enterprise o Standard a través de Google Cloud no experimentarán interrupciones en su acceso actual.",
+    "id": 48215979,
+    "url": "https://github.com/kageroumado/phosphene",
+    "score": 319,
+    "time": 1779321246,
+    "titulo_es": "Phosphene: Un motor de fondos de pantalla de video para macOS Tahoe",
+    "resumen": "Phosphene es una aplicación de barra de menú y extensión de fondo de pantalla para macOS Tahoe que permite reproducir videos locales en el escritorio y la pantalla de bloqueo. Está construida utilizando el framework privado WallpaperExtensionKit de Apple (cargado mediante dlopen e introspección de runtime), integrándose de forma nativa con el sistema operativo. Su arquitectura consta de una app en SwiftUI para la gestión de la biblioteca y una extensión que renderiza fotogramas en un CAContext remoto usando AVSampleBufferDisplayLayer y AVAssetReader para lograr bucles perfectos y eficientes en recursos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48201484,
-    "url": "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage",
-    "score": 487,
-    "time": 1779236634,
-    "titulo_es": "Interrupción de servicio en toda la plataforma de Railway por suspensión incorrecta en Google Cloud",
-    "resumen": "Railway experimentó una caída global de aproximadamente 8 horas tras la suspensión automatizada e incorrecta de su cuenta de producción por parte de Google Cloud. Aunque Railway cuenta con una arquitectura diseñada para alta disponibilidad con cargas de trabajo en AWS y servidores propios (Railway Metal), sus proxies perimetrales dependen de un plano de control alojado en GCP para actualizar sus tablas de enrutamiento. Al expirar la caché de estas rutas, el fallo se propagó en cascada a todas las regiones, haciendo que todos los servicios quedaran inaccesibles (errores 503 y 404). Durante la recuperación, el sistema enfrentó un cuello de botella por acumulación de despliegues y bloqueos por límite de peticiones (rate-limiting) en la integración con GitHub.",
+    "id": 48216983,
+    "url": "https://discourse.haskell.org/t/haskell-foundation-2026-update/14136",
+    "score": 130,
+    "time": 1779329603,
+    "titulo_es": "Cambios y reestructuración en la Fundación Haskell",
+    "resumen": "La Fundación Haskell ha anunciado una importante reestructuración organizativa tras la salida de su director ejecutivo, José, prevista para junio de 2026. Con el objetivo de priorizar los recursos financieros en el trabajo técnico del ecosistema, la fundación prescindirá de la figura de un director ejecutivo a tiempo completo. En su lugar, estas responsabilidades se dividirán entre la Junta Directiva y un nuevo rol a tiempo parcial enfocado en la sostenibilidad financiera. Asimismo, un nuevo comité técnico reemplazará al Grupo de Trabajo Técnico (TWG) para liderar una visión técnica unificada con mayor participación de sus miembros. Finalmente, se anunciaron cambios en la composición de la Junta Directiva, destacando la incorporación de Dominik Schrempf y Simon Marlow.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48196337,
-    "url": "https://xint.io/blog/copy-fail-pod-to-host",
-    "score": 25,
-    "time": 1779211533,
-    "titulo_es": "Copy Fail: Explotación de la caché de páginas de Linux y escape de contenedores",
-    "resumen": "El artículo describe 'Copy Fail', una vulnerabilidad de escalada de privilegios locales en Linux que permite una escritura determinista de 4 bytes en la caché de páginas (page cache) de cualquier archivo legible. Al confundir el subsistema criptográfico del kernel (específicamente el código IPSec ESP mediante sockets AF_ALG y la llamada splice), los atacantes pueden modificar archivos en caché compartidos entre contenedores. Esto posibilita dos escenarios de ataque críticos sin necesidad de inyectar código en el kernel: el envenenamiento cruzado de contenedores co-ubicados y el escape completo de contenedores para obtener acceso de root en el host.",
+    "id": 48188302,
+    "url": "https://developers.redhat.com/articles/2026/04/28/gcc-16-improved-error-messages-sarif-output",
+    "score": 101,
+    "time": 1779155464,
+    "titulo_es": "Nuevas características de diagnóstico y análisis estático en GCC 16",
+    "resumen": "Un ingeniero de software de Red Hat detalla las próximas mejoras en GCC 16, enfocadas en la legibilidad de los diagnósticos y el análisis estático. Entre las novedades principales se encuentra la activación por defecto de mensajes de error jerárquicos (en forma de viñetas anidadas) para plantillas C++ y la optimización del formato de salida SARIF (JSON) para representar mejor los flujos de control no estándar y la estructura lógica del código. Además, se introduce una opción experimental de salida en formato HTML para visualizar de forma interactiva las rutas de ejecución del analizador estático (-fanalyzer) y sus estados de memoria, acompañada de una importante refactorización del 'supergraph' interno para mejorar la separación de conceptos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48219992,
+    "url": "https://noslopgrenade.com/",
+    "score": 52,
+    "time": 1779355875,
+    "titulo_es": "Deja de lanzar muros de texto generados por IA en las conversaciones",
+    "resumen": "El artículo critica la práctica de copiar y pegar respuestas extensas e innecesarias generadas por inteligencia artificial en herramientas de comunicación diaria como Slack o el correo electrónico. Explica cómo esta sobrecarga de texto destruye la comunicación humana, consume el tiempo del receptor y actúa como un obstáculo para el diálogo real. Se argumenta que la IA debe usarse para clarificar y sintetizar ideas, no para inflar los mensajes reemplazando el criterio humano.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48191572,
+    "url": "https://andreapivetta.com/posts/all-the-bugs-they-found.html",
+    "score": 43,
+    "time": 1779186815,
+    "titulo_es": "Escapes de sandbox y vulnerabilidades de seguridad en un runtime de WASM escrito en Go",
+    "resumen": "El autor analiza más de 20 vulnerabilidades descubiertas por agentes de IA en Epsilon, un runtime e intérprete puro de WebAssembly (WASM) escrito en Go. El artículo se centra de manera detallada en una vulnerabilidad de escape de sandbox que permite a un módulo malicioso de WASM acceder y ejecutar funciones privadas de otro módulo en el mismo entorno de ejecución. Epsilon simplifica la representación de referencias a funciones ('funcref') usando enteros de 32 bits, donde -1 representa un valor nulo y los enteros no negativos corresponden a índices de funciones globales. Sin embargo, debido a un fallo al inicializar variables locales no paramétricas usando la función 'clear()' de Go, estas se establecían incorrectamente en 0 en lugar de -1. Esto permitía evadir el fallo de ejecución por puntero nulo ('trap') y llamar ilegalmente a la función secreta del módulo víctima almacenada en el índice 0.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48179348,
-    "url": "https://bumbershootsoft.wordpress.com/2026/05/16/simulated-evolution-on-the-pico-8/",
-    "score": 16,
-    "time": 1779109949,
-    "titulo_es": "Portando la simulación de evolución a PICO-8",
-    "resumen": "El autor describe el proceso y los desafíos técnicos de portar una simulación de evolución (originalmente escrita en C, BASIC y ensamblador) a la consola de fantasía PICO-8 utilizando su dialecto de Lua. Se detallan aspectos de arquitectura de software como la gestión del ciclo de vida de las entidades en memoria durante la iteración, donde se reemplazó la manipulación directa de índices por el uso de tablas auxiliares 'BORN' y 'DIED' para evitar colisiones en el iterador. Además, se aborda la optimización de memoria mediante la reutilización de la hoja de sprites de PICO-8 como un buffer auxiliar para rastrear plancton en una resolución de 150x100, inspirándose en técnicas de direccionamiento de mapas de bits de la Commodore 64.",
-    "categoria": "Desarrollo de Software"
+    "id": 48219060,
+    "url": "https://vivaldi.com/blog/vivaldi-on-desktop-8-0/",
+    "score": 176,
+    "time": 1779348115,
+    "titulo_es": "Vivaldi 8.0: Una nueva dirección de diseño unificado y mayor control",
+    "resumen": "El artículo detalla el lanzamiento de Vivaldi 8.0, el cual introduce un rediseño de interfaz denominado 'Unified'. Esta nueva arquitectura visual unifica las capas del navegador (pestañas, herramientas y paneles) en un solo plano continuo para mejorar la legibilidad, la alineación y la consistencia de los temas visuales. Asimismo, se presentan seis plantillas de diseño para facilitar la experiencia de usuario inicial, manteniendo las avanzadas capacidades de gestión y personalización de pestañas del navegador.",
+    "categoria": "Frontend"
   },
   {
-    "id": 48176384,
-    "url": "https://github.com/Mercury-Language/mercury",
-    "score": 70,
-    "time": 1779088360,
-    "titulo_es": "El sistema de programación lógica Mercury",
-    "resumen": "Mercury es un lenguaje de programación híbrido lógico-funcional que combina la claridad de la programación declarativa con análisis estático avanzado y detección de errores. El compilador de Mercury está escrito en el propio lenguaje (requiriendo bootstrapping para su instalación) y cuenta con dos backends: uno de bajo nivel compatible con GCC y otro de alto nivel. El texto introduce la documentación del proyecto, notas de versión, limitaciones actuales y guías para contribuir al desarrollo del lenguaje.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48170855,
-    "url": "https://www.nostalgickitscentral.com/",
-    "score": 25,
-    "time": 1779038065,
-    "titulo_es": "Central de Kits Nostálgicos",
-    "resumen": "El artículo ofrece una retrospectiva histórica sobre la era de los kits de electrónica que se inició tras la Segunda Guerra Mundial, destacando a Heathkit como el principal referente de la industria desde 1947 hasta principios de los años 90. Explica cómo la disponibilidad de estos kits de hardware económicos y el proceso de ensamblaje, resolución de problemas y soldadura impulsaron a muchas personas a seguir carreras en electrónica. Asimismo, introduce el propósito del sitio web de documentar estos dispositivos de hardware antiguos (incluyendo marcas como Allied Radio, EICO y Dynaco) mediante tablas de especificaciones, diagramas de bloques y esquemas técnicos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48172320,
-    "url": "https://distill.pub/2020/growing-ca/",
-    "score": 118,
-    "time": 1779045669,
-    "titulo_es": "Modelo Diferenciable de Morfogénesis",
-    "resumen": "El artículo aborda la morfogénesis como un proceso de autoorganización biológica extremadamente robusto y adaptativo, donde las células se comunican localmente para construir y reparar estructuras anatómicas complejas. Ante la falta de comprensión de las reglas algorítmicas que guían a estos colectivos celulares hacia un objetivo anatómico específico, los autores proponen la formulación de modelos computacionales diferenciables. Este enfoque, situado en la intersección de la biología del desarrollo y la inteligencia artificial, busca descifrar el 'software de la vida' para revolucionar la medicina regenerativa y permitir el diseño de tecnologías robóticas y de software capaces de crecer, adaptarse y autorrepararse de manera autónoma.",
+    "id": 48174920,
+    "url": "https://mikeveerman.github.io/tokenspeed/",
+    "score": 430,
+    "time": 1779069878,
+    "titulo_es": "¿Qué tan rápido son realmente 10 tokens por segundo?",
+    "resumen": "El artículo analiza la percepción real de las velocidades de generación en modelos de lenguaje (LLM), comparando diferentes tasas de rendimiento (throughput) desde dispositivos locales limitados hasta aceleradores de ultra alta velocidad. Explica cómo la tokenización tipo BPE afecta la densidad del contenido y cómo la percepción visual varía significativamente entre la prosa y el código de programación.",
     "categoria": "IA"
   },
   {
-    "id": 48172366,
-    "url": "https://github.com/danindiana/rtx3080-rebar-vbios/tree/master",
-    "score": 4,
-    "time": 1779045982,
-    "titulo_es": "Habilitación de Resizable BAR en una ASUS TUF-RTX3080-O10G-GAMING bajo Linux sin Windows",
-    "resumen": "Guía técnica detallada para flashear la VBIOS de una GPU ASUS TUF RTX 3080 con el fin de activar Resizable BAR en un sistema Linux. Explica cómo extraer el archivo ROM desde el instalador ejecutable de Windows y realizar el flasheo seguro mediante la herramienta nvflash por línea de comandos, solucionando las restricciones de direccionamiento PCIe (BAR1) y expandiendo el límite de VRAM direccionable por la CPU de 256 MiB a 8 GiB para mejorar el rendimiento en entornos multi-GPU orientados a IA.",
-    "categoria": "Hardware"
+    "id": 48183563,
+    "url": "https://ryanjk5.github.io/posts/GOLDE/",
+    "score": 46,
+    "time": 1779128983,
+    "titulo_es": "Construyendo proyectos modernos en C++ de alto rendimiento: El Juego de la Vida de Conway",
+    "resumen": "El artículo describe el desarrollo de GOLDE, un simulador de autómatas celulares de alto rendimiento escrito en C++23. Se enfoca en la implementación del algoritmo HashLife, el cual representa el universo de simulación como un quadtree memoizado donde cada nodo es canónico e inmutable. Explica cómo se optimiza el rendimiento y la gestión de memoria utilizando un asignador personalizado tipo arena ('bump-pointer allocator') para garantizar estabilidad de punteros, evitando punteros sin procesar tradicionales mediante el uso de std::unique_ptr y std::construct_at, y empleando una tabla hash de direccionamiento abierto de alto rendimiento para agilizar las búsquedas de nodos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48206340,
+    "url": "https://spidermonkey.dev/blog/2026/05/20/saying-goodbye-to-asmjs.html",
+    "score": 391,
+    "time": 1779278516,
+    "titulo_es": "El fin de asm.js: El crepúsculo de OdinMonkey en Firefox",
+    "resumen": "A partir de Firefox 148, Mozilla ha desactivado por defecto las optimizaciones de asm.js en el motor SpiderMonkey, marcando el inicio de su eliminación definitiva. Creado en 2013 como un subconjunto estricto y estáticamente tipado de JavaScript para ejecutar código C/C++ en la web a velocidades casi nativas, asm.js fue el precursor conceptual que abrió el camino para WebAssembly (Wasm). El compilador dedicado a asm.js, OdinMonkey, será retirado para reducir la superficie de ataque de seguridad y los costos de mantenimiento de la máquina virtual. El código asm.js existente seguirá funcionando a través del JIT estándar de JavaScript, pero se recomienda firmemente a los desarrolladores migrar y recompilar sus proyectos hacia WebAssembly utilizando los compiladores BaldrMonkey (optimizador) y RabaldrMonkey (baseline) para obtener un mejor rendimiento y binarios más ligeros.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48177467,
+    "url": "https://yes-we-scan.app/details",
+    "score": 86,
+    "time": 1779098906,
+    "titulo_es": "yes-we-scan.app: Cómo usar escáneres USB antiguos desde el navegador",
+    "resumen": "El artículo detalla el diseño técnico de 'yes-we-scan.app', una aplicación web que revive escáneres USB obsoletos directamente desde el navegador. La arquitectura se fundamenta en el emulador v86 compilado a WebAssembly para ejecutar Alpine Linux y el sistema SANE (Scanner Access Now Easy) en el cliente. La comunicación se realiza mediante WebUSB y un programa personalizado en C que expone las configuraciones y transmite los datos de escaneo por medio de la consola del hipervisor (hvc0). Posteriormente, el frontend procesa el flujo de datos visualizándolo en un canvas o delegándolo a Web Workers con 'wasm-mozjpeg' o 'fflate' para comprimir las imágenes en tiempo real.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48181132,
+    "url": "https://www.angellist.com/blog/the-interview-that-ships-to-production",
+    "score": 35,
+    "time": 1779117874,
+    "titulo_es": "Cómo reemplazamos las pizarras por pull requests, y por qué los candidatos continúan mejorando la entrevista misma",
+    "resumen": "El artículo describe cómo AngelList transformó su proceso de contratación técnica, eliminando las pizarras tradicionales por un examen práctico de desarrollo de software y una fase de contribución real mediante pull requests en su plataforma Next.js. El proceso evalúa la capacidad de los candidatos para trabajar con código de producción, colaborar con asistentes de IA (Claude) de forma crítica, corregir fallos reales de pérdida de datos y proponer optimizaciones arquitectónicas y de UX directamente sobre el sistema que acaban de utilizar.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48205782,
+    "url": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+    "score": 320,
+    "time": 1779274629,
+    "titulo_es": "Cómo los chatbots de IA son manipulados fácilmente para difundir desinformación",
+    "resumen": "Una investigación revela una vulnerabilidad crítica en los modelos de lenguaje masivo (LLMs) y sistemas de búsqueda generativa como ChatGPT, Gemini y Google AI Overviews. Al integrar la recuperación de información web en tiempo real (RAG) sin mecanismos de validación robustos, estos sistemas quedan expuestos a técnicas de manipulación SEO y envenenamiento de datos. Un atacante puede lograr que la IA asuma como verdadera información falsa con tan solo publicar una entrada optimizada en un blog, lo que genera serios riesgos de desinformación en sectores críticos como la salud y las finanzas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48220552,
+    "url": "https://www.newscientist.com/article/2518362-earth-is-now-heating-up-twice-as-fast-as-in-previous-decades/",
+    "score": 8,
+    "time": 1779360732,
+    "titulo_es": "El planeta se calienta a unos 0,36 °C por década desde 2014, según un análisis de datos de temperatura",
+    "resumen": "Un análisis estadístico de cinco conjuntos de datos de temperatura global, liderado por el climatólogo Stefan Rahmstorf y el estadístico Grant Foster, revela que el calentamiento global se ha acelerado, duplicando su ritmo de 0,18 °C por década (antes de 2013-2014) a 0,36 °C por década en la actualidad. Con un nivel de confianza del 98 %, el estudio atribuye esta aceleración al cambio climático, aislando factores como El Niño, la radiación solar y las erupciones volcánicas. Se hipotetiza que la reducción de aerosoles de dióxido de azufre en el transporte marítimo en 2020 disminuyó el efecto de enfriamiento reflexivo, acelerando el calentamiento actual. De continuar esta tendencia, se estima que el límite crítico de 1,5 °C establecido en el Acuerdo de París podría alcanzarse en 2028.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48219682,
+    "url": "https://www.seangoedecke.com/the-o3-geoguessr-prompt-did-not-work/",
+    "score": 31,
+    "time": 1779353565,
+    "titulo_es": "La ilusión del \"prompt engineering\" en la geolocalización de modelos de IA",
+    "resumen": "El artículo explora la percepción de que el \"prompt engineering\" avanzado puede desbloquear capacidades latentes en modelos de IA, utilizando como ejemplo la habilidad del modelo o3 de OpenAI para la geolocalización de imágenes. Inicialmente, se observó que o3 era sorprendentemente bueno en esta tarea, y se atribuyó parte de este éxito a un prompt elaborado por Kelsey Piper, diseñado mediante un proceso iterativo de corrección de errores. Sin embargo, un análisis experimental riguroso, que comparó el prompt avanzado con uno básico utilizando un conjunto de 200 imágenes de referencia, reveló que el prompt básico a menudo obtenía resultados promedio mejores y más cercanos a la ubicación real. Esto sugiere que, cuando un modelo ya es competente en una tarea, los prompts complejos pueden no mejorar significativamente el rendimiento e incluso pueden ser engañosos, especialmente si se desarrollan de forma iterativa con el modelo, ya que los modelos tienden a \"autoengañarse\" o a validar las mejoras del prompt. La investigación subraya la importancia de la validación empírica mediante benchmarks para comprender verdaderamente las capacidades de los modelos y la efectividad del prompting, destacando que la construcción de dicho benchmark fue relativamente accesible.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48216278,
+    "url": "https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/",
+    "score": 204,
+    "time": 1779323761,
+    "titulo_es": "Intuit despide al 17% de su plantilla para centrarse en la integración de IA en sus productos",
+    "resumen": "Intuit, el gigante del software empresarial conocido por productos como TurboTax y QuickBooks, ha anunciado el despido del 17% de su fuerza laboral, lo que equivale a aproximadamente 3.000 empleados. Según un comunicado interno del CEO Sasan Goodarzi, esta medida tiene como objetivo principal reducir la complejidad estructural de la empresa y redirigir recursos hacia la integración profunda de capacidades de Inteligencia Artificial (IA) en sus productos. Esta decisión se produce en un contexto de despidos masivos en el sector tecnológico, donde numerosas empresas como Amazon, Meta y Microsoft también han justificado recortes de personal por la necesidad de reenfocar gastos en proyectos de IA. A pesar de los sólidos ingresos y beneficios reportados por muchas de estas compañías, impulsados por la creciente demanda de soluciones de IA y el consiguiente aumento en el valor de sus acciones, Intuit ha tenido un rendimiento inferior al del S&P 500. La empresa se enfrenta a la presión competitiva de las nuevas ofertas de IA que amenazan con transformar el desarrollo y uso del software, lo que subraya la urgencia de su estrategia de pivotar hacia la IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48205415,
+    "url": "https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html",
+    "score": 155,
+    "time": 1779271468,
+    "titulo_es": "Construcción de un motor de consenso multi-Paxos en Rust con asistencia de IA y optimización de rendimiento",
+    "resumen": "El artículo detalla el desarrollo de un motor de consenso multi-Paxos en Rust, equivalente a la Replicated State Library (RSL) de Azure, utilizando agentes de codificación de IA como Claude Code y Codex. El proyecto, completado en aproximadamente 3 meses, incluyó la escritura de ~100K líneas de código Rust y una optimización de rendimiento significativa (de 23K a 300K ops/sec). Se destacan técnicas clave como la aplicación de contratos de código (precondiciones, postcondiciones, invariantes) impulsados por IA para garantizar la corrección, el desarrollo ligero guiado por especificaciones y la optimización agresiva del rendimiento. El autor también comparte reflexiones sobre su flujo de trabajo con IA, la generación de pruebas a partir de contratos y la motivación económica para maximizar el uso de las herramientas de IA.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48211134,
+    "url": "https://www.manton.org/2026/05/19/why-is-inkwell-stuck-in.html",
+    "score": 142,
+    "time": 1779298215,
+    "titulo_es": "Revisión de Apple para Inkwell: Una batalla por la marca registrada y la distribución de aplicaciones",
+    "resumen": "El artículo detalla los problemas que enfrenta un desarrollador al intentar que su aplicación iOS, llamada 'Inkwell', sea aprobada por Apple. La principal objeción de Apple se relaciona con una marca registrada del mismo nombre utilizada en Mac OS X 10.2 Jaguar, a pesar de que esta marca está inactiva y la aplicación del desarrollador no causa confusión con otras aplicaciones existentes en la App Store. El desarrollador ha pasado por múltiples rechazos, cambios de código, apelaciones y una llamada telefónica con Apple. Se critica a Apple por usar su control sobre la distribución de aplicaciones para mantener una marca registrada inactiva, lo que genera frustración y cuestionamientos sobre las prácticas de revisión de la App Store, especialmente cuando su aplicación Android fue aprobada sin problemas. El desarrollador está considerando si continuar la lucha o cambiar el nombre de su aplicación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48190648,
+    "url": "https://github.com/pydata/numexpr",
+    "score": 10,
+    "time": 1779178813,
+    "titulo_es": "NumExpr: Un Evaluador de Expresiones Numéricas Rápido para NumPy",
+    "resumen": "NumExpr es una biblioteca de Python diseñada para acelerar la evaluación de expresiones numéricas que operan sobre arrays de NumPy. Logra esto evitando la asignación de memoria para resultados intermedios, mejorando la utilización de la caché y reduciendo el acceso a memoria, lo cual es especialmente beneficioso para arrays grandes. La biblioteca descompone las expresiones en op-codes que son procesados por una máquina virtual integrada. Los arrays se dividen en pequeños fragmentos que caben en la caché de la CPU, permitiendo una ejecución altamente paralela entre los núcleos disponibles. NumExpr puede aprovechar la biblioteca VML de Intel (parte de MKL) para una aceleración adicional de funciones trascendentes. Las mejoras de rendimiento respecto a NumPy varían típicamente entre 0.95x y 4x para expresiones comunes, pudiendo alcanzar hasta 15x para operaciones complejas. La instalación se puede realizar vía pip o conda, con consideraciones específicas para la compilación en Windows (requiere Microsoft Visual C++ Build Tools) y la posible configuración para MKL en sistemas Linux. NumExpr funciona mejor en matrices que superan el tamaño de la caché L1 de la CPU.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48209558,
+    "url": "https://pvk.ca/Blog/2014/03/15/sbcl-the-ultimate-assembly-code-breadboard/",
+    "score": 154,
+    "time": 1779291588,
+    "titulo_es": "Optimización de Máquinas Virtuales Basadas en Pila con Pila Pequeña",
+    "resumen": "El artículo explora técnicas de implementación para máquinas virtuales (VMs) basadas en pila con una pila restringida a un número pequeño de elementos (ej. 8 ranuras). Se propone un método inspirado en la arquitectura x87 y la F18, donde las operaciones de push/pop no mueven datos, sino que manipulan un contador modular que apunta a la cima de la pila (TOS). La clave para el rendimiento es especializar las primitivas para cada valor posible del contador de pila, permitiendo que el desplazamiento de variante sea calculado eficientemente durante la compilación. Se discuten las implicaciones en la secuencia NEXT, optimizando el acceso a código y reduciendo el desperdicio de instrucciones mediante el uso de offsets y la especialización de primitivas en intervalos de memoria regulares.",
+    "categoria": "Desarrollo de Software"
   },
   {
     "id": 48204770,
     "url": "https://blog.railway.com/p/incident-report-may-19-2026-gcp-account-outage",
-    "score": 10,
+    "score": 434,
     "time": 1779266275,
-    "titulo_es": "Interrupción del servicio de Railway debido a suspensión de cuenta de Google Cloud",
-    "resumen": "El artículo detalla una interrupción generalizada de la plataforma de Railway que duró aproximadamente 8 horas (del 19 de mayo de 2026 a las 22:20 UTC al 20 de mayo de 2026 a las 06:14 UTC). La causa raíz fue la suspensión incorrecta de la cuenta de producción de Railway por parte de Google Cloud como parte de una acción automatizada. Esta suspensión afectó la infraestructura alojada en Google Cloud, incluyendo el panel de control (dashboard), la API y partes de la infraestructura de red. La interrupción se extendió más allá de Google Cloud cuando las cachés de rutas de red expiaron, lo que provocó que los proxies de borde de Railway perdieran la capacidad de resolver rutas hacia instancias activas, afectando también a las cargas de trabajo alojadas en entornos propios (Railway Metal) y en AWS. La recuperación implicó restaurar los servicios de Google Cloud, gestionar un backlog de despliegues y resolver problemas con las integraciones de GitHub (OAuth y webhooks) que fueron limitadas por tasa. El artículo asume la responsabilidad por las decisiones arquitectónicas que permitieron que un único punto de fallo (la suspensión de la cuenta de GCP) causara una interrupción a nivel de plataforma y describe las medidas que se están tomando para prevenir incidentes futuros.",
+    "titulo_es": "Interrupción del servicio en Railway debido a suspensión de cuenta en Google Cloud",
+    "resumen": "El artículo detalla una interrupción generalizada del servicio en Railway, que duró aproximadamente 8 horas, ocurrida el 19 y 20 de mayo de 2026. La causa principal fue la suspensión incorrecta y automatizada de la cuenta de producción de Railway en Google Cloud (GCP). Esta suspensión afectó la infraestructura alojada en GCP, incluyendo el panel de control (dashboard), la API y componentes de la red, lo que provocó errores 503. La interrupción se extendió a cargas de trabajo fuera de GCP (Railway Metal y AWS) debido a que los proxies de borde de Railway dependen de una API del plano de control alojada en GCP para poblar sus tablas de enrutamiento; al expirar las cachés de rutas de red, estas cargas de trabajo se volvieron inaccesibles, manifestándose como errores 404. La recuperación implicó restaurar los servicios de GCP, lo que a su vez bloqueó temporalmente compilaciones y despliegues. Adicionalmente, las integraciones de GitHub (OAuth y webhooks) sufrieron limitaciones de tasa por un aumento en el volumen de llamadas, y los registros de aceptación de términos de servicio se reiniciaron. Railway asume la responsabilidad por las decisiones arquitectónicas que permitieron que un único punto de fallo cascadeara a toda la plataforma y describe las acciones que se tomarán para prevenir incidentes futuros, centrándose en la resiliencia ante fallos de proveedores externos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48201222,
-    "url": "https://github.com/GoogleChromeLabs/css-web-ui-demos/blob/main/html-in-canvas/awesome-html-in-canvas.md",
-    "score": 44,
-    "time": 1779234543,
-    "titulo_es": "HTML en Canvas para Desarrolladores",
-    "resumen": "El artículo proporciona recursos para desarrolladores que desean construir aplicaciones utilizando HTML dentro de un elemento Canvas. Incluye documentación, ejemplos de demostración desplegados (como en chrome.dev) y código fuente. Destaca una colección curada de demos creadas por la comunidad de terceros, enfatizando que no son mantenidas por Google, y provee enlaces a guías de contribución. También lista frameworks que han integrado soporte para HTML-in-Canvas con su respectiva documentación. Se advierte explícitamente sobre el contenido externo en las demos de terceros.",
-    "categoria": "Frontend"
+    "id": 48180173,
+    "url": "https://www.scientificamerican.com/article/the-programmer-whose-code-underpins-the-internet/",
+    "score": 135,
+    "time": 1779113450,
+    "titulo_es": "La programadora cuyo código sustenta Internet",
+    "resumen": "El artículo narra la historia de Sharla Boehm, una matemática y programadora que, trabajando en la Corporación RAND en la década de 1960, desarrolló una simulación informática pionera. Concebida originalmente para fortalecer las comunicaciones militares en el contexto de la Guerra Fría y la amenaza nuclear, su trabajo sentó las bases para lo que eventualmente evolucionaría hasta convertirse en Internet. A pesar de la trascendencia de su contribución, su nombre fue omitido en relatos históricos posteriores, incluido un libro influyente sobre los orígenes de Internet, destacando la necesidad de reconocer su papel fundamental.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48205143,
-    "url": "https://www.kcl.ac.uk/news/one-in-five-britons-think-ai-will-create-civil-unrest-study-finds",
+    "id": 48214399,
+    "url": "https://github.com/kouhxp/yapsnap",
+    "score": 78,
+    "time": 1779312508,
+    "titulo_es": "Transcribe audio y video a texto sin GPU ni nube",
+    "resumen": "La herramienta `yapsnap` (o su alias `transcribe`) permite transcribir contenido de audio y video a texto plano UTF-8. Funciona de forma local, sin necesidad de GPU ni conexión a la nube, utilizando el modelo Kroko (por defecto en inglés) que se descarga la primera vez (~80 MB) y luego opera offline. Soporta URLs que `yt-dlp` puede procesar y archivos locales decodificables por `ffmpeg` (mp3, mp4, wav, etc.). La salida por defecto se guarda en `./transcripts/` con un nombre derivado del ID del video. Admite la generación de texto con o sin marcas de tiempo (por frase o por párrafo). Los modelos de otros idiomas o variantes más grandes de Kroko, así como otros transductores de `sherpa-onnx`, pueden ser especificados mediante la opción `--model` o la variable de entorno `KROKO_MODEL`. La licencia del proyecto es Apache-2.0, mientras que la del modelo Kroko tiene su propia licencia. Está impulsada por `sherpa-onnx` y `yt-dlp`.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48218417,
+    "url": "https://diffshub.com/",
     "score": 15,
-    "time": 1779269199,
-    "titulo_es": "Preocupación Pública en el Reino Unido por el Impacto Económico de la IA",
-    "resumen": "El artículo detalla una investigación realizada por el Institute for Artificial Intelligence and Policy Institute del King's College London, que revela una significativa preocupación pública en el Reino Unido (7 de cada 10 personas) sobre las repercusiones económicas de la Inteligencia Artificial (IA). Los hallazgos indican que la mayoría cree que la IA eliminará más empleos de los que crea (6 de cada 10), que su impacto será peor que una recesión (la mitad) y que podría generar disturbios civiles (1 de cada 5). Existe especial inquietud sobre el efecto en puestos de nivel inicial y en los jóvenes. La investigación, que encuestó a público general, jóvenes, estudiantes universitarios y empleadores, también señala una brecha de género pronunciada, con mujeres mostrando mayor escepticismo sobre los beneficios de la IA en comparación con los hombres. A pesar de la aprensión generalizada, existe una aceptación pragmática del uso futuro de la IA. Los empleadores muestran una perspectiva más optimista, esperando que la IA asista en lugar de reemplazar al personal, en contraste con la visión pública que prevé un aumento de la sustitución de trabajadores en los próximos cinco años.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48205351,
-    "url": "http://jkm.dev/posts/cities-skylines-trading-market/",
-    "score": 10,
-    "time": 1779270902,
-    "titulo_es": "El sistema de mercado de transferencia de Cities: Skylines",
-    "resumen": "El artículo detalla el sistema interno de Cities: Skylines para gestionar las interacciones de simulación, como el movimiento de residentes, turistas y vehículos de servicio. Descubre que el juego utiliza un sistema centralizado similar a un mercado de valores, llamado TransferManager, donde los edificios y vehículos publican 'ofertas de transferencia' para comprar o vender bienes o servicios. Cada oferta tiene una Razón de Transferencia (ej. Basura, Fuego, Crimen, Pareja), una Prioridad y una Cantidad. El sistema empareja las ofertas de compra y venta para coordinar la entrega o recogida. Se explica el ejemplo de la recolección de basura: los edificios acumulan basura y, si alcanzan un umbral, publican una oferta de 'venta' (basura para recoger). La cantidad solicitada es siempre 1 (transacción), pero la prioridad, calculada en base a la cantidad de basura acumulada, determina qué edificios obtienen la recogida antes. Los camiones recolectores toman la cantidad máxima que pueden transportar, y los grandes volúmenes de basura se gestionan a lo largo de múltiples ciclos de simulación.",
+    "time": 1779342683,
+    "titulo_es": "Visualización de cambios de código en GitHub con diffshub.com",
+    "resumen": "El artículo describe diffshub.com, una herramienta diseñada para visualizar cambios de código en repositorios públicos de GitHub (PRs, comparaciones, commits, diffs y parches) mediante una interfaz virtualizada rápida y optimizada. Permite comparar grandes volúmenes de código, superando limitaciones de GitHub como el rendimiento en diffs extensos y la inestabilidad en navegadores móviles. Fue desarrollado por The Pierre Computer Company utilizando FileTree y el componente CodeView.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48194614,
-    "url": "https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html",
-    "score": 124,
-    "time": 1779204473,
-    "titulo_es": "Vulnerabilidades de escalada de privilegios en el kernel de Linux y el enfoque de Gentoo",
-    "resumen": "El artículo detalla una reciente ola de vulnerabilidades de escalada de privilegios descubiertas en el kernel de Linux, incluyendo Copy Fail, Dirty Frag y Fragnesia. Señala una tendencia general de hallazgo y divulgación de vulnerabilidades acelerada. Los equipos del kernel y de distribución de Gentoo están trabajando proactivamente para mantener los kernels de Gentoo seguros, empaquetando rápidamente las últimas versiones upstream y aplicando parches de mitigación de vulnerabilidades (backporting), incluso antes de que estén disponibles en el kernel upstream, como se demuestra con Fragnesia. Se recomienda la automatización de las actualizaciones del kernel y se enfatiza que solo los paquetes sys-kernel/gentoo-kernel, sys-kernel/gentoo-kernel-bin y sys-kernel/gentoo-sources reciben soporte de seguridad. Los kernels vanilla están actualmente vulnerables. Se aconseja utilizar las últimas versiones de kernel recomendadas (~arch o LTS estables) ya que el upstream no siempre retro-porta las correcciones de seguridad a versiones antiguas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48203249,
-    "url": "https://andlukyane.com//blog/minimax-m27-workflows",
-    "score": 27,
-    "time": 1779252702,
-    "titulo_es": "Evaluación de MiniMax M2.7 API en flujos de trabajo de desarrollo de software y de conocimiento",
-    "resumen": "El artículo evalúa el rendimiento del modelo MiniMax M2.7 API en comparación con Claude Opus 4.7 en tres flujos de trabajo de desarrollo de software y gestión de conocimiento: la creación de un punto de partida para una competencia Kaggle, la redacción y auditoría de notas para una base de conocimiento en Obsidian, y la actualización de un proyecto PyTorch obsoleto. La evaluación se centró en la eficacia del M2.7 dentro de bucles agenticos con límites de tarea explícitos. Los resultados indican que M2.7 es útil cuando las restricciones son claras y el formato de salida es concreto, pero presenta dificultades con el contexto implícito, una limitación que también se observó en Opus 4.7. Se destaca la importancia del 'harness' (la estructura y las indicaciones del agente) tanto como el modelo en sí, ya que la calidad de la ejecución depende de la explicitud de las restricciones en las indicaciones. En el refactor de un proyecto PyTorch, M2.7 demostró ser eficaz en la actualización de dependencias y la modernización de herramientas bajo una supervisión detallada y en pasos pequeños, permitiendo una revisión línea por línea. Para la generación de notas de conocimiento, se emplearon prompts ajustados para cada modelo (M2.7 y Opus 4.7), utilizando un agente escritor y un agente crítico con listas de verificación explícitas para minimizar la ambigüedad y facilitar la autoevaluación. Se concluye que M2.7 es una herramienta prometedora para tareas con límites bien definidos, aunque la supervisión humana sigue siendo crucial para casos más abiertos o ambiguos.",
+    "id": 48218949,
+    "url": "https://adam.chlipala.net/mlcomp/",
+    "score": 8,
+    "time": 1779347276,
+    "titulo_es": "Comparación punto por punto entre Objective Caml (OCaml) y Standard ML (SML)",
+    "resumen": "Este artículo realiza una comparación detallada entre los lenguajes de programación Objective Caml (OCaml) y Standard ML (SML), las dos principales implementaciones de la familia ML. Se analizan aspectos como el diseño del lenguaje, la disponibilidad de herramientas y factores sociales. El objetivo es destacar las diferencias clave que podrían influir en la elección entre uno u otro lenguaje. La comparación a menudo distingue entre las decisiones de diseño que favorecen la \"practicidad\" y aquellas orientadas a la \"pureza matemática\", propiedades formales o investigación.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48170007,
-    "url": "https://emptysqua.re/blog/intro-to-tla-plus-for-the-llm-era/",
-    "score": 130,
-    "time": 1779033141,
-    "titulo_es": "Lógica Temporal de Acciones (TLA+) y su Generación con LLMs",
-    "resumen": "El artículo introduce TLA+, un lenguaje formal para especificar sistemas como máquinas de estado, inventado por Leslie Lamport. Se enfoca en cómo TLA+ utiliza lógica booleana, conjuntos, funciones y operadores temporales para definir variables de estado y transiciones entre ellas. El texto destaca la utilidad de TLA+ para verificar la corrección de sistemas mediante model checking, evitando errores de razonamiento humano. Se aborda la aparente hostilidad de su sintaxis, similar a LaTeX, y se presenta la solución emergente de usar LLMs (como Claude) para generar especificaciones de TLA+ de manera más accesible. Se explica el concepto de lógica temporal, la definición de estados iniciales y las reglas de transición (acciones) que especifican las modificaciones de las variables entre estados. Se enfatiza la necesidad de explicitar el efecto de cada acción sobre todas las variables del sistema. Finalmente, se presenta una fórmula TLA+ completa que define la transición global como la disyunción de acciones individuales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48169736,
-    "url": "https://leonardo-boquillon.com/photonic-cop-supply-chain",
-    "score": 43,
-    "time": 1779031330,
-    "titulo_es": "Movimiento o toque para entrar",
-    "resumen": "Publicación semanal de análisis sobre cadenas de suministro de semiconductores de IA, acciones tecnológicas japonesas e infraestructura de cómputo. Gratuito, sin spam. O cierre esto y siga explorando.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48197445,
-    "url": "https://www.linusakesson.net/programming/tty/index.php",
-    "score": 72,
-    "time": 1779216019,
-    "titulo_es": "El Subsistema TTY en Linux: Una Perspectiva Histórica y Técnica",
-    "resumen": "El artículo explora la importancia y la arquitectura del subsistema TTY (Teletypewriter) en Linux y UNIX. Originado en los teletipos electromecánicos del siglo XIX, el subsistema TTY evolucionó para servir como la interfaz principal entre los usuarios y las computadoras, especialmente con la llegada del procesamiento interactivo y la línea de comandos. A pesar de la obsolescencia del hardware físico de los teletipos, su legado persiste en las terminales emuladas modernas. El artículo detalla cómo el kernel de Linux maneja las complejidades de la comunicación serial, incluyendo la compatibilidad entre diversos dispositivos. Se enfatiza la función de la 'line discipline' (disciplina de línea), particularmente el modo 'cooked' (canónico) que proporciona edición de línea rudimentaria (como retroceso y borrado de palabra) por defecto, y el modo 'raw' (crudo) que las aplicaciones avanzadas (como shells y editores) utilizan para un control de entrada más directo. La disciplina N_TTY es la implementación predeterminada que ofrece estas funcionalidades.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 48198127,
-    "url": "https://nesbitt.io/2026/05/19/dumb-ways-for-an-open-source-project-to-die.html",
-    "score": 193,
-    "time": 1779218576,
-    "titulo_es": "La Muerte Silenciosa del Software de Código Abierto: Causas y Consecuencias",
-    "resumen": "El artículo analiza las diversas razones por las cuales los paquetes de software de código abierto, incluso aquellos de los que dependen muchos otros proyectos, pueden volverse obsoletos o abandonados. Se identifican varias categorías de abandono: 'mantenedor fantasma', donde el principal desarrollador deja el proyecto sin traspaso formal; 'huérfano corporativo', cuando una empresa lo libera y luego lo olvida tras reorganizaciones; 'huérfano de tesis', originado en proyectos académicos que sus autores abandonan al graduarse; 'precipicio de financiación', cuando los fondos asignados a un proyecto terminan; 'contratado y alejado', donde un mantenedor es contratado por una empresa que limita su contribución externa; 'estancamiento por agotamiento', donde el proyecto sigue recibiendo mantenimiento menor pero carece de decisiones de diseño o corrección de errores complejos; y 'bloqueo de sucesión', donde el acceso a las credenciales de publicación se pierde y los procesos formales para recuperarlas son lentos y engorrosos. El texto destaca que estos escenarios son comunes y representan un riesgo significativo para la estabilidad del ecosistema de software de código abierto, ya que muchos de estos proyectos son fundamentales para la infraestructura tecnológica actual.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48166744,
-    "url": "https://polypad.amplify.com/",
-    "score": 214,
-    "time": 1779002414,
-    "titulo_es": "Polypad: Un Patio de Juegos Matemático Gratuito con Manipulativos Virtuales y Herramientas para Docentes",
-    "resumen": "El artículo describe Polypad, una plataforma gratuita y accesible que ofrece una amplia gama de manipulativos virtuales e interactivos diseñados para hacer las matemáticas más significativas y atractivas para los estudiantes. Destaca su interfaz intuitiva, la ausencia de necesidad de inicio de sesión o instalación, y su compatibilidad con todos los dispositivos y navegadores. Polypad no solo incluye herramientas matemáticas visuales y auditivas (como la composición musical con ecuaciones), sino que también proporciona funciones para que los educadores creen y asignen actividades, permitiendo el seguimiento del progreso de los estudiantes en tiempo real. La plataforma se posiciona como la biblioteca de manipulativos virtuales más completa, pero también es personalizable y cuenta con recursos de apoyo gratuitos como webinars y tutoriales.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48191602,
-    "url": "https://superspl.at/scene/84df8849",
-    "score": 503,
-    "time": 1779187127,
-    "titulo_es": "Captura de datos 3D con 90 perspectivas y apilamiento de enfoque para reconstrucción",
-    "resumen": "El artículo describe un proceso avanzado de captura de datos 3D utilizando una cámara Nikon Z8 con un lente macro Laowa 180mm. Se tomaron 90 imágenes desde diferentes perspectivas, y cada perspectiva consistió en 88 imágenes con enfoque apilado (focus stacking). Se empleó una configuración de apertura f/7.1, exposición de 1/160s e ISO 100, con iluminación LED y un fondo de pantalla azul (bluescreen). El proceso de entrenamiento y reconstrucción se realizó utilizando la herramienta 'slang-splat', un método de representación de campos de radiación de punto (splatting) que probablemente aprovecha técnicas de IA para la generación de modelos 3D a partir de múltiples vistas. Los datos y el software están disponibles bajo licencia CC BY, con la opción de descargar el dataset de COLMAP a través de Patreon.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48195731,
-    "url": "https://practical.engineering/blog/2026/5/19/fixing-the-most-dangerous-dam-in-the-world",
-    "score": 38,
-    "time": 1779208933,
-    "titulo_es": "La presa de Mosul: Una hazaña de ingeniería frente a la disolución geológica",
-    "resumen": "El artículo describe los desafíos de ingeniería sin precedentes en la construcción y mantenimiento de la Presa de Mosul en Irak. Construida sobre un lecho de roca de yeso, una sustancia 200 veces más soluble en agua que la piedra caliza, la presa ha sufrido una disolución continua de sus cimientos desde su llenado en la década de 1980. El problema de filtraciones, que inicialmente alcanzaba los 800 litros por segundo, ha persistido durante 40 años, complicando la operación y generando preocupaciones sobre una posible falla catastrófica. A pesar de ser calificada como \"la presa más peligrosa del mundo\" en 2006, se han implementado soluciones de ingeniería, como la inyección continua de cemento en los cimientos, para mitigar la disolución y estabilizar la estructura. La historia de la presa de Mosul es un estudio de caso sobre cómo la geología del sitio impacta fundamentalmente el diseño y la longevidad de las grandes infraestructuras de ingeniería civil.",
-    "categoria": "Ciencia y Matematica"
   }
 ]
