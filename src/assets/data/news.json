@@ -1,335 +1,272 @@
 [
   {
-    "id": 48237163,
-    "url": "https://davidoks.blog/p/why-japanese-companies-do-so-many",
-    "score": 685,
-    "time": 1779463324,
-    "titulo_es": "De inodoros a microchips: El inesperado éxito de Toto en la cadena de suministro de hardware de semiconductores",
-    "resumen": "El artículo detalla cómo la empresa japonesa Toto, famosa por fabricar inodoros, ha experimentado un crecimiento financiero histórico gracias a su división de cerámica avanzada. Esta división produce 'electrostatic chucks' (e-chucks), que son placas cerámicas de alta precisión utilizadas para sostener obleas de silicio mediante fuerza electrostática durante el proceso de grabado de chips de memoria con plasma. Debido a la explosión en la demanda de memoria de banda ancha para centros de datos de inteligencia artificial, este componente de hardware especializado ha convertido a la compañía en un actor clave y altamente rentable dentro de la cadena de suministro de semiconductores.",
+    "id": 48253386,
+    "url": "https://arstechnica.com/gadgets/2026/04/microsoft-open-sources-the-earliest-dos-source-code-discovered-to-date/",
+    "score": 259,
+    "time": 1779585673,
+    "titulo_es": "Liberado el código fuente original de 86-DOS, previo a la adquisición de Microsoft",
+    "resumen": "Microsoft ha publicado el código fuente más antiguo descubierto hasta la fecha de 86-DOS (originalmente QDOS), el sistema operativo desarrollado por Tim Paterson que sirvió de base para PC-DOS y MS-DOS. La liberación incluye el código del kernel de 86-DOS versión 1.00, instantáneas de desarrollo de PC-DOS 1.00 y utilidades clásicas como CHKDSK. Debido a que el código original solo existía en papel, el equipo de preservación 'DOS Disassembly Group' tuvo que realizar un minucioso trabajo de transcripción y escaneo manual ante las dificultades del software OCR moderno con impresiones antiguas. El proyecto ha sido alojado en GitHub junto con otras versiones históricas de la compañía.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48210937,
+    "url": "https://github.com/ClickHouse/silk",
+    "score": 28,
+    "time": 1779297340,
+    "titulo_es": "Un planificador cooperativo de fibras para Linux con integración de io_uring y robo de trabajo sensible a la topología",
+    "resumen": "Descripción técnica de un framework de planificación de fibras (corrutinas ligeras con pila) de alto rendimiento para Linux. El sistema evita el bloqueo de hilos del sistema operativo mediante un planificador cooperativo por CPU y un mecanismo de robo de trabajo ('work-stealing') optimizado para arquitecturas NUMA. Cuenta con integración nativa de io_uring para E/S asíncrona, dependencias integradas (como Boost.Context y liburing), soporte de compilación con CMake y herramientas avanzadas de benchmarking para evaluar el rendimiento en protocolos de red (TCP, HTTP/1.1) y almacenamiento (S3, E/S de archivos).",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48253060,
+    "url": "https://hellmood.111mb.de/wake_up_16b_writeup.html",
+    "score": 245,
+    "time": 1779582650,
+    "titulo_es": "Exploración de la densidad algorítmica en 16 bytes de ensamblador x86",
+    "resumen": "Análisis técnico de una 'intro' de tan solo 16 bytes escrita en ensamblador x86 para DOS en modo real. Explora técnicas de optimización extrema ('sizecoding') como instrucciones polimórficas y saltos a mitad de instrucciones para reutilizar códigos de operación. Además, detalla la profunda relación matemática que permite generar simultáneamente un fractal de Sierpinski en pantalla y audio a través del altavoz de la PC, vinculándolo con la Regla 60 de autómatas celulares y el teorema de Lucas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48253186,
+    "url": "https://techcrunch.com/2026/05/21/scammers-are-abusing-an-internal-microsoft-account-to-send-spam/",
+    "score": 153,
+    "time": 1779583892,
+    "titulo_es": "Estafadores abusan de sistema de Microsoft para enviar spam desde direcciones de correo oficiales",
+    "resumen": "Actores maliciosos están explotando una vulnerabilidad en el proceso de creación de cuentas de Microsoft para enviar correos de phishing desde la dirección legítima 'msonlineservicesteam@microsoftonline.com'. Este remitente es utilizado oficialmente por la compañía para comunicaciones críticas de seguridad, como códigos de autenticación multifactor (MFA). La vulnerabilidad permite a los atacantes personalizar y enviar correos automatizados maliciosos que evaden los filtros de spam tradicionales al provenir de un dominio confiable, lo que pone en riesgo la seguridad de los usuarios.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48254236,
+    "url": "https://www.masswerk.at/nowgobang/2026/c64-dead-test-font",
+    "score": 49,
+    "time": 1779595021,
+    "titulo_es": "Un análisis profundo de la fuente del cartucho de diagnóstico 'Dead Test' de la Commodore 64",
+    "resumen": "Análisis técnico detallado sobre la tipografía única integrada en la ROM del cartucho de diagnóstico 'Dead Test' (Rev. 718220) de la Commodore 64. Explica cómo este cartucho opera de forma autónoma sin depender de la ROM de caracteres de la computadora, analiza la estructura de su juego de 58 caracteres y detalla su inspiración visual en el estándar de reconocimiento de caracteres de tinta magnética (MICR) E-13B, revelando un huevo de pascua relacionado con el símbolo de 'tránsito' bancario oculto en el cartucho.",
     "categoria": "Hardware"
   },
   {
-    "id": 48245262,
-    "url": "https://github.com/amatsuda/rubish",
-    "score": 28,
-    "time": 1779517920,
-    "titulo_es": "Rubish: Una shell de UNIX escrita puramente en Ruby",
-    "resumen": "Rubish es una shell compatible con Bash que está escrita en Ruby puro y cuya sintaxis de shell se compila directamente en código de Ruby para ser ejecutado en su máquina virtual (VM). El proyecto permite alternar y mezclar de manera nativa comandos de consola tradicionales con expresiones, bloques, iteradores, lambdas y métodos de Ruby. Entre sus características destacadas se encuentran la inicialización diferida en segundo plano para evitar lentitud en el arranque, la compatibilidad con características avanzadas de Zsh, una API pública para la integración in-process con emuladores de terminal o IDEs, y un modo seguro (-r) que desactiva las características de Ruby al ejecutar scripts no confiables.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48206387,
-    "url": "https://fedemagnani.github.io/math/2026/04/08/the-quadratic-sandwich.html",
-    "score": 47,
-    "time": 1779278816,
-    "titulo_es": "Entendiendo la convexidad fuerte y la suavidad L: El sándwich cuadrático",
-    "resumen": "Este artículo técnico aborda los conceptos fundamentales de la convexidad fuerte y la suavidad L en el contexto de la optimización matemática por descenso de gradiente. Explica cómo estas propiedades establecen cotas cuadráticas inferiores y superiores (el 'sándwich cuadrático') que limitan la curvatura de una función diferenciable. Además, introduce el número de condición (la relación entre la suavidad L y la convexidad fuerte), una métrica clave para determinar qué tan fácil o difícil es optimizar una función.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48240419,
-    "url": "https://www.anthropic.com/research/glasswing-initial-update",
-    "score": 434,
-    "time": 1779478305,
-    "titulo_es": "Proyecto Glasswing: Detección acelerada de vulnerabilidades críticas mediante IA",
-    "resumen": "Análisis sobre los primeros resultados del Proyecto Glasswing, una iniciativa que emplea el modelo Claude Mythos Preview para identificar fallos de seguridad en software de infraestructura crítica y proyectos de código abierto. En su primer mes, el proyecto y sus socios estratégicos (como Cloudflare, Microsoft y Palo Alto Networks) han detectado más de diez mil vulnerabilidades de severidad alta y crítica. Este avance ha multiplicado por diez la velocidad de descubrimiento de bugs, desplazando el cuello de botella técnico desde la detección de fallos hacia el proceso de verificación, mitigación y despliegue rápido de parches bajo la política de divulgación coordinada de vulnerabilidades.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48238896,
-    "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
-    "score": 270,
-    "time": 1779471124,
-    "titulo_es": "Miles de desarrolladores de Microsoft usarán GitHub Copilot CLI en su lugar",
-    "resumen": "Microsoft planea retirar la mayoría de sus licencias de Claude Code (la herramienta de desarrollo asistido por IA de Anthropic) para migrar a sus ingenieros de la división 'Experiences + Devices' hacia GitHub Copilot CLI antes del 30 de junio. A pesar de la gran popularidad de Claude Code entre desarrolladores y personal no técnico para prototipado rápido, la decisión responde a la unificación de herramientas CLI agénticas dentro de la infraestructura propia de GitHub y a una optimización de costes operativos para el cierre del año fiscal. Esto obligará a los ingenieros a adaptar sus flujos de trabajo a Copilot CLI, herramienta que Microsoft busca moldear directamente según sus estándares de seguridad y repositorios.",
+    "id": 48255593,
+    "url": "https://fs.blog/knowledge-project-podcast/greg-brockman/",
+    "score": 8,
+    "time": 1779611378,
+    "titulo_es": "La carrera de la IA, el futuro de la AGI y la historia interna de OpenAI",
+    "resumen": "Resumen de una entrevista profunda con Greg Brockman, cofundador de OpenAI, donde detalla la trayectoria técnica y estructural de la compañía. Se analiza el plan técnico original de tres pasos de OpenAI, los desafíos de infraestructura y cómputo que obligaron a cambiar la estructura de la organización, el uso de la propia IA para escribir código de desarrollo interno, y las decisiones de diseño sobre no mostrar las trazas de razonamiento en modelos recientes. También se discute el impacto del acceso restringido a la computación en el desarrollo de la Inteligencia Artificial General (AGI) y el futuro del empleo.",
     "categoria": "IA"
   },
   {
-    "id": 48206828,
-    "url": "https://theconsensus.dev/p/2026/05/20/yeunjoo-choi-from-igalia-on-chromium.html",
-    "score": 13,
-    "time": 1779281360,
-    "titulo_es": "Desarrollo de navegadores empresariales y mantenimiento de forks de Chromium: Entrevista con Yeunjoo de Igalia",
-    "resumen": "Entrevista técnica a Yeunjoo, ingeniera de software en Igalia, sobre su experiencia desarrollando navegadores empresariales basados en Chromium. El artículo detalla los retos de implementar funciones personalizadas de control de políticas, seguridad y personalización de marca que van más allá de las configuraciones JSON estándar. Asimismo, aborda la complejidad de realizar procesos de rebase en bifurcaciones (forks) debido al rápido ritmo de actualización del repositorio upstream de Chromium, proponiendo mejores prácticas de arquitectura de software para mitigar conflictos de fusión (merge conflicts), tales como aislar las modificaciones del cliente en capas independientes (como //igalia) y respetar estrictamente los límites y dependencias de los componentes del upstream (//components, //content, //ui).",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48242278,
-    "url": "https://temertymedicine.utoronto.ca/news/how-decades-sleep-research-led-new-sleep-apnea-drug",
-    "score": 162,
-    "time": 1779487539,
-    "titulo_es": "La investigación de un profesor de la Universidad de Toronto sobre la fisiología del sueño y la respiración allana el camino para un nuevo tratamiento de la apnea del sueño",
-    "resumen": "El trabajo del profesor Richard Horner sobre los mecanismos neuromusculares que controlan la respiración ha llevado al desarrollo de un nuevo fármaco para la apnea obstructiva del sueño, el cual ha mostrado resultados positivos en un ensayo clínico de fase 3. La investigación identificó dos factores químicos clave en el cerebro que provocan el colapso del músculo de la lengua durante el sueño REM: la pérdida de la señal de activación de la noradrenalina y la inhibición de los movimientos musculares mediada por receptores muscarínicos.",
+    "id": 48254020,
+    "url": "https://www.quantamagazine.org/how-alexander-grothendieck-revolutionized-20th-century-mathematics-20260520/",
+    "score": 63,
+    "time": 1779592742,
+    "titulo_es": "Lo que Albert Einstein fue para la física del siglo XX, Alexander Grothendieck lo fue para las matemáticas del siglo XX",
+    "resumen": "El artículo examina el impacto revolucionario del matemático Alexander Grothendieck en el siglo XX, comparando su relevancia con la de Albert Einstein en la física. Grothendieck transformó la geometría algebraica al elevar el nivel de abstracción, priorizando el estudio de las relaciones y estructuras ocultas entre objetos matemáticos por encima de los objetos mismos. Su trabajo proporcionó un lenguaje y un marco unificado que resolvió la fragmentación metodológica de la época, conectando la geometría algebraica con áreas como la topología y la teoría de números.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48206763,
-    "url": "https://phys.org/news/2025-09-science-spaghetti-neutron-gluten-free.html",
-    "score": 71,
-    "time": 1779280966,
-    "titulo_es": "Caracterización estructural mediante dispersión de ángulo pequeño de espaguetis regulares frente a espaguetis sin gluten",
-    "resumen": "Investigadores de la European Spallation Source y la Universidad RWTH Aachen emplearon técnicas de dispersión de neutrones y rayos X de ángulo pequeño para analizar y comparar la nanoestructura de los espaguetis tradicionales y sin gluten bajo diversas condiciones de cocción. El estudio revela que, en la pasta normal, las proteínas de gluten forman una red insoluble que encapsula los gránulos de almidón a medida que se hinchan, garantizando la integridad estructural del alimento. Por el contrario, la pasta sin gluten carece de esta malla protectora, lo que provoca que el almidón se disperse en exceso y el producto tienda a desintegrarse o volverse pegajoso ante variaciones en el tiempo de cocción o la salinidad.",
+    "id": 48250144,
+    "url": "https://veronicaexplains.net/my-first-writerdeck/",
+    "score": 374,
+    "time": 1779561937,
+    "titulo_es": "Cómo convertir una laptop vieja en un dispositivo de escritura minimalista con Debian",
+    "resumen": "El autor detalla la transformación de una laptop System76 usada en un 'writerdeck' dedicado y libre de distracciones. Para ello, opta por una instalación minimalista de Debian (Trixie) basada exclusivamente en TTY (sin entorno gráfico X11 o Wayland). Explica la configuración técnica del sistema, incluyendo la gestión de privilegios sudo, la administración de redes con nm-tui, el uso de Neovim para la redacción y la implementación de kmscon desde los repositorios backports para obtener una consola de comandos escalable y moderna.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48247325,
+    "url": "https://benmyers.dev/blog/on-the-dl/",
+    "score": 399,
+    "time": 1779541423,
+    "titulo_es": "La etiqueta <dl>, o lista de descripción, está infravalorada",
+    "resumen": "El artículo analiza el valor y la versatilidad del elemento semántico <dl> (lista de descripción) en HTML, junto con sus componentes <dt> y <dd> para estructurar pares de nombre-valor. Explica las especificaciones técnicas permitidas, como el uso de wrappers <div> para estilizar grupos, y resalta las ventajas críticas de accesibilidad para lectores de pantalla en comparación con el uso de divs genéricos anidados. Finalmente, ilustra su flexibilidad de maquetación mediante un caso práctico basado en un bloque de estadísticas de Dungeons & Dragons.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48254475,
+    "url": "https://www.adventuresinoss.com/aws-four-years/",
+    "score": 206,
+    "time": 1779598282,
+    "titulo_es": "Hoy se cumplen cuatro años desde que me uní a AWS. Mi último día será el viernes",
+    "resumen": "El autor relata los motivos de su salida de AWS tras cuatro años en la empresa, destacando dos factores principales de su descontento: los cambios organizativos dentro del equipo de Estrategia y Marketing de Código Abierto (OSSM) y la obsesión acelerada de la compañía por la Inteligencia Artificial Generativa (GenAI). Desde una perspectiva de arquitectura y estrategia de producto, critica cómo la prisa por adoptar e implementar GenAI ha provocado que AWS pierda su enfoque tradicional de 'obsesión por el cliente', priorizando lanzar soluciones rápidas sin evaluar si resuelven necesidades reales, además de fomentar un uso superficial de la tecnología que devalúa el trabajo de calidad.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48252535,
+    "url": "https://khz.ac/software/i3-integration.html",
+    "score": 75,
+    "time": 1779578022,
+    "titulo_es": "Por qué parcheé el gestor de ventanas i3 para Emacs",
+    "resumen": "El autor detalla cómo integró de manera eficiente los atajos de teclado entre el gestor de ventanas i3 y Emacs. Al encontrar que las soluciones basadas en scripts externos con xdotool y emacsclient introducían demasiada latencia, optó por modificar directamente el código fuente en C de i3. Utilizando la biblioteca XCB, modificó el manejo de eventos de teclado (handle_key_press) y la estructura de enlaces (Binding) para permitir el paso directo de eventos de teclado a Emacs cuando este tiene el foco.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48236057,
+    "url": "https://boostedcpp.net/2026/05/18/neoclassical-c-segmented-iterators-revisited-1/",
+    "score": 28,
+    "time": 1779458804,
+    "titulo_es": "Iteradores segmentados y algoritmos jerárquicos",
+    "resumen": "El artículo aborda el concepto de iteradores segmentados propuesto por Matt Austern en el año 2000, alineado con la filosofía de Alexander Stepanov de lograr abstracciones con costo de ejecución casi nulo en C++. Explica cómo estructuras de datos segmentadas como 'std::deque' sufren penalizaciones de rendimiento al usar iteradores tradicionales debido a la constante verificación de límites de bloque en cada incremento, lo que además impide la autovectorización del compilador. La solución propuesta es descomponer el iterador en una estructura de dos niveles (iterador de segmento e iterador local) mediante 'segmented_iterator_traits', permitiendo bucles planos altamente optimizados sobre datos contiguos y logrando mejoras de rendimiento superiores al 20% con compiladores modernos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48202129,
+    "url": "https://aresluna.org/key-in-sight/",
+    "score": 10,
+    "time": 1779242015,
+    "titulo_es": "Guía para dominar el teclado: del hardware al software",
+    "resumen": "El autor presenta una guía práctica para optimizar la interacción humano-computadora a través de la personalización del teclado. Propone expandir el espacio de trabajo físico mediante el uso de teclados macro (macro pads) con interruptores mecánicos, evitando soluciones de botones de membrana. Sugiere mapear estas nuevas teclas físicas a funciones libres de conflicto (F1-F20) para luego resolver su comportamiento lógico mediante software de reasignación.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48241335,
+    "url": "https://victoriaritvo.com/blog/hengefinder/",
+    "score": 144,
+    "time": 1779482382,
+    "titulo_es": "Hengefinder: Cómo calcular la alineación solar con el trazado de las calles",
+    "resumen": "El artículo describe el desarrollo de 'Hengefinder', una herramienta de software diseñada para identificar alineaciones solares (similares al Manhattanhenge) en cualquier ciudad del mundo. El autor detalla los desafíos técnicos de ingeniería de software y computación espacial, específicamente cómo calcular con precisión el rumbo de una calle utilizando coordenadas geográficas. Explica por qué la aproximación de la Tierra plana falla debido a la convergencia de las líneas de longitud hacia los polos y cómo resolver este problema matemático mediante trigonometría esférica, escalando la longitud por el coseno de la latitud antes de aplicar la función atan2.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48247004,
+    "url": "https://www.reenigne.org/blog/80386-microcode-disassembled/",
+    "score": 252,
+    "time": 1779538303,
+    "titulo_es": "Extracción y Desensamblaje del Microcódigo del Intel 80386",
+    "resumen": "El artículo detalla el arduo proceso de extraer y desensamblar el microcódigo del microprocesador Intel 80386 a partir de una imagen de alta resolución de la ROM de microcódigo. A diferencia del 8086, el 80386 presentaba un microcódigo significativamente más grande (94720 bits vs 10752 bits) y carecía de documentación de patente, lo que lo convertía en una caja negra. El proceso implicó técnicas de procesamiento de imágenes y redes neuronales para obtener un blob binario, seguido de un desafiante esfuerzo de ingeniería inversa para descifrar la estructura del microcódigo. Mediante la identificación de patrones, la correlación con la microarquitectura del chip (ayudado por análisis de Ken Shirriff) y la decodificación de las unidades de control (PLAs), el equipo logró mapear fragmentos de microcódigo a instrucciones del procesador. Se descubrió que el 80386 utiliza un enfoque de 'aceleración por hardware' para muchas operaciones, con una parte considerable del microcódigo dedicada a la orquestación de estas unidades especializadas (multiplicación, división, barrel shifter, etc.) en lugar de implementar algoritmos directamente. El número de puntos de entrada del microcódigo se incrementó a 215, reflejando la mayor complejidad y las diferentes rutas de ejecución (modo real/protegido, operandos de registro/memoria, prefijos REP).",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48248954,
+    "url": "https://www.righto.com/2026/05/reverse-engineering-spacelab-computer.html",
+    "score": 103,
+    "time": 1779553490,
+    "titulo_es": "Ingeniería inversa de una placa de procesador de la ALU del ordenador Mitra 125 MS de Spacelab",
+    "resumen": "El artículo detalla la ingeniería inversa de una placa de circuito del procesador de la Unidad Aritmético-Lógica (ALU) del ordenador Mitra 125 MS, utilizado en el laboratorio Spacelab. Se describe la arquitectura del ordenador, que a diferencia de los sistemas modernos, no utiliza un microprocesador sino que se construye a partir de múltiples placas de circuitos integrados TTL de la serie 5400. Se destaca el chip '181 ALU como uno de los componentes más complejos, capaz de realizar operaciones aritméticas y lógicas.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48246232,
+    "url": "https://olano.dev/blog/dangerously-skip/",
+    "score": 150,
+    "time": 1779529036,
+    "titulo_es": "El Futuro del Desarrollo de Software con Agentes de IA: Del Código a la Especificación",
+    "resumen": "El artículo discute un cambio paradigmático en el desarrollo de software impulsado por el uso de Agentes de IA (LLMs). La premisa central es que, dado que los LLMs generan código a una velocidad que supera la capacidad humana de revisión y depuración, el enfoque tradicional de mantener la responsabilidad sobre el código fuente se vuelve insostenible. Se propone que, si una organización decide priorizar la velocidad de desarrollo y la productividad a través de LLMs, esto requiere un cambio organizacional profundo, no solo un ajuste técnico. El autor argumenta que la responsabilidad y el rigor deben trasladarse del código generado por la IA, que se asemejaría a un lenguaje de bajo nivel, hacia las especificaciones y las pruebas automatizadas. Las especificaciones, escritas en un formato estandarizado como Markdown, se convertirían en la principal unidad de conocimiento y el foco de la revisión y la responsabilidad del equipo. Este enfoque implica eliminar el bucle humano en la revisión de cada línea de código, reducir la coordinación y la fricción, y redefinir roles para permitir decisiones autónomas. El objetivo es lograr ganancias de productividad significativas mediante la reestructuración de procesos y estructuras organizacionales para acomodar la generación de código a gran escala por parte de los LLMs, con las especificaciones y las pruebas como pilares de la calidad y la rigurosidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48233829,
+    "url": "https://mitander.xyz/posts/buildcraft-is-a-compiler-problem/",
+    "score": 18,
+    "time": 1779443448,
+    "titulo_es": "Compilación de Habilidades y Modificadores en Motores de ARPG",
+    "resumen": "El artículo describe un enfoque de diseño para motores de juegos ARPG, comparando la resolución de habilidades y modificadores con una tubería de compilador. El contenido autoral (habilidades, soportes, ítems, reglas) se trata como código fuente que emite 'hechos' (facts). Estos hechos son procesados a través de una serie de pases (passes) que los transforman en 'hechos en tiempo de ejecución' (runtime facts) o 'cachés derivados'. Este diseño evita que el código de combate tenga que evaluar complejas condiciones de composición de habilidades y soportes en tiempo de ejecución. Los soportes se definen como datos con un vocabulario limitado que emiten modificadores de estadísticas o cambios de comportamiento, en lugar de ejecutar código de juego directamente. Se enfatiza la importancia de la procedencia (provenance) de los modificadores para depuración y explicación, y la necesidad de manejar explícitamente la eliminación de hechos para evitar resultados obsoletos. La tubería mantiene el alcance (scope) explícito para distinguir entre reglas que afectan a una habilidad específica y aquellas con un alcance más amplio.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48234954,
+    "url": "https://andrewlock.net/exploring-the-dotnet-11-preview-2-dotnet-gets-union-types/",
+    "score": 203,
+    "time": 1779452930,
+    "titulo_es": "Explorando la vista previa de .NET 11 - Parte 2: Tipos Unión",
+    "resumen": "El artículo explora la nueva característica de tipos unión introducida en .NET 11 (C# 15). Los tipos unión, comunes en lenguajes de programación funcional, permiten que un tipo represente varios tipos de datos distintos. Se detalla cómo funcionan, incluyendo ejemplos como la implementación de los tipos Option<T> y Result<TSuccess, TError>, y cómo definirlos usando la palabra clave `union` para escenarios como la representación de diferentes sistemas operativos (Windows, Linux, macOS). Se explica el uso de expresiones `switch` para manejar los diferentes casos de un tipo unión, garantizando la exhaustividad y la seguridad en tiempo de compilación. Se mencionan los requisitos para usar esta característica, como la necesidad del SDK de .NET 11 y la posible inclusión de tipos auxiliares para versiones anteriores o SDKs de vista previa tempranos. La implementación subyacente se basa en atributos y interfaces generadas por el compilador.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48199314,
+    "url": "https://flowtwo.io/post/php%27s-oddities",
+    "score": 122,
+    "time": 1779223308,
+    "titulo_es": "Las peculiaridades de las estructuras de datos y el sistema de tipos de PHP",
+    "resumen": "El artículo explora dos aspectos problemáticos del lenguaje de programación PHP: su estructura de datos principal, el array, que funciona como un diccionario clave-valor y causa inconsistencias con las operaciones de indexación numérica natural, requiriendo `array_values()` para su corrección; y su sistema de tipos, añadido posteriormente a un lenguaje dinámico, que presenta un estado 'no inicializado' para las propiedades de las clases tipadas, a diferencia de las propiedades no tipadas que se inicializan a null. Estas características, según el autor, son poco intuitivas y propensas a generar errores.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48206543,
+    "url": "https://www.scientificamerican.com/article/new-high-resolution-map-transforms-what-we-know-about-roman-roads-and-the-roman-empire/",
+    "score": 79,
+    "time": 1779279751,
+    "titulo_es": "Nuevo mapa revela los caminos perdidos del Imperio Romano",
+    "resumen": "Un proyecto masivo de digitalización ha casi duplicado la extensión conocida de la primera red de carreteras a escala continental del Imperio Romano. Los investigadores han creado un mapa digital de alta resolución que combina datos históricos con mapas topográficos modernos y datos satelitales. Este mapa revela que la red de carreteras romanas, en su máxima extensión en el siglo II d.C., comprendía aproximadamente 300.000 kilómetros, duplicando la longitud previamente conocida. Sin embargo, la ubicación precisa de solo el 2,7% de estas carreteras es conocida, lo que destaca la vasta cantidad de infraestructura vial perdida que aún necesita ser mapeada. El artículo enfatiza la importancia de estas carreteras para la conquista, pacificación, transporte de alimentos y la difusión de personas, bienes, ideas y enfermedades a través del Imperio.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48238429,
-    "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
-    "score": 210,
-    "time": 1779468871,
-    "titulo_es": "Legisladores exigen respuestas a CISA tras la filtración de claves de AWS GovCloud y secretos internos en GitHub",
-    "resumen": "Un contratista con acceso administrativo en CISA expuso credenciales en texto plano de AWS GovCloud y decenas de sistemas internos de la agencia en un repositorio público de GitHub, habiendo desactivado deliberadamente las herramientas de prevención de fugas de secretos de la plataforma. Tras más de una semana de ser notificada, la agencia sigue batallando para invalidar las credenciales, incluyendo una clave privada RSA activa que otorga acceso total de lectura a los repositorios de código de la organización CISA-IT, la capacidad de secuestrar pipelines de CI/CD mediante ejecutores autohospedados y la modificación de políticas de protección de ramas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48214025,
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260519-00/?p=112339",
-    "score": 32,
-    "time": 1779310590,
-    "titulo_es": "El código de error 7 es ERROR_ARENA_TRASHED. ¿Qué significa esto?",
-    "resumen": "El artículo analiza el origen histórico del código de error 7 (ERROR_ARENA_TRASHED), heredado de MS-DOS. En este sistema operativo, la memoria se organizaba en bloques de tamaño variable precedidos por una estructura de control de 16 bytes denominada 'arena'. Si las firmas de verificación de estas estructuras (0x4D o 0x5A, que corresponden a las iniciales de Mark Zbikowski) se corrompían, el sistema determinaba que las arenas estaban dañadas, retornando dicho error. Aunque es un código vestigial que no utiliza el kernel de Win32, se emplea habitualmente en pruebas de software para simular fallos de corrupción interna y sirve para identificar sitios web de soporte fraudulentos que ofrecen soluciones falsas para repararlo.",
-    "categoria": "Desarrollo de Software"
+    "id": 48246889,
+    "url": "https://horace.io/brrr_intro.html",
+    "score": 172,
+    "time": 1779537022,
+    "titulo_es": "Optimización del Rendimiento de Modelos de Deep Learning: Principios Fundamentales",
+    "resumen": "El artículo aborda la optimización del rendimiento en modelos de deep learning, proponiendo un enfoque basado en principios fundamentales en lugar de un conjunto de trucos ad hoc. Se descompone la eficiencia de un sistema de deep learning en tres componentes principales: cómputo (compute), ancho de banda de memoria (memory bandwidth) y sobrecarga (overhead). El objetivo principal es maximizar el tiempo que el sistema pasa en el régimen de cómputo, aprovechando al máximo las capacidades de hardware especializado como las Tensor Cores de las GPUs, que están optimizadas para multiplicaciones de matrices. Se argumenta que el crecimiento en la capacidad de cómputo supera al del ancho de banda de memoria, lo que hace cada vez más crucial entender los cuellos de botella del sistema. Si el sistema está limitado por la transferencia de memoria, aumentar la capacidad de cómputo no será beneficioso, y viceversa, si está limitado por el cómputo intensivo, optimizar la sobrecarga no aportará mejoras significativas. Los operadores que no son multiplicaciones de matrices (como capas de normalización o funciones de activación) se consideran \"errores de redondeo\" en términos de FLOPs en comparación con las operaciones de multiplicación de matrices.",
+    "categoria": "IA"
   },
   {
     "id": 48245362,
     "url": "https://torrentfreak.com/spanish-court-declines-to-fine-nordvpn-over-laliga-piracy-blocking-order/",
-    "score": 60,
+    "score": 163,
     "time": 1779519289,
-    "titulo_es": "Tribunal español rechaza sancionar a NordVPN por no bloquear retransmisiones piratas de fútbol",
-    "resumen": "El Juzgado de lo Mercantil de Córdoba ha desestimado la solicitud de LaLiga de imponer multas coercitivas a NordVPN por no cumplir plenamente con una orden judicial de bloqueo dinámico de IPs. El proveedor de VPN argumentó con éxito la inviabilidad técnica de la medida, demostrando que las IPs cambian en cuestión de horas y que el bloqueo a nivel de IP (IP-level blocking) generaría un sobrebloqueo colateral, afectando a miles de servicios legítimos y plataformas como GitHub, Cloudflare y Docker. Aunque el proceso principal continúa, la resolución reconoce la validez del conflicto técnico y la falta de proporcionalidad de las medidas de bloqueo indiscriminado en la red.",
+    "titulo_es": "Tribunal español rechaza multas contra NordVPN por bloqueo de streams piratas, citando disputas técnicas",
+    "resumen": "Un tribunal comercial en Córdoba, España, ha rechazado la solicitud de LaLiga para imponer multas coercitivas a NordVPN y ProtonVPN por supuestamente incumplir una orden judicial de febrero que les exigía bloquear transmisiones piratas de fútbol. NordVPN argumentó con éxito que la orden, emitida sin que las empresas fueran escuchadas, presentaba desafíos técnicos insuperables. Específicamente, la compañía demostró que las direcciones IP objetivo cambiaban con tanta frecuencia que las listas proporcionadas quedaban obsoletas rápidamente, haciendo inefectivo el bloqueo. Además, NordVPN presentó evidencia de que un bloqueo a nivel de IP a gran escala habría resultado en un \"overblocking\" masivo, afectando a miles de sitios web legítimos. El tribunal aceptó estas objeciones técnicas como relevantes, indicando que las pruebas de NordVPN merecían \"la misma consideración\" que las de LaLiga, aunque detuvo las multas sin pronunciarse sobre el fondo del asunto. La orden original de bloqueo sigue vigente y el caso principal está pendiente, pero la decisión subraya las complejidades técnicas de implementar bloqueos de IP y el riesgo de impactos colaterales en servicios legítimos. Paralelamente, ha surgido un movimiento más amplio en España, incluyendo una moción parlamentaria no vinculante, para reformar la Ley de Servicios Digitales e introducir un principio de \"proporcionalidad tecnológica\" para mitigar el overblocking.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48234380,
-    "url": "https://deno.com/blog/v2.8",
-    "score": 361,
-    "time": 1779449010,
-    "titulo_es": "Lanzamiento de Deno 2.8",
-    "resumen": "La versión 2.8 de Deno introduce características clave para optimizar el flujo de trabajo de desarrollo y despliegue. Destacan el nuevo comando 'deno audit fix' para resolver automáticamente vulnerabilidades en dependencias de npm; 'deno bump-version' para automatizar el versionado semántico en espacios de trabajo usando Conventional Commits; 'deno ci' para garantizar instalaciones reproducibles y congeladas en entornos de integración continua; y 'deno pack', que compila proyectos Deno/JSR directamente en tarballs compatibles y publicables en npm. Además, se añade 'deno transpile' para la transpilación directa de TypeScript a JavaScript sin empaquetado, y 'deno why' para analizar el árbol de dependencias.",
+    "id": 48228106,
+    "url": "https://uvic-aurora.github.io/acav-manual/index.html",
+    "score": 38,
+    "time": 1779393231,
+    "titulo_es": "ACAV: Visor Interactivo de Árboles de Sintaxis Abstracta para C/C++/Objective-C",
+    "resumen": "ACAV (Aurora Clang AST Viewer) es una herramienta de visualización interactiva de Árboles de Sintaxis Abstracta (AST) para C, C++ y Objective-C, construida con Clang y Qt. Permite a los usuarios abrir proyectos reales, inspeccionar el AST de una unidad de traducción a partir de una base de datos de compilación JSON (como compile_commands.json), y navegar fluidamente entre el código fuente y los nodos del AST. Diseñada para bases de código complejas, ACAV mantiene la interfaz responsiva mediante procesamiento en segundo plano y caché de AST. Es útil para estudiantes de compiladores, investigadores de estructura de programas y desarrolladores de herramientas basadas en Clang. Su funcionalidad se limita a la exploración de AST de solo lectura.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48234090,
-    "url": "https://modelrift.com/blog/openscad-llm-benchmark/",
-    "score": 387,
-    "time": 1779446306,
-    "titulo_es": "Una comparativa práctica de rendimiento de LLMs en OpenSCAD: evaluando Codex, Claude, Cursor, Google y ModelRift con el modelo del Panteón",
-    "resumen": "Evaluación comparativa de diversos modelos de lenguaje (LLM) en la generación de código CAD paramétrico mediante OpenSCAD. El benchmark utiliza la reconstrucción arquitectónica del Panteón para medir la capacidad de las IA al interpretar referencias visuales y traducirlas a operaciones geométricas complejas, simetría radial y transformaciones espaciales directamente en formato de código.",
-    "categoria": "IA"
+    "id": 48252146,
+    "url": "https://www.c82.net/euclid/",
+    "score": 47,
+    "time": 1779574776,
+    "titulo_es": "Los primeros seis libros de Los Elementos de Euclides con diagramas y símbolos coloreados",
+    "resumen": "El artículo describe una reproducción interactiva del trabajo de Oliver Byrne de 1847 sobre 'Los Elementos de Euclides', destacando sus diagramas y símbolos coloreados. Incluye información sobre la publicación original, el proceso de diseño del sitio web (incluyendo diseño, tipografía) y la disponibilidad de posters y puzzles basados en las ilustraciones geométricas.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48213529,
-    "url": "https://modrinth.com/mod/waylandcraft",
-    "score": 215,
-    "time": 1779308386,
-    "titulo_es": "Compositor Wayland en Minecraft",
-    "resumen": "Este mod integra un compositor Wayland completamente funcional dentro de Minecraft, permitiendo a los usuarios ejecutar aplicaciones nativas de Linux y gestionar ventanas interactivas directamente dentro del mundo de juego. El sistema soporta arrastrar y soltar datos entre ventanas y anclar un reproductor de video a la interfaz de usuario (HUD). Debido a su arquitectura técnica, requiere obligatoriamente un sistema operativo Linux para funcionar.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48239413,
-    "url": "https://www.kanbots.dev/",
-    "score": 220,
-    "time": 1779473877,
-    "titulo_es": "Kanbots: Tablero Kanban y orquestador local para agentes de IA en desarrollo de software",
-    "resumen": "Kanbots es una herramienta local-first y de código abierto que introduce un tablero Kanban para coordinar y despachar agentes de IA (como Claude Code y Codex) en proyectos de desarrollo de software. Permite ejecutar múltiples agentes en paralelo, cada uno en su propio 'git worktree', interactuar con diversos roles o 'personas' (desarrollador, tester, revisor), y controlar detalladamente los costes de ejecución. Los datos se almacenan de manera local en SQLite y es compatible con el protocolo MCP (Model Context Protocol) para integrarse con Cursor o Claude Desktop.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48206313,
-    "url": "https://bumbershootsoft.wordpress.com/2026/05/09/comparing-an-lz4-decompressor-on-four-legacy-cpus/",
-    "score": 70,
-    "time": 1779278304,
-    "titulo_es": "Implementación del algoritmo de compresión LZ4 en CPUs de 8 y 16 bits",
-    "resumen": "El artículo analiza detalladamente la implementación y optimización del algoritmo de descompresión LZ4 en diversas arquitecturas de microprocesadores de 8 y 16 bits (como Z80, 8080, x86, 6502, 6809 y 68000). Explica el funcionamiento del formato de bloques de LZ4, el cual estructura el flujo de datos comprimidos alternando entre cadenas de literales y referencias hacia atrás, y detalla cómo se gestionan de manera eficiente las limitaciones de memoria y los cálculos de longitud de secuencias en hardware clásico.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48236887,
-    "url": "https://robida.net/entries/2026/05/21/a-forth-inspired-language-for-writing-websites",
-    "score": 146,
-    "time": 1779462050,
-    "titulo_es": "Forge: Desarrollo web con un lenguaje basado en pila",
-    "resumen": "El autor presenta 'Forge', un lenguaje de programación experimental basado en pila (estilo Forth) para crear sitios web. Forge utiliza un compilador de WebAssembly para generar HTML a partir de archivos con extensión '.forge'. El sistema implementa una arquitectura híbrida: realiza renderizado en el servidor (SSR) para crawlers, mientras que un Service Worker en el navegador intercepta las solicitudes de red para compilar el código en el cliente y ofrecer una experiencia de aplicación de una sola página (SPA). También incluye soporte para persistencia de datos en el cliente y un registro de backend basado en JSONL de tipo 'append-only'.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48210041,
-    "url": "https://arcbrush.com/",
-    "score": 6,
-    "time": 1779293475,
-    "titulo_es": "ArcBrush: Editor de Imágenes Basado en Nodos para Producción de Arte Automatizada",
-    "resumen": "ArcBrush es una aplicación de escritorio nativa en C++ para Windows, macOS y Linux, diseñada para artistas que buscan automatizar la creación de variantes de activos visuales. Utiliza un paradigma de flujo de trabajo basado en nodos, similar a herramientas de VFX y 3D como Houdini o Blender, para construir pipelines de procesamiento de imágenes no destructivas. Permite definir un grafo de nodos para realizar operaciones como carga de imágenes, aplicación de filtros, manipulación de color, pixelación, difuminado y generación procedural. Una característica clave es la capacidad de generar automáticamente múltiples variantes de color y formato de un activo base, a partir de una única configuración de grafo. Soporta remapeo de paletas de colores, extracción de paletas de imágenes de referencia, y generación de hojas de sprites con manifiestos compatibles con TexturePacker. También integra capacidades de IA para la edición y completado de imágenes, permitiendo iterar sobre estilos y composiciones. El sistema de conexiones tipificadas asegura la compatibilidad entre nodos, y todos los parámetros permanecen en vivo, permitiendo ajustes y reevaluaciones instantáneas sin volver a procesar todo desde cero. La aplicación está dirigida a artistas de juegos, pixel art, ilustradores, artistas conceptuales y diseñadores que desean eliminar tareas repetitivas de exportación y gestión de variantes.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48209055,
-    "url": "https://www.jeffgeerling.com/blog/2026/wi-wi-is-wireless-time-sync-less-than-5ns/",
-    "score": 123,
-    "time": 1779289591,
-    "titulo_es": "Wi-Wi STAMP: Protocolo de Sincronización de Tiempo Inalámbrico con Precisión de Picosegundos",
-    "resumen": "El artículo describe Wi-Wi STAMP, un protocolo de sincronización de tiempo inalámbrico desarrollado en Japón por NICT. Utiliza la banda de 900 MHz para lograr sincronización de tiempo a nivel de picosegundos y precisión de distancia a nivel de milímetros, integrado en un dispositivo del tamaño de un smartphone. Los prototipos actuales exhiben un jitter de sincronización de fase de 20ps y sincronización de tiempo de hasta 30ns, con planes de alcanzar 5ns en la próxima generación. Se destacan aplicaciones prácticas como el seguimiento de posición en tiempo real y la penetración de señal mejorada en interiores o en lugares donde el cableado es costoso, en comparación con GNSS. El sistema opera en la banda de 920 MHz en Norteamérica y tiene un alcance inalámbrico de 0.2-5 km. La tecnología es relevante para la industria de la radiodifusión, que está adoptando estándares como SMPTE 2110, Ravenna, Livewire y AES67, requiriendo sincronización de tiempo de nivel de nanosegundos. Se menciona la integración con Meinberg microSync XS para la conversión a señales black burst. La principal limitación para la sincronización de alta precisión en redes Wi-Fi convencionales se atribuye a los osciladores.",
+    "id": 48242959,
+    "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-starship-v3-megarocket-first-test-flight",
+    "score": 405,
+    "time": 1779493315,
+    "titulo_es": "El cohete Starship V3 de SpaceX realiza su primer vuelo de prueba suborbital",
+    "resumen": "El artículo detalla el lanzamiento y vuelo de prueba suborbital del Starship V3 de SpaceX, la versión más reciente y rediseñada de su cohete. El lanzamiento ocurrió el viernes 22 de mayo desde Starbase, Texas. A pesar de que un motor Raptor del Super Heavy (primera etapa) y un motor de la nave superior (Ship 39) fallaron durante el ascenso, la misión logró alcanzar el espacio y alcanzar una trayectoria prevista. Se destaca la nueva tecnología de 'hot staging' y un rediseño del interstage en la V3, así como el cambio en la estrategia de recuperación del booster Super Heavy, planeado para amerizar en el Golfo de México en lugar de intentar una recuperación en tierra para este primer vuelo con hardware nuevo. Elon Musk calificó el evento como un 'gol para la humanidad'.",
     "categoria": "Hardware"
   },
   {
-    "id": 48236501,
-    "url": "https://www.cringely.com/2026/05/21/im-writing-again/",
-    "score": 144,
-    "time": 1779460587,
-    "titulo_es": "Volviendo a escribir sobre IA y una alternativa arquitectónica",
-    "resumen": "El autor regresa después de una pausa de tres años para escribir sobre su experiencia fundando 2Brains, una empresa centrada en IA. Señala que la industria de la IA está realizando una inversión masiva en una dirección que podría ser errónea y adelanta que presentará una alternativa arquitectónica patentada y desarrollada por su empresa. El texto también incluye comentarios de lectores, algunos expresando gratitud por su regreso y otros mostrando escepticismo sobre la última 'moda' de la IA, cuestionando la veracidad de algunas afirmaciones del autor respecto a la fundación de 2Brains y sus publicaciones recientes.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48239862,
-    "url": "https://security.apple.com/blog/formal-verification-corecrypto/",
-    "score": 98,
-    "time": 1779475937,
-    "titulo_es": "Apple publica sus implementaciones criptográficas seguras cuánticamente y sus métodos de verificación formal",
-    "resumen": "Apple ha lanzado corecrypto, una biblioteca de criptografía de alta seguridad, publicando sus implementaciones de los algoritmos de criptografía segura cuánticamente ML-KEM y ML-DSA (estandarizados como FIPS 203 y FIPS 204). Este lanzamiento incluye las pruebas formales y las herramientas de verificación que aseguran la corrección matemática de estas implementaciones, garantizando su fidelidad a las especificaciones. La motivación principal es proteger a los usuarios de futuras amenazas de computadoras cuánticas. Corecrypto, utilizado en más de 2.5 mil millones de dispositivos Apple para cifrado, hashing, generación de números aleatorios y firmas digitales, ha sido desarrollado con rigurosos métodos de verificación formal para asegurar su alta fiabilidad. Las implementaciones de ML-KEM y ML-DSA se realizaron inicialmente en C portátil, con optimizaciones específicas para los procesadores Apple Silicon, prestando especial atención a la prevención de fugas de información a través de canales de microarquitectura (como DIT y PAC) y exploits de corrupción de memoria. Apple busca avanzar en el estado del arte de la verificación de software crítico, permitiendo la evaluación independiente por expertos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48238789,
-    "url": "https://github.com/yt-dlp/yt-dlp/issues/16766",
-    "score": 490,
-    "time": 1779470652,
-    "titulo_es": "yt-dlp limita y depreca el soporte para Bun como runtime de JavaScript",
-    "resumen": "El proyecto yt-dlp está restringiendo y eventualmente eliminando el soporte para Bun, un runtime de JavaScript, debido a problemas de compatibilidad y seguridad. Específicamente, a partir de la próxima versión, solo se admitirán las versiones de Bun entre 1.2.11 y 1.3.14. La versión mínima se eleva desde 1.0.31 a 1.2.11 para mitigar riesgos de seguridad relacionados con el manejo del lockfile del paquete ejs, y para asegurar que la suite de pruebas de ejs pueda ejecutarse. La versión máxima se establece en 1.3.14, que es la última compilada desde la base de código original de zig. La razón principal para la deprecación es la reescritura de Bun en Rust y la percepción de un desarrollo \"vibe-coded\" que genera preocupaciones sobre mantenimiento futuro. El soporte para Bun se considera obsoleto, lo que significa que se mantendrá para el rango limitado mientras no sea una carga excesiva, pero se reserva el derecho a eliminarlo por completo.",
+    "id": 48225782,
+    "url": "https://devblogs.microsoft.com/dotnet/improving-csharp-memory-safety/",
+    "score": 154,
+    "time": 1779382488,
+    "titulo_es": "Rediseño del contexto 'unsafe' en C# para mejorar la seguridad de la memoria",
+    "resumen": "El artículo describe la próxima evolución del modificador `unsafe` en C# (prevista para C# 16, .NET 11/12) que transformará su semántica de marcar sintaxis a marcar un contrato de seguridad explícito. El `unsafe` rediseñado abarcará cualquier interacción con la memoria que el compilador no pueda validar, requiriendo que los desarrolladores documenten y cumplan explícitamente las obligaciones de seguridad. Esto aumenta la visibilidad y revisión de las transiciones entre código seguro e inseguro, similar a las implementaciones de Rust y Swift. El objetivo es mejorar la seguridad de la memoria, especialmente relevante ante el aumento de la generación de código asistida por IA y la necesidad de estándares de cadena de suministro más robustos. El nuevo modelo será opt-in inicialmente, con el potencial de convertirse en el predeterminado en futuras versiones, y se aplicará de manera uniforme en las bibliotecas del runtime de .NET.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48243293,
-    "url": "https://www.pcmag.com/news/kash-patels-apparel-site-is-trying-to-trick-visitors-into-installing-malware",
-    "score": 151,
-    "time": 1779496465,
-    "titulo_es": "Sitio de la marca del director del FBI Kash Patel sufre ataque 'ClickFix' en Macs",
-    "resumen": "El sitio web de la marca de ropa BasedApparel.com, cofundada por el director del FBI Kash Patel, ha sido comprometido para ejecutar un ataque 'ClickFix' dirigido a usuarios de macOS. El ataque engaña a los usuarios para que ejecuten un comando malicioso aparentemente inofensivo a través de la utilidad Terminal de macOS. El sitio web muestra una página falsa de Cloudflare que simula una verificación de 'No soy un robot', instando al usuario a copiar y pegar un comando. En realidad, el comando copiado es un script ofuscado que, al ejecutarse, descarga y ejecuta un payload malicioso. Este payload, identificado como un troyano y ladrón de información, roba credenciales de navegadores basados en Chromium y datos de billeteras de criptomonedas, empaquetándolos en un archivo ZIP y enviándolos a un dominio controlado por el atacante. El ataque aprovecha vulnerabilidades en la gestión del sitio o sus plugins, y es una táctica común de 'ClickFix' que ha persistido en los últimos años. Apple ha implementado salvaguardas en versiones recientes de macOS para alertar sobre la ejecución de comandos copiados y pegados en Terminal.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48236770,
-    "url": "https://github.com/superset-sh/superset",
-    "score": 94,
-    "time": 1779461635,
-    "titulo_es": "Superset: Orquestador de Agentes de Codificación CLI para la Era de los Editores de IA",
-    "resumen": "Superset es una herramienta de desarrollo de software diseñada para orquestar y ejecutar múltiples agentes de codificación basados en CLI (como Claude Code, Codex, etc.) en paralelo dentro de entornos de desarrollo local aislados y basados en worktrees de Git. Facilita el desarrollo iterativo al integrar flujos de trabajo de terminal, revisión y apertura en editores. Es compatible con cualquier agente CLI y está construido para desarrolladores que trabajan localmente, permitiendo configurar la preparación y el desmantelamiento del espacio de trabajo a través de `.superset/config.json`. La herramienta también incluye la configuración de un proxy inverso Caddy para flujos de Electric SQL y permite personalización de atajos de teclado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48240679,
-    "url": "https://github.blog/changelog/2026-05-22-staged-publishing-and-new-install-time-controls-for-npm/",
-    "score": 48,
-    "time": 1779479397,
-    "titulo_es": "Mejoras en la Seguridad de la Cadena de Suministro para npm: Publicación Escalonada y Control de Fuentes de Instalación",
-    "resumen": "npm ha lanzado dos actualizaciones significativas enfocadas en la seguridad de la cadena de suministro, disponibles en npm CLI 11.15.0 y posteriores. La 'Publicación Escalonada' (Staged Publishing) ahora es generalmente disponible, introduciendo un proceso de aprobación manual antes de que una versión de paquete se haga pública. Esto requiere la intervención de un mantenedor con autenticación de dos factores (2FA) para validar la versión precompilada subida a una cola de espera, reforzando la prueba de presencia y la seguridad incluso en flujos CI/CD no interactivos o con publicación confiable (OIDC). Se recomienda combinar la publicación escalonada con la publicación confiable, limitando la configuración de OIDC a 'stage-only' para que los `npm publish` directos sean rechazados, aceptando solo `npm stage publish`. La aprobación puede realizarse desde npmjs.com o la CLI, siendo el escenario de mayor valor la aprobación desde un dispositivo confiable después de un despliegue CI. Para mitigar riesgos en la instalación de dependencias, se han introducido tres nuevas banderas: `--allow-file`, `--allow-remote`, y `--allow-directory`, que permiten un control explícito sobre las fuentes de instalación no registradas. Cada bandera soporta los valores 'all' (el comportamiento actual por defecto) o 'none', y pueden configurarse en `.npmrc` o `package.json`. A partir de la versión mayor 12 de la CLI, la bandera `--allow-git` cambiará su valor por defecto de 'all' a 'none'. Estas mejoras buscan ofrecer a los desarrolladores un control más granular y robusto sobre la seguridad en los procesos de publicación e instalación de paquetes.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48207043,
-    "url": "https://spader.zone/sp/",
-    "score": 106,
-    "time": 1779282346,
-    "titulo_es": "sp.h: Una biblioteca estándar de C moderna y portátil centrada en primitivas de bajo nivel",
-    "resumen": "El artículo presenta sp.h, una biblioteca estándar de C de alta calidad y ultraportátil escrita en C99, compuesta por un solo archivo de cabecera. Su filosofía principal es interactuar directamente con las primitivas de más bajo nivel del sistema operativo, en lugar de depender de las abstracciones a menudo obsoletas de libc. sp.h rechaza interfaces como FILE* y las cadenas terminadas en nulo, proponiendo en su lugar punteros y longitudes como la unidad fundamental de E/S y manejo de cadenas (sp_str_t). Esto permite un manejo de memoria más directo, donde el programa es el propietario de la memoria y los asignadores se convierten en una abstracción explícita y optativa, en lugar del modelo de heap predeterminado de malloc. La biblioteca se enfoca en la ergonomía y el rendimiento al evitar copias innecesarias de datos, permitiendo que el código C se asemeje a lenguajes de alto nivel en legibilidad sin sacrificar la eficiencia. Está diseñada para ser legible, modificable y adaptable, unificando la funcionalidad sobre primitivas claras y verdaderas del sistema, a diferencia de las abstracciones que ocultan el sistema operativo subyacente. sp.h compila con cualquier compilador y libc, funcionando en diversas plataformas como Linux.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48231319,
-    "url": "https://www.mathworks.com/company/aboutus/founders/clevemoler.html",
-    "score": 282,
-    "time": 1779417354,
-    "titulo_es": "Fallecimiento de Cleve Moler, Co-fundador de MathWorks y Creador de MATLAB",
-    "resumen": "El artículo conmemora el fallecimiento de Cleve Moler, una figura fundamental en la computación numérica. Moler fue co-fundador de MathWorks y autor de la primera versión de MATLAB, una herramienta ampliamente utilizada en ciencia e ingeniería. Sus contribuciones iniciales incluyeron las bibliotecas Fortran LINPACK y EISPACK, cruciales para la computación numérica. También fue autor de libros influyentes sobre métodos numéricos y MATLAB. Su trabajo facilitó el desarrollo, análisis y aplicación de algoritmos matemáticos avanzados, democratizando el acceso a métodos computacionales complejos. Moler desempeñó un papel clave en el fomento de la comunidad de computación numérica, inspirando a generaciones de investigadores y profesionales. Su legado se reconoce a través de prestigiosos premios y membresías en academias nacionales.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48241172,
-    "url": "https://github.com/anomalyco/models.dev",
-    "score": 139,
-    "time": 1779481567,
-    "titulo_es": "Models.dev: Una Base de Datos de Modelos de IA de Código Abierto",
-    "resumen": "Models.dev es una base de datos comunitaria de código abierto diseñada para recopilar especificaciones, precios y capacidades de modelos de IA. El proyecto aborda la falta de un repositorio centralizado para esta información, utilizándolo internamente en opencode y proporcionando acceso a través de una API RESTful. Los datos se almacenan en archivos TOML dentro de un repositorio Git, organizados por proveedor y modelo, con metadatos adicionales como logos SVG. Se detalla el proceso de contribución para añadir nuevos proveedores o modelos, incluyendo la estructura de directorios, la definición de archivos `provider.toml` y `model.toml`, y el uso del campo `extends` para modelos tipo wrapper o espejo. Se enfatiza la validación automática de las contribuciones mediante GitHub Actions contra un esquema definido en `packages/core/src/schema.ts`. Se menciona la necesidad de tener Bun instalado para operar localmente y se proporcionan enlaces a la comunidad y recursos relacionados.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48231938,
-    "url": "https://slumber.lucaspickering.me",
-    "score": 179,
-    "time": 1779424163,
-    "titulo_es": "Slumber: Un Cliente HTTP Basado en Terminal",
-    "resumen": "Slumber es una herramienta de cliente HTTP para terminales, diseñada para interactuar con APIs REST y otros servicios HTTP. Ofrece dos modos de uso: una Interfaz de Usuario de Terminal (TUI) para interacciones interactivas y envío/visualización de solicitudes y respuestas, y una Interfaz de Línea de Comandos (CLI) para solicitudes rápidas y scripting. Su objetivo principal es la facilidad de uso, configurabilidad y compartición a través de un archivo de configuración YAML llamado 'request collection', compartido entre ambos modos. Se enfoca en la experiencia del desarrollador para consumir servicios HTTP.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48237663,
-    "url": "https://api-docs.deepseek.com/quick_start/pricing",
-    "score": 387,
-    "time": 1779465566,
-    "titulo_es": "Precios y consideraciones de modelos de DeepSeek",
-    "resumen": "Este artículo detalla la estructura de precios para el uso de modelos de lenguaje de DeepSeek, facturando por unidad de 1 millón de tokens (entrada y salida combinadas). Se mencionan depreciaciones futuras para los modelos deepseek-chat y deepseek-reasoner, que se mapearán a los modos 'no-pensamiento' y 'pensamiento' de deepseek-v4-flash, respectivamente. Se aplican ajustes de precios significativos: la caché de entrada para todos los modelos se reduce a 1/10 de su precio de lanzamiento a partir del 26/04/2026. Además, el modelo deepseek-v4-pro tendrá su precio de API ajustado a 1/4 del original una vez finalizada una promoción del 75% de descuento el 31/05/2026. Se indica que el gasto se calcula como el número de tokens multiplicado por el precio, y se prioriza el uso del saldo otorgado sobre el saldo recargado para la deducción. Se advierte que los precios pueden variar y se recomienda a los usuarios monitorear la página para obtener información actualizada y gestionar sus recargas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48239023,
-    "url": "https://github.com/razetime/ngn-k-tutorial/blob/main/12-thinking-in-k.md",
-    "score": 92,
-    "time": 1779471773,
-    "titulo_es": "Multiplicación de Matrices en K: De lo Imperativo a lo Declarativo",
-    "resumen": "El artículo describe el proceso de optimización y refactorización de un algoritmo de multiplicación de matrices escrito en K, un lenguaje de programación de arrays. Inicialmente, se presenta una traducción directa e imperativa del algoritmo, identificando sus ineficiencias. Luego, se detalla un proceso paso a paso para simplificar el código, eliminando bucles anidados y variables globales mediante el uso de operaciones de K como folds (/) y 'each' ('). Finalmente, se llega a una implementación más concisa y declarativa, eliminando la necesidad de transposición explícita y transformándola en una función tácita, demostrando los principios de la programación de arrays para escribir código más elegante y eficiente.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48234287,
-    "url": "https://github.com/unprovable/ShadowCat",
-    "score": 145,
-    "time": 1779448303,
-    "titulo_es": "Transferencia de archivos óptica de un solo archivo a través de un navegador para dispositivos antiguos",
-    "resumen": "El artículo describe una solución de software para transferir datos entre dispositivos antiguos que carecen de conectividad moderna (BLE, NFC) pero conservan cámaras y navegadores funcionales. Se implementa como una página HTML independiente que utiliza códigos QR para la transferencia de datos, permitiendo la comunicación a través de un navegador web. La solución se enfoca en la transferencia de archivos mediante técnicas ópticas y de navegador.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48245087,
-    "url": "https://www.guru3d.com/story/nvidia-removes-gaming-revenue-category-from-financial-reports/",
-    "score": 21,
-    "time": 1779515428,
-    "titulo_es": "NVIDIA Integra Gaming en Informática de Borde para Enfocarse en IA y Computación Acelerada",
-    "resumen": "NVIDIA ha reestructurado su modelo de informes financieros, integrando la categoría de 'Gaming' (que previamente cubría GPUs de escritorio, laptops y gráficos para estaciones de trabajo) dentro de 'Edge Computing'. Esta decisión estratégica señala un cambio en el enfoque de la compañía, pasando de ser principalmente un fabricante de GPUs para gaming a una empresa líder en computación acelerada e inteligencia artificial. Si bien los productos GeForce y el hardware para gaming continúan siendo importantes y reciben actualizaciones, NVIDIA ya no los presenta como el principal motor de crecimiento. En su lugar, la compañía enfatiza cómo sus tecnologías, incluyendo CUDA, Tensor Cores y RTX, se aplican cada vez más a cargas de trabajo de IA, como inferencia, generación de contenido y aprendizaje automático en PCs y dispositivos de borde. La convergencia del hardware de gaming con las necesidades de la IA, y el uso compartido de ecosistemas tecnológicos y de software en diversos mercados (robótica, automotriz, IA PCs, borde), han impulsado esta consolidación. La redefinición refleja la evolución de NVIDIA hacia una identidad centrada en la IA y la computación de alto rendimiento, donde el gaming es ahora un componente dentro de una estrategia más amplia de IA en el borde y computación acelerada.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48227860,
-    "url": "https://veroniiiica.com/using-kagi-search-with-low-vision/",
-    "score": 256,
-    "time": 1779391936,
-    "titulo_es": "Kagi Search: Una Alternativa Enfocada en el Usuario para Personas con Baja Visión",
-    "resumen": "El artículo detalla la experiencia de un usuario con baja visión al utilizar Kagi Search, un motor de búsqueda de pago, en contraste con los motores de búsqueda gratuitos plagados de desorden visual, anuncios y contenido de baja calidad. Se destaca cómo Kagi, al ser financiado por suscripciones, ofrece una experiencia libre de anuncios, con resultados clasificados por calidad y no por SEO. Se enfatizan sus características de personalización, como la capacidad de bloquear o priorizar sitios web, la opción de ocultar resúmenes de IA por defecto y la integración de contenido del 'small web' (blogs, foros, etc.). Estas características, junto con su diseño limpio y la ausencia de elementos distractores como auto-play de medios, mejoran significativamente la accesibilidad y la usabilidad para usuarios con baja visión, facilitando la navegación y la concentración en la información relevante. Se menciona la política de precios justos de Kagi, que ajusta o acredita el costo según el uso.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48234252,
-    "url": "http://muratbuffalo.blogspot.com/2026/05/chess-invariants.html",
-    "score": 95,
-    "time": 1779448012,
-    "titulo_es": "Sobre sistemas distribuidos en general y otras curiosidades",
-    "resumen": "El artículo utiliza el ajedrez como un modelo para ilustrar conceptos de sistemas distribuidos, centrándose en la derivación de invariantes. Se desglosan las reglas del ajedrez en términos de estados y transiciones, identificando invariantes de estado (que siempre deben ser verdaderos para un estado dado, como `OneKingPerColor`, `TurnParity`) e invariantes de transición (que relacionan estados consecutivos, como `MoveCountStrictlyIncreases`, `SingleCapturePerMove`, `ExactlyTwoSquaresChange`). Se discute cómo ciertos movimientos de ajedrez (enroque, captura al paso) violan estos invariantes, destacando la importancia del modelado formal y la identificación de propiedades inmutables en sistemas concurrentes. El artículo también menciona aspectos históricos del ajedrez relacionados con las reglas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48238887,
-    "url": "https://github.com/DataIntellectTech/TorQ",
-    "score": 30,
-    "time": 1779471077,
-    "titulo_es": "Framework de Producción para kdb+",
-    "resumen": "El artículo describe un framework de producción para kdb+, diseñado para sentar las bases de sistemas kdb+ en entornos de producción. Implementa funcionalidades y utilidades centrales sobre kdb+ para que los desarrolladores se enfoquen en la lógica de negocio. El framework prioriza las mejores prácticas, con énfasis en el rendimiento, la gestión de procesos, la información diagnóstica, la mantenibilidad y la extensibilidad. Se promueve el uso de código contribuido y se desaconseja la reinvención de la rueda. Es adecuado para crear nuevos sistemas kdb+ desde cero o para extender sistemas existentes. Se detallan instrucciones para iniciar un proceso dentro del framework, incluyendo la configuración de variables de entorno y el uso de flags como `-debug` y `-load`. También se explican los pasos para desplegar la documentación del sitio web utilizando `mkdocs`. Se mencionan licencias de terceros como Apache 2.0 y OpenLDAP. El artículo dirige a los usuarios a la documentación oficial (GitHub-Pages y una URL específica), un grupo de Google para discusiones y a 'Starter Packs' para una implementación rápida.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48245728,
-    "url": "https://codecrafters.io/blog/pausing-new-challenges",
+    "id": 48250198,
+    "url": "https://github.com/DamRsn/NeuralNote",
     "score": 23,
-    "time": 1779523072,
-    "titulo_es": "CodeCrafters: El Fin de una Era para la Plataforma de Práctica de Ingeniería de Software",
-    "resumen": "El artículo anuncia la pausa en el desarrollo de nuevos desafíos en CodeCrafters, una plataforma de práctica para ingenieros con experiencia que alcanzó gran popularidad, incluyendo el primer puesto en GitHub con más de medio millón de estrellas y más de 400,000 usuarios. A pesar del éxito en la comunidad y el impacto positivo en la confianza y el desarrollo profesional de los ingenieros, los co-fundadores Sarup y Paul revelan la incapacidad de convertir la plataforma en un negocio sostenible que justifique la inversión de tiempo, energía y capital. Se experimentaron diversas estrategias de monetización y crecimiento, pero la brecha entre la adopción por parte de los usuarios y la rentabilidad a escala de startup resultó insuperable. El mantenimiento de la plataforma y el soporte a los clientes continuarán bajo la dirección de Andy Li, Head of Developer Success. Los fundadores exploran la posibilidad de que CodeCrafters encuentre un nuevo hogar en una empresa con una audiencia de ingenieros y agradecen profundamente a la comunidad por su apoyo a lo largo de los años, destacando la experiencia como una de las más significativas de sus carreras.",
-    "categoria": "Desarrollo de Software"
+    "time": 1779562261,
+    "titulo_es": "NeuralNote: Plugin de Audio a MIDI con Inteligencia Artificial",
+    "resumen": "NeuralNote es un plugin de audio para estaciones de trabajo de audio digital (DAW) que utiliza inteligencia artificial para convertir audio en datos MIDI. Emplea el modelo 'basic-pitch' de Spotify, ejecutado a través de RTNeural (para redes neuronales convolucionales) y ONNXRuntime (para procesamiento de características como la Transformada Constant-Q y el apilamiento armónico). El software es de código abierto bajo licencia Apache-2.0 y está disponible para Windows, macOS y Linux. Se proporciona información detallada sobre la instalación, compilación (requiriendo Git, CMake y un compilador) y la arquitectura interna, incluyendo la división del modelo CNN en partes secuenciales. El código fuente para la transcripción está disponible en Lib/Model, con pesos del modelo en Lib/ModelData. Los desarrolladores han contribuido a RTNeural para añadir soporte de convolución 2D. Se fomenta la contribución a través de issues y Pull Requests en GitHub. Se mencionan requisitos específicos de compilación para Windows y una advertencia sobre la compatibilidad con Python 3.11.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48252957,
+    "url": "https://developer.chrome.com/blog/declarative-partial-updates",
+    "score": 33,
+    "time": 1779581774,
+    "titulo_es": "Declarative Partial Updates: Una nueva forma de entregar HTML de forma no lineal",
+    "resumen": "El artículo presenta 'Declarative Partial Updates', un conjunto de nuevas APIs para la plataforma web desarrolladas por el equipo de Chrome. Estas APIs buscan mejorar la entrega de HTML, superando las limitaciones del modelo tradicional de carga lineal y secuencial. Se introducen nuevas funcionalidades como el elemento `<template>` y las instrucciones de procesamiento (`<?marker>`) para permitir la inserción y actualización de contenido HTML de forma declarativa y asincrónica. Esto facilita la construcción de aplicaciones web ricas y de alto rendimiento, permitiendo que el contenido se renderice a medida que está listo o es consumido por el usuario, en lugar de esperar a que toda la página se cargue. Las APIs están disponibles para pruebas en Chrome 148 y cuentan con polyfills para compatibilidad. Se mencionan casos de uso como la actualización de feeds, álbumes de fotos y la mejora de la experiencia de usuario al cargar componentes de forma parcial.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48240419,
+    "url": "https://www.anthropic.com/research/glasswing-initial-update",
+    "score": 531,
+    "time": 1779478305,
+    "titulo_es": "Project Glasswing: Acelerando la Seguridad del Software con IA para Combatir Amenazas Emergentes",
+    "resumen": "El artículo describe el lanzamiento y los hallazgos iniciales de Project Glasswing, una iniciativa colaborativa que utiliza el modelo de IA Claude Mythos Preview para identificar vulnerabilidades de alta y crítica severidad en software fundamental. En el primer mes, más de 50 socios han descubierto más de diez mil vulnerabilidades, aumentando la tasa de detección de fallos en más de diez veces para algunos. El proyecto está redefiniendo el ritmo de la ciberseguridad, pasando de la limitación en la detección de vulnerabilidades a la velocidad de verificación, divulgación y parcheo. Se observa una aceleración significativa en la implementación de parches por parte de grandes empresas como Cloudflare, Palo Alto Networks, Microsoft y Oracle. Mythos Preview también se ha aplicado a la escaneo de miles de proyectos de código abierto, identificando miles de vulnerabilidades críticas. El artículo también menciona el uso de Mythos Preview en la prevención de fraudes financieros y discute la futura estrategia de lanzamiento de modelos de clase Mythos. La divulgación tradicional de vulnerabilidades de 90 días se considera un indicador rezagado frente a las capacidades de IA.",
+    "categoria": "Ciberseguridad"
   }
 ]
