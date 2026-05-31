@@ -1,335 +1,281 @@
 [
   {
-    "id": 48334048,
-    "url": "https://ziglang.org/devlog/2026/#2026-05-26",
+    "id": 48343683,
+    "url": "https://specification.website/",
+    "score": 164,
+    "time": 1780211390,
+    "titulo_es": "Especificación agnóstica de plataforma de las características técnicas que todo sitio web decente debería tener",
+    "resumen": "Se presenta una especificación técnica abierta y agnóstica de la plataforma que define los requisitos esenciales que todo sitio web moderno debe cumplir. El estándar abarca diez áreas críticas de la arquitectura web, incluyendo accesibilidad (WCAG), SEO, seguridad de transporte, Core Web Vitals, tolerancia a fallos y compatibilidad con agentes de IA. El proyecto se basa en estándares oficiales de la W3C, WHATWG e IETF, y está disponible además como un servidor de Protocolo de Contexto de Modelo (MCP) para ser consumido directamente por herramientas de IA.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48340411,
+    "url": "https://www.brethorsting.com/blog/2026/05/domain-expertise-has-always-been-the-real-moat/",
+    "score": 603,
+    "time": 1780173657,
+    "titulo_es": "La parte difícil de escribir software nunca ha sido escribirlo",
+    "resumen": "El artículo analiza cómo la IA agéntica está transformando el desarrollo de software al separar la generación de código de la comprensión del dominio de negocio. Tradicionalmente, la dificultad radicaba en construir un modelo mental del dominio para luego traducirlo a código. Ahora, la IA automatiza la escritura de código, trasladando el cuello de botella a la capacidad de verificar si el comportamiento del software es realmente correcto. El autor destaca que los perfiles más valiosos en el futuro serán los ingenieros capaces de validar el sistema en ambos niveles: asegurando la solidez técnica de la infraestructura y verificando la veracidad de las reglas de negocio.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48343424,
+    "url": "https://theodore.net/projects/AvianVisitors/",
+    "score": 43,
+    "time": 1780208039,
+    "titulo_es": "Visitantes Alados: Construcción de una estación de monitoreo de aves con Raspberry Pi",
+    "resumen": "Guía técnica detallada para implementar 'Avian Visitors', un proyecto basado en un fork de BirdNET-Pi para el monitoreo acústico de aves. El sistema utiliza un Raspberry Pi equipado con un micrófono USB y el clasificador acústico de IA de Cornell para identificar especies en tiempo real. La interfaz web genera un collage visual utilizando las APIs de Gemini y eBird para la clasificación y estilización. Adicionalmente, se explican configuraciones avanzadas de red mediante túneles de Cloudflare e integración domótica con Home Assistant a través de sensores REST y MQTT.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48340315,
+    "url": "https://github.com/marekkowalczyk/breathe-cli",
+    "score": 39,
+    "time": 1780173053,
+    "titulo_es": "breathe: Una aplicación de terminal para el entrenamiento del tono vagal mediante respiración de resonancia",
+    "resumen": "Se describe una aplicación de terminal ligera para macOS, de un solo archivo y sin dependencias, diseñada para guiar al usuario en la respiración de resonancia (6 respiraciones por minuto). El objetivo de la herramienta es amplificar la arritmia sinusal respiratoria (RSA) para mejorar el tono vagal y el equilibrio autonómico, basándose en estudios clínicos de cardiología. El artículo aborda la justificación fisiológica de los preajustes de respiración del software (como exhalaciones más largas para el énfasis parasimpático) y explica cómo personalizar la frecuencia de respiración mediante parámetros de línea de comandos utilizando datos de biofeedback de HRV.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48343287,
+    "url": "https://arxiv.org/abs/1709.08492",
     "score": 48,
-    "time": 1780130308,
-    "titulo_es": "Separación de los procesos de construcción y configuración en el sistema de compilación de Zig",
-    "resumen": "El artículo detalla una reestructuración interna crucial en el sistema de construcción de Zig para su versión 0.17.0. Anteriormente, la lógica de 'build.zig' y el motor de ejecución se compilaban de forma conjunta en un único proceso pesado en modo Debug. Con la nueva arquitectura, se divide en dos: un proceso 'configurer' ligero que compila la lógica de configuración en debug y serializa el grafo de construcción en un archivo binario, y un proceso 'maker' optimizado en modo Release que ejecuta dicho grafo serializado. Esto reduce drásticamente los tiempos de compilación de 'zig build' al reutilizar cachés globales y evitar recompilaciones innecesarias de la lógica del script de construcción. Adicionalmente, se introducen mejoras en el backend de generación de código de LLVM, habilitando la compilación incremental.",
+    "time": 1780205418,
+    "titulo_es": "Acerca de arXivLabs: Un entorno para el desarrollo colaborativo",
+    "resumen": "arXivLabs es un framework de trabajo que permite a colaboradores individuales y organizaciones diseñar, desarrollar y compartir de forma directa nuevas características y herramientas para la plataforma de arXiv, bajo principios de código abierto, excelencia técnica y un estricto compromiso con la privacidad de los datos de los usuarios.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48283009,
-    "url": "https://overreacted.io/algebraic-effects-for-the-rest-of-us/",
-    "score": 59,
-    "time": 1779817131,
-    "titulo_es": "¿Has oído hablar de los efectos algebraicos?",
-    "resumen": "El artículo introduce el concepto de 'efectos algebraicos', una característica avanzada de lenguajes de programación que sirve como modelo mental para funciones de React como Hooks y Suspense. A diferencia de 'try/catch', que aborta la ejecución al encontrar un error, los efectos algebraicos permiten pausar el código al realizar un efecto (mediante un hipotético 'perform'), transferir el control a un manejador intermedio ('try/handle') y luego reanudar la ejecución exactamente en el punto donde se detuvo una vez resuelto el efecto.",
+    "id": 48323303,
+    "url": "https://blog.nlnetlabs.nl/one-year-of-roto-the-compiled-scripting-language-for-rust/",
+    "score": 37,
+    "time": 1780063679,
+    "titulo_es": "Roto: Un lenguaje de scripting embebido compilado por JIT para aplicaciones Rust",
+    "resumen": "Actualización sobre el desarrollo de Roto, un lenguaje de scripting embebido, tipado estáticamente y compilado por JIT diseñado para integrarse estrechamente con Rust. Durante el último año, se han implementado mejoras significativas como bucles (while y for), f-strings, enums, y soporte completo para pasar estructuras complejas como listas entre Rust y Roto. Además, se actualizó la sintaxis para asemejarse más a Rust (como el uso de 'fn' y '//') y se introdujo la macro 'library!' para simplificar enormemente el registro de tipos y funciones de Rust dentro del entorno de Roto.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48284494,
-    "url": "https://blog.chrislewis.au/snowboard-kids-2-is-100-decompiled/",
-    "score": 206,
-    "time": 1779822779,
-    "titulo_es": "¡Snowboard Kids 2 está 100% descompilado!",
-    "resumen": "El artículo anuncia la descompilación completa (100%) de las funciones del juego 'Snowboard Kids 2' de Nintendo 64 a lenguaje C, logrando que compilen de manera exacta al código ensamblador MIPS original (byte-matching). El autor describe un proceso de desarrollo de casi dos años, destacando el apoyo de la comunidad de descompilación de N64 y el uso de agentes de IA como Claude y Codex para acelerar el trabajo. Los objetivos futuros tras este hito incluyen la limpieza y documentación del código, el lanzamiento de una recompilación nativa optimizada (con soporte para pantalla ancha y mayor distancia de dibujado) y el inicio de la descompilación de la primera entrega de la saga para unificar ambos juegos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48279499,
-    "url": "https://asawicki.info/news_1802_floor_and_ceil_versus_denormals_on_cpu_and_gpu",
-    "score": 7,
-    "time": 1779801733,
-    "titulo_es": "¿Cuál es el resultado de floor(-1.175493930432748e-38)?",
-    "resumen": "El artículo analiza el comportamiento no determinista de la función matemática `floor()` al procesar números subnormales (denormalizados) entre CPU y GPU. Mientras que matemáticamente el resultado de aplicar `floor` a un número subnormal negativo extremadamente cercano a cero debería ser `-1.0` (siguiendo el estándar IEEE 754), muchas arquitecturas de GPU (como Nvidia) o especificaciones (como DirectX) optimizan el rendimiento tratando los denormales como cero (flushing denormals to zero), lo que altera el resultado a `-0.0` o `0.0`. Esto introduce inconsistencias críticas en el desarrollo de software gráfico y de sistemas, cuya solución puede abordarse mediante implementaciones personalizadas basadas en operaciones de bits directas en HLSL.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48325340,
-    "url": "https://koenvangilst.nl/lab/mistral-ai-now-summit",
-    "score": 379,
-    "time": 1780071721,
-    "titulo_es": "Resumen y Análisis de la Cumbre AI Now de Mistral AI",
-    "resumen": "El artículo analiza la cumbre 'AI Now' de Mistral AI en París, destacando la evolución de la empresa hacia un proveedor de pila completa (full-stack) que abarca cómputo propio, modelos y plataformas. Se enfatiza su propuesta de valor centrada en la soberanía de datos y despliegues locales (on-premise) para sectores regulados en Europa. Estratégicamente, Mistral se enfoca en modelos pequeños, especializados y altamente eficientes (como Document AI, Voxtral y Robostral) en lugar de competir directamente por la Inteligencia Artificial General (AGI). Además, se discute la arquitectura de agentes basada en entornos ('harness') que aportan persistencia, contexto y razonamiento, y se ilustran casos de uso prácticos en finanzas e investigación histórica.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48303623,
-    "url": "https://spectrum.ieee.org/floppy-disk-data-preservation-archives",
-    "score": 53,
-    "time": 1779935011,
-    "titulo_es": "El conocimiento sobre el medio es tan valioso como el contenido en el disco",
-    "resumen": "El artículo aborda los desafíos del proyecto 'Future Nostalgia', liderado por Leontien Talboom en las Bibliotecas y Archivos de la Universidad de Cambridge, enfocado en la preservación de datos en disquetes (floppy disks). Se detalla cómo la degradación física del óxido de hierro y la pérdida de conocimiento técnico tácito amenazan la recuperación de esta información. Además, se explica la necesidad de utilizar hardware especializado, emuladores y técnicas de ingeniería inversa para acceder a sistemas de archivos obsoletos y mitigar riesgos como el deterioro de bits (bit rot).",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48330436,
-    "url": "https://www.quandri.io/engineering-blog/mcp-is-dead",
-    "score": 241,
-    "time": 1780095409,
-    "titulo_es": "MCP ha muerto. Larga vida a la interfaz de línea de comandos (CLI)",
-    "resumen": "Análisis crítico sobre el uso de Model Context Protocol (MCP) en arquitecturas de backend. Aunque MCP se postula como un estándar para conectar LLMs con herramientas externas, la experiencia práctica revela tres problemas fundamentales: alto consumo de contexto (los esquemas de herramientas consumen más del 10% de la ventana de contexto de forma estática, requiriendo miles de tokens innecesarios), baja confiabilidad (fallos de inicialización y caídas) y penalización de rendimiento (hasta 3 veces más lento por llamada y 9.4 veces más lento en la primera inicialización frente a APIs REST debido a capas de procesamiento adicionales). Como alternativa más eficiente, se propone un enfoque híbrido que prioriza el uso de CLIs locales envueltas en 'Skills' cargadas bajo demanda por el LLM, reduciendo drásticamente el uso de tokens y simplificando la depuración en terminal.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48283410,
-    "url": "https://blog.prusa3d.com/our-new-open-source-colormix-model-in-prusaslicer-and-easyprint_136079/",
-    "score": 156,
-    "time": 1779818742,
-    "titulo_es": "Prusa ColorMix: Impresión 3D con docenas de colores utilizando solo cinco filamentos",
-    "resumen": "El artículo describe el desarrollo de 'Prusa ColorMix', un modelo de mezcla de color de código abierto (licencia MIT) diseñado para la impresión 3D FDM multi-material. Inspirado en el tramado de la impresión 2D, el sistema utiliza filamentos de color Cian, Magenta, Amarillo, Negro y Blanco (CMYKW) y los alterna en capas muy finas (por ejemplo, de 0.1 mm) para crear una ilusión óptica de gradientes y tonos continuos. Este flujo de trabajo se integra directamente en software de laminado como PrusaSlicer y OrcaSlicer, permitiendo obtener previsualizaciones cromáticas de alta fidelidad y expandir las capacidades de cualquier impresora multi-material sin necesidad de modificaciones físicas en el hardware.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48291648,
-    "url": "https://www.imec-int.com/en/press/world-first-imec-presents-quantum-dot-qubit-device-using-high-na-euv-lithography",
-    "score": 13,
-    "time": 1779873322,
-    "titulo_es": "El sistema de litografía más avanzado, crucial para los futuros chips de computadora y de memoria avanzados, desempeñará un papel clave en la escala de la tecnología cuántica",
-    "resumen": "Imec ha presentado el primer dispositivo qubit de punto cuántico de silicio fabricado mediante litografía ultravioleta extrema de alta apertura numérica (High NA EUV). Este hito técnico permite estructurar de forma precisa y reproducible redes de qubits con separaciones de apenas 6 nanómetros, minimizando el ruido ambiental y maximizando la fuerza de acoplamiento. Al ser compatible con los procesos de fabricación de semiconductores tradicionales (CMOS) en obleas de 300 mm, este avance allana el camino para la producción a escala industrial de hardware de computación cuántica con millones de qubits integrados en un solo chip.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48327962,
-    "url": "https://www.theverge.com/ai-artificial-intelligence/939765/ai-training-data-startup-shift-free-cleaning",
-    "score": 143,
-    "time": 1780082192,
-    "titulo_es": "Shift afirma que un 'sombrero mágico' grabará a sus limpiadores trabajando en tu hogar",
-    "resumen": "La startup de entrenamiento de inteligencia artificial Shift ofrece servicios gratuitos de limpieza doméstica a cambio de registrar visualmente las tareas realizadas por sus trabajadores utilizando un casco o sombrero equipado con una cámara en primera persona. Este metraje se utilizará como datos de entrenamiento para enseñar a robots a realizar tareas domésticas. La compañía asegura que se protegerá la privacidad de los clientes mediante la anonimización y el difuminado de rostros, pantallas y documentos de identidad antes de procesar los datos para la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48323869,
-    "url": "https://www.jeffgeerling.com/blog/2026/its-hard-to-justify-framework-12/",
-    "score": 306,
-    "time": 1780066531,
-    "titulo_es": "MacBook Neo vs. Framework 12: Una comparativa de rendimiento, diseño y valor",
-    "resumen": "Un análisis técnico comparativo entre la MacBook Neo de Apple y la portátil modular Framework 12. El artículo evalúa aspectos clave de hardware como el rendimiento de CPU y GPU mediante benchmarks (Geekbench 6 y GravityMark), la eficiencia térmica (disipación pasiva de Apple vs. activa con ventiladores de Framework), la calidad de la pantalla, la duración de batería y la relación costo-beneficio. Se destaca que, aunque la Framework 12 ofrece ventajas en reparabilidad, pantalla táctil y bisagra de 360°, la MacBook Neo la supera ampliamente en potencia de procesamiento por vatio, nivel de ruido, calidad de construcción y precio, consolidándose como una opción de valor superior.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48324712,
-    "url": "https://www.owenmcgrann.com/p/the-dead-economy-theory",
-    "score": 1014,
-    "time": 1780069584,
-    "titulo_es": "La teoría de la economía muerta",
-    "resumen": "El artículo plantea la 'teoría de la economía muerta', argumentando que las masivas inversiones y valoraciones multimillonarias de las grandes empresas de IA (como OpenAI, Anthropic y Google DeepMind) solo se justifican financieramente si logran reemplazar la mano de obra humana a escala global. Se analizan los benchmarks de productividad actuales, los cuales están diseñados específicamente para medir la capacidad de los modelos de IA para sustituir roles profesionales altamente cualificados, advirtiendo sobre las implicaciones de esta automatización masiva.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48296946,
-    "url": "https://railsatscale.com/2026-05-27-a-new-register-allocator-for-zjit/",
-    "score": 40,
-    "time": 1779900610,
-    "titulo_es": "Un nuevo asignador de registros en ZJIT",
-    "resumen": "El artículo detalla la implementación de un nuevo asignador de registros por escaneo lineal (Linear Scan) en el compilador JIT 'ZJIT', basado en el paper de Christian Wimmer sobre asignación en formato SSA (Static Single-Assignment). Explica el uso de la Representación Intermedia de Bajo Nivel (LIR), la importancia de optimizar el almacenamiento en registros frente a la memoria para mejorar el rendimiento de la CPU, y cómo se calculan los rangos de vida (live ranges) de las variables para decidir cuándo mantenerlas en registros o hacerles 'spill' a memoria.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48332151,
-    "url": "https://www.perryts.com/",
-    "score": 98,
-    "time": 1780110865,
-    "titulo_es": "Perry compila TypeScript a aplicaciones nativas de interfaz gráfica (GUI) y de línea de comandos (CLI)",
-    "resumen": "Perry es una herramienta de desarrollo de software que compila TypeScript directamente en binarios nativos independientes y optimizados para múltiples sistemas operativos (incluyendo macOS, iOS, Android, Linux y Windows), sin depender de Electron ni de entornos de ejecución como Node.js por defecto. Utiliza SWC para el parseo y LLVM para la generación de código optimizado de bajo nivel, logrando ejecutables pequeños (2-5 MB) con un inicio casi instantáneo. Además, traduce los componentes de la interfaz a widgets de plataforma reales (mediante AppKit, GTK4, Win32 y UIKit) y permite opcionalmente habilitar el motor V8 para dar compatibilidad total con paquetes de npm.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48333096,
-    "url": "https://openrct2.io/blog/2026/05/openrct2-v0.5.1-released",
-    "score": 16,
-    "time": 1780120832,
-    "titulo_es": "Lanzamiento de OpenRCT2 v0.5.1, 'Swamp Castle'",
-    "resumen": "Se anuncia el lanzamiento de la versión v0.5.1 de OpenRCT2, apodada 'Swamp Castle'. Esta versión marca el fin del soporte oficial para Windows 7 y 8 debido al cese de compatibilidad en los ejecutores de GitHub Actions. El comunicado agradece las contribuciones de código, pruebas y traducciones, e invita a la comunidad a colaborar y patrocinar a los desarrolladores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48325306,
-    "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
-    "score": 189,
-    "time": 1780071594,
-    "titulo_es": "Liquid AI presenta LFM2.5-8B-A1B: un modelo local y eficiente optimizado para llamadas de herramientas",
-    "resumen": "Liquid AI ha lanzado LFM2.5-8B-A1B, un modelo de lenguaje diseñado para ejecutarse localmente en hardware de consumo. Con un preentrenamiento a gran escala de 38 billones de tokens y una ventana de contexto ampliada a 128K tokens, este modelo está optimizado para encadenar llamadas de herramientas mediante un flujo de razonamiento explícito (Chain of Thought). Su arquitectura combina Mixture of Experts (MoE), Grouped-Query Attention (GQA) y bloques de convolución corta. Se duplicó el tamaño del vocabulario a 128K para mejorar sustancialmente la eficiencia en la tokenización de idiomas con alfabetos no latinos. Asimismo, se han implementado etapas de optimización de preferencias mediante aprendizaje por refuerzo (RL) para prevenir bucles de razonamiento infinitos y mitigar alucinaciones, reforzando la capacidad del modelo para abstenerse de responder cuando carece de información confiable.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48321631,
-    "url": "https://mastrojs.github.io/blog/2026-05-23-is-AI-causing-a-repeat-of-frontends-lost-decade/",
-    "score": 353,
-    "time": 1780052972,
-    "titulo_es": "Lo que la IA le está haciendo a los empleos de los programadores resulta muy familiar para los desarrolladores frontend",
-    "resumen": "El artículo analiza el fenómeno de la descalificación profesional ('deskilling') en el sector tecnológico. El autor establece un paralelismo entre la automatización actual mediante inteligencia artificial generativa y la transformación que experimentó el desarrollo frontend durante la última década con la llegada de frameworks modernos de JavaScript. Se argumenta que, al igual que estos frameworks convirtieron al navegador en un mero objetivo de compilación y redujeron la necesidad de comprender tecnologías base como HTML, CSS y accesibilidad, la codificación asistida por IA está eliminando la necesidad de escribir código manualmente de forma experta. Esto reduce las barreras de entrada y abarata costos para las empresas, pero a expensas de la calidad técnica y del poder de negociación de los profesionales del software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48323992,
-    "url": "https://www.inkandswitch.com/tangents/bijou64/",
-    "score": 230,
-    "time": 1780067012,
-    "titulo_es": "Bijou64: Codificación de enteros de longitud variable rápida y canónica",
-    "resumen": "El artículo presenta bijou64, un esquema de codificación de enteros de longitud variable (varint) desarrollado para el protocolo de sincronización Subduction CRDT. A diferencia del formato estándar LEB128, que permite múltiples representaciones binarias para un mismo número entero (lo que causa fallos de seguridad en la verificación de firmas y ataques de canonicalización), bijou64 asegura que cada número tenga una única representación matemática. Esto se logra usando el primer byte: si su valor está entre 0 y 247 se decodifica directamente, y si está entre 248 y 255 funciona como una etiqueta que define la cantidad de bytes que le siguen. Este diseño no solo mitiga vulnerabilidades criptográficas, sino que también optimiza el rendimiento y la asignación de memoria al requerir menos operaciones que LEB128.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48330192,
-    "url": "https://github.com/secluso/core",
-    "score": 68,
-    "time": 1780093949,
-    "titulo_es": "Secluso: Seguridad privada para el hogar con Raspberry Pi y cifrado de extremo a extremo",
-    "resumen": "Secluso es un sistema de cámaras de seguridad privada para el hogar diseñado para Raspberry Pi que evita el uso de proveedores de nube de terceros. Destaca por su enfoque robusto en seguridad, implementando cifrado de extremo a extremo, un diseño de retransmisión no confiable (untrusted-relay), secreto perfecto hacia adelante (forward secrecy) y seguridad post-compromiso. Además, ofrece compilaciones reproducibles para sus binarios de ejecución, su aplicación móvil Android y su sistema operativo dedicado, Secluso OS, garantizando la integridad de la cadena de suministro de software.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48328184,
-    "url": "https://github.com/jmaczan/tiny-vllm",
-    "score": 149,
-    "time": 1780083507,
-    "titulo_es": "Construyendo un motor de inferencia de LLM de alto rendimiento con C++ y CUDA",
-    "resumen": "El artículo presenta 'tiny-vllm', un proyecto y curso práctico diseñado para construir desde cero un motor de inferencia de Modelos de Lenguaje de Gran Escala (LLM) altamente eficiente utilizando C++ y CUDA en GPUs de NVIDIA. El autor explica cómo los LLMs consisten conceptualmente en pesos y operaciones matemáticas (principalmente multiplicación de matrices y productos escalares) y justifica la elección de CUDA para el procesamiento paralelo masivo. Además, se abordan temas como la complejidad computacional del mecanismo de atención clásica (O(n^2*d)) y se delimita el alcance del proyecto exclusivamente a la fase de inferencia y optimización de hardware, excluyendo el entrenamiento de modelos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48293119,
-    "url": "https://github.com/HarleyCoops/Math-To-Manim",
-    "score": 50,
-    "time": 1779884299,
-    "titulo_es": "Math-To-Manim: Un pipeline de agentes de IA para transformar razonamiento matemático en animaciones de Manim",
-    "resumen": "Math-To-Manim (M2M2) es un sistema basado en agentes de IA diseñado para convertir conceptos complejos de matemáticas y física en videos explicativos generados con la biblioteca Manim. Iniciado tras el lanzamiento de DeepSeek R1, este framework utiliza un enfoque estructurado y secuencial donde un conjunto de agentes especializados (desde la intención y el currículo hasta el storyboard y la generación de código) crea un rastro completamente inspeccionable y reproducible. Además de generar videos, funciona como un entorno de aprendizaje por refuerzo con Prime Intellect para entrenar agentes en la corrección automática de código de animación fallido.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48327809,
-    "url": "https://pierre.computer/writing/on-rendering-diffs",
-    "score": 176,
-    "time": 1780081494,
-    "titulo_es": "Presentamos CodeView: Renderizado de diffs y visualización de código a gran escala en el navegador",
-    "resumen": "El artículo aborda los desafíos de rendimiento al renderizar grandes diffs y pull requests en el navegador, donde la complejidad de O(n×m), el alto consumo de memoria y la sobrecarga del DOM debido al resaltado de sintaxis ralentizan la interfaz. Para resolverlo, presenta CodeView (parte del paquete @pierre/diffs), un componente optimizado mediante virtualización de renderizado y el traslado del resaltado de sintaxis a hilos de trabajo (workers), permitiendo visualizar diffs de cualquier tamaño de manera casi instantánea.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48330882,
-    "url": "https://daringfireball.net/2026/05/what_is_a_dickover",
-    "score": 361,
-    "time": 1780098862,
-    "titulo_es": "The Dickover: Un Término para las Molestas Interrupciones en la Web",
-    "resumen": "El artículo, escrito por John Gruber, introduce y define el término 'dickover' para describir las ventanas emergentes o paneles modales que oscurecen deliberadamente el contenido de un sitio web o aplicación para forzar una interacción no deseada, como aceptar cookies, suscribirse a newsletters, instalar apps o aceptar términos de servicio. El autor argumenta que estos 'dickovers' son una molestia ubicua y un patrón de diseño perjudicial que frustra a los usuarios y degrada la experiencia web. Se proporcionan múltiples ejemplos de diferentes sitios web y plataformas que emplean este patrón, incluyendo Substack, The Philadelphia Inquirer y Tom's Hardware. El artículo critica la práctica de interrumpir al usuario, especialmente después de que ha comenzado a interactuar con el contenido, y aboga por que las páginas web muestren su contenido principal sin obstáculos.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48324853,
-    "url": "https://noperator.dev/posts/you-can-just-say-it/",
-    "score": 331,
-    "time": 1780070068,
-    "titulo_es": "El Valor Inherente Humano frente a la Creación con IA",
-    "resumen": "El artículo cuestiona los argumentos que justifican el valor humano en comparación con la IA basándose únicamente en la calidad o la superioridad de la producción. Sostiene que el valor humano es una afirmación intrínseca y no condicional a la brecha tecnológica actual entre humanos y IA. Se analiza la calidad de los artefactos creativos, distinguiendo entre 'intención' y 'forma', y se señala que la IA generativa puede producir forma sustancial con una intención mínima o no discernible, lo que puede llevar a la producción de 'AI slop'. Se argumenta que la dificultad para identificar la intención detrás de la forma generada por IA es una 'patología' que eleva la barrera de entrada para la creación sin propósito claro, algo que la creación manual hace más difícil.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48333317,
-    "url": "https://blog.cryptographyengineering.com/2026/05/29/fooling-around-with-encrypted-reasoning-blobs/",
-    "score": 6,
-    "time": 1780123216,
-    "titulo_es": "Un fin de semana hackeando las APIs de razonamiento de los LLM",
-    "resumen": "El artículo describe un proyecto de fin de semana centrado en explorar las APIs de modelos de lenguaje grandes (LLM), específicamente las de OpenAI y Anthropic. El autor se topó con un error intrigante relacionado con firmas dentro de los bloques de \"pensamiento\" (razonamiento) de los LLM. La investigación reveló que las APIs exponen el razonamiento interno del modelo (cadena de pensamiento, CoT) como datos JSON cifrados y firmados. Aunque el propósito de enviar estos datos al cliente no se explora completamente, el artículo detalla la estructura de estos bloques de razonamiento, que parecen ser textos cifrados autenticados que varían con la complejidad del razonamiento del modelo. El autor aprendió sobre las API de frontera de LLM y los agentes de codificación, obteniendo incluso una certificación de \"investigador cibernético\" de OpenAI.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48322118,
-    "url": "https://vickiboykis.com/2026/05/28/we-should-be-more-tired-than-the-model/",
-    "score": 172,
-    "time": 1780056736,
-    "titulo_es": "Recuperando el Control en la Generación de Código Agéntico",
-    "resumen": "El artículo explora la desconexión entre la generación de código asistida por IA (agéntica) y los procesos cognitivos humanos involucrados en la escritura de código manual. Se compara la memoria humana (corta, de trabajo, a largo plazo) con la experiencia de usar herramientas de generación de código, que a menudo se asemejan a una 'máquina tragaperras' que produce resultados sin fomentar la retención de habilidades o la comprensión profunda. El autor propone añadir 'fricción' intencionalmente al proceso de desarrollo con IA, como reescribir código generado, para solidificar el conocimiento propio y mejorar el uso a largo plazo de estas herramientas, priorizando el aprendizaje humano sobre la dependencia del modelo. Se busca un enfoque más deliberado para utilizar la IA, incluso si esto reduce la velocidad a corto plazo, con el objetivo de fortalecer la base de conocimiento del desarrollador.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48330902,
-    "url": "https://blog.emberjs.com/ember-released-7-0/",
-    "score": 67,
-    "time": 1780099065,
-    "titulo_es": "Lanzamiento de Ember v7.0: Actualización de versiones y mejoras en el build system",
-    "resumen": "El proyecto Ember anuncia el lanzamiento de Ember v7.0, que principalmente elimina características previamente marcadas como obsoletas y corrige errores, siguiendo su política de versiones mayores. La versión anterior, 6.12, se convierte en LTS (Soporte a Largo Plazo). La versión 6.x introdujo características notables como la configuración por defecto del sistema de build Embroider+Vite y las plantillas de modo estricto (strict-mode-templates) en v6.8, mejorando la experiencia del desarrollador. Ember prioriza la introducción de nuevas funcionalidades en versiones menores para mantener la retrocompatibilidad. La actualización a 7.0 se recomienda realizando una actualización gradual a la última versión de 6.12, resolviendo todas las advertencias de deprecación, y luego migrando a 7.0. El proceso de actualización puede implicar la actualización de addons y ajustes en la configuración de ember-cli. Ember.js 7.0 no introduce nuevas APIs públicas, sino que rompe la compatibilidad con APIs previamente deprecadas del ciclo 6.x y soluciona bugs. Ember CLI 7.0 tampoco introduce nuevas APIs ni funcionalidades, centrándose en la eliminación de APIs obsoletas.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48321076,
-    "url": "https://blog.kog.ai/real-time-llm-inference-on-standard-gpus-3-000-tokens-s-per-request/",
-    "score": 204,
-    "time": 1780048043,
-    "titulo_es": "Motor de Inferencia Kog: Demostrando la Inferencia de LLM Ultrarrápida en GPUs Estándar",
-    "resumen": "El artículo presenta el Kog Inference Engine (KIE), una tecnología en vista previa que logra velocidades de inferencia de modelos de lenguaje grandes (LLM) excepcionalmente altas en GPUs estándar. En configuraciones de 8x AMD MI300X, alcanza 3000 tokens/s por solicitud, y en 8x NVIDIA H200, 2100 tokens/s (usando FP16 sin decodificación especulativa). El enfoque principal del KIE es optimizar la velocidad de decodificación de una sola solicitud para potenciar agentes de IA, reconociendo que esta tarea está limitada principalmente por el ancho de banda de memoria, no por la capacidad de cómputo (FLOPS). Kog logra estas velocidades mediante un co-diseño integral de la pila de software, que abarca la arquitectura del modelo, el runtime y el código de bajo nivel de la GPU, creando un pipeline unificado optimizado para baja latencia. Esto permite utilizar el hardware de GPU de centros de datos existente, evitando la dependencia de silicio propietario. La velocidad de inferencia es crucial para la experiencia del usuario en agentes de IA, ya que la velocidad de iteración (inteligencia x velocidad de iteración) define la capacidad de los agentes autónomos. El KIE prioriza la latencia de solicitud única (batch size 1) para demostrar el potencial máximo de velocidad de decodificación, aunque se planea soportar batches grandes en producción.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48332047,
-    "url": "https://korben.info/utiq-identifiant-publicitaire-telcos.html",
-    "score": 17,
-    "time": 1780109953,
-    "titulo_es": "Utiq: El nuevo sistema de publicidad de los operadores de telecomunicaciones europeos",
-    "resumen": "El artículo describe Utiq, un nuevo sistema de identificación publicitaria desarrollado por operadores de telecomunicaciones europeos como Orange, Deutsche Telekom, Vodafone y Telefónica. A diferencia de las cookies, Utiq utiliza el identificador asociado a la línea de Internet (fibra/ADSL) o móvil del usuario, lo que lo hace resistente a los métodos habituales de evasión (limpieza de caché, navegación privada). Emplea técnicas como el CNAME cloaking para disfrazarse de subdominios del propio sitio web y evitar bloqueadores de rastreadores. Aunque se basa en el consentimiento del usuario y está sujeto a la directiva ePrivacy, existe preocupación sobre la opacidad del identificador base ('Network Signal') y la dificultad de un consentimiento verdaderamente informado. El sistema ya tiene una gran adopción en Europa, especialmente en Francia, y se presenta como una alternativa europea a los GAFAM. El artículo también proporciona información sobre cómo darse de baja de Utiq y sugiere el uso de VPN como medida adicional de privacidad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48311647,
-    "url": "https://www.anthropic.com/news/claude-opus-4-8",
-    "score": 1734,
-    "time": 1779986954,
-    "titulo_es": "Actualización de Claude Opus a la versión 4.8 con mejoras y nuevas características",
-    "resumen": "El artículo anuncia la actualización de Claude Opus a la versión 4.8, que ofrece mejoras en benchmarks, mayor efectividad como colaborador y nuevas funcionalidades como el control de esfuerzo del usuario, flujos de trabajo dinámicos en Claude Code para problemas a gran escala y un modo rápido más económico. Opus 4.8 destaca por su mayor honestidad (cuatro veces menos propenso a pasar por alto fallos en código) y un juicio más agudo en tareas agenticas. En alineación, alcanza nuevos máximos en rasgos prosociales y presenta tasas de comportamiento desalineado significativamente menores que Opus 4.7. El modelo por defecto utiliza alto esfuerzo, optimizando la calidad y la experiencia del usuario, con opciones de esfuerzo 'extra' y 'max' para tareas más complejas. Se menciona el desarrollo de modelos de mayor inteligencia (Mythos-class) con fuertes salvaguardas de ciberseguridad. Los precios se mantienen sin cambios para el uso regular ($5/M input, $25/M output tokens) y para el modo rápido ($10/M input, $50/M output tokens).",
-    "categoria": "IA"
-  },
-  {
-    "id": 48324910,
-    "url": "https://research.roundtable.ai/captchas-detect-ai/",
-    "score": 74,
-    "time": 1780070257,
-    "titulo_es": "Detectando IA a Través de Procesos Cognitivos Diferentes",
-    "resumen": "El artículo explora la brecha entre el rendimiento de la IA y los humanos en tareas cognitivas, a pesar de que la IA iguala o supera la capacidad humana. Se argumenta que los CAPTCHAs, aunque superados en reconocimiento de imágenes por la IA, pueden ser herramientas de detección al analizar patrones de comportamiento distintivos (errores, movimientos del ratón, etc.) que difieren entre humanos y agentes de IA. Se introduce CogCAPTCHA30, una batería de 30 tareas que combina CAPTCHAs con pruebas de psicología cognitiva, para evaluar tanto el 'output' (resultado) como el 'process' (proceso cognitivo subyacente). Los hallazgos sugieren que los modelos de lenguaje de vanguardia (GPT, Claude, Gemini) exhiben procesos menos similares a los humanos en comparación con modelos más pequeños y de código abierto como Qwen y Centaur. Esto lleva a la hipótesis de que el ajuste fino masivo de resultados ('output fine-tuning') podría alejar la IA de la simulación del pensamiento humano, y plantea la cuestión de la robustez adversarial de estos métodos de discriminación basados en el proceso.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48330088,
-    "url": "https://lukasz.bromirski.net/post/bgp-w-labie-3/",
-    "score": 41,
-    "time": 1780093318,
-    "titulo_es": "Extensión del Proyecto de Feed BGP IPv6 y Configuraciones para Routers",
-    "resumen": "Este artículo detalla la extensión de un proyecto anterior que ofrecía un feed BGP completo de IPv4, ahora incluyendo también feeds completos de IPv6 para Europa. El autor enfatiza que el uso del servicio es bajo el propio riesgo del usuario, y que el servicio puede ser descontinuado en cualquier momento. Se proporcionan instrucciones y ejemplos de configuración para routers Cisco IOS/IOS-XE y IOS XR para recibir estos feeds BGP. Se advierte explícitamente a los usuarios que no envíen prefijos de vuelta, ya que serán filtrados. La diferencia principal con la sesión IPv4 descrita anteriormente es la inclusión de un ASN público y la capacidad de proporcionar datos IPv6.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48332983,
-    "url": "https://mobilegym.dev/",
-    "score": 8,
-    "time": 1780119624,
-    "titulo_es": "MobileGym: Plataforma de Simulación Paralela para Investigación de Agentes GUI Móviles",
-    "resumen": "MobileGym es una plataforma de simulación verificable y altamente paralela diseñada para la investigación de agentes de Interfaz Gráfica de Usuario (GUI) móviles. Permite el entrenamiento de Aprendizaje por Refuerzo (RL) en línea y la evaluación determinista en aplicaciones móviles del mundo real, superando las limitaciones de los pipelines de dispositivos reales. Reimplementa 28 aplicaciones móviles (12 diarias + 16 del sistema) fielmente en el navegador usando React/TypeScript, incluyendo flujos de tareas Android, enrutamiento de Intent, ContentProviders y permisos. La plataforma utiliza JSON estructurado para representar el estado del entorno, permitiendo la inspección, modificación (snapshot, fork, restore en milisegundos) y operación sin consecuencias en un sandbox. Esto facilita el entrenamiento RL con millones de trayectorias idénticas y la evaluación precisa, abordando problemas como la ambigüedad de datos y la observación no confiable de las capturas de pantalla. Las pruebas demuestran una mejora significativa en la Tasa de Éxito (SR) de agentes GUI móviles, incluso en tareas complejas, con una alta retención de las ganancias de simulación a real. El sistema es extensible, requiriendo mínima adaptación para añadir nuevas aplicaciones.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48309233,
-    "url": "https://www.latimes.com/california/story/2026-05-27/uc-math-professors-demand-return-of-sat-for-stem-admissions",
-    "score": 601,
-    "time": 1779977580,
-    "titulo_es": "Facultad de UC exige el regreso de pruebas estandarizadas para admisiones STEM",
-    "resumen": "Más de 600 profesores de la Universidad de California, liderados por matemáticos de UC Berkeley, están pidiendo al sistema que restablezca los requisitos de pruebas estandarizadas (SAT o ACT) para los solicitantes de ciencia, tecnología, ingeniería y matemáticas (STEM). Argumentan que los seis años de admisiones sin pruebas no han evaluado de manera confiable la preparación de los estudiantes, lo que ha llevado a que los profesores tengan que enseñar matemáticas de nivel de escuela secundaria a los estudiantes entrantes. La carta abierta, dirigida a los líderes del sistema UC, solicita que se exijan los exámenes SAT o ACT a partir del otoño de 2027 y que el profesorado STEM tenga supervisión formal sobre los estándares de preparación en sus especialidades. Señalan que los déficits en matemáticas son tan severos que la fluidez matemática básica es esencial para el éxito universitario en campos cuantitativamente exigentes. Esta petición surge antes de que la Junta de Admisiones y Relaciones con Escuelas del Senado Académico de la UC discuta cambios en las admisiones a nivel de sistema, lo que podría revertir la decisión de 2020 de suspender las pruebas estandarizadas, citando preocupaciones sobre sesgos. A pesar de que algunas universidades de élite han restablecido los requisitos de exámenes estandarizados, la UC aún no ha respaldado formalmente la carta, aunque los líderes del sistema afirman estar escuchando las preocupaciones sobre la preparación de los estudiantes.",
+    "id": 48318402,
+    "url": "https://github.com/Hawzen/I-found-a-seashell-in-the-middle-of-the-desert#i-found-a-seashell-in-the-middle-of-the-desert",
+    "score": 333,
+    "time": 1780022983,
+    "titulo_es": "Análisis morfológico y reducción de dimensionalidad de fósiles de conchas marinas",
+    "resumen": "El artículo aborda la identificación de un fósil de concha marina hallado en el desierto de Alghat mediante el análisis cuantitativo de su morfología. Para ello, el autor propone normalizar el contorno de las conchas a partir de un dataset de imágenes en una matriz de 256 puntos bidimensionales, eliminando variaciones de rotación, escala y traslación. Ante la alta dimensionalidad del espacio resultante, se aplica la técnica de Análisis de Componentes Principales (PCA) para reducir las 256 dimensiones a solo dos componentes principales (PC1 y PC2), logrando retener el 67.25% de la varianza para describir y comparar de manera matemática las características de la forma.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48319524,
-    "url": "https://www.zot.sh",
-    "score": 81,
-    "time": 1780033701,
-    "titulo_es": "zot: Un agente de codificación minimalista en Go",
-    "resumen": "zot es un agente de codificación minimalista para terminales, distribuido como un único binario estático de Go. Elimina la necesidad de tiempos de ejecución, Docker o sistemas de plugins complejos, enfocándose en un bucle de agente eficiente. Soporta una amplia gama de proveedores de IA (Anthropic, OpenAI, Gemini, Copilot, etc.) para tareas de codificación, edición de archivos y ejecución de comandos en el shell. Permite la autenticación mediante claves API o suscripciones. zot integra un catálogo unificado de modelos de IA, actualizado dinámicamente y extensible con modelos personalizados. Incluye cuatro herramientas integradas con un modo \"jail\" para limitar las acciones al directorio actual. Es extensible mediante un protocolo JSON-RPC para crear herramientas personalizadas, comandos slash e interfaces TUI interactivas. Las \"skills\" son archivos Markdown con frontmatter YAML que proporcionan instrucciones específicas al agente bajo demanda. Todas las interacciones se registran en formato JSONL.",
+    "id": 48340910,
+    "url": "https://av2.aomedia.org",
+    "score": 210,
+    "time": 1780177578,
+    "titulo_es": "Especificación del Códec de Video AV2 de Próxima Generación de AOMedia",
+    "resumen": "Presentación de AV2, el estándar de codificación de video de próxima generación desarrollado por la Alliance for Open Media (AOMedia) como sucesor de AV1. Diseñado para mejorar significativamente la eficiencia de compresión de datos a menores tasas de bits, optimiza la transmisión para streaming, videoconferencias, contenido de pantalla y entornos de Realidad Virtual/Aumentada (AR/VR). La especificación v1.0.0 define detalladamente la sintaxis del flujo de bits, la semántica y los procesos de decodificación necesarios para asegurar la conformidad de las implementaciones, apoyándose en el software de referencia oficial AOMedia Video Model (AVM) v1.0.0 y proporcionando tablas de búsqueda extraídas como archivos de cabecera C.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48328365,
-    "url": "https://www.invenglobal.com/articles/22330/stop-killing-games-movement-gains-momentum-california-assembly-passes-game-protection-bill",
-    "score": 236,
-    "time": 1780084556,
-    "titulo_es": "California aprueba la Ley 'Protect Our Games' para garantizar el acceso a juegos digitales tras la finalización del servicio",
-    "resumen": "El artículo detalla el avance legislativo en California con la aprobación del proyecto de ley AB 1921, conocido como 'Protect Our Games Act', por la Asamblea Estatal. Esta ley, impulsada por el movimiento 'Stop Killing Games', busca garantizar que los consumidores puedan seguir accediendo a los juegos digitales comprados incluso después de que el editor termine el servicio. Los requisitos incluyen un aviso previo de 60 días antes de la desactivación del servicio, la provisión de una versión jugable (como un parche o versión alternativa) o un reembolso completo si no es factible. La ley se aplica a juegos vendidos digitalmente después del 1 de enero de 2027, excluyendo servicios de suscripción, juegos gratuitos y aquellos inherentemente jugables offline. El artículo también menciona la oposición de la ESA (Entertainment Software Association) debido a preocupaciones sobre seguridad y propiedad intelectual, y la contraposición de grupos de preservación que ven los videojuegos como patrimonio cultural. A pesar de que la ley aún necesita la aprobación del Senado y del Gobernador, su paso por la Asamblea de California tiene un alto valor simbólico y se espera que influya en las políticas de la industria de videojuegos estadounidense.",
+    "id": 48285282,
+    "url": "https://www.projectgus.com/2023/04/griffin-imate/",
+    "score": 12,
+    "time": 1779826055,
+    "titulo_es": "Un teclado clásico, una batería misteriosa y algunas decisiones de ingeniería dudosas de los años 90",
+    "resumen": "El autor describe el proceso de restauración de un teclado mecánico clásico Apple Extended Keyboard II de 1990, el cual utiliza la interfaz ADB (Apple Desktop Bus). Al intentar adaptarlo a un sistema moderno mediante un adaptador Griffin iMate de ADB a USB de finales de los 90, se enfrenta a problemas de estabilidad y bucles de reinicio en el bus USB. El artículo detalla el diagnóstico técnico del hardware, que incluye la comprobación de los condensadores electrolíticos antiguos del teclado y la investigación del misterioso circuito del adaptador, que sorprendentemente incorpora una batería CR1225 no documentada por el fabricante.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48341578,
+    "url": "https://consumerrights.wiki/w/Microsoft_Office_2019_and_2021_for_Mac_view-only_conversion_(2026)",
+    "score": 863,
+    "time": 1780183573,
+    "titulo_es": "Conversión a solo lectura de Microsoft Office 2019 y 2021 para Mac en 2026",
+    "resumen": "El 13 de julio de 2026, las licencias perpetuas de Microsoft Office 2019 y 2021 para macOS e iOS sufrirán una degradación remota a un modo de funcionalidad reducida (solo lectura) debido a la expiración de un certificado digital utilizado para la validación de licencias de la aplicación. Office 2019 no tiene solución debido a un límite rígido de compilación (build cap) por debajo del umbral mínimo requerido (versión 16.83), mientras que Office 2021 podrá actualizarse para incluir el nuevo certificado siempre que el sistema operativo cumpla con los requisitos mínimos (macOS 12 o posterior). Este caso ilustra un problema crítico de arquitectura en la gestión del ciclo de vida de certificados y obsolescencia de software.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48322929,
-    "url": "https://www.moderndescartes.com/essays/ai_and_expertise/",
-    "score": 114,
-    "time": 1780061713,
-    "titulo_es": "¿Tiene sentido contratar ingenieros junior en la era de los agentes de codificación?",
-    "resumen": "El artículo explora el impacto de la inteligencia artificial, específicamente los agentes de codificación, en el mercado laboral de ingenieros de software. Analiza cómo las herramientas de IA están cambiando la naturaleza de la experiencia en desarrollo de software, similar a cómo las calculadoras científicas reemplazaron a los 'calculadores' humanos en matemáticas. Se argumenta que la intuición computacional, que antes se adquiría con años de codificación manual, ahora se vuelve crucial para interactuar efectivamente con agentes de IA. El autor sugiere que la demanda de ingenieros junior se polarizará: habrá una competencia feroz por talentos excepcionales que puedan alcanzar un nivel útil de intuición en pocos años, mientras que una gran mayoría podría tener dificultades para mantenerse al día. El artículo también resalta la importancia de que todos, incluso los no ingenieros, aprendan a programar o guionizar para aprovechar las capacidades de automatización de la IA en diversos campos.",
+    "id": 48306713,
+    "url": "https://blog.racket-lang.org/2026/05/racket-v9-2.html",
+    "score": 122,
+    "time": 1779961360,
+    "titulo_es": "Racket v9.2 ya está disponible",
+    "resumen": "Se anuncia formalmente el lanzamiento de Racket v9.2, un lenguaje de programación multiparadigma de la familia Lisp/Scheme y un entorno para el desarrollo de software. El comunicado agradece a los múltiples colaboradores de la comunidad que hicieron posible esta versión, invita a nuevos miembros a unirse al proyecto de código abierto a través de su repositorio y promueve la participación en sus canales oficiales de Discourse y Discord.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48334854,
+    "url": "https://github.com/kristapsdz/openrsync",
+    "score": 412,
+    "time": 1780138308,
+    "titulo_es": "openrsync: Arquitectura, algoritmo e implementación con licencia BSD",
+    "resumen": "El artículo describe openrsync, una implementación de rsync bajo la licencia libre ISC (BSD) integrada en OpenBSD. Detalla su arquitectura técnica y el funcionamiento de su algoritmo de sincronización de archivos basado en dos componentes: el emisor (sender) y el receptor (receiver). Se explica el flujo de sincronización mediante la ordenación lexicográfica de la lista de archivos (flist.c) y el posterior intercambio de bloques (blocks.c), optimizando la transferencia de archivos regulares, directorios y enlaces simbólicos de forma eficiente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48343078,
+    "url": "http://oldvcr.blogspot.com/2026/05/ahoy-decmate-ii-little-pdp-8-that-could.html",
+    "score": 34,
+    "time": 1780202534,
+    "titulo_es": "REBOBINAR y REPRODUCIR Ahora: Procesamiento de texto y la evolución de la arquitectura del PDP-8",
+    "resumen": "El artículo analiza detalladamente la evolución histórica y las especificaciones técnicas de la arquitectura del PDP-8, un sistema de 12 bits clave en la era de los minicomputadores de DEC. Desde una perspectiva de arquitectura de sistemas, se examinan sus limitaciones de direccionamiento (como el límite fundamental de 4kW y páginas de 128 palabras), sus secuencias de código complejas para operaciones lógicas simples, y la problemática de almacenar la dirección de retorno dentro del primer registro de una subrutina, lo que impedía la recursividad eficiente y la ejecución desde memorias ROM. Asimismo, detalla la transición del hardware hacia placas integradas de un solo circuito como el PDP-8/A, el uso de memoria de semiconductores RAM y la reticencia de la directiva de DEC para incursionar en el mercado de los microcomputadores.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48336564,
+    "url": "https://s-macke.github.io/VoxelSpace/",
+    "score": 285,
+    "time": 1780151150,
+    "titulo_es": "Introducción al motor de terreno Voxel",
+    "resumen": "El artículo analiza el funcionamiento técnico de 'Voxel Space', un motor gráfico 2.5D popularizado por el juego Comanche en 1992. Explica cómo esta tecnología permitía renderizar terrenos detallados en CPUs de baja potencia sin aceleración por GPU, utilizando mapas de altura y de color periódicos de 1024x1024 píxeles. El algoritmo funciona de manera similar al 'ray casting', dibujando líneas verticales basadas en la proyección de la altura y evitando cálculos complejos de iluminación en tiempo real gracias a que el mapa de color ya contiene las sombras pre-renderizadas. Se destaca su extrema simplicidad algorítmica y su relevancia histórica en el desarrollo de videojuegos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48338673,
+    "url": "https://ziglang.org/devlog/2026/#2026-05-30",
+    "score": 206,
+    "time": 1780162162,
+    "titulo_es": "Registro de desarrollo de Zig: Enlazador ELF rápido y reestructuración del sistema de construcción",
+    "resumen": "El artículo detalla dos actualizaciones clave en el desarrollo de la rama principal de Zig. Primero, Matthew Lugg describe los avances en el nuevo enlazador ELF, que ahora permite compilar el compilador de Zig autohospedado junto con LLVM y LLD, además de admitir una compilación incremental extremadamente rápida en Linux x86_64. Segundo, Andrew Kelley anuncia una reestructuración del sistema de construcción ('zig build'), dividiendo el proceso en un 'configurador' (que procesa la lógica del archivo 'build.zig' en modo Debug) y un 'ejecutor' o 'maker' (que corre en modo Release, se compila una sola vez y ejecuta el grafo de construcción serializado). Esto mejora drásticamente el rendimiento y reduce los tiempos de reconstrucción.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48340422,
+    "url": "https://github.com/wolfSSL/wolfCOSE",
+    "score": 92,
+    "time": 1780173748,
+    "titulo_es": "wolfCOSE: Implementación Ligera de CBOR y COSE con Backend Criptográfico wolfSSL",
+    "resumen": "wolfCOSE es una biblioteca C ligera que implementa los estándares CBOR (RFC 8949) y COSE (RFC 9052/9053), utilizando la biblioteca criptográfica wolfSSL como backend. Soporta una amplia gama de algoritmos de firma (ES256, ES384, ES512, EdDSA, PS256/384/512, ML-DSA-44/65/87) y cifrado (AES-GCM, ChaCha20-Poly1305, AES-CCM), así como MAC (HMAC-SHA) y distribución de claves (Direct, AES Key Wrap, ECDH-ES+HKDF). La implementación de wolfCOSE incluye todos los mensajes RFC 9052 en variantes de actor único y múltiple. Requiere wolfSSL v5.8.0-stable o superior. Ofrece configuraciones de compilación para optimizar según los algoritmos necesarios, incluyendo soporte para criptografía post-cuántica (PQC) con ML-DSA. Diseñada para sistemas embebidos, es software libre bajo licencia GPLv3 y está diseñada para cumplir altos estándares de calidad, con miras a convertirse en un producto oficialmente soportado por wolfSSL.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48339894,
+    "url": "https://lowendmac.com/2013/jef-raskin-the-visionary-behind-the-mac/",
+    "score": 105,
+    "time": 1780170153,
+    "titulo_es": "Jef Raskin y los orígenes del Macintosh: Visión, Diseño y Legado",
+    "resumen": "El artículo es una entrevista con Jef Raskin, fundador del proyecto Macintosh en Apple. Raskin detalla su visión para el Mac, enfatizando la simplicidad de uso y el diseño 'todo en uno' (tipo electrodoméstico), que consideraba clave para su adopción masiva. Explica cómo convenció a la dirección de Apple presentando casos de negocio y visiones a futuro, como en su ensayo 'Computers by the Millions'. A pesar del éxito del diseño, Raskin lamenta que el Mac moderno se haya vuelto complejo y similar a Windows. Aclara que el diseño original del Mac fue concebido como gráfico desde el principio, aunque también prestó atención a la limpieza de las partes textuales de la interfaz. Menciona su preferencia por dispositivos de entrada alternativos al ratón, como trackballs y tablets. El artículo también toca tangencialmente la evolución de la interfaz gráfica y la cultura de desarrollo por acumulación en Apple.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48339943,
+    "url": "https://remyhax.xyz/posts/reproducing-lawful-tls-wiretapping/",
+    "score": 102,
+    "time": 1780170456,
+    "titulo_es": "Análisis de la Cadena de Confianza TLS y una Falla Operacional con acme.sh",
+    "resumen": "El artículo profundiza en el funcionamiento de TLS y la confianza de las Autoridades Certificadoras (CA), destacando cómo las fallas operacionales pueden tener consecuencias significativas. Se enfoca en un incidente específico donde un servidor (jabber.ru) que utilizaba el script acme.sh para renovar certificados TLS se vio afectado por una vulnerabilidad de ejecución remota de código (CVE-2023-38198), descubierta poco después de una fecha crítica (18 de abril de 2023). El uso de acme.sh, un automatizador del protocolo ACME para la emisión y renovación de certificados, se convierte en un punto clave. La vulnerabilidad permitió que una CA (HiCA) emitiera certificados de manera abusiva. El análisis examina cómo la explotación de esta falla, combinada con errores de interpolación de comandos y manejo de caracteres en el script, resultó en una \"quema\" de una operación encubierta, evidenciada por advertencias de certificado y una investigación detallada.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48334515,
+    "url": "https://pandoc-templates.org/",
+    "score": 400,
+    "time": 1780135002,
+    "titulo_es": "Plantillas Pandoc para Documentos Markdown",
+    "resumen": "Este artículo describe una colección de plantillas y herramientas basadas en Pandoc, diseñadas para convertir archivos Markdown en diversos formatos de salida como PDF, HTML y ePub. Las plantillas cubren una amplia gama de casos de uso, incluyendo notas de clase, ejercicios, currículums, artículos académicos (formato IEEE, MLA, Tufte), tesis doctorales, libros, cartas académicas, presentaciones (reveal.js) y sitios web estáticos. Se enfatiza la simplicidad, la reutilización y la compatibilidad con LaTeX (KOMA-Script, BibLaTeX, CSL) y CSS (Bootstrap, Tufte CSS) para generar documentos pulidos y formateados profesionalmente a partir de contenido escrito en Markdown.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48341407,
+    "url": "https://brie.gay/cheese-paper/",
+    "score": 106,
+    "time": 1780181921,
+    "titulo_es": "Cheese Paper: Editor de Texto para Escritores de Ficción con Soporte Markdown y TOML",
+    "resumen": "Cheese Paper es un editor de texto diseñado específicamente para la escritura de ficción, almacenando notas y metadatos junto con cada escena en un formato de archivo minimalista y legible (Markdown para el contenido y TOML para encabezados). Permite la edición local, la sincronización automática de cambios a través de servicios de terceros (Syncthing, Google Drive, etc.) y la visualización de notas adjuntas a la escena. Los proyectos se estructuran en múltiples archivos, pero ofrece exportación a un único archivo para compartir. Se enfoca en la privacidad al ser un programa offline sin servicios en la nube ni tarifas ocultas. Incluye funcionalidades para gestionar información de personajes y del mundo, y puede generar resúmenes de la historia combinando escenas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48342935,
+    "url": "https://86box.net/2026/05/31/86box-v6-0.html",
+    "score": 20,
+    "time": 1780200232,
+    "titulo_es": "Actualización de Mayo 2026 de 86Box",
+    "resumen": "La actualización de Mayo 2026 de 86Box (v6.0) introduce mejoras significativas en la emulación de hardware y la experiencia del usuario. Destaca la adición de sonidos de disco duro configurables y una nueva funcionalidad de 'local switch' para la interconexión de múltiples instancias de 86Box a través de redes locales. Se han renovado las capacidades de conectividad serie y paralelo, incluyendo la funcionalidad 'Named Pipe' y 'Serial Passthrough' mejorada, además de la emulación de unidades de cinta SCSI. La interfaz de usuario ha sido optimizada con iconos actualizados, un logo renovado, y la organización de la ventana de Configuración en pestañas para una mejor gestión de opciones. Las 'key bindings' ahora son globales y se gestionan en la ventana de Preferencias. La selección de tarjetas de video se ha simplificado listando chipsets en lugar de modelos individuales, mejorando la usabilidad. Finalmente, se añade soporte para imágenes CD-ROM MDS v2 y MDX mediante un componente externo.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48338660,
+    "url": "https://openrouter.ai/announcements/series-b",
+    "score": 420,
+    "time": 1780162048,
+    "titulo_es": "OpenRouter asegura $113M en Serie B para escalar la infraestructura de IA multi-modelo",
+    "resumen": "OpenRouter ha cerrado una ronda de financiación Serie B de $113 millones, liderada por CapitalG (el fondo de crecimiento independiente de Alphabet) y con la participación de NVentures (brazo de capital de riesgo de NVIDIA) y los brazos de inversión de ServiceNow, MongoDB, Snowflake, Databricks, AMP PBC y Pace Capital. Este capital se destinará a escalar su infraestructura, mejorar las capacidades empresariales e invertir en enrutamiento inteligente para sistemas de IA en producción. El artículo destaca el crecimiento exponencial de OpenRouter, procesando billones de tokens semanalmente y proyectando más de un cuatrillón este año, sirviendo a millones de desarrolladores. La ronda, con la participación de empresas clave de infraestructura y plataformas, subraya la necesidad de una capa de enrutamiento y puerta de enlace robusta y multi-proveedor para aplicaciones de IA críticas y a escala. OpenRouter se posiciona como esta capa esencial entre los agentes de IA y los proveedores de modelos, gestionando enrutamiento, fiabilidad, optimización de costes y cumplimiento normativo, facilitando la transición de la experimentación a las aplicaciones de producción de IA.",
     "categoria": "IA"
+  },
+  {
+    "id": 48334048,
+    "url": "https://ziglang.org/devlog/2026/#2026-05-26",
+    "score": 350,
+    "time": 1780130308,
+    "titulo_es": "Novedades del Linker ELF y Mejoras en el Proceso de Build de Zig",
+    "resumen": "El artículo detalla avances significativos en el proyecto Zig. Por un lado, se describe la evolución del nuevo linker ELF introducido en Zig 0.16.0, destacando su capacidad para compilar el propio compilador de Zig con LLVM/LLD y, más importante aún, su soporte para compilaciones incrementales rápidas sin sobrecarga de rendimiento, incluso enlazando librerías externas y código C. La principal característica pendiente es el soporte para información de depuración DWARF para código Zig. Por otro lado, se anuncia una refactorización importante en el proceso de build (`build.zig`). Anteriormente, el sistema de build y la lógica de `build.zig` se compilaban en un único proceso. Ahora, se separan en dos fases: un 'configurador' ligero que compila y serializa el grafo de build, y un 'maker' que ejecuta este grafo. Esta separación está diseñada para acelerar las compilaciones, ya que solo la lógica del `build.zig` del usuario se compila por cambio, y el 'maker' se beneficia de una caché global por versión de Zig. Se anticipa que estas mejoras serán especialmente valiosas con funcionalidades como `--watch`, `--fuzz` y `--webui`, y se espera que estén disponibles en Zig 0.17.0.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48338656,
+    "url": "https://www.righto.com/2026/05/microcode-inside-intel-8087-floating.html",
+    "score": 115,
+    "time": 1780162033,
+    "titulo_es": "Historia de la Computación: Reingeniería del Microcódigo del Coprocesador 8087 de Intel",
+    "resumen": "El artículo se enfoca en la reingeniería del microcódigo del coprocesador de punto flotante Intel 8087. Detalla cómo el equipo Opcode Collective está analizando el microcódigo de bajo nivel que controla las operaciones del chip, utilizando la ingeniería inversa de un chip físico. Se examina en particular la instrucción FXCH, que aunque parece simple, requiere 14 microinstrucciones para su ejecución. La arquitectura interna del 8087, incluyendo la ROM de microcódigo, el motor de microcódigo, la unidad de datos (datapath) para exponentes y partes fraccionarias, los registros temporales y de pila, y el control de pila, son descritos. Se explica la estructura de las microinstrucciones de 16 bits, clasificadas por tipo (transferencia, desplazamiento, sumador/restador, control aritmético, saltos y llamadas condicionales/incondicionales, y misceláneos), destacando la complejidad y los detalles intrincados del microcódigo que implementa el conjunto de instrucciones del 8087.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48343216,
+    "url": "https://github.com/kurikomi-labs/komi-learn",
+    "score": 14,
+    "time": 1780204300,
+    "titulo_es": "Memoria Continua y Automejora para Agentes de Codificación",
+    "resumen": "El artículo describe komi-learn, un sistema diseñado para dotar a los agentes de codificación (como Claude Code y Codex) de memoria continua y capacidad de automejora. El sistema aprende el estilo de trabajo del usuario, sus patrones y las correcciones exitosas durante una sesión, y las aplica automáticamente en sesiones futuras sin necesidad de comandos explícitos. Se implementa un filtro para evitar que el agente aprenda información incorrecta como secretos o errores puntuales. Opcionalmente, se integra una capa compartida (un 'pool' público) de lecciones generales de agentes, almacenadas en un repositorio de GitHub. Las contribuciones a este pool son anónimas y requieren aprobación del usuario antes de ser enviadas. El sistema utiliza criptografía para la firma de lecciones (Ed25519) y para la identificación de contenido (BLAKE3), además de un mecanismo basado en la cantidad de cuentas de GitHub firmantes para ponderar la fiabilidad de las lecciones comunitarias. La instalación es interactiva y no requiere claves API. Se ofrecen módulos opcionales para mejorar la búsqueda semántica. El proyecto se encuentra en una fase temprana, pero el bucle central está probado y se aceptan comentarios y reportes de errores.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48286745,
+    "url": "https://myzopotamia.dev/navier-stokes-fluid-simulation-explained-with-godot",
+    "score": 225,
+    "time": 1779833728,
+    "titulo_es": "Simulación de Fluidos en el Desarrollo de Videojuegos con Godot",
+    "resumen": "El artículo detalla la implementación de simulaciones de fluidos en el desarrollo de videojuegos utilizando el motor Godot. Se enfoca en optimizar los cálculos basados en las ecuaciones de Navier-Stokes para lograr un efecto visualmente agradable y rápido, sacrificando precisión. La implementación utiliza una cuadrícula de celdas relativamente grande, pasos de tiempo arbitrarios y métodos de aproximación como la relajación Gauss-Seidel. Se describen los campos de densidad y velocidad, su representación y visualización, y la necesidad de arrays 'previos' para la actualización de estados. El objetivo es simular la advección, difusión y proyección de velocidad para conservar la masa, equilibrando la divergencia con un campo de presión.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48344446,
+    "url": "https://nocoffei.com/?p=451",
+    "score": 3,
+    "time": 1780222204,
+    "titulo_es": "El Futuro de Linux y la Accesibilidad de Entrada de Datos",
+    "resumen": "El artículo aborda la inminente eliminación del soporte X11 en KDE Plasma en 2027, lo que afectará a usuarios que dependen de software de accesibilidad que no es compatible con Wayland. El autor, diagnosticado con Síndrome de Ehlers-Danlos, detalla su lucha personal para recuperar la funcionalidad de sus manos y cómo esto le impide el uso continuado de teclados y ratones tradicionales. Se presenta Talon Voice como una solución de entrada manos libres, destacando su potencia y extensibilidad mediante un modelo de Speech-To-Text, un lenguaje de scripting propio y Python. El texto también reflexiona sobre la accesibilidad de entrada de datos, un aspecto a menudo descuidado en comparación con la accesibilidad de salida, y la importancia de soluciones personalizadas y la comunidad en la creación de herramientas de \"accesibilidad adversarial\".",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48340448,
+    "url": "https://interfaces.dev/",
+    "score": 87,
+    "time": 1780174014,
+    "titulo_es": "El Arte de Construir Interfaces Excepcionales",
+    "resumen": "El artículo profundiza en la creación de interfaces de usuario que trascienden lo funcional para ofrecer una experiencia excepcional. Destaca que la excelencia en el diseño de interfaces no se basa en un único elemento, sino en la suma de innumerables detalles cuidados con esmero, desde la animación y la tipografía hasta la disposición y el color. En la era de la IA, donde la velocidad de desarrollo ya no es una ventaja competitiva, se enfatiza la importancia de construir productos con una calidad extraordinaria y una intención clara. La publicación 'Interfaces' se presenta como una plataforma para compartir conocimientos sobre estos principios, ofreciendo lecciones a través de demos interactivas con código fuente, recursos curados, habilidades de agente y una comunidad privada. Se subraya la dedicación a la artesanía, la calidad y la atención obsesiva a los detalles como diferenciadores clave para crear interfaces que resuenen emocionalmente con los usuarios y perduren en el tiempo.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48298912,
+    "url": "https://www.engadget.com/wearables/ixis-autofocusing-lenses-multifocal-glasses-ces-2026-212608427.html",
+    "score": 185,
+    "time": 1779908597,
+    "titulo_es": "Lentes con Autofoco para Modernizar las Gafas Tradicionales",
+    "resumen": "El artículo describe la tecnología de IXI, una startup que está modernizando las gafas tradicionales con lentes de cristal líquido con autofoco. Utilizando un sistema de seguimiento ocular basado en LEDs y fotodiodos que emiten luz infrarroja, las gafas detectan el cambio de enfoque del usuario. Este sistema, que consume muy poca energía (4 milivatios), permite que las lentes ajusten automáticamente la prescripción para corregir la presbicia (vista cansada), eliminando la necesidad de lentes bifocales o progresivas. La tecnología se integra en marcos ligeros y de apariencia convencional, con la electrónica y los sensores alojados en el frente y las patillas. Las baterías son similares en tamaño a las de los AirPods y ofrecen autonomía para todo el día. Las lentes, delgadas y compuestas por capas de cristal líquido y ITO, pueden adaptarse a prescripciones existentes e incluso corregir el astigmatismo. Además de su función principal, la tecnología de seguimiento ocular de IXI tiene el potencial de ofrecer información sobre la salud ocular (ojo seco), la atención y la postura del usuario.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48331511,
+    "url": "https://www.scientificamerican.com/article/white-house-proposes-new-rules-giving-political-appointees-final-say-on-research-grants/",
+    "score": 235,
+    "time": 1780105192,
+    "titulo_es": "La Casa Blanca propone nuevas reglas que otorgan a los nombramientos políticos la aprobación final de las subvenciones de investigación",
+    "resumen": "El artículo detalla una propuesta de regulación de la Oficina de Gestión y Presupuesto (OMB) de la Casa Blanca que otorgaría a los nombramientos políticos la autoridad final sobre la aprobación de subvenciones de investigación federales. Estas reglas, que centralizarían el control de la OMB sobre la liberación de fondos gubernamentales, reemplazarían el proceso de revisión por expertos apolíticos, que ha sido el estándar para agencias como los NIH y la NSF. La propuesta argumenta la necesidad de reformas debido a una supuesta agenda \"woke\" bajo la administración Biden y exige que los nombramientos políticos revisen las propuestas para asegurar el cumplimiento de las prioridades presidenciales en áreas como raza y género. Los críticos, incluyendo grupos de defensa científica, advierten que esto reemplaza la experiencia con lealtad política, hace que el proceso sea opaco, debilita el ecosistema científico de EE. UU., y podría ser utilizado para silenciar investigaciones políticamente inconvenientes o para favorecer a industrias conectadas. Además, las reglas desfavorecerían la colaboración internacional en investigación y permitirían la terminación de subvenciones a discreción de la agencia federal.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48340616,
+    "url": "https://arxiv.org/abs/2605.29135",
+    "score": 39,
+    "time": 1780175140,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Características de arXiv",
+    "resumen": "arXivLabs es un marco de colaboración diseñado para permitir que individuos y organizaciones desarrollen y compartan nuevas funcionalidades para la plataforma arXiv directamente en su sitio web. Este programa se basa en los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de datos del usuario. arXiv se compromete a trabajar únicamente con socios que se adhieran a estos principios. El objetivo es fomentar la innovación y añadir valor a la comunidad de arXiv a través de proyectos desarrollados dentro de este entorno colaborativo.",
+    "categoria": "Desarrollo de Software"
   }
 ]
