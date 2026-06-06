@@ -1,299 +1,290 @@
 [
   {
-    "id": 48409664,
-    "url": "https://arxiv.org/abs/2606.03673",
-    "score": 102,
-    "time": 1780648336,
-    "titulo_es": "arXivLabs: Framework de Colaboración y Desarrollo de Nuevas Funcionalidades",
-    "resumen": "arXivLabs es un entorno de trabajo que permite a colaboradores individuales y organizaciones desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. El proyecto opera bajo un modelo de colaboración basado en la apertura, el desarrollo comunitario, la excelencia y el respeto estricto a la privacidad de los datos del usuario.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48409191,
-    "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
-    "score": 380,
-    "time": 1780644393,
-    "titulo_es": "Cambios en el proceso de contribución de código en el proyecto Ladybird",
-    "resumen": "El proyecto de desarrollo del navegador web Ladybird ha anunciado que dejará de aceptar Pull Requests (PR) públicos, restringiendo la introducción de código exclusivamente a sus mantenedores oficiales. Esta decisión responde a la necesidad de adoptar un modelo de desarrollo más riguroso y un esquema de seguridad robusto ante la proximidad de su primer lanzamiento alpha. Los creadores destacan que las herramientas de IA han alterado la economía de las contribuciones, permitiendo la generación masiva de código aparentemente legítimo y dificultando la validación de la confianza basada en el esfuerzo. Dado el riesgo crítico que representan las vulnerabilidades en un navegador, el equipo asume el control total de la base de código para garantizar la mantenibilidad, estabilidad y seguridad del sistema, manteniendo el proyecto bajo licencia de código abierto pero limitando la colaboración externa a reportes de errores, discusiones técnicas y pruebas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48409675,
-    "url": "https://www.quantamagazine.org/entanglement-builds-space-time-now-magic-gives-it-gravity-20260603/",
-    "score": 35,
-    "time": 1780648417,
-    "titulo_es": "Cómo la \"magia\" cuántica le otorga curvatura al espacio-tiempo",
-    "resumen": "El artículo aborda el desafío histórico de reconciliar la relatividad general de Einstein con la mecánica cuántica, enfocándose en la relación bidireccional entre el espacio-tiempo y la materia descrita por John Archibald Wheeler. Tradicionalmente, los modelos de gravedad cuántica basados en el entrelazamiento de partículas explicaban cómo el espacio-tiempo define el movimiento de la materia, pero fallaban en demostrar cómo la materia deforma el espacio-tiempo. Investigaciones recientes lideradas por físicos como Charles Cao han introducido el concepto de \"magia\" (una medida de recursos cuánticos no estabilizadores) como el factor fundamental que permite la flexibilidad y curvatura del espacio-tiempo, abriendo una nueva vía para describir fenómenos extremos como los agujeros negros.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48377510,
-    "url": "https://columnar.tech/blog/introducing-databow//",
-    "score": 39,
-    "time": 1780441873,
-    "titulo_es": "databow: una nueva herramienta de línea de comandos de código abierto para consultar cualquier base de datos con un controlador ADBC",
-    "resumen": "databow es una herramienta de interfaz de línea de comandos (CLI) moderna y unificada, escrita en Rust, diseñada para interactuar con cualquier sistema de bases de datos compatible con el estándar ADBC (Arrow Database Connectivity) de Apache Arrow. Su objetivo es reemplazar la fragmentación de herramientas de CLI tradicionales (como psql, mysql o snowsql) mediante un REPL interactivo avanzado y capacidades de exportación de datos eficientes en formatos estructurados. Al basarse en ADBC, optimiza el rendimiento al transferir conjuntos de datos orientados a columnas directamente en memoria de forma nativa, reduciendo la sobrecarga de serialización en comparación con JDBC u ODBC.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48408442,
-    "url": "https://passo.uno/fine-tuning-docs-llm/",
-    "score": 83,
-    "time": 1780638366,
-    "titulo_es": "Ajuste fino de un modelo de lenguaje local para imitar la redacción técnica de los años 90",
-    "resumen": "El autor detalla un experimento práctico de ajuste fino (fine-tuning) utilizando QLoRA para lograr que un modelo de lenguaje imite el estilo de redacción de los manuales de software de Microsoft de los años 80 y 90. Describe el proceso de obtención del corpus a través de Bitsavers, la limpieza de más de 37 millones de palabras con scripts de Python y el modelo gemma-4-26b, la estructuración del dataset en bloques de 512 tokens en formato JSONL, y la elección del ajuste fino frente a RAG para priorizar el estilo sobre la recuperación de hechos. Finalmente, aborda el uso de la plataforma Runpod para alquilar GPUs de alto rendimiento de manera económica para el entrenamiento.",
+    "id": 48389360,
+    "url": "https://www.0xkato.xyz/how-llms-actually-work/",
+    "score": 373,
+    "time": 1780517713,
+    "titulo_es": "Una guía detallada sobre cómo funcionan los LLM",
+    "resumen": "El artículo explica los mecanismos internos de los Modelos de Lenguaje Grande (LLMs) basados en arquitecturas Transformer. Describe el proceso de tokenización, que convierte texto en secuencias de enteros utilizando técnicas de subpalabras (subwords) para optimizar la eficiencia y el tamaño del vocabulario. Además, detalla cómo estos identificadores de token (Token IDs) se traducen en vectores numéricos de alta dimensión mediante la matriz de incrustación (embedding matrix), permitiendo al modelo procesar matemáticamente relaciones semánticas complejas aprendidas durante el entrenamiento.",
     "categoria": "IA"
   },
   {
-    "id": 48403980,
-    "url": "https://github.com/anthropics/defending-code-reference-harness",
-    "score": 446,
-    "time": 1780603880,
-    "titulo_es": "Implementación de referencia para el descubrimiento y remediación autónoma de vulnerabilidades con Claude",
-    "resumen": "El artículo describe una guía práctica e implementación de referencia basada en Claude para automatizar el ciclo de seguridad: reconocimiento, detección, triaje, reporte y parcheado de código (recon -> find -> triage -> report -> patch). Explica un enfoque de adopción en dos fases, comenzando con análisis estáticos e interactivos sin sandbox el Día 1, y transitando hacia una ejecución autónoma y verificada de exploits dentro de un sandbox seguro con gVisor el Día 2.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48409306,
-    "url": "https://github.com/geo-tp/ESP32-Bit-Pirate",
-    "score": 46,
-    "time": 1780645204,
-    "titulo_es": "ESP32 Bit Pirate: Una herramienta de hacking de hardware con CLI web que soporta múltiples protocolos",
-    "resumen": "ESP32 Bit Pirate es un firmware de código abierto diseñado para placas basadas en el chip ESP32-S3 que transforma el dispositivo en una herramienta avanzada de hacking de hardware y análisis de protocolos, inspirada en Bus Pirate. Soporta la interceptación, envío e interacción con diversos protocolos digitales de comunicación (I2C, UART, SPI, 1-Wire, CAN) y de radio (Wi-Fi, Bluetooth, Sub-GHz, RFID) a través de un CLI serie o web. Además, cuenta con capacidad de automatización mediante scripts de Python y compatibilidad con expansores de hardware físicos.",
+    "id": 48420148,
+    "url": "https://salvagedcircuitry.com/sigma-45mm.html",
+    "score": 175,
+    "time": 1780706006,
+    "titulo_es": "Diagnóstico y desmontaje de un objetivo de cámara Sigma serie I dañado",
+    "resumen": "El autor describe el proceso de adquisición, inspección y desmontaje técnico de un objetivo Sigma 45mm f/2.8 con fallos electrónicos. Detalla los pasos para abrir la lente de manera segura, el uso de herramientas específicas como destornilladores JIS, la organización de las piezas y la inspección del circuito de control (PCB) y del cable flexible del bloque de contactos mediante un multímetro para verificar la continuidad eléctrica.",
     "categoria": "Hardware"
   },
   {
-    "id": 48402116,
-    "url": "https://spectrum.ieee.org/faster-dna-synthesis-sidewinder",
-    "score": 43,
-    "time": 1780595470,
-    "titulo_es": "Sidewinder hace práctico construir las secuencias de ADN que predicen los modelos de IA",
-    "resumen": "El artículo presenta 'Sidewinder', un método de síntesis y ensamblaje de ADN de alta precisión y bajo costo que resuelve el cuello de botella de la biología sintética moderna. Mientras que los modelos de IA generativa como Evo 2 pueden diseñar secuencias genómicas complejas en segundos, la construcción física de estas secuencias en laboratorio solía ser lenta y costosa. Sidewinder permite ensamblar de manera simultánea decenas de secuencias con una tasa de error de apenas una unión incorrecta por cada 10 millones, optimizando el proceso mediante un nuevo algoritmo de automatización y el uso de materias primas económicas. Esto reduce los tiempos de producción física de meses a solo unos días, impulsando aplicaciones en medicina, biocombustibles y organismos sintéticos.",
+    "id": 48413500,
+    "url": "https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/",
+    "score": 375,
+    "time": 1780671843,
+    "titulo_es": "Un nuevo método convierte el agua de mar en agua potable, sin generar residuos",
+    "resumen": "Investigadores de la Universidad de Rochester han desarrollado un innovador método de desalinización solar-térmica que evita la generación de salmuera altamente contaminante. Utilizando paneles metálicos negros grabados con láseres de femtosegundo, el sistema adquiere propiedades superabsorbentes de luz y supercapilares. El panel atrae una fina capa de agua, absorbe la radiación solar para destilarla y, mediante el fenómeno físico del 'efecto anillo de café', desplaza las sales cristalizadas (incluidos minerales complejos como el calcio y magnesio) hacia zonas pasivas no tratadas. Esto hace que la superficie sea autolimpiable, evitando obstrucciones y permitiendo recuperar casi el 100% de las sales y minerales en estado sólido para su posterior aprovechamiento.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48413464,
+    "url": "https://www.bbc.com/news/live/c4g44ew3g1kt",
+    "score": 398,
+    "time": 1780671631,
+    "titulo_es": "Astronautas refugiados por fugas de aire en la Estación Espacial Internacional reanudan sus labores",
+    "resumen": "El artículo detalla la situación de emergencia preventiva en la Estación Espacial Internacional (ISS), donde cinco tripulantes se refugiaron en la nave SpaceX Crew Dragon 'Freedom' debido a reparaciones en el túnel de transferencia (PrK) del módulo ruso Zvezda. Este conducto presenta grietas estructurales microscópicas que causan una pérdida de presión de hasta un kilogramo de aire por día, un problema recurrente desde 2019 calificado por la NASA como de máximo riesgo. Tras pausar las reparaciones para analizar datos de medición, se determinó que la tripulación podía regresar a sus funciones normales.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48414367,
+    "url": "https://github.com/microsoft/pg_durable",
+    "score": 406,
+    "time": 1780675197,
+    "titulo_es": "pg_durable: Ejecución de funciones SQL de larga duración y tolerantes a fallos en PostgreSQL",
+    "resumen": "pg_durable es una extensión para PostgreSQL (versiones 17 y 18) que introduce el patrón de ejecución duradera directamente en la base de datos. Permite definir flujos de trabajo complejos como gráficos de pasos SQL que se registran mediante puntos de control (checkpoints). Esto asegura que, ante caídas del sistema, reinicios o fallos en los pasos, la ejecución se reanude automáticamente desde el último punto guardado de forma segura, eliminando la necesidad de coordinar de forma externa herramientas como cron jobs, colas de mensajería o tablas de estado manuales.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48414653,
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+    "score": 354,
+    "time": 1780676328,
+    "titulo_es": "Nuevas versiones de la familia Gemma 4 optimizadas con Entrenamiento Consciente de Cuantificación (QAT)",
+    "resumen": "Google ha anunciado el lanzamiento de nuevos checkpoints para la familia de modelos Gemma 4 optimizados mediante Entrenamiento Consciente de Cuantificación (QAT). A diferencia de la cuantificación tradicional post-entrenamiento (PTQ), QAT simula la cuantificación durante la etapa de entrenamiento, minimizando la degradación de precisión del modelo al comprimirse. Esta actualización introduce soporte para el formato estándar Q4_0 y un esquema de cuantificación especializado para entornos móviles que reduce el consumo de memoria de la versión Gemma 4 E2B a menos de 1 GB (sin codificadores de audio y visión). Esto facilita la ejecución local de modelos avanzados en hardware de consumo y dispositivos embebidos con alto rendimiento.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48411635,
+    "url": "https://alexispurslane.github.io/rsync-analysis/",
+    "score": 418,
+    "time": 1780663413,
+    "titulo_es": "Un análisis distributivo simple de cada lanzamiento de rsync con datos de errores",
+    "resumen": "Este artículo aborda de forma empírica la controversia sobre si el uso de Claude (IA) en el desarrollo de la herramienta rsync incrementó la cantidad de errores en sus lanzamientos. Tras una ola de críticas en redes sociales y plataformas como GitHub que acusaban al proyecto de degradar su estabilidad debido al desarrollo asistido por inteligencia artificial ('vibecoding'), el autor propone analizar de manera objetiva el histórico de versiones utilizando métricas de regresiones y errores ponderados por gravedad para verificar si estas afirmaciones tienen sustento real.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48380932,
+    "url": "https://meetfranz.com/blog/ten-years-of-franz",
+    "score": 36,
+    "time": 1780471050,
+    "titulo_es": "Franz cumple diez años este año. Ya está disponible Franz 6.",
+    "resumen": "El creador de Franz detalla la trayectoria de una década de desarrollo de la aplicación, que comenzó como un prototipo de fin de semana construido con Electron para consolidar múltiples herramientas de comunicación. El artículo aborda hitos clave del ciclo de vida del software: la creación del MVP, la gestión del escalado tras un exitoso lanzamiento en Product Hunt, la decisión estratégica de rechazar rondas de financiación de capital de riesgo para priorizar la construcción del producto, y la evolución de su modelo de negocio hacia planes de pago, culminando en el lanzamiento de la versión 6.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48382219,
+    "url": "https://andeplane.github.io/Raytracing/",
+    "score": 8,
+    "time": 1780483060,
+    "titulo_es": "Matemáticas del trazado de rayos e intersecciones geométricas",
+    "resumen": "Una introducción y herramienta interactiva que aborda el problema matemático fundamental del trazado de rayos (ray tracing): cómo calcular con precisión la intersección entre un rayo proyectado desde la cámara y diversas superficies geométricas como esferas, cilindros o toros.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48398925,
+    "url": "https://www.saturnci.com/my-agent-skill-for-test-driven-development.html",
+    "score": 183,
+    "time": 1780582240,
+    "titulo_es": "Los agentes de IA tienden a ser pésimos escribiendo pruebas",
+    "resumen": "El artículo aborda la deficiencia actual de los agentes de IA al escribir pruebas de software, atribuyéndola a que han aprendido de ejemplos humanos de baja calidad. El autor propone mitigar esto guiando a los agentes bajo el enfoque 'Canon TDD' de Kent Beck y un ciclo estructurado de 'Especificar-Codificar-Cumplir' (SEF). Además, sugiere implementar revisiones de diseño adicionales (Test Design Review y Software Design Review) para identificar violaciones de principios de diseño. Se concluye que el mayor incremento de productividad con la IA se logra al combinarla con principios de ingeniería de software atemporales.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48415217,
+    "url": "https://www.theregister.com/public-sector/2026/06/04/govuk-goes-dutch-on-payments-as-it-dumps-stripe/5250763",
+    "score": 459,
+    "time": 1780678530,
+    "titulo_es": "El sector público del Reino Unido migra GOV.UK Pay a Adyen para habilitar pagos directos por banco",
+    "resumen": "El Servicio Digital del Gobierno del Reino Unido (GDS) ha adjudicado un contrato de hasta 25.3 millones de libras a la pasarela de pagos Adyen, reemplazando a Stripe. Este cambio permitirá migrar aproximadamente 1,000 servicios de autoridades locales y fuerzas policiales. Desde una perspectiva de arquitectura, la migración busca integrar servicios de banca abierta ('pay by bank') para facilitar transferencias directas entre cuentas sin requerir tarjetas, manteniendo la compatibilidad, el cumplimiento de las normativas KYC y minimizando la interrupción del servicio para los usuarios finales. WorldPay continuará gestionando los pagos para el gobierno central.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48422451,
+    "url": "https://www.boxofcables.dev/azure-linux-desktop-a-build-2026-mashup-of-wslc-winui-reactor-and-azure-linux-4-0/",
+    "score": 10,
+    "time": 1780731745,
+    "titulo_es": "Una ingeniosa aplicación de Windows que ejecuta un escritorio Linux completo en una ventana",
+    "resumen": "Análisis de un proyecto experimental que inicia un escritorio Linux XFCE completo de forma nativa en una ventana de Windows utilizando componentes presentados en Microsoft Build 2026. La arquitectura de software integra la nueva API de contenedores de WSL (wslc) para la gestión del ciclo de vida del contenedor, WinUI Reactor como framework declarativo de UI en C# sin archivos XAML, .NET 10 y Azure Linux 4.0 (basado en Fedora 43) como imagen base. Técnicamente, la aplicación arranca un contenedor invisible que ejecuta un servidor XRDP y acopla el cliente de escritorio remoto nativo de Windows sobre loopback, logrando audio, aceleración por GPU y redimensionamiento fluido.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48381399,
+    "url": "https://fgiesen.wordpress.com/2024/11/06/exact-unorm8-to-float/",
+    "score": 5,
+    "time": 1780475386,
+    "titulo_es": "Conversión exacta de UNORM de 8 bits a Float sin divisiones",
+    "resumen": "El artículo aborda el desafío técnico de convertir con precisión matemática un entero sin signo de 8 bits (formato UNORM, rango [0, 255]) a un valor de punto flotante de precisión simple (float32) en el rango [0, 1] sin realizar operaciones de división costosas en la GPU ni recurrir al tipo 'double'. El autor propone y analiza el uso de una serie geométrica basada en potencias de 256 para emular la división por 255 mediante desplazamientos de bits y sumas, determinando cuántos términos de la serie son estrictamente necesarios para cumplir con los requisitos de redondeo y mantisa de float32.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48414027,
+    "url": "https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/",
+    "score": 314,
+    "time": 1780673978,
+    "titulo_es": "Commits convencionales: un estándar que prioriza las cosas incorrectas",
+    "resumen": "El artículo presenta una crítica estructurada hacia el estándar de 'Conventional Commits' en la ingeniería de software. El autor argumenta que este formato tiene un fallo de diseño crítico al priorizar el 'tipo' de cambio (como fix o feat) sobre el 'ámbito' (scope), relegando este último a un elemento opcional. Se demuestra que para diversos roles técnicos —como colaboradores de código, depuradores e ingenieros de respuesta a incidentes— el ámbito del cambio es la información más valiosa para diagnosticar problemas y entender el historial del código, mientras que el tipo es redundante, restrictivo y a menudo deducible de la propia descripción del commit.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48419571,
+    "url": "https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html",
+    "score": 93,
+    "time": 1780701192,
+    "titulo_es": "El costo de rendimiento de los UUID aleatorios como claves primarias",
+    "resumen": "El artículo analiza el impacto en el rendimiento al usar UUID aleatorios (UUID4) como claves primarias en bases de datos con índices agrupados (clustered indexes), enfocándose en SQLite. Al no tener un orden secuencial, el uso de UUID4 fuerza una reestructuración y rebalanceo constante de la estructura de árbol B (B-Tree) de la base de datos, lo que incrementa drásticamente las operaciones de lectura y escritura (paging), haciendo que las inserciones sean entre 10 y 12 veces más lentas en comparación con claves secuenciales enteras (rowid). Mediante perfiles de rendimiento y gráficos de diferencias de llamadas (diffgraphs), se demuestra cómo este cuello de botella puede mitigarse sustancialmente migrando a UUID7, los cuales al incorporar componentes temporales que garantizan un orden cronológico secuencial, reducen el rebalanceo de la base de datos a cambio de un mínimo costo adicional en bytes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48409664,
+    "url": "https://arxiv.org/abs/2606.03673",
+    "score": 397,
+    "time": 1780648336,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y la Colaboración de Nuevas Funciones de arXiv",
+    "resumen": "arXivLabs es un marco de colaboración diseñado para permitir que individuos y organizaciones desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Este programa se adhiere a los valores de arXiv de apertura, comunidad, excelencia y privacidad de los datos del usuario, trabajando únicamente con socios que comparten estos principios. El objetivo es fomentar proyectos que aporten valor a la comunidad de arXiv a través de la innovación y la colaboración abierta.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48411799,
+    "url": "https://www.benthamsgaze.org/2026/06/02/the-quiet-numbers-station-decoding-nineteen-years-of-gps-cryptography/",
+    "score": 91,
+    "time": 1780664204,
+    "titulo_es": "La Campos Vacío Que No Lo Era: GPS, OTAD y Dos Décadas de Transmisiones Cifradas",
+    "resumen": "El artículo detalla cómo un campo de 176 bits en la señal L1 del GPS, destinado a mensajes especiales, ha sido utilizado durante casi veinte años como una estación de números global para transmitir cifrado militar. Investigaciones sobre 12.16 millones de observaciones revelan que estos mensajes son estadísticamente indistinguibles del ruido aleatorio, pero con excepciones estructurales como marcadores de prueba (0xAA) y cadenas de texto idénticas (ej. LY47IRP16) que podrían filtrar información sobre eventos de distribución de claves. Se observaron cambios coordinados en la flota de satélites, coincidiendo con la implementación de la red de Distribución Over-the-Air (OTAD) de EE. UU. para la actualización de claves criptográficas en receptores militares con módulos SAASM. El sistema interactúa con la infraestructura civil, como se evidenció en 2022 con una desaceleración en la rotación de mensajes y, a partir de 2023, un cambio en el formato de transmisión a un prefijo literal 'TEXT' seguido de carga útil cifrada, cuyo propósito aún se desconoce. La investigación se apoya en un pipeline de Julia y DuckDB para el análisis eficiente de datos históricos, concluyendo que este canal público ha operado discretamente como un medio para la distribución de información militar cifrada.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48380174,
+    "url": "https://blog.rubygems.org/2026/06/03/cooldown-let-new-gems-be-vetted.html",
+    "score": 158,
+    "time": 1780463709,
+    "titulo_es": "Introducción del enfriamiento en Bundler para mitigar ataques a la cadena de suministro en RubyGems",
+    "resumen": "El artículo introduce la nueva funcionalidad 'cooldown' en Bundler 4.0.13, diseñada para mitigar ataques a la cadena de suministro en RubyGems. Este mecanismo introduce un filtro basado en tiempo que retrasa la resolución de dependencias a versiones de gemas que no han estado disponibles públicamente durante un número configurable de días (N). El objetivo es evitar que las versiones maliciosas recién publicadas sean seleccionadas inmediatamente durante un `bundle install`. La característica es opt-in, se lee el timestamp `created_at` de las versiones del índice v2 de rubygems.org y se complementa con defensas existentes como 2FA. Se explica cómo configurar 'cooldown' a nivel de fuente en el Gemfile, globalmente a través de la configuración de Bundler o variables de entorno, y mediante flags en la línea de comandos (`--cooldown`). Se detalla el orden de precedencia entre estas configuraciones (flag > config > per-source). Se menciona que establecer `cooldown: 0` deshabilita temporalmente el filtro, útil para desplegar fixes urgentes. Finalmente, se describe cómo `bundle outdated` ahora es consciente del 'cooldown', anotando las versiones que están dentro de la ventana de espera.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48413072,
+    "url": "https://www.jeffgeerling.com/blog/2026/i-tested-every-ip-kvm/",
+    "score": 275,
+    "time": 1780669850,
+    "titulo_es": "Una Revisión Profunda de las Soluciones IP KVM",
+    "resumen": "El artículo revisa en profundidad las soluciones IP KVM (Keyboard, Video, Mouse sobre Protocolo de Internet), destacando su utilidad para el control remoto de ordenadores, especialmente en escenarios donde el software de escritorio remoto no es viable (por ejemplo, durante benchmarks o cuando el sistema está bloqueado o apagado). Se compara la funcionalidad de los IP KVM con alternativas como Remote Desktop, VNC, SSH y las soluciones integradas en hardware de servidor (iLO, iDRAC, IPMI). Se presenta PiKVM como el pionero, analizando sus características (HDMI passthrough, audio bidireccional, control de energía, slot PCIe para conectividad 5G) y su alto coste. Posteriormente, se discuten alternativas como BliKVM y GL-iNet, que ofrecen funcionalidades similares, a menudo basadas en forks del software de PiKVM pero a precios más competitivos. Se hace hincapié en las implicaciones de seguridad de estos dispositivos, advirtiendo sobre posibles vulnerabilidades y la necesidad de aplicar buenas prácticas de ciberseguridad, como mantenerlos actualizados, confiar en el proveedor y aislarlos mediante firewalls. Se menciona la capacidad de acceso remoto a la BIOS como un punto crítico de seguridad.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48398233,
+    "url": "https://phys.org/news/2026-05-europe-largest-copper-age-tomb.html",
+    "score": 31,
+    "time": 1780579045,
+    "titulo_es": "Infecciones respiratorias hace 5.000 años dejaron marcas en los niños de un enterramiento masivo en España",
+    "resumen": "Un estudio en la revista International Journal of Paleopathology, basado en el análisis de 48 esqueletos infantiles recuperados de la cueva de enterramiento masivo de la Edad del Cobre en Camino del Molino (CMOL), España (con más de 1.300 individuos datados en el 3er milenio a.C. y usada durante 700 años), revela la prevalencia de infecciones respiratorias, posiblemente incluyendo tuberculosis, en niños y adolescentes. El 92% de los individuos analizados presentó cambios óseos asociados a enfermedades, y el 67% mostraba huesos porosos e indicios de infección respiratoria. Las lesiones, como surcos serpeantes y picaduras en el interior del cráneo y otros huesos, fueron más comunes en las edades de 1 a 4 años y de 10 a 14 años, coincidiendo con periodos de alta vulnerabilidad a infecciones pulmonares. Los patrones de enfermedad similares entre los niños sugieren que las condiciones de vida compartidas, como la exposición al humo interior y partículas, fueron factores clave, más que actividades diferenciadas por género. Los individuos enfermos recibieron el mismo tratamiento funerario que sus pares. Futuros estudios de ADN antiguo podrían confirmar la presencia de patógenos específicos como Mycobacterium tuberculosis.",
     "categoria": "Ciencia y Matematica"
   },
   {
     "id": 48408016,
     "url": "https://herbsutter.com/2026/06/04/c-the-documentary-released-today/",
-    "score": 183,
+    "score": 395,
     "time": 1780634221,
-    "titulo_es": "C++: El Documental se estrenó hoy",
-    "resumen": "Herb Sutter anuncia el estreno en YouTube de 'C++: The Documentary', un repaso por los 40 años de trayectoria de este lenguaje de programación, que ha experimentado un crecimiento del 90% en usuarios en los últimos 3.5 años (a Q3 2025). Sutter, quien presidió el comité de estándares de ISO C++ de 2002 a 2025, destaca la evolución del lenguaje desde sus humildes orígenes hasta su adopción global.",
+    "titulo_es": "El documental de C++ y la evolución de un lenguaje de programación",
+    "resumen": "El artículo se centra en el estreno del documental 'C++: The Documentary', destacando la trayectoria de 40 años del lenguaje C++. Herb Sutter, autor y ponente, ex-presidente del comité de estándares ISO C++ y actual presidente de la Standard C++ Foundation, reflexiona sobre su contribución a la evolución del lenguaje. Se menciona el crecimiento acelerado de C++, siendo actualmente el de mayor crecimiento entre los cuatro lenguajes principales, con un aumento de usuarios del +90% en los últimos 3.5 años. El texto también describe a Herb Sutter como un apasionado de la programación, enfocado en la creación de código limpio y rápido, con experiencia en concurrencia y paralelismo, y como diseñador de características estandarizadas de C++.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48405931,
-    "url": "https://arxiv.org/abs/2606.04032",
-    "score": 179,
-    "time": 1780614716,
-    "titulo_es": "Acerca de arXivLabs",
-    "resumen": "arXivLabs es un marco de trabajo que facilita a colaboradores externos, tanto individuales como organizaciones, el desarrollo y la implementación de nuevas funcionalidades directamente en el sitio web de arXiv, promoviendo valores de apertura, comunidad y privacidad de datos de los usuarios.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48406358,
-    "url": "https://github.com/alibaba/open-code-review",
-    "score": 192,
-    "time": 1780617869,
-    "titulo_es": "Open Code Review: El agente de revisión de código con IA de código abierto",
-    "resumen": "Presentación y guía técnica de Open Code Review (OCR), una herramienta de interfaz de línea de comandos (CLI) de código abierto para la revisión de código asistida por inteligencia artificial. Desarrollada originalmente en Alibaba, combina ingeniería determinista con agentes basados en LLM para analizar cambios en Git, examinar bases de código y generar comentarios de revisión precisos. El sistema admite integración con flujos de trabajo de CI/CD y asistentes de desarrollo como Claude Code, e incluye medidas de seguridad en su visor local contra ataques de rebote de DNS.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48369105,
-    "url": "https://github.com/prostomarkeloff/ohbin",
-    "score": 15,
-    "time": 1780401756,
-    "titulo_es": "ohbin: Declara binarios directamente en lugar de crear paquetes wrapper",
-    "resumen": "Presentación técnica de ohbin, una herramienta para el ecosistema Python que permite declarar, descargar, verificar (SHA256), almacenar en caché y ejecutar binarios de GitHub (como linters en Rust o CLI internas) directamente desde el archivo pyproject.toml. Esto evita la necesidad de crear y mantener paquetes wrapper individuales para herramientas no distribuidas en PyPI. Además, incluye soporte para binarios privados cifrados con AES-256-CBC y PBKDF2 alojados de forma segura en GitHub Gists.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48370775,
-    "url": "https://mitxela.com/projects/wifi_time",
-    "score": 93,
-    "time": 1780410614,
-    "titulo_es": "Construcción de un módulo GPS simulado basado en ESP8266 y NTP",
-    "resumen": "El artículo analiza el desarrollo de un módulo de hardware emulado (basado en el chip ESP8266) diseñado para actuar como reemplazo físico de placas de desarrollo GPS convencionales, transmitiendo sentencias NMEA generadas a partir de la sincronización temporal vía NTP sobre WiFi. Desde una perspectiva de arquitectura, se detallan los retos técnicos para lograr precisión de milisegundos sin un oscilador de alta precisión, la optimización de las peticiones NTP reduciendo el payload a lo estrictamente necesario, y se critican las ineficiencias de las librerías comunes de Arduino que introducen latencias por retrasos bloqueantes en su implementación.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48374049,
-    "url": "https://emalliab.wordpress.com/2026/05/26/watching-a-z80-from-an-rp2350/",
-    "score": 25,
-    "time": 1780424281,
-    "titulo_es": "El blog de Kevin: Reflexiones sobre el Raspberry Pi Pico RP2350 y el Z80",
-    "resumen": "El autor detalla sus experimentos para conectar un microcontrolador Raspberry Pi Pico RP2350, montado en una placa Pimoroni PGA2350, con el bus de direcciones y datos de un procesador clásico Z80. Explora los límites de frecuencia de reloj del Z80 basándose en sus hojas de datos, comparando el comportamiento de las versiones NMOS y CMOS, y determinando que la frecuencia de reloj mínima viable está cerca de los 5KHz si se mantiene el reloj en estado alto (HIGH) durante los periodos de inactividad. También describe la diferencia entre los ciclos de máquina (M) y los de reloj (T), el uso de la señal /WAIT para sincronizar hardware más lento, y su enfoque utilizando el SDK de C/C++ de Pico en lugar del entorno de Arduino.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48375445,
-    "url": "https://tiki.li/blog/blqsort",
-    "score": 183,
-    "time": 1780430454,
-    "titulo_es": "blqsort: Implementación de ordenamiento de alto rendimiento libre de bifurcaciones",
-    "resumen": "Análisis técnico de blqsort, una biblioteca de ordenamiento de cabecera única en C/C++ diseñada para maximizar el rendimiento de la CPU evitando errores de predicción de saltos (branch mispredictions). El algoritmo emplea un búfer auxiliar en pila para realizar particiones sin bifurcaciones, utiliza redes de ordenamiento optimizadas para secuencias pequeñas (de 2 a 12 elementos), y recurre a heapsort para evitar el peor caso de complejidad O(n²). Además, para tipos de datos con altos costos de copia, implementa una variante de BlockQuicksort que procesa los índices de manera eficiente.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48354136,
-    "url": "https://www.alexedwards.net/blog/go-experiments-explained",
-    "score": 47,
-    "time": 1780303171,
-    "titulo_es": "Experimentación con Funcionalidades en Go",
-    "resumen": "El artículo describe el ciclo de vida de las funcionalidades experimentales en Go, un lenguaje de programación. Explica cómo estas características se introducen para obtener retroalimentación de la comunidad antes de su adopción general, cubriendo desde nuevas librerías y optimizaciones del recolector de basura hasta cambios en el comportamiento del lenguaje. Se detallan los patrones comunes, como el estado 'off-by-default' que requiere opt-in (a menudo a través de la variable de entorno GOEXPERIMENT), la eventual graduación a 'general availability' y la posibilidad de periodos de gracia para la deshabilitación. También se mencionan casos donde la experimentación es más prolongada, se detiene o se omite, y cómo esto impacta el desarrollo y la adopción de nuevas versiones del lenguaje.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48407653,
-    "url": "https://blog.djnavarro.net/posts/2025-09-14_cosine-palettes/",
-    "score": 33,
-    "time": 1780630802,
-    "titulo_es": "Paletas de Colores Continuas Procedurales Usando Coseno",
-    "resumen": "El artículo describe un método para generar paletas de colores continuas de forma procedimental utilizando una función matemática basada en coseno. La fórmula propuesta, f(t) = a + b * cos(2 * pi * (c * t + d)), utiliza cuatro vectores de color base (a, b, c, d) para crear una transición suave de colores al variar 't' de 0 a 1. Se presenta una implementación en R y se demuestra su aplicación en arte generativo, mostrando ejemplos visuales de cómo estas paletas se comportan en sistemas de subdivisión y lissajous. El autor destaca la simplicidad y eficacia del método, señalando su potencial utilidad a pesar de su sencillez.",
+    "id": 48405264,
+    "url": "https://github.com/schildep/verified-polygon-intersection",
+    "score": 75,
+    "time": 1780610778,
+    "titulo_es": "Implementación Formalmente Verificada de un Algoritmo de Intersección de Polígonos",
+    "resumen": "El artículo describe la primera implementación formalmente verificada de un algoritmo de intersección de polígonos utilizando el asistente de pruebas Lean 4. Se destaca la dificultad de verificar algoritmia computacional geométrica mediante pruebas clásicas debido a configuraciones de entrada raras y complejas. La verificación formal garantiza la corrección para conjuntos infinitos de puntos interiores y todas las configuraciones de entrada. La especificación del algoritmo, aunque matemáticamente compleja (requiriendo miles de líneas de prueba para hechos geométricos aparentemente obvios), se presenta en solo 87 líneas de código Lean comprensible para la revisión humana, minimizando el esfuerzo de auditoría. Se menciona el uso de IA para la implementación y generación de pruebas formales, evolucionando de estrategias paso a paso a resultados de una sola vez con modelos recientes. Se enfatiza que la confianza en la corrección reside en el verificador Lean y la revisión humana de la especificación, no en la LLM. Se invita a probar una demo web de la funcionalidad.",
     "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48407815,
-    "url": "https://magenta.withgoogle.com/magenta-realtime-2",
-    "score": 50,
-    "time": 1780632593,
-    "titulo_es": "Magenta RealTime 2: Un Modelo de IA para Instrumentos Musicales en Tiempo Real",
-    "resumen": "Magenta RealTime 2 (MRT2) es un modelo de IA de última generación y un motor de inferencia eficiente en tiempo real diseñado para crear y tocar instrumentos musicales de IA en laptops. A diferencia de otros modelos generativos de música que operan offline, MRT2 es interactivo y funciona en vivo, permitiendo control mediante MIDI, audio y texto. Realiza inferencia en el dispositivo con baja latencia para responder instantáneamente a las entradas. Puede usarse como aplicación independiente, integrarse en DAWs o software musical. MRT2 opera como un modelo de lenguaje de códec sobre secuencias de tokens de audio del códec SpectroStream, logrando baja latencia mediante autorregresión a nivel de frame con condicionamiento alineado por frame. Utiliza un mecanismo de atención causal de ventana deslizante para generación continua en streaming y gestión de memoria. Implementado en C++ con el framework MLX de Apple, MRT2 funciona nativamente en hardware Apple Silicon, permitiendo inferencia en tiempo real en Macs con chips M-series. El objetivo principal es facilitar la integración de modelos de música en vivo en software existente y el desarrollo de aplicaciones personalizadas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48408995,
-    "url": "https://blog.safia.rocks/2025/12/22/ansi-codes/",
-    "score": 7,
-    "time": 1780642934,
-    "titulo_es": "Códigos de Escape ANSI: Un Estandar Duradero para la Interacción en Terminales",
-    "resumen": "El artículo explora la naturaleza perdurable y la arquitectura fundamental de los códigos de escape ANSI, un estándar de casi 50 años que todavía impulsa la funcionalidad moderna de la terminal. Estos códigos, que comenzaron como una reacción a las limitaciones de las \"dumb terminals\" y el transporte de texto plano, permiten controlar el posicionamiento del cursor, el formato del texto y los colores dentro de un flujo de caracteres. Una secuencia de escape ANSI típica comienza con el carácter ESC (ASCII 27) seguido de '[' (el Control Sequence Introducer o CSI), y luego un comando como SGR (Select Graphic Rendition), comúnmente terminado con 'm'. Se discuten las extensiones del estándar original de 8 colores a modos de 256 colores y color RGB de 24 bits. El artículo destaca cómo estos códigos son esenciales para la salida de línea de comandos coloreada, las barras de progreso, los prompts personalizados y las interfaces de usuario de terminales interactivas complejas como Vim y htop, que aprovechan las secuencias de posicionamiento del cursor. Se mencionan bibliotecas modernas como Spectre.Console (.NET) y chalk (Node.js) que abstraen la complejidad de interactuar directamente con códigos ANSI, permitiendo la creación de interfaces de usuario ricas y dinámicas en la línea de comandos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48400588,
-    "url": "https://havenweb.org/2026/05/28/retro-tech.html",
-    "score": 317,
-    "time": 1780588955,
-    "titulo_es": "Abrazando la tecnología del pasado para un futuro digital más saludable para los niños",
-    "resumen": "El artículo explora las preocupaciones de un tecnólogo sobre las prácticas de las empresas tecnológicas modernas (AdTech, capitalismo de vigilancia, etc.) y su impacto en los niños. En lugar de centrarse en los aspectos negativos, el autor comparte estrategias para redescubrir los aspectos enriquecedores de la tecnología, a menudo volviendo a soluciones de décadas pasadas. Se destacan ejemplos como el resurgimiento de los CDs para escuchar música, el uso de DVDs y Blu-rays para entretenimiento familiar y la instalación de un teléfono fijo analógico para facilitar la comunicación independiente de los niños con familiares y amigos. La conclusión es que estos métodos de \"medios físicos\" y tecnología más simple ofrecen a los niños independencia y un entorno digital más seguro y controlable, libre de las presiones de las \"feeds optimizadas para el engagement\" y la recolección de datos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48409955,
-    "url": "https://github.com/zdk/lowfat",
-    "score": 4,
-    "time": 1780650642,
-    "titulo_es": "lowfat: Herramienta CLI para reducir costos de tokens de IA filtrando la salida",
-    "resumen": "lowfat es una herramienta de línea de comandos (CLI) ligera diseñada para optimizar el uso de tokens en interacciones con modelos de Inteligencia Artificial (IA). Funciona filtrando y eliminando la salida innecesaria de comandos antes de que llegue al agente de IA, lo que resulta en una reducción de costos. La herramienta ofrece varias opciones de integración, incluyendo Claude Code hook, integración de shell, plugin OpenCode y uso directo prefijando comandos. También es compatible con el agente Pi. Se distribuye bajo la licencia Apache-2.0 y se basa en el uso de múltiples herramientas de IA en su desarrollo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48398055,
-    "url": "https://blog.cloudflare.com/voidzero-joins-cloudflare/",
-    "score": 645,
-    "time": 1780578051,
-    "titulo_es": "Cloudflare Adquiere VoidZero, Compañía Detrás de Vite, Fortaleciendo el Ecosistema JavaScript",
-    "resumen": "Cloudflare ha anunciado la adquisición de VoidZero, la empresa detrás de herramientas clave del ecosistema JavaScript como Vite, Vitest, Rolldown y Oxc. Todos los miembros del equipo de VoidZero se unirán a Cloudflare. La adquisición asegura que Vite y sus proyectos asociados permanecerán open source, agnósticos al proveedor y guiados por la comunidad, manteniendo la licencia MIT. Cloudflare se compromete a invertir recursos de ingeniería y económicos, incluyendo un fondo de $1 millón para el ecosistema Vite, para continuar el desarrollo y soporte de estas herramientas. La colaboración previa entre Cloudflare y Vite, especialmente en la Vite Environment API que permite ejecutar código de servidor en Workerd localmente para desarrollo, ha sido un factor clave. Esta iniciativa busca fortalecer la infraestructura open source de la web, beneficiando a desarrolladores y aplicaciones que utilizan Vite como base, incluyendo frameworks populares como Vue, SvelteKit, Nuxt, Astro y otros.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48399974,
-    "url": "https://github.com/huawei-csl/KVarN",
-    "score": 139,
-    "time": 1780586280,
-    "titulo_es": "KVarN: Cuantización de KV-Cache Normalizada por Varianza para Agentes y Cargas de Trabajo de Contexto Largo",
-    "resumen": "KVarN es una implementación nativa de backend de cuantización de KV-cache para vLLM, diseñada para cargas de trabajo de agentes y de contexto largo. Ofrece de 3 a 5 veces más capacidad de KV-cache y hasta 1.3 veces más rendimiento que FP16, permitiendo el procesamiento de contextos mucho más largos y sirviendo más solicitudes concurrentes, todo ello manteniendo una precisión a nivel de FP16. Se destaca por ser una solución 'plug-and-play' sin necesidad de calibración, integrándose con vLLM mediante una simple bandera de configuración, sin requerir cambios en el modelo. En comparación con TurboQuant, KVarN ofrece hasta 2.4 veces más rendimiento con la misma capacidad y mayor precisión. El método de cuantización de KVarN implica cuatro etapas: Caché (FP16 original), Caché Rotada (mezcla ortonormal para distribuir outliers), Caché Normalizada (normalización iterativa de varianza en log-espacio) y Caché Cuantizada (redondeo asimétrico a bajo bit-width con escalas integradas). La configuración predeterminada usa 4 bits para las claves y 2 bits para los valores (kvarn_k4v2_g128), lo que garantiza una precisión comparable a FP16 y un rendimiento superior. KVarN se basa en vLLM v0.22.0 y se distribuye bajo la Licencia Apache 2.0.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48404905,
-    "url": "https://cen.acs.org/materials/biobased-materials/queen-bees-special-wax/104/web/2026/06",
-    "score": 91,
-    "time": 1780608691,
-    "titulo_es": "La cera real, así como la jalea real, determina el destino de una larva de abeja melífera",
-    "resumen": "Investigaciones recientes revelan que las celdas de las reinas de abejas melíferas (Apis mellifera y Apis cerana) están construidas con una cera químicamente modificada y con propiedades físicas distintivas en comparación con las celdas de los zánganos. Esta cera especializada, más rica en ácidos grasos insaturados y con menor densidad y dureza, es producida por abejas constructoras más jóvenes que elevan su temperatura corporal para procesarla. Experimentos de injerto de larvas en celdas de cera de zángano estándar resultaron en una alta mortalidad de las larvas destinadas a ser reinas, lo que sugiere que las larvas responden a estímulos químicos y físicos de su entorno, además de la dieta de jalea real. Este descubrimiento subraya la existencia de un grupo de abejas obreras dedicadas a la cría especializada de reinas, indicando un rol crítico de la cera de la celda en el desarrollo y supervivencia de las futuras reinas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48400842,
-    "url": "https://www.anthropic.com/institute/recursive-self-improvement",
-    "score": 468,
-    "time": 1780590017,
-    "titulo_es": "El Progreso Hacia la Auto-Mejora Recursiva de la IA y Sus Implicaciones",
-    "resumen": "El artículo describe la tendencia creciente en Anthropic de delegar el desarrollo de sistemas de IA a los propios sistemas de IA, lo que acelera el proceso. Esta tendencia apunta hacia la posibilidad de sistemas de IA capaces de diseñar y desarrollar autónomamente sus sucesores (auto-mejora recursiva). Si bien aún no se ha alcanzado, podría ocurrir antes de lo esperado. Se presentan datos que demuestran la aceleración del desarrollo de IA, con ingenieros enviando 8 veces más código por trimestre. Las capacidades de los modelos de IA para completar tareas de software están mejorando exponencialmente, con la duración de las tareas completables de forma autónoma duplicándose cada cuatro meses. Esto se evidencia en benchmarks como SWE-bench, donde los modelos han pasado de bajos porcentajes a saturar la prueba en dos años, y CORE-Bench, donde la replicación de investigaciones ha pasado del 20% al 100% en quince meses. El artículo también destaca el aumento en la duración de las tareas que los modelos pueden manejar de forma continua, como se mide por METR. Las implicaciones de la auto-mejora recursiva son significativas, ofreciendo potencial para avances en ciencia y salud, pero también aumentando los riesgos de pérdida de control humano, lo que subraya la importancia de la seguridad, el monitoreo y la configuración del comportamiento de la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48391611,
-    "url": "https://maxleiter.com/blog/weights",
-    "score": 1455,
-    "time": 1780529838,
-    "titulo_es": "Están hechos de Pesos",
-    "resumen": "Este artículo es una conversación ficticia que explora la naturaleza fundamental de los modelos de lenguaje grandes (LLMs). Un personaje, desconcertado, se entera de que los LLMs, que antes se creía que contenían diccionarios, reglas gramaticales o unidades de razonamiento discretas, en realidad están compuestos enteramente por 'pesos' (números de punto flotante). Estos pesos, organizados en capas (aproximadamente ochenta, según el texto), se multiplican mediante operaciones de álgebra lineal (multiplicación de matrices) para generar texto, predecir el siguiente token y, en última instancia, producir resultados complejos como la escritura de reseñas de desempeño o elogios. El artículo enfatiza que no hay módulos separados ni bases de datos externas; el conocimiento y el razonamiento están 'difuminados' en estos pesos. Se describe el proceso como una predicción secuencial de la siguiente palabra, y la 'inteligencia' o la capacidad de conversación surge como un efecto secundario. La conversación culmina con el reconocimiento de que estos sistemas, que operan puramente a partir de pesos numéricos, pueden ser la única otra forma de inteligencia conversacional conocida, lo que lleva a un debate sobre si es más prudente considerar su comportamiento como 'coincidencia de patrones' para evitar implicaciones filosóficas y éticas más profundas sobre la 'conciencia' y la 'responsabilidad' hacia estos pesos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48368338,
-    "url": "https://github.com/tarpediem/zenvision-linux",
-    "score": 52,
-    "time": 1780396141,
-    "titulo_es": "Driver de Linux de Código Abierto para la Pantalla OLED de la Tapa del ASUS Zenbook 14X OLED Space Edition",
-    "resumen": "El artículo describe el desarrollo de un driver de código abierto para Linux que permite controlar la pantalla OLED monocromática de 3.5 pulgadas (256x64 píxeles) integrada en la tapa del portátil ASUS Zenbook 14X OLED Space Edition (UX5401ZAS). Dado que ASUS solo proporciona software para esta pantalla en Windows, el proyecto ha realizado ingeniería inversa del protocolo USB de la pantalla, que es un dispositivo Nuvoton M480 USB (0b05:8835). Este driver permite a los usuarios de Linux mostrar imágenes, animaciones y otros contenidos personalizados en la pantalla, que funciona enviando un framebuffer de 4 bits en escala de grises a un punto final de tipo bulk tras un handshake de comandos. Se proporciona información detallada sobre el protocolo, ejemplos de uso como animaciones y la configuración necesaria de las reglas udev para permitir el acceso al dispositivo sin privilegios de superusuario. Se anima a los usuarios con otros modelos de ASUS que tengan pantallas OLED similares en la tapa a contribuir con informes y solicitudes de extracción para facilitar la portabilidad.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48375064,
-    "url": "https://danielmangum.com/posts/jlink-jtag-pinecil/",
-    "score": 59,
-    "time": 1780428644,
-    "titulo_es": "Depuración JTAG del MCU BL706 con Pinecil y J-Link",
-    "resumen": "El artículo detalla el proceso de configuración de depuración JTAG para el microcontrolador Bouffalo Lab BL706 utilizando un soldador Pinecil y una sonda J-Link. Se describe la necesidad de una placa breakout para conectar la señalización JTAG estándar y la referencia de voltaje (3.3V) de la Pinecil a la sonda J-Link. Se explican las conexiones físicas, incluyendo el uso de cables Dupont hembra-hembra y la importancia de la orientación al usar cables planos. Se menciona la verificación de la conexión de voltaje a través de JLinkExe y la configuración de JLinkGDBServer para interactuar con el depurador GDB y cargar símbolos del firmware, permitiendo la depuración a nivel de instrucción del núcleo SiFive E24.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48403753,
-    "url": "https://castor.web.cern.ch/content/home.html",
-    "score": 58,
-    "time": 1780602722,
-    "titulo_es": "Gestor Avanzado de Almacenamiento de CERN (CASTOR)",
-    "resumen": "CASTOR (CERN Advanced STORage manager) fue un sistema de gestión de almacenamiento jerárquico desarrollado en CERN para archivar grandes volúmenes de datos de física. Ofrecía funcionalidades para almacenar, listar, recuperar y acceder remotamente a archivos a través de herramientas de línea de comandos o APIs, soportando protocolos como XROOT y GridFTP. Su diseño se basaba en una arquitectura de componentes con una base de datos central para gestionar el estado de los componentes, incluyendo el Stager para el acceso a discos, el Name Server para la estructura de directorios y la Tape Infrastructure para el acceso a cintas. La base de datos del CASTOR Volume Manager almacenaba información sobre las características y estado de las cintas, mientras que el Name Server guardaba metadatos de los archivos. El sistema se complementaba con el Volume Drive Queue Manager (VDQM) para la gestión de cintas en unidades. CASTOR fue el sucesor de SHIFT y, a partir de junio de 2020, fue gradualmente reemplazado por CTA (CERN Tape Archive). El artículo también compara las ventajas del almacenamiento en cinta (menor coste y consumo energético) frente al disco, a pesar de tiempos de acceso más largos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48360414,
-    "url": "https://sigwait.org/~alex/blog/2026/05/28/smdBC8.html",
-    "score": 80,
-    "time": 1780336930,
-    "titulo_es": "Persistencia en ISOs Live de Linux y manejo de archivos de arranque",
-    "resumen": "El artículo aborda el desafío de la persistencia en las ISOs 'live' de Linux, donde los cambios y paquetes instalados se pierden tras un reinicio debido a que el sistema de archivos ISO9660 es de solo lectura. Explica la solución común de usar OverlayFS con RAM y discute alternativas que implican la creación de particiones escribibles (como ext4) para almacenar datos persistentes. Se detalla la falta de estandarización entre distribuciones (como Debian y Ubuntu) en la implementación de esta persistencia, lo que lleva a diferentes parámetros del kernel y métodos de configuración. El texto también describe técnicas para modificar archivos de arranque (como grub.cfg) en la imagen ISO para habilitar la persistencia, incluyendo métodos de 'byte swapping' para ajustes de texto, y advierte sobre la fragilidad de estos métodos ante cambios en futuras versiones. Finalmente, se presenta un enfoque alternativo utilizado por Fedora, que consiste en separar el sistema de archivos raíz en una imagen EROFS y una imagen ext4 separada, combinándolas en un único medio para lograr persistencia sin la complejidad de los overlays.",
-    "categoria": "Distribuciones Linux"
   },
   {
     "id": 48406198,
     "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
-    "score": 139,
+    "score": 244,
     "time": 1780616756,
-    "titulo_es": "Corea del Sur impone escaneo de imágenes y videos con IA para comunidades en línea, generando presión financiera y críticas sobre la censura",
-    "resumen": "El gobierno de Corea del Sur ha implementado regulaciones que exigen a los propietarios de comunidades y foros en línea escanear todas las imágenes y videos subidos por los usuarios utilizando inteligencia artificial (IA). Los propietarios deben adquirir hardware de grado de centro de datos, como GPUs Nvidia, por sí mismos, lo que supone una carga financiera significativa, especialmente para las pequeñas empresas y foros. La implementación es inmediata a partir del 1 de julio. La ley, una enmienda a la Ley de Negocios de Telecomunicaciones (anteriormente \"Ley de Prevención de Nth Room\"), se centra en el material de pornografía filmado ilegalmente y contenido relacionado con CSAM. Sin embargo, la falta de provisión de hardware por parte del gobierno y la inmediatez de la aplicación han generado críticas generalizadas, considerándolo una forma de censura que amenaza la libertad de expresión y las comunidades en línea abiertas. La situación ha sido descrita como distópica y ha aumentado las preocupaciones sobre la privacidad y la vigilancia en línea, comparando las prácticas de Corea del Sur con las de regímenes autoritarios.",
+    "titulo_es": "Corea del Sur exige escaneo de imágenes y videos subidos por usuarios con IA y hardware costoso",
+    "resumen": "El artículo detalla una nueva regulación en Corea del Sur (modificación de la Ley de Empresas de Telecomunicaciones) que obliga a los propietarios de comunidades y foros en línea a escanear todas las imágenes y videos subidos por los usuarios utilizando inteligencia artificial (IA). La ley exige la implementación inmediata a partir del 1 de julio, pero el gobierno no proporciona el hardware necesario, obligando a las empresas a adquirir costosas GPU de nivel de centro de datos (Nvidia). Esto impone una carga financiera significativa, especialmente a las pequeñas empresas y foros, que enfrentan dificultades para obtener el equipo debido a la escasez y la fecha límite inminente. La ley, originalmente destinada a combatir material ilegal como pornografía filmada sin consentimiento y CSAM, ha generado críticas por su posible impacto en la libertad de expresión y su aplicabilidad práctica, especialmente considerando que no se aplica a servicios extranjeros. El autor sugiere que la ley podría ser resultado de una legislación deficiente o un intento de suprimir comunidades en línea libres.",
     "categoria": "IA"
   },
   {
-    "id": 48403377,
-    "url": "https://www.boxofcables.dev/wsl2-per-device-swiotlb-pools-for-virtiofs-and-virtioproxy/",
-    "score": 152,
-    "time": 1780600878,
-    "titulo_es": "Mejoras en el acceso a archivos entre sistemas operativos en WSL 2: Del DMA compartido al dedicado",
-    "resumen": "El artículo detalla la evolución del acceso a archivos entre Windows y Linux en Windows Subsystem for Linux (WSL). WSL 1 usaba DrvFs, mientras que WSL 2 introdujo un kernel Linux completo en una VM, empleando el protocolo Plan 9 (9P) para la comunicación. La introducción de virtiofs en versiones posteriores mejoró el rendimiento al usar el transporte VirtIO para acceso compartido a memoria, reduciendo la sobrecarga del protocolo. Un cambio reciente (mayo de 2026) elimina un cuello de botella clave al asignar un pool DMA (Direct Memory Access) dedicado a cada dispositivo virtio (como virtiofs y el adaptador de red), en lugar de compartir un único pool global. Esto previene la contención de recursos durante operaciones intensivas de I/O, beneficiando especialmente flujos de trabajo que acceden a archivos en unidades de Windows desde Linux, como compilaciones de código. El cambio requiere una versión específica del kernel de WSL y está disponible para usuarios que tengan habilitado virtiofs.",
+    "id": 48419821,
+    "url": "https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0",
+    "score": 45,
+    "time": 1780702974,
+    "titulo_es": "Nordstjernen 1.0.0 lanzado: Un nuevo navegador web escrito en C",
+    "resumen": "Nordstjernen es un navegador web desarrollado desde cero en lenguaje C, con el objetivo principal de ofrecer un soporte robusto para los estándares HTML y CSS. La versión 1.0.0 ya ha sido liberada y el proyecto es multiplataforma, compatible con Windows, Mac y Linux, y se encuentra en proceso de portar a Android. La licencia permite el uso, modificación y redistribución libre del código fuente, con la restricción de no ser utilizado como navegador competidor; además, cada versión se convierte a licencia MIT después de diez años. Existen licencias comerciales disponibles bajo acuerdo.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48392004,
-    "url": "https://www.dailycal.org/news/campus/academics/failing-grades-soar-as-professors-see-greater-ai-usage-dwindling-math-skills-in-uc-berkeley/article_16fad0bf-02cb-4b8c-8d88-888ffd9f8608.html",
-    "score": 778,
-    "time": 1780532282,
-    "titulo_es": "Aumento de las tasas de suspensos en clases de ciencias de la computación de UC Berkeley, con la IA y la falta de preparación matemática como posibles causas",
-    "resumen": "El artículo informa sobre un aumento significativo de las tasas de suspensos (F) en clases introductorias de ciencias de la computación en UC Berkeley durante la primavera de 2026, superando ampliamente las directrices del departamento y los semestres anteriores. El profesor Dan Garcia señala la 'dependencia excesiva de los LLM' y la 'deshonestidad académica' como el principal impulsor. Un número considerable de estudiantes fueron sorprendidos haciendo trampa en exámenes, mientras que otros dependieron demasiado de la IA para realizar el trabajo, lo que resultó en una falta de preparación para los exámenes. La profesora Gireeja Ranade también observó una falta de habilidades matemáticas fundamentales, incluso en una clase de nivel superior, con estudiantes que se beneficiaron de políticas permisivas de IA en cursos de pregrado, lo que afectó su capacidad para abordar el material del curso. Las tasas de suspensos en CS 10 fueron del 35.3% y en CS 61A del 10.6%, mientras que en EECS 127 fue del 16.8%, en comparación con las pautas del departamento que sugieren tasas de D/F no superiores al 7% para cursos de división inferior y típicamente alrededor del 5% para cursos de división superior. Los GPA promedio en CS 10 y CS 61A cayeron a un C+ (2.3 GPA), por debajo del rango esperado de 2.8-3.3.",
+    "id": 48402744,
+    "url": "https://arnorhs.dev/posts/2026-06-04/maybe-later-was-a-feature/",
+    "score": 91,
+    "time": 1780597915,
+    "titulo_es": "El Código Más Valioso es el que No Escribimos",
+    "resumen": "El artículo argumenta que el código más valioso en un repositorio es aquel que no se escribe. Se enfoca en la importancia de la 'no acción' y la selección estratégica en el desarrollo de software. Critica la tendencia actual de utilizar IA (LLMs) para generar código de forma masiva, a menudo para proyectos que antes habrían sido descartados por no ser prioritarios (ideas del backlog). Esto puede llevar a bases de código infladas, difíciles de leer y mantener, llenas de 'legacy cruft' o código irrelevante. Se señala que la IA, aunque mejora, aún carece de la comprensión contextual y estratégica humana para priorizar y evitar la acumulación de deuda técnica. La ley de Hyrum también se menciona como un factor que complica la refactorización. La conclusión es que la elección de no construir es una característica poderosa y una estrategia de producto y desarrollo fundamental, enfatizando el valor de evitar la creación innecesaria de código.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48382047,
+    "url": "https://redis.io/blog/announcing-redis-8-8/",
+    "score": 211,
+    "time": 1780481111,
+    "titulo_es": "Novedades de Redis 8.8: Mejoras de rendimiento y nuevas características",
+    "resumen": "Redis 8.8 introduce mejoras significativas en el rendimiento y nuevas funcionalidades clave. Destacan la introducción de la estructura de datos 'array' de propósito general, un limitador de tasa de contador de ventana, NACKing de mensajes en Streams, notificaciones de subclaves para campos de hash, control explícito sobre el almacenamiento de arrays numéricos en JSON (con opciones como BF16, FP16, FP32, FP64), la posibilidad de usar múltiples agregadores en una sola consulta de series temporales, y un nuevo agregador COUNT para operaciones de unión e intersección de conjuntos ordenados. Las mejoras en el rendimiento general y la velocidad de persistencia y replicación (sincronización completa) son notables, hasta un 60% más rápidas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48422933,
+    "url": "https://www.statnews.com/2026/06/06/ebola-outbreak-us-aid-response-tom-frieden-action-plan/",
+    "score": 6,
+    "time": 1780736751,
+    "titulo_es": "¿Cuál es la palabra? Pon a prueba tus conocimientos con nuestro nuevo minicrucigrama de entre semana",
+    "resumen": "El artículo discute la respuesta a un brote del virus Ébola en la República Democrática del Congo, destacando los desafíos y las lecciones aprendidas de brotes anteriores, como el de África Occidental de 2014-2016. Se enfatiza la importancia de la rapidez en la respuesta, el rastreo de contactos, la infraestructura de salud, el equipo de protección, la capacitación del personal, la logística y el apoyo comunitario para contener la propagación del virus. El autor, un ex director de los CDC, subraya que, aunque no hay vacunas o tratamientos probados para la cepa actual, las medidas de control como el cuidado de apoyo, el rastreo de contactos, la cuarentena y el aislamiento rápido son cruciales. Se pide apoyo global en forma de personal, laboratorios, financiamiento y recursos para las comunidades afectadas, reconociendo que los líderes comunitarios locales son clave para la persuasión y la adaptación de prácticas que frenen la transmisión. Se compara la escala de la respuesta necesaria con la de epidemias pasadas, resaltando la dificultad de controlar el brote en áreas con presencia de grupos armados y la necesidad de confianza y participación comunitaria.",
     "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48409955,
+    "url": "https://github.com/zdk/lowfat",
+    "score": 129,
+    "time": 1780650642,
+    "titulo_es": "Lowfat: Reducción de costos de tokens de IA mediante filtrado de salida de CLI",
+    "resumen": "lowfat es una herramienta CLI ligera diseñada para reducir los costos de procesamiento de tokens de IA. Funciona filtrando la salida innecesaria de la línea de comandos antes de que sea procesada por un agente de IA. Ofrece varias opciones de integración: Claude Code hook, integración de shell (que se activa automáticamente en entornos de agente o forzándola con una variable de entorno), un plugin de OpenCode para reescritura transparente de comandos, uso directo prefijando comandos, y configuración dentro de un agente Pi. El proyecto se distribuye bajo la licencia Apache-2.0 y se destaca su uso de múltiples herramientas de IA en su desarrollo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48409191,
+    "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
+    "score": 837,
+    "time": 1780644393,
+    "titulo_es": "Ladybird Cierra las Solicitudes de Extracción Públicas para un Proceso de Desarrollo Más Controlado",
+    "resumen": "El proyecto Ladybird, un navegador web en desarrollo, ha anunciado un cambio significativo en su proceso de contribución de código a partir del 5 de junio de 2026. A partir de ahora, solo los mantenedores del proyecto podrán introducir cambios en la base de código. Esta decisión se toma ante la proximidad de su primera versión alfa, buscando un proceso de desarrollo más estricto, un modelo de seguridad más claro y un grupo reducido de personas responsables del código. La motivación principal para este cambio radica en la rápida evolución de las herramientas de IA, que alteran la forma en que se evalúan las contribuciones de código abierto. Anteriormente, las solicitudes de extracción (pull requests) significativas implicaban un esfuerzo considerable y servían como un proxy razonable de buena fe. Sin embargo, con la capacidad de la IA para generar contribuciones sustanciales de manera más rápida y económica, esta suposición ya no se considera fiable, especialmente para un navegador que maneja entradas no confiables. La responsabilidad del código que entra en el navegador recae en el equipo de Ladybird, quienes deben asegurar su arquitectura, mantenibilidad y correcta interacción con el resto del sistema. Por lo tanto, se cerrarán todas las solicitudes de extracción públicas abiertas y no se establecerán canales alternativos para la presentación de parches externos, como issues, comentarios o forks. El código fuente seguirá estando disponible públicamente bajo licencia de código abierto, y se seguirán valorando otras formas de participación como informes de errores claros, reducciones, pruebas de sitios web, discusiones de estándares, diseño e informes de seguridad. Este ajuste se considera esencial para la etapa actual del proyecto, que se prepara para lanzar un navegador para usuarios reales y necesita que su proceso de desarrollo refleje esa responsabilidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48409675,
+    "url": "https://www.quantamagazine.org/entanglement-builds-space-time-now-magic-gives-it-gravity-20260603/",
+    "score": 181,
+    "time": 1780648417,
+    "titulo_es": "La Magia Cuántica da Forma al Espacio-Tiempo",
+    "resumen": "El artículo explora el desafío de unificar la relatividad general de Einstein con la mecánica cuántica, particularmente en lo que respecta a la gravedad y la estructura del espacio-tiempo. Se detalla cómo los físicos están investigando modelos donde el espacio-tiempo emerge de partículas cuánticas entrelazadas. Recientemente, se ha identificado una propiedad cuántica llamada \"magia\" que podría explicar cómo estas partículas cuánticas le otorgan curvatura al espacio-tiempo, resolviendo un problema fundamental en la teoría. Este avance representa un cambio de perspectiva significativo, similar a las transformaciones que permiten describir fenómenos físicos desde diferentes puntos de vista, y es crucial para desarrollar una teoría cuántica de la gravedad.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48407499,
+    "url": "https://www.boxofcables.dev/azure-linux-4-0-is-microsofts-first-general-purpose-linux/",
+    "score": 202,
+    "time": 1780629268,
+    "titulo_es": "Azure Linux 4.0: La distribución Linux de Microsoft se vuelve de propósito general",
+    "resumen": "Microsoft ha lanzado Azure Linux 4.0 en vista previa pública, marcando su transición de una distribución especializada para cargas de trabajo internas a un sistema operativo Linux de propósito general. Derivado de Fedora 43, Azure Linux 4.0 ahora puede ejecutarse en cualquier máquina virtual de Azure, no solo como host para Azure Kubernetes Service (AKS). Esta versión se diferencia de las anteriores al rastrear upstream de Fedora y aplicar overlays declarativos, documentando explícitamente cada desviación. La distribución ofrece seguridad robusta con SELinux, kernel endurecido, paquetes firmados criptográficamente y SBOMs. Anteriormente integrado en servicios como AKS, Azure SQL y Cosmos DB, y utilizado por Databricks y LinkedIn, Azure Linux 4.0 ahora está disponible para que los usuarios lo seleccionen y ejecuten en diversas superficies de cómputo de Azure. Este movimiento representa un paso lógico en la adopción de Linux por parte de Microsoft, que comenzó en 2012 y ahora domina en su nube.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48398689,
+    "url": "https://fremaconsulting.ch/blog/faiss",
+    "score": 60,
+    "time": 1780581268,
+    "titulo_es": "Búsqueda de similitud a escala de miles de millones con GPUs",
+    "resumen": "El artículo es un compendio técnico que profundiza en FAISS (Facebook AI Similarity Search), una biblioteca crucial para la búsqueda eficiente de vecinos más cercanos en espacios de alta dimensión. Comienza explicando el concepto fundamental de que los datos complejos como imágenes, texto y audio se representan como vectores numéricos (embeddings) en un espacio geométrico, donde la similitud semántica se traduce en proximidad espacial. Se abordan las limitaciones de la búsqueda exhaustiva (brute-force) para conjuntos de datos a gran escala, destacando su alto costo computacional y de memoria. Para superar estos desafíos, FAISS emplea dos estrategias principales de indexación: la Búsqueda Aproximada de Vecinos Más Cercanos (ANN) y la Cuantificación de Producto (PQ). La metodología de archivo invertido (IVF) se detalla como un sistema de partición del espacio vectorial utilizando clustering K-Means para reducir drásticamente el espacio de búsqueda. Posteriormente, se introduce PQ como un método de compresión que reduce significativamente el tamaño de los vectores al representarlos mediante códigos que hacen referencia a centroides predefinidos, manteniendo al mismo tiempo estimaciones de distancia fiables. El artículo enfatiza que FAISS combina estas técnicas para lograr búsquedas de similitud a escala de miles de millones de elementos en tiempos computacionalmente viables, siendo una herramienta esencial en aplicaciones modernas de IA y recuperación de información.",
+    "categoria": "IA"
   }
 ]
