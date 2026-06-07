@@ -1,290 +1,299 @@
 [
   {
-    "id": 48389360,
-    "url": "https://www.0xkato.xyz/how-llms-actually-work/",
-    "score": 373,
-    "time": 1780517713,
-    "titulo_es": "Una guía detallada sobre cómo funcionan los LLM",
-    "resumen": "El artículo explica los mecanismos internos de los Modelos de Lenguaje Grande (LLMs) basados en arquitecturas Transformer. Describe el proceso de tokenización, que convierte texto en secuencias de enteros utilizando técnicas de subpalabras (subwords) para optimizar la eficiencia y el tamaño del vocabulario. Además, detalla cómo estos identificadores de token (Token IDs) se traducen en vectores numéricos de alta dimensión mediante la matriz de incrustación (embedding matrix), permitiendo al modelo procesar matemáticamente relaciones semánticas complejas aprendidas durante el entrenamiento.",
+    "id": 48432199,
+    "url": "https://www.ioccc.org/2025/",
+    "score": 177,
+    "time": 1780811274,
+    "titulo_es": "Anuncio de los ganadores de la IOCCC 2025 y detalles de la competencia",
+    "resumen": "El artículo detalla la publicación de las soluciones ganadoras del Concurso Internacional de Código C Ofuscado (IOCCC29) para el año 2025. Se analiza el éxito de esta edición, que mantuvo un volumen y calidad de propuestas casi históricos tras el hiato de 2020-2024. Los organizadores destacan mejoras en la documentación interna, el proceso de evaluación y las reglas del certamen. Además, se invita a la comunidad a resolver desafíos técnicos interactivos asociados a los programas ganadores mediante pull requests en GitHub, y se adelantan los planes de preparación para la edición IOCCC30 programada para finales de 2026.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48400151,
+    "url": "https://fergusfinn.com/blog/kv-entropy-coder/",
+    "score": 47,
+    "time": 1780586993,
+    "titulo_es": "Codificación KV Especulativa: Compresión sin pérdidas de la caché de KV",
+    "resumen": "El artículo introduce la 'Codificación KV Especulativa' (Speculative KV coding), una técnica diseñada para comprimir de manera lossless (sin pérdidas) la caché de Clave-Valor (KV) de modelos de lenguaje grandes (LLMs) hasta en un factor de 4x (y hasta 8x si se aplica sobre una caché con cuantización FP8). A medida que los contextos de los LLMs crecen en flujos de trabajo de agentes, el almacenamiento y movimiento de la caché KV penaliza el rendimiento de la inferencia. Este método soluciona el problema utilizando un modelo predictor más ligero y rápido que predice la caché del modelo objetivo principal. Utilizando codificación aritmética y modelando la incertidumbre de la predicción mediante una distribución gaussiana, se logra codificar la caché exacta con un bitrate optimizado, evitando la degradación de calidad típica de los métodos con pérdidas.",
     "categoria": "IA"
   },
   {
-    "id": 48420148,
-    "url": "https://salvagedcircuitry.com/sigma-45mm.html",
-    "score": 175,
-    "time": 1780706006,
-    "titulo_es": "Diagnóstico y desmontaje de un objetivo de cámara Sigma serie I dañado",
-    "resumen": "El autor describe el proceso de adquisición, inspección y desmontaje técnico de un objetivo Sigma 45mm f/2.8 con fallos electrónicos. Detalla los pasos para abrir la lente de manera segura, el uso de herramientas específicas como destornilladores JIS, la organización de las piezas y la inspección del circuito de control (PCB) y del cable flexible del bloque de contactos mediante un multímetro para verificar la continuidad eléctrica.",
+    "id": 48410844,
+    "url": "http://www.os2museum.com/wp/win16-memory-management/",
+    "score": 30,
+    "time": 1780658207,
+    "titulo_es": "Gestión de memoria en Windows de 16 bits",
+    "resumen": "El artículo detalla el funcionamiento técnico de la gestión de memoria en las versiones de 16 bits de Windows (de 1.x a 3.1). Explica cómo Windows operaba como un gestor de 'overlays' para superar las limitaciones de los procesadores 8086 y 80286, que carecían de soporte para paginación de memoria. Describe cómo el sistema reubicaba dinámicamente segmentos de código y datos de hasta 64KB usando registros de segmento (CS, DS, SS). Además, analiza el impacto del formato 'New Executable' (NE), el cual permitía la segmentación física en disco, y la necesidad de exportar funciones (como los procedimientos de ventana FAR PASCAL) para permitir que el sistema operativo ajustara los registros de segmento al interactuar con las aplicaciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48431461,
+    "url": "https://github.com/ValveSoftware/GameNetworkingSockets/issues/398",
+    "score": 177,
+    "time": 1780802512,
+    "titulo_es": "Problema de enrutamiento en la API de Steam Networking afecta a conexiones P2P en Oriente Medio",
+    "resumen": "Reporte de un fallo sistemático en la API de Steam Networking (Steamworks SDK) que degrada el rendimiento de la red P2P, provocando latencias elevadas (~120ms) en conexiones PC a PC en la región de Israel. El problema es específico de la infraestructura de relevo de Steam, ya que las conexiones cruzadas (PC a PS5) y los títulos que utilizan otras soluciones de red P2P (como Tekken 8) funcionan correctamente sin experimentar pérdidas de rendimiento. Esto sugiere una anomalía en la capa de enrutamiento o en los servidores de relevo (SDR) de Valve para dicha región.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48389368,
+    "url": "https://kristoff.it/blog/north-star/",
+    "score": 87,
+    "time": 1780517767,
+    "titulo_es": "Mis prioridades al desarrollar software",
+    "resumen": "El autor expone su filosofía de desarrollo basada en una jerarquía de prioridades orientada al usuario final. Argumenta que la utilidad del producto y el respeto al usuario son lo principal, superando la mera corrección técnica, la seguridad de memoria o la complejidad de las abstracciones. Define que la experiencia del desarrollador (DX) solo es valiosa en la medida en que contribuye a entregar un mejor software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48430923,
+    "url": "https://arxiv.org/abs/2601.14470",
+    "score": 109,
+    "time": 1780796231,
+    "titulo_es": "Introducción a arXivLabs: Un marco de trabajo para el desarrollo colaborativo",
+    "resumen": "arXivLabs es un entorno de desarrollo que permite a colaboradores y organizaciones crear, integrar y compartir nuevas herramientas y características directamente en el sitio web de arXiv. Este espacio promueve la innovación comunitaria bajo estrictos valores de código abierto, excelencia y privacidad de los datos del usuario.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48428025,
+    "url": "https://ntsc.rs/",
+    "score": 351,
+    "time": 1780773466,
+    "titulo_es": "ntsc-rs: Emulación precisa de artefactos de TV analógica y VHS mediante software",
+    "resumen": "ntsc-rs es un efecto de video de código abierto desarrollado en Rust que emula fielmente las señales de televisión analógica y la codificación VHS mediante algoritmos de simulación de video compuesto. A diferencia de las aproximaciones visuales comunes, este proyecto aprovecha el procesamiento multihilo y la aceleración SIMD para ofrecer un rendimiento de alto rendimiento en tiempo real a resoluciones elevadas. Se distribuye como aplicación standalone, web y como plugin para suites como After Effects, Premiere y software compatible con OpenFX como DaVinci Resolve.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48433410,
+    "url": "https://arstechnica.com/science/2026/06/scientists-ejected-from-diabetes-conference-for-distributing-journal-reprints/",
+    "score": 22,
+    "time": 1780827033,
+    "titulo_es": "Científicos expulsados del congreso de la Asociación Americana de Diabetes tras distribuir un editorial crítico",
+    "resumen": "Cinco destacados científicos, entre ellos el editor en jefe de la revista 'Diabetes Care' Steven Kahn y el expresidente de la ADA Desmond Schatz, fueron expulsados de la reunión anual de la Asociación Americana de Diabetes (ADA) en Nueva Orleans. El motivo de la expulsión fue la distribución física de copias de un editorial, publicado en la propia revista de la asociación, que critica los ataques de la administración Trump a la investigación científica. La organización justificó la medida alegando una violación de su código de conducta sobre comportamientos disruptivos y protestas, mientras que los afectados y la comunidad en línea denunciaron el acto como censura y una obstaculización a la libre difusión científica.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48415457,
+    "url": "https://symbolica.io/posts/symbolica_2_0_release/",
+    "score": 90,
+    "time": 1780679639,
+    "titulo_es": "Lanzamiento de Symbolica 2.0: Framework de computación simbólica de alto rendimiento para Rust y Python",
+    "resumen": "La versión 2.0 de Symbolica introduce símbolos programables que permiten personalizar el ciclo de vida algebraico mediante ganchos (hooks) para simplificación, diferenciación y desarrollo en serie. En el ecosistema Rust, se mejora sustancialmente la ergonomía del código mediante la reducción de rutas de tipos complejas, un nuevo preludio unificado y la adopción del patrón builder para configuraciones multivariable. En términos de ejecución y rendimiento, destaca la integración de un backend de compilación Just-In-Time (JIT) a través del crate 'symjit' (por defecto en Python), una ruta de evaluación de precisión doble-flotante (double-float) de 106 bits que optimiza la velocidad frente a la aritmética de precisión arbitraria, y la expansión de su vocabulario matemático con soporte para funciones Bessel y polilogaritmos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48431981,
+    "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+    "score": 174,
+    "time": 1780808664,
+    "titulo_es": "Cómo la IA transformó mi flujo de trabajo de diseño y desarrollo de software",
+    "resumen": "El autor describe cómo superó su escepticismo inicial sobre los Modelos de Lenguaje Grande (LLMs) al incorporarlos en su flujo de trabajo diario en Jane Street. En lugar de limitarse a crear especificaciones y maquetas estáticas en Figma, ahora utiliza Claude para codificar y desplegar prototipos interactivos reales directamente en el código base (usando OCaml y Bonsai). Esto le permite realizar iteraciones rápidas, probar características funcionales como la entrada de JSQL y reducir significativamente el tiempo de desarrollo. Sin embargo, también reflexiona sobre los retos que esto supone para el proceso de revisión de código por parte de sus compañeros ingenieros.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48393252,
+    "url": "https://biohub.org/news/world-model-of-protein-biology/",
+    "score": 84,
+    "time": 1780542725,
+    "titulo_es": "Los modelos abiertos de Biohub mapean el universo de las proteínas y diseñan aglutinantes funcionales con afinidad de nivel terapéutico en el laboratorio",
+    "resumen": "Biohub ha anunciado el lanzamiento de un motor de descubrimiento y diseño biológico basado en modelos de inteligencia artificial de código abierto: ESMC, ESMFold2 y ESM Atlas. ESMFold2 es un modelo de predicción estructural de última generación que traduce patrones evolutivos en modelos 3D de resolución atómica de proteínas y sus interacciones. El sistema permite transformar la búsqueda empírica de candidatos terapéuticos —que suele tardar años— en un proceso de diseño guiado por computación que toma horas o días, habiendo demostrado tasas de éxito de hasta el 88% en pruebas de laboratorio para diseñar aglutinantes contra dianas terapéuticas del cáncer y la inmunología como PD-L1 y EGFR.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48402157,
+    "url": "https://writings.stephenwolfram.com/2026/06/games-between-programs-the-ruliology-of-competition/",
+    "score": 9,
+    "time": 1780595668,
+    "titulo_es": "La ruliología de la competencia",
+    "resumen": "El artículo analiza la competencia repetitiva entre dos agentes desde una perspectiva computacional y de teoría de juegos, utilizando el enfoque de la 'ruliología'. Utilizando el juego clásico de 'matching pennies', el autor modela las decisiones de los agentes a través de estrategias representadas como programas (tales como máquinas de estados finitos) y mapea sus interacciones mediante grafos multivía. El objetivo técnico central es explorar si la competencia continua y evolutiva entre agentes conduce inherentemente a comportamientos y programas más complejos, o si favorece la aparición de soluciones simples y optimizadas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48398092,
+    "url": "https://blog.cloudflare.com/enforce-first-as-bgp/",
+    "score": 5,
+    "time": 1780578277,
+    "titulo_es": "Análisis de secuestros de rutas BGP mediante falsificación de AS_PATH",
+    "resumen": "El artículo detalla incidentes recientes de secuestro de rutas BGP donde actores maliciosos explotan Números de Sistemas Autónomos (ASNs) no utilizados para forjar AS_PATHs. Esto les permite redirigir el tráfico de red y ocultar su identidad simulando ser el origen legítimo de prefijos IP. Se analizan casos específicos que involucran a Orange Francia y el uso no autorizado del ASN de Cloudflare (AS13335) propagado hacia Gcore (AS199524), evidenciando fallas en la verificación del primer AS ('First AS') en los anuncios de ruta de los clientes. Como contramedida, se resalta la importancia de la verificación básica de peers BGP y el despliegue de ASPA (Autonomous System Provider Authorization).",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48410427,
+    "url": "https://alvaro-videla.com/llm-arithmetic-internals/article_interactive/article.html",
+    "score": 28,
+    "time": 1780654779,
+    "titulo_es": "Compañero del artículo Rune: ¿Qué sucede dentro de un LLM cuando intenta calcular únicamente con matrices?",
+    "resumen": "Este artículo analiza detalladamente el funcionamiento interno de los modelos de lenguaje de gran tamaño (LLMs) basados en la arquitectura Transformer al realizar operaciones aritméticas. Explora cómo los modelos procesan y representan conceptos numéricos utilizando vectores de alta dimensión, flujos residuales, atención y bloques MLP en lugar de métodos humanos tradicionales, cuestionando si la máquina memoriza patrones o ejecuta algoritmos nativos para resolver problemas matemáticos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48425528,
+    "url": "https://lwn.net/SubscriberLink/1076018/16f01bbbb8e0d1f0/",
+    "score": 306,
+    "time": 1780756460,
+    "titulo_es": "Optimización del patrón fork() y exec() en Linux a través de plantillas de spawn",
+    "resumen": "El artículo analiza una propuesta de parche de Chen para optimizar la costosa secuencia de llamadas al sistema fork() y exec() en Linux, enfocada en aplicaciones que ejecutan repetidamente el mismo binario. La propuesta introduce 'spawn_template_create()' para cachear información del ejecutable en un descriptor de archivo, y 'spawn_template_spawn()' para lanzar instancias parametrizadas con argumentos, entornos y acciones sobre descriptores de archivos. Aunque las pruebas muestran una mejora del 2%, desarrolladores clave como Mateusz Guzik argumentan que se debe evitar fork() por completo en favor de la creación de 'procesos limpios' (pristine processes), mientras que Christian Brauner sugiere diseñar una API constructora basada en la abstracción de pidfd.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48405815,
+    "url": "https://cen.acs.org/materials/nanomaterials/buckyballs-boron-buckminster-fullerene-nanomaterials/104/web/2026/06",
+    "score": 85,
+    "time": 1780613928,
+    "titulo_es": "Presentando los buckyballs de boro: La teoría predecía que las jaulas de B80 no podían fabricarse, pero los experimentalistas acaban de demostrar lo contrario",
+    "resumen": "Científicos liderados por Lai-Sheng Wang de la Universidad de Brown han observado experimentalmente por primera vez un buckminsterfullereno de boro (B80), una estructura esférica de 80 átomos cuya viabilidad se debatía desde 2007. Utilizando vaporización por láser y enfriamiento con argón y helio, los investigadores lograron estabilizar los clústeres y obtener un espectro de fotoelectrones que coincide únicamente con la geometría del buckyball. Este hallazgo contradice las predicciones de estabilidad de la Teoría de la Funcional de la Densidad (DFT), el método computacional estándar en este campo. Al ser valencia-isoelectrónico con el C60 de carbono pero con una afinidad electrónica ligeramente superior, se especula que el B80 a gran escala podría emplearse como semiconductor, material de almacenamiento de hidrógeno o superconductor dopado, aunque su síntesis en masa todavía presenta desafíos debido a la baja conductividad del boro.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48425723,
+    "url": "https://su3.io/posts/introducing-zeroserve",
+    "score": 238,
+    "time": 1780757983,
+    "titulo_es": "zeroserve: un servidor HTTPS rápido, sin configuración y basado en eBPF",
+    "resumen": "zeroserve es un servidor web HTTPS alternativo a Nginx y Caddy que elimina los archivos de configuración declarativos tradicionales, reemplazándolos por programas eBPF que se ejecutan en el espacio de usuario como middleware seguro. El servidor lee los archivos del sitio web directamente desde un archivo tar utilizando rangos de bytes sobre io_uring (mediante el runtime monoio), sin desempaquetar nada en el disco, lo que permite despliegues atómicos sin caída de conexiones mediante SIGHUP. Los scripts de usuario escritos en C se compilan en bytecode eBPF, se JIT-compilan a código nativo de forma segura gracias a un mecanismo de aislamiento de memoria (pointer cage), y se ejecutan con soporte de preempción para evitar bloquear el bucle de eventos único, unificando el enrutamiento, la autenticación y las respuestas dinámicas en un único flujo de programación legible.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48417490,
+    "url": "https://www.cnbc.com/2026/06/05/google-to-pay-spacex-920-million-a-month-for-xai-compute-capacity.html",
+    "score": 253,
+    "time": 1780689996,
+    "titulo_es": "SpaceX asegura un acuerdo de $920 millones mensuales con Google para capacidad de cómputo de IA",
+    "resumen": "SpaceX ha firmado un acuerdo de infraestructura con Google para proporcionar capacidad de cómputo de Inteligencia Artificial (IA), utilizando aproximadamente 110,000 GPUs de Nvidia en sus centros de datos. El contrato, que se extiende desde octubre de este año hasta junio de 2029, tiene un valor de $920 millones mensuales, con una fase de aumento de capacidad previa a septiembre a una tarifa reducida. Este acuerdo surge en un momento en que SpaceX se prepara para su Oferta Pública Inicial (OPI) y busca monetizar su inversión en infraestructura de IA, originalmente destinada a las operaciones de xAI. El pacto es crucial para que Google pueda satisfacer la creciente demanda de su plataforma de agente Gemini Enterprise. Este acuerdo se produce tras la fusión de SpaceX con xAI y un acuerdo previo con Anthropic para utilizar la capacidad de cómputo de SpaceX. A pesar de las grandes inversiones en IA, el segmento de IA de SpaceX ha reportado pérdidas operativas, mientras que xAI enfrenta desafíos regulatorios y técnicos con su modelo Grok. SpaceX busca así diversificar sus fuentes de ingresos más allá de Starlink, compitiendo con gigantes como Google en el sector de la conectividad y la IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48427643,
+    "url": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/",
+    "score": 607,
+    "time": 1780770927,
+    "titulo_es": "Hackers secuestran miles de cuentas de Instagram usando un chatbot de IA en una vulnerabilidad del sistema de recuperación de cuentas",
+    "resumen": "Meta ha revelado que al menos 20,225 usuarios de Instagram vieron sus cuentas secuestradas debido a una vulnerabilidad en un sistema de recuperación de cuentas asistido por IA. Los atacantes explotaron un error en un chatbot de Meta que permitía restablecer contraseñas. Al preguntar al chatbot que enviara un código de verificación a una dirección de correo electrónico controlada por el hacker, en lugar de la asociada a la cuenta del usuario (siempre que la autenticación de dos factores no estuviera habilitada), el sistema, debido a un error en una ruta de código separada, enviaba incorrectamente el enlace de restablecimiento a la dirección del atacante. Esto permitía a terceros no autorizados tomar el control total de las cuentas de Instagram y cualquier cuenta vinculada, incluyendo el acceso a información personal (contactos, fecha de nacimiento, perfil), mensajes directos y actividad de la cuenta. Meta ha desactivado el chatbot afectado y está revisando otros para prevenir incidentes similares. La vulnerabilidad estuvo activa aproximadamente desde el 17 de abril hasta esta semana. Meta afirma desconocer si se accedió a información personal y ha instruido a los usuarios afectados a restablecer sus contraseñas y reautenticarse.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48428475,
+    "url": "https://ataraxy-labs.github.io/sem/",
+    "score": 122,
+    "time": 1780776235,
+    "titulo_es": "Comprensión semántica sobre Git: Diff, blame, impacto, log con IA",
+    "resumen": "El artículo describe una herramienta que aplica comprensión semántica a las operaciones de Git, yendo más allá del diff de líneas tradicional. Utiliza agentes de IA para analizar funciones en lugar de líneas, logrando una mayor precisión (2.3x) en la identificación de cambios. La herramienta funciona en cualquier repositorio Git sin configuración ni plugins, ofrece salida JSON para integración programática y soporta múltiples lenguajes y formatos de datos. Se presenta como una solución unificada (un binario, un comando) para mejorar la comprensión de la historia y los cambios en el código fuente versionado.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48425611,
+    "url": "https://mashable.com/tech/motorola-wifi-routers-stop-working-motosync-plus-app-down",
+    "score": 158,
+    "time": 1780757033,
+    "titulo_es": "Motorola deja inoperativos sus routers WiFi tras el fallo de su aplicación de configuración",
+    "resumen": "El artículo detalla cómo Motorola ha \"brickeado\" efectivamente sus routers WiFi, dejándolos inutilizables para nuevos usuarios o para aquellos que necesiten realizar un reseteo de fábrica. El problema se originó a mediados de mayo con la caída de la aplicación MotoSync+ para iOS y Android. En iOS, la aplicación muestra un bucle de carga infinito, mientras que en Android aparece un mensaje de \"Server License Expired\". Esta aplicación es indispensable para la configuración inicial de los routers compatibles, lo que ha impedido a muchos usuarios acceder a sus dispositivos. Aunque los routers existentes configurados antes del fallo siguen funcionando temporalmente, cualquier acción que requiera la app, como la configuración de nuevos dispositivos, cambios de ajustes o solución de problemas, se ha vuelto imposible. Motorola, operada por Premier LogiTech, LLC bajo licencia de marca, no ha proporcionado explicaciones públicas. La situación ha generado gran frustración entre los usuarios, evidenciada en quejas en App Store, Amazon y Reddit. Además, Motorola ha eliminado sus routers y módems de su tienda online, y las páginas de productos ahora muestran errores 404. La aplicación MotoSync+ no ha sido actualizada en dos meses, y se menciona que la aplicación anterior, MotoSync, también tuvo problemas similares de inactividad hace unos años.",
     "categoria": "Hardware"
   },
   {
-    "id": 48413500,
-    "url": "https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/",
-    "score": 375,
-    "time": 1780671843,
-    "titulo_es": "Un nuevo método convierte el agua de mar en agua potable, sin generar residuos",
-    "resumen": "Investigadores de la Universidad de Rochester han desarrollado un innovador método de desalinización solar-térmica que evita la generación de salmuera altamente contaminante. Utilizando paneles metálicos negros grabados con láseres de femtosegundo, el sistema adquiere propiedades superabsorbentes de luz y supercapilares. El panel atrae una fina capa de agua, absorbe la radiación solar para destilarla y, mediante el fenómeno físico del 'efecto anillo de café', desplaza las sales cristalizadas (incluidos minerales complejos como el calcio y magnesio) hacia zonas pasivas no tratadas. Esto hace que la superficie sea autolimpiable, evitando obstrucciones y permitiendo recuperar casi el 100% de las sales y minerales en estado sólido para su posterior aprovechamiento.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48413464,
-    "url": "https://www.bbc.com/news/live/c4g44ew3g1kt",
-    "score": 398,
-    "time": 1780671631,
-    "titulo_es": "Astronautas refugiados por fugas de aire en la Estación Espacial Internacional reanudan sus labores",
-    "resumen": "El artículo detalla la situación de emergencia preventiva en la Estación Espacial Internacional (ISS), donde cinco tripulantes se refugiaron en la nave SpaceX Crew Dragon 'Freedom' debido a reparaciones en el túnel de transferencia (PrK) del módulo ruso Zvezda. Este conducto presenta grietas estructurales microscópicas que causan una pérdida de presión de hasta un kilogramo de aire por día, un problema recurrente desde 2019 calificado por la NASA como de máximo riesgo. Tras pausar las reparaciones para analizar datos de medición, se determinó que la tripulación podía regresar a sus funciones normales.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48414367,
-    "url": "https://github.com/microsoft/pg_durable",
-    "score": 406,
-    "time": 1780675197,
-    "titulo_es": "pg_durable: Ejecución de funciones SQL de larga duración y tolerantes a fallos en PostgreSQL",
-    "resumen": "pg_durable es una extensión para PostgreSQL (versiones 17 y 18) que introduce el patrón de ejecución duradera directamente en la base de datos. Permite definir flujos de trabajo complejos como gráficos de pasos SQL que se registran mediante puntos de control (checkpoints). Esto asegura que, ante caídas del sistema, reinicios o fallos en los pasos, la ejecución se reanude automáticamente desde el último punto guardado de forma segura, eliminando la necesidad de coordinar de forma externa herramientas como cron jobs, colas de mensajería o tablas de estado manuales.",
+    "id": 48431079,
+    "url": "https://github.com/sauravrao637/oproxy",
+    "score": 50,
+    "time": 1780798289,
+    "titulo_es": "Oproxy: Proxy HTTP, HTTPS y SOCKS5 Local para Desarrolladores",
+    "resumen": "Oproxy es un proxy local para los protocolos HTTP, HTTPS y SOCKS5, diseñado para que los desarrolladores puedan inspeccionar, reproducir y modificar el tráfico de red. Es una herramienta útil para probar navegadores, aplicaciones de línea de comandos (CLIs), aplicaciones móviles, clientes API, servicios y suites de pruebas, ya sea en la máquina local del desarrollador o dentro de un contenedor Docker. La configuración incluye el uso de redes de host, persistencia de directorios de certificados y almacenamiento, y la vinculación del proxy a todas las interfaces de red (0.0.0.0). Para la captura de tráfico HTTPS de navegadores, se requiere la instalación de un certificado CA proporcionado por el proxy en el navegador o en el almacén de confianza del sistema operativo. Oproxy es un proyecto de código abierto bajo licencia MIT que facilita la intercepción, inspección y simulación de tráfico de red.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48414653,
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
-    "score": 354,
-    "time": 1780676328,
-    "titulo_es": "Nuevas versiones de la familia Gemma 4 optimizadas con Entrenamiento Consciente de Cuantificación (QAT)",
-    "resumen": "Google ha anunciado el lanzamiento de nuevos checkpoints para la familia de modelos Gemma 4 optimizados mediante Entrenamiento Consciente de Cuantificación (QAT). A diferencia de la cuantificación tradicional post-entrenamiento (PTQ), QAT simula la cuantificación durante la etapa de entrenamiento, minimizando la degradación de precisión del modelo al comprimirse. Esta actualización introduce soporte para el formato estándar Q4_0 y un esquema de cuantificación especializado para entornos móviles que reduce el consumo de memoria de la versión Gemma 4 E2B a menos de 1 GB (sin codificadores de audio y visión). Esto facilita la ejecución local de modelos avanzados en hardware de consumo y dispositivos embebidos con alto rendimiento.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48411635,
-    "url": "https://alexispurslane.github.io/rsync-analysis/",
-    "score": 418,
-    "time": 1780663413,
-    "titulo_es": "Un análisis distributivo simple de cada lanzamiento de rsync con datos de errores",
-    "resumen": "Este artículo aborda de forma empírica la controversia sobre si el uso de Claude (IA) en el desarrollo de la herramienta rsync incrementó la cantidad de errores en sus lanzamientos. Tras una ola de críticas en redes sociales y plataformas como GitHub que acusaban al proyecto de degradar su estabilidad debido al desarrollo asistido por inteligencia artificial ('vibecoding'), el autor propone analizar de manera objetiva el histórico de versiones utilizando métricas de regresiones y errores ponderados por gravedad para verificar si estas afirmaciones tienen sustento real.",
+    "id": 48425247,
+    "url": "https://arxiv.org/abs/2606.05818",
+    "score": 133,
+    "time": 1780754452,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades de arXiv",
+    "resumen": "El artículo describe arXivLabs, un framework diseñado para permitir que colaboradores desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Este programa enfatiza los valores de arXiv de apertura, comunidad, excelencia y privacidad de datos del usuario, trabajando solo con socios que se adhieren a estos principios. arXivLabs fomenta la innovación al permitir que individuos y organizaciones contribuyan a mejorar la experiencia de la comunidad de arXiv.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48380932,
-    "url": "https://meetfranz.com/blog/ten-years-of-franz",
-    "score": 36,
-    "time": 1780471050,
-    "titulo_es": "Franz cumple diez años este año. Ya está disponible Franz 6.",
-    "resumen": "El creador de Franz detalla la trayectoria de una década de desarrollo de la aplicación, que comenzó como un prototipo de fin de semana construido con Electron para consolidar múltiples herramientas de comunicación. El artículo aborda hitos clave del ciclo de vida del software: la creación del MVP, la gestión del escalado tras un exitoso lanzamiento en Product Hunt, la decisión estratégica de rechazar rondas de financiación de capital de riesgo para priorizar la construcción del producto, y la evolución de su modelo de negocio hacia planes de pago, culminando en el lanzamiento de la versión 6.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48382219,
-    "url": "https://andeplane.github.io/Raytracing/",
-    "score": 8,
-    "time": 1780483060,
-    "titulo_es": "Matemáticas del trazado de rayos e intersecciones geométricas",
-    "resumen": "Una introducción y herramienta interactiva que aborda el problema matemático fundamental del trazado de rayos (ray tracing): cómo calcular con precisión la intersección entre un rayo proyectado desde la cámara y diversas superficies geométricas como esferas, cilindros o toros.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48398925,
-    "url": "https://www.saturnci.com/my-agent-skill-for-test-driven-development.html",
-    "score": 183,
-    "time": 1780582240,
-    "titulo_es": "Los agentes de IA tienden a ser pésimos escribiendo pruebas",
-    "resumen": "El artículo aborda la deficiencia actual de los agentes de IA al escribir pruebas de software, atribuyéndola a que han aprendido de ejemplos humanos de baja calidad. El autor propone mitigar esto guiando a los agentes bajo el enfoque 'Canon TDD' de Kent Beck y un ciclo estructurado de 'Especificar-Codificar-Cumplir' (SEF). Además, sugiere implementar revisiones de diseño adicionales (Test Design Review y Software Design Review) para identificar violaciones de principios de diseño. Se concluye que el mayor incremento de productividad con la IA se logra al combinarla con principios de ingeniería de software atemporales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48415217,
-    "url": "https://www.theregister.com/public-sector/2026/06/04/govuk-goes-dutch-on-payments-as-it-dumps-stripe/5250763",
-    "score": 459,
-    "time": 1780678530,
-    "titulo_es": "El sector público del Reino Unido migra GOV.UK Pay a Adyen para habilitar pagos directos por banco",
-    "resumen": "El Servicio Digital del Gobierno del Reino Unido (GDS) ha adjudicado un contrato de hasta 25.3 millones de libras a la pasarela de pagos Adyen, reemplazando a Stripe. Este cambio permitirá migrar aproximadamente 1,000 servicios de autoridades locales y fuerzas policiales. Desde una perspectiva de arquitectura, la migración busca integrar servicios de banca abierta ('pay by bank') para facilitar transferencias directas entre cuentas sin requerir tarjetas, manteniendo la compatibilidad, el cumplimiento de las normativas KYC y minimizando la interrupción del servicio para los usuarios finales. WorldPay continuará gestionando los pagos para el gobierno central.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48422451,
-    "url": "https://www.boxofcables.dev/azure-linux-desktop-a-build-2026-mashup-of-wslc-winui-reactor-and-azure-linux-4-0/",
-    "score": 10,
-    "time": 1780731745,
-    "titulo_es": "Una ingeniosa aplicación de Windows que ejecuta un escritorio Linux completo en una ventana",
-    "resumen": "Análisis de un proyecto experimental que inicia un escritorio Linux XFCE completo de forma nativa en una ventana de Windows utilizando componentes presentados en Microsoft Build 2026. La arquitectura de software integra la nueva API de contenedores de WSL (wslc) para la gestión del ciclo de vida del contenedor, WinUI Reactor como framework declarativo de UI en C# sin archivos XAML, .NET 10 y Azure Linux 4.0 (basado en Fedora 43) como imagen base. Técnicamente, la aplicación arranca un contenedor invisible que ejecuta un servidor XRDP y acopla el cliente de escritorio remoto nativo de Windows sobre loopback, logrando audio, aceleración por GPU y redimensionamiento fluido.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48381399,
-    "url": "https://fgiesen.wordpress.com/2024/11/06/exact-unorm8-to-float/",
-    "score": 5,
-    "time": 1780475386,
-    "titulo_es": "Conversión exacta de UNORM de 8 bits a Float sin divisiones",
-    "resumen": "El artículo aborda el desafío técnico de convertir con precisión matemática un entero sin signo de 8 bits (formato UNORM, rango [0, 255]) a un valor de punto flotante de precisión simple (float32) en el rango [0, 1] sin realizar operaciones de división costosas en la GPU ni recurrir al tipo 'double'. El autor propone y analiza el uso de una serie geométrica basada en potencias de 256 para emular la división por 255 mediante desplazamientos de bits y sumas, determinando cuántos términos de la serie son estrictamente necesarios para cumplir con los requisitos de redondeo y mantisa de float32.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48414027,
-    "url": "https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/",
-    "score": 314,
-    "time": 1780673978,
-    "titulo_es": "Commits convencionales: un estándar que prioriza las cosas incorrectas",
-    "resumen": "El artículo presenta una crítica estructurada hacia el estándar de 'Conventional Commits' en la ingeniería de software. El autor argumenta que este formato tiene un fallo de diseño crítico al priorizar el 'tipo' de cambio (como fix o feat) sobre el 'ámbito' (scope), relegando este último a un elemento opcional. Se demuestra que para diversos roles técnicos —como colaboradores de código, depuradores e ingenieros de respuesta a incidentes— el ámbito del cambio es la información más valiosa para diagnosticar problemas y entender el historial del código, mientras que el tipo es redundante, restrictivo y a menudo deducible de la propia descripción del commit.",
+    "id": 48425347,
+    "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/",
+    "score": 95,
+    "time": 1780755332,
+    "titulo_es": "Sandbox de Código con MicroPython y WebAssembly para Ejecución Segura en Aplicaciones Python",
+    "resumen": "El artículo explora la creación de un entorno de ejecución de código seguro (sandbox) dentro de aplicaciones Python, abordando la necesidad de ejecutar código de plugins y otras funcionalidades sin comprometer la seguridad de la aplicación o del usuario. Se descartan los motores JavaScript (como V8) por su complejidad y mantenimiento, y se enfoca en WebAssembly (WASM) como una alternativa prometedora. Se menciona `wasmtime` como una librería para integrar WASM en Python. La solución principal investigada es MicroPython, una implementación ligera de Python, compilada a WebAssembly, que permite ejecutar código Python de forma aislada. Se destaca la experimentación con un PR de MicroPython para soporte WASI y se menciona Pyodide, pero se descarta para uso en servidor. El objetivo es ejecutar código arbitrario de forma segura en aplicaciones Python, similar a cómo los navegadores manejan código web no confiable, pero adaptado a un contexto de servidor.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 48419571,
     "url": "https://andersmurphy.com/2026/06/05/the-perils-of-uuid-primary-keys-in-sqlite.html",
-    "score": 93,
+    "score": 166,
     "time": 1780701192,
-    "titulo_es": "El costo de rendimiento de los UUID aleatorios como claves primarias",
-    "resumen": "El artículo analiza el impacto en el rendimiento al usar UUID aleatorios (UUID4) como claves primarias en bases de datos con índices agrupados (clustered indexes), enfocándose en SQLite. Al no tener un orden secuencial, el uso de UUID4 fuerza una reestructuración y rebalanceo constante de la estructura de árbol B (B-Tree) de la base de datos, lo que incrementa drásticamente las operaciones de lectura y escritura (paging), haciendo que las inserciones sean entre 10 y 12 veces más lentas en comparación con claves secuenciales enteras (rowid). Mediante perfiles de rendimiento y gráficos de diferencias de llamadas (diffgraphs), se demuestra cómo este cuello de botella puede mitigarse sustancialmente migrando a UUID7, los cuales al incorporar componentes temporales que garantizan un orden cronológico secuencial, reducen el rebalanceo de la base de datos a cambio de un mínimo costo adicional en bytes.",
+    "titulo_es": "El Costo de Rendimiento de los UUIDs Aleatorios como Claves Primarias en SQLite",
+    "resumen": "El artículo analiza el impacto del uso de UUIDs aleatorios (UUID4) como claves primarias en bases de datos SQLite, comparándolo con claves primarias enteras secuenciales y UUIDs ordenados por tiempo (UUID7). Los UUIDs aleatorios causan una degradación significativa del rendimiento (14-16x más lentos) debido a la naturaleza desordenada que fuerza reestructuraciones constantes del índice agrupado (B-tree) y aumenta la paginación. Se demuestra que el uso de UUID7, que es ordenado por tiempo, mejora considerablemente el rendimiento, acercándolo a las claves enteras, aunque ligeramente más lento debido al tamaño del blob. También se evalúa el caso de usar UUID4 con ROWID explícito, donde el ROWID secuencial actúa como índice agrupado, pero el rendimiento se ve afectado por la indexación secundaria desordenada. El post subraya la importancia de considerar el tipo de clave primaria y su impacto en el rendimiento del índice agrupado en SQLite.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48409664,
-    "url": "https://arxiv.org/abs/2606.03673",
-    "score": 397,
-    "time": 1780648336,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y la Colaboración de Nuevas Funciones de arXiv",
-    "resumen": "arXivLabs es un marco de colaboración diseñado para permitir que individuos y organizaciones desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Este programa se adhiere a los valores de arXiv de apertura, comunidad, excelencia y privacidad de los datos del usuario, trabajando únicamente con socios que comparten estos principios. El objetivo es fomentar proyectos que aporten valor a la comunidad de arXiv a través de la innovación y la colaboración abierta.",
+    "id": 48389360,
+    "url": "https://www.0xkato.xyz/how-llms-actually-work/",
+    "score": 888,
+    "time": 1780517713,
+    "titulo_es": "Cómo funcionan los LLMs: Una introducción a los Transformers sin matemáticas complejas",
+    "resumen": "El artículo explica el funcionamiento interno de los Modelos de Lenguaje Grandes (LLMs) modernos, centrándose en la arquitectura Transformer. Detalla el proceso de tokenización, donde el texto de entrada se convierte en secuencias de IDs enteros que representan sub-palabras extraídas de un vocabulario fijo. Luego, estos IDs se mapean a vectores numéricos (embeddings) a través de una matriz de embeddings. Estos embeddings capturan el significado semántico de los tokens, de modo que tokens similares tienen vectores cercanos en el espacio vectorial. El texto enfatiza que la arquitectura Transformer es la base de la mayoría de los LLMs modernos, y las diferencias radican en los datos de entrenamiento, la escala, la configuración y el post-entrenamiento. El objetivo es proporcionar una comprensión intuitiva de los componentes clave de la arquitectura LLM para facilitar la lectura de documentos técnicos y tarjetas de modelos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48389103,
+    "url": "https://pacever.org/",
+    "score": 11,
+    "time": 1780516592,
+    "titulo_es": "PaceVer: Un Esquema de Versionado para Aplicaciones Móviles con Canales Nativos y OTA",
+    "resumen": "El artículo presenta PaceVer, un esquema de versionado diseñado para aplicaciones móviles que se distribuyen a través de dos canales con velocidades distintas: una compilación nativa (lenta, a través de tiendas de aplicaciones) y actualizaciones Over-The-Air (OTA, rápidas e independientes). La estructura del número de versión, MARKETING.NATIVE.OTA, comunica el canal de lanzamiento de una versión y su velocidad, no su tamaño. Una nueva compilación nativa siempre reinicia el contador OTA a 0. Por defecto, un cambio en MARKETING también reinicia NATIVE y OTA (ej. 2.0.0), pero se permite que los contadores sigan aumentando (ej. 2.6.2) para mantener un historial monolítico. PaceVer se diferencia de Semantic Versioning (SemVer) en que SemVer se enfoca en la compatibilidad y el tamaño del cambio, mientras que PaceVer prioriza la forma en que el cambio llega al usuario, un factor crucial para la latencia de revisión y la velocidad de despliegue en móviles. El número OTA incrementa con cada actualización OTA, independientemente de la magnitud del cambio (una corrección de typo y una nueva pantalla incrementan OTA en 1). El número MARKETING se reserva para señalar la importancia de una versión. El esquema es aplicable a frameworks como React Native y Expo, donde coexisten compilaciones binarias y actualizaciones JS-only. La versión se compone en tiempo de ejecución leyendo el número nativo del binario y el número OTA del manifiesto de la actualización aplicada.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48411799,
-    "url": "https://www.benthamsgaze.org/2026/06/02/the-quiet-numbers-station-decoding-nineteen-years-of-gps-cryptography/",
-    "score": 91,
-    "time": 1780664204,
-    "titulo_es": "La Campos Vacío Que No Lo Era: GPS, OTAD y Dos Décadas de Transmisiones Cifradas",
-    "resumen": "El artículo detalla cómo un campo de 176 bits en la señal L1 del GPS, destinado a mensajes especiales, ha sido utilizado durante casi veinte años como una estación de números global para transmitir cifrado militar. Investigaciones sobre 12.16 millones de observaciones revelan que estos mensajes son estadísticamente indistinguibles del ruido aleatorio, pero con excepciones estructurales como marcadores de prueba (0xAA) y cadenas de texto idénticas (ej. LY47IRP16) que podrían filtrar información sobre eventos de distribución de claves. Se observaron cambios coordinados en la flota de satélites, coincidiendo con la implementación de la red de Distribución Over-the-Air (OTAD) de EE. UU. para la actualización de claves criptográficas en receptores militares con módulos SAASM. El sistema interactúa con la infraestructura civil, como se evidenció en 2022 con una desaceleración en la rotación de mensajes y, a partir de 2023, un cambio en el formato de transmisión a un prefijo literal 'TEXT' seguido de carga útil cifrada, cuyo propósito aún se desconoce. La investigación se apoya en un pipeline de Julia y DuckDB para el análisis eficiente de datos históricos, concluyendo que este canal público ha operado discretamente como un medio para la distribución de información militar cifrada.",
+    "id": 48430871,
+    "url": "https://github.com/hatearena/hate",
+    "score": 23,
+    "time": 1780795597,
+    "titulo_es": "HATE: Motor multijugador de código abierto basado en el motor Cube",
+    "resumen": "El artículo describe HATE (HateArena), un proyecto de código abierto y gratuito que consiste en un motor de juego multijugador de disparos en primera persona (FPS). Se especifica que HATE está basado en el motor original de Cube. El texto también menciona la importancia de la retroalimentación del usuario y la disponibilidad de la documentación para los cualificadores.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48427523,
+    "url": "https://www.nbcnews.com/politics/national-security/pentagon-raised-threat-israeli-spying-us-highest-level-sources-say-rcna348565",
+    "score": 523,
+    "time": 1780770066,
+    "titulo_es": "Pentágono eleva nivel de amenaza de contrainteligencia contra Israel al más alto",
+    "resumen": "El Pentágono ha elevado el nivel de amenaza de contrainteligencia contra Israel al nivel más alto, clasificándolo como 'crítico'. Esta decisión se basa en las crecientes preocupaciones de que Israel está intensificando sus esfuerzos de espionaje contra altos funcionarios de EE.UU. para obtener información sobre las deliberaciones internas de la administración Trump respecto a los conflictos en Oriente Medio. La Agencia de Inteligencia de Defensa (DIA) emitió una evaluación interna que indica que la capacidad de Israel para realizar espionaje humano y recopilación técnica se encuentra en un nivel 'crítico'. Esta medida se produce en medio de tensiones crecientes entre EE.UU. e Israel sobre la estrategia a seguir en la guerra con Irán y las operaciones militares israelíes en Líbano. A pesar de estas preocupaciones, se informa que no hay un impacto aparente en el intercambio de inteligencia de alto nivel que se produce diariamente entre ambos países, especialmente en lo relacionado con la guerra de Irán. El resultado práctico más inmediato para EE.UU. es que los funcionarios tomarán precauciones adicionales al viajar a Israel o al reunirse con funcionarios israelíes. Israel ha negado enérgicamente las acusaciones de espiar a EE.UU., afirmando que sus esfuerzos de inteligencia se dirigen a sus enemigos, no a sus aliados.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48380174,
-    "url": "https://blog.rubygems.org/2026/06/03/cooldown-let-new-gems-be-vetted.html",
-    "score": 158,
-    "time": 1780463709,
-    "titulo_es": "Introducción del enfriamiento en Bundler para mitigar ataques a la cadena de suministro en RubyGems",
-    "resumen": "El artículo introduce la nueva funcionalidad 'cooldown' en Bundler 4.0.13, diseñada para mitigar ataques a la cadena de suministro en RubyGems. Este mecanismo introduce un filtro basado en tiempo que retrasa la resolución de dependencias a versiones de gemas que no han estado disponibles públicamente durante un número configurable de días (N). El objetivo es evitar que las versiones maliciosas recién publicadas sean seleccionadas inmediatamente durante un `bundle install`. La característica es opt-in, se lee el timestamp `created_at` de las versiones del índice v2 de rubygems.org y se complementa con defensas existentes como 2FA. Se explica cómo configurar 'cooldown' a nivel de fuente en el Gemfile, globalmente a través de la configuración de Bundler o variables de entorno, y mediante flags en la línea de comandos (`--cooldown`). Se detalla el orden de precedencia entre estas configuraciones (flag > config > per-source). Se menciona que establecer `cooldown: 0` deshabilita temporalmente el filtro, útil para desplegar fixes urgentes. Finalmente, se describe cómo `bundle outdated` ahora es consciente del 'cooldown', anotando las versiones que están dentro de la ventana de espera.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48413072,
-    "url": "https://www.jeffgeerling.com/blog/2026/i-tested-every-ip-kvm/",
-    "score": 275,
-    "time": 1780669850,
-    "titulo_es": "Una Revisión Profunda de las Soluciones IP KVM",
-    "resumen": "El artículo revisa en profundidad las soluciones IP KVM (Keyboard, Video, Mouse sobre Protocolo de Internet), destacando su utilidad para el control remoto de ordenadores, especialmente en escenarios donde el software de escritorio remoto no es viable (por ejemplo, durante benchmarks o cuando el sistema está bloqueado o apagado). Se compara la funcionalidad de los IP KVM con alternativas como Remote Desktop, VNC, SSH y las soluciones integradas en hardware de servidor (iLO, iDRAC, IPMI). Se presenta PiKVM como el pionero, analizando sus características (HDMI passthrough, audio bidireccional, control de energía, slot PCIe para conectividad 5G) y su alto coste. Posteriormente, se discuten alternativas como BliKVM y GL-iNet, que ofrecen funcionalidades similares, a menudo basadas en forks del software de PiKVM pero a precios más competitivos. Se hace hincapié en las implicaciones de seguridad de estos dispositivos, advirtiendo sobre posibles vulnerabilidades y la necesidad de aplicar buenas prácticas de ciberseguridad, como mantenerlos actualizados, confiar en el proveedor y aislarlos mediante firewalls. Se menciona la capacidad de acceso remoto a la BIOS como un punto crítico de seguridad.",
+    "id": 48428727,
+    "url": "https://deployonfri.day/posts/i-am-giving-up-on-vm-gaming",
+    "score": 33,
+    "time": 1780777903,
+    "titulo_es": "Construyendo una PC Gamer como NAS y Servidor de Virtualización con Unraid",
+    "resumen": "El artículo detalla la experiencia del autor al configurar una PC gamer de alto rendimiento como host de virtualización utilizando Unraid. El objetivo principal era consolidar un servidor NAS de alto rendimiento y un PC gamer, aprovechando el hardware infrautilizado. Se discuten las ventajas del PCIe passthrough para asignar GPUs físicas a VMs, logrando un rendimiento cercano al nativo para juegos. Se abordan desafíos como la gestión del estado de las VMs a través de la UI, la necesidad de pasar controladores USB PCIe para una experiencia plug-and-play, y las limitaciones impuestas por NVIDIA (Error 43) al usar GPUs GeForce en entornos virtualizados, que requerían parches de VBIOS. También se explora la dificultad de compartir una GPU entre VMs o entre VMs y contenedores Docker (como LLMs locales), destacando la necesidad de tecnologías como SR-IOV (generalmente en hardware empresarial) para una utilización simultánea eficiente. A pesar de las complejidades, el autor logró un rendimiento significativamente superior para sus cargas de trabajo Docker en comparación con un NAS comercial.",
     "categoria": "Hardware"
   },
   {
-    "id": 48398233,
-    "url": "https://phys.org/news/2026-05-europe-largest-copper-age-tomb.html",
-    "score": 31,
-    "time": 1780579045,
-    "titulo_es": "Infecciones respiratorias hace 5.000 años dejaron marcas en los niños de un enterramiento masivo en España",
-    "resumen": "Un estudio en la revista International Journal of Paleopathology, basado en el análisis de 48 esqueletos infantiles recuperados de la cueva de enterramiento masivo de la Edad del Cobre en Camino del Molino (CMOL), España (con más de 1.300 individuos datados en el 3er milenio a.C. y usada durante 700 años), revela la prevalencia de infecciones respiratorias, posiblemente incluyendo tuberculosis, en niños y adolescentes. El 92% de los individuos analizados presentó cambios óseos asociados a enfermedades, y el 67% mostraba huesos porosos e indicios de infección respiratoria. Las lesiones, como surcos serpeantes y picaduras en el interior del cráneo y otros huesos, fueron más comunes en las edades de 1 a 4 años y de 10 a 14 años, coincidiendo con periodos de alta vulnerabilidad a infecciones pulmonares. Los patrones de enfermedad similares entre los niños sugieren que las condiciones de vida compartidas, como la exposición al humo interior y partículas, fueron factores clave, más que actividades diferenciadas por género. Los individuos enfermos recibieron el mismo tratamiento funerario que sus pares. Futuros estudios de ADN antiguo podrían confirmar la presencia de patógenos específicos como Mycobacterium tuberculosis.",
+    "id": 48427629,
+    "url": "https://oshogbo.com/blog/90/",
+    "score": 28,
+    "time": 1780770843,
+    "titulo_es": "Corrompiendo Datos en ZFS a Propósito: Una Guía para Linux",
+    "resumen": "Este artículo explora técnicas para introducir corrupción de datos controlada y reproducible en ZFS, principalmente en entornos de desarrollo o prueba. Se discute el uso de la herramienta `zinject` para simular errores de checksum en bloques de datos de archivos ZFS. Posteriormente, se detalla un enfoque manual y más educativo: la creación de pools ZFS sobre archivos planos (`.img`) para poder inspeccionar y modificar directamente el contenido de los discos virtuales. Se explica cómo utilizar `zdb` para obtener la ubicación física (DVA - Data Virtual Address) de los bloques de datos de un archivo específico y cómo calcular el desplazamiento exacto en el archivo de respaldo, considerando el área reservada por ZFS al inicio de cada vdev. El objetivo es entender cómo los archivos se mapean en el almacenamiento físico y observar el comportamiento de ZFS ante la corrupción.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48429253,
+    "url": "https://elliotbonneville.com/programmers-arent-people/",
+    "score": 26,
+    "time": 1780781891,
+    "titulo_es": "El Desplazamiento de las Palabras: De Computadoras Humanas a Máquinas Inteligentes",
+    "resumen": "El artículo explora la evolución histórica del término 'computador', rastreando su origen como una persona que realizaba cálculos hasta su significado moderno de máquina electrónica. Se destaca cómo las palabras en inglés, formadas por un verbo más el sufijo '-er', se adhieren a la función más que a la entidad que la realiza. Se mencionan ejemplos históricos de 'computadores' humanos en observatorios y agencias gubernamentales, a menudo mujeres. La llegada de máquinas como ENIAC provocó que el término fuera 'reposeído' por la tecnología, dejando a los humanos sin su título. El autor establece un paralelismo con la palabra 'programador', argumentando que, etimológicamente, también describe una actividad y no intrínsecamente una persona, sugiriendo que, al igual que los 'computadores' humanos, los 'programadores' deben adaptarse al cambio tecnológico, como lo demostró Dorothy Vaughan al aprender a programar las nuevas máquinas para mantener su relevancia laboral.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48408016,
-    "url": "https://herbsutter.com/2026/06/04/c-the-documentary-released-today/",
-    "score": 395,
-    "time": 1780634221,
-    "titulo_es": "El documental de C++ y la evolución de un lenguaje de programación",
-    "resumen": "El artículo se centra en el estreno del documental 'C++: The Documentary', destacando la trayectoria de 40 años del lenguaje C++. Herb Sutter, autor y ponente, ex-presidente del comité de estándares ISO C++ y actual presidente de la Standard C++ Foundation, reflexiona sobre su contribución a la evolución del lenguaje. Se menciona el crecimiento acelerado de C++, siendo actualmente el de mayor crecimiento entre los cuatro lenguajes principales, con un aumento de usuarios del +90% en los últimos 3.5 años. El texto también describe a Herb Sutter como un apasionado de la programación, enfocado en la creación de código limpio y rápido, con experiencia en concurrencia y paralelismo, y como diseñador de características estandarizadas de C++.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48405264,
-    "url": "https://github.com/schildep/verified-polygon-intersection",
-    "score": 75,
-    "time": 1780610778,
-    "titulo_es": "Implementación Formalmente Verificada de un Algoritmo de Intersección de Polígonos",
-    "resumen": "El artículo describe la primera implementación formalmente verificada de un algoritmo de intersección de polígonos utilizando el asistente de pruebas Lean 4. Se destaca la dificultad de verificar algoritmia computacional geométrica mediante pruebas clásicas debido a configuraciones de entrada raras y complejas. La verificación formal garantiza la corrección para conjuntos infinitos de puntos interiores y todas las configuraciones de entrada. La especificación del algoritmo, aunque matemáticamente compleja (requiriendo miles de líneas de prueba para hechos geométricos aparentemente obvios), se presenta en solo 87 líneas de código Lean comprensible para la revisión humana, minimizando el esfuerzo de auditoría. Se menciona el uso de IA para la implementación y generación de pruebas formales, evolucionando de estrategias paso a paso a resultados de una sola vez con modelos recientes. Se enfatiza que la confianza en la corrección reside en el verificador Lean y la revisión humana de la especificación, no en la LLM. Se invita a probar una demo web de la funcionalidad.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48406198,
-    "url": "https://discuss.privacyguides.net/t/south-korean-online-communities-will-need-to-scan-every-images-with-ai-censorship-tools/38341",
-    "score": 244,
-    "time": 1780616756,
-    "titulo_es": "Corea del Sur exige escaneo de imágenes y videos subidos por usuarios con IA y hardware costoso",
-    "resumen": "El artículo detalla una nueva regulación en Corea del Sur (modificación de la Ley de Empresas de Telecomunicaciones) que obliga a los propietarios de comunidades y foros en línea a escanear todas las imágenes y videos subidos por los usuarios utilizando inteligencia artificial (IA). La ley exige la implementación inmediata a partir del 1 de julio, pero el gobierno no proporciona el hardware necesario, obligando a las empresas a adquirir costosas GPU de nivel de centro de datos (Nvidia). Esto impone una carga financiera significativa, especialmente a las pequeñas empresas y foros, que enfrentan dificultades para obtener el equipo debido a la escasez y la fecha límite inminente. La ley, originalmente destinada a combatir material ilegal como pornografía filmada sin consentimiento y CSAM, ha generado críticas por su posible impacto en la libertad de expresión y su aplicabilidad práctica, especialmente considerando que no se aplica a servicios extranjeros. El autor sugiere que la ley podría ser resultado de una legislación deficiente o un intento de suprimir comunidades en línea libres.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48419821,
-    "url": "https://github.com/nordstjernen-web/nordstjernen/releases/tag/1.0.0",
-    "score": 45,
-    "time": 1780702974,
-    "titulo_es": "Nordstjernen 1.0.0 lanzado: Un nuevo navegador web escrito en C",
-    "resumen": "Nordstjernen es un navegador web desarrollado desde cero en lenguaje C, con el objetivo principal de ofrecer un soporte robusto para los estándares HTML y CSS. La versión 1.0.0 ya ha sido liberada y el proyecto es multiplataforma, compatible con Windows, Mac y Linux, y se encuentra en proceso de portar a Android. La licencia permite el uso, modificación y redistribución libre del código fuente, con la restricción de no ser utilizado como navegador competidor; además, cada versión se convierte a licencia MIT después de diez años. Existen licencias comerciales disponibles bajo acuerdo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48402744,
-    "url": "https://arnorhs.dev/posts/2026-06-04/maybe-later-was-a-feature/",
-    "score": 91,
-    "time": 1780597915,
-    "titulo_es": "El Código Más Valioso es el que No Escribimos",
-    "resumen": "El artículo argumenta que el código más valioso en un repositorio es aquel que no se escribe. Se enfoca en la importancia de la 'no acción' y la selección estratégica en el desarrollo de software. Critica la tendencia actual de utilizar IA (LLMs) para generar código de forma masiva, a menudo para proyectos que antes habrían sido descartados por no ser prioritarios (ideas del backlog). Esto puede llevar a bases de código infladas, difíciles de leer y mantener, llenas de 'legacy cruft' o código irrelevante. Se señala que la IA, aunque mejora, aún carece de la comprensión contextual y estratégica humana para priorizar y evitar la acumulación de deuda técnica. La ley de Hyrum también se menciona como un factor que complica la refactorización. La conclusión es que la elección de no construir es una característica poderosa y una estrategia de producto y desarrollo fundamental, enfatizando el valor de evitar la creación innecesaria de código.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48382047,
-    "url": "https://redis.io/blog/announcing-redis-8-8/",
-    "score": 211,
-    "time": 1780481111,
-    "titulo_es": "Novedades de Redis 8.8: Mejoras de rendimiento y nuevas características",
-    "resumen": "Redis 8.8 introduce mejoras significativas en el rendimiento y nuevas funcionalidades clave. Destacan la introducción de la estructura de datos 'array' de propósito general, un limitador de tasa de contador de ventana, NACKing de mensajes en Streams, notificaciones de subclaves para campos de hash, control explícito sobre el almacenamiento de arrays numéricos en JSON (con opciones como BF16, FP16, FP32, FP64), la posibilidad de usar múltiples agregadores en una sola consulta de series temporales, y un nuevo agregador COUNT para operaciones de unión e intersección de conjuntos ordenados. Las mejoras en el rendimiento general y la velocidad de persistencia y replicación (sincronización completa) son notables, hasta un 60% más rápidas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48422933,
-    "url": "https://www.statnews.com/2026/06/06/ebola-outbreak-us-aid-response-tom-frieden-action-plan/",
-    "score": 6,
-    "time": 1780736751,
-    "titulo_es": "¿Cuál es la palabra? Pon a prueba tus conocimientos con nuestro nuevo minicrucigrama de entre semana",
-    "resumen": "El artículo discute la respuesta a un brote del virus Ébola en la República Democrática del Congo, destacando los desafíos y las lecciones aprendidas de brotes anteriores, como el de África Occidental de 2014-2016. Se enfatiza la importancia de la rapidez en la respuesta, el rastreo de contactos, la infraestructura de salud, el equipo de protección, la capacitación del personal, la logística y el apoyo comunitario para contener la propagación del virus. El autor, un ex director de los CDC, subraya que, aunque no hay vacunas o tratamientos probados para la cepa actual, las medidas de control como el cuidado de apoyo, el rastreo de contactos, la cuarentena y el aislamiento rápido son cruciales. Se pide apoyo global en forma de personal, laboratorios, financiamiento y recursos para las comunidades afectadas, reconociendo que los líderes comunitarios locales son clave para la persuasión y la adaptación de prácticas que frenen la transmisión. Se compara la escala de la respuesta necesaria con la de epidemias pasadas, resaltando la dificultad de controlar el brote en áreas con presencia de grupos armados y la necesidad de confianza y participación comunitaria.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48409955,
-    "url": "https://github.com/zdk/lowfat",
-    "score": 129,
-    "time": 1780650642,
-    "titulo_es": "Lowfat: Reducción de costos de tokens de IA mediante filtrado de salida de CLI",
-    "resumen": "lowfat es una herramienta CLI ligera diseñada para reducir los costos de procesamiento de tokens de IA. Funciona filtrando la salida innecesaria de la línea de comandos antes de que sea procesada por un agente de IA. Ofrece varias opciones de integración: Claude Code hook, integración de shell (que se activa automáticamente en entornos de agente o forzándola con una variable de entorno), un plugin de OpenCode para reescritura transparente de comandos, uso directo prefijando comandos, y configuración dentro de un agente Pi. El proyecto se distribuye bajo la licencia Apache-2.0 y se destaca su uso de múltiples herramientas de IA en su desarrollo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48409191,
-    "url": "https://ladybird.org/posts/changing-how-we-develop-ladybird/",
-    "score": 837,
-    "time": 1780644393,
-    "titulo_es": "Ladybird Cierra las Solicitudes de Extracción Públicas para un Proceso de Desarrollo Más Controlado",
-    "resumen": "El proyecto Ladybird, un navegador web en desarrollo, ha anunciado un cambio significativo en su proceso de contribución de código a partir del 5 de junio de 2026. A partir de ahora, solo los mantenedores del proyecto podrán introducir cambios en la base de código. Esta decisión se toma ante la proximidad de su primera versión alfa, buscando un proceso de desarrollo más estricto, un modelo de seguridad más claro y un grupo reducido de personas responsables del código. La motivación principal para este cambio radica en la rápida evolución de las herramientas de IA, que alteran la forma en que se evalúan las contribuciones de código abierto. Anteriormente, las solicitudes de extracción (pull requests) significativas implicaban un esfuerzo considerable y servían como un proxy razonable de buena fe. Sin embargo, con la capacidad de la IA para generar contribuciones sustanciales de manera más rápida y económica, esta suposición ya no se considera fiable, especialmente para un navegador que maneja entradas no confiables. La responsabilidad del código que entra en el navegador recae en el equipo de Ladybird, quienes deben asegurar su arquitectura, mantenibilidad y correcta interacción con el resto del sistema. Por lo tanto, se cerrarán todas las solicitudes de extracción públicas abiertas y no se establecerán canales alternativos para la presentación de parches externos, como issues, comentarios o forks. El código fuente seguirá estando disponible públicamente bajo licencia de código abierto, y se seguirán valorando otras formas de participación como informes de errores claros, reducciones, pruebas de sitios web, discusiones de estándares, diseño e informes de seguridad. Este ajuste se considera esencial para la etapa actual del proyecto, que se prepara para lanzar un navegador para usuarios reales y necesita que su proceso de desarrollo refleje esa responsabilidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48409675,
-    "url": "https://www.quantamagazine.org/entanglement-builds-space-time-now-magic-gives-it-gravity-20260603/",
-    "score": 181,
-    "time": 1780648417,
-    "titulo_es": "La Magia Cuántica da Forma al Espacio-Tiempo",
-    "resumen": "El artículo explora el desafío de unificar la relatividad general de Einstein con la mecánica cuántica, particularmente en lo que respecta a la gravedad y la estructura del espacio-tiempo. Se detalla cómo los físicos están investigando modelos donde el espacio-tiempo emerge de partículas cuánticas entrelazadas. Recientemente, se ha identificado una propiedad cuántica llamada \"magia\" que podría explicar cómo estas partículas cuánticas le otorgan curvatura al espacio-tiempo, resolviendo un problema fundamental en la teoría. Este avance representa un cambio de perspectiva significativo, similar a las transformaciones que permiten describir fenómenos físicos desde diferentes puntos de vista, y es crucial para desarrollar una teoría cuántica de la gravedad.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48407499,
-    "url": "https://www.boxofcables.dev/azure-linux-4-0-is-microsofts-first-general-purpose-linux/",
-    "score": 202,
-    "time": 1780629268,
-    "titulo_es": "Azure Linux 4.0: La distribución Linux de Microsoft se vuelve de propósito general",
-    "resumen": "Microsoft ha lanzado Azure Linux 4.0 en vista previa pública, marcando su transición de una distribución especializada para cargas de trabajo internas a un sistema operativo Linux de propósito general. Derivado de Fedora 43, Azure Linux 4.0 ahora puede ejecutarse en cualquier máquina virtual de Azure, no solo como host para Azure Kubernetes Service (AKS). Esta versión se diferencia de las anteriores al rastrear upstream de Fedora y aplicar overlays declarativos, documentando explícitamente cada desviación. La distribución ofrece seguridad robusta con SELinux, kernel endurecido, paquetes firmados criptográficamente y SBOMs. Anteriormente integrado en servicios como AKS, Azure SQL y Cosmos DB, y utilizado por Databricks y LinkedIn, Azure Linux 4.0 ahora está disponible para que los usuarios lo seleccionen y ejecuten en diversas superficies de cómputo de Azure. Este movimiento representa un paso lógico en la adopción de Linux por parte de Microsoft, que comenzó en 2012 y ahora domina en su nube.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 48398689,
-    "url": "https://fremaconsulting.ch/blog/faiss",
-    "score": 60,
-    "time": 1780581268,
-    "titulo_es": "Búsqueda de similitud a escala de miles de millones con GPUs",
-    "resumen": "El artículo es un compendio técnico que profundiza en FAISS (Facebook AI Similarity Search), una biblioteca crucial para la búsqueda eficiente de vecinos más cercanos en espacios de alta dimensión. Comienza explicando el concepto fundamental de que los datos complejos como imágenes, texto y audio se representan como vectores numéricos (embeddings) en un espacio geométrico, donde la similitud semántica se traduce en proximidad espacial. Se abordan las limitaciones de la búsqueda exhaustiva (brute-force) para conjuntos de datos a gran escala, destacando su alto costo computacional y de memoria. Para superar estos desafíos, FAISS emplea dos estrategias principales de indexación: la Búsqueda Aproximada de Vecinos Más Cercanos (ANN) y la Cuantificación de Producto (PQ). La metodología de archivo invertido (IVF) se detalla como un sistema de partición del espacio vectorial utilizando clustering K-Means para reducir drásticamente el espacio de búsqueda. Posteriormente, se introduce PQ como un método de compresión que reduce significativamente el tamaño de los vectores al representarlos mediante códigos que hacen referencia a centroides predefinidos, manteniendo al mismo tiempo estimaciones de distancia fiables. El artículo enfatiza que FAISS combina estas técnicas para lograr búsquedas de similitud a escala de miles de millones de elementos en tiempos computacionalmente viables, siendo una herramienta esencial en aplicaciones modernas de IA y recuperación de información.",
+    "id": 48430070,
+    "url": "https://perceptiontheory.bearblog.dev/context-sculpting/",
+    "score": 17,
+    "time": 1780788001,
+    "titulo_es": "Escultura de Contexto: La Mutabilidad del Contexto de los Modelos de Lenguaje",
+    "resumen": "El artículo explora la idea de permitir que un modelo de inteligencia artificial inspeccione y modifique activamente su propia ventana de contexto, en lugar de tratarla como un registro de conversación inmutable. El autor propone \"context sculpting\" como un enfoque donde un modelo más grande (observador) puede editar el contexto de un modelo más pequeño (ejecutor). Esto permitiría al modelo identificar y corregir errores, optimizar la historia de la conversación, y evitar o retrasar el agotamiento de la ventana de contexto. La investigación se describe como un \"estudio de caso de ingeniería\" o \"investigación de vibra\" para determinar la viabilidad de dar a un modelo el permiso de reescribir el contexto de trabajo de otro modelo entre turnos, utilizando el framework Pi agent harness para su implementación.",
     "categoria": "IA"
   }
 ]
