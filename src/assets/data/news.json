@@ -1,308 +1,191 @@
 [
   {
+    "id": 48448386,
+    "url": "https://arxiv.org/abs/math/0201027",
+    "score": 10,
+    "time": 1780940020,
+    "titulo_es": "arXivLabs: Un marco para el desarrollo de nuevas funciones en arXiv",
+    "resumen": "arXivLabs es un marco colaborativo diseñado para permitir a individuos y organizaciones desarrollar y compartir nuevas funcionalidades para la plataforma arXiv directamente en su sitio web. Este programa se basa en los valores de apertura, comunidad, excelencia y privacidad de los datos del usuario, trabajando únicamente con socios que se adhieren a estos principios. arXiv anima a la comunidad a proponer ideas de proyectos que puedan aportar valor.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48433777,
+    "url": "https://blog.nns.ee/2026/02/20/katana-v2x-re/",
+    "score": 91,
+    "time": 1780831213,
+    "titulo_es": "Ingeniería Inversa de la Comunicación USB de una Soundbar Creative Katana V2X",
+    "resumen": "El artículo detalla el proceso de ingeniería inversa aplicado a una soundbar Creative Katana V2X para interactuar con ella a través de su puerto USB. Ante la ausencia de software compatible con Linux y la necesidad de configurar el dispositivo (EQ, LEDs), el autor se embarcó en la tarea de analizar la comunicación USB. Utilizando Wireshark y USBPcap, se capturaron y analizaron los paquetes de datos, incluyendo la actualización de firmware y las operaciones de control. Se descubrió que la comunicación utiliza el protocolo CDC ACM sobre una interfaz serial (/dev/ttyACM*) y sigue un formato de comando simple con marcadores, opcode, longitud y payload. Se describe el proceso de autenticación challenge-response necesario para habilitar el envío de comandos y se menciona el uso de dnSpy para analizar la aplicación de Windows, aunque gran parte del código .NET estaba ofuscado. El objetivo final es crear herramientas para controlar el dispositivo fuera de la aplicación propietaria.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48444841,
+    "url": "https://agraphicsguynotes.com/posts/making_a_shading_langauge_for_my_offline_renderer/",
+    "score": 25,
+    "time": 1780923824,
+    "titulo_es": "Diseño de un Lenguaje de Sombreado para Renderizado Offline en CPU",
+    "resumen": "El artículo detalla el proceso de diseño y la arquitectura de un lenguaje de sombreado personalizado llamado Tiny Shading Language (TSL), desarrollado para un renderizador de CPU llamado SORT. El autor, un programador gráfico, explica las motivaciones detrás de la creación de un lenguaje propio en lugar de usar alternativas existentes como OSL. Se enfoca en la integración del lenguaje con el renderizador offline, cubriendo la diferencia fundamental entre sombreados para CPU y GPU, y el diseño de una interfaz de usuario amigable. Aunque se menciona la compilación a código máquina como un paso necesario (utilizando herramientas como LLVM), el énfasis principal del artículo reside en cómo el sistema de TSL se adapta y funciona dentro del contexto de un renderizador de trazado de rayos (path tracer), destacando las etapas del algoritmo de renderizado y el punto de inserción del lenguaje. Se describe la arquitectura general del sistema sin entrar en detalles profundos de implementación del compilador, sino más bien en la perspectiva de integración y usabilidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48483387,
+    "url": "https://www.smithsonianmag.com/innovation/man-created-written-language-cherokee-did-efficiently-elegantly-peers-thought-magic-180988850/",
+    "score": 165,
+    "time": 1781129272,
+    "titulo_es": "Sequoyah y la Revolución de la Escritura Cherokee",
+    "resumen": "El artículo narra la historia de Sequoyah, un silversmith Cherokee que desarrolló un silabario para su idioma nativo entre 1819 y 1821. A pesar del escepticismo inicial y las acusaciones de brujería, Sequoyah demostró la efectividad de su sistema a su hija, logrando que en seis meses una cuarta parte de los Cherokee pudieran leer y escribir. Este logro de alfabetización masiva, que superó a la población no nativa de EE. UU. en su momento, permitió a los Cherokee desarrollar su propia constitución escrita, iniciar el periódico 'Cherokee Phoenix' y preservar su cultura. El silabario, compuesto por 85 símbolos fonéticos inspirados en varias escrituras, fue alabado por su simplicidad y eficacia. A pesar de este avance cultural, la expansión territorial estadounidense condujo a la forzada migración de los Cherokee ('Trail of Tears'). El legado del silabario perdura, siendo una herramienta crucial para la preservación de la cultura Cherokee hoy en día, utilizado en comunicación moderna como mensajes de texto y en la educación, además de haber inspirado escrituras en África Occidental. La historia de Sequoyah resalta el impacto de la innovación individual en la autodeterminación y la memoria cultural.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48476466,
+    "url": "https://pgdog.dev/blog/our-funding-announcement",
+    "score": 490,
+    "time": 1781100179,
+    "titulo_es": "PgDog: Escalando PostgreSQL a Nivel Empresarial con un Proxy Horizontalmente Escalable",
+    "resumen": "El artículo presenta PgDog, un proyecto de código abierto diseñado para abordar las limitaciones de escalabilidad de PostgreSQL, permitiendo manejar petabytes de datos y millones de consultas por segundo. PgDog utiliza un proxy para lograr escalabilidad horizontal, permitiendo que PostgreSQL funcione a gran escala sin sacrificar su robustez y familiaridad. Se destaca que PgDog es desplegable en diversas infraestructuras (on-prem, nube) a través de una imagen Docker, simplificando la configuración. La solución ya está en producción sirviendo a gran escala, habiendo superado los 20 TB de datos fragmentados y 2 millones de consultas por segundo. Los creadores, con experiencia en escalar Postgres en empresas como Instacart, buscan hacer que PostgreSQL sea una solución viable para cualquier escala. Se menciona el desarrollo de una edición Enterprise para AWS con soporte SLA.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48488901,
+    "url": "https://www.nature.com/articles/d41586-026-01796-y",
+    "score": 22,
+    "time": 1781177185,
+    "titulo_es": "Mapas detallados de migración global revelan el aumento de los flujos migratorios",
+    "resumen": "Un estudio publicado en Nature presenta los mapas más detallados de migración global hasta la fecha, analizando los movimientos de personas entre 230 países y territorios anualmente entre 1990 y 2023. Utilizando un enfoque híbrido que combina modelos matemáticos clásicos con redes de aprendizaje profundo (IA) y considerando factores geográficos, económicos, culturales y políticos, los investigadores han logrado estimar flujos migratorios anuales con una resolución sin precedentes. Estos datos, que superan las limitaciones de los conjuntos de datos existentes (como los de la ONU y el Banco Mundial, que se publican a intervalos de cinco y diez años respectivamente), ofrecen una visión más completa de las dinámicas migratorias, influenciadas por cambios económicos, climáticos, conflictos y reformas políticas. La metodología empleada se basa en el análisis de diversas fuentes de datos, incluyendo plataformas como Facebook, para superar las deficiencias históricas en la fiabilidad de los datos de migración. Estos mapas son cruciales para la planificación en áreas como la escolarización, los beneficios sociales y los mercados laborales.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48479705,
+    "url": "https://spectrum.ieee.org/curiosity-rover-jpl-mars-science",
+    "score": 246,
+    "time": 1781112648,
+    "titulo_es": "Trucos especiales para mantener un robot a 200 millones de kilómetros de casa",
+    "resumen": "El artículo detalla los ingeniosos métodos empleados por los ingenieros de JPL para mantener operativo el rover Curiosity en Marte durante más de una década. Se enfoca en los desafíos únicos de la operación remota, incluyendo actualizaciones de software cuidadosas y la gestión de un entorno hostil. Se discuten diferencias clave entre Curiosity y Perseverance, como la inclusión de un procesador dedicado a la odometría visual en Perseverance para mejorar la conducción autónoma y optimizar largas distancias. Se presenta un ejemplo específico de una anomalía en el procesador de Curiosity, que requirió transferencias de datos complejas entre sus dos computadoras (A y B) y la adaptación a una memoria degradada para preservar la información y mantener la operatividad del rover.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48487435,
+    "url": "https://daringfireball.net/2026/06/macos_27_golden_gate_removes_the_dumb_icons_from_menu_items",
+    "score": 125,
+    "time": 1781163312,
+    "titulo_es": "Apple Revierte la Inclusión Innecesaria de Iconos en la Barra de Menú de macOS",
+    "resumen": "El artículo discute la controvertida decisión de Apple de introducir iconos distractores e inconsistentes junto a los elementos de la barra de menú en macOS Tahoe, y celebra su eliminación en macOS Golden Gate. Se destaca la mala implementación, la reacción negativa de desarrolladores externos y la actualización de las guías de interfaz humana (HIG) de Apple para recomendar el uso 'escaso y con propósito' de iconos en los menús. La reversión se considera una señal positiva de una mejora en el equipo de diseño de software de Apple, eliminando decisiones de diseño erróneas y restaurando la coherencia de la interfaz de usuario.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48479852,
+    "url": "https://geolibre.app/",
+    "score": 261,
+    "time": 1781113187,
+    "titulo_es": "GeoLibre: Plataforma GIS Cloud-Native con Tauri y Tecnologías Web",
+    "resumen": "GeoLibre es una plataforma GIS cloud-native construida con Tauri, React, TypeScript y MapLibre GL JS, optimizada para entornos de escritorio y web. Permite la carga y manipulación de datos geoespaciales (vectoriales y rasterizados) tanto locales como remotos, utilizando DuckDB-WASM Spatial para consultas SQL en el navegador y WebAssembly. Soporta formatos como GeoParquet, FlatGeobuf, PMTiles, COG y MBTiles, así como servicios WMS, WFS y STAC. Incluye funcionalidades avanzadas como simbología basada en datos, plugins integrados y de terceros, y herramientas de procesamiento vectorial (Turf.js) y raster (Python sidecar con rasterio). La plataforma se integra con Jupyter notebooks a través de un paquete Python (`geolibre`) y ofrece una API similar a leafmap. La demostración en vivo, alojada en GitHub Pages, permite explorar la aplicación en el navegador, aunque ciertas funcionalidades avanzadas requieren la aplicación Tauri instalada.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48461442,
+    "url": "https://tracewayapp.com/blog/deep-dive-into-the-sourcemaps",
+    "score": 4,
+    "time": 1781014444,
+    "titulo_es": "Decodificando la Simbología de Trazas de Producción: De TypeScript a Stack Traces con Mapas de Fuente",
+    "resumen": "El artículo profundiza en el proceso de simbología de trazas de error en entornos de producción, específicamente cómo se recuperan los nombres de funciones y la información de origen a partir de código minificado y mapas de fuente. El autor explica detalladamente, mediante un ejemplo práctico decodificado manualmente, que los mapas de fuente por sí solos no son suficientes para recuperar los nombres de las funciones originales debido a cómo codifican la información (puntos en lugar de rangos y codificación Base64 VLQ delta). Se requiere el análisis tanto del mapa de fuente como del propio bundle minificado para lograr una simbología precisa, comparando el resultado con herramientas como Sentry y detallando el algoritmo de tres pasos que se aplicará en su plataforma Traceway. Se abordan aspectos técnicos como la codificación Base64 VLQ, los deltas acumulativos y los índices de fuente/línea/columna.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48478469,
+    "url": "https://www.extend.ai/ui",
+    "score": 221,
+    "time": 1781107766,
+    "titulo_es": "Componentes React para visualizadores de PDF, DOCX, XLSX y CSV, con citas de bounding box, carga de archivos, firma electrónica y más.",
+    "resumen": "El artículo describe un conjunto de componentes React diseñados para integrar funcionalidades de visualización y manipulación de documentos (PDF, DOCX, XLSX, CSV) en aplicaciones. Incluye características avanzadas como la capacidad de añadir citas contextuales basadas en bounding boxes, manejo de carga de archivos, y la integración de firma electrónica. Estos componentes están listos para ser implementados en flujos de usuario, herramientas para agentes o aplicaciones internas, centrándose en la experiencia del desarrollador para una integración rápida y eficiente.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48446532,
+    "url": "https://www.jasondavies.com/maps/voronoi/capitals/",
+    "score": 101,
+    "time": 1780932008,
+    "titulo_es": "Mapas de Diagramas de Voronoi Esféricos",
+    "resumen": "El artículo describe la creación de un mapa donde las regiones territoriales se definen por proximidad a la capital más cercana, utilizando diagramas de Voronoi esféricos. Este método considera la curvatura de la Tierra para calcular las distancias, a diferencia de los diagramas de Voronoi euclidianos. Los datos utilizados provienen de Natural Earth, específicamente de las capitales administrativas de países.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48475483,
+    "url": "https://mohkohn.co.uk/writing/html-first/",
+    "score": 1172,
+    "time": 1781095547,
+    "titulo_es": "Cómo una estrategia de desarrollo 'HTML-first' duplicó los usuarios de una empresa de la noche a la mañana",
+    "resumen": "El artículo narra la experiencia de un arquitecto de software al resolver un problema crítico para una empresa de servicios públicos regulada: un formulario de solicitud de servicios obsoleto que generaba baja satisfacción del cliente y posibles multas. Los intentos anteriores, incluido un desarrollo en React, fracasaron estrepitosamente debido a problemas de rendimiento, accesibilidad y almacenamiento de datos inadecuado. Tomando una decisión audaz, el arquitecto optó por un enfoque 'HTML-first' utilizando Astro. El principio rector fue crear una experiencia web robusta y accesible que funcionara perfectamente sin JavaScript, y luego mejorarla progresivamente con componentes web. La arquitectura se basó en un patrón de asistente de formulario donde cada paso era una página separada, utilizando envíos de formulario y redirecciones para la navegación y la validación. Este enfoque contrastaba con las aplicaciones pesadas del lado del cliente, priorizando la ligereza y la eficiencia, especialmente para usuarios con dispositivos de baja gama o conexiones de red deficientes. Se destacó la simplicidad del HTML para garantizar la accesibilidad en navegadores limitados, citando el ejemplo de GOV.UK. El artículo también aborda la ineficiencia a menudo observada en la validación de formularios en aplicaciones React, sugiriendo que un enfoque más simple puede ahorrar un tiempo considerable de desarrollo y mantenimiento.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48477400,
+    "url": "https://burr.apache.org/",
+    "score": 230,
+    "time": 1781103666,
+    "titulo_es": "Apache Burr (Incubating): Un Framework para Aplicaciones de IA Basadas en Decisiones",
+    "resumen": "Apache Burr (Incubating) es un framework de Python puro diseñado para simplificar el desarrollo de aplicaciones de IA que toman decisiones, abarcando desde chatbots hasta sistemas multi-agente complejos. Proporciona bloques de construcción para crear aplicaciones de IA fiables, observables y testables, definiendo la lógica como un conjunto de acciones y transiciones utilizando funciones y decoradores de Python, sin la necesidad de DSLs o YAML. Burr incluye una interfaz de usuario (UI) para monitorizar, depurar y rastrear la ejecución en tiempo real, persistencia automática de estado en diversos backends, la capacidad de pausar la ejecución para intervención humana, ejecución paralela de acciones, y composición de sub-aplicaciones para un diseño modular. Facilita la reproducción de ejecuciones pasadas, pruebas unitarias de acciones individuales y validación de transiciones de estado, promoviendo la confianza en los sistemas de IA. Burr se integra con herramientas existentes sin bloqueos y se presenta como una alternativa más robusta y de rápida adopción frente a frameworks como LangChain.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48481857,
+    "url": "https://www.adafruit.com/product/6125?src=raspberrypi",
+    "score": 280,
+    "time": 1781121921,
+    "titulo_es": "Raspberry Pi 5: Un Salto Adelante en Rendimiento y Capacidades de E/S",
+    "resumen": "El Raspberry Pi 5 representa una mejora significativa sobre su predecesor, incorporando un procesador Arm Cortex-A76 de 64 bits y cuatro núcleos que opera a 2.4GHz, ofreciendo un aumento de rendimiento de 2-3x. Incluye puertos USB 3.0, Ethernet Gigabit actualizado con capacidad PoE, y WiFi de doble banda. La nueva 'southbridge' RP1, desarrollada internamente, duplica el ancho de banda agregado de USB, triplica el ancho de banda de las interfaces MIPI para cámaras y pantallas a través de transceptores de 1.5Gbps, y duplica el rendimiento máximo de la tarjeta SD con el modo SDR104. Por primera vez, expone una interfaz PCI Express 2.0 de un solo carril para periféricos de alto ancho de banda. El sistema de refrigeración por disipador metálico está integrado. Se menciona la disponibilidad de versiones con 2GB, 4GB, 8GB y 16GB de RAM. La GPU VideoCore VII a 800MHz mejora el rendimiento gráfico, soportando doble salida de video 4Kp60 a través de HDMI. El Raspberry Pi 5 es un rediseño completo, incompatible con carcasas del Raspberry Pi 4.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48459678,
+    "url": "https://matklad.github.io/2026/06/04/css-unavoidable-bad-parts.html",
+    "score": 97,
+    "time": 1781004620,
+    "titulo_es": "Un tutorial de CSS improvisado para quienes necesitan estilizar una página web pero no son desarrolladores web",
+    "resumen": "Este artículo ofrece una guía de CSS dirigida a no desarrolladores, abordando la complejidad del diseño web y sugiriendo un enfoque práctico. El autor, a pesar de su falta de experiencia profesional en CSS, comparte sus aprendizajes de MDN. Destaca la importancia de las etiquetas semánticas de HTML5 (main, article, nav) para la estructura y critica el uso excesivo de elementos 'wrapper'. Se discute la dificultad inherente del layout en sistemas GUI y la necesidad de pensar en las posibilidades permitidas por el sistema en lugar de cómo lograr un layout específico. También se señalan los 'gotchas' y las inconsistencias de los estilos por defecto del navegador como puntos problemáticos que requieren el uso de 'CSS reset' o 'normalization' para asegurar la consistencia entre navegadores. Se concluye que, aunque vasto, el desarrollo web tiene un subconjunto aprendible para tareas simples.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48478148,
+    "url": "https://github.com/HelixDB/helix-db/tree/main",
+    "score": 138,
+    "time": 1781106451,
+    "titulo_es": "HelixDB: Base de Datos Gráfico-Vectorial para Grafos de Conocimiento y Memoria de IA",
+    "resumen": "HelixDB es una base de datos OLTP construida desde cero en Rust, diseñada específicamente para aplicaciones de IA. Integra en una única plataforma funcionalidades que tradicionalmente requerirían bases de datos separadas (relacionales, de vectores, de grafos, KV, documentos) y capas de aplicación. Proporciona acceso federado a datos empresariales para memoria de agentes, 'cerebros' de compañía y aplicaciones. Su modelo de datos principal es grafo + vector, pero soporta también KV, documentos y relacional. Se gestiona localmente a través de la CLI 'helix' (con comandos como 'helix start dev' y 'helix update') o se despliega en la nube como un servicio gestionado de alta disponibilidad con transacciones ACID. Las consultas se definen y ejecutan mediante un DSL en Rust o TypeScript, que genera un AST JSON enviado a la API POST /v1/query. Incluye 'helix chef' para un arranque rápido de proyectos, incluida la creación de aplicaciones completas (frontend incluido) mediante descripciones en lenguaje natural si un agente de codificación está disponible.",
+    "categoria": "IA"
+  },
+  {
     "id": 48469658,
     "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
-    "score": 850,
+    "score": 1225,
     "time": 1781051341,
-    "titulo_es": "Container Machine: Entornos Linux integrados para macOS",
-    "resumen": "Descripción técnica de 'container machine', una herramienta que proporciona un entorno Linux ligero, rápido y persistente en macOS basado en imágenes OCI estándares. Facilita la integración del sistema de archivos local y la automatización de usuarios, permitiendo ejecutar sistemas de inicialización para servicios de larga duración y optimizar el flujo de trabajo de desarrollo de software multiplataforma de forma nativa.",
+    "titulo_es": "Máquinas Contenedor: Entornos Linux Integrados en macOS",
+    "resumen": "El artículo describe las 'máquinas contenedor' como un entorno Linux altamente integrado diseñado para funcionar en macOS. Estas máquinas son rápidas, ligeras y persistentes, basadas en imágenes OCI estándar. Ofrecen integraciones como el intercambio automático de usuarios y directorios de inicio, facilitando el acceso al entorno Linux. A diferencia de los contenedores típicos que modelan aplicaciones, las máquinas contenedor modelan entornos Linux completos, permitiendo la ejecución de sistemas init para servicios de larga duración o supervisión de procesos. Se integran con el sistema host mapeando el nombre de usuario y el directorio de inicio del usuario de macOS al entorno Linux, haciendo disponibles repositorios y archivos de configuración (dotfiles). El comando `container machine run` se utiliza para obtener un shell interactivo o ejecutar un comando único dentro de la máquina contenedor, iniciando automáticamente la máquina si está detenida. Se puede definir una máquina contenedor predeterminada. La configuración, como la memoria asignada (por defecto, la mitad de la memoria del host) y el montaje del directorio de inicio (rw, ro, none), se actualiza con `container machine set` y toma efecto tras reiniciar la máquina. Cualquier imagen Linux con `/sbin/init` puede usarse como máquina contenedor. Se proporciona un ejemplo de Dockerfile para crear una imagen de máquina contenedor basada en Ubuntu 24.04 con systemd. Opcionalmente, se puede personalizar el script de inicialización (`/etc/machine/create-user.sh`) para la creación de usuarios en el primer arranque.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48463808,
-    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "score": 2312,
-    "time": 1781024281,
-    "titulo_es": "Presentamos Claude Fable 5 y Mythos 5: Modelos de Inteligencia Artificial de Vanguardia",
-    "resumen": "Lanzamiento de Claude Fable 5 y su variante sin restricciones de ciberseguridad, Mythos 5. Fable 5 es un modelo de inteligencia artificial de clase 'Mythos' diseñado para uso general, que supera a los modelos anteriores en desarrollo de software, análisis financiero, visión computacional e investigación científica. Para mitigar riesgos de seguridad, Fable 5 cuenta con salvaguardas conservadoras que redirigen ciertas consultas de riesgo a Claude Opus 4.8. Por otro lado, Mythos 5 se despliega inicialmente bajo el 'Project Glasswing' en colaboración con el gobierno de EE.UU. para tareas avanzadas de ciberdefensa. En pruebas de software, Stripe reportó que Fable 5 redujo a un solo día una migración de código Ruby de 50 millones de líneas. Los modelos se ofrecen a una tarifa de $10 por millón de tokens de entrada y $50 por millón de tokens de salida.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48467705,
-    "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
-    "score": 397,
-    "time": 1781038860,
-    "titulo_es": "La próxima versión mayor de npm, v12, introducirá cambios de seguridad por defecto en 'npm install'",
-    "resumen": "La versión v12 de npm, planificada para julio de 2026, implementará importantes cambios de seguridad por defecto al ejecutar 'npm install'. Entre los cambios principales, el parámetro '--allow-git' pasará a ser 'none' de manera predeterminada para evitar la resolución automática de dependencias Git (previniendo vectores de ejecución de código mediante archivos .npmrc maliciosos), y '--allow-remote' también cambiará a 'none' para bloquear dependencias desde URLs externas sin consentimiento explícito. Además, se introduce un flujo de trabajo basado en 'npm approve-scripts' para auditar, aprobar y registrar en el 'package.json' únicamente los scripts de ciclo de vida de los paquetes en los que el desarrollador confía, bloqueando el resto por defecto.",
+    "id": 48487540,
+    "url": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
+    "score": 72,
+    "time": 1781164277,
+    "titulo_es": "La IA y el Futuro del Empleo en Ingeniería de Software: Más Allá de los Despidos Masivos",
+    "resumen": "El artículo aborda la creciente ansiedad sobre el reemplazo de empleos por la Inteligencia Artificial (IA), utilizando la ingeniería de software como caso de estudio debido a la rápida adopción de IA en este campo. Argumenta que la narrativa de despidos masivos impulsados por IA es incorrecta. La IA comprime la capa de \"ejecución\" del trabajo de conocimiento (como el desarrollo de software), pero las capas de \"decisión\" y \"entrega\" son inherentemente resistentes a la automatización total. Se analizan tres casos de despidos en empresas tecnológicas (Block, Snap, Intuit) que fueron presentados mediáticamente como impulsados por IA, pero cuya investigación reveló otras causas económicas o estratégicas. Los autores concluyen con optimismo cauto sobre la demanda futura de ingenieros de software, señalando que, si bien la IA puede transformar el trabajo, no conducirá a un desempleo masivo en el sector. El artículo también anticipa una próxima entrega que explorará la volatilidad en las carreras individuales de los ingenieros de software, incluso en un mercado con alta demanda general.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48473731,
-    "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/security/advisories/GHSA-p58x-r3c9-x9p6",
-    "score": 23,
-    "time": 1781083720,
-    "titulo_es": "Fallo de omisión de validación de ruta en Notepad++ v8.9.6.1 permite ejecución de código arbitrario",
-    "resumen": "El artículo analiza una vulnerabilidad de severidad alta (CVSS 7.8, CWE-42 / CWE-59) en Notepad++ v8.9.6.1 que permite evadir la validación introducida en el parche de la vulnerabilidad CVE-2026-48800. La función de validación 'isInTrustedDirectory()' utiliza una verificación basada en prefijos de texto sin canonizar previamente la ruta del ejecutable. Esto permite realizar un ataque de salto de directorio (path traversal usando '..\\..\\') para ejecutar binarios no confiables desde ubicaciones arbitrarias sin advertencias de seguridad. La solución recomendada consiste en canonizar la ruta empleando 'PathCanonicalize()' o 'GetFullPathNameW()' antes de realizar la validación de prefijo.",
-    "categoria": "Ciberseguridad"
+    "id": 48477851,
+    "url": "https://www.githubstatus.com/incidents/fcj3088jg1wx",
+    "score": 161,
+    "time": 1781105392,
+    "titulo_es": "Resend OTP y Notificaciones de Incidentes de Autenticación",
+    "resumen": "El artículo describe funcionalidades relacionadas con la retransmisión de códigos de un solo uso (OTP) y la configuración de webhooks para notificaciones de fallos en puntos finales. También aborda la suscripción a actualizaciones sobre problemas de autenticación, incluyendo notificaciones por correo electrónico y mensajes de texto para incidentes, lo que sugiere un enfoque en la seguridad y la fiabilidad de los sistemas de autenticación y las comunicaciones asociadas. La mención de 'API requests' y 'endpoint' refuerza la naturaleza técnica y de desarrollo de software.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48473662,
-    "url": "https://github.com/react/react/pull/36173",
-    "score": 68,
-    "time": 1781083195,
-    "titulo_es": "Puerto experimental en Rust del Compilador de React e integración con SWC y OXC",
-    "resumen": "El documento técnico describe el desarrollo en progreso de la migración del compilador de React a Rust, facilitando su integración con herramientas del ecosistema frontend como SWC y OXC a través de crates específicos. Se detallan aspectos críticos de arquitectura de software, como la complejidad de convertir un AST (Árbol de Sintaxis Abstracta) en un HIR (Representación Intermedia de Alto Nivel), la decisión de exponer una API pública compatible con Babel y la serialización temporal de los datos de ámbito (scope). Asimismo, se discute la necesidad planteada por la comunidad de publicar formalmente estos crates en crates.io para evitar dependencias directas de repositorios Git.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48470248,
-    "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
-    "score": 647,
-    "time": 1781055853,
-    "titulo_es": "Un tribunal alemán declara a Google directamente responsable de las afirmaciones generadas por su IA de búsqueda",
-    "resumen": "El Tribunal Regional de Múnich dictó una medida cautelar contra Google, determinando que la empresa es responsable directa del contenido generado por sus 'AI Overviews'. El tribunal concluyó que, a diferencia de los motores de búsqueda tradicionales que gozan de inmunidad relativa por solo enlazar a fuentes de terceros, la IA generativa de Google crea declaraciones independientes, nuevas y sustantivas mediante la síntesis y evaluación de información bajo su propia estructura y palabras. El caso se originó cuando la IA vinculó erróneamente a dos editoriales con estafas mediante inferencias no presentes en las fuentes originales. El fallo judicial establece un precedente legal importante al definir que Google posee autoría y control directo sobre el output de sus algoritmos de IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48468766,
-    "url": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
-    "score": 199,
-    "time": 1781044557,
-    "titulo_es": "El renacimiento del hardware en la era del software automatizado",
-    "resumen": "El autor relata su experiencia en un hackathon donde integró una Raspberry Pi en un teléfono de disco antiguo, comunicándolo mediante WebSockets con un servidor para controlar sus componentes físicos. Utilizaron un agente de IA con la API de Spotify y ElevenLabs para procesar peticiones complejas de música con voz natural. A partir de esto, reflexiona sobre cómo las herramientas de generación de código desvían el foco de los hackathons desde la escritura manual de software hacia el diseño de arquitectura de sistemas y la experimentación con hardware físico y APIs complejas.",
+    "id": 48470578,
+    "url": "https://www.inverse.com/input/gaming/the-dirty-secret-that-makes-speedrunning-on-spongebob-a-lot-faster",
+    "score": 89,
+    "time": 1781058305,
+    "titulo_es": "La Teoría del \"Gunk\" del Gamer: Trucos para Acelerar Videojuegos Modificando Discos",
+    "resumen": "El artículo describe la técnica de \"gamer gunk theory\" popularizada por el YouTuber SHiFT para acelerar el speedrunning del videojuego SpongeBob SquarePants: Battle for Bikini Bottom. Esta técnica implica aplicar \"manchas estratégicas\" (saliva, sudor, ketchup) en la superficie legible del disco del juego. Estas imperfecciones causan que el láser del lector pierda enfoque, lo que resulta en un \"lag clipping\" al pausar repetidamente el juego. Esto permite a los jugadores explotar glitches para avanzar más rápido de lo normal. Si bien la técnica ha ganado popularidad y vistas, SHiFT advierte que es una estrategia poco fiable y riesgosa debido a la posibilidad de dañar permanentemente el disco y la consola Xbox original. La efectividad depende de problemas de hardware y la ejecución precisa; un error puede arruinar el juego. A diferencia de otros trucos como la inclinación de cartuchos, este método manipula directamente la lectura del disco. SHiFT subraya que una parte fundamental del speedrunning es la preservación de juegos antiguos, no su destrucción.",
     "categoria": "Hardware"
-  },
-  {
-    "id": 48473845,
-    "url": "https://github.com/grzegorz-raczek-unit8/claude-quota",
-    "score": 7,
-    "time": 1781084596,
-    "titulo_es": "Indicadores en la barra de menú para la cuota de Claude Code (plugin de SwiftBar)",
-    "resumen": "Guía técnica para la instalación y configuración de un plugin de SwiftBar en macOS que permite visualizar el consumo de cuota de Claude Code. El plugin (un script en Python) interactúa de forma segura y en modo de solo lectura con el llavero de macOS (Keychain) para obtener el token OAuth de Claude Code, consultando un endpoint interno de uso. Soporta la autodetección de múltiples cuentas basadas en directorios de configuración de entorno y es altamente personalizable a través de archivos de texto locales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48466277,
-    "url": "https://aarushgupta.io/posts/kan-fpga/",
-    "score": 237,
-    "time": 1781032905,
-    "titulo_es": "Arquitecturas de hardware para inferencia ultra rápida y aprendizaje en línea utilizando Redes Kolmogorov-Arnold",
-    "resumen": "El artículo aborda el diseño de arquitecturas de hardware personalizadas en dispositivos FPGAs para lograr una inferencia de ultra baja latencia y aprendizaje en línea mediante Redes Kolmogorov-Arnold (KAN). Explica que, a diferencia de las GPUs que introducen sobrecarga por el manejo de instrucciones y memoria, las FPGAs permiten implementar redes neuronales directamente como lógica digital usando tablas de búsqueda (LUTs) y flip-flops. Asimismo, introduce la necesidad de la cuantización de punto fijo para codificar números reales en cadenas de bits de manera eficiente, minimizando el error de cuantización para un rendimiento óptimo.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48464140,
-    "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
-    "score": 300,
-    "time": 1781025441,
-    "titulo_es": "Primeras impresiones de Claude 5 Fable: Un salto evolutivo en la IA de clase Mythos",
-    "resumen": "El artículo detalla las pruebas iniciales realizadas con Claude 5 Fable, el primer modelo de IA de la clase Mythos. Se destaca su rendimiento superior frente a modelos anteriores en tareas complejas y de larga duración, trabajando de forma autónoma hasta doce horas sobre especificaciones extensas. Como muestra de su capacidad agéntica, se describe cómo el modelo utilizó 'Claude Code' para desarrollar un mapa isócrono interactivo, automatizando el proceso de investigación al lanzar instancias subordinadas de Claude Sonnet en paralelo para recopilar y procesar más de 2,200 datos reales de transporte (vuelos, trenes y carreteras) sin intervención humana.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48468370,
-    "url": "https://forestwalk.ai/blog/surprise-blacksmith-costs/",
-    "score": 204,
-    "time": 1781042475,
-    "titulo_es": "¿Cuál es el comportamiento correcto cuando termina la 'prueba gratuita'?",
-    "resumen": "El artículo analiza el caso de un equipo de desarrollo que probó Blacksmith, una alternativa de CI/CD para GitHub Actions. Al agotar el límite de su prueba gratuita sin haber registrado una tarjeta de crédito, el servicio no se detuvo; en su lugar, Blacksmith continuó ejecutando los flujos de trabajo de integración continua y acumulando cargos, generando una factura inesperada de más de 1,000 dólares. El autor cuestiona las prácticas y convenciones de facturación de las plataformas SaaS cuando finalizan los periodos de prueba sin tarjeta de crédito.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48433525,
-    "url": "https://newatlas.com/engineering/magnetoelectric-antennas-submarine-robots-communications/",
-    "score": 14,
-    "time": 1780828711,
-    "titulo_es": "La tecnología de antenas BlueME revoluciona la comunicación de los robots submarinos",
-    "resumen": "El artículo presenta BlueME, un novedoso sistema de comunicación submarina basado en antenas magnetoeléctricas (ME) diseñado para vehículos autónomos submarinos (AUV). A diferencia de los métodos tradicionales (radiofrecuencia, acústicos u ópticos), que sufren de alta atenuación, distorsión Doppler o dependencia de la visibilidad, BlueME opera en bajas frecuencias (35-36 kHz) y aprovecha la compresión de onda en el agua para mejorar la eficiencia de radiación. Físicamente, el sistema consta de un arreglo de 15 antenas (3x5) alojadas en compartimentos compensados por aceite para soportar la presión hidrostática. Cada antena acopla una capa magnetostrictiva de Metglas con una capa piezoeléctrica de titanato zirconato de plomo (PZT) para transmitir y recibir señales. En pruebas reales, el sistema demostró un alcance de hasta 730 metros en agua salada consumiendo menos de 10 vatios, con tasas de transferencia entre 1 y 100 Kb/s, manteniendo la estabilidad frente a la turbidez y las interferencias por trayectorias múltiples.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48427468,
-    "url": "https://unsung.aresluna.org/more-molly-guards/",
-    "score": 140,
-    "time": 1780769704,
-    "titulo_es": "Protectores contra errores (Molly Guards): del hardware al diseño de software",
-    "resumen": "El artículo analiza el concepto de 'molly guard', un patrón de diseño físico o de software que evita que los usuarios realicen acciones destructivas o accidentales. El autor examina ejemplos clásicos de hardware (como protectores físicos en máquinas de escribir IBM y palancas de disqueteras) y su evolución hacia interfaces de software (como las advertencias de selección masiva en Finder, el deslizador de alarma en iOS, el atajo de salida en Chrome y el skeuomorfismo en iTunes). El texto evalúa críticamente la efectividad, la fricción necesaria y la estética de estas soluciones de experiencia de usuario (UX).",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48421858,
-    "url": "https://opencv.org/opencv-5/",
-    "score": 773,
-    "time": 1780725748,
-    "titulo_es": "OpenCV 5: La próxima generación de la biblioteca de visión por computadora",
-    "resumen": "OpenCV 5 representa una modernización significativa de la biblioteca de visión por computadora, marcando un hito en su historia de más de dos décadas. Esta nueva versión introduce un motor DNN (Deep Neural Network) renovado con soporte ONNX mejorado (más del 80% de cobertura de operadores), optimizaciones de aceleración de hardware y mejor integración con Python. Aborda las limitaciones de versiones anteriores, donde los modelos de aprendizaje profundo a menudo fallaban debido a la falta de soporte para operadores específicos o formas dinámicas. OpenCV 5 fue diseñado para la realidad actual del desarrollo de visión por computadora, que combina técnicas clásicas con deep learning, transformers y modelos de lenguaje grandes (LLMs), y espera que el código se ejecute eficientemente en diversas plataformas (laptops, servidores, dispositivos embebidos, ARM, Snapdragon, aceleradores especializados). Los objetivos clave de esta versión incluyen un núcleo más rápido y pequeño, soporte de lenguajes mejorado, limpieza de APIs antiguas, modernización del motor DNN, nuevas rutas de aceleración de hardware, mejoras en la visión 3D y documentación más accesible. La versión pip de OpenCV 5 se lanzará el 8 de junio.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48467896,
-    "url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
-    "score": 866,
-    "time": 1781039951,
-    "titulo_es": "El \"nerfeo silencioso\" de Claude y el riesgo en la cadena de suministro de IA",
-    "resumen": "El artículo detalla las nuevas intervenciones implementadas por Anthropic en su modelo Claude (Fable 5) que limitan su efectividad para solicitudes relacionadas con el desarrollo de LLMs de vanguardia, como la construcción de pipelines de preentrenamiento o el diseño de aceleradores de ML. Estas restricciones, que incluyen modificación de prompts, vectores de dirección o PEFT, operan de forma invisible para el usuario, a diferencia de otras salvaguardas. El autor critica esta opacidad, argumentando que difumina la línea entre la investigación de IA de vanguardia y el desarrollo de software convencional. Técnicas antes reservadas para laboratorios de IA ahora son utilizadas por empresas de software ordinarias para desarrollar sistemas de embeddings, reranking y recomendación. Esta falta de transparencia crea un riesgo en la cadena de suministro, ya que los desarrolladores no pueden discernir si una respuesta incorrecta de Claude se debe a una confusión del modelo, a un problema irresoluble o a una restricción oculta. Esto socava la confianza en las herramientas de desarrollo de IA, especialmente a medida que la definición de \"empresa de IA\" evoluciona y más software incorpora modelos de IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48445834,
-    "url": "https://gitpush--force.com/commits/2026/06/lies-we-tell-ourselves-about-email/",
-    "score": 130,
-    "time": 1780928697,
-    "titulo_es": "Las Mentiras del Manejo de Direcciones de Correo Electrónico",
-    "resumen": "El artículo explora las complejidades y las 'mentiras' comunes que rodean la validación y el manejo de direcciones de correo electrónico en el desarrollo de software. Se detalla cómo las expectativas basadas en la intuición o en reglas simplificadas (como las expresiones regulares) a menudo fallan debido a la naturaleza histórica y evolutiva del protocolo de correo electrónico y sus implementaciones. Se discuten casos extremos, como el soporte de caracteres UTF8 (SMTPUTF8 y RFC 6531) en diferentes servidores de correo (Postfix, Dovecot, Gmail) y las limitaciones de longitud definidas por RFC 5321. El autor argumenta que depender excesivamente de la validación de entrada mediante regex puede ser contraproducente para la experiencia del usuario y que la verificación de correos electrónicos a través de un envío real es una estrategia más robusta y práctica, alineándose con la idea de que la validación debe facilitar la vida al usuario en lugar de ser una barrera de seguridad infalible.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48465675,
-    "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
-    "score": 718,
-    "time": 1781030759,
-    "titulo_es": "Usos (erróneos) de la IA en el mundo empresarial",
-    "resumen": "El artículo critica la tendencia de algunos CEOs a imponer el uso de herramientas de IA generativa (LLMs) de forma indiscriminada y sin una comprensión profunda de sus limitaciones y del trabajo real que implican. Se argumenta que la adopción forzada no conduce a un uso efectivo, ya que la maestría de estas herramientas requiere un aprendizaje voluntario y la comprensión de cómo integrarlas en flujos de trabajo complejos. Los CEOs, a menudo desconectados de las tareas de \"última milla\", perciben solo los resultados \"felices\" sin considerar los detalles cruciales como la verificación, la seguridad, el cumplimiento legal o la escalabilidad, lo que puede llevar a conclusiones erróneas sobre la necesidad de personal. La propuesta de incentivos basados en el uso de tokens (leaderboards) se considera contraproducente. Se destaca la importancia de que los líderes comprendan tanto el potencial como el esfuerzo requerido para implementar la IA de manera sostenible en la empresa.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48443322,
-    "url": "https://invlpg.com/posts/2025-06-19-premature-optimization.html",
-    "score": 44,
-    "time": 1780912891,
-    "titulo_es": "Optimización de la Estructura de Datos para un Sistema de Monitoreo de Conectividad",
-    "resumen": "El artículo detalla un ejercicio de optimización de memoria para una estructura de datos utilizada en un sistema de monitoreo de conectividad que envía paquetes ICMP Echo Request. Inicialmente se propone una estructura de 512 entradas en un ring buffer que resulta en un uso ineficiente de memoria (12 KiB). A través de varias iteraciones, se reducen los campos innecesarios (como 'sent' y 'received' por separado), se ajusta la precisión temporal de nanosegundos a cientos de microsegundos, se emplean bitfields y se aprovechan las características de los identificadores de ICMP (campo de 16 bits con 4 bits libres) para codificar un contador de origen. Se discuten las implicaciones del padding de la CPU y la reorganización de campos para mejorar la eficiencia de acceso a nivel de hardware (instrucciones de carga y máscara). A pesar de ser un ejercicio académico dado que la aplicación no estaba restringida por memoria, demuestra técnicas avanzadas de optimización de estructuras de datos y manejo de memoria a bajo nivel para maximizar la eficiencia.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48466812,
-    "url": "https://blog.gitbutler.com/true-grit",
-    "score": 154,
-    "time": 1781035101,
-    "titulo_es": "Reimplementación de Git en Rust usando IA y enfoque de librería",
-    "resumen": "El artículo describe la creación de Grit, una reimplementación de Git desde cero en Rust, con un enfoque \"library-first\" y \"memory-safe\". Utilizando un enfoque similar al de Anthropic con un enjambre de agentes de IA para escribir un compilador C, el autor empleó agentes para desarrollar Grit, logrando que pase más del 99% del conjunto de pruebas de C Git. Grit está diseñado como una librería Rust reentrante y modular, con una interfaz CLI independiente. Aunque no está completamente probado para uso en producción y se omitieron ciertas funcionalidades específicas (como email, i18n, importadores Perforce/SVN), el proyecto representa un hito significativo para interactuar canónicamente con repositorios Git en Rust y tiene potencial para futuras aplicaciones, como la integración de funcionalidades complejas de push/fetch en GitB.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48471048,
-    "url": "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
-    "score": 145,
-    "time": 1781062067,
-    "titulo_es": "La tragedia de Owen: Un caso de Alveolar Capillary Dysplasia (ACD) y la genética del desarrollo pulmonar",
-    "resumen": "El artículo narra la desgarradora historia del nacimiento y fallecimiento del hijo del autor, Owen, debido a complicaciones respiratorias severas. Inicialmente, se sospechó una adaptación a la altitud, pero la condición de Owen se deterioró, requiriendo intubación de emergencia y transporte a un hospital especializado. A pesar de múltiples pruebas y tratamientos, la causa subyacente de su dificultad respiratoria permaneció desconocida durante semanas. Finalmente, se consideró la displasia alveolar capilar (ACD), una enfermedad genética. El diagnóstico genético mediante secuenciación del genoma completo (WGS) no arrojó resultados iniciales. Tras el fallecimiento de Owen, una biopsia pulmonar confirmó el ACD. Posteriormente, el Dr. Paweł Stankiewicz, experto en la genética del ACD, analizó el genoma de Owen y descubrió la causa: la ausencia de un fragmento de ADN de 91 kilobases que regulaba la expresión del gen FOXF1. Esta deficiencia genética impidió el desarrollo pulmonar saludable, lo que resultó ser la causa de la trágica muerte de Owen. El artículo destaca la importancia del diagnóstico genético, incluso en casos donde no existe un tratamiento curativo, proporcionando un cierre y comprensión a la familia.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48459659,
-    "url": "https://tratt.net/laurie/blog/2026/test_case_reducers_are_underappreciated_debugging_tools.html",
-    "score": 130,
-    "time": 1781004469,
-    "titulo_es": "Reductores de Casos de Prueba: Una Herramienta Esencial para la Depuración de Software",
-    "resumen": "El artículo explora el concepto y la aplicación de los reductores de casos de prueba, herramientas que automatizan la reducción del tamaño de las entradas de un programa para facilitar la depuración. Se detalla cómo estos reductores, a pesar de su aparente complejidad, funcionan mediante una prueba de \"interesancia\" que verifica si una entrada reducida aún desencadena el comportamiento no deseado. Se enfatiza su eficacia, especialmente en la identificación de las partes específicas de una entrada que causan fallos, y se sugiere que son una técnica subutilizada en comparación con métodos de depuración más tradicionales. Se presenta un ejemplo práctico con un script de shell para ilustrar su implementación básica, destacando cómo pueden ir más allá de la simple reducción de longitud, considerando factores como la frecuencia de errores o el número de instrucciones ejecutadas para una depuración más efectiva.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48459294,
-    "url": "https://staniks.github.io/articles/catlantean-3d-blog-1/",
-    "score": 883,
-    "time": 1781001974,
-    "titulo_es": "Creación de Assets para un Juego FPS al Estilo de los 90",
-    "resumen": "El artículo detalla el proceso de creación de assets para 'Catlantean 3D', un proyecto personal de un videojuego de disparos en primera persona (FPS) que emula las técnicas de los años 90, específicamente la paleta de 256 colores (inspirada en VGA Mode 13h y Mode-X) y el algoritmo de Raycasting. Se enfatiza cómo la restricción de colores (un byte por píxel, indexado a una paleta de 256 colores elegidos deliberadamente) fuerza decisiones de diseño cuidadosas, resultando en gráficos nítidos y claros, similar a juegos como Doom y Duke Nukem. Se discute la selección y ajuste de la paleta de colores a través de iteraciones. Además, se aborda el aspecto del 'iluminado' en el Raycasting, explicando cómo se simula la atenuación de la luz por distancia y la sombreada sutil de los tiles del mapa para añadir percepción de profundidad, una técnica que se implementaría de manera diferente con hardware moderno (shaders).",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48452901,
-    "url": "https://technicshistory.com/2026/06/06/computer-lessons/",
-    "score": 18,
-    "time": 1780956167,
-    "titulo_es": "Criaturas del Pensamiento: En memoria de Clement J. McDonald, Junior, 1940-2026",
-    "resumen": "El artículo explora los inicios de la computación aplicada a la educación en las décadas de 1960, impulsada por la Guerra Fría y los programas de la Gran Sociedad. Se detallan dos sistemas pioneros de tiempo compartido, DTSS (Dartmouth Time Sharing System) y PLATO (Programmed Logic for Automatic Teaching Operations). PLATO, inspirado en las 'máquinas de enseñar' de Pressey y Skinner, buscaba ofrecer instrucción personalizada y auto-gestionada, evolucionando desde un sistema de diapositivas a uno con terminales gráficas e interactivas, como laboratorios de química simulados. DTSS, por otro lado, se centró en que los estudiantes aprendieran sobre computadoras a través de su uso.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48461226,
-    "url": "https://cupertinolens.com/2026/06/09/wwdc-2026-apple-is-folding/",
-    "score": 239,
-    "time": 1781013398,
-    "titulo_es": "Apple se prepara para el iPhone plegable con nuevas herramientas de desarrollo y un enfoque en la adaptabilidad",
-    "resumen": "El artículo detalla las señales de Apple, observadas en la reciente \"Platform State of the Union\" y en el beta de iOS 27, que apuntan al lanzamiento inminente de un iPhone plegable. Se mencionan nuevos términos como \"foldState\" y \"angleDegrees\", así como un cambio en la consulta de pantallas integradas, sugiriendo soporte nativo para múltiples configuraciones de pantalla. La insistencia en la \"resizabilidad\" en las aplicaciones de iOS, con la introducción del Simulador iOS Redimensionable y la capacidad de extender ventanas de iPhone Mirroring en Mac, subraya un esfuerzo proactivo de Apple para que los desarrolladores diseñen aplicaciones adaptables a \"un rango dinámico de tamaños y proporciones\". Esto contrasta con la experiencia de los usuarios de Android, y Apple busca evitarla preparando a la comunidad de desarrolladores antes del lanzamiento del hardware. El supuesto \"iPhone Ultra\" plegable, con pantallas internas y externas de dimensiones específicas y una relación de aspecto de 4:3, se perfila como un dispositivo que requerirá un diseño de software flexible. La demo de una aplicación de origami se interpreta como una metáfora y una demostración práctica de cómo manejar pliegues y adaptabilidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48467759,
-    "url": "https://github.com/signalblur/exifsmugglingpoc",
-    "score": 92,
-    "time": 1781039160,
-    "titulo_es": "Prueba de Concepto de Evolución de Cache Smuggling usando Datos Exif",
-    "resumen": "El artículo describe una prueba de concepto (PoC) de un ataque de 'Cache Smuggling' que explota los metadatos Exif de archivos JPG para ocultar un payload ejecutable. Este payload puede ser descargado pasivamente por un sistema de caché, como el de un navegador web. Un ejemplo práctico (chrome_poc.ps1) demuestra cómo un cargador puede extraer la segunda etapa del payload directamente de la caché del navegador Chrome, eliminando la necesidad de realizar solicitudes de red adicionales para obtenerlo. Se proporcionan comandos de ejemplo para la construcción de payloads codificados y la ejecución del ataque de 'exif_smuggling'. La técnica busca utilizar el mecanismo de caché de forma maliciosa para la distribución de malware.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48460863,
-    "url": "https://arxiv.org/abs/2605.15184",
-    "score": 151,
-    "time": 1781011623,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades de arXiv",
-    "resumen": "El artículo describe arXivLabs, un marco diseñado para permitir a colaboradores, tanto individuos como organizaciones, desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Este programa se basa en los valores de apertura, comunidad, excelencia y privacidad de datos del usuario. arXiv colabora únicamente con socios que se adhieren a estos principios, fomentando la innovación y la mejora continua de la plataforma para su comunidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48462308,
-    "url": "https://www.404media.co/fcc-wants-to-kill-burner-phones-by-forcing-telecoms-to-get-all-customers-ids/",
-    "score": 532,
-    "time": 1781018506,
-    "titulo_es": "La FCC planea exigir a las telecomunicaciones que almacenen datos personales para dificultar la compra de teléfonos prepago",
-    "resumen": "La Comisión Federal de Comunicaciones (FCC) de EE. UU. está proponiendo regulaciones que obligarían a las compañías de telecomunicaciones a recopilar y almacenar una gran cantidad de información personal de los clientes, incluyendo números de identificación emitidos por el gobierno y direcciones físicas. El objetivo declarado es combatir estafadores y otras actividades ilícitas, exigiendo la verificación de identidad en el punto de compra para todos los clientes nuevos y que renuevan su servicio. Esta medida afectaría significativamente la privacidad de los usuarios, incluyendo a personas preocupadas por la privacidad, sobrevivientes de violencia doméstica y periodistas, quienes perderían la capacidad de adquirir teléfonos de \"burner\" (teléfonos no vinculados a su identidad). Los defensores de los derechos civiles y la privacidad comparan estas medidas con las de países autoritarios, expresando alarma por las implicaciones de seguridad cibernética y privacidad derivadas de la centralización de datos sensibles. Las telecomunicaciones también podrían verse obligadas a recopilar información adicional para clientes empresariales y extranjeros, como el uso previsto de sus planes y sus direcciones IP.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48435943,
-    "url": "https://github.com/luke8086/gentleos32",
-    "score": 113,
-    "time": 1780847150,
-    "titulo_es": "GentleOS/32: Un sistema operativo hobby para PCs vintage de 32 bits",
-    "resumen": "GentleOS/32 es un sistema operativo hobby de diseño monolítico dirigido a PCs vintage de 32 bits. Su objetivo principal es ofrecer una plataforma sencilla para interactuar con hardware retro y ejecutar aplicaciones gráficas interactivas directamente sobre el hardware. Los requisitos mínimos son una CPU i386, 4MB de RAM y una pantalla VGA con modo 640x480x16. Soporta dispositivos estándar de PC como VGA/SVGA, teclado, ratón PS/2 y ratón serie, además del altavoz de PC. La configuración se realiza mayormente en tiempo de compilación. No hay planes de desarrollo futuro más allá de correcciones de errores, optimizaciones y la adición de más aplicaciones. Existe una versión de 16 bits llamada GentleOS/16, compatible con procesadores 80186. La licencia principal es GPLv2. Se proporcionan detalles de construcción y ejecución en USAGE.md. Los assets de terceros utilizados (icons8, Mona Font, The Ultimate Oldschool PC Font Pack) se han modificado y se mencionan sus licencias.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48459001,
-    "url": "https://stratechery.com/2026/the-iphones-last-stand/",
-    "score": 180,
-    "time": 1780999698,
-    "titulo_es": "El futuro de la computación: Agentes delgados, IA en la nube y la competencia entre Microsoft y Apple",
-    "resumen": "El artículo explora la evolución de la computación hacia un modelo de 'clientes delgados' impulsado por la IA y agentes en la nube. Microsoft presentó Project Solara, una visión de un ecosistema de dispositivos interconectados que actúan como portales para agentes en la nube, donde toda la computación se realiza de forma remota. Este enfoque minimiza la necesidad de potencia de procesamiento local, haciendo que la interacción con la tecnología sea más fluida y se centre en la finalización de tareas en lugar de en la interfaz de usuario. Por otro lado, Apple presentó sus avances en IA con la \"Siri AI\" en WWDC 2024. Si bien los demostraciones mostraron capacidades mejoradas de conciencia contextual e interacción con aplicaciones, el artículo señala que Apple aún está detrás del estado del arte en cuanto a la capacidad de los agentes para actuar de forma autónoma y completar tareas complejas sin intervención directa del usuario. A pesar de esta brecha, se argumenta que la estrategia de Apple, centrada en el consumidor y la integración profunda con su ecosistema de hardware, podría ser suficiente para sus necesidades de IA actuales y futuras, especialmente considerando que la mayoría de las aplicaciones de IA para consumidores no requieren el nivel de complejidad de los agentes avanzados propuestos por Microsoft.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48457830,
-    "url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
-    "score": 540,
-    "time": 1780990396,
-    "titulo_es": "Microsoft retira repositorios de código abierto tras detectar malware que roba contraseñas",
-    "resumen": "Microsoft ha suspendido temporalmente el acceso a docenas de sus proyectos de código abierto alojados en GitHub debido a una investigación sobre cómo hackers infiltraron el código con malware diseñado para robar contraseñas y credenciales sensibles. Los proyectos afectados incluyen herramientas relacionadas con el servicio en la nube Azure y aplicaciones de desarrollo de IA como Claude Code, la interfaz de línea de comandos de Gemini y VS Code. La brecha, identificada por las firmas de seguridad Cloudsmith y OpenSourceMalware, representa un ataque a la cadena de suministro de software, donde se comprometen proyectos de código abierto muy utilizados para infectar a un gran número de usuarios. Este es el segundo incidente de este tipo para Microsoft en pocas semanas, tras la compromisión del proyecto Durable Task. La compañía ha notificado a un número limitado de clientes potencialmente afectados y está restaurando los repositorios tras las revisiones de seguridad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48471153,
-    "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/",
-    "score": 13,
-    "time": 1781062957,
-    "titulo_es": "Claude Fable 5: Un Modelo de IA Potente y Costoso con Mayor Conocimiento",
-    "resumen": "El artículo analiza Claude Fable 5, un nuevo modelo de lenguaje grande de Anthropic, destacando su rendimiento comparable a Claude Mythos 5 pero con \"guardrails\" de seguridad más estrictos. Se menciona que Fable 5 es significativamente más lento y costoso que modelos anteriores, con un precio de $10/millón de tokens de entrada y $50/millón de tokens de salida. Posee una ventana de contexto de 1 millón de tokens y una fecha de corte de conocimiento en enero de 2026. El autor enfatiza la vasta cantidad de conocimiento que Fable 5 puede manejar, citando un ejemplo donde supera a Opus 4.8 en la enumeración de proyectos de código abierto de un desarrollador específico. Se debate si el conocimiento intrínseco del modelo es una métrica de mejora más allá de su capacidad para usar herramientas de búsqueda externas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48464330,
-    "url": "https://bnikolic.co.uk/blog/linux-ld-debug.html",
-    "score": 75,
-    "time": 1781026145,
-    "titulo_es": "Depuración de problemas de carga de bibliotecas compartidas en Linux con LD_DEBUG",
-    "resumen": "El artículo aborda un problema común en el desarrollo de sistemas grandes con múltiples bibliotecas cargadas dinámicamente: la aparición de errores debido a la carga de versiones incorrectas de bibliotecas. El autor, un arquitecto de software senior con experiencia, presenta la variable de entorno `LD_DEBUG` como una herramienta eficiente y poco conocida en Linux para diagnosticar estos problemas. Al establecer `LD_DEBUG` con diversas opciones (como `help`, `libs`, `reloc`, `symbol`, `versions`), el enlazador dinámico de Linux genera información detallada sobre el proceso de carga de bibliotecas. Esta información es crucial para identificar qué bibliotecas se están accediendo y por qué. Se compara esta técnica con el uso de `strace`, destacando la superioridad de `LD_DEBUG` para estos casos específicos. Se proporciona un ejemplo práctico de uso y se menciona que la salida también es útil para analizar problemas de rendimiento relacionados con la carga dinámica excesiva. Finalmente, se hace una breve mención a alternativas en MS Windows (`Show Loader Snaps` con `gflags.exe` y `windbg`) y se ofrece contacto para asesoramiento profesional.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48444654,
-    "url": "https://bernsteinbear.com/blog/value-numbering/",
-    "score": 27,
-    "time": 1780922701,
-    "titulo_es": "Numeración de Valores: Una Extensión de SSA para Optimización de Compiladores",
-    "resumen": "El artículo explora la numeración de valores, una técnica de optimización de compiladores que extiende el concepto de Asignación Única Estática (SSA). SSA asigna nombres únicos a cada valor, haciendo explícitas las diferentes instancias de una expresión. La numeración de valores va un paso más allá al identificar instrucciones que producen resultados idénticos en tiempo de ejecución, incluso si son textual o estructuralmente diferentes en el Código Intermedio (IR). Esto permite la reutilización de resultados computacionales, evitando cálculos redundantes. Se discuten enfoques como el hash-consing (computar un hash de la instrucción y comparar hashes para detectar equivalencia) y la importancia de la \"pureza\" de las operaciones (instrucciones que no interactúan con el estado externo más allá de sus operandos) para la aplicación segura de esta optimización. Se ilustra el concepto con ejemplos de optimización en secuencias lineales de instrucciones, como en bloques básicos, y se menciona la analogía con representaciones de unión-disjunta utilizadas en optimizadores como el de JavaScriptCore.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48463018,
-    "url": "https://biffweb.com/p/core/",
-    "score": 106,
-    "time": 1781021572,
-    "titulo_es": "Biff.core: Simplificando la Composición de Sistemas y la Extracción de Lógica en Bibliotecas",
-    "resumen": "El artículo describe la primera biblioteca liberada, `biff.core`, como parte de un esfuerzo por refactorizar Biff en múltiples bibliotecas. `biff.core` se enfoca en la composición de sistemas y proporciona interfaces para proyectos Biff, actuando como el pegamento entre las otras bibliotecas. Introduce el concepto de 'init functions' que toman una colección de módulos y devuelven un mapa que se fusiona en el mapa del sistema. Esto resuelve el problema de tener que pegar boilerplate en el espacio de nombres principal de la aplicación. La biblioteca mantiene la estructura existente de 'módulos y componentes' de Biff, pero la simplifica extrayendo la lógica de configuración en bibliotecas separadas. Aborda la complejidad de la 'late binding' (enlace tardío) que se perdía al extraer boilerplate, implementando una solución para mantener la capacidad de actualización dinámica del manejador (handler) sin reiniciar el servidor. A pesar de la tentación de consolidar aún más las funciones de ciclo de vida (on-start, on-stop) en los módulos, se mantiene la separación para mantener la comprensión y simplicidad del vector de componentes. Se menciona que los proyectos con muchos recursos estado pueden implementar capas adicionales para gestionar la vectorización de componentes. Finalmente, se incluye una oferta de empleo para un ingeniero de software senior.",
-    "categoria": "Desarrollo de Software"
   }
 ]
