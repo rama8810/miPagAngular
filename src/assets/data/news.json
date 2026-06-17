@@ -1,254 +1,164 @@
 [
   {
-    "id": 48553550,
-    "url": "https://ciechanow.ski/mechanical-watch/",
-    "score": 175,
-    "time": 1781609187,
-    "titulo_es": "Cómo funciona un reloj mecánico",
-    "resumen": "Un análisis técnico y detallado sobre los principios mecánicos y físicos que rigen el funcionamiento de un reloj mecánico. El texto explica el concepto del 'movimiento' (el mecanismo interno) y se centra en la física del almacenamiento de energía mediante resortes de torsión espiral (el muelle real), detallando cómo el barrilete y el árbol contienen y gestionan la fuerza para transmitirla de manera controlada al sistema.",
+    "id": 48526174,
+    "url": "https://github.com/ArcaEge/capacitor-alarm-clock",
+    "score": 47,
+    "time": 1781435996,
+    "titulo_es": "Despierta con el estallido de un condensador",
+    "resumen": "Este proyecto detalla la creación de un reloj despertador poco convencional que utiliza la explosión de un condensador como método de alarma. El diseño abarca el desarrollo de hardware (diseño de PCB y archivos CAD para la carcasa) y firmware (desarrollado con PlatformIO para el control mediante interfaz web WiFi). El autor analiza decisiones técnicas de ingeniería electrónica, sugiriendo el reemplazo de los reguladores de tensión lineales por un circuito convertidor buck para mitigar la disipación térmica provocada por una caída de tensión de ~12V. También incluye directrices para la selección de componentes, recomendando condensadores de bajo voltaje (~16V) y sin ranuras de alivio de presión para maximizar la sonoridad del estallido.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48563394,
+    "url": "https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/",
+    "score": 298,
+    "time": 1781650414,
+    "titulo_es": "Técnicas para Encontrar y Explotar Servidores IIS en Bug Bounty",
+    "resumen": "El artículo describe un enfoque metodológico para la identificación y el análisis de servidores IIS (Internet Information Services) en el contexto de bug bounty. Se detallan técnicas de reconocimiento utilizando plataformas como Shodan y Google Dorks para localizar objetivos. Se explican métodos para identificar servidores IIS a través de las cabeceras de respuesta HTTP y se recomienda el uso de herramientas como httpx y nuclei para la enumeración a escala. Se aborda la problemática de los servidores que responden con errores genéricos 404 HTTPAPI 2.0, sugiriendo la necesidad de identificar el nombre de host correcto mediante la fuerza bruta. Una técnica destacada es la enumeración de nombres cortos de archivos y directorios heredada de la convención 8.3 de DOS, utilizando herramientas como shortscan y escáneres de Burp Suite para inferir nombres de archivos completos y potencialmente obtener acceso a recursos sensibles como configuraciones o copias de seguridad. Se mencionan estrategias de generación de listas de palabras basadas en el análisis de nombres de archivo encontrados en repositorios de GitHub.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48513920,
+    "url": "https://blog.greg.technology/2026/06/12/map-clustering-is-not-my-favorite.html",
+    "score": 39,
+    "time": 1781331172,
+    "titulo_es": "La Evolución de la Visualización de Puntos en Mapas Web y la Frustración con los Clusters",
+    "resumen": "El artículo reflexiona sobre los desafíos históricos y actuales en la visualización de un gran número de puntos en mapas web, comparando las primeras implementaciones de Google Maps (que generaban un DOM por punto, resultando en O(N) de complejidad) con las estrategias adoptadas posteriormente, como la paginación o los heatmaps. Critica especialmente el uso de clusters en mapas modernos, utilizando Atlas Obscura como ejemplo. Se argumenta que los clusters actuales, aunque agrupan puntos, a menudo frustran al usuario al no revelar información hasta el zoom, ser opacos como una \"kinder surprise\", y en ocasiones, ocultar puntos que se encuentran geográficamente distantes del centro del cluster al momento de la desaglomeración. La analogía de la muñeca rusa no abrible o un regalo \"defeating the point\" ilustra la insatisfacción con esta UX.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48558018,
+    "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
+    "score": 456,
+    "time": 1781628058,
+    "titulo_es": "Comprobación de conectividad de red en contenedores Docker sin herramientas externas usando Bash",
+    "resumen": "El artículo describe una técnica para verificar la conectividad de red entre contenedores Docker, específicamente la capacidad de realizar una solicitud HTTP GET a un servicio en una red compartida. Dado que la imagen del contenedor de destino estaba muy reducida y carecía de herramientas de red como `curl` o `wget`, el autor demuestra cómo utilizar las capacidades integradas de Bash para abrir un socket TCP y enviar una solicitud HTTP manual. Se explica que Bash maneja internamente `/dev/tcp/<host>/<port>` para establecer la conexión TCP, permitiendo enviar la solicitud HTTP y leer la respuesta directamente. Esta técnica es útil en entornos de contenedores minimalistas donde la instalación de herramientas adicionales no es posible, proporcionando una solución rápida para la depuración de red sin aumentar el tamaño de la imagen.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48496233,
+    "url": "https://www.theguardian.com/science/2026/jun/11/arbuscular-mycorrhizal-fungi-plant-life-climate-global-mapping-study",
+    "score": 97,
+    "time": 1781211071,
+    "titulo_es": "Primer mapeo global de hongos micorrícicos arbusculares muestra la escala de los sistemas de hifas que sustentan la vida vegetal",
+    "resumen": "Un estudio pionero ha generado el primer mapa global de las redes de hongos micorrícicos arbusculares (HMA) utilizando modelos de aprendizaje automático y datos de más de 16,000 núcleos de suelo de todo el mundo. Estos hongos forman redes de hifas que sustentan más del 70% de las plantas, proporcionando nutrientes y agua a cambio de carbono, y ayudando a regular el clima al secuestrar carbono en el suelo. El estudio estima que la longitud total de estas redes fúngicas podría alcanzar los 110 cuatrillones de kilómetros. La investigación revela que las redes fúngicas son un 47.3% menos densas en tierras de cultivo que en ecosistemas silvestres, debido a prácticas agrícolas como el arado y el uso de fertilizantes/fungicidas que dañan estas redes. La degradación de estas redes puede reducir el almacenamiento de carbono en el suelo y aumentar la contaminación química de las vías fluviales. Las praderas mostraron la mayor densidad de hifas. El estudio busca proporcionar datos para que científicos y responsables políticos identifiquen áreas amenazadas y promuevan la restauración de estas comunidades subterráneas, colaborando con agricultores para reducir la dependencia de fertilizantes y mejorar el secuestro de carbono.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48550693,
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260615-00/?p=112419",
-    "score": 353,
-    "time": 1781585196,
-    "titulo_es": "El curioso caso del desenrollado de bucle extremo y la traducción binaria en Windows",
-    "resumen": "El artículo narra una anécdota técnica del desarrollo de Windows relacionada con un emulador de x86-32 que usaba traducción binaria (JIT). Un compilador optimizó la inicialización de un búfer de pila de 64 KB desenrollando completamente el bucle en 65,536 instrucciones de escritura individuales, lo que resultó en un binario de 256 KB de código para inicializar solo 64 KB de datos. Para solucionar este desperdicio de memoria y rendimiento en el emulador, el equipo de desarrollo programó una optimización inversa en el traductor para detectar esta anomalía y reensamblar el bucle ('loop rolling'). Adicionalmente, se discuten los compromisos de rendimiento y consumo de memoria del desenrollado de bucles ('loop unrolling') en arquitecturas modernas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48552844,
-    "url": "https://tck.mn/blog/correlated-randomness-sts2/",
-    "score": 48,
-    "time": 1781603209,
-    "titulo_es": "Generadores de números aleatorios correlacionados en Slay the Spire 2",
-    "resumen": "El artículo detalla un problema técnico de Generadores de Números Aleatorios Correlacionados (CRNG) en el videojuego Slay the Spire 2. Para evitar que la aleatoriedad de un sistema influya en otro, el juego utiliza múltiples instancias independientes de la clase 'System.Random' de C#, inicializadas mediante la suma de la semilla global y un hash específico de cada evento. Sin embargo, debido a que el algoritmo de generación pseudoaleatoria de 'System.Random' en C# es casi completamente lineal respecto a la semilla inicial, las semillas que difieren por un valor constante producen salidas altamente correlacionadas. Esto permite predecir con precisión eventos futuros (como la obtención de maldiciones específicas o la probabilidad de caída de pociones) a partir de los resultados de eventos anteriores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48546294,
-    "url": "https://roman.pt/posts/linkedin-backdoor/",
-    "score": 1327,
-    "time": 1781553657,
-    "titulo_es": "Cómo un falso reclutador de LinkedIn intentó comprometer mi sistema con un backdoor en npm install",
-    "resumen": "El autor describe un intento de ataque de ingeniería social en el que un supuesto reclutador de una startup de criptomonedas le solicitó auditar un repositorio de Node.js con problemas de dependencias. Al sospechar del vector de ataque, el desarrollador analizó el código en un entorno aislado (VPS desechable) utilizando un agente de IA en modo de solo lectura. El análisis reveló un backdoor camuflado dentro de un archivo de pruebas en el repositorio. Dicho código malicioso estaba programado para descargar y ejecutar cargas útiles de un servidor remoto de manera automática durante la fase de instalación de dependencias, aprovechando el script de ciclo de vida 'prepare' de npm. La investigación posterior demostró que tanto el perfil del reclutador como el del programador original en GitHub pertenecían a identidades suplantadas de profesionales reales.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48522316,
-    "url": "https://sighack.com/post/getting-creative-with-perlin-noise-fields",
-    "score": 69,
-    "time": 1781391339,
-    "titulo_es": "Veinticinco diseños con campos de flujo de Perlin",
-    "resumen": "El artículo detalla un proyecto de arte generativo donde el autor utiliza el lenguaje y entorno de programación Processing para simular el movimiento de partículas a través de un campo de vectores guiado por ruido de Perlin. Describe la arquitectura de software utilizada, implementando clases personalizadas para gestionar conjuntos de partículas, capas de dibujo secuenciales y la manipulación de parámetros de renderizado (como opacidad, paletas de colores y estilos de trazo) para lograr una gran variedad de efectos visuales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48542480,
-    "url": "https://www.iroh.computer/blog/v1",
-    "score": 1267,
-    "time": 1781536386,
-    "titulo_es": "Anunciando Iroh 1.0: Conectividad segura basada en claves criptográficas para el desarrollo de aplicaciones",
-    "resumen": "Se anuncia el lanzamiento de la versión 1.0 de Iroh, un motor de red descentralizado que permite conectar dispositivos directamente utilizando claves criptográficas controladas por el usuario en lugar de direcciones IP tradicionales. Esta versión estable consolida la estabilidad del protocolo de red y reintroduce soporte oficial de FFI para múltiples lenguajes de programación, incluidos Rust, Python, Node.js, Swift y Kotlin. Con un diseño enfocado en la eficiencia, el 95% de las conexiones de Iroh se realizan de forma directa (peer-to-peer), atravesando firewalls de manera segura y reduciendo los costos de transferencia de datos en la nube.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48552687,
-    "url": "https://www.theregister.com/security/2026/06/15/feds-freaked-over-fable-5-after-simple-fix-this-code-prompt-not-jailbreak-says-researcher/5255827",
-    "score": 194,
-    "time": 1781601969,
-    "titulo_es": "El 'jailbreak' que provocó el bloqueo de los modelos más avanzados de Anthropic fue en realidad un simple prompt de tres palabras: 'Arregla este código'",
-    "resumen": "La administración de los EE. UU. restringió la exportación de los modelos Fable 5 y Mythos 5 de Anthropic debido a preocupaciones de seguridad nacional tras un supuesto 'jailbreak'. No obstante, la experta en ciberseguridad Katie Moussouris reveló que los investigadores simplemente solicitaron a los modelos 'arreglar este código' con vulnerabilidades conocidas y generar scripts de prueba. Moussouris y más de 100 líderes de la industria critican la prohibición, señalando que los modelos realizaban tareas defensivas legítimas y necesarias, y que su bloqueo perjudica a los defensores de ciberseguridad frente a los atacantes.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48551876,
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260611-00/?p=112415",
-    "score": 58,
-    "time": 1781595327,
-    "titulo_es": "La regla de no bloquear en las funciones de callback de procesos e hilos",
-    "resumen": "El artículo analiza un antipatrón común en el desarrollo de controladores (drivers) de Windows relacionado con las funciones de callback de bajo nivel (invocadas al iniciar/finalizar procesos o hilos). Aunque la documentación oficial aconseja delegar tareas complejas a hilos de trabajo del sistema (System Worker Threads) para evitar bloqueos, muchos desarrolladores cometen el error de bloquear el callback síncronamente esperando a que dicho hilo de trabajo termine. El autor explica que esto viola la regla fundamental de que los callbacks deben retornar rápidamente para evitar bloqueos globales del sistema y deadlocks de reentrada, desacreditando la justificación de que 'sincronizar con un evento no es sincronizar con otro hilo'.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48554215,
-    "url": "https://www.bbc.com/news/articles/cvgd5g7d7gyo",
-    "score": 98,
-    "time": 1781613097,
-    "titulo_es": "SpaceX acuerda adquirir la startup de desarrollo con IA Cursor por 60.000 millones de dólares",
-    "resumen": "SpaceX ha acordado la compra de Anysphere, la startup desarrolladora del agente de codificación basado en inteligencia artificial Cursor, por un valor de 60.000 millones de dólares en acciones. Esta adquisición estratégica ocurre tras la reciente salida a bolsa de SpaceX y tiene como objetivo acelerar su división de IA (xAI). La integración combinará la tecnología de Cursor con el supercomputador de entrenamiento Colossus de SpaceX para desarrollar modelos de lenguaje más avanzados y optimizar el desarrollo de software.",
+    "id": 48567004,
+    "url": "https://artificialanalysis.ai/models/glm-5-2",
+    "score": 38,
+    "time": 1781681451,
+    "titulo_es": "GLM-5.2 (max): Un Modelo de Lenguaje Abierto con Alta Inteligencia y Costo Elevado",
+    "resumen": "El artículo describe GLM-5.2 (max), un modelo de lenguaje de código abierto destacado por su alta inteligencia, con una puntuación de 51 en el Índice de Inteligencia Artificial Artificial, significativamente superior al promedio de 24 entre modelos comparables. A pesar de su velocidad notable (112 tokens/segundo), el modelo presenta un costo elevado tanto para los tokens de entrada ($1.40 por 1M) como para los de salida ($4.40 por 1M), en comparación con el promedio de $0.42 y $1.25 respectivamente. Su evaluación en el Índice de Inteligencia Artificial, que incluyó 140M tokens, tuvo un costo total de $867.88. El modelo admite entrada y salida de texto, posee una ventana de contexto de 1 millón de tokens y es descrito como algo verboso. Se menciona la existencia de una posible variante de razonamiento y se detallan las métricas y benchmarks utilizados en el Índice de Inteligencia Artificial v4.1, como GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GPQA Diamond, CritPt, AA-Omniscience y AA-LCR.",
     "categoria": "IA"
   },
   {
-    "id": 48553450,
-    "url": "https://www.unicorn-engine.org/",
-    "score": 4,
-    "time": 1781608478,
-    "titulo_es": "El emulador de CPU definitivo: Características destacadas",
-    "resumen": "El artículo detalla la trayectoria y los lanzamientos de Unicorn Engine, un reconocido framework de emulación de CPU multiplataforma y multiarquitectura basado en QEMU. Se destaca el lanzamiento de la versión principal 2.0.0 (Unicorn2) y su actualización 2.0.1, desarrolladas desde cero sobre QEMU 5. Estas actualizaciones optimizan el rendimiento y el tamaño del código, añaden nuevas APIs de control y expanden el soporte a arquitecturas como PowerPC, RISCV, S390x y TriCore. Además, se menciona su impacto y reconocimiento en el ámbito de la ciberseguridad y el desarrollo de software de código abierto.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48540844,
-    "url": "https://docs.hetzner.com/general/infrastructure-and-availability/price-adjustment/#cloud-servers",
-    "score": 498,
-    "time": 1781529579,
-    "titulo_es": "Ajuste de precios de instancias en la nube y disponibilidad de hardware de servidores",
-    "resumen": "El comunicado detalla un ajuste de precios para nuevas órdenes y escalados de instancias en la nube a partir del 15 de junio de 2026. La viabilidad de las tarifas reducidas está ligada directamente a la disponibilidad y costos de adquisición del hardware de los servidores en los centros de datos. Adicionalmente, se promueve la subasta de modelos de servidores antiguos basados en un sistema de subasta holandesa.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48542433,
-    "url": "https://rsgm.dev/post/ai-dev-platform/",
-    "score": 332,
-    "time": 1781536180,
-    "titulo_es": "Configuración de OpenCode Web UI con acceso a Git para facilitar la gestión de mi homelab",
-    "resumen": "El autor describe la implementación de un entorno de desarrollo basado en OpenCode Web UI alojado en una máquina virtual de TrueNAS para gestionar su homelab mediante GitOps. Tras migrar sus pilas de Docker Compose a Arcane, utiliza agentes de IA (como OpenCode) para automatizar tareas complejas como la actualización de contenedores, la adición de 'healthchecks' y la reconfiguración de redes. El flujo de trabajo garantiza la seguridad al aislar la máquina virtual de los servicios en ejecución, restringir los permisos de Git para exigir revisiones de Pull Request (PR) y permitir la edición y aprobación de cambios desde cualquier dispositivo móvil antes de que GitOps los despliegue automáticamente.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48522233,
-    "url": "https://moments-of-now.com/hans-schulz-the-father-of-the-vef-minox-riga-lens/",
-    "score": 7,
-    "time": 1781390586,
-    "titulo_es": "El Genio Oculto Detrás de la Lente Minox: La Historia del Minostigmat",
-    "resumen": "El artículo narra la historia detrás de la creación de la cámara Minox, un hito en la ingeniería de precisión subminiatura. Se enfoca en el desafío de diseñar una lente microscópica y de alta precisión, el Minostigmat, que permitiera el funcionamiento de la cámara. A pesar del escepticismo de gigantes de la industria como Agfa y Leitz, el inventor Walter Zapp encontró en el Profesor Dr. phil. Hans Reinhold Theodor Schulz, un experto en óptica de la Universidad Técnica de Berlín, al calculista capaz de diseñar esta lente \"imposible\". La narrativa destaca la invisibilidad de Schulz en la historia principal, a pesar de ser el componente óptico crucial que hizo posible la visión de Zapp. El artículo también agradece a varias personas por su contribución a la investigación y documentación de esta historia, incluyendo a Ralph T. Schwarz, Heinz Humberg, Burkhard Fenner, Dace Kaprāne y Hubert E. Heckmann.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48489934,
-    "url": "https://cohere.com/blog/north-mini-code",
-    "score": 117,
-    "time": 1781183745,
-    "titulo_es": "North Mini Code: El primer modelo de codificación agentico de Cohere para desarrolladores",
-    "resumen": "El artículo anuncia el lanzamiento de North Mini Code, el primer modelo de codificación agentico y de código abierto de Cohere, diseñado para el ecosistema de desarrolladores soberanos. Es un modelo Mixture-of-Experts (MoE) de 30B parámetros totales (3B activos), que ofrece un alto rendimiento en desarrollo de software con requisitos de hardware reducidos. Disponible bajo licencia Apache 2.0, busca hacer la IA soberana una realidad práctica, permitiendo a los desarrolladores tener acceso directo a capacidades de codificación agentica. Se destaca su eficiencia, velocidad (2.8x mayor rendimiento de salida que Devstral Small 2 bajo condiciones idénticas) y baja latencia entre tokens (30% de ventaja). North Mini Code está optimizado para flujos de trabajo agenticos como la comprensión y orquestación de sub-agentes, mapeo de arquitectura de sistemas y revisiones de código. Se puede desplegar on-premise o localmente, y está disponible en Hugging Face y Model Vault. Cohere fomenta la retroalimentación comunitaria para dar forma a su hoja de ruta hacia modelos de desarrollador más abiertos y soberanos.",
+    "id": 48558489,
+    "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
+    "score": 333,
+    "time": 1781629865,
+    "titulo_es": "El Impacto de la IA en las Ventas de Libros de No Ficción Prescriptiva",
+    "resumen": "El artículo analiza la drástica caída en las ventas de libros de no ficción, particularmente en el nicho de autoayuda, desde finales de 2022. El autor, Tim Ferriss, correlaciona esta tendencia con la explosión en el uso de Modelos de Lenguaje Grandes (LLMs) como ChatGPT y Claude. Sus propios libros, que funcionaban como \"tablas de consulta\" o \"árboles de decisión\" para resolver problemas prácticos (salud, estilo de vida, finanzas), han experimentado un declive significativo en ventas de formato físico y digital. Si bien se mencionan otras posibles causas como cambios en la logística de Amazon o fluctuaciones post-pandemia, el autor descarta estas como explicaciones primarias, señalando la aceleración del desarrollo y adopción de la IA como el factor disruptivo principal. La hipótesis es que los LLMs ahora ofrecen respuestas rápidas y personalizadas a las mismas preguntas que antes los lectores buscaban en estos libros, volviéndolos menos necesarios.",
     "categoria": "IA"
   },
   {
-    "id": 48546428,
-    "url": "https://notnotp.com/notes/what-job-interviews-taught-me-about-kubernetes/",
-    "score": 214,
-    "time": 1781554357,
-    "titulo_es": "La adopción generalizada de Kubernetes y sus beneficios organizacionales",
-    "resumen": "El artículo discute la sorprendente ubicuidad de Kubernetes (K8s) en el panorama laboral actual, incluso en empresas pequeñas sin necesidades de alta escala o microservicios. El autor identifica tres razones principales para esta adopción masiva, derivadas de conversaciones con CTOs: 1) Uniformidad en el despliegue de servicios, estandarizando la forma en que cada aplicación se implementa. 2) Conocimiento compartido y contratabilidad, ya que K8s se ha convertido en una \"lingua franca\" que facilita la incorporación y el mantenimiento de servicios por parte de ingenieros de guardia, incluso sin experiencia previa específica en un servicio particular. El conocimiento se codifica en la configuración (YAML) en lugar de residir en la memoria de los individuos. 3) Trazabilidad y cumplimiento normativo, facilitado por la integración con prácticas de GitOps (CI/CD a través de Git), que proporciona un historial de cambios y un proceso de aprobación para los despliegues, simplificando auditorías y certificaciones. Si bien el autor reconoce que muchos CTOs priorizan estos beneficios organizacionales sobre las ventajas técnicas intrínsecas de K8s para sus casos de uso específicos (mencionando la ausencia de configuraciones avanzadas como `topologySpreadConstraints` o `PDBs`), también advierte sobre la complejidad inherente a la depuración de clusters y recomienda enfoques más sencillos (como VPS) para startups en etapas tempranas. La hipótesis principal para este cambio de paradigma en cinco años es la madurez de las ofertas de K8s gestionado (EKS, GKE, AKS) y la evolución del pool de talento.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48552614,
-    "url": "https://commodore.net/why-a-flip-phone/",
-    "score": 121,
-    "time": 1781601331,
-    "titulo_es": "Callback: El teléfono \"tonto\" moderno de Commodore con aplicaciones esenciales",
-    "resumen": "El artículo describe el \"Callback\", un nuevo teléfono plegable de Commodore diseñado para el minimalismo digital. A diferencia de los smartphones modernos, el Callback bloquea a nivel de sistema las aplicaciones que generan ansiedad como redes sociales, navegadores y feeds. Prioriza la privacidad y la desconexión intencional, ofreciendo al mismo tiempo aplicaciones esenciales como WhatsApp, Signal, Telegram, música, podcasts, mapas y una cámara. Incluye emulación de Commodore 64 y tonos SID como guiño a la marca. Utiliza Sailfish OS, que no monetiza ni comparte datos del usuario, y puede ejecutar aplicaciones Android sin ser Android. Se posiciona como un puente entre los smartphones demasiado inteligentes y los teléfonos \"tontos\" básicos, promoviendo un uso más consciente de la tecnología.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48540126,
-    "url": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/?bc=HL",
-    "score": 320,
-    "time": 1781525339,
-    "titulo_es": "Salesforce adquiere Fin, líder en plataformas de agentes de clientes impulsadas por IA",
-    "resumen": "Salesforce anunció la adquisición de Fin (anteriormente Intercom) por aproximadamente $3.6 mil millones. Fin es una empresa líder en plataformas de agentes de clientes, cuyo principal producto es un Agente de IA capaz de resolver consultas complejas de clientes de extremo a extremo a través de múltiples canales (chat, email, WhatsApp, SMS, teléfono, Slack). Este agente está potenciado por el modelo de IA propietario de Fin, Apex, diseñado específicamente para soporte al cliente y con altas tasas de resolución. La adquisición busca integrar la tecnología de Fin, incluyendo sus modelos y ofertas empaquetadas, con la plataforma Agentforce de Salesforce. El objetivo es acelerar el 'time-to-value' para empresas de todos los tamaños, mejorar la resolución autónoma de consultas, reducir el costo de servicio y expandir la capacidad de Salesforce para ofrecer agentes autónomos a nivel empresarial. Fin aporta más de 30,000 clientes y un equipo técnico de IA experimentado. La transacción está prevista que cierre en el Q4 del año fiscal 2027 de Salesforce.",
+    "id": 48566832,
+    "url": "https://claude.com/blog/the-founders-playbook",
+    "score": 115,
+    "time": 1781679882,
+    "titulo_es": "El Futuro de las Startups con IA: Un Manual Práctico para Fundadores",
+    "resumen": "El artículo presenta un manual práctico para fundadores de startups sobre cómo integrar la Inteligencia Artificial (IA) en todas las etapas del ciclo de vida de una empresa: Idea, Producto Mínimo Viable (MVP), Lanzamiento y Escalado. Destaca cómo la IA está permitiendo a fundadores sin experiencia técnica lanzar aplicaciones, alcanzar ingresos tempranamente y automatizar flujos de trabajo tediosos. Se enfoca en la redefinición del rol del fundador como un orquestador y proporciona marcos y ejemplos concretos para construir startups nativas de IA, anticipando las capacidades y desafíos para 2026.",
     "categoria": "IA"
   },
   {
-    "id": 48521925,
-    "url": "https://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/",
-    "score": 110,
-    "time": 1781388089,
-    "titulo_es": "Cabalgando sobre la cola de las curvas de Gaussian: Corrección Gamma y Percepción Humana",
-    "resumen": "El artículo aborda la problemática de la corrección gamma en el procesamiento de imágenes, destacando que la mayoría del software gráfico actual, incluyendo visores, editores y librerías, no la implementa correctamente. Se explica que la respuesta del ojo humano a la intensidad de la luz es no lineal, lo que lleva a percepciones erróneas de las gradaciones de color cuando no se aplica la corrección gamma adecuada. El autor enfatiza la importancia de la corrección gamma, a menudo pasada por alto por los programadores, y busca ofrecer una explicación clara y práctica, utilizando ejemplos visuales para ilustrar las diferencias entre una imagen sin corrección gamma y una con ella, con el objetivo de educar a los desarrolladores sobre este tema crucial para obtener resultados precisos en el procesamiento de imágenes.",
+    "id": 48563609,
+    "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
+    "score": 179,
+    "time": 1781651744,
+    "titulo_es": "Explorando el Lenguaje Wolfram 15 con Stephen Wolfram",
+    "resumen": "El artículo anuncia el lanzamiento de la Versión 15 del Lenguaje Wolfram, anteriormente Mathematica. Destaca la evolución del lenguaje a lo largo de casi 38 años, expandiéndose más allá de las matemáticas para convertirse en un lenguaje computacional completo. Subraya la importancia de su diseño coherente para facilitar tanto el uso humano como el de la Inteligencia Artificial (IA). Se enfatiza el rol del Lenguaje Wolfram como una herramienta para formalizar ideas y comunicar conceptos con precisión, especialmente en el contexto de la IA, donde actúa como un portador de corrección y exactitud en la representación y ejecución de tareas computacionales. El lanzamiento se produce en un momento de creciente adopción de la IA en el desarrollo de código, pero el artículo diferencia el Lenguaje Wolfram de los lenguajes de programación tradicionales al ser concebido para ser leído y entendido por humanos, sirviendo como una forma de clarificar el pensamiento y asegurar la corrección de lo que se computa.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48559188,
+    "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
+    "score": 225,
+    "time": 1781632442,
+    "titulo_es": "GPT-NL: Construyendo un Modelo de Lenguaje Independiente para los Países Bajos",
+    "resumen": "El artículo describe GPT-NL, un proyecto colaborativo entre TNO, SURF y el Instituto Forense Neerlandés (NFI) para desarrollar un modelo de lenguaje independiente y soberano en neerlandés. El objetivo principal es fortalecer la autonomía digital de los Países Bajos y Europa, evitando la dependencia de proveedores no europeos. GPT-NL se basa en principios de gobernanza sólida, transparencia radical (código abierto, datos detallados del dataset, licencia controlada de pesos del modelo) y un compromiso con los valores públicos como la privacidad y el derecho de autor. El desarrollo se realiza desde cero para asegurar una procedencia de datos clara y mitigar riesgos. Se implementa una cadena de suministro de datos limpia y legal, con colaboración activa de proveedores de contenido y derechos de autor, estableciendo un modelo de innovación más justo con reparto de ingresos. El proyecto también prioriza la eficiencia energética y el uso responsable de recursos en el desarrollo y entrenamiento del modelo. Con una financiación pública de 13.5 millones de euros, GPT-NL demuestra la viabilidad de alinear la IA potente con los valores públicos, buscando construir una tecnología que aumente la fortaleza, autonomía y equidad de los Países Bajos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48558147,
+    "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
+    "score": 424,
+    "time": 1781628586,
+    "titulo_es": "Por qué no deberías usar JWT para sesiones de usuario",
+    "resumen": "El artículo argumenta firmemente en contra del uso de JSON Web Tokens (JWT) para mantener la sesión de usuario en aplicaciones web. Sostiene que los JWT no están diseñados para este propósito y presentan riesgos de seguridad inherentes, además de ser innecesariamente complejos para esta tarea. La recomendación principal es utilizar sesiones de cookies tradicionales, que son una solución probada y más adecuada para la gestión de sesiones de usuario. Se destaca que los JWT pueden ser mal utilizados para el inicio de sesión único (SSO) como transportes, pero incluso en esos casos, se sugieren alternativas más seguras como PASETO. También se desaconseja el uso de `localStorage` o `sessionStorage` para almacenar credenciales de autenticación. Se aclara que Google, aunque usa JWT, lo hace para SSO entre hosts y no para sesiones de usuario en el navegador, y que su implementación es altamente especializada. El artículo desmitifica la idea de que las APIs \"sin estado\" no pueden usar sesiones, explicando que la existencia de usuarios implica estado y que las bases de datos permiten la persistencia de sesiones incluso en servicios de API sin estado. Se aborda la popularidad de los JWT como un fenómeno que se propagó a través de malentendidos y publicaciones, más que por su idoneidad para la gestión de sesiones.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48544451,
-    "url": "https://roszigit.com/en/blog/timescaledb-compression-hypercore",
+    "id": 48565326,
+    "url": "https://arxiv.org/abs/2606.14806",
+    "score": 40,
+    "time": 1781666751,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo Colaborativo de Nuevas Funcionalidades en arXiv",
+    "resumen": "El artículo describe arXivLabs, un framework diseñado para permitir a colaboradores desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Este programa se basa en los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, y solo colabora con socios que se adhieren a estos principios. Se alienta a los interesados a explorar la posibilidad de contribuir a proyectos que aporten valor a la comunidad de arXiv a través de arXivLabs.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48568058,
+    "url": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
     "score": 162,
-    "time": 1781544557,
-    "titulo_es": "Compresión de Datos en Series Temporales con TimescaleDB",
-    "resumen": "El artículo explica cómo TimescaleDB logra una alta compresión de datos de series temporales (hasta 98%) mediante su motor híbrido row-columnar, Hypercore. A diferencia del TOAST de PostgreSQL que maneja valores grandes individuales, la compresión de TimescaleDB optimiza patrones en datos temporales. Utiliza algoritmos especializados como delta encoding, delta-of-delta, Gorilla XOR y run-length encoding (RLE), aplicados de forma selectiva por tipo de columna. Los datos nuevos se almacenan en formato row-based para inserciones rápidas, mientras que los datos más antiguos se convierten a un formato columnar comprimido, mejorando el rendimiento de consultas analíticas al reducir la cantidad de datos leídos. La conversión agrupa filas en lotes, donde las columnas se almacenan como arrays, permitiendo una lectura más eficiente de campos específicos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48544637,
-    "url": "https://www.anthropic.com/news/claude-corps",
-    "score": 146,
-    "time": 1781545284,
-    "titulo_es": "Claude Corps: Programa de Becas Nacionales para Extender los Beneficios de la IA",
-    "resumen": "El artículo describe el lanzamiento de Claude Corps, un programa de becas nacionales diseñado para capacitar a 1,000 personas con poca experiencia profesional en el uso de Claude, un modelo de IA. Los becarios trabajarán a tiempo completo y presencialmente en organizaciones sin fines de lucro durante un año, aplicando sus habilidades de IA para avanzar en las misiones de estas organizaciones. El programa tiene como objetivo doble: equipar a las organizaciones sin fines de lucro con herramientas y sistemas de IA valiosos, y dotar a los becarios de habilidades de IA para sus carreras. Anthropic lidera la iniciativa con una inversión inicial de $150 millones, asociándose con CodePath para la gestión de los becarios y la formación, y con Social Finance para la medición y la evaluación, así como para el desarrollo de un vehículo financiero escalable. Cada beca dura 12 meses, con formación intensiva inicial y continua. Los becarios recibirán un salario de $85,000 anuales, beneficios y apoyo profesional. Se espera que al menos 400 organizaciones sin fines de lucro participen en el primer año. Las solicitudes para becarios y organizaciones están abiertas, con la primera cohorte comenzando en octubre de 2026. El programa busca ser un modelo replicable y escalable a nivel nacional e internacional, abriéndose parte de la infraestructura tecnológica desarrollada.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48505910,
-    "url": "https://github.com/a-funk/sharkclean-mcp",
-    "score": 13,
-    "time": 1781280554,
-    "titulo_es": "Servidor MCP No Oficial para Aspiradoras Robot SharkClean/SharkNinja",
-    "resumen": "Este artículo describe un servidor no oficial que actúa como un cliente MCP (Multi-Client Protocol) para interactuar con aspiradoras robot SharkClean/SharkNinja. Permite a clientes MCP como Claude Code o Claude Desktop iniciar limpiezas, limpiar habitaciones específicas, enviar el robot a su base y consultar su estado mediante lenguaje natural. A diferencia de las integraciones previas que usaban el backend Ayla IoT, este servidor se comunica directamente con el backend 'skegox' (el mismo que utiliza la app SharkClean), lo que garantiza la compatibilidad con modelos de robots más nuevos (como Matrix, AI Ultra, Mach 2, generación RV2500+) que han migrado de Ayla. La autenticación inicial se realiza a través de un flujo PKCE en el navegador, y los tokens se almacenan en caché para futuras operaciones, con refresco automático. Se menciona la necesidad de Python 3.10+ y uv. También se introduce una herramienta de línea de comandos (shark-mcp-rc) para controlar el robot desde scripts. Se enfatiza que es un proyecto no afiliado ni respaldado por SharkNinja.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48554433,
-    "url": "https://www.theguardian.com/tv-and-radio/2026/jun/16/alternative-3-mockumentary-missing-scientists-conspiracy-50-years-later",
-    "score": 3,
-    "time": 1781614270,
-    "titulo_es": "Alternative 3: La Conspiración que Nació de un Falso Documental sobre Científicos Desaparecidos y la Colonización de Marte",
-    "resumen": "El artículo detalla cómo una teoría de conspiración actual, que afirma que científicos aeroespaciales y nucleares están desapareciendo o muriendo misteriosamente, tiene sus raíces en un falso documental británico de 1977 llamado \"Alternative 3\". Este programa, emitido por Anglia Television, simulaba ser un reportaje serio sobre la \"fuga de cerebros\" de científicos británicos a EE. UU., pero en realidad presentaba una trama ficticia sobre un plan secreto \"Alternativa 3\" de las superpotencias para establecer colonias en la Luna y Marte ante la inminente crisis del efecto invernadero. Los científicos desaparecidos o muertos supuestamente eran cooptados o silenciados por este plan. A pesar de ser una obra de ficción creada por el guionista David Ambrose y protagonizada por actores, la \"documental\" tuvo un impacto tan profundo que generó una teoría de conspiración duradera. El artículo desmiente las afirmaciones actuales sobre las desapariciones, señalando que los \"científicos\" trabajaban en campos diversos, algunos eran administradores, otros se habían jubilado, y las muertes se debían a causas naturales o a un tiroteo. Se contrasta la alta mortalidad esperada en una fuerza laboral de 700,000 personas con las supuestas desapariciones. A pesar de las pruebas de su origen ficticio, la teoría ha ganado tracción, llegando incluso a motivar investigaciones gubernamentales en la administración Trump. La producción del falso documental fue impulsada por el productor Sir John Woolf, a pesar de las reticencias internas, y contó con la participación del presentador Tim Brinton.",
+    "time": 1781690061,
+    "titulo_es": "La ciencia estadounidense en caos: ¿Cómo llegamos aquí?",
+    "resumen": "El artículo detalla la crisis que atraviesa la ciencia en Estados Unidos, ejemplificada por el caso del proyecto de telescopio espacial AXIS. A pesar de una financiación inicial prometedora y casi una década de desarrollo, el proyecto se vio descarrilado por una combinación de recortes presupuestarios federales, despidos masivos de personal en la NASA (incluyendo personal clave y expertos en tecnologías específicas) y la incertidumbre generada por propuestas de presupuesto gubernamentales que priorizaban otros proyectos. La pérdida de personal cualificado y la inestabilidad programática llevaron a sobrecostos y retrasos, culminando en la cancelación del proyecto. El artículo subraya cómo estas problemáticas afectan no solo a proyectos específicos, sino al futuro de la investigación básica y exploratoria, y la pérdida de oportunidades de desarrollo científico y profesional.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48489163,
-    "url": "https://fata.dev",
-    "score": 103,
-    "time": 1781179023,
-    "titulo_es": "Fata: Fundamentos Full-Stack para Agentes de Código",
-    "resumen": "El artículo describe Fata, una plataforma de aprendizaje diseñada para enseñar los fundamentos del desarrollo full-stack, incluyendo frontend, backend y diseño técnico para entornos de producción. Se enfoca en el desarrollo de habilidades a través de repeticiones diarias y cursos autodidactas. La plataforma utiliza principios de diseño científico para asegurar que el aprendizaje sea efectivo y duradero, permitiendo a los usuarios aprender en minutos al día. Destaca la enseñanza de conceptos como los principios SOLID con Python, componentes de React, sintaxis de Rust y el sistema de tipos de TypeScript. Fata ofrece cursos gratuitos en la App Store y Google Play, con una opción Pro para desarrolladores profesionales. La plataforma también se posiciona como una herramienta para empresas y educadores que buscan escalar el aprendizaje técnico, ofreciendo integraciones y co-creación de contenido. La propuesta de valor central es mejorar la capacidad de los desarrolladores para construir, escalar y mantener productos de software seguros y fiables, así como para liderar equipos de alto rendimiento.",
+    "id": 48555838,
+    "url": "https://parksb.github.io/en/article/32.html",
+    "score": 273,
+    "time": 1781619986,
+    "titulo_es": "El Afeitado del Yak en el Desarrollo de Software",
+    "resumen": "El artículo explora el concepto de 'yak shaving' (afeitado de yak), un término acuñado para describir la tendencia a embarcarse en una cadena de tareas relacionadas y a menudo no deseadas mientras se trabaja en un objetivo inicial, perdiendo eventualmente el propósito original. Se ilustra con el ejemplo de un desarrollador que, al intentar construir un blog estático, termina creando su propio generador de sitios estáticos desde cero a través de múltiples pasos intermedios. El artículo contrasta esta práctica con la recomendación de ingenieros y gerentes de utilizar soluciones existentes en lugar de construir desde cero, especialmente cuando el tiempo y el presupuesto son limitados. A pesar de los riesgos de desviación, se reconoce que el 'yak shaving' puede ser intrínsecamente divertido y atractivo para los ingenieros debido a la satisfacción de la creación y resolución de problemas. Se menciona TeX como un ejemplo histórico de un proyecto nacido de un proceso similar de 'yak shaving'.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48544823,
-    "url": "https://grassdx.com/",
-    "score": 68,
-    "time": 1781546160,
-    "titulo_es": "Diagnóstico de césped con IA y plan de tratamiento personalizado",
-    "resumen": "El artículo describe un servicio innovador que utiliza Inteligencia Artificial (IA) para diagnosticar problemas en el césped y proporcionar planes de tratamiento personalizados. Los usuarios suben fotos de su césped y proporcionan su código postal. La IA analiza las imágenes y los datos geográficos para identificar la causa del problema (como hongos de mancha marrón o tipos de hierba específicos de la región) y determina el clima local, la zona climática y las condiciones estacionales. Basándose en esto, el sistema genera un plan de tratamiento detallado y escalonado, que incluye opciones como productos de bricolaje (con enlaces a Amazon), servicios de suscripción o ayuda profesional. El objetivo es eliminar la necesidad de experiencia en el cuidado del césped, ofreciendo un diagnóstico preciso y localizado en cuestión de segundos. El servicio también menciona recomendaciones de herramientas para el cuidado del césped, como aplicadores, cortadoras de césped y bordeadoras.",
-    "categoria": "IA"
+    "id": 48566727,
+    "url": "https://stephantul.github.io/blog/unfence/",
+    "score": 19,
+    "time": 1781679047,
+    "titulo_es": "La Brecha de Chesterton: Un Nuevo Desafío en el Desarrollo de Software",
+    "resumen": "El artículo introduce el concepto de 'Brecha de Chesterton' como una extensión de la idea original de 'Valla de Chesterton' en el contexto del desarrollo de software. Mientras que la Valla de Chesterton advierte contra la eliminación de estructuras sin comprender su propósito original, la Brecha de Chesterton describe la tendencia de los desarrolladores a crear nuevas funcionalidades o herramientas sin haber una necesidad explícita o previa solicitud. Esto se observa particularmente en el desarrollo de librerías de código abierto, donde la baja barrera de entrada para escribir código lleva a la creación de 'Pull Requests' (PRs) extensos que añaden características no solicitadas o de utilidad marginal. El autor argumenta que, al igual que con la Valla de Chesterton, si un proyecto no tiene una determinada característica, es probable que haya una buena razón para ello. Insta a los desarrolladores a comprender el porqué de la ausencia de una solución antes de implementarla, promoviendo la comunicación y la reflexión sobre la necesidad real de las adiciones, en lugar de simplemente 'construir una valla' donde no se necesita.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48528587,
-    "url": "https://maurycyz.com/projects/glass/1/",
-    "score": 142,
-    "time": 1781452329,
-    "titulo_es": "Sellado de metales en vidrio para tubos de vacío: un desafío de expansión térmica",
-    "resumen": "El artículo detalla el proceso de fabricación de tubos de vacío, centrándose en el desafío crítico de sellar metales dentro del vidrio. Se explora el uso de cobre, que forma un fuerte enlace pero falla debido a la diferencia en los coeficientes de expansión térmica (CTE) entre el cobre y el vidrio, lo que provoca grietas al enfriarse. Se investigan alternativas como el acero, que, aunque mejor, tampoco es ideal debido a la reacción con el vidrio caliente y las diferencias de CTE. Se discute la electrodeposición de cobre sobre acero, pero persiste el problema de la expansión diferencial con el vidrio borosilicato. Se menciona el vidrio de cal sodada como una alternativa más compatible, pero requiere recocido. Finalmente, se considera el tungsteno ultrafino, que minimiza el problema de expansión, aunque presenta dificultades de manipulación.",
+    "id": 48533135,
+    "url": "https://www.noemamag.com/making-food-out-of-thin-air/",
+    "score": 30,
+    "time": 1781473550,
+    "titulo_es": "El futuro de la alimentación: Proteínas escalables a partir de bacterias fermentadas",
+    "resumen": "El artículo explora una tecnología pionera desarrollada por Solar Foods en Finlandia, inspirada en una propuesta de 1964 de la NASA. La empresa utiliza un proceso de fermentación bacteriana para producir proteínas naturales y escalables a partir de elementos como hidrógeno, CO2 y urea, esencialmente 'comida del aire'. Se destaca la motivación detrás de este desarrollo, impulsada por la necesidad de soluciones alimentarias sostenibles y la resiliencia ante condiciones ambientales desafiantes, como el clima impredecible de Finlandia. Se menciona el trasfondo técnico, incluyendo la ingeniería de bioprocesos y los avances en el manejo de datos biológicos (como el Proyecto Genoma Humano) que influyeron en la visión del cofundador y CTO, Juha-Pekka Pitkänen, para crear sistemas automatizados en el campo de la biología molecular.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48536660,
+    "url": "https://arstechnica.com/gadgets/2022/03/a-brief-tour-of-the-pdp-11-the-most-influential-minicomputer-of-all-time/",
+    "score": 90,
+    "time": 1781498262,
+    "titulo_es": "La Historia del PDP-11: El Minicomputador que Revolucionó la Computación Interactiva",
+    "resumen": "El artículo narra la historia e influencia del PDP-11, un minicomputador introducido en 1970 por Digital Equipment Corporation. Este sistema marcó un punto de inflexión en la computación, actuando como un puente entre los mainframes y los microcomputadores modernos. El PDP-11 fue fundamental para popularizar el paradigma de la computación interactiva, sentó las bases para avances significativos en la arquitectura de hardware y contribuyó al desarrollo de sistemas operativos modernos (como UNIX) y lenguajes de programación (como C). A pesar de sus modestas especificaciones iniciales (4KB de RAM, ciclo de 1.25 MHz), su arquitectura ortogonal de 16 bits, ocho registros, espacio de direcciones de 65KB y el flexible bus UNIBUS lo convirtieron en un sistema muy influyente. Se utilizó en una amplia gama de aplicaciones, desde control de hardware en tiempo real y automatización industrial hasta sistemas de defensa y control de tráfico aéreo. La elegancia de su diseño facilitó la programación en lenguaje ensamblador, que era la norma antes de los lenguajes de alto nivel. Con más de 600,000 unidades vendidas durante su ciclo de vida de 22 años, el PDP-11 dejó un legado duradero en la industria de la computación.",
     "categoria": "Hardware"
   },
   {
-    "id": 48490578,
-    "url": "https://shonczinner.github.io/posts/embedding-prediction/",
-    "score": 54,
-    "time": 1781186859,
-    "titulo_es": "Predicción de Incrustaciones: Conectando CCA y JEPA",
-    "resumen": "El artículo explora la conexión entre el Análisis de Correlación Canónica (CCA) y las Redes de Predicción Conjunta de Imágenes (JEPA). Se detalla cómo el CCA, introducido por Harold Hotelling, busca maximizar la correlación entre dos conjuntos de variables, siendo una versión lineal. Se presenta la formulación matemática del CCA, mostrando su equivalencia a minimizar el error cuadrático medio (MSE) de las representaciones incrustadas bajo restricciones de blanqueamiento. Luego, se introduce JEPA, destacando sus similitudes con el CCA en su objetivo de predecir una vista de los datos a partir de otra, pero utilizando redes neuronales no lineales y sin las restricciones de blanqueamiento del CCA. Se identifica que la falta de estas restricciones en JEPA puede llevar a problemas como el colapso representacional y dimensional. Finalmente, se menciona que técnicas como SIGReg abordan estos problemas fomentando que las incrustaciones sean isotrópicas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48543392,
-    "url": "https://kobzol.github.io/rust/2026/06/15/how-memory-safety-cves-differ-between-rust-and-c-cpp.html",
-    "score": 137,
-    "time": 1781539862,
-    "titulo_es": "Diferencias en el manejo de vulnerabilidades de seguridad de memoria entre Rust y C/C++",
-    "resumen": "El artículo discute la diferencia fundamental en el tratamiento de las vulnerabilidades de seguridad de memoria entre Rust y lenguajes como C/C++. Si bien ambos lenguajes pueden tener errores (incluyendo aquellos que requieren la palabra clave `unsafe` en Rust), la naturaleza de la seguridad de memoria en Rust, reforzada por su sistema de tipos y verificaciones en tiempo de compilación, contrasta con la propensión a errores de memoria en C/C++. El autor utiliza el ejemplo de `libcurl` para ilustrar cómo incluso las bibliotecas bien mantenidas escritas en C pueden presentar vulnerabilidades de memoria inesperadas debido a entradas o contextos no previstos, algo que en Rust se previene en gran medida por el compilador. La discusión aborda la falacia de comparar directamente las cifras de CVEs sin considerar el origen y la naturaleza de estas vulnerabilidades, especialmente aquellas relacionadas con la seguridad de memoria, y cómo la adopción de Rust puede reducir significativamente este tipo de riesgos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48553868,
-    "url": "https://www.cnbc.com/2026/06/16/indias-solution-to-entrance-exam-fraud-a-temporary-ban-on-telegram.html",
-    "score": 6,
-    "time": 1781611220,
-    "titulo_es": "India Restringe Telegram para Prevenir Fraude en Exámenes Tras Cancelación de Prueba Crucial",
-    "resumen": "Las autoridades indias han impuesto restricciones al acceso a la aplicación de mensajería Telegram, que estarán vigentes hasta el 22 de junio, y han deshabilitado su función de edición de mensajes hasta el 30 de junio. Esta medida, implementada por la Agencia Nacional de Pruebas (NTA), responde al uso organizado de la plataforma por parte de redes de fraude que buscan explotar el examen nacional de ingreso a facultades de medicina (NEET-UG). La NTA ha afirmado que los exámenes filtrados que se ofrecen en canales de Telegram, y por los cuales se solicitan pagos, no son auténticos y que el acceso a los mismos constituye un fraude. La cancelación del examen NEET-UG en mayo debido a presuntas filtraciones afectó a millones de estudiantes, generando protestas y demandas de dimisión del ministro de educación. Las investigaciones gubernamentales han descubierto canales en Telegram que afirman poseer exámenes filtrados y solicitan pagos considerables. Este problema de irregularidades en los exámenes se considera un desafío significativo para el gobierno indio.",
-    "categoria": "Ciberseguridad"
+    "id": 48557530,
+    "url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
+    "score": 798,
+    "time": 1781626326,
+    "titulo_es": "Apple Vehicle Motion Cues: Adiós al mareo en el coche usando tu iPhone o iPad",
+    "resumen": "El artículo describe la función Vehicle Motion Cues de Apple, introducida en 2024, diseñada para mitigar el mareo por movimiento (cinetosis) experimentado al usar dispositivos de Apple en vehículos en movimiento. La tecnología utiliza los datos del acelerómetro y giroscopio del dispositivo para generar puntos de 'dots' en la periferia de la pantalla que se mueven en sincronía con la inercial del vehículo. Este movimiento simulado en la visión periférica ayuda a reconciliar la discrepancia sensorial entre lo que ven los ojos (una pantalla estática) y lo que siente el oído interno, reduciendo significativamente o eliminando el mareo. Se detalla cómo configurar la función en iOS, iPadOS y macOS, incluyendo opciones para activarla/desactivarla automáticamente, ajustar su apariencia (tamaño, color, densidad), y la posibilidad de asignarla a un gesto de 'double tap' en la parte posterior del iPhone para un acceso rápido. El autor comparte su experiencia positiva, destacando su utilidad para trabajar y leer durante viajes largos, y sugiere mejoras como atenuar los puntos en tramos rectos.",
+    "categoria": "Hardware"
   }
 ]
