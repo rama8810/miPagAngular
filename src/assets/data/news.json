@@ -1,164 +1,128 @@
 [
   {
-    "id": 48526174,
-    "url": "https://github.com/ArcaEge/capacitor-alarm-clock",
-    "score": 47,
-    "time": 1781435996,
-    "titulo_es": "Despierta con el estallido de un condensador",
-    "resumen": "Este proyecto detalla la creación de un reloj despertador poco convencional que utiliza la explosión de un condensador como método de alarma. El diseño abarca el desarrollo de hardware (diseño de PCB y archivos CAD para la carcasa) y firmware (desarrollado con PlatformIO para el control mediante interfaz web WiFi). El autor analiza decisiones técnicas de ingeniería electrónica, sugiriendo el reemplazo de los reguladores de tensión lineales por un circuito convertidor buck para mitigar la disipación térmica provocada por una caída de tensión de ~12V. También incluye directrices para la selección de componentes, recomendando condensadores de bajo voltaje (~16V) y sin ranuras de alivio de presión para maximizar la sonoridad del estallido.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48563394,
-    "url": "https://mll.sh/humiliating-iis-servers-for-fun-and-jail-time/",
-    "score": 298,
-    "time": 1781650414,
-    "titulo_es": "Técnicas para Encontrar y Explotar Servidores IIS en Bug Bounty",
-    "resumen": "El artículo describe un enfoque metodológico para la identificación y el análisis de servidores IIS (Internet Information Services) en el contexto de bug bounty. Se detallan técnicas de reconocimiento utilizando plataformas como Shodan y Google Dorks para localizar objetivos. Se explican métodos para identificar servidores IIS a través de las cabeceras de respuesta HTTP y se recomienda el uso de herramientas como httpx y nuclei para la enumeración a escala. Se aborda la problemática de los servidores que responden con errores genéricos 404 HTTPAPI 2.0, sugiriendo la necesidad de identificar el nombre de host correcto mediante la fuerza bruta. Una técnica destacada es la enumeración de nombres cortos de archivos y directorios heredada de la convención 8.3 de DOS, utilizando herramientas como shortscan y escáneres de Burp Suite para inferir nombres de archivos completos y potencialmente obtener acceso a recursos sensibles como configuraciones o copias de seguridad. Se mencionan estrategias de generación de listas de palabras basadas en el análisis de nombres de archivo encontrados en repositorios de GitHub.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48513920,
-    "url": "https://blog.greg.technology/2026/06/12/map-clustering-is-not-my-favorite.html",
-    "score": 39,
-    "time": 1781331172,
-    "titulo_es": "La Evolución de la Visualización de Puntos en Mapas Web y la Frustración con los Clusters",
-    "resumen": "El artículo reflexiona sobre los desafíos históricos y actuales en la visualización de un gran número de puntos en mapas web, comparando las primeras implementaciones de Google Maps (que generaban un DOM por punto, resultando en O(N) de complejidad) con las estrategias adoptadas posteriormente, como la paginación o los heatmaps. Critica especialmente el uso de clusters en mapas modernos, utilizando Atlas Obscura como ejemplo. Se argumenta que los clusters actuales, aunque agrupan puntos, a menudo frustran al usuario al no revelar información hasta el zoom, ser opacos como una \"kinder surprise\", y en ocasiones, ocultar puntos que se encuentran geográficamente distantes del centro del cluster al momento de la desaglomeración. La analogía de la muñeca rusa no abrible o un regalo \"defeating the point\" ilustra la insatisfacción con esta UX.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48558018,
-    "url": "https://mareksuppa.com/til/bash-dev-tcp-http-without-curl/",
-    "score": 456,
-    "time": 1781628058,
-    "titulo_es": "Comprobación de conectividad de red en contenedores Docker sin herramientas externas usando Bash",
-    "resumen": "El artículo describe una técnica para verificar la conectividad de red entre contenedores Docker, específicamente la capacidad de realizar una solicitud HTTP GET a un servicio en una red compartida. Dado que la imagen del contenedor de destino estaba muy reducida y carecía de herramientas de red como `curl` o `wget`, el autor demuestra cómo utilizar las capacidades integradas de Bash para abrir un socket TCP y enviar una solicitud HTTP manual. Se explica que Bash maneja internamente `/dev/tcp/<host>/<port>` para establecer la conexión TCP, permitiendo enviar la solicitud HTTP y leer la respuesta directamente. Esta técnica es útil en entornos de contenedores minimalistas donde la instalación de herramientas adicionales no es posible, proporcionando una solución rápida para la depuración de red sin aumentar el tamaño de la imagen.",
+    "id": 48556561,
+    "url": "https://browser-use.com/posts/firecracker-browser-infra",
+    "score": 289,
+    "time": 1781622901,
+    "titulo_es": "Reducción de Costos y Mejora de Rendimiento en Navegadores Cloud Mediante la Arquitectura Basada en Firecracker",
+    "resumen": "El artículo detalla la re-arquitectura de un servicio de navegadores en la nube para reducir significativamente los costos por hora de sesión (de $0.06 a $0.02) y mejorar la velocidad de inicio y escalabilidad. Anteriormente utilizaban Unikraft, que ofrecía inicio rápido y bajo costo en inactividad, pero carecía de autoescalado eficiente, requiriendo intervención manual durante picos de tráfico, lo que incluso causó caídas de producción. La nueva arquitectura se basa en Firecracker, un sistema de micro-VMs ligero, para ejecutar cada sesión de navegador en su propia VM aislada. El desafío principal fue ejecutar estas micro-VMs de Firecracker de manera eficiente sobre instancias EC2 (virtualización anidada), lo cual normalmente sería costoso y lento. Para solucionar esto, implementaron un plano de control propio que monitorea la flota de navegadores en tiempo real y gestiona el escalado dinámico, decidiendo cuándo añadir o remover instancias de manera mucho más rápida que los servicios de monitoreo genéricos. Este enfoque permite mantener el aislamiento y la seguridad sin sacrificar el rendimiento ni incurrir en altos costos, incluso al ejecutar micro-VMs dentro de instancias EC2 ya virtualizadas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48496233,
-    "url": "https://www.theguardian.com/science/2026/jun/11/arbuscular-mycorrhizal-fungi-plant-life-climate-global-mapping-study",
-    "score": 97,
-    "time": 1781211071,
-    "titulo_es": "Primer mapeo global de hongos micorrícicos arbusculares muestra la escala de los sistemas de hifas que sustentan la vida vegetal",
-    "resumen": "Un estudio pionero ha generado el primer mapa global de las redes de hongos micorrícicos arbusculares (HMA) utilizando modelos de aprendizaje automático y datos de más de 16,000 núcleos de suelo de todo el mundo. Estos hongos forman redes de hifas que sustentan más del 70% de las plantas, proporcionando nutrientes y agua a cambio de carbono, y ayudando a regular el clima al secuestrar carbono en el suelo. El estudio estima que la longitud total de estas redes fúngicas podría alcanzar los 110 cuatrillones de kilómetros. La investigación revela que las redes fúngicas son un 47.3% menos densas en tierras de cultivo que en ecosistemas silvestres, debido a prácticas agrícolas como el arado y el uso de fertilizantes/fungicidas que dañan estas redes. La degradación de estas redes puede reducir el almacenamiento de carbono en el suelo y aumentar la contaminación química de las vías fluviales. Las praderas mostraron la mayor densidad de hifas. El estudio busca proporcionar datos para que científicos y responsables políticos identifiquen áreas amenazadas y promuevan la restauración de estas comunidades subterráneas, colaborando con agricultores para reducir la dependencia de fertilizantes y mejorar el secuestro de carbono.",
+    "id": 48578326,
+    "url": "https://github.com/glojurelang/glojure",
+    "score": 155,
+    "time": 1781738089,
+    "titulo_es": "Glojure: Un Intérprete de Clojure Alojado en Go con Interoperabilidad Extensible",
+    "resumen": "Glojure es un intérprete para el lenguaje de programación Clojure que está alojado en Go. Esta arquitectura permite una integración fluida con las bibliotecas de Go, de manera similar a como Clojure interactúa con el ecosistema de Java. Glojure se encuentra en una fase temprana de desarrollo, lo que implica la posibilidad de encontrar errores y características incompletas, con rendimiento limitado y sin garantías de compatibilidad retroactiva hasta la versión 1.0. A pesar de ello, ya se utiliza en proyectos personales y soporta un subconjunto considerable de la biblioteca central de Clojure (transformada). Al ser un lenguaje \"alojado\", los valores de Go son directamente utilizables como valores de Clojure y viceversa. El proyecto ofrece tanto una herramienta de línea de comandos independiente (`glj`) para una experiencia de desarrollo Clojure tradicional (REPL, ejecución de scripts, creación de programas ejecutables), como la posibilidad de ser embebido dentro de aplicaciones Go para añadir capacidades de scripting. La interoperabilidad con paquetes de la biblioteca estándar de Go está incluida por defecto, con una convención de nombres para evitar conflictos. Para extender la compatibilidad con paquetes Go adicionales, se requiere la generación de un \"mapa de paquetes\" y la compilación de ejecutables que integren tanto el mapa como la API de Glojure. Esto facilita la llamada a funciones Go desde Clojure y el acceso a paquetes Go propios o de terceros.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48578388,
+    "url": "https://www.horg.com/horg/?page_id=921",
+    "score": 156,
+    "time": 1781738438,
+    "titulo_es": "Clasificación Taxonómica de Occlupanida: Una Perspectiva Sintética",
+    "resumen": "El artículo describe la clasificación taxonómica de los Occlupanida, un grupo de objetos plásticos artificiales, dentro de un reino ficticio (Microsynthera) y un filo (Plasticae). Dada la ausencia de datos genéticos, fósiles o de desarrollo, la taxonomía se basa en una aproximación fenotípica similar a la utilizada por Carl Linnaeus, agrupando los objetos según la similitud visual. El foco principal para la diferenciación de taxones es la estructura del surco oral y su dentición, la cual se correlaciona con el nicho ecológico y la ubicación biogeográfica. Se propone una filogenia donde los Occlupanida más basales se asemejan a Archignatha, con órdenes posteriores derivados según la disposición de la dentición, reflejando la especiación impulsada por la evolución de nichos en el mundo moderno.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48567004,
-    "url": "https://artificialanalysis.ai/models/glm-5-2",
-    "score": 38,
-    "time": 1781681451,
-    "titulo_es": "GLM-5.2 (max): Un Modelo de Lenguaje Abierto con Alta Inteligencia y Costo Elevado",
-    "resumen": "El artículo describe GLM-5.2 (max), un modelo de lenguaje de código abierto destacado por su alta inteligencia, con una puntuación de 51 en el Índice de Inteligencia Artificial Artificial, significativamente superior al promedio de 24 entre modelos comparables. A pesar de su velocidad notable (112 tokens/segundo), el modelo presenta un costo elevado tanto para los tokens de entrada ($1.40 por 1M) como para los de salida ($4.40 por 1M), en comparación con el promedio de $0.42 y $1.25 respectivamente. Su evaluación en el Índice de Inteligencia Artificial, que incluyó 140M tokens, tuvo un costo total de $867.88. El modelo admite entrada y salida de texto, posee una ventana de contexto de 1 millón de tokens y es descrito como algo verboso. Se menciona la existencia de una posible variante de razonamiento y se detallan las métricas y benchmarks utilizados en el Índice de Inteligencia Artificial v4.1, como GDPval-AA v2, 𝜏³-Banking, Terminal-Bench v2.1, SciCode, Humanity's Last Exam, GPQA Diamond, CritPt, AA-Omniscience y AA-LCR.",
+    "id": 48577374,
+    "url": "https://storiedcolors.com/",
+    "score": 182,
+    "time": 1781732943,
+    "titulo_es": "Catálogo de Pigmentos Históricos y Científicos",
+    "resumen": "El artículo describe un catálogo en línea de 252 pigmentos, detallando su historia, origen, composición química y métodos de producción. Cada entrada incluye información sobre su primera molienda, uso en talleres y lienzos, fechas de prohibición y reemplazos. Se enfatiza la autenticidad de la procedencia y la inclusión de datos históricos completos. El catálogo se actualiza semanalmente y las entradas existentes se corrigen con nuevos hallazgos de laboratorios de conservación. Los pigmentos se clasifican según su origen (Mineral, Animal, Vegetal) y características (Cálido/Frío, Saturado/Oscuro), con ejemplos como el Amarillo de China imperial, el Amarillo de Bengala derivado de la orina de vaca, y el Azul índigo de la planta del añil. Se mencionan aspectos como la exclusividad, la historia de explotación y las revueltas asociadas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48576395,
+    "url": "https://loreline.app/en/",
+    "score": 182,
+    "time": 1781728155,
+    "titulo_es": "Herramientas para escribir ficción interactiva, diálogos de videojuegos y narrativas ramificadas",
+    "resumen": "El artículo describe Loreline, un lenguaje de código abierto y su aplicación gratuita Loreline Writer, diseñados para la creación de historias interactivas, diálogos de videojuegos y narrativas con ramificaciones complejas. Destaca características como el soporte para ramificación avanzada, gestión de estados y funciones, permitiendo la integración en diversos motores de juegos, aplicaciones web o proyectos independientes. Además, enfatiza la portabilidad de las historias y el soporte integrado para traducción y localización mediante formatos estándar como PO y XLIFF.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48553265,
+    "url": "https://velvetyne.fr/news/about-ascii-art-and-jgs-font/",
+    "score": 14,
+    "time": 1781607074,
+    "titulo_es": "El Arte ASCII: Una Introducción y el Legado de Jgs Font",
+    "resumen": "El artículo explora el arte ASCII, definiéndolo como imágenes compuestas por caracteres del código ASCII, que difuminan las distinciones entre imagen y texto, e interfaz gráfica y modo texto. Se destaca la figura de Joan G. Stark, pionera y prolífica artista de ASCII en los años 90 y 2000, conocida por su sitio web www.ascii-art.com y su definición de arte ASCII como \"gráficos no gráficos\". El texto contextualiza el arte ASCII dentro de la historia del \"text mode art\" y presenta la fuente \"Jgs Font\" de Adel Faure, un homenaje a Joan G. Stark, diseñada para la creación de arte ASCII. Se mencionan las limitaciones de la paleta de caracteres y la diversidad que esto implica entre sistemas, así como las contribuciones y agradecimientos a otros artistas y colaboradores.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48535821,
+    "url": "https://www.offthebricks.com/articles/smashed-toilet-phone-web-server",
+    "score": 24,
+    "time": 1781489988,
+    "titulo_es": "Reutilización de un smartphone Samsung A70 como servidor web",
+    "resumen": "El artículo detalla la reutilización de un smartphone Samsung A70 dañado como servidor web. Tras un incidente que dejó la pantalla táctil inservible, se aprovechó la funcionalidad de soporte para ratón, teclado y monitores externos de Android. Se explora la potencia de los smartphones modernos en comparación con ordenadores antiguos y su potencial para aplicaciones IoT y de servidor web. Se discuten las opciones de software, incluyendo aplicaciones con Apache/PHP integrados y Termux para un entorno Linux. En el lado del hardware, se describe el uso de un hub USB-C para proporcionar energía constante y conectar un adaptador Ethernet USB, mejorando la fiabilidad de la red y permitiendo la redundancia de energía entre la red eléctrica y la batería. Se abordan y descartan las preocupaciones sobre los riesgos de mantener la batería de litio cargada constantemente.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48572553,
+    "url": "https://github.com/Adam-CAD/CADAM",
+    "score": 190,
+    "time": 1781712844,
+    "titulo_es": "CADAM: Aplicación Web de Texto a CAD de Código Abierto",
+    "resumen": "CADAM es una aplicación web de código abierto que genera modelos CAD paramétricos (formato OpenSCAD) a partir de descripciones en lenguaje natural, ejecutándose directamente en el navegador sin necesidad de instalación. Permite exportar los modelos en formatos .STL, .SCAD o .DXF. El proyecto utiliza URLs públicas para callbacks de proveedores y URLs de almacenamiento local firmadas, requiriendo la configuración de ngrok para entornos de desarrollo local, especialmente al interactuar con servicios como Supabase Storage. La contribución se fomenta a través de pull requests y la apertura de issues, y la distribución está bajo la licencia GPLv3. El proyecto incluye benchmarks y documentación para sus funcionalidades.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48568502,
+    "url": "https://www.rfc-editor.org/info/rfc10008/",
+    "score": 384,
+    "time": 1781693477,
+    "titulo_es": "Método de consulta HTTP",
+    "resumen": "Esta especificación define el método QUERY de HTTP como un mecanismo para solicitar que un recurso procese un contenido adjunto de manera segura e idempotente, respondiendo con el resultado. A diferencia de POST, QUERY permite la repetición automática sin preocupaciones por cambios de estado parciales. Se diferencia de GET en que no solicita una representación del recurso, sino que pide al recurso que realice una operación de consulta dentro de su alcance. El método QUERY permite que el contenido de la solicitud se utilice como entrada, solucionando las limitaciones de GET para datos voluminosos y las ambigüedades de POST en cuanto a seguridad e idempotencia. Se discute la asignación de URIs a consultas o resultados para su posterior recuperación mediante GET.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48580504,
+    "url": "https://conf.nim-lang.org/",
+    "score": 55,
+    "time": 1781753911,
+    "titulo_es": "NimConf 2026: Conferencia Online de Desarrollo y Comunidad Nim",
+    "resumen": "NimConf 2026 es una conferencia online gratuita que se celebrará el sábado 20 de junio de 2026 a las 11 am UTC. La conferencia se centrará en el desarrollo de software dentro de la comunidad Nim, con charlas divididas en dos pistas: una dedicada a proyectos de Nim y otra a temas sociales y de flujo de trabajo. Todas las charlas se emitirán en directo y se grabarán para su visualización posterior en el canal de YouTube de NimConf, disponibles como listas de reproducción separadas para cada pista. Se anima a los asistentes a participar activamente haciendo preguntas y uniéndose a las discusiones durante la transmisión en vivo. Las ediciones anteriores (2020, 2021, 2022, 2024) también están disponibles para su visualización.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48582794,
+    "url": "https://www.quantamagazine.org/seven-perfect-shuffles-randomize-a-deck-of-cards-but-how-many-sloppy-ones-20260617/",
+    "score": 5,
+    "time": 1781773684,
+    "titulo_es": "Siete Barajadas son Suficientes (Incluso Si No Son Perfectas)",
+    "resumen": "El artículo describe una extensión reciente del trabajo matemático de 1992 de Dave Bayer y Persi Diaconis, quienes demostraron que siete barajadas tipo 'riffle shuffle' son suficientes para mezclar completamente un mazo de 52 cartas. La demostración original imponía restricciones estrictas sobre cómo se realizaba la barajada y el corte del mazo. Tres matemáticos —Mark Sellke, Jialu Shi y Jiamin Wang— han logrado extender este resultado, demostrando que el fenómeno de 'cutoff' (un estado de desorden súbito después de un número determinado de pasos) se mantiene incluso con barajadas menos precisas y cortes no equitativos. Este avance es significativo porque amplía la aplicabilidad del concepto de 'cutoff phenomenon', que también se observa en otros sistemas dinámicos y áreas como la física de 'spin glasses', y que previamente era difícil de probar matemáticamente para sistemas complejos y barajadas menos ideales. El artículo destaca la complejidad combinatoria de barajar un mazo de cartas y la relación de estos estudios con las cadenas de Markov y las transiciones de fase en física.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48579913,
+    "url": "https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/",
+    "score": 46,
+    "time": 1781749921,
+    "titulo_es": "Extensiones x86 para la aceleración de cómputo con enfoque en IA",
+    "resumen": "El artículo describe nuevas extensiones para la arquitectura x86, denominadas ACE, diseñadas para acelerar tareas computacionales intensivas, con un enfoque inicial en kernels de multiplicación de matrices y formatos de datos de precisión reducida. Estas extensiones integran estrechamente los registros vectoriales AVX con los registros de 'tile' de ACE, permitiendo operaciones de procesamiento de 'tiles' de alta densidad computacional junto con las capacidades de procesamiento de datos de AVX. Además de la aceleración de matrices, se incluyen operaciones dedicadas de conversión de formato bajo el marco AVX10, cruciales para cargas de trabajo de Machine Learning (ML).",
     "categoria": "IA"
   },
   {
-    "id": 48558489,
-    "url": "https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/",
-    "score": 333,
-    "time": 1781629865,
-    "titulo_es": "El Impacto de la IA en las Ventas de Libros de No Ficción Prescriptiva",
-    "resumen": "El artículo analiza la drástica caída en las ventas de libros de no ficción, particularmente en el nicho de autoayuda, desde finales de 2022. El autor, Tim Ferriss, correlaciona esta tendencia con la explosión en el uso de Modelos de Lenguaje Grandes (LLMs) como ChatGPT y Claude. Sus propios libros, que funcionaban como \"tablas de consulta\" o \"árboles de decisión\" para resolver problemas prácticos (salud, estilo de vida, finanzas), han experimentado un declive significativo en ventas de formato físico y digital. Si bien se mencionan otras posibles causas como cambios en la logística de Amazon o fluctuaciones post-pandemia, el autor descarta estas como explicaciones primarias, señalando la aceleración del desarrollo y adopción de la IA como el factor disruptivo principal. La hipótesis es que los LLMs ahora ofrecen respuestas rápidas y personalizadas a las mismas preguntas que antes los lectores buscaban en estos libros, volviéndolos menos necesarios.",
-    "categoria": "IA"
+    "id": 48523534,
+    "url": "https://johnowhitaker.github.io/inkwash/about",
+    "score": 234,
+    "time": 1781403283,
+    "titulo_es": "Simulador de acuarela en un solo archivo HTML: inspiración, dinámica de fluidos y trucos de renderizado",
+    "resumen": "El artículo describe la creación de un simulador de acuarela en tiempo real implementado en un único archivo HTML, utilizando WebGL2 y shaders de fragmentos. La simulación se basa en la técnica de 'Stable Fluids' de Jos Stam para modelar la dinámica de fluidos de forma estable, separando la simulación de la velocidad en una cuadrícula gruesa de la simulación de pigmento y humedad en una cuadrícula de alta resolución. Se emplean 'gaussian splats' para estampar trazos y las texturas se manipulan mediante shaders para simular el secado y la difusión del agua y el pigmento, sin almacenar nunca \"un color\" explícitamente hasta el shader final de visualización.",
+    "categoria": "Frontend"
   },
   {
     "id": 48566832,
     "url": "https://claude.com/blog/the-founders-playbook",
-    "score": 115,
+    "score": 233,
     "time": 1781679882,
-    "titulo_es": "El Futuro de las Startups con IA: Un Manual Práctico para Fundadores",
-    "resumen": "El artículo presenta un manual práctico para fundadores de startups sobre cómo integrar la Inteligencia Artificial (IA) en todas las etapas del ciclo de vida de una empresa: Idea, Producto Mínimo Viable (MVP), Lanzamiento y Escalado. Destaca cómo la IA está permitiendo a fundadores sin experiencia técnica lanzar aplicaciones, alcanzar ingresos tempranamente y automatizar flujos de trabajo tediosos. Se enfoca en la redefinición del rol del fundador como un orquestador y proporciona marcos y ejemplos concretos para construir startups nativas de IA, anticipando las capacidades y desafíos para 2026.",
+    "titulo_es": "Playbook de Startups Nativas de IA: Construyendo y Escalando con Claude",
+    "resumen": "El artículo describe un playbook práctico para fundadores y operadores que buscan construir startups centradas en la Inteligencia Artificial (IA). Detalla cómo la IA está transformando la creación de startups, permitiendo a fundadores sin experiencia en codificación lanzar aplicaciones, alcanzar ingresos tempranamente y automatizar flujos de trabajo. El rol del fundador evoluciona de contribuidor individual a orquestador. El playbook reestructura las cuatro etapas clave del ciclo de vida de una startup (Idea, MVP, Lanzamiento y Escalado) para las capacidades de 2026, incluyendo objetivos, criterios de salida, modos comunes de fallo y ejercicios potenciados por IA para cada etapa. Se enfoca en arquitectar la compañía alrededor de la IA desde el principio.",
     "categoria": "IA"
-  },
-  {
-    "id": 48563609,
-    "url": "https://writings.stephenwolfram.com/2026/06/launching-version-15-of-wolfram-language-mathematica-built-in-useful-ai-lots-of-new-core-functionality/",
-    "score": 179,
-    "time": 1781651744,
-    "titulo_es": "Explorando el Lenguaje Wolfram 15 con Stephen Wolfram",
-    "resumen": "El artículo anuncia el lanzamiento de la Versión 15 del Lenguaje Wolfram, anteriormente Mathematica. Destaca la evolución del lenguaje a lo largo de casi 38 años, expandiéndose más allá de las matemáticas para convertirse en un lenguaje computacional completo. Subraya la importancia de su diseño coherente para facilitar tanto el uso humano como el de la Inteligencia Artificial (IA). Se enfatiza el rol del Lenguaje Wolfram como una herramienta para formalizar ideas y comunicar conceptos con precisión, especialmente en el contexto de la IA, donde actúa como un portador de corrección y exactitud en la representación y ejecución de tareas computacionales. El lanzamiento se produce en un momento de creciente adopción de la IA en el desarrollo de código, pero el artículo diferencia el Lenguaje Wolfram de los lenguajes de programación tradicionales al ser concebido para ser leído y entendido por humanos, sirviendo como una forma de clarificar el pensamiento y asegurar la corrección de lo que se computa.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48559188,
-    "url": "https://www.tno.nl/en/digital/artificial-intelligence/gpt-nl/",
-    "score": 225,
-    "time": 1781632442,
-    "titulo_es": "GPT-NL: Construyendo un Modelo de Lenguaje Independiente para los Países Bajos",
-    "resumen": "El artículo describe GPT-NL, un proyecto colaborativo entre TNO, SURF y el Instituto Forense Neerlandés (NFI) para desarrollar un modelo de lenguaje independiente y soberano en neerlandés. El objetivo principal es fortalecer la autonomía digital de los Países Bajos y Europa, evitando la dependencia de proveedores no europeos. GPT-NL se basa en principios de gobernanza sólida, transparencia radical (código abierto, datos detallados del dataset, licencia controlada de pesos del modelo) y un compromiso con los valores públicos como la privacidad y el derecho de autor. El desarrollo se realiza desde cero para asegurar una procedencia de datos clara y mitigar riesgos. Se implementa una cadena de suministro de datos limpia y legal, con colaboración activa de proveedores de contenido y derechos de autor, estableciendo un modelo de innovación más justo con reparto de ingresos. El proyecto también prioriza la eficiencia energética y el uso responsable de recursos en el desarrollo y entrenamiento del modelo. Con una financiación pública de 13.5 millones de euros, GPT-NL demuestra la viabilidad de alinear la IA potente con los valores públicos, buscando construir una tecnología que aumente la fortaleza, autonomía y equidad de los Países Bajos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48558147,
-    "url": "https://gist.github.com/samsch/0d1f3d3b4745d778f78b230cf6061452",
-    "score": 424,
-    "time": 1781628586,
-    "titulo_es": "Por qué no deberías usar JWT para sesiones de usuario",
-    "resumen": "El artículo argumenta firmemente en contra del uso de JSON Web Tokens (JWT) para mantener la sesión de usuario en aplicaciones web. Sostiene que los JWT no están diseñados para este propósito y presentan riesgos de seguridad inherentes, además de ser innecesariamente complejos para esta tarea. La recomendación principal es utilizar sesiones de cookies tradicionales, que son una solución probada y más adecuada para la gestión de sesiones de usuario. Se destaca que los JWT pueden ser mal utilizados para el inicio de sesión único (SSO) como transportes, pero incluso en esos casos, se sugieren alternativas más seguras como PASETO. También se desaconseja el uso de `localStorage` o `sessionStorage` para almacenar credenciales de autenticación. Se aclara que Google, aunque usa JWT, lo hace para SSO entre hosts y no para sesiones de usuario en el navegador, y que su implementación es altamente especializada. El artículo desmitifica la idea de que las APIs \"sin estado\" no pueden usar sesiones, explicando que la existencia de usuarios implica estado y que las bases de datos permiten la persistencia de sesiones incluso en servicios de API sin estado. Se aborda la popularidad de los JWT como un fenómeno que se propagó a través de malentendidos y publicaciones, más que por su idoneidad para la gestión de sesiones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48565326,
-    "url": "https://arxiv.org/abs/2606.14806",
-    "score": 40,
-    "time": 1781666751,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo Colaborativo de Nuevas Funcionalidades en arXiv",
-    "resumen": "El artículo describe arXivLabs, un framework diseñado para permitir a colaboradores desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Este programa se basa en los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, y solo colabora con socios que se adhieren a estos principios. Se alienta a los interesados a explorar la posibilidad de contribuir a proyectos que aporten valor a la comunidad de arXiv a través de arXivLabs.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48568058,
-    "url": "https://www.scientificamerican.com/article/americas-compact-between-science-and-politics-is-broken/",
-    "score": 162,
-    "time": 1781690061,
-    "titulo_es": "La ciencia estadounidense en caos: ¿Cómo llegamos aquí?",
-    "resumen": "El artículo detalla la crisis que atraviesa la ciencia en Estados Unidos, ejemplificada por el caso del proyecto de telescopio espacial AXIS. A pesar de una financiación inicial prometedora y casi una década de desarrollo, el proyecto se vio descarrilado por una combinación de recortes presupuestarios federales, despidos masivos de personal en la NASA (incluyendo personal clave y expertos en tecnologías específicas) y la incertidumbre generada por propuestas de presupuesto gubernamentales que priorizaban otros proyectos. La pérdida de personal cualificado y la inestabilidad programática llevaron a sobrecostos y retrasos, culminando en la cancelación del proyecto. El artículo subraya cómo estas problemáticas afectan no solo a proyectos específicos, sino al futuro de la investigación básica y exploratoria, y la pérdida de oportunidades de desarrollo científico y profesional.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48555838,
-    "url": "https://parksb.github.io/en/article/32.html",
-    "score": 273,
-    "time": 1781619986,
-    "titulo_es": "El Afeitado del Yak en el Desarrollo de Software",
-    "resumen": "El artículo explora el concepto de 'yak shaving' (afeitado de yak), un término acuñado para describir la tendencia a embarcarse en una cadena de tareas relacionadas y a menudo no deseadas mientras se trabaja en un objetivo inicial, perdiendo eventualmente el propósito original. Se ilustra con el ejemplo de un desarrollador que, al intentar construir un blog estático, termina creando su propio generador de sitios estáticos desde cero a través de múltiples pasos intermedios. El artículo contrasta esta práctica con la recomendación de ingenieros y gerentes de utilizar soluciones existentes en lugar de construir desde cero, especialmente cuando el tiempo y el presupuesto son limitados. A pesar de los riesgos de desviación, se reconoce que el 'yak shaving' puede ser intrínsecamente divertido y atractivo para los ingenieros debido a la satisfacción de la creación y resolución de problemas. Se menciona TeX como un ejemplo histórico de un proyecto nacido de un proceso similar de 'yak shaving'.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48566727,
-    "url": "https://stephantul.github.io/blog/unfence/",
-    "score": 19,
-    "time": 1781679047,
-    "titulo_es": "La Brecha de Chesterton: Un Nuevo Desafío en el Desarrollo de Software",
-    "resumen": "El artículo introduce el concepto de 'Brecha de Chesterton' como una extensión de la idea original de 'Valla de Chesterton' en el contexto del desarrollo de software. Mientras que la Valla de Chesterton advierte contra la eliminación de estructuras sin comprender su propósito original, la Brecha de Chesterton describe la tendencia de los desarrolladores a crear nuevas funcionalidades o herramientas sin haber una necesidad explícita o previa solicitud. Esto se observa particularmente en el desarrollo de librerías de código abierto, donde la baja barrera de entrada para escribir código lleva a la creación de 'Pull Requests' (PRs) extensos que añaden características no solicitadas o de utilidad marginal. El autor argumenta que, al igual que con la Valla de Chesterton, si un proyecto no tiene una determinada característica, es probable que haya una buena razón para ello. Insta a los desarrolladores a comprender el porqué de la ausencia de una solución antes de implementarla, promoviendo la comunicación y la reflexión sobre la necesidad real de las adiciones, en lugar de simplemente 'construir una valla' donde no se necesita.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48533135,
-    "url": "https://www.noemamag.com/making-food-out-of-thin-air/",
-    "score": 30,
-    "time": 1781473550,
-    "titulo_es": "El futuro de la alimentación: Proteínas escalables a partir de bacterias fermentadas",
-    "resumen": "El artículo explora una tecnología pionera desarrollada por Solar Foods en Finlandia, inspirada en una propuesta de 1964 de la NASA. La empresa utiliza un proceso de fermentación bacteriana para producir proteínas naturales y escalables a partir de elementos como hidrógeno, CO2 y urea, esencialmente 'comida del aire'. Se destaca la motivación detrás de este desarrollo, impulsada por la necesidad de soluciones alimentarias sostenibles y la resiliencia ante condiciones ambientales desafiantes, como el clima impredecible de Finlandia. Se menciona el trasfondo técnico, incluyendo la ingeniería de bioprocesos y los avances en el manejo de datos biológicos (como el Proyecto Genoma Humano) que influyeron en la visión del cofundador y CTO, Juha-Pekka Pitkänen, para crear sistemas automatizados en el campo de la biología molecular.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48536660,
-    "url": "https://arstechnica.com/gadgets/2022/03/a-brief-tour-of-the-pdp-11-the-most-influential-minicomputer-of-all-time/",
-    "score": 90,
-    "time": 1781498262,
-    "titulo_es": "La Historia del PDP-11: El Minicomputador que Revolucionó la Computación Interactiva",
-    "resumen": "El artículo narra la historia e influencia del PDP-11, un minicomputador introducido en 1970 por Digital Equipment Corporation. Este sistema marcó un punto de inflexión en la computación, actuando como un puente entre los mainframes y los microcomputadores modernos. El PDP-11 fue fundamental para popularizar el paradigma de la computación interactiva, sentó las bases para avances significativos en la arquitectura de hardware y contribuyó al desarrollo de sistemas operativos modernos (como UNIX) y lenguajes de programación (como C). A pesar de sus modestas especificaciones iniciales (4KB de RAM, ciclo de 1.25 MHz), su arquitectura ortogonal de 16 bits, ocho registros, espacio de direcciones de 65KB y el flexible bus UNIBUS lo convirtieron en un sistema muy influyente. Se utilizó en una amplia gama de aplicaciones, desde control de hardware en tiempo real y automatización industrial hasta sistemas de defensa y control de tráfico aéreo. La elegancia de su diseño facilitó la programación en lenguaje ensamblador, que era la norma antes de los lenguajes de alto nivel. Con más de 600,000 unidades vendidas durante su ciclo de vida de 22 años, el PDP-11 dejó un legado duradero en la industria de la computación.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48557530,
-    "url": "https://www.theverge.com/tech/942854/apple-vehicle-motion-cues-review-really-work",
-    "score": 798,
-    "time": 1781626326,
-    "titulo_es": "Apple Vehicle Motion Cues: Adiós al mareo en el coche usando tu iPhone o iPad",
-    "resumen": "El artículo describe la función Vehicle Motion Cues de Apple, introducida en 2024, diseñada para mitigar el mareo por movimiento (cinetosis) experimentado al usar dispositivos de Apple en vehículos en movimiento. La tecnología utiliza los datos del acelerómetro y giroscopio del dispositivo para generar puntos de 'dots' en la periferia de la pantalla que se mueven en sincronía con la inercial del vehículo. Este movimiento simulado en la visión periférica ayuda a reconciliar la discrepancia sensorial entre lo que ven los ojos (una pantalla estática) y lo que siente el oído interno, reduciendo significativamente o eliminando el mareo. Se detalla cómo configurar la función en iOS, iPadOS y macOS, incluyendo opciones para activarla/desactivarla automáticamente, ajustar su apariencia (tamaño, color, densidad), y la posibilidad de asignarla a un gesto de 'double tap' en la parte posterior del iPhone para un acceso rápido. El autor comparte su experiencia positiva, destacando su utilidad para trabajar y leer durante viajes largos, y sugiere mejoras como atenuar los puntos en tramos rectos.",
-    "categoria": "Hardware"
   }
 ]
