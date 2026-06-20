@@ -1,245 +1,272 @@
 [
   {
+    "id": 48606619,
+    "url": "https://www.timwehrle.de/blog/i-stored-a-website-in-a-favicon/",
+    "score": 151,
+    "time": 1781933639,
+    "titulo_es": "Cómo almacenar un sitio web completo dentro de su propio favicon",
+    "resumen": "El autor describe un método experimental para almacenar un documento HTML dentro de los canales de color RGB de un favicon (formato PNG). El proceso consiste en convertir el código HTML en bytes UTF-8, añadir un encabezado de 4 bytes que especifica la longitud del contenido para evitar leer basura, y mapear estos bytes directamente a los componentes de color de los píxeles de la imagen. Finalmente, se utiliza un pequeño script en JavaScript (bootstrap loader) para extraer los datos de los píxeles mediante la API de Canvas, decodificar el HTML y reemplazar dinámicamente el contenido de la página en el navegador.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48606140,
+    "url": "https://moultano.wordpress.com/2026/06/19/where-to-find-the-colors-your-screen-cant-show-you/",
+    "score": 147,
+    "time": 1781926609,
+    "titulo_es": "Hay colores que quiero mostrarte, pero no puedo",
+    "resumen": "El artículo explora los fundamentos biológicos y físicos de la percepción humana del color, explicando cómo las células cono del ojo responden a las longitudes de onda del espectro de luz y cómo el cerebro interpreta estas intensidades. A través del análisis del espacio de color de la CIE de 1931 y su diagrama de cromaticidad, se demuestra matemáticamente por qué los sistemas de pantallas basados en tres colores primarios son incapaces de representar todo el espectro visible para los humanos, dejando fuera tonalidades intensas como ciertos cianes y verdes debido a limitaciones físicas de la mezcla lineal de colores primarios.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48562662,
+    "url": "https://mattmahoney.net/dc/dce.html",
+    "score": 136,
+    "time": 1781646717,
+    "titulo_es": "Compresión de datos explicada",
+    "resumen": "El texto introduce los conceptos fundamentales de la compresión de datos, dividiéndola en compresión con pérdida y sin pérdida. Detalla que todo algoritmo de compresión consta de un modelo (un problema de inteligencia artificial no computable que predice probabilidades de símbolos) y un codificador. Asimismo, explica mediante la teoría de la información y el principio del palomar (counting argument) por qué es matemáticamente imposible comprimir todos los datos de manera universal sin que algunas secuencias se expandan, estableciendo límites estrictos al software de compresión.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48599515,
+    "url": "https://overreacted.io/there-are-no-instances-in-atproto/",
+    "score": 456,
+    "time": 1781881802,
+    "titulo_es": "¿Dónde están las instancias de Bluesky? Entendiendo la arquitectura de atproto",
+    "resumen": "Análisis de arquitectura de software que explica la diferencia fundamental entre la federación basada en instancias de Mastodon (ActivityPub) y el protocolo de Bluesky (atproto). El autor utiliza la analogía del ecosistema de blogs clásicos y agregadores (RSS/Google Reader) para ilustrar cómo atproto separa deliberadamente el alojamiento de datos de la agregación de los mismos. A diferencia de Mastodon, donde los servidores actúan como feudos cerrados que duplican datos y escalan con complejidad O(n²), el modelo de atproto busca desacoplar la identidad y los datos del usuario de la capa de visualización o proyección de la red social.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48568652,
+    "url": "https://www.ibm.com/think/news/discovery-changed-how-scientists-think-about-memory-kavli-prize",
+    "score": 59,
+    "time": 1781694569,
+    "titulo_es": "Cada recuerdo comienza con pequeños cambios en el interior del cerebro",
+    "resumen": "El neurocientífico Oswald Steward ha sido galardonado con el Premio Kavli de Neurociencia 2026 por descubrir que las neuronas pueden sintetizar proteínas de forma local cerca de las sinapsis. Este hallazgo revolucionó la neurobiología al resolver el problema de cómo el cerebro gestiona la plasticidad y el almacenamiento de memoria a nivel molecular sin generar un colapso en el transporte de proteínas desde el cuerpo celular a través de sus complejas ramificaciones.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48600167,
+    "url": "https://arrowtsx.dev/bigger-models/",
+    "score": 195,
+    "time": 1781885485,
+    "titulo_es": "La desaceleración del escalado de IA: El trilema de los LLMs entre capacidad, alucinación y eficiencia",
+    "resumen": "El artículo analiza el cambio de paradigma en el desarrollo de modelos de lenguaje (LLM), cuestionando la tendencia de aumentar indefinidamente los parámetros y datos de entrenamiento. Se comparan modelos masivos propietarios y cerrados como GPT-5.5 y DeepSeek V4 Pro frente a alternativas más eficientes de pesos abiertos como GLM-5.2 de Z.ai. A través de pruebas técnicas de programación en Python, se demuestra cómo los modelos más grandes tienden a fallar en la calibración de su incertidumbre, generando respuestas incorrectas pero seguras (alucinaciones de hasta el 94% en DeepSeek V4 Pro), mientras que modelos más pequeños identifican paradojas de diseño de manera casi instantánea. El autor concluye que la industria debe enfocarse en resolver el trilema de los LLM: capacidad bruta, mitigación de alucinaciones y eficiencia computacional.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48602918,
+    "url": "https://brooker.co.za/blog/2020/08/06/erlang.html",
+    "score": 118,
+    "time": 1781901059,
+    "titulo_es": "El modelo M/M/c puede no comportarse como esperas",
+    "resumen": "El artículo analiza detalladamente el comportamiento de los sistemas de colas M/M/c (con proceso de llegada de Poisson, tiempo de servicio exponencial y 'c' servidores backend) bajo una carga que escala linealmente para mantener la utilización constante por servidor. Contrario a la intuición común, el autor demuestra matemáticamente, mediante la fórmula C de Erlang y simulaciones de Monte-Carlo, que a medida que aumenta el número de servidores 'c', la latencia promedio disminuye rápidamente aproximándose asintóticamente al tiempo neto de procesamiento (1 segundo). Este fenómeno de mejora del rendimiento y la utilización de recursos, que también se refleja en percentiles altos (p99 y p99.9), resulta altamente beneficioso para el diseño y la economía de los sistemas distribuidos y en la nube.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48600312,
+    "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/",
+    "score": 838,
+    "time": 1781886500,
+    "titulo_es": "Hyundai adquiere el control total de Boston Dynamics por 325 millones de dólares en plena carrera de robótica humanoide",
+    "resumen": "Hyundai Motor Group ha comprado el 9.65% restante de la participación de SoftBank en Boston Dynamics por 325 millones de dólares, obteniendo el control total de la firma de robótica. Este movimiento estratégico ocurre mientras el robot humanoide eléctrico Atlas se prepara para su despliegue comercial, planeando comenzar tareas de secuenciación de piezas en la planta de vehículos eléctricos de Hyundai en Georgia para 2028. SoftBank, por su parte, reasignará este capital hacia su inversión en OpenAI e infraestructura de IA. La integración vertical de Hyundai con su división de componentes Mobis para producir actuadores posiciona a la empresa fuertemente frente a competidores como Tesla Optimus y Figure AI.",
+    "categoria": "IA"
+  },
+  {
     "id": 48595511,
     "url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
-    "score": 237,
+    "score": 597,
     "time": 1781850957,
-    "titulo_es": "JEP 401: Clases y objetos de valor se integrarán en el repositorio de OpenJDK para JDK 28",
-    "resumen": "El artículo analiza la confirmación de la integración de la JEP 401 (Value Classes and Objects) en el repositorio principal de OpenJDK para la versión JDK 28, marcando el inicio de la entrega del Proyecto Valhalla. Bajo el lema 'codifica como una clase, funciona como un int', esta iniciativa busca que el desarrollador pueda definir clases legibles que la JVM optimice y maneje con la eficiencia de los tipos primitivos. El texto detalla el problema de la densidad de memoria en Java ('fluffy layout'), donde la indirección de punteros y las cabeceras de objetos penalizan el rendimiento en hardware moderno debido a fallos de caché de CPU, y cómo Valhalla busca solventarlo permitiendo un diseño de datos denso y contiguo.",
+    "titulo_es": "Integración de JEP 401: Clases y Objetos de Valor en OpenJDK para JDK 28",
+    "resumen": "El artículo detalla la confirmación de la integración de la propuesta JEP 401 (Value Classes and Objects) en el repositorio principal de OpenJDK, apuntando a la versión JDK 28 como una característica de vista previa (preview). Esta iniciativa representa la primera fase del Proyecto Valhalla, cuyo lema es 'codifica como una clase, funciona como un int'. El texto explica el problema fundamental del diseño de memoria en Java, donde la indirección de punteros y los encabezados de objetos en el heap generan una estructura 'esponjosa' e ineficiente. Esto afecta la localidad de referencia y el rendimiento en las CPU modernas debido a fallos de caché. Valhalla busca resolver esto permitiendo que tipos de datos complejos tengan una disposición en memoria densa, similar a la de los datos primitivos, sin perder las ventajas de legibilidad de las clases orientadas a objetos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48553388,
-    "url": "https://www.greybeam.ai/blog/duckdb-internals-part-1",
-    "score": 230,
-    "time": 1781608028,
-    "titulo_es": "Una inmersión profunda en el funcionamiento interno de DuckDB",
-    "resumen": "El artículo describe el origen, la adopción y el diseño arquitectónico de DuckDB, una base de datos analítica SQL 'in-process' (en proceso). Al integrarse directamente como una biblioteca en el programa del usuario en lugar de funcionar como un servidor independiente, DuckDB elimina la necesidad de conexiones de red y sockets TCP. Esto evita la costosa serialización y deserialización de datos típica de los protocolos cliente-servidor tradicionales (como ODBC/JDBC), que suelen ser el principal cuello de botella. Se destaca por ser un motor extremadamente rápido de un solo nodo, distribuido como un único binario ligero de menos de 20 MB y optimizado para consultar eficientemente formatos como Parquet, CSV o JSON.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48543311,
-    "url": "https://news.mit.edu/2026/to-study-how-chips-really-work-mit-researchers-built-their-own-operating-system-0610",
-    "score": 220,
-    "time": 1781539582,
-    "titulo_es": "Un nuevo kernel de sistema operativo ofrece a los investigadores una visión más clara de lo que ocurre dentro de un procesador",
-    "resumen": "Investigadores del CSAIL del MIT han desarrollado Fractal, un kernel de sistema operativo diseñado desde cero para estudiar el comportamiento interno de los procesadores sin el ruido de fondo que introducen los sistemas operativos comerciales. Al ejecutarse directamente sobre el hardware (bare metal) y utilizar una técnica llamada 'concurrencia de múltiples privilegios' mediante 'hilos de kernel externos', Fractal permite realizar experimentos reproducibles y precisos en diferentes niveles de privilegio. Su primera aplicación práctica en el procesador M1 de Apple confirmó que, a pesar de las protecciones CSV2 de ARM, el chip es vulnerable a una clase de ataque especulativo por canal lateral conocida como 'Phantom', debido a que el procesador precarga instrucciones en la caché antes de que se activen las defensas.",
+    "id": 48606271,
+    "url": "https://www.space.com/space-exploration/satellites/its-quite-a-bit-more-than-we-expected-satellite-reveals-immense-scale-of-gps-signal-tampering",
+    "score": 90,
+    "time": 1781928423,
+    "titulo_es": "Un satélite experimental mapea por primera vez la escala de la interferencia de GPS desde el espacio",
+    "resumen": "El satélite experimental Pulsar-0, desarrollado por Xona Space Systems, ha detectado niveles imprevistos y severos de interferencia (jamming) y suplantación (spoofing) de señales GPS sobre Europa y Medio Oriente. Estos hallazgos evidencian la vulnerabilidad de los sistemas de Posicionamiento, Navegación y Sincronización (PNT) frente a ataques de denegación de servicio y alteración de coordenadas, afectando la seguridad de operaciones críticas terrestres y aeroespaciales. Como respuesta a esta problemática de ciberseguridad en infraestructuras críticas, se plantea el despliegue de nuevas constelaciones de órbita baja (LEO) diseñadas con señales de mayor potencia y resistencia ante interferencias deliberadas.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48595331,
-    "url": "https://mnot.net/blog/2026/well_known_uris",
-    "score": 93,
-    "time": 1781849101,
-    "titulo_es": "Uso y buenas prácticas de las URIs Well-Known (Ubicaciones bien conocidas)",
-    "resumen": "El autor, uno de los creadores de la especificación de URIs 'Well-Known', detalla los criterios de diseño y las mejores prácticas para su uso en protocolos web. Explica que estas ubicaciones son ideales cuando el cliente ya conoce el sitio y necesita descubrir información global de forma eficiente (como robots.txt o change-password). Advierte contra su uso innecesario como acortadores de URL o para aparentar legitimidad oficial, ya que esto introduce rigidez arquitectónica (relación estricta 1:1 entre servicios y sitios) y complica la resolución de nombres y el alcance del descubrimiento en subdominios.",
-    "categoria": "Desarrollo de Software"
+    "id": 48582180,
+    "url": "https://adewynter.github.io/notes/aoe2-circuits",
+    "score": 83,
+    "time": 1781769012,
+    "titulo_es": "Implementación de un perceptrón y circuitos de entrenamiento en Age of Empires II",
+    "resumen": "El artículo detalla la construcción de componentes lógicos y de aprendizaje automático dentro del editor de escenarios de Age of Empires II. Se describe la creación de una puerta lógica NAND funcional, un perceptrón bipolar de 1 bit (que utiliza puertas XNOR y AND para realizar el producto interno) y un circuito de entrenamiento basado en el algoritmo ansatz para actualizar los pesos del modelo. Para simular el hardware, el diseño utiliza mecánicas del juego de forma creativa: cabras como bits y señales de sincronización en rieles de terreno específicos para evitar condiciones de carrera, y distintos tipos de bosques y terrenos para codificar las operaciones lógicas (bambú para XNOR, baobabs para OR, agua profunda para NOT). El funcionamiento de este sistema fue previamente verificado en Verilog.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48600593,
+    "url": "https://lwn.net/SubscriberLink/1077619/f7b07c5489fdd43a/",
+    "score": 86,
+    "time": 1781888356,
+    "titulo_es": "El repositorio AUR de Arch Linux sufre un ataque sostenido mediante la adopción de paquetes huérfanos",
+    "resumen": "El artículo describe un ataque de seguridad a la cadena de suministro dirigido al Arch User Repository (AUR). Diversos atacantes crearon cuentas de usuario para adoptar de forma automatizada paquetes huérfanos e inyectar actualizaciones maliciosas (malware) en los sistemas de los usuarios. El AUR carece de un proceso de revisión formal de código previo a la publicación; depende de que los propios usuarios auditen los archivos PKGBUILD antes de compilar e instalar, una práctica poco común en escenarios reales de actualización de software. Como respuesta inmediata, los administradores suspendieron el registro de nuevos usuarios en el AUR, evidenciando los riesgos estructurales del modelo de confianza y colaboración abierta de la plataforma.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48548612,
+    "url": "https://blog.plover.com/math/egyptian-fractions.html",
+    "score": 97,
+    "time": 1781566674,
+    "titulo_es": "Fracciones egipcias",
+    "resumen": "El artículo analiza el papiro matemático de Ahmes (de hace 3800 años) enfocado en las fracciones egipcias, las cuales se expresan exclusivamente como sumas de fracciones unitarias distintas (con numerador 1 y denominadores diferentes). Se detalla el uso del algoritmo voraz (greedy) para descomponer fracciones, mostrando mediante ejemplos como 2/9, 19/20 y 3/7 que, aunque este método es funcional, a menudo produce denominadores excesivamente grandes e ineficientes en comparación con otras descomposiciones óptimas. El autor plantea la hipótesis de por qué los egipcios se enfocaron en tabular específicamente las fracciones de la forma 2/n en lugar de otras combinaciones.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48605355,
+    "url": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now/",
+    "score": 21,
+    "time": 1781918714,
+    "titulo_es": "El blog de Ian",
+    "resumen": "El artículo analiza la creciente complejidad en las arquitecturas de modelos de lenguaje (LLMs), las cuales han pasado de ser estructuras simples de Transformer a sistemas altamente complejos similares a los sistemas de recomendación (recsys), incorporando múltiples variantes de atención, Mezcla de Expertos (MoE) y desafíos de comunicación multi-GPU. El autor argumenta que, ante la delgada línea entre la optimización y la viabilidad del entrenamiento, el desarrollo no puede depender únicamente de que agentes de IA generen kernels optimizados sin una base de referencia. En su lugar, propone que la clave para la iteración en investigación es diseñar pensando en la componibilidad desde el principio, destacando herramientas como FlexAttention en PyTorch que facilitan la generación flexible y eficiente de kernels mediante plantillas de Triton.",
+    "categoria": "IA"
   },
   {
     "id": 48549118,
     "url": "https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning",
-    "score": 97,
+    "score": 261,
     "time": 1781570750,
-    "titulo_es": "Entonces, ¿quieres hacer investigación en IA?",
-    "resumen": "Una guía detallada sobre cómo iniciarse y tener éxito en la investigación de Inteligencia Artificial. El autor postula que el camino requiere una combinación equilibrada de lectura teórica y desarrollo práctico, junto con una disciplina constante ante la aleatoriedad de los descubrimientos. Se aconseja a los investigadores noveles evitar las tendencias pasajeras de corto plazo y concentrarse en los fundamentos matemáticos y conceptuales (como SVD y entropía cruzada), enfatizando la creación de conjuntos de datos personalizados que pongan a prueba nuevas capacidades en lugar de la optimización obsesiva de benchmarks preexistentes. Finalmente, se destaca que al ser un campo tan joven, la mentalidad de principiante a menudo supera a la intuición de la vieja escuela.",
+    "titulo_es": "¿Así que quieres hacer investigación en IA?",
+    "resumen": "Una guía práctica y filosófica sobre cómo iniciarse en la investigación de Inteligencia Artificial. El autor expone que el éxito en este campo requiere una combinación disciplinada de lectura teórica y desarrollo práctico. Aconseja a los nuevos investigadores enfocarse en los fundamentos matemáticos y conceptuales estables (como la descomposición en valores singulares SVD, la entropía cruzada y los gradientes de política) en lugar de seguir modas tecnológicas de corto plazo. Asimismo, destaca la importancia de crear conjuntos de datos propios en lugar de optimizar métricas para benchmarks existentes, y resalta el valor de la mentalidad de principiante en una disciplina tan joven y en constante evolución.",
     "categoria": "IA"
   },
   {
-    "id": 48583928,
-    "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
-    "score": 831,
-    "time": 1781783143,
-    "titulo_es": "Cómo encontré 10,000 repositorios en GitHub que distribuyen malware troyano",
-    "resumen": "El autor detalla el descubrimiento de una campaña masiva de malware en GitHub que utiliza unos 10,000 repositorios automatizados. Estos clonan proyectos legítimos y actualizan periódicamente el archivo README.md para añadir un enlace a un archivo ZIP que contiene un troyano, evadiendo la detección inicial al modificar constantemente el commit de forma programada. Para superar las limitaciones de la API de GitHub en la búsqueda de estos repositorios, el autor diseñó un método utilizando 'gharchive' para descargar y filtrar eventos históricos de 'push', identificando patrones de actualización sospechosos (entre 2 y 10 commits cada 10 horas) antes de realizar consultas API específicas.",
-    "categoria": "Ciberseguridad"
+    "id": 48586329,
+    "url": "https://dfdxlabs.com/research/2026/robotics-setup/",
+    "score": 151,
+    "time": 1781794313,
+    "titulo_es": "Configuración de un tablero de ajedrez mediante teleoperación: Investigación independiente en manipulación robótica",
+    "resumen": "El autor detalla el inicio de un proyecto de investigación independiente sobre manipulación robótica de mesa, diseñado para ser ejecutado por una sola persona con un presupuesto de hardware inferior a 5,000 €. El artículo destaca cómo la reducción de costos en componentes físicos y el surgimiento de modelos fundacionales de inteligencia artificial (como LeRobot de Hugging Face) están democratizando el acceso a la robótica avanzada. Se abordan los requisitos de diseño del sistema, que combina una pila de software desarrollada desde cero con un brazo robótico industrial y cámaras para la experimentación en tareas de complejidad progresiva.",
+    "categoria": "IA"
   },
   {
-    "id": 48541062,
-    "url": "https://mickael.canouil.fr/posts/2026-06-15-gribouille-0-3/",
-    "score": 116,
-    "time": 1781530523,
-    "titulo_es": "Gribouille 0.3.0 ofrece un control mucho más preciso de guías y ejes, permite que compose() tenga su propio tema y hace que geom-area() se apile por defecto",
-    "resumen": "La versión 0.3.0 de la biblioteca de visualización de datos Gribouille introduce mejoras significativas en el control de gráficos sin necesidad de modificar directamente el tema. Destaca el nuevo control de guías para ocultar marcas de ejes y leyendas con un solo argumento, la adición del parámetro 'theme' en 'compose()' para cascada de estilos, y la introducción del ayudante 'defer()'. Asimismo, 'geom-area()' ahora se apila por defecto con alineación automática para diferentes valores de x, y 'annotate()' añade la opción de desactivar el recorte ('clip: false') para permitir marcas fuera de los límites del panel. La versión también incluye múltiples correcciones en el diseño de leyendas y docstrings compatibles con Tinymist para editores compatibles.",
+    "id": 48553161,
+    "url": "https://kottke.org/26/06/telescope-ranchers",
+    "score": 126,
+    "time": 1781606050,
+    "titulo_es": "Observatorio remoto de telescopios en Texas: un rancho de estrellas para astrofotógrafos",
+    "resumen": "El artículo describe Starfront Observatories, una empresa ubicada en Rockwood, Texas, que ofrece un servicio de 'rancho de telescopios'. Los clientes envían sus telescopios a las instalaciones de Bray Falls, quien los aloja en condiciones óptimas (cielos oscuros, clima despejado, internet de alta velocidad) para que los astrofotógrafos de todo el mundo puedan controlar remotamente los telescopios a través de sus ordenadores. Se mencionan las capacidades del servicio, incluyendo el control de 550 telescopios en 40 acres, con costos desde $99 al mes. Se destaca una imagen de una nebulosa recién descubierta llamada 'The Crown of Thorns Nebula', cuya ubicación anómala está siendo estudiada por científicos. El artículo también incluye detalles sobre la estructura del sitio web y los requisitos de membresía para interactuar.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48563047,
+    "url": "https://digitalorientalist.com/2017/08/21/digital-printing-of-arabic-explaining-the-problem/",
+    "score": 58,
+    "time": 1781648584,
+    "titulo_es": "El Orientalista Digital: Ejemplos prácticos y reflexiones teóricas sobre el uso de herramientas digitales en estudios de África y Asia",
+    "resumen": "El artículo explora los desafíos históricos y digitales en la representación de la escritura árabe, originados en las limitaciones de la imprenta de tipos móviles adaptada a un sistema de escritura no lineal y basado en bloques de letras. Las tecnologías de impresión y computación, desarrolladas principalmente para el alfabeto latino, han dificultado la correcta conexión de las letras árabes, creando problemas de legibilidad y precisión, especialmente evidentes en representaciones digitales y tipografías inadecuadas. Se sugiere que la falta de incentivos económicos ha limitado la resolución fundamental de estos problemas para un idioma de amplia difusión como el árabe.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 48546890,
     "url": "https://clickhouse.com/blog/open-source-10",
-    "score": 92,
+    "score": 309,
     "time": 1781556714,
-    "titulo_es": "ClickHouse: Código abierto y excelencia en el desarrollo de bases de datos de alto rendimiento",
-    "resumen": "El artículo explora la historia y la filosofía de desarrollo detrás de ClickHouse, la base de datos analítica de código abierto más popular. Clasifica los proyectos de código abierto en cuatro niveles, posicionando a ClickHouse en el nivel más alto debido a su transparencia, CI/CD avanzado y sólidas directrices de contribución. Se detalla cómo el proyecto sirve como un referente técnico para el desarrollo en C++ moderno, la optimización extrema del rendimiento y la experimentación con estructuras de datos. Además, el autor comparte los orígenes de la base de datos en 2009, nacida de la necesidad de procesar grandes volúmenes de datos analíticos en tiempo real donde MySQL no era suficiente.",
+    "titulo_es": "ClickHouse: Más Allá de una Base de Datos Analítica Open Source",
+    "resumen": "El artículo describe la evolución y filosofía detrás de ClickHouse, una base de datos analítica de código abierto lanzada en 2016. Se detalla su compromiso con un desarrollo abierto de Nivel 3, fomentando la contribución, la transparencia en el proceso de desarrollo, y manteniendo un alto estándar de calidad en el código. ClickHouse se presenta como un recurso educativo para aprender C++ moderno (C++23), prácticas de ingeniería de software (build systems, CI/CD, code review) y experimentación con estructuras de datos y optimización de rendimiento. Se enfatiza la importancia de los contribuyentes, reconociendo su trabajo a través de changelogs y tablas internas. La narrativa también repasa los orígenes de ClickHouse como una solución a problemas de procesamiento de datos en tiempo real para análisis web, destacando la agilidad necesaria para resolver cuellos de botella de rendimiento en sistemas de alto volumen y crecimiento.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48543968,
-    "url": "https://www.modeloop.app/",
-    "score": 3,
-    "time": 1781542294,
-    "titulo_es": "El futuro de la ingeniería de sistemas",
-    "resumen": "Modeloop es un entorno visual de ingeniería basado en modelos (MBSE) que unifica el diseño de sistemas embebidos con prácticas DevOps modernas. Permite transformar diagramas de bloques jerárquicos y gráficos de estado (StateCharts) directamente en código de producción (C y Python) y pruebas de verificación automatizadas. Al automatizar la generación de código y la integración continua (CI/CD), la herramienta cierra la brecha tradicional del ciclo de desarrollo en V, mitigando errores de integración manuales y garantizando la modularidad y correctitud matemática por diseño.",
+    "id": 48604801,
+    "url": "https://github.com/ascorbic/cirrus",
+    "score": 22,
+    "time": 1781913899,
+    "titulo_es": "Servidor de Datos Personal (PDS) de AT Protocol en Cloudflare Worker",
+    "resumen": "Este artículo describe una implementación de un Servidor de Datos Personal (PDS) para el Protocolo AT (ATProto), diseñado para ejecutarse en Cloudflare Workers. Este PDS es ligero, para un solo usuario y se enfoca en almacenar datos de Bluesky como publicaciones, seguidores, perfiles y medios. Utiliza Cloudflare Workers con Durable Objects y R2 para ofrecer una solución sin servidores que escala automáticamente y opera con precios de pago por uso en el 'edge'. Se detallan los requisitos de configuración, incluyendo la necesidad de un dominio activo en Cloudflare y la gestión de claves de firma críticas para la identidad del usuario. Se advierte que el software se encuentra en fase beta experimental y que pueden ocurrir cambios disruptivos, recomendando copias de seguridad de datos importantes. Se cubren las funcionalidades principales disponibles y se hace referencia a la documentación para limitaciones y hoja de ruta. Se enfatiza la importancia de respaldar la clave de firma durante la inicialización del PDS para evitar la pérdida de acceso.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48592163,
-    "url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
-    "score": 209,
-    "time": 1781819650,
-    "titulo_es": "La extensión de Autorización Administrada por la Empresa ya es estable",
-    "resumen": "El artículo anuncia la estabilidad de la extensión Enterprise-Managed Authorization (EMA) para el protocolo MCP (Model Context Protocol). Esta extensión permite a las organizaciones centralizar la gestión de acceso a los servidores MCP mediante sus proveedores de identidad (IdP) de confianza, utilizando aserciones de identidad JWT (ID-JAG). Esto elimina las pantallas de consentimiento individuales por servidor y simplifica el inicio de sesión para los usuarios finales, mejorando significativamente la seguridad y la gobernanza de datos en entornos corporativos.",
-    "categoria": "Ciberseguridad"
   },
   {
     "id": 48585866,
     "url": "https://blog.ui.com/article/introducing-enterprise-nas",
-    "score": 355,
+    "score": 409,
     "time": 1781792670,
-    "titulo_es": "ENAS: Almacenamiento empresarial de alto rendimiento y sin costos de licencia",
-    "resumen": "ENAS es una solución de almacenamiento local para empresas que combina la arquitectura ZFS, caché M.2 NVMe L2ARC y la plataforma de hardware ARM Neoverse N2. Destaca por su escalabilidad sin restricciones de firmware en discos, integración nativa con el ecosistema UniFi, soporte para iSCSI en entornos de virtualización, control de acceso basado en roles y capacidades de respaldo multi-sitio y hacia la nube (incluyendo Microsoft 365), todo ello eliminando los costos de licenciamiento de software tradicionales.",
+    "titulo_es": "ENAS: Una Plataforma de Almacenamiento Empresarial Simplificada y Escalable",
+    "resumen": "El artículo presenta ENAS, una nueva plataforma de almacenamiento empresarial diseñada para eliminar los costos y complejidades tradicionales. Combina hardware potente (incluyendo ZFS, caché NVMe L2ARC y una plataforma ARM Neoverse N2) con tecnologías de almacenamiento modernas para ofrecer alto rendimiento y fiabilidad. ENAS se destaca por su escalabilidad sin restricciones de hardware propietario, su integración nativa con la plataforma UniFi para la gestión centralizada de archivos, copias de seguridad y datos compartidos, y la ausencia de costos de licencia de software recurrentes. Ofrece acceso seguro a datos empresariales mediante la integración con proveedores de identidad y controles de acceso basados en roles. Simplifica la orquestación de copias de seguridad multisede hacia destinos locales, remotos o en la nube, incluyendo la copia de seguridad de datos de Microsoft 365. Además, soporta iSCSI para entornos de virtualización y alta disponibilidad. ENAS unifica rendimiento de clase empresarial, escalabilidad masiva, gestión centralizada, seguridad, orquestación de copias de seguridad y almacenamiento listo para virtualización en una única plataforma sin licencias, promoviendo una solución más simple, escalable y rentable.",
     "categoria": "Hardware"
   },
   {
-    "id": 48593731,
-    "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/",
-    "score": 98,
-    "time": 1781831187,
-    "titulo_es": "Lanzamiento de Datasette Apps: Aplicaciones web autocontenidas y seguras integradas en Datasette",
-    "resumen": "Se presenta 'datasette-apps', un nuevo plugin para el ecosistema Datasette que permite ejecutar aplicaciones web autocontenidas (HTML, CSS y JavaScript) dentro de un entorno seguro utilizando iframes con atributos 'sandbox' y cabeceras CSP. Estas aplicaciones pueden consultar bases de datos SQLite de forma segura, permitiendo consultas SQL de lectura directa y operaciones de escritura preconfiguradas, utilizando 'postMessage()' para comunicarse de forma segura con la aplicación principal.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48547658,
-    "url": "https://github.com/toinbox/simplerelay",
-    "score": 16,
-    "time": 1781561172,
-    "titulo_es": "SimpleRelay - Relevo SMTP autohospedado con panel web, validación DNS y control de acceso por remitente",
-    "resumen": "SimpleRelay es una solución de relevo (relay) SMTP multiinquilino y autohospedada diseñada para enrutar correos salientes a través de múltiples proveedores SMTP ascendentes según la dirección del remitente. Su pila tecnológica incluye un backend desarrollado en FastAPI (Python 3.12), Postfix para la transferencia de correo, PostgreSQL 16 como base de datos y un frontend construido con React y Vite, todo ello orquestado mediante Docker Compose. El sistema cuenta con un panel de control web para la gestión de usuarios, monitorización de logs de envío, configuración DNS (SPF/DKIM/DMARC), control de acceso por IP o SMTP AUTH, y gestión de proxies de salida (SOCKS5/HTTP) con límites de envío globales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48583606,
-    "url": "https://www.cs.cornell.edu/courses/cs6120/2025fa/self-guided/",
-    "score": 384,
-    "time": 1781780671,
-    "titulo_es": "CS 6120: Implementación de Lenguajes de Programación",
-    "resumen": "El artículo describe CS 6120, un curso de nivel de doctorado de la Universidad de Cornell impartido por Adrian Sampson, enfocado en la implementación de lenguajes de programación. El plan de estudios cubre temas avanzados de compiladores como representaciones intermedias (IR), análisis de flujo de datos, optimizaciones clásicas, compilación Just-In-Time (JIT) y recolección de basura. Se presenta en una modalidad autodidacta y de código abierto, con lecturas de artículos académicos, lecciones en video y tareas prácticas de desarrollo utilizando LLVM y una IR educativa.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48583356,
-    "url": "https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/",
-    "score": 449,
-    "time": 1781778560,
-    "titulo_es": "Cómo ignorar archivos en Git en tres niveles diferentes",
-    "resumen": "El artículo detalla cómo Git permite ignorar archivos en tres niveles de configuración: a través del archivo estándar '.gitignore' (sincronizado en el repositorio), el archivo '.git/info/exclude' (específico del repositorio local y no compartido) y el archivo global en '~/.config/git/ignore' (aplicable a todos los repositorios de la máquina). Además, se explica el uso del comando 'git check-ignore -v' para depurar e identificar con precisión qué regla y archivo de configuración están afectando a un archivo específico.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48540779,
-    "url": "https://akse3d-en.skaperiet.no",
-    "score": 39,
-    "time": 1781529218,
-    "titulo_es": "Una herramienta 3D para el maker space",
-    "resumen": "Akse es una herramienta de modelado 3D basada en navegador, diseñada para niños y adolescentes, que simplifica la creación de modelos 3D para impresión. Permite combinar formas primitivas (caja, cilindro, esfera, cono, pirámide, cuña, toro), dibujar planos 2D personalizados y utilizar formas de \"agujero\" para realizar cortes precisos. Todas las operaciones se realizan con precisión milimétrica y la exportación se realiza en formato STL, compatible con impresoras 3D. Incluye un potente \"Blueprint tool\" para dibujar formas 2D y convertirlas en 3D, con opciones de agrupamiento y medición editable. Admite importación de archivos STL, guardado en la nube o localmente (archivos JSON pequeños), historial de deshacer/rehacer, copia/pega y duplicación de elementos. La herramienta es software libre (AGPL-3.0), autocargable y está disponible como paquete Svelte (@skaperiet/akse) para incrustar en otros sitios web, requiriendo Node.js (v22+) y git para su auto-hospedaje.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48583386,
-    "url": "https://www.kcl.ac.uk/news/hospitals-and-universities-repurposing-drugs-at-90-lower-cost",
-    "score": 318,
-    "time": 1781778802,
-    "titulo_es": "La investigación paralela de reposicionamiento de fármacos fuera de las compañías farmacéuticas",
-    "resumen": "El artículo explora un sistema de investigación paralelo, fuera del sistema de patentes farmacéuticas, donde universidades y hospitales están reposicionando fármacos existentes para nuevos usos. Este sistema opera con costos hasta un 90% menores que en la industria farmacéutica, debido a barreras de entrada más bajas en experiencia, riesgo y capital, y a motivaciones diferentes de los investigadores (progreso profesional y bienestar del paciente). Se destaca el potencial de este modelo para ofrecer tratamientos asequibles, dado que se basa en fármacos genéricos ya disponibles y baratos. Ejemplos incluyen el uso de un fármaco oncológico para la ceguera y uno antiinflamatorio para la COVID-19. Gobiernos están comenzando a formalizar el reconocimiento de esta investigación, asegurando el acceso de los pacientes a tratamientos más económicos.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48584761,
-    "url": "https://github.com/cajal-technologies/talos",
-    "score": 60,
-    "time": 1781788244,
-    "titulo_es": "Talos: Intérprete WebAssembly en Lean 4 para Razonamiento Formal",
-    "resumen": "Talos es un intérprete de WebAssembly (Wasm) implementado en Lean 4, diseñado explícitamente para el razonamiento formal y la verificación. A diferencia de los intérpretes tradicionales, la misma base de código se utiliza tanto para la ejecución como para la demostración de propiedades. Está optimizado para la claridad del razonamiento sobre la velocidad de ejecución, con el objetivo de cubrir todas las características de Wasm, aunque el enfoque inicial está en un subconjunto relevante para la verificación de código de alto nivel (Rust, C). Las pruebas se basan en el cálculo de la más débil precondición (WP), que permite razonar hacia atrás desde postcondiciones a precondiciones. Talos se distribuye en tres paquetes Lake dentro de un monorepo, permitiendo dependencias modulares para la interpretación semántica, la lógica de levantamiento y ayudantes de razonamiento (CodeLib). El proyecto está bajo desarrollo activo y se rige por la licencia GNU Affero General Public License v3.0.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48586329,
-    "url": "https://dfdxlabs.com/research/2026/robotics-setup/",
-    "score": 90,
-    "time": 1781794313,
-    "titulo_es": "Investigación independiente en manipulación robótica con un presupuesto reducido",
-    "resumen": "El artículo describe el desarrollo de un sistema de investigación en manipulación robótica diseñado para ser accesible a equipos pequeños e individuos. Se enfoca en la democratización de la investigación robótica mediante la combinación de hardware de grado industrial asequible (un brazo robótico, dos cámaras) con modelos fundacionales de IA disponibles públicamente. El autor detalla la justificación de las decisiones de diseño, incluyendo la elección de un entorno de manipulación de mesa y un solo brazo robótico para simplificar la configuración y reducir costos. El objetivo es demostrar que una persona puede lograr avances significativos en investigación robótica con un presupuesto limitado y un sistema de código abierto o de registro público, a diferencia de los costosos y grandes equipos necesarios en el pasado. Se destaca la importancia de experimentar con hardware real y se presenta el plan para construir y utilizar este sistema como plataforma de investigación abierta, documentando el proceso y los aprendizajes.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48543430,
-    "url": "https://fergusfinn.com/blog/uccl-ep-without-owning-the-nic/",
-    "score": 6,
-    "time": 1781540004,
-    "titulo_es": "UCCL-EP: Paralelismo Experto en Comunicaciones a Través de Interconexiones Arbitrarias",
-    "resumen": "El artículo detalla cómo UCCL-EP extiende los patrones de comunicación iniciada por GPU del tipo DeepEP a pares NIC-acelerador arbitrarios, abordando la necesidad de eficiencia en hardware heterogéneo. Se enfoca en cómo UCCL implementa el contrato de API de dispositivo NVSHMEM (put_nbi, amo_nonfetch_add, quiet) sobre NICs y GPUs genéricos. Para lograr esto, IBGDA (GPU Direct RDMA) permite que las colas de envío/recepción y las colas de finalización residan en la memoria de la GPU, y que el registro de timbre de la NIC sea accesible desde la GPU. Una urdimbre (warp) en el kernel de despacho construye las entradas de la cola de trabajo, ejecuta una barrera de memoria y escribe en el registro de timbre a través de PCIe. La NIC luego DMA el payload directamente desde la memoria HBM de la GPU, eliminando la necesidad de staging a través de la RAM del host. Esto permite implementaciones de comunicación de un solo lado de alta velocidad, donde una escritura remota se traduce en un descriptor de escritura y una señal en un descriptor de suma atómica publicado en la misma cola, garantizando el orden de datos-señal. La operación 'quiet' se implementa mediante sondeo de la cola de finalización. Esta aproximación es crucial para maximizar la inteligencia por libra gastada en el entrenamiento de modelos de IA a gran escala, especialmente en supercomputadoras como Isambard-AI.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48547969,
-    "url": "https://americanexpress.io/cell-based-architecture-for-resilient-payment-systems/",
-    "score": 130,
-    "time": 1781562993,
-    "titulo_es": "La Arquitectura de Celdas para un Ecosistema de Pagos Resiliente y a Escala Global en American Express",
-    "resumen": "El artículo detalla la evolución del ecosistema de pagos de American Express hacia una arquitectura basada en celdas para garantizar alta disponibilidad, baja latencia y rendimiento predecible. Cada celda es una instancia independiente que contiene sus propios microservicios, bases de datos y datos de referencia (replicados localmente para evitar latencia síncrona), aislando fallos dentro de sus límites definidos. Esta estrategia, inspirada en principios de diseño históricos y adaptada a tecnologías cloud-native, reduce el radio de impacto de las fallas, mejora la escalabilidad al añadir celdas independientes y minimiza la latencia al reducir dependencias externas. La resiliencia es un requisito de diseño fundamental, no un añadido, permitiendo la recuperación rápida y predecible ante fallos localizados, lo cual es crucial para un sistema de pagos de misión crítica a escala global.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48583897,
-    "url": "https://spectrum.ieee.org/modos-e-paper-monitor",
-    "score": 295,
-    "time": 1781782881,
-    "titulo_es": "Cofundadores de Modos lanzan un monitor e-paper integrado tras el éxito del kit de desarrollo",
-    "resumen": "Modos, una startup que previamente logró el éxito en crowdfunding con su Paper Monitor y Dev Kit, un display e-paper de código abierto con una tasa de refresco récord de 75 Hz, está ahora recaudando fondos para el Modos Flow. Este es un monitor e-paper a color de 13.3 pulgadas con una resolución nativa de 3200x2400, entrada táctil y una tasa de refresco de 60 Hz. El aumento de resolución y rendimiento es posible gracias a un nuevo controlador de pantalla de código abierto llamado Enchanter, que utiliza un FPGA más grande, mayor ancho de banda de memoria DDR3 y un chip convertidor DisplayPort a LVDS (Chrontel CH7516) que soporta DisplayPort 1.1.  Los ingenieros de Modos destacan que la latencia percibida se optimiza no por el tiempo completo de respuesta del píxel (que ronda los 50 ms, mejor que pantallas antiguas pero más lento que LCD), sino por la minimización del tiempo desde la entrada del usuario hasta la respuesta en pantalla, evitando buffering adicional.  La experiencia en dos campañas de crowdfunding ha enseñado a los fundadores sobre los desafíos inherentes a la fabricación, como retrasos imprevistos, problemas con componentes específicos (como la solución de color para el bisel) y la necesidad de control de calidad riguroso en la producción a escala, incluso para lotes pequeños.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48586299,
-    "url": "https://tester.army",
-    "score": 123,
-    "time": 1781794184,
-    "titulo_es": "TesterArmy: Monitoreo y Pruebas End-to-End Inteligentes para Aplicaciones Web y Móviles",
-    "resumen": "TesterArmy es una plataforma que monitoriza automáticamente los flujos de usuario clave en sitios web y aplicaciones móviles, alertando sobre interrupciones. Se configura rápidamente pegando una URL, sin requerir tarjetas de crédito, SDKs, scripts de prueba o infraestructura. Utiliza IA para navegar páginas, completar formularios, manejar flujos de autenticación (OAuth, OTP) e interactuar con la UI de forma similar a un humano. Permite la integración con GitHub para revisiones automáticas de Pull Requests y la programación de ejecuciones recurrentes para monitoreo en producción, o puede ser activado por webhooks desde pipelines CI. Las pruebas cubren la funcionalidad de consultas con filtrado y paginación, y generan informes detallados con capturas de pantalla y grabaciones. Destaca su experiencia de onboarding, permitiendo la primera prueba end-to-end en minutos. La IA aprende de ejecuciones pasadas y entiende el contexto, detectando regresiones reales, problemas de layout y rendering, con menos falsos positivos. Se integra perfectamente con Vercel para pruebas en despliegues de vista previa de PR. La herramienta también menciona el uso de Playwright CLI como una abstracción sobre un demonio, optimizado para QA, y recomienda técnicas como `storageState` para optimizar la autenticación en pruebas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48584484,
-    "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
-    "score": 115,
-    "time": 1781786649,
-    "titulo_es": "Controles de exportación de EE.UU. sobre IA de Anthropic vinculados a preocupaciones sobre China y vulnerabilidades de seguridad",
-    "resumen": "El artículo detalla cómo la administración Trump impuso controles de exportación sobre la tecnología de IA más avanzada de Anthropic, específicamente sus modelos Claude Mythos y Fable 5. La decisión se desencadenó por la preocupación de los funcionarios estadounidenses sobre los presuntos vínculos de SK Telecom, un socio de Anthropic, con China. Estas preocupaciones se agravaron cuando Amazon informó de vulnerabilidades en Fable 5, que permitían eludir las medidas de seguridad y acceder a capacidades cibernéticas. A pesar de que Anthropic y otros expertos cuestionaron la singularidad de estos riesgos, la confluencia de eventos llevó a la Casa Blanca a desconfiar de la capacidad de Anthropic para salvaguardar su tecnología. Como resultado, se ordenó a Anthropic revocar el acceso a estos modelos para todos los extranjeros, lo que llevó a la compañía a deshabilitar el acceso por completo en lugar de implementar controles basados en nacionalidad, una medida que generó desacuerdo entre la Casa Blanca y Anthropic. El artículo también menciona que SK Telecom ha invertido significativamente en Anthropic y que, si bien SK Telecom tiene una presencia limitada en China, su conglomerado matriz, SK Group, tiene amplios intereses comerciales en el país.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48589501,
-    "url": "https://www.thatprivacyguy.com/blog/elkjop-forced-consent-fine/",
-    "score": 412,
-    "time": 1781807483,
-    "titulo_es": "El derecho absoluto a oponerse al marketing directo y las implicaciones del GDPR en los clubes de clientes",
-    "resumen": "El artículo detalla un caso donde un usuario descubrió que la única forma de dejar de recibir correos electrónicos de marketing de un club de clientes era cancelar su membresía. Esto se considera una violación del GDPR, específicamente del Artículo 21(2) sobre el derecho a oponerse al marketing directo y el Artículo 4(11) que exige que el consentimiento sea libremente otorgado y no condicionado. El autor escaló el caso, presentando solicitudes de acceso y restricción de procesamiento, y finalmente presentó una queja ante la autoridad supervisora sueca (IMY). Debido a que la entidad controladora principal se encontraba en Noruega, el caso fue transferido a Datatilsynet (la DPA noruega). Datatilsynet multó al grupo Elkjop con 20 millones de NOK, confirmando que el consentimiento para el club no era válido (forzado, no específico, y sin información adecuada) y que los datos personales se habían utilizado para fines de publicidad y seguimiento de conversiones sin la debida evaluación de compatibilidad (Artículo 6(4) del GDPR). La decisión aborda varios artículos del GDPR relacionados con la legalidad, equidad, transparencia y el procesamiento de datos personales.",
+    "id": 48592163,
+    "url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth/",
+    "score": 272,
+    "time": 1781819650,
+    "titulo_es": "Extensión de Autorización Gestionada por la Empresa para MCP: Nueva Estabilidad",
+    "resumen": "El artículo anuncia la estabilidad de la extensión Enterprise-Managed Authorization (EMA) para el protocolo MCP (probablemente Messaging and Collaboration Protocol o similar en este contexto de integración). Esta extensión aborda el punto de dolor de la gestión de autorización y los avisos de consentimiento repetidos en entornos empresariales. EMA permite a las organizaciones gestionar centralmente el acceso a los servidores MCP a través de su proveedor de identidad (IdP) de confianza. Para los usuarios finales, esto se traduce en una configuración sin intervención manual (zero-touch), donde los servidores MCP requeridos se conectan en el primer inicio de sesión sin necesidad de OAuth por aplicación o configuraciones manuales. El modelo de autorización estándar de MCP, centrado en el usuario y los flujos de autenticación interactiva, no escala bien en entornos empresariales. EMA cambia este paradigma haciendo que el IdP de la organización sea la autoridad decisoria, permitiendo la concesión o denegación de acceso basada en pertenencia a grupos, roles y reglas de acceso condicional. Técnicamente, el cliente obtiene un Identity Assertion JWT Authorization Grant (ID-JAG) del IdP durante el single sign-on y lo intercambia por un token de acceso del servidor MCP. Esto elimina la redirección a pantallas de consentimiento por servidor. Se considera una nueva base para MCP en entornos empresariales, facilitando la integración segura y el control de cumplimiento. La implementación ha involucrado a Okta, Figma y Linear, entre otros, y se anima a la comunidad a adoptar el estándar.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48591066,
-    "url": "https://www.dpolakovic.space/blogs/zork-part2#update",
-    "score": 82,
-    "time": 1781814448,
-    "titulo_es": "Investigación sobre el origen del término \"Zork\" como jerga de software",
-    "resumen": "El artículo investiga la etimología del término \"Zork\", especialmente su supuesto uso como jerga en el MIT en los años 70 para referirse a programas inacabados. El autor examina el historial de ediciones de Wikipedia, diversas fuentes y correspondencia con figuras clave como Richard Stallman y Richard P. Gabriel. La investigación concluye que no hay evidencia sólida que respalde el uso generalizado de \"Zork\" como jerga para software en desarrollo, contradiciendo afirmaciones anteriores y cuestionando la fiabilidad de algunas fuentes citadas.",
+    "id": 48604851,
+    "url": "https://newsletter.kentbeck.com/p/hey-n00b-we-didnt-hire-you-to-complete",
+    "score": 173,
+    "time": 1781914267,
+    "titulo_es": "El Secreto de la Breve Noobitud: Qué Importa Realmente en Ingeniería de Software",
+    "resumen": "El artículo se enfoca en cómo los ingenieros junior (noobs) deben demostrar su valor a los ingenieros senior. En lugar de centrarse en la cantidad de tareas completadas, se enfatiza en la calidad, el aprendizaje y el impacto a largo plazo. Los ingenieros senior evalúan a los junior en dos niveles: primero, si son un 'B' (sólido y maduro) o un 'C' (no durará), basándose en si su código funciona, se comunican eficazmente, completan tareas en un tiempo razonable sin causar problemas a otros, y evitan repetir errores. Segundo, si son un 'A' (cambiador de juego), lo cual se distingue por su capacidad de aprender de cada tarea, cuestionar la necesidad de las mismas, identificar el 10% que genera el 90% del beneficio, implementar soluciones de manera innovadora y mejorar el código circundante. La inversión en junior se ve como una opción para formar la próxima generación de ingenieros, no para obtener productividad inmediata.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48573268,
-    "url": "https://agenticresourcediscovery.org/introduction/",
-    "score": 69,
-    "time": 1781715797,
-    "titulo_es": "Descubrimiento de Recursos Agentes para Clientes de IA",
-    "resumen": "El artículo aborda el creciente desafío de permitir que los clientes de Inteligencia Artificial (IA) descubran y utilicen capacidades externas, como herramientas, APIs, flujos de trabajo y otros agentes. Estas capacidades, denominadas 'recursos agentes', se están multiplicando y provienen de diversas fuentes (públicas, proveedores, internas). El problema actual es que el descubrimiento de estos recursos es predominantemente manual, lo que se convierte en un cuello de botella a medida que su número aumenta.  La especificación 'Agentic Resource Discovery (ARD)' se presenta como la solución. ARD permite a un cliente de IA consultar qué recurso agente puede ayudar con una tarea específica, devolviendo información clave como la descripción, el proveedor, la ubicación y el mecanismo de acceso. Es importante destacar que ARD se enfoca únicamente en la fase de descubrimiento, delegando la invocación real a los mecanismos propios de cada recurso agente. ARD no es un producto en sí mismo, sino una especificación que puede ser implementada por diversos servicios de descubrimiento (ej. GitHub Agent Finder, Hugging Face Discover), facilitando que los recursos publicados sean encontrados por múltiples clientes y que los clientes accedan a un conjunto de capacidades más amplio del que conocen previamente.",
+    "id": 48600531,
+    "url": "https://thinkwright.ai/minimax-m3-vs-glm-5-2-coding-benchmark",
+    "score": 34,
+    "time": 1781887974,
+    "titulo_es": "Evaluación Comparativa de Modelos de Codificación Autónoma: GLM 5.2 vs. MiniMax M3",
+    "resumen": "El artículo compara el rendimiento de dos modelos de codificación de IA de código abierto, GLM 5.2 y MiniMax M3, en tareas de desarrollo de software autónomo. Utilizando un marco de evaluación personalizado llamado Thinkbench, se evaluaron ambos modelos en escenarios de construcción desde cero (greenfield), corrección de errores, adición de características y reparación de código existente. Los resultados mostraron que GLM 5.2 tuvo un perfil de corrección ligeramente superior (92% de aprobación completa frente al 84% de MiniMax M3), pero MiniMax M3 fue significativamente más económico ($6.67 vs $18.47) y rápido (45s vs 80s por ejecución). La diferencia clave se observó en la construcción de proyectos desde cero, donde las decisiones de diseño de paquetes y API se volvieron críticas. En tareas de código existente, ambos modelos fueron casi indistinguibles. En cuanto a instrucciones ambiguas, MiniMax M3 tendió a implementar funcionalidades más complejas y orientadas a producción, mientras que GLM 5.2 se ciñó más a la lectura literal de las especificaciones. La evaluación incluyó aspectos como la forma del paquete, el control del alcance y las semánticas de fallo.",
     "categoria": "IA"
+  },
+  {
+    "id": 48600345,
+    "url": "https://tales.fromprod.com/2026/169/google-workspace-threatening-to-block-firefox.html",
+    "score": 486,
+    "time": 1781886649,
+    "titulo_es": "Google Workspace comienza a advertir a usuarios de Firefox, citando una política de recomendación",
+    "resumen": "El artículo detalla una experiencia donde Google Workspace comenzó a mostrar advertencias a los usuarios de Firefox, indicando una posible exigencia de usar Chrome. Si bien el acceso a través de Firefox aún funcionaba en el momento de la redacción, la incertidumbre sobre su continuidad era alta. Una actualización posterior de Google Support aclaró que la advertencia se dirigía específicamente a los administradores que accedían a la consola de administración (admin.google.com) y se presentaba como una recomendación, no un bloqueo. Google Support afirmó que esta política no se documentaría públicamente. El autor del artículo, que prefiere usar Firefox y necesita que su equipo garantice la compatibilidad multiplataforma del software, expresa frustración por la falta de transparencia y la ausencia de beneficios técnicos discernibles para forzar el uso de Chrome.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48600950,
+    "url": "https://www.eff.org/deeplinks/2026/06/new-bill-takes-aim-government-pressure-silence-lawful-online-speech",
+    "score": 281,
+    "time": 1781890468,
+    "titulo_es": "Ley JAWBONE: Contra la Coerción Gubernamental sobre la Expresión en Línea",
+    "resumen": "El artículo detalla la introducción de la Ley JAWBONE (Justice Against Weaponized Bureaucratic Overreach to Networked Expression) por los senadores Cruz y Wyden. Esta legislación bipartidista busca establecer una acción legal federal contra funcionarios gubernamentales que coaccionan o intentan coaccionar a proveedores de servicios de radiodifusión, servicios informáticos interactivos o proveedores de IA para que tomen medidas contra la expresión legal protegida por la Primera Enmienda. Establece un sistema de transparencia para las comunicaciones gubernamentales con estos intermediarios sobre la expresión del usuario. Se proporciona un ejemplo de un caso en el que funcionarios federales amenazaron al creador de la aplicación ICEBlock y el Fiscal General exigió a Apple su eliminación, lo que resultó en su cumplimiento y una violación de los derechos de la Primera Enmienda. EFF está luchando activamente contra esta coerción y ha presentado una demanda de la Ley de Libertad de Información para obtener detalles de las comunicaciones gubernamentales que llevaron a la eliminación de contenido. El artículo distingue entre la coerción inconstitucional y la comunicación legítima entre el gobierno y actores privados, advirtiendo contra el enfriamiento de la interacción de buena fe. También enfatiza que las plataformas de redes sociales y otros intermediarios de Internet tienen sus propios derechos de la Primera Enmienda para moderar el contenido de los usuarios y no son 'actores estatales'. La ley JAWBONE tiene como objetivo proteger la libertad de expresión sin interferir con la moderación de contenido legítima de las plataformas y la comunicación gubernamental necesaria.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48583928,
+    "url": "https://orchidfiles.com/github-repositories-distributing-malware/",
+    "score": 953,
+    "time": 1781783143,
+    "titulo_es": "Descubrimiento de Malware Troyano Distribuido a Través de Repositorios de GitHub",
+    "resumen": "El artículo narra el descubrimiento de aproximadamente 10,000 repositorios en GitHub que distribuyen malware troyano. Estos repositorios, aunque únicos en nombre y contribuyentes, comparten un patrón común: copian repositorios legítimos, modifican el archivo README para incluir enlaces a archivos ZIP maliciosos y realizan commits frecuentes para actualizar estos enlaces. El autor detalla el proceso de identificación de este patrón, desde la observación inicial de copias exactas de sus propios proyectos hasta la implementación de un script para rastrear repositorios con patrones de actualización específicos utilizando datos de gharchive. Los archivos ZIP, indetectables por VirusTotal inicialmente, contienen un troyano. El proceso de notificación a GitHub fue lento, tardando meses en obtener respuesta y la eventual eliminación de los repositorios.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48553388,
+    "url": "https://www.greybeam.ai/blog/duckdb-internals-part-1",
+    "score": 452,
+    "time": 1781608028,
+    "titulo_es": "DuckDB: La Base de Datos Analítica en Proceso que Redefine la Eficiencia",
+    "resumen": "El artículo describe la rápida evolución de DuckDB, de un proyecto de investigación a una base de datos analítica en proceso (in-process) ampliamente adoptada. Se destaca su facilidad de uso, ya que se distribuye como un único binario de menos de 20 MB sin dependencias externas, permitiendo su integración directa como una librería dentro de aplicaciones. A diferencia de las bases de datos tradicionales basadas en servidores (como Snowflake, Postgres, BigQuery), DuckDB opera sin un demonio o puerto de red, eliminando la sobrecarga de serialización y deserialización de datos en la comunicación cliente-servidor. Su arquitectura en proceso minimiza la latencia y la transferencia de datos, lo que resulta en un rendimiento excepcional, superando a menudo a sistemas de clústeres costosos en cargas de trabajo analíticas. DuckDB está optimizado para consultas que escanean millones de filas para agregación y filtrado, y puede acceder directamente a archivos Parquet, CSV o JSON como si fueran una base de datos SQL. La adopción se ha visto impulsada por su velocidad, simplicidad y la capacidad de integrarse en diversos entornos, desde notebooks y pipelines ETL hasta análisis embebidos en productos SaaS e incluso en dispositivos móviles. Empresas como MotherDuck, Hex, Omni, Evidence, Fivetran y Rill están construyendo productos y servicios sobre DuckDB, demostrando su madurez y versatilidad como un motor de análisis de alto rendimiento.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48584497,
+    "url": "https://blog.elenarossini.com/w-social-public-institutions-and-the-theater-of-european-digital-sovereignty/",
+    "score": 262,
+    "time": 1781786764,
+    "titulo_es": "W Social: Discrepancias entre la imagen pública y la realidad de la plataforma europea de microblogging",
+    "resumen": "El artículo analiza la plataforma europea de microblogging W Social, que se presenta como una alternativa soberana a X (anteriormente Twitter) con verificación de identidad y datos alojados en Europa. Sin embargo, el autor expone discrepancias significativas entre su imagen pública y la realidad operativa. Se detalla la migración de cuentas institucionales europeas prominentes (Comisión Europea, Ursula von der Leyen, Banco Central Europeo, Christine Lagarde) de Bluesky a W Social, a pesar de que esta última tiene un lanzamiento irregular y poca transparencia sobre su pila tecnológica. Adicionalmente, se revela que W Social ha eliminado su código fuente de plataformas públicas como GitHub, contradiciendo las promesas de transparencia y soberanía tecnológica europea, especialmente en el contexto del reciente anuncio del paquete de soberanía tecnológica de la Comisión Europea. Se destaca la complejidad técnica de la autosuficiencia en redes sociales ATproto y la falta de información sobre la dependencia de W Social de la infraestructura de Bluesky PBC.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48585739,
+    "url": "https://gerrymandle.cc/",
+    "score": 213,
+    "time": 1781792185,
+    "titulo_es": "Gerrymandering: Manipulación de Distritos Electorales",
+    "resumen": "El artículo describe el proceso de gerrymandering, que consiste en dibujar las líneas de los distritos electorales para favorecer a un partido político sobre otro. Se explican dos técnicas principales: 'packing' (concentrar votantes oponentes en unos pocos distritos para ganar por márgenes amplios, desperdiciando sus votos excedentes) y 'cracking' (dividir a los votantes oponentes entre varios distritos para que no alcancen la mayoría en ninguno). Históricamente, la práctica se remonta a figuras como Patrick Henry y Elbridge Gerry. Hoy en día, se utilizan algoritmos para optimizar la creación de mapas electorales. El artículo señala que el gerrymandering puede llevar a que las elecciones generales pierdan relevancia, centrando la competencia en las primarias y descuidando el centro político. Se mencionan efectos medibles, como el aumento de escaños republicanos en Carolina del Norte tras un rediseño partidista, a pesar de una división de votos cercana. También se destaca que el gerrymandering impacta desproporcionadamente a las comunidades minoritarias. La jurisprudencia reciente ha dificultado la impugnación de mapas partidistas, requiriendo pruebas de intencionalidad discriminatoria en lugar de solo el efecto. Esto ha llevado a un ciclo acelerado de rediseño de distritos, incluso a mitad de década, con ejemplos en Texas, California, Virginia y Florida, convirtiendo la redistribución en un instrumento político continuo.",
+    "categoria": "Ciencia y Matematica"
   }
 ]
