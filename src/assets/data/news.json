@@ -1,281 +1,182 @@
 [
   {
-    "id": 48616713,
-    "url": "https://github.com/namgyaaal/avoxelgame",
-    "score": 58,
-    "time": 1782029094,
-    "titulo_es": "Juego de vóxeles escrito en Dyalog APL y SDL3",
-    "resumen": "Un proyecto experimental que explora el uso de la notación APL para facilitar el desarrollo de un juego de vóxeles utilizando SDL3. Describe el proceso de compilación y enlace de la biblioteca LSE en sistemas macOS, Linux y Windows, el manejo de dependencias dinámicas, y la compilación de shaders personalizados en formato GLSL empleando herramientas como DirectX Shader Compiler, glslc y spirv-cross.",
+    "id": 48630020,
+    "url": "https://mitchellh.com/writing/zig-donation-2026",
+    "score": 130,
+    "time": 1782135781,
+    "titulo_es": "Nueva donación a la Zig Software Foundation y el valor de su filosofía de desarrollo",
+    "resumen": "El autor anuncia un nuevo compromiso de donación de $400,000 dólares a la Zig Software Foundation (ZSF), elevando su apoyo total a $700,000. Desde la perspectiva de la ingeniería de software, se destaca el progreso técnico del lenguaje y su compilador, así como su rigurosa filosofía de mantenimiento, ejemplificada en la política de prohibición de contribuciones generadas por IA. Aunque el autor utiliza IA en sus propios flujos de trabajo, defiende la soberanía de los proyectos de código abierto para definir sus estándares de calidad y cultura, señalando que el diseño de Zig fue fundamental para la creación del emulador de terminal Ghostty.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48614844,
-    "url": "https://fosterelli.co/developers-dont-understand-cors",
-    "score": 226,
-    "time": 1782005740,
-    "titulo_es": "Demasiados desarrolladores web no entienden cómo funciona CORS",
-    "resumen": "El artículo analiza la falta de comprensión de CORS (Cross-Origin Resource Sharing) en el desarrollo web, utilizando como caso de estudio una vulnerabilidad de seguridad histórica en Zoom. Para eludir las restricciones de CORS en un servidor local (localhost), Zoom implementó un 'hack' que cargaba imágenes cuyas dimensiones codificaban estados del servidor, lo que expuso el cliente local a ejecuciones no autorizadas por parte de cualquier sitio web. El autor explica cómo diseñar una arquitectura segura utilizando una API REST con la cabecera 'Access-Control-Allow-Origin' restringida específicamente a 'https://zoom.us', combinada con políticas de Content Security Policy (CSP) para prevenir ataques por iframe, enfatizando que no se deben realizar bypasses inseguros sobre los mecanismos nativos del navegador.",
+    "id": 48626137,
+    "url": "https://docs.deno.com/runtime/desktop/",
+    "score": 699,
+    "time": 1782106720,
+    "titulo_es": "Deno Desktop: Convierte proyectos de Deno en aplicaciones de escritorio autónomas",
+    "resumen": "Deno Desktop, una función en desarrollo introducida en la versión canary de Deno v2.9.0, permite compilar proyectos de Deno en un único binario ejecutable y redistribuible para escritorio. Este binario empaqueta el código del usuario, el runtime de Deno y un motor de renderizado web. A diferencia de otras alternativas como Electron o Tauri, simplifica la arquitectura ejecutando un servidor web local mediante `Deno.serve()` que se enlaza automáticamente con la vista web (webview), permitiendo crear aplicaciones de escritorio con tecnologías web de forma más directa y eficiente.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48573902,
-    "url": "https://zeux.io/2026/06/17/zigzag-decoding-avx512/",
-    "score": 79,
-    "time": 1781718202,
-    "titulo_es": "Bits, píxeles, ciclos y más",
-    "resumen": "El artículo explora la optimización de bajo nivel para la decodificación de enteros con codificación zigzag (un método para transformar números con signo de modo que las magnitudes pequeñas requieran menos bits) utilizando extensiones vectoriales SIMD. El autor analiza cómo implementar un algoritmo de decodificación libre de bifurcaciones (branchless) y su traducción eficiente a instrucciones de ensamblador utilizando SSE2 y el conjunto de instrucciones AVX-512, evaluando además el rendimiento y la latencia de ciclo en procesadores con microarquitectura Zen 4.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48608645,
-    "url": "https://github.com/mysk-research/loupe",
-    "score": 327,
-    "time": 1781957303,
-    "titulo_es": "Loupe: Una aplicación para visualizar la huella digital de dispositivos iOS",
-    "resumen": "Loupe es una aplicación de código abierto para iOS y iPadOS, creada por Mysk, que expone los datos recopilados por las APIs públicas utilizados por terceros para realizar el rastreo de dispositivos (fingerprinting) sin necesidad de datos personales. La herramienta muestra cómo las lecturas de hardware y software se combinan para crear un identificador único, sirviendo como una utilidad educativa sobre ciberseguridad y privacidad móvil.",
+    "id": 48630066,
+    "url": "https://nevergivethemyourface.com/",
+    "score": 11,
+    "time": 1782135948,
+    "titulo_es": "Un aviso sobre la verificación de edad, la vigilancia y el derecho a rechazarla",
+    "resumen": "El artículo analiza críticamente las implicaciones de privacidad y ciberseguridad detrás de los sistemas obligatorios de verificación de edad en internet. Explica cómo la recolección de datos biométricos y documentos de identidad oficiales convierte a estos sistemas en mecanismos de rastreo de identidad forzado. Desde una perspectiva de seguridad, destaca el riesgo de almacenar plantillas biométricas tridimensionales irreversibles en servidores de terceros, lo que crea 'honeypots' altamente atractivos para los atacantes. Finalmente, señala la ineficacia técnica de estas medidas frente a métodos comunes de evasión como VPNs y el mercado negro de cuentas pre-verificadas.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48613872,
-    "url": "https://sibexi.co/posts/epoll-vs-io_uring/",
-    "score": 182,
-    "time": 1781996829,
-    "titulo_es": "Evolución de E/S asíncronas en Linux: De epoll a io_uring",
-    "resumen": "El autor describe la transición en el desarrollo de un proxy inverso llamado TinyGate, comparando el rendimiento y la arquitectura de dos mecanismos de E/S asíncronas en Linux: epoll e io_uring. Se detalla cómo epoll, basado en un modelo de notificación de disponibilidad, genera una gran sobrecarga debido a las múltiples llamadas al sistema (syscalls) requeridas por cada operación. Por otro lado, io_uring, introducido en 2019, utiliza un modelo de completitud mediante buffers circulares (ring buffers) compartidos entre el espacio de usuario y el kernel, permitiendo agrupar operaciones para reducir drásticamente las syscalls o incluso eliminarlas con SQPOLL, lo que representa una mejora arquitectónica y de rendimiento significativa.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48616173,
-    "url": "https://movq.de/blog/postings/2026-06-20/0/POSTING-en.html",
-    "score": 39,
-    "time": 1782023092,
-    "titulo_es": "La evolución de la interfaz de usuario de Windows para extensiones de archivo no reconocidas",
-    "resumen": "Un análisis histórico y técnico sobre cómo el sistema operativo Windows ha gestionado las extensiones de archivos desconocidas a nivel de interfaz de usuario y configuración del sistema, abarcando desde Windows 2.11 (1989) hasta Windows 10 (2015). Se examina la transición desde la edición manual del archivo WIN.INI, la introducción de diálogos interactivos de asociación en Windows 95, el uso de servicios de consulta basados en web en Windows XP, hasta llegar a la integración con la tienda de aplicaciones bajo la estética de diseño plano en Windows 10.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48568181,
-    "url": "https://alexwlchan.net/2021/slashes/",
-    "score": 14,
-    "time": 1781691293,
-    "titulo_es": "El misterio de las barras diagonales en los nombres de archivo de macOS y su compatibilidad histórica",
-    "resumen": "El artículo analiza el curioso comportamiento de macOS que permite crear archivos con barras diagonales (/) en la interfaz gráfica (Finder) pero los muestra con dos puntos (:) en la terminal (ls). Este fenómeno se debe a la herencia híbrida del sistema operativo, el cual fusionó classic Mac OS (que usaba el sistema de archivos HFS+ y el carácter ':' como separador de rutas) con NeXTSTEP (basado en Unix, que usaba '/' como separador). Para mantener la compatibilidad entre aplicaciones Carbon y Cocoa/BSD, Apple implementó una capa de traducción de rutas que persiste hoy en día incluso tras la adopción de APFS, afectando a entornos como AppleScript por razones de retrocompatibilidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48617323,
-    "url": "https://shiftmag.dev/ctos-agree-cognitive-debt-is-the-new-technical-debt-10229/",
-    "score": 24,
-    "time": 1782035637,
-    "titulo_es": "Nuestro cambio en la cena de CTO Craft: La adopción de la IA en la ingeniería",
-    "resumen": "Líderes de ingeniería debaten sobre los desafíos reales de la adopción de la IA en el desarrollo de software. El foco ha cambiado de la experimentación libre a la exigencia de un ROI en menos de 12 meses, enfrentando la dificultad de presupuestar costes variables basados en el consumo de tokens (un escenario análogo a los inicios de FinOps en la nube). Además, se analiza el impacto de la IA en la definición de roles de ingeniería, distinguiendo entre el desarrollador enfocado en producto y el arquitecto de software enfocado en diseño de sistemas. Esto también está transformando las entrevistas técnicas hacia la evaluación de capacidades de revisión de código en lugar de su escritura directa.",
+    "id": 48626866,
+    "url": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
+    "score": 281,
+    "time": 1782112923,
+    "titulo_es": "GLM-5.2 acaba de lanzarse: Comparativa técnica frente a Claude Opus 4.8 en el desarrollo de un juego 3D en WebGL",
+    "resumen": "El artículo analiza el rendimiento del nuevo modelo de IA de pesos abiertos GLM-5.2, desarrollado por Z.ai, frente a Claude Opus 4.8 de Anthropic. La prueba de rendimiento consistió en programar desde cero un videojuego de plataformas en 3D utilizando WebGL nativo (sin librerías como Three.js), lo que requirió la implementación de un parser GLB, matemáticas matriciales, sombreadores de skinning en GLSL y colisiones AABB. Aunque Claude Opus 4.8 completó la tarea en la mitad de tiempo y generó un código más limpio gracias a su capacidad multimodal para verificar su propia salida visual, GLM-5.2 demostró ser una alternativa sumamente competitiva, con un costo significativamente menor, una ventana de contexto de 1 millón de tokens y la ventaja de ser de código abierto bajo licencia MIT.",
     "categoria": "IA"
   },
   {
-    "id": 48610853,
-    "url": "https://www.lispm.net/apps/uhf-x11/",
-    "score": 208,
-    "time": 1781975064,
-    "titulo_es": "X11 desarrollado para visionOS y Apple Vision Pro",
-    "resumen": "UHF X11 es un servidor de pantalla X11 completo para visionOS que permite ejecutar aplicaciones clientes de Xlib y máquinas virtuales clásicas dentro del entorno espacial de Apple Vision Pro. Cada ventana de nivel superior de X11 se abre de forma independiente en el espacio tridimensional con resolución nativa. El sistema admite conexiones TCP seguras mediante cookies de autenticación X authority generadas localmente, renderizado OpenGL a través de GLX, emulación de pantallas CRT (fósforo, scanlines, brillo) e importación de fuentes tipográficas de mapa de bits de forma nativa.",
+    "id": 48626930,
+    "url": "https://github.com/openai/codex/issues/28224",
+    "score": 254,
+    "time": 1782113417,
+    "titulo_es": "Desgaste acelerado de SSD debido a la escritura excesiva de logs en la base de datos SQLite de Codex",
+    "resumen": "Análisis técnico de un problema de rendimiento donde Codex escribe continuamente un volumen masivo de datos (estimado en 640 TB/año) en una base de datos SQLite local, poniendo en riesgo la vida útil de los discos SSD de los usuarios. El origen del problema es una configuración por defecto en nivel TRACE que registra telemetría pesada y payloads de websockets/SSE, provocando un ciclo de inserción y depuración constante (amplificación de escritura). La solución propuesta por el arquitecto es implementar un filtrado de logs predeterminado mucho más restrictivo y ofrecer una opción de apagado para el registro de logs.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48609766,
-    "url": "https://neuviemeporte.github.io/f15-se2/2026/06/20/needyou.html",
+    "id": 48605561,
+    "url": "https://lmao.center/blog/wiggle-accidents/",
+    "score": 368,
+    "time": 1781920516,
+    "titulo_es": "Creación automática de wigglegrams usando hashing perceptivo",
+    "resumen": "El autor detalla cómo desarrolló un script para automatizar la creación de 'wigglegrams' (GIFs que simulan movimiento 3D a partir de fotos estáticas similares) recorriendo su biblioteca de iCloud. Para identificar imágenes similares tomadas desde ángulos ligeramente distintos, el software utiliza hashing perceptivo (un método similar al de búsqueda inversa de imágenes) y calcula la distancia de Hamming entre las imágenes para agruparlas de forma eficiente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48599998,
+    "url": "https://people.idsia.ch/~juergen/ai-boom-roots-munich-1991.html",
+    "score": 148,
+    "time": 1781884463,
+    "titulo_es": "Múnich 1991: Las raíces del auge actual de la IA",
+    "resumen": "El artículo expone cómo las bases tecnológicas del auge actual de la Inteligencia Artificial y los modelos de lenguaje grandes (LLMs) se establecieron en 1991 en la Universidad Técnica de Múnich bajo el liderazgo de Jürgen Schmidhuber. Se detallan cuatro hitos fundamentales publicados en un lapso de pocos meses: el primer diseño de Transformer (Transformer lineal no normalizado), el concepto de pre-entrenamiento no supervisado, la destilación de redes neuronales y el aprendizaje residual profundo (pilar de LSTMs y ResNets). También se menciona el trabajo pionero en redes generativas adversarias (GANs) para modelos de mundo, demostrando que los pilares del aprendizaje profundo actual se conceptualizaron hace más de tres décadas con recursos computacionales extremadamente limitados.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48622778,
+    "url": "https://apertvs.ai/",
+    "score": 469,
+    "time": 1782077383,
+    "titulo_es": "Apertus: La iniciativa de IA abierta y reproducible de la Swiss AI Initiative",
+    "resumen": "Apertus es un proyecto de inteligencia artificial de código abierto desarrollado por la Swiss AI Initiative (una colaboración entre EPFL, ETH Zurich y CSCS). Este ecosistema promueve la transparencia mediante la publicación de pesos, datos de entrenamiento y métodos de alineación de forma reproducible. Diseñado para cumplir con la Ley de IA de la UE, mitiga riesgos de privacidad mediante la eliminación de PII y la prevención de memorización. La iniciativa presenta modelos competitivos de 8B y 70B parámetros, soporte multilingüe en más de 1000 idiomas, y un conjunto de 16 modelos de lenguaje pequeños orientados a demostrar técnicas avanzadas de destilación y cuantización.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48629064,
+    "url": "https://www.davidrevoy.com/article1154/why-drawing-tablet-brands-wont-collaborate-on-linux-floss-drivers",
+    "score": 59,
+    "time": 1782130174,
+    "titulo_es": "El desafío de la colaboración de los fabricantes de tabletas digitalizadoras en GNU/Linux",
+    "resumen": "El autor detalla sus esfuerzos para que fabricantes de tabletas digitalizadoras (como Gaomon, Huion y XP-Pen) colaboren directamente con la comunidad de GNU/Linux compartiendo especificaciones de hardware con los equipos de hid/input. A pesar de lograr un contacto técnico clave, Gaomon rechazó la iniciativa debido a que la infraestructura de controladores de Linux (como los repositorios 'libwacom' y 'wacom-hid-descriptors') conserva por razones históricas el nombre de 'Wacom'. Esto provocó el recelo de la marca, que interpretó erróneamente que participar implicaba compartir especificaciones con su competidor comercial directo y mostrar su marca bajo el ecosistema de Wacom.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48622518,
+    "url": "https://www.marble.onl/posts/cancel_claude.html",
+    "score": 304,
+    "time": 1782075361,
+    "titulo_es": "La penalización de usar modelos de IA abiertos",
+    "resumen": "El artículo analiza la transición de depender de modelos de lenguaje propietarios (como Claude y GPT) hacia el uso de modelos de IA abiertos. Utilizando la analogía histórica de la transición de Windows a Linux, el autor expone que, aunque históricamente los modelos abiertos conllevaban una penalización de rendimiento, privacidad y complejidad técnica de despliegue, la brecha técnica se está cerrando rápidamente. Impulsado por las recientes políticas restrictivas de verificación de identidad de las grandes empresas de IA, el autor evalúa la viabilidad técnica y profesional de adoptar flujos de trabajo basados exclusivamente en modelos abiertos locales o en la nube.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48628328,
+    "url": "https://manticoresearch.com/blog/manticore-search-27-1-5/",
+    "score": 23,
+    "time": 1782124521,
+    "titulo_es": "Novedades de Manticore Search 27.1.5: Autenticación, Tablas Fragmentadas, Búsqueda Conversacional y Mejoras en KNN",
+    "resumen": "La versión 27.1.5 de Manticore Search introduce funcionalidades clave para el desarrollo de software y la inteligencia artificial. Se ha implementado autenticación y autorización integradas, permitiendo gestionar usuarios, contraseñas, tokens y permisos granulares a través de múltiples interfaces (MySQL, HTTP/HTTPS, agentes remotos y replicación). Esto centraliza el control de acceso dentro de la base de datos. Se soportan tablas fragmentadas (sharded tables), simplificando la gestión de grandes volúmenes de datos y cargas de escritura intensivas al distribuir las inserciones y el ciclo de vida de las tablas. La búsqueda conversacional es una novedad importante, integrada mediante `CREATE CHAT MODEL` y `CALL CHAT`, permitiendo realizar consultas sobre datos vectoriales existentes sin necesidad de capas de recuperación externas. Esta funcionalidad se apoya en la búsqueda KNN sobre campos `FLOAT_VECTOR`, la construcción de contexto para LLMs a partir de columnas `from='...'`, y el mantenimiento del historial de conversaciones por `conversation_uuid`. Las mejoras en la búsqueda vectorial incluyen mayor rendimiento KNN, soporte local para embeddings ONNX, inferencia ONNX más rápida y una construcción/reconstrucción de índices HNSW significativamente acelerada gracias a la multihilo. Además, se han mejorado las capacidades de faceting y agregaciones con `facet_filter_mode` para filtros tipo e-commerce. La versión también incluye numerosas correcciones de errores en áreas como KNN, replicación y compatibilidad de protocolos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48629356,
+    "url": "https://www.scientificamerican.com/article/how-becoming-a-dad-changes-mens-brains/",
+    "score": 43,
+    "time": 1782131983,
+    "titulo_es": "Cómo ser padre cambia el cerebro de los hombres",
+    "resumen": "El artículo explora las investigaciones científicas sobre cómo la paternidad altera el cerebro de los hombres. Se discuten estudios que comparan los cambios cerebrales en madres y padres (tanto heterosexuales como homosexuales), observando variaciones en redes neuronales relacionadas con el procesamiento emocional y la empatía. Se menciona que los hombres experimentan reducciones de materia gris, similar a las madres primerizas, lo que podría ser una 'poda' de conexiones neuronales para mejorar la eficiencia en el cuidado. Además, se aborda la salud mental de los padres, señalando que pueden experimentar depresión y ansiedad posparto con síntomas diferentes a los de las madres (como ira, irritabilidad y abuso de sustancias), y que estas condiciones pueden afectar al padre, la madre y el desarrollo del niño. Se destaca la falta de herramientas de detección validadas para padres y sus redes de apoyo social más limitadas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48624782,
+    "url": "https://sakana.ai/fugu/",
+    "score": 161,
+    "time": 1782094098,
+    "titulo_es": "Sakana Fugu: Orquestación Dinámica de Modelos para Tareas Complejas",
+    "resumen": "Sakana Fugu es un sistema de IA que orquesta dinámicamente un conjunto diverso de modelos de IA de primer nivel para abordar tareas complejas y de múltiples pasos. En lugar de depender de flujos de trabajo predefinidos, Fugu aprende a ensamblar y coordinar agentes especializados utilizando patrones de colaboración eficientes descubiertos a través de investigación académica (TRINITY y Conductor). Ofrece una única API compatible con OpenAI que simplifica la integración, mejora la relación costo-rendimiento y permite la selección y el cambio de modelos por tarea. Fugu está diseñado para flujos de trabajo críticos de calidad como codificación y razonamiento, proporcionando resultados más robustos y confiables. Permite a los usuarios controlar la participación de agentes específicos para cumplir con requisitos de datos, privacidad y cumplimiento. Se ofrecen dos modelos, Fugu (equilibrado para rendimiento y baja latencia) y Fugu Ultra (maximiza la calidad de respuesta para tareas críticas), ambos accesibles a través de la misma API.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48606096,
+    "url": "https://fil-c.org/inlineasm",
+    "score": 142,
+    "time": 1781926159,
+    "titulo_es": "Seguridad de Memoria y Ensamblador en Línea en Fil-C",
+    "resumen": "El artículo discute cómo Fil-C, un compilador moderno, implementa de forma segura la sintaxis de ensamblador en línea, similar a la de GCC y clang, pero garantizando la seguridad de memoria. Se abordan casos de uso comunes del ensamblador en línea en C/C++, como la prevención del análisis del compilador mediante \"asm volatile\" para forzar la serialización de accesos a memoria o la creación de barreras de flujo de datos ('data flow fence') para código de tiempo constante, la invocación de instrucciones específicas como `cpuid` y `xgetbv` para optimizaciones de SIMD (evitando problemas con las APIs nativas) y la ejecución de aritmética sensible en código criptográfico para garantizar tiempos de ejecución constantes y evitar ataques de canal lateral. Fil-C logra esta seguridad a nivel del compilador, asegurando que los errores del programador en las restricciones o clobbers resulten en un pánico o una interrupción de instrucción ilegal, en lugar de una compilación errónea.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48623434,
+    "url": "https://www.teachmecoolstuff.com/viewarticle/fine-tuning-a-local-llm-to-categorize-questions",
+    "score": 176,
+    "time": 1782082523,
+    "titulo_es": "Ajuste fino de un LLM pequeño para la categorización de preguntas del hogar con RAG y búsqueda con metadatos",
+    "resumen": "El artículo detalla un proyecto personal para mejorar un chatbot de asistencia doméstica utilizando un modelo de lenguaje grande (LLM) local y liviano (Qwen 3 0.6B). El objetivo principal es ajustar este LLM para categorizar preguntas de mantenimiento del hogar (ej. \"piscina\", \"coche\", \"HVAC\"). Esta categorización, realizada a través de un paso de preprocesamiento, tiene como fin acotar la búsqueda en una base de datos vectorial utilizada para RAG (Retrieval Augmented Generation), mejorando así la relevancia de las respuestas. Se compara el rendimiento del modelo original \"tal cual\" (mediante prompting) con el modelo ajustado finamente. El modelo base, sin ajuste, mostró una precisión del ~10% en la categorización. Tras el ajuste fino utilizando el framework Unsloth con QLoRA y un dataset de ~850 ejemplos (con split 70/15/15 para entrenamiento/evaluación/test), la precisión aumentó significativamente al 79%. El autor también menciona la incorporación de feedback del usuario para futuras re-entrenamientos y la importancia de un buen dataset frente a la excesiva configuración de parámetros de entrenamiento, advirtiendo sobre el sobreajuste.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48622626,
+    "url": "https://alexkritchevsky.com/2026/05/25/everything-is-logarithms.html",
     "score": 259,
-    "time": 1781968203,
-    "titulo_es": "Reconstrucción del código fuente de F-15 Strike Eagle II mediante ingeniería inversa",
-    "resumen": "El proyecto de ingeniería inversa enfocado en recrear el código fuente en C del videojuego de 1989 'F-15 Strike Eagle II' ha alcanzado un hito crítico, completando la traducción de ensamblador a C de todos los ejecutables y estructuras de datos. Con el lanzamiento de la versión v0.9.1, los desarrolladores buscan el apoyo de la comunidad para identificar fallos de regresión, particularmente relacionados con la disposición de memoria y datos, manteniendo la premisa de conservar el comportamiento original del juego (reconstrucción 'bug-for-bug') antes de iniciar un fork para su portabilidad a plataformas modernas.",
-    "categoria": "Desarrollo de Software"
+    "time": 1782076232,
+    "titulo_es": "Logaritmos sin base: una nueva perspectiva multiplicativa",
+    "resumen": "El artículo propone una re-interpretación de los logaritmos utilizando el concepto de 'logaritmo sin base' como un objeto abstracto, análogo a los vectores de desplazamiento en matemáticas. Esta perspectiva permite ver el cambio de base de logaritmos como una simple conversión de unidades multiplicativas, donde log(N) representa la 'distancia' multiplicativa desde un 'origen' implícito (similar a log(1) o log(e)). La notación estándar log_b(x) se descompone en el cociente de dos logaritmos sin base: log(x) / log(b). Se establece una analogía con los vectores, donde log(N) es como un punto y log(N) / log(O) es un vector de desplazamiento una vez elegido un sistema de coordenadas (un 'origen'). A diferencia de los vectores, no se identifica una 'exponencial sin base' análoga. Se concluye que los logaritmos funcionan como vectores multiplicativos que requieren una definición relativa a un 'origen' o base.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48615680,
-    "url": "https://martinfowler.com/articles/reliable-llm-bayer.html",
-    "score": 111,
-    "time": 1782016119,
-    "titulo_es": "Un caso de estudio sobre la construcción de sistemas de IA basados en agentes listos para producción",
-    "resumen": "El artículo describe el desarrollo de PRINCE (Preclinical Information Center), una plataforma en la nube creada por Bayer AG en colaboración con Thoughtworks. Este sistema de IA basado en agentes utiliza Generación Aumentada por Recuperación (RAG) Agente y Text-to-SQL para consolidar e interactuar con décadas de informes de seguridad preclínica farmacéutica. El diseño arquitectónico se analiza a través de dos conceptos clave: 'context engineering' (cómo se estructura y enruta la información entre agentes especializados de investigación, reflexión y redacción) y 'harness engineering' (la infraestructura de soporte que abarca la orquestación, persistencia de estado, reintentos, validación, observabilidad e integración de humanos en el ciclo). PRINCE transforma la búsqueda tradicional con lógica booleana en un asistente de investigación inteligente que garantiza transparencia, explicabilidad y cumplimiento normativo.",
+    "id": 48630220,
+    "url": "https://www.nvidia.com/en-us/ai-trust-center/halos/autonomous-vehicles/",
+    "score": 11,
+    "time": 1782136669,
+    "titulo_es": "NVIDIA Halos OS: Cimentando la Seguridad del Ecosistema de IA Física para Vehículos Autónomos",
+    "resumen": "NVIDIA Halos es una plataforma de seguridad integral de pila completa diseñada para el desarrollo y despliegue seguro de vehículos autónomos (AVs). Unifica elementos de seguridad en la arquitectura del vehículo, modelos de IA, chips, software, herramientas y servicios, abarcando todo el ciclo de vida del desarrollo. Implementa salvaguardas en tiempo de diseño, despliegue y validación para integrar seguridad y explicabilidad en los stacks de IA para AVs. Se apoya en hardware como NVIDIA DGX para entrenamiento, NVIDIA Omniverse y Cosmos para simulación, y NVIDIA DRIVE AGX para despliegue. NVIDIA Halos OS es la base de software unificada que une estas capacidades de IA con la seguridad lista para producción. La plataforma complementa las prácticas de seguridad existentes, introduce elementos únicos para AVs y se extiende a la robótica. Ofrece un sistema operativo certificado, interfaces estandarizadas, salvaguardas de IA y validación previa al despliegue para despliegues L4 de robotaxi a gran escala. El sistema de inspección de sistemas de IA de NVIDIA Halos, acreditado por ANAB para seguridad funcional de IA, permite a los socios verificar la integración segura de sus productos.",
     "categoria": "IA"
   },
   {
-    "id": 48608570,
-    "url": "https://townsquare.cauenapier.com/",
-    "score": 187,
-    "time": 1781956503,
-    "titulo_es": "TownSquare: Presencia y cohabitación en tiempo real para la web con una sola etiqueta script",
-    "resumen": "TownSquare es un componente web ligero diseñado para integrarse de manera directa en el frontend de cualquier sitio web mediante la inserción de una etiqueta `<script>` antes del cierre del `</body>`. Permite a los visitantes interactuar visualmente entre sí en tiempo real en un espacio compartido (moverse, chatear y realizar gestos básicos) de forma inmediata. No requiere de procesos de compilación, dependencias de frameworks externos, ni creación de cuentas por parte de los usuarios, facilitando una experiencia de usuario interactiva y sin fricciones.",
+    "id": 48606654,
+    "url": "https://github.com/playX18/lisp-in-types/",
+    "score": 89,
+    "time": 1781934234,
+    "titulo_es": "Lisp implementado en el sistema de traits de Rust",
+    "resumen": "El artículo describe la implementación del lenguaje Lisp utilizando el sistema de traits de Rust. Este enfoque aprovecha las características del sistema de tipos de Rust para crear una representación y ejecución de Lisp dentro de su propio ecosistema. Se mencionan errores de carga en la página, lo que sugiere un problema técnico con la presentación del contenido en lugar de con el tema central.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48621517,
+    "url": "https://hawksley.dev/blog/json-ld-explained-for-personal-websites/",
+    "score": 247,
+    "time": 1782067907,
+    "titulo_es": "Implementación de JSON-LD para optimizar la visibilidad y el SEO en sitios web",
+    "resumen": "El artículo detalla la implementación de JSON-LD (JSON Linked Data) en sitios web para mejorar la comprensión semántica por parte de los rastreadores web, enriquecer las previsualizaciones de enlaces y potencialmente mejorar el ranking en motores de búsqueda. Se explica cómo añadir un script `<script type=\"application/ld+json\">` en la sección `<head>` de una página. Se desglosa la estructura del JSON-LD, destacando el uso de `@context` con `https://schema.org` para definir la semántica de los datos y `@graph` para estructurar los nodos del grafo dirigido. Se presenta el nodo `WebSite` para metadatos generales del sitio, sugiriendo una versión completa en la página raíz y versiones simplificadas en otras páginas. Se introduce el nodo `WebPage` para describir el contenido de la página HTML actual y sus subtipos como `ProfilePage` y `CollectionPage`. Finalmente, se enfatiza la importancia del nodo `Person` en todas las páginas para la métrica de calidad del contenido y la citación por LLMs, recomendando un llenado descriptivo de sus propiedades clave.",
     "categoria": "Frontend"
   },
   {
-    "id": 48591276,
-    "url": "https://www.philipzucker.com/td4-4bit-cpu/",
-    "score": 40,
-    "time": 1781815440,
-    "titulo_es": "Notas sobre el ensamblaje y la arquitectura del kit de CPU de 4 bits TD4",
-    "resumen": "El artículo detalla la experiencia práctica de soldar y analizar el kit de CPU de 4 bits TD4. Explica los desafíos de hardware como la orientación de los diodos SMD y la soldadura del puerto USB de alimentación. A nivel de arquitectura, describe el funcionamiento de su memoria ROM de 16 bytes (configurada mediante interruptores DIP), la decodificación de instrucciones (ADD, MOV, IN, OUT, JNC, JMP), el flujo de datos a través de lógica combinacional, el multiplexado, los registros (A, B, Out, PC) implementados con chips contadores y el circuito de acarreo controlado por un flip-flop D.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48582894,
-    "url": "https://www.nature.com/articles/s41551-026-01660-4",
-    "score": 77,
-    "time": 1781774596,
-    "titulo_es": "Tomografía por ultrasonido de sección transversal completa de humanos en modos de reflexión y transmisión",
-    "resumen": "El artículo presenta un nuevo sistema de tomografía por ultrasonido que genera imágenes bidimensionales de sección transversal completa in vivo del abdomen y los muslos humanos con resolución uniforme. El sistema consta de un arreglo receptor circular personalizado de 512 elementos y un transmisor rotatorio, operando en modos de reflexión y transmisión. Se validó mediante comparación con resonancia magnética clínica y demostró viabilidad en dos aplicaciones críticas: la evaluación del espesor del tejido adiposo abdominal sin radiación ionizante y la localización a tasa de video de agujas de biopsia. Los conjuntos de datos sin procesar superan los 100 GB y el procesamiento se realiza mediante algoritmos de reconstrucción propietarios.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48612740,
-    "url": "https://brooker.co.za/blog/2026/06/19/waiting.html",
-    "score": 105,
-    "time": 1781987574,
-    "titulo_es": "¿A qué te refieres?",
-    "resumen": "El artículo aborda la discrepancia entre las métricas de rendimiento internas de un servicio web (como la latencia media y el MTTR) y la percepción real de los usuarios, explicando este fenómeno a través de la paradoja de la inspección. Mientras que los sistemas cuentan cada evento por igual, los usuarios experimentan un promedio ponderado por el tiempo, donde los eventos más largos (caídas prolongadas o peticiones lentas) tienen un peso mucho mayor en su experiencia. El autor matemático demuestra cómo la varianza amplifica esta percepción y argumenta en contra del uso de métricas recortadas (como las medias recortadas), enfatizando la importancia crucial de analizar la latencia de cola (tail latency) y los tiempos de recuperación largos en el desarrollo y operación de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48608394,
-    "url": "https://blog.cloudflare.com/temporary-accounts/",
-    "score": 218,
-    "time": 1781954345,
-    "titulo_es": "Cuentas temporales de Cloudflare para agentes de IA: Simplificando el despliegue de código",
-    "resumen": "El artículo introduce las Cuentas Temporales de Cloudflare para Agentes, una nueva funcionalidad diseñada para eliminar las barreras de autenticación y registro a las que se enfrentan los agentes de IA al desplegar código. Tradicionalmente, los agentes de IA se topaban con flujos de OAuth, paneles de control y autenticación multifactor que requieren intervención humana. Esta nueva característica permite a los agentes ejecutar `wrangler deploy --temporary` para desplegar sitios web, APIs y otros agentes en Cloudflare de forma inmediata. Estos despliegues temporales duran 60 minutos, durante los cuales el agente o un humano puede reclamar la cuenta para hacerla permanente. Si no se reclama, la cuenta expira automáticamente. El objetivo es facilitar un ciclo rápido de escritura, despliegue y verificación para los agentes, que son cruciales para la programación iterativa y la depuración automática. La funcionalidad se integra con Wrangler, la CLI de Cloudflare, y está diseñada para que los agentes la descubran y utilicen de forma autónoma mediante mensajes de aviso y el uso de la bandera `--temporary`. Esto permite a los agentes de IA, como copilotos o procesos en segundo plano, desplegar y probar código sin necesidad de intervención humana para la configuración inicial de cuentas, mejorando significativamente la eficiencia en el desarrollo asistido por IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48612943,
-    "url": "https://www.phoronix.com/news/Linux-7.2-Drops-strncpy",
-    "score": 222,
-    "time": 1781989180,
-    "titulo_es": "Phoronix: Mejorando la Experiencia de Hardware en Linux",
-    "resumen": "El artículo describe a Michael Larabel, fundador y principal autor de Phoronix.com, un sitio enfocado desde 2004 en mejorar la experiencia de hardware en Linux. Larabel es un prolífico escritor con más de 20,000 artículos sobre soporte de hardware, rendimiento, drivers gráficos y temas relacionados con Linux. También es el desarrollador principal de la Phoronix Test Suite, Phoromatic y OpenBenchmarking.org, herramientas de benchmarking automatizado. Se mencionan formas de apoyar el sitio, como Phoronix Premium, donaciones y publicidad. La misión central de Phoronix es enriquecer la experiencia de hardware en Linux.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48614311,
-    "url": "https://www.anthropic.com/research/project-fetch-phase-two",
-    "score": 62,
-    "time": 1782000025,
-    "titulo_es": "Project Fetch: Claude Opus 4.7 revoluciona el control de robots autónomos, superando a equipos humanos en velocidad y eficiencia",
-    "resumen": "El artículo describe el experimento 'Project Fetch' de Anthropic, que evaluó la capacidad de sus modelos de IA, específicamente Claude Opus 4.7, para controlar un robot cuadrúpedo. Inicialmente, en agosto de 2025, Claude Opus 4.1 asistió a empleados de Anthropic (no expertos en robótica) a realizar tareas con el robot, superando a un equipo que solo usaba recursos de internet. Sin embargo, el modelo por sí solo no podía completar las tareas preliminares como la conexión al robot. Una nueva iteración del experimento, realizada con el modelo más avanzado Claude Opus 4.7, demostró un avance significativo. Operando sin asistencia humana, Opus 4.7 completó tareas que antes requerían intervención humana hasta 20 veces más rápido. En comparación con los equipos humanos del experimento original, Opus 4.7 fue, en promedio, más de 37 veces más rápido que el equipo sin Claude y más de 18 veces más rápido que el equipo con Claude. El modelo demostró una notable eficiencia al identificar rápidamente la mejor manera de interactuar con los sensores del robot y generar código efectivo en el primer intento. Aunque los modelos de lenguaje grandes (LLMs) aún no han resuelto la robótica por completo (por ejemplo, con la manipulación precisa de objetos como una pelota de playa), este experimento muestra una progresión en la que los modelos de IA pasan de ser herramientas de ayuda para humanos a ser capaces de realizar tareas complejas de forma autónoma, un patrón observado previamente en ciberseguridad y ahora emergente en la intersección de la IA y el mundo físico. Las tareas evaluadas incluyeron la operación del robot, la conexión a sensores, la programación para control manual, el monitoreo de la trayectoria y la detección de objetos para la recuperación autónoma.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48615569,
-    "url": "https://www.sciencedaily.com/releases/2026/06/260614012006.htm",
-    "score": 228,
-    "time": 1782014528,
-    "titulo_es": "La Fatiga de las Noticias: Una Respuesta Predecible a un Entorno Imposible de Navegar",
-    "resumen": "El artículo aborda el fenómeno creciente de la 'fatiga de noticias', donde las personas evitan consumir noticias debido a la sobrecarga de información negativa. Se explica que esta respuesta no es pereza o falta de interés cívico, sino una consecuencia predecible de la arquitectura cognitiva humana, diseñada evolutivamente para priorizar amenazas locales. El cerebro moderno, sin embargo, se enfrenta a un flujo constante de amenazas globales y negativas que superan su capacidad de procesamiento, resultando en respuestas fisiológicas y psicológicas adversas, incluyendo el 'Consumo Problemático de Noticias' (PNC). El artículo destaca que esta fatiga puede ser especialmente perjudicial para poblaciones minoritarias y concluye que, si bien la evitación no es la solución a largo plazo para mantener una ciudadanía informada, es crucial comprender las bases neurológicas de esta respuesta.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48610841,
-    "url": "https://github.com/oven-sh/WebKit/pull/249",
-    "score": 135,
-    "time": 1781974969,
-    "titulo_es": "Hilos de Memoria Compartida para JavaScriptCore",
-    "resumen": "El artículo describe una nueva característica para JavaScriptCore que permite la creación de hilos de memoria compartida. A diferencia de los Web Workers tradicionales que utilizan paso de mensajes y clonación estructurada, estos nuevos hilos comparten el mismo heap de memoria, permitiendo la modificación directa de objetos. Esto simplifica enormemente la concurrencia en JavaScript, eliminando la necesidad de protocolos de comunicación complejos, serialización/deserialización de datos y la gestión de cachés duplicadas. La implementación promete un modelo de concurrencia más cercano al de los hilos tradicionales, con la capacidad de compartir variables, closures y el grafo de módulos de forma nativa. Si bien la funcionalidad es prometedora para patrones de concurrencia complejos como pools de hilos y primitivas de sincronización, aún se encuentra en desarrollo y presenta desafíos en cuanto a limpieza, fuzzing y optimización de rendimiento.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48611942,
-    "url": "https://clickhouse.com/blog/postgresbench",
-    "score": 101,
-    "time": 1781982070,
-    "titulo_es": "PostgresBench: Un Benchmark para Comparar Servicios Gestionados de Postgres",
-    "resumen": "El artículo describe la creación y metodología de PostgresBench, un benchmark diseñado para evaluar el rendimiento de servicios gestionados de PostgreSQL en cargas de trabajo transaccionales. Inspirado en el enfoque de ClickBench para OLAP, PostgresBench utiliza `pgbench` con una carga de trabajo similar a TPC-B, simulando transacciones concurrentes con escrituras y actualizaciones frecuentes. La metodología busca transparencia y reproducibilidad, publicando todos los detalles de las consultas, conjuntos de datos y configuraciones. Se detallan los parámetros del benchmark, incluyendo el número de clientes (256), hilos (16), duración (10 minutos), y factores de escala (aproximadamente 100 GB y 500 GB) para reflejar escenarios de producción realistas, desde aplicaciones en crecimiento hasta despliegues a gran escala donde el conjunto de trabajo puede exceder la caché. Se reportan métricas clave como TPS promedio, latencia promedio, P95 y P99. El artículo también discute las decisiones de configuración de instancias (CPU/RAM, regiones) y las consideraciones para asegurar la justicia entre los diferentes servicios probados, con el objetivo de proporcionar una base sólida para aplicaciones SaaS y de IA.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48614631,
-    "url": "https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/",
-    "score": 193,
-    "time": 1782003493,
-    "titulo_es": "El Cuello de Botella de la Revisión de Código Generado por IA",
-    "resumen": "El artículo discute cómo, a pesar de la rápida generación de código por parte de agentes de IA, el cuello de botella principal se ha trasladado a la revisión de grandes volúmenes de código. El autor, un Arquitecto de Software Senior, experimenta sobrecarga cognitiva al revisar código que no ha pensado él mismo, incluso siguiendo buenas prácticas como la planificación y la división de tareas. A diferencia de los flujos de trabajo previos a la IA, donde la exploración y la consolidación del contexto daban alta confianza y facilitaban la explicación, la IA a menudo requiere rechazar y reiniciar el trabajo. La clave reside en la habilidad del ingeniero para guiar al agente hacia soluciones adecuadas, escalables y extensibles, y no simplemente aceptar código que pasa las verificaciones de CI. Se aboga por la revisión humana obligatoria en conjunto con las revisiones de IA, ya que los agentes de codificación, aunque impresionantes, aún requieren la dirección de un ingeniero experimentado para lograr soluciones sostenibles y de alta calidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48600167,
-    "url": "https://arrowtsx.dev/bigger-models/",
-    "score": 527,
-    "time": 1781885485,
-    "titulo_es": "El Estancamiento de la Inteligencia Artificial: Más Allá del Escalado de Parámetros y Datos",
-    "resumen": "El artículo discute un cambio de paradigma en los laboratorios de IA, pasando de enfocarse en el aumento ilimitado de parámetros y datos de entrenamiento hacia una mayor escepticidad. Se destaca la restricción del modelo Claude Fable 5 por parte del gobierno de EE. UU. debido a riesgos de seguridad nacional, a pesar de ser uno de los modelos más grandes. Se introduce GLM-5.2 de Z.ai (753B parámetros, 40B activos), un modelo de código abierto que se acerca significativamente al rendimiento de modelos propietarios mucho más grandes como GPT-5.5 y Opus 4.8, sugiriendo un estancamiento en la inteligencia real. El texto también aborda la tasa de alucinación de varios modelos, señalando que modelos gigantes como GPT-5.5 y DeepSeek V4 Pro (1.6T parámetros) presentan altas tasas de alucinación (86% y 94% respectivamente en el benchmark AA-Omniscience), fallando en reconocer la imposibilidad de ciertas tareas complejas (ej. E/S multiplexada en una sola hebra) o en admitir que no saben la respuesta. Se compara la eficiencia de GLM-5.2, que resolvió un problema complejo de Python en 12 segundos y 800 tokens de razonamiento, frente a DeepSeek V4 Pro, que usó 10 veces más tokens y produjo una respuesta incorrecta. Se concluye que el modelo a escala no garantiza un mejor rendimiento real y que la industria debe considerar el trilema moderno de LLMs: capacidad bruta, calibración de incertidumbre (tasa de alucinación) y eficiencia computacional, en lugar de seguir aumentando el tamaño y los parámetros sin crítica.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48615890,
-    "url": "https://spectrum.ieee.org/alan-turings-delilah",
-    "score": 23,
-    "time": 1782018933,
-    "titulo_es": "Un vistazo exclusivo a los cuadernos de Turing muestra su enfoque DIY",
-    "resumen": "El artículo detalla el proyecto secreto de cifrado de voz 'Delilah' liderado por Alan Turing durante la Segunda Guerra Mundial, utilizando documentos recientemente subastados. Explora el paso de Turing de la lógica matemática a la ingeniería eléctrica y electrónica, centrándose en su enfoque práctico para desarrollar una máquina portátil de cifrado de voz. Se destaca la importancia del proyecto Delilah como un precursor del cifrado de voz seguro en un momento en que los sistemas de cifrado existentes solo manejaban texto escrito, y se menciona el trabajo posterior de su asistente, Donald Bayley, en sistemas de comunicación secretos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48611513,
-    "url": "https://github.com/overflowy/make-look-scanned",
-    "score": 123,
-    "time": 1781979478,
-    "titulo_es": "Herramienta para simular escaneo de documentos físicos en PDFs",
-    "resumen": "El artículo describe una herramienta CLI y basada en navegador (WASM) que simula el aspecto de un documento físico escaneado aplicado a archivos PDF. La herramienta introduce efectos como inclinación, escala de grises, tono de papel cálido, grano de escáner, desenfoque, sombra de borde y artefactos de compresión JPEG. Las páginas se rasterizan a imágenes, se procesan y se vuelven a ensamblar en un nuevo PDF solo de imagen, perdiendo el texto seleccionable original. Requiere Go y una cadena de herramientas C para la versión CLI, que enlaza estáticamente con MuPDF (AGPL-3.0). La versión del navegador utiliza PDF.js para la rasterización y aplica los mismos efectos Go compilados a WASM. La salida es determinista por defecto pero reproducible con una semilla específica. Los efectos pueden ser configurados mediante flags o bundles definidos en archivos TOML. La licencia AGPL-3.0 aplica a la versión CLI debido a la vinculación con MuPDF.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48611411,
-    "url": "https://waxy.org/2026/06/the-wholesale-plagiarism-of-obscure-sorrows/",
-    "score": 373,
-    "time": 1781978731,
-    "titulo_es": "El Diccionario de las Penas Oscuras: ¿Un Proyecto Humano o una Creación de IA?",
-    "resumen": "El artículo analiza el lanzamiento de un nuevo sitio web para 'The Dictionary of Obscure Sorrows', un proyecto que acuña palabras para emociones no expresadas. El nuevo sitio presenta todo el contenido del libro, pero con ilustraciones generadas por IA (DALL-E 2) en lugar de las originales, y una función para generar nuevas palabras y definiciones usando GPT-4. Esto generó sospechas entre los seguidores del proyecto original, que se lanzó en Tumblr y se expandió a un libro bestseller. La discrepancia radica en la aparente contradicción entre la misión del proyecto, centrada en la experiencia humana, y la adopción de IA generativa. El autor del artículo investiga la autoría y el propósito detrás del nuevo sitio, contrastándolo con el dominio original y el espíritu del proyecto de John Koenig.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48554206,
-    "url": "https://spectrum.ieee.org/phoenix-semiconductors-legacychips-oems",
-    "score": 68,
-    "time": 1781613062,
-    "titulo_es": "Phoenix diseña chips que reemplazan componentes obsoletos en sistemas críticos",
-    "resumen": "El artículo describe cómo Phoenix Semiconductor se especializa en el diseño y fabricación de chips que actúan como reemplazos directos para componentes de hardware obsoletos en sistemas críticos, como aviones de combate F/A-18F Super Hornet. La empresa aborda la demanda de alto volumen y baja mezcla de chips que los grandes fabricantes de semiconductores evitan. Phoenix utiliza interpositores y diseña paquetes con pin-outs idénticos a los originales, permitiendo la sustitución sin necesidad de actualizaciones de placa, software o firmware. Su modelo de negocio se centra en el mercado de \"cola larga\" de componentes legados, particularmente en los sectores aeroespacial, de salud e industrial, donde la obsolescencia de chips puede detener operaciones millonarias. La compañía, fundada en 2023 y con certificación ISO 9001, ensambla prototipos en su laboratorio y externaliza la producción comercial, aprovechando chips de bajo consumo del mercado IoT como base para sus módulos multi-chip (MCM).",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48560227,
-    "url": "https://injuly.in/blog/napkin-inference-cost/index.html",
-    "score": 75,
-    "time": 1781636249,
-    "titulo_es": "Estimando el costo de servir modelos de IA a escala",
-    "resumen": "El artículo profundiza en la ingeniería necesaria para servir modelos de Inteligencia Artificial, particularmente Modelos de Lenguaje Grandes (LLMs), a escala. Se centra en desglosar el costo computacional y de memoria asociado con las operaciones clave, como las multiplicaciones de matrices, que son fundamentales para el funcionamiento de los LLMs. Se discuten métricas de hardware de GPU y se aplican al cálculo de operaciones de punto flotante (FLOPs) y accesos a memoria necesarios para generar un solo token. Se aborda la optimización mediante \"tiling\" y el impacto del tamaño del lote (batch size) en la eficiencia. El análisis concluye que, para LLMs a gran escala, la cantidad de operaciones de cómputo requeridas supera significativamente los accesos a memoria, lo que puede convertirse en un cuello de botella en el rendimiento de las GPUs.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48570364,
-    "url": "https://github.com/oraziorillo/microcrad",
-    "score": 70,
-    "time": 1781703282,
-    "titulo_es": "microcrad: Un Motor de Diferenciación Automática para C con Implementación de Red Neuronal",
-    "resumen": "microcrad es una implementación en C del motor de diferenciación automática escalar de Andrej Karpathy, micrograd. Diseñado para fines educativos, se centra en la comprensión del backpropagation a través de la regla de la cadena aplicada a escalares. Cada valor en un cálculo es un nodo en un grafo, registrando sus operandos. Una pasada hacia atrás (backward pass) recorre el grafo para calcular gradientes. No utiliza vectorización ni GPU. Sobre este motor se construye una red neuronal perceptrón multicapa, permitiendo construir, entrenar y realizar descenso de gradiente completamente en C. La unidad fundamental es `Value`, que envuelve un `double` y recuerda sus operandos para la construcción del grafo. Las operaciones (suma, multiplicación, potencia, exp, log, ReLU) crean nuevos nodos `Value`, incrementando la cuenta de referencias de sus operandos. El manejo de memoria es manual, requiriendo la liberación de referencias. El proyecto prioriza la claridad educativa sobre la robustez o el rendimiento en producción.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48609231,
-    "url": "https://www.argusred.com/cli",
-    "score": 83,
-    "time": 1781963343,
-    "titulo_es": "Argusred: Herramienta CLI para Escaneo de Seguridad y Pruebas de Penetración con IA",
-    "resumen": "El artículo describe Argusred, una herramienta CLI de dos modos diseñada para ciberseguridad. En el modo 'Security Scan', analiza el código fuente localmente para identificar vulnerabilidades, generando informes en formato markdown con detalles sobre ubicación, severidad, causa y dirección de la solución. En el modo 'Pen Test', opera de forma ofensiva contra sistemas autorizados, intentando explotar las vulnerabilidades detectadas. Ambas funcionalidades se basan en un modelo de IA (Argusred) pre-entrenado específicamente para seguridad ofensiva, con un 'harness' de seguridad en Go que intercepta y restringe las llamadas a herramientas para prevenir acciones mutantes en el modo de escaneo y limitar la salida de red en el modo de prueba de penetración. La herramienta se instala localmente, requiere una cuenta de Cosine (con tokens gratuitos iniciales) y enfatiza la verificación de exploits para confirmar hallazgos de forma segura. Se destaca que el modelo no es un API genérico, sino uno especializado que maneja tareas de análisis de seguridad que los modelos generales rechazarían.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48608255,
-    "url": "https://bootimus.com",
-    "score": 118,
-    "time": 1781952918,
-    "titulo_es": "Servidor de arranque PXE y HTTP autocontenido",
-    "resumen": "El artículo describe Bootimus, un servidor de arranque PXE y HTTP autocontenido y sin configuración, escrito en Go. No requiere la modificación de DHCP existente gracias a su proxyDHCP incorporado. Soporta la detección automática de más de 50 distribuciones Linux y otros sistemas operativos como FreeBSD y Windows. Incluye soporte para extracción automática de kernels e initrds, asignación de imágenes por MAC, descubrimiento automático de clientes y promoción de leases a estáticos. Permite la integración de herramientas como GParted, Clonezilla y SystemRescue. Ofrece autenticación de tokens con bcrypt y un backend opcional de LDAP/AD. La interfaz de usuario expone todas sus funcionalidades a través de una API, permitiendo la automatización de tareas y la transmisión de logs en vivo. Bootimus está disponible como binario Go estático, imagen Docker multi-arquitectura o imagen de appliance para USB. Soporta la automatización de instalaciones mediante archivos como autounattend.xml, kickstart, preseed y cloud-init. Maneja la entrega de bootloaders (incluyendo iPXE embebido para diversas arquitecturas y soporte para Secure Boot con GRUB/shim) y la transmisión de kernels e initrds vía HTTP. El proyecto es de código abierto bajo licencia Apache 2.0.",
+    "id": 48618488,
+    "url": "https://github.com/paytonjjones/bsharp",
+    "score": 174,
+    "time": 1782046188,
+    "titulo_es": "BSharp: Entrenador de identificación de acordes para niños",
+    "resumen": "BSharp es una aplicación móvil para el desarrollo de la audición absoluta (oído perfecto) en niños, basada en el método de identificación de acordes de Eguchi y el proyecto de código abierto CIM Trainer de Paul Ganssle. Utiliza una interfaz visual donde los niños asocian acordes de piano con colores. El entrenamiento se realiza en sesiones cortas y frecuentes, introduciendo nuevos acordes gradualmente y monitorizando el progreso. La aplicación emplea un algoritmo de ponderación adaptativa para ajustar la frecuencia de los acordes presentados según la precisión del niño. Soporta múltiples perfiles de usuario y está construida con Node.js, produciendo una aplicación para Android. La metodología está documentada en investigaciones académicas sobre psicología musical.",
     "categoria": "Desarrollo de Software"
   }
 ]
