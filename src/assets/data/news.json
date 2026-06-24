@@ -1,128 +1,119 @@
 [
   {
-    "id": 48640974,
-    "url": "https://kreya.app/blog/new-http-query-method-explained/",
-    "score": 161,
-    "time": 1782194737,
-    "titulo_es": "El nuevo método HTTP QUERY: Qué es y por qué lo necesitamos",
-    "resumen": "El artículo explica la introducción del nuevo método HTTP QUERY (especificado en el contexto de RFCs recientes), diseñado para resolver las limitaciones semánticas y técnicas de GET y POST en APIs REST. Para búsquedas complejas, el uso de GET con parámetros de URL resulta inviable debido a límites de caracteres, mientras que enviar un cuerpo en GET carece de soporte estandarizado en intermediarios. Por otro lado, usar POST rompe la semántica REST al no ser un método seguro ni idempotente, lo que complica el almacenamiento en caché y la política de reintentos. HTTP QUERY surge como una solución híbrida: es seguro, idempotente y admite un cuerpo de petición estructurado.",
+    "id": 48657030,
+    "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
+    "score": 201,
+    "time": 1782291041,
+    "titulo_es": "Bunny DNS: El motor de enrutamiento global inteligente ahora es gratuito",
+    "resumen": "Bunny.net anuncia la eliminación completa de las tarifas por consultas de Bunny DNS, ofreciendo alojamiento DNS gratuito para hasta 500 dominios por cuenta sin límites de consultas ni cargos por solicitudes. El servicio, que funciona como un motor de enrutamiento inteligente distribuido globalmente, permite a los desarrolladores redirigir el tráfico dinámicamente mediante datos de latencia, comprobaciones de estado (health checks) y JavaScript. La compañía elimina estos costos para hacer la infraestructura web más accesible, manteniendo únicamente el consumo mínimo estándar de 1 dólar al mes para cuentas de la plataforma.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48596488,
-    "url": "https://plotnine.org/",
-    "score": 66,
-    "time": 1781860080,
-    "titulo_es": "Plotnine: Un paquete de visualización de datos para Python basado en la gramática de gráficos",
-    "resumen": "El artículo introduce Plotnine, una biblioteca de visualización de datos para Python inspirada en la gramática de gráficos y con una sintaxis similar a ggplot2 de R. A través del ejemplo práctico del Cuarteto de Anscombe, se explica cómo crear visualizaciones desde cero de forma incremental, comenzando con gráficos de dispersión simples y evolucionando hacia paneles múltiples con líneas de tendencia, personalización de estilos, colores, escalas y temas listos para publicación.",
-    "categoria": "Desarrollo de Software"
+    "id": 48653216,
+    "url": "https://words.filippo.io/vuln-reports/",
+    "score": 296,
+    "time": 1782258166,
+    "titulo_es": "Por qué los reportes de vulnerabilidades ya no son especiales",
+    "resumen": "El artículo analiza cómo el auge de los Modelos de Lenguaje Grande (LLMs) ha transformado la gestión de vulnerabilidades en el desarrollo de software de código abierto. Tradicionalmente, los reportes de seguridad confidenciales se trataban de manera prioritaria y con especial atención debido al valor del hallazgo y la necesidad de coordinar parches antes de que los atacantes crearan exploits. Sin embargo, en la actualidad, los LLMs permiten a cualquiera detectar vulnerabilidades masivamente, desplazando el cuello de botella desde el descubrimiento hacia el triaje, la verificación y la remediación rápida. El autor argumenta que la confidencialidad y el trato preferencial de los reportes estándar están perdiendo relevancia, y propone que el enfoque debe migrar hacia la automatización del análisis de seguridad en sistemas de integración continua (CI) y la rápida clasificación de reportes verdaderamente críticos provenientes de fuentes altamente confiables.",
+    "categoria": "Ciberseguridad"
   },
   {
-    "id": 48636377,
-    "url": "https://unsloth.ai/docs/models/glm-5.2",
-    "score": 421,
-    "time": 1782163261,
-    "titulo_es": "¡Ejecuta el nuevo modelo GLM-5.2 de Z.ai en hardware local!",
-    "resumen": "El artículo detalla el lanzamiento y la ejecución local de GLM-5.2 de Z.ai, un modelo abierto de inteligencia artificial con 744 mil millones de parámetros (40 mil millones activos) y una ventana de contexto de 1 millón de tokens. Gracias a las cuantizaciones dinámicas GGUF de Unsloth (desde 1 hasta 5 bits), el modelo puede ejecutarse en hardware local con diferentes configuraciones de memoria. Se explica técnicamente el impacto de la cuantización usando la divergencia de Kullback-Leibler (KLD) y la precisión 'top-1', aclarando que una cuantización extrema de 1 bit reduce el tamaño del archivo en un 86% pero mantiene el 76.2% de precisión estadística, sin generar salidas incoherentes. Asimismo, se describen sus tres modos de pensamiento (desactivado, High y Max) y su configuración óptima de inferencia.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48639240,
-    "url": "https://arxiv.org/abs/2606.16140",
-    "score": 225,
-    "time": 1782180085,
-    "titulo_es": "Introducción a arXivLabs",
-    "resumen": "arXivLabs es un marco de trabajo (framework) que permite a desarrolladores, colaboradores externos y organizaciones crear, probar y compartir nuevas funcionalidades e integraciones directamente en la plataforma de arXiv. El proyecto opera bajo un modelo de desarrollo colaborativo enfocado en valores de código abierto, comunidad, excelencia técnica y privacidad de los datos de los usuarios.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48642232,
-    "url": "https://ex-vi.sourceforge.net/",
-    "score": 16,
-    "time": 1782205248,
-    "titulo_es": "El editor de texto vi",
-    "resumen": "Resumen sobre el origen histórico y la evolución técnica del editor de texto vi, desarrollado originalmente por Bill Joy en 1976 a partir del código de ed. Tras años bajo licencias comerciales, su código fue liberado en 2002 bajo una licencia de estilo BSD. A diferencia de sus clones modernos, esta versión preserva el diseño minimalista original (~160 kBytes), carece de funciones avanzadas como el resaltado de sintaxis, pero añade soporte para codificaciones modernas como UTF-8 y estándares POSIX.2.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48643184,
-    "url": "https://arxiv.org/abs/2309.12288",
-    "score": 3,
-    "time": 1782212825,
-    "titulo_es": "Acerca de arXivLabs: Marco de desarrollo y colaboración",
-    "resumen": "arXivLabs es un entorno de trabajo (framework) que permite a colaboradores y organizaciones desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. El proyecto promueve el desarrollo colaborativo de software bajo principios de código abierto, excelencia y privacidad de datos de los usuarios.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48638886,
-    "url": "https://jchri.st/blog/in-praise-of-memcached/",
-    "score": 176,
-    "time": 1782177305,
-    "titulo_es": "Por qué prefiero Memcached sobre Redis para el almacenamiento en caché",
-    "resumen": "El artículo aborda la problemática operativa de utilizar Redis como caché, señalando que los desarrolladores suelen tratarlo erróneamente como una base de datos persistente, lo que complica el mantenimiento de la infraestructura. El autor argumenta a favor de Memcached como una alternativa superior para cachés puras debido a su simplicidad: no tiene persistencia en disco (lo que garantiza un diseño sin estado), gestiona el tiempo de inactividad de forma transparente a nivel de cliente mediante librerías que ignoran excepciones, y permite un agrupamiento (clustering) sencillo basado en hashing del lado del cliente sin sobrecarga operativa.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48640196,
-    "url": "https://swelljoe.com/post/will-it-mythos/",
-    "score": 177,
-    "time": 1782188104,
-    "titulo_es": "¿Es Mythos tan bueno detectando vulnerabilidades o es solo hype? Un benchmark de modelos de IA para la búsqueda de bugs",
-    "resumen": "El autor presenta un benchmark diseñado para evaluar de manera independiente la capacidad de varios modelos de lenguaje de gran tamaño (LLMs) para identificar vulnerabilidades de seguridad de código abierto, comparándolos con las capacidades afirmadas de 'Mythos' de Anthropic. Utilizando una suite de pruebas basada en fallos reales posteriores a la fecha de corte de entrenamiento de los modelos, el análisis revela que la ejecución de los modelos dentro de frameworks de agentes complejos no mejora el rendimiento de detección en comparación con el uso directo de APIs básicas, pero sí incrementa exponencialmente el costo y consumo de tokens. Adicionalmente, se señalan las restrictivas políticas de seguridad de la API de Gemini que impiden el análisis de código vulnerable.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48642030,
-    "url": "https://selforg-npa.github.io/",
-    "score": 20,
-    "time": 1782203508,
-    "titulo_es": "Autómatas de Partículas Neuronales (NPA)",
-    "resumen": "Se presentan los Autómatas de Partículas Neuronales (NPA), una generalización lagrangiana de los Autómatas Celulares Neuronales (NCA) que traslada el modelo de mallas estáticas a sistemas dinámicos de partículas en espacio continuo. A diferencia de los NCA clásicos, cada partícula en NPA posee una posición continua y un estado interno que se actualizan mediante una regla neuronal compartida y optimizada. Para solventar los retos de vecindarios dinámicos y la complejidad computacional de las interacciones locales, el sistema implementa operadores diferenciables de Hidrodinámica de Partículas Suavizadas (SPH) optimizados con kernels de CUDA eficientes en memoria. NPA demuestra mantener capacidades de autorregulación, robustez y regeneración en tareas como morfogénesis, clasificación de nubes de puntos y síntesis de texturas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48597221,
-    "url": "https://blog.dahl.dev/posts/my-mathematical-regression/",
-    "score": 316,
-    "time": 1781867164,
-    "titulo_es": "Reflexiones sobre una solución de hace 10 años para el Proyecto Euler",
-    "resumen": "El autor analiza con nostalgia cómo resolvió el problema 15 del Proyecto Euler hace una década cuando era estudiante de ingeniería. Compara su enfoque actual como desarrollador en activo —donde recurriría a Python, programación dinámica, memorización o herramientas de IA— con la solución elegante y puramente matemática (basada en el coeficiente binomial de las matemáticas discretas) que implementó en su juventud.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48616182,
-    "url": "https://mariusbancila.ro/blog/2026/06/19/improvements-to-stdformat-in-c26/",
-    "score": 28,
-    "time": 1782023208,
-    "titulo_es": "Características de la biblioteca de formateo en el estándar C++26",
-    "resumen": "El artículo detalla las mejoras clave introducidas en la biblioteca de formateo de C++26. Entre las novedades se encuentran la sobrecarga sin parámetros de 'std::println' para imprimir líneas vacías, el formateo directo de punteros sin necesidad de conversiones manuales, y un formateador nativo para 'std::filesystem::path' que soluciona problemas de codificación UTF-16 a UTF-8 en Windows. Además, se destaca que funciones como 'std::format' ahora son 'constexpr' para tipos integrales y punteros, permitiendo su evaluación en tiempo de compilación. Por último, se introduce 'std::dynamic_format' (antes 'std::runtime_format') para facilitar el formateo con cadenas dinámicas determinadas en tiempo de ejecución de forma segura y optimizada.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48634778,
-    "url": "https://github.com/dorukkumkumoglu/optocamzero",
-    "score": 184,
-    "time": 1782155995,
-    "titulo_es": "Optocam Zero: Una cámara digital compacta basada en Raspberry Pi Zero",
-    "resumen": "Optocam Zero es un proyecto de hardware de código abierto diseñado para construir una cámara digital compacta, portátil y recreativa utilizando una Raspberry Pi Zero y componentes electrónicos estándar. El proyecto destaca por su facilidad de ensamblaje, ofreciendo piezas de carcasa optimizadas para impresión 3D, una lista detallada de materiales (BOM) y guías paso a paso tanto para el montaje del hardware como para la configuración del software.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48634585,
-    "url": "https://www.cbc.ca/news/politics/federal-nuclear-strategy-9.7244509",
-    "score": 500,
-    "time": 1782155208,
-    "titulo_es": "Canadá lanza una nueva estrategia nuclear para duplicar la capacidad de la red eléctrica y reducir las emisiones",
-    "resumen": "Canadá ha presentado una nueva estrategia nacional de energía nuclear con el objetivo de construir hasta 10 nuevos reactores nucleares en los próximos 15 años, expandir las exportaciones de uranio y aumentar las ventas de reactores de fabricación nacional (Candu) a nuevos mercados internacionales. El plan busca duplicar la capacidad de la red eléctrica del país para 2050, calificándolo como un 'nuevo renacimiento nuclear civil' esencial para alcanzar una economía baja en carbono. La estrategia contempla el inicio de la construcción de dos grandes reactores para 2035, la planificación de cinco adicionales para 2040, y la construcción de al menos un reactor fuera de Ontario para la misma fecha. También se desarrollará un microreactor de fabricación canadiense para 2035, destinado a comunidades remotas a finales de la década. Se estima que la construcción de estos reactores podría superar los 100 mil millones de dólares, con el Banco de Infraestructura de Canadá y el Fondo de Crecimiento de Canadá como posibles fuentes de financiación. Se espera que la estrategia duplique los 90.000 empleos en el sector nuclear canadiense. En el ámbito internacional, se busca ingresar a al menos cuatro nuevos mercados para 2040 y 'enganchar a seis a 10 nuevos mercados nucleares en un horizonte de 15 años'. La estrategia no involucró al Primer Ministro Mark Carney debido a un 'ethics screen' relacionado con sus inversiones en empresas que compiten en el sector nuclear.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48639184,
-    "url": "https://www.openculture.com/freeonlinecourses",
-    "score": 207,
-    "time": 1782179678,
-    "titulo_es": "1.700 Cursos Online Gratuitos de Universidades de Élite",
-    "resumen": "El artículo es una colección curada de más de 1.700 cursos online gratuitos ofrecidos por universidades de renombre mundial como Yale, MIT, Harvard y Oxford. Cubre una amplia gama de disciplinas, incluyendo Economía, Historia, Idiomas, Literatura, Ciencias Políticas, Biología, Ciencias de la Computación, Ingeniería, Matemáticas, Física y Psicología. Se destaca que muchos de estos cursos son MOOCs (Cursos Online Masivos y Abiertos) y ofrece instrucciones para acceder a la versión gratuita sin certificado a través de plataformas como edX (opción \"Full Course, No Certificate\") y Coursera (opción \"Audit\"). Se advierte que obtener un certificado o credencial generalmente implica un costo y que el sitio puede recibir comisiones de afiliados. Además, se mencionan colecciones de libros de texto gratuitos relacionados con algunas áreas temáticas.",
+    "id": 48629810,
+    "url": "https://kolistat.com/blog/the-stats-duck-v0-6-0/",
+    "score": 19,
+    "time": 1782134715,
+    "titulo_es": "the-stats-duck v0.6.0: Lanzamiento del motor de estadísticas para DuckDB",
+    "resumen": "Se presenta la versión v0.6.0 de 'the-stats-duck', una extensión de código abierto (MIT) para DuckDB que habilita capacidades estadísticas avanzadas directamente en consultas SQL, compatible incluso en entornos de navegador. La nueva versión introduce la función 'meta()' para el perfilado de columnas, regresión lineal por mínimos cuadrados ordinarios (OLS) mediante las funciones 'lm()' y 'lm_summary()', remuestreo por bootstrap reproducible y una gramática de gráficos integrada ('ggsql') basada en Vega-Lite que ahora soporta diagramas de violín, facetas y suavizado LOESS. Además, amplía su catálogo de distribuciones de probabilidad y solucionadores de muestreo aleatorio (compatibles con los estándares de R) y optimiza drásticamente el rendimiento de la lectura de archivos de SAS, SPSS y Stata, solucionando un problema de complejidad O(N²) para procesar los archivos en un único paso con búfer.",
     "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48648959,
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+    "score": 420,
+    "time": 1782238247,
+    "titulo_es": "En memoria de Tony Krueger: El creador de las líneas onduladas rojas y verdes en Word",
+    "resumen": "El artículo rinde homenaje a Tony Krueger, un ingeniero de software clave en el desarrollo de múltiples versiones de Microsoft Word. Krueger optimizó la función de revisión ortográfica automática al transformarla de una tarea síncrona y bloqueante a un proceso asíncrono y no intrusivo en segundo plano, introduciendo el feedback visual inmediato mediante líneas onduladas rojas para errores ortográficos y verdes para gramática. Además, se destaca su capacidad técnica al realizar ingeniería inversa al videojuego 'Chip's Challenge' de MS-DOS para portarlo a Windows sin acceso al código fuente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48648619,
+    "url": "https://swipe.futo.tech/",
+    "score": 569,
+    "time": 1782237022,
+    "titulo_es": "FUTO Swipe: Un sistema de escritura por gestos rápido y preciso de código abierto",
+    "resumen": "FUTO presenta FUTO Swipe, un framework de modelos de machine learning y algoritmos abiertos diseñado para habilitar la escritura por deslizamiento (swipe typing) local, offline y de baja latencia en dispositivos móviles. La arquitectura destaca por su extrema eficiencia, con un tamaño total de apenas 2.5 millones de parámetros que permite su ejecución en milisegundos sobre hardware de gama baja. El sistema se compone de tres modelos: un Encoder universal agnóstico del diseño de teclado, un modelo de lenguaje contextual ultra-ligero (ContextLM de 1.5M de parámetros) y un Decoder específico para optimizar la precisión según el diseño de teclado (QWERTY inglés). El pipeline de inferencia y la búsqueda de haz (beam search) restringida por diccionario se implementan en una biblioteca nativa en C++ (swipe-library) bajo licencia GPL. El entrenamiento se realizó con un dataset abierto de 1 millón de trazos recolectados de forma voluntaria, logrando tasas de error por debajo del 1% (excluyendo palabras fuera del vocabulario).",
+    "categoria": "IA"
+  },
+  {
+    "id": 48612025,
+    "url": "https://glyphcss.com",
+    "score": 158,
+    "time": 1781982641,
+    "titulo_es": "Renderizado de mallas 3D con texturas en el DOM mediante ASCII",
+    "resumen": "glyphcss es una herramienta que permite renderizar mallas 3D (formatos OBJ, glTF, GLB, STL y VOX) en el DOM utilizando únicamente caracteres ASCII dentro de una etiqueta <pre>, sin necesidad de usar WebGL ni <canvas>. Funciona proyectando polígonos en una cuadrícula de texto y actualizando la propiedad textContent. Permite interactividad y accesibilidad mediante puntos de acceso (<GlyphHotspot>) que superponen elementos <div> posicionados de forma absoluta. Es compatible con JavaScript vanilla, React y Vue.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48654351,
+    "url": "https://arxiv.org/abs/2606.24597",
+    "score": 119,
+    "time": 1782267707,
+    "titulo_es": "Acerca de arXivLabs: Un marco de trabajo para el desarrollo colaborativo",
+    "resumen": "arXivLabs es un entorno de trabajo que permite a colaboradores individuales y organizaciones desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Esta iniciativa se basa en valores de apertura, comunidad, excelencia y estricta privacidad de los datos del usuario.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48636188,
+    "url": "http://beyondloom.com/blog/vectorgraphics.html",
+    "score": 17,
+    "time": 1782162344,
+    "titulo_es": "Explorando el Lenguaje de Scripting Lil y Gráficos Vectoriales 2D con el Módulo Hershey",
+    "resumen": "El artículo explora el módulo 'hershey' para el ecosistema Decker, enfocado en la representación de texto mediante tipos de letra digitales desarrollados por Dr. Allen Vincent Hershey en la década de 1960. Detalla cómo el lenguaje de scripting 'Lil', influenciado por APL, maneja gráficos vectoriales bidimensionales. Se definen y explican los conceptos de 'punto' (coordenadas x,y), 'trazo' (secuencia de puntos, representando polilíneas) y 'ruta' (colección de trazos, formando formas o texto). Se ilustra la función `hershey.textpath[]` para construir rutas complejas a partir de cadenas de Lil y glifos. El artículo también cubre la representación de datos y la eficiencia de las operaciones colectivas en Decker, contrastando la simplicidad de `canvas.line[]` para trazos con la necesidad de operaciones más generales. Se profundiza en la manipulación de rutas, incluyendo la concatenación (unión de rutas), el escalado uniforme (multiplicación por un escalar que se propaga recursivamente) y el escalado no uniforme (requiriendo estructuras de lista anidadas para aplicar diferentes factores a coordenadas x e y). Finalmente, se menciona la reflexión (mirroring) mediante escalado negativo y se adelanta la traslación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48585852,
+    "url": "https://ps.tc/pages/blog-usbliter8.html",
+    "score": 150,
+    "time": 1781792618,
+    "titulo_es": "Exploit del SecureROM A12/A13: Prueba de Concepto y Análisis Técnico",
+    "resumen": "Este artículo detalla una vulnerabilidad de BootROM en iPhones A12/A13, explotada mediante una combinación de un fallo de hardware en el controlador USB (Synopsys DWC2) y una configuración defectuosa del firmware. La vulnerabilidad reside en el manejo de transacciones Setup de USB: el controlador incrementa incorrectamente el puntero DMA (DOEPDMA) después de recibir paquetes de datos de tamaño variable, mientras que el reseteo del puntero se realiza con un tamaño fijo (24 bytes), generando un underflow de búfer en pasos de 12 bytes. Este fallo permite sobrescribir datos en la SRAM, ya que el USB DART está en modo bypass en los SoCs A12/A13. La investigación valida la susceptibilidad de SecureROMs recientes a fallos de hardware sutiles. La mitigación principal es la migración a hardware más reciente debido a la inmutabilidad del código afectado.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48611896,
+    "url": "https://dirtylittlezine.com/",
+    "score": 130,
+    "time": 1781981894,
+    "titulo_es": "Dirty Little Zine: Creador de Zines Gratuito Basado en Navegador",
+    "resumen": "Dirty Little Zine es una herramienta web gratuita que permite a los usuarios crear un zine de ocho páginas a partir de una sola hoja de papel (US Letter o A4). La aplicación se ejecuta completamente en el navegador del cliente, sin necesidad de subir ningún archivo a un servidor. Maneja automáticamente la rotación y el orden de los paneles para asegurar que el diseño se imprima correctamente después del plegado. La exportación se realiza en formatos JPG o PDF listos para imprimir a 300 DPI. Está dirigida a fotógrafos, ilustradores, escritores y cualquier persona que necesite crear folletos rápidos y sencillos sin recurrir a software de diseño profesional como InDesign o Photoshop. El proyecto es de código abierto y se mantiene de forma gratuita, con la opción de apoyo voluntario para su desarrollo y mantenimiento.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48657518,
+    "url": "https://arstechnica.com/gadgets/2026/06/how-to-burst-the-ai-bubble-strike-at-its-roots/",
+    "score": 22,
+    "time": 1782295030,
+    "titulo_es": "La Guía del Centauro Inverso para la Vida Después de la IA",
+    "resumen": "El artículo explora el concepto de 'centauro inverso' propuesto por Cory Doctorow, donde los humanos se convierten en apéndices de máquinas no empáticas, en contraste con la idea positiva de 'centauro' (humano aumentado por tecnología). Doctorow critica la exageración y las expectativas poco realistas en torno a la IA, advirtiendo sobre una burbuja financiera inflada por grandes modelos fundacionales que consumen recursos masivamente y que probablemente colapsará, dejando consecuencias económicas significativas. Si bien reconoce el potencial de la IA como herramientas complementarias, alerta sobre su uso para reemplazar trabajadores y asignarles la responsabilidad de los errores de la IA. El artículo también conecta esta crítica con la 'enshittification' de las plataformas, donde la falta de competencia lleva a resultados perversos y a la saturación del mercado, forzando a las empresas a buscar 'innovaciones' costosas y disruptivas como la IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48654411,
+    "url": "https://www.muppetlabs.com/~breadbox/software/tiny/revisit.html",
+    "score": 43,
+    "time": 1782268213,
+    "titulo_es": "Nubes de Trueno Se Reúnen en el Horizonte: Optimizando Ejecutables ELF",
+    "resumen": "El artículo explora técnicas avanzadas para reducir el tamaño de ejecutables ELF en Linux, yendo más allá de la simple omisión de campos no utilizados. Se detalla cómo la superposición de estructuras de datos (como el encabezado ELF y la tabla de encabezados de programa) y el uso ingenioso de campos con contenido 'no especificado' o manipulable (como `p_paddr`) permiten incorporar partes del código ejecutable dentro de los propios encabezados. Se discuten las restricciones de direccionamiento de memoria en Linux y cómo la elección de instrucciones (como 'mov bl, 42' en lugar de 'xor' o 'inc eax') se ve afectada por la arquitectura little-endian y las convenciones de memoria para evitar la ejecución en regiones reservadas. El objetivo es lograr un ejecutable ELF conforme a los estándares pero extremadamente pequeño, mostrando la profundidad de la especificación ELF y las posibilidades de optimización de bajo nivel.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48627283,
+    "url": "https://github.com/webofmarius/SQLJoiner",
+    "score": 11,
+    "time": 1782116331,
+    "titulo_es": "Constructor Gráfico de Consultas SQL para MySQL",
+    "resumen": "El artículo describe una herramienta de desarrollo de software que permite construir consultas SQL (SELECT) visualmente para MySQL. Los usuarios pueden arrastrar y soltar tablas en un lienzo, establecer uniones (joins) y definir condiciones sin necesidad de escribir SQL manualmente. La aplicación se ejecuta con PHP y requiere Node.js. Los perfiles de conexión a la base de datos (host, puerto, usuario, contraseña) se almacenan en un archivo JSON (app/storage/profiles.json) y se gestionan a través de una interfaz gráfica. La salida del proceso se guarda en el directorio 'dist/'. Se menciona que la herramienta es un 'Sql Joiner - Graphical SQL builder and debugger', y se reportan errores de carga en la página.",
+    "categoria": "Desarrollo de Software"
   }
 ]
