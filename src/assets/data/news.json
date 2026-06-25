@@ -1,119 +1,29 @@
 [
   {
-    "id": 48657030,
-    "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
-    "score": 201,
-    "time": 1782291041,
-    "titulo_es": "Bunny DNS: El motor de enrutamiento global inteligente ahora es gratuito",
-    "resumen": "Bunny.net anuncia la eliminación completa de las tarifas por consultas de Bunny DNS, ofreciendo alojamiento DNS gratuito para hasta 500 dominios por cuenta sin límites de consultas ni cargos por solicitudes. El servicio, que funciona como un motor de enrutamiento inteligente distribuido globalmente, permite a los desarrolladores redirigir el tráfico dinámicamente mediante datos de latencia, comprobaciones de estado (health checks) y JavaScript. La compañía elimina estos costos para hacer la infraestructura web más accesible, manteniendo únicamente el consumo mínimo estándar de 1 dólar al mes para cuentas de la plataforma.",
+    "id": 48646239,
+    "url": "https://github.com/dima-quant/nimic",
+    "score": 18,
+    "time": 1782227355,
+    "titulo_es": "Nimic: DSL para código Python compilable AOT con rendimiento de nivel C",
+    "resumen": "Nimic es un módulo Python puro diseñado para escribir código compilable Ahead-Of-Time (AOT) utilizando un subconjunto de Python, actuando como un Lenguaje de Dominio Específico (DSL). Su objetivo es lograr un rendimiento comparable al de C sin salir del ecosistema Python. Se basa en el módulo `ctypes` para emular tipos nativos, punteros y operaciones, e implementa características como despacho, sobrecarga de operadores y plantillas. El código Nimic es código Python válido que se ejecuta de forma nativa y se transpila a código Nim. La arquitectura de Nimic se organiza en capas, desde abstracciones de bajo nivel de memoria hasta abstracciones de alto nivel. Incluye la reexportación de `ntypesystem` y la emulación de palabras clave y builtins de Nim. Utiliza una versión modificada de `ast.py` de CPython para emitir sintaxis Nim. Los decoradores `@template` y `@template_expand` permiten la sustitución a nivel de AST para plantillas no tipadas. Las convenciones de sintaxis de Python en Nimic tienen un doble significado: comportamiento en tiempo de ejecución en Python y semántica de transpilación para Nim.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48653216,
-    "url": "https://words.filippo.io/vuln-reports/",
-    "score": 296,
-    "time": 1782258166,
-    "titulo_es": "Por qué los reportes de vulnerabilidades ya no son especiales",
-    "resumen": "El artículo analiza cómo el auge de los Modelos de Lenguaje Grande (LLMs) ha transformado la gestión de vulnerabilidades en el desarrollo de software de código abierto. Tradicionalmente, los reportes de seguridad confidenciales se trataban de manera prioritaria y con especial atención debido al valor del hallazgo y la necesidad de coordinar parches antes de que los atacantes crearan exploits. Sin embargo, en la actualidad, los LLMs permiten a cualquiera detectar vulnerabilidades masivamente, desplazando el cuello de botella desde el descubrimiento hacia el triaje, la verificación y la remediación rápida. El autor argumenta que la confidencialidad y el trato preferencial de los reportes estándar están perdiendo relevancia, y propone que el enfoque debe migrar hacia la automatización del análisis de seguridad en sistemas de integración continua (CI) y la rápida clasificación de reportes verdaderamente críticos provenientes de fuentes altamente confiables.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48629810,
-    "url": "https://kolistat.com/blog/the-stats-duck-v0-6-0/",
-    "score": 19,
-    "time": 1782134715,
-    "titulo_es": "the-stats-duck v0.6.0: Lanzamiento del motor de estadísticas para DuckDB",
-    "resumen": "Se presenta la versión v0.6.0 de 'the-stats-duck', una extensión de código abierto (MIT) para DuckDB que habilita capacidades estadísticas avanzadas directamente en consultas SQL, compatible incluso en entornos de navegador. La nueva versión introduce la función 'meta()' para el perfilado de columnas, regresión lineal por mínimos cuadrados ordinarios (OLS) mediante las funciones 'lm()' y 'lm_summary()', remuestreo por bootstrap reproducible y una gramática de gráficos integrada ('ggsql') basada en Vega-Lite que ahora soporta diagramas de violín, facetas y suavizado LOESS. Además, amplía su catálogo de distribuciones de probabilidad y solucionadores de muestreo aleatorio (compatibles con los estándares de R) y optimiza drásticamente el rendimiento de la lectura de archivos de SAS, SPSS y Stata, solucionando un problema de complejidad O(N²) para procesar los archivos en un único paso con búfer.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48648959,
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
-    "score": 420,
-    "time": 1782238247,
-    "titulo_es": "En memoria de Tony Krueger: El creador de las líneas onduladas rojas y verdes en Word",
-    "resumen": "El artículo rinde homenaje a Tony Krueger, un ingeniero de software clave en el desarrollo de múltiples versiones de Microsoft Word. Krueger optimizó la función de revisión ortográfica automática al transformarla de una tarea síncrona y bloqueante a un proceso asíncrono y no intrusivo en segundo plano, introduciendo el feedback visual inmediato mediante líneas onduladas rojas para errores ortográficos y verdes para gramática. Además, se destaca su capacidad técnica al realizar ingeniería inversa al videojuego 'Chip's Challenge' de MS-DOS para portarlo a Windows sin acceso al código fuente.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48648619,
-    "url": "https://swipe.futo.tech/",
-    "score": 569,
-    "time": 1782237022,
-    "titulo_es": "FUTO Swipe: Un sistema de escritura por gestos rápido y preciso de código abierto",
-    "resumen": "FUTO presenta FUTO Swipe, un framework de modelos de machine learning y algoritmos abiertos diseñado para habilitar la escritura por deslizamiento (swipe typing) local, offline y de baja latencia en dispositivos móviles. La arquitectura destaca por su extrema eficiencia, con un tamaño total de apenas 2.5 millones de parámetros que permite su ejecución en milisegundos sobre hardware de gama baja. El sistema se compone de tres modelos: un Encoder universal agnóstico del diseño de teclado, un modelo de lenguaje contextual ultra-ligero (ContextLM de 1.5M de parámetros) y un Decoder específico para optimizar la precisión según el diseño de teclado (QWERTY inglés). El pipeline de inferencia y la búsqueda de haz (beam search) restringida por diccionario se implementan en una biblioteca nativa en C++ (swipe-library) bajo licencia GPL. El entrenamiento se realizó con un dataset abierto de 1 millón de trazos recolectados de forma voluntaria, logrando tasas de error por debajo del 1% (excluyendo palabras fuera del vocabulario).",
+    "id": 48662999,
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+    "score": 225,
+    "time": 1782321694,
+    "titulo_es": "Gemini 3.5 Flash integra capacidad de uso de computadora para construir agentes multi-plataforma",
+    "resumen": "Google ha integrado de forma nativa la capacidad de 'uso de computadora' en Gemini 3.5 Flash, mejorando su rendimiento en tareas de agentes computacionales. Anteriormente disponible como un modelo independiente, esta funcionalidad ahora permite a los desarrolladores crear agentes personalizados capaces de interactuar en entornos de navegador, móvil y escritorio, optimizando tareas de automatización de largo alcance y flujos de trabajo empresariales, como pruebas de software continuas y trabajo de conocimiento. La capacidad se accede a través de la API de Gemini y la Plataforma de Agentes Empresariales Gemini. Para mitigar riesgos de inyección de prompts, se emplea entrenamiento adversarial específico y se ofrecen sistemas de salvaguarda empresariales opcionales. Se recomienda un enfoque de 'defensa en profundidad' combinando estas características con sandboxing, verificación humana y controles de acceso estrictos.",
     "categoria": "IA"
   },
   {
-    "id": 48612025,
-    "url": "https://glyphcss.com",
-    "score": 158,
-    "time": 1781982641,
-    "titulo_es": "Renderizado de mallas 3D con texturas en el DOM mediante ASCII",
-    "resumen": "glyphcss es una herramienta que permite renderizar mallas 3D (formatos OBJ, glTF, GLB, STL y VOX) en el DOM utilizando únicamente caracteres ASCII dentro de una etiqueta <pre>, sin necesidad de usar WebGL ni <canvas>. Funciona proyectando polígonos en una cuadrícula de texto y actualizando la propiedad textContent. Permite interactividad y accesibilidad mediante puntos de acceso (<GlyphHotspot>) que superponen elementos <div> posicionados de forma absoluta. Es compatible con JavaScript vanilla, React y Vue.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48654351,
-    "url": "https://arxiv.org/abs/2606.24597",
-    "score": 119,
-    "time": 1782267707,
-    "titulo_es": "Acerca de arXivLabs: Un marco de trabajo para el desarrollo colaborativo",
-    "resumen": "arXivLabs es un entorno de trabajo que permite a colaboradores individuales y organizaciones desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Esta iniciativa se basa en valores de apertura, comunidad, excelencia y estricta privacidad de los datos del usuario.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48636188,
-    "url": "http://beyondloom.com/blog/vectorgraphics.html",
-    "score": 17,
-    "time": 1782162344,
-    "titulo_es": "Explorando el Lenguaje de Scripting Lil y Gráficos Vectoriales 2D con el Módulo Hershey",
-    "resumen": "El artículo explora el módulo 'hershey' para el ecosistema Decker, enfocado en la representación de texto mediante tipos de letra digitales desarrollados por Dr. Allen Vincent Hershey en la década de 1960. Detalla cómo el lenguaje de scripting 'Lil', influenciado por APL, maneja gráficos vectoriales bidimensionales. Se definen y explican los conceptos de 'punto' (coordenadas x,y), 'trazo' (secuencia de puntos, representando polilíneas) y 'ruta' (colección de trazos, formando formas o texto). Se ilustra la función `hershey.textpath[]` para construir rutas complejas a partir de cadenas de Lil y glifos. El artículo también cubre la representación de datos y la eficiencia de las operaciones colectivas en Decker, contrastando la simplicidad de `canvas.line[]` para trazos con la necesidad de operaciones más generales. Se profundiza en la manipulación de rutas, incluyendo la concatenación (unión de rutas), el escalado uniforme (multiplicación por un escalar que se propaga recursivamente) y el escalado no uniforme (requiriendo estructuras de lista anidadas para aplicar diferentes factores a coordenadas x e y). Finalmente, se menciona la reflexión (mirroring) mediante escalado negativo y se adelanta la traslación.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48585852,
-    "url": "https://ps.tc/pages/blog-usbliter8.html",
-    "score": 150,
-    "time": 1781792618,
-    "titulo_es": "Exploit del SecureROM A12/A13: Prueba de Concepto y Análisis Técnico",
-    "resumen": "Este artículo detalla una vulnerabilidad de BootROM en iPhones A12/A13, explotada mediante una combinación de un fallo de hardware en el controlador USB (Synopsys DWC2) y una configuración defectuosa del firmware. La vulnerabilidad reside en el manejo de transacciones Setup de USB: el controlador incrementa incorrectamente el puntero DMA (DOEPDMA) después de recibir paquetes de datos de tamaño variable, mientras que el reseteo del puntero se realiza con un tamaño fijo (24 bytes), generando un underflow de búfer en pasos de 12 bytes. Este fallo permite sobrescribir datos en la SRAM, ya que el USB DART está en modo bypass en los SoCs A12/A13. La investigación valida la susceptibilidad de SecureROMs recientes a fallos de hardware sutiles. La mitigación principal es la migración a hardware más reciente debido a la inmutabilidad del código afectado.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48611896,
-    "url": "https://dirtylittlezine.com/",
-    "score": 130,
-    "time": 1781981894,
-    "titulo_es": "Dirty Little Zine: Creador de Zines Gratuito Basado en Navegador",
-    "resumen": "Dirty Little Zine es una herramienta web gratuita que permite a los usuarios crear un zine de ocho páginas a partir de una sola hoja de papel (US Letter o A4). La aplicación se ejecuta completamente en el navegador del cliente, sin necesidad de subir ningún archivo a un servidor. Maneja automáticamente la rotación y el orden de los paneles para asegurar que el diseño se imprima correctamente después del plegado. La exportación se realiza en formatos JPG o PDF listos para imprimir a 300 DPI. Está dirigida a fotógrafos, ilustradores, escritores y cualquier persona que necesite crear folletos rápidos y sencillos sin recurrir a software de diseño profesional como InDesign o Photoshop. El proyecto es de código abierto y se mantiene de forma gratuita, con la opción de apoyo voluntario para su desarrollo y mantenimiento.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48657518,
-    "url": "https://arstechnica.com/gadgets/2026/06/how-to-burst-the-ai-bubble-strike-at-its-roots/",
-    "score": 22,
-    "time": 1782295030,
-    "titulo_es": "La Guía del Centauro Inverso para la Vida Después de la IA",
-    "resumen": "El artículo explora el concepto de 'centauro inverso' propuesto por Cory Doctorow, donde los humanos se convierten en apéndices de máquinas no empáticas, en contraste con la idea positiva de 'centauro' (humano aumentado por tecnología). Doctorow critica la exageración y las expectativas poco realistas en torno a la IA, advirtiendo sobre una burbuja financiera inflada por grandes modelos fundacionales que consumen recursos masivamente y que probablemente colapsará, dejando consecuencias económicas significativas. Si bien reconoce el potencial de la IA como herramientas complementarias, alerta sobre su uso para reemplazar trabajadores y asignarles la responsabilidad de los errores de la IA. El artículo también conecta esta crítica con la 'enshittification' de las plataformas, donde la falta de competencia lleva a resultados perversos y a la saturación del mercado, forzando a las empresas a buscar 'innovaciones' costosas y disruptivas como la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48654411,
-    "url": "https://www.muppetlabs.com/~breadbox/software/tiny/revisit.html",
-    "score": 43,
-    "time": 1782268213,
-    "titulo_es": "Nubes de Trueno Se Reúnen en el Horizonte: Optimizando Ejecutables ELF",
-    "resumen": "El artículo explora técnicas avanzadas para reducir el tamaño de ejecutables ELF en Linux, yendo más allá de la simple omisión de campos no utilizados. Se detalla cómo la superposición de estructuras de datos (como el encabezado ELF y la tabla de encabezados de programa) y el uso ingenioso de campos con contenido 'no especificado' o manipulable (como `p_paddr`) permiten incorporar partes del código ejecutable dentro de los propios encabezados. Se discuten las restricciones de direccionamiento de memoria en Linux y cómo la elección de instrucciones (como 'mov bl, 42' en lugar de 'xor' o 'inc eax') se ve afectada por la arquitectura little-endian y las convenciones de memoria para evitar la ejecución en regiones reservadas. El objetivo es lograr un ejecutable ELF conforme a los estándares pero extremadamente pequeño, mostrando la profundidad de la especificación ELF y las posibilidades de optimización de bajo nivel.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48627283,
-    "url": "https://github.com/webofmarius/SQLJoiner",
-    "score": 11,
-    "time": 1782116331,
-    "titulo_es": "Constructor Gráfico de Consultas SQL para MySQL",
-    "resumen": "El artículo describe una herramienta de desarrollo de software que permite construir consultas SQL (SELECT) visualmente para MySQL. Los usuarios pueden arrastrar y soltar tablas en un lienzo, establecer uniones (joins) y definir condiciones sin necesidad de escribir SQL manualmente. La aplicación se ejecuta con PHP y requiere Node.js. Los perfiles de conexión a la base de datos (host, puerto, usuario, contraseña) se almacenan en un archivo JSON (app/storage/profiles.json) y se gestionan a través de una interfaz gráfica. La salida del proceso se guarda en el directorio 'dist/'. Se menciona que la herramienta es un 'Sql Joiner - Graphical SQL builder and debugger', y se reportan errores de carga en la página.",
+    "id": 48665130,
+    "url": "https://statusdude.com/blog/zero-downtime-docker-compose",
+    "score": 59,
+    "time": 1782332433,
+    "titulo_es": "Cómo lograr despliegues sin tiempo de inactividad cero con Docker Compose y HAProxy, evitando las trampas de Traefik",
+    "resumen": "El artículo argumenta que Kubernetes no es un requisito indispensable para servicios de producción serios. El autor detalla su experiencia en StatusDude, donde gestionan miles de verificaciones por minuto, trabajadores multirregión y despliegues diarios utilizando Docker Compose y HAProxy. Se critica Traefik por sus problemas de configuración al manejar servicios duplicados con las mismas etiquetas y por la latencia en la actualización de su tabla de enrutamiento durante despliegues continuos, lo que resulta en caídas de tráfico y errores 502. Se expone un problema fundamental con Traefik: no redispatchea las solicitudes fallidas a servidores saludables, perdiendo así peticiones durante el ciclo de vida de los contenedores. Finalmente, se propone HAProxy como solución debido a su simplicidad, velocidad y la funcionalidad `option redispatch`, que garantiza que las solicitudes fallidas se reintenten en un backend saludable, logrando así despliegues sin tiempo de inactividad.",
     "categoria": "Desarrollo de Software"
   }
 ]
