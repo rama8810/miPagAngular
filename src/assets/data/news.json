@@ -1,29 +1,182 @@
 [
   {
-    "id": 48646239,
-    "url": "https://github.com/dima-quant/nimic",
-    "score": 18,
-    "time": 1782227355,
-    "titulo_es": "Nimic: DSL para código Python compilable AOT con rendimiento de nivel C",
-    "resumen": "Nimic es un módulo Python puro diseñado para escribir código compilable Ahead-Of-Time (AOT) utilizando un subconjunto de Python, actuando como un Lenguaje de Dominio Específico (DSL). Su objetivo es lograr un rendimiento comparable al de C sin salir del ecosistema Python. Se basa en el módulo `ctypes` para emular tipos nativos, punteros y operaciones, e implementa características como despacho, sobrecarga de operadores y plantillas. El código Nimic es código Python válido que se ejecuta de forma nativa y se transpila a código Nim. La arquitectura de Nimic se organiza en capas, desde abstracciones de bajo nivel de memoria hasta abstracciones de alto nivel. Incluye la reexportación de `ntypesystem` y la emulación de palabras clave y builtins de Nim. Utiliza una versión modificada de `ast.py` de CPython para emitir sintaxis Nim. Los decoradores `@template` y `@template_expand` permiten la sustitución a nivel de AST para plantillas no tipadas. Las convenciones de sintaxis de Python en Nimic tienen un doble significado: comportamiento en tiempo de ejecución en Python y semántica de transpilación para Nim.",
+    "id": 48682737,
+    "url": "https://akrites.org/letter/",
+    "score": 196,
+    "time": 1782452436,
+    "titulo_es": "Una carta abierta sobre el lanzamiento de Akrites: un esfuerzo coordinado para subsanar vulnerabilidades en el software de código abierto en el que se basa el mundo",
+    "resumen": "El artículo anuncia el lanzamiento de Akrites, una iniciativa de colaboración masiva que reúne a las principales empresas tecnológicas (incluyendo AWS, Google, Microsoft, OpenAI, Anthropic y Red Hat) para combatir la rápida proliferación de vulnerabilidades en el software de código abierto, acelerada por el uso de la Inteligencia Artificial por parte de atacantes. Akrites establece un modelo de seguridad coordinado y confidencial aguas arriba (upstream), proporcionando a los mantenedores de código abierto un único equipo de respuesta a incidentes (SIRT) para evitar la saturación de reportes duplicados y agilizar el despliegue efectivo de parches en infraestructuras críticas globales.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48675179,
+    "url": "https://scrollprize.org/firstscroll",
+    "score": 1341,
+    "time": 1782402487,
+    "titulo_es": "Desenrollado virtual completo y lectura de un papiro de Herculano enrollado",
+    "resumen": "Investigadores han logrado desenrollar virtualmente y leer en su totalidad el papiro PHerc. 1667, un rollo de Herculano carbonizado por la erupción del Vesubio. Utilizando microtomografía de rayos X de contraste de fase de alta resolución en el Sincrotrón Europeo (ESRF), el equipo reconstruyó en 3D la geometría del papiro, lo aplanó digitalmente y aplicó modelos de aprendizaje automático para detectar trazas de tinta apenas distinguibles del soporte carbonizado. Este hito científico permitió identificar la obra como un tratado de ética estoica del siglo II a.C., validando además una metodología reproducible para el estudio no destructivo de otros textos antiguos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48681949,
+    "url": "https://graphicore.github.io/librebarcode/",
+    "score": 173,
+    "time": 1782443562,
+    "titulo_es": "Fuentes Libre Barcode y codificador Code 128",
+    "resumen": "El artículo describe el uso de las fuentes de código abierto 'Libre Barcode' para representar códigos de barras escaneables, con o sin texto embebido. Destaca la disponibilidad de un codificador para el estándar Code 128, el cual permite transformar texto plano en cadenas codificadas compatibles con la fuente Libre Barcode 128 Text para su correcto renderizado en aplicaciones.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48662999,
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-    "score": 225,
-    "time": 1782321694,
-    "titulo_es": "Gemini 3.5 Flash integra capacidad de uso de computadora para construir agentes multi-plataforma",
-    "resumen": "Google ha integrado de forma nativa la capacidad de 'uso de computadora' en Gemini 3.5 Flash, mejorando su rendimiento en tareas de agentes computacionales. Anteriormente disponible como un modelo independiente, esta funcionalidad ahora permite a los desarrolladores crear agentes personalizados capaces de interactuar en entornos de navegador, móvil y escritorio, optimizando tareas de automatización de largo alcance y flujos de trabajo empresariales, como pruebas de software continuas y trabajo de conocimiento. La capacidad se accede a través de la API de Gemini y la Plataforma de Agentes Empresariales Gemini. Para mitigar riesgos de inyección de prompts, se emplea entrenamiento adversarial específico y se ofrecen sistemas de salvaguarda empresariales opcionales. Se recomienda un enfoque de 'defensa en profundidad' combinando estas características con sandboxing, verificación humana y controles de acceso estrictos.",
+    "id": 48681687,
+    "url": "https://www.fernandoi.cl/posts/hackmyclaw/",
+    "score": 192,
+    "time": 1782440963,
+    "titulo_es": "Hackea mi Claw: Un experimento de seguridad e inyección de prompts con 6,000 correos electrónicos",
+    "resumen": "El autor detalla un experimento de ciberseguridad utilizando 'hackmyclaw.com', donde desafió al público a extraer el contenido de un archivo de configuración secreto ('secrets.env') custodiado por un asistente de IA llamado Fiu (basado en OpenClaw y Claude Opus). A pesar de recibir más de 6,000 intentos de inyección de prompts procedentes de 2,000 atacantes —quienes emplearon técnicas de ingeniería social multitono, suplantación de identidad de administradores y bypasses en varios idiomas—, el secreto nunca se filtró. El artículo analiza técnicamente los desafíos del experimento, tales como la contaminación del contexto en el procesamiento por lotes, la suspensión temporal de la cuenta de Gmail por falsos positivos de fraude, los costos de API superiores a 500 dólares y el impacto de strings de control específicas ('magic strings') de Anthropic. El autor concluye que los modelos de lenguaje avanzados demuestran una robustez defensiva superior a la esperada ante ataques de un solo intento gracias a prompts de sistema directos, aunque advierte que no se les debe otorgar permisos de ejecución arbitrarios ni capacidades transaccionales directas (como el envío de correos sin supervisión).",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48681220,
+    "url": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
+    "score": 194,
+    "time": 1782436252,
+    "titulo_es": "Análisis de la tarjeta de expansión Ethernet WisdPi 10G para portátiles Framework",
+    "resumen": "Evaluación técnica de la tarjeta de expansión de red WisdPi 10G para laptops Framework, basada en el chip Realtek RTL8159. El análisis revela que el rendimiento de 10 Gbps (máximo real de 9.4 Gbps) está fuertemente condicionado por la interfaz USB-C, requiriendo soporte estricto para USB 3.2 Gen 2x2 (20 Gbps); de lo contrario, se produce un cuello de botella por debajo de los 8 Gbps en puertos USB4 o USB 3.2 Gen 2x1. Adicionalmente, se detallan problemas de compatibilidad de controladores en Linux (kernel 7.x en Ubuntu 26.04), la necesidad de drivers oficiales en Windows para exprimir el ancho de banda, y un comportamiento térmico preocupante que alcanza casi los 70°C en la superficie plástica del módulo bajo carga de trabajo continua.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48679608,
+    "url": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+    "score": 764,
+    "time": 1782423895,
+    "titulo_es": "Las implicaciones de privacidad y ciberseguridad en las leyes de verificación de edad",
+    "resumen": "El artículo analiza los riesgos críticos de ciberseguridad y privacidad asociados con las regulaciones de verificación de edad en redes sociales, tomando como eje la ley de Australia para menores de 16 años. Examina cómo estas normativas obligan a los usuarios a delegar su información biométrica y documentos de identidad gubernamentales a intermediarios y sistemas de terceros (como k-ID). Desde la perspectiva de la seguridad de la información, se cuestionan las políticas de retención, la soberanía de los datos almacenados en el extranjero y la superficie de ataque que se genera ante posibles brechas de datos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48680370,
+    "url": "https://gchandbook.org/",
+    "score": 151,
+    "time": 1782429030,
+    "titulo_es": "El Manual de Recolección de Basura: El Arte de la Gestión Automática de Memoria",
+    "resumen": "El artículo presenta la segunda edición de un libro fundamental sobre la gestión automática de memoria, que recopila sesenta años de investigación y desarrollo. Esta actualización aborda los desafíos contemporáneos del desarrollo de software y hardware de alto rendimiento, cubriendo algoritmos tradicionales junto con técnicas avanzadas de recolección de basura paralela, incremental, concurrente y en tiempo real. Proporciona a los ingenieros de software el conocimiento teórico y práctico necesario para comprender, seleccionar y configurar de manera óptima los recolectores de basura en lenguajes de programación modernos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48642474,
+    "url": "https://github.com/plbrault/youre-the-os",
+    "score": 226,
+    "time": 1782207326,
+    "titulo_es": "¡Tú eres el Sistema Operativo! (You're the OS)",
+    "resumen": "Descripción y guía de desarrollo para un juego de simulación interactivo en el que el jugador asume el rol del sistema operativo de una computadora, administrando la memoria, procesos y eventos de E/S. El texto detalla aspectos técnicos del repositorio, tales como la configuración de un entorno de pruebas (sandbox) con Python, el uso de scripts de automatización, la ejecución de linters y pruebas unitarias, y el proceso de compilación para la web bajo la licencia de código abierto GPL v3.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48674967,
+    "url": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+    "score": 328,
+    "time": 1782401617,
+    "titulo_es": "IBM presenta la primera tecnología de chips de menos de 1 nanómetro del mundo con arquitectura de 0.7 nm",
+    "resumen": "IBM ha presentado un hito en la fabricación de semiconductores al desarrollar una tecnología de chips de 0.7 nm (7 angstroms) basada en una nueva arquitectura de transistores tridimensionales denominada 'nanostack'. Esta tecnología permite apilar verticalmente los transistores mediante integración secuencial 3D, duplicando casi la densidad del nodo de 2 nm anterior al albergar cerca de 100.000 millones de transistores en un área del tamaño de una uña. El diseño proyecta una mejora de hasta el 50% en rendimiento o un 70% en eficiencia energética comparado con los chips de 2 nm, además de lograr una reducción del 40% en el escalado de SRAM, optimizando el procesamiento para cargas de trabajo de IA de alta demanda de ancho de banda.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48637433,
+    "url": "https://scottaaronson.blog/?p=9851",
+    "score": 4,
+    "time": 1782168228,
+    "titulo_es": "El problema del emparejamiento bipartito entra en la clase de complejidad NC",
+    "resumen": "El artículo analiza un hito en la teoría de la complejidad computacional: la demostración de que el problema del emparejamiento bipartito (Bipartite Matching) pertenece a la clase de complejidad NC. Esto implica que el problema puede resolverse en tiempo polilogarítmico determinista utilizando un número polinómico de procesadores paralelos. Este avance logra desaleatorizar el histórico algoritmo probabilístico de Mulmuley-Vazirani-Vazirani de los años 80, resolviendo un problema abierto fundamental en algoritmos paralelos. Adicionalmente, el autor menciona su apoyo político a Alex Bores en las primarias de Nueva York debido a su postura sobre la regulación de la inteligencia artificial.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48675435,
+    "url": "https://github.com/inkeep/open-knowledge",
+    "score": 289,
+    "time": 1782403486,
+    "titulo_es": "OpenKnowledge: Un editor de markdown local e IA-nativo y wiki de LLM",
+    "resumen": "Presentación de OpenKnowledge, un editor de markdown enfocado en la privacidad local e integrado con modelos de lenguaje (LLM) como Claude y Codex. El software está disponible como aplicación nativa para macOS y a través de una interfaz de línea de comandos (CLI) compatible con Node.js 24+ para plataformas Windows, Linux e Intel Mac. El proyecto se distribuye bajo la licencia de código abierto GPL-3.0 y cuenta con un flujo de trabajo automatizado para contribuciones mediante Pull Requests públicos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48624723,
+    "url": "https://worksinprogress.co/issue/microbubbles/",
+    "score": 10,
+    "time": 1782093558,
+    "titulo_es": "Microburbujas: Superando las barreras biológicas para la administración de fármacos",
+    "resumen": "El artículo describe los desafíos técnicos de la administración localizada de fármacos en medicina, particularmente para atravesar la barrera hematoencefálica y tratar enfermedades del cerebro. Explica cómo tecnologías como nanopartículas y liposomas suelen ser interceptados por el hígado y el bazo, y presenta a las microburbujas como una alternativa de ingeniería biológica viable. Estas microburbujas, diseñadas con cubiertas protectoras de lípidos, proteínas o polímeros, transportan medicamentos a través del torrente sanguíneo y se rompen de forma controlada (mediante ultrasonido) para abrir temporalmente barreras biológicas impenetrables.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48679007,
+    "url": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+    "score": 155,
+    "time": 1782420602,
+    "titulo_es": "Lanzamiento del Modelo Un-0: IA basada en Computación Física",
+    "resumen": "La startup Unconventional AI presenta Un-0, un modelo generador de imágenes de clase condicional entrenado sobre un sistema simulado de osciladores acoplados (basado en osciladores de Kuramoto). El objetivo principal de este desarrollo es demostrar la viabilidad de la computación física y analógica como alternativa a las GPU tradicionales, buscando reducir el consumo energético de la IA moderna en hasta 1000 veces. Un-0 alcanza un FID de 6.74 en el dataset ImageNet de 64x64, igualando la calidad inicial de los métodos generativos convencionales de referencia. Los autores han liberado de forma abierta los pesos del modelo, el código de entrenamiento, evaluación y los análisis de ablación para incentivar la investigación en sustratos físicos alternativos.",
     "categoria": "IA"
   },
   {
-    "id": 48665130,
-    "url": "https://statusdude.com/blog/zero-downtime-docker-compose",
-    "score": 59,
-    "time": 1782332433,
-    "titulo_es": "Cómo lograr despliegues sin tiempo de inactividad cero con Docker Compose y HAProxy, evitando las trampas de Traefik",
-    "resumen": "El artículo argumenta que Kubernetes no es un requisito indispensable para servicios de producción serios. El autor detalla su experiencia en StatusDude, donde gestionan miles de verificaciones por minuto, trabajadores multirregión y despliegues diarios utilizando Docker Compose y HAProxy. Se critica Traefik por sus problemas de configuración al manejar servicios duplicados con las mismas etiquetas y por la latencia en la actualización de su tabla de enrutamiento durante despliegues continuos, lo que resulta en caídas de tráfico y errores 502. Se expone un problema fundamental con Traefik: no redispatchea las solicitudes fallidas a servidores saludables, perdiendo así peticiones durante el ciclo de vida de los contenedores. Finalmente, se propone HAProxy como solución debido a su simplicidad, velocidad y la funcionalidad `option redispatch`, que garantiza que las solicitudes fallidas se reintenten en un backend saludable, logrando así despliegues sin tiempo de inactividad.",
+    "id": 48678645,
+    "url": "https://calpaterson.com/bank-python.html",
+    "score": 125,
+    "time": 1782418475,
+    "titulo_es": "El extraño mundo de Python, tal como lo usan los grandes bancos de inversión",
+    "resumen": "El artículo describe 'Bank Python', un término que refiere a bifurcaciones propietarias y ecosistemas cerrados de Python utilizados por grandes bancos de inversión, ejemplificado a través de un sistema ficticio llamado 'Minerva'. El núcleo de esta arquitectura es 'Barbara', una base de datos de objetos global, jerárquica y extremadamente simple basada en la serialización con 'pickle' y compresión 'zip'. Funciona como un almacén de clave-valor distribuido con replicación entre nodos ('rings'), ofreciendo consistencia fuerte localmente y eventual a nivel global. El sistema permite gestionar el estado de las aplicaciones y datos transaccionales sin un sistema de archivos tradicional, aunque presenta limitaciones técnicas como un tamaño máximo de objeto de 16MB y un soporte limitado para índices secundarios, lo que desaconseja su uso para conjuntos de datos masivos o consultas complejas.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48648550,
+    "url": "https://blog.matthewbrunelle.com/my-steam-machine-is-a-50ft-hdmi-cable/",
+    "score": 54,
+    "time": 1782236720,
+    "titulo_es": "¡Ya puedes reservar la Steam Machine de Valve! Mi experiencia de juego en Linux",
+    "resumen": "El autor detalla su transición hacia una experiencia de videojuego estilo consola en PC utilizando distribuciones Linux como NixOS y Bazzite (un clon de SteamOS). Explica los desafíos técnicos resueltos, incluyendo el uso de cables HDMI de fibra óptica para largas distancias, las limitaciones de los controladores AMD en Linux respecto a HDMI 2.1 causadas por el HDMI Forum, y la problemática de gestionar el arranque dual mediante hibernación para alternar entre sistemas sin perder el estado del juego.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48673825,
+    "url": "https://ziglang.org/devlog/2026/#2026-06-25",
+    "score": 242,
+    "time": 1782397168,
+    "titulo_es": "Novedades en el compilador de Zig: Mejoras en el backend de SPIR-V y optimizaciones en LLVM",
+    "resumen": "El artículo detalla actualizaciones clave en la rama principal de Zig. En primer lugar, se describe la reestructuración del backend SPIR-V para sombreadores (shaders), introduciendo el builtin `@SpirvType`, optimizando los modos de ejecución mediante nuevas convenciones de llamada (`spirv_task` y `spirv_mesh`), y paralelizando la generación de código en el pool de hilos del compilador. En segundo lugar, se abordan mejoras en el backend de LLVM respecto al almacenamiento en memoria de tipos enteros con anchos de bit arbitrarios (como `u4` o `i13`), extendiéndolos a tamaños de ABI estándar para evitar errores de optimización y fallos de compilación heredados de LLVM, alineándose con el comportamiento de Clang para `_BitInt(N)`.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48678495,
+    "url": "https://rozumem.xyz/posts/17",
+    "score": 129,
+    "time": 1782417635,
+    "titulo_es": "La falacia del portero y la tecnología en la experiencia del cliente",
+    "resumen": "El artículo ilustra la \"falacia del portero\" – el error de asumir que la tecnología puede reemplazar a un humano sin consecuencias – a través de una experiencia de brunch. La adopción de menús y sistemas de pago basados en códigos QR, en lugar de personal humano, generó inconvenientes significativos. Estos incluyeron la dificultad para escanear códigos en grupos grandes, la interrupción de la interacción social por notificaciones tecnológicas (como alarmas de estacionamiento), y el caos en el pago simultáneo de facturas por múltiples comensales. La interfaz de usuario del sistema de pago carecía de claridad sobre los artículos pagados, provocando dudas y la posibilidad de pagos duplicados o perdidos. Aunque se buscaba reducir costos, la implementación tecnológica sacrificó la experiencia del cliente, dejando una impresión subconsciente negativa que podría afectar futuras decisiones de los clientes.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48627027,
+    "url": "https://jan-herlyn.com/blog/doing-a-masters-while-working/",
+    "score": 57,
+    "time": 1782114243,
+    "titulo_es": "Mi camino a través de un Máster en Computación Avanzada",
+    "resumen": "El artículo narra la experiencia personal del autor al cursar un Máster en Innovación e Investigación con especialización en Computación Avanzada. Detalla las motivaciones para iniciar el máster, incluyendo el aburrimiento en su trabajo freelance y la búsqueda de un cambio de vida. Describe la mudanza a Barcelona, la conciliación con un puesto de trabajo a tiempo parcial en Adevinta y los desafíos de un programa académico exigente centrado en algoritmos, estructuras de datos y redes. Resalta la diferencia en la cultura académica respecto a Alemania, con profesores más involucrados y un sistema de evaluación basado en proyectos y trabajos. Menciona el estrés asociado a la combinación de estudios presenciales, trabajo y desplazamientos, así como la gratitud por la ayuda recibida de profesores y la flexibilidad para acreditar experiencia laboral. La calidad de las clases fue variable, pero la experiencia social fue positiva, formando un grupo de estudio que evolucionó a un club social.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48656692,
+    "url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-1",
+    "score": 83,
+    "time": 1782288263,
+    "titulo_es": "Revisión de reproducción de video y rebase de Proton 11 con asistencia de IA",
+    "resumen": "El artículo detalla una importante actualización de Proton (GE-Proton11-1) que aborda la reproducción de video. Históricamente, Proton utilizaba dos flujos para la reproducción de video: winedmo->ffmpeg y quartz->gstreamer. El flujo de gstreamer, que era el predeterminado para juegos más antiguos, era complejo debido a sus múltiples bibliotecas y problemas de compatibilidad con superficies de visualización (X11, Wayland). La solución implementada implicó la eliminación completa de las bibliotecas de gstreamer y la conversión del flujo quartz para que utilizara winedmo->ffmpeg. Este arduo proceso de 4 meses se realizó con la ayuda de IA, que comparó registros de ejecución de instancias funcionales y rotas para identificar y corregir diferencias en la lógica del código. La IA también asistió en el análisis de formatos de archivo de video específicos y en la integración de las correcciones necesarias en Wine. Se han corregido varios juegos y se han eliminado hacks específicos de juegos, mejorando la estabilidad general y la compatibilidad, especialmente para juegos de novelas visuales (VN) que comparten motores comunes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48668255,
+    "url": "https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models/",
+    "score": 164,
+    "time": 1782355889,
+    "titulo_es": "El Futuro de los Modelos de IA: Costos, Acceso y la Promesa del Código Abierto",
+    "resumen": "El artículo explora la creciente disparidad de costos entre los modelos de IA de 'frontera' (como los de Anthropic y OpenAI) y los modelos de código abierto (como DeepSeek V4 y Mimo de Xiaomi). El autor plantea la preocupación de que las empresas líderes en IA estén creando artificialmente escasez y precios premium, similar a las marcas de lujo, lo que podría limitar la accesibilidad y la competencia. Se especula si los modelos de código abierto son más baratos debido a la colaboración comunitaria en pruebas y optimización o si se ofrecen como 'loss leaders'. El artículo aboga por la importancia del código abierto, destacando proyectos como OLMo de Allen AI y la iniciativa de la NSF con Nvidia para desarrollar IA totalmente abierta. Se sugiere que el verdadero avance en IA de código abierto vendrá de la mano de pipelines de datos de entrenamiento también abiertos. Finalmente, se proporcionan enlaces a los stacks tecnológicos de las aplicaciones móviles de Claude y ChatGPT para quienes deseen investigar sus implementaciones.",
+    "categoria": "IA"
   }
 ]
