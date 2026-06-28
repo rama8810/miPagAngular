@@ -1,209 +1,83 @@
 [
   {
-    "id": 48668747,
-    "url": "https://www.fosslinux.com/158206/linux-on-older-hardware-revival-guide.htm",
-    "score": 58,
-    "time": 1782360389,
-    "titulo_es": "Reviviendo hardware antiguo: Guía de distribuciones Linux ligeras frente a la obsolescencia de Windows",
-    "resumen": "El artículo aborda el creciente problema del desecho de hardware funcional provocado por las estrictas exigencias de Windows 11 (como TPM 2.0 y Secure Boot). Presenta a las distribuciones Linux ligeras como la alternativa técnica óptima para reutilizar equipos antiguos de entre 2014 y 2019. Analiza la viabilidad de revivir sistemas según sus recursos de hardware (categorizados en rangos de RAM menores a 2GB, de 2 a 4GB y superiores), y evalúa detalladamente opciones específicas como antiX, Puppy Linux, Lubuntu y Linux Lite 8.0 en función de su consumo en reposo, gestores de ventanas, planificadores de CPU (como el programador BORE) y soporte de arquitectura.",
-    "categoria": "Distribuciones Linux"
+    "id": 48697560,
+    "url": "https://www.openra.net/",
+    "score": 725,
+    "time": 1782562227,
+    "titulo_es": "Nueva versión de prueba de OpenRA presenta generadores de mapas aleatorios y mejoras en Dune 2000 y Tiberian Dawn",
+    "resumen": "La actualización playtest-20260222 del motor de juego de código abierto OpenRA introduce generadores de mapas aleatorios paramétricos para múltiples títulos clásicos. Entre los hitos técnicos se incluye la finalización de características del mod Tiberian Dawn HD, que incorpora un gestor de contenido para alternar entre arte clásico y remasterizado, y avances significativos para su fusión en el núcleo del motor de OpenRA. También se implementan mejoras de UI en el editor de mapas y optimizaciones de lógica y balance en la simulación de Dune 2000.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48692946,
-    "url": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
-    "score": 243,
-    "time": 1782513809,
-    "titulo_es": "Por qué la energía cinética aumenta con el cuadrado de la velocidad y no de forma lineal",
-    "resumen": "El artículo aborda la justificación física de por qué la energía cinética de un objeto es proporcional al cuadrado de su velocidad empleando principios de simetría e invariancia galileana, en lugar de recurrir a la definición circular de trabajo como fuerza por distancia. A través de un experimento mental que involucra la colisión de bolas de arcilla en diferentes marcos de referencia (en reposo y en un tren en movimiento), demuestra matemáticamente que la relación de la energía respecto a la velocidad debe ser cuadrática para cumplir con la conservación de la energía.",
+    "id": 48685967,
+    "url": "https://shapeofthesystem.com/posts/2026/02/03/bounded-cognition",
+    "score": 44,
+    "time": 1782477691,
+    "titulo_es": "La Mente y la Complejidad del Software",
+    "resumen": "El artículo explora la fundamental brecha entre la limitada capacidad cognitiva humana (aproximadamente 4 elementos a la vez, con atención focalizada y memoria a corto plazo) y la vasta complejidad de los sistemas de software modernos. Se argumenta que la sorpresa no debería ser que el software falle, sino que funcione en absoluto, dadas las herramientas mentales con las que los ingenieros deben construir y mantener sistemas de millones de líneas de código. Se critica el concepto de 'error humano' como explicación principal de incidentes, sugiriendo que las fallas a menudo se originan en el diseño o en la ineficacia de las interfaces y advertencias, las cuales ignoran las limitaciones perceptivas y atencionales humanas. Se toman ejemplos de la psicología experimental (invisibilidad del gorila, cambio de persona) para ilustrar la estrechez de la atención y la fragilidad de la memoria. Finalmente, se establece un paralelismo con otras disciplinas de alto riesgo (aviación, medicina) donde se prioriza el diseño robusto sobre la simple admonición al usuario para evitar errores.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48696982,
+    "url": "https://w.pitula.me/fintech-engineering-handbook/",
+    "score": 581,
+    "time": 1782556133,
+    "titulo_es": "Patrones para construir software que maneja dinero",
+    "resumen": "El artículo \"Patrones para construir software que maneja dinero\" se enfoca en los principios y patrones de diseño esenciales para el desarrollo de sistemas financieros. Detalla la importancia crítica de una representación monetaria precisa (evitando puntos flotantes y serializando como cadenas o enteros en la unidad más pequeña), la necesidad de acompañar los montos con su moneda, el manejo de tasas de cambio (FX) y la implementación de libros contables de doble entrada para asegurar la integridad y el balance de las transacciones. También aborda la complejidad de las marcas de tiempo (tiempo de valor, tiempo de reserva, tiempo de liquidación) y la importancia fundamental de mantener un rastro de auditoría completo (audit trail) que registre todos los cambios, incluyendo intervenciones manuales y configuraciones, para garantizar la transparencia, la trazabilidad y el cumplimiento normativo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48686804,
+    "url": "https://magnusross.github.io/posts/reflecting-to-optimise/",
+    "score": 24,
+    "time": 1782482861,
+    "titulo_es": "Un Punto Ciego en Optimización: Diseño de Ligantes de Proteínas",
+    "resumen": "El artículo aborda un problema de optimización no convexa bajo restricciones, específicamente en el contexto del diseño de ligantes de proteínas. El autor reconoce una falta de experiencia profunda en optimización y presenta un caso práctico: minimizar una función no convexa 'f' que toma un vector de distribución de probabilidad 'x' (donde las probabilidades de 'k' categorías suman 1 y son no negativas). La dificultad radica en que 'f' y su gradiente son computacionalmente costosos de evaluar.  Una solución inicial es la re-parametrización utilizando 'logits' y la función softmax para transformar el problema a un espacio sin restricciones, permitiendo el uso de métodos de descenso de gradiente estándar. Sin embargo, el autor sugiere que existen otras aproximaciones al considerar la estructura del problema y el espacio de probabilidad (el símplex de probabilidad). El ejemplo se ilustra con un escenario simplificado de la bioinformática, donde 'x' representa distribuciones de aminoácidos y 'f' un modelo de plegamiento de proteínas como AlphaFold.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48695149,
-    "url": "https://www.openttd.org/news/2026/06/25/openttd-16-0-beta1",
-    "score": 165,
-    "time": 1782534666,
-    "titulo_es": "Lanzamiento de la primera beta de OpenTTD 16 y concurso del juego de portada",
-    "resumen": "Se anuncia el lanzamiento de la primera versión beta de OpenTTD 16 para pruebas de nuevas características por parte de la comunidad. Paralelamente, se ha abierto la convocatoria para el tradicional concurso de diseño del 'title game' (el juego simulado en el menú principal) para esta versión, invitando además a los usuarios a reportar fallos detectados.",
+    "id": 48702848,
+    "url": "https://clickhouse.com/blog/walrus-postgres-backups-in-rust",
+    "score": 79,
+    "time": 1782603178,
+    "titulo_es": "WAL-RUS: Una Alternativa en Rust para el Archivo de Backups de PostgreSQL con Memoria Predecible",
+    "resumen": "El artículo presenta WAL-RUS, una nueva herramienta de código abierto escrita en Rust para la copia de seguridad y archivo de WAL (Write-Ahead Log) de PostgreSQL. Surge como una alternativa a WAL-G (escrito en Go) ante la necesidad de una mayor predictibilidad en el uso de memoria, especialmente en entornos con recursos limitados. A diferencia de los lenguajes con recolector de basura como Go, Rust permite un control más directo sobre la asignación de memoria y la concurrencia, resultando en un uso de memoria más predecible y estable. WAL-RUS mantiene la compatibilidad con WAL-G, utiliza un modelo de demonio para mantener conexiones persistentes al almacenamiento de objetos y está optimizado para flujos de trabajo de streaming, minimizando el buffering y las copias de datos. El objetivo principal es ofrecer la misma funcionalidad que WAL-G pero con un perfil de recursos más predecible y eficiente, simplificando la planificación de capacidad.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48692995,
-    "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
-    "score": 447,
-    "time": 1782514108,
-    "titulo_es": "El gobierno de EE. UU. levanta el bloqueo sobre el modelo Claude Mythos 5 de Anthropic",
-    "resumen": "El Departamento de Comercio de los EE. UU. ha levantado el bloqueo regulatorio sobre el modelo de inteligencia artificial de frontera Claude Mythos 5 de Anthropic, autorizando su distribución a más de 100 instituciones y agencias gubernamentales tras acordar protocolos de seguridad y salvaguardas específicas. Este movimiento pone fin a una restricción temporal de dos semanas motivada por riesgos de explotación ('jailbreaking') y coincide con el lanzamiento controlado de GPT-5.6 por parte de OpenAI, consolidando un nuevo régimen de supervisión estatal sobre la exportación y distribución de modelos de IA avanzados frente a tensiones geopolíticas.",
+    "id": 48672232,
+    "url": "https://www.johndcook.com/blog/2026/06/23/regex-everywhere/",
+    "score": 59,
+    "time": 1782389604,
+    "titulo_es": "Un Subconjunto de Expresiones Regulares que Funciona en Todas Partes",
+    "resumen": "El artículo aborda la inconsistencia entre las implementaciones de expresiones regulares en diferentes herramientas (sed, awk, grep, Emacs) y lenguajes (Perl). Se enfatiza la frustración de los desarrolladores debido a la falta de soporte de características comunes o sintaxis variantes. El autor propone identificar y utilizar un subconjunto estricto de características de expresiones regulares que sean compatibles universalmente, especialmente en entornos donde no se puede instalar software. Se discuten las diferencias específicas entre herramientas, como las secuencias de escape para límites de palabra y caracteres de espacio en blanco en Emacs en comparación con awk. El objetivo es lograr la portabilidad y fiabilidad del código que utiliza expresiones regulares.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48703452,
+    "url": "https://jayacunzo.com/blog/your-move-chief",
+    "score": 239,
+    "time": 1782610090,
+    "titulo_es": "La Diferencia Entre Conocimiento y Sabiduría: Una Lección de 'Good Will Hunting' Aplicada a la IA",
+    "resumen": "El artículo utiliza una escena icónica de la película 'Good Will Hunting' para ilustrar la distinción fundamental entre la acumulación de información y la sabiduría derivada de la experiencia vital. Se compara la vasta base de conocimiento teórico de Will Hunting, similar a la IA moderna como ChatGPT, con la comprensión profunda y vivencial de Sean Maguire. La tesis principal es que el conocimiento enciclopédico, por sí solo, carece de la profundidad y el valor práctico de la experiencia. El personaje de Will representa el peligro de la 'IA slop' y el 'online noise', donde la información se acumula sin una comprensión o aplicación significativa. Sean, en cambio, encarna la sabiduría que solo se obtiene al vivir las experiencias (amor, pérdida, guerra, felicidad) que Will solo ha leído o teorizado. El texto sugiere que las IA, al igual que Will en su estado inicial, pueden poseer una gran cantidad de datos, pero les falta la vivencia y la perspectiva que definen la verdadera comprensión y la sabiduría humana. La lección es aplicable a la evaluación crítica del contenido generado por IA y la importancia de la experiencia real en el aprendizaje y la toma de decisiones.",
     "categoria": "IA"
   },
   {
-    "id": 48692883,
-    "url": "https://spectrum.ieee.org/ai-in-mathematics",
-    "score": 129,
-    "time": 1782513411,
-    "titulo_es": "Los investigadores debaten la motivación, el propósito y el futuro de la disciplina",
-    "resumen": "El artículo analiza el impacto de la inteligencia artificial en el campo de las matemáticas, debatiendo si la IA complementará a los investigadores en una era de 'Grandes Matemáticas' (Big Mathematics) o si llegará a reemplazar el esfuerzo cognitivo y deliberativo que caracteriza a la disciplina. Se examina la evolución de la computación en la resolución de teoremas históricos y la naturaleza intrínseca del descubrimiento matemático, donde el entendimiento humano y la colaboración siguen siendo fundamentales.",
-    "categoria": "Ciencia y Matematica"
+    "id": 48701936,
+    "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
+    "score": 69,
+    "time": 1782595656,
+    "titulo_es": "Aislamiento de aplicaciones con LXC para mayor seguridad",
+    "resumen": "El artículo describe cómo utilizar LXC (Linux Containers) en Arch Linux para aislar aplicaciones como navegadores web o aplicaciones de mensajería instantánea de Electron del sistema anfitrión. Se detalla la instalación y configuración de LXC, incluyendo la asignación de red (bridge) y la configuración de mapeo de UID/GID (unprivileged containers) para evitar que un proceso comprometido dentro del contenedor tenga permisos significativos en el sistema anfitrión. Se explica el proceso de creación de un contenedor, instalación de aplicaciones dentro de él y, crucialmente, la configuración para ejecutar aplicaciones X11, incluyendo el mapeo del socket X11, la creación de un archivo .Xauthority compatible y la configuración de las variables de entorno DISPLAY y XAUTHORITY. El objetivo principal es mejorar la seguridad al limitar el impacto de una posible vulnerabilidad en la aplicación aislada.",
+    "categoria": "Ciberseguridad"
   },
   {
-    "id": 48658148,
-    "url": "https://fusion-lang.org/",
-    "score": 78,
-    "time": 1782300427,
-    "titulo_es": "Fusion: Un lenguaje de programación para crear librerías multiplataforma",
-    "resumen": "Fusion es un lenguaje de programación diseñado para desarrollar componentes y librerías reutilizables compatibles con múltiples lenguajes de destino (C, C++, C#, D, Java, JavaScript, Python, Swift, TypeScript y OpenCL C) a partir de una única base de código. El código transpilado es ligero, legible por humanos, no requiere de máquinas virtuales ni dependencias adicionales, y se adapta a las convenciones de nomenclatura y documentación de cada lenguaje objetivo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48642510,
-    "url": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/",
-    "score": 332,
-    "time": 1782207575,
-    "titulo_es": "Anuncio de AWS Lambda MicroVMs: una nueva primitiva de computación serverless para ejecución aislada y con estado",
-    "resumen": "AWS ha presentado Lambda MicroVMs, una nueva primitiva de computación serverless basada en la tecnología de virtualización ligera Firecracker. Está diseñada para ejecutar de forma segura código no confiable, creado por usuarios o por inteligencia artificial, en entornos de ejecución aislados y con estado sin necesidad de gestionar infraestructura compleja. Lambda MicroVMs resuelve el dilema clásico entre el fuerte aislamiento de las máquinas virtuales (con arranques lentos) y la rapidez de los contenedores y FaaS tradicionales (con limitaciones de seguridad y persistencia). Permite el inicio, suspensión y reanudación casi instantáneos a partir de snapshots de memoria y disco, ofreciendo un control directo sobre el ciclo de vida del entorno y optimizando los costes de inactividad de las sesiones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48665671,
-    "url": "https://howtotestfrontend.com/courses/jest-vitest-fundamentals",
-    "score": 7,
-    "time": 1782335347,
-    "titulo_es": "Aprende los conceptos básicos de cómo realizar pruebas con Jest o Vitest",
-    "resumen": "Un curso introductorio y gratuito diseñado para dominar los fundamentos de las pruebas unitarias y de integración utilizando Jest y Vitest. El contenido abarca desde la estructura básica de un test y aserciones comunes (matchers), hasta conceptos avanzados como el manejo de código asíncrono, simulación de temporizadores (timer mocks), snapshots, hooks de ciclo de vida (setup y teardown), pruebas parametrizadas y el mocking de funciones y módulos completos. Es ideal como preparación para el testing en Frontend con React o para entornos de Backend con NodeJS.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48633839,
-    "url": "https://kirill.korins.ky/articles/hellishly-slow-level-13-deflate-compression/",
-    "score": 61,
-    "time": 1782152240,
-    "titulo_es": "DEFLATE nivel 13 es un nivel de compresión de libdeflate deliberadamente impráctico",
-    "resumen": "Análisis técnico sobre el nuevo nivel de compresión 13 de libdeflate, diseñado para maximizar la eficiencia de compresión del estándar DEFLATE sin alterar la compatibilidad con decodificadores existentes. A costa de ser 56.4 veces más lento que el nivel 12, el nivel 13 realiza una búsqueda de ruta de costo mínimo más amplia, optimiza dinámicamente el tamaño de los bloques y retrasa la división de bloques para mejorar el rendimiento de las tablas Huffman. Este enfoque resulta ideal para escenarios de 'comprimir una vez, distribuir muchas veces' y se desarrolló bajo una estricta política de cero regresión utilizando el corpus de prueba Silesia.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48693912,
-    "url": "https://popflame.quickish.space/hn-flipboard/",
-    "score": 75,
-    "time": 1782521019,
-    "titulo_es": "Tablero de estilo split-flap para Hacker News alimentado por funciones en la nube",
-    "resumen": "Se describe una aplicación interactiva que simula un tablero de salidas analógico (split-flap) para visualizar los 20 artículos principales de Hacker News. El sistema utiliza una función en la nube (Cloud Function) para consumir la API de Hacker News de forma programada y transmitir los datos en tiempo real a los clientes conectados. Permite la personalización mediante una API protegida por token, facilitando la actualización de titulares a través de peticiones HTTP POST desde scripts externos, webhooks o tareas cron, e incluye controles frontend para audio, pantalla completa y temporización.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48685558,
-    "url": "https://alephneuro.com/blog/ultrasound-brain",
-    "score": 284,
-    "time": 1782474671,
-    "titulo_es": "Imágenes de ultrasonido a través del cráneo: Un nuevo hardware para la interfaz cerebral de alta resolución",
-    "resumen": "El artículo describe el desarrollo de una nueva tecnología de hardware de interfaz cerebral no invasiva basada en ultrasonido neurovascular. Para superar las limitaciones de resolución del EEG y la invasividad de los electrodos cerebrales, este sistema utiliza ultrasonido transcraneal y microburbujas de hexafluoruro de azufre como medio de contraste. Al rastrear de forma dispersa estas microburbujas y calcular sus centros con precisión de sub-píxel, se supera el límite de difracción acústica. Esto permite generar mapas vasculares tridimensionales del cerebro humano a través del cráneo intacto, con una resolución volumétrica 100 veces superior a la de una tomografía computarizada (CT) convencional, abriendo nuevas vías para el análisis cognitivo y el diagnóstico de patologías como el Alzheimer o derrames cerebrales.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48692051,
-    "url": "https://www.eff.org/deeplinks/2026/06/we-can-still-stop-californias-3d-printer-surveillance-scheme",
-    "score": 405,
-    "time": 1782508430,
-    "titulo_es": "California Aprueba Legislación de Vigilancia para Impresoras 3D Ignorando Advertencias",
-    "resumen": "La Asamblea de California ha aprobado una legislación que exige la implementación de software de vigilancia en impresoras 3D, a pesar de las advertencias de la EFF sobre sus peligros e inviabilidad. La ley, modificada para ser más confusa, no aborda los riesgos a la privacidad, la libertad de expresión y los derechos del consumidor. La ley criminaliza a usuarios individuales por prácticas comunes como el uso de programas de código abierto sin el software de censura compliant y establece estándares de rendimiento ambiguos para el bloqueo de impresión. Aunque incluye exenciones para la reventa privada de dispositivos y para la industria del entretenimiento, estas no resuelven las preocupaciones fundamentales sobre la censura del discurso legal, la vigilancia corporativa y la criminalización de la experimentación de código abierto. La tecnología impuesta no funcionará como se espera, bloqueando usos legítimos y permitiendo la impresión de armas de fuego a quienes estén determinados a hacerlo. El proyecto de ley se centra ahora en 'reducir sustancialmente la probabilidad de intentos de elusión' en lugar de la eficacia contra usuarios habilidosos, dejando la definición de estándares a terceros no gubernamentales y la autorregulación a los fabricantes.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48692058,
-    "url": "https://blog.doubleword.ai/frontier-os-llm",
-    "score": 213,
-    "time": 1782508487,
-    "titulo_es": "Brecha de Rendimiento entre LLMs Abiertos y Cerrados: Un Análisis Detallado",
-    "resumen": "El artículo analiza la brecha de rendimiento entre Modelos de Lenguaje Grandes (LLMs) de código abierto y modelos de fuente cerrada, utilizando el Índice de Análisis de Inteligencia Artificial. Inicialmente, una extrapolación de un solo benchmark sugiere que la brecha podría cerrarse en diciembre de 2026. Sin embargo, un análisis más profundo de 18 benchmarks revela una imagen diferente: la brecha promedio se mantiene relativamente estable y por debajo de los 5 meses, aunque la mejora en benchmarks de codificación ha sido significativa. La dificultad de medir la calidad de los LLMs se destaca, con predicciones divergentes sobre el futuro de los modelos de código abierto basadas en métricas selectivas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48662988,
-    "url": "https://github.com/dbos-inc/dbosify-py",
-    "score": 65,
-    "time": 1782321648,
-    "titulo_es": "DBOSify: Reemplazo compatible con Temporal basado en Postgres para Workflows Durables",
-    "resumen": "DBOSify es una librería que actúa como un reemplazo directo para Temporal Python, utilizando PostgreSQL en lugar de un servidor Temporal. Permite la ejecución de flujos de trabajo duraderos, actividades, señales, actualizaciones, reintentos y recuperación sin requerir infraestructura adicional más allá de PostgreSQL. Funciona ejecutando cada flujo de trabajo de Temporal como un flujo de trabajo de DBOS respaldado por Postgres. Utiliza un intérprete determinista para ejecutar el flujo de trabajo en un bucle de eventos virtual que solo avanza ante la llegada de eventos. Las acciones no deterministas se guardan en checkpoints en PostgreSQL antes de ser observadas por el flujo de trabajo. Las pruebas de DBOSify se centran en la corrección y la compatibilidad con Temporal, cubriendo tanto la arquitectura como la compatibilidad de características.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48692090,
-    "url": "https://github.com/Tessil/hopscotch-map",
-    "score": 93,
-    "time": 1782508708,
-    "titulo_es": "Biblioteca Hopscotch-map en C++",
-    "resumen": "El artículo describe la biblioteca hopscotch-map, una implementación en C++ de un hash map y hash set rápidos que utiliza open-addressing y hopscotch hashing para resolver colisiones. Destaca su naturaleza cache-friendly, ofreciendo mejor rendimiento que std::unordered_map en la mayoría de los casos, un uso de memoria menor que google::dense_hash_map y funcionalidades adicionales. Se detallan las clases principales (tsl::hopscotch_map, tsl::hopscotch_set, tsl::hopscotch_pg_map, tsl::hopscotch_pg_set) y sus variantes 'bhopscotch' que requieren que la clave sea LessThanComparable para un mejor límite asintótico superior. Se explican las políticas de crecimiento (power of two y prime) y cuándo usar cada una. La biblioteca es header-only, compatible con C++17 y busca tener una interfaz similar a std::unordered_map, aunque con algunas diferencias. Se mencionan consideraciones sobre la seguridad en concurrencia (lectores múltiples sin escritores), manejo de colisiones, ataques DoS y la implementación de políticas de crecimiento personalizadas. También se indica cómo integrarla en proyectos CMake y los requisitos para ejecutar las pruebas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48688700,
-    "url": "https://github.com/workweave/router",
-    "score": 170,
-    "time": 1782492011,
-    "titulo_es": "Enrutador de Modelos para Sistemas Agentes y Proxy Unificado para LLMs",
-    "resumen": "El artículo describe un proxy de \"drop-in\" llamado Weave Router que actúa como un punto de acceso único para interactuar con múltiples modelos de lenguaje grandes (LLMs) como Anthropic, OpenAI y Gemini. Utiliza un pequeño modelo incrustado localmente para determinar el modelo óptimo para cada solicitud, en lugar de depender de heurísticas basadas en \"vibes\" (intuición o sensaciones). El objetivo es optimizar el enrutamiento de las solicitudes para mejorar la eficiencia y reducir costos (se mencionan reducciones del 40-70%). Se detalla la instalación y configuración para diversas herramientas de desarrollo como Claude Code, Codex (CLI de OpenAI) y opencode, permitiendo que estas aplicaciones apunten a un endpoint local (localhost:8080) o a una versión alojada del router. Se explica cómo el router se integra modificando archivos de configuración específicos de cada herramienta y cómo se manejan las claves de router y las claves API existentes. También se menciona soporte para Cursor en beta. La funcionalidad principal es actuar como un \"model router\" que selecciona el modelo más adecuado en menos de 50 ms, facilitando la integración de LLMs en sistemas agentes. Se hace referencia a un paper de investigación (Avengers-Pro) que respalda las optimizaciones de rendimiento y eficiencia en LLMs.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48689277,
-    "url": "https://lefakkomies.github.io/pynomo-doc/introduction/introduction.html#what-is-a-nomogram-and-why-would-it-interest-me",
-    "score": 122,
-    "time": 1782494665,
-    "titulo_es": "Nomogramas: Calculadoras Gráficas para Fórmulas Matemáticas",
-    "resumen": "El artículo describe los nomogramas (o nomógrafos) como herramientas gráficas inventadas por Philbert Maurice d’Ocagne en 1880 para simplificar el cálculo de fórmulas matemáticas complejas. Consisten en escalas numéricas dispuestas de tal manera que una regla colocada sobre ellas permite encontrar el valor desconocido de una fórmula, especialmente aquellas con tres o más variables. Aunque su uso ha disminuido con la llegada de las calculadoras electrónicas y computadoras, los nomogramas siguen siendo útiles para cálculos rápidos y prácticos de fórmulas específicas, siendo económicos de producir y estéticamente atractivos. Se presenta un ejemplo de nomograma para un mecanismo de manivela deslizante que resuelve una ecuación compleja. El artículo también menciona la herramienta PyNomo, que facilita el diseño de nomogramas vectoriales, y enumera diversas aplicaciones históricas y actuales, incluyendo cálculos de ingeniería civil (movimiento de tierras), diseño de sistemas hidráulicos, correlaciones fisiológicas (medicina), cálculos balísticos y operaciones de maquinaria. La capacidad de los nomogramas para resolver variables implícitas se destaca como una ventaja significativa.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48673115,
-    "url": "https://healeycodes.com/a-tiny-compiler-for-data-parallel-kernels",
+    "id": 48660441,
+    "url": "https://www.theatlantic.com/magazine/2026/08/writers-way-galapagos-charles-darwin-travel/687480/",
     "score": 45,
-    "time": 1782394332,
-    "titulo_es": "Compiladores para bucles que aprovechan el paralelismo de datos",
-    "resumen": "El artículo describe la construcción de un compilador simple (aproximadamente 180 líneas de Python) diseñado para ilustrar cómo el código secuencial, específicamente los bucles, puede ser transformado para aprovechar el paralelismo de datos inherente en el hardware moderno. El compilador baja los 'kernels' (funciones o fragmentos de código) a una forma más explícita donde el paralelismo es visible, reemplazando los bucles `for` tradicionales por bucles `vector_for`. Estos últimos agrupan múltiples iteraciones del bucle para que se ejecuten en paralelo en diferentes 'carriles' (lanes). Se detalla el concepto de 'carril' como una posición independiente dentro de una ejecución agrupada. El artículo explica la importancia de distinguir entre valores 'uniformes' (los mismos para todos los carriles) y 'variables' (diferentes para cada carril) para optimizar la compilación. La clasificación de la 'variabilidad' de las variables fluye a través de las expresiones, determinando si se deben usar operaciones como cargas enmascaradas (para acceso contiguo a memoria, donde el índice es variable pero se incrementa de forma predecible entre carriles) o 'gathers' (para cargas dispersas, donde cada carril accede a una dirección de memoria potencialmente diferente y no adyacente). Se menciona el uso de máscaras booleanas por carril para manejar casos donde los datos restantes no llenan todos los carriles disponibles. El objetivo final es que esta transformación permita ejecutar código de manera más eficiente, idealmente con un factor de mejora igual al número de carriles, aunque se reconocen las limitaciones debidas a la sobrecarga de memoria y otros factores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48660522,
-    "url": "https://ngrok.com/blog/aol-was-down-1996",
-    "score": 67,
-    "time": 1782311357,
-    "titulo_es": "La Lección de Fiabilidad de AOL de 1996: Más Allá de los Números Dorados y los SLOs",
-    "resumen": "El artículo explora un apagón de 19 horas de America Online (AOL) ocurrido el 7 de agosto de 1996, que capturó la atención de los medios a pesar de ser un evento de mantenimiento recurrente. El autor argumenta que este incidente marcó un punto de inflexión donde la dependencia del público en Internet se hizo evidente, destacando la fragilidad de los sistemas en los que confiamos. A través de entrevistas con un ex VP de Operaciones de AOL, se contrastan este evento con un apagón similar no reportado en mayo, sugiriendo que la cobertura mediática del evento de agosto se debió al creciente rol de Internet en la vida cotidiana. El texto se posiciona como un 'postmortem humano', buscando ir más allá de las métricas técnicas convencionales (señales doradas, SLOs) para comprender la compleja realidad tecno-social de la fiabilidad de los sistemas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48694563,
-    "url": "https://www.terezatizkova.com/writing/software-abundance",
-    "score": 18,
-    "time": 1782527174,
-    "titulo_es": "Las Cuatro Formas en que los Productos y Trabajos de Software Cambian en la Era de la Abundancia",
-    "resumen": "El artículo describe cómo la proliferación de la IA y la facilidad para crear software (vibecoding) están transformando el mercado laboral y los productos de software. Se argumenta que la barrera de entrada para el desarrollo de software está disminuyendo y la evaluación del trabajo se vuelve más accesible para los no expertos, lo que lleva a una disminución del respeto percibido y a una compresión salarial similar a la de campos creativos como la escritura o el marketing. Para destacar, los ingenieros de software necesitarán especialización y reputación. Además, la abundancia de opciones de software, impulsada por la facilidad de creación, está alterando la dinámica del mercado, similar a la paradoja de la elección en las aplicaciones de citas, lo que lleva a una menor satisfacción y compromiso con las soluciones. El software se está volviendo tan ubicuo y fácil de replicar que se asemeja al agua: esencial pero ya no un diferenciador.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48644111,
-    "url": "https://svpow.com/2026/05/15/the-bizarre-headgear-exhibit-at-the-sam-noble-museum-is-incredible/",
-    "score": 74,
-    "time": 1782218709,
-    "titulo_es": "SV-POW! ... Todas las vértebras de saurópodos, excepto cuando hablamos de Acceso Abierto.",
-    "resumen": "El artículo describe una visita a la exposición temporal \"Bizarre Headgear: Ceratopsians and the Evolution of Extraordinary Skulls\" en un museo. La exposición se centra en la evolución de los cráneos de dinosaurios con cuernos (ceratopsianos) y otros animales extintos y existentes. El autor detalla las diferentes secciones de la exhibición, destacando las reconstrucciones esqueléticas, restauraciones y esculturas de varias especies de ceratopsianos como Psittacosaurus, Liaoceratops, Auroraceratops, Archaeoceratops, Protoceratops, Zuniceratops, Diabloceratops, Kosmoceratops y Utahceratops. También se mencionan fósiles y modelos de mamíferos, pterosaurios y otros animales. Se discuten brevemente las relaciones filogenéticas de algunos ceratopsianos basándose en estudios de 2014 y 2024. La exposición también incluye esculturas de Shane Foulkes y pinturas de Andrey Atuchin y Mark Hallett. El autor compara la diversidad de la exhibición con los animales que eran más familiares durante su infancia, señalando la inclusión de especies menos conocidas para el público general. Finalmente, se menciona la sección de mamíferos, que incluye una amplia variedad de cráneos de especies extintas y vivas, así como invertebrados.",
+    "time": 1782311043,
+    "titulo_es": "Las Islas Galápagos: Laboratorio de Evolución y el Impacto Humano",
+    "resumen": "El artículo narra una visita a las Islas Galápagos, destacando el encuentro con las tortugas gigantes como una metáfora del ritmo de vida pre-humano en el archipiélago. Explora cómo el aislamiento y la falta de depredadores permitieron la evolución única de estas especies, inspirando a Charles Darwin en su teoría de la evolución. Contrasta la fauna original, carente de temor hacia los humanos, con la situación actual, donde el turismo masivo y las regulaciones de conservación intentan preservar este ecosistema frágil. Se detalla la historia de la explotación de las tortugas por su carne y agua, y se describen las normativas actuales en lugares como El Chato Ranch para proteger a los animales. Se mencionan otras especies endémicas como el cormorán no volador, el pez murciélago y la iguana marina, subrayando la importancia de las Galápagos como un 'laboratorio de evolución' que enfrenta el desafío de preservar su naturaleza intacta frente a la afluencia turística y las actividades humanas.",
     "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48692083,
-    "url": "https://evmar.github.io/jjtut/",
-    "score": 46,
-    "time": 1782508675,
-    "titulo_es": "Tutorial de Jujutsu: un sistema de control de versiones simple y potente",
-    "resumen": "El artículo presenta Jujutsu (jj), un sistema de control de versiones diseñado para ser simple y potente. El texto sirve como un tutorial introductorio, con la intención de guiar a los usuarios en su aprendizaje. Se destaca que el contenido ha sido cuidadosamente elaborado por Evan Martin, sugiriendo una estructura y selección de información intencionadas. El artículo también sugiere recursos alternativos si el tutorial principal no se ajusta a las necesidades del lector.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48690231,
-    "url": "https://gossamer-lang.org/",
-    "score": 81,
-    "time": 1782498742,
-    "titulo_es": "Lenguaje de programación Gossamer: Goroutines, gestión de memoria automática y compilación a binario nativo",
-    "resumen": "El artículo describe Gossamer, un lenguaje de programación que combina características de Rust y Go. Ofrece goroutines (con planificación M:N), recolección de memoria automática y sin pausas (con referencia determinista y regiones de arena), eliminando la necesidad de un borrow checker o un recolector stop-the-world. Soporta pipes (|>) y es inmutable por defecto, promoviendo un flujo de datos lineal. Incluye un REPL para iteración rápida y compilación a un único binario nativo independiente a través de LLVM. Cuenta con un sistema de tipos robusto (Result/Option, match exhaustivo, traits, genéricos, sin null) y una biblioteca estándar amplia (HTTP, JSON, crypto, SQL). Permite la integración con Rust seguro y se compila a WebAssembly para ejecución en navegador. Soporta múltiples plataformas (Linux, macOS, Windows) y ofrece una experiencia de desarrollo ágil sin pasos de compilación explícitos durante la iteración.",
-    "categoria": "Desarrollo de Software"
   }
 ]
