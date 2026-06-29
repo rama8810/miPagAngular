@@ -1,83 +1,155 @@
 [
   {
-    "id": 48697560,
-    "url": "https://www.openra.net/",
-    "score": 725,
-    "time": 1782562227,
-    "titulo_es": "Nueva versión de prueba de OpenRA presenta generadores de mapas aleatorios y mejoras en Dune 2000 y Tiberian Dawn",
-    "resumen": "La actualización playtest-20260222 del motor de juego de código abierto OpenRA introduce generadores de mapas aleatorios paramétricos para múltiples títulos clásicos. Entre los hitos técnicos se incluye la finalización de características del mod Tiberian Dawn HD, que incorpora un gestor de contenido para alternar entre arte clásico y remasterizado, y avances significativos para su fusión en el núcleo del motor de OpenRA. También se implementan mejoras de UI en el editor de mapas y optimizaciones de lógica y balance en la simulación de Dune 2000.",
+    "id": 48662018,
+    "url": "https://edera.dev/stories/numa-part-1-cores-memory-and-the-distance-between-them",
+    "score": 50,
+    "time": 1782317408,
+    "titulo_es": "Por qué tus máquinas virtuales son lentas: Una introducción técnica a NUMA",
+    "resumen": "El artículo aborda la problemática del rendimiento inconsistente en máquinas virtuales idénticas bajo la misma carga de trabajo, revelando que una degradación del 20% se debe a que la memoria del guest está asignada en un nodo NUMA distinto al de las CPUs que lo ejecutan. Explica la transición histórica de la arquitectura UMA a NUMA debido a los límites físicos de ancho de banda, longitud de trazas eléctricas y saturación de buses en servidores multiprocesador. Asimismo, introduce la solución desarrollada por Edera para lograr una virtualización basada en Xen que es consciente de NUMA de extremo a extremo.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48674875,
+    "url": "https://thomasdullien.github.io/guides/entrepreneurship/",
+    "score": 33,
+    "time": 1782401304,
+    "titulo_es": "Reflexiones sobre el emprendimiento en el desarrollo de software y la gestión de equipos técnicos",
+    "resumen": "El autor comparte sus lecciones tras fundar y vender exitosamente dos empresas de software (zynamics y optimyze). Analiza los motivos para emprender en el sector de software y SaaS B2B, destacando la necesidad de autonomía y la libertad para resolver problemas técnicos directamente, como la higiene del código. Asimismo, resalta la ventaja de las empresas de software pequeñas para contratar ingenieros altamente talentosos con perfiles no convencionales, evitando la burocracia y las estructuras jerárquicas ineficientes de las grandes corporaciones.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48685967,
-    "url": "https://shapeofthesystem.com/posts/2026/02/03/bounded-cognition",
-    "score": 44,
-    "time": 1782477691,
-    "titulo_es": "La Mente y la Complejidad del Software",
-    "resumen": "El artículo explora la fundamental brecha entre la limitada capacidad cognitiva humana (aproximadamente 4 elementos a la vez, con atención focalizada y memoria a corto plazo) y la vasta complejidad de los sistemas de software modernos. Se argumenta que la sorpresa no debería ser que el software falle, sino que funcione en absoluto, dadas las herramientas mentales con las que los ingenieros deben construir y mantener sistemas de millones de líneas de código. Se critica el concepto de 'error humano' como explicación principal de incidentes, sugiriendo que las fallas a menudo se originan en el diseño o en la ineficacia de las interfaces y advertencias, las cuales ignoran las limitaciones perceptivas y atencionales humanas. Se toman ejemplos de la psicología experimental (invisibilidad del gorila, cambio de persona) para ilustrar la estrechez de la atención y la fragilidad de la memoria. Finalmente, se establece un paralelismo con otras disciplinas de alto riesgo (aviación, medicina) donde se prioriza el diseño robusto sobre la simple admonición al usuario para evitar errores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48696982,
-    "url": "https://w.pitula.me/fintech-engineering-handbook/",
-    "score": 581,
-    "time": 1782556133,
-    "titulo_es": "Patrones para construir software que maneja dinero",
-    "resumen": "El artículo \"Patrones para construir software que maneja dinero\" se enfoca en los principios y patrones de diseño esenciales para el desarrollo de sistemas financieros. Detalla la importancia crítica de una representación monetaria precisa (evitando puntos flotantes y serializando como cadenas o enteros en la unidad más pequeña), la necesidad de acompañar los montos con su moneda, el manejo de tasas de cambio (FX) y la implementación de libros contables de doble entrada para asegurar la integridad y el balance de las transacciones. También aborda la complejidad de las marcas de tiempo (tiempo de valor, tiempo de reserva, tiempo de liquidación) y la importancia fundamental de mantener un rastro de auditoría completo (audit trail) que registre todos los cambios, incluyendo intervenciones manuales y configuraciones, para garantizar la transparencia, la trazabilidad y el cumplimiento normativo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48686804,
-    "url": "https://magnusross.github.io/posts/reflecting-to-optimise/",
-    "score": 24,
-    "time": 1782482861,
-    "titulo_es": "Un Punto Ciego en Optimización: Diseño de Ligantes de Proteínas",
-    "resumen": "El artículo aborda un problema de optimización no convexa bajo restricciones, específicamente en el contexto del diseño de ligantes de proteínas. El autor reconoce una falta de experiencia profunda en optimización y presenta un caso práctico: minimizar una función no convexa 'f' que toma un vector de distribución de probabilidad 'x' (donde las probabilidades de 'k' categorías suman 1 y son no negativas). La dificultad radica en que 'f' y su gradiente son computacionalmente costosos de evaluar.  Una solución inicial es la re-parametrización utilizando 'logits' y la función softmax para transformar el problema a un espacio sin restricciones, permitiendo el uso de métodos de descenso de gradiente estándar. Sin embargo, el autor sugiere que existen otras aproximaciones al considerar la estructura del problema y el espacio de probabilidad (el símplex de probabilidad). El ejemplo se ilustra con un escenario simplificado de la bioinformática, donde 'x' representa distribuciones de aminoácidos y 'f' un modelo de plegamiento de proteínas como AlphaFold.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48702848,
-    "url": "https://clickhouse.com/blog/walrus-postgres-backups-in-rust",
-    "score": 79,
-    "time": 1782603178,
-    "titulo_es": "WAL-RUS: Una Alternativa en Rust para el Archivo de Backups de PostgreSQL con Memoria Predecible",
-    "resumen": "El artículo presenta WAL-RUS, una nueva herramienta de código abierto escrita en Rust para la copia de seguridad y archivo de WAL (Write-Ahead Log) de PostgreSQL. Surge como una alternativa a WAL-G (escrito en Go) ante la necesidad de una mayor predictibilidad en el uso de memoria, especialmente en entornos con recursos limitados. A diferencia de los lenguajes con recolector de basura como Go, Rust permite un control más directo sobre la asignación de memoria y la concurrencia, resultando en un uso de memoria más predecible y estable. WAL-RUS mantiene la compatibilidad con WAL-G, utiliza un modelo de demonio para mantener conexiones persistentes al almacenamiento de objetos y está optimizado para flujos de trabajo de streaming, minimizando el buffering y las copias de datos. El objetivo principal es ofrecer la misma funcionalidad que WAL-G pero con un perfil de recursos más predecible y eficiente, simplificando la planificación de capacidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48672232,
-    "url": "https://www.johndcook.com/blog/2026/06/23/regex-everywhere/",
-    "score": 59,
-    "time": 1782389604,
-    "titulo_es": "Un Subconjunto de Expresiones Regulares que Funciona en Todas Partes",
-    "resumen": "El artículo aborda la inconsistencia entre las implementaciones de expresiones regulares en diferentes herramientas (sed, awk, grep, Emacs) y lenguajes (Perl). Se enfatiza la frustración de los desarrolladores debido a la falta de soporte de características comunes o sintaxis variantes. El autor propone identificar y utilizar un subconjunto estricto de características de expresiones regulares que sean compatibles universalmente, especialmente en entornos donde no se puede instalar software. Se discuten las diferencias específicas entre herramientas, como las secuencias de escape para límites de palabra y caracteres de espacio en blanco en Emacs en comparación con awk. El objetivo es lograr la portabilidad y fiabilidad del código que utiliza expresiones regulares.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48703452,
-    "url": "https://jayacunzo.com/blog/your-move-chief",
-    "score": 239,
-    "time": 1782610090,
-    "titulo_es": "La Diferencia Entre Conocimiento y Sabiduría: Una Lección de 'Good Will Hunting' Aplicada a la IA",
-    "resumen": "El artículo utiliza una escena icónica de la película 'Good Will Hunting' para ilustrar la distinción fundamental entre la acumulación de información y la sabiduría derivada de la experiencia vital. Se compara la vasta base de conocimiento teórico de Will Hunting, similar a la IA moderna como ChatGPT, con la comprensión profunda y vivencial de Sean Maguire. La tesis principal es que el conocimiento enciclopédico, por sí solo, carece de la profundidad y el valor práctico de la experiencia. El personaje de Will representa el peligro de la 'IA slop' y el 'online noise', donde la información se acumula sin una comprensión o aplicación significativa. Sean, en cambio, encarna la sabiduría que solo se obtiene al vivir las experiencias (amor, pérdida, guerra, felicidad) que Will solo ha leído o teorizado. El texto sugiere que las IA, al igual que Will en su estado inicial, pueden poseer una gran cantidad de datos, pero les falta la vivencia y la perspectiva que definen la verdadera comprensión y la sabiduría humana. La lección es aplicable a la evaluación crítica del contenido generado por IA y la importancia de la experiencia real en el aprendizaje y la toma de decisiones.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48701936,
-    "url": "https://dobrowolski.dev/article/enhancing-x11-application-security-with-lxc/",
-    "score": 69,
-    "time": 1782595656,
-    "titulo_es": "Aislamiento de aplicaciones con LXC para mayor seguridad",
-    "resumen": "El artículo describe cómo utilizar LXC (Linux Containers) en Arch Linux para aislar aplicaciones como navegadores web o aplicaciones de mensajería instantánea de Electron del sistema anfitrión. Se detalla la instalación y configuración de LXC, incluyendo la asignación de red (bridge) y la configuración de mapeo de UID/GID (unprivileged containers) para evitar que un proceso comprometido dentro del contenedor tenga permisos significativos en el sistema anfitrión. Se explica el proceso de creación de un contenedor, instalación de aplicaciones dentro de él y, crucialmente, la configuración para ejecutar aplicaciones X11, incluyendo el mapeo del socket X11, la creación de un archivo .Xauthority compatible y la configuración de las variables de entorno DISPLAY y XAUTHORITY. El objetivo principal es mejorar la seguridad al limitar el impacto de una posible vulnerabilidad en la aplicación aislada.",
+    "id": 48714529,
+    "url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
+    "score": 633,
+    "time": 1782704527,
+    "titulo_es": "Leyes de verificación de edad: El camino hacia la atribución de identidad digital",
+    "resumen": "El artículo expone cómo las regulaciones de verificación de edad implementadas en varios países funcionan como sistemas de atribución de identidad, vinculando cuentas digitales con identidades físicas reales (como números de seguridad social o identificaciones oficiales). Desde una perspectiva de seguridad y privacidad, el autor advierte que estas medidas facilitan la vigilancia estatal automatizada al neutralizar técnicas de anonimato como VPNs o Tor, y sugiere el uso de criptomonedas de privacidad como Monero para realizar verificaciones en caso de ser estrictamente necesario.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48660441,
-    "url": "https://www.theatlantic.com/magazine/2026/08/writers-way-galapagos-charles-darwin-travel/687480/",
-    "score": 45,
-    "time": 1782311043,
-    "titulo_es": "Las Islas Galápagos: Laboratorio de Evolución y el Impacto Humano",
-    "resumen": "El artículo narra una visita a las Islas Galápagos, destacando el encuentro con las tortugas gigantes como una metáfora del ritmo de vida pre-humano en el archipiélago. Explora cómo el aislamiento y la falta de depredadores permitieron la evolución única de estas especies, inspirando a Charles Darwin en su teoría de la evolución. Contrasta la fauna original, carente de temor hacia los humanos, con la situación actual, donde el turismo masivo y las regulaciones de conservación intentan preservar este ecosistema frágil. Se detalla la historia de la explotación de las tortugas por su carne y agua, y se describen las normativas actuales en lugares como El Chato Ranch para proteger a los animales. Se mencionan otras especies endémicas como el cormorán no volador, el pez murciélago y la iguana marina, subrayando la importancia de las Galápagos como un 'laboratorio de evolución' que enfrenta el desafío de preservar su naturaleza intacta frente a la afluencia turística y las actividades humanas.",
+    "id": 48673197,
+    "url": "https://linkerd.io/2026/06/24/federating-clusters-for-zero-downtime-kubernetes/index.html",
+    "score": 9,
+    "time": 1782394672,
+    "titulo_es": "Configuración Multiclúster de Linkerd: Conectando Modos Federados, Espejados y de Pasarela en GKE",
+    "resumen": "El artículo aborda cómo implementar una arquitectura multiclúster robusta y de alta disponibilidad en Google Kubernetes Engine (GKE) utilizando la extensión multiclúster de Linkerd. Detalla cómo combinar simultáneamente tres modos sobre los mismos enlaces de red en una topología de malla completa (full-mesh): federación de servicios para failover automático (como el frontend), espejado (mirroring) en red plana para control de tráfico directo entre pods de distintas regiones para mantener la localidad de datos (como la API), y espejado mediante pasarela (gateway) para clústeres sin conectividad directa de red plana (como analytics).",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48670314,
+    "url": "https://blog.cloudflare.com/hyper-bug/",
+    "score": 98,
+    "time": 1782374140,
+    "titulo_es": "Depurando una condición de carrera silenciosa en la biblioteca de Rust 'hyper' dentro de Cloudflare Images",
+    "resumen": "El artículo detalla la resolución de un bug intermitente que afectaba al servicio Cloudflare Images tras reestructurar su integración con Workers para usar conexiones directas por sockets. Las peticiones de transformación de imágenes de gran tamaño se truncaban silenciosamente devolviendo un estado HTTP 200 sin errores. Tras una investigación técnica profunda, se descubrió una condición de carrera en la biblioteca HTTP de Rust 'hyper': cuando el lector en el extremo del socket era lento y el búfer de salida se llenaba, 'hyper' realizaba un cierre prematuro de la conexión antes de que todos los datos de su búfer interno se hubieran transferido con éxito al búfer del kernel del sistema operativo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48710092,
+    "url": "https://dam.stanford.edu/memory-prices.html",
+    "score": 339,
+    "time": 1782671573,
+    "titulo_es": "Precios históricos y actuales de memoria y almacenamiento",
+    "resumen": "Un conjunto de datos interactivo y descargable que recopila y analiza los precios históricos y actuales de tecnologías de memoria y almacenamiento como DRAM, NAND y HBM. Inspirado en el clásico conjunto de datos de John C. McCallum y mantenido por el proyecto Stanford DAM, el recurso actualiza mensualmente los costos de DRAM y NAND mediante Keepa, y trimestralmente los de HBM a través de Epoch AI, permitiendo la visualización gráfica y la descarga de los datos en formato CSV.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48714802,
+    "url": "https://github.com/ogulcancelik/herdr",
+    "score": 90,
+    "time": 1782707266,
+    "titulo_es": "Herdr: Multiplexor de Agentes para Terminal con Workspaces, Tabs y Panes",
+    "resumen": "Herdr es un multiplexor de terminal diseñado para gestionar agentes de desarrollo y procesos en tiempo real. Permite organizar el trabajo en workspaces, tabs y panes, ofreciendo una vista general del estado de cada agente (bloqueado, trabajando, completado). Soporta interacciones nativas del ratón como clic y arrastre para dividir o gestionar panes. No requiere GUI ni tecnologías como Electron, mostrando el terminal nativo del agente. Herdr maneja sesiones en segundo plano, permitiendo detach y reattach sin interrumpir la ejecución de los procesos. Gestiona actualizaciones con un mecanismo de parada y reinicio, o un modo experimental `--handoff` para transferir procesos en ejecución. Las keybindings son explícitas, diferenciando entre atajos con prefijo y atajos directos. La detección del estado del agente se basa en nombres de proceso y salida de terminal, con soporte para integraciones oficiales que proveen identidad de sesión nativa.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48716634,
+    "url": "https://arstechnica.com/science/2026/06/why-did-this-journal-retract-two-1940s-papers-by-max-planck/",
+    "score": 157,
+    "time": 1782723489,
+    "titulo_es": "Retracción inexplicable de dos artículos de Max Planck por violaciones de derechos de autor percibidas por un algoritmo",
+    "resumen": "Dos artículos de Max Planck, pionero de la mecánica cuántica, fueron inexplicablemente retirados por la revista Naturwissenschaften (ahora The Science of Nature) bajo la acusación de violación de artículo. Los historiadores de la ciencia Yves Gingras y Mahdi Khelfaoui investigaron y sugieren que la retracción se debió a un posible malentendido o ignorancia por parte del editor sobre las prácticas de publicación pasadas, particularmente en lo referente a derechos de autor y publicaciones duplicadas. La primera retracción, de un artículo de 1942 basado en una conferencia, se debió probablemente a que el mismo contenido apareció en otros formatos (folleto, revista, antología). La segunda retracción, de un artículo de 1940, parece haber sido causada por una ambigüedad en la catalogación, ya que había dos artículos con el mismo título en la misma revista, uno de Planck y otro de Aloys Muller, lo que pudo haber confundido a herramientas algorítmicas para detectar duplicados o \"autoplagio\". La editora actual de la revista, Suzanne Scarlata, considera que fue un error de algoritmo y que debería rectificarse. El artículo plantea la cuestión de si los editores de revistas científicas deben aplicar retroactivamente estándares contemporáneos sobre publicación duplicada o autoplagio a artículos históricos.",
     "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48712420,
+    "url": "https://arxiv.org/abs/2401.07013",
+    "score": 110,
+    "time": 1782685924,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades en arXiv",
+    "resumen": "El artículo describe arXivLabs, un marco de trabajo diseñado para permitir a colaboradores externos desarrollar y compartir nuevas funcionalidades directamente en la plataforma arXiv. Se enfatiza que tanto individuos como organizaciones que colaboran a través de arXivLabs deben adherirse a los valores de arXiv: apertura, comunidad, excelencia y privacidad de datos del usuario. arXiv se compromete a trabajar solo con socios que cumplan con estos principios. Se invita a la comunidad a proponer proyectos que aporten valor a arXiv.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48706560,
+    "url": "https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online",
+    "score": 536,
+    "time": 1782647776,
+    "titulo_es": "El Congreso se prepara para votar la Ley KIDS: Implicaciones para la privacidad y la ciberseguridad en línea",
+    "resumen": "El artículo analiza la inminente votación en el Congreso sobre la Ley KIDS, un conjunto de legislaciones que incluye una versión revisada de la Ley de Seguridad Infantil en Línea (KOSA) junto con otras medidas. La ley busca controlar la navegación web y la mensajería privada, imponiendo requisitos que obligarían a los servicios en línea a verificar la edad de todos los usuarios, implementar políticas de moderación de contenido dirigidas por el gobierno y regular las comunicaciones privadas y cifradas. A pesar de las afirmaciones de los defensores de que la ley protege a los menores, el artículo argumenta que compromete la privacidad, la libertad de expresión y la capacidad de los usuarios para operar en línea sin revelar datos sensibles. La ley introduce un estándar de \"sabe o debería saber\" para determinar si un usuario es menor, lo que crea un riesgo legal significativo para las empresas. Para evitar responsabilidades, las empresas podrían verse obligadas a implementar prácticas restrictivas de verificación de edad, como la recopilación de identificaciones gubernamentales o el uso de sistemas de estimación de edad (incluida la biometría facial), que son propensos a errores y discriminación. Otros componentes de la ley, como la Ley SAFE BOTS y la Ley SCREEN, refuerzan esta presión de verificación de edad, especialmente para contenidos explícitos y chatbots. La complejidad y el riesgo legal asociado a estas medidas son considerables, y se espera que muchas empresas opten por la verificación de edad generalizada para mitigar la responsabilidad, afectando a usuarios de todas las edades.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48708795,
+    "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
+    "score": 164,
+    "time": 1782663850,
+    "titulo_es": "Tokenmaxxing: Por qué las empresas quemaron dinero en IA intencionalmente",
+    "resumen": "El artículo discute el fenómeno 'tokenmaxxing', donde las empresas alentaron a los empleados a gastar tokens (presumiblemente en herramientas de IA) en tareas incluso inútiles. Contrariamente a la creencia popular de que esto fue un error o una mala gestión, el autor argumenta que fue una estrategia deliberada por parte de los ejecutivos para superar la resistencia inicial al uso de herramientas de IA. En el pasado, muchos empleados, especialmente los más experimentados, se mostraban reacios a adoptar estas herramientas. Las políticas de 'tokenmaxxing', aunque contundentes, sirvieron como un catalizador para forzar la adopción, logrando que la mayoría de los equipos ahora utilicen herramientas de IA para codificar. Sin embargo, este aumento en el gasto de tokens ha coincidido con un incremento en los precios de las API de proveedores como OpenAI y Anthropic, quienes se preparan para salir a bolsa.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48708991,
+    "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
+    "score": 446,
+    "time": 1782664872,
+    "titulo_es": "Profesor de Economía en Brown detecta fraude masivo con IA en examen de matemáticas",
+    "resumen": "El artículo describe el caso del economista Roberto Serrano de la Universidad de Brown, quien ha identificado un fraude a gran escala en su curso de matemáticas avanzadas (ECON 1170), donde al menos 50 estudiantes presuntamente utilizaron herramientas de Inteligencia Artificial para hacer trampa en un examen. Serrano expresa preocupación por la reacción tibia de la universidad ante el incidente y aboga por un debate público sobre el impacto de la IA en la educación superior, argumentando que es crucial para preservar la integridad académica y el futuro de la enseñanza universitaria. Se destaca la trayectoria de Serrano, su experiencia superando la ceguera y su enfoque en la teoría de juegos, así como la modalidad de exámenes 'take-home' que utilizó para evaluar a sus estudiantes.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48709187,
+    "url": "http://oldvcr.blogspot.com/2026/06/working-around-dragons-with-lemote.html",
+    "score": 129,
+    "time": 1782665939,
+    "titulo_es": "El Procesador Godson-1: Un Viaje al Corazón de la Arquitectura MIPS China",
+    "resumen": "El artículo detalla la historia y las especificaciones técnicas del Godson-1, el primer microprocesador chino de 64 bits desarrollado por el Instituto de Tecnología de la Computación (ICT) de la Academia China de Ciencias. Lanzado en 2002, este chip basado en la familia MIPS se fabricó en un proceso de 180nm, con 4 millones de transistores y una frecuencia de hasta 266MHz. Se destacan sus características arquitectónicas como el soporte para ejecución fuera de orden, predicción de saltos y renombrado de registros (limitado a enteros). A pesar de sus limitaciones, como la falta de caché L2 y un diseño de circuito menos sofisticado en comparación con competidores occidentales de la época, el Godson-1 representó un hito significativo en el desarrollo de semiconductores en China, ejecutando distribuciones como Red Hat Linux 7.1 y VXWorks en modo little-endian.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48657131,
+    "url": "https://blog.plover.com/lang/bismillah.html",
+    "score": 76,
+    "time": 1782291946,
+    "titulo_es": "Descifrando la Basmala",
+    "resumen": "El artículo explora las complejidades de la tipografía árabe y su representación en motores de fuentes tempranos, contrastando la renderización correcta de ligaduras y la representación errónea que separaba las letras. Se utiliza la frase 'bismillah al-raḥman al-raḥim' como ejemplo principal para ilustrar la importancia de las ligaduras correctas en la escritura árabe y cómo los sistemas de renderizado defectuosos afectaban la legibilidad y el significado, especialmente para textos de gran importancia cultural y religiosa.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48710232,
+    "url": "https://github.com/librepods-org/librepods",
+    "score": 421,
+    "time": 1782672533,
+    "titulo_es": "LibrePods: Reimplementación del Protocolo de AirPods en Plataformas No Apple",
+    "resumen": "El artículo detalla el proyecto LibrePods, una iniciativa de software para permitir que los AirPods de Apple funcionen con características completas en dispositivos no Apple (principalmente Android y Linux). El proyecto implica la ingeniería inversa del protocolo propietario (AACP y ATT) utilizado por los AirPods, permitiendo funcionalidades como cambio de modos de cancelación de ruido, detección de oído, estado de batería preciso, gestos de cabeza, y conciencia conversacional. Se mencionan planes futuros, como la integración con 'Find My', que podrían requerir acceso root en Android. Se explican métodos para habilitar funciones especiales, como modificar el VendorID en Linux o usar una configuración específica en la app de Android si se dispone de Xposed. Se destaca la capacidad de conexión simultánea a dos dispositivos con conmutación fluida, y la configuración de ajustes de accesibilidad y personalización del modo transparencia, similar a las opciones en iOS. Se hace referencia a la importancia de un disector Wireshark para el entendimiento del protocolo y se reconoce la ayuda de la IA en la generación de partes del código, mientras que el núcleo del proyecto, incluyendo el servicio en segundo plano y la interfaz de usuario, fue desarrollado manualmente. Se advierte sobre un sitio web fraudulento que se hace pasar por oficial de LibrePods.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48706714,
+    "url": "https://github.com/openai/codex/issues/2847",
+    "score": 217,
+    "time": 1782649653,
+    "titulo_es": "Reiniciando la discusión sobre la exclusión de datos sensibles y archivos grandes en modelos",
+    "resumen": "El artículo discute un problema de software relacionado con el manejo de datos sensibles y archivos grandes en el contexto de modelos de IA (mencionado como 'codex-rs'). Se identificaron dos casos de uso principales: prevenir el envío de datos sensibles al modelo y excluir archivos grandes o irrelevantes. La discusión original se cerró a favor de una implementación en Rust (codex-rs), pero la funcionalidad comparable no existe actualmente en dicha implementación. El autor busca reiniciar la discusión para converger en un diseño que aborde estos casos de uso.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48673450,
+    "url": "https://aleph-alpha.com/en/blog/model-training-as-code/",
+    "score": 171,
+    "time": 1782395646,
+    "titulo_es": "Savanna: Una Fábrica de Modelos para el Entrenamiento Colaborativo de Modelos de IA",
+    "resumen": "El entrenamiento de modelos de inteligencia artificial se ha vuelto excesivamente complejo, requiriendo múltiples etapas especializadas y equipos. La coordinación manual entre estos equipos no escala y es propensa a errores costosos y a la pérdida de conocimiento. Para abordar esto, en Aleph Alpha se ha desarrollado Savanna, una \"fábrica de modelos\" que implementa todo el pipeline de entrenamiento como un proyecto de software colaborativo. Savanna hace que las ejecuciones de entrenamiento de extremo a extremo sean herméticas y se puedan lanzar con un solo clic. Esto transforma el entrenamiento de modelos en un proceso de ingeniería de software robusto, donde la complejidad se gestiona mediante la automatización y la estandarización en código, permitiendo una mayor autonomía a los equipos especializados y asegurando que las mejoras en etapas individuales se traduzcan efectivamente en un mejor modelo final, minimizando los errores humanos y los costos asociados a fallos computacionales.",
+    "categoria": "IA"
   }
 ]
