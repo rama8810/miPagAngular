@@ -1,155 +1,119 @@
 [
   {
-    "id": 48662018,
-    "url": "https://edera.dev/stories/numa-part-1-cores-memory-and-the-distance-between-them",
-    "score": 50,
-    "time": 1782317408,
-    "titulo_es": "Por qué tus máquinas virtuales son lentas: Una introducción técnica a NUMA",
-    "resumen": "El artículo aborda la problemática del rendimiento inconsistente en máquinas virtuales idénticas bajo la misma carga de trabajo, revelando que una degradación del 20% se debe a que la memoria del guest está asignada en un nodo NUMA distinto al de las CPUs que lo ejecutan. Explica la transición histórica de la arquitectura UMA a NUMA debido a los límites físicos de ancho de banda, longitud de trazas eléctricas y saturación de buses en servidores multiprocesador. Asimismo, introduce la solución desarrollada por Edera para lograr una virtualización basada en Xen que es consciente de NUMA de extremo a extremo.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48674875,
-    "url": "https://thomasdullien.github.io/guides/entrepreneurship/",
-    "score": 33,
-    "time": 1782401304,
-    "titulo_es": "Reflexiones sobre el emprendimiento en el desarrollo de software y la gestión de equipos técnicos",
-    "resumen": "El autor comparte sus lecciones tras fundar y vender exitosamente dos empresas de software (zynamics y optimyze). Analiza los motivos para emprender en el sector de software y SaaS B2B, destacando la necesidad de autonomía y la libertad para resolver problemas técnicos directamente, como la higiene del código. Asimismo, resalta la ventaja de las empresas de software pequeñas para contratar ingenieros altamente talentosos con perfiles no convencionales, evitando la burocracia y las estructuras jerárquicas ineficientes de las grandes corporaciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48714529,
-    "url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
-    "score": 633,
-    "time": 1782704527,
-    "titulo_es": "Leyes de verificación de edad: El camino hacia la atribución de identidad digital",
-    "resumen": "El artículo expone cómo las regulaciones de verificación de edad implementadas en varios países funcionan como sistemas de atribución de identidad, vinculando cuentas digitales con identidades físicas reales (como números de seguridad social o identificaciones oficiales). Desde una perspectiva de seguridad y privacidad, el autor advierte que estas medidas facilitan la vigilancia estatal automatizada al neutralizar técnicas de anonimato como VPNs o Tor, y sugiere el uso de criptomonedas de privacidad como Monero para realizar verificaciones en caso de ser estrictamente necesario.",
+    "id": 48730729,
+    "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
+    "score": 84,
+    "time": 1782815783,
+    "titulo_es": "Los monederos de identidad digital de la UE y su dependencia de las APIs de seguridad de Google y Apple",
+    "resumen": "El artículo expone el riesgo de que los nuevos monederos de identidad digital de la Unión Europea dependan de servicios de atestación remota propietarios, como Google Play Integrity API y Apple Managed Device Attestation, para verificar la integridad del hardware y evitar manipulaciones. Esta implementación técnica delega la seguridad en el ecosistema cerrado de Big Tech, excluyendo a usuarios de sistemas operativos alternativos enfocados en la privacidad (como GrapheneOS y e/OS) que carecen de los servicios de Google con licencia. Como alternativa viable y abierta, se propone la API de Atestación de Hardware de Android, la cual realiza comprobaciones de seguridad criptográfica basadas en hardware sin forzar la dependencia de las políticas de distribución y tracking de Google.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48673197,
-    "url": "https://linkerd.io/2026/06/24/federating-clusters-for-zero-downtime-kubernetes/index.html",
-    "score": 9,
-    "time": 1782394672,
-    "titulo_es": "Configuración Multiclúster de Linkerd: Conectando Modos Federados, Espejados y de Pasarela en GKE",
-    "resumen": "El artículo aborda cómo implementar una arquitectura multiclúster robusta y de alta disponibilidad en Google Kubernetes Engine (GKE) utilizando la extensión multiclúster de Linkerd. Detalla cómo combinar simultáneamente tres modos sobre los mismos enlaces de red en una topología de malla completa (full-mesh): federación de servicios para failover automático (como el frontend), espejado (mirroring) en red plana para control de tráfico directo entre pods de distintas regiones para mantener la localidad de datos (como la API), y espejado mediante pasarela (gateway) para clústeres sin conectividad directa de red plana (como analytics).",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48670314,
-    "url": "https://blog.cloudflare.com/hyper-bug/",
-    "score": 98,
-    "time": 1782374140,
-    "titulo_es": "Depurando una condición de carrera silenciosa en la biblioteca de Rust 'hyper' dentro de Cloudflare Images",
-    "resumen": "El artículo detalla la resolución de un bug intermitente que afectaba al servicio Cloudflare Images tras reestructurar su integración con Workers para usar conexiones directas por sockets. Las peticiones de transformación de imágenes de gran tamaño se truncaban silenciosamente devolviendo un estado HTTP 200 sin errores. Tras una investigación técnica profunda, se descubrió una condición de carrera en la biblioteca HTTP de Rust 'hyper': cuando el lector en el extremo del socket era lento y el búfer de salida se llenaba, 'hyper' realizaba un cierre prematuro de la conexión antes de que todos los datos de su búfer interno se hubieran transferido con éxito al búfer del kernel del sistema operativo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48710092,
-    "url": "https://dam.stanford.edu/memory-prices.html",
-    "score": 339,
-    "time": 1782671573,
-    "titulo_es": "Precios históricos y actuales de memoria y almacenamiento",
-    "resumen": "Un conjunto de datos interactivo y descargable que recopila y analiza los precios históricos y actuales de tecnologías de memoria y almacenamiento como DRAM, NAND y HBM. Inspirado en el clásico conjunto de datos de John C. McCallum y mantenido por el proyecto Stanford DAM, el recurso actualiza mensualmente los costos de DRAM y NAND mediante Keepa, y trimestralmente los de HBM a través de Epoch AI, permitiendo la visualización gráfica y la descarga de los datos en formato CSV.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48714802,
-    "url": "https://github.com/ogulcancelik/herdr",
-    "score": 90,
-    "time": 1782707266,
-    "titulo_es": "Herdr: Multiplexor de Agentes para Terminal con Workspaces, Tabs y Panes",
-    "resumen": "Herdr es un multiplexor de terminal diseñado para gestionar agentes de desarrollo y procesos en tiempo real. Permite organizar el trabajo en workspaces, tabs y panes, ofreciendo una vista general del estado de cada agente (bloqueado, trabajando, completado). Soporta interacciones nativas del ratón como clic y arrastre para dividir o gestionar panes. No requiere GUI ni tecnologías como Electron, mostrando el terminal nativo del agente. Herdr maneja sesiones en segundo plano, permitiendo detach y reattach sin interrumpir la ejecución de los procesos. Gestiona actualizaciones con un mecanismo de parada y reinicio, o un modo experimental `--handoff` para transferir procesos en ejecución. Las keybindings son explícitas, diferenciando entre atajos con prefijo y atajos directos. La detección del estado del agente se basa en nombres de proceso y salida de terminal, con soporte para integraciones oficiales que proveen identidad de sesión nativa.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48716634,
-    "url": "https://arstechnica.com/science/2026/06/why-did-this-journal-retract-two-1940s-papers-by-max-planck/",
-    "score": 157,
-    "time": 1782723489,
-    "titulo_es": "Retracción inexplicable de dos artículos de Max Planck por violaciones de derechos de autor percibidas por un algoritmo",
-    "resumen": "Dos artículos de Max Planck, pionero de la mecánica cuántica, fueron inexplicablemente retirados por la revista Naturwissenschaften (ahora The Science of Nature) bajo la acusación de violación de artículo. Los historiadores de la ciencia Yves Gingras y Mahdi Khelfaoui investigaron y sugieren que la retracción se debió a un posible malentendido o ignorancia por parte del editor sobre las prácticas de publicación pasadas, particularmente en lo referente a derechos de autor y publicaciones duplicadas. La primera retracción, de un artículo de 1942 basado en una conferencia, se debió probablemente a que el mismo contenido apareció en otros formatos (folleto, revista, antología). La segunda retracción, de un artículo de 1940, parece haber sido causada por una ambigüedad en la catalogación, ya que había dos artículos con el mismo título en la misma revista, uno de Planck y otro de Aloys Muller, lo que pudo haber confundido a herramientas algorítmicas para detectar duplicados o \"autoplagio\". La editora actual de la revista, Suzanne Scarlata, considera que fue un error de algoritmo y que debería rectificarse. El artículo plantea la cuestión de si los editores de revistas científicas deben aplicar retroactivamente estándares contemporáneos sobre publicación duplicada o autoplagio a artículos históricos.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48712420,
-    "url": "https://arxiv.org/abs/2401.07013",
-    "score": 110,
-    "time": 1782685924,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades en arXiv",
-    "resumen": "El artículo describe arXivLabs, un marco de trabajo diseñado para permitir a colaboradores externos desarrollar y compartir nuevas funcionalidades directamente en la plataforma arXiv. Se enfatiza que tanto individuos como organizaciones que colaboran a través de arXivLabs deben adherirse a los valores de arXiv: apertura, comunidad, excelencia y privacidad de datos del usuario. arXiv se compromete a trabajar solo con socios que cumplan con estos principios. Se invita a la comunidad a proponer proyectos que aporten valor a arXiv.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48706560,
-    "url": "https://www.eff.org/deeplinks/2026/06/kids-act-would-require-age-checks-get-online",
-    "score": 536,
-    "time": 1782647776,
-    "titulo_es": "El Congreso se prepara para votar la Ley KIDS: Implicaciones para la privacidad y la ciberseguridad en línea",
-    "resumen": "El artículo analiza la inminente votación en el Congreso sobre la Ley KIDS, un conjunto de legislaciones que incluye una versión revisada de la Ley de Seguridad Infantil en Línea (KOSA) junto con otras medidas. La ley busca controlar la navegación web y la mensajería privada, imponiendo requisitos que obligarían a los servicios en línea a verificar la edad de todos los usuarios, implementar políticas de moderación de contenido dirigidas por el gobierno y regular las comunicaciones privadas y cifradas. A pesar de las afirmaciones de los defensores de que la ley protege a los menores, el artículo argumenta que compromete la privacidad, la libertad de expresión y la capacidad de los usuarios para operar en línea sin revelar datos sensibles. La ley introduce un estándar de \"sabe o debería saber\" para determinar si un usuario es menor, lo que crea un riesgo legal significativo para las empresas. Para evitar responsabilidades, las empresas podrían verse obligadas a implementar prácticas restrictivas de verificación de edad, como la recopilación de identificaciones gubernamentales o el uso de sistemas de estimación de edad (incluida la biometría facial), que son propensos a errores y discriminación. Otros componentes de la ley, como la Ley SAFE BOTS y la Ley SCREEN, refuerzan esta presión de verificación de edad, especialmente para contenidos explícitos y chatbots. La complejidad y el riesgo legal asociado a estas medidas son considerables, y se espera que muchas empresas opten por la verificación de edad generalizada para mitigar la responsabilidad, afectando a usuarios de todas las edades.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48708795,
-    "url": "https://12gramsofcarbon.com/p/agentics-tech-things-tokenmaxxing",
-    "score": 164,
-    "time": 1782663850,
-    "titulo_es": "Tokenmaxxing: Por qué las empresas quemaron dinero en IA intencionalmente",
-    "resumen": "El artículo discute el fenómeno 'tokenmaxxing', donde las empresas alentaron a los empleados a gastar tokens (presumiblemente en herramientas de IA) en tareas incluso inútiles. Contrariamente a la creencia popular de que esto fue un error o una mala gestión, el autor argumenta que fue una estrategia deliberada por parte de los ejecutivos para superar la resistencia inicial al uso de herramientas de IA. En el pasado, muchos empleados, especialmente los más experimentados, se mostraban reacios a adoptar estas herramientas. Las políticas de 'tokenmaxxing', aunque contundentes, sirvieron como un catalizador para forzar la adopción, logrando que la mayoría de los equipos ahora utilicen herramientas de IA para codificar. Sin embargo, este aumento en el gasto de tokens ha coincidido con un incremento en los precios de las API de proveedores como OpenAI y Anthropic, quienes se preparan para salir a bolsa.",
+    "id": 48721903,
+    "url": "https://quesma.com/blog/qwen-36-is-awesome/",
+    "score": 962,
+    "time": 1782752716,
+    "titulo_es": "Impresiones sobre Qwen 3.6: El primer modelo local que realmente destaca",
+    "resumen": "El autor analiza las variantes del modelo de IA local Qwen 3.6 (el modelo denso de 27B y el de mezcla de expertos 35B A3B), destacando la superioridad del primero en tareas complejas como el desarrollo de software y la escritura creativa. Desde una perspectiva de arquitectura, detalla cómo desplegar eficientemente el modelo con cuantización de 8 bits (Q8_0) y soporte de predicción multi-token (MTP) utilizando directamente llama.cpp. Adicionalmente, presenta pruebas de rendimiento en hardware Apple Silicon (Macbook Max M5), demostrando una velocidad de ~30 tokens por segundo gracias al uso óptimo de la memoria compartida y la GPU.",
     "categoria": "IA"
   },
   {
-    "id": 48708991,
-    "url": "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
-    "score": 446,
-    "time": 1782664872,
-    "titulo_es": "Profesor de Economía en Brown detecta fraude masivo con IA en examen de matemáticas",
-    "resumen": "El artículo describe el caso del economista Roberto Serrano de la Universidad de Brown, quien ha identificado un fraude a gran escala en su curso de matemáticas avanzadas (ECON 1170), donde al menos 50 estudiantes presuntamente utilizaron herramientas de Inteligencia Artificial para hacer trampa en un examen. Serrano expresa preocupación por la reacción tibia de la universidad ante el incidente y aboga por un debate público sobre el impacto de la IA en la educación superior, argumentando que es crucial para preservar la integridad académica y el futuro de la enseñanza universitaria. Se destaca la trayectoria de Serrano, su experiencia superando la ceguera y su enfoque en la teoría de juegos, así como la modalidad de exámenes 'take-home' que utilizó para evaluar a sus estudiantes.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48709187,
-    "url": "http://oldvcr.blogspot.com/2026/06/working-around-dragons-with-lemote.html",
-    "score": 129,
-    "time": 1782665939,
-    "titulo_es": "El Procesador Godson-1: Un Viaje al Corazón de la Arquitectura MIPS China",
-    "resumen": "El artículo detalla la historia y las especificaciones técnicas del Godson-1, el primer microprocesador chino de 64 bits desarrollado por el Instituto de Tecnología de la Computación (ICT) de la Academia China de Ciencias. Lanzado en 2002, este chip basado en la familia MIPS se fabricó en un proceso de 180nm, con 4 millones de transistores y una frecuencia de hasta 266MHz. Se destacan sus características arquitectónicas como el soporte para ejecución fuera de orden, predicción de saltos y renombrado de registros (limitado a enteros). A pesar de sus limitaciones, como la falta de caché L2 y un diseño de circuito menos sofisticado en comparación con competidores occidentales de la época, el Godson-1 representó un hito significativo en el desarrollo de semiconductores en China, ejecutando distribuciones como Red Hat Linux 7.1 y VXWorks en modo little-endian.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48657131,
-    "url": "https://blog.plover.com/lang/bismillah.html",
-    "score": 76,
-    "time": 1782291946,
-    "titulo_es": "Descifrando la Basmala",
-    "resumen": "El artículo explora las complejidades de la tipografía árabe y su representación en motores de fuentes tempranos, contrastando la renderización correcta de ligaduras y la representación errónea que separaba las letras. Se utiliza la frase 'bismillah al-raḥman al-raḥim' como ejemplo principal para ilustrar la importancia de las ligaduras correctas en la escritura árabe y cómo los sistemas de renderizado defectuosos afectaban la legibilidad y el significado, especialmente para textos de gran importancia cultural y religiosa.",
+    "id": 48724230,
+    "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
+    "score": 540,
+    "time": 1782762568,
+    "titulo_es": "Fundación para la Computación Centrada en el Ser Humano busca un nuevo TLD y desata debate sobre PDF vs. HTML",
+    "resumen": "La Fundación para la Computación Centrada en el Ser Humano (HCCF) ha lanzado una campaña para asegurar un nuevo dominio de nivel superior (TLD) orientado a la tecnología ética. Sin embargo, la publicación de su manifiesto en formato PDF en lugar de HTML ha generado una intensa discusión técnica. Los usuarios debaten sobre la usabilidad, la accesibilidad web, el diseño adaptable (responsive) y el consumo de recursos de CPU y ancho de banda, cuestionando si el uso de formatos no nativos de la web contradice los principios de una arquitectura web centrada en el usuario.",
     "categoria": "Frontend"
   },
   {
-    "id": 48710232,
-    "url": "https://github.com/librepods-org/librepods",
-    "score": 421,
-    "time": 1782672533,
-    "titulo_es": "LibrePods: Reimplementación del Protocolo de AirPods en Plataformas No Apple",
-    "resumen": "El artículo detalla el proyecto LibrePods, una iniciativa de software para permitir que los AirPods de Apple funcionen con características completas en dispositivos no Apple (principalmente Android y Linux). El proyecto implica la ingeniería inversa del protocolo propietario (AACP y ATT) utilizado por los AirPods, permitiendo funcionalidades como cambio de modos de cancelación de ruido, detección de oído, estado de batería preciso, gestos de cabeza, y conciencia conversacional. Se mencionan planes futuros, como la integración con 'Find My', que podrían requerir acceso root en Android. Se explican métodos para habilitar funciones especiales, como modificar el VendorID en Linux o usar una configuración específica en la app de Android si se dispone de Xposed. Se destaca la capacidad de conexión simultánea a dos dispositivos con conmutación fluida, y la configuración de ajustes de accesibilidad y personalización del modo transparencia, similar a las opciones en iOS. Se hace referencia a la importancia de un disector Wireshark para el entendimiento del protocolo y se reconoce la ayuda de la IA en la generación de partes del código, mientras que el núcleo del proyecto, incluyendo el servicio en segundo plano y la interfaz de usuario, fue desarrollado manualmente. Se advierte sobre un sitio web fraudulento que se hace pasar por oficial de LibrePods.",
+    "id": 48730818,
+    "url": "https://cekrem.github.io/posts/parse-dont-validate-typescript/",
+    "score": 6,
+    "time": 1782816503,
+    "titulo_es": "Analizar, no validar: Tipado nominal y marcas en TypeScript",
+    "resumen": "El artículo explora el principio de diseño 'Parse, don't validate' (Analizar, no validar) aplicado a TypeScript, explicando cómo la validación tradicional descarta información crítica en tiempo de compilación. Para solucionar esto en un sistema de tipos estructural como el de TypeScript, el autor detalla el uso de 'branding' (marcado) mediante intersecciones y símbolos únicos para crear tipos nominales u opacos. Esto permite asegurar que ciertos datos (como correos electrónicos) hayan sido parseados y validados correctamente antes de ser consumidos, evitando la programación defensiva redundante a lo largo de la base de código.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48706714,
-    "url": "https://github.com/openai/codex/issues/2847",
-    "score": 217,
-    "time": 1782649653,
-    "titulo_es": "Reiniciando la discusión sobre la exclusión de datos sensibles y archivos grandes en modelos",
-    "resumen": "El artículo discute un problema de software relacionado con el manejo de datos sensibles y archivos grandes en el contexto de modelos de IA (mencionado como 'codex-rs'). Se identificaron dos casos de uso principales: prevenir el envío de datos sensibles al modelo y excluir archivos grandes o irrelevantes. La discusión original se cerró a favor de una implementación en Rust (codex-rs), pero la funcionalidad comparable no existe actualmente en dicha implementación. El autor busca reiniciar la discusión para converger en un diseño que aborde estos casos de uso.",
+    "id": 48698908,
+    "url": "https://weblog.rogueamoeba.com/2026/06/26/free-the-icons/",
+    "score": 504,
+    "time": 1782572717,
+    "titulo_es": "Liberen los iconos de macOS: Las restricciones de diseño de Apple perjudican la usabilidad",
+    "resumen": "Análisis sobre la evolución del diseño de iconos en macOS, enfocándose en la transición de la versión 26 (Tahoe) a la 27 (Golden Gate). Se critica la decisión de Apple de imponer un formato estandarizado de 'squircle' (superelipse) y la estética 'Liquid Glass' a desarrolladores de terceros. El autor argumenta que esta falta de diversidad geométrica degrada la usabilidad y accesibilidad (especialmente para usuarios con daltonismo) y aboga por que Apple restaure la libertad de diseño permitiendo formas personalizadas para los iconos de las aplicaciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48679762,
+    "url": "https://twoheads.net/the-promise-is-unattended-work/",
+    "score": 28,
+    "time": 1782424688,
+    "titulo_es": "IA en el bucle",
+    "resumen": "El artículo analiza de forma crítica la automatización mediante agentes de IA, contrastando las demostraciones comerciales simplificadas con la complejidad real de producción. Desde la perspectiva de la arquitectura de software, se argumenta que los flujos de trabajo basados en IA heredan los mismos desafíos que el software tradicional (fallos, deriva de datos, dependencias de APIs y excepciones imprevistas). Por ello, requieren observabilidad, gobernanza técnica y la presencia estratégica de un humano en el bucle para mitigar costos ocultos de atención y la falsa productividad.",
     "categoria": "IA"
   },
   {
-    "id": 48673450,
-    "url": "https://aleph-alpha.com/en/blog/model-training-as-code/",
-    "score": 171,
-    "time": 1782395646,
-    "titulo_es": "Savanna: Una Fábrica de Modelos para el Entrenamiento Colaborativo de Modelos de IA",
-    "resumen": "El entrenamiento de modelos de inteligencia artificial se ha vuelto excesivamente complejo, requiriendo múltiples etapas especializadas y equipos. La coordinación manual entre estos equipos no escala y es propensa a errores costosos y a la pérdida de conocimiento. Para abordar esto, en Aleph Alpha se ha desarrollado Savanna, una \"fábrica de modelos\" que implementa todo el pipeline de entrenamiento como un proyecto de software colaborativo. Savanna hace que las ejecuciones de entrenamiento de extremo a extremo sean herméticas y se puedan lanzar con un solo clic. Esto transforma el entrenamiento de modelos en un proceso de ingeniería de software robusto, donde la complejidad se gestiona mediante la automatización y la estandarización en código, permitiendo una mayor autonomía a los equipos especializados y asegurando que las mejoras en etapas individuales se traduzcan efectivamente en un mejor modelo final, minimizando los errores humanos y los costos asociados a fallos computacionales.",
+    "id": 48727177,
+    "url": "https://fil-c.org/context_switches",
+    "score": 146,
+    "time": 1782779899,
+    "titulo_es": "Seguridad de memoria en C/C++: Soporte para las APIs ucontext y setjmp/longjmp en Fil-C",
+    "resumen": "El artículo detalla cómo el proyecto Fil-C implementa de forma segura para la memoria las funciones de salto (setjmp/longjmp) y de control de contexto de usuario (getcontext, setcontext, makecontext y swapcontext). A diferencia del modelo tradicional de C (denominado coloquialmente 'Yolo-C'), donde el mal uso de estas APIs puede provocar corrupción de pila, referencias colgantes o exploits de seguridad, Fil-C mitiga estos riesgos mediante un control estricto de los marcos de ejecución o provocando un 'panic' controlado. Además, analiza los desafíos técnicos que introduce 'setjmp' debido a su capacidad de retornar dos veces y el impacto que esto tiene en las optimizaciones de variables del compilador.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48702320,
+    "url": "http://occ.sdf.org/",
+    "score": 72,
+    "time": 1782598730,
+    "titulo_es": "El Desafío de la Computadora Antigua (Old Computer Challenge)",
+    "resumen": "El artículo detalla la trayectoria del 'Old Computer Challenge', un evento anual iniciado en 2021 por Solène Rapenne que reúne a entusiastas de la informática retro y el minimalismo digital. Se describen las temáticas de sus distintas ediciones, las cuales imponen limitaciones físicas de hardware (como un límite estricto de 512 MB de RAM), restricciones de tiempo de conectividad emulando la era del dial-up, y la promoción de la creación artesanal (DIY) de software y contenido.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48720186,
+    "url": "https://github.com/LinuxMD/linuxmd",
+    "score": 129,
+    "time": 1782745299,
+    "titulo_es": "Linux para la Sega MegaDrive",
+    "resumen": "El artículo detalla un proyecto técnico para portar y ejecutar el kernel de Linux en la clásica consola Sega MegaDrive (Sega Genesis). Explica los pasos para construir una cadena de herramientas de compilación (toolchain) para la arquitectura m68k utilizando buildroot, compilar el cargador de arranque u-boot, generar la imagen del kernel y crear un sistema de archivos raíz erofs. Asimismo, aborda la emulación mediante un fork de QEMU y los requisitos de hardware real utilizando un cartucho EverDrive con su mapeador especial SSF2 para proveer los 4MB de RAM necesarios.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48722052,
+    "url": "https://github.com/deepreinforce-ai/Ornith-1",
+    "score": 218,
+    "time": 1782753377,
+    "titulo_es": "Presentación de Ornith-1.0: Modelos de código abierto auto-mejorables para programación agéntica",
+    "resumen": "El artículo describe Ornith-1.0, una familia de modelos de lenguaje enfocados en el razonamiento y la programación agéntica. Cuenta con una versión densa de 9B y variantes de Mezcla de Expertos (MoE) de 35B y 397B. Estos modelos admiten una ventana de contexto de hasta 256K tokens, se integran con servidores compatibles con OpenAI (como vLLM y SGLang) y destacan en la invocación de herramientas y el uso de entornos de desarrollo basados en terminales.",
     "categoria": "IA"
+  },
+  {
+    "id": 48689885,
+    "url": "https://www.sqlite.org/howtocorrupt.html",
+    "score": 95,
+    "time": 1782497139,
+    "titulo_es": "Corrupción de bases de datos en SQLite",
+    "resumen": "Análisis técnico sobre la resiliencia y las vulnerabilidades de corrupción en bases de datos SQLite. Explica cómo fallos en la gestión de descriptores de archivos (file descriptors) de bajo nivel pueden provocar que otros hilos de ejecución sobreescriban accidentalmente la base de datos con datos basura. Además, examina los riesgos de realizar copias de seguridad en caliente sin pausar transacciones y detalla las alternativas seguras para respaldar bases de datos activas, tales como el comando 'VACUUM INTO', la herramienta 'sqlite3_rsync' y la API de backup de SQLite, además del rol de los archivos de diario auxiliar (journal y WAL) en la recuperación ante fallos de energía.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48698781,
+    "url": "https://notes.shixiangxi.com/en/docs/appendix/alan-kay-on-oop/",
+    "score": 77,
+    "time": 1782571745,
+    "titulo_es": "La concepción original de la programación orientada a objetos según Alan Kay",
+    "resumen": "Este artículo presenta una correspondencia por correo electrónico de Alan Kay en julio de 2003, aclarando el significado original del término \"programación orientada a objetos\" (OOP) que él acuñó. Kay explica que concibió la OOP en Utah alrededor de 1967, influenciado por Sketchpad, Simula, el diseño de ARPANET, el Burroughs B5000 y sus antecedentes en biología y matemáticas. La idea central era que los objetos se comunicaran exclusivamente a través de mensajes, similar a células biológicas o computadoras en red, eliminando el concepto de datos separados y viendo las operaciones como mensajes. Kay también menciona su interés en las álgebras asociadas a los objetos y las familias de estas, aunque el término \"polimorfismo\" fue adoptado posteriormente y \"genericity\" fue un término que él creó. A diferencia de Simula, inicialmente decidió omitir la herencia como característica incorporada hasta comprenderla mejor. Sus primeros experimentos se basaron en modelos de \"Generalization of Algol\" y Euler, y luego evolucionaron con la comprensión de LISP, influencias de Dave Fisher y Carl Hewitt (PLANNER), culminando en la creación del primer Smalltalk en Xerox PARC.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48681499,
+    "url": "https://letters.unchartedpathbreakthroughs.com/posts/why-problem-statements-arent-enough",
+    "score": 3,
+    "time": 1782439057,
+    "titulo_es": "Coaching Personalizado para Ingenieros Senior a Principal por un Ex Ingeniero Staff",
+    "resumen": "El artículo se enfoca en la importancia del 'rango contextual' para que el trabajo de ingenieros de software senior (Senior, Staff, Principal) sea reconocido, adoptado y valorado. Explica que el contexto estratégico se divide en tres áreas: técnico (código, arquitectura, herramientas), de equipo y organizacional (dinámicas, dependencias, prioridades), y de negocio (necesidades del cliente, objetivos de ingresos, competencia). Si bien los ingenieros suelen dominar el contexto técnico, se les anima a expandir su comprensión de los otros dos para mejorar su influencia y avance profesional. El autor ilustra esto con un ejemplo de la construcción de un sistema Pub/Sub, destacando cómo la falta de comprensión contextual completa puede llevar a un alcance y valor limitados del proyecto.",
+    "categoria": "Desarrollo de Software"
   }
 ]
