@@ -1,119 +1,191 @@
 [
   {
-    "id": 48730729,
-    "url": "https://waag.org/en/article/european-digital-id-wallets-are-gift-google-and-apple/",
-    "score": 84,
-    "time": 1782815783,
-    "titulo_es": "Los monederos de identidad digital de la UE y su dependencia de las APIs de seguridad de Google y Apple",
-    "resumen": "El artículo expone el riesgo de que los nuevos monederos de identidad digital de la Unión Europea dependan de servicios de atestación remota propietarios, como Google Play Integrity API y Apple Managed Device Attestation, para verificar la integridad del hardware y evitar manipulaciones. Esta implementación técnica delega la seguridad en el ecosistema cerrado de Big Tech, excluyendo a usuarios de sistemas operativos alternativos enfocados en la privacidad (como GrapheneOS y e/OS) que carecen de los servicios de Google con licencia. Como alternativa viable y abierta, se propone la API de Atestación de Hardware de Android, la cual realiza comprobaciones de seguridad criptográfica basadas en hardware sin forzar la dependencia de las políticas de distribución y tracking de Google.",
+    "id": 48744518,
+    "url": "https://asahilinux.org/2026/06/progress-report-7-1/",
+    "score": 141,
+    "time": 1782900424,
+    "titulo_es": "Linux 7.1 ya está aquí: informe de progreso de Asahi, errores de Apple y más",
+    "resumen": "El artículo aborda la compatibilidad de Asahi Linux con la beta de macOS 27. Explica cómo un cambio en el cargador de arranque de Apple requería marcar manualmente el contenedor APFS de Asahi como arrancable mediante un flag de metadatos, lo que provocaba que la opción de Linux desapareciera del menú de inicio. Este problema se solucionó actualizando el instalador de Asahi. También detalla un cambio de firmware en el SMC (System Management Controller) de macOS 27 que alteró un valor de gestión de batería de 32 bits a un byte, causando apagados de emergencia preventivos en Linux; un fallo ya corregido en el kernel downstream 7.0.12.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48736605,
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "score": 1157,
+    "time": 1782842392,
+    "titulo_es": "Claude Sonnet 5 está diseñado para ser el modelo Sonnet más agéntico hasta la fecha",
+    "resumen": "Presentación de Claude Sonnet 5, un modelo de inteligencia artificial optimizado para tareas agénticas autónomas como la planificación, el uso de herramientas de navegación y terminales, y la codificación. El artículo destaca que Sonnet 5 cierra la brecha de rendimiento con la serie Opus 4.8 a un costo significativamente menor, ofreciendo mayor eficiencia en evaluaciones como BrowseComp y OSWorld-Verified. Asimismo, detalla mejoras en seguridad, con menores tasas de alucinación y mejor mitigación de ataques de inyección de prompts, además de limitaciones deliberadas y salvaguardas activas en capacidades de ciberseguridad avanzada.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48741748,
+    "url": "https://blog.arxiv.org/2026/06/30/arxivs-next-chapter/",
+    "score": 149,
+    "time": 1782874296,
+    "titulo_es": "arXiv se independizará de la Universidad de Cornell para convertirse en una organización sin fines de lucro",
+    "resumen": "A partir del 1 de julio de 2026, arXiv dejará de estar bajo la tutela de la Universidad de Cornell, su hogar durante los últimos 25 años, para operar como una organización independiente sin fines de lucro. El cambio busca proporcionar mayor flexibilidad operativa y asegurar la sostenibilidad a largo plazo de esta infraestructura digital crítica para la publicación científica. Los responsables del servicio aseguran que la transición no afectará la disponibilidad del servicio, manteniendo su modelo gratuito de consulta y envío de manuscritos para la comunidad científica global.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48743472,
+    "url": "https://www.pcgamer.com/gaming-industry/open-source-game-engine-godot-will-no-longer-accept-ai-authored-code-contributions-we-cant-trust-heavy-users-of-ai-to-understand-their-code-enough-to-fix-it/",
+    "score": 232,
+    "time": 1782891802,
+    "titulo_es": "En riesgo de ahogarse en código basura de IA, Godot endurece sus requisitos de contribución",
+    "resumen": "La Fundación Godot y los mantenedores del popular motor de videojuegos de código abierto han decidido actualizar sus directrices de contribución para prohibir el código escrito por IA, los pull requests enviados por agentes automáticos y el uso de texto generado por IA en las comunicaciones del proyecto. Esta decisión responde al agotamiento de los revisores de código ante un flujo constante e insostenible de contribuciones automatizadas de baja calidad, que dificulta la mentoría de desarrolladores reales y compromete la sostenibilidad del proyecto.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48740698,
+    "url": "https://github.com/google/copybara",
+    "score": 230,
+    "time": 1782863139,
+    "titulo_es": "Copybara: Una herramienta para transformar y mover código entre repositorios",
+    "resumen": "Copybara es una herramienta sin estado desarrollada y utilizada internamente por Google para transformar y mover código fuente de manera automática entre diferentes repositorios (por ejemplo, para mantener sincronizados un repositorio confidencial y uno público). Utiliza el repositorio de destino para almacenar su estado mediante etiquetas en los mensajes de commit, lo que permite que múltiples usuarios compartan la misma configuración sin conflictos. Actualmente es compatible de forma nativa con Git, cuenta con soporte experimental para Mercurial y se puede compilar y ejecutar mediante Bazel o Docker.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48735770,
+    "url": "https://claude.com/product/claude-science",
+    "score": 506,
+    "time": 1782839261,
+    "titulo_es": "Claude Science: La aplicación para el análisis, la reproducibilidad y el flujo de trabajo en la investigación científica",
+    "resumen": "Claude Science es un entorno de investigación y asistente de IA diseñado específicamente para las ciencias de la vida (genómica, proteómica, biología estructural y quimioinformática). La aplicación automatiza el análisis de datos, visualiza de forma nativa estructuras moleculares y proteínas en 3D, y gestiona entornos de computación y trabajos en clústeres HPC, GPUs o entornos locales. Su característica principal es la reproducibilidad total, ya que vincula de manera indisoluble cada gráfico, tabla y resultado con el código, el entorno y la conversación exacta que los generaron, permitiendo auditar, editar y replicar cualquier fase del proceso de investigación.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48742514,
+    "url": "https://ayushtambde.com/blog/matrix-orthogonalization-improves-memory-in-recurrent-models/",
+    "score": 50,
+    "time": 1782882802,
+    "titulo_es": "Ortogonalización de la memoria de mLSTM para mejorar el recuerdo asociativo ruidoso",
+    "resumen": "Este artículo técnico propone una mejora para las redes neuronales recurrentes mLSTM en tareas de Recuerdo Asociativo Ruidoso (NAR), un problema crítico en aplicaciones como el aprendizaje por refuerzo de horizonte largo. Inspirados por el optimizador Muon, los autores introducen la ortogonalización de la matriz de memoria de mLSTM exclusivamente durante las lecturas, aplicando normalización de Frobenius y cinco iteraciones de Newton-Schulz con flujo de gradientes. Las pruebas empíricas en el benchmark MAD demuestran que esta técnica eleva sustancialmente la precisión y la tasa de éxito en escenarios complejos, rescatando al modelo mLSTM de la ineficacia en configuraciones difíciles de vocabulario y secuencias largas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48735444,
+    "url": "https://deepmind.google/models/gemini-image/flash-lite/",
+    "score": 393,
+    "time": 1782838117,
+    "titulo_es": "Nano Banana 2 Lite: Nuestro modelo de imágenes más rápido y eficiente",
+    "resumen": "Presentación de Nano Banana 2 Lite, un modelo de generación y edición de imágenes de alta velocidad optimizado para reducir la latencia y los costos operativos. Diseñado para creadores y desarrolladores, este modelo ofrece alta precisión en la adherencia de prompts, consistencia de personajes y edición visual precisa. Se describen implementaciones prácticas en aplicaciones como Space Lift (rediseño de interiores), Gridscape (mapas de conocimiento interactivos), Peek-A-Word (soporte visual de lectura) y Anywhere (visualizaciones 3D en globos virtuales), demostrando su eficiencia frente a modelos de producción más pesados.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48743655,
+    "url": "https://www.dongascience.com/en/news/30374",
+    "score": 12,
+    "time": 1782893560,
+    "titulo_es": "Lanzamiento del Sistema de Registro Nacional de Materiales Científicos y Tecnológicos Importantes",
+    "resumen": "El Museo Nacional de Ciencias de Corea del Sur ha lanzado el 'Sistema de Registro Nacional de Materiales Científicos y Tecnológicos Importantes'. Esta iniciativa busca preservar y gestionar de forma sistemática a nivel nacional aquellos recursos y artefactos históricos de gran valor educativo y científico que han contribuido al desarrollo del país, como el SE-8001 (la primera computadora personal de Corea lanzada en 1981). El sistema admitirá solicitudes de registro de forma continua que serán evaluadas semestralmente por expertos, otorgando a los elementos seleccionados soporte para su conservación física, restauración y difusión en exhibiciones y material educativo.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48721434,
+    "url": "https://vitalik.eth.limo/general/2026/06/29/obfuscation1.html",
+    "score": 5,
+    "time": 1782750920,
+    "titulo_es": "La promesa y los desafíos de la ofuscación de indistinguibilidad (iO)",
+    "resumen": "El artículo analiza la ofuscación de indistinguibilidad (iO), la primitiva criptográfica más potente concebida, que permite ocultar el funcionamiento interno de un programa manteniendo su funcionalidad ejecutable. Al combinarse con blockchains, la ofuscación permite simular un 'tercero de confianza descentralizado' sin requerir comités de umbral M-de-N, abriendo la puerta a aplicaciones altamente seguras como sistemas de votación inmunes a la colusión. A pesar de haberse demostrado recientemente la viabilidad teórica de iO tras décadas de intentos fallidos, el autor señala que su implementación práctica actual es inviable debido a tiempos de ejecución 'galácticos', causados por la enorme complejidad de anidar múltiples capas de cifrado totalmente homomórfico (FHE).",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48721903,
-    "url": "https://quesma.com/blog/qwen-36-is-awesome/",
-    "score": 962,
-    "time": 1782752716,
-    "titulo_es": "Impresiones sobre Qwen 3.6: El primer modelo local que realmente destaca",
-    "resumen": "El autor analiza las variantes del modelo de IA local Qwen 3.6 (el modelo denso de 27B y el de mezcla de expertos 35B A3B), destacando la superioridad del primero en tareas complejas como el desarrollo de software y la escritura creativa. Desde una perspectiva de arquitectura, detalla cómo desplegar eficientemente el modelo con cuantización de 8 bits (Q8_0) y soporte de predicción multi-token (MTP) utilizando directamente llama.cpp. Adicionalmente, presenta pruebas de rendimiento en hardware Apple Silicon (Macbook Max M5), demostrando una velocidad de ~30 tokens por segundo gracias al uso óptimo de la memoria compartida y la GPU.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48724230,
-    "url": "https://hccf.onmy.cloud/2026/06/21/reclaiming-our-digital-selves-hccfs-vision-for-a-human-centered-top-level-domain/",
-    "score": 540,
-    "time": 1782762568,
-    "titulo_es": "Fundación para la Computación Centrada en el Ser Humano busca un nuevo TLD y desata debate sobre PDF vs. HTML",
-    "resumen": "La Fundación para la Computación Centrada en el Ser Humano (HCCF) ha lanzado una campaña para asegurar un nuevo dominio de nivel superior (TLD) orientado a la tecnología ética. Sin embargo, la publicación de su manifiesto en formato PDF en lugar de HTML ha generado una intensa discusión técnica. Los usuarios debaten sobre la usabilidad, la accesibilidad web, el diseño adaptable (responsive) y el consumo de recursos de CPU y ancho de banda, cuestionando si el uso de formatos no nativos de la web contradice los principios de una arquitectura web centrada en el usuario.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48730818,
-    "url": "https://cekrem.github.io/posts/parse-dont-validate-typescript/",
-    "score": 6,
-    "time": 1782816503,
-    "titulo_es": "Analizar, no validar: Tipado nominal y marcas en TypeScript",
-    "resumen": "El artículo explora el principio de diseño 'Parse, don't validate' (Analizar, no validar) aplicado a TypeScript, explicando cómo la validación tradicional descarta información crítica en tiempo de compilación. Para solucionar esto en un sistema de tipos estructural como el de TypeScript, el autor detalla el uso de 'branding' (marcado) mediante intersecciones y símbolos únicos para crear tipos nominales u opacos. Esto permite asegurar que ciertos datos (como correos electrónicos) hayan sido parseados y validados correctamente antes de ser consumidos, evitando la programación defensiva redundante a lo largo de la base de código.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48698908,
-    "url": "https://weblog.rogueamoeba.com/2026/06/26/free-the-icons/",
-    "score": 504,
-    "time": 1782572717,
-    "titulo_es": "Liberen los iconos de macOS: Las restricciones de diseño de Apple perjudican la usabilidad",
-    "resumen": "Análisis sobre la evolución del diseño de iconos en macOS, enfocándose en la transición de la versión 26 (Tahoe) a la 27 (Golden Gate). Se critica la decisión de Apple de imponer un formato estandarizado de 'squircle' (superelipse) y la estética 'Liquid Glass' a desarrolladores de terceros. El autor argumenta que esta falta de diversidad geométrica degrada la usabilidad y accesibilidad (especialmente para usuarios con daltonismo) y aboga por que Apple restaure la libertad de diseño permitiendo formas personalizadas para los iconos de las aplicaciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48679762,
-    "url": "https://twoheads.net/the-promise-is-unattended-work/",
-    "score": 28,
-    "time": 1782424688,
-    "titulo_es": "IA en el bucle",
-    "resumen": "El artículo analiza de forma crítica la automatización mediante agentes de IA, contrastando las demostraciones comerciales simplificadas con la complejidad real de producción. Desde la perspectiva de la arquitectura de software, se argumenta que los flujos de trabajo basados en IA heredan los mismos desafíos que el software tradicional (fallos, deriva de datos, dependencias de APIs y excepciones imprevistas). Por ello, requieren observabilidad, gobernanza técnica y la presencia estratégica de un humano en el bucle para mitigar costos ocultos de atención y la falsa productividad.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48727177,
-    "url": "https://fil-c.org/context_switches",
-    "score": 146,
-    "time": 1782779899,
-    "titulo_es": "Seguridad de memoria en C/C++: Soporte para las APIs ucontext y setjmp/longjmp en Fil-C",
-    "resumen": "El artículo detalla cómo el proyecto Fil-C implementa de forma segura para la memoria las funciones de salto (setjmp/longjmp) y de control de contexto de usuario (getcontext, setcontext, makecontext y swapcontext). A diferencia del modelo tradicional de C (denominado coloquialmente 'Yolo-C'), donde el mal uso de estas APIs puede provocar corrupción de pila, referencias colgantes o exploits de seguridad, Fil-C mitiga estos riesgos mediante un control estricto de los marcos de ejecución o provocando un 'panic' controlado. Además, analiza los desafíos técnicos que introduce 'setjmp' debido a su capacidad de retornar dos veces y el impacto que esto tiene en las optimizaciones de variables del compilador.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48702320,
-    "url": "http://occ.sdf.org/",
-    "score": 72,
-    "time": 1782598730,
-    "titulo_es": "El Desafío de la Computadora Antigua (Old Computer Challenge)",
-    "resumen": "El artículo detalla la trayectoria del 'Old Computer Challenge', un evento anual iniciado en 2021 por Solène Rapenne que reúne a entusiastas de la informática retro y el minimalismo digital. Se describen las temáticas de sus distintas ediciones, las cuales imponen limitaciones físicas de hardware (como un límite estricto de 512 MB de RAM), restricciones de tiempo de conectividad emulando la era del dial-up, y la promoción de la creación artesanal (DIY) de software y contenido.",
+    "id": 48712289,
+    "url": "https://mechanical-pencil.com/products/car",
+    "score": 211,
+    "time": 1782684980,
+    "titulo_es": "Celebración Ilustrada de la Ingeniería que nos Rodea: El Mecanismo de los Coches de Juguete de Cuerda",
+    "resumen": "El artículo detalla la ingeniería detrás de los coches de juguete de cuerda, un mecanismo inventado en 1970. Se descompone la estructura interna del coche, identificando componentes clave como el chasis, los ejes, las ruedas, el engranaje de cuerda (Wind-Up Gear), el engranaje del eje (Axle Gear), el engranaje del resorte (Spring Gear), la espiral (Spiral Spring) y el trinquete (Pawl). Se explica cómo la espiral, un resorte único, almacena energía al ser enrollada y la libera para propulsar el coche. El proceso de enrollado involucra dos engranajes de resorte que giran en direcciones opuestas para enrollar la espiral. Se enfatiza el papel de los engranajes en proporcionar una ventaja mecánica, permitiendo multiplicar el torque para facilitar el enrollado del resorte y aumentar la velocidad de rotación de las ruedas. Se distingue entre el modo 'Drive' (conducción), donde los mecanismos de ambos lados operan independientemente, y el modo 'Wind' (viento), donde todo el sistema de engranajes se conecta para enrollar la espiral. Finalmente, se presenta una vista simplificada de los engranajes y se destaca la interconexión de los engranajes de cuerda.",
     "categoria": "Hardware"
   },
   {
-    "id": 48720186,
-    "url": "https://github.com/LinuxMD/linuxmd",
-    "score": 129,
-    "time": 1782745299,
-    "titulo_es": "Linux para la Sega MegaDrive",
-    "resumen": "El artículo detalla un proyecto técnico para portar y ejecutar el kernel de Linux en la clásica consola Sega MegaDrive (Sega Genesis). Explica los pasos para construir una cadena de herramientas de compilación (toolchain) para la arquitectura m68k utilizando buildroot, compilar el cargador de arranque u-boot, generar la imagen del kernel y crear un sistema de archivos raíz erofs. Asimismo, aborda la emulación mediante un fork de QEMU y los requisitos de hardware real utilizando un cartucho EverDrive con su mapeador especial SSF2 para proveer los 4MB de RAM necesarios.",
+    "id": 48744446,
+    "url": "https://www.omgubuntu.co.uk/2026/06/pine64-pinevoice-riscv-smart-speaker-launch",
+    "score": 39,
+    "time": 1782899827,
+    "titulo_es": "El altavoz inteligente RISC-V de Pine64 se lanza con tecnología obsoleta",
+    "resumen": "Pine64 ha lanzado el PineVoice, un altavoz inteligente de $50 que utiliza un SoC RISC-V (Bouffalo Lab BL606P) con Wi-Fi, Bluetooth 5.0 y Zigbee integrados. El dispositivo está diseñado para funcionar con software de código abierto y se enfoca en la detección de palabras clave local y la integración con configuraciones de Home Assistant autoalojadas basadas en Linux. El firmware de fábrica utiliza la plataforma YoC de Alibaba y el protocolo Wyoming Satellite, aunque este último está obsoleto y se recomienda el protocolo ESPHome a través de Linux Voice Assistant. A pesar de sus modestas especificaciones de memoria (32 MiB PSRAM, 16 MiB Flash, 128 KiB ROM), el dispositivo está pensado para ser un sistema embebido. Pine64 enfatiza que el PineVoice es un producto en fase temprana de desarrollo, dirigido a desarrolladores y entusiastas, y no a consumidores generales, similar a otros productos de la compañía. Su precio competitivo de $49.99 lo posiciona frente a dispositivos propietarios como el Amazon Echo Dot, pero con un enfoque en redes locales y de código abierto.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48744232,
+    "url": "https://www.thefocalpoints.com/p/new-study-frog-derived-gut-bacterium",
+    "score": 7,
+    "time": 1782897704,
+    "titulo_es": "Descubren bacteria del intestino de anfibios y reptiles que erradica tumores en ratones",
+    "resumen": "Un estudio publicado en Gut Microbes ha identificado una bacteria, Ewingella americana, aislada del microbioma intestinal de anfibios y reptiles, que ha demostrado una eficacia sin precedentes en la eliminación de tumores de cáncer colorrectal en un modelo de ratón. Una única dosis intravenosa de esta bacteria resultó en la erradicación completa del tumor en el 100% de los animales tratados, sin recurrencia posterior, sugiriendo una protección inmune duradera. El mecanismo de acción de E. americana es notable: como anaerobio facultativo, se acumula selectivamente en el microambiente tumoral hipóxico, donde prolifera y ejerce efectos citotóxicos directos a la vez que activa una respuesta inmune generalizada, infiltrando los tumores con células inmunes (T, B, neutrófilos) y aumentando citoquinas inflamatorias clave como TNF-α e IFN-γ. Se observó una rápida proliferación bacteriana dentro de los tumores (aproximadamente 3000 veces en 24 horas), demostrando un eficiente tropismo tumoral. A diferencia de las terapias convencionales, que suelen tener un único mecanismo de acción, E. americana combina la destrucción tumoral directa con la activación inmune. El perfil de seguridad en el modelo preclínico fue excelente, sin toxicidad orgánica detectable, pérdida de peso o alteraciones hematológicas/bioquímicas significativas, a pesar de la administración de bacterias vivas. La bacteria fue eliminada rápidamente de la circulación, manteniéndose localizada en el tejido tumoral. Es importante destacar que E. americana es un organismo natural, no modificado genéticamente, lo que sugiere el potencial de otros agentes terapéuticos en ecosistemas microbianos inexplorados. Aunque los resultados son preclínicos y requieren validación en ensayos humanos, representan uno de los hallazgos más prometedores en investigación oncológica reciente.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48692274,
+    "url": "https://nibblestew.blogspot.com/2026/06/pystd-standard-library-similar-ish.html",
+    "score": 34,
+    "time": 1782509647,
+    "titulo_es": "Pensamientos de desarrollo sobre la lentitud de compilación de C++ y una alternativa llamada Pystd",
+    "resumen": "El artículo aborda la problemática de los tiempos de compilación excesivamente lentos en C++, comparando la compilación de un simple 'helloworld' en C (0.02s) con C++ (hasta 2.3s), lo que representa una ralentización de 100x. El autor atribuye esta lentitud principalmente a la implementación de la biblioteca estándar de C++, ilustrando cómo la inclusión de un solo encabezado como `<vector>` expande el código a casi 30,000 líneas. Se presenta Pystd, una biblioteca estándar de C++ escrita desde cero con la minimización del tiempo de compilación como prioridad de diseño. Pystd, que incluye primitivas como mapas hash, estructuras de datos y funcionalidades básicas de I/O, se compila en 4 segundos (un solo núcleo) o 1.9 segundos (16 núcleos), considerablemente más rápido que la biblioteca estándar de C++. El código de Pystd es significativamente menor en líneas que un solo encabezado de la biblioteca estándar de C++. El autor enfatiza que la velocidad de compilación no debe ser un compromiso y propone presupuestos de tiempo como solución para asegurar la eficiencia en el desarrollo.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48722052,
-    "url": "https://github.com/deepreinforce-ai/Ornith-1",
-    "score": 218,
-    "time": 1782753377,
-    "titulo_es": "Presentación de Ornith-1.0: Modelos de código abierto auto-mejorables para programación agéntica",
-    "resumen": "El artículo describe Ornith-1.0, una familia de modelos de lenguaje enfocados en el razonamiento y la programación agéntica. Cuenta con una versión densa de 9B y variantes de Mezcla de Expertos (MoE) de 35B y 397B. Estos modelos admiten una ventana de contexto de hasta 256K tokens, se integran con servidores compatibles con OpenAI (como vLLM y SGLang) y destacan en la invocación de herramientas y el uso de entornos de desarrollo basados en terminales.",
+    "id": 48738985,
+    "url": "https://ngrok.com/blog/i-ported-kubernetes-to-the-browser",
+    "score": 286,
+    "time": 1782852516,
+    "titulo_es": "Webernetes: Ejecutando Kubernetes en el Navegador con TypeScript",
+    "resumen": "El artículo presenta webernetes, un proyecto que adapta parcialmente Kubernetes para ejecutarse en el navegador web utilizando TypeScript. A diferencia de una compilación a WebAssembly, que sería demasiado pesada, webernetes genera aproximadamente 100,000 líneas de código TypeScript para simular funcionalidades clave de Kubernetes como el ciclo de vida de los pods, DNS y networking, recolección de basura de contenedores y seguimiento de Deployments y ReplicaSets. Para mantener un tamaño reducido, no utiliza imágenes de registros externos como Docker Hub, sino un registro propio basado en el navegador. Se define como una herramienta para crear contenido interactivo sobre Kubernetes, no para producción. El autor destaca que la mayor parte del código fue generado por LLMs, pero se aseguró la corrección mediante la comparación línea por línea con el código Go original de Kubernetes y la verificación del comportamiento práctico, asumiendo la responsabilidad por cualquier error remanente. El proyecto se propone expandir el soporte de funcionalidades de Kubernetes y busca colaboradores.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48742049,
+    "url": "https://github.com/steve-chavez/CParseC",
+    "score": 44,
+    "time": 1782877975,
+    "titulo_es": "Combinadores de Parsers en C: Una Solución Flexible y de Alto Rendimiento",
+    "resumen": "El artículo presenta CParseC (C Parser Combinators), una biblioteca de C que ofrece una solución para el análisis sintáctico (parsing) de datos, caracterizada por su flexibilidad y rendimiento. Implementa un enfoque basado en combinadores de parsers, inspirado en Haskell Parsec y AttoParsec, que permite construir parsers complejos de manera modular y eficiente. Se destaca su velocidad superior en el procesamiento de grandes volúmenes de datos CSV en comparación con implementaciones en Rust. La biblioteca utiliza macros que generan funciones 'inlinables' parametrizadas, devolviendo estructuras de datos como `CpcValue` (que puede ser `CpcSlice` o `CpcList` gestionado por `CpcArena`). Se mencionan optimizaciones y características como parsers no nombrados, variantes con etiquetas de error personalizadas (`_LABEL`) y versiones especializadas con soporte SIMD a través de `memchr`. Algunas funcionalidades avanzadas requieren definiciones de preprocesador como `CPC_USE_UNNAMED` o `CPC_USE_MEMCHR` para habilitar comportamientos no estándar de C99.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48710770,
+    "url": "https://verdagon.dev/blog/ante-blending-borrowing-rc",
+    "score": 100,
+    "time": 1782675465,
+    "titulo_es": "El avanzado sistema de memoria de Ante y la fusión de conteo de referencias y verificación de préstamos",
+    "resumen": "El artículo describe cómo el lenguaje de programación Ante logra una innovación significativa en la gestión de memoria al fusionar de manera segura el conteo de referencias y la verificación de préstamos (borrow checking) para objetos mutables, sin incurrir en fallos en tiempo de ejecución ni en la sobrecarga de soluciones como `RefCell` de Rust o la verificación de exclusividad de Swift. Esto se logra mediante el concepto de \"estabilidad de forma\" (shape-stability), que garantiza la validez de las referencias independientemente de las mutaciones. Ante permite múltiples referencias mutables al mismo struct o a sus campos simultáneamente, lo que simplifica la programación, como se ilustra en un ejemplo de balanceo de un árbol rojo-negro. El lenguaje se posiciona como una alternativa más simple a Rust, enfocándose en la seguridad de memoria y concurrencia, ofreciendo propiedad única y verificación de préstamos por defecto, con la opción de `shared` para el conteo de referencias cuando se prioriza la simplicidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48739466,
+    "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/?_fb_noscript=1",
+    "score": 168,
+    "time": 1782854953,
+    "titulo_es": "Brain2Qwerty v2: Decodificación de texto en tiempo real a partir de grabaciones cerebrales no invasivas mediante IA",
+    "resumen": "Este artículo presenta Brain2Qwerty v2, una mejora significativa en la decodificación de texto a partir de actividad cerebral no invasiva. Utiliza un pipeline de aprendizaje profundo de extremo a extremo para decodificar directamente señales cerebrales crudas, superando las limitaciones de los métodos anteriores que requerían hardware especializado o enfoques manuales. El sistema aprovecha modelos de lenguaje grandes (LLMs) afinados en datos neuronales para incorporar el contexto semántico, logrando una precisión de palabras del 61% (hasta un 78% para el mejor participante), lo que se acerca a los niveles de precisión de las técnicas invasivas. La investigación se basa en el trabajo previo de Brain2Qwerty v1 y se complementa con la liberación del código de entrenamiento y un conjunto de datos. El objetivo es acelerar los avances en neurociencia y proporcionar esperanza a las personas con dificultades de comunicación debido a lesiones cerebrales, ofreciendo una alternativa escalable a los procedimientos invasivos. Los autores también destacan la importancia de los modelos fundacionales abiertos y la colaboración comunitaria en el campo de la neurociencia computacional.",
     "categoria": "IA"
   },
   {
-    "id": 48689885,
-    "url": "https://www.sqlite.org/howtocorrupt.html",
-    "score": 95,
-    "time": 1782497139,
-    "titulo_es": "Corrupción de bases de datos en SQLite",
-    "resumen": "Análisis técnico sobre la resiliencia y las vulnerabilidades de corrupción en bases de datos SQLite. Explica cómo fallos en la gestión de descriptores de archivos (file descriptors) de bajo nivel pueden provocar que otros hilos de ejecución sobreescriban accidentalmente la base de datos con datos basura. Además, examina los riesgos de realizar copias de seguridad en caliente sin pausar transacciones y detalla las alternativas seguras para respaldar bases de datos activas, tales como el comando 'VACUUM INTO', la herramienta 'sqlite3_rsync' y la API de backup de SQLite, además del rol de los archivos de diario auxiliar (journal y WAL) en la recuperación ante fallos de energía.",
+    "id": 48736137,
+    "url": "https://gauthier-lechevalier.com/radar",
+    "score": 187,
+    "time": 1782840576,
+    "titulo_es": "Desarrollo de un radar para detectar amianto usando IA y hardware embebido",
+    "resumen": "El artículo describe la creación de un prototipo de radar FMCW para detectar materiales, con un enfoque particular en la identificación de amianto. El proyecto combina hardware embebido (Texas Instruments IWRL6432 BOOST, ESP32), algoritmos de Procesamiento Digital de Señales (DSP) y aprendizaje automático (CNN). Se utiliza beamforming Capon para obtener un espectro de densidad que, tras ser procesado por una red neuronal, permite clasificar las superficies de los materiales. El autor detalla el proceso de diseño electrónico, la optimización de antenas y el desafío de la prototipación RF y de firmware embebido, destacando la necesidad de un enfoque centrado en el hardware para futuras innovaciones.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48701721,
+    "url": "https://buttondown.com/hillelwayne/archive/stroustrups-rule/",
+    "score": 103,
+    "time": 1782594103,
+    "titulo_es": "La Regla de Stroustrup: Sintaxis Explícita vs. Sintaxis Concisa en el Desarrollo de Software",
+    "resumen": "El artículo explora la 'Regla de Stroustrup' que describe la evolución de la preferencia sintáctica en lenguajes de programación. Inicialmente, cuando una característica es nueva, los programadores necesitan sintaxis explícita para comprenderla. A medida que ganan experiencia, esta sintaxis explícita se convierte en 'ruido visual' y prefieren una sintaxis más concisa y abreviada (terse). Este fenómeno se observa tanto a nivel individual (principiantes vs. expertos) como a nivel de comunidad (evolución de un lenguaje). Ejemplos como los tipos de opción y el operador '?' en Rust, el operador de asignación 'walrus' en Python, y las expresiones de invariantes en TLA+ ilustran cómo la preferencia por la sintaxis concisa puede dificultar el aprendizaje para los principiantes, mientras que los expertos la valoran por su elegancia y eficiencia. El autor señala que, al enseñar, debe contrarrestar activamente esta regla, priorizando la claridad para los principiantes sobre la concisión que prefiere él mismo como experto.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48698781,
-    "url": "https://notes.shixiangxi.com/en/docs/appendix/alan-kay-on-oop/",
-    "score": 77,
-    "time": 1782571745,
-    "titulo_es": "La concepción original de la programación orientada a objetos según Alan Kay",
-    "resumen": "Este artículo presenta una correspondencia por correo electrónico de Alan Kay en julio de 2003, aclarando el significado original del término \"programación orientada a objetos\" (OOP) que él acuñó. Kay explica que concibió la OOP en Utah alrededor de 1967, influenciado por Sketchpad, Simula, el diseño de ARPANET, el Burroughs B5000 y sus antecedentes en biología y matemáticas. La idea central era que los objetos se comunicaran exclusivamente a través de mensajes, similar a células biológicas o computadoras en red, eliminando el concepto de datos separados y viendo las operaciones como mensajes. Kay también menciona su interés en las álgebras asociadas a los objetos y las familias de estas, aunque el término \"polimorfismo\" fue adoptado posteriormente y \"genericity\" fue un término que él creó. A diferencia de Simula, inicialmente decidió omitir la herencia como característica incorporada hasta comprenderla mejor. Sus primeros experimentos se basaron en modelos de \"Generalization of Algol\" y Euler, y luego evolucionaron con la comprensión de LISP, influencias de Dave Fisher y Carl Hewitt (PLANNER), culminando en la creación del primer Smalltalk en Xerox PARC.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48681499,
-    "url": "https://letters.unchartedpathbreakthroughs.com/posts/why-problem-statements-arent-enough",
-    "score": 3,
-    "time": 1782439057,
-    "titulo_es": "Coaching Personalizado para Ingenieros Senior a Principal por un Ex Ingeniero Staff",
-    "resumen": "El artículo se enfoca en la importancia del 'rango contextual' para que el trabajo de ingenieros de software senior (Senior, Staff, Principal) sea reconocido, adoptado y valorado. Explica que el contexto estratégico se divide en tres áreas: técnico (código, arquitectura, herramientas), de equipo y organizacional (dinámicas, dependencias, prioridades), y de negocio (necesidades del cliente, objetivos de ingresos, competencia). Si bien los ingenieros suelen dominar el contexto técnico, se les anima a expandir su comprensión de los otros dos para mejorar su influencia y avance profesional. El autor ilustra esto con un ejemplo de la construcción de un sistema Pub/Sub, destacando cómo la falta de comprensión contextual completa puede llevar a un alcance y valor limitados del proyecto.",
+    "id": 48718716,
+    "url": "https://www.buraksen.dev/articles/internals-of-postgresql-db-cluster-and-tables",
+    "score": 81,
+    "time": 1782737989,
+    "titulo_es": "Internos de PostgreSQL: Estructura de Datos y Archivos",
+    "resumen": "El artículo profundiza en los detalles internos de PostgreSQL, explicando la estructura de un clúster de bases de datos como una colección de bases de datos gestionadas por una única instancia de PostgreSQL, en contraposición a la noción común de múltiples nodos. Detalla cómo las bases de datos y sus objetos (tablas, índices, etc.) se representan mediante OIDs (Object Identifiers) y cómo estos se almacenan en catálogos del sistema, que son tablas regulares de PostgreSQL. Se describe la organización del directorio de datos (PGDATA), establecido por `initdb`, y la estructura de subdirectorios, incluyendo el directorio `base` que contiene subdirectorios nombrados por el OID de cada base de datos. Las tablas e índices se almacenan en archivos individuales dentro de estos subdirectorios, identificados por `relfilenode`. Se ilustra la creación de una nueva base de datos (`CREATE DATABASE`) y cómo esto se refleja en la creación de un nuevo directorio correspondiente a su OID, copiando el contenido de la base de datos `template1`.",
     "categoria": "Desarrollo de Software"
   }
 ]
