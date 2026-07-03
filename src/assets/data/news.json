@@ -1,155 +1,164 @@
 [
   {
-    "id": 48756602,
-    "url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/",
-    "score": 184,
-    "time": 1782966761,
-    "titulo_es": "Kimi K2.7 Code, un modelo de pesos abiertos, ya está disponible de forma general en GitHub Copilot",
-    "resumen": "GitHub ha integrado Kimi K2.7 Code como el primer modelo de pesos abiertos seleccionable en GitHub Copilot, alojado en Microsoft Azure bajo un esquema de facturación por consumo. El modelo está disponible de forma gradual para los planes Copilot Pro, Pro+ y Max en Visual Studio Code, con planes de extenderse a Business y Enterprise. Para clientes corporativos, estará desactivado por defecto para que los administradores evalúen el cumplimiento de sus políticas de seguridad y gobernanza de datos antes de activarlo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48755005,
-    "url": "https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/",
-    "score": 332,
-    "time": 1782953281,
-    "titulo_es": "oomwoo: un robot aspirador de código abierto que puedes construir tú mismo",
-    "resumen": "Presentación de oomwoo, un proyecto de hardware y software libre ('build-in-public') para construir un robot aspirador autónomo y de funcionamiento local, sin dependencia de la nube. El sistema está diseñado de forma modular utilizando Raspberry Pi (se requiere un mínimo de 4GB para mapeo LiDAR), ROS 2, LiDAR 2D, piezas impresas en 3D y componentes electrónicos estándar de bajo coste. Se integra nativamente con Home Assistant y permite la colaboración comunitaria en el desarrollo de firmware, PCBs de control de motores y algoritmos de navegación.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48753715,
-    "url": "https://zcode.z.ai/en",
-    "score": 412,
-    "time": 1782943416,
-    "titulo_es": "ZCode: Desarrollo de un juego de Gomoku inteligente utilizando un agente de IA heurística",
-    "resumen": "El artículo detalla el proceso de desarrollo de un juego Gomoku (Cinco en línea) desde cero utilizando HTML, CSS y JavaScript local. Explica cómo se estructuró el tablero de 15x15, la lógica de detección de victorias en cuatro direcciones y la integración de una IA heurística que evalúa patrones ofensivos y defensivos en lugar de realizar movimientos aleatorios. Además, se abordan aspectos de optimización frontend para móviles, la gestión del flujo de trabajo con ZCode y la automatización de despliegues y lanzamientos en GitHub.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48714884,
-    "url": "https://fabiensanglard.net/keyboards/index.html",
-    "score": 46,
-    "time": 1782708078,
-    "titulo_es": "Mis teclados favoritos de todos los tiempos",
-    "resumen": "El autor detalla su evolución y preferencia en el uso de teclados de computadora a lo largo de su carrera tecnológica. Realiza un recorrido desde modelos clásicos como el emblemático IBM Model M (y su versión reducida SSK) y el NMB RT-9100W (célebre por ser el teclado utilizado por John Carmack para programar Quake), hasta soluciones ergonómicas modernas orientadas a mitigar lesiones por esfuerzo repetitivo (RSI), destacando el Ergodox EZ y, finalmente, el ZSA Moonlander con su accesorio de inclinación estable Platform.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48724127,
-    "url": "https://www.mixedbread.com/blog/asymmetric-quant",
-    "score": 42,
-    "time": 1782762135,
-    "titulo_es": "Cuantización asimétrica: haciendo prácticos los modelos de interacción tardía en producción",
-    "resumen": "El artículo analiza el uso de la cuantización asimétrica para optimizar el almacenamiento y los costos en motores de búsqueda vectoriales a gran escala que utilizan modelos de interacción tardía (como Wholembed v3). Estos modelos ofrecen una alta precisión al generar múltiples vectores por documento en lugar de uno solo, lo que incrementa exponencialmente el costo de almacenamiento. Para solucionar este problema en su motor de búsqueda 'silo', Mixedbread implementa la cuantización asimétrica: almacenan los vectores de los documentos como signos binarios de 1 bit y mantienen las consultas en precisión int8. Esta técnica reduce el almacenamiento de vectores de documentos en un 32x (de 393 KiB a 12.28 KiB por documento) perdiendo apenas un 0.61 en la métrica NDCG@10 (de 90.26 a 89.65), haciendo viable este enfoque de alta precisión a escala de miles de millones de documentos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48755731,
-    "url": "https://tedium.co/2026/07/01/online-web-forums-retrospective/",
-    "score": 311,
-    "time": 1782959416,
-    "titulo_es": "El nacimiento de los foros web: De Usenet a las primeras aplicaciones interactivas",
-    "resumen": "El artículo aborda la transición histórica desde Usenet hacia los primeros foros basados en la web a mediados de la década de 1990. Explora las predicciones de Eric Hunting sobre la necesidad de estructurar hilos y manejar contenido multimedia, y destaca el desarrollo de 'WWW Interactive Talk' (WIT) por Ari Luotonen en el CERN en 1994, considerado el primer software de foro web. El autor detalla la recuperación de este software heredado basado en CGI y Perl para ejecutarlo en un contenedor Docker en la actualidad, y describe el surgimiento de otras herramientas pioneras como CoCoBoard y WebCrossing dentro del mercado de software colaborativo (groupware).",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48750710,
-    "url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/",
-    "score": 362,
-    "time": 1782928424,
-    "titulo_es": "Cómo convertirse en programador de gráficos: habilidades y conocimientos esenciales",
-    "resumen": "El artículo detalla los requisitos clave para ser contratado como programador de gráficos, dividiendo la renderización moderna en dos disciplinas: la comunicación de bajo nivel con la GPU (mediante APIs como OpenGL, Vulkan o DirectX) y la implementación de técnicas de renderizado. El autor recomienda comenzar con el trazado de rayos (Path Tracing) y el Renderizado Basado en la Física (PBR), sugiriendo recursos de estudio de diversos niveles de complejidad. Asimismo, aborda los fundamentos matemáticos necesarios (álgebra lineal, trigonometría y cálculo básico) y la importancia de dominar estructuras de datos y algoritmos esenciales para optimizar el rendimiento.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48756840,
-    "url": "https://cursor.com/evals",
-    "score": 75,
-    "time": 1782969574,
-    "titulo_es": "Evaluación de rendimiento y costes de agentes de IA en CursorBench 3.1",
-    "resumen": "Se describe el marco de evaluación de agentes de IA utilizando CursorBench 3.1, el cual emplea tareas complejas y multifichero basadas en sesiones reales del editor de código Cursor. El análisis mide el rendimiento de los modelos y calcula el coste promedio por tarea aplicando los precios de tokens de entrada, salida y lectura/escritura de caché de cada proveedor de IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48755928,
-    "url": "https://senior-swe-bench.snorkel.ai/",
-    "score": 100,
-    "time": 1782960916,
-    "titulo_es": "Senior SWE-Bench: Evaluando a los agentes de IA como ingenieros de software senior",
-    "resumen": "Senior SWE-Bench es un nuevo benchmark diseñado para evaluar agentes de inteligencia artificial bajo estándares de ingeniería senior en lugar de niveles junior. A diferencia de otros benchmarks, presenta tareas de desarrollo de software complejas con instrucciones realistas en lenguaje natural, abarcando múltiples servicios y requiriendo cientos de pasos de resolución. Utiliza un agente de validación que genera pruebas adaptativas y combina la corrección en tiempo de ejecución con métricas de calidad de código. Los modelos de lenguaje más avanzados fallan en resolver estas tareas con el nivel de calidad esperado en más del 75% de los casos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48719224,
-    "url": "https://alexwlchan.net/2026/bin-calendar/",
-    "score": 4,
-    "time": 1782740713,
-    "titulo_es": "Creación de un calendario de recogida de basura personalizado con Python y CSS",
-    "resumen": "El autor describe cómo simplificar los complejos calendarios de recolección de residuos municipales mediante la creación de un calendario personalizado. Para lograrlo, utiliza un script en Python que extiende la clase incorporada 'HTMLCalendar' con el fin de generar un archivo HTML donde cada celda de fecha posee un atributo ID único. Posteriormente, mediante una hoja de estilos CSS, formatea la estructura en tres columnas y resalta manualmente los días específicos de recogida aplicando reglas CSS sobre los IDs de los días correspondientes, facilitando un diseño limpio y listo para imprimir.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48753979,
-    "url": "https://blog.google/innovation-and-ai/technology/safety-security/opening-up-zero-knowledge-proof-technology-to-promote-privacy-in-age-assurance/",
-    "score": 168,
-    "time": 1782944867,
-    "titulo_es": "Liberación de librerías de Pruebas de Conocimiento Cero (ZKP) para la verificación de identidad en la UE",
-    "resumen": "Google ha publicado como código abierto sus librerías de Pruebas de Conocimiento Cero (ZKP), desarrolladas en colaboración con Sparkasse. Estas herramientas criptográficas de preservación de la privacidad facilitan la creación de soluciones de identidad digital, permitiendo demostrar atributos (como la mayoría de edad) sin revelar datos personales subyacentes. La iniciativa busca acelerar el desarrollo del Monedero de Identidad Digital de la UE (EUDI Wallet) bajo la regulación eIDAS que entrará en vigor en 2026. El código está disponible en el repositorio de GitHub 'google/longfellow-zk'.",
+    "id": 48767347,
+    "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
+    "score": 822,
+    "time": 1783026225,
+    "titulo_es": "Virginia prohíbe la venta de datos de geolocalización mediante la ley S.B. 388",
+    "resumen": "La gobernadora de Virginia firmó la ley S.B. 388 que modifica la Ley de Protección de Datos de los Consumidores de Virginia (VCDPA) para prohibir la venta de datos de geolocalización a partir del 1 de julio de 2026. La enmienda define 'venta' de forma estricta como el intercambio de datos personales por compensación monetaria directa a un tercero. Esta regulación sigue los pasos de Maryland y Oregón, reflejando un incremento en el escrutinio regulatorio y de cumplimiento (compliance) sobre el manejo, privacidad y comercialización de datos de ubicación por parte de intermediarios.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48750989,
-    "url": "https://www.weaverobotics.com/isaac-1",
-    "score": 188,
-    "time": 1782929538,
-    "titulo_es": "Isaac 1: El robot móvil diseñado desde cero para el hogar",
-    "resumen": "Presentación de Isaac 1, un robot doméstico móvil diseñado para automatizar tareas del hogar como doblar ropa, ordenar habitaciones y recoger objetos. El sistema destaca por su desarrollo de hardware integral, incorporando actuadores personalizados, un torso colapsable para ajustar su altura, una base móvil con ruedas y un chasis suave cubierto de tela intercambiable. Funciona de forma autónoma con asistencia de teleoperación en la nube para garantizar la finalización de tareas complejas, y se gestiona mediante una aplicación móvil complementaria.",
-    "categoria": "Hardware"
+    "id": 48769397,
+    "url": "https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts",
+    "score": 331,
+    "time": 1783040565,
+    "titulo_es": "La postura de Rivian sobre CarPlay: Un debate sobre ecosistemas de software y proyección de pantalla",
+    "resumen": "El artículo analiza la decisión estratégica y de arquitectura de software de Rivian al omitir el soporte para Apple CarPlay en favor de su propio sistema de infoentretenimiento nativo. A través de la discusión, se contrastan los modelos de proyección de pantalla de dispositivos móviles frente a las interfaces de usuario controladas por el fabricante (OEM). Se abordan aspectos técnicos como la delimitación de 'viewports' en pantallas táctiles (permitiendo la coexistencia de interfaces del fabricante y de CarPlay) y la evolución de las APIs de iOS para compartir datos telemétricos y de navegación con los sistemas de asistencia a la conducción (ADAS) del vehículo, rebatiendo el argumento de que CarPlay deba monopolizar el control del hardware visual o de navegación.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48759308,
-    "url": "https://www.cnbc.com/2026/07/02/nvidia-plans-to-offer-start-up-customers-access-to-revenue-sharing-deals.html",
-    "score": 7,
-    "time": 1782988893,
-    "titulo_es": "Nvidia acuerda compartir ingresos con startups de IA a cambio de acceso a potencia de cómputo",
-    "resumen": "Nvidia ha presentado un programa de asociación estratégico que permite a startups de inteligencia artificial acceder a créditos de cómputo basados en la nube a cambio de una participación en sus ingresos y ganancias futuras. Actuando como intermediario para facilitar acceso a su pila tecnológica completa de hardware, Nvidia se ha asociado inicialmente con Sharon AI y Firmus Technologies, quienes desplegarán hasta 210,000 GPUs en conjunto. Este modelo de negocio busca mitigar la escasez crítica de procesadores gráficos (GPUs) en el sector y resolver los problemas de liquidez de las empresas emergentes de IA, permitiéndoles intercambiar rendimiento de cómputo por derechos sobre sus flujos financieros futuros.",
-    "categoria": "IA"
+    "id": 48772573,
+    "url": "https://wordgard.net/",
+    "score": 31,
+    "time": 1783068647,
+    "titulo_es": "Wordgard: Biblioteca JavaScript para la creación de editores de texto enriquecido en el navegador",
+    "resumen": "Wordgard es una biblioteca de código abierto (bajo licencia MIT) y diseñada en estilo funcional que permite construir editores de texto enriquecido altamente personalizables y estructurados en el navegador. A diferencia de los editores HTML convencionales, ofrece un control preciso sobre la estructura del documento mediante una API extensible y modular. Cuenta con soporte para accesibilidad (lectores de pantalla y teclado), internacionalización con soporte bidireccional (RTL), y capacidades de edición colaborativa multiusuario en tiempo real con fusión de cambios concurrentes.",
+    "categoria": "Frontend"
   },
   {
-    "id": 48747304,
-    "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
-    "score": 866,
-    "time": 1782915652,
-    "titulo_es": "Por primera vez, biólogos logran que una célula sintética creada desde cero se comporte como un ser vivo",
-    "resumen": "Investigadores en biología sintética han logrado ensamblar una célula artificial encapsulando componentes no vivos dentro de una membrana lipídica. Este prototipo es capaz de crecer, replicar su ADN y dividirse, completando las funciones básicas de un ciclo celular. Aunque requiere soporte continuo de nutrientes y ribosomas externos para subsistir, representa un avance histórico en la generación de vida sintética a partir de materia inerte, abriendo la puerta al desarrollo programado de nuevos materiales, biocombustibles y fármacos mediante ingeniería biológica.",
+    "id": 48768464,
+    "url": "https://github.com/FractalFir/crustc",
+    "score": 292,
+    "time": 1783033055,
+    "titulo_es": "Compilación de Rust a C con cilly: Un compilador de Rust funcional usando GCC y Make",
+    "resumen": "El autor presenta 'cilly', un backend para el compilador de Rust (rustc) y una biblioteca que traduce código de Rust a C estándar. Diseñado principalmente para dar soporte a arquitecturas y sistemas antiguos o de nicho que carecen de soporte para LLVM o compiladores nativos de Rust, cilly permite compilar Rust sobre la marcha utilizando cualquier compilador de C local o remoto (vía TCP). Para garantizar la compatibilidad con entornos altamente específicos y no asumir características fuera de ANSI C, la herramienta genera programas de prueba ('witness') que interrogan al compilador destino sobre tamaños de datos, alineaciones y codificaciones. Además, puede incrustar metadatos en los archivos objeto para reconstruir la estructura de fuentes y generar Makefiles, permitiendo compilar el propio rustc utilizando únicamente GCC y GNU Make como demostración de su viabilidad y capacidad de bootstrapping.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48725857,
+    "url": "https://iinteractive.com/resources/blog/read-only",
+    "score": 26,
+    "time": 1782770368,
+    "titulo_es": "Cómo trabajar con un cliente invidente en un proyecto de Power Automate reveló las brechas de accesibilidad invisibles integradas en las plataformas sobre las que construimos todos los días",
+    "resumen": "El artículo expone la experiencia de un arquitecto de software al implementar un flujo de trabajo de aprobación en Power Automate y SharePoint para un cliente con empleados invidentes. Durante el proceso, se revelaron severas limitaciones de accesibilidad inherentes a las plataformas de Microsoft (fallos de diseño del proveedor, no de la implementación). Entre los problemas técnicos documentados se incluyen: la ineficacia de los lectores de pantalla en las aplicaciones web del navegador, la inserción repetitiva de la etiqueta '(read only)' en cada campo de SharePoint que satura los dispositivos de lectura braille y de voz, la incompatibilidad de la app de aprobaciones de Teams con lectores de pantalla, fallos de JAWS al leer correos en Outlook, y la generación de múltiples encabezados H1 en SharePoint que rompen la navegación estructural para usuarios no videntes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48769639,
+    "url": "https://webkit.org/blog/18136/introducing-the-safari-mcp-server-for-web-developers/",
+    "score": 110,
+    "time": 1783042631,
+    "titulo_es": "Presentamos el servidor Safari MCP: conectando agentes de IA al navegador para depuración web",
+    "resumen": "Apple introduce el servidor Safari MCP (Model Context Protocol) en Safari Technology Preview 247, diseñado para integrar agentes de IA directamente con el navegador. Esto permite a los asistentes autónomos inspeccionar el DOM, evaluar estilos, analizar el rendimiento, verificar accesibilidad y capturar pantallas en tiempo real. Esta herramienta elimina la necesidad de alternar constantemente entre el código, el terminal y el navegador, optimizando radicalmente el flujo de depuración en el desarrollo web.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48762098,
+    "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/",
+    "score": 547,
+    "time": 1783002189,
+    "titulo_es": "Anuncio del lanzamiento de Podman v6.0.0",
+    "resumen": "Se anuncia el lanzamiento oficial de Podman v6.0.0, una actualización mayor que introduce mejoras significativas en la infraestructura central del proyecto, optimizaciones en la seguridad y una experiencia de usuario mejorada para la gestión de contenedores. Esta versión es el resultado de meses de trabajo orientados a modernizar la plataforma y ya se encuentra disponible en GitHub, con un despliegue próximo en los principales gestores de paquetes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48761944,
+    "url": "https://github.com/immich-app/immich/discussions/29439",
+    "score": 443,
+    "time": 1783001606,
+    "titulo_es": "Lanzamiento de Immich v3.0.0: Edición de imágenes multidispositivo y flujos de trabajo automatizados",
+    "resumen": "Anuncio de la versión mayor Immich v3.0.0, que introduce cambios disruptivos en sus endpoints de API y elimina el soporte para pgvecto.rs en favor de la migración a Vectorchord. La actualización destaca por incorporar un nuevo editor de imágenes móvil no destructivo alineado con las características de la versión web, y el debut de la funcionalidad 'Workflows', un motor de automatización con editor visual y JSON que permite estructurar disparadores, filtros y acciones en la biblioteca de medios del usuario.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48770477,
+    "url": "https://manticoresearch.com/blog/onnx-embeddings-speedup/",
+    "score": 58,
+    "time": 1783050587,
+    "titulo_es": "Bitácora de ingeniería: Cómo aceleramos las Auto Embeddings en Manticore Search usando ONNX Runtime",
+    "resumen": "El artículo detalla la reingeniería técnica de la función 'Auto Embeddings' en Manticore Search. Al migrar de un entorno basado en SentenceTransformers/Candle a un backend con ONNX Runtime, el equipo logró una mejora de rendimiento promedio de 14 veces (alcanzando hasta 233 docs/seg frente al límite anterior de 11 docs/seg). Se analizan problemas críticos de arquitectura de software, como la contención de bloqueos mediante Mutex concurrentes, las ineficiencias de los pools de sesiones tradicionales y cómo optimizaciones como 'intra_op_spinning(false)' resolvieron los cuellos de botella en la CPU durante la ingesta de datos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48725093,
+    "url": "https://www.nature.com/articles/s41467-026-74235-1",
+    "score": 49,
+    "time": 1782766454,
+    "titulo_es": "Desarrollo de insectos cíborgs anfibios mediante un traje de buceo portátil para la exploración en entornos extremos",
+    "resumen": "El artículo describe el desarrollo de un traje de buceo autónomo y portátil para insectos terrestres, específicamente la cucaracha de Madagascar, transformándolos en robots cíborgs anfibios. Este sistema integra una carcasa impermeable y flexible con un módulo de generación de oxígeno químico miniaturizado que suministra gas directamente a los espiráculos del insecto sin necesidad de componentes electrónicos de control de flujo. La tecnología permite a los insectos mantener su respiración y capacidad de locomoción bajo el agua por hasta 3 horas, superando las limitaciones fisiológicas del huésped biológico y expandiendo su rango operativo para misiones de búsqueda, rescate e inspección en terrenos inundados o confinados.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48746914,
-    "url": "https://blog.cloudflare.com/monetization-gateway/",
-    "score": 307,
-    "time": 1782914353,
-    "titulo_es": "Presentando Cloudflare Monetization Gateway: Monetización basada en el uso para la era de los agentes de IA",
-    "resumen": "Cloudflare presenta Monetization Gateway, una plataforma que permite a los desarrolladores cobrar por el acceso a páginas web, APIs, datasets y herramientas MCP. A través del protocolo x402 y liquidaciones rápidas con stablecoins, la pasarela facilita micropagos de bajo costo directamente en el borde (edge). Esta infraestructura está diseñada específicamente para adaptarse al cambio de paradigma web, donde los agentes de Inteligencia Artificial reemplazan a los humanos y consumen recursos de forma masiva y fraccionada, haciendo inviables los modelos tradicionales de suscripción y publicidad.",
+    "id": 48739459,
+    "url": "https://blog.fsck.com/2026/06/15/Superpowers-6/",
+    "score": 159,
+    "time": 1782854912,
+    "titulo_es": "Superpowers 6: Mucho más rápido y eficiente en el uso de tokens",
+    "resumen": "El artículo describe el lanzamiento de Superpowers 6, una actualización significativa que mejora drásticamente la velocidad y reduce el consumo de tokens en comparación con versiones anteriores. Las optimizaciones clave incluyen la reescritura de habilidades para ser independientes del modelo y el 'harness', la mejora de la usabilidad y seguridad de Visual Brainstorming, y la corrección de errores. La mayor parte de la mejora se atribuye a la integración y adaptación de la tecnología Fable de Anthropic. Se exploraron varias estrategias: la optimización de la comunicación entre subagentes de revisión mediante scripts shell para pre-generar paquetes de revisión, la fusión de roles de revisor de código y cumplimiento de especificaciones, y la creación de un 'harness' de autoresearch. Estos esfuerzos resultaron en una reducción del tiempo de ejecución de hasta un 50% y del gasto en tokens hasta en un 60% en las evaluaciones con modelos de Anthropic. Sin embargo, los resultados con Codex no fueron positivos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48750803,
-    "url": "https://thisismodest.com/vimscoops/",
-    "score": 78,
-    "time": 1782928807,
-    "titulo_es": "Vim Scoops: Aprende Movimientos de Vim de Forma Divertida",
-    "resumen": "Vim Scoops es un juego interactivo diseñado para enseñar los movimientos de Vim, un editor de texto basado en teclado. El juego utiliza una metáfora donde el 'van' es el cursor y la 'town' es el texto. Los jugadores aprenden a navegar por el texto utilizando combinaciones de teclas (h, j, k, l, etc.) en lugar del ratón o las teclas de flecha. Cada nivel introduce un conjunto específico de movimientos, y el objetivo es alcanzar a los 'clientes' (objetivos en el texto) presionando las secuencias de teclas correctas. El juego enfatiza la práctica de 'motions' en modo Normal, donde cada tecla actúa como un comando, y explica cómo usar prefijos numéricos para repetir comandos y la naturaleza de los comandos compuestos (como 'f' seguido de una letra). El panel del juego muestra las teclas presionadas y cuándo está esperando una entrada adicional, ayudando al aprendizaje progresivo y eficiente de los comandos de Vim.",
+    "id": 48765639,
+    "url": "https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data",
+    "score": 185,
+    "time": 1783017512,
+    "titulo_es": "Aprovechando PostgreSQL para Workflows Duraderos: Co-ubicación y Transacciones Atómicas",
+    "resumen": "El artículo argumenta que, contrariamente a la intuición, co-ubicar los metadatos de los flujos de trabajo (workflows) y los datos de la aplicación dentro de la misma base de datos PostgreSQL puede ser una estrategia de diseño poderosa en sistemas distribuidos. Esta co-ubicación permite que las actualizaciones de estado del flujo de trabajo y las operaciones sobre los datos de la aplicación se realicen dentro de la misma transacción de base de datos. Esto resuelve problemas fundamentales como la idempotencia y la atomicidad, eliminando la necesidad de complejas soluciones a nivel de aplicación para garantizar que las operaciones se ejecuten exactamente una vez o ninguna. Al integrar el punto de control (checkpointing) de cada paso del flujo de trabajo en la misma transacción que las actualizaciones de la base de datos, se garantiza la ejecución de 'exactly-once' para pasos transaccionales. Esto evita inconsistencias, como la duplicación de transacciones (ej. créditos bancarios) o estados inconsistentes entre la base de datos y sistemas externos (ej. notificaciones de pedidos), simplificando significativamente la construcción de flujos de trabajo duraderos y tolerantes a fallos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48748518,
-    "url": "https://probelab.io/blog/optimistic-provide/",
-    "score": 169,
-    "time": 1782919835,
-    "titulo_es": "Optimización de la publicación de contenido en DHTs con \"Optimistic Provide\" en IPFS",
-    "resumen": "El artículo detalla una optimización clave, \"Optimistic Provide\", para la operación de publicación de contenido en tablas hash distribuidas (DHTs) como la utilizada por IPFS (Amino DHT). Tradicionalmente, esta operación es lenta debido al tamaño de la red y la alta tasa de abandono de nodos (churn). \"Optimistic Provide\" aborda esta lentitud modificando la fase de \"DHT Walk\" del proceso \"provide\". En lugar de esperar rígidamente respuestas de los tres nodos más cercanos descubiertos, lo que puede fallar en redes dinámicas, el nuevo método confía en los nodos ya identificados y procede más rápidamente a la fase de \"Follow-Up\" (envío del registro de proveedor). Esta optimización, que se basa en una estimación del tamaño de la red para mejorar la eficiencia, reduce drásticamente la latencia de publicación de contenido de más de 10-20 segundos a menos de 1 segundo. Esto permite a los desarrolladores e usuarios iterar y depurar en tiempo casi real, mejorando significativamente la experiencia en IPFS. La mejora se ha implementado por defecto en Kubo 0.39.0.",
+    "id": 48772717,
+    "url": "https://thombrown.blogspot.com/2026/07/load-plcbmbasic81-commodore-64-basic.html",
+    "score": 4,
+    "time": 1783069694,
+    "titulo_es": "PL/CBM-BASIC: Ejecutando Commodore 64 BASIC dentro de PostgreSQL",
+    "resumen": "El artículo describe PL/CBM-BASIC, una extensión de lenguaje procedural para PostgreSQL que permite ejecutar código del intérprete Commodore 64 BASIC V2 de 1982 directamente dentro de los procesos backend de PostgreSQL. Utiliza una versión recompilada de la ROM del 6502 en C, que se compila en una biblioteca compartida. Cada llamada a función simula un ciclo de encendido del C64, inicializando la RAM de 64KB y los registros de la CPU. El sistema maneja la asignación de argumentos de función a variables BASIC (convirtiendo tipos SQL a formatos BASIC) y la recuperación de variables de salida a través de la tabla de variables de BASIC. Una característica destacada es que el dispositivo 8 (el antiguo disco) se mapea a la base de datos PostgreSQL, permitiendo ejecutar sentencias SQL como operaciones de archivo BASIC (OPEN, INPUT#, PRINT#, CLOSE). Los comandos de disco (GET#, PRINT# con secundaria 15) también se emulan para interactuar con el backend de PostgreSQL, permitiendo la ejecución de sentencias SQL completas, incluyendo DDL, INSERT y UPDATE.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48762372,
+    "url": "https://apple.github.io/foundationdb/flow.html",
+    "score": 74,
+    "time": 1783003316,
+    "titulo_es": "FoundationDB: Un Enfoque en Concurrencia y Escalabilidad con Flow, un Lenguaje para C++",
+    "resumen": "El artículo describe la arquitectura y los desafíos de ingeniería detrás de FoundationDB, un sistema de base de datos distribuida diseñado para alta disponibilidad y escalabilidad. Para abordar estos retos, se desarrolló Flow, un nuevo lenguaje que extiende C++11 con un modelo de concurrencia basado en actores, similar a Erlang. Flow permite la programación asíncrona mediante el uso de primitivas de control de flujo y palabras clave nuevas, como ACTOR y state. Introduce los tipos Promise<T> y Future<T> para la comunicación asíncrona de mensajes, permitiendo que los valores se transmitan entre procesos e incluso a través de la red. Los actores utilizan la llamada wait() para pausar la ejecución de forma no bloqueante hasta que un Future<T> se resuelva, facilitando la concurrencia sin detener otros actores. El compilador de Flow transforma el código de actores en C++11 estándar con callbacks, lo que garantiza alta performance al compilarse a código nativo. Además, Flow proporciona soporte para la simulación determinista del sistema, crucial para la ingeniería de fiabilidad y tolerancia a fallos en clústeres a gran escala.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48667568,
+    "url": "https://petapixel.com/2026/06/24/a-special-wireless-free-nikon-camera-is-publicly-available-for-the-first-time/",
+    "score": 67,
+    "time": 1782349913,
+    "titulo_es": "Nikon lanza una versión sin conectividad inalámbrica de la Z6 III para entornos seguros, con un costo mayor",
+    "resumen": "El artículo describe la aparición de una variante de la cámara Nikon Z6 III sin conectividad Wi-Fi ni Bluetooth, denominada Z6 III (No Wireless Connectivity). Contrario a lo esperado, esta versión es más cara que el modelo estándar. Nikon explica que estas cámaras se producen a medida para clientes gubernamentales e industriales que requieren alta seguridad y prohíben hardware inalámbrico. Inicialmente solo disponibles bajo pedido directo, Nikon las ha ofrecido a través de su red minorista para evaluar la demanda del mercado. La fabricación de esta versión modificada implica costos adicionales debido a la alteración del proceso de ensamblaje para eliminar componentes inalámbricos y la desactivación a nivel de software, resultando en un precio de venta al público más elevado. Si bien es inadecuada para la mayoría de los fotógrafos, representa una opción accesible para profesionales en entornos de estricta seguridad.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48765607,
+    "url": "https://github.com/segaboy/vulkan-netbsd",
+    "score": 111,
+    "time": 1783017369,
+    "titulo_es": "Porting Vulkan (Mesa/Lavapipe) to NetBSD",
+    "resumen": "El artículo detalla un esfuerzo para portar la pila de software Vulkan, específicamente Mesa y el driver Lavapipe, a NetBSD. Se ha alcanzado un hito donde Mesa se configura, compila, enlaza, instala y registra correctamente el driver Vulkan Lavapipe en NetBSD 10.1 amd64, utilizando LLVM 19.1.7. El driver (libvulkan_lvp.so) y su manifiesto ICD se instalan en ubicaciones estándar (/usr/pkg/lib y /usr/pkg/share/vulkan/icd.d/), permitiendo su descubrimiento por el cargador Vulkan. Todas las dependencias se resuelven limpiamente. El proceso completo, desde la configuración del entorno hasta la instalación, está automatizado y es reproducible en una instalación mínima. La dirección futura incluye la distribución de binarios precompilados para simplificar la instalación, reduciendo el tiempo de descarga frente a la compilación manual. El proyecto se presenta como un trabajo personal en progreso, con documentación que sirve como registro de los pasos exitosos y fallidos. El código y la documentación se distribuyen bajo la Licencia MIT, mientras que el software de terceros incluido conserva sus propias licencias.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48766209,
+    "url": "https://www.eff.org/deeplinks/2026/06/eff-and-allies-xs-ftc-petition-waive-privacy-violation-order-should-be-rejected",
+    "score": 143,
+    "time": 1783020458,
+    "titulo_es": "X Corp. no debe eludir el cumplimiento de la privacidad por cambio de nombre, argumentan los defensores",
+    "resumen": "El artículo detalla la petición de X Corp. (anteriormente Twitter) a la Comisión Federal de Comercio (FTC) para anular o modificar una orden de 2022 que requiere informes regulares sobre violaciones de datos de usuarios. La orden, que resultó de la información privada de 140 millones de usuarios utilizada para publicidad dirigida y una multa de $150 millones, fue una renovación de una violación de 2011. X Corp. argumenta que un nuevo programa de privacidad, personal y liderazgo, junto con su incursión en la IA, justifican la terminación de la orden. Sin embargo, EFF y aliados como DPEF, NCL y EPIC instan a la FTC a rechazar la petición, citando el entrenamiento de su modelo Grok con datos de usuarios sin consentimiento y una brecha de datos masiva en 2025 como evidencia de que las violaciones continúan. Argumentan que las órdenes de la FTC vinculan a la entidad corporativa, no a individuos, y que la IA introduce nuevos riesgos de privacidad. El costo de cumplimiento se considera insignificante en comparación con la valoración de X Corp. La respuesta de los defensores enfatiza la necesidad de una supervisión constante ante el abuso de datos para la obtención de beneficios, instando a la FTC a mantener la orden.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48755965,
+    "url": "https://f-droid.org/2026/07/01/adv-malware.html",
+    "score": 1635,
+    "time": 1782961215,
+    "titulo_es": "Google implementa un sistema de verificación de desarrolladores que restringe el software en Android",
+    "resumen": "El artículo advierte sobre una nueva amenaza en Android 8 y superior, disfrazada como 'Android Developer Verifier' (ADV), que se instala silenciosamente con privilegios de root. Este proceso, propagado por Google a través de Play Protect, tiene como objetivo principal restringir la ejecución de software de desarrolladores no aprobados centralmente por Google. Se critica que esta medida, justificada para combatir la reincidencia de malware, en realidad representa un cambio radical hacia un ecosistema cerrado, convirtiendo a Google en el único 'guardián' de las aplicaciones. Se detalla el proceso de registro para desarrolladores 'verificados', que incluye pago, entrega de información personal e identificación, y la aceptación de términos de servicio ambiguos donde 'malware' se define implícitamente según la discreción de Google, lo que permite a la compañía terminar el acceso a la consola de desarrollador por motivos subjetivos.",
+    "categoria": "Ciberseguridad"
   }
 ]
