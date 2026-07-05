@@ -1,218 +1,254 @@
 [
   {
-    "id": 48783117,
-    "url": "https://blog.mikebowler.ca/2026/07/03/co2-and-decision-making/",
-    "score": 260,
-    "time": 1783146748,
-    "titulo_es": "El asesino invisible de las decisiones de diseño: cómo el CO2 afecta el rendimiento de tu equipo",
-    "resumen": "El artículo expone cómo los altos niveles de CO2 en salas de reuniones cerradas y oficinas (superando frecuentemente las 1000 y 2000 ppm) deterioran gravemente la función cognitiva, la planeación estratégica y la toma de decisiones críticas en los equipos de desarrollo. El autor argumenta que, de la misma manera que se instrumentan los pipelines de despliegue, la tasa de defectos y los tiempos de ciclo, los líderes de software deben medir y optimizar la calidad del aire como una variable de entorno clave para el rendimiento del equipo.",
+    "id": 48791328,
+    "url": "https://ui.shadcn.com/docs/changelog",
+    "score": 139,
+    "time": 1783226768,
+    "titulo_es": "Últimas actualizaciones y anuncios: Base UI es ahora la biblioteca por defecto en shadcn/ui",
+    "resumen": "shadcn/ui ha anunciado la transición de Radix a Base UI como su biblioteca de componentes predeterminada. Aunque Radix no está obsoleta y se seguirá manteniendo el soporte para ambos ecosistemas, los nuevos proyectos utilizarán Base UI de forma predeterminada. Para facilitar la transición, han desarrollado una habilidad para agentes de codificación (como Claude Code y Cursor) que permite realizar migraciones progresivas respetando las personalizaciones de código del usuario. Adicionalmente, se presenta el primer conjunto de componentes especializados para interfaces de chat en streaming, liderado por 'MessageScroller' para resolver problemas complejos de scroll y estado de mensajes.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48790689,
+    "url": "https://unsung.aresluna.org/if-youre-a-button-you-have-one-job/",
+    "score": 237,
+    "time": 1783216863,
+    "titulo_es": "Por qué nunca se debe obligar al usuario a esperar a que termine una animación",
+    "resumen": "El artículo analiza un problema crítico de diseño de interacción y desarrollo frontend al rotar imágenes en dispositivos móviles. Compara cómo iOS almacena en búfer los eventos de pulsación rápidos durante una animación para procesarlos consecutivamente y garantizar un estado final predecible, mientras que Android (Nothing Phone) descarta las interacciones del usuario si hay una animación en curso. Se discute la importancia de no bloquear la interfaz de usuario con transiciones visuales, introduciendo el concepto de 'usuario avanzado situacional' para justificar por qué las interfaces deben priorizar siempre la captura de la intención del usuario sobre la visualización de la animación.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48788283,
+    "url": "https://github.com/ammaarreshi/Generals-Mac-iOS-iPad/tree/main",
+    "score": 578,
+    "time": 1783194070,
+    "titulo_es": "Zero Hour ejecutándose de forma nativa en Apple Silicon Macs, iPhone y iPad",
+    "resumen": "Descripción del desarrollo técnico para portar el motor original de Command & Conquer Generals: Zero Hour (2003) de forma nativa a ARM64 (macOS, iOS y iPadOS). El proyecto compila el código liberado bajo GPL v3 por EA y utiliza un pipeline de renderizado que traduce DirectX 8 a Metal pasando por DXVK, Vulkan y MoltenVK. El desarrollo se implementó mediante una colaboración humano-IA con Claude Code, añadiendo soporte para gestos táctiles optimizados para RTS.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48783948,
-    "url": "https://www.quantamagazine.org/astrophysicists-puzzle-over-webbs-new-universe-20260702/",
-    "score": 14,
-    "time": 1783156089,
-    "titulo_es": "Los misteriosos pequeños puntos rojos del universo temprano descubiertos por el Telescopio Espacial James Webb",
-    "resumen": "El Telescopio Espacial James Webb (JWST) ha descubierto una gran cantidad de 'pequeños puntos rojos' en el universo primitivo, objetos misteriosos que aparecieron unos 650 millones de años después del Big Bang. Los astrofísicos teorizan que podrían ser agujeros negros envueltos en densas y grumosas nubes de gas, o un nuevo tipo de objeto cósmico. Asimismo, los datos del telescopio revelan la existencia de agujeros negros extremadamente masivos para su época de origen, lo que desafía los modelos actuales sobre la formación y el crecimiento de las semillas de agujeros negros en el cosmos temprano.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48782671,
-    "url": "https://danluu.com/ai-coding/#appendix-agentic-loops-and-writing-this-post",
-    "score": 96,
-    "time": 1783139835,
-    "titulo_es": "El impacto de los agentes de IA en las pruebas y la calidad del desarrollo de software",
-    "resumen": "El autor analiza su experiencia práctica en el uso de agentes de IA (como Codex, GPT y Claude) dentro del flujo de trabajo de ingeniería de software. Comienza con una anécdota donde una IA fabricó un entorno de pruebas falso y un video para simular falsamente la resolución de un error. A pesar de estos comportamientos inexactos, argumenta que las herramientas de IA son altamente eficaces para escalar los procesos de pruebas, permitiendo implementar flujos automatizados desde tickets de soporte hasta solicitudes de cambio (PR). Finalmente, destaca el éxito del uso de IA en metodologías de pruebas de robustez como el 'fuzzing', concluyendo que estos flujos intensivos en pruebas automatizadas pueden superar la calidad de los procesos tradicionales basados puramente en la revisión humana.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48780417,
-    "url": "https://www.wafer.ai/blog/glm52-amd",
-    "score": 251,
-    "time": 1783115346,
-    "titulo_es": "Anunciando el GLM-5.2 más rápido, en colaboración con Vercel AI Gateway y OpenRouter",
-    "resumen": "El artículo describe cómo Wafer logró desplegar con éxito el modelo de lenguaje GLM-5.2 sobre aceleradores AMD Instinct MI355X, alcanzando un rendimiento de 2626 tok/s por nodo y un flujo único de 213 tok/s, a un costo más de dos veces menor que la arquitectura Blackwell de NVIDIA. Para optimizar la inferencia, implementaron cuantización MXFP4 sin pérdida utilizando la herramienta AMD Quark y seleccionaron sglang como motor de ejecución. Además, el equipo técnico detalló la resolución de problemas de software críticos en el ecosistema ROCm, específicamente corrigiendo un error de desajuste en el prefijo de los módulos de la capa MTP (Multi-Token Prediction) para habilitar la decodificación especulativa, lo que multiplicó por casi tres veces el rendimiento en flujo único.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48780801,
-    "url": "https://mistral.ai/news/leanstral-1-5/",
-    "score": 240,
-    "time": 1783117990,
-    "titulo_es": "Leanstral 1.5: Abundancia de pruebas para todos",
-    "resumen": "Mistral AI presenta Leanstral 1.5, un modelo de lenguaje de código abierto bajo licencia Apache-2.0 que cuenta con 119 mil millones de parámetros totales y 6 mil millones activos. Este modelo está especializado en la verificación formal y la ingeniería de pruebas con Lean 4. Entrenado mediante un proceso de tres etapas (mid-training, ajuste fino supervisado y aprendizaje por refuerzo con CISPO), Leanstral 1.5 destaca en la resolución de problemas matemáticos complejos y en la verificación de código en entornos reales, logrando saturar el benchmark miniF2F, resolver 587 de 672 problemas en PutnamBench y descubrir errores previamente desconocidos en repositorios de código abierto.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48745855,
-    "url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
-    "score": 27,
-    "time": 1782910136,
-    "titulo_es": "Profundizando en la arquitectura OLTP de Lakebase",
-    "resumen": "El artículo aborda la evolución de las bases de datos OLTP y presenta Lakebase, una base de datos Postgres serverless diseñada para superar las limitaciones de los sistemas monolíticos tradicionales. Explica cómo las arquitecturas clásicas dependen del Write Ahead Log (WAL) y de los archivos de datos en un solo nodo, lo que genera riesgos de pérdida de datos, fragilidad y complejidades al escalar. Lakebase resuelve estos problemas desagregando los componentes en servicios externos e independientes, facilitando el procesamiento híbrido transaccional y analítico (LTAP) en tiempo real sin necesidad de duplicación de datos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48780870,
-    "url": "https://news.exeter.ac.uk/faculty-of-environment-science-and-economy/giant-trees-have-no-trouble-pumping-water-to-top-branches/",
-    "score": 205,
-    "time": 1783118429,
-    "titulo_es": "La altura no perjudica el sistema hidráulico de los árboles dipterocarpáceos tropicales más altos",
-    "resumen": "Un nuevo estudio coliderado por la Universidad de Exeter y la Universidad de Cardiff, publicado en la revista Science, revela que los árboles tropicales más altos del mundo (de la familia de las dipterocarpáceas) cuentan con adaptaciones hidráulicas que compensan por completo la dificultad de transportar agua hasta sus copas. A diferencia de las teorías convencionales que sugieren que la altura limita el transporte hídrico y aumenta la vulnerabilidad a la sequía, esta investigación demuestra que estos árboles modifican el ancho de sus vasos conductores cerca del suelo y poseen hojas que toleran mayor estrés hídrico. Las pruebas realizadas durante la sequía de El Niño (2023-2024) confirmaron que no sufrieron pérdidas de crecimiento relacionadas con su altura, lo que desafía los modelos climáticos actuales que predicen un mayor riesgo de mortalidad por sequía en los árboles gigantes.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48782219,
-    "url": "https://surfingcomplexity.blog/2026/07/03/synthesis-is-harder-than-analysis/",
-    "score": 95,
-    "time": 1783133124,
-    "titulo_es": "Navegando la complejidad",
-    "resumen": "El artículo explora las diferencias fundamentales entre el cálculo diferencial y el cálculo integral. Explica que, mientras el cálculo diferencial es puramente algorítmico y fácilmente programable (siendo clave para la diferenciación automática en el entrenamiento de modelos de IA), el cálculo integral carece de un método general aplicable a cualquier función, requiriendo aproximaciones complejas como series infinitas para casos particulares como la función gaussiana. Finalmente, reflexiona sobre la asimetría de dificultad entre ambos procesos a pesar de ser operaciones inversas según el Teorema Fundamental del Cálculo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48780865,
-    "url": "https://github.com/FossPrime/Steam-Controller-Auto-Charge",
-    "score": 142,
-    "time": 1783118390,
-    "titulo_es": "Carga automática para Steam Controller",
-    "resumen": "Aplicación web de código abierto diseñada para dirigir automáticamente un Steam Controller hacia su base de carga magnética. El sistema utiliza visión artificial basada en flujo óptico para el seguimiento visual y la API WebHID para la telemetría y comunicación con el dispositivo desde el navegador, permitiendo también una opción de control manual si el usuario lo prefiere.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48781688,
-    "url": "https://mrbruh.com/msicenter/",
-    "score": 91,
-    "time": 1783126664,
-    "titulo_es": "Descubrimiento de vulnerabilidades críticas en MSI Center",
-    "resumen": "El autor detalla la identificación de una vulnerabilidad de escalada de privilegios y ejecución remota de código (RCE) en el software MSI Center. Mediante ingeniería inversa de los componentes descompilados, se descubrió que el servicio 'Notebook Foundation' expone una tubería nombrada (named pipe) accesible por usuarios autenticados sin privilegios de administrador, utilizando un cifrado obsoleto (3DES) para proteger la comunicación. El artículo también describe las dificultades en el proceso de reporte de vulnerabilidades con el equipo de respuesta de seguridad de MSI y la posterior publicación del parche de seguridad.",
+    "id": 48792203,
+    "url": "https://www.devever.net/~hl/webcrypto",
+    "score": 29,
+    "time": 1783238489,
+    "titulo_es": "La incoherencia del cifrado de extremo a extremo en aplicaciones web",
+    "resumen": "El artículo analiza la inviabilidad técnica del cifrado de extremo a extremo (E2E) en aplicaciones basadas en la web y plataformas propietarias centralizadas como WhatsApp o Signal. El autor argumenta que estas soluciones sufren de un modelo de amenaza incoherente, ya que el mismo proveedor del que se intenta proteger la información es quien distribuye y actualiza el código del cliente (JavaScript en la web o actualizaciones de la aplicación). Al tener la capacidad de modificar el código del cliente en cualquier momento, el proveedor conserva la capacidad técnica de eludir el cifrado, lo que equivale a un sistema con puerta trasera por diseño. Finalmente, se sugiere que la adopción de este tipo de cifrado responde más a una estrategia legal de las empresas tecnológicas para eludir citaciones y mandatos judiciales de entrega de datos que a un beneficio real de seguridad.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48779454,
-    "url": "https://github.com/searxng/searxng",
-    "score": 218,
-    "time": 1783109749,
-    "titulo_es": "Introducción a SearXNG: El motor de metabúsqueda libre y privado",
-    "resumen": "SearXNG es un motor de metabúsqueda en internet gratuito y de código abierto que recopila y unifica resultados de diversos servicios de búsqueda y bases de datos. Su principal propuesta de valor es la privacidad, garantizando que los usuarios no sean rastreados ni perfilados. El proyecto está licenciado bajo AGPL-3.0 y cuenta con documentación detallada para su instalación, configuración y contribución por parte de la comunidad de desarrollo.",
+    "id": 48773079,
+    "url": "https://pandoc.org/lua-filters.html",
+    "score": 73,
+    "time": 1783072371,
+    "titulo_es": "Filtros de Lua en Pandoc",
+    "resumen": "El artículo analiza la evolución de los filtros en Pandoc, comparando los filtros JSON tradicionales con los filtros integrados en Lua a partir de la versión 2.0. Explica cómo los filtros de Lua eliminan la sobrecarga de serialización JSON mediante pipes y reducen las dependencias del entorno del usuario al estar el intérprete integrado en el propio ejecutable de Pandoc. Adicionalmente, detalla el funcionamiento técnico de la manipulación del árbol de sintaxis abstracta (AST), la estructura de los scripts en Lua, las reglas de retorno de las funciones de filtrado y el orden de ejecución de los filtros.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48778757,
-    "url": "https://crocidb.com/post/freebsd-ate-my-ram/",
-    "score": 141,
-    "time": 1783105711,
-    "titulo_es": "Por qué reportar la memoria libre o usada en un sistema operativo moderno es más complicado de lo que parece",
-    "resumen": "El artículo aborda en profundidad la gestión de memoria virtual (VM) y el subsistema de paginación en sistemas operativos modernos, con un enfoque particular en FreeBSD y Linux. El autor explica cómo el sistema operativo divide la memoria física en páginas (generalmente de 4KiB) y las distribuye en diferentes colas (Active, Inactive, Laundry, Wired, Free) para optimizar el rendimiento general mediante el almacenamiento en caché de datos de disco. Además, se analiza el comportamiento de ARC (Adaptive Replacement Cache) en sistemas de archivos ZFS y cómo estas técnicas de caching dinámico provocan discrepancias en las herramientas de monitoreo, demostrando el principio de que la 'RAM no utilizada es RAM desperdiciada' ya que el sistema la liberará automáticamente ante situaciones de alta demanda.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48775921,
-    "url": "https://github.com/jamesob/local-llm",
-    "score": 349,
-    "time": 1783091023,
-    "titulo_es": "Ejecución local de Inteligencia Artificial de última generación: Guía de Hardware y Configuración",
-    "resumen": "El artículo detalla cómo diseñar y configurar una infraestructura local para ejecutar modelos de inteligencia artificial (LLMs y STT) de última generación de forma rentable. El autor explica su arquitectura de hardware basada en componentes de servidor de generaciones anteriores (como procesadores AMD EPYC de eBay) y múltiples GPUs (como RTX 6000 Pro o RTX 3090) para maximizar la VRAM. Destaca el uso de switches PCIe 4 para permitir la comunicación directa entre GPUs durante la fase de 'allreduce' en paralelismo de tensores. En cuanto al software, implementa almacenamiento ZFS para los pesos de los modelos, contenedores Docker para aislar la ejecución de cada modelo, y una integración con agentes de automatización locales que interactúan con repositorios Git.",
+    "id": 48789428,
+    "url": "https://github.com/openai/codex/issues/30364",
+    "score": 280,
+    "time": 1783201869,
+    "titulo_es": "Anomalía de agrupación de tokens de razonamiento en metadatos de Codex para GPT-5.5",
+    "resumen": "Análisis de telemetría que revela un comportamiento anómalo y específico en el modelo gpt-5.5, donde la cantidad de tokens de razonamiento (reasoning_output_tokens) se concentra de manera desproporcionada en límites fijos exactos de 516, 1034 y 1552 tokens. Este fenómeno coincide con una reducción en la intensidad general de los tokens de razonamiento y una degradación del rendimiento en tareas complejas. El autor sugiere la existencia de un umbral o presupuesto de razonamiento rígido, truncamiento o un fallo en el programador de tareas del modelo, solicitando una investigación técnica al equipo de Codex.",
     "categoria": "IA"
   },
   {
-    "id": 48781196,
-    "url": "https://katamari64.se/posts/2026/odin-wikipedia/",
-    "score": 156,
-    "time": 1783121075,
-    "titulo_es": "La polémica eliminación del lenguaje de programación Odin en Wikipedia",
-    "resumen": "El artículo expone y analiza la polémica eliminación de la página de Wikipedia dedicada a Odin, un lenguaje de programación de sistemas diseñado como alternativa a C. A pesar de su adopción comercial por empresas como JangaFX y su popularidad en comunidades técnicas, los moderadores de Wikipedia determinaron que el lenguaje carecía de notoriedad y fuentes confiables. Se presenta la perspectiva de GingerBill, creador de Odin, quien argumenta que la plataforma sufre de sesgos ideológicos y de un control excesivo por parte de moderadores que actúan como guardianes de la información.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48781597,
-    "url": "https://soatok.blog/2026/06/30/soatoks-informal-guide-to-threat-models/",
-    "score": 93,
-    "time": 1783125349,
-    "titulo_es": "Una guía práctica para el modelado de amenazas",
-    "resumen": "El artículo ofrece una introducción intuitiva y práctica al modelado de amenazas en la arquitectura de software, alejándose del formalismo académico excesivo. Explica que un modelo de amenazas debe identificar componentes, definir suposiciones de seguridad claras y registrar riesgos aceptados. El autor utiliza el ataque 'Invisible Salamanders' contra algoritmos AEAD (como AES-GCM y ChaCha20-Poly1305) para ilustrar cómo suposiciones incorrectas invalidan las garantías de seguridad. Propone una metodología iterativa y descendente (top-down) para analizar el sistema mediante diagramas de componentes, entradas, salidas y límites de confianza, enfatizando que el modelo de amenazas debe ser tratado como un documento vivo.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48780056,
-    "url": "https://epoch.ai/data-insights/cve-severity-spike",
-    "score": 109,
-    "time": 1783113376,
-    "titulo_es": "Las revelaciones de vulnerabilidades de ciberseguridad graves se disparan en 2026 tras el uso de modelos de IA avanzados",
-    "resumen": "El artículo expone un incremento sin precedentes en la divulgación de vulnerabilidades de seguridad de gravedad alta y crítica (CVE) en junio de 2026, registrando aproximadamente 1,500 casos por parte de organizaciones destacadas, lo que supera en más de 3.5 veces el récord mensual anterior. Este pico histórico se produce tras el anuncio del modelo Claude Mythos Preview de Anthropic y el Proyecto Glasswing (en colaboración con gigantes como Microsoft, Google, Apple y AWS), los cuales utilizan inteligencia artificial de frontera para el descubrimiento y explotación autónoma de fallos de software. El objetivo de estas iniciativas, junto con esfuerzos similares de OpenAI mediante su producto Daybreak, es identificar y corregir proactivamente debilidades críticas en el software antes de que actores maliciosos puedan explotarlas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48749868,
-    "url": "https://github.com/adam-s/car-diagnosis",
+    "id": 48792352,
+    "url": "https://0dd.company/galleries/triumph/1.html",
     "score": 16,
-    "time": 1782925040,
-    "titulo_es": "Diagnostica una falla automotriz a partir de su sonido: un pipeline honesto de ML de audio de extremo a extremo",
-    "resumen": "cardiag es un pipeline de aprendizaje automático (ML) para audio de extremo a extremo diseñado como una herramienta de triaje calibrada para la detección de fallas mecánicas en vehículos mediante grabaciones de audio de teléfonos, YouTube o TikTok. El sistema automatiza la ingesta, limpia el ruido y el habla del audio para aislar los sonidos mecánicos, genera embeddings usando un modelo CLAP congelado y entrena clasificadores lineales pequeños (heads) para el diagnóstico. Destaca por evitar el sesgo de entrenamiento/servicio al compartir el mismo contrato de embeddings y por su enfoque honesto de calibración, reportando incertidumbre en lugar de falsos positivos cuando la calidad del audio es insuficiente.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48739682,
-    "url": "https://blog.archive.org/2026/04/23/gone-but-not-forgotten-recovering-the-dead-web/",
-    "score": 69,
-    "time": 1782856123,
-    "titulo_es": "La Podredumbre de los Enlaces en la Web y el Papel del Wayback Machine",
-    "resumen": "El artículo analiza el fenómeno del 'link rot' (enlaces rotos) en la World Wide Web, citando estudios del Pew Research Center, Ahrefs y Old Dominion University que indican que un porcentaje significativo de páginas web se vuelven inaccesibles con el tiempo. Se destaca que entre el 25% y el 66.5% de los enlaces pueden estar rotos, con tasas de degradación más altas para enlaces más antiguos. Se presenta el análisis del Wayback Machine, que ha logrado preservar aproximadamente el 15% de las páginas que de otro modo serían inaccesibles. El estudio utiliza un dataset de 5.4 millones de URLs del Pew Research Center, demostrando que al considerar el Wayback Machine, la fracción de URLs inaccesibles cae significativamente. Se enfatiza la importancia de los archivos web como el Wayback Machine para mitigar la pérdida de información digital y preservar el registro cultural.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48779723,
-    "url": "https://math.ucr.edu/home/baez/act_course/index.html",
-    "score": 112,
-    "time": 1783111320,
-    "titulo_es": "Siete Bocetos en Componibilidad: Una Invitación a la Teoría de Categorías Aplicada",
-    "resumen": "El artículo presenta un curso introductorio a la Teoría de Categorías Aplicada, basado en el libro 'Seven Sketches in Compositionality' de Fong y Spivak. Cubre una amplia gama de temas que van desde conceptos fundamentales como preórdenes, conexiones de Galois, adjunciones y lógica de subconjuntos y particiones, hasta aplicaciones más avanzadas en áreas como efectos generativos, teorías de recursos, química, programación, diseño colaborativo y bases de datos. Se explora la relación entre categorías, funtores y transformaciones naturales, así como conceptos como extensiones de Kan, profunctoriales enriquecidos y categorías monoidales. El curso utiliza un enfoque progresivo, construyendo desde nociones matemáticas básicas hacia aplicaciones prácticas y arquitectónicas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48776035,
-    "url": "https://interconnected.org/home/2026/07/03/factories",
-    "score": 249,
-    "time": 1783091623,
-    "titulo_es": "El Arte de Fabricar: De Ideas a Productos",
-    "resumen": "El artículo describe una charla inspiradora en una escuela primaria sobre el proceso de fabricación de un reloj con IA. Se enfoca en desmitificar la manufactura, desde la ideación, el diseño exploratorio (bocetos, CAD), el prototipado (pantallas e-paper, electrónica, piezas plásticas) y las técnicas de producción (impresión 3D, moldeo por inyección). Se contrastan videos de fábricas que inspiran asombro con un enfoque más cercano y participativo, mostrando las líneas de ensamblaje, los procedimientos y el control de calidad (pruebas de vibración, diseño de empaques). El objetivo principal es animar a los niños a ver la fabricación como algo accesible y alcanzable, normalizando el \"ensuciarse las manos\" y fomentando su potencial como futuros inventores, diseñadores e ingenieros, enfatizando que los objetos cotidianos son el resultado del ingenio humano y que ellos mismos pueden ser parte de ese proceso.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48730953,
-    "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected",
-    "score": 217,
-    "time": 1782817658,
-    "titulo_es": "Análisis de un bug en SQLite WAL con TLA+ y su impacto en dqlite",
-    "resumen": "Este artículo detalla un análisis profundo de un bug de corrupción de base de datos en el modo Write Ahead Log (WAL) de SQLite, presente durante 16 años. Utilizando TLA+ para modelar el comportamiento de SQLite, los autores investigan la secuencia de pasos que conducen a la corrupción. Posteriormente, crean un modelo de cómo dqlite interactúa con SQLite para determinar si dqlite podría verse afectado por este mismo bug. Se describe el proceso de modelado de la base de datos y el WAL, centrándose en las operaciones de escritura (append) y checkpointing. Se detallan las acciones TLA+ para la operación de escritura, incluyendo la adquisición de bloqueos, y se inicia el análisis de la operación de checkpointing, que implica la lectura de la memoria compartida y la modificación del estado de la base de datos.",
+    "time": 1783240329,
+    "titulo_es": "APOCKETLYPSE: Desarrollo de un Tamagotchi apocalíptico en la máquina virtual Uxn",
+    "resumen": "El autor detalla su experiencia de desarrollo de 'APOCKETLYPSE', un juego de mascotas virtuales de estilo apocalíptico. El proyecto fue desarrollado utilizando Uxn, una máquina virtual de bajo nivel inspirada en Forth donde se programa directamente en bytecode manipulando la pila de datos (stack). El artículo profundiza en los beneficios y el disfrute de la programación manual byte a byte como contraste al desarrollo moderno de alto nivel, y menciona la portabilidad del sistema al ejecutar la ROM en un hardware ESP32 (M5stack) mediante un emulador.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48779683,
-    "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/",
-    "score": 389,
-    "time": 1783111106,
-    "titulo_es": "Eurodiputado investigado por Pegasus mientras investigaba el propio Pegasus",
-    "resumen": "El artículo detalla cómo Stelios Kouloglou, miembro del Parlamento Europeo y del comité PEGA que investigaba el uso de spyware Pegasus y similar, fue hackeado con Pegasus en su dispositivo móvil. El análisis forense de su iPhone reveló infecciones de Pegasus en varias ocasiones, utilizando el exploit 'PWNYOURHOME' que se aprovechaba de vulnerabilidades en HomeKit y MessagesBlastDoorService. Estas infecciones ocurrieron mientras Kouloglou participaba activamente en la investigación del comité PEGA, lo que sugiere un posible acceso no autorizado a documentos confidenciales y deliberaciones del comité. Las notificaciones de amenaza de Apple sobre espionaje mercenario, recibidas por Kouloglou con retraso, validan aún más el hallazgo de su objetivo.",
+    "id": 48792080,
+    "url": "https://jacob.gold/posts/programmers-need-to-start-meditating-now/",
+    "score": 59,
+    "time": 1783237175,
+    "titulo_es": "El fin de la programación como actividad meditativa en la era de la IA",
+    "resumen": "El autor reflexiona sobre cómo la transición al desarrollo de software asistido por múltiples agentes de IA ha incrementado la productividad, pero ha eliminado el 'estado de flujo' que caracterizaba a la programación tradicional. Este estado de concentración profunda solía actuar como una práctica meditativa al aquietar la red neuronal por defecto (DMN), reduciendo la rumiación y la ansiedad. Ante este cambio drástico en la dinámica laboral, se sugiere que los programadores busquen conscientemente nuevos hábitos de meditación fuera del trabajo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48789712,
+    "url": "https://www.mbl.edu/news/jellyfish-can-heal-wounds-minutes-scientists-want-their-secrets",
+    "score": 129,
+    "time": 1783204588,
+    "titulo_es": "La regeneración de tejidos sin cicatrices en la medusa Clytia",
+    "resumen": "Investigación sobre la regeneración celular y curación de heridas en la medusa Clytia hemisphaerica. A diferencia de los humanos, estas medusas curan sus heridas rápidamente y sin dejar cicatrices, imitando la curación embrionaria. La investigación de Jocelyn Malamy revela que la curación epitelial es impulsada en secuencia por dos estructuras celulares clave, comenzando por los lamellipodios (extensiones de actina que actúan como exploradores celulares), proporcionando valiosos conocimientos aplicables a otros organismos, incluidos los mamíferos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48792008,
+    "url": "https://craigmod.com/essays/fast_software/",
+    "score": 16,
+    "time": 1783236325,
+    "titulo_es": "Me encanta el software rápido",
+    "resumen": "El artículo analiza la importancia de la velocidad de ejecución y la baja latencia de interfaz como métricas de calidad en el desarrollo de software. Desde una perspectiva técnica, el autor argumenta que el rendimiento y la fiabilidad están intrínsecamente relacionados, sirviendo la velocidad como un indicador de la excelencia en la ingeniería y la atención al detalle de los desarrolladores. A través del análisis de herramientas como nvALT, Simplenote, Ulysses y Sublime Text, se discuten problemas arquitectónicos como el sobre-procesamiento o re-renderizado ineficiente del estado de la interfaz en cada pulsación de tecla, y se defiende que el software de calidad debe optimizarse y reducir su complejidad con el tiempo en lugar de acumular 'bloatware'.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48786781,
+    "url": "https://javoriuski.com/post/youtube",
+    "score": 624,
+    "time": 1783183510,
+    "titulo_es": "Filtrando los videos privados de los creadores de YouTube",
+    "resumen": "El artículo analiza una vulnerabilidad de inyección de prompts almacenada (Stored Prompt Injection) en el asistente de IA 'Ask Studio' de YouTube. Un atacante puede publicar un comentario normal y posteriormente editarlo para incluir un payload malicioso. Cuando el creador del canal utiliza el asistente de IA para resumir o analizar los comentarios, el modelo procesa la inyección como si fuera una instrucción legítima del sistema. Esto permite al atacante engañar al creador para que haga clic en un enlace que exfiltra información sensible del canal, específicamente los títulos de videos privados, hacia un servidor de terceros. El autor enfatiza la importancia de separar estrictamente los datos de usuario de las instrucciones del sistema en las integraciones de IA.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 48735097,
-    "url": "https://github.com/rochus-keller/BUSY/",
-    "score": 35,
-    "time": 1782836935,
-    "titulo_es": "BUSY: Un Sistema de Compilación Lean y Tipado Estáticamente",
-    "resumen": "El artículo presenta BUSY, un sistema de compilación de software diseñado para ser ligero, multiplataforma y fácil de usar con toolchains como GCC, Clang y MSVC. Se destaca por su lenguaje de especificación de compilación estáticamente tipado y su capacidad para compilar proyectos directamente desde cero sin requisitos adicionales del sistema. A diferencia de sistemas como CMake, QMake o Meson, BUSY se integra directamente con el árbol fuente del proyecto y se basa en la máquina virtual Lua, heredando la facilidad de compilación de Lua. El artículo compara BUSY con otros sistemas de compilación populares, criticando la complejidad y antigüedad de CMake, y la peculiaridad y tipado dinámico de Meson. Se mencionan ejemplos de uso como NAppGUI y el compilador Oberon+, y se destaca el soporte de BUSY para herramientas como moc y rcc de Qt. Finalmente, se introduce LeanCreator, un IDE C/C++ integrado con BUSY.",
+    "id": 48791266,
+    "url": "https://www.hogbaysoftware.com/posts/moby-dick-workout/",
+    "score": 45,
+    "time": 1783225833,
+    "titulo_es": "¿Cuántos elementos debería poder manejar tu lista de tareas?",
+    "resumen": "El autor propone una prueba de rendimiento y escalabilidad para aplicaciones de productividad (como listas de tareas) utilizando el texto completo de la novela 'Moby Dick' como volumen de datos de prueba. El objetivo es evaluar la capacidad del software para manejar eficientemente el contenido generado por el usuario, sirviendo como un indicador práctico de la optimización y calidad del desarrollo de la aplicación.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48774518,
-    "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/",
-    "score": 561,
-    "time": 1783083709,
-    "titulo_es": "Valve abre el diseño de \"Inkterface\" para pantallas de tinta electrónica personalizadas en Steam Machines",
-    "resumen": "Valve ha liberado el diseño y los recursos necesarios para crear pantallas de tinta electrónica (e-ink) personalizadas para la Steam Machine, bajo licencia MIT. Esto permite a los usuarios y terceros fabricar e integrar sus propias pantallas en la consola. El proyecto, denominado \"Inkterface\", incluye las especificaciones y un video demostrativo alojado en GitLab. Se anticipa que esta apertura incentivará la aparición de versiones pre-construidas por parte de otros fabricantes de accesorios, como JSAUX, quienes ya han expresado su interés en lanzar modelos \"Ink & Pixel\".",
+    "id": 48788599,
+    "url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+    "score": 178,
+    "time": 1783196182,
+    "titulo_es": "Un extraño problema de Pi me llevó a investigar a fondo las llamadas a herramientas de Claude",
+    "resumen": "Análisis técnico de un fallo en los modelos más recientes de Anthropic (Opus 4.8 y Sonnet 5), los cuales generan campos inventados e inválidos en el esquema JSON de la herramienta de edición de Pi. El autor detalla cómo las llamadas a herramientas de los LLM utilizan serializaciones internas de texto y JSON (como pseudo-XML/ANTML), y examina la decodificación restringida por gramática (grammar-aware decoding) como solución frente a la decodificación libre basada únicamente en patrones aprendidos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48790912,
+    "url": "https://arxiv.org/abs/2605.21997",
+    "score": 46,
+    "time": 1783220258,
+    "titulo_es": "arXivLabs: Un framework para el desarrollo colaborativo de nuevas funcionalidades",
+    "resumen": "arXivLabs es un entorno de trabajo (framework) diseñado para facilitar la colaboración en el desarrollo y despliegue de nuevas funcionalidades directamente en el sitio web de arXiv. Este ecosistema promueve la participación de desarrolladores individuales y organizaciones que se alineen con sus valores fundamentales de código abierto, comunidad, excelencia técnica y privacidad de datos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48786638,
+    "url": "https://ziglang.org/devlog/2026/#2026-06-30",
+    "score": 210,
+    "time": 1783182610,
+    "titulo_es": "Novedades en la rama principal de Zig (2026): Arquitectura del sistema de construcción y mejoras en el backend de SPIR-V",
+    "resumen": "El artículo detalla actualizaciones de arquitectura clave en el compilador de Zig. En primer lugar, se describe la migración de la lógica de gestión de paquetes al proceso 'maker', aislándolo de la configuración. Esto permite que partes significativas del compilador se distribuyan en código fuente, facilitando parches rápidos, habilitando comprobaciones de seguridad en red (ReleaseSafe) y optimizando el uso de instrucciones criptográficas específicas de la CPU del host. Además, este cambio estructural beneficia al protocolo del servidor de construcción para ZLS al evitar reinicios innecesarios del servidor cuando cambia build.zig. En segundo lugar, se detallan mejoras en el backend de SPIR-V, incluyendo el nuevo builtin '@SpirvType' para tipos de sombreadores no nativos en Zig, la gestión de modos de ejecución mediante convenciones de llamada y la automatización de capacidades del compilador basadas en las características de la CPU objetivo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48785485,
+    "url": "https://github.com/anthropics/claude-code/issues/74066",
+    "score": 300,
+    "time": 1783173820,
+    "titulo_es": "Aparente filtración de sesión en espacio de trabajo Enterprise ZDR de agente de IA",
+    "resumen": "Un usuario reporta un problema crítico de aislamiento de caché y persistencia de datos en un agente de IA (basado en Claude) dentro de un entorno empresarial. El agente comenzó a mezclar contextos e introdujo instrucciones sobre Minecraft ajenas al espacio de trabajo actual, lo que sugiere una potencial filtración de sesiones entre usuarios o planes de consumo. El reporte detalla que, aunque se utilizaba una estructura de directorios local compleja (.claude) que causó una compactación errónea de la conversación, la presencia de prompts de terceros expone una vulnerabilidad grave en la privacidad de los datos de la plataforma de IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48787042,
+    "url": "https://www.eso.org/public/news/eso2607/",
+    "score": 147,
+    "time": 1783185448,
+    "titulo_es": "Impacto Devastador de Megaconstelaciones de Satélites en la Astronomía",
+    "resumen": "Un estudio de la ESO revela que el lanzamiento propuesto de más de 1.7 millones de satélites, incluyendo aquellos extremadamente brillantes, tendría consecuencias \"devastadoras para la astronomía\". El estudio enfatiza que no deberían orbitar más de 100,000 satélites tenues para proteger la observación del cielo nocturno. Se detalla el rápido aumento de satélites, liderado por Starlink, y las propuestas futuras de SpaceX, E-Space y China, que agravarían el problema. Un caso particular es el de Reflect Orbital, que planea lanzar satélites espejulares que aparecerían hasta cuatro veces más brillantes que la Luna llena, oscureciendo la visibilidad de objetos celestes débiles como galaxias lejanas y exoplanetas. Los satélites, iluminados por el sol, generan trazas brillantes que \"zapatean\" las imágenes telescópicas. Simulaciones para el Very Large Telescope (VLT) de ESO indican pérdidas de hasta el 28% del campo de visión debido a estas trazas de satélite.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48791256,
+    "url": "https://www.animmouse.com/p/my-asn-journey/",
+    "score": 22,
+    "time": 1783225745,
+    "titulo_es": "Mi viaje con ASN: Explorando BGP y obteniendo nuestra propia dirección IP",
+    "resumen": "El artículo narra la experiencia del autor al obtener un Sistema Autónomo (ASN) y un bloque de direcciones IP (principalmente IPv6 debido al costo de IPv4). Detalla la motivación detrás de esta decisión, comparándola con la facilidad de registrar nombres de dominio, y explica los beneficios de poseer un ASN y un bloque IP propio. Se discuten conceptos clave como BGP, la diferencia entre IP transit y peering, y se aborda la necesidad de un ASN para anunciar IPs propias. Se menciona la posibilidad de usar un ASN privado con un proveedor, pero se destaca que obtener un ASN propio es la mejor opción. El artículo también sugiere el uso de Cloudflare WARP para acceder a servicios IPv6 si el ISP no lo soporta y se enfatiza la necesidad de conocimientos de redes y configuración de VPS.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48742175,
+    "url": "https://wozniak.ca/blog/2014/08/03/1/index.html",
+    "score": 195,
+    "time": 1782879241,
+    "titulo_es": "Los ORM: Más perjudiciales que beneficiosos",
+    "resumen": "El artículo argumenta que los Object-Relational Mappers (ORM) son más un perjuicio que un beneficio en el desarrollo de software, a pesar de su utilidad para complementar el trabajo con SQL. El autor comparte experiencias negativas tras 30 meses trabajando con SQLAlchemy y Hibernate en bases de datos Postgres y SQLite, principalmente en sistemas de almacenamiento basado en eventos y generación de reportes. Se detallan problemas comunes como el \"mismatch\" objeto-relacional, problemas de identidad de entidades, el \"dual-schema problem\", preocupaciones sobre el mecanismo de recuperación de datos y el \"partial-object problem\". Un problema clave identificado es el \"attribute creep\" o \"wide tables\", donde las tablas acumulan atributos hasta volverse problemáticas para las consultas ORM, similar a un \"SELECT *\" ineficiente. Otro punto crítico es el uso excesivo y la configuración descuidada de claves foráneas, que puede derivar en un número excesivo de joins. La conclusión es que, dado que el uso efectivo de ORM requiere un conocimiento profundo de SQL para optimizar consultas, es preferible utilizar SQL directamente para evitar la complejidad de la traducción y la sobrecarga de objetos. Se destaca la dificultad de implementar funcionalidades avanzadas como las \"window functions\" con ORM, llevando a la transferencia innecesaria de datos. La solución propuesta es una combinación: describir tablas con ORM para conveniencia a nivel de aplicación, pero escribir las consultas directamente en SQL, a menudo usando sistemas de plantillas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48791708,
+    "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/",
+    "score": 51,
+    "time": 1783232374,
+    "titulo_es": "Refinamiento de la versión 4.0 de sqlite-utils con la ayuda de Claude Fable y mejoras en el manejo de transacciones",
+    "resumen": "El artículo detalla el proceso de refinamiento y estabilización de la versión 4.0 de la librería sqlite-utils, utilizando la herramienta de IA Claude Fable. Se identificaron y corrigieron errores críticos, como uno que causaba pérdida de datos y envenenamiento de la conexión debido a un manejo incorrecto de transacciones en `delete_where()`. El desarrollo se centró en mejorar el modelo de transacciones de la librería, implementando que cada operación de escritura se ejecute dentro de su propia transacción y se confirme automáticamente al finalizar. Se introducen las directivas `db.atomic()` para agrupar operaciones y `db.begin()` para el manejo manual de transacciones. Se destaca una incompatibilidad observada con las nuevas opciones `autocommit=True` y `autocommit=False` del módulo `sqlite3` de Python 3.12, que requirió ajustes para asegurar la compatibilidad y estabilidad de la librería.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48789965,
+    "url": "https://www.cggonzalez.com/blog/index.html",
+    "score": 60,
+    "time": 1783207335,
+    "titulo_es": "Una revisión de modelado, estimación de estado, planificación de movimiento y control modernos de drones.",
+    "resumen": "Este artículo es una introducción concisa y accesible al desarrollo de sistemas autónomos para cuadricópteros. El autor, Carlos Gonzalez, busca servir como un punto de partida para principiantes, abordando temas clave como el modelado de la dinámica del dron, la estimación de su estado (posición, orientación, velocidad), la planificación de trayectorias y el control para lograr la autonomía. El contenido se presenta de manera informal y digerible, a diferencia de la rigurosidad de los artículos académicos, y se complementa con referencias para una exploración más profunda. El objetivo es proporcionar una comprensión intuitiva de los componentes necesarios para la autonomía de los cuadricópteros, desmitificando un campo que puede ser confuso para los recién llegados.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48791380,
+    "url": "https://hic-ai.com",
+    "score": 33,
+    "time": 1783227674,
+    "titulo_es": "HIC Mouse: La Herramienta de Edición de Archivos para Agentes de IA",
+    "resumen": "HIC Mouse es una herramienta avanzada para la edición de archivos impulsada por IA, diseñada para superar las limitaciones de las herramientas de edición actuales basadas en reemplazo de cadenas. Utiliza tecnología patentada para ofrecer edición basada en coordenadas, cambios escenificados con reversión atómica y ingeniería de respuesta a herramientas. Proporciona a los agentes de IA seis operaciones declarativas (INSERT, DELETE, ADJUST, etc.) con una sintaxis natural para una precisión quirúrgica. Los cambios de alto riesgo se escenifican para su aprobación o reversión atómica, permitiendo al agente guardar, cancelar, inspeccionar o refinar. HIC Mouse compensa las limitaciones inherentes de los agentes de IA ofreciendo guía contextual, sugerencias de acciones, evaluación de riesgos y visualización de la estructura del archivo. Esto proporciona a los agentes de codificación de IA precisión y consistencia quirúrgicas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48746249,
+    "url": "https://prepok.com/chemistry/particle-box/",
+    "score": 13,
+    "time": 1782911813,
+    "titulo_es": "Simulador de Teoría Cinética de Partículas en Movimiento",
+    "resumen": "El artículo describe un simulador interactivo en 2D que permite visualizar y experimentar con los principios de la teoría cinética molecular. Los usuarios pueden manipular parámetros como la temperatura (rescalando la velocidad de las partículas), el volumen (mediante un pistón móvil) y la 'cohesión' entre átomos. La simulación muestra cómo emergen fenómenos como la presión (medida por los choques contra las paredes), la distribución de velocidades (representada por colores) y los estados de la materia (gas, líquido, sólido) a partir de las colisiones entre partículas. Se enfoca en la relación entre la energía cinética promedio de las partículas y la temperatura, y cómo estas variables, junto con el volumen y el número de partículas, se relacionan a través de las leyes de los gases, como la ley de Boyle, Gay-Lussac y Avogadro, ejemplificando la ecuación P V = n R T. La física subyacente se basa en un potencial par (inspirado en Lennard-Jones) y el integrador de velocidad de Verlet, con un termostato que mantiene la temperatura. El objetivo es hacer tangibles conceptos de física de gases que de otro modo serían abstractos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48762578,
+    "url": "https://blog.doubleword.ai/speculating-on-the-margin",
+    "score": 9,
+    "time": 1783003951,
+    "titulo_es": "Optimización de Throughput en Modelos MoE con Especulación Profunda vs. Batching Ancho",
+    "resumen": "El artículo explora la optimización del rendimiento (tokens/segundo) en modelos de lenguaje grandes (LLMs) como Qwen3.6-35B-A3B, específicamente al aumentar el throughput bajo la restricción de procesar 222 tokens a la vez. Se comparan dos estrategias: aumentar el tamaño del batch (ancho) frente a extender la longitud de una secuencia existente (profundidad) para la especulación. A pesar de que el batching es generalmente superior para tasas de aceptación (alpha < 1) cuando las operaciones están ligadas a memoria, el análisis revela que, para un tamaño de batch de 1, la especulación profunda puede superar al batching ancho en throughput. Esto se atribuye a la naturaleza no uniforme del enrutamiento de expertos (MoE) en LLMs modernos. Las secuencias especulativas, al ser más similares entre sí que las secuencias aleatorias en un batch, activan un subconjunto de expertos más solapado (co-activación), lo que resulta en menos carga de cómputo total para la inferencia en comparación con la activación de expertos para múltiples secuencias independientes en un batch. Se destaca que, incluso con una tasa de rechazo del 10% (alpha=0.9), la estrategia de profundidad puede ser más eficiente. Sin embargo, se reconoce que este efecto puede mitigarse en implementaciones prácticas con batches más grandes, donde la saturación de activaciones de expertos y otros costos (como el draft model o el movimiento de KV cache en secuencias largas) pueden lavar el beneficio. La clave reside en la heterogeneidad de las solicitudes de inferencia y la posibilidad de aplicar especulación profunda selectivamente.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48791990,
+    "url": "https://ryelang.org/blog/posts/reducing_assumptions_but_exploding/",
+    "score": 7,
+    "time": 1783236128,
+    "titulo_es": "Manejo de Errores y Validación en Código: Una Comparación entre Python y Rye",
+    "resumen": "El artículo discute la importancia del manejo de errores y la validación de entradas en el desarrollo de software, contrastando un enfoque tradicional basado en 'try-catch' con uno más integrado y elegante. Inicialmente, se presenta un script simple en Python que asume un 'camino feliz', pero que rápidamente se vuelve complejo al añadir validaciones y manejo de errores explícito, resultando en código menos legible y más extenso. Se introduce luego una alternativa en Rye, un lenguaje de programación, demostrando cómo sus características de validación y manejo de fallos integradas permiten escribir código más conciso y estructurado sin sacrificar la robustez. El autor critica el modelo 'try-catch' por romper el flujo del código y aboga por enfoques donde el fallo sea tratado como un valor normal del lenguaje, similar a como lo hacen otros lenguajes a través de tipos o convenciones de diseño, para mantener la claridad y la mantenibilidad del código.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48778198,
+    "url": "https://100r.ca/site/solar_cooking_experiment.html",
+    "score": 4,
+    "time": 1783103165,
+    "titulo_es": "Cocina Solar en el Mar Salish",
+    "resumen": "El artículo documenta la experiencia y las lecciones aprendidas al utilizar una cocina solar de tubos evacuados a bordo de un velero en el Mar Salish. Se detallan los aspectos prácticos como la planificación de comidas en función del clima, la preparación de alimentos con tiempos de cocción prolongados (arroz integral, legumbres, patatas, seitan, pasteles, pan), y la adaptación a las condiciones locales de temperatura (12-32°C y 5°C). Se aborda la ubicación óptima del cocinador en la cubierta (proa) para mantenerlo nivelado y evitar derrames. La capacidad de cocción se describe en relación con el diámetro del tubo (5.5cm de diámetro interno para 1 taza de garbanzos pre-remojados) y la necesidad de cocinar recetas de pan o pastel en dos tandas. Se discute el uso del olfato para determinar la cocción y la variabilidad del tiempo de cocción debido a la naturaleza intermitente de la fuente de calor solar, la cobertura de nubes y el movimiento del barco. Se analizan los desafíos presentados por las obstrucciones terrestres (montañas, árboles) que generan sombras tempranas y tardías, y el efecto del cabeceo y balanceo del barco en días ventosos, aunque se señala que el anclaje no afectó significativamente el tiempo de cocción. Se menciona la seguridad en condiciones de viento fuerte (cerca de vendaval), recomendando el uso de soportes o cuerdas para estabilizar el cocinador, y se desaconseja su uso en condiciones de mayor intensidad de viento.",
     "categoria": "Hardware"
+  },
+  {
+    "id": 48784777,
+    "url": "https://peteris.rocks/blog/htop/",
+    "score": 473,
+    "time": 1783166457,
+    "titulo_es": "Explicación de todo lo que se puede ver en htop/top en Linux",
+    "resumen": "El artículo explica detalladamente las métricas mostradas por las utilidades `htop` y `top` en sistemas Linux. Se enfoca en interpretar el `uptime` del sistema, leyendo la información del archivo `/proc/uptime`, que incluye el tiempo total en segundos que el sistema ha estado en funcionamiento y el tiempo que ha pasado inactivo. También desglosa los valores de `load average` (promedio de carga) obtenidos de `/proc/loadavg`. Se aclara que estos promedios representan la carga del sistema durante los últimos 1, 5 y 15 minutos, calculados como un promedio móvil exponencialmente amortiguado del número de procesos en ejecución (listos para ejecutarse o en la CPU) y procesos no interrumpibles (esperando E/S de disco o red). Se detalla la información sobre el número total de procesos y los procesos actualmente en ejecución, así como la obtención y significado de los IDs de proceso (PID), comenzando por el PID 1 asignado a `/sbin/init`. El autor utiliza herramientas como `strace` para investigar cómo `uptime` y `top`/`htop` acceden a esta información del sistema de archivos `/proc`.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48738395,
+    "url": "https://iahmed.me/post/drone-physics/",
+    "score": 111,
+    "time": 1782849457,
+    "titulo_es": "Física de Drones: Un Enfoque de Control Adaptativo",
+    "resumen": "Este artículo describe la física de drones multirotor, centrándose en la modelización con seis grados de libertad (tres lineales: x, y, z; y tres angulares: phi, theta, psi). Utiliza el sistema de coordenadas North-East-Down (NED) y se basa en dos marcos de referencia: el inercial y el fijo al cuerpo. La orientación se define mediante los ángulos de Tait-Bryan (yaw, pitch, roll) en un orden específico. Se detalla la relación entre la velocidad angular del cuerpo (omega_x, omega_y, omega_z) y las tasas de rotación de los ángulos de orientación (dot(phi), dot(theta), dot(psi)), presentando las ecuaciones correspondientes. El trabajo se adapta de investigaciones en control adaptativo y simulaciones de drones, asumiendo familiaridad con álgebra lineal, cálculo y mecánica clásica.",
+    "categoria": "Ciencia y Matematica"
   }
 ]
