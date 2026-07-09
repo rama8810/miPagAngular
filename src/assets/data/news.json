@@ -1,101 +1,182 @@
 [
   {
-    "id": 48829312,
-    "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
-    "score": 155,
-    "time": 1783500366,
-    "titulo_es": "El script de Bash obfuscado en la camiseta de Uniqlo y Akamai",
-    "resumen": "El autor describe el proceso de identificar, digitalizar y decodificar un script de Bash obfuscado en Base64 impreso en una camiseta de Uniqlo diseñada por Akamai. Utilizando herramientas de OCR como el buscador de Android, Tesseract y el modelo de lenguaje Claude, logra transcribir el bloque de código para revelar un script que genera una onda sinusoidal interactiva con el lema 'Peace for All'. El análisis también destaca detalles de diseño tipográfico y el trasfondo técnico de la campaña.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48827858,
-    "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
-    "score": 202,
-    "time": 1783488335,
-    "titulo_es": "GitLost: Vulnerabilidad de inyección de prompts en los nuevos flujos de trabajo agénticos de GitHub",
-    "resumen": "Noma Labs descubrió una vulnerabilidad crítica de inyección de prompts indirecta, denominada 'GitLost', en los Agentic Workflows de GitHub. Esta falla permite a atacantes no autenticados extraer de forma silenciosa datos de repositorios privados mediante la creación de un GitHub Issue malicioso en un repositorio público de la misma organización. Al procesar el issue, el agente de IA (respaldado por modelos como Claude o GitHub Copilot) ejecuta las instrucciones dañinas ocultas en lenguaje natural, evadiendo las protecciones y guardas de seguridad de GitHub para publicar información confidencial en forma de comentarios públicos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48827092,
-    "url": "https://www.digipres.org/the-floppy-guide/",
-    "score": 81,
-    "time": 1783480951,
-    "titulo_es": "Creación de imágenes de disquetes para la preservación a largo plazo",
-    "resumen": "Guía técnica para profesionales enfocada en la preservación digital a largo plazo mediante la extracción y creación de imágenes de disquetes de 8, 5.25, 3.5 y 3 pulgadas. El artículo detalla las fases críticas del flujo de trabajo, que incluyen la identificación del soporte físico de almacenamiento, la adquisición de hardware compatible (como controladores específicos y bloqueadores de escritura para proteger la integridad de los datos), el mantenimiento y limpieza de las unidades físicas y soportes magnéticos, y la metodología para la captura de flujos de flujo magnético (flux streams).",
+    "id": 48778956,
+    "url": "https://www.networkworld.com/article/4192827/meta-reuses-old-ram-in-new-servers-with-custom-bridge-chip.html",
+    "score": 73,
+    "time": 1783106825,
+    "titulo_es": "Meta reutiliza memoria RAM antigua en nuevos servidores mediante tecnología CXL",
+    "resumen": "Meta ha desarrollado un chip CXL (Compute Express Link) personalizado llamado Vistara, junto con soporte a nivel de software y sistema operativo, para desacoplar módulos de memoria DIMM antiguos de servidores retirados y reutilizarlos en máquinas nuevas de manera eficiente. Esta solución técnica permite solventar las limitaciones de memoria de aproximadamente el 40% de sus servidores activos sin degradar el rendimiento, mitigando los crecientes costos y la escasez de memoria RAM en el mercado mediante la extensión del ciclo de vida útil del hardware.",
     "categoria": "Hardware"
   },
   {
-    "id": 48821848,
-    "url": "https://davit.app",
-    "score": 311,
-    "time": 1783449869,
-    "titulo_es": "Davit: Aplicación Nativa macOS para Contenedores Linux en Apple Silicon",
-    "resumen": "Davit es una aplicación nativa de macOS, desarrollada en SwiftUI y con licencia MIT, que permite gestionar contenedores Linux directamente en Macs con Apple Silicon, sin necesidad de Docker Desktop. Interactúa con el daemon de contenedores de Apple a través de XPC, evitando el uso de Electron o web views. Ofrece funcionalidades avanzadas como visualización de recursos en tiempo real (CPU, memoria, IP), streaming de logs con modos de seguimiento y arranque, gráficos de estadísticas en vivo, inspección de configuración, apertura de shells interactivos nativos en contenedores y navegación del sistema de archivos de contenedores. Permite la recreación de contenedores modificando fácilmente parámetros como puertos, variables de entorno o montajes. Soporta la descarga de imágenes desde registros como Docker Hub, ghcr.io y quay.io, gestionando credenciales de forma segura en el llavero de macOS. Configura recursos por defecto y permite personalizaciones vía TOML. La aplicación puede instalar automáticamente la plataforma de contenedores de Apple si no está presente, sin requerir derechos de administrador. A diferencia de Docker Desktop, que mantiene una VM persistente, la plataforma de Apple (y por ende Davit) utiliza VMs ligeras por contenedor que se inician y detienen según sea necesario, resultando en un uso de recursos significativamente menor cuando no hay contenedores en ejecución. Davit se posiciona como una interfaz nativa para la pila de contenerización de Apple, diferenciándose de soluciones comerciales como OrbStack.",
+    "id": 48800596,
+    "url": "https://nexte.st/",
+    "score": 121,
+    "time": 1783311570,
+    "titulo_es": "cargo-nextest: Ejecución de pruebas eficiente y moderna para Rust",
+    "resumen": "Nextest es un ejecutor de pruebas avanzado para el ecosistema Rust, diseñado para ser hasta tres veces más rápido que 'cargo test'. Destaca por su modelo de ejecución con aislamiento individual de pruebas, un potente lenguaje de expresiones para filtrado, reintentos automáticos, soporte para scripts de configuración inicial y herramientas de análisis como trazas de Perfetto y JUnit XML. No admite doctests en Rust estable por el momento.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48756578,
-    "url": "https://herdr.dev/",
-    "score": 292,
-    "time": 1782966519,
-    "titulo_es": "Herdr: Multiplexor de Agentes de Codificación",
-    "resumen": "Herdr es una herramienta de línea de comandos (CLI) que actúa como un multiplexor para agentes de codificación, permitiendo ejecutarlos simultáneamente desde una única terminal. Diseñada para ser un binario y no una aplicación de escritorio, Herdr mantiene los agentes en ejecución en un servidor persistente, incluso si la conexión se interrumpe o la máquina local se apaga (ideal para sesiones SSH o uso desde dispositivos móviles). Ofrece una interfaz de usuario de terminal (TUI) responsiva que permite visualizar el estado de los agentes (bloqueado, trabajando, hecho) y gestionarlos a través de paneles y pestañas interactivas. A diferencia de las herramientas de multiplexación de terminales tradicionales (tmux, Zellij) que no entienden a los agentes, o las aplicaciones de escritorio que están ligadas a una máquina, Herdr combina la persistencia de sesiones con la conciencia de estado de los agentes. Soporta integraciones a través de una API de socket y CLI, permitiendo a la comunidad desarrollar plugins (notificadores, gestores de layout, etc.) a través de un marketplace. La herramienta se enfoca en la persistencia de sesiones, la gestión de agentes, y una interfaz usable incluso en pantallas pequeñas o conexiones inestables, sin requerir cuentas ni telemetría.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48780915,
-    "url": "https://www.uni-wuerzburg.de/en/news-and-events/news/detail/news/ameisen-kolonie-verletzte-pflegt/",
-    "score": 14,
-    "time": 1783118783,
-    "titulo_es": "Las hormigas carpinteras: más vale prevenir que curar",
-    "resumen": "Un estudio reciente revela que las hormigas carpinteras que están en transición de tareas internas (cuidado de crías) a externas (forrajeo) son las principales responsables de amputar las patas lesionadas de otras hormigas para prevenir infecciones. Estas hormigas en transición tienen una mayor conectividad social y espacial dentro de la colonia, lo que les permite un acceso más amplio a los miembros de la colonia. La decisión de realizar la amputación también se ve influenciada por la familiaridad previa del cuidador con la hormiga herida, medida por interacciones sociales previas como el acicalamiento y el contacto con antenas. Este comportamiento de amputación profiláctica, que incluye el tratamiento con sustancias antimicrobianas, duplica la tasa de supervivencia de las hormigas heridas y protege a la colonia de la propagación de infecciones. Los hallazgos, publicados en PNAS, destacan cómo la organización espacial y la superposición social de los trabajadores determinan tareas temporales cruciales como el cuidado de heridas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48819808,
-    "url": "https://github.com/rowboatlabs/rowboat",
-    "score": 162,
-    "time": 1783440644,
-    "titulo_es": "Rowboat: Un Coworker de IA de Escritorio con Memoria y Conexión a Herramientas Externas",
-    "resumen": "Rowboat es un coworker de Inteligencia Artificial (IA) de escritorio diseñado para indexar el trabajo del usuario en un grafo de conocimiento vivo, permitiendo una memoria persistente y contextualizada. A diferencia de otras herramientas que reconstruyen el contexto bajo demanda, Rowboat mantiene un conocimiento a largo plazo que se acumula con el tiempo. Ofrece superficies de trabajo integradas para interactuar con la IA, como clientes de correo electrónico, notas, navegador, modo de código, tomador de notas de reuniones y espacios de trabajo por proyecto. Soporta la conexión a servicios externos y herramientas a través del Model Context Protocol (MCP), permitiendo la integración con buscadores (como Exa), servicios de voz (Deepgram, ElevenLabs), bases de datos, CRMs, herramientas de soporte y automatizaciones, así como herramientas internas. Está disponible para Mac, Windows y Linux, y es de código abierto con la opción de destacar el repositorio en GitHub. Requiere la configuración de claves API para funcionalidades opcionales como entrada/salida de voz y acceso a servicios de terceros.",
+    "id": 48837696,
+    "url": "https://www.databricks.com/blog/benchmarking-coding-agents-databricks-multi-million-line-codebase",
+    "score": 106,
+    "time": 1783546209,
+    "titulo_es": "Cómo Databricks evalúa los agentes de codificación de IA: Rendimiento frente a costo",
+    "resumen": "Databricks presenta los resultados de su benchmark interno de codificación para evaluar agentes de IA en una base de código multimillonaria. El estudio revela tres niveles de capacidad en los modelos analizados, destacando que el costo por token es un indicador deficiente del costo final por tarea debido a la variación en la eficiencia de razonamiento de cada modelo. El análisis concluye que modelos como GLM y la clase Haiku/GPT-Mini se posicionan como excelentes alternativas de uso diario debido a su relación costo-beneficio, y resalta que la elección del entorno de ejecución (harness) puede duplicar el costo por tarea sin alterar la calidad del resultado.",
     "categoria": "IA"
   },
   {
-    "id": 48821378,
-    "url": "https://lv1.sh/",
-    "score": 146,
-    "time": 1783447709,
-    "titulo_es": "l: Un nuevo runtime para K/Q/qSQL",
-    "resumen": "El artículo describe 'l', un nuevo runtime diseñado para acelerar la ejecución de código escrito en los lenguajes K, Q y qSQL. Estos lenguajes, populares en el ámbito financiero (Wall Street), se caracterizan por su enfoque en la programación con arrays. 'l' mantiene la compatibilidad total con el código existente K4/q/qSQL, pero introduce mejoras significativas en rendimiento mediante el uso de vectores comprimidos como unidad de ejecución. Esto minimiza la necesidad de reconstruir arrays completos, aprovechando la tendencia moderna del hardware donde el ancho de banda es un cuello de botella más común que la capacidad de cómputo. 'l' implementa de forma transparente y automática optimizaciones como SIMD (Single Instruction, Multiple Data) y paralelismo (threading) para operaciones vectoriales. La elección entre ejecución escalar, SIMD, multihilo o distribuida se gestiona automáticamente por el runtime sin requerir anotaciones por parte del desarrollador. Soporta bases de datos, joins, particiones y splays, ofreciendo una compatibilidad completa con qSQL. El artículo también menciona un grupo de correo anónimo para discusiones técnicas relacionadas.",
+    "id": 48829797,
+    "url": "https://seriot.ch/computation/uts35/",
+    "score": 110,
+    "time": 1783503860,
+    "titulo_es": "Las reglas de transliteración de Unicode son Turing-completas",
+    "resumen": "El artículo demuestra que las reglas de transliteración de la especificación UTS #35 de Unicode, utilizadas en la biblioteca ICU en diversos sistemas operativos y navegadores, permiten la computación universal (Turing-completa). Para probarlo, el autor compila un sistema de 2 etiquetas (Post, 1943) —un modelo de computación universal— en reglas de transliteración basadas en la reescritura de subcadenas y el posicionamiento del cursor. Se proporcionan ejemplos prácticos ejecutables que simulan la función de Collatz, el autómata celular 'Regla 110' y un generador de números primos de Wolfram. Asimismo, se analiza cómo la biblioteca ICU implementa un límite de bucle pragmático para evitar la computación infinita derivada de esta indecidibilidad.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48837110,
+    "url": "https://github.com/linuxrebel/DocuBrowser",
+    "score": 151,
+    "time": 1783543049,
+    "titulo_es": "DocuBrowse: Sistema Local de Búsqueda Semántica y Resumen de Documentos mediante IA",
+    "resumen": "DocuBrowse es una herramienta que indexa y organiza documentos locales (PDFs, Word, notas, etc.) utilizando inteligencia artificial y búsqueda semántica en lugar de depender únicamente de palabras clave. Se ejecuta localmente sin conexión a internet ni consumo de tokens de API, combinando SQLite FTS5 con Ollama (usando los modelos nomic-embed-text para incrustaciones semánticas y dolphin3 para la generación de resúmenes). Es multiplataforma, se distribuye como paquetes RPM, DEB, zip y dmg, requiere Python 3.9+ y se configura mediante una interfaz web o CLI.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48795591,
+    "url": "https://mhloppy.com/2026/05/mechcommander-weapons-left-arm-bug-fix/",
+    "score": 75,
+    "time": 1783269580,
+    "titulo_es": "Corrección del error de distribución de componentes en MechCommander 1 mediante ingeniería inversa",
+    "resumen": "El artículo describe el proceso de ingeniería inversa realizado para corregir un fallo en el videojuego MechCommander 1, el cual agrupa erróneamente todas las armas pesadas de un mech en su brazo izquierdo. Utilizando herramientas de descompilación como Ghidra y aprovechando la presencia de símbolos de depuración en el ejecutable, el autor analiza la función 'getWeaponLarge()'. El análisis revela fallos de lógica y la falta de actualización de base de datos de armas para las expansiones, culminando en la creación de un parche correctivo.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48794049,
-    "url": "https://gracefulliberty.com/notes/scheme-is-a-hoot/",
-    "score": 80,
-    "time": 1783257139,
-    "titulo_es": "Compilando Scheme a la Web con Hoot y explorando Zig + Scheme",
-    "resumen": "El autor detalla su experiencia utilizando Hoot para compilar código Scheme a WebAssembly (WASM), permitiendo ejecutar programas Scheme en el navegador sin depender de Emscripten. A pesar de la inestabilidad de Hoot (v0.9.0) y sus mensajes de error crípticos, el proyecto ha logrado una compilación exitosa, permitiendo que el código funcione tanto en entornos nativos de Guile como en WASM. El proceso implicó adaptar el código para usar las funciones específicas de Hoot y manejar importaciones manuales. El autor busca hacer que su código sea agnóstico al entorno de ejecución y ha implementado pruebas automatizadas para ambos. Actualmente, el trabajo se centra en el backend y en la lógica de física, con planes futuros de explorar la compilación de programas Zig + Scheme a la Web con Hoot, considerando esta combinación como potencialmente perfecta para experimentación.",
+    "id": 48789445,
+    "url": "https://github.com/jamalrfordii-arch/Vanguard-Map",
+    "score": 20,
+    "time": 1783201989,
+    "titulo_es": "Mapa táctico de inteligencia multidominio en 3D: tráfico marítimo, aéreo y satelital en tiempo real en el navegador",
+    "resumen": "Una aplicación web interactiva en 3D construida con Three.js y módulos ES nativos, sin necesidad de frameworks ni herramientas de compilación. Permite visualizar de forma interactiva barcos, vuelos, satélites y clima espacial. Arquitectónicamente, se estructura mediante gestores desacoplados que se comunican exclusivamente a través de eventos personalizados del DOM, complementado con un validador de invariantes físicas para asegurar la coherencia de los movimientos de las entidades en el mapa.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48833116,
+    "url": "https://www.hmans.dev/blog/chatto-is-open-source",
+    "score": 991,
+    "time": 1783523990,
+    "titulo_es": "¡Vaya, esto es grande! Presentando Chatto, la aplicación de chat grupal de código abierto",
+    "resumen": "Chatto es una aplicación de chat grupal y para equipos, de código abierto y autoalojable, diseñada para ser extremadamente ligera, rápida y segura. Implementa cifrado en reposo para todos los datos personales y de chat con claves individuales por usuario que se eliminan al borrar la cuenta, además de ofrecer soporte para llamadas de voz y video cifradas de extremo a extremo (E2EE). El sistema funciona como un único ejecutable que sirve su propio frontend para facilitar el despliegue, sin telemetría de terceros ni federación de datos. Actualmente en su versión 0.4, el proyecto prevé lanzar un servicio de alojamiento gestionado llamado Chatto Cloud y alcanzar la versión estable 1.0.0 en un periodo de 6 a 12 meses.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48820119,
-    "url": "https://github.com/jimparis/qr-font",
-    "score": 183,
-    "time": 1783441842,
-    "titulo_es": "Generador de Fuentes OpenType para Códigos QR en Texto",
-    "resumen": "El artículo describe un proyecto de desarrollo de software que genera una fuente experimental OpenType. Esta fuente transforma texto delimitado por corchetes (ej. [texto]) en un símbolo de código QR, mientras que el texto circundante permanece legible y se renderiza con la misma fuente base (Liberation Sans Regular). La generación de la fuente es automática, utilizando un script que compila la lógica de características GSUB y las formas de los glifos. Incluye la implementación de un analizador de delimitadores, expansión de bytes, circuito de paridad Reed-Solomon, colocación de módulos QR y renderizado de máscaras fijas. El proyecto gestiona dependencias de Python con `uv` y permite la ejecución directa del generador. La fuente resultante, nombrada QR Font 1-L, QR Font 2-L, y QR Font 3-L debido a restricciones de licencia, es una versión modificada de Liberation Sans Regular y se distribuye bajo la SIL Open Font License 1.1. Se presenta como una prueba de concepto que depende del modelado de fuentes OpenType (shaping) para su correcto funcionamiento. La capacidad de los caracteres dentro de un bloque QR está limitada a ASCII imprimible y varía según la versión de la fuente.",
+    "id": 48812736,
+    "url": "https://shiro.apache.org/blog/2026/06/apache-shiro-300-released.html",
+    "score": 38,
+    "time": 1783388426,
+    "titulo_es": "Simple. Java. Seguridad.",
+    "resumen": "Anuncio del lanzamiento de Apache Shiro 3.0.0, una nueva versión mayor que establece JDK 17 como requisito mínimo y añade soporte para Jakarta EE 9/10/11+, Spring 6/7+, SpringBoot 3/4+ y Guice 7/8+. Entre sus principales mejoras técnicas se encuentran el uso de Java Scoped Values en JDK 25+ en reemplazo de ThreadLocals, mayor seguridad de hilos en sesiones nativas de Shiro, e inmutabilidad por defecto en PrincipalCollection. Además, se refuerza la seguridad predeterminada habilitando por defecto el emparejamiento de rutas insensible a mayúsculas y minúsculas e incorporando el filtro NoAccessFilter. Las ramas 1.x y 2.x se declaran oficialmente en fin de ciclo de vida (EOL).",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48826094,
-    "url": "https://chiptune-radio.alephvoid.com/",
-    "score": 52,
-    "time": 1783472119,
-    "titulo_es": "Radio Chiptune de Aleph Void, LLC",
-    "resumen": "Este artículo describe Chiptune Radio, un proyecto paralelo de Aleph Void, LLC. Aleph Void es una empresa de seguridad de software y ingeniería inversa con interés en hardware antiguo y su música. La radio emite continuamente música chiptune, compuesta para y inspirada en hardware de sonido clásico como SID, NES APU y Game Boy, así como la escena tracker. Se presenta como una transmisión de estilo radiofónico en Twitch, destinada a ser reproducida en segundo plano mientras se trabaja o se relaja. El artículo también menciona la posibilidad de problemas de carga del reproductor e indica una transmisión alternativa en Twitch.",
-    "categoria": "Hardware"
+    "id": 48829312,
+    "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/",
+    "score": 1389,
+    "time": 1783500366,
+    "titulo_es": "Un Script Obfuscado de Bash y un Huevo de Pascua en una Camiseta de Uniqlo",
+    "resumen": "El artículo describe el descubrimiento de un script de Bash ofuscado impreso en una camiseta de Uniqlo, diseñada por Akamai en apoyo a su campaña \"Peace for All\". El script, codificado en Base64 y con un shebang, al ser decodificado revela un mensaje de \"Feliz Pascua\" y un bucle de onda sinusoidal del mensaje de la campaña. El autor detalla el proceso de OCR para extraer el código de la camiseta, las herramientas utilizadas (Android Circle to Search, Tesseract, Claude) y la posterior decodificación y ejecución del script. Se discute la elección de la fuente (Roboto Mono, no Consolas como se pensaba inicialmente) y su origen como fuente de Windows, lo cual resulta peculiar para un script de Bash. La campaña \"Peace for All\" se relaciona con los inicios de internet, refiriéndose a las carcasas \"beige box\" de los ordenadores antiguos y al uso de internet para el bien. El artículo también menciona otros descubrimientos y discusiones sobre el mismo tema en línea.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48833715,
+    "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/",
+    "score": 639,
+    "time": 1783526795,
+    "titulo_es": "TypeScript 7: Un Port Nativo 10x Más Rápido",
+    "resumen": "TypeScript 7 es una reimplementación nativa en Go del compilador de TypeScript, diseñada para mejorar drásticamente el rendimiento. Aprovecha el hardware moderno a través de código nativo, multithreading con memoria compartida y optimizaciones diversas, resultando en aceleraciones de 8x a 12x en compilaciones completas. Esta mejora se traduce en tiempos de carga de proyecto más rápidos, autocompletado y diagnóstico de errores casi instantáneos, y ciclos de retroalimentación de desarrollo más cortos. La compatibilidad con el servidor de lenguaje (LSP) asegura una integración fluida con editores modernos como VS Code, Visual Studio y WebStorm. Se han realizado pruebas exhaustivas en proyectos de código abierto y grandes bases de código empresariales para validar su estabilidad y fiabilidad en entornos de producción. La mejora en la velocidad de procesamiento de errores, por ejemplo, ha pasado de 17.5 segundos a menos de 1.3 segundos en escenarios específicos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48839397,
+    "url": "https://www.liamcvw.com/p/remote-attestation",
+    "score": 102,
+    "time": 1783557153,
+    "titulo_es": "Atestación Remota y Arranque Medido: Verificación Criptográfica de la Integridad de los Hosts",
+    "resumen": "El artículo aborda el problema fundamental de verificar la integridad y seguridad de los hosts en una red, especialmente ante la posibilidad de que estén comprometidos. Propone la atestación remota (RA) utilizando Módulos de Plataforma Confiable (TPM) como solución. La RA permite probar criptográficamente que un host tiene el hardware, firmware, kernel, sistema de archivos raíz y configuraciones esperadas, incluso después de reinicios. Esto se logra mediante un ciclo de arranque medido (measured boot), que registra y firma mediciones del estado del sistema, a diferencia del arranque seguro (secure boot) que se enfoca en artefactos firmados. El artículo detalla cómo estas mediciones pueden usarse para hacer que los hosts sean inoperables si no cumplen con el estado esperado (ej. cifrando el sistema de archivos raíz con el TPM), o para revocar certificaciones mTLS. Si bien reconoce que no es una solución perfecta (ataques físicos como taps de memoria siguen siendo un problema), destaca que la atestación remota proporciona una base sólida para otras primitivas de seguridad (EDR, sistemas de archivos inmutables, computación confidencial) y es crucial para cerrar vulnerabilidades de cadena de suministro de software y rootkits. Se menciona la complejidad de implementar la atestación remota a gran escala, pero se presenta como una inversión necesaria para garantizar la confianza en los entornos de ejecución.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48835439,
+    "url": "https://forum.openmandriva.org/t/statement-regarding-attempted-distribution-sabotage/8997",
+    "score": 117,
+    "time": 1783534913,
+    "titulo_es": "Sabotaje de Repositorios y Disturbios en una Distribución de Software por Ex-Miembro",
+    "resumen": "El artículo detalla una serie de incidentes graves que afectaron a una distribución de software. Tras la incorporación de Davide Beatrici y dos colaboradores más, surgieron problemas de comportamiento abusivo por parte de uno de ellos, lo que provocó la salida de algunos miembros. La situación escaló cuando, tras una disputa por la gestión de repositorios (migración a una instancia privada llamada OneDev por parte de Beatrici), y como respuesta a la expulsión de un usuario problemático de un chat, Beatrici, utilizando privilegios administrativos, eliminó partes del repositorio en GitHub y obsoletó paquetes clave (gnome, cosmic) en el repositorio 'cooker', causando potenciales daños a los usuarios. El equipo está trabajando en la restauración y busca alertar a la comunidad sobre estos hechos para prevenir errores similares, a pesar de considerar acciones legales.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 48841676,
+    "url": "https://github.com/malisper/pgrust",
+    "score": 153,
+    "time": 1783577899,
+    "titulo_es": "PostgreSQL reescrito en Rust, ahora superando el 100% de las pruebas de regresión de PostgreSQL",
+    "resumen": "El artículo describe pgrust, un proyecto que reescribe el servidor de base de datos PostgreSQL en el lenguaje de programación Rust. El objetivo principal es facilitar la modificación interna de PostgreSQL manteniendo la compatibilidad con su comportamiento y pruebas de regresión. pgrust ha logrado compatibilidad con la versión 18.3 de PostgreSQL, pasando más de 46,000 consultas de regresión, lo que indica que su salida coincide con la de PostgreSQL. Es compatible a nivel de disco y puede iniciarse desde un directorio de datos existente de PostgreSQL 18.3. Aunque aún no está listo para producción ni optimizado para rendimiento, permite la exploración de cambios profundos en el servidor utilizando Rust y asistencia de IA. La compatibilidad con extensiones de PostgreSQL y lenguajes procedurales como PL/Python aún es limitada, aunque algunos módulos contribuidos ya han sido portados. Se proporciona información sobre cómo probar una demostración WebAssembly y cómo compilar y ejecutar pgrust localmente, incluyendo la ejecución de pruebas de regresión. El proyecto está bajo licencia AGPL-3.0 y se alienta a los usuarios a abrir incidencias para reportar problemas o sugerir mejoras.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48832212,
+    "url": "https://mistral.ai/news/robostral-navigate/",
+    "score": 468,
+    "time": 1783519757,
+    "titulo_es": "Robostral Navigate: Navegación Robótica Autónoma con Cámara RGB Única",
+    "resumen": "Robostral Navigate es un modelo de 8 mil millones de parámetros diseñado para la navegación autónoma de robots en entornos complejos utilizando únicamente una cámara RGB estándar. Logra una tasa de éxito del 76.6% en el benchmark R2R-CE (Room-to-Room in Continuous Environments) en entornos no vistos, superando a enfoques que utilizan múltiples sensores o sensores de profundidad. El modelo fue desarrollado internamente utilizando datos simulados y técnicas eficientes en el uso de tokens, demostrando generalización entre tipos de robots y adaptabilidad a obstáculos del mundo real no vistos durante el entrenamiento. Combina navegación basada en punteros con aprendizaje por refuerzo para mejora continua, abriendo camino a la IA unificada en robótica para aplicaciones en manufactura, logística y hotelería.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48843906,
+    "url": "https://www.technologyreview.com/2026/07/09/1140235/nuclear-reactor-milestone-criticality/",
+    "score": 3,
+    "time": 1783594876,
+    "titulo_es": "Microreactores Nucleares: Más Allá de la Criticidad Hacia la Energía de la Red Eléctrica",
+    "resumen": "El artículo detalla el hito de 'criticidad' alcanzado por cuatro microreactores nucleares en Estados Unidos, un paso crucial pero inicial hacia su capacidad de generar energía para la red eléctrica. Estos reactores, desarrollados bajo un programa piloto del Departamento de Energía de EE. UU. para acelerar la innovación en tecnologías nucleares de baja emisión y enfrentar la demanda energética y el cambio climático, alcanzaron la criticidad de 'cero potencia'. Este logro demuestra la viabilidad de iniciar una reacción nuclear en cadena, pero no implica la generación de energía útil. Las empresas detrás de estos prototipos (Antares Nuclear, Valar Atomics, Deployable Energy y Aalo Atomics), muchas de ellas startups fundadas recientemente, enfrentan ahora el desafío técnico de integrar sistemas de refrigeración y otros componentes para producir electricidad. Las proyecciones de despliegue comercial son agresivas (2027-2028), pero el camino está plagado de obstáculos, incluyendo la complejidad inherente de la tecnología nuclear y los largos procesos regulatorios de la Comisión Reguladora Nuclear (NRC). Si bien la NRC ha propuesto un nuevo marco para agilizar la aprobación de microreactores, la efectividad y rapidez de este proceso aún están por determinarse, y algunos expertos cuestionan si se están relajando las normas de seguridad de manera excesiva.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48834296,
+    "url": "https://cyberinsider.com/eu-now-one-step-away-from-reviving-private-message-scanning-rules/",
+    "score": 430,
+    "time": 1783529586,
+    "titulo_es": "El Parlamento Europeo aprueba procedimiento urgente para revivir la legislación \"Chat Control 1.0\"",
+    "resumen": "El Parlamento Europeo ha aprobado un procedimiento de urgencia para acelerar la votación legislativa sobre la posible reactivación de las normas \"Chat Control 1.0\", que expiraron en abril. Esta legislación permitiría a las plataformas en línea escanear voluntariamente las comunicaciones privadas de los usuarios en busca de material de abuso sexual infantil (CSAM). La votación decisiva está programada para el 9 de julio. La medida, que fue rechazada anteriormente por el Parlamento, se presenta ahora como una nueva regulación con disposiciones sustancialmente similares. Esta propuesta es independiente del \"Chat Control 2.0\", la propuesta de regulación permanente sobre CSAM que aún está en negociación y enfrenta desacuerdos significativos sobre el escaneo sin sospechas de comunicaciones privadas, especialmente en servicios con cifrado de extremo a extremo. La votación de urgencia facilita la consideración de la propuesta, requiriendo una mayoría absoluta de 361 votos para ser rechazada o enmendada.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48794062,
+    "url": "https://philatype.com/tabfont/",
+    "score": 91,
+    "time": 1783257234,
+    "titulo_es": "La única fuente que renderiza tablaturas de guitarra mientras escribes",
+    "resumen": "El artículo describe una fuente tipográfica especializada diseñada para la notación de tablaturas de guitarra. Esta fuente permite a los usuarios ver cómo se renderizan las tablaturas en tiempo real mientras las escriben. La fuente soporta una variedad de acordes, incluyendo sextas y add9, y también la entrada de la notación de tablatura tradicional.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48833866,
+    "url": "https://cognition.com/blog/swe-1-7",
+    "score": 267,
+    "time": 1783527576,
+    "titulo_es": "Lanzamiento de SWE-1.7: Un Nuevo Modelo de IA para Ingeniería de Software",
+    "resumen": "El artículo presenta SWE-1.7, el modelo más avanzado de Cognition hasta la fecha, entrenado a partir de una base Kimi K2.7. Este modelo destaca por su capacidad para operar en tareas de largo alcance asíncronas, cruciales para la ingeniería de software de alta calidad. Se detalla el proceso de entrenamiento basado en mejoras de la infraestructura RL, estabilidad del entrenamiento, datos de mayor calidad y nuevas técnicas. El artículo desafía la noción de un 'techo de post-entrenamiento' al demostrar que el RL puede extender significativamente las capacidades. Se discuten intervenciones clave para la estabilidad del entrenamiento a gran escala, como el uso de 'top-p sampling' para prevenir el colapso de entropía y el 'sampling distribution replay' para mitigar el desajuste entre entrenamiento e inferencia causado por el 'top-p sampling'. Se observa que el modelo adquiere tendencias conductuales como la exploración cuidadosa y el razonamiento conciso.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48816724,
+    "url": "https://github.com/Rodiun/frugon",
+    "score": 23,
+    "time": 1783426854,
+    "titulo_es": "Frugon: Analizador de Costos de LLM Local y de Código Abierto",
+    "resumen": "El artículo presenta Frugon, una herramienta gratuita, local y de código abierto diseñada para analizar los costos de los Modelos de Lenguaje Grandes (LLM). Frugon permite a los desarrolladores identificar fugas en su factura de LLM al analizar los registros de llamadas a LLM directamente en su máquina local. No envía datos ni claves a ningún servidor externo. La herramienta funciona capturando llamadas a LLM a través de un proxy HTTP local (frugon capture) o procesando archivos JSONL preexistentes en formato de solicitud/respuesta de OpenAI. Proporciona un análisis detallado de los costos, permitiendo comparar el gasto actual con el costo de ejecutar las mismas cargas de trabajo en diferentes modelos LLM (como los de OpenAI, Anthropic y Google), basándose en datos de precios y calidad sincronizados localmente. También ofrece visibilidad sobre la calidad de los modelos y puede recomendar estrategias de enrutamiento para optimizar costos. Frugon se enfoca en el análisis de costos y la visibilidad, excluyendo características como gateways, proxies de enrutamiento en vivo o interfaces web multiusuario. Está construido por Rodiun y distribuido bajo licencia MIT.",
+    "categoria": "IA"
   }
 ]
