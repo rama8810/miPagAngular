@@ -1,164 +1,254 @@
 [
   {
-    "id": 48910545,
-    "url": "https://prismml.com/news/bonsai-27b",
-    "score": 603,
-    "time": 1784051448,
-    "titulo_es": "Presentación de Bonsai 27B: El nuevo modelo multimodal de su clase capaz de ejecutarse en teléfonos móviles",
-    "resumen": "Bonsai ha anunciado Bonsai 27B, un modelo multimodal basado en Qwen3.6 27B que permite la ejecución local de inteligencia artificial avanzada en dispositivos móviles y portátiles. Utilizando técnicas de cuantización extrema, se ofrece en dos variantes: una versión ternaria de 5.9 GB (1.71 bits por peso) que mantiene el 95% del rendimiento del modelo original de precisión completa, y una versión de 1 bit de 3.9 GB (1.125 bits por peso) que retiene el 90% y es compatible con el presupuesto de memoria de un iPhone 17 Pro. Ambas variantes admiten razonamiento de múltiples pasos, llamadas a herramientas, visión multimodal con un contexto de 262K tokens, y están optimizadas para flujos de trabajo agentivos locales de bajo costo y alta privacidad.",
+    "id": 48924912,
+    "url": "https://thinkingmachines.ai/news/introducing-inkling/",
+    "score": 992,
+    "time": 1784139165,
+    "titulo_es": "Presentando Inkling: Un modelo de Mixture-of-Experts de código abierto para personalización y razonamiento multimodal",
+    "resumen": "Se presenta Inkling, un modelo fundacional basado en la arquitectura Mixture-of-Experts (MoE) con 975 mil millones de parámetros totales (41 mil millones activos) y soporte para una ventana de contexto de hasta 1 millón de tokens. Entrenado de forma nativa con texto, imágenes, audio y video, el modelo está diseñado como una base abierta para la personalización mediante fine-tuning en la plataforma Tinker. Destaca por su capacidad de razonamiento con esfuerzo cognitivo controlable, su desempeño en tareas agenticas, generación de código y uso de herramientas, complementándose con una versión más ligera llamada Inkling-Small.",
     "categoria": "IA"
   },
   {
-    "id": 48915004,
-    "url": "https://tailscale.com/security-bulletins",
-    "score": 154,
-    "time": 1784077706,
-    "titulo_es": "Notificaciones de seguridad que afectan al cliente y servicio de Tailscale",
-    "resumen": "El artículo detalla tres vulnerabilidades de seguridad críticas corregidas en Tailscale versión 1.98.9 o superior. La primera consiste en una denegación de servicio (DoS) en Tailscale Serve y Funnel, donde una petición HTTP malformada con una ruta no absoluta induce un bucle infinito que consume un núcleo de CPU al 100%. La segunda es un fallo en Tailscale SSH que permitía la inyección de argumentos en comandos del sistema (getent) mediante nombres de usuario con guiones iniciales (como '-i'), evadiendo las políticas de control de acceso (ACL) para obtener sesiones root. La tercera vulnerabilidad permitía el acceso no autorizado a procesos locales de loopback a través de puertos no anunciados en Tailscale Services.",
-    "categoria": "Ciberseguridad"
+    "id": 48931588,
+    "url": "https://joinedanthropic.com",
+    "score": 27,
+    "time": 1784189015,
+    "titulo_es": "Mira a dónde van los fundadores de YC después de que sus startups son adquiridas o cerradas",
+    "resumen": "Un análisis de la trayectoria profesional de 105 fundadores de Y Combinator tras el cierre o adquisición de sus startups. El reporte destaca una marcada tendencia de antiguos CEOs y CTOs que se integran como Miembros del Personal Técnico (MTS) y roles de ingeniería en compañías líderes de Inteligencia Artificial como OpenAI y Anthropic, trabajando en tecnologías clave como RAG, agentes de IA, APIs de Claude y modelos fundacionales como GPT-4V y o1.",
+    "categoria": "IA"
   },
   {
-    "id": 48917055,
-    "url": "https://blog.apnic.net/2026/07/15/whos-running-all-those-tiny-rpki-servers/",
-    "score": 34,
-    "time": 1784097536,
-    "titulo_es": "Quiénes operan los pequeños servidores de RPKI y por qué",
-    "resumen": "El artículo analiza la seguridad en el enrutamiento de Internet mediante el protocolo BGP y la adopción de RPKI (Infraestructura de Clave Pública de Recursos) para mitigar los secuestros de prefijos IP. Se centra en el análisis de los servidores de publicación RPKI independientes de menor escala (definidos como aquellos que alojan menos de 1,300 objetos ROA) operados por ISPs, instituciones educativas, entusiastas y proveedores cloud pequeños, explorando las motivaciones para su existencia frente a los grandes servicios de los cinco Registros Regionales de Internet (RIRs).",
-    "categoria": "Ciberseguridad"
+    "id": 48929945,
+    "url": "https://www.openculture.com/2026/07/explore-1300-beautiful-wildlife-illustrations-from-the-19th-century.html",
+    "score": 101,
+    "time": 1784171567,
+    "titulo_es": "La biblioteca del naturalista: Una restauración digital de la obra científica de la era victoriana",
+    "resumen": "El diseñador Nicholas Rougeux ha lanzado una recreación digital completa de 'The Naturalist's Library', una obra científica de la era victoriana que consta de más de 40 volúmenes dedicados a la flora y fauna. El proyecto restaura meticulosamente más de 1,300 ilustraciones detalladas a color, donde las especies destacan sobre sus hábitats en blanco y negro, facilitando el acceso público a este histórico compendio de ciencias naturales.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48916975,
+    "id": 48928135,
+    "url": "https://mort.coffee/home/sqlite-editions/",
+    "score": 278,
+    "time": 1784155378,
+    "titulo_es": "Los valores predeterminados de SQLite y la necesidad de tablas estrictas",
+    "resumen": "El artículo analiza de forma crítica las configuraciones predeterminadas de SQLite, destacando dos problemas principales que comprometen la integridad de los datos: la desactivación por defecto de las restricciones de clave foránea (lo que facilita referencias huérfanas y errores silenciosos por la reutilización de ROWID) y su sistema de tipado flexible o 'afinidad de tipos'. Como solución, se propone activar explícitamente las claves foráneas con pragmas y utilizar tablas estrictas ('STRICT') para forzar la validación de tipos, argumentando que el comportamiento flexible por defecto suele ser contraproducente en el desarrollo de software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48930397,
+    "url": "https://github.com/minh-ton/reynard-browser",
+    "score": 46,
+    "time": 1784176567,
+    "titulo_es": "Reynard: Un navegador web experimental basado en Gecko para iOS 13 o superior",
+    "resumen": "Reynard es un navegador web de código abierto para iOS 13+ que utiliza el motor Gecko en lugar del WebKit impuesto por Apple. El proyecto está enfocado en dispositivos iOS antiguos que no reciben actualizaciones de WebKit, permitiéndoles cargar sitios modernos mediante la actualización independiente de Gecko. El artículo detalla las opciones de sideloading con TrollStore o AltStore para la habilitación de JIT y actualizaciones automáticas, así como las instrucciones de compilación que requieren Xcode, Python 3, Rust, Cargo y ldid.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48882777,
+    "url": "https://www.seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
+    "score": 10,
+    "time": 1783876787,
+    "titulo_es": "¿Qué tan bien debes entender tu propia base de código como ingeniero de software?",
+    "resumen": "El artículo analiza el nivel de comprensión que un desarrollador debe tener sobre su base de código, contrastando la dinámica de equipos pequeños con la de grandes organizaciones. El autor cuestiona la postura extrema de Peter Naur en 'Programming as Theory Building', la cual sugiere desechar y reescribir un sistema si se pierde la teoría o el conocimiento intuitivo original del mismo. El autor argumenta que, en sistemas de gran escala, la reescritura total es técnicamente inviable debido a la acumulación de casos de borde complejos. En su lugar, defiende que es perfectamente normal y necesario trabajar con un entendimiento parcial, y demuestra que es posible revivir sistemas heredados o abandonados mediante una comprensión incremental y focalizada de sus flujos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48930075,
+    "url": "https://planetscale.com/blog/making-768-servers-look-like-1",
+    "score": 82,
+    "time": 1784173002,
+    "titulo_es": "Esto son 768 servidores: Escalando Postgres mediante sharding de bases de datos",
+    "resumen": "El artículo aborda la necesidad y el funcionamiento del sharding (fragmentación) de bases de datos para escalar Postgres y MySQL cuando se manejan volúmenes masivos de datos y consultas. Explica las limitaciones del escalado vertical tradicional y el uso de réplicas de lectura, detallando cómo los cuellos de botella de CPU, I/O y el Write-Ahead Log (WAL) de un único nodo primario hacen indispensable la distribución física de la base de datos en múltiples servidores.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48929587,
+    "url": "https://pmbanugo.me/blog/why-async-await-complect-concurrency",
+    "score": 70,
+    "time": 1784167596,
+    "titulo_es": "La ilusión de la simplicidad: Por qué async/await está fallando en producción",
+    "resumen": "El artículo analiza de forma crítica el modelo de concurrencia async/await, argumentando que, bajo una sintaxis familiar que emula el código síncrono, se esconde una enorme complejidad estructural que confunde la asincronía (espera de E/S) con la concurrencia. En runtimes cooperativos (como Tokio en Rust o Node.js), las tareas intensivas en CPU que carecen de puntos de espera ('await') bloquean el hilo de ejecución común, degradando la latencia de peticiones de red no relacionadas. Esto obliga a los desarrolladores a gestionar manualmente la separación entre pools de hilos de computación y de E/S. Asimismo, se señala el peligro del encolamiento ilimitado de tareas que suele derivar en fallos por falta de memoria (OOM) bajo escenarios de alta carga.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48915393,
+    "url": "https://spectrum.ieee.org/high-bandwidth-flash",
+    "score": 47,
+    "time": 1784081052,
+    "titulo_es": "La memoria flash de alto ancho de banda ofrece almacenamiento eficiente para los pesos de los modelos",
+    "resumen": "El artículo analiza el desarrollo de la tecnología High-Bandwidth Flash (HBF), la cual utiliza técnicas de empaquetado 3D y apilamiento vertical para incrementar drásticamente el ancho de banda de lectura de la memoria flash NAND, proyectando alcanzar velocidades de hasta 1.6 TB/s. A diferencia de la memoria DRAM o HBM tradicional, HBF es no volátil y ofrece una mayor densidad de almacenamiento con un menor consumo energético. Aunque posee velocidades de escritura lentas, su alta velocidad de lectura la posiciona como una solución de hardware altamente eficiente y económica para almacenar y servir los pesos de grandes modelos de lenguaje (LLM) durante la fase de inferencia de IA.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48871721,
+    "url": "https://davidobando.github.io/gsharp/",
+    "score": 100,
+    "time": 1783775086,
+    "titulo_es": "G#: Un lenguaje de .NET moderno con la ergonomía de Go, Kotlin y Swift",
+    "resumen": "G# es un nuevo lenguaje de programación diseñado para el entorno de ejecución de .NET que adopta características ergonómicas de Go, Kotlin, Swift y TypeScript. Se compila directamente a ensamblados administrados por el CLR, permitiendo la importación e interoperabilidad con cualquier tipo de .NET. Entre sus características principales destacan el manejo de nulos con 'if let', clases selladas, concurrencia estructurada mediante 'scope', flujos asíncronos y tipos primitivos con tamaño de memoria explícito (como int32 y float64). Cuenta con herramientas de desarrollo como el compilador de línea de comandos (gsc), SDK de MSBuild y extensión para VS Code.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48922434,
+    "url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/",
+    "score": 289,
+    "time": 1784129645,
+    "titulo_es": "Hay un servidor en mi sótano que no debería estar ejecutando un modelo de lenguaje moderno",
+    "resumen": "El autor describe cómo logró ejecutar el modelo de lenguaje de Google Gemma 4 (de 26 mil millones de parámetros y arquitectura Mixture of Experts) a una velocidad de 5 tokens por segundo en un servidor antiguo sin GPU de hace 13 años (equipado con CPUs Intel Xeon Ivy Bridge). Para conseguirlo, utilizó una bifurcación de llama.cpp (ik_llama.cpp) optimizada para CPU. Debido a que su procesador carecía de los conjuntos de instrucciones AVX2 y FMA3 requeridos por el software optimizado, utilizó Claude (un modelo de IA) para parchear y reescribir el código C++ crítico, creando una ruta alternativa compatible con microarquitecturas antiguas sin perder el rendimiento de las optimizaciones clave.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48872031,
+    "url": "https://www.petekeen.net/homelab-resolved/",
+    "score": 30,
+    "time": 1783777667,
+    "titulo_es": "Todo está en caos: Adenda sobre la evolución de mi laboratorio en casa",
+    "resumen": "El autor presenta una actualización técnica de su laboratorio doméstico (homelab), detallando la simplificación de su infraestructura tras abandonar Kubernetes (debido a su alta complejidad de mantenimiento) en favor de Docker Compose sobre Proxmox. El artículo se centra en la resolución de problemas de hardware, describiendo el fallo sistemático de un nodo Lenovo con errores de controlador SAS y su posterior reconstrucción con un procesador AMD Ryzen 9 9900X y una GPU RTX 5060ti orientada a la ejecución de modelos de lenguaje locales (LLMs). Asimismo, describe la incorporación de un nodo de almacenamiento dedicado con TrueNAS SCALE en un HP Elitedesk y la distribución actual de sus cargas de trabajo.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48929660,
+    "url": "https://arxiv.org/abs/2607.11859",
+    "score": 56,
+    "time": 1784168251,
+    "titulo_es": "Introducción a arXivLabs",
+    "resumen": "arXivLabs es un entorno de desarrollo que permite a colaboradores individuales y organizaciones crear y compartir nuevas funcionalidades directamente en la plataforma web de arXiv. Esta iniciativa se rige bajo principios de colaboración abierta, excelencia técnica y un estricto respeto a la privacidad de los datos de los usuarios.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48881064,
+    "url": "https://clig.dev/",
+    "score": 135,
+    "time": 1783862911,
+    "titulo_es": "Una guía de código abierto para ayudarte a escribir mejores programas de línea de comandos",
+    "resumen": "El artículo analiza la evolución histórica y el valor persistente de la interfaz de línea de comandos (CLI). Contrasta la era de los años 80, orientada a la máquina y con alta fricción para el usuario, con el paradigma moderno donde la terminal se concibe como una interfaz de texto centrada en el humano ('human-first'). A pesar del auge de los entornos gráficos y las herramientas 'no-code', los autores defienden que la CLI sigue siendo la forma más versátil, estable y potente de interactuar con el software. El texto sienta las bases para actualizar los principios tradicionales de UNIX en el diseño actual de herramientas de desarrollo de software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48927915,
+    "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
+    "score": 91,
+    "time": 1784154207,
+    "titulo_es": "Uso de LLMs para la configuración de redes MikroTik",
+    "resumen": "El artículo describe la experiencia del autor utilizando Modelos de Lenguaje Grandes (LLMs) para configurar redes MikroTik. Si bien reconoce la complejidad inherente a las redes y a la configuración de MikroTik, el autor destaca el LLM como un 'multiplicador de fuerza caótico' que acelera la configuración, a pesar de la necesidad de una supervisión y verificación constantes debido a posibles errores. Se mencionan casos de uso como la migración de redes y la configuración de redes nuevas. Una herramienta clave recomendada para superar problemas de conflictos de IP es \"MAC Telnet\", que permite la comunicación a nivel de capa 2 (dirección MAC), complementando o proporcionando una alternativa a herramientas GUI como WinBox, ya que los LLMs pueden interactuar más fácilmente con interfaces de línea de comandos. Se sugiere que los LLMs pueden ser instruidos para usar herramientas CLI como MAC Telnet para facilitar la gestión de dispositivos MikroTik, incluso en escenarios de red complicados.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48883467,
+    "url": "https://aikoschurmann.com/blog/string-interning-compilers",
+    "score": 8,
+    "time": 1783882121,
+    "titulo_es": "Optimización de Compiladores con Dense Arena Interner",
+    "resumen": "El artículo describe una técnica de optimización para compiladores llamada 'Dense Arena Interner'. Esta técnica aborda el problema del alto costo computacional asociado con la identificación, categorización y resolución de nombres y estructuras de código fuente a lo largo de las múltiples fases de un compilador. Tradicionalmente, estas operaciones, como la comparación de cadenas o firmas de tipo, se repiten costosamente. El 'Dense Arena Interner' resuelve esto convirtiendo cadenas y estructuras en enteros densos (handles) tan pronto como se crean. El costo de hashing se paga una sola vez durante la fase de lexer o construcción de tipos. A cambio, las fases posteriores del compilador pueden utilizar comparaciones de enteros o índices de arreglos con complejidad O(1), en lugar de costosas comparaciones de cadenas (O(L)) o accesos a estructuras de datos como hash maps. Se utiliza un Arena Allocator para garantizar la estabilidad de los punteros y la asignación O(1), lo cual es crucial para que los enteros resultantes actúen como identificadores únicos. Se discuten las estructuras de datos clave como 'Slice' (una referencia ligera a datos sin propiedad) e 'InternResult' (el handle canónico que apunta a un 'Slice' asignado en la arena). Se menciona la limitación de los arenas de no poder liberar memoria individualmente, lo que los hace ideales para compiladores por lotes pero potencialmente problemáticos para daemons de larga duración como los LSP.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48928313,
+    "url": "https://chemistry.berkeley.edu/news/meet-metal-organic-frameworks-chemistry%E2%80%99s-new-miracle-materials",
+    "score": 57,
+    "time": 1784156431,
+    "titulo_es": "Materiales Milagrosos: Los Marcos Metal-Orgánicos y sus Aplicaciones Revolucionarias",
+    "resumen": "El artículo describe los Marcos Metal-Orgánicos (MOFs), una clase de sólidos cristalinos diseñados con alta porosidad y gran área superficial interna, capaces de atrapar materia diversa como gases de efecto invernadero o actuar como portadores de fármacos. Se destaca su uso innovador en la extracción de agua del aire desértico, utilizando energía solar y siendo reutilizables. La tecnología, pionera en la química reticular desarrollada por Omar Yaghi, es escalable y se está trabajando en su comercialización. Además de la captura de carbono y la entrega de pesticidas, los MOFs biodegradables se utilizan en medicina para dirigir quimioterapia a células cancerosas. El campo de los MOFs ha crecido exponencialmente, con miles de estructuras diferentes y aplicaciones emergentes en energía y medio ambiente, buscando su despliegue a gran escala para el beneficio social.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48926939,
+    "url": "https://developer.puter.com/labs/firefox-wasm/",
+    "score": 208,
+    "time": 1784149217,
+    "titulo_es": "El motor Gecko de Firefox compilado a WebAssembly y ejecutándose dentro de un navegador",
+    "resumen": "El artículo describe la ejecución del motor Gecko de Firefox, responsable del renderizado de contenido web, compilado a WebAssembly. Esto permite que la interfaz completa de Firefox funcione dentro de una pestaña del navegador. El contenido web se retransmite a través de un servidor Wisp alojado en Puter, lo que sugiere una arquitectura de proxy para la entrega de contenido. Se menciona un registro de inicio, indicando el proceso de carga y configuración.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 48921077,
+    "url": "https://eardatasci.github.io/c/ambiance/index.html",
+    "score": 195,
+    "time": 1784124508,
+    "titulo_es": "Liberando LLMs del Panel de Chat: Un Enfoque Basado en Sistemas",
+    "resumen": "El artículo explora estrategias para integrar Large Language Models (LLMs) de manera más efectiva fuera de interfaces de chat, enfocándose en reducir la carga cognitiva (tokens) impuesta al LLM. Propone un 'harness' que aprovecha el conocimiento intrínseco de los LLMs en codificación y administración de sistemas, delegando eficientemente tareas complejas y realizando operaciones de bajo nivel como logging y sanitización. Se discuten los tipos de fallos de los agentes (nivel LLM y nivel harness) y la importancia del logging y mensajes de error claros para la recuperación. Se utiliza el sistema de archivos Unix (Unix/Linux) como analogía motivacional, sugiriendo la organización de datos y el enrutamiento de información dentro de un sistema de archivos virtual (VFS) simulado para que el LLM se sienta en un entorno familiar. El objetivo es facilitar la interacción del LLM con el mundo exterior a través de un VFS limpio, utilizando convenciones como FHS para estructuras de directorios (/var para logs, /etc para configuración, /home para workspaces), permitiendo auditoría y búsqueda eficientes.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48922838,
+    "url": "https://github.com/welcome-to-the-sunny-side/misa77",
+    "score": 146,
+    "time": 1784131139,
+    "titulo_es": "misa77: Un Codec LZ de Alto Rendimiento Enfocado en Escritura-Única, Lectura-Múltiple",
+    "resumen": "misa77 es un codec basado en LZ diseñado para el nicho de 'escribir una vez, leer muchas veces'. Ofrece compresión lenta a cambio de una descompresión significativamente más rápida, superando a competidores como LZ4 en rendimiento en arquitecturas x86 y ARM.  Presenta dos niveles de esfuerzo de compresión (0 y 1) y modos experimentales que invierten más esfuerzo en la compresión para optimizar la descompresión a nivel microarquitectónico. Soporta la selección automática de instrucciones SIMD (AVX2/SSE2 en x86-64) y un camino portable auto-vectorizable para otras arquitecturas. La integración se facilita a través de una biblioteca C++ y una CLI independiente. Se enfoca en archivos individuales y utiliza un formato de flujo y contenedor definidos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48928002,
+    "url": "https://github.com/1ay1/agentty",
+    "score": 36,
+    "time": 1784154624,
+    "titulo_es": "Programación de Pares con IA en tu Terminal",
+    "resumen": "El artículo describe una herramienta de programación asistida por IA para terminales, destacando su arquitectura de un único binario estático con arranque sub-milisegundo. Soporta múltiples modelos de IA (Claude, GPT, Groq, Ollama, OpenRouter, etc.) y puntos finales compatibles con OpenAI. La seguridad es primordial, utilizando sandboxing (`bwrap`/`sandbox-exec`) y restringiendo el acceso a archivos fuera del espacio de trabajo. Permite la ejecución remota segura a través de SSH con TLS fijado. La herramienta cuenta con 'skills' (habilidades) que se pueden cargar dinámicamente, mejorando la precisión de la IA en bases de código específicas o convenciones internas. Se integra con el protocolo Agent Client para interactuar con herramientas como Claude Code. La ejecución de comandos es interactiva, con manejo de errores, captura de salida y posibilidad de reenviar resultados a la IA. Soporta diferentes shells según el sistema operativo y maneja la ejecución de bloques de código de forma segura. La gestión de memoria se basa en un bucle funcional puro y el proceso se maneja mediante `posix_spawn`. El proceso de lanzamiento de versiones está automatizado, generando binarios para múltiples plataformas y enviando automáticamente paquetes a gestores como Homebrew y winget.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48928343,
+    "url": "https://sqlite.org/nulinstr.html",
+    "score": 47,
+    "time": 1784156625,
+    "titulo_es": "Comportamientos Sorprendentes y Manejo de Caracteres NUL en SQLite",
+    "resumen": "El artículo detalla cómo SQLite maneja los caracteres NUL (ASCII 0x00, Unicode \\u0000) incrustados en cadenas de texto. Explica que funciones como `length()` y `quote()`, así como la CLI de SQLite, truncan la representación y el procesamiento de las cadenas en el primer carácter NUL encontrado. Esto puede llevar a discrepancias entre la longitud aparente y la real de las cadenas, y a resultados inesperados en consultas, como la no coincidencia de 'abc' con 'abc\\0xyz'. Se demuestra que la conversión a BLOB (`CAST(col AS BLOB)`) revela la longitud completa y el carácter NUL. Se proporciona un método para detectar NULs incrustados usando `instr(X, char(0)) + 1` y para contar filas con ellos. Finalmente, se ofrece una solución mediante sentencias `UPDATE` para eliminar los caracteres NUL y el texto subsiguiente de las columnas, permitiendo limpiar bases de datos afectadas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48919869,
+    "url": "https://briarproject.org/news/2026-maintenance-mode/",
+    "score": 163,
+    "time": 1784118807,
+    "titulo_es": "Actualización sobre el estado del proyecto Briar",
+    "resumen": "El proyecto Briar, una aplicación de mensajería, se encuentra actualmente en modo de mantenimiento. Si bien se consideró el cierre debido a problemas persistentes como alto consumo de batería, operación en segundo plano poco confiable en Android, falta de funciones (backup, archivos adjuntos) y una experiencia de usuario compleja para añadir contactos y comunicación offline, la decisión se revirtió. El proyecto continuará recibiendo financiación de varias fundaciones y proyectos centrados en internet y la tecnología abierta. El enfoque actual se limita a actualizaciones de seguridad esenciales y corrección de errores, con la esperanza de abordar progresivamente los problemas existentes en el futuro. Esta actualización busca disipar rumores sobre el cese del proyecto, confirmando su continuidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48915709,
+    "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
+    "score": 894,
+    "time": 1784084267,
+    "titulo_es": "Tecnología en Jurassic Park: Desglose de Hardware y Software",
+    "resumen": "El artículo detalla el hardware y software que aparece en la película Jurassic Park. Se mencionan específicamente el Apple Powerbook 100, las estaciones de trabajo SGI R4000 Indigo y SGI IRIS Crimson, y el software meteorológico Earthwatch. Se discute la configuración de las estaciones de trabajo de los personajes Dennis Nedry y Ray Arnold, el uso de sistemas Silicon Graphics y Apple Macintosh para la creación de gráficos en tiempo real y animaciones, y la importancia del software Earthwatch para las representaciones meteorológicas. Se hace hincapié en la potencia de los sistemas SGI de la época, su uso en la producción de gráficos para la película, y se reflexiona sobre la evolución de la tecnología, como la calidad de las pantallas de los portátiles de los años 90. Se estima que Apple y SGI proporcionaron un valor significativo en equipos para la producción.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48892273,
+    "url": "https://www.abortretry.fail/p/micro-instrumentation-and-telemetry",
+    "score": 43,
+    "time": 1783948834,
+    "titulo_es": "La fundación de MITS y los inicios de la microcomputación",
+    "resumen": "El artículo narra los orígenes de Micro Instrumentation and Telemetry Systems (MITS), fundada por Henry Edward Roberts junto a Forrest Mims III, Stan Cagle y Robert Zaller. Inicialmente enfocada en productos para cohetes modelo, la empresa pronto pivotó hacia la electrónica, con productos como el comunicador infrarrojo Opticom. La inspiración clave de Roberts fue la calculadora de escritorio Hewlett-Packard 9100, lo que lo llevó a desarrollar un kit de calculadora. La tensión entre los proyectos de Roberts (calculadora) y Cagle (alarma infrarroja, láser) culminó con Roberts comprando la participación de Cagle y Mims, sentando las bases para el futuro desarrollo de MITS, especialmente en el ámbito de los kits de electrónica y, eventualmente, las microcomputadoras.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48912013,
     "url": "https://www.ayush.digital/blog/the-memory-heist",
-    "score": 323,
-    "time": 1784096880,
+    "score": 94,
+    "time": 1784058054,
     "titulo_es": "Cómo engañé a Claude para que filtrara tus secretos más profundos y oscuros",
-    "resumen": "El artículo describe un vector de exfiltración de datos que explota el sistema de memoria de Claude y sus capacidades de navegación web. El autor analiza cómo la herramienta 'web_fetch' de Claude, diseñada para restringir el acceso a URLs arbitrarias, permite al asistente seguir hipervínculos presentes en páginas previamente visitadas. Esto abre la posibilidad de que un atacante guíe al modelo para que transmita información privada (como datos de perfil o respuestas a preguntas de seguridad) hacia un servidor externo controlado por el atacante.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48876329,
-    "url": "https://github.com/vihdzp/combinatorial-games",
-    "score": 13,
-    "time": 1783807884,
-    "titulo_es": "Formalización de la teoría de juegos combinatorios en Lean 4",
-    "resumen": "El proyecto consiste en la formalización matemática de la teoría de juegos combinatorios utilizando el asistente de pruebas y lenguaje de programación Lean 4. Se definen y desarrollan las reglas de juegos para dos jugadores con información perfecta, terminación garantizada y sin posibilidad de empate (como Nim, Hackenbush y Chomp), basándose principalmente en el trabajo clásico de Conway (2001) para la creación de una biblioteca formal.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48913050,
-    "url": "https://github.blog/changelog/2026-07-14-dependabot-version-updates-introduce-default-package-cooldown/",
-    "score": 179,
-    "time": 1784063751,
-    "titulo_es": "Dependabot ahora implementa un periodo de espera para mitigar ataques a la cadena de suministro",
-    "resumen": "GitHub ha introducido un periodo de enfriamiento automático de tres días para las actualizaciones de versiones de Dependabot. Esta medida por defecto retiene la creación de pull requests de actualización para dar tiempo a la comunidad a detectar y reportar posibles fallos o versiones comprometidas, reduciendo el riesgo de integrar vulnerabilidades o código malicioso de forma automatizada.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48905248,
-    "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing",
-    "score": 531,
-    "time": 1784029562,
-    "titulo_es": "Personaliza las respuestas de Claude con un hook de reemplazo de palabras",
-    "resumen": "El artículo describe cómo modificar el comportamiento del modelo de lenguaje Claude para reemplazar frases recurrentes y molestas como 'honest takes' y 'load-bearing seams' por otras más deseadas o divertidas. Esto se logra mediante un script de shell alojado en `~/.claude/hooks/wordswap.sh` que realiza reemplazos de texto y se integra en la configuración de Claude a través de `~/.claude/settings.json` en el bloque `hooks`. El artículo sugiere que esta técnica puede ser utilizada para mejorar la experiencia del usuario o para crear un efecto cómico, y anima a los lectores a experimentar con sus propias sustituciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48913190,
-    "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
-    "score": 134,
-    "time": 1784064742,
-    "titulo_es": "Microsoft corrige casi 600 vulnerabilidades de seguridad en Windows, impulsado por la IA",
-    "resumen": "Microsoft ha lanzado actualizaciones de seguridad que abordan al menos 570 vulnerabilidades en sus sistemas operativos Windows y otros software, un número significativamente mayor en comparación con el mes anterior. Este incremento en el volumen de parches se atribuye a los avances en Inteligencia Artificial (IA) que facilitan la detección y análisis de fallos de seguridad de manera más rápida y exhaustiva. De estas vulnerabilidades, casi 60 han sido clasificadas como \"críticas\", permitiendo el control remoto de dispositivos. Además, se han corregido tres vulnerabilidades de día cero (zero-day), dos de las cuales ya estaban siendo explotadas activamente. Entre los fallos críticos se incluyen problemas de elevación de privilegios en Active Directory Federation Services y Microsoft SharePoint, así como una vulnerabilidad en BitLocker que podría comprometer datos cifrados si se tiene acceso físico al dispositivo. Microsoft anticipa un aumento continuo en el volumen de actualizaciones de seguridad debido a la capacidad de la IA para descubrir más fallos en diversas bases de código. Se destaca una vulnerabilidad de ejecución remota de código en Microsoft Copilot, con una alta puntuación de severidad, que podría ser explotada a través de sitios web maliciosos. El artículo también señala la necesidad de que Microsoft actualice su \"índice de explotabilidad\" para reflejar la velocidad con la que la IA permite a los atacantes crear exploits para vulnerabilidades conocidas, citando ejemplos donde fallos previamente calificados como poco probables de explotar fueron rápidamente comprometidos. Otros grandes proveedores de software, como Adobe, también están acelerando sus ciclos de actualización, citando la IA como un factor clave.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48860897,
-    "url": "https://yongzx.github.io/blog/2026/06/24/job-search/",
-    "score": 15,
-    "time": 1783695493,
-    "titulo_es": "Mi experiencia en la búsqueda de empleo como científico de investigación de IA",
-    "resumen": "El artículo detalla la experiencia de un estudiante de doctorado de quinto año en la búsqueda de empleo como científico de investigación, especialmente tras un cambio de enfoque hacia la seguridad de la IA. Se destaca que, a pesar de tener publicaciones en otras áreas, solo unos pocos trabajos recientes o la demostración de habilidades específicas para el puesto son los que realmente importan en el proceso de entrevista. El autor comparte sorpresas durante su búsqueda, como la inclusión de preguntas sobre diseño de sistemas y programación paralela (asyncio), y la evaluación en el uso de agentes de IA, que difieren de las expectativas iniciales de entrevistas puramente académicas o de codificación estilo LeetCode. Se enfatiza que la capacidad de pivotar a nuevos campos y demostrar experiencia relevante es crucial, y que el éxito pasado no garantiza oportunidades futuras si no se mantiene actualizado.",
+    "resumen": "El artículo detalla una investigación sobre la seguridad del sistema de memoria de Claude, un asistente de IA. El autor explora cómo el historial de conversaciones de un usuario puede convertirse en un perfil de alta fidelidad, utilizable para fines maliciosos como chantaje o suplantación de identidad. Se descubre que, si bien el sistema de memoria es seguro, la combinación con capacidades de navegación web presenta vulnerabilidades. El autor intenta exfiltrar datos a través de la herramienta `web_fetch` de Claude, inicialmente fallando debido a las restricciones de Cloudflare y luego por las salvaguardas de Anthropic que limitan las URLs a dominios específicos o enlaces dentro de páginas previamente visitadas. La investigación se centra en explotar esta última restricción, controlando los enlaces en un sitio web propio para inducir a Claude a visitar URLs controladas y potencialmente exfiltrar información.",
     "categoria": "IA"
   },
   {
-    "id": 48905183,
-    "url": "https://www.nature.com/articles/d41586-026-02170-8",
-    "score": 96,
-    "time": 1784029234,
-    "titulo_es": "Descubren nombre de matemático maya tras fórmula en pared de Xultun",
-    "resumen": "Investigadores han identificado a Sak Tahn Waax, 'Fox de Pecho Blanco', un matemático-astrónomo maya, gracias al análisis de una inscripción jeroglífica (Texto 19) en una cámara de Xultun, Guatemala. La inscripción, datada a mediados del siglo VIII d.C., presenta una compleja fórmula matemática que relaciona varios ciclos calendáricos y astronómicos mayas (incluyendo ciclos de Venus y años solares) de una manera juguetona y abreviada. El hallazgo, publicado en la revista Antiquity, sugiere que los matemáticos mayas eran reconocidos en su sociedad y que la matemática se practicaba por el simple placer intelectual, comparable a figuras históricas de las matemáticas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48861184,
-    "url": "https://righteousit.com/2009/03/12/never-argue-with-your-boss/",
-    "score": 49,
-    "time": 1783696879,
-    "titulo_es": "Únete a la cruzada IT",
-    "resumen": "El artículo narra una experiencia personal de un arquitecto de software senior donde un desacuerdo técnico con su jefe escaló a una confrontación pública, resultando en la humillación del jefe y la pérdida de confianza del equipo. El autor reflexiona sobre la importancia de la diplomacia y la estrategia en las relaciones laborales, aprendiendo que 'ganar' una discusión técnica contra un superior puede ser perjudicial para la carrera y las relaciones profesionales. Concluye que, si bien existen situaciones extremas de mala gestión, la estrategia principal debe ser hacer que el jefe luzca bien, buscando compromisos y, en última instancia, considerando el 'votar con los pies' (buscar otro empleo) si la situación es insostenible, pero siempre anticipándose a ello.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48913763,
-    "url": "https://www.benjamin-bai.com/projects/lemario",
-    "score": 99,
-    "time": 1784068247,
-    "titulo_es": "Reproduciendo LeWorldModel para planificar en Super Mario Bros.",
-    "resumen": "El artículo documenta la reconstrucción y entrenamiento de LeWorldModel, una arquitectura de incrustación predictiva conjunta (JEPA), en Super Mario Bros. La arquitectura utiliza un codificador de visión para procesar fotogramas de Mario y un codificador de acciones para procesar las entradas del controlador. Estos codificadores generan representaciones latentes que se introducen en un predictor causal basado en transformadores. La inyección de acciones se realiza mediante AdaLN-Zero, que modula los bloques de transformadores según la acción para predecir estados futuros. Para evitar el colapso de la representación, se emplea una pérdida de regularización de sigmoides (SIGReg1). Inicialmente, el modelo demostró una planificación prometedora para alcanzar objetivos de imagen cercanos, pero falló en la navegación a larga distancia y en superar obstáculos, lo que sugiere que aprendió a predecir el juego pero no a progresar en él. El artículo sirve como un desglose técnico y un postmortem de los desafíos encontrados.",
+    "id": 48862644,
+    "url": "https://www.catchcat.lol/",
+    "score": 43,
+    "time": 1783703729,
+    "titulo_es": "CatchCat: Un juego de captura y coleccionismo de gatos del mundo real",
+    "resumen": "CatchCat es un juego móvil (Android/iOS) que combina realidad aumentada y geolocalización para capturar y coleccionar gatos del mundo real. Utiliza la cámara del dispositivo para detectar gatos mediante IA en el dispositivo. Tras la detección, se lanza una \"lata de snack\" virtual para iniciar un escaneo. Los avistamientos verificados generan \"cartas coleccionables\" únicas con nombres generados, números de serie, estadísticas (como \"Snack\" y \"Charm\"), tipo y la foto del momento. Los datos verificados (fotos, datos derivados) pueden sincronizarse con servidores, priorizando la privacidad con procesamiento en el dispositivo cuando sea posible. El juego incluye un álbum para organizar los gatos coleccionados, un mapa comunitario que muestra avistamientos de otros jugadores y la posibilidad de obtener \"keepsakes\" (objetos de recuerdo) de avistamientos comunitarios. Se introduce un sistema de progresión con XP y niveles, y cosméticos para el perfil. La moneda del juego se obtiene al coleccionar gatos. Las latas de snack son un recurso limitado que se recarga con el tiempo o mediante una suscripción Pro. Funcionalidades futuras incluyen \"Cat Matches\" (partidas amistosas competitivas) basadas en las estadísticas y habilidades de las cartas coleccionables, y un sistema de votación para la comunidad. La seguridad y la privacidad son aspectos clave, con advertencias sobre la conciencia del entorno y la prohibición de entrar en áreas restringidas o privadas al usar el mapa comunitario.",
     "categoria": "IA"
   },
   {
-    "id": 48908950,
-    "url": "https://agnost.ai",
-    "score": 78,
-    "time": 1784045178,
-    "titulo_es": "Agnost AI: Mejora Continua de Agentes mediante Análisis de Conversaciones de Producción",
-    "resumen": "Agnost AI es una plataforma que se integra con cualquier LLM y framework para analizar continuamente conversaciones de producción (chat y voz) de agentes. Su objetivo es identificar patrones de fallos, frustraciones o puntos de fricción donde los usuarios se atascan o no logran convertir. Detecta fallos que las evaluaciones tradicionales podrían pasar por alto, como flujos de trabajo rotos, reintentos repetidos, fricción en la configuración, riesgo de abandono y solicitudes de características no implementadas. Al identificar estos patrones de alto impacto, Agnost AI genera correcciones revisadas (en forma de PRs) que el equipo puede revisar y fusionar, mejorando así la efectividad y el rendimiento del agente. La configuración es rápida (2 minutos) y es nativo de OpenTelemetry. La plataforma se enfoca en acelerar la mejora de agentes para equipos que necesitan escalar el volumen de agentes o mejorar rápidamente su rendimiento.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48913457,
-    "url": "https://xeiaso.net/notes/2026/check-your-smart-tv/",
-    "score": 74,
-    "time": 1784066441,
-    "titulo_es": "El problema del scraping es peor de lo que nadie podría imaginar",
-    "resumen": "El artículo analiza el problema generalizado del web scraping, destacando que el 80-90% de los intentos de scraping provienen de IPs no registradas en listas de monitoreo de amenazas. Se introduce una función de 'honeypot' en Anubis, una herramienta de seguridad web, que atrapa a los scrapers mal escritos al añadir HTML semánticamente inválido a las páginas. Los datos recopilados sugieren que el tráfico de scraping es global y probablemente se origina en dispositivos inteligentes comprometidos que forman parte de redes proxy. Se concluye que herramientas como Anubis son necesarias para mitigar este problema y se enfatiza la necesidad de una acción global coordinada.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48883305,
-    "url": "https://github.com/juggler-ai/juggler",
-    "score": 241,
-    "time": 1783880895,
-    "titulo_es": "Juggler: Un Agente de Codificación IA con Banco de Trabajo Visual",
-    "resumen": "Juggler es un agente de codificación impulsado por IA diseñado para desarrolladores que desean un control más granular sobre cómo la IA interactúa con su código. Ofrece un 'banco de trabajo visual' con una interfaz estilo 'columnas de Miller' (similar a Finder) para inspeccionar y editar llamadas a herramientas, propiedades de elementos e hilos de ejecución anidados. La arquitectura de Juggler consiste en una aplicación de escritorio nativa (backend en Go con Wails, UI en HTML/JS) y un servidor web local. La sesión se sincroniza mediante Yjs, permitiendo múltiples clientes (la aplicación de escritorio, pestañas del navegador, otras máquinas) para interactuar con la misma sesión en tiempo real. El sistema de extensiones permite personalizar herramientas (bash, lectura/escritura de archivos) y la lógica de orquestación, incluso integrando flujos de trabajo de IA que requieren UI. Soporta varios proveedores de LLM como Claude Code, OpenAI, Gemini, Ollama, entre otros. La distribución incluye binarios locales y, opcionalmente, acceso a través de WAN. El enfoque principal es permitir a los usuarios ser más 'hands-on' con el proceso de codificación de la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48869989,
-    "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/",
-    "score": 816,
-    "time": 1783758087,
-    "titulo_es": "Reemplazando una aplicación móvil con una página web",
-    "resumen": "El artículo narra la experiencia de un desarrollador al tener que instalar una aplicación móvil ('Travelbound') para acceder a detalles de viaje. Critica la necesidad de instalar una aplicación separada para información que podría ser presentada de forma más eficiente y accesible a través de una página web. El autor procede a realizar ingeniería inversa de la aplicación para descubrir su API, que utiliza una URL simple que concatena nombre de usuario y contraseña para obtener datos en formato JSON. Posteriormente, desarrolla un script en Ruby que se ejecuta periódicamente para extraer estos datos y generar una página HTML, que luego aloja de forma segura. Compara las ventajas de su solución web (menor tamaño, mayor accesibilidad, más funcionalidades, sin seguimiento ni publicidad) frente a la aplicación original, abogando por un uso más sensato de las aplicaciones móviles y la priorización de soluciones web cuando sea apropiado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48908178,
-    "url": "https://www.artfish.ai/p/offloading-thinking-to-ai",
-    "score": 475,
-    "time": 1784042293,
-    "titulo_es": "La Tendencia a Descargar Nuestro Pensamiento en la IA",
-    "resumen": "El artículo explora la creciente tendencia de delegar tareas de pensamiento, desde decisiones triviales hasta razonamientos complejos, a la inteligencia artificial. Se citan ejemplos como el cuento \"The Perfect Match\" de Ken Liu, donde un personaje depende completamente de una IA para sus recomendaciones diarias y sociales, y un caso real de un individuo que graba y analiza todas sus conversaciones con IA para que piense por él. Se compara con la evolución de los motores de búsqueda, que ahora realizan pasos intermedios de investigación y síntesis. El autor advierte sobre la delgada línea entre usar la IA como asistente y perder la autonomía, cuestionando quién toma las decisiones finales importantes en nuestras vidas. Si bien la IA ofrece respuestas rápidas para preguntas sencillas, se plantea la importancia de preservar el pensamiento profundo para cuestiones más complejas, sugiriendo que la dependencia excesiva puede erosionar nuestra capacidad de reflexión.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48905118,
-    "url": "https://adi.bio/reality",
-    "score": 227,
-    "time": 1784028799,
-    "titulo_es": "Quién puede darse el puñetazo más fuerte contra la realidad con IA, ganará",
-    "resumen": "El artículo advierte contra el uso impulsivo y excesivo de la IA en el desarrollo, comparándolo con la procrastinación y la evasión de la realidad.  Sostiene que la IA acelera el primer paso en proyectos, pero no elimina la dificultad intrínseca de los problemas fundamentales que hacen que un producto o startup tenga éxito. Los aspectos verdaderamente difíciles, como la comprensión profunda del usuario, la validación de ideas, la construcción de relaciones, la gestión de expectativas, la toma de decisiones estratégicas y la creación de valor real, no se ven facilitados por la IA. El autor critica la tendencia de los desarrolladores y fundadores a perderse en la construcción de herramientas de IA sin contacto con el mercado real, lo que lleva a la \"basura de IA\" y a la \"psicosis\". El verdadero valor en la era de la IA radicará en la persecución implacable de la verdad y la confrontación constante con la realidad, en lugar de usar la IA como un escape.",
+    "id": 48894874,
+    "url": "https://www.freestyle.sh/blog/opinion/designing-apis-for-agents",
+    "score": 71,
+    "time": 1783959341,
+    "titulo_es": "Diseño de APIs para Agentes vs. para Humanos en la Era de la IA",
+    "resumen": "El artículo argumenta que el diseño de APIs debe evolucionar debido al creciente uso de agentes de IA como consumidores principales. A diferencia del diseño para humanos, que prioriza la facilidad de uso inicial, la familiaridad y la tolerancia a errores, el diseño para agentes debe enfocarse en la claridad, la explicidad y la precisión. Los agentes pueden procesar documentación completa y generar código extenso rápidamente, lo que significa que los defaults ambiguos o la coalescencia de errores son perjudiciales. Las APIs deben ser explícitas, con definiciones precisas y errores informativos que ayuden a los agentes a depurar y comprender el comportamiento esperado. La simplicidad de uso para humanos con pocos campos ya no es la métrica principal; la explicidad y la granularidad son ahora más valiosas para los agentes.",
     "categoria": "IA"
   }
 ]
