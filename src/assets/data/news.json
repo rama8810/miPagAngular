@@ -1,254 +1,200 @@
 [
   {
-    "id": 48924912,
-    "url": "https://thinkingmachines.ai/news/introducing-inkling/",
-    "score": 992,
-    "time": 1784139165,
-    "titulo_es": "Presentando Inkling: Un modelo de Mixture-of-Experts de código abierto para personalización y razonamiento multimodal",
-    "resumen": "Se presenta Inkling, un modelo fundacional basado en la arquitectura Mixture-of-Experts (MoE) con 975 mil millones de parámetros totales (41 mil millones activos) y soporte para una ventana de contexto de hasta 1 millón de tokens. Entrenado de forma nativa con texto, imágenes, audio y video, el modelo está diseñado como una base abierta para la personalización mediante fine-tuning en la plataforma Tinker. Destaca por su capacidad de razonamiento con esfuerzo cognitivo controlable, su desempeño en tareas agenticas, generación de código y uso de herramientas, complementándose con una versión más ligera llamada Inkling-Small.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48931588,
-    "url": "https://joinedanthropic.com",
-    "score": 27,
-    "time": 1784189015,
-    "titulo_es": "Mira a dónde van los fundadores de YC después de que sus startups son adquiridas o cerradas",
-    "resumen": "Un análisis de la trayectoria profesional de 105 fundadores de Y Combinator tras el cierre o adquisición de sus startups. El reporte destaca una marcada tendencia de antiguos CEOs y CTOs que se integran como Miembros del Personal Técnico (MTS) y roles de ingeniería en compañías líderes de Inteligencia Artificial como OpenAI y Anthropic, trabajando en tecnologías clave como RAG, agentes de IA, APIs de Claude y modelos fundacionales como GPT-4V y o1.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48929945,
-    "url": "https://www.openculture.com/2026/07/explore-1300-beautiful-wildlife-illustrations-from-the-19th-century.html",
-    "score": 101,
-    "time": 1784171567,
-    "titulo_es": "La biblioteca del naturalista: Una restauración digital de la obra científica de la era victoriana",
-    "resumen": "El diseñador Nicholas Rougeux ha lanzado una recreación digital completa de 'The Naturalist's Library', una obra científica de la era victoriana que consta de más de 40 volúmenes dedicados a la flora y fauna. El proyecto restaura meticulosamente más de 1,300 ilustraciones detalladas a color, donde las especies destacan sobre sus hábitats en blanco y negro, facilitando el acceso público a este histórico compendio de ciencias naturales.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48928135,
-    "url": "https://mort.coffee/home/sqlite-editions/",
-    "score": 278,
-    "time": 1784155378,
-    "titulo_es": "Los valores predeterminados de SQLite y la necesidad de tablas estrictas",
-    "resumen": "El artículo analiza de forma crítica las configuraciones predeterminadas de SQLite, destacando dos problemas principales que comprometen la integridad de los datos: la desactivación por defecto de las restricciones de clave foránea (lo que facilita referencias huérfanas y errores silenciosos por la reutilización de ROWID) y su sistema de tipado flexible o 'afinidad de tipos'. Como solución, se propone activar explícitamente las claves foráneas con pragmas y utilizar tablas estrictas ('STRICT') para forzar la validación de tipos, argumentando que el comportamiento flexible por defecto suele ser contraproducente en el desarrollo de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48930397,
-    "url": "https://github.com/minh-ton/reynard-browser",
-    "score": 46,
-    "time": 1784176567,
-    "titulo_es": "Reynard: Un navegador web experimental basado en Gecko para iOS 13 o superior",
-    "resumen": "Reynard es un navegador web de código abierto para iOS 13+ que utiliza el motor Gecko en lugar del WebKit impuesto por Apple. El proyecto está enfocado en dispositivos iOS antiguos que no reciben actualizaciones de WebKit, permitiéndoles cargar sitios modernos mediante la actualización independiente de Gecko. El artículo detalla las opciones de sideloading con TrollStore o AltStore para la habilitación de JIT y actualizaciones automáticas, así como las instrucciones de compilación que requieren Xcode, Python 3, Rust, Cargo y ldid.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48882777,
-    "url": "https://www.seangoedecke.com/in-defense-of-not-understanding-your-codebase/",
-    "score": 10,
-    "time": 1783876787,
-    "titulo_es": "¿Qué tan bien debes entender tu propia base de código como ingeniero de software?",
-    "resumen": "El artículo analiza el nivel de comprensión que un desarrollador debe tener sobre su base de código, contrastando la dinámica de equipos pequeños con la de grandes organizaciones. El autor cuestiona la postura extrema de Peter Naur en 'Programming as Theory Building', la cual sugiere desechar y reescribir un sistema si se pierde la teoría o el conocimiento intuitivo original del mismo. El autor argumenta que, en sistemas de gran escala, la reescritura total es técnicamente inviable debido a la acumulación de casos de borde complejos. En su lugar, defiende que es perfectamente normal y necesario trabajar con un entendimiento parcial, y demuestra que es posible revivir sistemas heredados o abandonados mediante una comprensión incremental y focalizada de sus flujos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48930075,
-    "url": "https://planetscale.com/blog/making-768-servers-look-like-1",
-    "score": 82,
-    "time": 1784173002,
-    "titulo_es": "Esto son 768 servidores: Escalando Postgres mediante sharding de bases de datos",
-    "resumen": "El artículo aborda la necesidad y el funcionamiento del sharding (fragmentación) de bases de datos para escalar Postgres y MySQL cuando se manejan volúmenes masivos de datos y consultas. Explica las limitaciones del escalado vertical tradicional y el uso de réplicas de lectura, detallando cómo los cuellos de botella de CPU, I/O y el Write-Ahead Log (WAL) de un único nodo primario hacen indispensable la distribución física de la base de datos en múltiples servidores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48929587,
-    "url": "https://pmbanugo.me/blog/why-async-await-complect-concurrency",
-    "score": 70,
-    "time": 1784167596,
-    "titulo_es": "La ilusión de la simplicidad: Por qué async/await está fallando en producción",
-    "resumen": "El artículo analiza de forma crítica el modelo de concurrencia async/await, argumentando que, bajo una sintaxis familiar que emula el código síncrono, se esconde una enorme complejidad estructural que confunde la asincronía (espera de E/S) con la concurrencia. En runtimes cooperativos (como Tokio en Rust o Node.js), las tareas intensivas en CPU que carecen de puntos de espera ('await') bloquean el hilo de ejecución común, degradando la latencia de peticiones de red no relacionadas. Esto obliga a los desarrolladores a gestionar manualmente la separación entre pools de hilos de computación y de E/S. Asimismo, se señala el peligro del encolamiento ilimitado de tareas que suele derivar en fallos por falta de memoria (OOM) bajo escenarios de alta carga.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48915393,
-    "url": "https://spectrum.ieee.org/high-bandwidth-flash",
-    "score": 47,
-    "time": 1784081052,
-    "titulo_es": "La memoria flash de alto ancho de banda ofrece almacenamiento eficiente para los pesos de los modelos",
-    "resumen": "El artículo analiza el desarrollo de la tecnología High-Bandwidth Flash (HBF), la cual utiliza técnicas de empaquetado 3D y apilamiento vertical para incrementar drásticamente el ancho de banda de lectura de la memoria flash NAND, proyectando alcanzar velocidades de hasta 1.6 TB/s. A diferencia de la memoria DRAM o HBM tradicional, HBF es no volátil y ofrece una mayor densidad de almacenamiento con un menor consumo energético. Aunque posee velocidades de escritura lentas, su alta velocidad de lectura la posiciona como una solución de hardware altamente eficiente y económica para almacenar y servir los pesos de grandes modelos de lenguaje (LLM) durante la fase de inferencia de IA.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48871721,
-    "url": "https://davidobando.github.io/gsharp/",
+    "id": 48943745,
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003876",
     "score": 100,
-    "time": 1783775086,
-    "titulo_es": "G#: Un lenguaje de .NET moderno con la ergonomía de Go, Kotlin y Swift",
-    "resumen": "G# es un nuevo lenguaje de programación diseñado para el entorno de ejecución de .NET que adopta características ergonómicas de Go, Kotlin, Swift y TypeScript. Se compila directamente a ensamblados administrados por el CLR, permitiendo la importación e interoperabilidad con cualquier tipo de .NET. Entre sus características principales destacan el manejo de nulos con 'if let', clases selladas, concurrencia estructurada mediante 'scope', flujos asíncronos y tipos primitivos con tamaño de memoria explícito (como int32 y float64). Cuenta con herramientas de desarrollo como el compilador de línea de comandos (gsc), SDK de MSBuild y extensión para VS Code.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48922434,
-    "url": "https://www.neomindlabs.com/2026/06/08/running-gemma-4-26b-at-5-tokens-sec-on-a-13-year-old-xeon-with-no-gpu/",
-    "score": 289,
-    "time": 1784129645,
-    "titulo_es": "Hay un servidor en mi sótano que no debería estar ejecutando un modelo de lenguaje moderno",
-    "resumen": "El autor describe cómo logró ejecutar el modelo de lenguaje de Google Gemma 4 (de 26 mil millones de parámetros y arquitectura Mixture of Experts) a una velocidad de 5 tokens por segundo en un servidor antiguo sin GPU de hace 13 años (equipado con CPUs Intel Xeon Ivy Bridge). Para conseguirlo, utilizó una bifurcación de llama.cpp (ik_llama.cpp) optimizada para CPU. Debido a que su procesador carecía de los conjuntos de instrucciones AVX2 y FMA3 requeridos por el software optimizado, utilizó Claude (un modelo de IA) para parchear y reescribir el código C++ crítico, creando una ruta alternativa compatible con microarquitecturas antiguas sin perder el rendimiento de las optimizaciones clave.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48872031,
-    "url": "https://www.petekeen.net/homelab-resolved/",
-    "score": 30,
-    "time": 1783777667,
-    "titulo_es": "Todo está en caos: Adenda sobre la evolución de mi laboratorio en casa",
-    "resumen": "El autor presenta una actualización técnica de su laboratorio doméstico (homelab), detallando la simplificación de su infraestructura tras abandonar Kubernetes (debido a su alta complejidad de mantenimiento) en favor de Docker Compose sobre Proxmox. El artículo se centra en la resolución de problemas de hardware, describiendo el fallo sistemático de un nodo Lenovo con errores de controlador SAS y su posterior reconstrucción con un procesador AMD Ryzen 9 9900X y una GPU RTX 5060ti orientada a la ejecución de modelos de lenguaje locales (LLMs). Asimismo, describe la incorporación de un nodo de almacenamiento dedicado con TrueNAS SCALE en un HP Elitedesk y la distribución actual de sus cargas de trabajo.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48929660,
-    "url": "https://arxiv.org/abs/2607.11859",
-    "score": 56,
-    "time": 1784168251,
-    "titulo_es": "Introducción a arXivLabs",
-    "resumen": "arXivLabs es un entorno de desarrollo que permite a colaboradores individuales y organizaciones crear y compartir nuevas funcionalidades directamente en la plataforma web de arXiv. Esta iniciativa se rige bajo principios de colaboración abierta, excelencia técnica y un estricto respeto a la privacidad de los datos de los usuarios.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48881064,
-    "url": "https://clig.dev/",
-    "score": 135,
-    "time": 1783862911,
-    "titulo_es": "Una guía de código abierto para ayudarte a escribir mejores programas de línea de comandos",
-    "resumen": "El artículo analiza la evolución histórica y el valor persistente de la interfaz de línea de comandos (CLI). Contrasta la era de los años 80, orientada a la máquina y con alta fricción para el usuario, con el paradigma moderno donde la terminal se concibe como una interfaz de texto centrada en el humano ('human-first'). A pesar del auge de los entornos gráficos y las herramientas 'no-code', los autores defienden que la CLI sigue siendo la forma más versátil, estable y potente de interactuar con el software. El texto sienta las bases para actualizar los principios tradicionales de UNIX en el diseño actual de herramientas de desarrollo de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48927915,
-    "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
-    "score": 91,
-    "time": 1784154207,
-    "titulo_es": "Uso de LLMs para la configuración de redes MikroTik",
-    "resumen": "El artículo describe la experiencia del autor utilizando Modelos de Lenguaje Grandes (LLMs) para configurar redes MikroTik. Si bien reconoce la complejidad inherente a las redes y a la configuración de MikroTik, el autor destaca el LLM como un 'multiplicador de fuerza caótico' que acelera la configuración, a pesar de la necesidad de una supervisión y verificación constantes debido a posibles errores. Se mencionan casos de uso como la migración de redes y la configuración de redes nuevas. Una herramienta clave recomendada para superar problemas de conflictos de IP es \"MAC Telnet\", que permite la comunicación a nivel de capa 2 (dirección MAC), complementando o proporcionando una alternativa a herramientas GUI como WinBox, ya que los LLMs pueden interactuar más fácilmente con interfaces de línea de comandos. Se sugiere que los LLMs pueden ser instruidos para usar herramientas CLI como MAC Telnet para facilitar la gestión de dispositivos MikroTik, incluso en escenarios de red complicados.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48883467,
-    "url": "https://aikoschurmann.com/blog/string-interning-compilers",
-    "score": 8,
-    "time": 1783882121,
-    "titulo_es": "Optimización de Compiladores con Dense Arena Interner",
-    "resumen": "El artículo describe una técnica de optimización para compiladores llamada 'Dense Arena Interner'. Esta técnica aborda el problema del alto costo computacional asociado con la identificación, categorización y resolución de nombres y estructuras de código fuente a lo largo de las múltiples fases de un compilador. Tradicionalmente, estas operaciones, como la comparación de cadenas o firmas de tipo, se repiten costosamente. El 'Dense Arena Interner' resuelve esto convirtiendo cadenas y estructuras en enteros densos (handles) tan pronto como se crean. El costo de hashing se paga una sola vez durante la fase de lexer o construcción de tipos. A cambio, las fases posteriores del compilador pueden utilizar comparaciones de enteros o índices de arreglos con complejidad O(1), en lugar de costosas comparaciones de cadenas (O(L)) o accesos a estructuras de datos como hash maps. Se utiliza un Arena Allocator para garantizar la estabilidad de los punteros y la asignación O(1), lo cual es crucial para que los enteros resultantes actúen como identificadores únicos. Se discuten las estructuras de datos clave como 'Slice' (una referencia ligera a datos sin propiedad) e 'InternResult' (el handle canónico que apunta a un 'Slice' asignado en la arena). Se menciona la limitación de los arenas de no poder liberar memoria individualmente, lo que los hace ideales para compiladores por lotes pero potencialmente problemáticos para daemons de larga duración como los LSP.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48928313,
-    "url": "https://chemistry.berkeley.edu/news/meet-metal-organic-frameworks-chemistry%E2%80%99s-new-miracle-materials",
-    "score": 57,
-    "time": 1784156431,
-    "titulo_es": "Materiales Milagrosos: Los Marcos Metal-Orgánicos y sus Aplicaciones Revolucionarias",
-    "resumen": "El artículo describe los Marcos Metal-Orgánicos (MOFs), una clase de sólidos cristalinos diseñados con alta porosidad y gran área superficial interna, capaces de atrapar materia diversa como gases de efecto invernadero o actuar como portadores de fármacos. Se destaca su uso innovador en la extracción de agua del aire desértico, utilizando energía solar y siendo reutilizables. La tecnología, pionera en la química reticular desarrollada por Omar Yaghi, es escalable y se está trabajando en su comercialización. Además de la captura de carbono y la entrega de pesticidas, los MOFs biodegradables se utilizan en medicina para dirigir quimioterapia a células cancerosas. El campo de los MOFs ha crecido exponencialmente, con miles de estructuras diferentes y aplicaciones emergentes en energía y medio ambiente, buscando su despliegue a gran escala para el beneficio social.",
+    "time": 1784267470,
+    "titulo_es": "Las corrientes de habla competidoras se representan simultáneamente en la corteza humana durante el cambio de atención",
+    "resumen": "Estudio neurocientífico que analiza cómo el cerebro humano procesa el cambio de atención auditiva entre múltiples interlocutores a través de registros de EEG. Mediante Funciones de Respuesta Temporal (TRF), los investigadores demuestran que durante la transición de atención se produce un procesamiento simultáneo y asimétrico de ambas señales de habla, acompañado por una reducción en la potencia alfa del EEG que refleja el esfuerzo cognitivo. Asimismo, el estudio evalúa la actualización del contexto léxico tras el cambio de atención utilizando Modelos de Lenguaje Grande (LLM), sugiriendo que el cerebro realiza un reinicio en el procesamiento del contexto léxico.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48926939,
-    "url": "https://developer.puter.com/labs/firefox-wasm/",
-    "score": 208,
-    "time": 1784149217,
-    "titulo_es": "El motor Gecko de Firefox compilado a WebAssembly y ejecutándose dentro de un navegador",
-    "resumen": "El artículo describe la ejecución del motor Gecko de Firefox, responsable del renderizado de contenido web, compilado a WebAssembly. Esto permite que la interfaz completa de Firefox funcione dentro de una pestaña del navegador. El contenido web se retransmite a través de un servidor Wisp alojado en Puter, lo que sugiere una arquitectura de proxy para la entrega de contenido. Se menciona un registro de inicio, indicando el proceso de carga y configuración.",
-    "categoria": "Frontend"
+    "id": 48943142,
+    "url": "https://www.smithsonianmag.com/smart-news/how-has-roman-concrete-lasted-for-millennia-a-1900-year-old-latrine-offers-new-clues-about-the-materials-impressive-durability-180989115/",
+    "score": 134,
+    "time": 1784260106,
+    "titulo_es": "El secreto de la durabilidad del hormigón romano: Cómo la carbonatación ayuda a sellar grietas con el tiempo",
+    "resumen": "Investigadores analizaron muestras de hormigón de 1,900 años de antigüedad de la Villa de Adriano y descubrieron que la carbonatación desempeña un papel fundamental en su durabilidad. El proceso ocurre cuando el dióxido de carbono atmosférico reacciona con los compuestos de calcio en el hormigón para formar calcita, un mineral que rellena activamente las microfisuras y poros. Este mecanismo de autorreparación, sumado a la conocida reacción puzolánica, ofrece principios de ciencia de materiales aplicables para desarrollar un hormigón moderno más sostenible y de menor huella de carbono.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48921077,
-    "url": "https://eardatasci.github.io/c/ambiance/index.html",
-    "score": 195,
-    "time": 1784124508,
-    "titulo_es": "Liberando LLMs del Panel de Chat: Un Enfoque Basado en Sistemas",
-    "resumen": "El artículo explora estrategias para integrar Large Language Models (LLMs) de manera más efectiva fuera de interfaces de chat, enfocándose en reducir la carga cognitiva (tokens) impuesta al LLM. Propone un 'harness' que aprovecha el conocimiento intrínseco de los LLMs en codificación y administración de sistemas, delegando eficientemente tareas complejas y realizando operaciones de bajo nivel como logging y sanitización. Se discuten los tipos de fallos de los agentes (nivel LLM y nivel harness) y la importancia del logging y mensajes de error claros para la recuperación. Se utiliza el sistema de archivos Unix (Unix/Linux) como analogía motivacional, sugiriendo la organización de datos y el enrutamiento de información dentro de un sistema de archivos virtual (VFS) simulado para que el LLM se sienta en un entorno familiar. El objetivo es facilitar la interacción del LLM con el mundo exterior a través de un VFS limpio, utilizando convenciones como FHS para estructuras de directorios (/var para logs, /etc para configuración, /home para workspaces), permitiendo auditoría y búsqueda eficientes.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48922838,
-    "url": "https://github.com/welcome-to-the-sunny-side/misa77",
-    "score": 146,
-    "time": 1784131139,
-    "titulo_es": "misa77: Un Codec LZ de Alto Rendimiento Enfocado en Escritura-Única, Lectura-Múltiple",
-    "resumen": "misa77 es un codec basado en LZ diseñado para el nicho de 'escribir una vez, leer muchas veces'. Ofrece compresión lenta a cambio de una descompresión significativamente más rápida, superando a competidores como LZ4 en rendimiento en arquitecturas x86 y ARM.  Presenta dos niveles de esfuerzo de compresión (0 y 1) y modos experimentales que invierten más esfuerzo en la compresión para optimizar la descompresión a nivel microarquitectónico. Soporta la selección automática de instrucciones SIMD (AVX2/SSE2 en x86-64) y un camino portable auto-vectorizable para otras arquitecturas. La integración se facilita a través de una biblioteca C++ y una CLI independiente. Se enfoca en archivos individuales y utiliza un formato de flujo y contenedor definidos.",
+    "id": 48943174,
+    "url": "https://repebble.com/blog/pebble-mega-update-july-2026",
+    "score": 125,
+    "time": 1784260418,
+    "titulo_es": "Actualización de Pebble: Envíos del Pebble Time 2, optimizaciones de software y evolución del protocolo PPoGATT",
+    "resumen": "El artículo detalla el estado de distribución del reloj inteligente Pebble Time 2, habiendo superado el 80% de los envíos de preventa. En el plano técnico, destaca la optimización del firmware PebbleOS para duplicar el rendimiento de la batería (alcanzando hasta 30 días de autonomía en el Pebble 2 Duo), actualizaciones en el SDK y la integración de funcionalidades de Index 01 en su aplicación móvil de código abierto. Adicionalmente, aborda un rediseño en la pila de comunicación Bluetooth mediante la transición del protocolo PPoGATT a 'reverse PPoGATT', un cambio arquitectónico necesario para implementar el framework AccessorySetupKit (ASK) de iOS y habilitar el reenvío avanzado de notificaciones en la Unión Europea.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48928002,
-    "url": "https://github.com/1ay1/agentty",
-    "score": 36,
-    "time": 1784154624,
-    "titulo_es": "Programación de Pares con IA en tu Terminal",
-    "resumen": "El artículo describe una herramienta de programación asistida por IA para terminales, destacando su arquitectura de un único binario estático con arranque sub-milisegundo. Soporta múltiples modelos de IA (Claude, GPT, Groq, Ollama, OpenRouter, etc.) y puntos finales compatibles con OpenAI. La seguridad es primordial, utilizando sandboxing (`bwrap`/`sandbox-exec`) y restringiendo el acceso a archivos fuera del espacio de trabajo. Permite la ejecución remota segura a través de SSH con TLS fijado. La herramienta cuenta con 'skills' (habilidades) que se pueden cargar dinámicamente, mejorando la precisión de la IA en bases de código específicas o convenciones internas. Se integra con el protocolo Agent Client para interactuar con herramientas como Claude Code. La ejecución de comandos es interactiva, con manejo de errores, captura de salida y posibilidad de reenviar resultados a la IA. Soporta diferentes shells según el sistema operativo y maneja la ejecución de bloques de código de forma segura. La gestión de memoria se basa en un bucle funcional puro y el proceso se maneja mediante `posix_spawn`. El proceso de lanzamiento de versiones está automatizado, generando binarios para múltiples plataformas y enviando automáticamente paquetes a gestores como Homebrew y winget.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48928343,
-    "url": "https://sqlite.org/nulinstr.html",
-    "score": 47,
-    "time": 1784156625,
-    "titulo_es": "Comportamientos Sorprendentes y Manejo de Caracteres NUL en SQLite",
-    "resumen": "El artículo detalla cómo SQLite maneja los caracteres NUL (ASCII 0x00, Unicode \\u0000) incrustados en cadenas de texto. Explica que funciones como `length()` y `quote()`, así como la CLI de SQLite, truncan la representación y el procesamiento de las cadenas en el primer carácter NUL encontrado. Esto puede llevar a discrepancias entre la longitud aparente y la real de las cadenas, y a resultados inesperados en consultas, como la no coincidencia de 'abc' con 'abc\\0xyz'. Se demuestra que la conversión a BLOB (`CAST(col AS BLOB)`) revela la longitud completa y el carácter NUL. Se proporciona un método para detectar NULs incrustados usando `instr(X, char(0)) + 1` y para contar filas con ellos. Finalmente, se ofrece una solución mediante sentencias `UPDATE` para eliminar los caracteres NUL y el texto subsiguiente de las columnas, permitiendo limpiar bases de datos afectadas.",
+    "id": 48936426,
+    "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/",
+    "score": 685,
+    "time": 1784217987,
+    "titulo_es": "El cliente de chat que trajo Comic Sans al mundo ahora está en GitHub",
+    "resumen": "Microsoft ha liberado el código fuente de Microsoft Comic Chat, su histórico cliente de chat IRC lanzado en 1996. Desarrollado originalmente en Visual C++ 4.0 y MFC, el software destaca por su capacidad de interpretar texto en tiempo real para generar expresiones de personajes, burbujas de diálogo y layouts de paneles de cómic. El repositorio de GitHub incluye tanto el código original como adaptaciones modernas que permiten compilar el proyecto con herramientas actuales de Visual Studio, conectarse a servidores IRC modernos y ejecutarse de forma legible en resoluciones actuales.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48919869,
-    "url": "https://briarproject.org/news/2026-maintenance-mode/",
+    "id": 48895199,
+    "url": "https://solod.dev",
+    "score": 139,
+    "time": 1783960701,
+    "titulo_es": "Solod (So): un subconjunto estricto de Go que se traduce a C estándar",
+    "resumen": "Solod (So) es un lenguaje de programación que actúa como un subconjunto estricto de Go y se transpila directamente a C estándar. Está diseñado para ofrecer control de bajo nivel (de sistemas) a desarrolladores de Go, y la seguridad y estructura de Go a programadores de C. De manera predeterminada, la asignación de memoria se realiza en la pila (stack), haciendo que el uso del montículo (heap) sea opcional mediante la biblioteca estándar. Actualmente se encuentra en desarrollo activo (versión 0.2), con soporte para redes, WebAssembly y modo autónomo (freestanding), y se prevé soporte para concurrencia en la versión 0.3.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48941104,
+    "url": "https://github.com/alxndrTL/little-book-rl/",
+    "score": 140,
+    "time": 1784240842,
+    "titulo_es": "El pequeño libro de aprendizaje por refuerzo",
+    "resumen": "Presentación del repositorio de GitHub de 'The Little Book of Reinforcement Learning', un libro introductorio que abarca desde los conceptos básicos hasta algoritmos aplicados de aprendizaje por refuerzo. El repositorio incluye material complementario y la obra está distribuida bajo una licencia Creative Commons no comercial (CC BY-SA 4.0).",
+    "categoria": "IA"
+  },
+  {
+    "id": 48936451,
+    "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+    "score": 309,
+    "time": 1784218093,
+    "titulo_es": "Cambiamos el nombre de NotebookLM a Gemini Notebook",
+    "resumen": "Google ha anunciado el cambio de nombre de NotebookLM a Gemini Notebook, consolidando esta herramienta dentro de su ecosistema de inteligencia artificial. Entre las mejoras técnicas clave destaca la integración de un entorno de computación en la nube seguro (secure cloud computer) asignado a cada cuaderno, lo que capacita a la IA para escribir y ejecutar código de forma nativa con el fin de realizar análisis de datos complejos fundamentados en las fuentes proporcionadas por el usuario. Además, se introduce la sincronización de estado bidireccional entre la aplicación independiente de Gemini Notebook y la app Gemini, con planes de extender estas capacidades de IA directamente a la Búsqueda de Google.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48936880,
+    "url": "https://blog.lyc8503.net/en/post/llm-classifier/",
+    "score": 202,
+    "time": 1784220097,
+    "titulo_es": "Desarrollo de un detector de texto generado por IA con clasificadores tradicionales",
+    "resumen": "El autor describe el desarrollo de un detector de texto generado por IA. Tras descartar el análisis de perplejidad basado en modelos de lenguaje tradicionales debido a su alto costo de inferencia, baja generalización y falsos positivos, opta por clasificadores de aprendizaje automático clásico (como Naive Bayes y Linear SVC de Scikit-learn). El enfoque aprovecha los fuertes patrones estadísticos en la elección de palabras de los LLMs actuales, logrando una precisión del 85% en la detección de oraciones individuales mediante un modelo ligero y local.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48935951,
+    "url": "https://immersivemath.com/ila/",
+    "score": 227,
+    "time": 1784215943,
+    "titulo_es": "El primer libro de álgebra lineal del mundo con figuras totalmente interactivas",
+    "resumen": "Presentación de un libro didáctico interactivo enfocado en la enseñanza del álgebra lineal. El contenido abarca desde conceptos fundamentales de vectores (operaciones básicas, producto escalar y producto vectorial en tres dimensiones) hasta la resolución de sistemas de ecuaciones lineales y el estudio de las propiedades y el comportamiento de las matrices cuadradas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48939896,
+    "url": "https://arxiv.org/abs/2607.11938",
     "score": 163,
-    "time": 1784118807,
-    "titulo_es": "Actualización sobre el estado del proyecto Briar",
-    "resumen": "El proyecto Briar, una aplicación de mensajería, se encuentra actualmente en modo de mantenimiento. Si bien se consideró el cierre debido a problemas persistentes como alto consumo de batería, operación en segundo plano poco confiable en Android, falta de funciones (backup, archivos adjuntos) y una experiencia de usuario compleja para añadir contactos y comunicación offline, la decisión se revirtió. El proyecto continuará recibiendo financiación de varias fundaciones y proyectos centrados en internet y la tecnología abierta. El enfoque actual se limita a actualizaciones de seguridad esenciales y corrección de errores, con la esperanza de abordar progresivamente los problemas existentes en el futuro. Esta actualización busca disipar rumores sobre el cese del proyecto, confirmando su continuidad.",
+    "time": 1784234328,
+    "titulo_es": "arXivLabs: Colaboración y desarrollo de nuevas funcionalidades",
+    "resumen": "arXivLabs es un marco de trabajo que permite a desarrolladores y organizaciones colaborar directamente en la creación y compartición de nuevas características para el sitio web de arXiv. Esta plataforma fomenta proyectos que aporten valor a su comunidad, siempre bajo estrictos valores de código abierto, colaboración, excelencia y privacidad de los datos del usuario.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48915709,
-    "url": "https://fabiensanglard.net/jurrasic_park_computers/index.html",
-    "score": 894,
-    "time": 1784084267,
-    "titulo_es": "Tecnología en Jurassic Park: Desglose de Hardware y Software",
-    "resumen": "El artículo detalla el hardware y software que aparece en la película Jurassic Park. Se mencionan específicamente el Apple Powerbook 100, las estaciones de trabajo SGI R4000 Indigo y SGI IRIS Crimson, y el software meteorológico Earthwatch. Se discute la configuración de las estaciones de trabajo de los personajes Dennis Nedry y Ray Arnold, el uso de sistemas Silicon Graphics y Apple Macintosh para la creación de gráficos en tiempo real y animaciones, y la importancia del software Earthwatch para las representaciones meteorológicas. Se hace hincapié en la potencia de los sistemas SGI de la época, su uso en la producción de gráficos para la película, y se reflexiona sobre la evolución de la tecnología, como la calidad de las pantallas de los portátiles de los años 90. Se estima que Apple y SGI proporcionaron un valor significativo en equipos para la producción.",
+    "id": 48879960,
+    "url": "https://wyounas.github.io/puzzles/concurrency/2026/01/10/how-to-help-santa-claus-concurrently/",
+    "score": 5,
+    "time": 1783852013,
+    "titulo_es": "El problema de concurrencia de Papá Noel: Análisis con SPIN y Promela",
+    "resumen": "El artículo aborda el clásico problema de concurrencia de Papá Noel (Santa Claus Concurrency Puzzle) utilizando el verificador de modelos SPIN y el lenguaje de especificación Promela. El autor explica cómo las complejidades de los entrelazamientos (interleavings) dificultan el diseño de soluciones de sincronización correctas, y por qué herramientas de verificación formal como SPIN son superiores a las pruebas de software tradicionales en lenguajes como Python o Go para asegurar la cobertura de todos los escenarios de ejecución. Finalmente, se introducen conceptos clave de Promela, como los canales de comunicación síncronos (rendezvous) y con búfer, que servirán para modelar el problema y evitar fallos de concurrencia comunes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48940833,
+    "url": "https://news.yale.edu/2026/07/15/meet-likweli-new-monkey-species-discovered-congo-basin",
+    "score": 81,
+    "time": 1784239200,
+    "titulo_es": "Descubren una Nueva Especie de Mono Colobo en la República Democrática del Congo",
+    "resumen": "Investigadores de Yale, junto con un equipo internacional, han descrito una nueva especie de mono Colobo, denominada 'Likweli' (Colobus congoensis), que habita en las altas copas de los bosques de la República Democrática del Congo. Este descubrimiento, el quinto de una nueva especie de mono africano en 75 años, se basa en evidencia física, genética y vocal. El Likweli es un primate raro y críptico, difícil de observar y fotografiar debido a su hábitat en el dosel forestal denso. Los hallazgos provienen de observaciones realizadas entre 2018 y 2022 en el Parque Nacional Lomami y su zona de amortiguamiento, y subrayan la importancia de proteger la biodiversidad de la región. La investigación colaboró con el Lukuru Wildlife Research Foundation y contó con la autorización del Instituto Congoleño para la Conservación de la Naturaleza.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48933310,
+    "url": "https://www.theocharis.dev/blog/llm-critics-are-right-i-use-llms-anyway/",
+    "score": 231,
+    "time": 1784203141,
+    "titulo_es": "El Aburrimiento es Asombroso: La Disonancia en el Uso de LLMs",
+    "resumen": "El artículo explora la \"disonancia\" que experimentan muchos desarrolladores al usar Modelos de Lenguaje Grandes (LLMs) a pesar de sus críticas válidas. El autor, un CTO, comparte su experiencia en la Local-First Conf, donde tanto él como otros ingenieros destacados, como Armin Ronacher (fundador de Earendil, creador de Pi.dev), enfrentan un aluvión de contribuciones (Pull Requests, issues) generadas por LLMs. Estas contribuciones son a menudo de baja calidad y requieren un esfuerzo considerable para filtrarlas, llevando a prácticas como el cierre automático de la mayoría de ellas. A pesar de reconocer problemas significativos como el uso de material con derechos de autor, el impacto ambiental, las preocupaciones éticas y la naturaleza especulativa del mercado de IA, el autor reitera su uso continuo de LLMs. Identifica la raíz del problema en la erosión de la confianza en las contribuciones de código abierto: antes, el tiempo humano invertido en una PR era un filtro de calidad implícito; ahora, los LLMs pueden generar código a gran escala sin ese coste, dificultando la distinción entre contribuciones genuinas y generadas artificialmente, lo que lleva a los mantenedores a desconfiar y filtrar masivamente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48871547,
+    "url": "https://github.com/samyeyo/clx",
+    "score": 117,
+    "time": 1783773624,
+    "titulo_es": "clx: Compilador Lua Ahead-of-Time Multiplataforma con Backend C++",
+    "resumen": "clx es un compilador Lua ahead-of-time (AOT) y runtime que genera ejecutables nativos independientes utilizando toolchains modernas de C++. Su objetivo no es ser la implementación Lua más rápida en todos los casos, sino proporcionar una forma de compilar aplicaciones Lua no triviales en binarios nativos. Incluye ejemplos como un visor de Mandelbrot y un juego Pong. Actualmente en beta, clx trabaja con la compatibilidad de Lua 5.5 y está en desarrollo para mejorar la compatibilidad y optimización. El compilador se fija en tiempo de compilación con CMake para garantizar la compatibilidad ABI. Admite la integración directa con CMake. Los resultados de las pruebas y benchmarks, medidos contra el intérprete estándar Lua 5.5, están disponibles y muestran un factor de aceleración. La documentación se encuentra en el directorio doc/. clx tiene licencia MIT.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48852048,
+    "url": "https://pncnmnp.github.io/blogs/rca-victor-education.html",
+    "score": 26,
+    "time": 1783629463,
+    "titulo_es": "Publicidad de RCA Victor en la revista LIFE de 1939 y su contexto histórico",
+    "resumen": "El artículo analiza un póster publicitario de RCA Victor de la edición del 6 de marzo de 1939 de la revista LIFE. Detalla la historia de RCA, su fusión con Victor Talking Machine Company en 1929 y el contexto económico de la Gran Depresión. Explica cómo la adquisición de activos tangibles (fábricas, marcas) de Victor en un momento de auge bursátil permitió a RCA navegar la crisis económica posterior. Se menciona la consolidación de operaciones de investigación, ingeniería, fabricación y ventas, y la eliminación de márgenes de beneficio de General Electric y Westinghouse. Se especula que el programa \"Radio in Education\" fue una estrategia para abrir un nuevo canal de ingresos ante la caída del gasto en radios de consumo, poco antes del inicio de la Segunda Guerra Mundial.",
     "categoria": "Hardware"
   },
   {
-    "id": 48892273,
-    "url": "https://www.abortretry.fail/p/micro-instrumentation-and-telemetry",
-    "score": 43,
-    "time": 1783948834,
-    "titulo_es": "La fundación de MITS y los inicios de la microcomputación",
-    "resumen": "El artículo narra los orígenes de Micro Instrumentation and Telemetry Systems (MITS), fundada por Henry Edward Roberts junto a Forrest Mims III, Stan Cagle y Robert Zaller. Inicialmente enfocada en productos para cohetes modelo, la empresa pronto pivotó hacia la electrónica, con productos como el comunicador infrarrojo Opticom. La inspiración clave de Roberts fue la calculadora de escritorio Hewlett-Packard 9100, lo que lo llevó a desarrollar un kit de calculadora. La tensión entre los proyectos de Roberts (calculadora) y Cagle (alarma infrarroja, láser) culminó con Roberts comprando la participación de Cagle y Mims, sentando las bases para el futuro desarrollo de MITS, especialmente en el ámbito de los kits de electrónica y, eventualmente, las microcomputadoras.",
+    "id": 48942721,
+    "url": "https://github.com/Center-for-AI-Innovation/ai-teaching-assistant-uiuc",
+    "score": 19,
+    "time": 1784254998,
+    "titulo_es": "Chatbot de Asistente de Enseñanza (TA) con Búsqueda Semántica y Múltiples Modelos de IA",
+    "resumen": "El artículo describe el desarrollo de un chatbot de Asistente de Enseñanza (TA) que utiliza un sistema de 11 modelos de IA ejecutándose en paralelo para recuperación de texto/imágenes, generación, moderación y clasificación, logrando un tiempo de respuesta mediano de 2 segundos. El sistema se entrena con datos de libros de texto, videos de conferencias y foros de preguntas y respuestas de estudiantes, aunque los derechos de autor restringen su disponibilidad pública. Una contribución clave es un enfoque novedoso de recuperación de búsqueda semántica durante RLHF (Reinforcement Learning from Human Feedback), utilizando un conjunto de datos curado por estudiantes de ingeniería eléctrica. La evaluación del sistema es iterativa, utilizando un conjunto de datos interno de pares de preguntas y respuestas y la evaluación de GPT-3 para comparar modelos, reconociendo la limitación de la autoevaluación de GPT-3. Se alienta a los usuarios a integrar sus propias bases de datos de documentos usando Pinecone, ya que el proyecto es de código abierto (excepto por los libros de texto comerciales). El proceso incluye la preparación de datos a partir de PDF, texto plano e imágenes de diapositivas, y la ejecución a través de scripts de interfaz de usuario y controladores, como `run_ta_gradio.sh`.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48908886,
+    "url": "https://dynomight.net/pseudpocalypse/",
+    "score": 123,
+    "time": 1784044921,
+    "titulo_es": "La Inevitabilidad de la Vinculación de Identidades por el Texto y la Pseudopocalipsis",
+    "resumen": "El artículo explora la conjetura de que cualquier cantidad significativa de texto en Internet, incluso bajo diferentes seudónimos, puede ser vinculada a una única identidad mediante el análisis de las 'huellas dactilares' estadísticas inherentes al estilo de escritura. Se postula que la evolución de los Modelos de Lenguaje Grandes (LLMs) está haciendo que esta identificación sea cada vez más fácil y precisa, incluso con fragmentos de texto más pequeños y dispares. Esta tendencia, junto con otras formas de rastreo de alta entropía (biometría, rastreo de vehículos, hábitos de navegación digital), apunta hacia una futura 'pseudopocalipsis', donde la pseudonimidad se vuelve cada vez más difícil, si no imposible, debido a la unicidad inherente a la información que generamos. Se ilustra con un modelo teórico de asignación de cadenas binarias aleatorias a cada individuo, donde la revelación de bits de esta cadena a través de la escritura (estilo, elección de palabras, etc.) eventualmente permite la vinculación de identidades.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48945260,
+    "url": "https://www.goto10retro.com/p/i-owe-my-life-to-the-commodore-64",
+    "score": 5,
+    "time": 1784281465,
+    "titulo_es": "Commodore 64: Cómo los juegos pirateados me enseñaron a programar",
+    "resumen": "El artículo narra la experiencia personal del autor al adquirir un Commodore 64 en su juventud. A pesar de no haber aprendido lenguajes de programación avanzados, el autor atribuye su exitosa carrera como Desarrollador de Aplicaciones a las habilidades adquiridas al jugar y descifrar juegos pirateados en el C64. La falta de instrucciones en estos juegos fomentó la resolución de problemas, la experimentación y la perseverancia, sentando las bases de su enfoque de programación de ciclo completo y tenacidad en el descubrimiento.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48940603,
+    "url": "https://arxiv.org/abs/2607.12395",
+    "score": 51,
+    "time": 1784237882,
+    "titulo_es": "arXivLabs: Un framework para el desarrollo colaborativo de nuevas funcionalidades en arXiv",
+    "resumen": "El artículo describe arXivLabs, un framework diseñado para facilitar el desarrollo y la compartición de nuevas funcionalidades y extensiones para la plataforma arXiv. Este framework promueve la colaboración directa en el sitio web de arXiv y se basa en los valores de apertura, comunidad, excelencia y privacidad de datos del usuario. arXiv se compromete a trabajar exclusivamente con colaboradores que compartan y adhieran a estos principios. Se invita a los interesados a explorar cómo sus ideas de proyectos pueden aportar valor a la comunidad de arXiv a través de arXivLabs.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48939641,
+    "url": "https://www.bbc.com/future/article/20260715-how-period-trackers-share-womens-private-details",
+    "score": 100,
+    "time": 1784232958,
+    "titulo_es": "Privacidad de las aplicaciones de seguimiento del ciclo menstrual: ¿quién comparte tus datos de salud?",
+    "resumen": "Una investigación de la Fundación Mozilla sobre seis populares aplicaciones de seguimiento del ciclo menstrual revela prácticas de privacidad dispares. Mientras que algunas aplicaciones como Euki son elogiadas por sus sólidas protecciones, otras como Stardust comparten datos detallados de salud reproductiva (estado de embarazo, uso de anticonceptivos, estado de ánimo, consumo de alcohol, síntomas) con terceros como RudderStack, una empresa de gestión de datos no mencionada en su política de privacidad. Aunque estas prácticas pueden ser legales, expertos advierten sobre los riesgos inherentes de la dispersión de datos, especialmente en el contexto actual de erosión de protecciones de privacidad y posibles usos indebidos en investigaciones legales. La aplicación Spot On (de Planned Parenthood) presenta un escenario complejo: si bien la aplicación en sí no comparte datos, la navegación por ciertas funciones (Roo chatbot, buscador de proveedores de salud) a través del sitio web de Planned Parenthood expone datos de salud del usuario a empresas de análisis como AB Tasty, a pesar de que el sitio web tiene medidas de seguridad menos robustas. La investigación subraya la importancia de que los usuarios conozcan cómo se manejan sus datos y resalta la necesidad de una mayor transparencia y protección en el manejo de información de salud sensible por parte de las aplicaciones.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48940895,
+    "url": "https://hellorecon.com/blog/cve-2026-25089",
+    "score": 32,
+    "time": 1784239650,
+    "titulo_es": "Vulnerabilidad de Inyección de Comandos del Sistema Operativo en Fortinet FortiSandbox",
+    "resumen": "El artículo detalla la vulnerabilidad de inyección de comandos del sistema operativo (CVE-2026-25089, CWE-78) presente en la interfaz web de Fortinet FortiSandbox. Esta vulnerabilidad, que requiere autenticación cero, interacción cero y tiene una baja complejidad de ataque, permite a un atacante inyectar metacaracteres de shell a través de cargas útiles JSON en solicitudes HTTP a la función 'start VNC'. La vulnerabilidad fue reportada por Defused y su explotación en la naturaleza fue confirmada por CISA, que la agregó al registro KEV. Esta es la tercera vulnerabilidad de FortiSandbox explotada en el mundo en dos meses, lo que la convierte en un objetivo de alto valor debido a su integración con otros productos Fortinet. Se proporcionan directrices para identificar instancias expuestas de FortiSandbox mediante escaneo de puertos, inspección de certificados TLS y consultas DNS. Las contramedidas incluyen la actualización a FortiSandbox 4.4.9+ o 5.0.6+, según la rama, para abordar las vulnerabilidades. Se enfatiza que los métodos de identificación son heurísticos y la verificación de la versión del firmware requiere el acceso a la interfaz de administración.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48933419,
+    "url": "https://www.techdirt.com/2026/07/15/sony-deletes-a-bunch-more-movies-from-the-accounts-of-people-who-bought-them/",
+    "score": 649,
+    "time": 1784204023,
+    "titulo_es": "Malos usos de la tecnología: contenido digital que desaparece de las bibliotecas de PlayStation",
+    "resumen": "El artículo detalla cómo Sony, a través de su PlayStation Store, ha eliminado repetidamente películas y series de TV de las cuentas de los usuarios después de que estos las compraran. Esto se debe a la terminación de acuerdos de licencia con distribuidores como StudioCanal y Discovery. Los usuarios afectados pierden acceso al contenido sin reembolso ni compensación, a pesar de creer que estaban comprando el producto y no solo una licencia de uso temporal. El autor critica la falta de transparencia de Sony en la comunicación de estos términos y la ausencia de acción por parte de los consumidores y las agencias gubernamentales, lo que permite a la empresa continuar con estas prácticas anticonsumidor.",
     "categoria": "Hardware"
-  },
-  {
-    "id": 48912013,
-    "url": "https://www.ayush.digital/blog/the-memory-heist",
-    "score": 94,
-    "time": 1784058054,
-    "titulo_es": "Cómo engañé a Claude para que filtrara tus secretos más profundos y oscuros",
-    "resumen": "El artículo detalla una investigación sobre la seguridad del sistema de memoria de Claude, un asistente de IA. El autor explora cómo el historial de conversaciones de un usuario puede convertirse en un perfil de alta fidelidad, utilizable para fines maliciosos como chantaje o suplantación de identidad. Se descubre que, si bien el sistema de memoria es seguro, la combinación con capacidades de navegación web presenta vulnerabilidades. El autor intenta exfiltrar datos a través de la herramienta `web_fetch` de Claude, inicialmente fallando debido a las restricciones de Cloudflare y luego por las salvaguardas de Anthropic que limitan las URLs a dominios específicos o enlaces dentro de páginas previamente visitadas. La investigación se centra en explotar esta última restricción, controlando los enlaces en un sitio web propio para inducir a Claude a visitar URLs controladas y potencialmente exfiltrar información.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48862644,
-    "url": "https://www.catchcat.lol/",
-    "score": 43,
-    "time": 1783703729,
-    "titulo_es": "CatchCat: Un juego de captura y coleccionismo de gatos del mundo real",
-    "resumen": "CatchCat es un juego móvil (Android/iOS) que combina realidad aumentada y geolocalización para capturar y coleccionar gatos del mundo real. Utiliza la cámara del dispositivo para detectar gatos mediante IA en el dispositivo. Tras la detección, se lanza una \"lata de snack\" virtual para iniciar un escaneo. Los avistamientos verificados generan \"cartas coleccionables\" únicas con nombres generados, números de serie, estadísticas (como \"Snack\" y \"Charm\"), tipo y la foto del momento. Los datos verificados (fotos, datos derivados) pueden sincronizarse con servidores, priorizando la privacidad con procesamiento en el dispositivo cuando sea posible. El juego incluye un álbum para organizar los gatos coleccionados, un mapa comunitario que muestra avistamientos de otros jugadores y la posibilidad de obtener \"keepsakes\" (objetos de recuerdo) de avistamientos comunitarios. Se introduce un sistema de progresión con XP y niveles, y cosméticos para el perfil. La moneda del juego se obtiene al coleccionar gatos. Las latas de snack son un recurso limitado que se recarga con el tiempo o mediante una suscripción Pro. Funcionalidades futuras incluyen \"Cat Matches\" (partidas amistosas competitivas) basadas en las estadísticas y habilidades de las cartas coleccionables, y un sistema de votación para la comunidad. La seguridad y la privacidad son aspectos clave, con advertencias sobre la conciencia del entorno y la prohibición de entrar en áreas restringidas o privadas al usar el mapa comunitario.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48894874,
-    "url": "https://www.freestyle.sh/blog/opinion/designing-apis-for-agents",
-    "score": 71,
-    "time": 1783959341,
-    "titulo_es": "Diseño de APIs para Agentes vs. para Humanos en la Era de la IA",
-    "resumen": "El artículo argumenta que el diseño de APIs debe evolucionar debido al creciente uso de agentes de IA como consumidores principales. A diferencia del diseño para humanos, que prioriza la facilidad de uso inicial, la familiaridad y la tolerancia a errores, el diseño para agentes debe enfocarse en la claridad, la explicidad y la precisión. Los agentes pueden procesar documentación completa y generar código extenso rápidamente, lo que significa que los defaults ambiguos o la coalescencia de errores son perjudiciales. Las APIs deben ser explícitas, con definiciones precisas y errores informativos que ayuden a los agentes a depurar y comprender el comportamiento esperado. La simplicidad de uso para humanos con pocos campos ya no es la métrica principal; la explicidad y la granularidad son ahora más valiosas para los agentes.",
-    "categoria": "IA"
   }
 ]
