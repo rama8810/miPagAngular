@@ -1,245 +1,200 @@
 [
   {
-    "id": 48963879,
-    "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
-    "score": 535,
-    "time": 1784421506,
-    "titulo_es": "Presentando transcribe.cpp: una biblioteca de transcripción basada en ggml de alto rendimiento y multiplataforma",
-    "resumen": "El autor introduce transcribe.cpp, una biblioteca escrita en C/C++ basada en ggml para la inferencia de modelos de transcripción de audio (ASR). Diseñada para superar los retos de distribución multiplataforma de aplicaciones de voz a texto en sistemas de escritorio y móviles, la biblioteca destaca por su soporte de aceleración por GPU mediante Vulkan, portabilidad (compatible con macOS, Windows y Linux) y una rigurosa validación numérica y de tasa de error de palabras (WER) respecto a las implementaciones de referencia. Además, actúa como un reemplazo directo y compatible con los modelos .bin de whisper.cpp.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48911793,
-    "url": "https://github.com/moonshine-ai/moonshine/tree/main/micro",
-    "score": 457,
-    "time": 1784057110,
-    "titulo_es": "Moonshine Voice: Un toolkit de IA de código abierto para agentes de voz en tiempo real en sistemas embebidos",
-    "resumen": "Moonshine Voice es un toolkit de IA de código abierto diseñado para crear agentes y aplicaciones de voz en tiempo real. Su variante optimizada, Moonshine Micro, está dirigida a microcontroladores y procesadores DSP con recursos altamente restringidos, utilizando el Raspberry Pi RP2350 de bajo costo como plataforma de referencia. El sistema puede ejecutarse con tan solo 470 KB de RAM e incluye capacidades independientes de detección de actividad de voz (VAD), reconocimiento de comandos y síntesis de habla neuronal, apoyándose en TensorFlow Lite Micro para la ejecución de los modelos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48964015,
-    "url": "https://github.com/stupside/castor",
-    "score": 199,
-    "time": 1784422795,
-    "titulo_es": "Castor: Transmisión de video web a Smart TVs directamente desde la terminal",
-    "resumen": "Castor es una herramienta de software escrita en Go que permite transmitir videos web desde la terminal a cualquier Smart TV compatible con el perfil DLNA/UPnP MediaRenderer:1. El sistema inicia una instancia headless de Chrome con técnicas de evasión de detección de bots para capturar el flujo de video mediante el protocolo Chrome DevTools. Luego, transcodifica el contenido en tiempo real utilizando ffmpeg y ffprobe. Requiere compilación local con Go 1.26+ y cmake debido a dependencias estáticas de Cgo con whisper.cpp para la generación automática de subtítulos. Soporta despliegues nativos y en Docker, aunque con limitaciones de red multicast (SSDP) documentadas en entornos que no sean Linux.",
+    "id": 48908884,
+    "url": "https://blog.andr2i.com/posts/2026-07-06-eliminating-go-bound-checks-with-unsafe",
+    "score": 20,
+    "time": 1784044917,
+    "titulo_es": "Optimización de ruta crítica: aritmética de punteros unsafe para eliminar comprobaciones de límites que el compilador de Go no puede remover",
+    "resumen": "El artículo analiza la optimización de rutas críticas (hot paths) en Go mediante la eliminación de comprobaciones de límites (Bound Checks Elimination - BCE). Explica cómo estas comprobaciones de seguridad añaden sobrecarga de instrucciones y bifurcaciones en el ensamblador, impidiendo que algunas funciones se optimicen como funciones hoja (leaf functions). Aunque el compilador de Go puede eliminar comprobaciones si se le 'demuestra' que los accesos están dentro de rango utilizando patrones de código convencionales, existen escenarios complejos donde esto no es posible. Para estos casos avanzados, el autor propone el uso de aritmética de punteros mediante el paquete 'unsafe' para omitir manualmente estas comprobaciones cuando el desarrollador puede garantizar matemáticamente la seguridad del acceso a memoria.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48963465,
-    "url": "https://codex-resets.com/",
-    "score": 186,
-    "time": 1784417066,
-    "titulo_es": "Seguimiento de los reinicios de límites de uso de OpenAI Codex y ChatGPT Work",
-    "resumen": "Registro detallado de los anuncios de reinicios de límites de uso para OpenAI Codex y ChatGPT Work. Describe la evolución del servicio a través de hitos de usuarios activos (de 500k a 9 millones) y la introducción de 'reinicios guardados' (banked resets) en web, móvil y escritorio. También aborda incidencias técnicas resueltas, como la desactivación de una optimización que afectaba negativamente a las tasas de acierto de caché (cache hit rates) durante la compactación de sesiones prolongadas.",
+    "id": 48966569,
+    "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
+    "score": 541,
+    "time": 1784455403,
+    "titulo_es": "Reescribiendo Bun en Rust",
+    "resumen": "El artículo analiza la afirmación de Jarred Sumner de que Claude Code (v2.1.181 y posteriores) utiliza la versión de Bun reescrita en Rust. El autor, Simon Willison, investiga su propia instalación local y verifica que efectivamente Claude Code empaqueta una versión preliminar de Bun (v1.4.0, identificada actualmente en la rama 'canary'), confirmando que este nuevo runtime de Rust ya se está ejecutando de forma invisible y exitosa en producción a través de millones de dispositivos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48966713,
+    "url": "https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard",
+    "score": 500,
+    "time": 1784457298,
+    "titulo_es": "El hardware no es tan difícil como dicen: Reflexiones tras el lanzamiento de Jamcorder",
+    "resumen": "El creador de Jamcorder, un dispositivo de grabación automática para piano, comparte su experiencia tras vender 2500 unidades y desmonta el mito de que el hardware es la parte más compleja de crear un producto físico. A pesar de los desafíos de manufactura y diseño de PCBs, argumenta que el desarrollo del software asociado (firmware, aplicación y herramientas de producción, que suman unas 200,000 líneas de código) fue con diferencia la tarea más difícil. Destaca que mantener el diseño de hardware simple y sin complicaciones innecesarias es la clave para un desarrollo exitoso.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48976682,
+    "url": "https://www.theregister.com/columnists/2026/07/20/airbus-takes-flight-from-aws-what-happens-next-is-critical/5274109",
+    "score": 25,
+    "time": 1784542342,
+    "titulo_es": "¿Por dónde se va de nuevo a la Tierra de los Libres?",
+    "resumen": "Airbus ha decidido migrar aproximadamente 900 aplicaciones críticas, incluyendo sistemas ERP, CRM y de manufactura, al proveedor de nube francés Scaleway para garantizar su soberanía digital y proteger sus datos sensibles frente a las normativas de acceso a datos de Estados Unidos (como la Cloud Act). El artículo analiza los desafíos de seguridad, gobernanza de datos y arquitectura tecnológica de esta migración, destacando la compleja dependencia que aún existe de monopolios estadounidenses (como Microsoft y Google) en la cadena de suministro, herramientas de productividad y el desarrollo de inteligencia artificial para sistemas críticos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 48974454,
+    "url": "https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+    "score": 250,
+    "time": 1784522715,
+    "titulo_es": "Xiaomi-Robotics-1: Un modelo fundacional de robótica listo para usar",
+    "resumen": "Xiaomi-Robotics-1 es un modelo fundacional de robótica entrenado con más de 100,000 horas de trayectorias de manipulación en el mundo real para superar la escasez de datos en este campo. Siguiendo el paradigma de los LLM, su entrenamiento consta de dos etapas: un preentrenamiento a gran escala libre de corporeización (UMI) que utiliza un pipeline de autoetiquetado mediante modelos de visión-lenguaje (VLM) para aprender representaciones generales de acción, y un postentrenamiento que alinea estas capacidades con plataformas robóticas reales mediante conjuntos de datos cruzados y aprendizaje de instrucciones en lenguaje natural. Los resultados confirman que el modelo escala de manera predecible, mejorando la tasa de éxito en robots reales y entornos no vistos a medida que aumentan el tamaño del modelo y los datos de entrenamiento.",
     "categoria": "IA"
   },
   {
-    "id": 48895861,
-    "url": "https://www.scientificamerican.com/article/mathematicians-still-dont-know-the-fastest-way-to-multiply-numbers/",
+    "id": 48952713,
+    "url": "https://hidden-phenomena.com/articles/rh",
+    "score": 10,
+    "time": 1784325738,
+    "titulo_es": "La densidad de los números primos y la fórmula del producto de Euler",
+    "resumen": "El artículo explora cómo cuantificar la frecuencia y distribución de los números primos en comparación con otros conjuntos infinitos. Se detalla el enfoque de Euler para determinar si la suma de los recíprocos de los números primos diverge, conectando este problema con la función zeta (que posteriormente llevaría el nombre de Riemann). Mediante el principio de factorización única, Euler demostró que esta serie infinita se puede expresar como un producto infinito que involucra exclusivamente a los números primos, utilizando la suma de series geométricas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48974476,
+    "url": "https://blog.documentfoundation.org/blog/2026/07/17/microsofts-main-tool-for-lock-in/",
     "score": 113,
-    "time": 1783963270,
-    "titulo_es": "Los matemáticos aún no conocen la forma más rápida de multiplicar números",
-    "resumen": "El artículo explora la evolución de los algoritmos de multiplicación y la complejidad computacional asociada. Durante siglos se asumió que el método tradicional de multiplicación requería un esfuerzo de O(n²). Sin embargo, en 1960, Anatoly Karatsuba, un estudiante de 23 años, refutó la conjetura del matemático Andrey Kolmogorov al demostrar que es posible reducir la complejidad algorítmica sustituyendo multiplicaciones costosas por operaciones de adición más eficientes. Este hito es fundamental para la informática moderna, afectando directamente a la criptografía, el hardware, la inteligencia artificial y el procesamiento digital.",
+    "time": 1784522987,
+    "titulo_es": "La arquitectura de la dependencia: formatos de documentos y estándares abiertos",
+    "resumen": "El artículo analiza cómo los formatos de documentos propietarios, específicamente los de Microsoft Office (DOCX, XLSX, PPTX), crean una dependencia tecnológica o 'lock-in' mediante decisiones de diseño de software que dificultan la interoperabilidad. Explica la diferencia entre formatos abiertos y cerrados, y cómo la extrema complejidad de la especificación OOXML de Microsoft se utilizó en un controvertido proceso de estandarización en la ISO para mantener el control del mercado bajo la apariencia de un estándar.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48966984,
+    "url": "https://en.andros.dev/blog/0b8e451e/i-joined-the-indieweb-heres-what-i-learned/",
+    "score": 214,
+    "time": 1784459678,
+    "titulo_es": "IndieWeb: Principios, protocolos y la descentralización de la web",
+    "resumen": "El artículo analiza el movimiento IndieWeb, una alternativa descentralizada y centrada en los usuarios frente a las plataformas y redes sociales corporativas ('silos'). Describe los principios fundamentales del movimiento y la necesidad de adoptar estándares abiertos y protocolos ligeros. Se destaca la importancia de poseer un dominio propio como identidad digital principal y de mantener copias canónicas del contenido en servidores bajo control del usuario, reduciendo así la fragilidad de la web y previniendo la pérdida de datos cuando las plataformas corporativas cierran.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48969983,
+    "url": "https://www.hmd.com/en_int/hmd-touch-4g",
+    "score": 82,
+    "time": 1784481903,
+    "titulo_es": "HMD Touch 4G: El Teléfono Híbrido que Difumina las Líneas",
+    "resumen": "El HMD Touch 4G se presenta como un dispositivo híbrido que combina características de teléfonos inteligentes y teléfonos básicos. Destaca por su pantalla táctil, la aplicación Express Chat para mensajería y videollamadas (compatible con usuarios de smartphones), servicio de Cloud Phone para acceso a navegador y entretenimiento, y soporte para redes 4G LTE. A pesar de sus funcionalidades modernas, mantiene la simplicidad y asequibilidad de un teléfono básico. La aplicación Express Chat es gratuita para Android e iOS. El dispositivo se enfoca en la usabilidad, un diseño estilizado y la fiabilidad, posicionándose como una solución innovadora de Human Mobile Devices.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48920597,
+    "url": "https://pgadey.ca/notes/talk-relatorium-2026/",
+    "score": 45,
+    "time": 1784122304,
+    "titulo_es": "Explorando el arte algorítmico a través de figuras de hilo y grupos de trenzas",
+    "resumen": "Este taller presenta una aplicación novedosa de los grupos de trenzas para analizar algoritmos de figuras de hilo, tratándolos como arte algorítmico. Se basa en el Teorema 1 de Birman y Menasco, que investiga los movimientos necesarios para generar todas las figuras de hilo posibles. Los participantes explorarán de forma práctica con hilo real, discutiendo la teoría de trenzas relevante y reflexionando sobre el papel de la notación matemática. Se requiere un bucle de hilo cerrado para la participación.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48920328,
-    "url": "https://supabase.com/blog/searchable-field-level-encryption-with-cipherstash",
-    "score": 37,
-    "time": 1784121001,
-    "titulo_es": "La integración de CipherStash para Supabase ya está disponible",
-    "resumen": "CipherStash ha lanzado una integración con Supabase que introduce el Control de Acceso a Nivel de Datos (DLAC) para bases de datos Postgres. Esta solución permite cifrar campos individuales a nivel de aplicación utilizando claves únicas gestionadas por ZeroKMS, un servicio de administración de claves de conocimiento cero. Gracias a los Metadatos Cifrados Buscables (SEM), Postgres puede realizar búsquedas, ordenamientos y uniones directamente sobre los datos cifrados sin necesidad de descifrarlos en el motor de la base de datos. La integración se realiza mediante un SDK compatible con TypeScript (Supabase.js, Drizzle, Prisma) o a través de CipherStash Proxy para acceso directo vía protocolo Postgres, facilitando el cumplimiento de normativas como GDPR, HIPAA y SOC 2 al reducir la superficie de exposición a brechas de seguridad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48962758,
-    "url": "https://www.neatnik.net/hardcore-indieweb",
-    "score": 167,
-    "time": 1784411112,
-    "titulo_es": "IndieWeb al Extremo",
-    "resumen": "El artículo introduce el concepto de 'Hardcore IndieWeb', una filosofía de publicación web que prioriza el control absoluto y la portabilidad del contenido. El autor propone prescindir de plataformas SaaS, sistemas CMS híbridos y complejos generadores de sitios estáticos, sugiriendo un retorno a las prácticas simplificadas de los años 90: escribir directamente archivos HTML y CSS y subirlos a un servidor web independiente. Este enfoque elimina la dependencia de bases de datos y herramientas de terceros, garantizando que el usuario sea el único dueño de su identidad y datos en la red.",
+    "id": 48860719,
+    "url": "https://cagire.raphaelforment.fr",
+    "score": 100,
+    "time": 1783694733,
+    "titulo_es": "Cagire: Secuenciador de Pasos con Scripts Forth y Motor de Audio Integrado",
+    "resumen": "Cagire es un secuenciador de pasos innovador que utiliza scripts escritos en Forth (y un lenguaje secundario llamado Arf para DSP personalizado) en lugar de datos de notas tradicionales. Cada paso del secuenciador ejecuta un script que puede generar sonido, activar samples, aplicar efectos o no hacer nada, ofreciendo una gran flexibilidad creativa. Incluye un motor de audio propio llamado Doux, con osciladores, reproductores de samples, filtros, reverb, delay y distorsión, eliminando la necesidad de software externo para la generación de sonido. El proyecto fomenta la práctica del live coding, permitiendo la experimentación y expresión en tiempo real. Cagire se distribuye bajo la licencia AGPL-3.0 y cuenta con documentación interactiva integrada y una versión imprimible.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48965161,
-    "url": "https://chipsandcheese.com/p/scrying-the-amd-gfx1250-llvm-tea",
-    "score": 26,
-    "time": 1784437628,
-    "titulo_es": "Descifrando la próxima generación de aceleradores AMD MI400 a través de commits de LLVM",
-    "resumen": "Un análisis técnico de los próximos aceleradores de centro de datos de la serie MI400 de AMD (GFX1250/MI455X para aprendizaje automático y GFX1251/MI430X para HPC) basado en commits recientes de LLVM. El artículo examina cambios significativos en la microarquitectura, incluyendo la unificación de unidades de cómputo en un Procesador de Grupo de Trabajo (WGP) con caché L0 compartida, la transición exclusiva al modo Wave32 (lo que requerirá reevaluar kernels optimizados para Wave64 de CDNA anteriores), la adopción de instrucciones WMMA para IA, y la capacidad de direccionar hasta 1024 registros de propósito general vectoriales (VGPRs) por wave, una mejora drástica en comparación con generaciones previas.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48877124,
-    "url": "https://www.marciot.com/mac68k-visual-catalog/",
-    "score": 43,
-    "time": 1783815734,
-    "titulo_es": "Exploración interactiva de iconos de aplicaciones retro de Macintosh",
-    "resumen": "Una interfaz interactiva que permite explorar aplicaciones clásicas de Macintosh a través de sus iconos. Implementa efectos al pasar el cursor (hover) para revelar metadatos técnicos en tiempo real, como el nombre del archivo, el país de origen, el tipo de archivo y los códigos de creador del Finder (resaltados visualmente en verde), enlazando directamente a los recursos originales en Macintosh Garden.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48892021,
-    "url": "https://mssv.net/2026/04/29/im-making-strandfall-a-solarpunk-orienteering-larp/",
-    "score": 157,
-    "time": 1783947635,
-    "titulo_es": "Strandfall: Fusionando el juego de rol en vivo con hardware de computación espacial a medida",
-    "resumen": "El artículo presenta 'Strandfall', un juego de rol en vivo (larp) de ciencia ficción al aire libre que utiliza dispositivos de hardware personalizados llamados 'McNair-Feldman Devices' (MFD) en lugar de smartphones tradicionales. Estos dispositivos integran radio de largo alcance y bajo consumo para redes en malla (mesh networking), módulo GPS, acelerómetro, brújula y una pantalla de papel electrónico (ePaper), todo ensamblado en una carcasa impresa en 3D y montable en trípode. El autor detalla cómo este hardware específico fomenta mecánicas de exploración y triangulación reales sin romper la inmersión ni generar las distracciones interactivas propias de los teléfonos inteligentes.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48959042,
-    "url": "https://elixir-lang.org/",
-    "score": 231,
-    "time": 1784388724,
-    "titulo_es": "El ecosistema de Elixir: Desarrollo de software concurrente, escalable y tolerante a fallos",
-    "resumen": "Elixir es un lenguaje de programación funcional diseñado para construir aplicaciones robustas y de fácil mantenimiento. Gracias a la máquina virtual de Erlang (BEAM), destaca por su alta concurrencia, tolerancia a fallos e inmutabilidad, lo que permite un escalado tanto vertical como horizontal eficiente. El artículo detalla su ecosistema tecnológico, el cual incluye herramientas clave como Phoenix y LiveView para el desarrollo web en tiempo real, Ecto para la persistencia de datos, Numerical Elixir (Nx) para computación acelerada por GPU, Broadway para procesamiento de eventos a gran escala con contrapresión, y Nerves para sistemas embebidos e IoT.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48959143,
-    "url": "https://tangled.org/gleam.run/gleam",
-    "score": 234,
-    "time": 1784389444,
-    "titulo_es": "Mejoras en el ecosistema de Gleam: Autenticación con Hex y estabilidad de pruebas",
-    "resumen": "El texto detalla cambios técnicos recientes en el lenguaje de programación Gleam. Destaca la implementación de la variable de entorno 'HEXPM_READ_API_KEY' para autenticar peticiones hacia Hex, lo cual eleva el límite de peticiones por IP a un límite por usuario más alto durante la resolución y descarga de dependencias. Asimismo, se describe la solución a pruebas intermitentes ('flaky tests') mediante la ordenación alfabética de módulos y se cierra un 'issue' en su repositorio de GitHub, concluyendo con una invitación al patrocinio de este lenguaje de código abierto.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48964185,
-    "url": "https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3",
-    "score": 210,
-    "time": 1784424559,
-    "titulo_es": "Psicosis de la IA: El fracaso sistemático de los proyectos de IA en el mundo empresarial",
-    "resumen": "El autor describe un estado de 'psicosis colectiva' en corporaciones respecto a la adopción de la Inteligencia Artificial. A través de su experiencia directa liderando compromisos técnicos, afirma que todos los proyectos de IA observados en el último año y medio han fracasado (0% de éxito). Este fracaso se atribuye tanto a la complejidad y novedad de la IA como a las deficiencias estructurales de las empresas para ejecutar proyectos de desarrollo de software tradicionales. Además, denuncia que ejecutivos y organizaciones ocultan estos resultados desfavorables y exageran las ganancias de productividad con fines de relaciones públicas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48964424,
-    "url": "https://airdows.com/",
-    "score": 24,
-    "time": 1784427423,
-    "titulo_es": "Transferencia de Archivos Inalámbrica entre Dispositivos con AirDows",
-    "resumen": "El artículo describe AirDows, una solución para transferir archivos (fotos, videos, documentos, carpetas comprimidas) entre un celular y un PC de forma inalámbrica y sin necesidad de crear cuentas o usar enlaces temporales. La transferencia se realiza directamente entre los dispositivos, manteniendo la calidad original de los archivos (sin recompresión ni reducción de resolución) y la conexión activa solo durante el tiempo necesario para la entrega. El proceso se inicia abriendo AirDows en ambos dispositivos y escaneando un código QR o temporal para unirlos. La velocidad de transferencia depende de las capacidades de ambos dispositivos y de la red. AirDows funciona a través del navegador, sin requerir instalaciones previas.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 48916044,
-    "url": "https://amateurphotographer.com/latest/photo-news/going-going-gone-is-this-the-end-of-the-once-mighty-gopro/",
-    "score": 219,
-    "time": 1784087195,
-    "titulo_es": "¿Se acabó para GoPro? El futuro incierto de las cámaras de acción.",
-    "resumen": "El artículo detalla la crisis financiera que atraviesa GoPro en 2026. La compañía enfrenta una caída significativa en ingresos y unidades vendidas, lo que ha llevado al fundador a inyectar fondos propios y a buscar desesperadamente un comprador. A pesar de innovaciones como la línea Pro de cámaras de acción y exploraciones en mercados aeroespaciales, GoPro compite con rivales como Insta360 y ha perdido una batalla de patentes. La empresa está en proceso de reestructuración y despidos, sugiriendo una posible adquisición. El artículo analiza la salud de la marca GoPro en el contexto del mercado de hardware fotográfico.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48964215,
-    "url": "https://github.com/vercel-labs/deepsec",
-    "score": 33,
-    "time": 1784424812,
-    "titulo_es": "DeepSesc: Escáner de Vulnerabilidades con Agentes de IA para Repositorios a Gran Escala",
-    "resumen": "DeepSesc es un escáner de vulnerabilidades avanzado que utiliza agentes de IA para realizar revisiones bajo demanda de código en repositorios de gran escala. Está optimizado para identificar problemas de seguridad difíciles de detectar que han permanecido ocultos durante mucho tiempo. El sistema utiliza modelos de IA de alto rendimiento (configurables mediante --thinking-level) que pueden generar costos significativos para bases de código extensas, aunque los clientes consideran que el valor de la rápida corrección de vulnerabilidades justifica la inversión. Para manejar grandes volúmenes de código, el trabajo se distribuye en paralelo a través de múltiples máquinas (workers). DeepSesc es tolerante a fallos, reanudando automáticamente el análisis donde se interrumpió, omitiendo los archivos ya procesados. La configuración implica el uso de un agente de codificación para arrancar la instalación, leer la documentación específica de la herramienta (SKILL.md, SETUP.md) y luego refinar la configuración (INFO.md) centrándose en primitivas específicas del proyecto y evitando categorías genéricas. Para escaneos a gran escala, se recomienda el uso de Vercel AI Gateway para gestionar las suscripciones a modelos como Claude y Codex, que proporcionan cuotas adecuadas para investigaciones extensas y alta concurrencia. Alternativamente, se pueden configurar explícitamente los tokens de autenticación para Anthropic o OpenAI. DeepSesc puede ejecutarse en entornos de sandbox como Vercel Sandbox microVMs para limitar la exposición a la inyección de prompts, especialmente cuando se manejan entradas externas o código de terceros. Se considera una herramienta de seguridad potente, similar a un agente de codificación con acceso completo al shell, diseñada para operar sobre código fuente de confianza.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48960607,
-    "url": "https://reotrucks.com",
-    "score": 90,
-    "time": 1784398385,
-    "titulo_es": "REO Runabout: El nuevo camión asequible de Estados Unidos",
-    "resumen": "El artículo presenta el REO Runabout, un nuevo camión de producción estadounidense diseñado para ser asequible, fiable y fácil de reparar. Utiliza una arquitectura de carrocería sobre bastidor con tracción mecánica 4WD y un motor de gasolina I4. El objetivo es ofrecer un vehículo duradero con un tren motriz que supere las 500.000 millas, un diseño centrado en la reparabilidad por parte del propietario (con diagnóstico simplificado y piezas accesibles) y una venta directa online para evitar los márgenes de los concesionarios. Se posiciona como una alternativa asequible y práctica a otros camiones del mercado, destacando su simplicidad mecánica, bajos costes de mantenimiento y un proceso de reserva transparente. La producción está prevista para empezar en 2026, con entregas a partir de 2028.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48961157,
-    "url": "https://minimaxir.com/2026/07/agent-quota-reset/",
+    "id": 48907564,
+    "url": "https://www.korg.co.uk/blogs/updates/ps3300",
     "score": 55,
-    "time": 1784401583,
-    "titulo_es": "La Frecuencia de Reseteos de Cuota de Modelos de Lenguaje Grandes Genera Frustración",
-    "resumen": "El artículo describe la experiencia de un usuario con las cuotas de uso de modelos de lenguaje grandes (LLMs) como Claude Code y Codex. Se explica que estas cuotas (horarias y semanales) están diseñadas para gestionar la carga del servidor y la retención de clientes. Recientemente, debido al lanzamiento de modelos más potentes como Fable 5 y GPT-5.6, los proveedores como Anthropic y OpenAI han aumentado la frecuencia de los reseteos de cuota semanales, a menudo de forma no anunciada. El autor se queja de que estos reseteos frecuentes, que a menudo ocurren cuando aún tiene cuota restante, provocan una sensación de \"desperdicio\" de dinero y molestia, obligándole a buscar activamente nuevas formas de consumir la cuota para no perder el valor. Se menciona la falta de puntos finales para monitorizar programáticamente el uso de la cuota y los tiempos de reseteo, lo que dificulta la optimización del uso. La imprevisibilidad y la comunicación deficiente sobre estos reseteos, a pesar de ser \"regalos\", generan frustración en lugar de la anticipación esperada.",
-    "categoria": "IA"
+    "time": 1784039612,
+    "titulo_es": "Korg PS-3300: El Regreso Legendario de un Sintetizador Analógico",
+    "resumen": "El artículo describe el renacimiento del sintetizador analógico Korg PS-3300, una pieza legendaria de la historia de la música producida originalmente entre 1977 y 1981. El PS-3300 original, con menos de 50 unidades fabricadas, es extremadamente raro y buscado. La nueva versión es una reproducción fiel, desarrollada en colaboración con el creador original, Fumio Mieda, y el equipo de Korg conocido por revivals como el ARP 2600 FS y el miniKORG 700FS. La producción se realiza en Japón con atención al detalle y artesanía manual, utilizando componentes modernos donde los originales no están disponibles, pero preservando el sonido característico. El proceso de compra es estructurado e incluye registro de interés, confirmación de registro, notificación de disponibilidad y orden de compra por orden de llegada, con disponibilidad limitada en el Reino Unido. El artículo destaca la importancia histórica del PS-3300 como un instrumento analógico polifónico completo y su impacto en artistas como Keith Emerson y Kraftwerk, enfatizando que la nueva versión no es solo una réplica, sino una obra maestra que captura el espíritu del original con confiabilidad moderna.",
+    "categoria": "Hardware"
   },
   {
-    "id": 48916541,
-    "url": "https://magworld.pw",
-    "score": 29,
-    "time": 1784092435,
-    "titulo_es": "Mag World: Un Nuevo Sentido de la Escala",
-    "resumen": "El artículo presenta Mag World, un proyecto enfocado en desarrollar una comprensión intuitiva de la magnitud de los números, yendo más allá de 'más grande' o 'más pequeño' para cuantificar la diferencia. Utiliza una notación simplificada para los números que prioriza la magnitud, aplicándola para ofrecer perspectiva sobre diversos temas. Se destaca la existencia de un podcast relacionado y la disponibilidad de un plugin para navegadores (Firefox y Chrome) que permite convertir números y unidades en páginas web a la notación Mag World, facilitando la comparación visual de magnitudes (ej: \"10 millones de kWh\" se convierte en \"↑13.6 joules\").",
+    "id": 48971938,
+    "url": "https://spectrum.ieee.org/biggest-probabilistic-computer",
+    "score": 73,
+    "time": 1784497332,
+    "titulo_es": "Nueva máquina podría resolver problemas de optimización demasiado difíciles para computadoras normales",
+    "resumen": "El artículo describe la creación de la computadora probabilística más grande hasta la fecha, equipada con 1 millón de bits probabilísticos (p-bits) distribuidos en 18 FPGAs (Field-Programmable Gate Arrays). A diferencia de los bits tradicionales (0 o 1) y los qubits cuánticos (superposiciones), los p-bits fluctúan entre 0 y 1 con una probabilidad configurable. Esta arquitectura permite abordar problemas estocásticos, como la optimización, que son computacionalmente intensivos para las computadoras convencionales. Una innovación clave es que la máquina opera sin sincronización global, lo que facilita su escalabilidad. La implementación se basa en FPGAs reconfigurables, ofreciendo una solución programable y general para este tipo de problemas, potencialmente superando desafíos asociados con la computación cuántica.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48911021,
+    "url": "https://www.blender.org/download/releases/5-2/",
+    "score": 400,
+    "time": 1784053367,
+    "titulo_es": "Blender 5.2 LTS: Nuevas características en Geometría Nodos y Simulación Procedural",
+    "resumen": "Blender 5.2 LTS introduce importantes avances en su sistema de Geometría Nodos y simulación procedural, destacando la capacidad de utilizar archivos de audio para animar y simular geometría a través del nodo 'Sample Sound Frequencies' y el nuevo 'Sound Socket'. Se ha añadido un nodo 'Mesh Bevel' para control detallado de bordes y vértices en operaciones de chaflán procedural. Las simulaciones de física para cabello y tela han sido reimaginadas con un enfoque basado en nodos, utilizando el nuevo nodo 'XPBD Solver'. Esto permite comportamientos similares a la tela y física de cabello con controles para fijación, desgarro, elasticidad y colisión, incluyendo un nuevo modificador basado en nodos y la automatización con el operador de cabello 'Empty'. El sistema de dinámicas de nodos incluye 'Effectors' personalizables para gravedad y colisiones, con un modificador 'Collider' y la opción de usar 'Collider effector bundles' para configuraciones procedurales. Un sistema de etiquetado y filtrado ('Tag&Filter') permite especificar qué geometrías son afectadas por los effectors. La gestión de datos entre modificadores y objetos se potencia con los nuevos nodos 'Get Geometry Bundle' y 'Set Geometry Bundle' que utilizan el concepto de 'bundles' introducido en Blender 5.0. En cuanto a rendimiento, el nuevo 'Texture Cache' optimiza el uso de memoria y reduce el tiempo de carga de escenas con múltiples texturas de imagen, generando archivos '.tx' optimizados. Finalmente, el nodo 'Principled BSDF' ahora incluye el modo 'Thin Wall' para renderizar materiales delgados y físicamente precisos como papel u hojas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 48971566,
+    "url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
+    "score": 79,
+    "time": 1784494242,
+    "titulo_es": "Avance en la emulación: Se lanza un emulador de Intel Itanium (IA-64) que ejecuta Windows",
+    "resumen": "Se ha liberado la versión 0.1 de un emulador de Intel Itanium (IA-64) desarrollado por Yufeng Gao y gdwnldsKSC. Este emulador es capaz de ejecutar versiones de Windows Server 2003 y Windows XP 64-bit para Itanium. Aunque el rendimiento es limitado (aproximadamente a nivel de un 486 en hardware moderno), el logro técnico reside en la capacidad de emular esta arquitectura no x86 y hacerla funcionar con sistemas operativos de Windows. Actualmente, no puede ejecutar distribuciones como OpenVMS, HP-UX, Linux o BSD. El código fuente no es de código abierto por el momento, pero se planea su publicación en GitHub tras una limpieza. Existe un fork de QEMU mencionado que también podría ejecutar Server 2008, desarrollado parcialmente con LLMs. La arquitectura Itanium fue un intento de Intel de entrar en el mercado de servidores de alto rendimiento, pero finalmente tuvo una adopción limitada, siendo principalmente utilizada por HP-UX y OpenVMS en sus últimas etapas.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 48968701,
+    "url": "https://www.onepercentbrighter.com/p/natural-experiments-prove-feeding",
+    "score": 66,
+    "time": 1784472717,
+    "titulo_es": "Fertilización oceánica natural para la eliminación de CO2",
+    "resumen": "El artículo explora la idea de agregar nutrientes al océano para estimular el crecimiento de fitoplancton, el cual a su vez absorbe dióxido de carbono de la atmósfera. Contrario a la intuición inicial, esta práctica está bien documentada por fenómenos naturales. Volcanes, incendios forestales, polvo transportado por el viento (del Sahara, Gobi, Patagonia), icebergs e incluso las ballenas liberan nutrientes (principalmente hierro, a veces nitrógeno o fósforo) en aguas oceánicas pobres en nutrientes. La observación satelital de color oceánico durante más de veinte años y expediciones de investigación han proporcionado datos precisos sobre la relación causa-efecto: la adición de nutrientes provoca un aumento en la proliferación de fitoplancton, que absorbe CO2, y este efecto desaparece al cesar la fuente de nutrientes. Se citan ejemplos específicos como los respiraderos submarinos cerca de Tonga, que alimentan floraciones de fitoplancton del tamaño de Alemania, y la influencia del polvo desértico en diversas cuencas oceánicas. La evidencia es sólida, demostrando que cuando el agua superficial con luz solar pero deficiente en nutrientes recibe estos elementos, el fitoplancton se multiplica, secuestrando carbono. La intensidad de estas floraciones puede correlacionarse incluso con eventos geológicos como terremotos cerca de dorsales volcánicas. El polvo transportado por el viento se identifica como el sistema de entrega de fertilizantes naturales más conocido y extenso.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48962429,
-    "url": "https://arxiv.org/abs/2607.09211",
-    "score": 74,
-    "time": 1784408941,
-    "titulo_es": "arXivLabs: Un Framework para el Desarrollo Colaborativo de Nuevas Funcionalidades en arXiv",
-    "resumen": "El artículo describe arXivLabs, un framework diseñado para facilitar el desarrollo y la integración de nuevas funcionalidades en el sitio web de arXiv. Este marco promueve la colaboración entre individuos y organizaciones, enfatizando los valores de apertura, comunidad, excelencia y privacidad de datos del usuario. arXiv se compromete a trabajar únicamente con socios que compartan y respeten estos principios. Se invita a los interesados con ideas para mejorar la experiencia de la comunidad de arXiv a explorar más sobre arXivLabs.",
+    "id": 48962600,
+    "url": "https://github.com/JuliaLang/julia/pull/62334",
+    "score": 96,
+    "time": 1784410118,
+    "titulo_es": "Introducción de UnifiedIR: Una nueva estructura de datos IR extensible para el compilador Julia",
+    "resumen": "El artículo describe la introducción de UnifiedIR, un nuevo paquete de nivel superior en el compilador Julia que proporciona estructuras de datos y operaciones IR (Intermediate Representation) autocontenidas y extensibles. Las estructuras IR actuales, de aproximadamente 10 años, presentan dificultades de uso, poca extensibilidad para nuevos casos de uso y no fueron diseñadas para ser expuestas externamente. UnifiedIR aborda estos problemas ofreciendo una representación IR basada en regiones y consciente del dialecto (similar a MLIR) pero que conserva aspectos del diseño original de Julia. Incluye una estructura de datos central eficiente con la posibilidad de añadir columnas adicionales y vistas en capas para diferentes aplicaciones. Las características principales son el soporte de primera clase para regiones y extensiones de dialecto. La PR actualiza la inferencia, el optimizador y JuliaLowering para usar la nueva estructura, con el objetivo de reemplazar estructuras de datos existentes como las IRs de la base de Julia, JuliaLowering y el IR del optimizador. Se confirma que el control de flujo estructurado está implementado en la representación.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48964243,
-    "url": "https://github.com/gruns/icecream",
-    "score": 21,
-    "time": 1784425144,
-    "titulo_es": "IceCream: Depuración de código Python mejorada",
-    "resumen": "El artículo describe IceCream (ic), una librería para Python que mejora la depuración de código mediante la sustitución de las sentencias `print()` o `log()`. `ic()` proporciona información detallada sobre las variables y expresiones evaluadas, incluyendo su nombre, valor y contexto de ejecución (nombre de archivo, número de línea, función contenedora). Permite la inserción sencilla en código existente, la desactivación/re-activación de la depuración, la instalación global para evitar importaciones en cada archivo, y una importación segura para entornos de producción. Ofrece amplias opciones de configuración para personalizar el prefijo de salida, la función de salida, la serialización de argumentos (con integración para tipos personalizados) y el formato del contexto de ejecución (rutas absolutas vs. relativas). Se menciona la posibilidad de integrar IceCream con módulos de logging y se solicita feedback sobre la adición de soporte nativo para niveles de log.",
+    "id": 48973541,
+    "url": "https://blainehansen.me/post/llms-not-power-tools/",
+    "score": 19,
+    "time": 1784512079,
+    "titulo_es": "Las Metáforas Incorrectas para los LLMs: Por Qué la Delegación es un Mejor Enfoque",
+    "resumen": "El artículo argumenta en contra de las metáforas comunes de que los Modelos de Lenguaje Grandes (LLMs) son como compiladores o herramientas eléctricas. Sostiene que estas herramientas están diseñadas para ser predecibles y deterministicas, mientras que los LLMs, al interactuar a través del lenguaje natural, son inherentemente estocásticos e impredecibles. La metáfora más apropiada, aunque imperfecta, es la delegación de trabajo a un agente humano. El autor enfatiza la naturaleza peculiar y la falta de control preciso sobre los LLMs, comparándolos con entidades estocásticas en lugar de máquinas deterministas. El lenguaje natural se presenta como la interfaz de último recurso, siendo general pero ambiguo, y los métodos más precisos como diagramas y ecuaciones matemáticas son preferibles para operaciones que requieren exactitud. El artículo critica el diálogo actual sobre los LLMs por ser simplista y erróneo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 48965850,
+    "url": "https://github.com/openai/codex/pull/33972/files",
+    "score": 347,
+    "time": 1784447679,
+    "titulo_es": "Manejo de errores y feedback en GitHub",
+    "resumen": "El artículo describe la gestión de feedback de usuarios y errores encontrados durante la carga de contenido en una plataforma, específicamente GitHub. Menciona la revisión exhaustiva de comentarios, la disponibilidad de calificadores documentados, y los pasos para reportar problemas mediante la creación de una cuenta en GitHub, abriendo incidencias y contactando a los mantenedores y la comunidad. Se hace hincapié en los términos de servicio y la política de privacidad de GitHub, así como en las comunicaciones por correo electrónico relacionadas con la cuenta.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48958854,
-    "url": "https://q3edit.com",
-    "score": 85,
-    "time": 1784387560,
-    "titulo_es": "Editor de archivos .map en TypeScript + WebGL2 con compilación BSP en WebAssembly y lanzamiento en ioquake3",
-    "resumen": "El artículo describe un editor de mapas avanzado que permite abrir, editar y guardar archivos .map en tiempo real, incluyendo elementos como brushes, patches, entidades y terreno. Utiliza TypeScript y WebGL2 para la interfaz gráfica y la manipulación del contenido. La compilación de mapas se realiza mediante q3map de id Software, adaptado a WebAssembly, lo que permite una ejecución eficiente en el navegador. Una vez compilado, el mapa se puede lanzar y experimentar directamente en el navegador a través de ioquake3, una implementación nativa del motor de juego.",
-    "categoria": "Frontend"
+    "id": 48891334,
+    "url": "https://land-atlas-production.up.railway.app/welcome",
+    "score": 67,
+    "time": 1783943912,
+    "titulo_es": "Land Atlas: Análisis de Parcelas de Tierra para Agricultura con Datos Gubernamentales",
+    "resumen": "Land Atlas es una plataforma de software que automatiza la captura y el análisis de listados de parcelas de tierra disponibles en mercados en línea. Utiliza datos gubernamentales de alta calidad (USDA, FEMA, inventarios nacionales) para evaluar la calidad del suelo (promedio ponderado por área), registros climáticos de diez años, zonas de inundación, humedales y proximidad a la red eléctrica. Proporciona una 'puntuación de cultivabilidad' (farmability score) basada en estos factores, así como un ranking de cultivos adecuados para las condiciones específicas de la parcela (pH, drenaje, ventana de heladas, perfil de calor). La herramienta también incluye análisis de riesgo de inundación y humedales, datos de acceso a la red (subestaciones, líneas de transmisión, carreteras) y comparativas de precios por acre frente a listados similares. Permite agrupar parcelas en proyectos, exportar datos a CSV e imprimir informes detallados. La funcionalidad principal se activa mediante un botón de captura en el navegador, que importa automáticamente información del listado y realiza el análisis en segundo plano, accesible tanto en escritorio como en dispositivos móviles.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 48907063,
-    "url": "https://parksb.github.io/en/article/41.html",
-    "score": 217,
-    "time": 1784037756,
-    "titulo_es": "Reviviendo un Netbook de 2009 con Arch Linux 32",
-    "resumen": "El artículo detalla la experiencia de un usuario al intentar reutilizar un netbook ASUS Eee PC 1000HE de 2009, equipado con un procesador Intel Atom N280 y 1GB de RAM. Ante la lentitud del sistema operativo original (Windows XP), se decidió buscar una alternativa más ligera. Tras descartar distribuciones Linux más pesadas por los limitados recursos de hardware, se optó por Arch Linux 32, una versión mantenida por la comunidad ya que el soporte oficial de Arch Linux para arquitecturas de 32 bits (x86) finalizó en 2017, y el procesador del netbook solo soporta 32 bits. El proceso de instalación, aunque basado en la guía oficial de ArchWiki, presentó desafíos debido al bajo rendimiento del hardware. El artículo describe los pasos iniciales, incluyendo la descarga y verificación de la imagen ISO de Arch Linux 32, la creación del medio de arranque USB usando Rufus, y la configuración del BIOS para arrancar desde el USB, culminando con la preparación para la instalación en el hardware obsoleto.",
+    "id": 48966769,
+    "url": "https://sgt.hootr.club/blog/home-server-rebirth/",
+    "score": 134,
+    "time": 1784457871,
+    "titulo_es": "Fallo de tarjeta microSD en Raspberry Pi 4B y reconstrucción del servidor doméstico con NixOS",
+    "resumen": "El autor relata el fallo de su tarjeta microSD en una Raspberry Pi 4B tras años de funcionamiento 24/7, probablemente exacerbado por un apagón eléctrico. Tras inspeccionar y confirmar el daño de la tarjeta, que actuaba como sistema de archivos raíz (/) y no contaba con precauciones para minimizar escrituras, el autor decidió reconstruir su servidor doméstico. Se enfoca en optimizar la longevidad de la tarjeta microSD y mejorar el rendimiento mediante la implementación de zram para swap y el registro de journald en memoria en lugar de disco. Se menciona la desactivación de atime como medida adicional para reducir escrituras en la microSD.",
     "categoria": "Distribuciones Linux"
   },
   {
-    "id": 48964536,
-    "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
-    "score": 85,
-    "time": 1784428822,
-    "titulo_es": "Lipfendra (enlicitide): Primera terapia oral inhibidora de PCSK9 aprobada para la hipercolesterolemia",
-    "resumen": "La FDA ha aprobado Lipfendra (enlicitide), el primer inhibidor oral de proproteína convertasa subtilisina/kexina tipo 9 (PCSK9) para adultos con hipercolesterolemia. Este medicamento se administra en una tableta oral una vez al día y actúa como un complemento a la dieta y el ejercicio para reducir el colesterol de lipoproteínas de baja densidad (LDL-C) o \"colesterol malo\". Es una opción adicional de tratamiento para pacientes que necesitan una mayor reducción del LDL-C a pesar de las terapias existentes, especialmente para aquellos con hipercolesterolemia familiar heterocigota (HeFH). La aprobación se basa en dos ensayos clínicos aleatorizados y controlados con placebo que demostraron reducciones significativas en el LDL-C. Los efectos adversos fueron comparables entre el grupo de tratamiento y el placebo, siendo la diarrea y el mareo los más frecuentes en el segundo ensayo. Este avance representa un progreso en el manejo de enfermedades cardiovasculares crónicas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 48959297,
-    "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
-    "score": 77,
-    "time": 1784390565,
-    "titulo_es": "Enfoque de Isomorphic Labs y Google DeepMind para la Bioresiliencia Global con IA",
-    "resumen": "El artículo describe el enfoque conjunto de Google DeepMind e Isomorphic Labs para mejorar la bioresiliencia global, utilizando Inteligencia Artificial (IA) de vanguardia para prevenir el mal uso de modelos de IA, detectar brotes de enfermedades de forma temprana y acelerar la respuesta. Se destacan avances como AlphaFold, el Motor de Diseño de Fármacos de Isomorphic Labs (IsoDDE) y AlphaGenome, que permiten un diseño proactivo de defensas, el descubrimiento acelerado de terapias y la salvaguarda del ecosistema de salud global. La colaboración se centra en tres áreas clave: prevención, detección y respuesta, ofreciendo acceso a modelos y agentes de IA a socios de confianza. Se implementa un proceso de seguridad de cuatro pasos (modelado de amenazas, evaluaciones, mitigaciones y monitoreo) para garantizar el uso seguro de los modelos. Ejemplos concretos incluyen la optimización de algoritmos de secuenciación genómica para la vigilancia de patógenos (AlphaEvolve), la caracterización de patógenos mediante AlphaGenome y anotación de función de proteínas, y el acceso a sistemas de IA para acelerar el diseño de vacunas y contramedidas. Isomorphic Labs también ha establecido una unidad para desplegar su motor de diseño de fármacos en respuesta a brotes y riesgos de mal uso de IA, colaborando con gobiernos y autoridades de salud para desarrollar estrategias diagnósticas y terapéuticas.",
+    "id": 48963879,
+    "url": "https://workshop.cjpais.com/projects/transcribe-cpp",
+    "score": 744,
+    "time": 1784421506,
+    "titulo_es": "transcribe.cpp: Una biblioteca de transcripción de voz acelerada por GPU basada en ggml",
+    "resumen": "transcribe.cpp es una biblioteca de transcripción de voz de código abierto escrita en C/C++ que utiliza ggml para inferencia de modelos. Está diseñada para ser una solución de transcripción de voz local, multiplataforma y de alto rendimiento, con énfasis en la aceleración por GPU a través de Vulkan. La biblioteca se diferencia por su rigurosa validación numérica y pruebas de Tasa de Error de Palabra (WER) para garantizar la precisión en comparación con las implementaciones de referencia, abordando las preocupaciones sobre la fiabilidad de las bibliotecas de terceros. Está concebida como un reemplazo directo para whisper.cpp, manteniendo la compatibilidad con los modelos .bin existentes, pero ampliando el soporte a una gama más amplia de modelos de transcripción de vanguardia. Los objetivos clave incluyen la facilidad de incrustación en aplicaciones existentes, el rendimiento multiplataforma (Mac, Windows, Linux) y la minimización de dependencias pesadas como PyTorch. El autor, que también mantiene la aplicación Handy, destaca las dificultades de distribuir aplicaciones de reconocimiento de voz (ASR) multiplataforma y posiciona transcribe.cpp como una solución confiable y eficiente, con planes de añadir más modelos y mejorar las vinculaciones de lenguaje.",
     "categoria": "IA"
-  },
-  {
-    "id": 48963483,
-    "url": "https://github.com/lopopolo/harness-engineering",
-    "score": 63,
-    "time": 1784417256,
-    "titulo_es": "Ingeniería de Arneses: Mejorando la Salida de Agentes con el Contexto y Herramientas del Entorno",
-    "resumen": "El artículo describe la ingeniería de arneses (harness engineering), una práctica centrada en mejorar el rendimiento de agentes (modelos de IA o agentes de codificación) mediante la configuración de su entorno externo. En lugar de modificar el modelo o el agente en sí (tratados como cajas negras), se enfoca en optimizar las entradas externas: el contexto y las herramientas. El objetivo es que el agente pueda recuperar la intención, operar sistemas reales, respetar la autoridad, probar resultados y mejorar ejecuciones futuras. El entorno del arnés se encarga de incorporar los requisitos no funcionales de una organización (fiabilidad, seguridad, mantenibilidad, etc.) y las decisiones locales sobre cómo priorizarlos y satisfacerlos. Se propone que el repositorio de código actúe como una fuente de contexto, ejemplos, herramientas y restricciones ejecutables, haciendo que el conocimiento organizacional sea recuperable y acumulativo a lo largo del tiempo a través de un ciclo de retroalimentación. La ingeniería de arneses es el trabajo de \"última milla\" para hacer que estos datos privados y cambiantes del proceso organizacional (estado operativo, ontología local, calidad, procedimientos, historial de excepciones, relaciones de autoridad) sean accesibles para un agente capaz.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48954851,
-    "url": "https://maurycyz.com/projects/bad_jpeg/",
-    "score": 677,
-    "time": 1784344460,
-    "titulo_es": "Manipulación de Escaneos JPEG para Renderizado Progresivo y Animaciones",
-    "resumen": "El artículo explora las características avanzadas de los archivos JPEG, específicamente el guardado de componentes de baja frecuencia primero para permitir la visualización progresiva de imágenes a baja resolución mientras se descargan. Detalla cómo los 'scans' (escaneos) dentro de un archivo JPEG se utilizan para construir la imagen de manera incremental. Se discute la separación de los canales de color (YCbCr) y su impacto en la calidad y el tamaño del archivo, notando que la crominancia se puede guardar a menor resolución. El texto se adentra en la técnica de concatenar múltiples archivos JPEG, omitiendo marcadores de inicio y fin, para crear efectos de animación o secuencias de imágenes al ser servidos sobre redes lentas. Se abordan las limitaciones de los decodificadores JPEG estándar que suelen detenerse después de un número limitado de escaneos (posiblemente para prevenir ataques de tipo 'zip bomb'). Se propone una solución para crear animaciones más extensas mediante la construcción de JPEGs 'DC-only' (solo datos de baja frecuencia) en modo progresivo, lo que permite hasta ~90 frames renderizados en navegadores comunes antes de que el decodificador falle. Se destaca que esta técnica evita el 'ghosting' inherente al refinar datos AC sobre datos ya renderizados. Finalmente, se menciona la posibilidad de empaquetar videos completos dentro de un solo archivo de imagen, aunque sin información de temporización intrínseca, y se presentan ejemplos interactivos y de renderizado parcial como demostraciones de estas técnicas.",
-    "categoria": "Frontend"
   }
 ]
