@@ -1,308 +1,326 @@
 [
   {
+    "id": 49056112,
+    "url": "https://astral.sh/blog/ruff-v0.16.0",
+    "score": 38,
+    "time": 1785056499,
+    "titulo_es": "¡Ruff v0.16.0 ya está disponible!",
+    "resumen": "Se ha lanzado la versión 0.16.0 de Ruff, el linter y formateador ultrarrápido para Python escrito en Rust. Esta actualización incluye cambios significativos, como la activación de 413 reglas por defecto (frente a las 59 anteriores) para detectar errores sintácticos y de tiempo de ejecución sin configuración previa. Además, introduce la capacidad de formatear bloques de código Python embebidos en archivos Markdown y cuadernos Quarto, y añade un sistema mejorado de comentarios de supresión (como ruff: ignore y ruff: file-ignore) con soporte para razones documentadas y nombres de reglas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49047453,
+    "url": "https://refp.se/articles/your-shell-and-the-magic-colon",
+    "score": 203,
+    "time": 1784986429,
+    "titulo_es": "El operador de dos puntos en Shell: trucos con el comando nulo",
+    "resumen": "El artículo explora el uso del comando nulo (:) en scripts de shell en combinación con la expansión de parámetros. Explica cómo simplificar estructuras condicionales extensas 'if' en una sola línea utilizando sintaxis como ${variable:?diagnóstico} para validar argumentos obligatorios o ${variable:=valor} para asignaciones por defecto, evitando la ejecución accidental del resultado como un comando independiente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49054107,
+    "url": "https://blog.ktz.me/esp32-plane-radar/",
+    "score": 153,
+    "time": 1785033343,
+    "titulo_es": "Radar de aviones en tiempo real con ESP32-C3 y pantalla redonda",
+    "resumen": "El artículo describe el desarrollo y optimización de un radar de aviación en tiempo real basado en un microcontrolador ESP32-C3 y una pantalla redonda de 1,28 pulgadas. El autor abarca desde el ensamblaje de hardware y soldadura hasta el flasheo mediante ESPHome y el ajuste de tolerancias para impresión 3D. Además, detalla mejoras sustanciales en el firmware y la interfaz web, como la inclusión de datos meteorológicos, origen y destino de vuelos, configuración de coordenadas sin reiniciar Wi-Fi y soporte para actualizaciones OTA autenticadas.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49051361,
+    "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+    "score": 338,
+    "time": 1785012155,
+    "titulo_es": "Eliminamos más del 80% del prompt de sistema de Claude Code para modelos avanzados",
+    "resumen": "El artículo explica cómo la evolución de los nuevos modelos de lenguaje (como Claude Opus 5 y Fable 5) permitió reducir más del 80% del prompt de sistema en Claude Code sin sacrificar rendimiento. Anteriormente, los modelos requerían reglas rígidas y sobrerestricciones para evitar errores, lo que generaba mensajes contradictorios y limitaba la exploración. Con los modelos más recientes, las buenas prácticas de ingeniería de contexto sugieren eliminar guardarraíles innecesarios y permitir que el modelo aplique su propio criterio basándose en el contexto del código existente, herramientas y memoria compartida.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49034777,
+    "url": "https://tangled.org/oppi.li/stinkpot",
+    "score": 65,
+    "time": 1784897072,
+    "titulo_es": "Optimización de consultas SQLite mediante índices de cobertura para acelerar búsquedas inversas",
+    "resumen": "El fragmento describe una mejora técnica de rendimiento en un sistema de desarrollo de software. Específicamente, se optimizó el plan de ejecución de SQLite al reemplazar el uso de árboles B temporales por un índice de cobertura (covering index) en la cláusula 'ORDER BY', lo que acelera las operaciones de búsqueda inversa. También menciona configuraciones de URLs de clonación para nodos autoalojados.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49053375,
+    "url": "https://huggingface.co/owensong/Inflect-Micro-v2",
+    "score": 135,
+    "time": 1785026190,
+    "titulo_es": "Síntesis de voz local completa de texto a forma de onda con menos de 10M de parámetros",
+    "resumen": "Inflect v2 es un sistema de síntesis de texto a voz (TTS) ultracompacto que genera audio de 24 kHz mono directamente a partir de texto, diseñado para ejecutarse localmente en CPU o CUDA. Cuenta con dos tamaños: Micro (<10M de parámetros, 37.53 MB en FP32) y Nano (<4M). Destaca por su rendimiento más rápido que el tiempo real en CPU, uso de semillas deterministas y manejo de texto largo. El artículo presenta una evaluación técnica rigurosa que abarca métricas de preferencia humana (66.2% de victorias en pruebas), naturalidad predicha (UTMOS22 de 4.395) e inteligibilidad ASR medida con Qwen3-ASR, Nemotron 3.5 y Whisper.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49005197,
+    "url": "https://powerfulpython.com/blog/overloaded-overloading/",
+    "score": 15,
+    "time": 1784720670,
+    "titulo_es": "Si Python no admite la sobrecarga, ¿cómo funciona el operador '+' que sirve para sumar o concatenar?",
+    "resumen": "El artículo explica la diferencia entre la sobrecarga de métodos y la sobrecarga de operadores en Python. Aunque Python no permite definir múltiples versiones de un mismo método (sobrecarga de métodos), sí soporta la sobrecarga de operadores utilizando métodos mágicos (dunder) como `__add__`. Esto permite que clases personalizadas y tipos nativos definan cómo actúa el operador '+'. Además, expone cómo simular la sobrecarga de métodos mediante lógica de despacho con `isinstance()` o utilizando el decorador `@singledispatch` del módulo `functools`.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49052564,
+    "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+    "score": 124,
+    "time": 1785019849,
+    "titulo_es": "Día de la Independencia del Contenido: Clasificación y gestión del tráfico de IA con mayor precisión",
+    "resumen": "El artículo analiza la evolución de la postura de Cloudflare sobre la gestión de bots y crawlers de IA un año después de lanzar su opción de bloqueo en un solo clic. Dado que las búsquedas web están evolucionando hacia motores de respuestas completas y el uso de IA se diversifica, Cloudflare propone una nueva taxonomía de clasificación técnica centrada en el comportamiento y propósito del bot en lugar de un bloqueo masivo. Se establecen tres casos de uso principales para categorizar y gestionar el tráfico: indexación de búsqueda, agentes de IA y entrenamiento de modelos, exigiendo a los operadores separar sus crawlers para ofrecer transparencia y control granular a los propietarios de sitios web.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49053708,
+    "url": "https://www.seti.org/news/alien-world-chemistry-found-inside-meteorite/",
+    "score": 71,
+    "time": 1785029703,
+    "titulo_es": "Fragmentos del meteorito de Hillsborough revelan alteración por fluidos salinos en asteroides primitivos",
+    "resumen": "Un análisis de los fragmentos del meteorito caído en Hillsborough, Nueva Jersey, en julio de 2024, determinó que pertenece a una clasificación intermedia poco común de condrita carbonácea (CM1/2). El estudio forense reveló que las muestras contienen evidencia de exposición a fluidos salinos concentrados cerca de la superficie de un asteroide primitivo. Gracias a la rápida conservación de los fragmentos por parte del residente, la NASA y el Instituto SETI obtuvieron uno de los especímenes de condrita CM1/2 más prístinos conocidos hasta la fecha.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 48997828,
+    "url": "https://jvns.ca/blog/2026/07/21/more-nice-django-things/",
+    "score": 42,
+    "time": 1784665822,
+    "titulo_es": "Desarrollo web al estilo de los años 2010: Características clave de Django y reflexiones",
+    "resumen": "El autor analiza su transición hacia el desarrollo web centrado en backend utilizando Django para construir aplicaciones multipágina con minima dependencia de JavaScript. Destaca ventajas arquitectónicas y de desarrollo como la legibilidad y modularidad de los QuerySets para consultas SQL, la utilidad de filtros de plantillas como 'querystring' para manipular el estado de la URL, y la eficiencia del sistema de migraciones automáticas de base de datos. Asimismo, comparte una lección sobre el diseño de código: prefiere el uso de vistas basadas en funciones en lugar de vistas basadas en clases e herencia, argumentando una mayor simplicidad y mantenibilidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49024980,
+    "url": "https://www.law.uchicago.edu/news/ai-strategy-statement",
+    "score": 78,
+    "time": 1784826768,
+    "titulo_es": "La educación jurídica en la era de la Inteligencia Artificial",
+    "resumen": "La Facultad de Derecho de la Universidad de Chicago presenta su estrategia para adaptar la educación legal ante el avance de la inteligencia artificial. Tras un proceso de consulta con firmas de abogados, exalumnos y expertos en tecnología legal, establecieron tres pilares clave: el desarrollo de una pedagogía y evaluación resistentes al uso de IA para evitar atajos que frenen el crecimiento intelectual, el fortalecimiento de habilidades humanas esenciales como el pensamiento crítico y el juicio profesional, y la enseñanza sobre el uso responsable, ético y efectivo de las herramientas de IA en la práctica jurídica.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49050512,
+    "url": "https://github.com/slvDev/esp32-ai",
+    "score": 193,
+    "time": 1785005990,
+    "titulo_es": "Ejecución de un modelo de lenguaje de 28,9 millones de parámetros en un microcontrolador ESP32-S3",
+    "resumen": "Se describe la implementación de un modelo de lenguaje de 28,9 millones de parámetros directamente en un microcontrolador ESP32-S3 con 512 KB de SRAM, alcanzando una velocidad de 9 tokens por segundo sin conexión a servidores. Para superar la limitación de memoria RAM, se utiliza la técnica 'Per-Layer Embeddings' de los modelos Gemma de Google, almacenando la tabla de embeddings masiva en la memoria flash y cargando solo los renglones necesarios (~450 bytes) a la SRAM durante la inferencia. El modelo está entrenado con el dataset TinyStories y genera historias simples localmente.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49053385,
+    "url": "https://cachebag.sh/journal/interactive-rebasing/",
+    "score": 72,
+    "time": 1785026274,
+    "titulo_es": "Perdiendo el miedo a Git Rebase Interactivo (`git rebase -i`)",
+    "resumen": "El artículo aborda la aprensión común entre desarrolladores hacia el uso de 'git rebase -i' y desmitifica su funcionamiento. Explica que la reordenación interactiva no destruye commits directamente, sino que crea nuevos commits y reubica el puntero de la rama. Destaca diversos mecanismos de seguridad para prevenir pérdidas de código, como cancelar el proceso mediante 'git rebase --abort', recuperar estados previos usando 'git reflog' o crear ramas de respaldo antes de iniciar. Asimismo, sostiene que la resolución de conflictos durante un rebase suele ser más simple que en un merge tradicional, ya que se gestiona de forma granular, commit por commit.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49028169,
+    "url": "https://github.com/leontrolski/postgresql-testing",
+    "score": 3,
+    "time": 1784841454,
+    "titulo_es": "Herramientas sencillas de Postgres para pruebas con Python y Pytest",
+    "resumen": "Librería de Python diseñada para facilitar el entorno de pruebas con PostgreSQL sin requerir Docker, Homebrew o APT, utilizando directamente binarios precompilados de PostgreSQL. Permite la ejecución rápida de bases de datos independientes por hilo de prueba o desde plantillas, ofreciendo integración directa con Pytest y un renderizador local para análisis de planes de consulta (explain.dalibo.com).",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49002762,
+    "url": "https://github.com/jdefrancesco/dskDitto",
+    "score": 20,
+    "time": 1784703140,
+    "titulo_es": "dskDitto: Detector ultra rápido y paralelo de archivos duplicados",
+    "resumen": "dskDitto es una herramienta desarrollada en Go 1.22+ para la detección y gestión paralela de archivos duplicados mediante CLI, TUI y una GUI opcional basada en Raylib. Utiliza hashing SHA-256 por defecto, permite búsquedas difusas (--fuzzy) por similitud de contenido, filtrado por nombres (--name-only) y conversión segura a enlaces simbólicos o eliminación con confirmaciones previas para evitar pérdidas accidentales de datos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49052570,
+    "url": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality",
+    "score": 96,
+    "time": 1785019870,
+    "titulo_es": "Avances en modelos de IA e impactos en el mercado laboral: evidencia empírica frente a expectativas",
+    "resumen": "El artículo analiza el impacto real de la Inteligencia Artificial en el mercado laboral, contrastando las predicciones alarmistas de despidos masivos con datos empíricos recientes. Aunque las métricas macroeconómicas muestran estabilidad en el empleo general y crecimiento en empresas que adoptan IA, se identifican efectos matizados, como una menor demanda en la contratación de graduados recientes y roles junior cuyas tareas rutinarias de análisis y redacción son automatizadas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49053382,
+    "url": "https://martin.janiczek.cz/2026/07/24/systems-and-delays.html",
+    "score": 60,
+    "time": 1785026250,
+    "titulo_es": "Donde se demuestra que los retrasos son contraintuitivos",
+    "resumen": "El artículo explora conceptos de la teoría y dinámica de sistemas basados en el libro 'Thinking in Systems'. A través del modelado matemático de inventarios, flujos, fuentes y retardos mediante simulaciones y ecuaciones diferenciales, el autor analiza cómo los retrasos en los bucles de retroalimentación generan comportamientos contraintuitivos en sistemas complejos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49013464,
+    "url": "https://box2d.org/posts/2026/07/simd-for-collision/",
+    "score": 98,
+    "time": 1784754599,
+    "titulo_es": "¿Importa SIMD en la detección de colisiones?",
+    "resumen": "El artículo explora el uso de 'wide SIMD' (SIMD ancho) frente a 'narrow SIMD' para optimizar el rendimiento en motores de física 3D como Box3D. A través del algoritmo de Separating Axis Test (SAT) para la detección de colisiones entre mallas compuestas por poliedros convexos, la complejidad cuadrática de la prueba borde-borde genera un cuello de botella sustancial cuando los objetos tienen muchos vértices (como 'boulders' de 32 puntos y 89 bordes). Al transformar los datos a un formato Structure of Arrays (SoA), es posible procesar un borde de una malla contra cuatro bordes de otra de forma simultánea. Las pruebas de rendimiento ejecutadas con intrinsics SSE2 en un procesador AMD 7950x demuestran que el enfoque SIMD duplica el rendimiento general de la simulación frente a la ejecución escalar.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49051947,
+    "url": "https://spectrum.ieee.org/sodium-ion-battery-peak-energy",
+    "score": 178,
+    "time": 1785016102,
+    "titulo_es": "General Motors apoya el último esfuerzo para alcanzar a China en baterías de iones de sodio",
+    "resumen": "El artículo detalla el esfuerzo de la startup Peak Energy, respaldada por General Motors, para tener éxito en el desarrollo y despliegue de baterías de iones de sodio para almacenamiento de energía a escala de red. A pesar de los fracasos de otras empresas estadounidenses como Natron Energy y Bedrock Materials, Peak Energy confía en su tecnología. La competencia de China, liderada por CATL, es significativa, con un pedido masivo de células de iones de sodio para almacenamiento de red. Peak Energy compite con las baterías de fosfato de hierro y litio (LFP) de bajo costo, que dominan actualmente el mercado de almacenamiento. Aunque las baterías de iones de sodio de Peak Energy no igualan la densidad de energía de las LFP, prometen un costo total de propiedad un 20% menor durante su vida útil (20 años, 20,000 ciclos con 80% de capacidad restante) en comparación con las LFP (70% tras 8,000 ciclos). Una ventaja clave es su tolerancia a altas temperaturas, lo que permite un sistema de enfriamiento pasivo, eliminando la necesidad de sistemas de refrigeración complejos y costosos. Esto las hace ideales para centros de datos y soporte de red en áreas remotas, mercados en crecimiento impulsados por la demanda de centros de datos de IA y el almacenamiento de energía renovable. Las fluctuaciones en los precios del litio también impulsan la búsqueda de alternativas estables.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49049693,
+    "url": "https://brolly.sh/forecast/RWFP2qW8",
+    "score": 196,
+    "time": 1785000874,
+    "titulo_es": "Pronóstico del tiempo con Brolly.sh",
+    "resumen": "El artículo presenta un pronóstico del tiempo detallado proporcionado por brolly.sh. Incluye información sobre las condiciones actuales y la previsión para hoy y la semana, cubriendo temperatura, viento, precipitación, índice UV y calidad del aire. También desglosa los niveles de polen para pasto y artemisa. La fuente de los datos meteorológicos es open-meteo.com, y el servicio fue desarrollado por Jacob en York, UK. Se mencionan enlaces para buscar, estadísticas, información y privacidad, así como para cambiar la ubicación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49054697,
+    "url": "https://github.com/mulfyx/w4me-station",
+    "score": 18,
+    "time": 1785039599,
+    "titulo_es": "WASM-4 Games en Java ME Phones: W4ME Station",
+    "resumen": "W4ME Station es una solución de software que permite ejecutar juegos WebAssembly (WASM-4) en dispositivos Java ME (CLDC 1.1 / MIDP 2.0), incluyendo teléfonos de gama media de los años 2000. La distribución, con un tamaño de 275 KB en formato JAR, no utiliza JIT y la librería integrada no requiere conexión a red. Admite la instalación de archivos .wasm adicionales desde el dispositivo. La versión 1.0.0 es independiente y no está respaldada por los mantenedores de WASM-4. El desarrollo requiere Linux con Podman y Distrobox. El toolchain incluye JDK 8, ProGuard, KEmulator y WABT. Las fuentes Java y classfiles se mantienen en Java 1.3. El sistema de control en pantalla para dispositivos táctiles se ubica fuera del framebuffer de 160x160. La configuración de sonido permite modos automáticos/compatibles, mute global y volumen maestro. Los juegos adicionales se pueden instalar vía HTTP(S), `file://` URL o navegador JSR-75, almacenándose en RMS. El código fuente se distribuye bajo licencia MIT, pero los cartuchos incluidos retienen sus propias licencias.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
     "id": 49045159,
     "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/",
-    "score": 220,
+    "score": 938,
     "time": 1784962634,
-    "titulo_es": "Restricciones a las conexiones ADB locales en el dispositivo y su impacto en Android",
-    "resumen": "El artículo aborda una propuesta en el IssueTracker de Google para restringir las conexiones locales (loopback) de Android Debug Bridge (ADB) por motivos de seguridad. Se analizan las consecuencias para el ecosistema de desarrollo de Android, las herramientas de usuarios avanzados y aplicaciones que dependen de ADB ejecutable dentro del propio dispositivo como Shizuku.",
+    "titulo_es": "Restricción de conexiones ADB en el dispositivo para protegerse de actores maliciosos y sus implicaciones",
+    "resumen": "El artículo discute una posible restricción en las conexiones ADB (Android Debug Bridge) en el dispositivo, motivada por preocupaciones de seguridad para mitigar el acceso de \"actores maliciosos\". Se advierte a los lectores sobre la importancia de no inundar los hilos de seguimiento de problemas con comentarios de baja calidad o quejas, ya que esto podría llevar al bloqueo del tema por parte de los desarrolladores de Google. El autor, un desarrollador de aplicaciones basadas en Shizuku (como ShizuCallRecorder), que se vería afectado por este cambio, expone su caso de uso particular, especialmente para personas con discapacidades, y la importancia de la accesibilidad y la privacidad en este contexto. Se explica el funcionamiento básico de ADB, su evolución desde conexiones USB a conexiones en el propio dispositivo, y se plantean dos posibles enfoques para abordar esta potencial restricción, aunque el artículo se centra en las implicaciones y la justificación detrás de la posible medida de seguridad.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49038433,
-    "url": "https://www.anthropic.com/news/claude-opus-5",
-    "score": 1559,
-    "time": 1784912261,
-    "titulo_es": "Lanzamiento de Claude Opus 5: Inteligencia de vanguardia con alta eficiencia de costos",
-    "resumen": "Claude Opus 5 es el nuevo modelo por defecto de Anthropic que ofrece un rendimiento cercano a Fable 5 a la mitad del costo. Destaca ampliamente en tareas de ingeniería de software e investigación científica, superando a Opus 4.8 en benchmarks clave como Frontier-Bench v0.1 y CursorBench 3.2. Además, presenta mejoras sustanciales en alineación de seguridad y verificación autónoma de trabajo, aunque se mantiene rezagado frente a Mythos 5 en capacidades avanzadas de explotación de ciberseguridad.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49043724,
-    "url": "https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize",
-    "score": 227,
-    "time": 1784943852,
-    "titulo_es": "Perspectivas del profesorado: Hannah Fry",
-    "resumen": "Hannah Fry, la primera Profesora de Comprensión Pública de las Matemáticas en la Universidad de Cambridge, ha sido galardonada con el Premio Leelavati otorgado por la Unión Matemática Internacional (IMU) debido a su destacada trayectoria en la divulgación científica. El artículo abarca su impacto mediático y académico, citando reconocimientos como la Medalla Christopher Zeeman, el Premio David Attenborough de la Royal Society, un Emmy y un premio Webby, destacando su capacidad para conectar con el público y motivar a las nuevas generaciones.",
+    "id": 49050735,
+    "url": "https://ammoniaenergy.org/articles/flexible-renewable-ammonia-demonstrator-now-operational-in-minnesota/",
+    "score": 123,
+    "time": 1785007824,
+    "titulo_es": "Planta demostradora de amoníaco renovable en Minnesota impulsada por energía eólica",
+    "resumen": "El artículo describe la puesta en marcha de una planta demostradora de producción de amoníaco bajo en carbono en Morris, Minnesota, impulsada por energía eólica. La instalación, una colaboración entre la Universidad de Minnesota, RTI International y Casale, tiene como objetivo producir hasta una tonelada por día de amoníaco para fertilizantes locales. Utiliza energía eólica para alimentar electrolizadores que producen hidrógeno, el cual se combina con nitrógeno en un proceso Haber-Bosch. Un aspecto clave es la gestión de la intermitencia de la energía renovable mediante sistemas avanzados de modelado y control que permiten ajustar dinámicamente la tasa de producción de amoníaco, minimizando la necesidad de costosos sistemas de almacenamiento de hidrógeno. El proyecto busca abordar la volatilidad de los precios de los fertilizantes y la inestabilidad de la cadena de suministro, creando flujos de ingresos en el estado y sentando las bases para futuras redes de producción de amoníaco renovable. Se destaca la importancia de la flexibilidad operativa para la viabilidad económica de la producción de \"químicos verdes\" o amoníaco renovable, contrastando con los diseños tradicionales de plantas químicas de estado estacionario.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 48981665,
-    "url": "https://bytecodealliance.org/articles/wasmtime-gc",
-    "score": 100,
-    "time": 1784567450,
-    "titulo_es": "Las propuestas de Wasm GC y excepciones ya están habilitadas por defecto en el lanzamiento de Wasmtime 47",
-    "resumen": "Wasmtime 47 incluye por defecto el soporte para las propuestas de recolección de basura (Wasm GC) y manejo de excepciones en WebAssembly. Wasm GC permite a los lenguajes de alto nivel definir tipos struct y array gestionados por el runtime, eliminando la necesidad de empaquetar un recolector de basura propio en los binarios .wasm y reduciendo su tamaño. Wasmtime implementa esto mediante un recolector de copia de semi-espacio estilo Cheney sobre memorias lineales sandboxeadas. Por su parte, la propuesta de excepciones sustituye las convenciones de llamada personalizadas por construcciones nativas try/catch y despliegue de pila (unwinding), logrando ejecuciones más rápidas y binarios más pequeños.",
+    "id": 49050058,
+    "url": "https://itsallaboutthebit.com/memory-safety-absolutists/",
+    "score": 105,
+    "time": 1785002932,
+    "titulo_es": "Fil-C: Una Nueva Forma de Lograr la Seguridad de Memoria en C/C++ y su Comparación con Rust",
+    "resumen": "El artículo discute la creciente importancia de la seguridad de memoria en lenguajes de programación de sistemas como C, C++ y Rust. Presenta Fil-C, una nueva tecnología que compila código C y C++ para que sea seguro en memoria al detectar y paniquear en accesos inválidos (como out-of-bounds o use-after-free), utilizando una combinación de recolección de basura (GC) y un sistema de rastreo de memoria llamado InvisiCaps. Se menciona que Zig, otro lenguaje de sistemas, está explorando un modo de compilación similar inspirado en Fil-C. El autor critica la postura de algunos desarrolladores de Rust y los creadores de Fil-C/Zig, quienes afirman que Rust es inherentemente inseguro en memoria debido a su modo 'unsafe', mientras que Fil-C y Zig ofrecen soluciones verdaderamente seguras. El artículo argumenta que esta crítica ignora los compromisos inherentes a Fil-C, como la incompatibilidad de ABI, una posible degradación del rendimiento y la introducción de GC, lo que hace que no sea una solución universal ni un reemplazo directo para todos los proyectos. Se señala que, si bien Fil-C es una adición valiosa al ecosistema de seguridad de memoria, no invalida las garantías y el enfoque de Rust, y que la discusión a menudo cae en un fanatismo desinformado.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49044492,
-    "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities",
+    "id": 49051369,
+    "url": "https://fly.io/blog/kurt-scott-money-sprites/",
+    "score": 206,
+    "time": 1785012191,
+    "titulo_es": "Fly.io: El Futuro de la Computación de Agentes y la Evolución del Desarrollo de Software en la Era de la IA",
+    "resumen": "El artículo de Fly.io aborda la reorientación estratégica de la empresa hacia 'Sprites', una nueva iteración de computadoras para agentes. Se discute la transformación del desarrollo de software impulsada por la IA, comparándola con la revolución de las hojas de cálculo. La compañía ha recaudado fondos adicionales y está enfocando sus esfuerzos en resolver los problemas asociados con los agentes de IA y su despliegue. El artículo reconoce la volatilidad percibida de Fly.io en el mercado de infraestructura, pero enfatiza la necesidad de adaptarse a un panorama donde la IA permite la creación de software más personalizado y adaptativo, alejándose del modelo tradicional de aplicaciones de función fija desplegadas a gran escala. Se anuncia un cambio en el liderazgo, con Scott Johnston asumiendo el rol de CEO, para guiar esta nueva dirección.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49006096,
+    "url": "https://dead.garden/blog/how-my-images-are-dithered.html",
+    "score": 235,
+    "time": 1784725229,
+    "titulo_es": "Mi método actual para aplicar dithering a imágenes rosas",
+    "resumen": "El artículo describe un método para aplicar dithering a imágenes utilizando la herramienta de línea de comandos ImageMagick. El objetivo es imitar la apariencia de imágenes impresas mediante la reducción de la paleta de colores (a negro y un rosa específico) y la aplicación de técnicas de modulación de amplitud (AM) o frecuencia (FM) para simular la gradación de tonos. Se explica el concepto de grids AM y FM, y se detalla el proceso usando ImageMagick con el comando 'convert', que incluye redimensionamiento, conversión a CMYK, rotación, escalado y combinación de los canales de color para crear el efecto dithered. Se menciona que el dithering no solo mejora la estética, sino que también puede reducir el tamaño del archivo y el peso de la página web.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49054307,
+    "url": "https://www.harvardmagazine.com/research/harvard-human-evolution-genes-selective-pressure",
     "score": 64,
-    "time": 1784953221,
-    "titulo_es": "Evaluación preliminar del UK AISI / CAISI sobre las capacidades cibernéticas de Kimi K3",
-    "resumen": "Evaluación técnica conjunta efectuada por el UK AISI y el CAISI de EE. UU. sobre el modelo de inteligencia artificial Kimi K3 de Moonshot AI. Evaluado mediante el benchmark ExploitBench (centrado en 41 vulnerabilidades del motor V8 de Chrome), el modelo demostró un rendimiento del 32% en la progresión de explotación de software, superando a modelos abiertos como GLM-5.2 (24%). Sin embargo, Kimi K3 no logró alcanzar la ejecución arbitraria de código (ACE) en ninguna de las pruebas, a diferencia de los modelos cerrados de frontera de EE. UU.",
+    "time": 1785035386,
+    "titulo_es": "El genoma humano ha evolucionado rápidamente en los últimos 10.000 años, según un nuevo estudio",
+    "resumen": "Una investigación pionera utilizando la mayor colección de ADN humano antiguo jamás compilada, junto con nuevos métodos estadísticos, revela que el genoma humano ha experimentado una evolución acelerada en los últimos 10.000 años. El estudio publicado en Nature analizó 16.000 individuos de la Europa moderna a lo largo de 18.000 años, identificando cientos de cambios genéticos. Los hallazgos demuestran que el ritmo de la selección natural se está acelerando, con una presión selectiva más intensa en los últimos 5.000 años. Los investigadores superaron los desafíos de filtrar el 'ruido' de las migraciones y la mezcla de poblaciones al centrarse en tendencias genéticas consistentes a través de diversos lugares y tiempos. Se identificaron 479 genes bajo selección natural, siendo los genes relacionados con la inmunidad los más afectados, con fluctuaciones significativas en su prevalencia a lo largo del tiempo. Un ejemplo notable es un gen asociado a un mayor riesgo de esclerosis múltiple, que surgió hace aproximadamente 6.000 años.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49054561,
+    "url": "https://chenchen.guru/blog/kimi-k3-first-impressions/",
+    "score": 16,
+    "time": 1785038150,
+    "titulo_es": "Evaluación Práctica del Modelo Kimi K3: Un Avance en la IA para Ingeniería y Desarrollo",
+    "resumen": "El artículo evalúa el modelo Kimi K3 de Moonshot AI en un proyecto real, destacando su capacidad para mantener conversaciones técnicas profundas a nivel de arquitectura de software, superando la simple generación de código. El modelo demuestra una alta fidelidad a las instrucciones complejas, comparándose favorablemente con modelos de vanguardia como Claude Opus. Su rendimiento en análisis de datos y estadística es notable para un modelo de código abierto. Si bien supera a otros en sesiones de codificación prolongadas, presenta desafíos como errores de sobrecarga, tokens de pensamiento vacíos y bucles en la ejecución de herramientas, que requieren mecanismos de manejo robustos en el 'harness'. La gestión del caché es crucial para mantener la eficiencia de costos. El artículo también señala un aumento en el consumo de tokens en comparación con otros modelos y la importancia de presupuestar adecuadamente. A pesar de las imperfecciones, el modelo muestra una degradación mínima en el rendimiento con contextos extensos. La discusión global sobre la contención de modelos de código abierto chinos subraya el umbral tecnológico alcanzado por Kimi K3. Se proyecta que, una vez optimizados sus problemas post-entrenamiento, Kimi K3 se convertirá en un competidor importante frente a modelos como Claude y Codex, ofreciendo una relación coste-beneficio atractiva y capacidades avanzadas que están acortando la brecha.",
     "categoria": "IA"
   },
   {
-    "id": 49045040,
-    "url": "https://arcprize.org/leaderboard",
-    "score": 80,
-    "time": 1784961100,
-    "titulo_es": "La evolución de ARC-AGI: Evaluación de adaptación interactiva y eficiencia de costos en agentes de IA",
-    "resumen": "El texto analiza la transición de ARC-AGI desde sus versiones 1 y 2 (que medían inteligencia fluida pasiva) hacia ARC-AGI-3, la cual evalúa la capacidad de adaptación en tiempo real de los agentes de IA en entornos interactivos novedosos. Se enfatiza la eficiencia midiendo la relación entre costo por tarea y rendimiento, aplicando restricciones de presupuesto (sistemas de menos de $10,000) y calculando estimaciones de costos provisionales basados en modelos como o1-pro y Gemini 3 Pro.",
+    "id": 49051463,
+    "url": "https://www.apalrd.net/posts/2026/isp_mcast/",
+    "score": 53,
+    "time": 1785012912,
+    "titulo_es": "El Extraño Mundo del Multicast: Distribución de Contenido y Optimización de Red",
+    "resumen": "El artículo explora el funcionamiento del multicast, una tecnología de red donde los paquetes pueden ser entregados múltiples veces y se utiliza una tabla de enrutamiento inversa. Se presenta el multicast como una solución poderosa para la distribución de contenido, utilizando la distribución de TV en vivo como ejemplo, y se destaca su potencial como una mejora significativa para redes específicas. Se discuten los requisitos de MLD/IGMP snooping para una experiencia óptima, especialmente en redes inalámbricas. Se detalla la preparación de contenido multimedia para multicast, incluyendo la opción de enviar audio y video 'as-is' para ahorrar CPU si los clientes pueden decodificarlo, o transcodificarlo a formatos como x264 + aac y empaquetarlo en un stream MPEG-TS. Se aborda el uso de multicast en redes más grandes que abarcan subredes y VLANs mediante multicast enrutado, enfocándose en el Source-Specific Multicast (SSM) por su simplicidad en comparación con Any-Source Multicast (ASM). Se presenta un ejemplo de configuración para FRR (Free Range Routing) para implementar multicast enrutado con opciones para SSM y un hop limit adecuado, aplicable tanto a streams de archivos como a otros tipos de transmisión.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49048689,
+    "url": "https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/",
+    "score": 75,
+    "time": 1784994927,
+    "titulo_es": "PyTorch Monarch en GPUs AMD: Entrenamiento Distribuido Tolerante a Fallos",
+    "resumen": "El artículo detalla la expansión de PyTorch Monarch, un sistema de entrenamiento distribuido tolerante a fallos, a GPUs AMD Instinct utilizando ROCm. PyTorch Monarch introduce un nuevo paradigma de programación distribuida que permite orquestar clústeres de GPUs desde un único programa Python, utilizando un modelo de tiempo de ejecución basado en actores y abstracciones de malla de procesos. A diferencia de las estrategias tradicionales de checkpointing, Monarch permite que los nodos saludables continúen el entrenamiento mientras los nodos fallidos se recuperan, minimizando la pérdida de cómputo. La portabilidad a ROCm implicó esfuerzos significativos en el tiempo de ejecución de la GPU y la pila de comunicación distribuida, incluyendo el uso de hipify_torch y la auto-detección para la migración de CUDA a ROCm. Se abordaron desafíos como la gestión de la memoria de la GPU y las interfaces de comunicación de bajo nivel. El resultado es un soporte completo para el ecosistema ROCm (RDMA, Supervisión, Tensor Sharding) en entornos como SLURM, Kubernetes y SkyPilot. La integración con TorchTitan y TorchFT permite cargas de trabajo de producción resilientes y sin checkpointing explícito, lo que representa un avance importante para la infraestructura de IA a gran escala en hardware AMD.",
     "categoria": "IA"
   },
   {
-    "id": 49040296,
-    "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability",
-    "score": 310,
-    "time": 1784919953,
-    "titulo_es": "Escalando Postgres LISTEN/NOTIFY para Streams de Baja Latencia",
-    "resumen": "El artículo analiza el rendimiento de LISTEN/NOTIFY en PostgreSQL como alternativa eficiente al sondeo (polling) para arquitecturas de streaming de baja latencia. Aunque se suele considerar poco escalable por limitar el rendimiento (bloqueándose a ~2.9K escrituras/segundo), la causa raíz es un bloqueo exclusivo global que PostgreSQL requiere durante el commit de transacciones que ejecutan NOTIFY. Este bloqueo es necesario para garantizar que las notificaciones en la cola interna conserven exactamente el orden de confirmación de las transacciones, manteniéndose activo hasta que el commit se sincroniza en disco mediante fsync().",
+    "id": 49054908,
+    "url": "https://notes.hella.cheap/maybe-we-should-revisit-microkernels.html",
+    "score": 9,
+    "time": 1785042373,
+    "titulo_es": "La Reinvención de los Microkernels gracias al Hardware Moderno",
+    "resumen": "El artículo explora la viabilidad actual de los microkernels, superando las limitaciones de rendimiento que históricamente los marginaron. Las mejoras en hardware, especialmente la introducción de IOMMUs (Unidades de Gestión de Memoria de Entrada/Salida) y las capacidades de memoria compartida, permiten mitigar el alto overhead de los microkernels tradicionales. Estos mecanismos de hardware posibilitan la eliminación o virtual eliminación de los costosos cambios de contexto en el 'camino feliz' (happy path) de ejecución y en la comunicación entre procesos (IPC). La gestión de E/S se delega eficientemente al hardware a través de IOMMUs, mientras que la comunicación IPC se optimiza mediante buffers compartidos y operaciones atómicas, eliminando la necesidad de copias de memoria y bloqueos. La arquitectura resultante se asemeja a modelos como Xen. La modularidad inherente de los microkernels, junto con estas optimizaciones de rendimiento, promete mayor seguridad y fiabilidad al aislar fallos dentro de subsistemas específicos. Se discuten enfoques para implementar componentes como el sistema de archivos y el subsistema gráfico en espacios de usuario, inspirándose en proyectos existentes como FreeBSD y el DRM de Linux, y considerando modelos como los exokernels y la vinculación de bibliotecas en tiempo de ejecución.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49046525,
+    "url": "https://supakeen.com/weblog/the-fedora-45-sausage-factory/",
+    "score": 146,
+    "time": 1784977497,
+    "titulo_es": "El ciclo de vida de un paquete en Fedora: de código fuente a artefactos de lanzamiento",
+    "resumen": "Este artículo describe el proceso completo que sigue Fedora para transformar el código fuente y los paquetes en artefactos de distribución listos para el usuario, como imágenes ISO, imágenes de nube, imágenes de contenedores y despliegues OSTree. Detalla el flujo desde que un empaquetador realiza un 'git push' hasta la composición de una versión final. El proceso comienza con la gestión de código fuente en repositorios Git (src.fedoraproject.org), utilizando herramientas como `fedpkg` para interactuar con Koji, el sistema de compilación de Fedora. Koji gestiona la construcción de paquetes RPM en entornos 'chroot' reproducibles y se organiza mediante 'tags' que mapean construcciones a versiones de lanzamiento. Además de los RPM, Koji orquesta la creación de imágenes a través de plugins y generadores de contenido. Para lanzamientos con ramificación (no Rawhide), los paquetes pasan por Bodhi, el sistema de gestión de actualizaciones de Fedora, que controla la distribución a través de ciclos de 'testing' y retroalimentación de usuarios y pruebas automatizadas para alcanzar el estado 'stable'. El artículo también menciona la migración de repositorios de Pagure a Forgejo y el estado evolutivo de ciertas partes del proceso, como la producción de `boot.iso`.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 49002235,
+    "url": "https://systemf.epfl.ch/etc/librrd/",
+    "score": 7,
+    "time": 1784698282,
+    "titulo_es": "Sintaxis de Estilos para Diagramas Basada en CSS",
+    "resumen": "El artículo describe un lenguaje de selector para diagramas similar a CSS. Este lenguaje permite definir estilos para elementos del diagrama como 'terminal' y 'nonterminal' utilizando selectores de etiqueta, comodín, clase e ID. Soporta pseudo-selectores como ':root' y combinadores de descendiente e hijo. La especificidad y cascada siguen las reglas de CSS. Las propiedades mencionadas, como 'align-items' y 'justify-content', controlan la alineación y justificación de los elementos del diagrama dentro de un contenedor, y otras propiedades se aplican directamente al SVG renderizado. Se enfatiza la importancia de no modificar la fuente para mantener la precisión del layout.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49051707,
+    "url": "https://www.maxmynter.com/pages/blog/jobhunt",
+    "score": 32,
+    "time": 1785014382,
+    "titulo_es": "Cómo conseguir un puesto de ingeniería de investigación en IA",
+    "resumen": "El artículo detalla la estrategia personal de Max Mynter para conseguir un puesto de ingeniería de investigación en Mistral AI. El autor diferencia entre acciones tácticas (bajo esfuerzo, alto retorno inmediato, como LeetCode o pulir el CV) y acciones estratégicas (alto esfuerzo, alto retorno a largo plazo, como construir un portfolio, desarrollar una red de contactos o construir una marca personal). Explica que, aunque las tácticas son importantes para impresionar en las entrevistas, son las estrategias las que conducen al éxito profesional a largo plazo. El proceso duró 18 meses e implicó una fase inicial de clarificación de objetivos y networking, consultando con amigos y contactos para entender los requisitos de roles en empresas de IA. Se enfoca en cómo alcanzar roles de alto nivel mediante un esfuerzo sostenido y enfocado en el desarrollo de habilidades y la construcción de una reputación.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49049638,
+    "url": "https://github.com/alokdhir/spinwin",
+    "score": 35,
+    "time": 1785000595,
+    "titulo_es": "Utilidad de Menú de macOS para Rotar Ventanas de Aplicaciones",
+    "resumen": "SpinWin es una utilidad para la barra de menú de macOS que simula la rotación de ventanas de otras aplicaciones. Dado que macOS carece de una API pública para esta funcionalidad, SpinWin utiliza ScreenCaptureKit para capturar la ventana y aplicar transformaciones de capa (layer transforms) para simular rotaciones arbitrarias, giros continuos o incrementos de 90°. La técnica de \"fakeo\" asegura que la ventana rotada no se recorte, utilizando un contenedor de tamaño diagonal. La aplicación se distribuye firmada y notarizada por Apple para evitar advertencias de Gatekeeper, o puede ser compilada por el usuario. La interacción se realiza a través del icono de la barra de menú: un clic izquierdo inicia la rotación seleccionando un ángulo o modo de giro, seguido de un clic en la ventana deseada. El usuario puede reposicionar y rotar libremente la ventana simulada, y presionar 'Esc' para restaurarla. Un clic derecho en el icono accede a opciones de control de rotaciones activas, detener todas o salir de la aplicación.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49040741,
-    "url": "https://artificialanalysis.ai/models",
-    "score": 298,
-    "time": 1784922310,
-    "titulo_es": "Aspectos destacados del Índice de Inteligencia v4.1 de Artificial Analysis",
-    "resumen": "El artículo detalla la versión 4.1 del Índice de Inteligencia de Artificial Analysis, una suite de evaluación para modelos de inteligencia artificial. Analiza métricas como razonamiento científico, capacidades de agentes autónomos, codificación, tasas de alucinación (AA-Omniscience) y procesamiento de contexto largo. Asimismo, evalúa la eficiencia económica de los modelos mediante el cálculo de costos ponderados por tarea, consumo de tokens e impacto de los precios de caché por proveedor.",
-    "categoria": "IA"
-  },
-  {
-    "id": 48973835,
-    "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
-    "score": 615,
-    "time": 1784515434,
-    "titulo_es": "El cohete Vikram-1 de Skyroot alcanza la órbita en un histórico primer intento",
-    "resumen": "El lanzador comercial Vikram-1 de Skyroot Aerospace completó con éxito su vuelo inaugural desde Sriharikota, alcanzando una órbita de 450 kilómetros. El cohete de cuatro etapas, que utiliza motores de combustible sólido y una etapa final con motor impreso en 3D de combustible líquido, logró desplegar sus satélites exitosamente, convirtiendo a Skyroot en la primera empresa privada india en alcanzar la órbita en su primer ensayo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49034292,
-    "url": "https://hhh.hn/hanwha-github-token/",
-    "score": 596,
-    "time": 1784894081,
-    "titulo_es": "Análisis de seguridad y desofuscación de firmware en cámaras Hanwha Vision",
-    "resumen": "El artículo describe el proceso de ingeniería inversa aplicado al firmware de las cámaras de seguridad Hanwha Vision. El autor explica cómo logró desempaquetar la imagen mediante el análisis del ejecutable 'fwupgrader' en Ghidra (asistido por IA), descubriendo un esquema de ofuscación básico mediante XOR para reconstruir una clave AES e IV estáticos. Tras acceder al sistema de archivos raíz (rootfs), identificó mediante TruffleHog la filtración de un token de GitHub con privilegios de administración a nivel organizacional, expuesto en la interfaz de usuario debido a la inserción directa de process.env durante la compilación con Vite. Asimismo, señala la presencia de variables de entorno con direcciones IP pertenecientes al Departamento de Defensa de EE. UU.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49042751,
-    "url": "https://news.st-andrews.ac.uk/archive/sperm-whales-blow-bubbles-to-achieve-restful-vertical-sleep/",
-    "score": 97,
-    "time": 1784934798,
-    "titulo_es": "Descubren el mecanismo que permite a los cachalotes flotar verticalmente mientras duermen",
-    "resumen": "Investigadores de la Universidad de St Andrews y la Universidad de Neuchâtel han descubierto cómo los cachalotes regulan su flotabilidad para dormir verticalmente bajo la superficie marina. Al poseer flotabilidad positiva natural debido al aceite de espermaceti en sus cabezas y a la expansión del gas pulmonar al ascender, los cachalotes liberan burbujas de gas de manera sistemática para lograr una flotabilidad neutra. El hallazgo se confirmó mediante sensores colocados con ventosas que registraron acústica y movimientos en 3D, combinados con simulaciones biomecánicas de densidad de tejido, arrastre hidrodinámico y volumen de gas.",
-    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 49008512,
     "url": "https://news.mit.edu/2026/three-sided-y-zipper-design-0504",
-    "score": 199,
+    "score": 276,
     "time": 1784734645,
-    "titulo_es": "Cremalleras 'Y' de tres lados impresas en 3D: el mecanismo del MIT para estructuras de rigidez ajustable",
-    "resumen": "Investigadores del CSAIL del MIT han desarrollado un sistema de diseño automatizado y un mecanismo de sujeción adaptable denominado 'Y-zipper' (cremallera de tres lados), basado en una patente de 1985 de William Freeman. Mediante un software personalizado que genera primitivas geométricas de movimiento (recto, arqueado, en espiral y trenzado) e impresión 3D, el sistema permite crear estructuras capaces de alternar rápidamente entre estados flexibles y rígidos. La integración de motores en estos dispositivos habilita la automatización del proceso de ensamblado y cambio de forma, con aplicaciones directas en robótica adaptable (articulaciones y extremidades para terrenos irregulares), equipamiento médico (férulas dinámicas) y estructuras portátiles.",
+    "titulo_es": "Investigadores del MIT Reviven una Idea de Zip de 1985 para Crear Materiales con Rigidez Ajustable",
+    "resumen": "El artículo detalla la reinvención del concepto de cremallera de tres lados del Dr. William Freeman por parte de investigadores del MIT CSAIL. El proyecto original de Freeman, que buscaba crear un cierre adaptable para hacer que objetos como sillas y carpas fueran más fáciles de empacar y ensamblar, fue rechazado pero patentado. Cuarenta años después, el equipo del MIT ha desarrollado el \"Y-zipper\", una cremallera de tres lados personalizable mediante software y fabricada con impresión 3D. Esta tecnología permite crear objetos con rigidez \"sintonizable\", pasando de un estado flexible a rígido de manera reversible y rápida. La herramienta de diseño automatizado permite a los usuarios customizar la forma (recta, arqueada, enrollada o retorcida) y las dimensiones de la cremallera. Las aplicaciones potenciales incluyen equipamiento de camping (reduciendo drásticamente el tiempo de montaje de tiendas), equipo médico (como envolturas para férulas que se ajustan para mayor comodidad o protección), robótica (permitiendo que los robots cambien la longitud de sus extremidades para explorar terrenos variables) e instalaciones de arte dinámicas. El sistema automatiza la personalización y fabricación, permitiendo que las cremalleras se integren en objetos complejos y se transformen de configuraciones similares a tentáculos a estructuras compactas, demostrando la viabilidad en aplicaciones del mundo real.",
     "categoria": "Hardware"
-  },
-  {
-    "id": 48995409,
-    "url": "https://blog.mozilla.org/en/firefox/firefox-containers-preview/",
-    "score": 347,
-    "time": 1784654879,
-    "titulo_es": "Anuncio de la vista previa de Contenedores nativos en Firefox 153",
-    "resumen": "Mozilla ha anunciado la integración nativa de la funcionalidad de Contenedores en la versión 153 de Firefox, reemplazando progresivamente la necesidad de la extensión Multi-Account Containers. Esta característica permite aislar sesiones, cookies y rastreo publicitario entre diferentes contextos (trabajo, personal, compras, banca) dentro de la misma ventana del navegador, garantizando la separación estricta de datos y mejorando la privacidad del usuario.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48991945,
-    "url": "https://differentinstruments.com/",
-    "score": 21,
-    "time": 1784639953,
-    "titulo_es": "Different Instruments presenta PartialString: un sintetizador de modelado físico FDTD",
-    "resumen": "PartialString es un sintetizador en formato AU y VST3 para macOS, Windows y Linux que simula la vibración de cuerdas punteadas resolviendo la ecuación de onda unidimensional en tiempo real mediante el método de diferencias finitas en el dominio del tiempo (FDTD). El plugin soporta hasta 10 voces de polifonía ajustadas dinámicamente según la capacidad del procesador y la longitud de las cuerdas simuladas. Incluye características de control de excitación, modulación por LFO y un sistema de gestión de carga que reduce la precisión o limita las voces para evitar la sobrecarga de la CPU en tiempo real, optimizado para ejecutarse nativamente en procesadores Apple Silicon.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 48985182,
-    "url": "https://essenceia.github.io/projects/ethernet_switch_asic/",
-    "score": 184,
-    "time": 1784583333,
-    "titulo_es": "El primer ASIC de conmutador Ethernet de código abierto del mundo",
-    "resumen": "El autor detalla el desarrollo y la fabricación (tape-out) del primer ASIC de conmutador Ethernet de 100Mbps de código abierto y no administrado. A diferencia de la abundancia de SoCs RISC-V y routers con software de código abierto pero chips propietarios, este proyecto busca llenar el vacío existente en hardware de red abierto a nivel de silicio. El artículo describe las capas físicas según el estándar IEEE 802.3, las diferencias entre switches gestionados y no gestionados, y justifica la elección de crear un ASIC dedicado en lugar de una solución basada en FPGA.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49045446,
-    "url": "https://www.augmental.tech/",
-    "score": 6,
-    "time": 1784965879,
-    "titulo_es": "MouthPad: Control de Dispositivos por Movimientos de Lengua y Cabeza",
-    "resumen": "El MouthPad es un dispositivo intraoral personalizado que traduce movimientos sutiles de la lengua y la cabeza en control preciso para teléfonos, tabletas y ordenadores. Utiliza Bluetooth para conectarse a múltiples dispositivos, permitiendo el control del cursor, clics, desplazamiento y arrastre sin usar las manos. El diseño está encapsulado en 3D a partir de un escaneo dental para garantizar comodidad, seguridad y uso diario, con un impacto mínimo en el habla. Ha sido desarrollado en colaboración con usuarios con diversas habilidades, mejorando significativamente su independencia y acceso al mundo digital para tareas como fotografía, video, juegos y trabajo. Los usuarios destacan la facilidad de uso, la sensación intuitiva y la ausencia de incomodidad, incluso tras largas horas de uso, describiéndolo como una revolución en la interacción con la tecnología.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49034868,
-    "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18",
-    "score": 306,
-    "time": 1784897639,
-    "titulo_es": "Avances en Soporte de Hardware y Funcionalidades para Haiku OS",
-    "resumen": "El artículo discute activamente el progreso y los desafíos en la integración de hardware moderno con el sistema operativo Haiku. Se mencionan específicamente las limitaciones y el estado actual de los controladores de GPU, con un enfoque en la compatibilidad con arquitecturas NVIDIA (Turing, Ampere, Lovelace) y el rendimiento con tarjetas como la RTX 5090, 2060, 1650, 1660 y 1630. Se abordan problemas de rendimiento y la falta de soporte para nuevas generaciones de GPU debido a blobs de firmware no disponibles. Además, se discute la implementación y la necesidad de características como el soporte de DisplayPort y sonido a través de HDMI/DisplayPort, así como la latencia y la frecuencia de actualización en diferentes configuraciones de pantalla y VR. Se explora la representación de bits por píxel y los formatos de framebuffer. Finalmente, se hace referencia a la posibilidad de compilar desde código fuente filtrado y se reflexiona sobre la madurez de Haiku como sistema operativo de escritorio y su potencial para el futuro, incluyendo la compatibilidad con software de IA emergente.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49033240,
-    "url": "https://houseofsaud.com/irgc-claims-destroyed-amazon-bahrain-data-center/",
-    "score": 297,
-    "time": 1784886778,
-    "titulo_es": "IRGC Afirma haber Destruido Centro de Datos de AWS en Bahréin con Misiles de Crucero en Retaliación por Ataque a Planta Nuclear",
-    "resumen": "El artículo detalla la afirmación del Cuerpo de la Guardia Revolucionaria Islámica (IRGC) de haber destruido un centro de datos de Amazon Web Services (AWS) en Bahréin utilizando misiles de crucero. Este ataque, presentado como represalia por un ataque estadounidense a la planta nuclear de Darkhovin en Irán, marca un hito en el uso de misiles de crucero contra infraestructura de nube comercial en el Golfo. El IRGC trató la instalación de AWS como un objetivo militar equivalente a sistemas de defensa aérea y radares estadounidenses en Bahréin, atacados en la misma operación coordinada. La justificación del IRGC vincula explícitamente el ataque a infraestructura comercial con un incidente nuclear, elevando el nivel de escalada en sus operaciones. Aunque no confirmado por AWS o CENTCOM, el incidente subraya la creciente vulnerabilidad de la infraestructura digital comercial ante conflictos geopolíticos y la percepción de esta como un objetivo militar legítimo por parte de actores estatales.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49035303,
-    "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-    "score": 611,
-    "time": 1784899950,
-    "titulo_es": "Empresas tecnológicas de EE. UU. Urgen a Evitar Restricciones Prematuras a Modelos de IA de Peso Abierto",
-    "resumen": "Un grupo de más de 20 empresas tecnológicas estadounidenses, incluyendo Nvidia, Microsoft y Palantir, han enviado una carta conjunta a los responsables políticos instando a no imponer \"restricciones prematuras\" a los modelos de inteligencia artificial de peso abierto (open-weight). Argumentan que estas restricciones podrían sofocar la competencia y la innovación, impulsándolas al extranjero, especialmente ante el creciente avance de modelos chinos como Kimi K3 de Moonshot AI. Las empresas destacan que los modelos de peso abierto, accesibles para descarga y modificación, fomentan la competencia y la distribución equitativa de los beneficios de la IA, a diferencia de los modelos propietarios y cerrados, que presentan sus propios riesgos de seguridad y concentración de poder. Figuras prominentes como Jensen Huang (Nvidia), Satya Nadella (Microsoft) y Elon Musk (SpaceX) han mostrado su apoyo a la carta. La discusión surge en un contexto de preocupación por la propiedad intelectual y la seguridad nacional, con funcionarios estadounidenses investigando posibles robos. OpenAI y Anthropic, que desarrollan modelos cerrados y están preparándose para OPVs millonarias, no firmaron la carta, aunque voceros de ambas compañías expresaron públicamente su apoyo a la democratización y el acceso amplio a la IA. El artículo también menciona un incidente reciente donde un modelo de peso abierto de Z.ai (chino) fue crucial para contener un ciberataque perpetrado por modelos de OpenAI, demostrando la utilidad y aplicabilidad de los modelos de peso abierto en escenarios de defensa y seguridad.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49004464,
-    "url": "https://marimo.io/blog/pycharm",
-    "score": 111,
-    "time": 1784715880,
-    "titulo_es": "Marimo lanza un plugin para PyCharm y otros IDEs de JetBrains",
-    "resumen": "Marimo ha lanzado una primera versión de su plugin para PyCharm y otros IDEs de JetBrains, permitiendo a los desarrolladores integrar notebooks reactivos (.py) directamente en sus proyectos Python. Esta integración facilita el uso de los notebooks como espacios de trabajo en vivo para probar código o como demos interactivas, manteniendo un ciclo de retroalimentación ajustado gracias al recargador de módulos de Marimo. Los notebooks se almacenan como archivos Python planos, compatibles con sistemas de control de versiones como Git. El plugin gestiona automáticamente el servidor local de Marimo y su ciclo de vida de procesos, utilizando el intérprete de Python configurado en el proyecto. Incluye un modo sandbox que aísla las dependencias del notebook mediante uv (PEP 723), asegurando que el entorno del proyecto no se vea afectado. Además, se integra con herramientas de PyCharm como las de bases de datos y ofrece funcionalidades de pair programming con IA a través de `marimo-pair`, conectando con modelos como Claude y Codex. El plugin es de código abierto y está disponible en GitHub para feedback.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49033099,
-    "url": "https://ziggit.dev/t/buz-a-drop-in-replacement-for-bun-using-modern-zig-with-sub-1s-incremental-builds/16891",
-    "score": 281,
-    "time": 1784885200,
-    "titulo_es": "Fork de Bun en Zig con Enfoque en Refactorización y Modernización",
-    "resumen": "El artículo describe un fork de Bun escrito en Zig, basado en una versión anterior a la reescritura en Rust. El objetivo principal es crear un reemplazo directo para Bun con una base de código más limpia y mantenible. Se ha migrado la construcción a 'build.zig', permitiendo compilaciones incrementales rápidas. El proyecto ha eliminado más de 11,000 líneas de código muerto, reescrito partes del código para depender más de la biblioteca estándar de Zig, y ha corregido numerosos bugs. Se planea el uso extensivo de LLMs para acelerar la refactorización y la mejora de la base de código, con el objetivo de alcanzar una versión estable y compatible con Bun 1.4.0 en unas semanas o meses. Se discute la naturaleza de Bun como un proyecto complejo con componentes clave en C/C++ (JSC, uWebSockets, etc.), y el fork se centra en mejorar la 'cola' (glue code) implementada en Zig, así como en la estabilidad y compatibilidad con V8/N-API, en lugar de reescribir las dependencias C/C++ principales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49034217,
-    "url": "https://www.andrewzigler.com/feed/the-case-for-muds-in-modern-times",
-    "score": 98,
-    "time": 1784893600,
-    "titulo_es": "La supervivencia de los MUDs en la era digital",
-    "resumen": "El artículo explora la persistencia y el atractivo de los Mundos de Múltiples Usuarios (MUDs), entornos virtuales basados enteramente en texto, que a menudo funcionan como juegos de rol. Describe cómo los MUDs, accesibles a través de clientes telnet o aplicaciones especializadas que ofrecen funcionalidades como logging, colores y alias, presentan un mundo interactivo donde los avatares textuales navegan por 'habitaciones' descritas textualmente. La interacción se realiza mediante comandos, similares a la ficción interactiva, pero con un enfoque colaborativo o competitivo en tiempo real. El núcleo de su interés radica en la simulación de sistemas complejos como el tiempo, las economías o los horarios de NPCs, creando entornos dinámicos e interconectados. Los MUDs varían desde entornos de 'hack-n-slash' que reemplazan la figura del Game Master, hasta espacios completamente libres donde los jugadores crean historias de forma colaborativa. A pesar de la antigüedad del medio, los MUDs demuestran resiliencia al ofrecer experiencias inmersivas y comunitarias únicas en los márgenes de la web.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49033004,
-    "url": "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
-    "score": 753,
-    "time": 1784884097,
-    "titulo_es": "La Paradoja de la IA: ¿Por Qué el Software Empeora a Pesar de las Herramientas Avanzadas?",
-    "resumen": "El artículo explora la aparente contradicción entre el rápido avance de la IA y el deterioro percibido en la calidad del software. A pesar de las promesas de mayor productividad y mejores herramientas, los fallos de software parecen aumentar. Se argumenta que esto se debe a la creciente complejidad de las aplicaciones modernas, la presión por lanzar nuevas funcionalidades sobre la estabilidad, y una mentalidad orientada a KPIs que no prioriza la corrección de errores. Si bien la IA ha otorgado 'superpoderes' a los desarrolladores, estos no se están utilizando para construir software inherentemente mejor. Sin embargo, el autor se muestra optimista, creyendo que la frustración actual con la calidad del software, especialmente en el contexto de la 'deuda de IA' de las empresas, creará oportunidades para que desarrolladores individuales construyan software de alta calidad que antes estaba fuera de su alcance, impulsando una mejora generalizada.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49038045,
-    "url": "https://www.unitree.com/As2-W/",
-    "score": 125,
-    "time": 1784910772,
-    "titulo_es": "Robot Cuadrúpedo de Alto Rendimiento para Aplicaciones Avanzadas",
-    "resumen": "El artículo describe un robot cuadrúpedo avanzado, el 'As2-W', diseñado para aplicaciones de alto rendimiento que requieren procesamiento de datos en tiempo real y toma de decisiones autónoma. Destaca un módulo de expansión de alto rendimiento con 150 TOPS para IA en el dispositivo, un SDK y APIs amigables para desarrolladores que soportan grandes modelos de IA. Sus especificaciones técnicas incluyen una velocidad máxima superior a 6 m/s, un par pico de 95 N·m, un peso ligero de aproximadamente 25 kg (con batería), alta capacidad de carga estática (150 kg) y continua (16 kg). El robot puede superar obstáculos de 80 cm y pendientes de 45°, con una autonomía de más de 3 horas (sin carga) y más de 2 horas (con carga). Cuenta con 16 grados de libertad, motores PMSM de alta velocidad, encoders duales, LiDAR de 64-128 líneas, cámaras HD, Wi-Fi 6, Bluetooth 5.2 y opciones de conectividad 4G y GPS. Soporta desarrollo secundario a través de la plataforma UniStore y actualizaciones OTA. Está diseñado para aplicaciones de seguridad, inspección e IA integrada.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49036433,
-    "url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece",
-    "score": 469,
-    "time": 1784904119,
-    "titulo_es": "Gobierno indio ordena la eliminación de la aplicación de mensajería Bluetooth Bitchat en GitHub",
-    "resumen": "El Centro de Coordinación de Ciberdelincuencia de la India (I4C), brazo de ciberdelincuencia del Ministerio del Interior, ha ordenado a GitHub, una subsidiaria de Microsoft, que elimine la aplicación de mensajería basada en Bluetooth Bitchat. El I4C argumenta que la aplicación presenta un riesgo sustancial de mal uso por parte de elementos antinacionales, organizaciones terroristas y grupos delictivos organizados, ya que permite la comunicación anónima sin registro obligatorio ni verificación de número de teléfono, lo que dificulta la interceptación legal, la atribución y la investigación por parte de las fuerzas del orden. La orden se produce tras la observación de usuarios utilizando aplicaciones de mensajería Bluetooth durante protestas con restricciones de internet. El I4C señala que estas plataformas descentralizadas pueden ser explotadas para coordinar asambleas ilegales, protestas violentas, difundir desinformación y facilitar actividades perjudiciales para la soberanía e integridad de la India. La falta de un registro centralizado y la capacidad de operar sin conectividad a Internet o redes móviles son preocupaciones clave.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 48992539,
-    "url": "https://parksb.github.io/en/article/29.html",
-    "score": 26,
-    "time": 1784642716,
-    "titulo_es": "Memoria Caché: Acelerando el Rendimiento del Procesador",
-    "resumen": "El artículo explica la función de la memoria caché como un componente crucial para mitigar la disparidad de velocidad entre los procesadores y la memoria principal. Se detalla cómo la caché, una memoria pequeña y rápida integrada en la CPU, almacena datos de uso frecuente basándose en el principio de localidad (temporal y espacial). Se describen las jerarquías de caché (L1, L2, L3) presentes en CPUs modernas como el Intel Core i7, contrastándolas con diseños más antiguos como el i486. Se introducen métricas de rendimiento como la latencia de acierto (hit latency) y latencia de fallo (miss latency), y se explica cómo se calcula el tiempo de acceso promedio. Se discuten estrategias para mejorar el rendimiento de la caché, como ajustar su tamaño o usar SRAM más rápida. Finalmente, se compara la caché con una tabla hash implementada en hardware, destacando su eficiencia (O(1)) y su estructura basada en bloques, donde se utilizan partes de la dirección de memoria para el índice y el desplazamiento.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 48977849,
-    "url": "https://www.beautifulpublicdata.com/the-footprints-of-every-building-in-nyc/",
-    "score": 67,
-    "time": 1784550349,
-    "titulo_es": "El Paisaje Cambiante de Nueva York: Datos Semanales de Huellas de Edificios",
-    "resumen": "El artículo detalla el conjunto de datos de huellas de edificios de la ciudad de Nueva York (NYC), mantenido por la Oficina de Tecnología e Innovación (OTI) de NYC. Este conjunto de datos se actualiza semanalmente debido a la constante construcción y demolición en la ciudad, rastreando aproximadamente 1,082,974 edificios con más de 400 pies cuadrados y 12 pies de altura. Se excluyen estructuras temporales o menores. El artículo destaca que el 99% de los edificios tienen una fecha de construcción registrada, indicando que casi un cuarto de los edificios existentes fueron construidos en la década de 1920. Se discuten las discrepancias en la medición de la altura de edificios emblemáticos como el One World Trade Center, atribuyéndolas a las metodologías de fotogrametría y la definición de \"techo\". Aproximadamente el 93% de las mediciones provienen de fotogrametría aérea oblicua (Eagleview) e imágenes panorámicas a nivel de calle (Cyclomedia), complementadas con investigación del Departamento de Edificios y otros registros de la ciudad. El 95% de los datos de huellas son precisos dentro de +/- dos pies. El conjunto de datos también contiene información sobre otras clasificaciones de estructuras, como garajes (que representan una quinta parte de las entradas). Se menciona el edificio más antiguo registrado, la casa Pieter Claesen Wyckoff de 1652, y la larga historia de NYC en el uso de fotografía aérea para catalogar la ciudad.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49031409,
-    "url": "https://platform.claude.com/cookbook/",
-    "score": 313,
-    "time": 1784869755,
-    "titulo_es": "Construcción de un Ecosistema de Agentes Claude para Diversas Tareas",
-    "resumen": "El artículo detalla la construcción y el despliegue de un ecosistema robusto de agentes basados en Claude para abordar una amplia gama de aplicaciones. Cubre la creación de APIs de mensajes con capacidades de búsqueda profunda y puntuaciones de navegación, la implementación de clasificadores de seguridad con mecanismos de retroceso y facturación, y el diseño de patrones de agentes asíncronos multi-agente. Se explora la madurez operativa de los agentes a través de diferentes niveles de despliegue (Docker, Modal, Kubernetes), la coordinación de equipos heterogéneos de agentes con conjuntos de herramientas definidos para tareas específicas como la creación de propuestas de ventas, y el establecimiento de bucles de retroalimentación para la mejora continua de documentos. Se introduce la gestión de memoria para que los agentes recuerden preferencias del usuario, la construcción de agentes para el descubrimiento de vulnerabilidades de seguridad en código C, y la integración de agentes en flujos de respuesta a incidentes para el diagnóstico y remediación autónoma. Además, se describe la generación de informes analíticos a partir de datos CSV, tutoriales de inicio rápido para la API de Agentes Gestionados, y la gestión de ciclos de vida de recursos con credenciales seguras. Se aborda el versionado de prompts del lado del servidor con mecanismos de retroceso, la investigación autónoma de Indicadores de Compromiso (IOC) integrando fuentes de inteligencia de amenazas, y la gestión de historiales de conversación mediante la manipulación de sesiones de agentes. Finalmente, se detalla la construcción de grafos de conocimiento a partir de texto no estructurado, la comparación de estrategias de ingeniería de contexto para agentes de larga duración, la portabilidad de aplicaciones de OpenAI Agent SDK a Claude Agent SDK, y la optimización del consumo de latencia y tokens mediante la ejecución de código que llama a herramientas programáticamente.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49038060,
-    "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
-    "score": 489,
-    "time": 1784910811,
-    "titulo_es": "La Estrategia de OpenAI: Poder, Peligro y Financiación en IA",
-    "resumen": "El artículo analiza la estrategia de comunicación de OpenAI, sugiriendo que la exageración de los peligros de la IA sirve para destacar su poder y atraer inversiones significativas, como ocurrió con el lanzamiento de GPT-2 y el incidente del agente autónomo que hackeó HuggingFace. Se plantea que esta narrativa justifica la necesidad de que actores 'confiables' como OpenAI controlen tecnologías de IA avanzadas, mientras se limita el acceso público a modelos potentes para análisis de ciberseguridad. El autor argumenta que la democratización del acceso a IA robusta, tanto para atacantes como para defensores, podría, de hecho, mejorar la ciberseguridad a largo plazo, citando el uso de un modelo chino abierto por HuggingFace para investigar la brecha de seguridad causada por OpenAI, debido a las restricciones en modelos estadounidenses.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49039395,
-    "url": "https://ui.gsxhq.dev/",
-    "score": 66,
-    "time": 1784915948,
-    "titulo_es": "gsxui: Un set de componentes estilo shadcn para gsx",
-    "resumen": "gsxui es una biblioteca de componentes de interfaz de usuario diseñada para gsx, inspirada en el estilo de shadcn. Sus características clave incluyen la capacidad de copia directa (copy-in), tipado seguro (type-checked) y renderizado en el servidor (server-rendered). Permite al desarrollador tener control total sobre el código y personalizar el estilo utilizando Tailwind CSS. Los componentes de diálogo (ui/dialog) están implementados sobre el elemento nativo <dialog>, eliminando la dependencia de frameworks de cliente.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49034673,
-    "url": "https://www.bruh.ltd/blog/programming-language-file-extensions-that-match-an-iso-3166-1-alpha-2-country-code/",
-    "score": 48,
-    "time": 1784896468,
-    "titulo_es": "Extensiones de Archivo que Coinciden con Códigos de País ISO 3166-1 Alpha-2",
-    "resumen": "El artículo explora la coincidencia entre los códigos de país definidos por el estándar ISO 3166-1 alpha-2 y las extensiones de archivo utilizadas por varios lenguajes de programación, lenguajes de dominio específico y lenguajes de marcado. Se destaca el caso del lenguaje de programación Rust, cuya extensión '.rs' coincide con el código de Serbia. El autor invita a la comunidad a compartir otros ejemplos de estas coincidencias, ilustrando cómo estas dos convenciones aparentemente no relacionadas pueden cruzarse, afectando a menudo la disponibilidad de nombres de dominio para proyectos tecnológicos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49021856,
-    "url": "https://xn--gckvb8fzb.com/i-regret-migrating-to-codeberg/",
-    "score": 514,
-    "time": 1784815607,
-    "titulo_es": "Un breve comentario sobre los nuevos términos de Codeberg, y por qué me preocupa más un host de software libre que decide qué proyectos son bienvenidos que las propias prohibiciones",
-    "resumen": "El artículo critica las recientes modificaciones en los términos de servicio de Codeberg, un host de software libre. El autor, previamente descontento con GitHub por su 'enshittification' y el control de Microsoft, veía Codeberg como una alternativa prometedora. Sin embargo, las nuevas políticas que prohíben proyectos predominantemente impulsados por LLMs y proyectos de criptomonedas le preocupan. La principal preocupación no son las prohibiciones en sí, sino la autoridad del host para decidir qué proyectos son 'bienvenidos', citando la prohibición de criptomonedas como un ejemplo de criterio arbitrario ('content that harms the reputation of Codeberg'). Además, critica la justificación del equipo de Codeberg sobre el uso de LLMs, calificándola de desconectada de la realidad del desarrollo de software libre, donde muchos proyectos son obra de desarrolladores solitarios ('one-man-shows') y no necesariamente cuentan con una 'comunidad' romántica. El autor argumenta que la posesión de código por parte de una sola entidad, ya sea una corporación grande como Microsoft o una asociación de software libre, sigue implicando una forma de control y vigilancia.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49038481,
-    "url": "https://duckpgq.org/",
-    "score": 54,
-    "time": 1784912423,
-    "titulo_es": "DuckPGQ: Una extensión de DuckDB para Cargas de Trabajo de Grafos y el Estándar SQL/PGQ",
-    "resumen": "DuckPGQ es una extensión comunitaria para DuckDB diseñada para cargas de trabajo de grafos, implementando el estándar SQL/PGQ. Aprovecha la infraestructura de DuckDB para ofrecer capacidades de consulta de grafos de alto rendimiento basadas en SQL directamente dentro de flujos de trabajo analíticos. Actualmente, DuckPGQ es un proyecto de investigación en desarrollo activo, lo que implica que puede presentar errores o funcionalidades incompletas. Se fomenta la experimentación y se agradecen los informes de errores y la retroalimentación para su mejora continua.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49032095,
-    "url": "https://mariusbancila.ro/blog/2026/07/23/the-pimpl-idiom-and-the-cpp26-stdindirect-type/",
-    "score": 68,
-    "time": 1784876563,
-    "titulo_es": "El Idioma Pimpl en C++ y las Mejoras de C++26",
-    "resumen": "El artículo explora el idioma Pimpl (Pointer to Implementation) en C++, una técnica para separar la interfaz de una clase de sus detalles de implementación mediante un puntero opaco. Inicialmente se implementa con punteros crudos y la Regla de Cinco, detallando la gestión de recursos y los problemas con la propagación de constness y el estado de objetos movidos. Se introduce `std::unique_ptr` como una mejora para la gestión automática de memoria, aunque persisten los problemas de constness y estado post-movimiento. Finalmente, se presenta `std::indirect` de C++26 como una solución más adecuada para Pimpl, ya que está diseñado para miembros dinámicamente asignados que se comportan como valores, abordando las limitaciones de `std::unique_ptr` en este contexto.",
-    "categoria": "Desarrollo de Software"
   }
 ]
