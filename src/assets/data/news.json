@@ -1,1 +1,164 @@
-[]
+[
+  {
+    "id": 49166386,
+    "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
+    "score": 40,
+    "time": 1785837655,
+    "titulo_es": "Despliegue e infraestructura de DeepSeek-V4-Flash en una sola GPU AMD MI300X en producción",
+    "resumen": "El artículo detalla la configuración técnica y los parches requeridos para ejecutar el modelo DeepSeek-V4-Flash-0731 en una única GPU AMD MI300X utilizando vLLM y ROCm. Explica correcciones críticas como la incompatibilidad del formato FP8 (diferencias entre la variante FNUZ de AMD y el estándar OCP), corrección de errores en el enrutamiento MoE (MXFP4) bajo alta concurrencia, sincronización de la memoria KV en CPU y optimizaciones de kernels. Además, describe los requisitos de hardware (192 GB HBM3), monitoreo de VRAM y ajustes de rendimiento en producción.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49161518,
+    "url": "https://www.seangoedecke.com/llms-reward-expertise/",
+    "score": 997,
+    "time": 1785791633,
+    "titulo_es": "El conocimiento del dominio es la habilidad clave para el prompting en modelos de lenguaje",
+    "resumen": "El artículo analiza cómo los modelos de lenguaje de gran escala (LLM) permiten a los usuarios actuar como generalistas, pero argumenta que la destreza real en el 'prompting' depende del conocimiento profundo en el dominio específico. A través del ejemplo del matemático Terence Tao interactuando con ChatGPT y la experiencia en arquitecturas de código complejas, se demuestra que los expertos pueden guiar al modelo, cuestionar sus respuestas e identificar soluciones óptimas que un novato no podría extraer. En consecuencia, la pericia humana sigue siendo el factor diferenciador y el cuello de botella principal para obtener el máximo valor de la IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49164896,
+    "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+    "score": 76,
+    "time": 1785824274,
+    "titulo_es": "Auto-mejora recursiva e ingeniería de harnesses en la IA moderna",
+    "resumen": "El artículo explora el concepto de auto-mejora recursiva (RSI) en la inteligencia artificial, enfocado en el papel crucial de la 'ingeniería de harnesses' (sistemas de orquestación alrededor del modelo base). Explica cómo los harnesses evolucionan la arquitectura de agentes desde simples plantillas de prompts hacia diseños de tiempo de ejecución y sistemas software completos que gestionan flujos de trabajo (planificar, ejecutar, observar, mejorar), permisos y estados persistentes mediante archivos externos para superar los límites de la ventana de contexto.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49158333,
+    "url": "https://github.com/leonickson1/Swiftlet",
+    "score": 201,
+    "time": 1785776055,
+    "titulo_es": "Swiftlet: Runtime en Swift y Metal para ejecutar modelos MoE de Qwen en dispositivos Apple",
+    "resumen": "Swiftlet es una librería y runtime ligero escrito en Swift y Metal que permite ejecutar modelos de lenguaje híbridos con arquitectura Mixture-of-Experts (MoE) de gran tamaño, como Qwen 35B y 80B, directamente en dispositivos Apple Silicon (macOS e iOS). Su arquitectura mantiene únicamente el núcleo denso en memoria RAM (consumiendo solo unos 2.5 GB en un iPhone) y transmite bajo demanda los pesos de los expertos desde el almacenamiento SSD local. Implementa atención lineal Gated DeltaNet para evitar el crecimiento de la caché KV y utiliza algoritmos de desalojo LFU con recesión para optimizar las lecturas del disco.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49156111,
+    "url": "https://blog.exe.dev/devtools-must-be-open-source",
+    "score": 625,
+    "time": 1785766547,
+    "titulo_es": "Personalización de software en la era de los agentes de IA",
+    "resumen": "El artículo analiza cómo los agentes de IA han transformado la viabilidad del software personalizado. Tradicionalmente, escribir y mantener herramientas propias tenía un bajo retorno de inversión debido al esfuerzo de mantenimiento. Hoy en día, los agentes automatizan la personalización y la sincronización con versiones ascendentes (upstream). Como caso práctico, el autor describe el uso de LLMs para preprocesar y simplificar diffs de código (proyecto meat.dev / Shelley), eliminando detalles rutinarios como chequeos de nulos o manejo de errores para permitir a los arquitectos enfocarse exclusivamente en la arquitectura y casos de uso complejos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49095386,
+    "url": "https://ochagavia.nl/blog/that-time-when-i-failed-the-microsoft-interview/",
+    "score": 73,
+    "time": 1785319370,
+    "titulo_es": "Mi experiencia en la entrevista para una pasantía en Microsoft",
+    "resumen": "El autor relata su experiencia durante el proceso de selección para una pasantía de verano en Microsoft en 2015 mientras cursaba Ciencias de la Computación. Describe su preparación basada en el libro 'Cracking the Coding Interview', abarcando preguntas conductuales, estructuras de datos y acertijos lógicos. Durante la entrevista telefónica, por honestidad, admitió que ya conocía el acertijo planteado y solicitó otro, el cual no logró resolver bajo presión, lo que derivó en la posterior carta de rechazo por parte de la empresa.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49153374,
+    "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+    "score": 496,
+    "time": 1785749527,
+    "titulo_es": "Por qué sigo escribiendo manualmente el código generado por IA",
+    "resumen": "El autor aborda cómo utilizar asistentes de código e IA generativa en proyectos personales sin perder el control ni acumular deuda cognitiva. En lugar de permitir que los agentes modifiquen directamente el repositorio o creen solicitudes de extracción (PRs), el desarrollador configura sus agentes para que solo muestren el código sugerido en el chat. Posteriormente, escribe y adapta manualmente cada línea en su editor. Aunque este flujo reduce el incremento de velocidad de 10x a 2x, permite construir un modelo mental y espacial detallado del sistema, detectar alucinaciones a tiempo y preservar el aprendizaje y disfrute del desarrollo de software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49158581,
+    "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
+    "score": 225,
+    "time": 1785776926,
+    "titulo_es": "Optimizando la inferencia de grandes modelos en Cloudflare Workers AI",
+    "resumen": "Cloudflare explica cómo optimiza el servicio de grandes modelos de lenguaje (LLM) de contexto largo, como Kimi K2.6 y GLM 5.2, en Cloudflare Workers AI utilizando la plataforma SGLang. Mediante la separación de las fases de prefill y decode, la cuantización de la KV cache de BF16 a FP8 (duplicando la capacidad de contexto y mejorando la concurrencia máxima en un 41%) y la compresión de pesos de FP8 a INT4 (reduciendo el tamaño del modelo en un 40%), logran maximizar la densidad de solicitudes por GPU sin degradar la precisión del modelo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49156750,
+    "url": "https://pandoc.org/twenty-years-of-pandoc.html",
+    "score": 277,
+    "time": 1785769493,
+    "titulo_es": "20 años de Pandoc: La historia y arquitectura detrás del conversor en Haskell",
+    "resumen": "John MacFarlane narra el origen y evolución de Pandoc tras 20 años de su creación. Detalla cómo el proyecto nació al explorar Haskell y utilizar la librería de combinadores de parsers (Parsec). Resalta la decisión arquitectónica fundamental de reemplazar las transformaciones basadas en expresiones regulares por un Árbol de Sintaxis Abstracta (AST) real, lo que dio lugar a un diseño extensible compuesto por N lectores y M escritores capaz de escalar al soporte de múltiples formatos de documentos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49155629,
+    "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+    "score": 300,
+    "time": 1785764083,
+    "titulo_es": "MiniMax H3 se lanza con pesos abiertos y soporte nativo en ComfyUI",
+    "resumen": "MiniMax H3 es un modelo de generación de video multimodal de pesos abiertos capaz de generar secuencias de hasta 2K a 15 segundos con audio estéreo nativo en una sola pasada. Admite generación a partir de texto, imagen, fotogramas clave y transferencia de movimiento/estilo. Destaca por sus optimizaciones de ingeniería de machine learning: reducción del footprint de memoria en un 66% (de 123.6 GB a 42.5 GB) mediante la sustitución del 40% de parámetros de modulación por tablas de búsqueda, cuantización int8 convrot, kernels personalizados y descarga dinámica de VRAM, permitiendo su ejecución local en GPUs de consumo como la RTX 3060.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49156011,
+    "url": "https://clickhouse.com/blog/andy-pavlo-joins-clickhouse",
+    "score": 315,
+    "time": 1785766140,
+    "titulo_es": "Uniéndome a ClickHouse para crear ClickHouse Labs",
+    "resumen": "Andy Pavlo, profesor de Ciencias de la Computación en la Universidad Carnegie Mellon, anuncia su incorporación a ClickHouse para fundar y liderar ClickHouse Labs, un equipo de investigación industrial centrado en internismos de sistemas de gestión de bases de datos (DBMS). En el artículo repasa la trayectoria de ClickHouse desde su lanzamiento open-source en 2016, destacando su motor escrito en C++ con ejecución vectorial optimizada mediante SIMD. ClickHouse Labs busca acortar la brecha entre la investigación académica y la ingeniería de producción, colaborando estrechamente con ingenieros y clientes para optimizar tanto ClickHouse como su servicio gestionado de PostgreSQL, además de investigar la integración de DBMS en tecnologías emergentes e inteligencia artificial.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49158474,
+    "url": "https://changelog.complete.org/archives/44456-celebrating-45-years-of-kermit-with-the-first-new-c-kermit-release-in-15-years-and-working-with-a-decades-old-c-codebase",
+    "score": 168,
+    "time": 1785776530,
+    "titulo_es": "Sumergiéndose en la base de código de C-Kermit: Historia y mantenimiento moderno",
+    "resumen": "El artículo explora la historia y evolución del protocolo Kermit, diseñado en 1981 para permitir la comunicación entre sistemas incompatibles. Se detalla la trayectoria de C-Kermit desde su origen autodidacta en la Universidad de Columbia hasta su liberación como software libre bajo licencia BSD en 2011. Actualmente, un mantenedor de Debian describe el proceso de refactorización y auditoría de seguridad de su base de código en C legacy, destacando la elegancia de su arquitectura multiplataforma, la corrección de vulnerabilidades y la adaptación de sus comportamientos por defecto para ajustarse a los estándares de transferencia de datos modernos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49165845,
+    "url": "https://picburn.xyz/",
+    "score": 3,
+    "time": 1785832752,
+    "titulo_es": "Arrastra una imagen. Obtén un enlace privado. Se autodestruye.",
+    "resumen": "Descripción de un servicio web ligero diseñado para el intercambio de imágenes efímeras y privadas de hasta 15 MB sin necesidad de registro. La herramienta ofrece privacidad mediante identificadores aleatorios largos, políticas de no indexación para motores de búsqueda y eliminación automática de archivos según un límite de tiempo o tras una única visualización.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49152842,
+    "url": "https://github.com/janestreet/bonsai",
+    "score": 361,
+    "time": 1785745797,
+    "titulo_es": "Bonsai: Una biblioteca de UI para construir aplicaciones web reactivas y compuestas en OCaml",
+    "resumen": "El artículo presenta Bonsai, una biblioteca de interfaz de usuario desarrollada por Jane Street para construir aplicaciones web reactivas y de alto rendimiento utilizando OCaml. A diferencia de otros marcos web que unifican el estado y la renderización, Bonsai desacopla las primitivas de estado e incrementalidad, permitiendo optimizar tanto la interfaz como la lógica de negocio compleja. Además, aprovecha el sólido sistema de tipos de OCaml para compartir código entre el backend y el frontend, e incluye soporte nativo para pruebas automatizadas del DOM, CSS específico por componente y extensiones como Bonsai_term para interfaces de terminal.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49154228,
+    "url": "https://github.com/lyogavin/airllm",
+    "score": 222,
+    "time": 1785755748,
+    "titulo_es": "AirLLM: Ejecución de Modelos de Lenguaje Grandes con Uso Reducido de Memoria",
+    "resumen": "AirLLM es una biblioteca de software diseñada para reducir drásticamente el uso de memoria en la inferencia de modelos de lenguaje grandes (LLMs). Permite ejecutar modelos de hasta 2.8T de parámetros en hardware de consumidor, como una sola GPU de 4GB, sin necesidad de cuantización, destilación o poda. Esto se logra principalmente a través de la carga de expertos por demanda (per-expert streaming) para modelos Mixture-of-Experts (MoE), donde solo se carga el experto necesario para cada token en lugar de una capa completa. La herramienta soporta una amplia gama de modelos populares como Llama 3/3.1, DeepSeek V2/V3, Kimi K3, Qwen, Mistral, Phi-4 y Gemma. Las versiones recientes han introducido soporte para FP8, inferencia en CPU, modelos no distribuidos (non-sharded), prefetching para mejorar la velocidad, y compatibilidad con MacOS. La inicialización del modelo es simplificada a través de `AutoModel`, que detecta automáticamente el tipo de modelo. Se ha implementado compresión basada en cuantización 'block-wise' de pesos para acelerar la inferencia hasta 3x con mínima pérdida de precisión, enfocándose en la reducción del tamaño de carga del modelo en lugar de la cuantización de activaciones, lo que preserva mejor la precisión.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49166182,
+    "url": "https://live.euronext.com/en/financial-news/bending-spoons-makes-first-post-ipo-acquisition-13-billion-airtable-deal",
+    "score": 45,
+    "time": 1785835667,
+    "titulo_es": "Bending Spoons Adquiere Airtable por 1.285 Mil Millones de Dólares",
+    "resumen": "El artículo informa sobre la adquisición de Airtable por parte de Bending Spoons en una operación totalmente en efectivo valorada en 1.285 millones de dólares. Airtable, fundada en 2013, es una empresa de software que ofrece una plataforma que integra capacidades de hoja de cálculo y base de datos, permitiendo a las empresas crear aplicaciones y gestionar flujos de trabajo operativos sin necesidad de programación. Bending Spoons, una compañía tecnológica italiana con presencia en Nasdaq, sigue una estrategia de adquisición y reestructuración de negocios digitales. Esta adquisición marca la primera para Bending Spoons desde su debut bursátil y se suma a compras previas de marcas como AOL y Eventbrite. La transacción, que se espera cierre a finales de año sujeta a aprobaciones regulatorias, valora la participación de Airtable en aproximadamente 2.25 mil millones de dólares, considerando su posición neta de efectivo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49161801,
+    "url": "https://bumbershootsoft.wordpress.com/2026/05/30/zx-spectrum-system-tour-text-mode/",
+    "score": 48,
+    "time": 1785793152,
+    "titulo_es": "Explorando el Lenguaje Máquina del ZX Spectrum: Una Introducción",
+    "resumen": "El artículo inicia una serie sobre programación en lenguaje máquina para el ZX Spectrum, contrastando su enfoque de firmware menos estructurado con plataformas como Commodore y MSX. Se centra en la arquitectura de 48KB, la coexistencia de BASIC y código máquina, y las técnicas para ejecutar programas ML. Cubrirá la organización del sistema, carga y ejecución, la gestión de displays (incluyendo gráficos definidos por el usuario) y la entrada de teclado/joystick. Se mencionan métodos para cargar y ejecutar programas de lenguaje máquina de forma integrada con BASIC, aprovechando la función SAVE para inicios automáticos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49161743,
+    "url": "https://github.com/ahatem/IoskeleyMono",
+    "score": 24,
+    "time": 1785792861,
+    "titulo_es": "Ioskeley Mono: Una alternativa Open Source a Berkeley Mono",
+    "resumen": "El artículo describe Ioskeley Mono, una fuente tipográfica diseñada como una alternativa gratuita y de código abierto a Berkeley Mono. Está construida configurando Iosevka para replicar de cerca la apariencia y el comportamiento de Berkeley Mono. El diseño incluye métricas personalizadas y variantes de caracteres específicos para lograr la estética deseada, como proporciones verticales, espaciado entre letras y tamaño de paréntesis. Se detallan variantes específicas como Ioskeley Mono Term (con espaciado ajustado para entornos de terminal) y Ioskeley Mono NL (con sustituciones de ligaduras deshabilitadas para aplicaciones incompatibles). La fuente se compila automáticamente a través de GitHub Actions y se invita a la comunidad a contribuir. Se proporciona información sobre cómo descargar y usar la fuente, incluyendo diferentes anchos y pesos.",
+    "categoria": "Desarrollo de Software"
+  }
+]
