@@ -1,164 +1,362 @@
 [
   {
-    "id": 49166386,
-    "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
-    "score": 40,
-    "time": 1785837655,
-    "titulo_es": "Despliegue e infraestructura de DeepSeek-V4-Flash en una sola GPU AMD MI300X en producción",
-    "resumen": "El artículo detalla la configuración técnica y los parches requeridos para ejecutar el modelo DeepSeek-V4-Flash-0731 en una única GPU AMD MI300X utilizando vLLM y ROCm. Explica correcciones críticas como la incompatibilidad del formato FP8 (diferencias entre la variante FNUZ de AMD y el estándar OCP), corrección de errores en el enrutamiento MoE (MXFP4) bajo alta concurrencia, sincronización de la memoria KV en CPU y optimizaciones de kernels. Además, describe los requisitos de hardware (192 GB HBM3), monitoreo de VRAM y ajustes de rendimiento en producción.",
+    "id": 49131438,
+    "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp/",
+    "score": 245,
+    "time": 1785563496,
+    "titulo_es": "MCP Sin Estado: La evolución del Model Context Protocol 2.0 para agentes de IA",
+    "resumen": "El artículo analiza el lanzamiento de MCP 2.0 (Model Context Protocol), que introduce una arquitectura 'stateless' (sin estado) para exponer herramientas a agentes de IA. A diferencia de la especificación heredada, que requería dos peticiones HTTP y el mantenimiento de 'session IDs' en el servidor, el nuevo enfoque realiza las llamadas mediante una única petición HTTP. Esto simplifica significativamente la implementación de clientes y servidores, facilitando el escalado horizontal. El autor destaca que los componentes MCP ofrecen mayor seguridad y facilidad de auditoría en comparación con entornos de ejecución de comandos directos (shell), siendo aptos incluso para modelos de IA pequeños. Además, presenta dos implementaciones prácticas: 'mcp-explorer', una herramienta CLI en Python para inspeccionar servidores MCP, y 'datasette-mcp', un plugin para consultar bases de datos desde modelos como ChatGPT o Claude.",
     "categoria": "IA"
+  },
+  {
+    "id": 49105978,
+    "url": "https://unsung.aresluna.org/gravity-is-worth-asking-about/",
+    "score": 106,
+    "time": 1785383853,
+    "titulo_es": "Anuncios, interfaces y la regla del cero-uno-infinito en el diseño de software",
+    "resumen": "El artículo analiza el crecimiento de la complejidad en las interfaces digitales a través del concepto de la 'pendiente resbaladiza' y la regla de 'Cero-Uno-Infinito'. Utilizando la decisión de Apple de incorporar anuncios en sus aplicaciones como analogía, el autor explica cómo las interfaces de usuario son infinitamente extensibles, lo que facilita la adición progresiva de botones, anuncios u opciones secundarias. Este proceso genera complejidad acumulativa y carga mental (Ley de Hick) que ningún equipo asume de forma aislada. Se concluye que es fundamental que los arquitectos y diseñadores impongan límites estrictos para preservar la simplicidad del software.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49180901,
+    "url": "https://jasmi.news/p/no-data-centers-in-my-backyard",
+    "score": 3,
+    "time": 1785926337,
+    "titulo_es": "Enfrentando la realidad física de la IA: La creciente oposición a los centros de datos en el Medio Oeste",
+    "resumen": "El artículo analiza el impacto social, ambiental y político de la expansión de los centros de datos hiperescala, impulsados por la alta demanda de procesamiento y entrenamiento de modelos de Inteligencia Artificial. A través de una crónica de viaje por el Medio Oeste de EE. UU., se explora cómo la infraestructura física necesaria para la IA está generando una inédita resistencia bipartidista y debate ciudadano sobre el consumo de agua, energía e impacto local.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49176038,
+    "url": "https://earendil.com/posts/pi-autoresearch-and-databricks/",
+    "score": 390,
+    "time": 1785882132,
+    "titulo_es": "Pi, minimalista y de alto rendimiento",
+    "resumen": "El artículo analiza Pi, un entorno de ejecución (harness) minimalista para agentes de código impulsados por IA. A diferencia de otras plataformas complejas, Pi incluye solo 4 herramientas base y un prompt de sistema con menos de 1,000 tokens. Estudios de rendimiento en Databricks y Shopify demuestran que la disciplina de contexto de Pi reduce drásticamente los costos y las iteraciones por tarea en comparación con soluciones más recargadas como Claude Code o Codex, ofreciendo una alta extensibilidad sin sacrificar calidad.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49171268,
+    "url": "https://mistral.ai/news/shieldstral/",
+    "score": 434,
+    "time": 1785861365,
+    "titulo_es": "Presentando Shieldstral",
+    "resumen": "Mistral lanza Shieldstral, un clasificador de seguridad multimodal de 3B parámetros con pesos abiertos bajo la licencia Apache 2.0. El modelo replantea la moderación de contenido como una tarea de respuesta a preguntas binarias adaptables por política en tiempo de inferencia, sin necesidad de reentrenamiento. Evalúa tanto texto como imágenes procesando un contexto de evaluación, una pregunta de tipo sí/no y el documento a analizar, superando a modelos hasta 7 veces más grandes y funcionando eficientemente en una sola GPU NVIDIA de 16GB.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49170165,
+    "url": "https://toneyalexander.github.io/inclusive-color-space/",
+    "score": 545,
+    "time": 1785856582,
+    "titulo_es": "Un espacio de color inclusivo para tonos de piel humanos",
+    "resumen": "El artículo explora la creación de un selector de color personalizado implementado en JavaScript y un algoritmo de generación procedimental en Python, diseñados para definir un subespacio inclusivo dentro del modelo RGB. Su propósito es facilitar la representación variada y realista de tonos de piel en herramientas digitales como creadores de personajes y software de arte. El autor aborda los desafíos matemáticos y técnicos de simplificar la compleja biología de la pigmentación humana a ecuaciones 'suficientemente buenas', reconociendo las limitaciones inherentes a los dispositivos de visualización y percepción del color.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49178608,
+    "url": "https://arxiv.org/abs/2607.29377",
+    "score": 50,
+    "time": 1785904604,
+    "titulo_es": "Acerca de arXivLabs",
+    "resumen": "arXivLabs es un entorno y marco de trabajo diseñado para que colaboradores individuales u organizaciones desarrollen e integren nuevas herramientas y funcionalidades en el sitio web de arXiv, bajo principios de desarrollo abierto, privacidad de datos del usuario y trabajo comunitario.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49124273,
+    "url": "https://www.thehopkinthomasproject.com/TheHopkinThomasProject/TimeLine/Wales/Steam/URochesterCollection/Hero/index-2.html",
+    "score": 34,
+    "time": 1785511355,
+    "titulo_es": "Neumática de Herón de Alejandría",
+    "resumen": "Tratado histórico escrito por Herón de Alejandría que explora los principios de la neumática, la hidráulica y la mecánica clásica. El texto detalla el funcionamiento de más de 50 inventos y experimentos físicos, incluyendo sifones avanzados, fuentes hidráulicas, bombas de agua, autómatas accionados por aire comprimido y calor, así como prototipos tempranos de motores de vapor como la eolipíla.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49176697,
+    "url": "https://mysk.blog/2026/08/04/webkit-proxy-icloud-private-relay-ip-leak/",
+    "score": 122,
+    "time": 1785886306,
+    "titulo_es": "Fugas de red en WebKit: Vulnerabilidades que eluden la configuración de proxy en iOS y macOS",
+    "resumen": "Análisis técnico sobre vulnerabilidades en el motor WebKit de Apple que permiten a sitios web eludir las configuraciones de proxy hechas vía 'WKWebsiteDataStore.proxyConfigurations'. Se identificaron tres mecanismos de fuga fuera del proceso estándar de carga de páginas: peticiones DNS prefetched ('<link rel=\"dns-prefetch\">'), WebTransport y WebAuthn. Estas fallas exponen la IP real del usuario y realizan consultas DNS directas desde el dispositivo, afectando a navegadores basados en WebKit en iOS (incluidos Psylo y navegadores Tor) e iCloud Private Relay, aunque no a las VPNs a nivel de sistema.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49113523,
+    "url": "https://hannahilea.com/blog/birduino/",
+    "score": 6,
+    "time": 1785434859,
+    "titulo_es": "¡Este es el Birduino!",
+    "resumen": "El artículo describe el diseño y ensamblaje de Birduino, un reproductor de audio embebido basado en la plataforma open-source TonUINO. El sistema utiliza un microcontrolador AZ-Nano V3 (basado en ATmega328P), un lector RFID RC522 y un módulo MP3 con microSD para reproducir vocalizaciones de aves según la tarjeta NFC detectada. Se detallan aspectos técnicos como la adaptación del código en C++ mediante el IDE de Arduino, la organización de archivos de audio de la Guía Cornell y las lecciones aprendidas durante la soldadura y cableado en una placa de prototipado.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49175924,
+    "url": "https://techascent.com/blog/just-ducking-around.html",
+    "score": 113,
+    "time": 1785881383,
+    "titulo_es": "Procesamiento de datos funcional a gran escala con Clojure, TMD y DuckDB",
+    "resumen": "El artículo analiza cómo la biblioteca tech.ml.dataset (TMD) en Clojure se integra con DuckDB mediante bindings de C para gestionar grandes volúmenes de datos que superan la memoria RAM. A través de consultas por lotes y ejecución SQL vectorizada, permite realizar joins y reducciones sobre cientos de millones de filas manteniendo un enfoque de programación funcional y un bajo consumo de memoria mediante técnicas como el acceso 'zero-copy'.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49084236,
+    "url": "https://rioterm.com/blog/2026/07/27/rio-vt-and-librio",
+    "score": 37,
+    "time": 1785248149,
+    "titulo_es": "Rio 0.5: Desacoplando el motor de terminal con rio-vt y librio",
+    "resumen": "Con el lanzamiento de Rio 0.5, el motor del terminal se ha dividido en dos capas independientes y embebibles: `rio-vt` (un crate en Rust liviano sin dependencias de GPU o renderizado) y `librio` (una ABI en C multiplataforma para integrar en Swift, C u otros lenguajes). Esta arquitectura separa la máquina de estados VT, la cuadrícula, el historial de desplazamiento y los protocolos de imágenes (Sixel, Kitty, iTerm2). Además, optimiza el renderizado permitiendo actualizar solo las filas modificadas (dirty rows) y demuestra un rendimiento superior en pruebas de parseo, serialización y redimensionado frente a bibliotecas como `vt100` y `alacritty_terminal`.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49178464,
+    "url": "https://github.com/Carloscodix/qapla",
+    "score": 36,
+    "time": 1785902847,
+    "titulo_es": "El GPT (en klingon) que nadie pidió pero todos necesitaban",
+    "resumen": "El artículo explora la posibilidad de entrenar modelos de lenguaje tipo Transformer desde cero directamente dentro de un microcontrolador ESP32-S3 de bajo costo, a diferencia del enfoque convencional de TinyML que solo ejecuta inferencia. Analiza las ventajas del aprendizaje continuo local en el borde (Edge AI) para entornos sin conectividad a internet ni datos previos, enfrentando restricciones severas de memoria que exigen arquitecturas compactas de cientos de miles de parámetros y un corpus estrictamente acotado.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49176947,
+    "url": "https://lists.securityfocus.com/hyperkitty/list/bugtraq@securityfocus.com/thread/CHKLXLA7SJEWLDFHWXB3QU57ADOXGL2E/",
+    "score": 49,
+    "time": 1785888349,
+    "titulo_es": "El regreso de Bugtraq: Preservando la historia de la ciberseguridad y la divulgación completa",
+    "resumen": "Se anuncia la reactivación de Bugtraq y la adquisición del dominio securityfocus.com. La icónica lista de correo de divulgación completa (full disclosure), creada originalmente en 1993 para la publicación abierta de vulnerabilidades sin filtros corporativos, regresa con el objetivo de servir como foro activo de investigación de seguridad y como un archivo histórico para preservar exploits, técnicas y análisis técnicos frente a la pérdida de información en la era digital.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49176055,
+    "url": "https://seg6.space/posts/center-div/",
+    "score": 138,
+    "time": 1785882240,
+    "titulo_es": "Una extensión para centrar una página en la ventana del navegador en lugar de la vista web",
+    "resumen": "El artículo analiza la problemática del centrado de elementos HTML cuando existen barras laterales o herramientas de desarrollo que reducen el área del viewport pero no el ancho total de la ventana. Explora soluciones en JavaScript calculando la posición exacta de la vista mediante eventos del puntero y presenta el desarrollo de una extensión de navegador que permite centrar el contenido respecto a la ventana completa de forma opcional.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49175826,
+    "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+    "score": 251,
+    "time": 1785880901,
+    "titulo_es": "La inteligencia artificial impulsa más de la mitad del cibercrimen en África, según un informe de INTERPOL",
+    "resumen": "El Informe de Evaluación de Ciberamenazas en África 2026 de la INTERPOL revela que el 55% de los ciberdelitos reportados en el continente utilizan inteligencia artificial. Las pérdidas financieras aumentaron a 484 millones de dólares en 2025, impulsadas por estafas avanzadas, Business Email Compromise (BEC), deepfakes para sextorsión e identidades sintéticas diseñadas para evadir controles biométricos. El informe subraya marcadas variaciones regionales en los vectores de ataque (fraude de dinero móvil, ransomware e ingeniería social) y advierte sobre la vulnerabilidad de los sistemas financieros debido a la falta de cooperación e intercambio de información en tiempo real entre bancos, operadoras de telecomunicaciones y fuerzas de seguridad.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49123231,
+    "url": "https://lawrencecpaulson.github.io//2026/07/30/Collatz.html",
+    "score": 45,
+    "time": 1785506374,
+    "titulo_es": "Falsa refutación de la conjetura de Collatz y los errores de solidez en asistentes de demostración",
+    "resumen": "El artículo analiza la errónea refutación de la conjetura de Collatz provocada por un fallo de solidez (soundness bug) en el núcleo del asistente de pruebas Lean, el cual tampoco fue detectado por el verificador independiente Nanoda. A partir de este caso, se examina la arquitectura de los asistentes de prueba, comparando el enfoque de objetos de prueba (proof objects) frente al diseño LCF de Robin Milner. Asimismo, se cuestiona la inclusión de constructos complejos como tipos inductivos anidados o coincidencia de patrones dentro del kernel de teorías de tipos dependientes, abogando por la simplicidad de la teoría de conjuntos y la teoría de tipos simples donde las definiciones complejas se derivan de axiomas primitivos mínimos mediante 'trabajo honrado'.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49176606,
+    "url": "https://blog.hartwork.org/posts/libexpat-city-of-munich-open-source-sabbatical/",
+    "score": 290,
+    "time": 1785885492,
+    "titulo_es": "Software libre, música, ajedrez chino: Mantenimiento a tiempo completo de libexpat",
+    "resumen": "El mantenedor principal de libexpat, la biblioteca parser de XML en C99 ampliamente utilizada, anuncia que trabajará a tiempo completo en el proyecto durante 6 meses gracias a la financiación de la Ciudad de Múnich mediante su programa Open Source Sabbatical. Sus prioridades técnicas principales incluyen solucionar cinco vulnerabilidades conocidas, implementar soporte para XML 1.0r5 y mejorar la robustez y mantenibilidad general del código base.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49145037,
+    "url": "https://sharedobject.blog/posts/vp8-combinatorial-logic/",
+    "score": 68,
+    "time": 1785680941,
+    "titulo_es": "Construcción de circuitos lógicos mediante el códec de vídeo VP8",
+    "resumen": "El artículo explora cómo aprovechar los mecanismos de predicción del códec de vídeo VP8 para simular lógica combinacional y construir circuitos lógicos arbitrarios. Mediante la manipulación de fotogramas clave (key-frames) y el uso de modos de predicción horizontal (H_PRED) y vertical (V_PRED) sobre bloques de píxeles (blancos para True y negros para False), se modelan cables y puertas lógicas dentro de la estructura del códec.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49172836,
+    "url": "https://waymo.com/blog/shorts/dallas-open-to-all/",
+    "score": 298,
+    "time": 1785868181,
+    "titulo_es": "Waymo abre su servicio de viajes totalmente autónomos a todo el público en Dallas",
+    "resumen": "Waymo ha anunciado la apertura general de su servicio de transporte de vehículos totalmente autónomos en la ciudad de Dallas. Tras una fase inicial con casi 150,000 usuarios, la compañía expandirá sus operaciones mediante pruebas de conducción autónoma en las terminales del Aeropuerto Dallas Love Field y en autopistas locales, consolidando la aplicación práctica de sistemas de inteligencia artificial para la movilidad accesible e independiente.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49176920,
+    "url": "https://flowiseai.com/sunset",
+    "score": 53,
+    "time": 1785888160,
+    "titulo_es": "Flowise anuncia el fin de sus operaciones debido a la evolución de los agentes de IA para programación",
+    "resumen": "El equipo de Flowise ha anunciado el cierre de sus operaciones tras identificar un cambio de paradigma en el desarrollo con Inteligencia Artificial. Los desarrolladores están migrando de plataformas rígidas de bajo código (low-code) a agentes de programación más avanzados como Claude Code u OpenClaw para gestionar tareas complejas. El código fuente del proyecto continuará disponible en GitHub bajo la licencia Apache 2.0 para que la comunidad pueda realizar forks y mantener sus propias versiones.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49125608,
+    "url": "https://github.com/hallko1234/cr4501-ral-hack",
+    "score": 13,
+    "time": 1785516597,
+    "titulo_es": "Modificación de firmware para el medidor de color 3nh CR4501 para mostrar tonos RAL",
+    "resumen": "El artículo describe una modificación de firmware para el medidor de color 3nh CR4501. El firmware modificado permite que el dispositivo muestre directamente en su pantalla el tono RAL Classic más cercano a la medición realizada, junto con su nombre y la precisión de la coincidencia (ΔE). Esto elimina la necesidad de usar una aplicación móvil y Bluetooth para obtener esta información. El proceso de actualización del firmware se detalla, incluyendo la preparación del entorno (uso de Zadig para instalar el driver WinUSB en Windows), la entrada en modo de actualización del dispositivo y el flasheo seguro que no modifica la calibración de fábrica ni datos críticos. Se explica la estructura de la memoria y el espacio limitado utilizado (aprox. 5 KB) para almacenar los 216 tonos RAL Classic y sus nombres. La precisión de las mediciones se evalúa con promedios de 0.08 ΔE y un peor caso de 0.50 ΔE, indicando alta repetibilidad. Se advierte sobre la imprecisión de las tarjetas de color réplica. El proyecto incluye herramientas para generar firmware personalizado a partir de un abanico RAL propio o recalibraciones, y el código fuente para el desarrollo y la inspección están disponibles. Se enfatiza la importancia de no flashear firmware no verificado, especialmente el cargador que contiene la calibración de fábrica específica del dispositivo.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49167448,
+    "url": "https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/",
+    "score": 665,
+    "time": 1785844862,
+    "titulo_es": "La gran interrupción de Xbox incluso bloqueó juegos en disco",
+    "resumen": "El artículo discute cómo la dependencia de los videojuegos modernos en las licencias digitales y las actualizaciones en línea, incluso para juegos en formato físico, hace que los jugadores sean vulnerables a las interrupciones del servicio. A diferencia de los medios físicos antiguos, como los cartuchos de Game Boy que permiten la reproducción directa en hardware nuevo sin conexión, los juegos en disco actuales requieren instalación, descargas y validación en línea. Esto significa que, a pesar de poseer una copia física, los jugadores pueden perder el acceso a sus juegos debido a problemas de red o decisiones de las compañías (como la reciente interrupción de Xbox). El autor contrasta esto con el ecosistema de PC, que, aunque también digital, ofrece mejores mecanismos para mantener el acceso a los juegos a largo plazo, lo que lo ha llevado a preferir esa plataforma.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49176212,
+    "url": "https://github.com/brian-armstrong/fec",
+    "score": 51,
+    "time": 1785883025,
+    "titulo_es": "Corrección de Errores Directa para Aplicaciones SDR, Espaciales y Satelitales",
+    "resumen": "Este artículo describe la crate de Rust 'fec', diseñada para implementar códigos de corrección de errores directa (FEC) aplicables en radio definida por software (SDR), comunicaciones espaciales y satelitales. La crate se inspira en 'libcorrect' y toma parámetros estándar de especificaciones como CCSDS. Ofrece dos códigos de corrección de errores y destaca mejoras de rendimiento significativas al utilizar la característica 'simd' para la decodificación, superando a implementaciones previas como 'libfec' en benchmarks específicos. Soporta decodificación de símbolos blandos ('decode_soft') para mayor robustez y proporciona funciones para la codificación/decodificación compatible con CCSDS ('encode_ccsds_dual' / 'decode_ccsds_dual'). Además, se menciona una crate complementaria ('fec-shim') que expone la funcionalidad de 'fec' a través de una Interfaz Binaria de Aplicación (ABI) C, facilitando su integración en bases de código existentes escritas en C. La licencia es BSD-3-Clause.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49127983,
+    "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+    "score": 72,
+    "time": 1785528426,
+    "titulo_es": "Cómo un bucle sin ramas y aritmética de bytes permitió a GitHub realizar el 'case-folding' de cada byte de la búsqueda de código a >45 GiB/s en un solo núcleo.",
+    "resumen": "El artículo describe una optimización de alto rendimiento para la operación de 'case folding' (plegado de mayúsculas/minúsculas) utilizada en la búsqueda de código de GitHub. En lugar de utilizar las funciones estándar de cambio a minúsculas, que son sensibles al contexto y a la configuración regional, se implementó una operación de 'case folding' específica para comparación, que es independiente del contexto y la configuración regional. La principal optimización lograda fue la eliminación de las ramas (condicionales) en el bucle de procesamiento de texto ASCII. Al barrer todo el búfer sin interrupciones tempranas (incluso al encontrar caracteres no ASCII), se permite la vectorización del código (utilizando instrucciones NEON en arquitecturas ARM). Esto resultó en un aumento drástico del rendimiento, alcanzando velocidades cercanas al ancho de banda de la memoria (>45 GiB/s) para el procesamiento de texto ASCII, mientras se maneja la ruta no ASCII de manera eficiente. La solución se ha abierto como una crate de Rust llamada `casefold`.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49170915,
+    "url": "https://arxiv.org/abs/2602.16763",
+    "score": 99,
+    "time": 1785859839,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades",
+    "resumen": "El artículo describe arXivLabs, un marco diseñado para permitir a colaboradores (individuos y organizaciones) desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza la adhesión a los valores de arXiv: apertura, comunidad, excelencia y privacidad de datos del usuario. Se menciona que arXiv colabora únicamente con socios que cumplen estos valores. Se invita a los interesados a aprender más sobre cómo proponer proyectos que aporten valor a la comunidad de arXiv.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49176983,
+    "url": "https://arxiv.org/abs/2603.04221",
+    "score": 95,
+    "time": 1785888637,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades en arXiv",
+    "resumen": "El artículo describe arXivLabs, un marco diseñado para facilitar que colaboradores externos desarrollen y compartan nuevas funcionalidades directamente en la plataforma de arXiv. Se enfatiza la adopción de los valores de arXiv, incluyendo la apertura, la comunidad, la excelencia y la privacidad de los datos del usuario, por parte de los participantes. arXiv se compromete a trabajar únicamente con socios que cumplan con estos principios y fomenta las ideas de proyectos que aporten valor a su comunidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49134241,
+    "url": "http://www.practicallyefficient.com/2017/10/13/from-boiling-lead-and-black-art.html",
+    "score": 17,
+    "time": 1785590697,
+    "titulo_es": "El Arte de la Tipografía Matemática",
+    "resumen": "El artículo explora la complejidad y el arte de la tipografía matemática, comparándola con la visualización de datos y destacando las dificultades históricas y modernas en su representación impresa y digital. Se contrasta el \"penalty copy\" de la pre-imprenta con las herramientas actuales como Word y LaTeX, argumentando que la evolución de la tipografía matemática está ligada a la historia de la tipografía general y la civilización humana, desde la invención de la imprenta de Gutenberg hasta la importancia del lenguaje en la abstracción y la cognición.",
+    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 49161518,
     "url": "https://www.seangoedecke.com/llms-reward-expertise/",
-    "score": 997,
+    "score": 1356,
     "time": 1785791633,
-    "titulo_es": "El conocimiento del dominio es la habilidad clave para el prompting en modelos de lenguaje",
-    "resumen": "El artículo analiza cómo los modelos de lenguaje de gran escala (LLM) permiten a los usuarios actuar como generalistas, pero argumenta que la destreza real en el 'prompting' depende del conocimiento profundo en el dominio específico. A través del ejemplo del matemático Terence Tao interactuando con ChatGPT y la experiencia en arquitecturas de código complejas, se demuestra que los expertos pueden guiar al modelo, cuestionar sus respuestas e identificar soluciones óptimas que un novato no podría extraer. En consecuencia, la pericia humana sigue siendo el factor diferenciador y el cuello de botella principal para obtener el máximo valor de la IA.",
+    "titulo_es": "El conocimiento del dominio es la clave para un uso efectivo de los LLM",
+    "resumen": "El artículo argumenta que, si bien los Modelos de Lenguaje Grandes (LLMs) democratizan el acceso a ciertas habilidades, el verdadero valor y la efectividad en su uso provienen de la experiencia en el dominio específico. Se compara la interacción de Terence Tao con ChatGPT en matemáticas con la de un desarrollador con su codebase. La tesis central es que la capacidad de hacer preguntas específicas, evaluar respuestas y guiar al LLM de manera precisa, se basa en un profundo conocimiento del tema. Por lo tanto, la experiencia humana sigue siendo un cuello de botella crucial, no por la falta de capacidad del modelo, sino por la dificultad de comunicar eficazmente al modelo la solución deseada. La familiaridad con los detalles concretos, como el código propio o los principios matemáticos específicos, permite extraer mucho más valor de los LLMs que la aplicación de principios generales.",
     "categoria": "IA"
   },
   {
-    "id": 49164896,
-    "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-    "score": 76,
-    "time": 1785824274,
-    "titulo_es": "Auto-mejora recursiva e ingeniería de harnesses en la IA moderna",
-    "resumen": "El artículo explora el concepto de auto-mejora recursiva (RSI) en la inteligencia artificial, enfocado en el papel crucial de la 'ingeniería de harnesses' (sistemas de orquestación alrededor del modelo base). Explica cómo los harnesses evolucionan la arquitectura de agentes desde simples plantillas de prompts hacia diseños de tiempo de ejecución y sistemas software completos que gestionan flujos de trabajo (planificar, ejecutar, observar, mejorar), permisos y estados persistentes mediante archivos externos para superar los límites de la ventana de contexto.",
-    "categoria": "IA"
+    "id": 49167147,
+    "url": "https://www.bfi.org/about-fuller/everything-i-know/",
+    "score": 140,
+    "time": 1785843212,
+    "titulo_es": "El Instituto Buckminster Fuller: Transcripción de Conferencias \"Todo lo que Sé\"",
+    "resumen": "Este artículo describe el proyecto de transcripción y publicación de una serie de 42 horas de conferencias de Buckminster Fuller de enero de 1975. Las conferencias abarcan su obra completa, incluyendo inventos como la casa, coche y baño Dymaxion, la casa Wichita, cúpulas geodésicas y estructuras tensegridad, así como el contenido de Sinergética. Fuller relata su historia personal en el contexto de la ciencia y la industrialización, comunicando su enfoque integral de diseño para resolver problemas globales. Los temas cubiertos incluyen arquitectura, diseño, filosofía, educación, matemáticas, geometría, cartografía, economía, historia, estructura, industria, vivienda e ingeniería. Se invita a la comunidad a participar en la edición y mejora de la transcripción, disponible en archive.org. Se agradece la contribución voluntaria de JoAnne Ishimine, Ed Applewhite y otros colaboradores. La primera edición fue publicada por el Instituto Buckminster Fuller en 1997.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49158333,
-    "url": "https://github.com/leonickson1/Swiftlet",
-    "score": 201,
-    "time": 1785776055,
-    "titulo_es": "Swiftlet: Runtime en Swift y Metal para ejecutar modelos MoE de Qwen en dispositivos Apple",
-    "resumen": "Swiftlet es una librería y runtime ligero escrito en Swift y Metal que permite ejecutar modelos de lenguaje híbridos con arquitectura Mixture-of-Experts (MoE) de gran tamaño, como Qwen 35B y 80B, directamente en dispositivos Apple Silicon (macOS e iOS). Su arquitectura mantiene únicamente el núcleo denso en memoria RAM (consumiendo solo unos 2.5 GB en un iPhone) y transmite bajo demanda los pesos de los expertos desde el almacenamiento SSD local. Implementa atención lineal Gated DeltaNet para evitar el crecimiento de la caché KV y utiliza algoritmos de desalojo LFU con recesión para optimizar las lecturas del disco.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49156111,
-    "url": "https://blog.exe.dev/devtools-must-be-open-source",
-    "score": 625,
-    "time": 1785766547,
-    "titulo_es": "Personalización de software en la era de los agentes de IA",
-    "resumen": "El artículo analiza cómo los agentes de IA han transformado la viabilidad del software personalizado. Tradicionalmente, escribir y mantener herramientas propias tenía un bajo retorno de inversión debido al esfuerzo de mantenimiento. Hoy en día, los agentes automatizan la personalización y la sincronización con versiones ascendentes (upstream). Como caso práctico, el autor describe el uso de LLMs para preprocesar y simplificar diffs de código (proyecto meat.dev / Shelley), eliminando detalles rutinarios como chequeos de nulos o manejo de errores para permitir a los arquitectos enfocarse exclusivamente en la arquitectura y casos de uso complejos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49095386,
-    "url": "https://ochagavia.nl/blog/that-time-when-i-failed-the-microsoft-interview/",
-    "score": 73,
-    "time": 1785319370,
-    "titulo_es": "Mi experiencia en la entrevista para una pasantía en Microsoft",
-    "resumen": "El autor relata su experiencia durante el proceso de selección para una pasantía de verano en Microsoft en 2015 mientras cursaba Ciencias de la Computación. Describe su preparación basada en el libro 'Cracking the Coding Interview', abarcando preguntas conductuales, estructuras de datos y acertijos lógicos. Durante la entrevista telefónica, por honestidad, admitió que ya conocía el acertijo planteado y solicitó otro, el cual no logró resolver bajo presión, lo que derivó en la posterior carta de rechazo por parte de la empresa.",
+    "id": 49166331,
+    "url": "https://www.computerenhance.com/p/clean-code-horrible-performance",
+    "score": 136,
+    "time": 1785837155,
+    "titulo_es": "Costos de rendimiento en el mundo real de seguir las directrices de \"código limpio\"",
+    "resumen": "El artículo explora los costos de rendimiento medibles de seguir las directrices de \"código limpio\" comúnmente promovidas. Se centra en reglas específicas que afectan la estructura del código, como la preferencia por la polimorfismo sobre condicionales (if/else, switch), la encapsulación, las funciones pequeñas y el principio DRY (Don't Repeat Yourself). A través de un ejemplo clásico de jerarquía de formas con cálculo de área polimórfico, se demuestra cómo estas prácticas pueden introducir sobrecarga en tiempo de ejecución, particularmente en bucles de acumulación. Se analizan las implicaciones del uso de punteros y la potencial desoptimización por dependencias de bucle y la falta de optimización de caché y predicción de saltos en escenarios \"cold start\" frente a ejecuciones repetidas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49153374,
-    "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
-    "score": 496,
-    "time": 1785749527,
-    "titulo_es": "Por qué sigo escribiendo manualmente el código generado por IA",
-    "resumen": "El autor aborda cómo utilizar asistentes de código e IA generativa en proyectos personales sin perder el control ni acumular deuda cognitiva. En lugar de permitir que los agentes modifiquen directamente el repositorio o creen solicitudes de extracción (PRs), el desarrollador configura sus agentes para que solo muestren el código sugerido en el chat. Posteriormente, escribe y adapta manualmente cada línea en su editor. Aunque este flujo reduce el incremento de velocidad de 10x a 2x, permite construir un modelo mental y espacial detallado del sistema, detectar alucinaciones a tiempo y preservar el aprendizaje y disfrute del desarrollo de software.",
+    "id": 49175644,
+    "url": "https://www.mobiflip.de/amazon-deutschland-wero-kommt/",
+    "score": 31,
+    "time": 1785879949,
+    "titulo_es": "Amazon Alemania Transiciona iDEAL a Wero para Pagos Europeos Unificados",
+    "resumen": "Amazon Alemania está integrando Wero, un nuevo método de pago europeo unificado, reemplazando gradualmente a iDEAL. Esta transición busca simplificar los pagos transfronterizos y estandarizar las transacciones digitales en Europa. Inicialmente, los consumidores verán la opción como 'Bezahlen mit iDEAL | Wero', con la funcionalidad permaneciendo similar a través de la app bancaria. Wero está diseñado para cumplir con los estándares europeos de seguridad y privacidad, y su adopción por parte de gigantes como Amazon, junto con otras integraciones recientes como Decathlon y Lidl, marca un avance significativo para el sistema de pagos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49158581,
-    "url": "https://blog.cloudflare.com/smaller-faster-safer-models/",
-    "score": 225,
-    "time": 1785776926,
-    "titulo_es": "Optimizando la inferencia de grandes modelos en Cloudflare Workers AI",
-    "resumen": "Cloudflare explica cómo optimiza el servicio de grandes modelos de lenguaje (LLM) de contexto largo, como Kimi K2.6 y GLM 5.2, en Cloudflare Workers AI utilizando la plataforma SGLang. Mediante la separación de las fases de prefill y decode, la cuantización de la KV cache de BF16 a FP8 (duplicando la capacidad de contexto y mejorando la concurrencia máxima en un 41%) y la compresión de pesos de FP8 a INT4 (reduciendo el tamaño del modelo en un 40%), logran maximizar la densidad de solicitudes por GPU sin degradar la precisión del modelo.",
+    "id": 49170479,
+    "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+    "score": 368,
+    "time": 1785857862,
+    "titulo_es": "Apple busca detener el desarrollo de dispositivos de IA de OpenAI citando robo de secretos comerciales",
+    "resumen": "Apple ha solicitado una medida cautelar preliminar contra OpenAI, alegando el robo de secretos comerciales y buscando impedir el desarrollo de dispositivos o productos de IA basados en su tecnología. La compañía también sugiere que más exempleados de Apple podrían estar involucrados en el presunto robo. La solicitud incluye el descubrimiento expedito de información de empleados clave de OpenAI y su fundación, así como de la startup de dispositivos \"io\" cofundada por Jony Ive. Apple afirma haber descubierto nueva evidencia, incluyendo exempleados que compartieron información propietaria sobre productos no anunciados y tomaron capturas de pantalla de documentos confidenciales antes de entrevistas en OpenAI. OpenAI ha negado las acusaciones, calificando la solicitud de Apple como innecesaria y basada en información falsa, y afirmando que no tienen interés en los secretos comerciales de Apple. El caso representa una escalada en la disputa legal entre ambas compañías.",
     "categoria": "IA"
   },
   {
-    "id": 49156750,
-    "url": "https://pandoc.org/twenty-years-of-pandoc.html",
-    "score": 277,
-    "time": 1785769493,
-    "titulo_es": "20 años de Pandoc: La historia y arquitectura detrás del conversor en Haskell",
-    "resumen": "John MacFarlane narra el origen y evolución de Pandoc tras 20 años de su creación. Detalla cómo el proyecto nació al explorar Haskell y utilizar la librería de combinadores de parsers (Parsec). Resalta la decisión arquitectónica fundamental de reemplazar las transformaciones basadas en expresiones regulares por un Árbol de Sintaxis Abstracta (AST) real, lo que dio lugar a un diseño extensible compuesto por N lectores y M escritores capaz de escalar al soporte de múltiples formatos de documentos.",
+    "id": 49175461,
+    "url": "https://blog.cloudflare.com/wallets/",
+    "score": 46,
+    "time": 1785879062,
+    "titulo_es": "Cloudflare Wallets para Habilitar el Comercio Agente y Pagos de Micropagos",
+    "resumen": "El artículo introduce Cloudflare Wallets como una solución para superar las barreras que enfrentan los agentes de IA al interactuar con APIs. Actualmente, los agentes tienen dificultades para registrarse, gestionar métodos de pago y obtener claves API, lo que limita el comercio y la exploración de servicios. Cloudflare Wallets aborda esto al proporcionar un identificador único (handle) para las cuentas y permitir la creación de \"Virtual Wallets\" para agentes. Estas Virtual Wallets operan a través de claves API, tienen límites de gasto definidos (como presupuesto, lista blanca y tamaño máximo de transacción) y utilizan el protocolo x402 para micropagos adjuntos a las solicitudes HTTP. Esto permite a los agentes probar y comparar APIs con bajo riesgo y fricción. La solución se integra con Monetization Gateway para facilitar que los clientes de Cloudflare vendan sus recursos (APIs, contenido) de forma headless a compradores agentes. Los \"Account Wallets\" son para usuarios humanos, mientras que los \"Virtual Wallets\" están diseñados para agentes, facilitando la compra de servicios de forma nativa para máquinas y automatizando interacciones de pago.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49136363,
+    "url": "https://blog.yossarian.net/2015/06/09/Dates-That-Dont-Exist",
+    "score": 120,
+    "time": 1785604728,
+    "titulo_es": "El intrincado manejo de fechas imposibles del calendario Gregoriano en lenguajes de programación",
+    "resumen": "El artículo explora cómo diferentes lenguajes de programación manejan las fechas inexistentes en el calendario Gregoriano, específicamente el período del 5 al 14 de octubre de 1582, cuando se realizó la transición del calendario Juliano al Gregoriano. Detalla que Ruby valida correctamente y rechaza la creación de fechas dentro de este rango, mientras que Python y Perl (con el módulo DateTime) permiten su creación sin generar errores. Se señala que esta falta de validación, aunque no un problema crítico como Y2K, indica la necesidad de una mayor rigurosidad en las implementaciones de fecha y hora para asegurar la corrección de las mismas, incluso implementando validaciones para rangos de fechas históricamente imposibles.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49155629,
-    "url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+    "id": 49175868,
+    "url": "https://amiga.com/news/20260804-amiga-update",
+    "score": 26,
+    "time": 1785881069,
+    "titulo_es": "Amiga Corporation consolida derechos y activos de Commodore y Amiga, redefine el desarrollo de AmigaOS",
+    "resumen": "Amiga Corporation ha consolidado los derechos y activos de las antiguas compañías Commodore y Amiga, incluyendo código fuente, binarios, diseños de hardware y documentación. Si bien las marcas \"Commodore\" y \"C=\" pertenecen ahora a una entidad separada, Amiga mantiene la propiedad de la mayoría de los derechos históricos. Un acuerdo reciente con Hyperion Entertainment redefine el desarrollo de AmigaOS: Hyperion continuará distribuyendo AmigaOS 4 bajo licencia, mientras que Amiga dirigirá el desarrollo futuro de AmigaOS para la plataforma 68K. Hyperion entregará el código fuente de AmigaOS 3.1.4 a Amiga para su desarrollo. Amiga se compromete a la preservación de los activos históricos y al desarrollo continuo de su sistema operativo, liberando a los desarrolladores de AmigaOS de restricciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49170508,
+    "url": "https://adriansieber.com/announcing-perspec-1-0/",
+    "score": 70,
+    "time": 1785858006,
+    "titulo_es": "Anuncio de la versión 1.0 de Perspec: una aplicación de escritorio para corregir la perspectiva de imágenes",
+    "resumen": "El artículo anuncia el lanzamiento de la versión 1.0 de Perspec, una aplicación de escritorio diseñada para corregir la perspectiva de imágenes, principalmente para documentos y recibos. El desarrollador, insatisfecho con las limitaciones y decisiones técnicas de las aplicaciones móviles existentes (como la elección de formatos de archivo y la detección de documentos poco fiables), creó Perspec para ofrecer una solución más precisa y eficiente en el escritorio. Destaca las ventajas de trabajar en un ordenador con pantalla grande, teclado y ratón para la edición. Se critica el uso de JPEG en lugar de PNG para documentos escaneados, lo que resulta en artefactos de compresión y tamaños de archivo mayores. También se cuestiona la utilidad de las previsualizaciones de detección en tiempo real de las aplicaciones móviles. La principal innovación de Perspec reside en su algoritmo de detección de documentos, que se centra en detectar esquinas en lugar de bordes rectos para manejar mejor documentos arrugados o curvos. El proyecto, iniciado hace 9 años por el desarrollador mientras era estudiante, ofrece una alternativa más rápida y enfocada que herramientas generales de edición de imágenes como Photoshop o GIMP para el procesamiento masivo de documentos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49166386,
+    "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
+    "score": 371,
+    "time": 1785837655,
+    "titulo_es": "Configuración de producción para DeepSeek-V4-Flash-0731 en AMD MI300X",
+    "resumen": "Este repositorio detalla la configuración y los parches necesarios para ejecutar el modelo de lenguaje grande DeepSeek-V4-Flash-0731 en hardware AMD MI300X utilizando vLLM con ROCm. Se abordan problemas específicos de la arquitectura MI300X, como el formato FP8, el enrutamiento MoE a alta concurrencia, la verificación especulativa causal y la sincronización CPU-KV, que no están cubiertos por las recetas oficiales de vLLM orientadas a NVIDIA o hardware AMD más reciente. La configuración incluye un stack de Docker Compose con imágenes fijadas por digest, parches de kernel para corregir incompatibilidades de FP8 (FNUZ vs. OCP E4M3) y bugs de enrutamiento en MoE. Se describe la arquitectura de un único MI300X con 192 GB de HBM3, la asignación de memoria (KV tier en CPU) y los requisitos de almacenamiento. Se mencionan optimizaciones en el enrutamiento MXFP4 y el manejo del formato FP8 E4M3, junto con estrategias de 'drafting' probabilístico. Los resultados de rendimiento se presentan condicionados al tipo de prompt y la configuración de generación (temperatura, top_p, longitud de salida), destacando que las métricas son específicas para esta configuración de imagen y no benchmarks universales.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49175192,
+    "url": "https://www.troyhunt.com/thanks-fedex-this-is-why-we-keep-getting-phished/",
     "score": 300,
-    "time": 1785764083,
-    "titulo_es": "MiniMax H3 se lanza con pesos abiertos y soporte nativo en ComfyUI",
-    "resumen": "MiniMax H3 es un modelo de generación de video multimodal de pesos abiertos capaz de generar secuencias de hasta 2K a 15 segundos con audio estéreo nativo en una sola pasada. Admite generación a partir de texto, imagen, fotogramas clave y transferencia de movimiento/estilo. Destaca por sus optimizaciones de ingeniería de machine learning: reducción del footprint de memoria en un 66% (de 123.6 GB a 42.5 GB) mediante la sustitución del 40% de parámetros de modulación por tablas de búsqueda, cuantización int8 convrot, kernels personalizados y descarga dinámica de VRAM, permitiendo su ejecución local en GPUs de consumo como la RTX 3060.",
+    "time": 1785877779,
+    "titulo_es": "Análisis de Ataques de Phishing SMS y Vulnerabilidades en Sistemas de Pago",
+    "resumen": "El artículo detalla una experiencia personal con ataques de phishing SMS que simulan notificaciones de entrega de paquetes. El autor, a pesar de ser consciente de las tácticas de phishing (urgencia, URLs sospechosas), casi cae en la trampa al esperar un paquete real. Al investigar la URL del supuesto SMS de FedEx, descubre que los parámetros de la URL son fácilmente manipulables (query string parameter tampering), permitiendo modificar datos como el número de seguimiento, nombre del cliente y monto, lo que indica una vulnerabilidad de tipo reflected XSS. Además, se critica la falta de autenticidad y la aparente facilidad con la que estos enlaces fraudulentos se generan y se propagan, afectando incluso a sistemas de pago legítimos como BPOINT de Commonwealth Bank. El autor también describe un segundo SMS sospechoso con una URL aún más inusual y la confusión generalizada que generan estos mensajes entre los usuarios, evidenciada por búsquedas en foros y sitios de verificación de números.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49172936,
+    "url": "https://edotenv.com/",
+    "score": 34,
+    "time": 1785868562,
+    "titulo_es": "Aprendizaje por Refuerzo en Entornos de Mercado Continuamente Adaptativos",
+    "resumen": "El artículo describe la creación de entornos de investigación cuantitativa mediante la generación programática de tareas de trading basadas en datos de mercado reales. Los agentes de IA utilizan herramientas profesionales y personalizadas (Bash) para tomar decisiones de inversión y desarrollar estrategias rentables. Se enfatiza que los mercados son dinámicos y no se saturan; la eficiencia inducida por el trading exitoso causa la degradación de las ventajas (edges) y cambios de régimen, lo que a su vez aumenta la dificultad del benchmark para la mejora de modelos. Se destaca que las decisiones de trading implican planificación a futuro y evaluación de compensaciones a corto y largo plazo, operando con un estado incompleto donde las acciones no tomadas también influyen en el futuro. Una decisión puede ser localmente correcta pero globalmente costosa ante la deriva de las condiciones. El éxito recae en modelos que anticipan y se adaptan a nuevos regímenes de mercado antes de que las estrategias pasadas se vuelvan obsoletas o un consenso.",
     "categoria": "IA"
-  },
-  {
-    "id": 49156011,
-    "url": "https://clickhouse.com/blog/andy-pavlo-joins-clickhouse",
-    "score": 315,
-    "time": 1785766140,
-    "titulo_es": "Uniéndome a ClickHouse para crear ClickHouse Labs",
-    "resumen": "Andy Pavlo, profesor de Ciencias de la Computación en la Universidad Carnegie Mellon, anuncia su incorporación a ClickHouse para fundar y liderar ClickHouse Labs, un equipo de investigación industrial centrado en internismos de sistemas de gestión de bases de datos (DBMS). En el artículo repasa la trayectoria de ClickHouse desde su lanzamiento open-source en 2016, destacando su motor escrito en C++ con ejecución vectorial optimizada mediante SIMD. ClickHouse Labs busca acortar la brecha entre la investigación académica y la ingeniería de producción, colaborando estrechamente con ingenieros y clientes para optimizar tanto ClickHouse como su servicio gestionado de PostgreSQL, además de investigar la integración de DBMS en tecnologías emergentes e inteligencia artificial.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49158474,
-    "url": "https://changelog.complete.org/archives/44456-celebrating-45-years-of-kermit-with-the-first-new-c-kermit-release-in-15-years-and-working-with-a-decades-old-c-codebase",
-    "score": 168,
-    "time": 1785776530,
-    "titulo_es": "Sumergiéndose en la base de código de C-Kermit: Historia y mantenimiento moderno",
-    "resumen": "El artículo explora la historia y evolución del protocolo Kermit, diseñado en 1981 para permitir la comunicación entre sistemas incompatibles. Se detalla la trayectoria de C-Kermit desde su origen autodidacta en la Universidad de Columbia hasta su liberación como software libre bajo licencia BSD en 2011. Actualmente, un mantenedor de Debian describe el proceso de refactorización y auditoría de seguridad de su base de código en C legacy, destacando la elegancia de su arquitectura multiplataforma, la corrección de vulnerabilidades y la adaptación de sus comportamientos por defecto para ajustarse a los estándares de transferencia de datos modernos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49165845,
-    "url": "https://picburn.xyz/",
-    "score": 3,
-    "time": 1785832752,
-    "titulo_es": "Arrastra una imagen. Obtén un enlace privado. Se autodestruye.",
-    "resumen": "Descripción de un servicio web ligero diseñado para el intercambio de imágenes efímeras y privadas de hasta 15 MB sin necesidad de registro. La herramienta ofrece privacidad mediante identificadores aleatorios largos, políticas de no indexación para motores de búsqueda y eliminación automática de archivos según un límite de tiempo o tras una única visualización.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49152842,
-    "url": "https://github.com/janestreet/bonsai",
-    "score": 361,
-    "time": 1785745797,
-    "titulo_es": "Bonsai: Una biblioteca de UI para construir aplicaciones web reactivas y compuestas en OCaml",
-    "resumen": "El artículo presenta Bonsai, una biblioteca de interfaz de usuario desarrollada por Jane Street para construir aplicaciones web reactivas y de alto rendimiento utilizando OCaml. A diferencia de otros marcos web que unifican el estado y la renderización, Bonsai desacopla las primitivas de estado e incrementalidad, permitiendo optimizar tanto la interfaz como la lógica de negocio compleja. Además, aprovecha el sólido sistema de tipos de OCaml para compartir código entre el backend y el frontend, e incluye soporte nativo para pruebas automatizadas del DOM, CSS específico por componente y extensiones como Bonsai_term para interfaces de terminal.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49154228,
-    "url": "https://github.com/lyogavin/airllm",
-    "score": 222,
-    "time": 1785755748,
-    "titulo_es": "AirLLM: Ejecución de Modelos de Lenguaje Grandes con Uso Reducido de Memoria",
-    "resumen": "AirLLM es una biblioteca de software diseñada para reducir drásticamente el uso de memoria en la inferencia de modelos de lenguaje grandes (LLMs). Permite ejecutar modelos de hasta 2.8T de parámetros en hardware de consumidor, como una sola GPU de 4GB, sin necesidad de cuantización, destilación o poda. Esto se logra principalmente a través de la carga de expertos por demanda (per-expert streaming) para modelos Mixture-of-Experts (MoE), donde solo se carga el experto necesario para cada token en lugar de una capa completa. La herramienta soporta una amplia gama de modelos populares como Llama 3/3.1, DeepSeek V2/V3, Kimi K3, Qwen, Mistral, Phi-4 y Gemma. Las versiones recientes han introducido soporte para FP8, inferencia en CPU, modelos no distribuidos (non-sharded), prefetching para mejorar la velocidad, y compatibilidad con MacOS. La inicialización del modelo es simplificada a través de `AutoModel`, que detecta automáticamente el tipo de modelo. Se ha implementado compresión basada en cuantización 'block-wise' de pesos para acelerar la inferencia hasta 3x con mínima pérdida de precisión, enfocándose en la reducción del tamaño de carga del modelo en lugar de la cuantización de activaciones, lo que preserva mejor la precisión.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49166182,
-    "url": "https://live.euronext.com/en/financial-news/bending-spoons-makes-first-post-ipo-acquisition-13-billion-airtable-deal",
-    "score": 45,
-    "time": 1785835667,
-    "titulo_es": "Bending Spoons Adquiere Airtable por 1.285 Mil Millones de Dólares",
-    "resumen": "El artículo informa sobre la adquisición de Airtable por parte de Bending Spoons en una operación totalmente en efectivo valorada en 1.285 millones de dólares. Airtable, fundada en 2013, es una empresa de software que ofrece una plataforma que integra capacidades de hoja de cálculo y base de datos, permitiendo a las empresas crear aplicaciones y gestionar flujos de trabajo operativos sin necesidad de programación. Bending Spoons, una compañía tecnológica italiana con presencia en Nasdaq, sigue una estrategia de adquisición y reestructuración de negocios digitales. Esta adquisición marca la primera para Bending Spoons desde su debut bursátil y se suma a compras previas de marcas como AOL y Eventbrite. La transacción, que se espera cierre a finales de año sujeta a aprobaciones regulatorias, valora la participación de Airtable en aproximadamente 2.25 mil millones de dólares, considerando su posición neta de efectivo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49161801,
-    "url": "https://bumbershootsoft.wordpress.com/2026/05/30/zx-spectrum-system-tour-text-mode/",
-    "score": 48,
-    "time": 1785793152,
-    "titulo_es": "Explorando el Lenguaje Máquina del ZX Spectrum: Una Introducción",
-    "resumen": "El artículo inicia una serie sobre programación en lenguaje máquina para el ZX Spectrum, contrastando su enfoque de firmware menos estructurado con plataformas como Commodore y MSX. Se centra en la arquitectura de 48KB, la coexistencia de BASIC y código máquina, y las técnicas para ejecutar programas ML. Cubrirá la organización del sistema, carga y ejecución, la gestión de displays (incluyendo gráficos definidos por el usuario) y la entrada de teclado/joystick. Se mencionan métodos para cargar y ejecutar programas de lenguaje máquina de forma integrada con BASIC, aprovechando la función SAVE para inicios automáticos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49161743,
-    "url": "https://github.com/ahatem/IoskeleyMono",
-    "score": 24,
-    "time": 1785792861,
-    "titulo_es": "Ioskeley Mono: Una alternativa Open Source a Berkeley Mono",
-    "resumen": "El artículo describe Ioskeley Mono, una fuente tipográfica diseñada como una alternativa gratuita y de código abierto a Berkeley Mono. Está construida configurando Iosevka para replicar de cerca la apariencia y el comportamiento de Berkeley Mono. El diseño incluye métricas personalizadas y variantes de caracteres específicos para lograr la estética deseada, como proporciones verticales, espaciado entre letras y tamaño de paréntesis. Se detallan variantes específicas como Ioskeley Mono Term (con espaciado ajustado para entornos de terminal) y Ioskeley Mono NL (con sustituciones de ligaduras deshabilitadas para aplicaciones incompatibles). La fuente se compila automáticamente a través de GitHub Actions y se invita a la comunidad a contribuir. Se proporciona información sobre cómo descargar y usar la fuente, incluyendo diferentes anchos y pesos.",
-    "categoria": "Desarrollo de Software"
   }
 ]
