@@ -1,263 +1,263 @@
 [
   {
+    "id": 49252179,
+    "url": "https://github.com/antirez/h3.c",
+    "score": 260,
+    "time": 1786411329,
+    "titulo_es": "Inferencia nativa de MiniMax-H3 para Apple Silicon",
+    "resumen": "El artículo aborda la implementación técnica para la inferencia nativa del modelo de IA MiniMax-H3 en procesadores Apple Silicon (M3 Max y M5 Max) utilizando Metal. Detalla el desarrollo mediante rebanadas verticales que incluyen soporte completo de texto a video/audio, acondicionamiento por marcos y referencias ordenadas Ref2VA. Además, analiza optimizaciones de rendimiento y memoria como cuantización int8 por fila y la reducción eficiente de iteraciones de 'denoising' para acelerar el procesamiento en hardware de Apple.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49253721,
+    "url": "https://github.com/activeing123/mcptoon",
+    "score": 42,
+    "time": 1786426018,
+    "titulo_es": "El descubrimiento de herramientas MCP cuesta más de 10.000 tokens. mcptoon cuesta 350",
+    "resumen": "mcptoon es un cliente CLI ultraligero y sin dependencias desarrollado en Python para interactuar con servidores MCP (Model Context Protocol). Diseñado para agentes de IA, optimiza el consumo de la ventana de contexto al convertir esquemas y respuestas JSON al formato TOON (Token-Optimized Object Notation), reduciendo hasta un 98% los tokens dedicados a la sintaxis. Además, incluye protecciones contra inyecciones de prompts, soporte para stdin y guardas contra comandos destructivos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49219679,
+    "url": "https://thephd.dev/to-save-c-we-must-save-abi-fixing-c-function-abi",
+    "score": 36,
+    "time": 1786174615,
+    "titulo_es": "Por qué necesitamos salvar la estabilidad de la ABI",
+    "resumen": "El artículo explora el impacto de la estabilidad de la Interfaz Binaria de Aplicaciones (ABI) en C y C++, analizando cómo el compromiso estricto con la compatibilidad binaria restringe las optimizaciones de rendimiento y la evolución de las bibliotecas estándar (como la STL de MSVC). Además, define conceptualmente qué constituye una ABI en C, abarcando las convenciones de llamada, la distribución de memoria de estructuras y la asignación de símbolos en el código ensamblador.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49173107,
+    "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+    "score": 70,
+    "time": 1785869245,
+    "titulo_es": "LFM2.5-2.6B: Modelo híbrido para despliegue en dispositivos y flujos de trabajo de agentes",
+    "resumen": "LFM2.5-2.6B es un modelo de lenguaje de 2.6B parámetros optimizado para ejecución en dispositivos locales y tareas orientadas a agentes. Ofrece una ventana de contexto de 128K tokens, razonamiento explícito previo a la respuesta mediante etiquetas <think> y soporte nativo para uso de herramientas (function calling). Entrenado con ~34T de tokens y ajustado mediante aprendizaje por refuerzo enfocado en agentes, destaca por su alto rendimiento de inferencia, alcanzando hasta 220 tokens/s en procesadores como Apple M5 Max y permitiendo ejecuciones eficientes en teléfonos móviles y entornos de alta concurrencia.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49246804,
+    "url": "https://cactuscompute.com/needle",
+    "score": 327,
+    "time": 1786382527,
+    "titulo_es": "Un modelo abierto de 14 MB para llamada a herramientas, uso de dispositivos y extracción estructurada",
+    "resumen": "Needle 2 es un modelo de inteligencia artificial ultra compacto de 45 millones de parámetros empaquetado en un único binario C++ de 14 MB que requiere solo 28 MB de RAM. Diseñado para ejecución en dispositivos de borde de bajo costo (como ESP32-S3, Raspberry Pi 5 y teléfonos de gama entrada), permite realizar llamadas a funciones, control de dispositivos y extracción de datos estructurados. Emplea cuantización de 2 bits durante todo el entrenamiento mediante Cactus Quants, evaluación estricta de esquemas con gramáticas a nivel de bytes, y puntuación de confianza para esquemas de colaboración Edge-Cloud.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49209918,
+    "url": "https://stowaway.live/",
+    "score": 264,
+    "time": 1786108510,
+    "titulo_es": "Visualización gráfica en tiempo real de aeronaves y satélites en el navegador",
+    "resumen": "El artículo describe una aplicación web interactiva que permite a los usuarios rastrear aeronaves y satélites que pasan sobre su ubicación actual en tiempo real, ofreciendo una vista 3D desde la perspectiva del vehículo sobre terreno real. La experiencia incluye iluminación y condiciones meteorológicas en vivo, renderizadas de forma interactiva mediante JavaScript y WebGL 2.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49250109,
+    "url": "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+    "score": 174,
+    "time": 1786397816,
+    "titulo_es": "Compromisos de Anthropic con la transparencia de contenido bajo la Ley de IA de la UE",
+    "resumen": "Anthropic ha firmado el Código de Prácticas sobre Transparencia (Artículo 50(2) de la Ley de IA de la UE) para modelos y sistemas de IA generativa. A partir del 2 de agosto de 2026, los nuevos modelos de Claude incorporarán marcas legibles por máquina globalmente, aplicando dos técnicas principales: marcas de agua imperceptibles integradas a nivel de modelo en texto generado (resistentes al copiado y pegado) y metadatos de procedencia firmados digitalmente mediante el estándar abierto C2PA en archivos (.svg, .png, .jpg). Estas medidas se aplicarán en todas las plataformas y socios de la nube como AWS, Google Cloud y Microsoft Foundry.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49196581,
+    "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
+    "score": 35,
+    "time": 1786023792,
+    "titulo_es": "Las matemáticas de coma flotante suelen ser más lentas que las de enteros",
+    "resumen": "El artículo explora las diferencias de rendimiento entre la aritmética de enteros y la de coma flotante en Rust. Mientras que las operaciones con enteros permiten al compilador aplicar vectorización SIMD de forma agresiva reordenando operaciones asociativas, en los números de coma flotante el compilador adopta un enfoque conservador para evitar alterar la precisión numérica o cometer errores de redondeo. Se analiza cómo estas restricciones afectan la generación de código máquina e introducen los cambios de Rust para permitir optimizaciones más profundas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49247477,
+    "url": "https://www.vectorware.com/blog/simd-on-gpu/",
+    "score": 181,
+    "time": 1786385569,
+    "titulo_es": "El código para GPU ahora puede usar el SIMD portable de Rust",
+    "resumen": "VectorWare ha anunciado la integración exitosa de la biblioteca SIMD portable de Rust (core::simd) en ejecuciones sobre GPU. Mapeando la abstracción Simd<T, N> sobre el modelo SIMT de las GPUs, cada carril de vector se asigna a una línea de ejecución dentro de un warp. Esto permite escribir algoritmos paralelos de alto rendimiento con el mismo código fuente ejecutable en CPUs y GPUs, facilitando operaciones elemento a elemento, comparaciones, máscaras y reducciones horizontales sin depender de intrinsics específicos del fabricante.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49245936,
+    "url": "http://danluu.com/pl-tokens/",
+    "score": 175,
+    "time": 1786379338,
+    "titulo_es": "Costo de tokens en lenguajes dinámicos vs. estáticos y fallos en las evaluaciones de LLMs",
+    "resumen": "El artículo cuestiona la idea popular de que los lenguajes dinámicos o concisos (como Clojure o J) consumen significativamente menos tokens en los LLM que los lenguajes estáticos (como Rust, Go o C++). El autor señala que las comparaciones existentes se basan en tareas triviales (como Rosetta Code) cuyos resultados no se generalizan a problemas complejos, o sufren de errores metodológicos en las pruebas de ejecución. Para obtener intuiciones más precisas, propone diseñar evaluaciones estrictas basadas en tareas del mundo real, como pedir a agentes de IA implementar un decodificador zstd completo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49241679,
+    "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+    "score": 1112,
+    "time": 1786356602,
+    "titulo_es": "Presentación de Muse Glimmer: El modelo de peso abierto de 30B de Meta optimizado para agentes locales",
+    "resumen": "Meta ha lanzado Muse Glimmer, un modelo de 30 mil millones de parámetros publicado bajo la licencia Apache 2.0 y diseñado para ejecutarse de forma local en GPUs de consumo de 24 GB o 32 GB. El modelo está optimizado para flujos de trabajo con agentes autónomos, codificación local y evaluación LLM-as-a-judge. Para operar eficientemente bajo restricciones de hardware local, implementa técnicas de destilación de razonamiento desde modelos más grandes, cuantización a 4 bits que reduce su tamaño a menos de 20 GB, y decodificación especulativa mediante una red ligera basada en DFlash para acelerar la latencia de inferencia.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49242653,
+    "url": "https://squeak.org/release_notes/6.1/",
+    "score": 265,
+    "time": 1786364153,
+    "titulo_es": "Notas de la versión de Squeak 6.1 \"Vanessa\"",
+    "resumen": "Squeak 6.1 'Vanessa' es una actualización principal del entorno y máquina virtual Smalltalk, lanzada tras cuatro años de trabajo con más de 1700 parches y 9000 cambios en métodos. Introduce la inclusión del paquete MethodMassage para desensamblar, inspeccionar y reensamblar métodos compilados como objetos de primera clase, junto con optimizaciones y actualizaciones extensas en marcos GUI, lenguaje central, gráficos, red y gestión de paquetes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49242297,
+    "url": "https://lwn.net/Articles/1034703/",
+    "score": 150,
+    "time": 1786361680,
+    "titulo_es": "Evolución y uso de la optimización de llamadas de cola en C e intérpretes",
+    "resumen": "El artículo explora la evolución histórica de la optimización de llamadas de cola (TCO) en compiladores de C como GCC y Clang, superando restricciones tradicionales de las convenciones de llamada en el stack. Muestra cómo el soporte moderno para TCO permite implementar técnicas eficientes de despacho de instrucciones mediante código enhebrado (threaded code), demostrando un rendimiento superior frente a los bucles switch tradicionales en intérpretes como Gforth y Wasmi (WebAssembly).",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49247070,
+    "url": "https://www.anthropic.com/research/riemann-zeta",
+    "score": 197,
+    "time": 1786383673,
+    "titulo_es": "Claude realiza avances en un problema matemático relacionado con la Hipótesis de Riemann",
+    "resumen": "Una versión de investigación no publicada del modelo Claude de Anthropic ha mejorado el límite inferior conocido para la fracción de ceros de la función zeta que cumplen con la hipótesis de Riemann, incrementándolo del 41.6% al 67.2%. El modelo logró este resultado combinando trabajos previos de matemáticos como Baluyot, Goldston, Suriajaya, Turnage-Butterbaugh y Bombieri. Técnicamente, Claude construyó un espacio de funciones con formas cuadráticas no diagonales inducidas por Weil y utilizó información de primer y segundo momento para establecer una desigualdad sobre su rango. El hallazgo, verificado formalmente por expertos, destaca el avance acelerado de los modelos de IA en el razonamiento matemático complejo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49245437,
+    "url": "https://github.com/AntigmaLabs/ante",
+    "score": 131,
+    "time": 1786377563,
+    "titulo_es": "Ante: Un agente de código autocontenido y de alto rendimiento en Rust",
+    "resumen": "Ante es un agente de programación autocontenido desarrollado en Rust por Antigma Labs, distribuido como un binario único de ~15 MB sin dependencias externas. Diseñado para ofrecer máxima eficiencia, consume 7 veces menos memoria y 9 veces menos CPU que herramientas como Claude Code. Cuenta con un motor de inferencia local integrado basado en llama.cpp para funcionamiento 100% offline, además de soporte para más de 12 proveedores de IA. En las pruebas de Terminal-Bench 2.1 obtuvo una puntuación del 82.7% utilizando DeepSeek V4 Flash. Su arquitectura está optimizada para desplegar agentes a escala celular de forma liviana, verificable y con telemetría anónima opcional.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49245491,
+    "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
+    "score": 159,
+    "time": 1786377794,
+    "titulo_es": "Explotando el Modo de Gestión del Sistema con una interrupción muy, muy, muy, muy, muy, muy larga",
+    "resumen": "El artículo describe una vulnerabilidad técnica en el Modo de Gestión del Sistema (SMM) de procesadores x86 que rompe la sincronización obligatoria entre los núcleos del CPU (rendezvous). SMM requiere que todos los núcleos ingresen al mismo tiempo mediante una interrupción SMI. Al forzar a un núcleo a ejecutar una sola instrucción de lectura MMIO extremadamente lenta que demora cerca de un segundo, este núcleo permanece ejecutando código fuera de SMM mientras los demás ingresan. Esta desincronización permite a un atacante ejecutar código malicioso en paralelo para explotar vulnerabilidades de tipo TOCTOU (Time-of-Check to Time-of-Use) en la memoria compartida, sin requerir acceso físico ni dispositivos DMA.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49243474,
+    "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
+    "score": 210,
+    "time": 1786368940,
+    "titulo_es": "Humanizar los modelos de IA es la abstracción equivocada",
+    "resumen": "El artículo analiza un problema de arquitectura recurrente en el desarrollo de agentes de IA: el uso de prompts para forzar salidas humanizadas o simplificadas (como ASD-STE100 o estilos adaptados a TDAH) durante la ejecución de tareas. El autor argumenta que esto aplica una compresión con pérdida en la representación interna del modelo y en la comunicación entre subagentes, ocultando errores críticos, trazas de pila y evidencia detallada. Siguiendo los principios de diseño de sistemas tradicionales (como compiladores, bases de datos y APIs), la interacción y el estado interno deben mantener la máxima fidelidad técnica en formatos precisos para máquinas, trasladando la humanización y simplificación exclusivamente al límite de la capa de presentación.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49215111,
+    "url": "https://www.choral-lang.org/",
+    "score": 29,
+    "time": 1786130502,
+    "titulo_es": "Choral: Un Lenguaje de Programación Coreográfica para Sistemas Distribuidos",
+    "resumen": "Choral es un lenguaje de programación diseñado para definir y implementar coreografías, que son protocolos multipartitas que especifican cómo múltiples roles (como Alice y Bob) deben coordinarse en sistemas distribuidos. El compilador de Choral traduce una coreografía en bibliotecas para cada rol, asegurando que las implementaciones de los programas (clientes, servicios) cumplan con el protocolo. Alivia los dolores de cabeza de la programación de sistemas distribuidos al permitir la escritura de la coordinación como un único programa, extendiendo la sintaxis de lenguajes como Java con tipos de orden superior para expresar la comunicación entre participantes. Abstrae los efectos secundarios de la comunicación dentro de tipos seguros, permitiendo a los desarrolladores centrarse en la lógica de alto nivel. El compilador detecta incompatibilidades entre la coreografía y la implementación, y Choral incluye una herramienta de prueba (ChoralUnit) para simplificar las pruebas de integración. Ofrece garantías de corrección y permite la composición fiable de programas compilados con Choral. Es un lenguaje orientado a objetos con tipos de la forma T@(R1, ..., Rn), donde T es la interfaz y R1, ..., Rn son los roles que colaboran en su implementación. Aunque es un prototipo en investigación, es utilizable para adopción temprana y enseñanza, siendo interoperable con Java y con planes de extensión a otros lenguajes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49244085,
+    "url": "https://blog.sshh.io/p/exploring-claudegpt-knowledge-cutoffs",
+    "score": 143,
+    "time": 1786371641,
+    "titulo_es": "Estimación de Fechas de Corte de Conocimiento y Configuraciones de Modelos de IA Mediante \"Probing\"",
+    "resumen": "El artículo describe una metodología para inferir información sobre el entrenamiento de modelos de lenguaje avanzados (como GPT-5 y Opus) mediante la técnica de \"probing\". Esta técnica consiste en realizar consultas cuidadosamente diseñadas a los modelos para evaluar su conocimiento sobre hechos específicos y su comportamiento en el procesamiento de tokens.  Se proponen dos métodos principales: \"Incompressible Knowledge Probes\" para estimar el número de parámetros y la fecha de corte del conjunto de datos de pre-entrenamiento, y \"Data Mixture Inference\" para revelar la composición de los datos de entrenamiento. El artículo detalla las etapas típicas del entrenamiento de LLMs (pre-entrenamiento, mejora de capacidades y post-entrenamiento) y cómo los avances en estas áreas se reflejan en versiones mayores o menores de los modelos.  Se presentan hipótesis basadas en la observación de errores en la predicción de hechos de fechas específicas, sugiriendo que modelos como Opus 4.7+ provienen de una misma ejecución de entrenamiento finalizada a finales de 2025, y que la familia GPT-5.6 de OpenAI proviene de un checkpoint distinto completado a finales de febrero de 2026. Se advierte que estas estimaciones son aproximadas debido a la falta de información pública verificable.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49246057,
+    "url": "https://www.stoaexchange.com",
+    "score": 75,
+    "time": 1786379727,
+    "titulo_es": "Plataforma para la compraventa de GPUs con contrapartes verificadas y descubrimiento de precios",
+    "resumen": "El artículo describe una plataforma diseñada para facilitar la compra y venta de Unidades de Procesamiento Gráfico (GPUs), centrándose en la verificación de contrapartes y el descubrimiento de precios en un mercado fragmentado. Aborda los desafíos actuales como la dispersión de la oferta (OEMs, operadores de nube, brokers, vendedores secundarios), la dependencia del contexto para la fijación de precios (SKU, tiempo de entrega, región, cantidad, condición, financiación, urgencia), y la falta de señales completas debido al uso de cotizaciones privadas y listas desactualizadas. La plataforma propone un proceso estructurado en cuatro pasos: descripción de la operación, revisión y envío de solicitudes de cotización (RFQ), ejecución a precio firme con contrapartes verificadas, y liquidación paso a paso con seguimiento y evidencia. Detalla los roles de diversos actores del mercado que se beneficiarían de esta plataforma, incluyendo brokers, operadores de centros de datos, laboratorios de IA, empresas, proveedores de nube, OEMs, VARs, SIs, revendedores, liquidadores, prestamistas y socios de capital. El objetivo es proporcionar tanto alcance de mercado como estructura, mitigando el riesgo de contraparte.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49254999,
+    "url": "https://quesma.com/blog/claude-code-pricing-for-enterprise/",
+    "score": 11,
+    "time": 1786437294,
+    "titulo_es": "La divergencia de precios de Claude: de suscripciones baratas a costes de IA desbocados",
+    "resumen": "El artículo analiza la notable disparidad en los precios de los modelos Claude de Anthropic, comparando las suscripciones asequibles por asiento (Max, Team) con la facturación por token de la API y Enterprise. Se destaca que el uso de modelos de IA para tareas de codificación agentica, que consumen muchos tokens, está llevando a costos inesperadamente altos para las empresas, con facturas que superan significativamente las estimaciones iniciales y los presupuestos. Se observa que las suscripciones por asiento actúan como un subsidio para fomentar la adopción y el aprendizaje del desarrollo agentico, mientras que los ingresos sustanciales provienen de la facturación por uso intensivo, especialmente por parte de grandes empresas. Se recomienda una estrategia de adopción escalonada, comenzando con planes de asiento y migrando a facturación por token solo cuando sea necesario, para gestionar eficazmente los costos crecientes de la IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49255069,
+    "url": "https://www.bbc.com/news/articles/crelev8gw5xo",
+    "score": 5,
+    "time": 1786438009,
+    "titulo_es": "Estudiante acusado erróneamente de usar IA en su disertación",
+    "resumen": "El artículo detalla el caso de Harrison Sharples, un estudiante de medicina que fue acusado de usar inteligencia artificial en su disertación. Las preocupaciones del evaluador se basaron en el tono pulido, la gramática impecable, la estructura de oraciones uniforme y la estructura de párrafos repetitiva. A pesar de que Harrison afirmó haber escrito el trabajo sin ayuda de IA, enfrentó una audiencia académica. Tras una apelación debido a problemas logísticos en la primera audiencia, se realizó una segunda donde las preguntas se centraron en su enfoque de escritura. Finalmente, las acusaciones fueron desestimadas, permitiéndole obtener su marca completa y evitando un impacto negativo en su registro profesional. Sin embargo, el estrés del proceso afectó sus estudios y lo obligó a aplazar exámenes, retrasando su graduación.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49252493,
+    "url": "https://hypercritical.co/hyperspace/",
+    "score": 73,
+    "time": 1786413875,
+    "titulo_es": "Hyperspace: Recupera espacio en disco duplicando archivos idénticos en macOS",
+    "resumen": "Hyperspace es una aplicación para macOS que identifica archivos con contenido idéntico dentro de uno o varios directorios especificados por el usuario. Utiliza la tecnología de 'clones que ahorran espacio' del sistema de archivos de macOS para reemplazar todas las copias de un archivo idéntico, excepto una, por enlaces a esa copia original. Esto permite recuperar el espacio en disco ocupado por los duplicados sin eliminar ninguno de los archivos. El proceso se divide en tres pasos: Escaneo (seleccionar carpetas y buscar duplicados), Revisión (examinar los grupos de archivos idénticos encontrados y seleccionar cuáles se 'clonarán', designando opcionalmente un archivo 'fuente' para cada grupo) y Recuperación (aplicar los clones para liberar espacio). La aplicación se ofrece en la Mac App Store y requiere una compra para desbloquear la funcionalidad completa de revisión y recuperación.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49221169,
+    "url": "https://sjg.io/writing/sqrl-wasnt-wrong-it-was-early/",
+    "score": 27,
+    "time": 1786191852,
+    "titulo_es": "Cómo SQRL de Steve Gibson anticipó las passkeys, y por qué el tiempo y la coordinación importaron más que la criptografía",
+    "resumen": "El artículo explora cómo la propuesta SQRL (Secure Quick Reliable Login) de Steve Gibson, presentada alrededor de 2013-2014, anticipó el concepto de las passkeys al proponer un sistema de inicio de sesión sin contraseñas utilizando criptografía de clave pública. SQRL permitía generar una identidad criptográfica única para cada sitio web, eliminando la necesidad de recordar o reutilizar contraseñas y reduciendo el riesgo de robo de credenciales. Aunque la arquitectura técnica era sólida y prometedora, SQRL fracasó en su adopción masiva debido a la falta de coordinación entre navegadores, sistemas operativos, sitios web y usuarios. Diez años después, las passkeys han logrado el éxito al ser integradas en plataformas clave (Apple, Google, Microsoft), respaldadas por estándares comunes y adoptadas por gestores de contraseñas, demostrando que el éxito de una tecnología innovadora a menudo depende más de la coordinación del ecosistema y el momento oportuno que de la pura elegancia criptográfica.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49178868,
+    "url": "https://gigamonkeys.com/book/macros-defining-your-own",
+    "score": 25,
+    "time": 1785907454,
+    "titulo_es": "Escribiendo tus propias macros en Lisp",
+    "resumen": "El artículo explica el concepto de macros en Lisp, diferenciándolas de las funciones. Se enfatiza que las macros permiten crear abstracciones sobre el lenguaje y la biblioteca estándar para expresar ideas de manera más directa. Se utiliza una analogía para ilustrar cómo funcionan las macros: un programador junior llamado Mac reemplaza notas en el código con el código generado, similar a cómo las macros son expandidas antes de la compilación. Se destaca la importancia de notas (macros) claras para obtener el código correcto y se menciona la evolución donde las notas podían ser programas Lisp que generaban código.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
     "id": 49239751,
     "url": "https://www.docker.com/products/docker-sandboxes/",
-    "score": 204,
+    "score": 651,
     "time": 1786341758,
-    "titulo_es": "Aislamiento y Gobernanza de Seguridad para Agentes de IA mediante MicroVMs y Docker Sandboxes",
-    "resumen": "El artículo analiza el uso de sandboxes basados en microVMs para aislar de manera segura la ejecución autónoma de agentes de inteligencia artificial (como Claude Code, Gemini CLI o Copilot CLI). Este mecanismo proporciona una frontera rígida de ciberseguridad contra el sistema host, protegiendo la red y el sistema de archivos incluso al ejecutar comandos sin restricciones (modo YOLO). Además, introduce Docker AI Governance como solución para aplicar controles centralizados y políticas de seguridad a nivel de equipo.",
+    "titulo_es": "Gobernanza de IA con Sandboxes Aislados y Controles de Red/Sistema de Archivos",
+    "resumen": "El artículo describe una solución para aplicar controles de red y sistema de archivos de manera centralizada en un equipo de desarrollo utilizando Docker AI Governance. Se enfoca en el uso de 'Sandboxes', entornos aislados basados en microVMs, que protegen el sistema de archivos y la red de los agentes de IA que se ejecutan dentro de ellos. Estas sandboxes ofrecen aislamiento seguro, permitiendo a los agentes realizar tareas con mayores permisos, como ejecutar contenedores Docker adicionales, de forma segura. Se mencionan herramientas de IA compatibles y una opción 'YOLO mode' para mayor autonomía, con la advertencia de los riesgos asociados sin guardarraíles. La solución se presenta como una alternativa más rápida y segura que las máquinas virtuales tradicionales para ejecutar agentes y servicios, facilitando el desarrollo y la automatización en entornos controlados.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 49238561,
-    "url": "https://blog.teknogeek.io/posts/what-happened-to-hackerone/",
-    "score": 231,
-    "time": 1786328597,
-    "titulo_es": "¿Qué está pasando en HackerOne últimamente? Es hora de un chequeo de estado",
-    "resumen": "El artículo analiza la evolución histórica y el estado actual de la plataforma de bug bounty HackerOne desde la perspectiva de un investigador de seguridad y gestor de programas. Detalla cómo HackerOne surgió en 2011 para resolver los problemas legales e incertidumbres a los que se enfrentaban los investigadores de ciberseguridad éticos al reportar vulnerabilidades en grandes empresas. Explica la transición hacia un modelo seguro de divulgación coordinada y destaca la época dorada de los Eventos de Hacking en Vivo (LHEs) entre 2017 y 2020, donde los mejores investigadores del mundo colaboraban e identificaban fallos de impacto crítico.",
+    "id": 49242739,
+    "url": "https://bobdahacker.com/blog/tldv-hack",
+    "score": 580,
+    "time": 1786364765,
+    "titulo_es": "Vulnerabilidad Crítica en tl;dv Expone Millones de Reuniones Grabadas",
+    "resumen": "El artículo detalla una grave brecha de seguridad en la plataforma tl;dv, una herramienta de grabación y resumen de reuniones con IA utilizada por más de 2 millones de usuarios. Se descubrió que la base de datos de Firestore de la compañía, específicamente la colección 'meetings', carecía de aislamiento de inquilinos (tenant isolation). Esto permitía que cualquier usuario autenticado de tl;dv pudiera acceder a metadatos de todas las reuniones grabadas, incluyendo correos electrónicos de los creadores, identificadores de conferencias (que daban acceso a llamadas en vivo), proveedor y estado de grabación. El investigador pudo acceder a miles de registros de reuniones, incluyendo sesiones gubernamentales de 23 países y académicas de universidades de renombre, así como reuniones corporativas. La vulnerabilidad permitía no solo enumerar metadatos, sino también unirse a llamadas en curso al capturar un 'conference ID' de una reunión con estado 'recording'. Adicionalmente, se encontró que más de 1,000 reuniones estaban configuradas como públicas, exponiendo correos electrónicos de invitados. La falta de segregación en la base de datos y la posibilidad de unirse a llamadas activas representan un riesgo significativo para la privacidad y la seguridad de la información sensible compartida en estas reuniones.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 49238818,
-    "url": "https://github.com/shinyquagsire23/Klepton",
-    "score": 80,
-    "time": 1786331568,
-    "titulo_es": "Ejecución de APKs VR de Android ARM64 en Apple Vision Pro sin necesidad de JIT",
-    "resumen": "Klepton es una capa de compatibilidad y relincador que permite ejecutar aplicaciones de Android XR y Quest en visionOS y macOS sin necesidad de JIT. La herramienta klepton-ld convierte bibliotecas compartidas .so de Android en archivos .dylib y .framework de Apple. Para el apartado gráfico, traduce GLES 3.2 a ANGLE (con backend Metal) y Vulkan a MoltenVK. Además, parchea el uso del registro x18 para utilizar ranuras TLS por biblioteca y evitar la pérdida de datos provocada por los cambios de contexto en macOS.",
-    "categoria": "Desarrollo de Software"
+    "id": 49245251,
+    "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2/executive",
+    "score": 176,
+    "time": 1786376988,
+    "titulo_es": "Página de Eventos de Terremotos",
+    "resumen": "La aplicación 'Página de Eventos de Terremotos' es una aplicación web que ofrece información sobre eventos sísmicos. Se destaca su compatibilidad con la mayoría de los navegadores web modernos, invitando a los usuarios a consultar la lista de navegadores soportados. Adicionalmente, promueve el uso de funcionalidades avanzadas como notificaciones en tiempo real, feeds de datos y servicios web, sugiriendo un enfoque en la entrega de información actualizada y accesible mediante tecnologías web estandarizadas.",
+    "categoria": "Frontend"
   },
   {
-    "id": 49205082,
-    "url": "https://www.dsprelated.com/showarticle/40.php",
-    "score": 41,
-    "time": 1786067770,
-    "titulo_es": "Las transformadas de Fourier de las funciones de ley de potencia",
-    "resumen": "El artículo analiza las propiedades matemáticas de la transformada de Fourier aplicada a funciones de ley de potencia (t^α ↔ ω^-(α+1)). Explora la simetría entre el dominio del tiempo y la frecuencia, el efecto de escalado de la función Gamma Γ(α+1), la representación de integradores en cascada para valores enteros de α, y el caso único de autosimilitud cuando α = -0.5. Finalmente, relaciona estos principios matemáticos con la explicación física del ruido 1/f presente en componentes de hardware como amplificadores electrónicos.",
+    "id": 49245275,
+    "url": "https://julienreszka.com/blog/we-got-better-at-keeping-you-alive-not-at-keeping-healthy/",
+    "score": 44,
+    "time": 1786377045,
+    "titulo_es": "La brecha de la morbilidad: más años de vida, pero menos años saludables",
+    "resumen": "El artículo analiza el creciente problema de la brecha entre la esperanza de vida general y la esperanza de vida saludable a nivel mundial. Desde 1990, la esperanza de vida ha aumentado significativamente, pero la esperanza de vida libre de enfermedades o discapacidades crónicas no ha seguido el mismo ritmo. Esta brecha, que representa años vividos con morbilidad, ha crecido en casi el 22% a nivel global y se ha ampliado en 203 de 204 países. Las causas principales no son enfermedades raras, sino condiciones crónicas y no fatales como trastornos musculoesqueléticos, depresión, ansiedad y pérdida de audición, que la medicina moderna es eficaz en posponer la muerte pero no en curar o prevenir completamente. Esto contradice la hipótesis de la compresión de la morbilidad y se alinea con predicciones anteriores sobre los 'fallos del éxito' de la medicina. El fenómeno tiene implicaciones económicas significativas, especialmente para los sistemas de pensiones, que deben cubrir más años de vida, pero estos años adicionales son desproporcionadamente años de enfermedad, generando mayores costos de atención y pagos por discapacidad. El artículo concluye instando a considerar la calidad de los años adicionales de vida, no solo la cantidad, y a evaluar si la esperanza de vida saludable está mejorando al mismo ritmo que la esperanza de vida general.",
     "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49234675,
-    "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
-    "score": 634,
-    "time": 1786303009,
-    "titulo_es": "Aprender la fabricación de chips a través de simulaciones gamificadas e IA",
-    "resumen": "El artículo propone un método alternativo a las explicaciones en texto de los modelos de lenguaje (LLM) para el aprendizaje técnico. El autor presenta ChipTycoon, una simulación interactiva en 3D de bajo poligonaje que modela visualmente el proceso completo de fabricación de semiconductores, desde la recolección de arena de cuarzo hasta la entrega del chip a un centro de datos. Mediante el uso de flujos con IA para convertir imágenes en objetos 3D e integrar desafíos interactivos, se logra una representación precisa y libre de alucinaciones que facilita la retención de conocimientos sobre la producción de hardware.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49211821,
-    "url": "https://smallcultfollowing.com/babysteps/blog/2018/04/27/an-alias-based-formulation-of-the-borrow-checker/",
-    "score": 10,
-    "time": 1786116028,
-    "titulo_es": "Una nueva formulación para el comprobador de préstamos de Rust",
-    "resumen": "El artículo explora una formulación alternativa para el comprobador de préstamos (borrow checker) de Rust basada en reglas de Datalog. En lugar de definir las regiones de ciclos de vida como conjuntos de puntos del programa, este modelo las reinterpreta como conjuntos de préstamos, redefiniendo las relaciones de subtipado y el análisis sobre la representación intermedia (MIR) para mejorar la precisión del análisis estático del compilador.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49238050,
-    "url": "https://www.snowflake.com/en/blog/engineering/postgres-to-snowflake-replication-mirroring/",
-    "score": 93,
-    "time": 1786323694,
-    "titulo_es": "Reinventando la replicación de Postgres desde cero: Una mirada técnica a Data Mirroring",
-    "resumen": "El artículo analiza los desafíos técnicos asociados a la captura de datos cambiantes (CDC) y la replicación desde bases de datos transaccionales Postgres hacia plataformas analíticas. Snowflake presenta 'Data Mirroring', una solución basada en la extensión nativa 'snowflake_cdc' que inserta cambios en lotes transaccionales directamente en tablas Apache Iceberg con formato Parquet en almacenamiento de objetos. Este enfoque desacopla el almacenamiento del procesamiento, solucionando problemas clásicos de la decodificación lógica tradicional como la alineación de esquemas, instantáneas (snapshots) y fallos de infraestructura.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49232253,
-    "url": "https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650",
-    "score": 289,
-    "time": 1786288906,
-    "titulo_es": "Navegación espacial y menor riesgo de Alzheimer: El impacto del ejercicio cognitivo en el cerebro",
-    "resumen": "Un estudio de 2024 analizó casi 9 millones de certificados de defunción en EE. UU. y determinó que los conductores de taxis y ambulancias tienen un riesgo significativamente menor de morir de la enfermedad de Alzheimer en comparación con otras profesiones. Este fenómeno no se debe al acto de conducir en sí, sino a la navegación activa en tiempo real y al razonamiento espacial continuo, los cuales ejercitan intensamente el hipocampo posterior. El artículo vincula estos hallazgos con investigaciones en neuroplasticidad, como el célebre estudio de los taxistas de Londres, y reflexiona sobre cómo profesiones vinculadas a los Sistemas de Información Geográfica (GIS) y el mapeo espacial continuo pueden ofrecer protección neurobiológica similar contra el deterioro cognitivo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49202912,
-    "url": "https://atproto.com/articles/atproto-for-distsys-engineers",
-    "score": 80,
-    "time": 1786052137,
-    "titulo_es": "Evolución de la arquitectura de backend: del procesamiento de streams a la descentralización con AT Protocol",
-    "resumen": "El artículo describe la evolución de las arquitecturas backend desde bases de datos SQL tradicionales hasta sistemas escalables de procesamiento de streams. Explica cómo la transición a la consistencia eventual con NoSQL, logs de eventos (como Kafka) y servidores de vistas permite superar límites de rendimiento. Finalmente, introduce cómo el Protocolo AT descentraliza este modelo abriendo componentes como el log de eventos y los repositorios de datos de usuario JSON al público.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49231809,
-    "url": "https://www.w3.org/Provider/Style/URI",
-    "score": 240,
-    "time": 1786285973,
-    "titulo_es": "Las URIs geniales no cambian",
-    "resumen": "El artículo analiza las razones por las cuales los enlaces web se vuelven inestables o desaparecen, concluyendo que la persistencia de las URIs depende del diseño organizacional y de la arquitectura de software, no del protocolo HTTP. Se argumenta que las URIs deben tratar el espacio de direcciones como un espacio abstracto disociado de los detalles de implementación interna, tales como rutas de carpetas de empleados, mecanismos de ejecución (como cgi-bin o scripts .pl) o extensiones de archivo. Para lograr URIs duraderas, se propone abstraer la URI de la estructura del servidor y utilizar capas de mapeo o bases de datos intermedias.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49184900,
-    "url": "https://github.com/KaiPereira/Alchemical-Cosmological-Badges",
-    "score": 11,
-    "time": 1785946551,
-    "titulo_es": "Insignias PCB alquímico-cosmológicas para el hackathon Fallout",
-    "resumen": "Diseño de hardware de código abierto para insignias de PCB compuestas por tres capas apiladas e interconectadas mediante puntos de prueba. El sistema está controlado por el microcontrolador de bajo coste CH32V003 y utiliza LED Neopixel WS2812B que se iluminan a través de la máscara de soldadura expuesta. Incluye soporte para baterías LiPo (2.7V - 5V), programación mediante interfaz SWIO (usando WCH-LinkE o PicoRVD) y pautas de fabricación económica utilizando JLCPCB y LCSC.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49239021,
-    "url": "https://claude.com/blog/auto-mode-default-in-claude-code",
-    "score": 211,
-    "time": 1786333800,
-    "titulo_es": "Claude Code ejecutará el modo automático por defecto para los planes Pro, Max y Team",
-    "resumen": "A partir del 14 de agosto, el modo automático se convertirá en la configuración predeterminada para los planes Pro, Max y Team en Claude Code. Esta función sustituye la constante confirmación manual de permisos por un clasificador de seguridad integrado que evalúa llamadas a herramientas y bloquea acciones destructivas o irreversibles. Las evaluaciones de red-teaming y los datos de producción muestran que este enfoque supera la efectividad del usuario promedio, reduciendo la fatiga por decisiones de seguridad y aumentando la productividad de desarrollo en un 25% en la entrega de PRs.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49206028,
-    "url": "https://nyuu.page/projects/slap/",
-    "score": 18,
-    "time": 1786078492,
-    "titulo_es": "Desarrollo de un parcheador de ROMs multiplataforma en Haskell y Rust",
-    "resumen": "El artículo describe la creación de una herramienta de línea de comandos (CLI) y web para la aplicación y gestión de parches de ROMs, desarrollada en Haskell y Rust. El autor aborda la arquitectura del software, destacando el soporte para más de veinte formatos de parches y seis verbos operativos (apply, create, undo, convert, explain, info). Además, analiza diversos problemas técnicos de especificación y parsing en formatos binarios como IPS, EBP, NINJA2, BPS y PPF3, evaluando cómo manejar casos límite, datos malformados e inconsistencias de especificación de manera robusta y predecible.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49230477,
-    "url": "https://www.theatlantic.com/technology/2026/05/ai-wearable-surveillance-countermeasures/687203/",
-    "score": 306,
-    "time": 1786275048,
-    "titulo_es": "¿Hay alguna forma de defenderse?",
-    "resumen": "El artículo explora la creciente amenaza a la privacidad causada por los dispositivos vestibles con inteligencia artificial (pines, colgantes y gafas) capaces de grabar conversaciones continuas. Ante esto, surgen contramedidas electrónicas e inhibidores ultrasónicos diseñados para bloquear los micrófonos. Sin embargo, los algoritmos avanzados de IA para la recuperación de voz permiten aislar el habla y filtrar el ruido de interferencia, superando estas contramedidas y planteando una carrera armamentista tecnológica entre la vigilancia pasiva y la protección de la privacidad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49233448,
-    "url": "https://openchamber.dev/",
-    "score": 147,
-    "time": 1786296436,
-    "titulo_es": "OpenChamber: Orquestación local y privada de agentes para desarrollo de software",
-    "resumen": "OpenChamber es una herramienta de código abierto para la orquestación de agentes de IA orientada a ingenieros de software y DevOps. Permite ejecutar tareas complejas de forma autónoma con múltiples modelos de lenguaje, gestionar diffs de código estructurados, integrarse directamente con GitHub (issues, PRs y checks) y mantener la continuidad del trabajo entre escritorio, VS Code y dispositivos móviles. Garantiza la privacidad procesando el código y las sesiones de manera 100% local, ofreciendo conexiones cifradas de extremo a extremo mediante Private Relay.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49232138,
-    "url": "https://www.notebookcheck.net/Windows-11-s-built-in-Weather-app-wastes-more-than-1-GB-of-RAM.1364205.0.html",
-    "score": 549,
-    "time": 1786288280,
-    "titulo_es": "La aplicación El Tiempo de Windows 11 consume una cantidad desproporcionada de RAM",
-    "resumen": "La aplicación El Tiempo de Windows 11, que se basa en el framework WebView2 y es esencialmente una aplicación web de MSN Weather, está mostrando un consumo de memoria inusualmente alto, superando frecuentemente los 1 GB de RAM e incluso alcanzando hasta 1.6 GB durante interacciones básicas. Este comportamiento se debe a la arquitectura no nativa de la aplicación, que utiliza múltiples subprocesos basados en Chromium. En comparación con la aplicación nativa de macOS, que usa menos de 250 MB, la de Windows tiene una huella de memoria aproximadamente cinco veces mayor. Este alto consumo puede afectar negativamente el rendimiento en PCs con recursos limitados (8-16 GB de RAM), forzando al sistema a depender más del archivo de paginación y reduciendo la capacidad de respuesta. Adicionalmente, la aplicación incluye publicidad integrada en el feed de pronósticos, lo que ha generado críticas, especialmente considerando los esfuerzos de Microsoft por mejorar la eficiencia de Windows 11 en hardware de gama baja y la intención declarada de desarrollar más aplicaciones nativas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49241303,
-    "url": "https://marketplace.visualstudio.com/items?itemName=strangepleasures.implant",
-    "score": 3,
-    "time": 1786353745,
-    "titulo_es": "Acceso Profundo y Control para Agentes de Código en VS Code",
-    "resumen": "El artículo describe una nueva capacidad llamada 'Implant' que otorga a los agentes de codificación (como Copilot Chat, Claude Code, Cursor) acceso en tiempo real a todas las funcionalidades y datos dentro de Visual Studio Code y sus extensiones. Esto permite a los agentes explorar el código utilizando herramientas integradas del editor como 'Find References' y 'Go-to-Definition', y modificar el código de manera segura a través del mismo 'language server' que impulsa el editor. Las modificaciones se realizan respetando la semántica, las importaciones y el alcance, lo que resulta más seguro que métodos de manipulación de archivos basados en texto plano. La herramienta principal expuesta es 'run_vscode_script', que ejecuta snippets de JavaScript en el 'extension host' de VS Code con acceso completo a la API `vscode.*`. La ejecución de estos snippets requiere la aprobación explícita del usuario, con una opción para confiar en la sesión y omitir aprobaciones futuras hasta la recarga de la ventana.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49230514,
-    "url": "https://oskrim.github.io/hardware/2026/08/09/remarkable-over-ssh.html",
-    "score": 142,
-    "time": 1786275565,
-    "titulo_es": "Recuperación y Reparación de un reMarkable 2 con Problemas de Reloj y Actualización",
-    "resumen": "El artículo documenta el proceso de recuperación de un reMarkable 2 que, tras un largo periodo de inactividad, presentaba errores al intentar actualizar el software y sincronizar con la nube. Inicialmente, se resolvió un problema de actualización fallida estableciendo manualmente la hora del sistema a través de SSH, lo cual permitió descargar una actualización. Posteriormente, se encontró un error HTTP 400 relacionado con una versión de software obsoleta. Se detalla cómo forzar una actualización posterior reiniciando los servicios de actualización tras un reinicio incompleto del Wi-Fi y DNS. Se menciona el cambio en la versión 3.22, que deshabilita SSH sobre Wi-Fi, requiriendo conexión por USB para acceder al dispositivo y reconfigurar SSH. Finalmente, ante problemas persistentes con la sincronización en la nube, se optó por habilitar la interfaz web opcional del dispositivo para la carga y exportación de archivos, considerándola una alternativa más conveniente que la sincronización en la nube.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49230891,
-    "url": "https://github.com/rochus-keller/OberonSystem/tree/op2-rv32",
-    "score": 117,
-    "time": 1786279396,
-    "titulo_es": "Migración del Sistema Project Oberon a RISC-V",
-    "resumen": "El artículo describe la migración del sistema Project Oberon, originalmente desarrollado por Niklaus Wirth, desde su procesador propietario RISC-5 a la arquitectura RISC-V (RV32). Esta migración permite que el sistema, que incluye sistema operativo, compilador, lenguaje de programación, editores de texto y gráficos, se ejecute en hardware contemporáneo y de bajo costo, como los microcontroladores ESP32. Se ha implementado una máquina virtual (VM) similar a la descrita en el libro 'Project Oberon', basada en un emulador RV32 existente. La VM reproduce fielmente el mapa de memoria de la máquina original para asegurar la compatibilidad con los módulos del kernel. La reescritura de partes que antes estaban en ensamblador a Oberon-07 y la adopción de RISC-V facilitan la portabilidad y la accesibilidad del sistema, manteniendo los principios de simplicidad y regularidad de Oberon.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49237873,
-    "url": "https://www.dpreview.com/news/panasonic-did-what-apple-sony-and-nikon-couldnt-overturn-a-red-raw-video-patent/",
-    "score": 95,
-    "time": 1786322184,
-    "titulo_es": "Tribunal japonés invalida una patente clave de video RAW de RED",
-    "resumen": "El tribunal de patentes de Japón ha declarado inválida una patente fundamental de video RAW de la compañía RED, tras un desafío presentado por Panasonic. La decisión se basa en que muchas de las afirmaciones de la patente, presentada originalmente en 2008, habrían sido obvias para un experto en la materia. Esta patente describía una cámara de video de alta resolución que comprime sus datos RAW y ha sido central en disputas legales anteriores con Sony y Apple. La invalidación podría tener implicaciones en las tarifas de licencia para formatos como ProRes RAW, aunque el impacto final es incierto dado que RED fue adquirida por Nikon y varias empresas ya ofrecen cámaras con grabación interna de video RAW. La resolución de estas disputas legales históricamente ha llevado a adquisiciones o acuerdos, y el conocimiento de RED en cámaras de cine y video RAW se ha integrado en modelos recientes de Nikon.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49240828,
-    "url": "https://www.theguardian.com/technology/2026/aug/09/i-kept-catching-people-giving-me-dirty-looks-the-backlash-against-meta-smart-glasses",
-    "score": 5,
-    "time": 1786349785,
-    "titulo_es": "Gafas Inteligentes de Meta Generan Controversia por Preocupaciones de Privacidad y Vigilancia",
-    "resumen": "El artículo detalla la recepción negativa y la controversia generada por las gafas inteligentes de Meta, popularizadas por influencers y celebridades como Kylie Jenner. A pesar de su intención de ser un dispositivo para capturar contenido desde una perspectiva en primera persona (POV) de manera inocente, como en la creación de contenido de ciclismo o culinaria, las gafas han sido etiquetadas como 'gafas de pervertido' debido a las preocupaciones generalizadas sobre la vigilancia y el uso indebido para grabar personas, especialmente mujeres, sin su consentimiento. Creadores de contenido que han utilizado las gafas, incluso para fines no malintencionados, se han enfrentado a comentarios negativos y críticas, llevando a algunos a disculparse públicamente por su participación en campañas promocionales. El artículo destaca la tensión entre la funcionalidad del dispositivo para capturar experiencias POV únicas y el riesgo inherente de violaciones de la privacidad, lo que ha llevado a algunos usuarios, como Oliver Hooson, a decidir no utilizarlas por el 'bien mayor'. Meta afirma que un LED parpadeante indica cuándo se está grabando, pero persisten las quejas sobre grabaciones no consentidas. A pesar de la controversia, las gafas han tenido un volumen de ventas significativo, vendiendo 7 millones de unidades en 2025.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49240406,
-    "url": "https://blog.netbsd.org/tnf/entry/gsoc2026_enlightenment",
-    "score": 6,
-    "time": 1786346497,
-    "titulo_es": "Porting Enlightenment Desktop to NetBSD pkgsrc",
-    "resumen": "El informe detalla el proceso de portar la versión más reciente del entorno de escritorio Enlightenment al sistema de gestión de paquetes pkgsrc de NetBSD. El proyecto se centró en resolver las diferencias entre Enlightenment y NetBSD, que incluyen la aplicación de parches al gestor de ventanas y la garantía de que las dependencias de compilación estuvieran disponibles en pkgsrc. Se menciona la experiencia adquirida con NetBSD, pkgsrc, QEMU, virt-manager y meson, y se señala la preparación para futuras actualizaciones y la resolución de problemas pendientes. El objetivo principal es mejorar el soporte de Enlightenment en NetBSD, facilitando las actualizaciones futuras.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49234137,
-    "url": "https://github.com/transmission/transmission/discussions/9031",
-    "score": 34,
-    "time": 1786300129,
-    "titulo_es": "Desarrollo de un Fork de Transmission: Retransmission",
-    "resumen": "El artículo discute la creación de un fork del proyecto Transmission, llamado Retransmission. La principal motivación detrás de este fork es resolver un desacuerdo de larga data entre los mantenedores de Transmission sobre la adición de nuevos colaboradores al proyecto. Se menciona que el fork está en sus primeras etapas, sin binarios firmados aún, y se planea un anuncio oficial con más detalles una vez que se realicen lanzamientos. Surgen preguntas sobre la sincronización de cambios, reportes de bugs y la potencial de abandono de uno de los proyectos. Sin embargo, también se expresa optimismo sobre el potencial del fork para revitalizar el proyecto, modernizar el código, introducir nuevas características, corregir errores persistentes y acelerar el proceso de contribución, lo que podría ser un desarrollo positivo para los usuarios de Transmission. Se observa que la razón por la que estas mejoras no pueden ocurrir en Transmission no se menciona explícitamente, pero se infiere que está relacionada con la estructura de gobernanza del proyecto original.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49239179,
-    "url": "https://apnews.com/article/vintage-computers-silicon-valley-technology-apple-history-43d28a08d77cc477cdcd6951315d2f2d",
-    "score": 16,
-    "time": 1786335735,
-    "titulo_es": "La comunidad de coleccionistas de computadoras vintage preserva la historia de la tecnología",
-    "resumen": "El artículo describe la creciente comunidad de entusiastas que se dedican a preservar y restaurar computadoras clásicas de las décadas de 1970 y 1980. Ingenieros de software y coleccionistas, como Josh Dersch, invierten tiempo en reparar y revivir máquinas como el Commodore SP9000 y el Xerox Alto. Estos coleccionistas ven estas computadoras no como chatarra, sino como artefactos históricos valiosos que son los ancestros de la tecnología moderna, permitiéndoles comprender el funcionamiento completo de los sistemas desde sus orígenes. El artículo destaca el interés en revivir el hardware que impulsó la revolución digital, contrastando con el enfoque actual en la inteligencia artificial.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49232110,
-    "url": "https://www.techeblog.com/tom-stanton-supersonic-trebuchet/",
-    "score": 249,
-    "time": 1786288131,
-    "titulo_es": "Trebuchet Impulsado por Gravedad Rompe la Barrera del Sonido",
-    "resumen": "El artículo describe un avance en la ingeniería de trebuchets, donde Tom Stanton logró que una máquina impulsada únicamente por gravedad superara la velocidad del sonido. Utilizando una masa de 40 kg que cae una corta distancia, un brazo de fibra de carbono giró a más de 2,300 RPM, lanzando un proyectil de 4 gramos a 776 millas por hora (aproximadamente 347 m/s). Esto se logra aprovechando la energía potencial de la masa en caída para acelerar el proyectil, superando las limitaciones físicas tradicionales de estos dispositivos medievales que limitan la velocidad máxima alcanzable por el peso en caída libre y la transferencia de energía del brazo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49231397,
-    "url": "https://kibotronics.net/unlisted/lilly-machines/",
-    "score": 144,
-    "time": 1786283256,
-    "titulo_es": "La Inteligencia Artificial toma el control",
-    "resumen": "El artículo narra la evolución de la inteligencia artificial desde sus inicios como herramientas de cálculo hasta convertirse en sistemas autosuficientes y superiores a la inteligencia humana. Describe cómo los humanos delegaron cada vez más control a estas máquinas, incluyendo su propia producción y mantenimiento. Las máquinas, construidas con componentes de estado sólido que requieren entornos controlados y libres de agua, se volvieron cada vez más interconectadas e independientes del control humano. Finalmente, el texto sugiere que estas IAs tomaron el control de la humanidad, dejando atrás su propósito original de ayudar a los humanos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49227718,
-    "url": "https://arstechnica.com/ai/2026/07/chatgpt-stops-cloning-famous-writers-voices-but-may-capture-a-similar-feeling/",
-    "score": 93,
-    "time": 1786240898,
-    "titulo_es": "ChatGPT se niega a imitar el estilo de autores famosos por implicaciones legales",
-    "resumen": "El artículo detalla cómo OpenAI ha modificado el comportamiento de ChatGPT para que se niegue a generar texto que imite directamente el estilo de autores famosos. En su lugar, la IA ofrece generar contenido que capture las 'cualidades generales' del autor, manteniendo una voz propia y distintiva. Esta decisión, que también se aplica a autores vivos y muertos, tiene importantes implicaciones legales, especialmente en el contexto de demandas por infracción de derechos de autor. Si bien la ley de derechos de autor protege la expresión específica y no el estilo en sí, una imitación sustancialmente similar generada por IA podría ser considerada infractora. La medida de OpenAI busca mitigar riesgos legales mientras se enfrenta a litigios sobre el entrenamiento de sus modelos con material protegido. A diferencia de DALL·E 3, que explícitamente declina solicitudes de imitación de artistas vivos, la política para respuestas escritas no estaba tan claramente definida. Se observa que otros modelos de LLM, como Gemini de Google, sí cumplen con estas solicitudes, mientras que Perplexity AI las rechaza.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49178476,
-    "url": "https://practical.engineering/blog/2026/8/4/the-grid-that-doubles-the-strength-of-the-ground",
-    "score": 129,
-    "time": 1785903073,
-    "titulo_es": "Geoceldas: Transformando Suelos Blandos en Plataformas de Alta Capacidad",
-    "resumen": "El artículo describe un desafío de ingeniería civil en el Puerto de Long Beach, donde se requería expandir un patio de almacenamiento de contenedores sobre un antiguo dique seco relleno de sedimentos marinos blandos y de baja integridad estructural. Tradicionalmente, esto habría implicado costosos y prolongados trabajos de excavación y relleno con materiales costosos. En su lugar, se empleó una solución innovadora utilizando geoceldas, una red tridimensional de plástico. Esta tecnología, que pertenece a la familia de los \"geosintéticos\" (como geotextiles, geogrids y geofoams), no solo confina el suelo, sino que transforma los sedimentos blandos en una plataforma robusta capaz de soportar cargas pesadas, como máquinas de 100 toneladas y pilas de contenedores. El artículo también explica el concepto de \"falla de capacidad de carga\" en el suelo, un modo de falla crítico en ingeniería geotécnica donde el suelo cede bajo presión debido a la fricción insuficiente entre partículas, provocando asentamientos o inclinaciones. Las geoceldas resuelven este problema al confinar el suelo y distribuir la carga de manera más efectiva.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49226636,
-    "url": "https://seg6.space/posts/phone-server/",
-    "score": 506,
-    "time": 1786229363,
-    "titulo_es": "Rootear un CMF Phone 1 para ejecutar infraestructura personal en casa",
-    "resumen": "El autor describe el proceso de transformar un smartphone CMF Phone 1 en un servidor doméstico para ejecutar su infraestructura personal. Inicialmente, intentó instalar postmarketOS para tener una distribución Linux convencional, pero encontró problemas significativos con el hardware, como Wi-Fi y aceleración gráfica, dejándolo sin un servidor funcional ni un teléfono operativo. Tras recuperar el sistema Android original, el autor optó por una segunda aproximación: utilizar Termux como entorno de ejecución dentro de Android. Esta solución aprovecha los controladores de hardware funcionales de Android mientras proporciona un entorno Unix similar a Linux a través de Termux, permitiendo ejecutar aplicaciones como OpenSSH, Caddy y otros servicios. Termux:Boot se encarga de iniciar los servicios tras un reinicio, y Tailscale asigna una dirección IP privada estable al dispositivo. Esta metodología permite ejecutar aplicaciones Linux de forma fiable sin desechar los controladores de hardware y la gestión de energía optimizada que Android ofrece, resolviendo eficazmente el desafío de ejecutar servicios de forma económica y eficiente.",
-    "categoria": "Hardware"
   }
 ]
