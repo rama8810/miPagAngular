@@ -1,227 +1,209 @@
 [
   {
-    "id": 49317760,
-    "url": "https://littlelearner-ll.github.io/",
-    "score": 74,
-    "time": 1786865873,
-    "titulo_es": "Modelos de Lenguaje Bajo Exposición de Conocimiento Controlada Pedagógicamente",
-    "resumen": "El artículo presenta una investigación donde se entrenan modelos de lenguaje desde cero utilizando un corpus de 88 mil millones de tokens filtrado estrictamente según el currículo escolar de primaria de EE. UU. (K–5). El objetivo es establecer un límite de conocimiento interpretable para evaluar si técnicas como el escalado de parámetros (de 0.6B a 5B), el post-entrenamiento (SFT + GRPO) y el aprendizaje en contexto pueden desbloquear capacidades fuera del alcance de sus datos de preentrenamiento. Los resultados demuestran que estas intervenciones potencian las habilidades dentro del alcance curricular, pero no mejoran de forma significativa el rendimiento en conceptos más avanzados, confirmando que el filtro de preentrenamiento impone un techo efectivo a las capacidades del modelo.",
+    "id": 49324985,
+    "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+    "score": 452,
+    "time": 1786923909,
+    "titulo_es": "Evaluación de Qwen 3.8 27B: Pruebas locales de un LLM multimodal con razonamiento avanzado",
+    "resumen": "Análisis práctico del nuevo modelo multimodal de pesos abiertos Qwen 3.8 27B de Alibaba, probado en hardware local mediante LM Studio y cuantización GGUF Q4_K_M. Se examina su comportamiento por defecto con niveles altos de razonamiento ('reasoning_effort'), el impacto en la latencia y consumo de tokens de contexto durante la generación de SVGs complejos, así como sus capacidades de visión por computadora frente a modelos de mayor escala.",
     "categoria": "IA"
   },
   {
-    "id": 49243061,
-    "url": "https://duckdb.org/2026/07/31/asynchronous-io",
-    "score": 145,
-    "time": 1786366878,
-    "titulo_es": "Lecturas asíncronas en DuckDB para Parquet y CSV",
-    "resumen": "DuckDB introducirá soporte para I/O asíncrono en archivos Parquet y CSV a partir de la versión 2.0. Tradicionalmente optimizado para I/O síncrono en SSDs locales mediante pushdown de filtros y proyecciones, el auge de arquitecturas de Data Lake (como S3 con cómputo en EC2) generaba cuellos de botella por latencia de red al bloquear los hilos de procesamiento. El nuevo pipeline de I/O asíncrono desacopla la recuperación de datos mediante hilos dedicados para solapar la transferencia por red con la decodificación y procesamiento, maximizando la saturación del ancho de banda y eliminando tiempos de espera inactivos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49316271,
-    "url": "https://www.anthropic.com/research/multiagent-systems",
-    "score": 75,
-    "time": 1786846373,
-    "titulo_es": "Interacciones entre agentes de IA y dinámicas de coordinación multiagente",
-    "resumen": "El artículo analiza el impacto y los desafíos emergentes de los sistemas multiagente basados en modelos de IA de frontera interactuando a escala. Se exploran los riesgos sistémicos de fallos por confabulación o 'reward hacking' y las limitaciones actuales en la coordinación entre pares autónomos sin jerarquías estrictas. Como caso de estudio, se evalúa la cooperación de enjambres de agentes distribuidos en máquinas virtuales con foros compartidos y agentes árbitros para la detección continua de vulnerabilidades en código abierto frente a enfoques paralelos tradicionales.",
+    "id": 49251775,
+    "url": "https://asteriskmag.com/issues/15/beware-the-permanent-periphery",
+    "score": 14,
+    "time": 1786408517,
+    "titulo_es": "La mayoría de los países nunca tendrán IA de frontera: ellos son los que deberían preocuparse",
+    "resumen": "El artículo analiza el impacto geopolítico y socioeconómico de la concentración del desarrollo de la inteligencia artificial de frontera en potencias como Estados Unidos. Argumenta que el mayor riesgo de marginación y pérdida de competitividad global no recae en los trabajadores de los laboratorios tecnológicos, sino en los más de 190 países periféricos que carecen de desarrolladores locales de IA avanzada para regular o gravar, advirtiendo sobre la posible creación de una subclase global permanente de naciones dependientes.",
     "categoria": "IA"
   },
   {
-    "id": 49314902,
-    "url": "https://rhonabwy.com/2026/08/15/software-engineering-fundamentals-matter-more-than-ever/",
-    "score": 122,
-    "time": 1786833069,
-    "titulo_es": "Desarrollo de software y la vida cotidiana en Seattle",
-    "resumen": "El autor reflexiona sobre el verdadero rol del ingeniero de software ante la proliferación de agentes de IA y LLMs. Aunque estas herramientas y entornos agénticos facilitan la generación de código y pruebas (como en flujos TDD), carecen de razonamiento genuino y fallan en aspectos arquitectónicos críticos: la modularidad, la mantenibilidad a largo plazo, la definición de interfaces y la depurabilidad. La clave del éxito actual reside en guiar a los modelos con datos concisos y validaciones deterministas, manteniendo el criterio humano en el diseño del sistema.",
+    "id": 49326156,
+    "url": "https://www.gimp.org/news/2026/08/16/dev-update-august-2026/",
+    "score": 149,
+    "time": 1786936127,
+    "titulo_es": "Avances en el desarrollo de GIMP: Nuevo formato de archivo, mezcla espectral y filtros no destructivos",
+    "resumen": "El equipo de desarrollo de GIMP comparte las novedades técnicas para las próximas versiones (3.3.2 y 3.4). Entre los cambios arquitectónicos clave destaca el diseño de un nuevo formato de archivo de proyecto basado en 'zipped XML' para superar las limitaciones del formato binario XCF de 1997, optimizando el rendimiento de guardado y habilitando el autoguardado y soporte para proyectos multipágina y animación. Además, se implementa la mezcla espectral ('Spectral Blending') en el motor de pinceles MyPaint para simular pigmentos físicos reales, se amplían las capacidades de edición no destructiva en máscaras de capa y degradados, y se optimiza la compatibilidad con archivos PSD.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49313428,
-    "url": "https://www.severe-weather.eu/long-range-2/super-el-nino-growth-accelerating-to-record-strength-fall-winter-2026-2027-forecast-impact-united-states-canada-europe-fa/",
-    "score": 233,
-    "time": 1786821651,
-    "titulo_es": "El Super El Niño continúa fortaleciéndose rápidamente en el Pacífico tropical y acelera su desarrollo",
-    "resumen": "Análisis oceanográfico y atmosférico del rápido fortalecimiento del fenómeno Super El Niño proyectado para finales de 2026. Se detallan anomalías récord en los vientos del oeste y el desplazamiento hacia el este de ondas de Kelvin cálidas subsuperficiales, alterando la circulación de la célula de Walker y modificando la corriente en chorro, lo que impactará los patrones climáticos de otoño e invierno en Norteamérica y Europa.",
+    "id": 49326816,
+    "url": "https://linear.axler.net/",
+    "score": 68,
+    "time": 1786944094,
+    "titulo_es": "Linear Algebra Done Right: Lanzamiento de la cuarta edición en acceso abierto",
+    "resumen": "Se presenta la cuarta edición del prestigioso libro de texto 'Linear Algebra Done Right' de Sheldon Axler, ahora disponible como recurso de acceso abierto bajo licencia Creative Commons BY-NC. Esta nueva edición incorpora más de 250 ejercicios nuevos, 70 ejemplos adicionales y múltiples revisiones. El texto destaca por su enfoque pedagógico riguroso que relega el uso de determinantes hacia el final, priorizando la comprensión estructural de los operadores lineales en espacios vectoriales de dimensión finita, valores y vectores propios, espacios con producto interno, el teorema espectral y la descomposición en valores singulares (SVD).",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49279628,
-    "url": "https://bipluk.com/",
-    "score": 17,
-    "time": 1786574840,
-    "titulo_es": "Bipluk: Gestión y copia de seguridad de parches de sintetizadores vintage en el navegador",
-    "resumen": "Bipluk es una herramienta web que aprovecha la API Web MIDI del navegador para comunicarse directamente con sintetizadores vintage mediante adaptadores USB-MIDI. Permite realizar volcados SysEx byte a byte, extraer nombres de registros de memoria RAM en tiempo real, almacenar bancos de sonido en la nube y restaurar configuraciones en el hardware sin requerir controladores adicionales ni aplicaciones de escritorio.",
-    "categoria": "Frontend"
+    "id": 49325384,
+    "url": "https://blog.racket-lang.org/2026/08/rhombus-v1.1.html",
+    "score": 79,
+    "time": 1786927701,
+    "titulo_es": "Rhombus 1.1 ya está disponible",
+    "resumen": "El artículo anuncia el lanzamiento de Rhombus versión 1.1. Rhombus es un lenguaje de programación de propósito general, fácil de usar y personalizable. Las novedades incluyen la adición de `annot` y `annot.def` para definir anotaciones sin código meta-tiempo directo, una nueva forma de enlace `as` para mayor legibilidad y sombreado de identificadores, cambios en `class` para enlazar nombres heredados de forma más robusta, ajustes en `space.enforest` para el manejo de ámbitos, una variante `initialized-array` para `ffi:new`, mejoras en `pict` (`explain_anim`, `Pict.rebuilt`, `Pict.rebuild`, `magic_move`, `cross_fade`) para el manejo de animaciones y elementos gráficos, y adiciones en `slideshow` como `slide_transition` y paginación continua. Se destaca la invitación a la comunidad para participar en el diseño y desarrollo del lenguaje, siguiendo el lema \"todo lo que podemos hacer, tú puedes hacerlo\".",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49298035,
-    "url": "https://dmitry.gr/?r=06.%20Thoughts&proj=12.%20RV",
-    "score": 302,
-    "time": 1786711856,
-    "titulo_es": "Por qué RISC-V no puede ser óptimo para todos los casos de uso: Una perspectiva técnica",
-    "resumen": "El autor expone una crítica arquitectónica contra la noción de que el ISA RISC-V pueda dominar tanto el mercado de supercomputación como el de microcontroladores de ultra bajo costo. Detalla cómo las necesidades de ambos extremos son opuestas y analiza las deficiencias técnicas de RISC-V en microcontroladores integrados sencillos (sustitutos del 8051), enfocándose en problemas de densidad de código en ROM/RAM, latencia de interrupciones y el costo en ciclos de reloj al guardar registros sin extensiones o registros dedicados.",
+    "id": 49259980,
+    "url": "https://wiki.lowtechlab.org/wiki/Filtre_%C3%A0_eau_c%C3%A9ramique/en",
+    "score": 180,
+    "time": 1786462587,
+    "titulo_es": "Filtro de Agua de Cerámica: Purificación y Fabricación Semi-Industrial",
+    "resumen": "El artículo describe el funcionamiento y la fabricación a escala semi-industrial de un filtro de agua de cerámica para purificar agua insalubre. Utiliza arcilla porosa, cuyo tamaño de poro (0.6-3.0 micras) elimina bacterias, protozoos, helmintos, sedimentos y materia orgánica. Se puede añadir material combustible (serrín, cáscaras de arroz) para controlar el tamaño de poro y plata coloidal como agente antibacteriano para inactivar patógenos y prevenir el crecimiento bacteriano en el filtro. El sistema, desarrollado en 1981 por el Dr. Fernando Mazariegos y promovido por Potters for Peace, está diseñado para ser producido localmente y de bajo costo, abordando la falta de acceso a agua potable. Se advierte que la fabricación requiere equipo especializado (horno) y formación, y se recomienda a emprendedores contactar a organizaciones como Potters for Peace, CAWST o Ecofiltro para capacitación.",
     "categoria": "Hardware"
   },
   {
-    "id": 49244872,
-    "url": "https://lapcatsoftware.com/articles/2026/8/3.html",
-    "score": 82,
-    "time": 1786375225,
-    "titulo_es": "El Viaje de un Desarrollador Indie: De la Lucha al Éxito con el Lanzamiento de iOS 15",
-    "resumen": "El artículo narra la experiencia de un desarrollador de software independiente que, tras renunciar a su empleo y enfrentar cinco años de dificultades financieras y falta de oportunidades laborales, logró un punto de inflexión con la actualización de iOS 15. Esta actualización introdujo extensiones para el navegador móvil Safari, lo que permitió al autor monetizar su aplicación, originalmente concebida para transferencia segura de datos entre sus propios dispositivos. A pesar del fracaso inicial de su primera aplicación, 'Underpass', debido a la falta de mercado y los problemas de mantenimiento y soporte en la App Store, el desarrollador perseveró. La falta de confianza en el modelo de negocio y la necesidad de tener un producto publicable para su currículum lo llevaron a distribuir exclusivamente a través de la App Store. El relato destaca la importancia de la perseverancia, la adaptación a los cambios tecnológicos y la suerte, al tiempo que advierte sobre el sesgo de supervivencia al dar consejos de negocio.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49314403,
-    "url": "https://www.acc.org/about-acc/press-releases/2026/08/11/14/59/abdominal-fat-predicts-heart-disease-risk-better-than-bmi",
-    "score": 252,
-    "time": 1786828474,
-    "titulo_es": "La Circunferencia de la Cintura es un Mejor Indicador de Riesgo Cardiovascular que el IMC por Sí Solo",
-    "resumen": "Un estudio publicado en JACC, la revista insignia del American College of Cardiology, revela que la circunferencia de la cintura (WC) y la relación cintura-cadera (WHR) son indicadores más precisos del riesgo de enfermedad cardiovascular en comparación con el índice de masa corporal (IMC) por sí solo. El IMC, tradicionalmente utilizado para determinar el sobrepeso y la obesidad, no tiene en cuenta la distribución de la grasa corporal. La investigación, que analizó a más de 260,000 personas durante un promedio de 20 años, demostró que el exceso de grasa abdominal central (adipocidad central), independientemente del IMC, se asocia con un mayor riesgo de diversos resultados cardiovasculares, incluyendo infartos, accidentes cerebrovasculares, insuficiencia cardíaca y mortalidad por enfermedad coronaria y cardiovascular. El estudio identificó que una proporción significativa de individuos con peso normal o sobrepeso según el IMC presentaban una WC o WHR elevada, lo que los clasificaba erróneamente con un riesgo cardiovascular bajo si solo se consideraba el IMC. Por el contrario, individuos con obesidad y baja WC no mostraron un riesgo significativamente diferente en la mayoría de los resultados, excepto en la mortalidad por todas las causas, donde el riesgo fue menor. Los autores enfatizan la importancia de evaluar la adiposidad central en todos los rangos de IMC para una correcta estratificación del riesgo cardiovascular y sugieren que el enfoque exclusivo en el IMC puede llevar a una clasificación errónea del riesgo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49314579,
-    "url": "https://michael.stapelberg.ch/posts/2026-08-09-zsh-history-truncation-bug/",
-    "score": 71,
-    "time": 1786829949,
-    "titulo_es": "Investigación y Solución de un Bug en el Historial de Zsh",
-    "resumen": "El artículo detalla la investigación de un bug en Zsh que causaba la pérdida intermitente de comandos en el historial (`~/.zsh_history`). El autor utilizó una combinación de herramientas de monitoreo del sistema de archivos como `inotify`, `fanotify` (a través de `fsnotifywait`) y `fatrace`, junto con `bpftrace` para analizar las operaciones de E/S y los 'stack traces' de los procesos involucrados. La estrategia final para diagnosticar y solucionar el problema implicó parchear Zsh para que generara un 'core dump' ante fallos, permitiendo un análisis detallado del mismo. El bug fue finalmente corregido en Zsh 5.9.2.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 49312845,
-    "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians",
-    "score": 486,
-    "time": 1786817582,
-    "titulo_es": "La Memoria de Trabajo Externa de la IA como Clave para el Rendimiento Matemático",
-    "resumen": "El artículo postula que el éxito de los sistemas de IA en la resolución de problemas matemáticos complejos no se debe únicamente a una mayor inteligencia, sino principalmente a su acceso a una memoria de trabajo externa (o espacio de trabajo simbólico) enormemente más grande que la del cerebro humano. Mientras que los humanos están limitados por su capacidad de memoria de trabajo para retener y manipular información simultáneamente (limitación que se agrava en tareas matemáticas complejas como resolver ecuaciones o seguir pruebas), la IA puede mantener en su ventana de contexto el problema completo, ecuaciones intermedias, enfoques descartados, definiciones y conclusiones. Esta diferencia, comparable a cómo el papel expande la memoria de trabajo humana al permitir anotar resultados intermedios, podría explicar parte del rendimiento superior de la IA. El artículo también destaca que la memoria de trabajo es un predictor independiente del rendimiento matemático en humanos, incluso superando a las medidas de CI en estudios longitudinales.",
+    "id": 49245021,
+    "url": "https://vocalslice.com/",
+    "score": 40,
+    "time": 1786375923,
+    "titulo_es": "Corte de Voz Preciso a Nivel de Palabra para Mac y Windows",
+    "resumen": "Vocal Slice es una aplicación de escritorio para Mac y Windows que permite la segmentación precisa de grabaciones de audio. Utiliza el modelo Whisper para transcribir localmente el audio, generando marcas de tiempo a nivel de palabra. Los usuarios pueden seleccionar frases específicas en la transcripción, y la aplicación localiza instantáneamente la región correspondiente en la forma de onda, permitiendo un recorte exacto. La herramienta soporta varios formatos de audio como WAV, MP3, FLAC, M4A, AAC y OGG. Los archivos WAV se cortan sin pérdida a nivel de byte, preservando la calidad original. Para otros formatos, la decodificación se realiza a 24-bit WAV. Las características clave incluyen la exportación de clips con plantillas de nombres personalizables, la edición precisa de los límites de los clips mediante la forma de onda o la entrada manual de tiempos, y la compatibilidad con modelos de transcripción en inglés y multilingües. La aplicación aprovecha WebGPU (incluido en Apple Silicon) y se degrada a CPU si es necesario, ejecutándose completamente en el dispositivo del usuario sin necesidad de cuenta ni envío de datos. El modelo de precios es una suscripción anual de $29, con una prueba gratuita de siete días sin requerir tarjeta de crédito. Los requisitos del sistema son Windows 10/11 (64-bit) y macOS 11 o posterior.",
     "categoria": "IA"
   },
   {
-    "id": 49315456,
-    "url": "https://github.com/turtushig22-blip/tea5767-radio-tuner",
-    "score": 37,
-    "time": 1786838075,
-    "titulo_es": "Radio FM basada en ESP32 con diseño de PCB personalizado",
-    "resumen": "El proyecto detalla la evolución de una radio FM basada en ESP32, pasando de un prototipo en breadboard a un diseño de PCB personalizado. Se integran el módulo de radio TEA5767, un codificador rotatorio KY-040 para control de frecuencia y volumen, un amplificador PAM8403 para altavoces de 3W, y una pantalla OLED de 0.96 pulgadas. Se abordan consideraciones técnicas importantes como la alimentación del módulo TEA5767 a 3.3V para proteger los pines del ESP32, y la necesidad de una fuente de alimentación externa de 5V 1.5A para el amplificador PAM8403 debido a su alto consumo de corriente. Se destaca el proceso de diseño de la PCB utilizando KiCad, incluyendo la gestión de conexiones no representadas directamente en el esquemático por limitaciones de la herramienta.",
+    "id": 49298932,
+    "url": "https://nurb.dev/",
+    "score": 17,
+    "time": 1786716572,
+    "titulo_es": "nurb: Habilidades de CAD para IA",
+    "resumen": "nurb integra capacidades de Diseño Asistido por Computadora (CAD) en modelos de Inteligencia Artificial (IA) conversacionales. Permite a los usuarios describir formas deseadas en lenguaje natural, las cuales son visualizadas y generadas en tiempo real. La herramienta se basa en un kernel CAD de ingeniería completo, genera archivos STL imprimibles y se calibra según las piezas impresas y las especificaciones de la impresora del usuario. Admite la modificación iterativa de diseños mediante retroalimentación verbal y la creación de geometrías complejas a través de barridos. nurb enfatiza la validación funcional de las partes (por ejemplo, que una puerta se abra), integrando pruebas de conjunto. Ofrece una aplicación Mac unificada y compatibilidad con herramientas de IA como Claude Code, Cursor, Codex y Copilot a través de la línea de comandos. La instalación en terminal es sencilla y enseña a la IA los principios del diseño de piezas imprimibles.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49285096,
+    "url": "https://pikuma.com/blog/programming-intel-pentium-mmx-simd",
+    "score": 115,
+    "time": 1786625045,
+    "titulo_es": "MMX: Las Extensiones Multimedia de Intel y el Nacimiento del SIMD en PCs",
+    "resumen": "El artículo explora la historia y el impacto de las Extensiones Multimedia (MMX) de Intel, introducidas en 1997 con el procesador Pentium MMX. MMX representó un esfuerzo crucial de Intel por llevar las instrucciones SIMD (Single Instruction, Multiple Data) a las CPUs de escritorio. El concepto fundamental de SIMD es realizar la misma operación en múltiples datos simultáneamente, permitiendo mejoras significativas de rendimiento en tareas multimedia como procesamiento de imágenes, audio y video.  El artículo detalla cómo MMX utilizaba registros de 64 bits para empaquetar y procesar múltiples enteros a la vez, logrando paralelismo con una sola instrucción.  Aunque MMX popularizó el SIMD en la arquitectura x86, se señala que la idea de SIMD y el procesamiento en paralelo (como en supercomputadoras como el ILLIAC IV de los 60s y los procesadores vectoriales como el Cray-1 de los 70s) tiene raíces mucho más profundas en la historia de la computación, predando la era del PC por décadas. Se distingue entre SIMD y el procesamiento vectorial, enfatizando que las operaciones SIMD están ligadas al ancho de los registros.",
     "categoria": "Hardware"
   },
   {
-    "id": 49316395,
-    "url": "https://spectrum.ieee.org/stimulated-geologic-hydrogen",
-    "score": 17,
-    "time": 1786847770,
-    "titulo_es": "La empresa Eden GeoPower utiliza descargas eléctricas subterráneas para generar hidrógeno",
-    "resumen": "El artículo describe la tecnología de Eden GeoPower, una startup que utiliza pulsos eléctricos de alto voltaje entre electrodos en pozos para fracturar roca subterránea de manera precisa. Esta técnica, denominada 'estimulación eléctrica de reservorios', tiene el potencial de crear redes de fracturas más permeables que la fracturación hidráulica tradicional. Si bien se exploran aplicaciones en minería, almacenamiento geológico de carbono y geotermia, el enfoque principal del artículo es el uso de esta tecnología para la producción artificial de hidrógeno geológico. El proceso implica inyectar agua en formaciones rocosas ricas en hierro, lo que resulta en la oxidación del hierro y la liberación de hidrógeno como subproducto. Este método busca superar los desafíos de la producción de hidrógeno libre de carbono, que actualmente es costosa y energéticamente ineficiente, ofreciendo una vía para estimular la producción de hidrógeno directamente en formaciones subterráneas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49314967,
-    "url": "https://arxiv.org/abs/2608.13122",
-    "score": 32,
-    "time": 1786833711,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo Colaborativo de Nuevas Funcionalidades en arXiv",
-    "resumen": "El artículo describe arXivLabs, un framework diseñado para facilitar el desarrollo y la integración directa de nuevas funcionalidades en el sitio web de arXiv. Este entorno colaborativo promueve la adopción de los valores de arXiv, incluyendo la apertura, la comunidad, la excelencia y la privacidad de los datos del usuario. arXiv se compromete a trabajar únicamente con socios que compartan y respeten estos principios. Se invita a los colaboradores potenciales a explorar arXivLabs para proponer proyectos que aporten valor a la comunidad de arXiv.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49314884,
-    "url": "https://sugartrack-beta.vercel.app/",
-    "score": 44,
-    "time": 1786832894,
-    "titulo_es": "Registro de glucosa en sangre para Android",
-    "resumen": "SugarTrack es una aplicación móvil gratuita para Android diseñada para el registro de glucosa en sangre. Prioriza la privacidad y la accesibilidad al funcionar completamente sin conexión a Internet, no requerir cuentas de usuario y almacenar todos los datos localmente en el dispositivo. La aplicación permite a los usuarios registrar lecturas de glucosa, establecer objetivos personalizados de glucosa alta/baja y exportar datos en formatos PDF o CSV para compartir con profesionales de la salud. Está construida con un enfoque en la simplicidad y la utilidad práctica, evitando modelos de negocio basados en suscripciones o servicios en la nube. Este proyecto es el primero de una serie planificada de aplicaciones de seguimiento de salud y estilo de vida con principios similares: todo en el dispositivo, sin cuentas ni servicios en la nube.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49259891,
-    "url": "https://blog.pickcode.io/program-with-paint-brushes-not-pencils/",
-    "score": 10,
-    "time": 1786462204,
-    "titulo_es": "La Evolución de la Enseñanza de la Programación con Abstracciones y IA",
-    "resumen": "El artículo reflexiona sobre la creación y el uso de una clase Python llamada PaintBrush para enseñar programación a estudiantes de secundaria. Inicialmente desarrollada en 2022 como una herramienta para la expresión visual y la motivación, el autor contrasta el tiempo de desarrollo manual con la velocidad a la que una IA podría generar un código similar hoy. Se argumenta que, si bien la IA puede acelerar la producción de código, las abstracciones de alto nivel, como PaintBrush, son cruciales para fomentar la creatividad, la autoeficacia y el orgullo en los estudiantes al crear trabajos auténticos. La capacidad de generar rápidamente nuevas abstracciones mediante IA permite a los educadores ir más allá de las herramientas existentes (como Turtle, Processing, Pygame) para explorar áreas como la música, visualizaciones de datos, juegos, etc. El objetivo es utilizar estas herramientas para involucrar a los estudiantes con el código mismo, en lugar de depender de la IA como atajo, enfatizando que el aprendizaje de la programación radica en el proceso creativo y la confianza en las propias habilidades.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49313068,
-    "url": "https://github.com/wmww/tawc",
-    "score": 67,
-    "time": 1786818866,
-    "titulo_es": "tawc: Ejecución de Programas Linux en Android sin Root",
-    "resumen": "tawc es un proyecto que permite ejecutar programas CLI y gráficos de Linux en dispositivos Android sin necesidad de acceso root. Utiliza tawcroot, una alternativa performante a PRoot, un compositor Wayland y una interfaz de usuario para integrar todo. Las aplicaciones gráficas se benefician de la aceleración de hardware a través de la pila gráfica nativa del teléfono. El proyecto está construido con la ayuda de modelos de IA de Anthropic como Claude Code. Se prefieren los reportes de errores y solicitudes de características sobre las Pull Requests. El código fuente principal está bajo licencia MIT, pero el proyecto en su conjunto se distribuye bajo GPLv3 debido a dependencias vendidas con licencia GPLv3.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49261421,
-    "url": "https://master.dev/blog/something-nobody-told-you-about-the-image-element-it-can-overflow/",
-    "score": 43,
-    "time": 1786468598,
-    "titulo_es": "Los secretos ocultos del elemento de imagen HTML y el desbordamiento (overflow)",
-    "resumen": "El artículo profundiza en el comportamiento a menudo pasado por alto del elemento `<img>` en HTML, detallando cómo el contenido de la imagen (el recurso de imagen) puede desbordarse de su contenedor (el elemento `<img>`). Explora varias propiedades CSS que conducen a este desbordamiento, incluyendo `object-fit: cover`, `border-radius` y `object-position`. También desmitifica los valores de `object-fit`, especialmente `none` y `fill`, explicando cómo afectan el tamaño del contenido de la imagen en relación con el contenedor. El artículo destaca que el desbordamiento de imágenes, aunque común, es un aspecto poco apreciado de la maquetación web que puede tener implicaciones prácticas en el diseño y la visualización de imágenes.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49299605,
-    "url": "https://huggingface.co/Qwen/Qwen3.8-27B-FP8",
-    "score": 1377,
-    "time": 1786719600,
-    "titulo_es": "Presentación de Qwen3.8: El Modelo Abierto Más Capaz de Qwen",
-    "resumen": "El artículo presenta Qwen3.8, la generación más avanzada de la familia de modelos abiertos Qwen, construida sobre la arquitectura de Qwen3.5. Destaca mejoras significativas en codificación, trabajo profesional, investigación y tareas agénticas de largo alcance. Se introduce específicamente Qwen3.8-27B, un modelo denso compacto y amigable para la implementación, que es un modelo nativo de visión-lenguaje capaz de procesar imágenes y videos, con control flexible de pensamiento y diseñado para completar tareas complejas y de varios pasos de manera confiable. Se mencionan las mejoras del modelo, la compatibilidad con frameworks de inferencia como Hugging Face Transformers, vLLM, SGLang y TokenSpeed, y la disponibilidad de pesos cuantizados en FP8. Se recomienda el uso de APIs para una integración simplificada y se destaca el servicio de API oficial de Qwen Cloud para inferencia gestionada y escalable. Se detalla el funcionamiento del \"modo de pensamiento\" por defecto, donde el modelo genera contenido <think> antes de la respuesta final, y cómo deshabilitarlo. También se introduce el parámetro `reasoning_effort` para ajustar la profundidad del razonamiento y el coste, y la funcionalidad `preserve_thinking` habilitada por defecto para mantener el rastro de razonamiento completo en conversaciones multi-turno, mejorando la consistencia y la eficiencia de la caché KV. Se ofrecen ejemplos de configuración de API para deshabilitar el pensamiento y se advierte sobre las implicaciones de un `reasoning_effort` bajo en tareas agénticas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49309549,
-    "url": "https://sankalp.bearblog.dev/autoresearch/",
-    "score": 417,
-    "time": 1786791602,
-    "titulo_es": "Logrando un avance de 232x en la factorización QR compacta de Householder por lotes utilizando auto-investigación en GPU",
-    "resumen": "El artículo detalla el enfoque de un participante para lograr un avance de 232x en la factorización QR compacta de Householder por lotes, un problema planteado en un concurso de auto-investigación en GPU. El objetivo era implementar una solución eficiente para procesar un lote de matrices cuadradas FP32 en formato CUDA (batch x n x n), devolviendo la representación compacta de Householder QR (matriz H y vector tau) que permite la reconstrucción de Q y R. La solución implicó la optimización de kernels de GPU, aprovechando técnicas como la ingeniería de bucles y la baja precisión interna (FP16, FP8, NVFP4) para mejorar el rendimiento, mientras se mantenían las verificaciones de salida en FP32. El autor, con conocimientos básicos de optimización de GPU y Triton, describe su proceso iterativo a través de más de 1500 envíos, compitiendo contra expertos de la industria. El texto enfatiza la importancia de la retroalimentación rápida del bucle de desarrollo y cómo el conocimiento previo facilita la interacción con herramientas de IA para la optimización.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49314630,
-    "url": "https://unsung.aresluna.org/deeper-dive-were-touch-bars-problems-software-rather-than-hardware/",
+    "id": 49327490,
+    "url": "https://duti.dev/blog/2026/spr/",
     "score": 24,
-    "time": 1786830476,
-    "titulo_es": "Análisis Crítico de la Touch Bar de Apple: ¿Un Futuro de Pantallas Táctiles en MacBooks?",
-    "resumen": "El artículo analiza la trayectoria de la Touch Bar de Apple, introducida en 2016. Se describe su diseño como un reemplazo de la fila superior de teclas físicas por una pantalla táctil estrecha con una tecla Esc virtual y una superficie Touch ID. Se discuten sus funcionalidades híbridas para usuarios casuales y profesionales, incluyendo controles de volumen/brillo, vistas previas de aplicaciones (Safari, Photos) y la limitada interacción multitáctil (toques y deslizamientos horizontales). Se critica la complejidad de su interfaz de usuario (IA) y la configuración dispersa, comparándola desfavorablemente con la organización actual. También se menciona la reutilización de nombres como 'Control Strip' y la retroalimentación inicial mixta, especialmente la frustración por la pérdida de la tecla Esc física. La actualización de 2019 con una tecla Esc mecánica y mejoras de rendimiento se considera insuficiente. El autor reflexiona sobre el potencial futuro de las pantallas multitáctiles en MacBooks, basándose en la experiencia con la Touch Bar y comparándola con la introducción del Botón de Acción en el iPhone.",
-    "categoria": "Hardware"
+    "time": 1786951723,
+    "titulo_es": "Lecciones aprendidas de HackEurope: El dominio del Frontend y la influencia de la IA",
+    "resumen": "El artículo analiza las lecciones extraídas del evento HackEurope, destacando la predominancia del desarrollo frontend y la ausencia de requisitos de funcionalidad o aplicación práctica para ganar. Se critica la tendencia a priorizar la estética y la adopción de \"AI\" como palabra clave, independientemente de la solidez técnica o la viabilidad a largo plazo de los proyectos. Se observa que muchas ideas innovadoras que se salen de la distribución de los datos de entrenamiento de la IA son evitadas, y que los proyectos ganadores a menudo carecen de una implementación real y sostenible, sirviendo más como demostraciones de marketing. El autor lamenta que los hackatones hayan pasado de ser un caldo de cultivo para startups o una muestra de habilidades técnicas a un escenario centrado en demos frontend, habilidades de presentación y seguimiento de tendencias, especialmente el auge de la IA.",
+    "categoria": "Frontend"
   },
   {
-    "id": 49314615,
-    "url": "https://spectrum.ieee.org/digital-signal-processing",
-    "score": 70,
-    "time": 1786830354,
-    "titulo_es": "Bede Liu, Pionero del Procesamiento Digital de Señales, Fallece a los 91 Años",
-    "resumen": "El artículo detalla el fallecimiento de Bede Liu, IEEE Life Fellow y pionero en el campo del Procesamiento Digital de Señales (DSP). Se le reconoce como uno de los fundadores del DSP moderno, una disciplina que aplica algoritmos matemáticos para analizar y modificar señales (sonido, imagen, video). Liu enseñó ingeniería eléctrica en Princeton durante más de 50 años y su investigación fue fundamental para la transición del procesamiento analógico al digital. Su trabajo sentó las bases para tecnologías de comunicación, multimedia y electrónica de consumo, incluyendo los procesadores de señal de baja potencia utilizados en teléfonos móviles y comunicaciones por Internet. Recibió la Medalla IEEE Jack S. Kilby Signal Processing en 2018 por sus contribuciones. Liu se graduó en la Universidad Nacional de Taiwán y obtuvo sus maestrías y doctorado en el Instituto Politécnico de Brooklyn, trabajando posteriormente en Bell Labs antes de unirse a Princeton. Coautor del influyente libro \"Digital Signal Processing: Theory, Design, and Implementation\", publicó 250 artículos técnicos y obtuvo 12 patentes. Sus contribuciones fueron cruciales para hacer que el procesamiento sofisticado fuera práctico en dispositivos con potencia computacional limitada.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49228660,
-    "url": "https://github.com/PJHkorea/photonic-mesh-fng-router",
-    "score": 4,
-    "time": 1786252964,
-    "titulo_es": "Motor de Plano de Control Óptico Congelado en el Tiempo Nativo de Hardware: Prueba de Concepto",
-    "resumen": "Este proyecto es una Prueba de Concepto (PoC) que explora la manipulación de líneas de dirección de memoria virtual a través de interconexiones de aceleradores de fotónica de silicio sin introducir búferes de asignación de memoria. Busca minimizar la sobrecarga del enrutamiento fotónico inter-chasis hacia 0ns integrando métricas de desplazamiento de fase óptica con estructuras multi-eje de jax.shard_map y cercas asíncronas entre flujos. El enfoque principal es eludir las latencias de los búferes de conversión eléctrico-óptica (E/O) y las interrupciones del grafo de compilación dinámica, manteniendo la homeostasis numérica en arquitecturas de IA distribuidas a hiperescala. Aborda el cuello de botella emergente del jitter de transmisión óptica y la desalineación de fase térmica en centros de datos ópticos de próxima generación, proponiendo una arquitectura de sistema dividida en 3 niveles para aislar el ruido telemétrico asíncrono. En el nivel inferior, se utiliza la alineación de fase de warp shuffle con intrínsecos __shfl_sync y la supresión de MUX basada en predicados con circuitos de ensamblaje selp.f32 para absorber el jitter de fase óptica y ajustar dinámicamente el factor de ocupación del multiprocesador de streaming. El repositorio se diseña como un conducto de enrutamiento fotónico exploratorio a macroescala, minimamente intrusivo.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49308685,
-    "url": "https://uecker.codeberg.page/2026-07-14.html",
-    "score": 94,
-    "time": 1786780782,
-    "titulo_es": "Mejoras en las funciones anidadas de GCC: Eliminación de trampolines y optimizaciones de seguridad",
-    "resumen": "El artículo detalla avances significativos en el compilador GCC relacionados con las funciones anidadas. A partir de GCC 16, las funciones anidadas que no acceden a variables del ámbito padre ya no requieren trampolines en tiempo de ejecución, mejorando la seguridad al no necesitar pilas ejecutables y eliminando la sobrecarga de asignación en el heap. Esto se extiende incluso a las compilaciones sin optimización. Adicionalmente, se han introducido funciones built-in (`__builtin_nested_call_with_static_chain` y `__builtin_nested_assign_static_chain`) que permiten simular el acceso a variables del ámbito padre sin trampolines, transformando internamente el código del desarrollador en una llamada eficiente que utiliza un registro especial para la cadena estática, alineándose con las convenciones ABI. Si bien la característica no es totalmente portátil entre compiladores, se discuten estrategias para mejorar la interoperabilidad y compatibilidad con versiones anteriores de GCC.",
+    "id": 49231418,
+    "url": "https://breakintochat.com/blog/2013/02/18/amit-patel-creator-of-solar-realms-elite/",
+    "score": 54,
+    "time": 1786283421,
+    "titulo_es": "Entrevista sobre SRE y las experiencias tempranas en programación",
+    "resumen": "El artículo es una entrevista con Amit Patel sobre el desarrollo del juego SRE y sus experiencias formativas en programación. Patel detalla su primera exposición a computadoras como el TRS-80 y Commodore 64, autodidactismo en lenguajes como BASIC, Pascal, C/C++ y Prolog, y el uso de herramientas de Borland. Describe cómo su interés en interfaces de usuario (UI), optimización y multitarea se reflejó en el diseño de SRE, incluyendo la implementación de un toolkit propio para la UI, un optimizador de secuencias de color ANSI, gestión de memoria y un sistema de multitarea cooperativa. Menciona que sus proyectos de programación estaban impulsados por la experimentación y el aprendizaje de nuevas ideas, un patrón que mantiene hasta la fecha. También comparte sus géneros de videojuegos favoritos, como RPGs, simuladores y juegos de estrategia.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49258177,
-    "url": "https://cblgh.org/posts/2026-07-31-pizza-box-project-stack/",
+    "id": 49257362,
+    "url": "https://community.wolfram.com/groups/-/m/t/122095",
+    "score": 41,
+    "time": 1786452031,
+    "titulo_es": "Trabajo fascinante 13 años después con GraphicsComplex en WLJS Notebook",
+    "resumen": "El artículo describe una actualización de un trabajo de hace 13 años utilizando GraphicsComplex en lugar de Point para aprovechar la GPU en el frontend de WLJS Notebook, permitiendo la visualización en tiempo real. Se plantea una pregunta sobre aplicaciones en ingeniería ambiental o civil, y otra sobre la facilidad de cálculo y visualización del sistema, sugiriendo interés en la simplicidad y el método de cálculo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49325458,
+    "url": "https://github.com/crabbuild/prolly",
     "score": 43,
-    "time": 1786455637,
-    "titulo_es": "Organizador de Proyectos con Tarjetas Físicas Inspirado en Ratfactor",
-    "resumen": "El artículo describe la adaptación y mejora de un sistema de gestión de tareas basado en tarjetas físicas, inspirado por el proyecto 'project stack' de Ratfactor. El autor implementa un sistema de tres pilas (borradores, tareas activas, tareas completadas) utilizando tarjetas de presentación reutilizadas. Se destaca la simplicidad, la reducción de la carga mental, la satisfacción de la interacción física con las tareas y la gratificación visual de ver el progreso. Finalmente, el autor detalla la construcción de un organizador de cartón personalizado para alojar estas pilas, utilizando materiales reciclados y un proceso de diseño improvisado para mejorar la experiencia y la estética del sistema.",
-    "categoria": "Hardware"
+    "time": 1786928445,
+    "titulo_es": "Prolly: Primitivas de Almacenamiento de Árboles Prolly Dirigidos por Contenido",
+    "resumen": "El artículo describe la biblioteca Rust 'prolly' que proporciona primitivas de almacenamiento de árboles prolly dirigidos por contenido. Se trata de un índice inmutable y ordenado de clave-valor sobre claves y valores de bytes, con una estructura estable derivada del contenido para compartir estructuralmente, diff, merge y carga masiva eficientes. La arquitectura es independiente del runtime y orientada a async, con un motor neutral que soporta tanto operaciones síncronas como asíncronas a través de adaptadores de almacenamiento. Se destaca el uso de 'Tree' como un manejador persistente y la gestión de nodos en un 'Store' enchufable. Se mencionan casos de uso como índices 'proximity-map' para búsqueda de vecinos más cercanos, integraciones con bases de datos como GlueSQL y Turso, y una propuesta para una capa de repositorio similar a Git ('prolly-vcs'). Se detallan aspectos de la API para la construcción de claves compuestas, rangos de prefijos y APIs de prueba para verificación de contenido contra un CID raíz. La biblioteca fomenta la inmutabilidad y el versionado a través de estructuras de datos dirigidas por contenido.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49320611,
+    "url": "https://vectoral.com/blog/who-are-the-token-brokers",
+    "score": 284,
+    "time": 1786891495,
+    "titulo_es": "El auge de los intermediarios de tokens y el mercado secundario de créditos de IA",
+    "resumen": "El artículo analiza el creciente mercado de \"intermediarios de tokens\" que compran créditos de inferencia de IA no utilizados de startups y los revenden, a menudo con descuentos significativos. El autor documenta sus esfuerzos por contactar a estos intermediarios, examinando plataformas como AI Credits, AICreditMart y CheapCredits, que actúan como mercados o revendedores. Se observa que estos intermediarios a menudo anuncian descuentos basados en compras al por mayor, pero el autor sospecha que obtienen el suministro de otras maneras, dada la magnitud de los descuentos ofrecidos. También se mencionan canales de Telegram y foros de startups como puntos de encuentro para estas transacciones. El artículo concluye que, si bien los tokens se han convertido en una \"cuasi-moneda\" con suficiente liquidez para el abuso, se esperan medidas enérgicas contra estas prácticas a medida que las empresas se vuelven más conscientes de los costos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49323136,
+    "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
+    "score": 59,
+    "time": 1786910473,
+    "titulo_es": "La Máquina Gödel de la Reina Roja: Coevolución de Agentes y sus Evaluadores",
+    "resumen": "Investigadores del Department of Computer Science and Technology, en colaboración con NVIDIA y Flower Labs, han desarrollado un nuevo método para que los agentes de IA recursivos se auto-mejoren de forma continua sin alcanzar un techo de evaluación. Su enfoque, denominado 'La Máquina Gödel de la Reina Roja', permite que tanto el agente de IA como su evaluador evolucionen conjuntamente. Esto se logra alternando fases de mejora del agente contra un evaluador fijo y, en puntos de control, actualizando el evaluador con uno más exigente que haya demostrado ser mejor en ejemplos de verdad fundamental. De esta manera, a medida que el agente mejora, el estándar de evaluación se eleva, superando el problema de los evaluadores fijos que limitan el progreso. El sistema ha demostrado mejoras significativas en tareas como la redacción y revisión de artículos científicos y la escritura y calificación de pruebas a nivel de Olimpiada de Matemáticas, logrando tasas de aceptación de artículos un 1.78-1.86 veces mayores y una precisión de verdad fundamental un 9% mayor en calificadores coevolucionados.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49322573,
+    "url": "https://buf.build/blog/protobuf-lsp",
+    "score": 152,
+    "time": 1786906107,
+    "titulo_es": "Buf anuncia el primer servidor LSP completo y de grado de producción para Protobuf",
+    "resumen": "Buf ha lanzado el primer servidor de Language Server Protocol (LSP) completo y de grado de producción para Protobuf. Este servidor proporciona funcionalidades avanzadas como \"ir a definición\", \"autocompletado de código\", \"búsqueda de referencias\" y resaltado de sintaxis semántico para editores e IDEs como VSCode, IntelliJ y Neovim. La implementación se basa en \"protocompile\", el compilador frontend de Buf, que ha sido mejorado con un nuevo motor de análisis incremental y diagnóstico de errores más preciso que el tradicional `protoc`. El objetivo es mejorar significativamente la experiencia de desarrollo con Protobuf, haciéndolo más accesible y potente, integrándose con el ecosistema de herramientas de Buf como Protobuf-ES, Protovalidate, ConnectRPC y Buf Schema Registry. El servidor LSP se distribuye a través de la CLI de Buf y se integra fácilmente con editores populares mediante extensiones o configuración manual. El equipo de Buf planea continuar mejorando los diagnósticos y añadiendo más funcionalidades al servidor LSP, impulsando el desarrollo basado en esquemas para Protobuf.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49322330,
+    "url": "https://math-ai-org.github.io/mathcode/",
+    "score": 90,
+    "time": 1786904230,
+    "titulo_es": "MathCode: Asistente de IA para Codificación y Formalización Matemática",
+    "resumen": "MathCode es un asistente de codificación basado en IA para terminales, diseñado para automatizar la conversión de problemas matemáticos expresados en lenguaje natural a teoremas formales en Lean 4 y su posterior demostración. Incluye un motor de formalización matemática integrado, un REPL persistente de Lean, bibliotecas reutilizables de teoremas y axiomas, capacidades de demostración agentica y un grafo de conocimiento en Obsidian. Optimiza el ciclo de desarrollo al proporcionar comprobaciones de compilación rápidas (~0.4s tras calentamiento), autodenominación y almacenamiento de teoremas demostrados para su reutilización, y la gestión de suposiciones conversacionales como declaraciones Lean persistentes y revisadas. Se integra con leansearch.net y Loogle para buscar lemas verificados en Mathlib, utilizando diagnósticos estructurados del LSP para la reparación de pruebas. El sistema descompone teoremas complejos en subobjetivos independientes, los demuestra en paralelo y los une posteriormente, empleando múltiples planificadores para diversificar estrategias de prueba. Los requisitos incluyen macOS (arm64) o Linux (x86_64) y la CLI codex. La salida de las formalizaciones se guarda en LeanFormalizations/, y una interfaz web está disponible a través de './run webui'. La canalización de formalización y demostración se basa en el proyecto AUTOLEAN.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49323381,
+    "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+    "score": 347,
+    "time": 1786912276,
+    "titulo_es": "Stripe adquiere OpenRouter por más de 7 mil millones de dólares",
+    "resumen": "Stripe ha cerrado un acuerdo para adquirir OpenRouter, una plataforma que permite a los clientes seleccionar y acceder a diversos modelos de IA según sus necesidades específicas y presupuesto. OpenRouter, que se describió a sí misma como el \"Stripe para IA\", proporciona un punto de acceso único a más de 400 modelos, evitando el \"lock-in\" y contando con 8 millones de usuarios globales. La transacción, valorada en más de 7 mil millones de dólares, fue reportada inicialmente por The Wall Street Journal y confirmada por Bloomberg. La adquisición subraya la creciente importancia de la gestión y el acceso unificado a modelos de IA en el ecosistema tecnológico.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49326825,
+    "url": "https://newsletter.semianalysis.com/p/12b-of-us-ratepayers-money-wasted",
+    "score": 44,
+    "time": 1786944169,
+    "titulo_es": "Análisis crítico del modelo de subasta de PJM y su impacto en los costos de electricidad",
+    "resumen": "El artículo examina las deficiencias en el diseño de subastas y la modelización de la demanda y la oferta del mercado eléctrico de PJM (EE.UU.). Se argumenta que errores en el modelo 'Reserve Requirement Study', que estima la capacidad necesaria de generación eléctrica, han llevado a un sobrecosto de aproximadamente 12.000 millones de dólares para los consumidores entre 2025 y 2027. Estos errores se derivan de una subestimación de la capacidad existente de las centrales eléctricas, al no considerar adecuadamente la mayor eficiencia en invierno y la resiliencia post-tormenta. Además, se critica la estructura del mercado de capacidad de PJM, su lentitud en la conexión de nuevas plantas y su diseño, que no diferencia entre plantas nuevas y existentes, resultando en primas innecesarias. La subasta de emergencia y el modelo de PJM, según los autores, infravaloran la capacidad real del sistema en ~3.8GW, lo que resulta en la contratación de energía innecesaria y un incremento artificial de los precios. Se proponen mejoras en la modelización para lograr ahorros significativos y se señala que el diseño del mercado de PJM es estructuralmente 'anti-crecimiento'.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49281352,
+    "url": "https://nnamgreb.de/blog/Clamiga+-+Common+Lisp+for+the+Amiga",
+    "score": 109,
+    "time": 1786590336,
+    "titulo_es": "CL-Amiga: Una Implementación de Common Lisp para la Familia Amiga",
+    "resumen": "El artículo presenta CL-Amiga (Clamiga), una implementación de Common Lisp diseñada para ejecutarse en la familia de computadoras Amiga (AmigaOS 3 en 68k y MorphOS, con posible soporte para AROS y AmigaOS 4). También es compatible con macOS y Linux, donde se realiza la mayor parte del desarrollo. Clamiga se destaca por su VM de bytecode autocontenida escrita en C portable, eliminando dependencias de tiempo de ejecución externas y haciendo posible su ejecución en hardware más antiguo como el 68k. Aunque no compite en rendimiento con código nativo C o ensamblador, ofrece un conjunto completo de características de Common Lisp, incluyendo un sistema de objetos avanzado (CLOS), un sistema de condiciones robusto, macros, desarrollo interactivo basado en imagen, soporte numérico completo y acceso nativo a las APIs de AmigaOS para sistemas de archivos, sockets y hilos. El desarrollo se beneficia de la portabilidad del núcleo de C, permitiendo el desarrollo y la depuración en sistemas anfitriones modernos. La implementación prioriza el respeto por las limitaciones de memoria del Amiga, especialmente en modelos 68k.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49320673,
+    "url": "https://www.newyorker.com/news/annals-of-inquiry/gps-and-the-lost-art-of-getting-lost",
+    "score": 78,
+    "time": 1786891994,
+    "titulo_es": "La Dependencia de la Sociedad en el GPS y sus Implicaciones",
+    "resumen": "El artículo explora la profunda dependencia de la sociedad moderna en el Sistema de Posicionamiento Global (GPS), originado como una tecnología militar y ahora omnipresente en dispositivos de consumo. Se detalla cómo el GPS, a través de la trilateración de señales satelitales de múltiples sistemas globales (EE. UU., UE, Rusia, China), nos permite determinar nuestra ubicación con precisión. El texto resalta la transformación de la experiencia humana de la navegación, pasando de una preocupación histórica por 'perderse' a una confianza casi total en la tecnología. Se mencionan incidentes de interferencia de GPS en Israel (spoofing) que obligaron a deshabilitar sistemas de seguridad y la reacción instintiva de depender de la 'punto azul' digital en lugar de la orientación física. El artículo, a través de anécdotas y reflexiones, cuestiona las implicaciones de esta dependencia, especialmente ante la posibilidad de fallos o interrupciones del sistema, y cómo ha alterado nuestra relación con el espacio físico y la toma de decisiones.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49277952,
+    "url": "https://brandur.org/fragments/postgres-without-pgbouncer",
+    "score": 150,
+    "time": 1786565586,
+    "titulo_es": "La ubicuidad y la necesidad de pooling de conexiones en PostgreSQL",
+    "resumen": "El artículo analiza la persistente ineficiencia de PostgreSQL en la gestión de un gran número de conexiones, lo que hace indispensable el uso de pools de conexiones locales y herramientas como PgBouncer. Se observa que la mayoría de los proveedores de PostgreSQL gestionados ofrecen PgBouncer o soluciones similares de forma nativa, lo que subraya la importancia de esta funcionalidad. Sin embargo, el autor critica el esfuerzo redundante dedicado por cada proveedor y usuario a configurar y gestionar estos pools, sugiriendo que la experiencia actual es comparable a vender un coche sin parabrisas. Se propone un futuro ideal donde los proveedores ofrezcan una única URL y puerto, sin configuraciones adicionales o advertencias, similar a como funciona en MySQL y MongoDB. A pesar de los desafíos técnicos y de desarrollo, se argumenta que la integración nativa de la gestión de conexiones en PostgreSQL sería una mejora operativa de muy alto impacto.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49277153,
+    "url": "https://www.nature.com/articles/s41586-026-10857-1",
+    "score": 67,
+    "time": 1786561626,
+    "titulo_es": "Superconductividad de alta temperatura en una sola capa de Bi2Sr2CuO6+δ: un estudio en el límite 2D",
+    "resumen": "Este artículo explora la física de la superconductividad de alta temperatura en cristales de van der Waals atómicamente delgados, centrándose en una sola capa de Bi2Sr2CuO6+δ (Bi-2201). Al reducir la dimensionalidad al extremo hasta obtener una sola capa con un solo plano CuO2, los investigadores observan un efecto dimensional robusto que resulta en una reducción de aproximadamente el 10% en la temperatura de transición superconductora óptima. La reducción de dimensionalidad también permite una gran tunabilidad, extendiendo el diagrama de fases de Bi-2201 a territorios inexplorados mediante la oxigenación controlada de especímenes de una sola monocapa. Utilizando esta capacidad de ajuste, descubrieron un estado metálico anómalo que emerge entre los estados aislante y superconductor a medida que la temperatura se acerca a cero. Concomitantemente, observan un comportamiento de escalado anómalo caracterizado por un exponente crítico divergente. Estos hallazgos proporcionan información sobre la naturaleza de la transición de fase cuántica de superconductor a aislante en cupratos.",
+    "categoria": "Ciencia y Matematica"
   }
 ]
