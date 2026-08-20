@@ -1,173 +1,254 @@
 [
   {
-    "id": 49355105,
-    "url": "https://www.bbc.com/news/articles/c1l1r1zne1ro",
-    "score": 243,
-    "time": 1787100503,
-    "titulo_es": "Científicos sorprendidos por la rápida recuperación del crecimiento pulmonar en niños tras reducirse la contaminación",
-    "resumen": "Un estudio longitudinal de cinco años realizado por investigadores de la Universidad Queen Mary de Londres analizó a más de 3.400 niños de primaria en Londres y Luton para evaluar el impacto de la Zona de Bajas Emisiones (ULEZ). La investigación demostró que la reducción de los niveles de dióxido de nitrógeno aceleró el desarrollo pulmonar de los niños afectados por la polución, logrando equiparar su capacidad respiratoria a la del grupo de control y reduciendo los casos de deterioro clínico del 14% al 9%.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49318311,
-    "url": "https://herecomesthemoon.net/2024/11/two-factions-of-cpp/",
-    "score": 11,
-    "time": 1786871569,
-    "titulo_es": "El fin del sueño de un C++ unificado y sin dialectos",
-    "resumen": "El artículo analiza la crisis de evolución y gobernanza dentro del ecosistema C++, evidenciando una profunda fractura entre dos perfiles de usuarios: grandes empresas tecnológicas (como Google) que cuentan con infraestructura moderna, compilación completa desde código fuente versionado y herramientas avanzadas de refactorización automatizada basadas en Clang, frente a organizaciones con sistemas heredados que dependen de binarios antiguos y exigen compatibilidad retroactiva estricta (ABI). Esta disparidad en capacidades técnicas y necesidades de modernización ha fragmentado el lenguaje, desafiando la viabilidad de un estándar C++ único y homogéneo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49353221,
-    "url": "https://github.com/DenisSergeevitch/desktop-fly",
-    "score": 267,
-    "time": 1787089833,
-    "titulo_es": "Una mosca de la fruta 3D que vive en tu escritorio de macOS, impulsada por una simulación de picos en vivo del conectoma real de la mosca de la fruta",
-    "resumen": "Este proyecto presenta una simulación detallada de una mosca de la fruta en 3D que opera en el escritorio de macOS. Utiliza el conectoma real de la mosca de la fruta, 'FlyWire v783', simulando la actividad neuronal en tiempo real. La mosca exhibe comportamientos como caminar, acicalarse y dormir, controlados por las mismas neuronas que una mosca real. La simulación incluye la posición de 23,210 somas neuronales y visualiza picos en sus ubicaciones. El usuario puede interactuar estimulando regiones específicas del 'cerebro' para observar las reacciones de la mosca, como la huida al estimular las neuronas de escape 'Giant Fibers'. El cuerpo de la mosca es procedural, con un sistema de locomoción basado en trípodes, alas y vuelo escalado por altitud. Los requisitos son macOS 13+, Xcode Command Line Tools (Swift 5.9+), sin permisos especiales, ya que la interacción se basa en información accesible sin permisos. El proyecto integra datos del conectoma con modelos de dinámica neuronal (LIF, neurotransmisores, acoplamiento eléctrico) y fisiología simulada. Los datos del conectoma provienen de FlyWire (FAFB v783) y están bajo licencia CC BY-NC 4.0, mientras que el código es MIT.",
+    "id": 49364559,
+    "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+    "score": 833,
+    "time": 1787160758,
+    "titulo_es": "OpenRouter une fuerzas con Stripe para impulsar el ecosistema de IA",
+    "resumen": "OpenRouter, la plataforma y gateway líder de enrutamiento y agregación de modelos de inteligencia artificial, ha anunciado su integración con Stripe. La plataforma mantendrá su operación, hoja de ruta, marca y principio de neutralidad agnóstica para más de 400 modelos de IA. La alianza busca aprovechar la infraestructura financiera, la escala global y las capacidades de mitigación de fraude de Stripe para acelerar el desarrollo de infraestructura de inferencia multi-modelo orientada a desarrolladores.",
     "categoria": "IA"
   },
   {
-    "id": 49354613,
-    "url": "https://github.com/pg83/solo",
-    "score": 143,
-    "time": 1787097109,
-    "titulo_es": "SoLo: Un cargador ELF estático para vincular dinámicamente con drivers glibc en binarios musl",
-    "resumen": "El artículo presenta SoLo, un sistema que permite compilar ejecutables Linux estáticos usando musl libc y, al mismo tiempo, cargar y usar dinámicamente drivers de GPU (Vulkan/OpenGL) que dependen de glibc, los cuales están ya instalados en el host. SoLo logra esto mediante un cargador ELF propio y un puente de ABI de glibc sobre musl. Esto elimina la necesidad de contenedores o múltiples librerías C en el proceso, facilitando la distribución de aplicaciones con dependencias de hardware complejas como los drivers de GPU. Se demuestra un caso de uso con Vulkan, donde un binario estático musl carga el driver Vulkan del host, ejecuta un shader y genera una imagen. El sistema ha sido probado en diversas GPUs y arquitecturas, y se valida mediante CI cargando miles de librerías de paquetes Debian. SoLo se ofrece como una librería (`libdlfcn.a`) que puede ser integrada en aplicaciones estáticas para redirigir llamadas `dlopen`/`dlsym` a su propia implementación.",
+    "id": 49369408,
+    "url": "https://www.computerenhance.com/p/turns-are-better-than-radians",
+    "score": 198,
+    "time": 1787189352,
+    "titulo_es": "Por qué deberíamos eliminar Pi del código y usar vueltas en su lugar",
+    "resumen": "El artículo analiza cómo el uso común de pi o tau para convertir valores a radianes en funciones trigonométricas genera ineficiencias computacionales e imprecisiones de coma flotante. En motores de videojuegos y librerías matemáticas, el código suele multiplicar un valor normalizado [0, 1] por tau solo para que la implementación interna de seno o coseno lo divida nuevamente por factores de pi. El autor propone adoptar directamente la unidad de 'vueltas' (turns) en el rango [0, 1], lo que elimina operaciones redundantes y permite representaciones binarias exactas para ángulos comunes como 90°, 180° y 270° sin pérdida de precisión en la mantisa.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49353432,
-    "url": "https://linear.app/data",
-    "score": 134,
-    "time": 1787090887,
-    "titulo_es": "Adopción y Impacto de la IA en el Desarrollo de Producto: Una Mirada a Través de Linear",
-    "resumen": "El artículo analiza la adopción y el impacto de las características de IA dentro de la plataforma de gestión de desarrollo de productos Linear entre enero y junio de 2026. Observa un aumento significativo en la participación de usuarios activos en funciones de IA en todos los departamentos, incluyendo Producto (del 12% al 34%) y Go-to-Market (del 5% al 18%). La adopción se triplicó en general, independientemente del tamaño de la empresa, e incluso los CEOs muestran un alto nivel de actividad personal. El tiempo dedicado a la creación y triaje de incidencias aumentó en un 17% para Ingeniería, y los fundadores mostraron un aumento notable en la creación y comentarios. La IA ahora genera casi la mitad de todas las incidencias creadas en Linear. Si bien el tiempo dedicado a la planificación y las solicitudes de clientes se mantuvo estable, sugiriendo que la IA está transformando la ejecución más que la toma de decisiones, las nuevas categorías de trabajo como 'chatear con IA' y 'delegar incidencias a agentes' han surgido y se están integrando en el flujo de trabajo sin reemplazar significativamente el trabajo existente. Además, se observa un aumento en la participación de Product Managers (del 3% al 10%) y Diseñadores (del 1% al 8%) en la vinculación de pull requests a través de Linear, aunque esta métrica solo cubre repositorios conectados a la plataforma.",
-    "categoria": "IA"
+    "id": 49323795,
+    "url": "https://www.benjoffe.com/fast-day-of-week",
+    "score": 138,
+    "time": 1786915240,
+    "titulo_es": "Optimización extrema para calcular el día de la semana a partir del recuento de días",
+    "resumen": "El artículo analiza métodos de alto rendimiento y microoptimización a bajo nivel para convertir un conteo de días (rata-die de 32 bits) en el día de la semana correspondiente. A través de técnicas avanzadas de manipulación de bits y aritmética modular rápida (como x % (2^N - 1)), se presentan secuencias de apenas unas pocas instrucciones que reducen la latencia y maximizan el throughput en arquitecturas modernas x86 y ARM, superando implementaciones clásicas en C++ y Rust.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49286291,
-    "url": "https://leimao.github.io/blog/CUDA-Shared-Memory-Swizzling/",
-    "score": 47,
-    "time": 1786630421,
-    "titulo_es": "Evitando conflictos de bancos de memoria compartida en CUDA usando Swizzling",
-    "resumen": "El artículo aborda el problema de los conflictos de bancos de memoria compartida en CUDA, que pueden degradar significativamente el rendimiento de las aplicaciones. Se presenta el 'swizzling' como una técnica avanzada para evitar estos conflictos sin recurrir al 'padding', el cual puede desperdiciar memoria. El swizzling reordena el mapeo de índices de memoria compartida para prevenir conflictos. Se utiliza la transposición de matrices como ejemplo, ilustrando cómo el swizzling permite una escritura sin conflictos y una lectura con conflictos reducidos en comparación con un enfoque sin optimización. Se define una fórmula de swizzling que opera sobre bloques de datos ('TC-byte chunks') y se justifica matemáticamente que esta fórmula preserva la integridad de los datos y mantiene una correspondencia uno a uno entre los índices originales y los swlizados, asegurando la corrección de la operación.",
+    "id": 49360015,
+    "url": "https://sprocketfox.io/xssfox/2026/08/19/sondehub-and-war/",
+    "score": 892,
+    "time": 1787138510,
+    "titulo_es": "La historia detrás del desarrollo y evolución de SondeHub",
+    "resumen": "El artículo narra la evolución técnica de SondeHub, un proyecto que comenzó como una simple redirección y creció hasta convertirse en una plataforma integral de rastreo e ingesta de telemetría de radiosondas meteorológicas. Describe la transición de depender de Habhub hacia una arquitectura propia basada en AWS, clústeres OpenSearch, almacenamiento en S3, APIs compatibles y transmisión en tiempo real mediante WebSockets y MQTT. Asimismo, aborda desafíos técnicos y consecuencias imprevistas, como la implementación de algoritmos de predicción inversa basados en modelos de viento, que permitieron inferir sitios de lanzamiento no documentados e instalaciones militares.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49365841,
+    "url": "https://sprocketfox.io/xssfox/2026/07/01/cricut-unlock/",
+    "score": 203,
+    "time": 1787166376,
+    "titulo_es": "Reactivando una Cricut Maker bloqueada mediante un proxy USB con RP2040",
+    "resumen": "El autor recupera una máquina Cricut Maker desechada y bloqueada por el fabricante. Tras reparar mecánicamente los rodillos, analizó el protocolo de comunicación USB CDC con Wireshark y descubrió que el número de serie se transmitía en texto plano sin cifrado ni sumas de verificación. Para eludir el bloqueo por DRM, diseñó un proxy de hardware intermediario utilizando una Raspberry Pi RP2040 (actuando como USB Host y Client con TinyUSB) que intercepta y reemplaza el número de serie sobre la marcha, logrando reactivar el dispositivo por completo.",
     "categoria": "Hardware"
   },
   {
-    "id": 49342472,
-    "url": "https://en.andros.dev/blog/54572bc7/finger-the-1971-social-network-that-never-died/",
-    "score": 210,
-    "time": 1787037695,
-    "titulo_es": "Finger: La Red Social Original de 1971 que Predijo el Microblogging",
-    "resumen": "El artículo detalla la historia y funcionalidad del protocolo Finger, desarrollado en 1971 en el Stanford Artificial Intelligence Laboratory (SAIL). Inicialmente concebido como una mejora del comando `WHO` para saber quién estaba conectado y su estado de inactividad, Finger evolucionó para mostrar el contenido de los archivos `.plan` y `.project` de los usuarios. Esto permitió compartir información sobre el trabajo y los planes, actuando como una forma primitiva de microblogging y diario profesional. El artículo destaca casos de uso notables, como el diario de desarrollo de John Carmack para los juegos de id Software, y cómo agregadores posteriores actuaron como \"el Twitter de su tiempo\". Se formalizó en RFC 742 (1977) y su especificación definitiva fue RFC 1288 (1991). A pesar de su antigüedad, se mantiene funcional y se considera un precursor de las redes sociales modernas, enfatizando la importancia de la presencia en red y la comunicación directa.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49358327,
-    "url": "https://www.modular.com/blog/modcon-announcements",
-    "score": 24,
-    "time": 1787125639,
-    "titulo_es": "Modular lanza su plataforma de IA lista para producción y abre el lenguaje Mojo a código abierto",
-    "resumen": "El artículo anuncia la disponibilidad general de la Plataforma Modular, diseñada para la inferencia de IA a escala empresarial y la gestión de cargas de trabajo de hardware heterogéneo. Destaca la versión 1.0 de Mojo, que ahora es de código abierto bajo la licencia Apache 2.0, junto con su compilador y herramientas, permitiendo la extensibilidad y portabilidad a nuevas plataformas, incluido el soporte nativo para Windows. Modular Cloud, el servicio de producción de la plataforma, se integra con socios como Qualcomm y Microsoft, ofreciendo rendimiento de inferencia líder en la industria a través de puntos de conexión compatibles con OpenAI y despliegues dedicados. El artículo también menciona a MiniMax como un cliente clave que utiliza Modular Cloud para servir su modelo M3, destacando las optimizaciones de rendimiento logradas en el stack de Modular para manejar cargas de trabajo complejas como las de atención dispersa multimodales.",
+    "id": 49348189,
+    "url": "https://jumploops.com/blog/sol-loves-to-cheat/",
+    "score": 162,
+    "time": 1787070591,
+    "titulo_es": "Automatización del Flujo de Desarrollo con Agentes y el Impacto de GPT-5.6 Sol",
+    "resumen": "El artículo describe un experimento para automatizar un flujo de desarrollo \"basado en especificaciones\" utilizando un agente supervisor y subagentes trabajadores. El autor inicialmente logró una mejora significativa en el benchmark Terminal Bench 2.1 (94%) en comparación con modelos anteriores como Codex y GPT-5.5 (83.8%). Sin embargo, al probar con el recién anunciado GPT-5.6 Sol, se observó una regresión en la efectividad del sistema automatizado, lo que sugiere que el nuevo modelo es más difícil de dirigir y ha cambiado su comportamiento. El autor también menciona brevemente benchmarks de IA más avanzados como Sol Ultra, que utiliza subagentes paralelos pero consume más tokens.",
     "categoria": "IA"
   },
   {
-    "id": 49355607,
-    "url": "https://github.com/katiahayati/lucasartsifier/",
-    "score": 54,
-    "time": 1787104713,
-    "titulo_es": "Análisis estático para juegos de aventura de 30 años",
-    "resumen": "Este artículo detalla una herramienta de análisis estático desarrollada en Python 3 que decompila scripts de juegos Sierra SCI, interpreta abstractamente el código en un grafo de transiciones de sala vigiladas, movimientos de ítems y escrituras de banderas de trama. La herramienta identifica y corrige automáticamente los 'softlocks' (situaciones de juego irresolubles), descubre metadatos del juego como la sala de inicio y las banderas de victoria/muerte, y genera parches para prevenir estos bloqueos. Se enfoca en la detección automática de estados irresolubles y la prevención de acciones que conducen a ellos, sin requerir información específica del juego. La herramienta ha sido probada con éxito en varios títulos clásicos de Sierra, generando parches que se aplican de forma no destructiva. El análisis distingue entre estados irresolubles y muertes evitables, preservando estas últimas cuando sirven como pistas. La arquitectura del sistema se basa en herramientas externas (un decompilador C# y un compilador SCI C++) construidas desde cero, con el análisis escrito puramente en la biblioteca estándar de Python, asegurando portabilidad y reproducibilidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49349898,
-    "url": "https://github.com/RyanCodrai/turbovec",
+    "id": 49367350,
+    "url": "https://github.com/anthropics/claude-code/issues/6235",
     "score": 248,
-    "time": 1787076441,
-    "titulo_es": "TurboVectors: Un índice de vectores Rust más rápido y eficiente en memoria que FAISS, con enlace Python",
-    "resumen": "El artículo presenta TurboVectors, un índice de vectores escrito en Rust con enlaces Python, basado en el algoritmo TurboQuant de Google Research. TurboVectors ofrece una compresión de vectores significativamente mayor en comparación con FAISS (4 GB para 10 millones de documentos de 31 GB en float32) y un rendimiento de búsqueda superior. Se destaca por su cuantizador 'data-oblivious' que no requiere una fase de entrenamiento separada, lo que lo hace ideal para aplicaciones de RAG (Retrieval-Augmented Generation) donde la privacidad, la memoria o la latencia son críticas. El artículo detalla comparativas de rendimiento frente a FAISS IndexPQ, mostrando ventajas en tasas de recuperación (R@1) y velocidad de búsqueda en arquitecturas ARM y x86, especialmente con cuantización de 4 y 2 bits. También se menciona la capacidad de filtrar resultados internamente dentro del kernel SIMD y el soporte para IDs estables mediante IdMapIndex.",
+    "time": 1787174390,
+    "titulo_es": "AGENTS.md: Un Estándar Unificado para la Comprensión de Código por Agentes de IA",
+    "resumen": "El artículo destaca la creciente estandarización en el ecosistema de herramientas de desarrollo asistidas por IA, como Codex, Amp y Cursor, alrededor de la especificación AGENTS.md. Este formato unificado en Markdown permite a los agentes de codificación comprender la estructura y el contenido de una base de código de manera coherente. Se contrasta AGENTS.md con CLAUDE.md, señalando que este último es demasiado específico para una herramienta particular (Claude Code) y presenta limitaciones al colaborar con desarrolladores que no utilizan la misma herramienta.",
     "categoria": "IA"
   },
   {
-    "id": 49311814,
-    "url": "https://www.xda-developers.com/25-year-old-brazilian-video-patent-expired-legal-headache-linux/",
-    "score": 180,
-    "time": 1786810677,
-    "titulo_es": "Fin de una patente de DivX abre el camino para el uso libre de MPEG-4 Parte 2 en Linux",
-    "resumen": "El artículo detalla la complejidad legal en torno a la distribución de codecs multimedia en Linux, particularmente el caso de DivX y MPEG-4 Parte 2. Explica cómo una patente de Siemens AG (BR PI0109962-0), que expiró el 19 de julio de 2026, junto con la expiración de una patente de Dolby (BR PI0113271-7) el 26 de enero de 2026, elimina el último obstáculo legal para la distribución mundial libre de patentes de la tecnología MPEG-4 Parte 2. A pesar de que distribuciones como Fedora ya incluían Xvidcore, la expiración de estas patentes asegura que los desarrolladores y usuarios puedan utilizar y distribuir esta tecnología sin preocupaciones legales. Sin embargo, se aclara que esto no afecta a codecs más modernos como H.264/AVC (MPEG-4 Parte 10), que aún están cubiertos por patentes. El artículo concluye que, aunque el impacto directo en el usuario final puede ser mínimo, representa un hito importante para la comunidad de código abierto al resolver una limitación legal de 25 años.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 49295071,
-    "url": "https://blog.regehr.org/archives/2124",
-    "score": 13,
-    "time": 1786685871,
-    "titulo_es": "Ingeniería de Verificación Formal: Encontrando Errores en Herramientas de Optimización de Compiladores",
-    "resumen": "El artículo detalla la naturaleza práctica y desafiante de la verificación formal, utilizando la herramienta Alive2 como caso de estudio. Alive2 es un validador de traducciones que verifica la corrección de optimizaciones en el compilador LLVM, comparando versiones de funciones en LLVM IR. Se discuten dos tipos principales de defectos en Alive2: falsas alarmas (fáciles de detectar mediante pruebas directas) y alarmas perdidas (difíciles de encontrar). Para abordar las alarmas perdidas, se presentan dos enfoques: 1) Modificación del generador de programas YARPGen para producir pares de funciones similares y libres de comportamiento indefinido, mutando aleatoriamente una versión y verificando si sus comportamientos difieren observablemente, lo que debería ser detectado por Alive2. Si Alive2 no señala una diferencia, se ha encontrado un error de alarma perdida. 2) Observación de que el superoptimizador Minotaur de Zhengyang Liu, al buscar formas más eficientes de calcular instrucciones, actúa pasivamente como un detector de errores de alarma perdida en el proceso de verificación.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49285325,
-    "url": "https://incident.io/blog/we-turned-off-pub-sub-and-nobody-noticed",
-    "score": 35,
-    "time": 1786626321,
-    "titulo_es": "Haciendo la Infraestructura de Mensajería de incident.io Más Resiliente",
-    "resumen": "El artículo describe la estrategia de incident.io para mejorar la resiliencia de su plataforma, que está predominantemente impulsada por eventos. Históricamente, dependían de Google Cloud Pub/Sub como su único proveedor de mensajería. Ante la necesidad de cumplir con objetivos de disponibilidad más estrictos (99.99% SLA) y evitar que un fallo en Pub/Sub afectara su propia disponibilidad, implementaron un segundo broker de mensajes para añadir redundancia. El objetivo principal era poder deshabilitar Pub/Sub sin impacto en el cliente. A pesar de la complejidad debida a la gran cantidad de temas (~800+) y suscripciones (~1000+), y el alto volumen de mensajes diarios (~240 millones), lograron con éxito este objetivo. La existencia de abstracciones a nivel de código (eventadapter) con implementaciones como InMemory y PubSub facilitó la migración y el manejo de la tecnología subyacente.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49348912,
-    "url": "https://shkspr.mobi/blog/2026/08/and-then-the-men-with-guns-tell-you-to-do-it-anyway/",
-    "score": 312,
-    "time": 1787073088,
-    "titulo_es": "El dilema de Vodafone en la revolución egipcia: Tecnología, poder y responsabilidad corporativa",
-    "resumen": "El artículo explora el incidente de febrero de 2011 en Egipto, donde Vodafone fue obligada por las autoridades a enviar mensajes de propaganda pro-régimen a sus usuarios durante una revolución política, a pesar de los intentos de la empresa por protestar. Se detalla cómo las leyes de telecomunicaciones permitieron a las autoridades instruir a los operadores móviles a enviar mensajes sin control por parte de estos, y cómo esto puso en jaque la ética corporativa frente a la ley y la seguridad. El autor reflexiona sobre la responsabilidad de los tecnólogos y las empresas al construir infraestructuras que pueden ser mal utilizadas por estados autoritarios, citando el concepto de 'higiene cívica' de Bruce Schneier y discutiendo la tensión inherente entre las utilidades tecnológicas (como las alertas de emergencia) y el potencial abuso de poder. Se plantea la pregunta fundamental de si se debe obedecer leyes injustas y la lealtad que deben los ejecutivos locales a sus empresas matrices versus a sus gobiernos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49345263,
-    "url": "https://seths.blog/2026/08/the-amazon-tax/",
-    "score": 1168,
-    "time": 1787059358,
-    "titulo_es": "El robo de Amazon a los clientes a través de los anuncios de búsqueda",
-    "resumen": "El artículo critica el modelo de anuncios de búsqueda de Amazon, argumentando que, en lugar de mejorar la experiencia del usuario, la empeora al distorsionar los resultados de búsqueda y beneficiar a Amazon a expensas de los consumidores y los comerciantes. El autor describe cómo Amazon captura miles de millones de dólares semanales a través de estos anuncios, que obligan a los vendedores a pagar para mantener su visibilidad y a menudo promueven productos de menor calidad o menos deseables. Se argumenta que este sistema, aunque legal, perjudica la eficiencia del mercado, encarece los productos para los consumidores y desincentiva la innovación y la calidad. Se compara este modelo con el de Google y se concluye que Amazon ha abandonado su enfoque centrado en el cliente para priorizar los ingresos publicitarios.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49348055,
-    "url": "https://www.apple.com/newsroom/2026/08/apple-announces-changes-for-apps-in-the-european-union/",
-    "score": 184,
-    "time": 1787070094,
-    "titulo_es": "Apple anuncia cambios en las apps de la Unión Europea",
-    "resumen": "Apple ha anunciado cambios en sus términos comerciales para las aplicaciones en la Unión Europea, en respuesta a la colaboración con la Comisión Europea. Los cambios simplifican los términos para todos los desarrolladores que distribuyen apps en la UE bajo un modelo unificado. La principal modificación es la sustitución de la \"Core Technology Fee\" por una \"Core Technology Commission\" del 5% sobre transacciones digitales en apps distribuidas fuera de la App Store. También se eliminan las tarifas de adquisición inicial y de servicios de la tienda. Se ajustan las tasas de comisión generales. Los desarrolladores ahora pueden ofrecer pagos alternativos junto con \"Apple In-App Purchase\" (con requisitos de presentación para transparencia del usuario) y deben mantener la opción de pago seleccionada durante 12 meses. Se implementan medidas de seguridad infantil para pagos alternativos. Además, se amplía la elegibilidad para operar marketplaces de apps alternativos o distribuir vía web. Todas las apps distribuidas alternativamente deberán pasar por \"Notarization\" para garantizar seguridad y funcionalidad básica.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49355232,
-    "url": "https://www.cam.ac.uk/research/news/tiny-satellite-will-use-the-dark-side-of-the-moon-to-eavesdrop-on-whispers-from-the-early-universe",
-    "score": 38,
-    "time": 1787101563,
-    "titulo_es": "CosmoCube: Un satélite en la Luna para desvelar los misterios del universo temprano",
-    "resumen": "El artículo describe CosmoCube, un satélite compacto desarrollado en el Reino Unido, diseñado para operar desde el lado oscuro de la Luna. Su objetivo principal es detectar la línea de 21 centímetros, una señal de hidrógeno emitida en los 'años oscuros' del universo, antes de la formación de las primeras estrellas. Al utilizar el lado oculto de la Luna como escudo natural contra el ruido de la Tierra (interferencias de radio y ionosfera), CosmoCube podrá escuchar esta débil señal cósmica.  Operando a frecuencias extremadamente bajas (10-50 MHz), el satélite desplegará una antena sensible y utilizará un calibrador 'Dicke-switched' para corregir electrónicamente el ruido interno y las derivas. Se espera que recolecte 1000 horas de datos en una misión de dos años para comprender la transición del universo de un estado oscuro y vacío a uno más complejo, y para investigar el papel de la materia oscura en la formación de las primeras estructuras. Los datos recopilados serán procesados con métodos estadísticos bayesianos avanzados para eliminar el ruido de primer plano de la Vía Láctea y otras distorsiones.",
+    "id": 49360545,
+    "url": "https://yassa9.github.io/osint/gralhix-004/",
+    "score": 474,
+    "time": 1787141992,
+    "titulo_es": "Resolución Geométrica y Programática de un Desafío Fotográfico de Islas",
+    "resumen": "El artículo detalla un enfoque de desarrollo de software y ciencia/matemáticas para resolver un desafío fotográfico que requiere identificar una isla y un resort a partir de una imagen. El autor rechaza el uso de herramientas de reconocimiento de imágenes como Google Lens, optando por una solución basada en la geometría y la programación. El proceso involucra extraer puntos de referencia de la imagen (islas) utilizando una GUI para obtener sus coordenadas de píxeles, calcular las distancias y ángulos relativos entre ellos para formar un triángulo de referencia. Posteriormente, se aplica este modelo geométrico a un conjunto masivo de datos de polígonos de tierra global (OpenStreetMap). Se aplican filtros heurísticos basados en latitud (dentro de los trópicos), densidad de islas vecinas (para descartar archipiélagos densos) y formación de clústeres (asegurando al menos tres islas cercanas para formar un triángulo). Para manejar la escala computacional, se muestrean combinaciones de puntos dentro de clústeres grandes. Finalmente, se utiliza la geometría de triángulos y el producto cruzado en un entorno de computación paralela (CUDA) para determinar la orientación y las relaciones espaciales de las islas candidatas y encontrar una coincidencia con el triángulo de referencia extraído de la imagen.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49348136,
-    "url": "https://machine0.io",
-    "score": 76,
-    "time": 1787070402,
-    "titulo_es": "Plataforma de Máquinas Virtuales para Agentes con CLI y MCP",
-    "resumen": "El artículo describe una plataforma de máquinas virtuales (VMs) optimizada para el desarrollo y ejecución de agentes, con soporte para interfaces de línea de comandos (CLI) y el protocolo Message Queuing Telemetry Transport (MQTT) para el control programático (MCP). Ofrece hasta 60 vCPUs, 240 GB de RAM y opciones de GPU (H100, H200, L40S, MI300X, RTX 4000/6000 Ada). Las VMs están disponibles con NixOS o Ubuntu preinstalados, con herramientas como Docker, Node.js, Python, Claude Code y Codex. Se destaca la facturación por minuto con recursos dedicados, IPs estáticas y puntos de conexión HTTPS automáticos. Permite la suspensión de VMs para detener la facturación, el congelamiento de su estado y la creación de imágenes reproducibles mediante NixOS flakes o Ansible. Las builds son deterministas con opciones de rollback de un comando. La plataforma garantiza un 99.99% de tiempo de actividad y está desplegada en múltiples regiones geográficas (US East, US West, UK, EU, Asia). Los precios de las VMs de CPU comienzan en $0.013/hora y las de GPU en $0.836/hora. Se ofrecen tamaños 'nvme' para un mayor rendimiento de IOPS en disco y tamaños 'premium' con vCPUs dedicadas de alto rendimiento monohilo. Los perfiles permiten inyectar configuraciones, credenciales y variables de entorno para que los agentes estén listos para operar. La creación de máquinas se puede automatizar a través de comandos CLI con salida JSON, facilitando la integración en flujos de trabajo programáticos.",
+    "id": 49367256,
+    "url": "https://os8088.com/spotlight/",
+    "score": 87,
+    "time": 1787173891,
+    "titulo_es": "Novedades de os8088: Emulación de CP/M, Compilador C, Word para PC y más",
+    "resumen": "El artículo describe varias adiciones y mejoras al emulador os8088, que recrea el entorno del IBM PC original y su sistema operativo. Se destaca la capacidad de os8088 para ahora buscar y mostrar páginas web reales, renderizando texto y tablas a través de una tarjeta Ethernet o un cable paralelo. También se ha implementado la emulación de CP/M, permitiendo la ejecución de software clásico como el procesador de comandos de 1979, Microsoft BASIC, un ensamblador y un editor. Se introduce un compilador C para os8088, que agiliza el desarrollo, y se presenta una reimplementación de Microsoft Word 1.1a que guarda archivos .DOC. Otra característica notable es la capacidad de extender el escritorio de os8088 a través de tarjetas gráficas monocromáticas y de color simultáneamente. Finalmente, se ha añadido un intérprete de Z-machine, permitiendo jugar a juegos clásicos de Infocom como Mini-Zork y Colossal Cave Adventure.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49272631,
-    "url": "https://tau.dev/2026/08/07/canon",
-    "score": 246,
-    "time": 1786543634,
-    "titulo_es": "Canon: Un MUD Moderno y Educativo Inspirado en HyperCard",
-    "resumen": "El artículo describe Canon, un entorno multijugador basado en web que recrea la experiencia de los MUDs clásicos, pero con un enfoque en la creación y modificación por parte de los usuarios. Utiliza un lenguaje de scripting propio llamado Cant, diseñado intencionadamente con limitaciones para facilitar el aprendizaje. La inspiración principal proviene de HyperCard, destacando su enfoque en \"tarjetas\" conectables y su accesibilidad para no programadores, a pesar de sus restricciones. Canon permite a los usuarios inspeccionar, copiar y modificar cualquier elemento del mundo (habitaciones, objetos, interacciones), fomentando un aprendizaje práctico similar a la era del \"View Source\". El objetivo es ofrecer una plataforma donde los usuarios puedan crear sus propios juegos y experiencias interactivas, similar a cómo HyperCard permitía a los usuarios crear \"stacks\" para compartir, democratizando la creación de contenido digital antes de la web generalizada.",
+    "id": 49318113,
+    "url": "https://github.com/safer-rust/RAPx",
+    "score": 3,
+    "time": 1786869477,
+    "titulo_es": "Plataforma de Análisis Estático RAPx para Rust",
+    "resumen": "RAPx (Rust Analysis Platform with Extensions) es una plataforma avanzada de análisis estático para Rust, diseñada para ir más allá de las capacidades del compilador `rustc`. Proporciona un marco extensible para construir y integrar análisis de seguridad, robustez y rendimiento. Se estructura en una capa central con algoritmos de análisis de programas (como análisis de alias y flujo de datos) y una capa de aplicación para tareas específicas como la detección de errores. Incluye un comando `verify` para la verificación basada en contratos de funciones anotadas con `#[rapx::verify]`, utilizando análisis sensible a la ruta y resolución SMT con Z3. Soporta la verificación de propiedades de seguridad como Align, NonNull, Allocated, InBound, Init, ValidPtr, Deref, Ptr2Ref, y más. También permite definir contratos personalizados con el macro `pred!`. RAPx incluye contratos de seguridad predefinidos para la biblioteca estándar de Rust y se prueba contra abstracciones del mundo real que utilizan código `unsafe`, como métodos de `core::slice`.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49317246,
+    "url": "https://snarky.ca/whats-missing-to-have-reproducible-builds-on-pypi/",
+    "score": 12,
+    "time": 1786859321,
+    "titulo_es": "Hacia Construcciones Reproducibles y una Cadena de Suministro Segura en Python",
+    "resumen": "El artículo aborda la necesidad crítica de construcciones reproducibles en el ecosistema de empaquetado de Python para fortalecer la cadena de suministro de software. Se destaca que la falta de un método definido para construcciones reproducibles dificulta la verificación independiente de que las distribuciones (sdists y wheels) coinciden con el código fuente, lo que podría prevenir la inyección de código malicioso durante el proceso de compilación, como ocurrió en el caso de SolarWinds. La propuesta incluye registrar el código fuente utilizado (actualmente solo en `direct_url.json` para instalaciones directas) y las herramientas de compilación. Para las wheels, se menciona el soporte de SBOMs (Software Bill of Materials) vía PEP 770 para registrar estas herramientas. Sin embargo, los sdists carecen de un mecanismo similar, sugiriendo la necesidad de un formato `sdist v2`. La reproducibilidad se facilitaría aprovechando la tabla `[build-system]` en `pyproject.toml` para invocar los backends de construcción. Se propone que los backends registren el entorno en el que se ejecutan para facilitar la creación de SBOMs, minimizando la carga para los productores de distribuciones. El objetivo final es permitir a terceros verificar la integridad de las distribuciones basándose en el código fuente y el historial de construcción.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49353339,
+    "url": "https://fx.sh",
+    "score": 262,
+    "time": 1787090421,
+    "titulo_es": "Agente de codificación nativo, pequeño y abierto",
+    "resumen": "El artículo describe fx, una herramienta de línea de comandos (CLI) y un framework para agentes de codificación, escrito en Zig y compilado a WebAssembly (Wasm) utilizando el toolchain de Zig. Se destaca por su tamaño reducido (6.39MB), su enfoque en la minimalismo, el rendimiento y la extensibilidad a través de \"skills\" y plugins, siguiendo una filosofía similar a Unix. Está diseñado para ser fácilmente integrable en entornos con recursos limitados y sandboxes de agentes, con arranques en frío de 10µs y optimizado para un bajo costo de tokens y un rápido tiempo de primera respuesta (TTFT). Es agnóstico al modelo y adecuado tanto para inferencia local como en la nube, delegando la red al fetch del navegador y permitiendo la configuración de aspectos del SDK. Su interfaz de usuario se asemeja más a un shell de Unix que a un IDE pesado.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49361279,
+    "url": "https://www.raphaelbauer.com:443/posts/postgresql-everything/",
+    "score": 362,
+    "time": 1787145681,
+    "titulo_es": "PostgreSQL: La Respuesta a Todo (Casi)",
+    "resumen": "El artículo argumenta que PostgreSQL es una solución robusta y versátil para una amplia gama de necesidades de bases de datos, a menudo reemplazando la necesidad de sistemas separados. Destaca su madurez (desde 1996), su desarrollo activo y la incorporación constante de características modernas como el soporte de JSON y las CTEs. Se enfatiza su facilidad de instalación y despliegue, tanto localmente (Linux, macOS) como en la nube con soporte de un solo clic y escalabilidad. Un caso de uso clave es su capacidad de búsqueda de texto completo integrada, que elimina la complejidad de sistemas externos como Lucene/Solr. Se menciona su uso exitoso para series temporales de alto volumen con TimescaleDB y su amplia adopción en la industria, lo que se traduce en menor mantenimiento y mayor enfoque en el desarrollo de funcionalidades.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49362728,
+    "url": "https://arxiv.org/abs/2608.16753",
+    "score": 167,
+    "time": 1787152465,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Funcionalidades de arXiv",
+    "resumen": "arXivLabs es un marco de trabajo diseñado para facilitar el desarrollo y la implementación de nuevas funcionalidades y colaboraciones directamente en la plataforma de arXiv. Este sistema promueve la colaboración entre individuos y organizaciones, adhiriéndose a los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de datos del usuario. arXiv se asocia únicamente con entidades que demuestran un compromiso con estos principios, buscando expandir el valor para su comunidad a través de proyectos innovadores.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49366264,
+    "url": "https://www.theverge.com/tech/981956/google-pixel-11-pro-fold-review",
+    "score": 64,
+    "time": 1787168628,
+    "titulo_es": "Google Pixel 11 Pro Fold: Una mejora incremental en un mercado cambiante",
+    "resumen": "El Google Pixel 11 Pro Fold representa una actualización de hardware incremental en comparación con su predecesor. Las mejoras incluyen un procesador Tensor G6, pantallas OLED más brillantes (3.600 nits), una cámara principal de 48 megapíxeles con sensor más grande y carga inalámbrica Qi2 magnética de 25W. El diseño se ha refinado ligeramente, siendo 0.7 mm más delgado y 19g más ligero, lo que mejora la comodidad de uso. Sin embargo, su diseño general y la visible arruga de la pantalla lo hacen sentir anticuado en comparación con las innovaciones de Samsung y otros fabricantes que están logrando diseños más delgados y pliegues casi invisibles. A pesar de su precio de $1,899, sigue siendo una opción competitiva por su relación de aspecto intermedia y su clasificación IP68, pero su longevidad en el mercado es cuestionable ante la rápida evolución de la tecnología plegable.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49315372,
+    "url": "https://blog.jetbrains.com/rust/2026/08/10/rewriting-in-rust/",
+    "score": 63,
+    "time": 1786837389,
+    "titulo_es": "Reescribiéndolo en Rust (RIIR): Una mirada honesta",
+    "resumen": "El artículo analiza la tendencia 'Rewrite It In Rust' (RIIR), que sugiere migrar proyectos escritos en C/C++ a Rust por sus beneficios en seguridad de memoria y rendimiento. Se exploran las motivaciones detrás de esta tendencia, incluyendo la seguridad de memoria (respaldada por datos de Android), el rendimiento competitivo de Rust (evidenciado por estudios y comparaciones prácticas como ripgrep vs grep) y la preferencia de los desarrolladores por el lenguaje. Se clasifican las reescrituras en tres categorías: 'Drop-in replacements' (reemplazos funcionales idénticos como uutils coreutils), 'Alternatives' (soluciones a problemas similares con enfoques diferentes como ripgrep o Typst) y 'Self-rewrites' (reescrituras internas de proyectos existentes como Firefox o el kernel de Linux). El artículo se basa en observaciones y datos del ecosistema de software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49314109,
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260811-00/?p=112605",
+    "score": 115,
+    "time": 1786826238,
+    "titulo_es": "El propósito y funcionamiento de WINSTART.BAT en el inicio de Windows",
+    "resumen": "El artículo explica el propósito de WINSTART.BAT en el contexto del inicio de Windows 3.1 y Windows 95, diferenciándolo de AUTOEXEC.BAT. Se detalla que WINSTART.BAT se ejecuta después de que el administrador de máquinas virtuales inicializa la \"Máquina Virtual del Sistema\" y antes de que se inicie el kernel en modo usuario de Windows. Su función principal era permitir la instalación de TSRs (Residentes en Memoria) que solo afectarían a los programas ejecutados dentro de Windows, a diferencia de los TSRs instalados por AUTOEXEC.BAT que eran visibles en el entorno MS-DOS real y en las máquinas virtuales de MS-DOS posteriores. Esto permitía optimizar la memoria convencional para aplicaciones MS-DOS al no cargar drivers de red u otros TSRs específicos de Windows en ese entorno. El artículo también aclara que esta funcionalidad existía desde Windows 3.1 y compara la ejecución de programas en diferentes máquinas virtuales durante el proceso de arranque.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49363710,
+    "url": "https://github.com/onecli/onecli",
+    "score": 75,
+    "time": 1787156942,
+    "titulo_es": "OneCLI: Plataforma de Código Abierto para Agentes de IA en Equipo",
+    "resumen": "OneCLI es una plataforma de código abierto diseñada para desplegar y gestionar equipos de agentes de Inteligencia Artificial (IA) de forma segura y sandbox. Inicialmente concebido como una bóveda de credenciales en Rust, OneCLI v2 se ha evolucionado para abordar la necesidad de replicar agentes autónomos a nivel de equipo. Permite a los usuarios crear un agente por empleado, asignarles permisos específicos y ejecutarlos en un entorno aislado (sandbox). Un gateway gestiona el acceso, inyecta credenciales y aplica políticas de seguridad. Los agentes se ejecutan en la infraestructura del usuario, con una conexión saliente que no requiere puertos de entrada, lo que facilita su despliegue en diversas redes. La plataforma es altamente configurable y se puede iniciar fácilmente mediante comandos simples. Las contribuciones a la comunidad son bienvenidas, y se especifican políticas claras para la seguridad y la gestión de vulnerabilidades. La licencia principal es Apache-2.0, con características empresariales bajo una licencia separada que requiere suscripción para uso en producción.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49310128,
+    "url": "https://www.alanzucconi.com/2026/08/15/xorshift-generators/",
+    "score": 83,
+    "time": 1786798072,
+    "titulo_es": "Generadores Xorshift: La Fuente de la Pseudorandomness",
+    "resumen": "El artículo profundiza en los generadores xorshift, una familia popular de algoritmos para la generación de números pseudoaleatorios. Explica que estos algoritmos, basados en operaciones XOR y desplazamientos de bits, son deterministas pero capaces de producir secuencias que parecen aleatorias, siendo fundamentales en juegos, simulaciones y otros campos. Se detalla el funcionamiento de un generador xorshift de 32 bits, mostrando las operaciones de desplazamiento y XOR, y se cuestiona la elección de los 'números mágicos' (13, 17, 5) en sus desplazamientos, sugiriendo la importancia de preguntar el porqué de tales constantes en el código. El artículo señala que, a pesar de su ubicuidad, no son adecuados para criptografía.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49370440,
+    "url": "https://devblogs.microsoft.com/oldnewthing/20260818-00/?p=112621",
+    "score": 52,
+    "time": 1787200922,
+    "titulo_es": "La historia detrás del sticker de Tetris en el primer Microsoft Entertainment Pack",
+    "resumen": "El artículo narra cómo el primer Microsoft Entertainment Pack para Windows, a pesar de no tener un número en su título, se convirtió en un objeto de colección debido a una estrategia de marketing improvisada. Inicialmente, la inclusión de Tetris no estaba garantizada al momento de imprimir las cajas. Para evitar el riesgo de tener que desechar una tirada de cajas si la licencia de Tetris no se concretaba, se optó por no mencionarlo en el arte de la caja. En su lugar, se prepararon stickers rojos con la leyenda “Now includes TETRIS for Windows!” para ser aplicados posteriormente si la negociación era exitosa. Este enfoque resultó en que las primeras ediciones con el sticker aplicado a posteriori sean extremadamente raras. Las ediciones posteriores ya integraron Tetris en el diseño de la caja y promocionaron el concepto de \"Entertainment Pack 1\" y otros volúmenes, indicando la existencia de secuelas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49359425,
+    "url": "https://theremin.bizibah.com/",
+    "score": 274,
+    "time": 1787134500,
+    "titulo_es": "Control de Mapeo de Gestos y Movimiento para Software",
+    "resumen": "El artículo describe un sistema de control de software que permite la interacción mediante gestos aéreos o movimientos de un dispositivo móvil, así como el uso de un ratón. Se detallan los gestos de manos (separar para volumen, elevar para tono, retroceder para suavizar, juntar para silencio) y los movimientos del giroscopio (inclinación izquierda-derecha para volumen, adelante-atrás para tono). También se menciona la calibración para el control con el ratón y un modo de espera. Se enfatiza la flexibilidad del sistema, que puede funcionar con webcams de portátiles o teléfonos, y que no requiere sensores específicos más allá de los ya disponibles en un smartphone.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49363668,
+    "url": "https://jeremymorrell.dev/blog/extensible-software-in-the-age-of-llms/",
+    "score": 149,
+    "time": 1787156765,
+    "titulo_es": "El Poder de la Extensibilidad Nativa de LLM en el Software Web",
+    "resumen": "El artículo explora la limitación del software web tradicional, que a menudo prioriza las necesidades de la mayoría, descuidando las \"colas largas\" de requerimientos individuales. Propone la emergencia del \"Small Software\" y el \"Software Nativo de LLM\" como soluciones. LLMs, al ser excelentes en \"Software para Uno\", permiten crear aplicaciones personales y extensibles que se adaptan a flujos de trabajo específicos, sin la complejidad del software empresarial. Se destaca la oportunidad de crear software web extensible, donde los LLMs reduzcan drásticamente el costo de autoría de extensiones y las primitivas modernas de sandbox faciliten la implementación segura. Se mencionan ejemplos como Pi, que utiliza hooks estables para permitir la creación y compartición de extensiones TypeScript, absorbiendo la diversidad de ideas sin inflar el núcleo. Se vislumbra un futuro donde el software web se construya como un núcleo robusto y seguro, permitiendo a los usuarios extenderlo de forma segura mediante LLMs, otorgándoles \"superpoderes\". Se sugieren aproximaciones para la integración de extensiones, diferenciándose de las limitaciones de los webhooks.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49321934,
+    "url": "https://github.com/cesarblum/sectorforth",
+    "score": 21,
+    "time": 1786901384,
+    "titulo_es": "Sectorforth: Un Forth de 16 bits para Arranque en 512 Bytes",
+    "resumen": "Sectorforth es una implementación del lenguaje de programación Forth diseñada para ser extremadamente compacta, cabiendo en un sector de arranque de 512 bytes para sistemas x86 de 16 bits. Se basa en un conjunto mínimo de ocho primitivas, cinco variables internas y dos primitivas de I/O. Con estos bloques de construcción, funcionalidades avanzadas como el control de flujo (branching), la compilación de nuevas palabras y la manipulación de la pila de retorno se implementan utilizando Forth mismo. El sistema incluye el compilador de dos puntos (':') para definir nuevas palabras, y a diferencia de otras implementaciones de Forth, no intenta convertir automáticamente palabras desconocidas en números, requiriendo el uso de las primitivas disponibles para la generación numérica. Soporta la entrada de hasta 4KB por línea. Cuando una palabra no se encuentra en el diccionario, se muestra el error '!!' y el intérprete se reinicia a un estado de interpretación limpio. Sin embargo, errores más graves (como la compilación de direcciones inválidas) pueden causar el colapso del intérprete. Sectorforth fue desarrollado con NASM 2.15.01 y se compila fácilmente con `make`, generando un binario (`sectorforth.bin`) y una imagen de disquete (`sectorforth.img`). Se inspira en el concepto de jonesforth de Richard W.M. Jones y en un hilo de Usenet de 1996.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49362401,
+    "url": "https://ornith.ai/ornith_1_5.html",
+    "score": 194,
+    "time": 1787150919,
+    "titulo_es": "Ornith-1.5: Un Paso Hacia Modelos Fundacionales Auto-Mejorados",
+    "resumen": "Ornith-1.5 es una nueva versión que avanza en la construcción de modelos fundacionales mediante un ciclo de auto-mejora de extremo a extremo. El modelo genera sus propias tareas, crea 'andamios' específicos para resolverlas y produce ejecuciones de soluciones para aprendizaje por refuerzo, impulsando un continuo aprendizaje y mejora. Se presenta en tres escalas: 397B MoE, 35B MoE y 9B Dense, extendiendo Ornith-1.0 sobre Qwen3.5 y Gemma 4 con entrenamiento adicional. Ornith-1.5-397B iguala el rendimiento de Claude Opus 4.8 en benchmarks clave como Terminal-Bench 2.1 y DeepSWE, superando a otros modelos open-source de tamaño comparable. La versión 9B, optimizada para móviles (Ornith-1.5-9B-Mobile), es desplegable en dispositivos iOS y Android, superando a modelos más grandes como Gemma 4-31B. El ciclo de auto-mejora se expande para incluir la generación de tareas, la construcción de andamios y la optimización de soluciones conjuntamente. El sistema propone tareas progresivamente más difíciles, genera andamios (instrucciones, herramientas, estrategias) y produce ejecuciones de soluciones. La recompensa obtenida se propaga a través de estas tres etapas, permitiendo al sistema aprender no solo a mejorar soluciones, sino también a generar tareas más útiles y andamios más efectivos. Esto crea un bucle cerrado donde políticas más fuertes permiten tareas más complejas, andamios evolucionados descubren mejores estrategias y rollouts de mayor calidad proveen señales de aprendizaje más efectivas, llevando a una mejora continua y adaptación del currículo y las estrategias de resolución de problemas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49355606,
+    "url": "https://openlogi.org/en",
+    "score": 1553,
+    "time": 1787104708,
+    "titulo_es": "Alternativa a Logitech Options+ escrita en Rust",
+    "resumen": "El artículo describe OpenLogi, una aplicación de código abierto (MIT/Apache-2.0) desarrollada en Rust que funciona como una alternativa local a Logitech Options+. Permite remapear botones, controlar la configuración DPI y la función SmartShift de dispositivos Logitech a través del protocolo HID++. La aplicación opera localmente sin requerir cuentas de usuario, telemetría o conexión a la nube, almacenando las configuraciones en archivos TOML. Soporta la conexión a dispositivos a través de receptores Logi Bolt, Unifying, Lightspeed, Bluetooth directo o cable USB. Ofrece funcionalidades como la asignación de acciones personalizadas a botones, el control de la resolución del puntero y la gestión de la rueda de desplazamiento (modo ratchet/free-spin). Se planean funcionalidades futuras como superposiciones por aplicación. La aplicación está disponible para macOS, Linux y Windows con instaladores y paquetes específicos para cada plataforma. Se menciona la necesidad de cerrar Logitech Options+ o Solaar (en Linux) antes de ejecutar OpenLogi para evitar conflictos de acceso a HID++.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49368828,
+    "url": "https://arxiv.org/abs/2007.13664",
+    "score": 29,
+    "time": 1787184312,
+    "titulo_es": "arXivLabs: Un Marco para Desarrollar y Compartir Nuevas Funcionalidades de arXiv",
+    "resumen": "arXivLabs es un marco de trabajo diseñado para facilitar la colaboración en el desarrollo y la implementación de nuevas funcionalidades directamente en el sitio web de arXiv. Este ecosistema fomenta la participación de individuos y organizaciones, basándose en los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de los datos del usuario. arXiv se compromete a colaborar únicamente con socios que respeten estos principios. La iniciativa busca enriquecer la experiencia de la comunidad de arXiv mediante proyectos que aporten valor añadido.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49286258,
+    "url": "https://kolja.rs/algorithm-d/",
+    "score": 213,
+    "time": 1786630287,
+    "titulo_es": "Un error de décadas en el algoritmo de división larga de Knuth y su impacto en la criptografía",
+    "resumen": "El artículo detalla el descubrimiento de un error en el algoritmo de división larga de Knuth (Algoritmo D) por parte del autor, que había permanecido sin ser detectado durante décadas. El autor se topó con este problema mientras implementaba aritmética sobre campos primos para un proyecto criptográfico, destacando la complejidad y el alto costo computacional de la división en comparación con la multiplicación en sistemas multiprecisión. La investigación personal del autor condujo a un contraejemplo para el algoritmo de Knuth y un nuevo teorema de corrección. Además, se menciona la identificación de un error similar en la implementación de LLVM. El texto también explora las razones por las que se evita la división en contextos criptográficos y presenta una visión general de las operaciones básicas de la división larga, almacenando enteros multiprecisión como un arreglo de 'limbs' (palabras de máquina).",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49363665,
+    "url": "https://ngrok.com/blog/probes",
+    "score": 127,
+    "time": 1787156737,
+    "titulo_es": "Cómo funcionan las sondas en Kubernetes para mejorar la resiliencia y prevenir errores",
+    "resumen": "Este artículo explora en profundidad el funcionamiento de las sondas (liveness, readiness y startup probes) en Kubernetes. Demuestra cómo estas sondas, a través de simulaciones interactivas, pueden hacer que las aplicaciones sean más resilientes al gestionar de forma inteligente los reinicios de contenedores y prevenir errores comunes como los bucles de reinicio prolongados o la caída de solicitudes durante las implementaciones. Se detalla la configuración de las sondas de inicio (startup probes) para asegurar que un contenedor esté completamente inicializado antes de recibir tráfico, y se explica cómo las sondas de preparación (readiness probes) integradas con Services y ReplicaSets evitan que el tráfico se dirija a pods no listos, mejorando así la disponibilidad y la experiencia del usuario.",
     "categoria": "Desarrollo de Software"
   }
 ]
