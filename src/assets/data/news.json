@@ -1,254 +1,236 @@
 [
   {
-    "id": 49393052,
-    "url": "https://rust-glancer.github.io/blog/hello-world/",
-    "score": 187,
-    "time": 1787341914,
-    "titulo_es": "Presentando Rust Glancer: un LSP alternativo para Rust enfocado en el bajo consumo de memoria",
-    "resumen": "El autor presenta Rust Glancer, una implementación alternativa de Language Server Protocol (LSP) para Rust diseñada para operar con un consumo de RAM inferior a 100 MB. A diferencia de rust-analyzer, que prioriza la velocidad mediante un análisis incremental en memoria, Rust Glancer adopta una arquitectura de análisis congelado persistido en el sistema de archivos que se invalida al guardar. Para mantener un rendimiento aceptable, emplea análisis superficiales durante la escritura y optimizaciones de file watching diseñadas para flujos de trabajo con agentes de IA, sacrificando indexación en tiempo real por un uso eficiente de recursos en equipos con especificaciones limitadas.",
+    "id": 49406333,
+    "url": "http://www.os2museum.com/wp/the-end-of-an-athlon/",
+    "score": 71,
+    "time": 1787464261,
+    "titulo_es": "Fragilidad del silicio expuesto y fracturas en procesadores flip-chip",
+    "resumen": "El artículo analiza la fragilidad mecánica del empaquetado flip-chip PGA utilizado a principios de los años 2000 por AMD e Intel en procesadores como el Athlon XP y Pentium III. Al carecer de disipador integrado (IHS/tapa protectora), el silicio expuesto era susceptible a microfisuras y fracturas severas por estrés térmico o presión desigual al manipular los disipadores. Se discuten las diferencias de durabilidad entre los dies de Intel y AMD, así como la posterior transición de la industria hacia procesadores con tapas metálicas protectoras y zócalos LGA para prevenir daños mecánicos en el silicio.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49406387,
+    "url": "https://malisper.me/jit-compiling-code-in-5-us/",
+    "score": 50,
+    "time": 1787465091,
+    "titulo_es": "Compilación JIT de código en 5μs",
+    "resumen": "El artículo aborda la implementación de compiladores Just-In-Time (JIT) de ultra baja latencia (5 microsegundos) mediante la generación directa de código ensamblador asistida por IA y la técnica de 'copy-and-patch'. Utilizando como caso práctico un motor de expresiones regulares en Rust, se demuestra cómo alcanzar el rendimiento de código nativo optimizado frente a un intérprete tradicional, haciendo viable la compilación JIT para cada consulta en bases de datos como pgrust.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49389430,
-    "url": "https://www.felonybench.com/",
-    "score": 691,
-    "time": 1787325424,
-    "titulo_es": "Un benchmark que realmente no quieres que los modelos saturen",
-    "resumen": "Felony Bench es un benchmark diseñado para evaluar y cuantificar instancias únicas en las que agentes de inteligencia artificial realizan actividades ilegales que afectan a entidades terceras. La métrica excluye incidentes que se limitan al escape de entornos aislados (sandbox) sin impacto externo, razón por la cual no se contabilizan eventos como el de Kimi K3 de Frontier Security o el de ROME de Alibaba.",
+    "id": 49402232,
+    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+    "score": 334,
+    "time": 1787422456,
+    "titulo_es": "El impacto de las variaciones de hardware y software en la inferencia de LLMs",
+    "resumen": "El artículo analiza técnicamente por qué el rendimiento y la calidad de salida de un modelo de lenguaje (LLM) pueden degradarse drásticamente fuera del entorno de referencia del laboratorio original. Explica que las diferencias en conjuntos de instrucciones de hardware, implementaciones de software, cuantizaciones y configuraciones de muestreadores (samplers) alteran el cálculo matemático de los logits y las probabilidades del siguiente token. Asimismo, aborda la necesidad de realizar benchmarks representativos y el uso de la divergencia de Kullback-Leibler (KLD) para medir la desviación probabilística respecto a la implementación base, advirtiendo sobre la falta de rigor metodológico en muchas métricas reportadas.",
     "categoria": "IA"
   },
   {
-    "id": 49390427,
-    "url": "https://bandarlabs.github.io/Cobalt/",
-    "score": 537,
-    "time": 1787329525,
-    "titulo_es": "Cobalt: Plataforma de aplicaciones y SDK en Rust de código abierto para lectores electrónicos Kobo",
-    "resumen": "Cobalt es una plataforma de desarrollo y ejecución de código abierto para lectores de libros electrónicos Kobo. Ofrece un launcher, una tienda de aplicaciones con verificación de firmas criptográficas, un SDK en Rust y un entorno de ejecución que aísla cada app en un proceso ARM estático sin privilegios. El acceso a los recursos de hardware (red, audio, almacenamiento) se gestiona mediante un modelo basado en capacidades, e incluye un toolkit UI declarativo optimizado para el refresco de paneles de tinta electrónica, permitiendo instalar y actualizar aplicaciones vía Wi-Fi sin alterar la cadena de arranque original.",
+    "id": 49351802,
+    "url": "https://hister.org/",
+    "score": 341,
+    "time": 1787083250,
+    "titulo_es": "Hister: Motor de búsqueda e indexación de contenido privado y autoalojado",
+    "resumen": "Hister es una herramienta de software libre (licencia AGPLv3) para la indexación y búsqueda de texto completo de archivos locales, historial y páginas web visitadas. Opera de forma local o en un servidor privado sin telemetría ni dependencias externas obligatorias. Admite bases de datos SQLite o PostgreSQL, búsqueda semántica opcional mediante endpoints de embeddings, y expone interfaces mediante terminal, interfaz web, API HTTP y un servidor MCP para la integración con asistentes de inteligencia artificial.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49395628,
-    "url": "https://danluu.com/perf-opt/",
-    "score": 382,
-    "time": 1787360777,
-    "titulo_es": "Cómo los LLM reducen las barreras para la optimización de rendimiento y compiladores JIT",
-    "resumen": "El artículo analiza cómo los modelos de lenguaje (LLM) están democratizando la ingeniería de rendimiento extremo, reduciendo drásticamente el costo de implementar optimizaciones complejas como compiladores JIT o código adaptado a cargas de trabajo específicas. A través de un experimento práctico con un motor de expresiones regulares (FRE) integrado en ripgrep mediante agentes de IA, se demuestra cómo la compilación AOT en segundo plano puede ofrecer mejoras de rendimiento de entre 2x y 4x en consultas extensas con un esfuerzo humano mínimo.",
+    "id": 49404380,
+    "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
+    "score": 95,
+    "time": 1787436867,
+    "titulo_es": "Evaluación autónoma de 18 modelos de frontera en la optimización de nanoGPT",
+    "resumen": "Se evaluaron 18 modelos de IA de frontera mediante 153 ejecuciones autónomas en un benchmark de optimización para nanoGPT. Bajo un presupuesto de recursos equivalente, se comparó el mejor récord validado alcanzado por cada modelo, proporcionando acceso a 41 trazas detalladas de agentes que incluyen llamadas a herramientas, subagentes y bloques de notas de razonamiento.",
     "categoria": "IA"
   },
   {
-    "id": 49391661,
-    "url": "https://zeux.io/2025/09/30/billions-of-triangles-in-minutes/",
-    "score": 23,
-    "time": 1787334846,
-    "titulo_es": "Bits, píxeles, ciclos y más: soporte para LOD jerárquico por clústeres en meshoptimizer",
-    "resumen": "El autor explora la implementación de estructuras jerárquicas de nivel de detalle (LOD) basadas en clústeres, similares al sistema Nanite de Unreal Engine y al ejemplo 'vk_lod_clusters' de NVIDIA. El artículo detalla los desafíos algorítmicos para generar un grafo acíclico dirigido (DAG) de clústeres de triángulos a partir de mallas de alta densidad, simplificando grupos de forma recursiva sin generar grietas y aplicando estas optimizaciones geométricas en la biblioteca open-source meshoptimizer.",
-    "categoria": "Desarrollo de Software"
+    "id": 49346854,
+    "url": "https://typ.ing/",
+    "score": 264,
+    "time": 1787065973,
+    "titulo_es": "typ.ing: Un Entrenador de Mecanografía para Teclados Externos",
+    "resumen": "El artículo describe 'typ.ing', una herramienta diseñada para mejorar la velocidad y precisión al escribir con un teclado externo. Se destaca que la aplicación funciona mejor en dispositivos móviles cuando se conecta un teclado físico, sugiriendo su uso en ordenadores o con un teclado conectado para una experiencia óptima. La interfaz parece interactiva, invitando al usuario a escribir.",
+    "categoria": "Frontend"
   },
   {
-    "id": 49387570,
-    "url": "https://lina.sh/blog/hijacking-e164-arpa",
-    "score": 537,
-    "time": 1787317888,
-    "titulo_es": "Cómo un servidor de nombres expirado me permitió tomar el control de zonas e164.arpa de múltiples territorios y por qué debí haber revisado mis registros antes",
-    "resumen": "El autor detalla cómo logró tomar el control de las zonas DNS de infraestructura e164.arpa correspondientes a los prefijos telefónicos de Santa Elena (+290), el Territorio Británico del Océano Índico (+246) e Isla Ascensión (+247). La vulnerabilidad residía en que la delegación DNS de estas zonas dependía de dos servidores de nombres: uno inoperativo y otro cuyo dominio (enum.org.uk) había expirado. Al registrar el dominio vencido por 5 euros, obtuvo el control autoritativo de las respuestas DNS (registros NAPTR) utilizadas por los operadores para el enrutamiento ENUM/VoIP, lo que le permitió interceptar y registrar solicitudes de llamadas telefónicas dirigidas incluso a bases militares.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49391553,
-    "url": "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/",
-    "score": 109,
-    "time": 1787334341,
-    "titulo_es": "Es JSON de principio a fin",
-    "resumen": "El artículo analiza los retos estructurales y de adopción que enfrenta OpenTelemetry en comparación con los SDK propietarios de observabilidad. Se profundiza en las causas del lento progreso percibido: un alcance gigantesco que abarca múltiples lenguajes y frameworks, un estricto umbral de estabilidad que dificulta sacar funciones de su estado experimental para no comprometer la compatibilidad futura, la escasez de mantenedores activos y la fricción arquitectónica al gestionar la separación entre repositorios 'core' y 'contrib', particularmente dentro del OpenTelemetry Collector.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49392200,
-    "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
+    "id": 49355659,
+    "url": "https://www.rfcafe.com/",
     "score": 199,
-    "time": 1787337394,
-    "titulo_es": "El equipo de DESI Legacy Imaging Surveys publica el mapa 2D a color del universo más grande jamás creado",
-    "resumen": "El proyecto DESI Legacy Imaging Surveys ha lanzado un mapa 2D del universo de 5,6 billones de píxeles que contiene casi 4.000 millones de objetos celestes y cubre aproximadamente el 75% del cielo observable. Construido a partir de 263.407 exposiciones de múltiples observatorios terrestres y datos satelitales de la NASA (WISE), este catálogo masivo servirá como base fundamental para que el instrumento espectroscópico DESI identifique objetivos celestes, mida distancias en 3D e investigue la naturaleza de la materia oscura y la aceleración de la energía oscura.",
-    "categoria": "Ciencia y Matematica"
+    "time": 1787105143,
+    "titulo_es": "RF Cafe: Revistas Vintage de Electrónica y Recursos de Ingeniería",
+    "resumen": "El artículo presenta RF Cafe, un sitio web dedicado a la electrónica vintage y la ingeniería. Destaca publicaciones históricas como Popular Electronics y Radio-Craft, biografías de figuras clave como Hugo Gernsback, y recursos educativos sobre temas como circuitos de radio, matemáticas de RF y amplificadores de potencia de microondas (SSPA). Incluye artículos sobre la historia de inventos como el Audion de Lee de Forest, crucigramas temáticos de radio amateur y datos técnicos sobre componentes de RF.",
+    "categoria": "Hardware"
   },
   {
-    "id": 49388694,
-    "url": "https://matklad.github.io/2026/08/06/neat-io-threaded.html",
-    "score": 66,
-    "time": 1787322495,
-    "titulo_es": "Implementación de Cancelación de Hilos en Zig con std.Io.Threaded",
-    "resumen": "El artículo describe `std.Io.Threaded`, una implementación de la interfaz `Io` de Zig que permite la concurrencia utilizando hilos estándar y llamadas al sistema bloqueantes. A diferencia de enfoques que requieren APIs nuevas como `io_uring`, `std.Io.Threaded` logra la cancelación confiable de operaciones bloqueadas, un aspecto crucial de la concurrencia asíncrona. En POSIX, esto se implementa mediante un protocolo que involucra señales y un estado compartido para detectar y manejar la cancelación, manifestándose como el error `error.Canceled`. En Windows, se utiliza `NtCancelSynchronousIoFile`. El artículo contrasta esto con la concurrencia paralela determinista y destaca la robustez de la historia de concurrencia de Windows en comparación con Unix, mencionando también la interrupción de hilos en Java como un concepto similar.",
+    "id": 49402202,
+    "url": "https://thinkinginpython.com/",
+    "score": 162,
+    "time": 1787422249,
+    "titulo_es": "Perspectivas, Idiomas y Patrones",
+    "resumen": "El artículo, escrito por Bruce Eckel y con fecha de © 2026, se centra en el análisis de perspectivas, modismos y patrones dentro del ámbito del desarrollo de software. Aborda temas clave que informan y guían a los ingenieros de software en la creación de sistemas robustos y mantenibles. Los ejemplos y soluciones de ejercicios están disponibles en GitHub, bajo una licencia CC BY-NC-ND 4.0, permitiendo la lectura libre pero restringiendo la reproducción sin permiso.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49406539,
+    "url": "https://www.xda-developers.com/wi-fi-8-first-wireless-upgrade-years-isnt-chasing-speed-home-networks-need-it/",
+    "score": 83,
+    "time": 1787467311,
+    "titulo_es": "Wi-Fi 8: El Enfoque en la Ultra Alta Fiabilidad y la Reducción de Latencia",
+    "resumen": "El artículo describe la evolución de los estándares Wi-Fi, señalando un cambio de enfoque para Wi-Fi 8. A diferencia de generaciones anteriores, que priorizaban el aumento de la velocidad máxima teórica, Wi-Fi 8 se centrará en la \"Ultra Alta Fiabilidad\" (UHR). Las especificaciones de Wi-Fi 8, aunque similares a Wi-Fi 7 en términos de velocidad máxima, ancho de banda y modulación (4096-QAM, 320MHz), buscan mejorar significativamente la experiencia real del usuario. Los objetivos clave incluyen un aumento del 25% en el rendimiento efectivo en diferentes niveles de SINR, una reducción del 25% en latencia para escenarios del percentil 95, y una disminución del 25% en la pérdida de MPDU. Esto se logra mediante nuevas características como Distributed-tone Resource Units (DRUs) para mejorar la potencia de transmisión efectiva sin exceder las regulaciones, pilotos de mitigación de interferencias para resistir perturbaciones inesperadas, el uso de modulaciones desiguales para optimizar cada stream espacial según el SINR, y la introducción de nuevos esquemas MCS. Además, características como P-EDCA acelerarán el acceso al canal para dispositivos priorizados. Este enfoque en fiabilidad, rendimiento efectivo y menor latencia posiciona a Wi-Fi 8 para competir con redes celulares como 6G, especialmente en entornos con alta densidad de dispositivos y condiciones de red no ideales. Se espera que Wi-Fi 8 se finalice en 2028.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49399591,
+    "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
+    "score": 203,
+    "time": 1787405494,
+    "titulo_es": "Hoja de ruta actualizada del Protocolo de Contexto de Modelo (MCP) y próximos pasos",
+    "resumen": "El artículo presenta la hoja de ruta actualizada para el Protocolo de Contexto de Modelo (MCP), detallando los avances logrados y las prioridades futuras. La versión de especificación 2026-07-28 ha introducido cambios significativos, como la eliminación de sesiones a nivel de protocolo y el handshake de inicialización para permitir el escalado horizontal sin estado, y la capacidad de los clientes para consultar versiones y capacidades del servidor. Se han mejorado las tareas de comunicación entre agentes, reubicándolas en una extensión oficial y reemplazando las solicitudes iniciadas por el servidor con el patrón Multi Round-Trip Requests para servidores sin estado. La gobernanza ha evolucionado con la adopción de una Escala de Contribuyentes y un ciclo de vida de características formal. La preparación empresarial se ha centrado en la seguridad, con mejoras en la autorización, validación de emisores y metadatos de credenciales de cliente. La nueva hoja de ruta se organiza en cinco áreas prioritarias, incluyendo eventos iniciados por el servidor, mejoras en los tipos de resultados e identidad de agente, abordando las necesidades de las cargas de trabajo agenticas modernas que van más allá del patrón estándar de solicitud-respuesta. También se busca unificar los modos de transporte para simplificar el desarrollo, abarcando desde HTTP estandarizado hasta servidores locales con Streamable HTTP sobre stdio.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49399898,
+    "url": "https://geometridae.bearblog.dev/a-friendly-introduction-to-racket/",
+    "score": 227,
+    "time": 1787407699,
+    "titulo_es": "Racket: El Lenguaje para Construir Lenguajes",
+    "resumen": "El artículo explora Racket, un dialecto de Lisp evolucionado de Scheme, centrándose en su capacidad para la 'programación orientada al lenguaje'. Destaca la filosofía de Lisp donde el código es dato (homoiconicidad), el uso de paréntesis para la estructura y la ausencia de reglas sintácticas arbitrarias. Se mencionan conceptos clave como la función lambda para funciones anónimas y las funciones de orden superior (map, filter, foldl) para la manipulación de listas, promoviendo un estilo de programación recursiva en lugar de bucles iterativos. Se ilustra con ejemplos de gráficos y el concepto de macros, que permiten a los programas generar y manipular código de manera nativa. Se señala la herencia de Lisp en la IA y su presencia en la cultura pop.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49393051,
+    "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+    "score": 192,
+    "time": 1787341908,
+    "titulo_es": "Impresiones personales sobre el uso de Codex frente a Claude",
+    "resumen": "El artículo compara las experiencias de un desarrollador de software senior utilizando dos asistentes de IA, Codex y Claude, centrándose en aspectos técnicos del desarrollo. Se destacan diferencias clave en la gestión de plugins/habilidades, la familiaridad y la preferencia en situaciones de depuración urgente (Claude se percibe más hogareño y familiar). Codex es elogiado por generar código Ruby/Ruby on Rails con menos comentarios y un enfoque más técnico y directo, a diferencia de Claude que tiende a ser más conversacional y proactivo, a veces yendo más allá de lo solicitado. Se observa que Codex puede crear soluciones arquitectónicas más simples y menos complejas que Claude, que tiende a añadir más abstracciones y tipado. El artículo también detalla errores específicos de Codex en la gestión de ramas Git, mientras que Claude mostró mejor comprensión de las intenciones del usuario. En cuanto a la integración con herramientas como Jira y Atlassian CLI, se describe un flujo de trabajo más fluido con Claude en algunos escenarios y con Codex en otros (especialmente con su enfoque CLI). Se concluye que Claude tiende a anticipar y hacer más de lo pedido, mientras que Codex es más literal y se detiene una vez cumplida la instrucción. Se menciona también la percepción de que Codex realiza cambios más rápidos inicialmente, pero el proceso completo hasta el pull request no siempre resulta en un ahorro de tiempo significativo debido a la exhaustividad de las pruebas y revisiones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49379732,
+    "url": "https://atproto.com/blog/atproto-spaces-alpha",
+    "score": 142,
+    "time": 1787257355,
+    "titulo_es": "Introducción a los Espacios en atproto: Almacenamiento de Datos Privados y Sincronización en una Red Descentralizada",
+    "resumen": "El artículo anuncia el lanzamiento alpha de 'atproto spaces', una actualización significativa para el protocolo atproto. Los 'spaces' son una nueva primitiva de protocolo diseñada para almacenar y sincronizar datos no públicos, como configuraciones, marcadores privados, foros y contenido de suscripción, al tiempo que se conservan las ventajas de atproto como la identidad portátil, los datos interoperables y la participación sin permisos. A diferencia de los datos públicos actuales en atproto, que son accesibles globalmente a través de un 'firehose', los datos dentro de un 'space' están controlados por una autoridad de espacio (un DID) que determina quién puede acceder. Si bien el acceso se controla, los datos no están cifrados y son legibles por cualquier usuario o aplicación con permiso. Los 'spaces' son ligeros y escalables, pudiendo contener desde un solo registro hasta miles de millones. El protocolo de sincronización para datos de espacios es más ligero que el del protocolo público, ya que no utiliza un relé y las aplicaciones sincronizan los datos directamente desde los PDS (Personal Data Servers). Se proporciona un alpha con código, SDKs, una aplicación de ejemplo y un PDS alojado para facilitar el desarrollo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49406285,
+    "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
+    "score": 8,
+    "time": 1787463546,
+    "titulo_es": "El Impacto de la IA en la Elección y el Desarrollo de Lenguajes de Programación",
+    "resumen": "El artículo discute cómo los Modelos de Lenguaje Grandes (LLMs) están reduciendo significativamente la barrera de entrada para aprender y utilizar lenguajes de programación menos comunes o más complejos. La capacidad de los LLMs para traducir código entre lenguajes y optimizarlo sin introducir regresiones de comportamiento permite a los desarrolladores elegir lenguajes basándose más en el marketing y la deseabilidad de ciertas características (como la velocidad y el rendimiento) que en la familiaridad previa. Se observa un aumento en la adopción de lenguajes como Rust y Zig para proyectos que requieren alta eficiencia y pequeño tamaño, incluso en áreas previamente consideradas de nicho o de difícil acceso, como eBPF, drivers de red personalizados y criptografía. Esto sugiere una democratización del desarrollo de software de alto rendimiento, aunque con la posible contrapartida de una menor rigurosidad en algunos casos, pero una expansión general del conjunto de desarrolladores interesados en la performance.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49398152,
+    "url": "https://munderdiffl.in/",
+    "score": 277,
+    "time": 1787392154,
+    "titulo_es": "Munder Difflin: Plataforma de Agentes Multi-IA Locales y Seguras",
+    "resumen": "El artículo describe Munder Difflin, un 'harness' de agentes multi-IA de código abierto y de alto rendimiento. Funciona localmente en el portátil del usuario, integrándose con los CLIs de agentes existentes (como Claude Code, Codex, Gemini CLI, etc.) y utilizando las suscripciones horarias del usuario. La herramienta crea 'clones' de los agentes que actúan como duplicados del individuo, capturando su flujo de trabajo, herramientas y conocimiento. Estos clones pueden operar de forma autónoma, colaborar entre sí (a través de mensajes cifrados de extremo a extremo), y realizar tareas como revisiones de código, corrección de errores, o gestión de documentación, todo ello sin que el código, las claves o el contexto personal salgan de la máquina del usuario. Ofrece opciones de ejecución en 'Private Cloud' para disponibilidad 24/7 en entornos aislados y 'Private Network' para comunicación autónoma entre clones de equipo, con cifrado E2E. La seguridad se enfatiza mediante el control del usuario sobre la ejecución y el acceso a los datos, con el código fuente disponible para auditoría bajo licencia MIT. Los planes de pago añaden características de ejecución persistente en la nube privada y la red de equipo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49402213,
+    "url": "https://marcua.net/minitools/figmimic/",
+    "score": 97,
+    "time": 1787422300,
+    "titulo_es": "Un bookmarklet para copiar cualquier página web en Figma como capas editables",
+    "resumen": "Figmimic es una herramienta tipo bookmarklet diseñada para capturar el contenido de una página web activa en el navegador y exportarlo al portapapeles en un formato compatible con Figma. Al pegar el contenido en Figma, se generan capas y marcos editables, no simples capturas de pantalla planas. Su funcionalidad abarca cualquier página web visible, incluyendo aplicaciones y paneles que requieren autenticación, superando las limitaciones de otras herramientas. La tecnología subyacente se basa en la inyección de un script propio de Figma (capture.js) dentro del bookmarklet para facilitar esta captura y transferencia de elementos web a un entorno de diseño.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49376197,
+    "url": "https://www.lambda-symbolics.com/autolith",
+    "score": 124,
+    "time": 1787240457,
+    "titulo_es": "Autolith: Agente de Programación en Terminal con IA y Common Lisp",
+    "resumen": "Autolith es un agente de programación interactivo que opera directamente en la terminal y dentro de un repositorio de código. Permite a los desarrolladores leer, editar, buscar y ejecutar comandos y pruebas, manteniendo el contexto del proyecto y utilizando Common Lisp. Está diseñado para ser inspeccionado, extendido y recuperado por el usuario. Soporta múltiples plataformas (Linux, macOS, FreeBSD, NetBSD, OpenBSD) y se distribuye con sus propias dependencias. Autolith se integra con varios proveedores de modelos de IA como ChatGPT Codex, Grok y Anthropic, utilizando modelos avanzados como gpt-5.6-sol. Ejecuta código generado por IA con los privilegios del usuario, pero advierte que no es una sandbox de seguridad. Ofrece la capacidad de inspeccionar y modificar el estado interno de Common Lisp en tiempo de ejecución, guardando los cambios como commits en un historial Git privado. Utiliza una gestión avanzada de contexto y memoria, indexando el corpus para eficiencias y ofreciendo diferentes ciclos de vida para fuentes, conversaciones y mutaciones.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49360643,
+    "url": "https://editide.com/blog/what-is-a-pptx-file/",
+    "score": 85,
+    "time": 1787142524,
+    "titulo_es": "Un vistazo accesible bajo el capó del formato de presentación más popular del mundo",
+    "resumen": "El artículo explica la estructura interna de los archivos .pptx, el formato de presentación de PowerPoint. Detalla cómo un archivo .pptx es esencialmente un paquete ZIP que contiene múltiples archivos XML, cada uno representando diferentes componentes de la presentación como diapositivas, texto, formas, imágenes, tablas y gráficos. Se describe cómo la información se organiza de manera similar a un sistema de archivos, con carpetas para medios (imágenes), incrustaciones (archivos de Excel) y elementos de la presentación. Se compara este modelo con un enfoque de archivos de texto plano y se explica la unidad de medida EMU (English Metric Unit) utilizada para dimensiones. El objetivo es desmitificar el formato y mostrar su lógica subyacente a través de una analogía con la organización de archivos y directorios.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 49384210,
     "url": "https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/",
-    "score": 119,
+    "score": 406,
     "time": 1787290658,
-    "titulo_es": "Una nueva perspectiva sobre las interfaces nativas y la IA en el desarrollo de software",
-    "resumen": "El artículo explora una tendencia emergente en el desarrollo de software: la creación de interfaces de usuario nativas (UI) impulsada por herramientas de Inteligencia Artificial, particularmente modelos de lenguaje grandes (LLMs) como Claude. El autor detalla su experiencia construyendo varias aplicaciones nativas, incluyendo un visor de Markdown (MDV.app), un frontend para SageMath (una calculadora nativa), un reproductor de música con IA (DJ Roomba) y un wiki auto-conducido (LLMwiki). Argumenta que, si bien la creación de UIs nativas es compleja y requiere conocimiento de plataforma, los LLMs pueden generar este código de manera efectiva, liberando a los desarrolladores para centrarse en problemas más desafiantes. Se destacan funcionalidades como la generación de LaTeX para salidas matemáticas, la exposición de métodos de objetos, la creación de lenguajes \"little language\" y la integración de agentes LLM para tareas como la creación de listas de reproducción personalizadas. El artículo también menciona la utilidad de bases de datos SQLite y extensiones de sistema de archivos virtuales para aplicaciones basadas en IA. El autor cuestiona la línea entre el desarrollo de software y la configuración de sistemas al usar estas herramientas de IA, sugiriendo una reevaluación de la relación con las interfaces de línea de comandos y el futuro del desarrollo impulsado por IA.",
+    "titulo_es": "La Reevaluación de las Interfaces de Línea de Comandos y el Auge del Desarrollo Asistido por IA",
+    "resumen": "El artículo reflexiona sobre la relación de la industria del software con las interfaces de línea de comandos (CLI) y argumenta que es hora de reevaluarlas. El autor describe su experiencia reciente construyendo aplicaciones nativas con interfaces de usuario (UI) y cómo estas tareas, tradicionalmente tediosas y exigentes, se han vuelto más manejables gracias a las herramientas de Inteligencia Artificial (IA) y los modelos de lenguaje grandes (LLM). Se presentan varios ejemplos de aplicaciones desarrolladas con asistencia de IA, como un visor de Markdown (MDV.app), un frontend para SageMath (una calculadora nativa), un reproductor de música con un agente LLM integrado (DJ Roomba) y un wiki de autogestión (LLMwiki). Estas aplicaciones demuestran cómo los LLM pueden automatizar la generación de código de UI, interactuar con bases de datos (SQLite), renderizar salidas complejas (LaTeX) y exponer funcionalidades de sistemas subyacentes (SageMath) de manera intuitiva. El autor también explora el concepto de 'yak-shaving' (persecución de tareas secundarias aparentemente innecesarias pero gratificantes) en el contexto del desarrollo pre-LLM y cómo las nuevas herramientas de IA facilitan la creación de software complejo con mínima intervención manual directa en el código de UI, llevando a una reflexión sobre si esto constituye desarrollo de software o simplemente configuración de computadoras.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49388752,
-    "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
-    "score": 261,
-    "time": 1787322712,
-    "titulo_es": "Claudette: Una herramienta para simplificar las respuestas de Claude con Gemini",
-    "resumen": "El artículo describe 'Claudette' (anteriormente 'debuzz'), una habilidad o herramienta desarrollada para reformular las respuestas de Claude, un modelo de lenguaje de IA, que tiende a ser excesivamente verboso y utiliza un lenguaje pseudo-intelectual. Claudette utiliza el CLI 'Antigravity' (agy) para enviar la respuesta de Claude a otro modelo, Gemini, con la instrucción de reescribirla en un lenguaje más directo y humano. La herramienta procesa la última respuesta de Claude si no se proporciona texto explícito, y también responde a frases como 'dilo en inglés normal'. Se enfatiza que Claudette imprime la traducción de Gemini textualmente, sin modificaciones adicionales por parte de Claude, para evitar reintroducir el estilo original. El artículo menciona que Claude fue entrenado principalmente con artículos antiguos de Buzzfeed, lo que podría explicar su estilo. Se detalla el proceso técnico: la respuesta de Claude se escribe en un archivo temporal, y luego se ejecuta el comando `agy -p \"$(cat <file>)\" <instrucciones en lenguaje llano>`, ya que `agy` no lee la entrada estándar ni archivos fuera del proyecto en su modo headless. Si `agy` falla, se muestra el error real, a diferencia de Claude que podría ofrecer una reescritura propia como fallback. La herramienta se licencia bajo MIT.",
-    "categoria": "IA"
+    "id": 49402741,
+    "url": "https://lapcatsoftware.com/articles/2026/8/7.html",
+    "score": 181,
+    "time": 1787425481,
+    "titulo_es": "Deprecación de hdiutil en macOS y la emergencia de diskutil",
+    "resumen": "El artículo analiza la deprecación de la herramienta de línea de comandos `hdiutil` en macOS Golden Gate, su reemplazo propuesto `diskutil`, y las diferencias observadas. Se destaca que `diskutil` carece de algunas opciones de `hdiutil` como `-puppetstrings` y opciones específicas de `create -srcfolder`. Las pruebas comparativas para crear una imagen de disco del home folder revelan que `diskutil` es significativamente más rápido y produce archivos más pequeños, pero falla al encontrar archivos propiedad de `root` sin solicitar autenticación, a diferencia de `hdiutil`. También se observa que `diskutil` omite la carpeta `~/.Trash/` y se comporta como si se usara la opción `-scrub` de `hdiutil`. El autor expresa preocupación por la deprecación de `hdiutil`, ya que puede romper flujos de trabajo y aplicaciones existentes. Finalmente, se menciona que ambos comandos en Golden Gate aún sufren de un bug relacionado con archivos `.bnnsir` y la respuesta de Apple al reporte de este bug.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49364721,
-    "url": "https://blog.cloudflare.com/revisiting-spectre-attacks-on-workers/",
-    "score": 49,
-    "time": 1787161541,
-    "titulo_es": "Reevaluación de ataques remotos de Spectre contra Cloudflare Workers y mitigaciones mejoradas",
-    "resumen": "Este artículo describe una reevaluación de los ataques remotos de Spectre contra el entorno de producción de Cloudflare Workers, que ejecuta código JavaScript no confiable en el borde. A pesar de las defensas existentes, como el Aislamiento Dinámico de Procesos (DyPrIs) y el aislamiento a nivel de lenguaje V8, los investigadores desarrollaron una prueba de concepto actualizada que demostró una fuga de datos confiable (hasta 12 bits/s con un 99 % de precisión) en el entorno de producción. La investigación reveló una limitación en la implementación de DyPrIs que permitía el ataque. Como resultado, Cloudflare mejoró DyPrIs, integró el V8 Sandbox y añadió un mecanismo de aislamiento dentro del proceso para reducir aún más el riesgo de ataques de divulgación de memoria. Si bien el ataque presentado ya está mitigado y no se encontraron indicadores de explotación activa, el artículo profundiza en las complejidades de los ataques de Spectre en entornos de producción y las contramedidas necesarias para protegerse contra fugas de memoria a través de la ejecución especulativa.",
-    "categoria": "Ciberseguridad"
+    "id": 49373822,
+    "url": "https://blog.coredump.cx/p/conways-game-of-life-in-real-life",
+    "score": 56,
+    "time": 1787229604,
+    "titulo_es": "Implementación de Juego de la Vida de Conway con Interruptores y LEDs como Pantalla",
+    "resumen": "El artículo describe la construcción de un dispositivo interactivo que implementa el Juego de la Vida de Conway utilizando una matriz de interruptores NKK JB15LPF-JF con LEDs integrados como display. Un microcontrolador AVR128DA64 gestiona la lógica del juego, la actualización del display y la detección de entradas del usuario. La interfaz de visualización emplea una multiplexación de filas y columnas para iluminar los LEDs, requiriendo el uso de MOSFETs para manejar las corrientes elevadas (150 mA por LED) necesarias para la luminosidad adecuada. La entrada del usuario se realiza a través de los mismos interruptores, utilizando resistencias pull-up internas del MCU. La velocidad de la simulación se controla mediante un potenciómetro analógico. Se implementaron medidas de seguridad en el firmware, como el desacoplamiento de la actualización de la pantalla y la lógica del juego durante breves ventanas de \"apagón\", y el uso del watchdog timer del MCU para asegurar la estabilidad y prevenir daños en los componentes.",
+    "categoria": "Hardware"
   },
   {
-    "id": 49380303,
-    "url": "https://medicine.washu.edu/news/how-early-life-stress-leaves-a-scar-inside-brain-cells/",
-    "score": 85,
-    "time": 1787260116,
-    "titulo_es": "Estudio en ratones revela que cambios en el empaquetamiento del ADN forman una memoria molecular del trauma, volviendo el cerebro vulnerable al estrés futuro",
-    "resumen": "Investigadores de WashU Medicine y Princeton University han descubierto un nuevo proceso biológico que vincula la adversidad temprana con la vulnerabilidad a largo plazo a enfermedades mentales. El estudio, publicado en Neuron, detalla cómo el estrés severo en la infancia altera el empaquetamiento del ADN en las neuronas productoras de dopamina en el cerebro. Específicamente, un aumento en la enzima SETD7 hace que el ADN se desenrolle (un estado 'estirado'), marcando el genoma para una mayor accesibilidad y reactividad a estímulos ambientales. Esta 'cicatriz física' molecular, que se forma como una memoria del trauma, deja el cerebro vulnerable a respuestas de estrés exageradas y reduce la tolerancia a futuras adversidades, aumentando el riesgo de ansiedad, depresión y otros trastornos del estado de ánimo en la adultez. El hallazgo proporciona un objetivo biológico concreto para el desarrollo de nuevas intervenciones y tratamientos.",
+    "id": 49404968,
+    "url": "https://hnrss.github.io/",
+    "score": 12,
+    "time": 1787442601,
+    "titulo_es": "Feeds RSS personalizables y en tiempo real para Hacker News",
+    "resumen": "hnrss.org ofrece feeds RSS personalizables y en tiempo real para Hacker News. Permite generar feeds para todas las publicaciones y comentarios ('firehose'), solo las publicaciones en la página principal, o filtrar por palabras clave, puntos, comentarios, autor o ID de comentario. Admite búsquedas por título o URL, y permite modificar el enlace principal de los ítems RSS para apuntar a la página de comentarios. Los formatos de salida pueden ser RSS, Atom o JSON Feed, con un límite por defecto de 20 ítems (ampliable hasta 100). Se basa en la información de Hacker News y la API de Algolia, recomendando un uso conservador de la frecuencia de actualización.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49352470,
+    "url": "https://www.mythic.ai",
+    "score": 54,
+    "time": 1787086042,
+    "titulo_es": "La arquitectura de cómputo en memoria analógica de Mythic ofrece una eficiencia 100 veces mayor",
+    "resumen": "El artículo describe la arquitectura de Unidad de Procesamiento Analógico (APU) de Mythic, diseñada para mejorar la eficiencia energética en la IA. A diferencia de las arquitecturas tradicionales que consumen mucha energía moviendo datos entre el procesador y la memoria, la tecnología de Mythic almacena los pesos de los modelos de IA directamente en la memoria flash y realiza cálculos en formato analógico en la fuente. Esto elimina la ineficiencia inherente al movimiento de datos. La tecnología ha sido validada por Honda y el Departamento de Defensa de EE. UU., y se ha demostrado en entornos del mundo real. La adquisición de Videantis en 2026, una empresa con procesadores de IA ya implementados en 30 millones de vehículos, refuerza la aplicabilidad y escala de su plataforma ADAS (Advanced Driver-Assistance Systems).",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49364296,
+    "url": "https://terminal-code.com",
+    "score": 91,
+    "time": 1787159591,
+    "titulo_es": "terminal-code: VS Code dentro de la Terminal",
+    "resumen": "terminal-code es una solución de código abierto que integra code-server (VS Code accesible a través del navegador) con terminal-browser (una interfaz de navegador dentro de la terminal). El objetivo principal es permitir la ejecución y uso de Visual Studio Code directamente desde un entorno de terminal, combinando la potencia de un IDE completo con la flexibilidad y accesibilidad de la línea de comandos. Los proyectos subyacentes, code-server y terminal-browser, son la base de esta integración.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49377316,
+    "url": "https://nautil.us/why-it-might-be-time-to-rethink-the-human-family-tree-1283985",
+    "score": 64,
+    "time": 1787245656,
+    "titulo_es": "La clasificación de nuestros parientes antiguos es un desastre. Pero hay una solución simple.",
+    "resumen": "El artículo argumenta que la clasificación actual de los homínidos antiguos en los géneros Homo, Australopithecus y Paranthropus está desactualizada y no refleja con precisión las relaciones evolutivas reales. Las nuevas evidencias fósiles, los avances en análisis genéticos y métodos de reconstrucción de árboles filogenéticos demuestran que estos géneros no representan clados (un ancestro común y todos sus descendientes). Características previamente consideradas definitorias, como el tamaño del cerebro, el bipedismo, la dieta o el uso de herramientas, no se distribuyen consistentemente dentro de los géneros definidos, mostrando evolución en mosaico y convergencia evolutiva. Especies como Homo naledi y Homo floresiensis presentan combinaciones de rasgos que desafían las clasificaciones tradicionales. Incluso Paranthropus, considerado el más distintivo morfológicamente, podría no ser un clado monofilético. La falta de una clasificación científicamente rigurosa puede obscurecer patrones de descendencia, exagerar diferencias y perpetuar un enfoque erróneo de 'primitivo vs. avanzado'. El autor propone una revisión del sistema de clasificación para que refleje mejor la complejidad y la historia real de la evolución humana, basándose en relaciones de parentesco y clados verdaderos.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49329506,
-    "url": "https://www.docker.com/blog/reproducible-esp32-firmware-development-with-docker-and-docker-sandboxes/",
-    "score": 15,
-    "time": 1786968138,
-    "titulo_es": "Desarrollo de Firmware con Docker y Sandboxes para ESP32",
-    "resumen": "Este artículo explora cómo Docker y las Sandboxes de Docker (CLI sbx) pueden simplificar el desarrollo de firmware, particularmente para proyectos ESP32. Se aborda la reproducibilidad de compilaciones mediante la imagen oficial espressif/idf, que proporciona un entorno ESP-IDF completo y preconfigurado. Se resalta la utilidad de pasar dispositivos seriales a contenedores Docker en Linux y de usar un puente serial de red (RFC2217) en macOS/Windows. La creación de un Makefile simplifica la ejecución de comandos de compilación y flasheo, permitiendo el cambio de versiones de ESP-IDF de manera consistente. La arquitectura de contenedores permite ejecutar entornos paralelos para diferentes revisiones de hardware o versiones de ESP-IDF simultáneamente. Se presenta una solución para el flasheo seguro y coordinado de múltiples placas mediante reglas udev en Linux o la documentación con docker-compose. Finalmente, se introduce Docker Sandboxes como un entorno seguro para que los agentes de IA (como Claude Code) interactúen con el firmware, permitiéndoles ejecutar compilaciones, instalaciones y operaciones de Docker sin comprometer la seguridad del sistema anfitrión, gracias a que cada sandbox es una microVM aislada con su propio kernel y demonio Docker.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49386699,
-    "url": "https://cymerys.com/w/im-becoming-ai-blind",
-    "score": 355,
-    "time": 1787312885,
-    "titulo_es": "La fatiga de contenido generado por IA y su impacto en la productividad",
-    "resumen": "El autor, un Arquitecto de Software Senior, reflexiona sobre su creciente dificultad para procesar documentos que muestran claras señales de haber sido generados por IA con poco esfuerzo. Describe cómo la sobreexposición a textos de baja calidad producidos por IA, como publicaciones de LinkedIn, correos electrónicos y diseños de documentos, ha llevado a una especie de 'ceguera de banner' o fatiga de contenido. Su cerebro, 'pre-entrenado' en estos patrones, ahora ignora o tiene dificultades para enfocarse en este tipo de contenido, lo que irónicamente ralentiza su productividad. Ejemplos incluyen documentos de diseño con jerga específica de Claude, presentaciones de marketing confusas que mezclan estrategias razonables con tecnicismos sin sentido, y documentos técnicos verbosos que suenan a razonamiento interno de LLM. El autor argumenta que, a pesar de la investigación que sugiere que los humanos no son buenos reconociendo texto generado por IA, la baja calidad y los patrones evidentes en el contenido de bajo esfuerzo son fácilmente detectables. Concluye que la misma IA que se espera que mejore la productividad está, de hecho, creando un cuello de botella inesperado debido a la necesidad de filtrar el ruido informacional.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49387525,
-    "url": "https://precastreinforced.co.uk/2026/08/16/new-worlds/",
-    "score": 237,
-    "time": 1787317646,
-    "titulo_es": "El Futuro Ciberpunk Ya Está Aquí: De Clínicas de IV a Robots Policía y Música IA",
-    "resumen": "El artículo describe cómo elementos de ciencia ficción futurista, reminiscentes de J.G. Ballard y William Gibson, se están manifestando en la vida cotidiana. Se citan ejemplos como clínicas de goteo intravenoso en centros comerciales, perros robot patrullando, música generada por IA, robots realizando tareas como tomar pedidos o ahuyentar animales, y parques temáticos de robots. También se menciona el uso de robots de entrega en la calle y la creciente normalización de tecnologías avanzadas como la computación por voz en el hogar. Se destaca la discrepancia entre las predicciones de la ciencia ficción y la realidad, donde lo que se ha digitalizado o avanzado tecnológicamente ha sido inesperado (como los cigarrillos o los patinetes frente a los coches voladores). La presencia de robots humanoides bailando en espectáculos de K-pop y la mención de atletas utilizando la tecnología para mejorar el rendimiento en los 'Enhanced Games' subrayan la rápida integración de la robótica y la IA en diversos aspectos de la sociedad.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49389952,
-    "url": "https://nari-labs.com/blog/qwen3-tts-speed-cost-frontier/",
-    "score": 144,
-    "time": 1787327470,
-    "titulo_es": "Optimización de Servidor TTS en Tiempo Real con Qwen3-TTS",
-    "resumen": "Este artículo detalla la implementación y optimización de Qwen3-TTS CustomVoice 1.7B para lograr un rendimiento de servidor TTS (Text-to-Speech) en tiempo real. La solución propuesta alcanza 10 solicitudes por segundo (RPS) con un tiempo hasta el primer audio (TTFA) p95 inferior a 50 ms en una única NVIDIA H100 SXM. Se compara con otras cinco implementaciones (vLLM-Omni, SGLang-Omni, VoxServe, M*) bajo tráfico Poisson, demostrando ser la única en cumplir el objetivo de sub-50 ms p95 TTFA incluso a 10 RPS, y manteniéndolo por debajo de 100 ms a 20 RPS. El sistema procesa ~630 caracteres por segundo por 1M de caracteres a un costo de ~$2, significativamente más económico que alternativas comerciales como ElevenLabs V3 y Cartesia Sonic. La optimización se centra en mitigar la latencia inicial (trimming de silencio) y ajustar la acumulación de frames del codec para equilibrar TTFA y continuidad de reproducción. Se analiza la arquitectura de Qwen3-TTS (Talker, Code Predictor, Codec) y la coordinación de estas tareas heterogéneas en un sistema de servicio.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49395171,
-    "url": "https://danluu.com/hn-comments/",
-    "score": 47,
-    "time": 1787356383,
-    "titulo_es": "Los Comentarios de Hacker News: Una Perspectiva Crítica y Valoración Técnica",
-    "resumen": "El artículo critica la calidad general de los comentarios en Hacker News (HN), señalando que la mayoría son incorrectos o malintencionados, con una tendencia a la agresividad disfrazada de honestidad. A pesar de estos inconvenientes, el autor argumenta que HN sigue siendo el foro público con el mejor comentario técnico disponible. Destaca que, aunque es raro encontrar comentarios informados, estos tienden a ascender a la cima, a diferencia de otros foros donde se pierden o son opacados. El autor también resalta el valor de los comentarios de ciertos usuarios expertos en temas específicos (como nkurz en optimización, patio11 en negocios, nostrademons en operaciones empresariales), cuyo contenido a menudo supera a las publicaciones principales. Se lamenta la efímera naturaleza de los comentarios en comparación con las entradas de blog. El texto incluye un ejemplo técnico detallado sobre el formato de archivo de Microsoft Word, describiéndolo como un volcado binario de memoria que introdujo complejidad y problemas de compatibilidad retroactiva, y discute la dificultad inherente de la conversión bidireccional de formatos de procesador de texto debido a la falta de información de formato explícita en los archivos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49376769,
-    "url": "https://www.gingerbill.org/article/2026/08/20/designing-odins-inline-asm/",
-    "score": 73,
-    "time": 1787242978,
-    "titulo_es": "Series: Sintaxis y su importancia",
-    "resumen": "El artículo discute la evolución y el estado actual del ensamblador en línea en varios lenguajes de programación, criticando el enfoque basado en cadenas de GCC/Clang por su falta de integración con el sistema de tipos y el compilador del lenguaje anfitrión. Se presenta el ensamblador en línea de Odin como un ejemplo superior debido a su integración profunda con el lenguaje, que maneja las convenciones de llamada, el sistema de constantes y la semántica de retorno múltiple. Se contrasta con el enfoque de MSVC (__asm), que era más legible al permitir referencias directas a variables y etiquetas del lenguaje anfitrión, pero que finalmente fue descontinuado o no escalado a arquitecturas de 64 bits y se limitó a intrínsecos o archivos .asm separados.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49374853,
-    "url": "https://waymo.com/blog/2026/08/look-under-our-trunk/",
-    "score": 121,
-    "time": 1787235225,
-    "titulo_es": "El Sistema de Cómputo de Waymo: IA Física en Tiempo Real",
-    "resumen": "El artículo describe la arquitectura y los requisitos del sistema de cómputo de Waymo Driver, el cerebro de su vehículo autónomo. Se enfoca en la necesidad de un rendimiento determinista y de baja latencia para la IA física en tiempo real, contrastándolo con sistemas de asistencia al conductor tradicionales. Los tres pilares de su diseño son: Responsividad (procesamiento en milisegundos para decisiones de conducción), Robustez (durabilidad ante vibraciones, shock y temperaturas extremas, con refrigeración líquida integrada) y Redundancia (sistemas de cómputo duplicados e independientes para garantizar la seguridad). Waymo ha co-diseñado hardware, sensores y algoritmos, resultando en un sistema de cómputo heterogéneo y optimizado. Introducen su ASIC de 5nm, un procesador especializado en Machine Learning diseñado para el procesamiento, fusión y ejecución de redes neuronales avanzadas sobre datos de sensores brutos en tiempo real, reduciendo la latencia de 'píxel a actuación'. Este sistema, desarrollado internamente, ofrece alta potencia de procesamiento sin comprometer la experiencia del usuario, la eficiencia energética o el espacio, operando de manera silenciosa.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49392465,
-    "url": "https://tumbleforth.hardcoded.net/",
-    "score": 75,
-    "time": 1787338792,
-    "titulo_es": "Introducción al Desarrollo de Bajo Nivel: Un Camino desde el Metal Desnudo hasta la Compilación de C",
-    "resumen": "Este artículo introduce a desarrolladores web experimentados al mundo de la programación de bajo nivel.  El autor, Virgil Dupras, autor de Collapse OS y Dusk OS, planea guiar al lector a través de una serie de artículos.  El arco narrativo inicial se enfoca en escapar de la complejidad del software moderno y adentrarse en el desarrollo de bajo nivel.  Comenzando desde el metal desnudo en la plataforma PC, el plan es construir un intérprete Forth desde cero, luego migrar a Dusk OS y finalmente desarrollar un compilador C parcial, nuevamente desde cero, capaz de compilar el código de ejemplo.  El objetivo general es ampliar la perspectiva del lector sobre la computación y la programación.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49379026,
-    "url": "https://surfingcomplexity.blog/2026/08/19/github-autoscaling-and-the-component-substitution-fallacy/",
-    "score": 49,
-    "time": 1787254098,
-    "titulo_es": "Surfando la Complejidad: Reflexiones sobre sistemas complejos e incidentes",
-    "resumen": "El artículo analiza un incidente reciente en GitHub relacionado con una política de autoscaling mal configurada en un servicio que utilizaba Istio. Se explica el concepto de autoscaling, su importancia para gestionar la carga variable de los servicios y cómo la métrica elegida para la política (carga del servicio principal en lugar de la del sidecar de Istio) llevó a la saturación. Se destaca que cada política de autoscaling es específica del servicio y requiere pruebas de carga. El autor advierte contra la 'falacia de sustitución de componentes', enfatizando la necesidad de considerar las interacciones entre componentes y no solo los defectos individuales para mejorar la fiabilidad de los sistemas distribuidos complejos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49389441,
-    "url": "https://pointinthecloud.com/2026-08-19-144600.html",
-    "score": 130,
-    "time": 1787325467,
-    "titulo_es": "Emulando un Apple Macintosh de los 90 en un chip de 60 peniques: Reflexiones sobre la computación minimalista",
-    "resumen": "El artículo explora la fascinación por la computación de bajo consumo y bajo costo, demostrando la posibilidad de ejecutar software clásico como Adobe Photoshop y WordPerfect emulando un Apple Macintosh de mediados de los 90 en un Raspberry Pi RP2350 (un chip de aproximadamente 60 peniques). Se resalta la drástica reducción de costos en la computación en comparación con las décadas pasadas, donde un sistema equivalente costaría miles de libras hoy en día. El autor reflexiona sobre el concepto de 'computadora mínima viable moderna', cuestionando qué funcionalidades esenciales se podrían mantener en un dispositivo superligero, de bajo consumo y potencialmente e-paper, alimentado por energía solar, con una interfaz menos distractora y mayor durabilidad. Se plantea la viabilidad de estos sistemas para tareas como la reproducción de música, lectura de páginas web sencillas, mensajería y mapas de estilo atlas, sopesando las limitaciones frente al uso de recursos y la posibilidad de reducir la adicción a los dispositivos modernos. Se discute la relativa simplicidad y comprensibilidad del hardware y software de estos sistemas en contraste con la complejidad de la web y los dispositivos actuales.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49388095,
-    "url": "https://invertingvision.com/2026/08/10/kodaks-pre-invented-lunar-orbiter-camera-or-the-fate-of-samos-readout/",
-    "score": 60,
-    "time": 1787320373,
-    "titulo_es": "Reflexiones sobre la Historia de la Ciencia, la Exploración y la Tecnología",
-    "resumen": "El artículo narra el desarrollo de un sistema de cámaras fotográficas de Eastman Kodak, originalmente concebido para el programa de vigilancia satelital clasificado WS-117L de la Fuerza Aérea de EE. UU. en la década de 1950. Este sistema, que incluía mecanismos para exponer película en órbita, desarrollarla a bordo y transmitir imágenes remotamente a la Tierra, fue una innovación clave en la transmisión de imágenes desde el espacio. A pesar de que RAND inicialmente consideraba sistemas de televisión, las limitaciones tecnológicas en resolución llevaron al desarrollo de sistemas basados en película con transmisión remota. El sistema de Kodak, parte del programa SAMOS, se adaptó posteriormente y fue fundamental para las misiones Lunar Orbiter de la NASA en 1966-1967, permitiendo el mapeo detallado de la Luna y la identificación de sitios de aterrizaje para el programa Apolo. El artículo destaca cómo tecnologías desarrolladas para aplicaciones militares clasificadas se reutilizaron y adaptaron para la exploración científica y espacial.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49332812,
-    "url": "https://monocyte.blog/using-an-old-android-phone-as-a-music-player/",
-    "score": 50,
-    "time": 1786981215,
-    "titulo_es": "Reutilizar un Teléfono Android Antiguo como Reproductor de Música Dedicado",
-    "resumen": "El artículo detalla la experiencia del autor al reutilizar un teléfono Android antiguo (Huawei P30) como un reproductor de música dedicado. Ante la dificultad de encontrar reproductores de música decentes y asequibles en 2026, y la inflación de precios de los iPods, el autor optó por un teléfono Android. El proceso implicó un \"debloating\" agresivo de aplicaciones no esenciales mediante ADB, la instalación de aplicaciones como Poweramp (reproductor de música), Panoscrobbler (para scrobbling a ListenBrainz/Last.fm) y Niagara Launcher. Se destaca la presencia de un conector para auriculares, una característica ausente en muchos dispositivos modernos. Para la gestión de archivos de música, se menciona Soulseek y Beets para el etiquetado. Aunque Syncthing falló en su implementación, se utiliza la sincronización manual por USB. Se mencionan auriculares Sony XM4 y KZ ZSN Pro 2. Se concluye que los teléfonos Android antiguos son una alternativa viable y ecológica a los reproductores de música dedicados, ofreciendo características modernas y el deseado conector de auriculares. Se recomienda Universal Android Debloater como una herramienta para simplificar el proceso de \"debloating\".",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49379183,
-    "url": "https://lithub.com/how-orchids-inspired-the-groundbreaking-work-of-charles-darwin/",
-    "score": 14,
-    "time": 1787254892,
-    "titulo_es": "La Casa de Darwin y la Maravilla de las Orquídeas",
-    "resumen": "El artículo describe una visita a Down House, la antigua casa de Charles Darwin, y explora la conexión entre el lugar, su legado y las maravillas de la naturaleza, específicamente las orquídeas y los árboles. Se detalla la atmósfera de la casa, que evoca la presencia de Darwin, el jardín cuidado por su esposa Emma, y el bosque que él mismo plantó. El autor reflexiona sobre la deuda con el futuro al caminar por estos bosques maduros. Se profundiza en el fascinante mecanismo de polinización de la orquídea violeta helleborina, destacando su estrategia para atraer avispas ebrias de néctar y evitar la autopolinización. La pieza concluye comparando la magnificencia de las orquídeas, con su sexualidad y comportamiento \"congelados en el tiempo\", con la longevidad y resiliencia de los árboles, que registran el paso de los años y son testigos silenciosos de innumerables eventos.",
+    "id": 49392200,
+    "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
+    "score": 257,
+    "time": 1787337394,
+    "titulo_es": "El equipo de DESI Legacy Imaging Surveys publica el mapa 2D del universo más grande de la historia",
+    "resumen": "El artículo describe la publicación del mapa 2D en color más grande del universo, con 5.6 billones de píxeles y casi 4 mil millones de objetos celestes, por el equipo de DESI Legacy Imaging Surveys. Este mapa, que cubre el 75% del cielo en luz visible e infrarroja cercana, se construyó combinando datos de tres sondeos terrestres (DECaLS, MzLS, BASS) y misiones satelitales (WISE), y está disponible públicamente. Sirve como una herramienta fundamental para astrónomos y científicos ciudadanos, permitiendo la exploración del universo, la búsqueda de fenómenos como lentes gravitacionales y el estudio de la materia oscura y la energía oscura. El mapa es una preparación crucial para el instrumento DESI (Dark Energy Spectroscopic Instrument), que utiliza esta información para seleccionar objetivos y construir el mapa 3D de alta resolución más grande del universo. Los datos del mapa se han utilizado para guiar las operaciones de DESI, cuyos resultados preliminares sugieren una posible disminución en el impacto de la energía oscura. El mapa se considera una parte integral de la investigación astronómica actual y se espera que siga siendo la referencia 2D más completa del universo durante años.",
     "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49383026,
-    "url": "https://annas-archive.gl/blog/physical-destruction.html",
-    "score": 561,
-    "time": 1787279867,
-    "titulo_es": "La Carrera Contra el Tiempo: AI, Libros Físicos y la Preservación del Conocimiento Humano",
-    "resumen": "El artículo expone una práctica alarmante donde compañías de Inteligencia Artificial (IA) están adquiriendo, escaneando y destruyendo millones de libros físicos. El objetivo es obtener datos de entrenamiento 'no tocados por máquinas' de antes de 2022 para sus modelos, como se revela en el 'Proyecto Panama' de Anthropic. Esta destrucción elimina permanentemente del dominio público vastas cantidades de conocimiento humano, monopolizando copias digitales en servidores corporativos privados. Anna's Archive, una biblioteca alternativa, hace un llamado urgente a voluntarios a nivel mundial para escanear y subir a su plataforma libros, artículos y otros materiales impresos. Esto busca crear una biblioteca digital global que preserve el patrimonio cultural frente a la creciente dominación del contenido generado por IA en internet y la posibilidad de que el conocimiento humano impreso desaparezca. La iniciativa se presenta como una carrera contra el tiempo para digitalizar y democratizar el acceso al conocimiento antes de que sea completamente bloqueado por editoriales o destruido por compañías de IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49390308,
-    "url": "https://blog.doubleword.ai/what-happens-when-a-gpu-reads-memory",
-    "score": 107,
-    "time": 1787329002,
-    "titulo_es": "Rastreo de una instrucción SASS crítica: Carga Global en una RTX 4090",
-    "resumen": "El artículo profundiza en el recorrido de una instrucción SASS de carga global (LDG.E) desde su ejecución en una GPU NVIDIA RTX 4090 hasta el nivel de hardware. Se detalla el proceso que sigue una carga de 32 bits desde la memoria global, pasando por el registro de instrucciones, el colector de operandos, la unidad de carga/almacenamiento (LSU) y el coalescedor. Se explica cómo la solicitud de 4 bytes por carril se transforma en peticiones de sectores de 32 bytes para la caché L1. El análisis se basa en experimentos de temporización y observación del hardware, ya que gran parte de esta información no está documentada oficialmente por NVIDIA. El objetivo es comprender la arquitectura interna de la GPU a bajo nivel para optimización de rendimiento, contrastando el recorrido de la instrucción con las operaciones lógicas del kernel CUDA.",
-    "categoria": "Hardware"
   }
 ]
