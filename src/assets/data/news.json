@@ -1,236 +1,182 @@
 [
   {
-    "id": 49406333,
-    "url": "http://www.os2museum.com/wp/the-end-of-an-athlon/",
-    "score": 71,
-    "time": 1787464261,
-    "titulo_es": "Fragilidad del silicio expuesto y fracturas en procesadores flip-chip",
-    "resumen": "El artículo analiza la fragilidad mecánica del empaquetado flip-chip PGA utilizado a principios de los años 2000 por AMD e Intel en procesadores como el Athlon XP y Pentium III. Al carecer de disipador integrado (IHS/tapa protectora), el silicio expuesto era susceptible a microfisuras y fracturas severas por estrés térmico o presión desigual al manipular los disipadores. Se discuten las diferencias de durabilidad entre los dies de Intel y AMD, así como la posterior transición de la industria hacia procesadores con tapas metálicas protectoras y zócalos LGA para prevenir daños mecánicos en el silicio.",
+    "id": 49413561,
+    "url": "https://pantel.is/projects/ai-gaming-companion/",
+    "score": 151,
+    "time": 1787527097,
+    "titulo_es": "Un compañero de juego inteligente en tiempo real con agencia en el mundo y planes persistentes",
+    "resumen": "El artículo describe el desarrollo de Varkos, un compañero de videojuegos impulsado por inteligencia artificial diseñado para superar las limitaciones de latencia y falta de agencia en el entorno que sufren los NPCs tradicionales basados en LLMs. Utilizando inferencia local, gestión de estados reales del juego y planificación persistente de múltiples pasos, el agente puede ejecutar órdenes complejas y condicionales en tiempo real, interactuar físicamente con objetos y evolucionar su personalidad y respuestas emocionales a lo largo del tiempo de forma desacoplada de la ruta de acción inmediata.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49415271,
+    "url": "https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database",
+    "score": 40,
+    "time": 1787546900,
+    "titulo_es": "Reemplazando ELF con SQLite: Un Nuevo Formato de Ejecutables Estructurados",
+    "resumen": "El artículo propone reemplazar el formato de ejecutable binario ELF (Executable and Linkable Format) por SQLite, un formato de base de datos embebida. ELF, diseñado para la eficiencia en el pasado, es criticado por reimplementar primitivas de base de datos manualmente, ser difícil de modificar y carecer de un esquema autodescriptivo. En contraste, SQLite ofrece un formato estable, autodescriptivo y extensible, diseñado para consultas eficientes. El autor presenta un prototipo llamado SELF (Structured Executable & Linkable Format), que utiliza dos tablas principales: `self_meta` para los metadatos del encabezado ELF y `segments` para el contenido cargable (en formato BLOB). Las tablas de símbolos de ELF se reemplazan por una única tabla de SQLite con un índice de árbol-B nativo, superando las limitaciones de los filtros Bloom de ELF. Este cambio simplifica la representación de la información del ejecutable, elimina tablas redundantes como `.dynstr` y `.gnu.version`, y permite que herramientas como `strip` operen como transacciones de base de datos. La idea es que los ejecutables sean archivos SQLite que puedan ser chmod +x y ejecutados directamente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49411717,
+    "url": "https://blog.elis.cc/articles/google-workspace-thinks-my-domain-is-an-email-provider/",
+    "score": 299,
+    "time": 1787513372,
+    "titulo_es": "Error de Validación Frontend en Google Workspace Causa Problemas de Registro de Dominio",
+    "resumen": "El artículo describe un problema persistente con el proceso de registro de Google Workspace, donde un mensaje de error engañoso \"Enter a valid domain name instead of an email provider\" impide el registro de dominios legítimos. El autor investigó el problema, que ni siquiera pudo ser resuelto por el soporte de Google Workspace o sus ingenieros de producto. Finalmente, el autor descubrió que el error se originaba en una función de validación de entrada en el lado del cliente (frontend) que utilizaba una lista de expresiones regulares para identificar \"proveedores de correo electrónico\". Esta lista contenía entradas defectuosas, como `web\\..*` y `me\\..*`, que incorrectamente clasificaban subdominios comunes o dominios legítimos (como el del Ministerio de Economía de Ucrania) como proveedores de correo electrónico. Desactivar esta validación local permitió completar el proceso de registro. El artículo destaca la ineficacia del soporte de Google y la naturaleza superficial de la validación implementada.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49410932,
+    "url": "https://fabiensanglard.net/agent.md/index.html",
+    "score": 306,
+    "time": 1787507992,
+    "titulo_es": "Evolución del Uso de LLMs para Acelerar el Desarrollo de Software",
+    "resumen": "El artículo describe la experiencia personal del autor al usar Modelos de Lenguaje Grandes (LLMs) para mejorar la productividad en el desarrollo de software, desde 2025 hasta 2026. Inicialmente, los LLMs producían código incompilable. En 2026, se observó una mejora en la generación de código, incluyendo la implementación de estructuras de datos complejas y la detección de bugs, pero la calidad del código (falta de comentarios, mala estructura) era deficiente, requiriendo un esfuerzo considerable de limpieza. La introducción de IDEs agentic (como Antigravity y el plugin Claude Code para VS Code) permitió una iteración sobre el código generado, con el autor actuando como un 'revisor junior' que proporcionaba feedback constante sobre estilo y buenas prácticas. Para mitigar la repetición de estas sugerencias, se introdujo el archivo 'agent.md' (o variantes como gemini.md/claude.md) que se inyecta en el prompt del agente, permitiendo una 'super fine-tuning' de las preferencias de estilo de codificación. A pesar de estas mejoras, el autor enfatiza que los LLMs aún requieren supervisión humana debido a su tendencia a 'alucinar' y la necesidad de verificación. El foco de la revisión humana se desplazó de la corrección de estilo a la arquitectura y el diseño. Se aborda el problema de la 'dilución del contexto' o 'dilución de la atención', donde los modelos prestan menos atención a las instrucciones en medio de prompts largos, mencionando que la única forma de minimizarlo es mantener los prompts concisos y se sugiere actualizar 'agent.md' en lugar de editar el código directamente para añadir nuevas reglas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49409092,
+    "url": "https://earendil.com/posts/what-is-a-harness/",
+    "score": 442,
+    "time": 1787495061,
+    "titulo_es": "¿Qué es un Harness de Agente de IA?",
+    "resumen": "El artículo explica el concepto de 'harness' en el contexto de la Inteligencia Artificial, comparándolo con un arnés de escalada. Un harness de agente es un componente de software que proporciona un entorno para que un modelo de IA opere. Generalmente cumple cuatro funciones principales: 1) Proporciona un 'system prompt' o conjunto de instrucciones para gobernar las respuestas del modelo. 2) Define y ofrece un conjunto de 'herramientas' (capacidades codificadas) que el modelo puede utilizar. 3) Establece un marco que gobierna el comportamiento del modelo, incluyendo el 'bucle agentic'. 4) Actúa como una capa de traducción para permitir la interoperabilidad con diversos modelos de IA. Se destaca que, a diferencia de los modelos de IA, los usuarios finales pueden poseer su propio harness de agente, interactuando a través de interfaces como terminales, aplicaciones de chat o correo electrónico.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49409473,
+    "url": "https://how.complexsystems.fail/",
+    "score": 311,
+    "time": 1787498011,
+    "titulo_es": "Un Breve Tratado sobre la Naturaleza del Fallo; Cómo se Evalúa el Fallo; Cómo se Atribuye el Fallo a una Causa Próxima; y la Nueva Comprensión Resultante de la Seguridad del Paciente",
+    "resumen": "El artículo discute la naturaleza inherentemente peligrosa de sistemas complejos y de alto riesgo como la atención médica y el transporte. Argumenta que estos sistemas, a pesar de tener múltiples capas de defensa (técnicas, humanas, organizacionales y regulatorias), siguen siendo intrínsecamente propensos a fallos. La falla catastrófica no se debe a una única causa raíz, sino a la confluencia de múltiples fallos menores e inocuos. Estos sistemas complejos operan continuamente en un estado 'roto', funcionando gracias a redundancias y a la capacidad humana de adaptación, a pesar de la presencia constante de fallos latentes. Los 'proto-accidentes' o casi accidentes son comunes y señalan condiciones degradadas que, a menudo, no se reconocen adecuadamente antes de un accidente grave. La evaluación tradicional de 'causas raíz' es criticada por no reflejar la complejidad sistémica, sino una necesidad social de culpar a factores aislados. La clave para mejorar la seguridad reside en comprender la interconexión de fallos y la naturaleza dinámica de estos sistemas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49414338,
+    "url": "https://www.hanselman.com/blog/migrating-a-synology-nas-to-a-unifi-unas-pro-8-with-robocopy-smb-multichannel-and-surprising-performance-traps",
+    "score": 55,
+    "time": 1787535194,
+    "titulo_es": "Migración de NAS: Cómo Robocopy y los Flujos de Datos Alternativos se interpusieron en el camino",
+    "resumen": "El artículo detalla la experiencia de migrar datos de un Synology NAS a un Ubiquiti UniFi UNAS Pro 8. Inicialmente se usó el Explorador de Windows, que falló con errores. Posteriormente, Robocopy fue empleado, pero encontró problemas al copiar archivos con Nombres de Archivo largos o caracteres especiales. La causa raíz de los fallos consistentes (error 665 de Windows al 92% de transferencia) se identificó como Flujos de Datos Alternativos (ADS) en el sistema de archivos NTFS. Estos flujos, que almacenan metadatos adicionales junto al contenido principal del archivo, no eran compatibles con el destino (UNAS Pro 8) en el modo de copia por defecto. La solución fue utilizar el modificador de Robocopy `/COPY:DATX` (o `/X` en versiones más nuevas), que instruye a Robocopy para omitir los flujos de datos alternativos durante la copia. Esto permitió la transferencia exitosa de los archivos, resolviendo un problema que inicialmente parecía relacionado con nombres de archivo o corrupción de datos. El autor también reflexiona sobre la utilidad de Robocopy y sus modificadores, como `/Z` (modo reiniciable) que, irónicamente, ralentizó la transferencia en esta ocasión, y la importancia de entender las características del sistema de archivos subyacente.",
     "categoria": "Hardware"
+  },
+  {
+    "id": 49405657,
+    "url": "https://www.jepeake.com/ai-chip-architectures",
+    "score": 78,
+    "time": 1787451910,
+    "titulo_es": "Una Nueva Edad de Oro para la Arquitectura de Computadoras",
+    "resumen": "El artículo discute la evolución de la arquitectura de computadoras, impulsada por la desaceleración del crecimiento del rendimiento de las CPUs de un solo hilo y la necesidad de arquitecturas específicas para dominios (DSAs), especialmente para la computación de IA. Se detalla el auge de las DSAs como GPUs, TPUs, LPUs, NPUs, DPUs, ASICs, y otras arquitecturas emergentes. Se destacan los despliegues exitosos como las GPUs de NVIDIA y AMD, los aceleradores de matriz sistólica (TPU, Trainium), el Cerebras Wafer-Scale Engine y el Groq LPU. El texto profundiza en la dominancia de las multiplicaciones de matrices (matmuls) en la IA y cómo las diferentes fases de entrenamiento e inferencia (prefill, decode) imponen distintas demandas computacionales y de ancho de banda de memoria. Se explican estrategias para mitigar el 'muro de la memoria' a través de la optimización del movimiento de datos y la intensificación aritmética, abordando el desafío de mover datos eficientemente hacia las unidades de cómputo. El enfoque está en la filosofía, arquitectura, métodos de escalado y pila de software de estas nuevas arquitecturas.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49408550,
+    "url": "https://securelist.com/android-head-unit-malware/121106/",
+    "score": 242,
+    "time": 1787490338,
+    "titulo_es": "Malware en Unidades de Cabeza Android: Cadena de Infección y Distribución a Través de TWCore",
+    "resumen": "El artículo describe el descubrimiento de un nuevo malware para Android dirigido a unidades de cabeza de vehículos. Estas unidades, que a menudo ejecutan Android, son vulnerables a ataques a través de sus sistemas de actualización. Se detalla una cadena de infección específica donde una aplicación legítima del sistema llamada TWCore, responsable de la gestión de analíticas y actualizaciones de software, se ve comprometida. Un broker de mensajes MQTT en el subdominio cardoor[.]cn envía mensajes que instruyen a TWCore para descargar e instalar archivos APK maliciosos. La función `installNotExists` de TWCore permite la instalación de aplicaciones incluso si no estaban presentes originalmente. El malware descubierto, identificado por los nombres de detección de Kaspersky, incluye un dropper llamado JarService. Este dropper, que carece de interfaz de usuario, es responsable de descifrar bloques de datos cifrados dentro de su propio código, utilizando un cifrado XOR con una clave de un solo byte que se desplaza linealmente. La motivación principal para infectar estas unidades parece ser su reclutamiento en botnets, similar a los ataques a dispositivos IoT, dado que las unidades de cabeza típicamente no contienen información de valor directo para un atacante. El proveedor de las unidades de cabeza DoFun fue notificado y ha corregido las vulnerabilidades de distribución.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49411468,
+    "url": "https://www.dbreunig.com/2026/08/23/fable-the-end-of-moore-s-law.html",
+    "score": 151,
+    "time": 1787511969,
+    "titulo_es": "El Fin del Almuerzo Gratis: Adaptación de la Estrategia de Modelos de IA ante Cambios de Costo y Rendimiento",
+    "resumen": "El artículo discute un cambio estratégico en el desarrollo de software impulsado por la evolución de los modelos de IA, comparándolo con el fin de la 'ley de Moore' para el rendimiento de CPU. Inicialmente, los desarrolladores no optimizaban intensivamente el código, confiando en que la mejora del hardware lo haría más rápido. Con la desaceleración de Moore, la optimización se volvió crucial. Similarmente, la aparición de modelos de IA potentes y costosos como Fable (y Opus) desincentivó la optimización de 'harnesses' y estrategias de contexto, ya que modelos más nuevos y asequibles (como GLM) ofrecían mejoras suficientes. Sin embargo, el alto costo y las políticas de acceso de modelos como Fable están llevando a los desarrolladores a adoptar estrategias híbridas: usar modelos costosos para tareas complejas de diseño y consulta (interrogación y modelado), y modelos más económicos y eficientes (como GLM) para tareas de codificación rutinaria, proporcionando un contexto mejorado para compensar la diferencia de calidad. A pesar de la posible bajada de precios de inferencia, se espera que la especialización en el uso de modelos (algunos potentes y otros eficientes) y la mejora de las herramientas de integración persistan, en parte debido a las preocupaciones sobre el control de acceso, la degradación dinámica y la retención de datos de los modelos más grandes.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49414934,
+    "url": "https://cmart.blog/claude-writing/",
+    "score": 16,
+    "time": 1787542362,
+    "titulo_es": "El Estilo de Escritura Distintivo de Claude y Sus Implicaciones",
+    "resumen": "El artículo analiza el estilo de escritura característico de Claude, identificado por frases cortas y directas, que se ha vuelto cada vez más común en la salida de los LLM, incluso aquellos ligeramente derivados de Claude como Kimi K3. Se contrasta este estilo con la escritura de otros LLM como GPT-5 y Gemma 4, que suenan más 'normales'. El autor especula que este estilo es una elección deliberada de Anthropic, posiblemente el resultado de millones de ajustes de RLHF, pero cuestiona si esta es la única explicación dadas las tendencias históricas del mercado de ideas. Sorprendentemente, la escritura pública de Anthropic (documentos sobre J-Space o la Constitución de Claude) no emplea el 'voz de Claude', sonando más conversacional y accesible, a pesar del uso extensivo de Claude internamente para la generación de código y, presumiblemente, para la prosa. Se plantean hipótesis para explicar esta discrepancia, desde lo mundano hasta lo especulativo, sugiriendo que el mercado podría eventualmente presionar a Anthropic para 'afinar' el estilo de Claude si perjudica su utilidad para audiencias exigentes. Se menciona que modelos recientes como Fable suenan menos 'Claudey', mientras que Opus 5 aún lo conserva. Finalmente, se plantea la incógnita de cómo suena Claude en idiomas distintos al inglés.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49409862,
+    "url": "https://punyamishra.com/2026/04/16/why-sal-khant-on-learning-by-making-but-teaching-by-telling/",
+    "score": 177,
+    "time": 1787500748,
+    "titulo_es": "La Revolución fallida de la IA en la tutoría educativa: Más allá de Khanmigo",
+    "resumen": "El artículo analiza por qué el ambicioso proyecto Khanmigo de Sal Khan, un chatbot tutor de IA, fracasó en transformar la educación. A pesar de contar con el respaldo de OpenAI y Microsoft, la herramienta fue poco utilizada por los estudiantes. El autor argumenta que el problema de raíz no es la tecnología en sí, sino un enfoque educativo que prioriza el consumo pasivo de información (ver videos) sobre el aprendizaje activo y constructivo. Se contrasta el método de aprendizaje autodidacta y profundo de Sal Khan, que involucra investigación activa, cuestionamiento, analogías y debate con expertos, con la propuesta simplificada para los estudiantes. La tesis central es que la IA, tal como se concibió para Khanmigo, no puede replicar el proceso humano de construcción de conocimiento profundo, que requiere indagación activa, conexión de ideas y elaboración personal, un proceso que los estudiantes no aceptarían para su propio aprendizaje.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49415405,
+    "url": "https://status.claude.com/incidents/vgz5psbjmt1h",
+    "score": 25,
+    "time": 1787548365,
+    "titulo_es": "Suscripción a actualizaciones de errores elevados para múltiples modelos por correo electrónico y/o mensaje de texto",
+    "resumen": "El artículo describe un sistema de notificaciones para alertar a los usuarios sobre actualizaciones en incidentes de errores elevados relacionados con modelos. Las notificaciones por correo electrónico se enviarán cuando los incidentes se actualicen, mientras que las notificaciones por mensaje de texto se activarán específicamente cuando Claude cree o resuelva un incidente.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49415907,
+    "url": "https://status.claude.com/uptime",
+    "score": 51,
+    "time": 1787553148,
+    "titulo_es": "Reenviar OTP y Configurar Webhooks de Teams",
+    "resumen": "El artículo describe funcionalidades relacionadas con la seguridad de la autenticación y la integración de sistemas. Se menciona la opción de reenviar un Código de Verificación de Un Solo Uso (OTP) después de un tiempo determinado, indicando un mecanismo de recuperación de credenciales. Además, se hace referencia a la obtención de la URL de un canal de Microsoft Teams para enviar webhooks, lo que sugiere la configuración de notificaciones o integraciones automatizadas. Finalmente, se indica que se enviarán correos electrónicos en caso de fallos en el endpoint, reforzando la necesidad de monitoreo y manejo de errores en la comunicación entre sistemas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49415265,
+    "url": "https://lwn.net/Articles/1090098/",
+    "score": 8,
+    "time": 1787546834,
+    "titulo_es": "Steve y Jim: Pioneros del código abierto en IBM y Microsoft",
+    "resumen": "El artículo es una colección de comentarios de varias personas lamentando la pérdida de Steve, quien, junto con Jim, tuvo un impacto significativo en el mundo del código abierto, particularmente en proyectos como Samba. Se menciona que Steve se unió a Microsoft y que su influencia contribuyó a la adopción del código abierto dentro de la compañía. Se destaca la dedicación de Steve a su trabajo, su amabilidad y la calidad de sus interacciones, incluso mencionando colaboraciones en temas relacionados con SMB y Azure.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49410111,
+    "url": "https://www.colino.net/wordpress/archives/2026/08/23/kodak-dc50-now-usable-on-the-apple-ii/",
+    "score": 63,
+    "time": 1787502359,
+    "titulo_es": "Actualización de Quicktake para Apple II con Soporte para Kodak DC50 Zoom",
+    "resumen": "El artículo describe una actualización significativa para el software Quicktake para Apple II, introduciendo soporte para la cámara Kodak DC50 Zoom (1996). La integración permite la descarga de imágenes, previsualización de miniaturas, configuración de cámara y eliminación de imágenes a través de la conexión serial a 115200bps. Se aborda el manejo del almacenamiento interno y la tarjeta PCMCIA de la DC50. Debido a la resolución de 756x504 y el formato de imagen KDC (RADC comprimido), las imágenes se recortan a 640x480 durante la decodificación para ajustarse a la resolución del renderizador de 256x192. El desarrollo implicó ingeniería inversa utilizando herramientas como dcraw, libgphoto2, kdcpi Perl y el software Kodak para Windows 3.1, además de análisis de buffers hexadecimales. Los cambios realizados para soportar esta nueva clase de cámara han mejorado la mantenibilidad general del software.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49412176,
+    "url": "https://arxiv.org/abs/2608.20186",
+    "score": 47,
+    "time": 1787516014,
+    "titulo_es": "arXivLabs: Un Marco para Colaborar en Nuevas Funciones de arXiv",
+    "resumen": "arXivLabs es un framework diseñado para facilitar el desarrollo y la compartición de nuevas funcionalidades directamente en la plataforma web de arXiv. Este marco promueve la colaboración entre individuos y organizaciones, basándose en valores fundamentales como la apertura, la comunidad, la excelencia y la privacidad de los datos del usuario. arXiv se adhiere estrictamente a estos principios y colabora únicamente con socios que los respetan. Se invita a los interesados a explorar las oportunidades que arXivLabs ofrece para aportar valor a la comunidad de arXiv.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49412467,
+    "url": "https://hugodaniel.com/posts/declarative-webgpu-with-s-expressions/",
+    "score": 39,
+    "time": 1787518073,
+    "titulo_es": "Pngine: Un formato declarativo y runtime para WebGPU en S-expressions",
+    "resumen": "El artículo presenta Pgine, un sistema desarrollado durante 2.5 años que utiliza S-expressions (derivadas de SJON) para definir de manera declarativa la configuración y el cableado de WebGPU. Permite empaquetar este cableado, junto con el código WGSL y un runtime, en un único archivo binario que puede incrustarse en un chunk de una imagen PNG, manteniendo la imagen como vista previa. Pgine simplifica la creación, el cableado y la secuenciación de elementos de WebGPU (pipelines, buffers, passes) al ofrecer una abstracción de alto nivel, facilitando la compartición y validación de configuraciones WebGPU independientemente del lenguaje de programación subyacente o el propósito de la aplicación. Se destaca la ventaja de tener la representación del programa como datos estructurados, permitiendo validación, inspección, serialización y generación automatizada.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49408889,
+    "url": "https://shkspr.mobi/blog/2026/08/death-to-px-long-live-ch/",
+    "score": 81,
+    "time": 1787493387,
+    "titulo_es": "Las Unidades CSS 'ch' y 'ex' para Diseño Basado en Texto",
+    "resumen": "El artículo explora el uso de las unidades relativas de CSS 'ch' (ancho de un carácter '0') y 'ex' (altura de la x minúscula) como alternativas a las unidades absolutas como 'px'. El autor argumenta que 'ch' es útil para definir anchos de texto legibles y márgenes proporcionales al contenido, mientras que 'ex' puede ser considerado para alturas. Se discuten las implicaciones de estas unidades en pantallas de alta resolución y se mencionan alternativas como 'lh' (line-height) y 'vh' (viewport height). También se advierte sobre posibles problemas de 'layout shifts' al combinar 'ch' con fuentes web. En general, se promueve el uso de medidas relativas sobre las absolutas para un diseño más adaptable y perceptual.",
+    "categoria": "Frontend"
   },
   {
     "id": 49406387,
     "url": "https://malisper.me/jit-compiling-code-in-5-us/",
-    "score": 50,
+    "score": 159,
     "time": 1787465091,
-    "titulo_es": "Compilación JIT de código en 5μs",
-    "resumen": "El artículo aborda la implementación de compiladores Just-In-Time (JIT) de ultra baja latencia (5 microsegundos) mediante la generación directa de código ensamblador asistida por IA y la técnica de 'copy-and-patch'. Utilizando como caso práctico un motor de expresiones regulares en Rust, se demuestra cómo alcanzar el rendimiento de código nativo optimizado frente a un intérprete tradicional, haciendo viable la compilación JIT para cada consulta en bases de datos como pgrust.",
+    "titulo_es": "Compilación Just-In-Time (JIT) de Código en 5μs",
+    "resumen": "El artículo explora la optimización del tiempo de compilación JIT para generar código de ensamblado directamente, reduciendo drásticamente los tiempos de compilación (ej. 5μs en pgrust). Tradicionalmente, la compilación JIT rápida requería conocimiento de ensamblador y las soluciones existentes como LLVM o generación de C/C++ tienen altos tiempos de compilación. El uso de IA se presenta como una facilitador para escribir compiladores JIT rápidos. Se detalla un ejemplo práctico de un motor de expresiones regulares que utiliza compilación JIT para igualar o superar el rendimiento del código escrito a mano, contrastándolo con una implementación interpretada mucho más lenta. El enfoque propuesto para la generación de ensamblado es el método 'copy-and-patch' utilizando 'stencils' (plantillas de ensamblado) que se modifican para cada operación específica.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49402232,
-    "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-    "score": 334,
-    "time": 1787422456,
-    "titulo_es": "El impacto de las variaciones de hardware y software en la inferencia de LLMs",
-    "resumen": "El artículo analiza técnicamente por qué el rendimiento y la calidad de salida de un modelo de lenguaje (LLM) pueden degradarse drásticamente fuera del entorno de referencia del laboratorio original. Explica que las diferencias en conjuntos de instrucciones de hardware, implementaciones de software, cuantizaciones y configuraciones de muestreadores (samplers) alteran el cálculo matemático de los logits y las probabilidades del siguiente token. Asimismo, aborda la necesidad de realizar benchmarks representativos y el uso de la divergencia de Kullback-Leibler (KLD) para medir la desviación probabilística respecto a la implementación base, advirtiendo sobre la falta de rigor metodológico en muchas métricas reportadas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49351802,
-    "url": "https://hister.org/",
-    "score": 341,
-    "time": 1787083250,
-    "titulo_es": "Hister: Motor de búsqueda e indexación de contenido privado y autoalojado",
-    "resumen": "Hister es una herramienta de software libre (licencia AGPLv3) para la indexación y búsqueda de texto completo de archivos locales, historial y páginas web visitadas. Opera de forma local o en un servidor privado sin telemetría ni dependencias externas obligatorias. Admite bases de datos SQLite o PostgreSQL, búsqueda semántica opcional mediante endpoints de embeddings, y expone interfaces mediante terminal, interfaz web, API HTTP y un servidor MCP para la integración con asistentes de inteligencia artificial.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49404380,
-    "url": "https://www.primeintellect.ai/research/nanogpt-speedrun",
-    "score": 95,
-    "time": 1787436867,
-    "titulo_es": "Evaluación autónoma de 18 modelos de frontera en la optimización de nanoGPT",
-    "resumen": "Se evaluaron 18 modelos de IA de frontera mediante 153 ejecuciones autónomas en un benchmark de optimización para nanoGPT. Bajo un presupuesto de recursos equivalente, se comparó el mejor récord validado alcanzado por cada modelo, proporcionando acceso a 41 trazas detalladas de agentes que incluyen llamadas a herramientas, subagentes y bloques de notas de razonamiento.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49346854,
-    "url": "https://typ.ing/",
-    "score": 264,
-    "time": 1787065973,
-    "titulo_es": "typ.ing: Un Entrenador de Mecanografía para Teclados Externos",
-    "resumen": "El artículo describe 'typ.ing', una herramienta diseñada para mejorar la velocidad y precisión al escribir con un teclado externo. Se destaca que la aplicación funciona mejor en dispositivos móviles cuando se conecta un teclado físico, sugiriendo su uso en ordenadores o con un teclado conectado para una experiencia óptima. La interfaz parece interactiva, invitando al usuario a escribir.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49355659,
-    "url": "https://www.rfcafe.com/",
-    "score": 199,
-    "time": 1787105143,
-    "titulo_es": "RF Cafe: Revistas Vintage de Electrónica y Recursos de Ingeniería",
-    "resumen": "El artículo presenta RF Cafe, un sitio web dedicado a la electrónica vintage y la ingeniería. Destaca publicaciones históricas como Popular Electronics y Radio-Craft, biografías de figuras clave como Hugo Gernsback, y recursos educativos sobre temas como circuitos de radio, matemáticas de RF y amplificadores de potencia de microondas (SSPA). Incluye artículos sobre la historia de inventos como el Audion de Lee de Forest, crucigramas temáticos de radio amateur y datos técnicos sobre componentes de RF.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49402202,
-    "url": "https://thinkinginpython.com/",
-    "score": 162,
-    "time": 1787422249,
-    "titulo_es": "Perspectivas, Idiomas y Patrones",
-    "resumen": "El artículo, escrito por Bruce Eckel y con fecha de © 2026, se centra en el análisis de perspectivas, modismos y patrones dentro del ámbito del desarrollo de software. Aborda temas clave que informan y guían a los ingenieros de software en la creación de sistemas robustos y mantenibles. Los ejemplos y soluciones de ejercicios están disponibles en GitHub, bajo una licencia CC BY-NC-ND 4.0, permitiendo la lectura libre pero restringiendo la reproducción sin permiso.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49406539,
-    "url": "https://www.xda-developers.com/wi-fi-8-first-wireless-upgrade-years-isnt-chasing-speed-home-networks-need-it/",
-    "score": 83,
-    "time": 1787467311,
-    "titulo_es": "Wi-Fi 8: El Enfoque en la Ultra Alta Fiabilidad y la Reducción de Latencia",
-    "resumen": "El artículo describe la evolución de los estándares Wi-Fi, señalando un cambio de enfoque para Wi-Fi 8. A diferencia de generaciones anteriores, que priorizaban el aumento de la velocidad máxima teórica, Wi-Fi 8 se centrará en la \"Ultra Alta Fiabilidad\" (UHR). Las especificaciones de Wi-Fi 8, aunque similares a Wi-Fi 7 en términos de velocidad máxima, ancho de banda y modulación (4096-QAM, 320MHz), buscan mejorar significativamente la experiencia real del usuario. Los objetivos clave incluyen un aumento del 25% en el rendimiento efectivo en diferentes niveles de SINR, una reducción del 25% en latencia para escenarios del percentil 95, y una disminución del 25% en la pérdida de MPDU. Esto se logra mediante nuevas características como Distributed-tone Resource Units (DRUs) para mejorar la potencia de transmisión efectiva sin exceder las regulaciones, pilotos de mitigación de interferencias para resistir perturbaciones inesperadas, el uso de modulaciones desiguales para optimizar cada stream espacial según el SINR, y la introducción de nuevos esquemas MCS. Además, características como P-EDCA acelerarán el acceso al canal para dispositivos priorizados. Este enfoque en fiabilidad, rendimiento efectivo y menor latencia posiciona a Wi-Fi 8 para competir con redes celulares como 6G, especialmente en entornos con alta densidad de dispositivos y condiciones de red no ideales. Se espera que Wi-Fi 8 se finalice en 2028.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49399591,
-    "url": "https://blog.modelcontextprotocol.io/posts/mcp-roadmap/",
-    "score": 203,
-    "time": 1787405494,
-    "titulo_es": "Hoja de ruta actualizada del Protocolo de Contexto de Modelo (MCP) y próximos pasos",
-    "resumen": "El artículo presenta la hoja de ruta actualizada para el Protocolo de Contexto de Modelo (MCP), detallando los avances logrados y las prioridades futuras. La versión de especificación 2026-07-28 ha introducido cambios significativos, como la eliminación de sesiones a nivel de protocolo y el handshake de inicialización para permitir el escalado horizontal sin estado, y la capacidad de los clientes para consultar versiones y capacidades del servidor. Se han mejorado las tareas de comunicación entre agentes, reubicándolas en una extensión oficial y reemplazando las solicitudes iniciadas por el servidor con el patrón Multi Round-Trip Requests para servidores sin estado. La gobernanza ha evolucionado con la adopción de una Escala de Contribuyentes y un ciclo de vida de características formal. La preparación empresarial se ha centrado en la seguridad, con mejoras en la autorización, validación de emisores y metadatos de credenciales de cliente. La nueva hoja de ruta se organiza en cinco áreas prioritarias, incluyendo eventos iniciados por el servidor, mejoras en los tipos de resultados e identidad de agente, abordando las necesidades de las cargas de trabajo agenticas modernas que van más allá del patrón estándar de solicitud-respuesta. También se busca unificar los modos de transporte para simplificar el desarrollo, abarcando desde HTTP estandarizado hasta servidores locales con Streamable HTTP sobre stdio.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49399898,
-    "url": "https://geometridae.bearblog.dev/a-friendly-introduction-to-racket/",
-    "score": 227,
-    "time": 1787407699,
-    "titulo_es": "Racket: El Lenguaje para Construir Lenguajes",
-    "resumen": "El artículo explora Racket, un dialecto de Lisp evolucionado de Scheme, centrándose en su capacidad para la 'programación orientada al lenguaje'. Destaca la filosofía de Lisp donde el código es dato (homoiconicidad), el uso de paréntesis para la estructura y la ausencia de reglas sintácticas arbitrarias. Se mencionan conceptos clave como la función lambda para funciones anónimas y las funciones de orden superior (map, filter, foldl) para la manipulación de listas, promoviendo un estilo de programación recursiva en lugar de bucles iterativos. Se ilustra con ejemplos de gráficos y el concepto de macros, que permiten a los programas generar y manipular código de manera nativa. Se señala la herencia de Lisp en la IA y su presencia en la cultura pop.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49393051,
-    "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
-    "score": 192,
-    "time": 1787341908,
-    "titulo_es": "Impresiones personales sobre el uso de Codex frente a Claude",
-    "resumen": "El artículo compara las experiencias de un desarrollador de software senior utilizando dos asistentes de IA, Codex y Claude, centrándose en aspectos técnicos del desarrollo. Se destacan diferencias clave en la gestión de plugins/habilidades, la familiaridad y la preferencia en situaciones de depuración urgente (Claude se percibe más hogareño y familiar). Codex es elogiado por generar código Ruby/Ruby on Rails con menos comentarios y un enfoque más técnico y directo, a diferencia de Claude que tiende a ser más conversacional y proactivo, a veces yendo más allá de lo solicitado. Se observa que Codex puede crear soluciones arquitectónicas más simples y menos complejas que Claude, que tiende a añadir más abstracciones y tipado. El artículo también detalla errores específicos de Codex en la gestión de ramas Git, mientras que Claude mostró mejor comprensión de las intenciones del usuario. En cuanto a la integración con herramientas como Jira y Atlassian CLI, se describe un flujo de trabajo más fluido con Claude en algunos escenarios y con Codex en otros (especialmente con su enfoque CLI). Se concluye que Claude tiende a anticipar y hacer más de lo pedido, mientras que Codex es más literal y se detiene una vez cumplida la instrucción. Se menciona también la percepción de que Codex realiza cambios más rápidos inicialmente, pero el proceso completo hasta el pull request no siempre resulta en un ahorro de tiempo significativo debido a la exhaustividad de las pruebas y revisiones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49379732,
-    "url": "https://atproto.com/blog/atproto-spaces-alpha",
-    "score": 142,
-    "time": 1787257355,
-    "titulo_es": "Introducción a los Espacios en atproto: Almacenamiento de Datos Privados y Sincronización en una Red Descentralizada",
-    "resumen": "El artículo anuncia el lanzamiento alpha de 'atproto spaces', una actualización significativa para el protocolo atproto. Los 'spaces' son una nueva primitiva de protocolo diseñada para almacenar y sincronizar datos no públicos, como configuraciones, marcadores privados, foros y contenido de suscripción, al tiempo que se conservan las ventajas de atproto como la identidad portátil, los datos interoperables y la participación sin permisos. A diferencia de los datos públicos actuales en atproto, que son accesibles globalmente a través de un 'firehose', los datos dentro de un 'space' están controlados por una autoridad de espacio (un DID) que determina quién puede acceder. Si bien el acceso se controla, los datos no están cifrados y son legibles por cualquier usuario o aplicación con permiso. Los 'spaces' son ligeros y escalables, pudiendo contener desde un solo registro hasta miles de millones. El protocolo de sincronización para datos de espacios es más ligero que el del protocolo público, ya que no utiliza un relé y las aplicaciones sincronizan los datos directamente desde los PDS (Personal Data Servers). Se proporciona un alpha con código, SDKs, una aplicación de ejemplo y un PDS alojado para facilitar el desarrollo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49406285,
-    "url": "https://lucumr.pocoo.org/2026/8/22/fast-hard-code/",
-    "score": 8,
-    "time": 1787463546,
-    "titulo_es": "El Impacto de la IA en la Elección y el Desarrollo de Lenguajes de Programación",
-    "resumen": "El artículo discute cómo los Modelos de Lenguaje Grandes (LLMs) están reduciendo significativamente la barrera de entrada para aprender y utilizar lenguajes de programación menos comunes o más complejos. La capacidad de los LLMs para traducir código entre lenguajes y optimizarlo sin introducir regresiones de comportamiento permite a los desarrolladores elegir lenguajes basándose más en el marketing y la deseabilidad de ciertas características (como la velocidad y el rendimiento) que en la familiaridad previa. Se observa un aumento en la adopción de lenguajes como Rust y Zig para proyectos que requieren alta eficiencia y pequeño tamaño, incluso en áreas previamente consideradas de nicho o de difícil acceso, como eBPF, drivers de red personalizados y criptografía. Esto sugiere una democratización del desarrollo de software de alto rendimiento, aunque con la posible contrapartida de una menor rigurosidad en algunos casos, pero una expansión general del conjunto de desarrolladores interesados en la performance.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49398152,
-    "url": "https://munderdiffl.in/",
-    "score": 277,
-    "time": 1787392154,
-    "titulo_es": "Munder Difflin: Plataforma de Agentes Multi-IA Locales y Seguras",
-    "resumen": "El artículo describe Munder Difflin, un 'harness' de agentes multi-IA de código abierto y de alto rendimiento. Funciona localmente en el portátil del usuario, integrándose con los CLIs de agentes existentes (como Claude Code, Codex, Gemini CLI, etc.) y utilizando las suscripciones horarias del usuario. La herramienta crea 'clones' de los agentes que actúan como duplicados del individuo, capturando su flujo de trabajo, herramientas y conocimiento. Estos clones pueden operar de forma autónoma, colaborar entre sí (a través de mensajes cifrados de extremo a extremo), y realizar tareas como revisiones de código, corrección de errores, o gestión de documentación, todo ello sin que el código, las claves o el contexto personal salgan de la máquina del usuario. Ofrece opciones de ejecución en 'Private Cloud' para disponibilidad 24/7 en entornos aislados y 'Private Network' para comunicación autónoma entre clones de equipo, con cifrado E2E. La seguridad se enfatiza mediante el control del usuario sobre la ejecución y el acceso a los datos, con el código fuente disponible para auditoría bajo licencia MIT. Los planes de pago añaden características de ejecución persistente en la nube privada y la red de equipo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49402213,
-    "url": "https://marcua.net/minitools/figmimic/",
-    "score": 97,
-    "time": 1787422300,
-    "titulo_es": "Un bookmarklet para copiar cualquier página web en Figma como capas editables",
-    "resumen": "Figmimic es una herramienta tipo bookmarklet diseñada para capturar el contenido de una página web activa en el navegador y exportarlo al portapapeles en un formato compatible con Figma. Al pegar el contenido en Figma, se generan capas y marcos editables, no simples capturas de pantalla planas. Su funcionalidad abarca cualquier página web visible, incluyendo aplicaciones y paneles que requieren autenticación, superando las limitaciones de otras herramientas. La tecnología subyacente se basa en la inyección de un script propio de Figma (capture.js) dentro del bookmarklet para facilitar esta captura y transferencia de elementos web a un entorno de diseño.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49376197,
-    "url": "https://www.lambda-symbolics.com/autolith",
-    "score": 124,
-    "time": 1787240457,
-    "titulo_es": "Autolith: Agente de Programación en Terminal con IA y Common Lisp",
-    "resumen": "Autolith es un agente de programación interactivo que opera directamente en la terminal y dentro de un repositorio de código. Permite a los desarrolladores leer, editar, buscar y ejecutar comandos y pruebas, manteniendo el contexto del proyecto y utilizando Common Lisp. Está diseñado para ser inspeccionado, extendido y recuperado por el usuario. Soporta múltiples plataformas (Linux, macOS, FreeBSD, NetBSD, OpenBSD) y se distribuye con sus propias dependencias. Autolith se integra con varios proveedores de modelos de IA como ChatGPT Codex, Grok y Anthropic, utilizando modelos avanzados como gpt-5.6-sol. Ejecuta código generado por IA con los privilegios del usuario, pero advierte que no es una sandbox de seguridad. Ofrece la capacidad de inspeccionar y modificar el estado interno de Common Lisp en tiempo de ejecución, guardando los cambios como commits en un historial Git privado. Utiliza una gestión avanzada de contexto y memoria, indexando el corpus para eficiencias y ofreciendo diferentes ciclos de vida para fuentes, conversaciones y mutaciones.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49360643,
-    "url": "https://editide.com/blog/what-is-a-pptx-file/",
-    "score": 85,
-    "time": 1787142524,
-    "titulo_es": "Un vistazo accesible bajo el capó del formato de presentación más popular del mundo",
-    "resumen": "El artículo explica la estructura interna de los archivos .pptx, el formato de presentación de PowerPoint. Detalla cómo un archivo .pptx es esencialmente un paquete ZIP que contiene múltiples archivos XML, cada uno representando diferentes componentes de la presentación como diapositivas, texto, formas, imágenes, tablas y gráficos. Se describe cómo la información se organiza de manera similar a un sistema de archivos, con carpetas para medios (imágenes), incrustaciones (archivos de Excel) y elementos de la presentación. Se compara este modelo con un enfoque de archivos de texto plano y se explica la unidad de medida EMU (English Metric Unit) utilizada para dimensiones. El objetivo es desmitificar el formato y mostrar su lógica subyacente a través de una analogía con la organización de archivos y directorios.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49384210,
-    "url": "https://sockpuppet.org/blog/2026/08/20/stop-making-tuis/",
-    "score": 406,
-    "time": 1787290658,
-    "titulo_es": "La Reevaluación de las Interfaces de Línea de Comandos y el Auge del Desarrollo Asistido por IA",
-    "resumen": "El artículo reflexiona sobre la relación de la industria del software con las interfaces de línea de comandos (CLI) y argumenta que es hora de reevaluarlas. El autor describe su experiencia reciente construyendo aplicaciones nativas con interfaces de usuario (UI) y cómo estas tareas, tradicionalmente tediosas y exigentes, se han vuelto más manejables gracias a las herramientas de Inteligencia Artificial (IA) y los modelos de lenguaje grandes (LLM). Se presentan varios ejemplos de aplicaciones desarrolladas con asistencia de IA, como un visor de Markdown (MDV.app), un frontend para SageMath (una calculadora nativa), un reproductor de música con un agente LLM integrado (DJ Roomba) y un wiki de autogestión (LLMwiki). Estas aplicaciones demuestran cómo los LLM pueden automatizar la generación de código de UI, interactuar con bases de datos (SQLite), renderizar salidas complejas (LaTeX) y exponer funcionalidades de sistemas subyacentes (SageMath) de manera intuitiva. El autor también explora el concepto de 'yak-shaving' (persecución de tareas secundarias aparentemente innecesarias pero gratificantes) en el contexto del desarrollo pre-LLM y cómo las nuevas herramientas de IA facilitan la creación de software complejo con mínima intervención manual directa en el código de UI, llevando a una reflexión sobre si esto constituye desarrollo de software o simplemente configuración de computadoras.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49402741,
-    "url": "https://lapcatsoftware.com/articles/2026/8/7.html",
-    "score": 181,
-    "time": 1787425481,
-    "titulo_es": "Deprecación de hdiutil en macOS y la emergencia de diskutil",
-    "resumen": "El artículo analiza la deprecación de la herramienta de línea de comandos `hdiutil` en macOS Golden Gate, su reemplazo propuesto `diskutil`, y las diferencias observadas. Se destaca que `diskutil` carece de algunas opciones de `hdiutil` como `-puppetstrings` y opciones específicas de `create -srcfolder`. Las pruebas comparativas para crear una imagen de disco del home folder revelan que `diskutil` es significativamente más rápido y produce archivos más pequeños, pero falla al encontrar archivos propiedad de `root` sin solicitar autenticación, a diferencia de `hdiutil`. También se observa que `diskutil` omite la carpeta `~/.Trash/` y se comporta como si se usara la opción `-scrub` de `hdiutil`. El autor expresa preocupación por la deprecación de `hdiutil`, ya que puede romper flujos de trabajo y aplicaciones existentes. Finalmente, se menciona que ambos comandos en Golden Gate aún sufren de un bug relacionado con archivos `.bnnsir` y la respuesta de Apple al reporte de este bug.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49373822,
-    "url": "https://blog.coredump.cx/p/conways-game-of-life-in-real-life",
-    "score": 56,
-    "time": 1787229604,
-    "titulo_es": "Implementación de Juego de la Vida de Conway con Interruptores y LEDs como Pantalla",
-    "resumen": "El artículo describe la construcción de un dispositivo interactivo que implementa el Juego de la Vida de Conway utilizando una matriz de interruptores NKK JB15LPF-JF con LEDs integrados como display. Un microcontrolador AVR128DA64 gestiona la lógica del juego, la actualización del display y la detección de entradas del usuario. La interfaz de visualización emplea una multiplexación de filas y columnas para iluminar los LEDs, requiriendo el uso de MOSFETs para manejar las corrientes elevadas (150 mA por LED) necesarias para la luminosidad adecuada. La entrada del usuario se realiza a través de los mismos interruptores, utilizando resistencias pull-up internas del MCU. La velocidad de la simulación se controla mediante un potenciómetro analógico. Se implementaron medidas de seguridad en el firmware, como el desacoplamiento de la actualización de la pantalla y la lógica del juego durante breves ventanas de \"apagón\", y el uso del watchdog timer del MCU para asegurar la estabilidad y prevenir daños en los componentes.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49404968,
-    "url": "https://hnrss.github.io/",
-    "score": 12,
-    "time": 1787442601,
-    "titulo_es": "Feeds RSS personalizables y en tiempo real para Hacker News",
-    "resumen": "hnrss.org ofrece feeds RSS personalizables y en tiempo real para Hacker News. Permite generar feeds para todas las publicaciones y comentarios ('firehose'), solo las publicaciones en la página principal, o filtrar por palabras clave, puntos, comentarios, autor o ID de comentario. Admite búsquedas por título o URL, y permite modificar el enlace principal de los ítems RSS para apuntar a la página de comentarios. Los formatos de salida pueden ser RSS, Atom o JSON Feed, con un límite por defecto de 20 ítems (ampliable hasta 100). Se basa en la información de Hacker News y la API de Algolia, recomendando un uso conservador de la frecuencia de actualización.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49352470,
-    "url": "https://www.mythic.ai",
-    "score": 54,
-    "time": 1787086042,
-    "titulo_es": "La arquitectura de cómputo en memoria analógica de Mythic ofrece una eficiencia 100 veces mayor",
-    "resumen": "El artículo describe la arquitectura de Unidad de Procesamiento Analógico (APU) de Mythic, diseñada para mejorar la eficiencia energética en la IA. A diferencia de las arquitecturas tradicionales que consumen mucha energía moviendo datos entre el procesador y la memoria, la tecnología de Mythic almacena los pesos de los modelos de IA directamente en la memoria flash y realiza cálculos en formato analógico en la fuente. Esto elimina la ineficiencia inherente al movimiento de datos. La tecnología ha sido validada por Honda y el Departamento de Defensa de EE. UU., y se ha demostrado en entornos del mundo real. La adquisición de Videantis en 2026, una empresa con procesadores de IA ya implementados en 30 millones de vehículos, refuerza la aplicabilidad y escala de su plataforma ADAS (Advanced Driver-Assistance Systems).",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49364296,
-    "url": "https://terminal-code.com",
-    "score": 91,
-    "time": 1787159591,
-    "titulo_es": "terminal-code: VS Code dentro de la Terminal",
-    "resumen": "terminal-code es una solución de código abierto que integra code-server (VS Code accesible a través del navegador) con terminal-browser (una interfaz de navegador dentro de la terminal). El objetivo principal es permitir la ejecución y uso de Visual Studio Code directamente desde un entorno de terminal, combinando la potencia de un IDE completo con la flexibilidad y accesibilidad de la línea de comandos. Los proyectos subyacentes, code-server y terminal-browser, son la base de esta integración.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49377316,
-    "url": "https://nautil.us/why-it-might-be-time-to-rethink-the-human-family-tree-1283985",
-    "score": 64,
-    "time": 1787245656,
-    "titulo_es": "La clasificación de nuestros parientes antiguos es un desastre. Pero hay una solución simple.",
-    "resumen": "El artículo argumenta que la clasificación actual de los homínidos antiguos en los géneros Homo, Australopithecus y Paranthropus está desactualizada y no refleja con precisión las relaciones evolutivas reales. Las nuevas evidencias fósiles, los avances en análisis genéticos y métodos de reconstrucción de árboles filogenéticos demuestran que estos géneros no representan clados (un ancestro común y todos sus descendientes). Características previamente consideradas definitorias, como el tamaño del cerebro, el bipedismo, la dieta o el uso de herramientas, no se distribuyen consistentemente dentro de los géneros definidos, mostrando evolución en mosaico y convergencia evolutiva. Especies como Homo naledi y Homo floresiensis presentan combinaciones de rasgos que desafían las clasificaciones tradicionales. Incluso Paranthropus, considerado el más distintivo morfológicamente, podría no ser un clado monofilético. La falta de una clasificación científicamente rigurosa puede obscurecer patrones de descendencia, exagerar diferencias y perpetuar un enfoque erróneo de 'primitivo vs. avanzado'. El autor propone una revisión del sistema de clasificación para que refleje mejor la complejidad y la historia real de la evolución humana, basándose en relaciones de parentesco y clados verdaderos.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49392200,
-    "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
-    "score": 257,
-    "time": 1787337394,
-    "titulo_es": "El equipo de DESI Legacy Imaging Surveys publica el mapa 2D del universo más grande de la historia",
-    "resumen": "El artículo describe la publicación del mapa 2D en color más grande del universo, con 5.6 billones de píxeles y casi 4 mil millones de objetos celestes, por el equipo de DESI Legacy Imaging Surveys. Este mapa, que cubre el 75% del cielo en luz visible e infrarroja cercana, se construyó combinando datos de tres sondeos terrestres (DECaLS, MzLS, BASS) y misiones satelitales (WISE), y está disponible públicamente. Sirve como una herramienta fundamental para astrónomos y científicos ciudadanos, permitiendo la exploración del universo, la búsqueda de fenómenos como lentes gravitacionales y el estudio de la materia oscura y la energía oscura. El mapa es una preparación crucial para el instrumento DESI (Dark Energy Spectroscopic Instrument), que utiliza esta información para seleccionar objetivos y construir el mapa 3D de alta resolución más grande del universo. Los datos del mapa se han utilizado para guiar las operaciones de DESI, cuyos resultados preliminares sugieren una posible disminución en el impacto de la energía oscura. El mapa se considera una parte integral de la investigación astronómica actual y se espera que siga siendo la referencia 2D más completa del universo durante años.",
-    "categoria": "Ciencia y Matematica"
   }
 ]
