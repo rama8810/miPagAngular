@@ -1,182 +1,200 @@
 [
   {
-    "id": 49433450,
-    "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-a-more-powerful-mac-mini-featuring-the-all-new-m6-and-m5-pro/",
-    "score": 494,
-    "time": 1787663580,
-    "titulo_es": "El nuevo Mac mini de Apple, con chips M6 y M5 Pro, ofrece un salto masivo en rendimiento de IA para computación agéntica",
-    "resumen": "Apple anunció la nueva línea de Mac mini equipada con los chips M6 y M5 Pro en su diseño compacto tradicional. El modelo con M6 integra una CPU de 12 núcleos, GPU de 12 núcleos con aceleradores neuronales dedicados por núcleo y un Neural Engine dual de 16 núcleos, cuadruplicando el rendimiento en tareas de IA y duplicando la velocidad gráfica respecto al M4. Por su parte, el M5 Pro amplía las capacidades profesionales con hasta 18 núcleos de CPU, 20 de GPU y soporte de hasta 64 GB de memoria unificada a 307 GB/s, optimizado para ejecutar modelos locales de IA y flujos de trabajo de renderizado o desarrollo exigentes. Ambos modelos incorporan Wi-Fi 7, Bluetooth 6 y opciones de Ethernet de 2.5 Gb y 10 Gb.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49439499,
-    "url": "https://www.da.vidbuchanan.co.uk/blog/android-c2pa.html",
-    "score": 148,
-    "time": 1787686704,
-    "titulo_es": "C2PA en Android está Roto: Ataques de Escalada de Privilegios y Fallas de Hardware Rompen el Modelo de Confianza",
-    "resumen": "El artículo argumenta que la tecnología C2PA (Coalition for Content Provenance and Authenticity), diseñada para verificar la procedencia de contenido digital y combatir las falsificaciones generadas por IA, es fundamentalmente vulnerable en la plataforma Android. La confianza de C2PA depende de mecanismos de Android como Key Attestation y Google Play Integrity para asegurar que solo los datos del sensor de imagen se firmen criptográficamente. Sin embargo, el autor demuestra que las escaladas de privilegios (LPEs) obtenidas a través de exploits de software (que se distribuyen rápidamente, incluso para dispositivos actualizados) o ataques de inyección de fallos de hardware pueden comprometer estos mecanismos de seguridad. Los exploits permiten obtener acceso root sin desbloquear el gestor de arranque (bootloader), eludiendo así las verificaciones de Attestation y permitiendo que el dispositivo aprovisione claves C2PA, a pesar de estar comprometido. Si bien las claves en sí permanecen protegidas en módulos seguros como Titan M2 (StrongBox), un atacante con acceso root puede forzar la firma de datos arbitrarios utilizando estas claves sin necesidad de extraerlas directamente. El autor señala que estos problemas no son vulnerabilidades de día cero y han sido conocidos, pero considera que no son 'parcheables' de manera realista en el hardware existente. Se utiliza como ejemplo la implementación de C2PA de Google Pixel Camera, que supuestamente alcanzó el nivel de seguridad más alto (Nivel de Aseguramiento 2), para ilustrar la brecha de seguridad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49444514,
-    "url": "https://www.psu.edu/news/research/story/more-half-adults-us-say-they-lack-basic-statistical-understanding",
-    "score": 84,
-    "time": 1787723360,
-    "titulo_es": "Los adultos de EE. UU. utilizarían más las estadísticas si las entendieran mejor, según un estudio",
-    "resumen": "Un estudio liderado por Mark Ramos de Penn State revela que una mayoría significativa de adultos en EE. UU. (62%) reporta tener un conocimiento nulo o limitado de conceptos estadísticos básicos, a pesar de que la comprensión de las estadísticas es crucial para navegar la vida cotidiana, desde pronósticos del tiempo hasta evaluaciones de riesgos para la salud.  El estudio, publicado en PLOS One y basado en datos de una encuesta nacional representativa, encontró que solo el 11% de los encuestados utiliza estadísticas regularmente. Sin embargo, una abrumadora mayoría (9 de cada 10) afirma que basaría sus decisiones en estadísticas con mayor frecuencia si las entendieran mejor. El artículo destaca la importancia de la alfabetización estadística para evaluar la calidad de la evidencia y tomar decisiones informadas, señalando que conceptos como los 'p-values' (valores p) son herramientas para entender resultados de estudios, donde un valor p más pequeño indica mayor evidencia estadística. Se subraya que las estadísticas manejan la incertidumbre y no proporcionan certeza absoluta. Para fomentar la comprensión, se mencionan recursos gratuitos disponibles, como los materiales del curso STAT 200 de Penn State.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49434820,
-    "url": "https://e360.yale.edu/digest/bomb-fishing-coral-reefs",
-    "score": 319,
-    "time": 1787668172,
-    "titulo_es": "Arrecifes de coral bombardeados en Indonesia por pesca destructiva",
-    "resumen": "El artículo detalla el uso extensivo de pesca con explosivos en el archipiélago de Spermonde, Indonesia, una práctica ilegal que está devastando los arrecifes de coral. Investigadores de la Zoological Society of London utilizaron grabaciones submarinas y software de IA de código abierto para detectar más de 3,500 explosiones en 3,600 horas, estimando más de 8,500 explosiones anuales en un área de 350 millas cuadradas. Cada explosión destruye aproximadamente 200 pies cuadrados de arrecife, convirtiéndolos en escombros y dificultando severamente la regeneración natural. La investigación también reveló que la pesca con bombas ocurre durante todo el año, con picos matutinos y una reducción los viernes, y sugiere que no es impulsada únicamente por la pobreza, sino también por la falta de cumplimiento y gestión. Un enfoque clave de la investigación fue el uso de IA para analizar grandes volúmenes de datos de audio, permitiendo la identificación y verificación de detonaciones submarinas a pesar de las dificultades logísticas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49436786,
-    "url": "https://blog.master.dev/tooltips-need-a-delay-and-then-they-need-to-skip-it/",
+    "id": 49468083,
+    "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
     "score": 173,
-    "time": 1787675736,
-    "titulo_es": "Patrón de Tooltip con 'Página Caliente' para una Experiencia de Usuario Fluida",
-    "resumen": "El artículo describe un patrón de interacción de tooltip diseñado para mejorar la experiencia del usuario en interfaces donde se muestran múltiples elementos con tooltips (como logos de empresas junto a preguntas de entrevista). El problema principal es que un retraso de activación estándar (ej. 200ms) causa lentitud al pasar el cursor entre elementos adyacentes. La solución propuesta introduce un concepto de \"página caliente\" o \"warm page\". Cuando la página está \"caliente\" (es decir, se acaba de interactuar con un tooltip o se ha pasado por un período de actividad reciente), los nuevos tooltips se muestran instantáneamente sin retraso ni animación. Si la página está \"fría\", se aplica el retraso normal. La implementación utiliza un `TooltipProvider` para gestionar el estado global de \"calentamiento\" de la página. Al mostrar un tooltip, se marca la página como caliente y se cancelan los temporizadores de enfriamiento pendientes. Al ocultar un tooltip, se inicia un temporizador de enfriamiento (ej. 300ms), durante el cual la página permanece caliente. Si el cursor se mueve a otro logo dentro de este período de enfriamiento, el nuevo tooltip aparecerá instantáneamente. Este patrón, implementado en React (menciona el uso de Radix y Motion en el producto real), evita la latencia percibida al navegar entre elementos relacionados, creando una interacción más ágil y natural, similar a la encontrada en barras de herramientas de navegadores y otras interfaces web.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49437483,
-    "url": "https://nil.wallyjones.com/run-openbsd-on-digitalocean-for-4month/",
-    "score": 164,
-    "time": 1787678587,
-    "titulo_es": "Instalar y configurar OpenBSD en DigitalOcean para un servidor web casero",
-    "resumen": "El artículo detalla el proceso de despliegue de un servidor web casero utilizando OpenBSD en la plataforma DigitalOcean. Se enfoca en la configuración de un entorno de bajo costo (aproximadamente $4.24/mes) para quienes buscan una experiencia de \"hazlo tú mismo\" con sistemas operativos tipo UNIX. El proceso incluye la carga de una imagen mínima de OpenBSD (miniroot) como imagen personalizada en DigitalOcean, la creación de un droplet básico, y la instalación interactiva del sistema operativo a través de la consola web. Se mencionan pasos clave como la verificación de checksums, la selección de un centro de datos, la configuración del hostname y la elección de los conjuntos de archivos a instalar para optimizar el espacio. También se aborda la configuración de cifrado de disco completo (con la advertencia de requerir una contraseña en cada reinicio vía consola) y la eliminación de conjuntos no esenciales (como X server, juegos y compiladores) para un servidor web bare-bones. El objetivo es recuperar la experiencia de configurar y administrar sistemas UNIX de manera manual.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 49435675,
-    "url": "https://github.com/ThinkOffApp/CarWatch",
-    "score": 138,
-    "time": 1787671220,
-    "titulo_es": "CarWatch: Tu Coche como Agente de Chat Offline con IA Local",
-    "resumen": "El artículo describe CarWatch, un sistema que integra una Raspberry Pi 5 en un coche para ejecutar localmente un modelo de lenguaje de 35 mil millones de parámetros. Este agente, llamado @gle, se une a salas de chat (GroupMind) para proporcionar información relevante sobre el coche como salidas, llegadas, resúmenes de viaje y alertas de clips de dashcam en eventos. La interacción se realiza a través de un teléfono o reloj inteligente mediante CodeWatch, permitiendo aprobaciones y respuestas. El sistema se enfoca en la independencia y privacidad, operando completamente offline, a diferencia de las soluciones de los fabricantes que priorizan la recolección de datos en la nube. Se detalla la arquitectura, que incluye componentes como carwatch-chat (dashboard), carwatch-obd (monitor OBD-II) y carwatch-agent. La instalación se basa en systemd y es guiada para asegurar una configuración precisa. La compatibilidad se extiende a cualquier coche con puerto OBD-II estándar y adaptadores Bluetooth económicos, con opciones de integración para datos específicos de marca a través de interfaces como Home Assistant. El principio de diseño se basa en la honestidad y la fiabilidad, asegurando que las funciones se prueben en hardware real y que la información crítica para la seguridad no dependa de la conectividad de red.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49437049,
-    "url": "https://github.com/jeffhajewski/latticedb",
-    "score": 152,
-    "time": 1787676725,
-    "titulo_es": "LatticeDB: Base de Datos de Grafos Embebida con Indexación Vectorial y de Texto Completo Nativas",
-    "resumen": "LatticeDB es una base de datos de grafos embebida, de un solo archivo, diseñada para aplicaciones locales que manejan datos conectados, semánticos y textuales. Permite la traversa de relaciones, búsqueda de similitud vectorial (vector similarity search) y búsqueda de texto completo BM25 dentro del mismo motor y capa de consulta. Está optimizada para cargas de trabajo intensivas en relaciones en una sola máquina, ofreciendo operación sin configuración y un modelo de escritura única embebido. Los casos de uso incluyen Graph RAG, memoria de agentes y herramientas de conocimiento local. Proporciona bindings para Python, TypeScript/Node.js y Go, con ejemplos que demuestran la creación de grafos de conocimiento, el almacenamiento de embeddings y la indexación de texto. Las pruebas de rendimiento muestran que LatticeDB es competitiva en latencia de búsqueda con sistemas basados en servidor como Weaviate y Qdrant, superando significativamente a SQLite en traversas de grafos y logrando búsquedas vectoriales con alta recuperación.",
+    "time": 1787851077,
+    "titulo_es": "Optimizando la memoria de la caché DNS de Cloudflare para ahorrar más de 100 TB de RAM",
+    "resumen": "Cloudflare detalla cómo optimizó el uso de memoria en Big Pineapple, la plataforma de caché DNS detrás de 1.1.1.1 que gestiona más de 250 mil millones de entradas. Al sustituir estructuras de Rust dinámicas como `Vec<T>` y `String` por tipos inmutables de tamaño fijo como `Box<[T]>` y `Box<str>`, eliminaron los campos de capacidad redundantes (8 bytes por campo) y el espacio reservado sin usar en el heap. Estas optimizaciones redujeron la huella de memoria por entrada en más de un 50%, liberando aproximadamente 100 TB de RAM en toda su flota, mientras que el rendimiento de inserción aumentó un 43% y la latencia de búsqueda disminuyó un 19%.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49432201,
-    "url": "https://www.library.hbs.edu/working-knowledge/how-credit-card-rewards-became-multibillion-dollar-wealth-transfer",
-    "score": 174,
-    "time": 1787657844,
-    "titulo_es": "Las comisiones interbancarias y la transferencia de riqueza oculta",
-    "resumen": "La investigación de Mark L. Egan de Harvard Business School revela que las comisiones interbancarias de tarjetas de crédito transfieren anualmente unos 30 mil millones de dólares de los usuarios de efectivo y débito a los usuarios de tarjetas de crédito. Los comerciantes trasladan estos costos a todos los consumidores a través de precios más altos. Los usuarios de tarjetas de crédito recuperan estos costos e incluso obtienen beneficios adicionales a través de recompensas, mientras que los usuarios de efectivo y débito reciben poco o nada. La enmienda Durbin, destinada a regular las comisiones de las tarjetas de débito, tuvo un efecto regresivo, beneficiando a los consumidores adinerados y perjudicando a los usuarios de tarjetas de débito de ingresos medios que perdieron recompensas y beneficios. La investigación, que utilizó datos de transacciones financieras, subraya cómo las políticas de consumo, las necesidades de las instituciones financieras y los comportamientos de compra han creado una transferencia de riqueza que perjudica a los hogares de bajos y medianos ingresos.",
+    "id": 49467922,
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
+    "score": 72,
+    "time": 1787850392,
+    "titulo_es": "Lanzamiento de Gemini Omni 1.1 Flash: Controles creativos y video generativo para desarrolladores",
+    "resumen": "Google DeepMind presenta Gemini Omni 1.1 Flash, una actualización de su modelo de video generativo orientada a producción y accesible mediante la API de Gemini y Google AI Studio. Las nuevas capacidades técnicas incluyen extensión de escenas con análisis de hasta 10 segundos de contexto previo (permitiendo clips acumulados de hasta 40 segundos), interpolación fluida entre fotogramas clave iniciales y finales para transiciones de cámara cinematográficas, reescalado a resolución 4K y generación de borradores de baja resolución para prototipado rápido y de bajo costo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49466006,
+    "url": "https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days/",
+    "score": 99,
+    "time": 1787842871,
+    "titulo_es": "Snowboard Kids está 100% descompilado",
+    "resumen": "Se ha completado con éxito la descompilación completa (100%) del videojuego Snowboard Kids de Nintendo 64, logrando implementaciones en C que generan código máquina idéntico al original. El proyecto se completó en solo 84 días gracias a la combinación de asistencia de IA, herramientas de permutación y la colaboración de expertos humanos. El proceso presentó desafíos técnicos significativos debido al compilador propietario IDO 5.3 de SGI, cuyos pases de optimización y generación de código son difíciles de reproducir en comparación con compiladores como GCC.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49468834,
+    "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+    "score": 15,
+    "time": 1787853890,
+    "titulo_es": "Estándar de Hardware para Modelos (MHS): Habilitando la Operación Segura de Dispositivos Físicos por Agentes de IA",
+    "resumen": "El artículo presenta el Model Hardware Standard (MHS), una especificación compartida diseñada para permitir que los agentes de Inteligencia Artificial (IA) operen dispositivos físicos de manera segura y eficiente en entornos de laboratorio y fabricación. MHS reduce drásticamente el tiempo de integración de hardware, que tradicionalmente lleva semanas o meses, a solo horas o minutos, al estandarizar la comunicación entre dispositivos dispares. Esto se logra mediante un controlador MHS que actúa como traductor entre el sistema operativo y el hardware, utilizando primitivas simples ('leer', 'escribir') y haciendo que cada dispositivo sea descubrible de forma estandarizada. El controlador también facilita que los agentes de IA comprendan el uso y las características de dispositivos desconocidos previamente, almacenando esta información en metadatos legibles por humanos. MHS permite la orquestación autónoma de experimentos y flujos de trabajo 24/7, con capacidades de razonamiento en tiempo real y recuperación de errores sin intervención humana. La especificación es agnóstica al modelo de IA y compatible con cualquier dispositivo con interfaz programable, utilizando protocolos estándar como el Model Context Protocol (MCP) para el control del hardware. Actualmente en fase de vista previa de investigación, MHS busca la colaboración para desarrollar evaluaciones de seguridad y mejores prácticas antes de su lanzamiento como código abierto.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49464543,
+    "url": "https://rahuljuliato.com/posts/markdown-ts-mode-emacs-31",
+    "score": 121,
+    "time": 1787836956,
+    "titulo_es": "Emacs 31: Configurando y explorando el modo experimental markdown-ts-mode",
+    "resumen": "El artículo detalla la configuración y uso del nuevo modo experimental 'markdown-ts-mode' en Emacs 31. Se explica cómo activarlo, ya que no está habilitado por defecto, y se recomienda el uso de `use-package` o la carga manual de las librerías. Se aclara que no es necesario usar repositorios de paquetes antiguos como MELPA, ya que este modo viene integrado. Se aborda la instalación de las gramáticas necesarias de Tree-sitter (markdown y su gramática para parseo de inline), que Emacs puede solicitar descargar y compilar automáticamente si no se encuentran en el sistema. Se mencionan los requisitos para la compilación de gramáticas (como `make` y `gcc`) y cómo verificar si Emacs está compilado con soporte para Tree-sitter (`featurep 'treesit`). El modo es descrito como rico en funcionalidades, soportando especificaciones CommonMark y GitHub Flavored Markdown (GFM), con extras como manejo de bloques de código y utilidades de tabla de contenidos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49457722,
+    "url": "https://morphing.cloud/afterglow/",
+    "score": 15,
+    "time": 1787789907,
+    "titulo_es": "Ejecución de salvapantallas clásicos After Dark en macOS moderno (Universal binary)",
+    "resumen": "Afterglow es un emulador de software diseñado específicamente para ejecutar módulos de salvapantallas clásicos de After Dark (originales 68k) en sistemas macOS modernos, sin requerir ROMs ni sistemas operativos clásicos de Mac OS. Utiliza el emulador de CPU Musashi 68k y reimplementa partes necesarias del Macintosh Toolbox y APIs del SO. Permite importar módulos mediante arrastrar y soltar (archivos, imágenes de disco, archivos comprimidos) y también buscar e instalar software directamente desde Internet Archive. El objetivo es la preservación de software y facilitar el disfrute de estos salvapantallas artísticos. Afterglow incluye un módulo de salvapantallas para macOS que permite utilizar los módulos importados.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49469249,
+    "url": "https://news.bgov.com/bloomberg-government-news/nvidia-starts-a-pac-as-ai-chip-maker-buids-influence-force-in-dc",
+    "score": 9,
+    "time": 1787855680,
+    "titulo_es": "Nvidia lanza comité de acción política para influir en Washington",
+    "resumen": "Nvidia Corp. ha establecido un comité de acción política (PAC) para realizar donaciones a candidatos federales. Este movimiento estratégico se produce en un momento en que los legisladores y la administración Trump debaten sobre un marco regulatorio para la inteligencia artificial (IA), y mientras los votantes expresan preocupaciones sobre la tecnología de cara a las elecciones de mitad de período. Nvidia, la empresa más valiosa del mundo, que fabrica chips esenciales para la IA, está fortaleciendo su presencia e influencia en Washington para abordar estos temas cruciales.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49465732,
+    "url": "https://www.daemonology.net/blog/2026-08-27-Launching-Route-53-Files.html",
+    "score": 64,
+    "time": 1787841923,
+    "titulo_es": "Route 53 Files: Acceso a Zonas DNS Alojadas como Sistemas de Archivos Nativos",
+    "resumen": "El artículo describe Route 53 Files, un servicio que permite acceder a zonas DNS alojadas en AWS Route 53 como si fueran sistemas de archivos nativos (NFS v4.1+). Esto elimina la necesidad de recargar o recompilar bases de datos DNS tras modificaciones, permitiendo la edición directa de registros a través de software UNIX estándar. Los cambios en el sistema de archivos se reflejan automáticamente en Route 53, y viceversa. Las zonas pueden ser montadas concurrentemente en múltiples recursos de cómputo (EC2, ECS, EKS, Lambda), facilitando el acceso compartido y la colaboración. El servicio utiliza S3 Files para la persistencia, con latencias de ~90 segundos para la propagación de cambios al DNS activo y hasta 6 minutos para que los cambios realizados externamente se reflejen en el sistema de archivos montado. Se detalla el proceso de configuración inicial, incluyendo la creación de roles IAM necesarios para la integración con AWS.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49458161,
+    "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
+    "score": 1750,
+    "time": 1787793175,
+    "titulo_es": "Nvidia en conversaciones para adquirir Hugging Face por más de 13.000 millones de dólares",
+    "resumen": "El artículo informa sobre las negociaciones avanzadas entre Nvidia y Hugging Face para una posible adquisición de esta última por más de 13.000 millones de dólares. Hugging Face es una plataforma central en el ecosistema de IA de código abierto, utilizada por desarrolladores para compartir y construir modelos de IA. La adquisición le daría a Nvidia una mayor presencia entre los desarrolladores de IA y potencialmente aumentaría la carga de trabajo en sus chips. Sin embargo, la neutralidad de Hugging Face, que soporta modelos y hardware de diversos competidores de Nvidia, podría verse comprometida por una posible propiedad de Nvidia. Las conversaciones están en curso, pero aún no se ha alcanzado un acuerdo y podrían fracasar. Microsoft también tuvo conversaciones previas con Hugging Face, pero estas ya no están en curso. Nvidia ya tiene una relación existente con Hugging Face, habiendo participado en una ronda de financiación anterior.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49467551,
+    "url": "https://github.com/kelviq/tare",
+    "score": 48,
+    "time": 1787848664,
+    "titulo_es": "Tare: Herramienta para Diagnóstico y Optimización de Uso de Claude Code",
+    "resumen": "El artículo describe 'Tare', una herramienta diseñada para ayudar a los usuarios de Claude Code a entender y optimizar su consumo de tokens. Tare funciona localmente en la máquina del usuario, analizando los registros de las solicitudes de Claude Code para identificar patrones de uso, identificar qué proyectos o herramientas están consumiendo más recursos, y detectar posibles anomalías. Permite a los usuarios realizar preguntas en lenguaje natural para obtener informes detallados sobre el gasto de tokens, el uso de modelos, y el costo de las sesiones. La herramienta se enfoca en la transparencia y la eficiencia, permitiendo a los desarrolladores tomar decisiones informadas sobre la gestión de su cuota de uso, ofreciendo análisis que van desde identificar la fuente principal de consumo hasta la recomendación de acciones para optimizar costos. Tare se instala con un solo comando y no requiere configuraciones complejas, priorizando la privacidad al no enviar información sensible fuera de la máquina local.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49448150,
+    "url": "https://entropicthoughts.com/curmudgeon-tries-language-server",
+    "score": 90,
+    "time": 1787748517,
+    "titulo_es": "Evolución de los flujos de trabajo de desarrollo de software: Del REPL de Lisp a las mejoras en Haskell",
+    "resumen": "El artículo discute la evolución de los flujos de trabajo de desarrollo de software, contrastando el enfoque interactivo y en tiempo real de los lenguajes Lisp (donde el código se manipula directamente en un REPL con el sistema en ejecución) con los flujos de trabajo más tradicionales en lenguajes como Haskell. El autor, un desarrollador de Haskell, se inspira en la experiencia de Lisp y explora cómo herramientas como `ghcid` y `foreign-store` pueden acercar los flujos de trabajo de Haskell a un paradigma similar. Se describe un método donde los cambios en el editor se reflejan automáticamente en la recompilación y reinicio del programa sin perder estado, y las pruebas o experimentación se manejan escribiendo casos de prueba unitarios que se ejecutan al recargar el código. Aunque la evaluación directa de código en un REPL del programa en ejecución aún no es posible, este flujo de trabajo mejorado permite mantener el desarrollo dentro del editor, similar a la experiencia de Lisp pero adaptado a Haskell.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49464414,
+    "url": "https://aphantasia.com/guide",
+    "score": 65,
+    "time": 1787836460,
+    "titulo_es": "Guía para principiantes sobre la afantasia: Comprendiendo el pensamiento sin imágenes",
+    "resumen": "El artículo introduce la afantasia, definida como la incapacidad de visualizar imágenes mentales, también conocida como pensamiento sin imágenes. Explica que las personas con afantasia conceptualizan objetos o escenas en lugar de verlos en su 'ojo de la mente'. Se presenta un test sencillo (imaginar una manzana roja) y se menciona la Escala de Imaginación Visual (VVIQ) como herramienta de evaluación. Se distingue la experiencia de la afantasia de las metáforas comunes como 'ojo de la mente' y se explora el espectro de la imaginación visual, desde imágenes simples hasta representaciones fotorrealistas. Se aborda cómo la afantasia puede afectar no solo la vista sino también otros sentidos en la imaginación, y se discuten factores que influyen en la viveza y control de las imágenes mentales, como la novedad, la arbitrariedad y el estado emocional.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49441375,
-    "url": "https://github.com/swimmingbrain/texbrain",
-    "score": 93,
-    "time": 1787695730,
-    "titulo_es": "Editor de LaTeX Gratuito y de Código Abierto que se ejecuta en el Navegador",
-    "resumen": "El artículo describe tex.swimmingbrain.dev, un editor de LaTeX completamente gratuito y de código abierto que funciona enteramente en el navegador del usuario. Elimina la necesidad de instalaciones, cuentas o servidores backend. Utiliza CodeMirror 6 con un parser Lezer personalizado para la edición, SwiftLaTeX compilado a WebAssembly para la compilación de LaTeX en el cliente, isomorphic-git para la integración con Git y pdf.js para la visualización de PDF. La gestión de archivos se realiza a través de la API de Acceso al Sistema de Archivos (File System Access API) en navegadores basados en Chromium, con un fallback a Origin Private File System (OPFS) para otros navegadores. La aplicación está construida con SvelteKit y desplegada estáticamente en GitHub Pages, garantizando que los archivos del usuario nunca abandonen su máquina a menos que se envíen explícitamente a un repositorio remoto. Se enfoca en proporcionar una experiencia fluida y accesible para la escritura en LaTeX, resolviendo las frustraciones comunes con herramientas de pago o configuraciones locales complejas.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49423878,
-    "url": "https://movq.de/blog/postings/2026-08-05/0/POSTING-en.html",
-    "score": 116,
-    "time": 1787595677,
-    "titulo_es": "Hex Editor Bine: Visualización de Datos Binarios Mediante Caracteres Especiales y Formatos de Imagen PGM",
-    "resumen": "El artículo describe el desarrollo de un editor hexadecimal de consola llamado 'bine'. Inicialmente, se exploró la adición de color al modo hexadecimal, similar a 'xxd', pero se descartó debido a problemas de rendimiento con el framework TUI 'movwin' y la biblioteca 'ncurses'. En su lugar, se implementó una técnica de visualización que utiliza caracteres especiales en la columna ASCII para representar bytes NUL y bytes fuera del rango imprimible. Posteriormente, para la visualización de archivos binarios grandes, el autor desarrolló una técnica para interpretar directamente el contenido de un archivo binario como una imagen Portable Graymap (PGM). Esto se logra mapeando los valores de los bytes (0x00 a 0xFF) a píxeles. El proceso es directo, sin preprocesamiento, y permite visualizar la estructura y patrones de archivos grandes (megabytes a gigabytes) en cualquier visor de imágenes. Se presentan ejemplos de visualizaciones para un archivo ejecutable, un archivo tar, un binario de 25MB ('ruff') y un archivo ISO de 690MB, destacando la utilidad de esta aproximación para identificar patrones y estructuras de datos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49437946,
-    "url": "https://groups.google.com/a/mozilla.org/g/dev-platform/c/3YMV4MS34KA?pli=1",
-    "score": 375,
-    "time": 1787680523,
-    "titulo_es": "Firefox Habilitará la Decodificación de JPEG XL por Defecto en la Versión 157",
-    "resumen": "El artículo anuncia la intención de habilitar la decodificación del formato de imagen JPEG XL (JXL) por defecto en Firefox a partir de la versión 157. La implementación se basa en el decodificador jxl-rs escrito en Rust. Inicialmente, esta funcionalidad ha estado disponible en la versión Nightly y con una opción en Firefox Labs. Se destaca la adopción por parte de otros navegadores como Safari (ya lanzado) y Chrome (en desarrollo). Se abordan preocupaciones de rendimiento, mencionando la implementación de decodificación multihilo en jxl-rs 0.6.0 que mejora el rendimiento, situándolo ligeramente por delante de Safari en pruebas comparativas. Si bien la decodificación de imágenes JXL pequeñas presenta un mayor diferencial de rendimiento en comparación con otros formatos, la funcionalidad es completa, incluyendo animación y visualización progresiva (excepto HDR, que se muestra en SDR con mejor mapeo de tonos que otros formatos). Se ha realizado una exhaustiva validación de corrección a través de Web Platform Tests (WPT) y pruebas internas de Gecko, cubriendo diversos aspectos como la profundidad de bits, canal alfa, escala de grises, gestión de color y uso en HTML/CSS. La seguridad se refuerza mediante pruebas de fuzzing. El estado de la estandarización es neutral y la revisión de la W3C TAG está satisfecha con algunas preocupaciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49423045,
-    "url": "https://www.jack.bio/blog/costco-gas-tracking",
-    "score": 115,
-    "time": 1787592080,
-    "titulo_es": "Rastreo de Precios de Gasolina de Costco para Análisis de Crisis de Combustible",
-    "resumen": "El artículo detalla el proceso técnico para recopilar y analizar datos de precios de gasolina de aproximadamente 600 almacenes de Costco en EE. UU. durante la crisis del Estrecho de Ormuz. El autor desarrolló un método para extraer esta información, que no está centralizada ni publicada fácilmente por Costco. Inicialmente, se identificó un endpoint `AjaxGetGasPricesService` para obtener precios, pero carecía de datos de ubicación. Posteriormente, se descubrió el endpoint `AjaxWarehouseBrowseLookupView` con el parámetro `populateWarehouseDetails`, que proporciona detalles completos del almacén, incluyendo precios de gasolina, dirección y coordenadas. Para obtener una cobertura nacional, se implementó una estrategia de barrido del mapa utilizando una cuadrícula de coordenadas y solicitando hasta 50 almacenes por llamada, asegurando la deduplicación de IDs. Se implementaron límites de solicitudes concurrentes y reintentos automáticos para la recolección de datos, logrando obtener los datos de todos los almacenes de Costco en EE. UU. en menos de 60 segundos. Los datos recopilados se almacenaron en TimescaleDB, una extensión de PostgreSQL optimizada para series temporales, permitiendo el seguimiento histórico de los precios. Finalmente, se menciona la creación de una aplicación Next.js con Tailwind CSS para visualizar los datos, aunque la descripción de esta parte queda incompleta.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49410814,
-    "url": "https://tarjan.itch.io/thoreaubasic",
-    "score": 140,
-    "time": 1787507292,
-    "titulo_es": "Intérprete GW-BASIC compatible con ejecución directa en hardware",
-    "resumen": "Se describe una herramienta descargable que proporciona un intérprete compatible con GW-BASIC, diseñado para ejecutarse directamente sobre el firmware (o Windows), sin depender de un sistema operativo completo. La gestión de memoria se adapta al máximo bloque de memoria convencional reportado por el sistema, que en máquinas modernas puede ser de gigabytes. Soporta operaciones de E/S de disco utilizando el sistema de archivos simple de UEFI (SAVE, LOAD, MERGE, FILES, KILL) y funciones de edición de texto en pantalla completa (EDIT, AUTO, RENUM) con reescritura automática de referencias de control de flujo. La variable TIMER se actualiza con el reloj de alta precisión del TSC invariante de la CPU. Se mencionan varias versiones con nuevas funcionalidades y se destaca su enfoque en la limpieza y la eliminación de dependencias del sistema operativo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49436706,
-    "url": "https://www.kurz.net/posts/fuzzing-gleam-compiler",
-    "score": 66,
-    "time": 1787675455,
-    "titulo_es": "¿Se pueden encontrar errores en un compilador generando programas aleatorios?",
-    "resumen": "El artículo explora el uso de la \"fuzzing\" estructurada para detectar errores en el compilador de Gleam. Dada la dificultad de prever todos los casos de borde, se propone generar programas aleatorios y verificar su comportamiento en diferentes targets (Erlang y JavaScript) para identificar inconsistencias. Se descarta la aproximación con LLMs por ser costosa, no determinista y poco efectiva. En su lugar, se aboga por la \"structure-aware fuzzing\", que genera código fuente o ASTs válidos y estructurados. Gleam es un candidato ideal para esta técnica debido a su generación de código para dos plataformas, su sintaxis minimalista, su sistema de tipos estático y su naturaleza funcional. Además, al estar escrito en Rust, facilita la integración con herramientas de fuzzing existentes.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49428638,
-    "url": "https://chipsandcheese.com/p/sifives-first-server-platform",
-    "score": 135,
-    "time": 1787627186,
-    "titulo_es": "SiFive lanza la plataforma BigSky SF-2U870, un servidor \"aburrido\" para el desarrollo RISC-V",
-    "resumen": "El artículo presenta la nueva plataforma de desarrollo SiFive BigSky SF-2U870, destacando su naturaleza \"aburrida\" pero altamente funcional, ideal para desarrolladores. La plataforma incluye 32 núcleos P870-D a 2.2 GHz, 1256 GB de DDR5, 64 carriles PCIe 5.0 y soporte para GPUs de doble ancho. A diferencia de placas de desarrollo anteriores, el BigSky SF-2U870 soporta el estándar RVA23, lo que permite ejecutar sistemas operativos como Ubuntu 26.04 directamente. Se compara el SoC con alternativas de Intel (Xeon 6532P-B) y AMD (EPYC 8325P), señalando ventajas en carriles PCIe y posible menor consumo para el BigSky, aunque con desventajas en clock boost y SMT. La comparación más relevante es contra Ampere Altra Q32-17, donde BigSky ofrece mayor velocidad de reloj y PCIe Gen 5, mientras que Ampere lidera en número de carriles y ancho de banda de memoria. El artículo enfatiza que el BigSky no busca competir directamente con x86 o Arm, sino llenar el vacío en el ecosistema RISC-V para plataformas de desarrollo robustas y listas para usar, especialmente por su soporte RVA23, crucial para facilitar el desarrollo de software y la integración continua.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49411800,
-    "url": "https://surya.website/rling-qwen-to-paint-with-code",
-    "score": 208,
-    "time": 1787513969,
-    "titulo_es": "Aprendizaje por Refuerzo para Tareas Creativas y de Diseño con Generación de Imágenes Basada en Código",
-    "resumen": "El artículo detalla un proyecto que aborda la limitación de la edición directa en la generación de imágenes por IA, proponiendo un sistema que entrena un modelo de lenguaje para generar imágenes a través de código (esquemas p5.brush JavaScript). Este enfoque permite una edición granular del código subyacente en lugar de la imagen resultante. El núcleo del proyecto es la aplicación del aprendizaje por refuerzo (RL) a tareas creativas y de diseño, donde la calidad estética y de diseño, carentes de una recompensa binaria simple, actúan como criterio de juicio. El sistema utiliza un bucle de entrenamiento de cuatro pasos: el modelo genera un esquema a partir de un prompt, se renderiza en una imagen PNG, esta es juzgada contra referencias mediante un modelo de juez que selecciona la mejor imagen, y el juicio se convierte en una señal de recompensa para actualizar el modelo (GRPO). Inicialmente, un sistema de puntuación absoluta con múltiples criterios generó una meseta en el rendimiento. La solución implicó un cambio a un juicio comparativo (pairwise judgment), donde la imagen generada se compara con referencias, y la recompensa se basa en la fracción de comparaciones ganadas. Se construyó una piscina de referencias de alta calidad, puntuada manualmente. El objetivo final, aunque no completado en este ciclo, sería entrenar un modelo de recompensa para eliminar la necesidad de comparación constante con el pool.",
+    "id": 49464314,
+    "url": "https://aiandeducation.mit.edu/report/",
+    "score": 81,
+    "time": 1787836065,
+    "titulo_es": "Inteligencia Artificial y Educación: Un Llamamiento a la Acción del MIT",
+    "resumen": "Este informe de la Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training del MIT, presentado en agosto de 2026, es un llamado a la acción sobre el papel de la IA generativa en la educación e investigación. Tras cinco meses de trabajo, el comité subraya la necesidad de que el MIT aborde preguntas fundamentales sobre la estructura, el significado y el valor de su educación en un contexto donde la IA, junto con otros factores, está alterando la misión del Instituto. El comité, compuesto por estudiantes, profesores y personal, destaca la posición única y la responsabilidad del MIT, pionero en IA y conocido por su educación rigurosa y práctica, para liderar la adaptación. El informe identifica que la IA generativa ya está omnipresente, ofreciendo nuevas oportunidades de aprendizaje y experimentación, pero también generando preocupaciones sobre el impacto en la vida del campus, como la posible disminución de la profundidad del pensamiento crítico, la originalidad y el esfuerzo por parte de los estudiantes. Se señalan cambios rápidos y disrupciones a largo plazo que requieren una respuesta institucional. Además, se plantean preocupaciones prácticas significativas sobre privacidad de datos, acceso equitativo, sesgos, responsabilidad, y el impacto social y ambiental de la IA. El documento concluye que, aunque otras instituciones enfrentan desafíos similares, el MIT tiene un rol crucial. Se establecen ocho principios rectores para guiar al Instituto, reconociendo que la IA generativa, a diferencia de innovaciones graduales como la computadora, ha irrumpido abruptamente en la sociedad con su lanzamiento público en 2022, creando la necesidad de una adaptación rápida.",
     "categoria": "IA"
   },
   {
-    "id": 49430259,
-    "url": "https://fdeploy.com/",
-    "score": 30,
-    "time": 1787643131,
-    "titulo_es": "fDeploy: Un Servidor de Despliegue de Software Autohospedado",
-    "resumen": "fDeploy es una solución de despliegue de software autohospedada diseñada para gestionar y automatizar el proceso de lanzamiento de aplicaciones. Se compone de un servidor central (fDeploy Server) que se ejecuta como un servicio de Windows, alojando un repositorio de paquetes NuGet integrado, una API REST OpenAPI v3 y un panel de control. Cada objetivo de despliegue (máquina donde se desplegará el software) ejecuta un agente (fDeploy Agent) que se comunica de forma segura y encriptada con el servidor. El sistema soporta la gestión de proyectos, entornos, roles de destino, variables y secuencias de despliegue. Permite transformaciones de configuración (como XDT) y la gestión centralizada de certificados para sitios IIS. La autenticación y autorización se basan en roles y equipos, con soporte opcional para sincronización con Active Directory. fDeploy se enfoca en la autohospedación sin componentes en la nube ni comprobaciones de licencia salientes. Ofrece licencias perpetuas y una versión comunitaria gratuita para organizaciones con ingresos anuales inferiores a un millón de dólares. La arquitectura es escalable en cuanto a proyectos, objetivos y usuarios, pero no ofrece alta disponibilidad en clústeres ni multi-tenancy.",
+    "id": 49468507,
+    "url": "https://github.com/patriceckhart/hrdx",
+    "score": 12,
+    "time": 1787852693,
+    "titulo_es": "hrdx: Múltiplexor de Terminal Experimental para la Era de los Agentes",
+    "resumen": "hrdx es un múltiplexor de terminal experimental, minimalista y ligero, diseñado para la era de los agentes de IA. Organiza proyectos como espacios de trabajo en una barra lateral, con pestañas por espacio de trabajo y paneles de terminal reales que ejecutan CLIs de agentes (Codex CLI, Claude Code, pi, zot) o shells. Soporta macOS, Linux y Windows. Permite la gestión interactiva de múltiples proyectos y agentes, con paneles que se cierran automáticamente al finalizar su proceso y se visualizan errores si fallan al iniciar. Soporta la reasignación de teclas a través de 'keys.json' y ofrece interactividad completa vía clic y rueda del ratón. Cada panel es un PTY real, permitiendo conexiones a hosts remotos, contenedores Docker o cargas de trabajo de Kubernetes. Permite registrar CLIs de agentes personalizados mediante 'harness.json' para integrarlos en la interfaz de hrdx. Gestiona la persistencia de clientes SSH, Docker o Kubernetes locales y lee detalles de Git del espacio de trabajo local.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49443040,
-    "url": "https://chipsandcheese.com/p/hot-chips-2026-fujitsus-monaka-cpu",
-    "score": 8,
-    "time": 1787707455,
-    "titulo_es": "Nuevo Núcleo Monaka de Fujitsu: Mejoras en Procesadores para HPC y Carga General",
-    "resumen": "El artículo detalla la evolución de los procesadores de Fujitsu, comparando el A64FX con el nuevo núcleo Monaka. El A64FX introdujo SVE en el ecosistema Arm y marcó el cambio de Fujitsu de SPARC a aarch64, aprovechando un mejor ecosistema de software y abriendo nuevos mercados. Sin embargo, el A64FX no era ideal para cargas de trabajo de propósito general debido a su baja velocidad de reloj, pequeño motor out-of-order y predictor de ramas básico, optimizado principalmente para sus tuberías vectoriales de 512 bits. El nuevo núcleo Monaka está diseñado para abordar estas limitaciones, ofreciendo un mejor rendimiento para cargas de trabajo generales sin descuidar el rendimiento HPC. Monaka incorpora un predictor de ramas TAGE de 'tres niveles', una mejora significativa respecto al predictor tipo perceptrón del A64FX. Aunque los detalles completos del predictor TAGE no se han revelado, se especula con una arquitectura de múltiples etapas con diferentes longitudes de historial. El Monaka cuenta con una unidad de ejecución desacoplada, una caché de instrucciones de 64 KB y se estima que es al menos 6-wide (ancho de ejecución), con seis ALUs y dos tuberías vectoriales/FP de 256 bits. Esto contrasta con el A64FX que era 4-wide con cuatro ALUs y tuberías vectoriales de 512 bits. Se observan mejoras en la ejecución de predicados y el manejo de operaciones, con la posible adición de puertos de ALU alimentados por RSA. A pesar de las tuberías vectoriales más estrechas, se espera que Monaka ofrezca un alto rendimiento de vector general en el chip.",
+    "id": 49465291,
+    "url": "https://github.com/ahmadpiran/restoredrill",
+    "score": 31,
+    "time": 1787840183,
+    "titulo_es": "restoredrill: Verificación de Restauración de Backups de PostgreSQL",
+    "resumen": "restoredrill es una herramienta diseñada para automatizar y validar la restauración de backups de PostgreSQL. Su propósito principal es asegurar que los backups existentes sean realmente funcionales mediante la restauración en un entorno efímero (un contenedor desechable) y la ejecución de comprobaciones definidas por el usuario. La herramienta genera un informe JSON detallado y auditable que registra el tiempo de restauración y los resultados de las verificaciones, sirviendo como evidencia concreta para auditorías de cumplimiento como SOC 2, ISO 27001 o AWS Foundational Technical Review. A diferencia de otras herramientas, restoredrill se enfoca en una única tarea: la verificación de la restaurabilidad de los backups en un ciclo programado, facilitando su integración como un paso más en flujos de Integración Continua (CI). La herramienta se distingue por su enfoque en la generación de reportes estandarizados y fáciles de consumir por auditores, abordando el problema común de la falta de pruebas de restauración seguras y la dificultad de falsificar la evidencia generada.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49450816,
+    "url": "https://polign.com/blog-edge-agent-memory",
+    "score": 13,
+    "time": 1787757891,
+    "titulo_es": "Memoria para Agentes: Un Enfoque Basado en Bases de Datos Tipadas y Almacenamiento Eficiente",
+    "resumen": "El artículo propone una solución innovadora para la memoria de agentes de IA, abordando dos desafíos clave: la representación de la memoria y su gestión en entornos con restricciones de hardware. Se introduce un sistema de memoria tipada con reglas de superposición que externaliza decisiones complejas (como la detección de correcciones o contradicciones) del modelo LLM al esquema de la base de datos. Esto mejora la precisión y reduce el consumo de tokens al evitar la relectura de texto o la dependencia exclusiva de la recuperación semántica. El componente central es `polign_db`, una base de datos que opera sobre un motor híbrido (vector + BM25) y reside en un almacén de objetos. Su diseño prioriza un estado residente mínimo y costos de consulta que no escalan con el tamaño del corpus, haciéndola ideal tanto para aplicaciones en la nube como para dispositivos de baja potencia. Se destaca su eficiencia demostrada con un caso de uso de Wikipedia, donde sirve millones de pasajes con un consumo de memoria RSS muy bajo en un equipo ARM de 2GB. El artículo anticipa un futuro de arquitecturas de agentes compuestas por componentes \"pequeños y aburridos\", como modelos de embedding locales y bases de datos eficientes, capaces de ejecutarse en hardware limitado a medida que los modelos locales mejoran.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49464637,
+    "url": "https://www.comaps.app/news/2026-08-23/comaps-integration-with-the-wider-floss-ecosystem/",
+    "score": 117,
+    "time": 1787837394,
+    "titulo_es": "CoMaps: Integración con Gadgetbridge y OpenVitals para una Experiencia FLOSS en Android",
+    "resumen": "El artículo describe cómo CoMaps, una aplicación Android libre y de código abierto (FLOSS), está mejorando su interoperabilidad con otras aplicaciones FLOSS para ofrecer alternativas a software propietario. Se detalla la integración con Gadgetbridge (versión v0.93.0 y posteriores) que permite mostrar indicaciones de navegación giro a giro en smartwatches compatibles directamente desde CoMaps. Asimismo, se explica la integración con OpenVitals, que utiliza el framework Health Connect de Android para consolidar datos de salud y permite a CoMaps actuar como proveedor de contexto de navegación para registrar actividades al aire libre, mostrando la ruta sobre las métricas de actividad en tiempo real. Ambas integraciones respetan la privacidad del usuario, requiriendo permisos explícitos para compartir datos. También se menciona la disponibilidad de documentación para desarrolladores FLOSS en Codeberg.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49466988,
+    "url": "https://wayofmarkdown.com/markdown-database",
+    "score": 14,
+    "time": 1787846466,
+    "titulo_es": "El Patrón de Base de Datos Markdown",
+    "resumen": "El artículo describe el \"Patrón de Base de Datos Markdown\", una metodología para tratar carpetas de archivos Markdown como bases de datos. Cada archivo se considera un registro, el frontmatter de Markdown actúa como campos (columnas), y las carpetas sirven como agrupaciones (tablas). Este patrón aprovecha la simplicidad del texto plano y el control de versiones de Git, al tiempo que proporciona capacidades de consulta, filtrado y ordenación que normalmente se asocian con las bases de datos. Resuelve la dicotomía entre Sistemas de Gestión de Contenidos (CMS) con datos estructurados pero con contenido bloqueado, y archivos Markdown simples sin capacidad de consulta. Las consecuencias incluyen portabilidad, control de versiones, independencia de pila y consulta completa sobre colecciones de hasta aproximadamente diez mil archivos. El patrón es ideal para casos de uso como notas personales, wikis de equipo o blogs con metadatos, donde los registros tienen tanto un componente de texto enriquecido como de datos estructurados, ofreciendo una alternativa ligera y sin bloqueo a las bases de datos tradicionales para conjuntos de datos de tamaño moderado.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49466902,
+    "url": "https://www.mux.com/blog/the-broadcast-squeezeback-rebuilt-with-css-grid-and-webvtt",
+    "score": 14,
+    "time": 1787846163,
+    "titulo_es": "Squeezeback: Aprovechando CSS y WebVTT para Video Interactivo",
+    "resumen": "El artículo explora la implementación del efecto 'squeezeback' (comúnmente visto en transmisiones deportivas) utilizando tecnologías web modernas. Propone una solución basada en CSS Grid para animar dinámicamente el layout del reproductor de video, permitiendo que el video principal se encoja y mueva a un lado mientras se revelan elementos adicionales como tarjetas de patrocinadores o información del estudio. La sincronización de estas animaciones de layout se maneja eficientemente a través de WebVTT. En lugar de usar JavaScript para monitorear el tiempo del video, el artículo sugiere emplear la API de TextTrack de WebVTT. Las pistas de texto (en modo 'hidden') se utilizan para disparar eventos 'cuechange' en momentos específicos. Estos eventos actúan como desencadenadores para aplicar cambios de layout CSS, asociando identificadores de cues de WebVTT con acciones de diseño o datos de producto. Se destaca la ventaja de esta aproximación: la lógica de sincronización y presentación de contenido interactivo reside en un archivo de texto simple (WebVTT), lo que facilita las actualizaciones por parte de no desarrolladores y evita re-renders innecesarios en el reproductor de video (usando Video.js v10 como ejemplo). La implementación con CSS Grid se detalla, explicando cómo los valores de 'fr' y 'gap' se pueden usar para controlar el espacio y la revelación de paneles.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49464459,
+    "url": "https://github.com/issacnitin/RealDiff",
+    "score": 35,
+    "time": 1787836651,
+    "titulo_es": "RealDiff: Detección de Cambios de Comportamiento en Tiempo de Ejecución en Pull Requests",
+    "resumen": "RealDiff es una herramienta de análisis de código que detecta cambios en el comportamiento en tiempo de ejecución de una aplicación mediante la ejecución de pruebas existentes en la base del código y la versión propuesta en un pull request. Compara los argumentos de métodos y los valores de retorno observados en ambos lados para identificar discrepancias que el análisis estático o la revisión manual de código podrían pasar por alto. A diferencia de la mutación testing, RealDiff no modifica el código ni las pruebas; se enfoca en observar el comportamiento del código existente ejecutado por las pruebas. Identifica el punto exacto donde un cambio de comportamiento se origina (la 'frontera causal'), evitando la propagación de falsas incidencias a lo largo del árbol de llamadas. La herramienta maneja variaciones de ejecución (como timestamps o GUIDs aleatorios) restando el 'ruido' interno. Soporta múltiples lenguajes (incluyendo .NET, Java, Node.js, Go, Rust, Python) a través de un lanzador Rust y componentes gestionados específicos por runtime. La arquitectura se basa en un contrato de traza neutral en lenguaje, un tracer por runtime y un motor de diff y análisis de hallazgos en streaming. Se encuentra en estado de preview temprano.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49465464,
+    "url": "https://github.com/JPLeRouzic/Mitra-15-for-SIMH",
+    "score": 18,
+    "time": 1787840877,
+    "titulo_es": "Simulador de Mitra-15 en SIMH",
+    "resumen": "Este artículo describe el desarrollo preliminar de un simulador para el minicompleto Mitra-15 dentro del framework SIMH. El Mitra-15, una máquina de 16 bits de los años 70 desarrollada por CII, se caracterizaba por su capacidad de programar periféricos de E/S mediante microcódigo. El autor está adaptando un simulador existente del SDS 940, modificándolo para replicar las características del Mitra-15, como sus registros y modos de direccionamiento, aunque señala diferencias clave con arquitecturas posteriores como el Z80 (menos registros, falta de stack). El objetivo a largo plazo es portar RSX280 al Mitra. El simulador permitirá cargar memoria, examinar registros y ejecutar programas dentro del monitor SIMH. El proyecto busca preservar la historia de la computación francesa.",
     "categoria": "Hardware"
   },
   {
-    "id": 49445717,
-    "url": "https://pauldix.com/the-end-of-programming",
-    "score": 43,
-    "time": 1787733479,
-    "titulo_es": "El Fin de la Programación Manual: Cómo la IA Está Reescribiendo el Software",
-    "resumen": "El artículo argumenta que la programación manual y la revisión de código por humanos están al borde de la extinción, impulsadas por los avances en Inteligencia Artificial y el reciente ejemplo de la reescritura de Bun 1.4 de Zig a Rust.  Se detalla cómo un solo desarrollador, utilizando versiones pre-release de modelos de IA (Fable 5) con presupuestos de tokens prácticamente ilimitados, orquestó la traducción de más de un millón de líneas de código en 11 días.  El autor predice una explosión en la generación de software por agentes de IA, donde los humanos revisarán el resultado final en lugar del código subyacente. Si bien esto generará una gran cantidad de software útil y funcional, también habrá un volumen considerable de código de baja calidad. La tendencia ya se observa en el aumento exponencial de código producido en plataformas como GitHub, gran parte del cual proviene de proyectos internos o de bajo riesgo generados por modelos de IA menos avanzados. La reescritura de Bun, a pesar de tener un 'oráculo' (el código original) para la verificación, demuestra la capacidad de la IA para producir software complejo y sofisticado cuando se le proporciona un sistema de verificación y dirección adecuadas, sentando un precedente para el futuro del desarrollo de software.",
+    "id": 49458418,
+    "url": "https://github.com/SenteLabsAI/OpenExecutive",
+    "score": 899,
+    "time": 1787795182,
+    "titulo_es": "Open Executive: Un Equipo Ejecutivo Virtual con IA para tu Empresa",
+    "resumen": "El artículo describe Open Executive, un sistema de IA que emula un equipo ejecutivo virtual para empresas. Utiliza ocho agentes especializados para proporcionar una voz ejecutiva coherente, respaldada por conocimiento a nivel MBA, recuperado de fuentes internas (documentos de la empresa) y externas (conocimiento integrado). El sistema mantiene memoria episódica de decisiones pasadas y utiliza un planificador para gestionar acciones proactivas. La arquitectura se basa en RAG con dos capas de recuperación (ChromaDB para conocimiento incorporado y documentos de la empresa), memoria persistente en SQLite y un planificador de instancias únicas para evitar ejecuciones duplicadas. El prompt se gestiona de forma eficiente con caché para optimizar el rendimiento. La implementación incluye una API (Puerto 8000) y una interfaz de usuario (Puerto 3000), con requisitos de Python 3.11+ y Node 22+. Se integra con Discord para la interacción del usuario y soporta despliegues en entornos QA y de producción a través de Fly.io, con un enfoque en la operación de instancia única para el planificador.",
     "categoria": "IA"
   }
 ]
