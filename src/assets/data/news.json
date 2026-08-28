@@ -1,200 +1,218 @@
 [
   {
-    "id": 49468083,
-    "url": "https://blog.cloudflare.com/dns-cache-memory-optimization-1111/",
-    "score": 173,
-    "time": 1787851077,
-    "titulo_es": "Optimizando la memoria de la caché DNS de Cloudflare para ahorrar más de 100 TB de RAM",
-    "resumen": "Cloudflare detalla cómo optimizó el uso de memoria en Big Pineapple, la plataforma de caché DNS detrás de 1.1.1.1 que gestiona más de 250 mil millones de entradas. Al sustituir estructuras de Rust dinámicas como `Vec<T>` y `String` por tipos inmutables de tamaño fijo como `Box<[T]>` y `Box<str>`, eliminaron los campos de capacidad redundantes (8 bytes por campo) y el espacio reservado sin usar en el heap. Estas optimizaciones redujeron la huella de memoria por entrada en más de un 50%, liberando aproximadamente 100 TB de RAM en toda su flota, mientras que el rendimiento de inserción aumentó un 43% y la latencia de búsqueda disminuyó un 19%.",
+    "id": 49479837,
+    "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
+    "score": 346,
+    "time": 1787930229,
+    "titulo_es": "Navegación por teclado en interfaces gráficas frente a interfaces de terminal",
+    "resumen": "El artículo analiza el debate entre el desarrollo de interfaces de usuario en terminal (TUI) y las interfaces gráficas (GUI). El autor refuta el argumento común de que las TUI son superiores por estar orientadas al uso del teclado, señalando que las GUI pueden y deben ser diseñadas para ser totalmente controlables mediante atajos de teclado sin perder las ventajas visuales y funcionales de un entorno gráfico. Se argumenta que la falta de soporte completo de teclado en muchas GUI se debe a la omisión de los desarrolladores y no a limitaciones técnicas de los frameworks, instando a integrar una navegación por teclado accesible para enriquecer la experiencia de usuario.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49467922,
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/",
-    "score": 72,
-    "time": 1787850392,
-    "titulo_es": "Lanzamiento de Gemini Omni 1.1 Flash: Controles creativos y video generativo para desarrolladores",
-    "resumen": "Google DeepMind presenta Gemini Omni 1.1 Flash, una actualización de su modelo de video generativo orientada a producción y accesible mediante la API de Gemini y Google AI Studio. Las nuevas capacidades técnicas incluyen extensión de escenas con análisis de hasta 10 segundos de contexto previo (permitiendo clips acumulados de hasta 40 segundos), interpolación fluida entre fotogramas clave iniciales y finales para transiciones de cámara cinematográficas, reescalado a resolución 4K y generación de borradores de baja resolución para prototipado rápido y de bajo costo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49466006,
-    "url": "https://blog.chrislewis.au/decompiling-a-nintendo-64-game-in-84-days/",
-    "score": 99,
-    "time": 1787842871,
-    "titulo_es": "Snowboard Kids está 100% descompilado",
-    "resumen": "Se ha completado con éxito la descompilación completa (100%) del videojuego Snowboard Kids de Nintendo 64, logrando implementaciones en C que generan código máquina idéntico al original. El proyecto se completó en solo 84 días gracias a la combinación de asistencia de IA, herramientas de permutación y la colaboración de expertos humanos. El proceso presentó desafíos técnicos significativos debido al compilador propietario IDO 5.3 de SGI, cuyos pases de optimización y generación de código son difíciles de reproducir en comparación con compiladores como GCC.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49468834,
-    "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
-    "score": 15,
-    "time": 1787853890,
-    "titulo_es": "Estándar de Hardware para Modelos (MHS): Habilitando la Operación Segura de Dispositivos Físicos por Agentes de IA",
-    "resumen": "El artículo presenta el Model Hardware Standard (MHS), una especificación compartida diseñada para permitir que los agentes de Inteligencia Artificial (IA) operen dispositivos físicos de manera segura y eficiente en entornos de laboratorio y fabricación. MHS reduce drásticamente el tiempo de integración de hardware, que tradicionalmente lleva semanas o meses, a solo horas o minutos, al estandarizar la comunicación entre dispositivos dispares. Esto se logra mediante un controlador MHS que actúa como traductor entre el sistema operativo y el hardware, utilizando primitivas simples ('leer', 'escribir') y haciendo que cada dispositivo sea descubrible de forma estandarizada. El controlador también facilita que los agentes de IA comprendan el uso y las características de dispositivos desconocidos previamente, almacenando esta información en metadatos legibles por humanos. MHS permite la orquestación autónoma de experimentos y flujos de trabajo 24/7, con capacidades de razonamiento en tiempo real y recuperación de errores sin intervención humana. La especificación es agnóstica al modelo de IA y compatible con cualquier dispositivo con interfaz programable, utilizando protocolos estándar como el Model Context Protocol (MCP) para el control del hardware. Actualmente en fase de vista previa de investigación, MHS busca la colaboración para desarrollar evaluaciones de seguridad y mejores prácticas antes de su lanzamiento como código abierto.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49464543,
-    "url": "https://rahuljuliato.com/posts/markdown-ts-mode-emacs-31",
-    "score": 121,
-    "time": 1787836956,
-    "titulo_es": "Emacs 31: Configurando y explorando el modo experimental markdown-ts-mode",
-    "resumen": "El artículo detalla la configuración y uso del nuevo modo experimental 'markdown-ts-mode' en Emacs 31. Se explica cómo activarlo, ya que no está habilitado por defecto, y se recomienda el uso de `use-package` o la carga manual de las librerías. Se aclara que no es necesario usar repositorios de paquetes antiguos como MELPA, ya que este modo viene integrado. Se aborda la instalación de las gramáticas necesarias de Tree-sitter (markdown y su gramática para parseo de inline), que Emacs puede solicitar descargar y compilar automáticamente si no se encuentran en el sistema. Se mencionan los requisitos para la compilación de gramáticas (como `make` y `gcc`) y cómo verificar si Emacs está compilado con soporte para Tree-sitter (`featurep 'treesit`). El modo es descrito como rico en funcionalidades, soportando especificaciones CommonMark y GitHub Flavored Markdown (GFM), con extras como manejo de bloques de código y utilidades de tabla de contenidos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49457722,
-    "url": "https://morphing.cloud/afterglow/",
-    "score": 15,
-    "time": 1787789907,
-    "titulo_es": "Ejecución de salvapantallas clásicos After Dark en macOS moderno (Universal binary)",
-    "resumen": "Afterglow es un emulador de software diseñado específicamente para ejecutar módulos de salvapantallas clásicos de After Dark (originales 68k) en sistemas macOS modernos, sin requerir ROMs ni sistemas operativos clásicos de Mac OS. Utiliza el emulador de CPU Musashi 68k y reimplementa partes necesarias del Macintosh Toolbox y APIs del SO. Permite importar módulos mediante arrastrar y soltar (archivos, imágenes de disco, archivos comprimidos) y también buscar e instalar software directamente desde Internet Archive. El objetivo es la preservación de software y facilitar el disfrute de estos salvapantallas artísticos. Afterglow incluye un módulo de salvapantallas para macOS que permite utilizar los módulos importados.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49469249,
-    "url": "https://news.bgov.com/bloomberg-government-news/nvidia-starts-a-pac-as-ai-chip-maker-buids-influence-force-in-dc",
-    "score": 9,
-    "time": 1787855680,
-    "titulo_es": "Nvidia lanza comité de acción política para influir en Washington",
-    "resumen": "Nvidia Corp. ha establecido un comité de acción política (PAC) para realizar donaciones a candidatos federales. Este movimiento estratégico se produce en un momento en que los legisladores y la administración Trump debaten sobre un marco regulatorio para la inteligencia artificial (IA), y mientras los votantes expresan preocupaciones sobre la tecnología de cara a las elecciones de mitad de período. Nvidia, la empresa más valiosa del mundo, que fabrica chips esenciales para la IA, está fortaleciendo su presencia e influencia en Washington para abordar estos temas cruciales.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49465732,
-    "url": "https://www.daemonology.net/blog/2026-08-27-Launching-Route-53-Files.html",
-    "score": 64,
-    "time": 1787841923,
-    "titulo_es": "Route 53 Files: Acceso a Zonas DNS Alojadas como Sistemas de Archivos Nativos",
-    "resumen": "El artículo describe Route 53 Files, un servicio que permite acceder a zonas DNS alojadas en AWS Route 53 como si fueran sistemas de archivos nativos (NFS v4.1+). Esto elimina la necesidad de recargar o recompilar bases de datos DNS tras modificaciones, permitiendo la edición directa de registros a través de software UNIX estándar. Los cambios en el sistema de archivos se reflejan automáticamente en Route 53, y viceversa. Las zonas pueden ser montadas concurrentemente en múltiples recursos de cómputo (EC2, ECS, EKS, Lambda), facilitando el acceso compartido y la colaboración. El servicio utiliza S3 Files para la persistencia, con latencias de ~90 segundos para la propagación de cambios al DNS activo y hasta 6 minutos para que los cambios realizados externamente se reflejen en el sistema de archivos montado. Se detalla el proceso de configuración inicial, incluyendo la creación de roles IAM necesarios para la integración con AWS.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49458161,
-    "url": "https://www.businessinsider.com/nvidia-in-talks-to-buy-hugging-face-13-billion-dollars-2026-8",
-    "score": 1750,
-    "time": 1787793175,
-    "titulo_es": "Nvidia en conversaciones para adquirir Hugging Face por más de 13.000 millones de dólares",
-    "resumen": "El artículo informa sobre las negociaciones avanzadas entre Nvidia y Hugging Face para una posible adquisición de esta última por más de 13.000 millones de dólares. Hugging Face es una plataforma central en el ecosistema de IA de código abierto, utilizada por desarrolladores para compartir y construir modelos de IA. La adquisición le daría a Nvidia una mayor presencia entre los desarrolladores de IA y potencialmente aumentaría la carga de trabajo en sus chips. Sin embargo, la neutralidad de Hugging Face, que soporta modelos y hardware de diversos competidores de Nvidia, podría verse comprometida por una posible propiedad de Nvidia. Las conversaciones están en curso, pero aún no se ha alcanzado un acuerdo y podrían fracasar. Microsoft también tuvo conversaciones previas con Hugging Face, pero estas ya no están en curso. Nvidia ya tiene una relación existente con Hugging Face, habiendo participado en una ronda de financiación anterior.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49467551,
-    "url": "https://github.com/kelviq/tare",
-    "score": 48,
-    "time": 1787848664,
-    "titulo_es": "Tare: Herramienta para Diagnóstico y Optimización de Uso de Claude Code",
-    "resumen": "El artículo describe 'Tare', una herramienta diseñada para ayudar a los usuarios de Claude Code a entender y optimizar su consumo de tokens. Tare funciona localmente en la máquina del usuario, analizando los registros de las solicitudes de Claude Code para identificar patrones de uso, identificar qué proyectos o herramientas están consumiendo más recursos, y detectar posibles anomalías. Permite a los usuarios realizar preguntas en lenguaje natural para obtener informes detallados sobre el gasto de tokens, el uso de modelos, y el costo de las sesiones. La herramienta se enfoca en la transparencia y la eficiencia, permitiendo a los desarrolladores tomar decisiones informadas sobre la gestión de su cuota de uso, ofreciendo análisis que van desde identificar la fuente principal de consumo hasta la recomendación de acciones para optimizar costos. Tare se instala con un solo comando y no requiere configuraciones complejas, priorizando la privacidad al no enviar información sensible fuera de la máquina local.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49448150,
-    "url": "https://entropicthoughts.com/curmudgeon-tries-language-server",
-    "score": 90,
-    "time": 1787748517,
-    "titulo_es": "Evolución de los flujos de trabajo de desarrollo de software: Del REPL de Lisp a las mejoras en Haskell",
-    "resumen": "El artículo discute la evolución de los flujos de trabajo de desarrollo de software, contrastando el enfoque interactivo y en tiempo real de los lenguajes Lisp (donde el código se manipula directamente en un REPL con el sistema en ejecución) con los flujos de trabajo más tradicionales en lenguajes como Haskell. El autor, un desarrollador de Haskell, se inspira en la experiencia de Lisp y explora cómo herramientas como `ghcid` y `foreign-store` pueden acercar los flujos de trabajo de Haskell a un paradigma similar. Se describe un método donde los cambios en el editor se reflejan automáticamente en la recompilación y reinicio del programa sin perder estado, y las pruebas o experimentación se manejan escribiendo casos de prueba unitarios que se ejecutan al recargar el código. Aunque la evaluación directa de código en un REPL del programa en ejecución aún no es posible, este flujo de trabajo mejorado permite mantener el desarrollo dentro del editor, similar a la experiencia de Lisp pero adaptado a Haskell.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49464414,
-    "url": "https://aphantasia.com/guide",
-    "score": 65,
-    "time": 1787836460,
-    "titulo_es": "Guía para principiantes sobre la afantasia: Comprendiendo el pensamiento sin imágenes",
-    "resumen": "El artículo introduce la afantasia, definida como la incapacidad de visualizar imágenes mentales, también conocida como pensamiento sin imágenes. Explica que las personas con afantasia conceptualizan objetos o escenas en lugar de verlos en su 'ojo de la mente'. Se presenta un test sencillo (imaginar una manzana roja) y se menciona la Escala de Imaginación Visual (VVIQ) como herramienta de evaluación. Se distingue la experiencia de la afantasia de las metáforas comunes como 'ojo de la mente' y se explora el espectro de la imaginación visual, desde imágenes simples hasta representaciones fotorrealistas. Se aborda cómo la afantasia puede afectar no solo la vista sino también otros sentidos en la imaginación, y se discuten factores que influyen en la viveza y control de las imágenes mentales, como la novedad, la arbitrariedad y el estado emocional.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49464314,
-    "url": "https://aiandeducation.mit.edu/report/",
-    "score": 81,
-    "time": 1787836065,
-    "titulo_es": "Inteligencia Artificial y Educación: Un Llamamiento a la Acción del MIT",
-    "resumen": "Este informe de la Ad Hoc Committee on AI Use in Teaching, Learning, and Research Training del MIT, presentado en agosto de 2026, es un llamado a la acción sobre el papel de la IA generativa en la educación e investigación. Tras cinco meses de trabajo, el comité subraya la necesidad de que el MIT aborde preguntas fundamentales sobre la estructura, el significado y el valor de su educación en un contexto donde la IA, junto con otros factores, está alterando la misión del Instituto. El comité, compuesto por estudiantes, profesores y personal, destaca la posición única y la responsabilidad del MIT, pionero en IA y conocido por su educación rigurosa y práctica, para liderar la adaptación. El informe identifica que la IA generativa ya está omnipresente, ofreciendo nuevas oportunidades de aprendizaje y experimentación, pero también generando preocupaciones sobre el impacto en la vida del campus, como la posible disminución de la profundidad del pensamiento crítico, la originalidad y el esfuerzo por parte de los estudiantes. Se señalan cambios rápidos y disrupciones a largo plazo que requieren una respuesta institucional. Además, se plantean preocupaciones prácticas significativas sobre privacidad de datos, acceso equitativo, sesgos, responsabilidad, y el impacto social y ambiental de la IA. El documento concluye que, aunque otras instituciones enfrentan desafíos similares, el MIT tiene un rol crucial. Se establecen ocho principios rectores para guiar al Instituto, reconociendo que la IA generativa, a diferencia de innovaciones graduales como la computadora, ha irrumpido abruptamente en la sociedad con su lanzamiento público en 2022, creando la necesidad de una adaptación rápida.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49468507,
-    "url": "https://github.com/patriceckhart/hrdx",
-    "score": 12,
-    "time": 1787852693,
-    "titulo_es": "hrdx: Múltiplexor de Terminal Experimental para la Era de los Agentes",
-    "resumen": "hrdx es un múltiplexor de terminal experimental, minimalista y ligero, diseñado para la era de los agentes de IA. Organiza proyectos como espacios de trabajo en una barra lateral, con pestañas por espacio de trabajo y paneles de terminal reales que ejecutan CLIs de agentes (Codex CLI, Claude Code, pi, zot) o shells. Soporta macOS, Linux y Windows. Permite la gestión interactiva de múltiples proyectos y agentes, con paneles que se cierran automáticamente al finalizar su proceso y se visualizan errores si fallan al iniciar. Soporta la reasignación de teclas a través de 'keys.json' y ofrece interactividad completa vía clic y rueda del ratón. Cada panel es un PTY real, permitiendo conexiones a hosts remotos, contenedores Docker o cargas de trabajo de Kubernetes. Permite registrar CLIs de agentes personalizados mediante 'harness.json' para integrarlos en la interfaz de hrdx. Gestiona la persistencia de clientes SSH, Docker o Kubernetes locales y lee detalles de Git del espacio de trabajo local.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49465291,
-    "url": "https://github.com/ahmadpiran/restoredrill",
-    "score": 31,
-    "time": 1787840183,
-    "titulo_es": "restoredrill: Verificación de Restauración de Backups de PostgreSQL",
-    "resumen": "restoredrill es una herramienta diseñada para automatizar y validar la restauración de backups de PostgreSQL. Su propósito principal es asegurar que los backups existentes sean realmente funcionales mediante la restauración en un entorno efímero (un contenedor desechable) y la ejecución de comprobaciones definidas por el usuario. La herramienta genera un informe JSON detallado y auditable que registra el tiempo de restauración y los resultados de las verificaciones, sirviendo como evidencia concreta para auditorías de cumplimiento como SOC 2, ISO 27001 o AWS Foundational Technical Review. A diferencia de otras herramientas, restoredrill se enfoca en una única tarea: la verificación de la restaurabilidad de los backups en un ciclo programado, facilitando su integración como un paso más en flujos de Integración Continua (CI). La herramienta se distingue por su enfoque en la generación de reportes estandarizados y fáciles de consumir por auditores, abordando el problema común de la falta de pruebas de restauración seguras y la dificultad de falsificar la evidencia generada.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49450816,
-    "url": "https://polign.com/blog-edge-agent-memory",
-    "score": 13,
-    "time": 1787757891,
-    "titulo_es": "Memoria para Agentes: Un Enfoque Basado en Bases de Datos Tipadas y Almacenamiento Eficiente",
-    "resumen": "El artículo propone una solución innovadora para la memoria de agentes de IA, abordando dos desafíos clave: la representación de la memoria y su gestión en entornos con restricciones de hardware. Se introduce un sistema de memoria tipada con reglas de superposición que externaliza decisiones complejas (como la detección de correcciones o contradicciones) del modelo LLM al esquema de la base de datos. Esto mejora la precisión y reduce el consumo de tokens al evitar la relectura de texto o la dependencia exclusiva de la recuperación semántica. El componente central es `polign_db`, una base de datos que opera sobre un motor híbrido (vector + BM25) y reside en un almacén de objetos. Su diseño prioriza un estado residente mínimo y costos de consulta que no escalan con el tamaño del corpus, haciéndola ideal tanto para aplicaciones en la nube como para dispositivos de baja potencia. Se destaca su eficiencia demostrada con un caso de uso de Wikipedia, donde sirve millones de pasajes con un consumo de memoria RSS muy bajo en un equipo ARM de 2GB. El artículo anticipa un futuro de arquitecturas de agentes compuestas por componentes \"pequeños y aburridos\", como modelos de embedding locales y bases de datos eficientes, capaces de ejecutarse en hardware limitado a medida que los modelos locales mejoran.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49464637,
-    "url": "https://www.comaps.app/news/2026-08-23/comaps-integration-with-the-wider-floss-ecosystem/",
-    "score": 117,
-    "time": 1787837394,
-    "titulo_es": "CoMaps: Integración con Gadgetbridge y OpenVitals para una Experiencia FLOSS en Android",
-    "resumen": "El artículo describe cómo CoMaps, una aplicación Android libre y de código abierto (FLOSS), está mejorando su interoperabilidad con otras aplicaciones FLOSS para ofrecer alternativas a software propietario. Se detalla la integración con Gadgetbridge (versión v0.93.0 y posteriores) que permite mostrar indicaciones de navegación giro a giro en smartwatches compatibles directamente desde CoMaps. Asimismo, se explica la integración con OpenVitals, que utiliza el framework Health Connect de Android para consolidar datos de salud y permite a CoMaps actuar como proveedor de contexto de navegación para registrar actividades al aire libre, mostrando la ruta sobre las métricas de actividad en tiempo real. Ambas integraciones respetan la privacidad del usuario, requiriendo permisos explícitos para compartir datos. También se menciona la disponibilidad de documentación para desarrolladores FLOSS en Codeberg.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49466988,
-    "url": "https://wayofmarkdown.com/markdown-database",
-    "score": 14,
-    "time": 1787846466,
-    "titulo_es": "El Patrón de Base de Datos Markdown",
-    "resumen": "El artículo describe el \"Patrón de Base de Datos Markdown\", una metodología para tratar carpetas de archivos Markdown como bases de datos. Cada archivo se considera un registro, el frontmatter de Markdown actúa como campos (columnas), y las carpetas sirven como agrupaciones (tablas). Este patrón aprovecha la simplicidad del texto plano y el control de versiones de Git, al tiempo que proporciona capacidades de consulta, filtrado y ordenación que normalmente se asocian con las bases de datos. Resuelve la dicotomía entre Sistemas de Gestión de Contenidos (CMS) con datos estructurados pero con contenido bloqueado, y archivos Markdown simples sin capacidad de consulta. Las consecuencias incluyen portabilidad, control de versiones, independencia de pila y consulta completa sobre colecciones de hasta aproximadamente diez mil archivos. El patrón es ideal para casos de uso como notas personales, wikis de equipo o blogs con metadatos, donde los registros tienen tanto un componente de texto enriquecido como de datos estructurados, ofreciendo una alternativa ligera y sin bloqueo a las bases de datos tradicionales para conjuntos de datos de tamaño moderado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49466902,
-    "url": "https://www.mux.com/blog/the-broadcast-squeezeback-rebuilt-with-css-grid-and-webvtt",
-    "score": 14,
-    "time": 1787846163,
-    "titulo_es": "Squeezeback: Aprovechando CSS y WebVTT para Video Interactivo",
-    "resumen": "El artículo explora la implementación del efecto 'squeezeback' (comúnmente visto en transmisiones deportivas) utilizando tecnologías web modernas. Propone una solución basada en CSS Grid para animar dinámicamente el layout del reproductor de video, permitiendo que el video principal se encoja y mueva a un lado mientras se revelan elementos adicionales como tarjetas de patrocinadores o información del estudio. La sincronización de estas animaciones de layout se maneja eficientemente a través de WebVTT. En lugar de usar JavaScript para monitorear el tiempo del video, el artículo sugiere emplear la API de TextTrack de WebVTT. Las pistas de texto (en modo 'hidden') se utilizan para disparar eventos 'cuechange' en momentos específicos. Estos eventos actúan como desencadenadores para aplicar cambios de layout CSS, asociando identificadores de cues de WebVTT con acciones de diseño o datos de producto. Se destaca la ventaja de esta aproximación: la lógica de sincronización y presentación de contenido interactivo reside en un archivo de texto simple (WebVTT), lo que facilita las actualizaciones por parte de no desarrolladores y evita re-renders innecesarios en el reproductor de video (usando Video.js v10 como ejemplo). La implementación con CSS Grid se detalla, explicando cómo los valores de 'fr' y 'gap' se pueden usar para controlar el espacio y la revelación de paneles.",
+    "id": 49478178,
+    "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
+    "score": 336,
+    "time": 1787923736,
+    "titulo_es": "Anuncio de lanzamiento: htmx 4.0.0",
+    "resumen": "El equipo de htmx anuncia la versión 4.0.0, destacando cambios arquitectónicos clave: migración interna de XMLHttpRequest a la API fetch(), eliminación de la herencia implícita de atributos (ahora requiere el sufijo :inherited), estandarización del ciclo de vida y nombres de eventos bajo la convención htmx:phase:action, y rediseño del soporte de historial eliminando la caché de instantáneas en localStorage para evitar conflictos con librerías JavaScript de terceros. Además, introduce soporte nativo para 'morphing swaps'.",
     "categoria": "Frontend"
   },
   {
-    "id": 49464459,
-    "url": "https://github.com/issacnitin/RealDiff",
-    "score": 35,
-    "time": 1787836651,
-    "titulo_es": "RealDiff: Detección de Cambios de Comportamiento en Tiempo de Ejecución en Pull Requests",
-    "resumen": "RealDiff es una herramienta de análisis de código que detecta cambios en el comportamiento en tiempo de ejecución de una aplicación mediante la ejecución de pruebas existentes en la base del código y la versión propuesta en un pull request. Compara los argumentos de métodos y los valores de retorno observados en ambos lados para identificar discrepancias que el análisis estático o la revisión manual de código podrían pasar por alto. A diferencia de la mutación testing, RealDiff no modifica el código ni las pruebas; se enfoca en observar el comportamiento del código existente ejecutado por las pruebas. Identifica el punto exacto donde un cambio de comportamiento se origina (la 'frontera causal'), evitando la propagación de falsas incidencias a lo largo del árbol de llamadas. La herramienta maneja variaciones de ejecución (como timestamps o GUIDs aleatorios) restando el 'ruido' interno. Soporta múltiples lenguajes (incluyendo .NET, Java, Node.js, Go, Rust, Python) a través de un lanzador Rust y componentes gestionados específicos por runtime. La arquitectura se basa en un contrato de traza neutral en lenguaje, un tracer por runtime y un motor de diff y análisis de hallazgos en streaming. Se encuentra en estado de preview temprano.",
+    "id": 49480466,
+    "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
+    "score": 151,
+    "time": 1787932726,
+    "titulo_es": "Por qué los embargos de seguridad convencionales en el código abierto ya no ganan tiempo y qué pueden hacer los mantenedores",
+    "resumen": "El autor analiza cómo el uso de agentes de IA y LLMs ha dejado obsoletos los modelos tradicionales de embargo y divulgación coordinada de vulnerabilidades en proyectos de código abierto. Tras abrir un PR público para mitigar un fallo de 'path traversal' en OCaml cohttp, se detectaron intentos de ataque automatizados en cuestión de minutos. Los modelos modernos permiten generar exploits funcionales casi al instante a partir de descripciones breves o pistas sutiles en commits, provocando que el tiempo medio hasta la explotación preceda con frecuencia a la publicación oficial de parches. Esto traslada el cuello de botella hacia el rendimiento de remediación y validación de los mantenedores, exigiendo un replanteamiento profundo de los flujos de respuesta en ciberseguridad.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49483248,
+    "url": "https://tmog.org",
+    "score": 24,
+    "time": 1787945718,
+    "titulo_es": "TMOG: Un administrador de tareas nativo y consola de sistemas para macOS, Windows y Linux",
+    "resumen": "TMOG es un monitor del sistema y administrador de tareas multiplataforma diseñado con un enfoque totalmente nativo, evitando shells basados en navegadores web. Su arquitectura técnica combina interfaces nativas específicas para cada plataforma (Swift en macOS, Win32 en Windows y Qt 6 en Linux) con un núcleo central compartido en C++ que gestiona los modelos, métricas y serialización. Ofrece visualización a 60 FPS, telemetría detallada por núcleo lógico, gestión avanzada de memoria, árboles de procesos y métricas de sensores térmicos y energéticos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49465464,
-    "url": "https://github.com/JPLeRouzic/Mitra-15-for-SIMH",
-    "score": 18,
-    "time": 1787840877,
-    "titulo_es": "Simulador de Mitra-15 en SIMH",
-    "resumen": "Este artículo describe el desarrollo preliminar de un simulador para el minicompleto Mitra-15 dentro del framework SIMH. El Mitra-15, una máquina de 16 bits de los años 70 desarrollada por CII, se caracterizaba por su capacidad de programar periféricos de E/S mediante microcódigo. El autor está adaptando un simulador existente del SDS 940, modificándolo para replicar las características del Mitra-15, como sus registros y modos de direccionamiento, aunque señala diferencias clave con arquitecturas posteriores como el Z80 (menos registros, falta de stack). El objetivo a largo plazo es portar RSX280 al Mitra. El simulador permitirá cargar memoria, examinar registros y ejecutar programas dentro del monitor SIMH. El proyecto busca preservar la historia de la computación francesa.",
+    "id": 49422743,
+    "url": "https://acko.net/blog/curvature-beziers/",
+    "score": 29,
+    "time": 1787590992,
+    "titulo_es": "Mejorando las curvas de Bézier en el diseño y la computación gráfica",
+    "resumen": "El artículo analiza la base matemática y geométrica de las curvas de Bézier, un estándar en herramientas CAD y gráficos por computadora desde los años 60. Explora su construcción mediante interpolaciones lineales (algoritmo de De Casteljau) y polinomios de Bernstein, señalando las limitaciones de los métodos tradicionales de manipulación de splines cúbicos (herramientas tipo 'pen tool'). Demuestra matemáticamente que la simetría de tangentes no garantiza una curvatura continua y propone alternativas para optimizar su edición manteniendo la compatibilidad técnica existente.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49481455,
+    "url": "https://arxiv.org/abs/2608.23691",
+    "score": 41,
+    "time": 1787936472,
+    "titulo_es": "arXivLabs: Marco de colaboración para nuevas funcionalidades",
+    "resumen": "arXivLabs es un framework que permite a desarrolladores, tanto individuales como organizaciones, crear y compartir nuevas funcionalidades y herramientas directamente en la plataforma web de arXiv, basándose en valores de código abierto, comunidad, excelencia y privacidad de datos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49479878,
+    "url": "https://huggingface.co/zai-org/GLM-5.3",
+    "score": 427,
+    "time": 1787930413,
+    "titulo_es": "GLM-5.3: Mejoras en tareas complejas y programación mediante post-entrenamiento",
+    "resumen": "GLM-5.3 mantiene el mismo modelo base que GLM-5.2, derivando todas sus mejoras exclusivamente de la fase de post-entrenamiento. Esta versión optimiza notablemente el rendimiento en programación compleja y tareas de horizonte largo, ofreciendo además soporte para su despliegue en diversos frameworks.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49479072,
+    "url": "https://geekyschmidt.com/post/2026-08-25-verschlimmbesserung/",
+    "score": 78,
+    "time": 1787927433,
+    "titulo_es": "Verschlimmbesserung: Cuando las mejoras empeoran el software",
+    "resumen": "El artículo discute el fenómeno de 'Verschlimmbesserung', una mejora intentada que empeora un producto de software. Se argumenta que esto ocurre cuando las métricas y los incentivos del equipo de ingeniería priorizan las 'point releases' o el simple hecho de 'enviar código' sobre la estabilidad y la mejora real del producto. Se cita a Eliyahu Goldratt para enfatizar que las métricas dirigen el comportamiento, y si las métricas son ilógicas o impulsan acciones negativas (como el churn o el envío indiscriminado), los equipos se comportarán de manera ilógica. Se resalta la importancia de la estabilidad como característica y la disciplina de saber cuándo no enviar actualizaciones, contrastando con la idea de que lo nuevo es siempre mejor. La conclusión es que se debe prestar atención a cómo se miden y se incentivan los equipos de ingeniería para evitar estas 'mejoras' perjudiciales.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49483020,
+    "url": "https://log.ozgur.works/bye-bye-github.html",
+    "score": 11,
+    "time": 1787944331,
+    "titulo_es": "Abandoné GitHub: Reflexiones sobre la confianza, la privacidad y el desarrollo de software",
+    "resumen": "El autor, un desarrollador de software con experiencia desde 2012, expresa su profunda insatisfacción y desconfianza hacia GitHub. Señala la inestabilidad percibida de la plataforma, contrastándola con la fiabilidad de los lanzamientos de software de épocas anteriores. Critica el modelo de negocio de GitHub, especialmente en lo referente al uso de código de terceros para entrenar IA y las prácticas que considera cuestionables para obtener beneficios. Siente decepción por el retorno recibido tras años de suscripción y cuestiona la validez legal y ética de la 'fair use' en el contexto del entrenamiento de modelos de IA con datos públicos. La decisión de migrar repositorios privados a una instancia de Forgejo autoalojada en su 'homelab' surge de 'serios problemas de confianza' y un deseo de simplicidad y control sobre sus datos y hardware. Mantiene repositorios públicos en GitHub por ahora, pero evita alojarlos en su servidor no accesible públicamente debido a sus persistentes 'problemas de confianza'. El mensaje central del artículo es una advertencia contra la confianza ciega en las grandes empresas tecnológicas, instando a la cautela, la investigación sobre seguridad y privacidad, y a buscar fuentes de información independientes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49441316,
+    "url": "https://www.wired.com/2015/03/illegal-sand-mining/",
+    "score": 40,
+    "time": 1787695383,
+    "titulo_es": "La guerra por la arena: El recurso natural más consumido del mundo",
+    "resumen": "El artículo narra el asesinato de Paleram Chauhan en la aldea india de Raipur Khadar, víctima de una disputa relacionada con la extracción ilegal de arena por parte de una poderosa organización criminal. Detalla la creciente demanda global de arena, un componente esencial para la construcción (cemento, hormigón) y diversas tecnologías (vidrio, chips de silicio, paneles solares), y su consecuente agotamiento en fuentes naturales como ríos y playas. Se menciona que la arena de desierto no es adecuada para la construcción debido a la forma redondeada de sus granos. La extracción de arena es una industria de miles de millones de dólares impulsada por el auge de la construcción mundial, llevando a escasez y conflictos en diversas partes del mundo, como Dubai y Australia, y destacando la arena como un recurso finito y estratégicamente valioso, a menudo subestimado.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49415923,
+    "url": "https://boyter.org/posts/sloc-cloc-code-hotspots-finding-files-that-need-attention/",
+    "score": 6,
+    "time": 1787553350,
+    "titulo_es": "SCC v4.0.0: Predicción de Bugs Mejorada con Complejidad y Historial de Commits",
+    "resumen": "El artículo anuncia la versión 4.0.0 de scc (sloc cloc code), una herramienta de análisis de código. La novedad principal es una métrica mejorada para identificar \"hotspots\" (áreas problemáticas) en el código, combinando la complejidad intrínseca de los archivos con su historial de commits (churn). A diferencia de enfoques anteriores (como el de Google, que fue descontinuado por ser poco útil), esta nueva métrica no se centra en predecir bugs históricos, sino en identificar archivos que son tanto complejos como frecuentemente modificados. Estos \"hotspots\" sugieren código que es \"difícil de trabajar\" y podría beneficiarse de refactorización o ser descompuesto. La herramienta calcula esta métrica normalizada (complejidad * commit_count) y la presenta en un resumen, demostrando cómo supera a las métricas individuales de complejidad o churn por sí solas, las cuales pueden dar falsos positivos (ej. archivos de test muy complejos pero no críticos, o archivos de configuración/scripts con alto churn pero baja complejidad). Se compara el resultado de scc con análisis puramente por complejidad o por churn para ilustrar la efectividad de la métrica combinada, destacando archivos como `processor/processor.go` y `processor/workers.go` como ejemplos de hotspots reales en el propio codebase de scc.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49479302,
+    "url": "https://www.smithsonianmag.com/science-nature/africa-wild-dogs-most-hated-carnivores-continent-heres-why-conservationists-saving-them-anyway-180989287/",
+    "score": 54,
+    "time": 1787928291,
+    "titulo_es": "Perros salvajes africanos: Esfuerzos de conservación y biología",
+    "resumen": "El artículo detalla los esfuerzos de conservación del Perro Salvaje Africano (Lycaon pictus), una especie en peligro crítico de extinción. Se centra en el programa de expansión de rango del Endangered Wildlife Trust (EWT), que ha logrado aumentar su población introduciendo perros en reservas donde habían desaparecido. Se describe el traslado de tres perras hermanas de Mozambique a Sudáfrica como parte de una estrategia para formar nuevas manadas genéticamente diversas. Se mencionan las características de los perros salvajes africanos, su alta tasa de éxito en la caza, las amenazas que enfrentan por parte de humanos (por depredación de ganado y juegos), y su comportamiento social, incluyendo la juguetona naturaleza de los cachorros y un ritual de \"votación\" antes de las cacerías. Se subraya la importancia de la intervención para asegurar su supervivencia y la formación de manadas cohesivas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49476143,
+    "url": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
+    "score": 227,
+    "time": 1787907646,
+    "titulo_es": "Un Algoritmo Rápido para el Cálculo del Volumen de una Malla 3D Triangulada Simple y Cerrada",
+    "resumen": "Este artículo presenta un algoritmo eficiente para calcular el volumen de una malla 3D simple, cerrada y triangulada. El método se basa en el Teorema de la Divergencia, aplicándolo a un campo vectorial específico F(x,y,z) = <x,0,0> cuya divergencia es 1. El volumen se calcula como la integral de superficie del campo vectorial F sobre la superficie S de la malla. Esta integral de superficie se descompone en la suma de las integrales sobre cada triángulo individual de la malla. Utilizando una parametrización para cada triángulo y calculando el producto vectorial normal a la superficie, la integral de superficie se transforma en una integral sobre un dominio 2D (un triángulo unitario). La integral resultante de x dA sobre cada triángulo se evalúa explícitamente y se simplifica a 1/6 de la suma de las coordenadas x de sus vértices. Combinando esto con el componente x del producto vectorial de los vectores de los lados del triángulo, se obtiene una fórmula compacta para el volumen total de la malla, que es 1/6 de la suma de los productos de este componente y la suma de las coordenadas x de los vértices para todos los triángulos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49478340,
+    "url": "https://en.refund4freedom.org/",
+    "score": 573,
+    "time": 1787924560,
+    "titulo_es": "Reclamando el reembolso de la licencia de Windows",
+    "resumen": "El artículo aborda la problemática de que los ordenadores portátiles se venden con licencias de Microsoft Windows preinstaladas y de pago obligatorio, incluso si el usuario no desea utilizar dicho sistema operativo. Se argumenta que los dispositivos de propósito general deberían ser neutrales en cuanto al software que ejecutan y que los fabricantes no deberían imponer sistemas operativos específicos. El texto proporciona una guía detallada sobre cómo los consumidores pueden solicitar el reembolso de la licencia de Windows, incluyendo pasos a seguir, documentación necesaria y ejemplos de casos de éxito y fracaso en países como Italia. Se anima a los usuarios a contactar a los fabricantes, guardar pruebas de la correspondencia y, en caso de no obtener solución, reportar a las autoridades de protección al consumidor como la AGCM en Italia. Se mencionan ejemplos específicos de disputas con fabricantes como Lenovo, Acer, Mediacom y Microsoft Surface, detallando los resultados de los procesos de reembolso y disputas legales.",
     "categoria": "Hardware"
   },
   {
-    "id": 49458418,
-    "url": "https://github.com/SenteLabsAI/OpenExecutive",
-    "score": 899,
-    "time": 1787795182,
-    "titulo_es": "Open Executive: Un Equipo Ejecutivo Virtual con IA para tu Empresa",
-    "resumen": "El artículo describe Open Executive, un sistema de IA que emula un equipo ejecutivo virtual para empresas. Utiliza ocho agentes especializados para proporcionar una voz ejecutiva coherente, respaldada por conocimiento a nivel MBA, recuperado de fuentes internas (documentos de la empresa) y externas (conocimiento integrado). El sistema mantiene memoria episódica de decisiones pasadas y utiliza un planificador para gestionar acciones proactivas. La arquitectura se basa en RAG con dos capas de recuperación (ChromaDB para conocimiento incorporado y documentos de la empresa), memoria persistente en SQLite y un planificador de instancias únicas para evitar ejecuciones duplicadas. El prompt se gestiona de forma eficiente con caché para optimizar el rendimiento. La implementación incluye una API (Puerto 8000) y una interfaz de usuario (Puerto 3000), con requisitos de Python 3.11+ y Node 22+. Se integra con Discord para la interacción del usuario y soporta despliegues en entornos QA y de producción a través de Fly.io, con un enfoque en la operación de instancia única para el planificador.",
+    "id": 49483173,
+    "url": "https://github.com/sseshachala/conductai",
+    "score": 6,
+    "time": 1787945360,
+    "titulo_es": "Gobernanza en tiempo de ejecución para agentes de IA",
+    "resumen": "El artículo describe Conduct Guard, una solución de gobernanza para agentes de IA que aplica políticas unificadas en todas las interacciones con LLMs, herramientas de shell y sesiones de IA de compañeros de equipo. A diferencia de los firewalls de runtime que solo reportan la actividad (como Straiker y Lakera), Conduct Guard controla activamente lo que un agente puede hacer mediante pruebas criptográficas. Ofrece una capa de seguridad fundamental con un 'moat' de tres pilares: descubrimiento (modo de solo lectura durante 14 días para visibilidad sin instalación ni costo), políticas (promoción de reglas observadas) y ejecución (firewalls en tres puntos de control). Se integra con SDKs de proveedores a través de un Router o envolviendo ganchos CLI con Guard, aplicando la misma política a sesiones de diversos proveedores como ChatGPT, Copilot, etc. Incluye más de 20 paquetes de cumplimiento predefinidos (OWASP, SOC 2, HIPAA, PCI DSS, EU AI Act, NIST AI RMF, ISO 42001) y más de 22 playbooks para automatizar tareas como la gestión de issues a PRs, revisiones de código y despliegues en producción. El repositorio completo, que incluye CLI, Guard, Router, etc., se distribuye bajo la licencia Apache 2.0. El plano de control alojado en conductai.ai, que proporciona una UI (canvas), gestión de roles y acceso en equipo (RBAC), y un marketplace, es una oferta comercial basada en este repositorio.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49477559,
+    "url": "https://www.nature.com/articles/d41586-026-02506-4",
+    "score": 86,
+    "time": 1787920121,
+    "titulo_es": "Pequeños Reactores Modulares: El Futuro de la Energía Nuclear y la Innovación Tecnológica",
+    "resumen": "El artículo aborda el resurgimiento de la energía nuclear a través del desarrollo de Pequeños Reactores Modulares (SMRs). Estos reactores, que producen hasta 300 MWe, se diferencian de los reactores convencionales por su modularidad, permitiendo la construcción de grandes componentes en fábricas para su posterior ensamblaje en sitio, similar a un enfoque tipo \"Lego\". Esta estrategia busca reducir los costos y tiempos de construcción, que han sido un obstáculo histórico para la energía nuclear. Gobiernos y entidades privadas a nivel mundial están invirtiendo significativamente en el desarrollo de SMRs, impulsados por la creciente demanda de energía limpia, incluyendo la utilizada por centros de datos para sistemas de inteligencia artificial. Empresas como Kairos Power están avanzando en la construcción de reactores de prueba y plantas de demostración, con el objetivo de iniciar operaciones comerciales. A pesar de las preocupaciones sobre la economía y la seguridad planteadas por algunos expertos, el potencial de una construcción más rápida y económica, junto con la necesidad de fuentes de energía sostenibles, posiciona a los SMRs como una tecnología prometedora en el panorama energético. El artículo también menciona el progreso en la aprobación regulatoria de diseños no basados en agua ligera, como el reactor Hermes 1 de Kairos Power, que es el primero aprobado por la NRC en más de 50 años.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49477212,
+    "url": "https://github.com/openai/openai-python/blob/main/httpx2.md",
+    "score": 171,
+    "time": 1787917880,
+    "titulo_es": "Actualización del SDK de Python de OpenAI a HTTPX2",
+    "resumen": "El SDK de Python de OpenAI ha migrado de httpx a httpx2 para sus clientes HTTP síncronos y asíncronos. Aunque las llamadas API principales, los modelos de respuesta, las secuencias de datos, la autenticación, los reintentos y los tiempos de espera numéricos siguen funcionando sin cambios si no se proporciona un cliente HTTP personalizado, esta actualización tiene implicaciones significativas. La principal diferencia radica en el manejo de la verificación de certificados TLS: httpx2 utiliza el almacén de confianza del sistema operativo en lugar del proporcionado por certifi, lo que puede causar problemas en entornos con contenedores mínimos, proxies de inspección TLS corporativos o configuraciones personalizadas de certifi. Se recomienda instalar los certificados CA necesarios en el almacén del sistema operativo o configurar explícitamente un paquete de certificados. Para los desarrolladores que interactúan directamente con la capa HTTP o utilizan clientes HTTP personalizados, es necesario actualizar las importaciones y el código para usar las clases y la configuración de httpx2 (por ejemplo, httpx2.Client, httpx2.AsyncClient, DefaultHttpx2Client, DefaultAsyncHttpx2Client). Las interfaces de transporte y los manejadores de autenticación también deben adaptarse a las clases de httpx2. Los objetos de respuesta nativos del cliente httpx2 pertenecerán a httpx2, y las excepciones del transporte subyacente serán de tipo httpx2. El extra aiohttp del SDK también se basa ahora en httpx2.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49475079,
+    "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
+    "score": 347,
+    "time": 1787898837,
+    "titulo_es": "Plataforma de Creación de Juegos de Código Abierto Luanti Denuncia Notificación DMCA Infundada de Microsoft",
+    "resumen": "El artículo detalla la situación de Luanti, una plataforma de creación de juegos de código abierto, que ha sido eliminada de Google Play Store tras una notificación DMCA presentada por Tracer.AI en nombre de Microsoft. La queja alega infracción de derechos de autor de Minecraft, basándose en el registro US Reg. #TX 8-192-097. Luanti es un proyecto sin ánimo de lucro desarrollado por una comunidad, cuyo código es abierto y permite a los usuarios crear, compartir y jugar juegos basados en bloques. La plataforma no incluye juegos ni activos propietarios por defecto, sino que los usuarios descargan contenido de un catálogo (ContentDB) o se conectan a servidores. Luanti se ha destacado por su uso en educación debido a su flexibilidad. El equipo de Luanti afirma que la notificación es infundada, ya que la aplicación no contiene activos de Minecraft y que ya apelaron con éxito una notificación similar en 2023. Se explica el proceso DMCA y cómo Google Play lo aplica. Se enfatiza que el contenido en ContentDB es revisado por voluntarios, y se están considerando herramientas automatizadas de detección de activos para complementar la revisión humana, asegurando siempre una decisión final humana. Luanti fue anteriormente distribuido con Minetest Game, pero ya no se incluye por defecto.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49479924,
+    "url": "https://www.osnews.com/story/145883/easyeffects-should-be-part-of-every-linux-distribution-and-desktop-environment-to-massively-improve-laptop-speaker-sound-quality/",
+    "score": 49,
+    "time": 1787930590,
+    "titulo_es": "Mejora del sonido de los altavoces del portátil en Linux con EasyEffects",
+    "resumen": "El artículo aborda la deficiencia común de la calidad del sonido en los altavoces de los portátiles y propone una solución utilizando la aplicación EasyEffects en distribuciones Linux. EasyEffects aprovecha las capacidades avanzadas de procesamiento de audio de PipeWire y permite la aplicación de diversos efectos de sonido a través de plugins (como Calf Studio Gear, MDA.LV2, GStreamer). Estos efectos incluyen ecualizadores, compresores, realzadores de graves y más, tanto para la salida como para la entrada de audio. Si bien la configuración manual requiere experiencia, el artículo destaca la disponibilidad de presets descargables que pueden mejorar significativamente el audio del portátil. Se explica cómo instalar EasyEffects (generalmente empaquetado por la distribución o como Flatpak) y dónde colocar los presets descargados para su uso.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 49478942,
+    "url": "https://www.hanselman.com/blog/debugging-my-new-network-when-10-gigabit-ethernet-runs-at-300-megabits",
+    "score": 52,
+    "time": 1787927007,
+    "titulo_es": "Optimización de rendimiento de red 10GbE en Windows: el caso de Large Send Offload",
+    "resumen": "El artículo detalla un problema de rendimiento de red de 10GbE en un entorno de homelab, donde las transferencias de archivos en Windows a un NAS se veían limitadas a velocidades de 100-200 Mbps. Tras descartar el NAS, el almacenamiento, la caché SSD, SMB e Immich mediante pruebas con iperf3 entre un PC con Windows y un miniPC Linux, se identificó un problema de red subyacente. Las estadísticas del adaptador Intel E610-XT2 mostraron un alto número de paquetes descartados ('ReceivedDiscardedPackets'). El ajuste de los buffers de recepción aumentó el rendimiento, pero el problema principal se resolvió al deshabilitar 'Large Send Offload' (LSO) V2 para IPv4. Esta configuración, que normalmente ayuda a reducir la carga de la CPU al permitir que la NIC segmente paquetes grandes, estaba degradando severamente el rendimiento en esta combinación específica de hardware y software (Windows + Intel E610-XT2). La deshabilitación de LSO V2 para IPv4 multiplicó el rendimiento de iperf3 de 313 Mbps a 7.03 Gbps, y las transferencias de archivos SMB posteriores alcanzaron 350 MB/s (2.8 Gbps). Se enfatiza que este hallazgo es específico de la configuración probada y no es una recomendación general para deshabilitar LSO.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49480220,
+    "url": "https://dactyl.dev/blog/how-dactyl-works/",
+    "score": 62,
+    "time": 1787931724,
+    "titulo_es": "Dactyl: Renderizado multiplataforma de SwiftUI en el navegador y Android",
+    "resumen": "El artículo describe Dactyl, una plataforma de desarrollo de aplicaciones que permite construir aplicaciones nativas sin compromisos. Se enfoca en su renderizador multiplataforma de SwiftUI que utiliza un puerto Wasm de un simulador de iOS, permitiendo previsualizar y ejecutar aplicaciones SwiftUI directamente en el navegador y en Android. Dactyl compila las aplicaciones a Wasm y las enlaza a una implementación de SwiftUI en lugar de la nativa de Apple. El motor emite comandos de dibujo que son interpretados por un host JavaScript (en el navegador) que los dibuja en un Canvas2D, o por un host de Jetpack Compose en Android que utiliza componentes nativos. Se abordan desafíos como el tamaño del motor Wasm y la gestión de la edición en vivo, utilizando un sistema de módulos base y de contenido. En Android, el motor se compila nativamente y se integra a través de JNI, logrando una experiencia de usuario nativa en ambos entornos.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49477600,
+    "url": "https://shkspr.mobi/blog/2026/08/it-works-better-in-the-app/",
+    "score": 601,
+    "time": 1787920336,
+    "titulo_es": "El software de Google solo viene en dos estados: obsoleto y no listo todavía",
+    "resumen": "El artículo critica la calidad y el estado de finalización de las aplicaciones de Google, centrándose en la frustración del usuario al no poder añadir un enlace de calendario a la aplicación nativa de Android. El autor argumenta que Google, y muchas otras empresas, a menudo lanzan aplicaciones incompletas o con funcionalidades limitadas, priorizando métricas de 'engagement' sobre la experiencia del usuario. Se compara la problemática con los desafíos históricos del desarrollo de aplicaciones móviles (Symbian, BlackBerry, Palm Pilot), sugiriendo que la web progresiva o las aplicaciones web bien implementadas podrían ofrecer soluciones más robustas y fáciles de mantener. La crítica subraya la falta de pulido y la persistencia de errores básicos en el software de Google, un problema que trasciende a la empresa y se manifiesta en la tendencia general a priorizar lanzamientos sobre la estabilidad y la funcionalidad completa.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49477157,
+    "url": "https://github.com/pydantic/httpx2",
+    "score": 103,
+    "time": 1787917305,
+    "titulo_es": "HTTPX2: Un cliente HTTP de próxima generación para Python",
+    "resumen": "HTTPX2 es una biblioteca cliente HTTP para Python, sucesora de HTTPX, que ofrece soporte para HTTP/1.1 y HTTP/2, APIs síncronas y asíncronas, y un cliente de línea de comandos integrado. Se presenta como una continuación del trabajo de la comunidad HTTPX, con Pydantic asumiendo la dirección para asegurar un mantenimiento fiable y actualizaciones de seguridad. La biblioteca se inspira en la usabilidad de 'requests' y está diseñada para ser una herramienta fundamental en el ecosistema Python. Se integra con Pydantic Logfire para instrumentación de observabilidad (trazas, tiempos, códigos de estado) y está licenciada bajo BSD. La documentación se encuentra en https://httpx2.pydantic.dev/.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49479951,
+    "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally/",
+    "score": 70,
+    "time": 1787930684,
+    "titulo_es": "Qwen3.8 27B en Apple Silicon: Rendimiento y Requisitos de Hardware",
+    "resumen": "El artículo evalúa el rendimiento del modelo de lenguaje grande Qwen3.8 27B, un modelo multimodal con una ventana de contexto de 262k tokens, ejecutándose localmente en un Mac Studio M3 Ultra con 256 GB de memoria unificada. Se compara su velocidad de generación con la de su predecesor (Qwen3.6), observando que, si bien la generación por token es más lenta (14.2 tok/s vs. 28.6 tok/s en la cuantización Q4_K_M), el modelo produce respuestas más concisas, resultando en un tiempo total de respuesta similar (67 seg vs. 72 seg). La inferencia se ejecuta eficientemente en la GPU a través de Metal, con un uso del 100% de los núcleos de GPU y un consumo de energía moderado. Se experimenta también con una cuantización de 1-bit (6.7 GB), que ofrece una velocidad de generación notablemente alta (27.2 tok/s) y un bajo consumo de RAM (menos de 8 GB), aunque con una ligera degradación en la calidad de la respuesta para tareas de razonamiento complejo como la generación de código. El artículo concluye discutiendo los requisitos de hardware necesarios para ejecutar modelos de este tamaño de forma local, destacando el beneficio de la memoria unificada en Apple Silicon.",
     "categoria": "IA"
   }
 ]
