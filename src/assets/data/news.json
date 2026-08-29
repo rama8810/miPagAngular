@@ -1,218 +1,209 @@
 [
   {
+    "id": 49487341,
+    "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+    "score": 156,
+    "time": 1787983611,
+    "titulo_es": "Cómputo en memoria: La arquitectura LPDDR5X-PIM de Samsung",
+    "resumen": "Samsung ha presentado su arquitectura LPDDR5X-PIM (Processing-in-Memory), diseñada para mitigar el cuello de botella de ancho de banda y latencia entre la DRAM y los núcleos de cómputo tradicionales. Al integrar bloques de cálculo con matrices MAC (Multiply-Accumulate) en cada uno de sus 16 bancos de memoria, el chip aprovecha un ancho de banda interno de hasta 614 GB/s frente a los 76.8 GB/s del acceso estándar. La arquitectura soporta formatos de baja precisión como INT8, FP8 y 4 bits para cargas de trabajo de aprendizaje automático, alcanzando hasta 2.4 TOPS por encapsulado. Lo más relevante es que mantiene la compatibilidad con el estándar LPDDR5X mediante el uso de direcciones de fila especiales que funcionan como MMIO para controlar modos y escribir registros de instrucciones y operandos estilo SIMD sin requerir controladores propietarios.",
+    "categoria": "Hardware"
+  },
+  {
     "id": 49479837,
     "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-    "score": 346,
+    "score": 898,
     "time": 1787930229,
-    "titulo_es": "Navegación por teclado en interfaces gráficas frente a interfaces de terminal",
-    "resumen": "El artículo analiza el debate entre el desarrollo de interfaces de usuario en terminal (TUI) y las interfaces gráficas (GUI). El autor refuta el argumento común de que las TUI son superiores por estar orientadas al uso del teclado, señalando que las GUI pueden y deben ser diseñadas para ser totalmente controlables mediante atajos de teclado sin perder las ventajas visuales y funcionales de un entorno gráfico. Se argumenta que la falta de soporte completo de teclado en muchas GUI se debe a la omisión de los desarrolladores y no a limitaciones técnicas de los frameworks, instando a integrar una navegación por teclado accesible para enriquecer la experiencia de usuario.",
+    "titulo_es": "GUIs, TUIs y la navegación basada en teclado",
+    "resumen": "El artículo analiza el debate entre interfaces gráficas de usuario (GUI) e interfaces basadas en terminal (TUI), refutando la idea de que las TUIs son inherentemente superiores solo por ser operables mediante teclado. El autor argumenta que las GUIs tienen la capacidad técnica de ofrecer una navegación completa y fluida por teclado, respaldado por pautas de diseño como las de GNOME, y concluye que habilitar atajos y accesibilidad por teclado en aplicaciones gráficas es una cuestión de voluntad del desarrollador que mejora sustancialmente la experiencia de usuario.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49478178,
-    "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
-    "score": 336,
-    "time": 1787923736,
-    "titulo_es": "Anuncio de lanzamiento: htmx 4.0.0",
-    "resumen": "El equipo de htmx anuncia la versión 4.0.0, destacando cambios arquitectónicos clave: migración interna de XMLHttpRequest a la API fetch(), eliminación de la herencia implícita de atributos (ahora requiere el sufijo :inherited), estandarización del ciclo de vida y nombres de eventos bajo la convención htmx:phase:action, y rediseño del soporte de historial eliminando la caché de instantáneas en localStorage para evitar conflictos con librerías JavaScript de terceros. Además, introduce soporte nativo para 'morphing swaps'.",
+    "id": 49450782,
+    "url": "https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/",
+    "score": 54,
+    "time": 1787757768,
+    "titulo_es": "Cómo encontramos y corregimos un error en el runtime de Go en sistemas Linux de 32 bits",
+    "resumen": "El artículo detalla la depuración de un fallo crítico y recurrente en aplicaciones Go de larga ejecución sobre arquitecturas Linux de 32 bits (ARM e i386). Tras analizar el subsistema de eventos de red (netpoll) y la interacción con epoll, los ingenieros descubrieron un problema en la disposición en memoria de los punteros etiquetados (tagged pointers) frente a punteros directos en el campo de datos de 8 bytes de epoll_event, lo que generaba interpretaciones erróneas de los descriptores de eventos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49479546,
+    "url": "https://haz.ee/posts/aetheryte-radio.html",
+    "score": 3,
+    "time": 1787929155,
+    "titulo_es": "Recreando el sonido ambiental de FFXIV mediante la Web Audio API",
+    "resumen": "El autor relata el proceso técnico de extracción de assets de audio de Final Fantasy XIV utilizando herramientas de la comunidad y plugins de XIVLauncher para identificar las pistas exactas del juego. Posteriormente, aborda la recreación de un bucle de audio ambiental fluido y sin cortes perceptibles en el navegador mediante la Web Audio API, estructurando un grafo básico de procesamiento con nodos de origen, ganancia y salida.",
     "categoria": "Frontend"
+  },
+  {
+    "id": 49477854,
+    "url": "https://www.inventati.org/",
+    "score": 641,
+    "time": 1787921933,
+    "titulo_es": "Autistici/Inventati (A/I): Plataforma y Herramientas para la Autodefensa Digital",
+    "resumen": "A/I (Autistici/Inventati) es un colectivo que nació en 2001 con el objetivo de proporcionar una plataforma y herramientas de autodefensa digital para activistas y otros individuos. Su enfoque principal es ofrecer servicios gratuitos para la comunicación libre, sin control ni comercialización de datos personales, basándose en principios de solidaridad y autoorganización. Las solicitudes de servicio se procesan manualmente y de forma anónima, requiriendo la aceptación de su manifiesto, política y política de privacidad. Su modelo financiero se basa exclusivamente en donaciones voluntarias y sus servicios están destinados a uso estrictamente no comercial, apoyando a grupos con los que sienten afinidad.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49486081,
+    "url": "https://github.com/stemdeckapp/stemdeck",
+    "score": 146,
+    "time": 1787966653,
+    "titulo_es": "StemDeck: Herramienta de Separación de Pistas de Audio Local y Gratuita",
+    "resumen": "StemDeck es una aplicación de escritorio gratuita y de código abierto diseñada para la separación de pistas de audio (stems) de archivos locales o URLs de YouTube. Utiliza modelos de IA (Demucs htdemucs_6s) para dividir audio en hasta seis componentes (voces, batería, bajo, guitarra, piano, otro). La aplicación ofrece una interfaz similar a una DAW (Estación de Trabajo de Audio Digital) con un mezclador multitrack que permite mutear, solo, ajustar niveles, hacer zoom en la forma de onda, bucear regiones y exportar pistas individuales o una mezcla personalizada. Todo el procesamiento se realiza localmente en la máquina del usuario, garantizando privacidad y sin necesidad de cuentas, cargas o suscripciones. Incluye funcionalidades como la extracción de subconjuntos de pistas con una pista complementaria para referencia A/B, medidores VU en vivo, análisis de audio (BPM, clave, escala, LUFS, pico), gestión de biblioteca y cancelabilidad de trabajos. Está pensada como una alternativa local a servicios en la nube como Moises y LALAL.AI, enfocándose en el caso de uso principal de estudio personal y privacidad, y no compite directamente con productos comerciales en términos de velocidad, calidad superior o herramientas avanzadas para músicos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49485416,
+    "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
+    "score": 196,
+    "time": 1787959665,
+    "titulo_es": "Un motor Datalog para LLMs: Mejorando la Memoria y el Razonamiento en Investigación de Vulnerabilidades",
+    "resumen": "El artículo describe un problema recurrente al usar Agentes de Modelos de Lenguaje Grandes (LLMs) en investigación de vulnerabilidades a largo plazo: la pérdida de contexto y la inconsistencia en el razonamiento a medida que la investigación avanza. Las soluciones de memoria tradicionales para LLMs, que almacenan y recuperan observaciones incrustadas, son insuficientes porque no manejan dinámicamente la invalidación de conclusiones basadas en hechos obsoletos. Inspirado en las técnicas de análisis de programas y los sistemas de bases de datos relacionales, el autor propone un enfoque basado en Datalog. Datalog es un lenguaje de programación lógica declarativa que permite definir hechos y reglas para derivar nueva información. Al tratar las observaciones y conclusiones como hechos en un motor Datalog, los cambios en los hechos de entrada pueden propagarse automáticamente, invalidando las conclusiones afectadas en lugar de requerir que el LLM reconstruya todo el conocimiento. Esto permite mantener un estado consistente y actualizado del conocimiento, similar a cómo los sistemas de análisis de programas manejan cambios en los hechos de entrada de manera incremental y eficiente. El texto introduce Datalog con ejemplos simples de hechos y reglas, y destaca su capacidad para invalidar automáticamente conclusiones dependientes cuando un hecho subyacente se vuelve incorrecto, abordando directamente la problemática de la inconsistencia en el razonamiento de los LLMs.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49486334,
+    "url": "https://github.com/kingroryg/turbokv",
+    "score": 134,
+    "time": 1787970217,
+    "titulo_es": "TurboKV: Una Base de Datos Clave-Valor Embebida y Rápida en Rust",
+    "resumen": "TurboKV es una base de datos clave-valor embebida, asíncrona y escrita en Rust, diseñada para ser rápida y eficiente. Ofrece características avanzadas como lotes atómicos, escaneos de rango ordenados, durabilidad configurable, compresión (LZ4 por defecto) y compactación en segundo plano. Soporta la aceleración por hardware AES y SSE2/NEON mediante flags de compilación específicos para x86 y ARM, o `target-cpu=native`. La persistencia utiliza un formato de filtro Bloom persistente. Permite la gestión explícita del ciclo de vida de la base de datos mediante `close()` o `close_with_status()` para un apagado limpio. Las claves y valores son secuencias de bytes arbitrarias, requiriendo codificación por parte del llamador para strings. Las operaciones de escritura y lectura de punto/colección copian o devuelven datos copiados (`Vec<u8>`). Ofrece diferentes modos de durabilidad: `Fast` (sin WAL), `Durable` (WAL sin sincronización por cada ACK) y `Paranoid` (sincronización antes de cada retorno). Las pruebas de rendimiento comparan TurboKV con fjall y redb, destacando su alta tasa de transferencia en escenarios con lotes atómicos y desactivando la caché de páginas del sistema operativo y la compresión para maximizar la comparación de la E/S subyacente. La memoria de la base de datos se configura inicialmente con una memtable de 64 MiB y una caché de bloques de 64 MiB.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49433328,
+    "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
+    "score": 69,
+    "time": 1787663095,
+    "titulo_es": "Migración de EVE Online de Python 2 a Python 3",
+    "resumen": "El artículo detalla la migración técnica del núcleo del juego EVE Online de Python 2.7 a Python 3. Esta transición, impulsada por la iniciativa 'EVE Evolved', busca mejorar el rendimiento, facilitar la corrección de errores, habilitar nuevas características y aprovechar el ecosistema moderno de Python 3 (librerías, herramientas de depuración y profiling). Se aborda el desafío de migrar 2.4 millones de líneas de código Python, gran parte del cual data de versiones anteriores a Python 2.7, manteniendo la operatividad continua del juego (23.75 horas/día). Se mencionan herramientas de la comunidad como Python Futurize y la necesidad de fases cuidadosas y pruebas con jugadores en servidores de staging (Singularity). La experiencia previa con la migración del motor 'Carbon' en 'EVE Frontier' a Python 3 sirve como precedente. El objetivo principal es una transición imperceptible para el jugador, excepto por mejoras en la fluidez.",
+    "categoria": "Desarrollo de Software"
   },
   {
     "id": 49480466,
     "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
-    "score": 151,
+    "score": 348,
     "time": 1787932726,
-    "titulo_es": "Por qué los embargos de seguridad convencionales en el código abierto ya no ganan tiempo y qué pueden hacer los mantenedores",
-    "resumen": "El autor analiza cómo el uso de agentes de IA y LLMs ha dejado obsoletos los modelos tradicionales de embargo y divulgación coordinada de vulnerabilidades en proyectos de código abierto. Tras abrir un PR público para mitigar un fallo de 'path traversal' en OCaml cohttp, se detectaron intentos de ataque automatizados en cuestión de minutos. Los modelos modernos permiten generar exploits funcionales casi al instante a partir de descripciones breves o pistas sutiles en commits, provocando que el tiempo medio hasta la explotación preceda con frecuencia a la publicación oficial de parches. Esto traslada el cuello de botella hacia el rendimiento de remediación y validación de los mantenedores, exigiendo un replanteamiento profundo de los flujos de respuesta en ciberseguridad.",
+    "titulo_es": "La obsolescencia de los embargos de seguridad OSS tradicionales y las nuevas estrategias de respuesta para mantenedores",
+    "resumen": "El artículo discute cómo los embargos de seguridad tradicionales en el software de código abierto (OSS) ya no son efectivos debido a la capacidad de las herramientas de IA para descubrir vulnerabilidades rápidamente a partir de información limitada o incluso de la mera mención de un problema. El autor describe una experiencia personal donde una vulnerabilidad en cohttp fue detectada por atacantes automatizados pocos minutos después de abrir una Pull Request, a pesar de que la notificación inicial fue privada. Se resalta que los modelos de lenguaje grandes (LLMs) y otras herramientas de análisis de código, al ser dirigidos a clases de problemas (como 'path normalization'), pueden generar exploits de manera independiente y mucho más rápido de lo que los mantenedores pueden parchear. El tiempo medio para explotar vulnerabilidades se ha reducido drásticamente, incluso precediendo a la publicación del parche (tiempo negativo). El artículo argumenta que la estrategia de seguridad debe invertirse, enfocándose en la capacidad de los mantenedores para validar, priorizar y lanzar fixes de manera más eficiente, en lugar de depender de la secretividad del embargo. La 'bugonomics' se perfila como el cuello de botella en la remediación defensiva, donde la generación de exploits por IA supera la capacidad de respuesta humana.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 49483248,
-    "url": "https://tmog.org",
-    "score": 24,
-    "time": 1787945718,
-    "titulo_es": "TMOG: Un administrador de tareas nativo y consola de sistemas para macOS, Windows y Linux",
-    "resumen": "TMOG es un monitor del sistema y administrador de tareas multiplataforma diseñado con un enfoque totalmente nativo, evitando shells basados en navegadores web. Su arquitectura técnica combina interfaces nativas específicas para cada plataforma (Swift en macOS, Win32 en Windows y Qt 6 en Linux) con un núcleo central compartido en C++ que gestiona los modelos, métricas y serialización. Ofrece visualización a 60 FPS, telemetría detallada por núcleo lógico, gestión avanzada de memoria, árboles de procesos y métricas de sensores térmicos y energéticos.",
+    "id": 49435595,
+    "url": "https://docs.python.org/3.16/library/time-complexity.html",
+    "score": 28,
+    "time": 1787670908,
+    "titulo_es": "Complejidad temporal de operaciones en tipos de datos incorporados de CPython",
+    "resumen": "Este artículo detalla la complejidad temporal (usando la notación Big O) de varias operaciones en tipos de datos incorporados en CPython, como listas, tuplas, diccionarios, conjuntos y cadenas. Se enfoca en cómo el tiempo de ejecución de una operación escala con el tamaño de la entrada (denotado por 'n' o 'k'). Se proporcionan explicaciones para listas, destacando los costos de inserción y eliminación cerca del principio, y se recomienda `collections.deque` para operaciones en ambos extremos. Para tuplas, la inmutabilidad resulta en complejidad O(1) para copias. Los diccionarios y conjuntos tienen complejidad promedio O(1) para la mayoría de las operaciones, asumiendo una buena distribución de hashes, pero advierten sobre la complejidad O(n) en el peor caso debido a colisiones. Se mencionan `frozendict` y `frozenset` como sus contrapartes inmutables. Finalmente, se abordan las cadenas (str) y bytes, también inmutables. El análisis es crucial para la optimización de código Python y la elección de estructuras de datos apropiadas.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49417298,
+    "url": "https://monzo.com/blog/tolerating-full-cloud-outages-with-monzo-stand-in",
+    "score": 101,
+    "time": 1787563809,
+    "titulo_es": "Monzo Stand-in: Una Infraestructura de Respaldo para la Continuidad del Servicio Bancario",
+    "resumen": "El artículo describe Monzo Stand-in, una infraestructura bancaria de respaldo completamente separada y construida sobre Google Cloud Platform (GCP), diseñada para complementar la plataforma primaria de Monzo en Amazon Web Services (AWS). Su propósito es garantizar la continuidad de los servicios críticos (como transacciones con tarjeta, transferencias bancarias y consultas de saldo) ante incidentes imprevistos en la plataforma principal. A diferencia de los sistemas tradicionales de recuperación ante desastres que se centran en fallos de hardware, Monzo Stand-in se basa en un conjunto independiente de servicios, cada uno con su propia base de datos, colas y mecanismos de bloqueo. Las bases de datos se replican de forma asíncrona, aceptando consistencia eventual para evitar puntos únicos de fallo que sacrificarían la disponibilidad. La aplicación Monzo detecta automáticamente cuándo está activo Monzo Stand-in y presenta una interfaz de usuario simplificada con las funcionalidades esenciales. Este enfoque de construir servicios nuevos desde cero para el respaldo, en lugar de replicar los existentes, evita problemas de consistencia de datos fuertemente acoplada y mejora la resiliencia general del servicio frente a fallos complejos, ya sean causados por el proveedor de la nube o por errores de código propios.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49485532,
+    "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer/",
+    "score": 112,
+    "time": 1787960770,
+    "titulo_es": "Análisis Exploratorio de la Lista Real Sumeria y su Posible Correlación con Eventos Paleoclimáticos",
+    "resumen": "El artículo presenta un análisis exploratorio de la Lista Real Sumeria, específicamente de los ocho reyes antediluvianos y sus enormes y regulares periodos de reinado. Se propone la hipótesis de que estos números, que son múltiplos de 600 y 3,600, podrían representar una memoria distorsionada de prehistoria, codificando eventos climáticos reales, erupciones, impactos o cambios en el nivel del mar. El análisis escala la cronología a un lapso fijo de 241.2 ka y la ancla a 11.6 ka BP (aproximadamente el final del Younger Dryas) para comparar los límites de reinado con eventos geológicos del Cuaternario. Se evalúa la probabilidad de alineaciones aleatorias comparando la secuencia sumeria con otras cronologías antiguas (patriarcas bíblicos, reinados de dioses y semidioses manetonianos, y los primeros gobernantes Kish I). Se utiliza un puntaje de proximidad de kernel Gaussiano (S = Σᵢ Σⱼ exp(-(tᵢ - bⱼ)² / 2σ²)) para medir la cercanía entre las fechas de eventos y los límites de reinado, permitiendo una contribución gradual de los eventos cercanos. Se discuten las condiciones para una alineación creíble, la importancia de fijar el ancla en el final de la secuencia antediluviana, la comparación con otras cronologías como ejemplos de cómo secuencias no relacionadas pueden producir aparentes coincidencias, y la necesidad de que los resultados sean significativos después de considerar los factores de comparación. El análisis principal utiliza un p-valor de permutación exhaustiva y un q-valor ajustado por comparaciones múltiples, con sensibilidades exploradas mediante catálogos amplios y catastróficos, y análisis con ancla deslizante. Los resultados indican que las alineaciones observadas no son estadísticamente significativas después de tener en cuenta las comparaciones realizadas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49419409,
+    "url": "https://sometimes.digital/posts/experiments-with-plotter-art/",
+    "score": 74,
+    "time": 1787577716,
+    "titulo_es": "Modificar una impresora 3D Ender 3 para convertirla en un plotter de dibujo",
+    "resumen": "El artículo describe la modificación de una impresora 3D Ender 3, que normalmente es usada para imprimir objetos tridimensionales, para que funcione como un plotter de dibujo. El autor adhiere magnéticamente un bolígrafo a la carcasa metálica del cabezal de la impresora, con un desfase respecto a la boquilla. Utiliza Inkscape, un editor de gráficos vectoriales, para generar el G-code necesario a partir de trazados vectoriales o fuentes de tipo Hershey, aprovechando una extensión de scripting llamada 'Simple Inkscape Scripting' basada en Python. Esta extensión permite procesar trazados, incluso aquellos dibujados a mano, y aplicarlos para que la impresora dibuje diseños abstractos o texto. La configuración se describe como rápida y sin fricciones, permitiendo al usuario centrarse en la experimentación y el aprendizaje de nuevas técnicas de dibujo mediante la adaptación de algoritmos.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49479924,
+    "url": "https://www.osnews.com/story/145883/easyeffects-should-be-part-of-every-linux-distribution-and-desktop-environment-to-massively-improve-laptop-speaker-sound-quality/",
+    "score": 177,
+    "time": 1787930590,
+    "titulo_es": "Mejora el sonido de tu portátil Linux con EasyEffects",
+    "resumen": "El artículo aborda el problema común de la mala calidad del sonido en los altavoces de los portátiles, incluso en modelos caros. Explica que, si bien la física limita el rendimiento de los altavoces pequeños, el software avanzado de procesamiento de audio puede mejorar significativamente la experiencia sonora. Se presenta EasyEffects, una aplicación para distribuciones Linux que utiliza PipeWire para aplicar efectos de audio diversos (ecualizadores, compresores, realzadores de graves, etc.) mediante plugins de terceros. Aunque la configuración manual requiere experiencia, el artículo destaca la disponibilidad de presets descargables diseñados para mejorar el audio de los portátiles. Se menciona que la calidad de audio en portátiles de gama alta como MacBooks y algunos Dell XPS se debe en gran medida a la sintonización de fábrica. Para los usuarios de Linux, se recomienda EasyEffects como una solución accesible para aplicar estas mejoras, facilitando la descarga e instalación de presets en directorios específicos según se use el paquete de la distribución o una versión Flatpak.",
+    "categoria": "Distribuciones Linux"
   },
   {
     "id": 49422743,
     "url": "https://acko.net/blog/curvature-beziers/",
-    "score": 29,
+    "score": 132,
     "time": 1787590992,
-    "titulo_es": "Mejorando las curvas de Bézier en el diseño y la computación gráfica",
-    "resumen": "El artículo analiza la base matemática y geométrica de las curvas de Bézier, un estándar en herramientas CAD y gráficos por computadora desde los años 60. Explora su construcción mediante interpolaciones lineales (algoritmo de De Casteljau) y polinomios de Bernstein, señalando las limitaciones de los métodos tradicionales de manipulación de splines cúbicos (herramientas tipo 'pen tool'). Demuestra matemáticamente que la simetría de tangentes no garantiza una curvatura continua y propone alternativas para optimizar su edición manteniendo la compatibilidad técnica existente.",
-    "categoria": "Ciencia y Matematica"
+    "titulo_es": "Mejorando las Curvas Bézier: Una Perspectiva de Ingeniería de Software",
+    "resumen": "El artículo explora las curvas Bézier, una tecnología fundamental y ubicua en gráficos por computadora y CAD, concebida en la década de 1960. A pesar de su antigüedad y algunas limitaciones inherentes, su simplicidad y adaptabilidad las mantienen como una opción predominante. El autor investiga la posibilidad de mejorar las curvas Bézier sin invalidar la infraestructura existente que depende de ellas. Se detalla el proceso de construcción lineal de las curvas Bézier mediante interpolaciones sucesivas (lerps) y la fórmula generalizada usando coeficientes del triángulo de Pascal. Se aclara que, aunque se pueden definir curvas de cualquier grado, la práctica común se centra en las curvas cúbicas (4 puntos de control) debido a su comportamiento predecible (cruzan el primer y último punto) y la facilidad para construir splines suaves uniendo segmentos cúbicos con tangentes alineadas. Sin embargo, el artículo refuta la intuición común de que la simetría de las tangentes de los puntos de control intermedios es clave para la suavidad. Mediante la demostración de la divisibilidad exacta de las curvas Bézier y el análisis de su curvatura (utilizando un peine de curvatura), se argumenta que la continuidad de la curvatura es el factor crucial, no la simetría de las tangentes. Finalmente, se propone una mejora al tratar las tangentes de forma relativa, haciéndolas proporcionales a la distancia entre puntos, lo que facilita la edición al permitir que los segmentos adyacentes se ajusten de forma natural. No obstante, se señala que esta aproximación tampoco garantiza la preservación de la curvatura continua.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49481455,
-    "url": "https://arxiv.org/abs/2608.23691",
-    "score": 41,
-    "time": 1787936472,
-    "titulo_es": "arXivLabs: Marco de colaboración para nuevas funcionalidades",
-    "resumen": "arXivLabs es un framework que permite a desarrolladores, tanto individuales como organizaciones, crear y compartir nuevas funcionalidades y herramientas directamente en la plataforma web de arXiv, basándose en valores de código abierto, comunidad, excelencia y privacidad de datos.",
+    "id": 49472216,
+    "url": "https://12factor.net/",
+    "score": 283,
+    "time": 1787870471,
+    "titulo_es": "Metodología de las Doce Factores para Aplicaciones SaaS",
+    "resumen": "El artículo describe la metodología de las Doce Factores, un conjunto de prácticas para construir aplicaciones de software como servicio (SaaS). Se aplica a cualquier lenguaje de programación y combinación de servicios de soporte. El objetivo es mejorar el desarrollo, la operación y el escalado de aplicaciones, abordando problemas sistémicos, facilitando la colaboración entre desarrolladores y mitigando la erosión del software. Se inspira en patrones de arquitectura y refactorización, dirigido a desarrolladores y ingenieros de operaciones.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 49479878,
     "url": "https://huggingface.co/zai-org/GLM-5.3",
-    "score": 427,
+    "score": 735,
     "time": 1787930413,
-    "titulo_es": "GLM-5.3: Mejoras en tareas complejas y programación mediante post-entrenamiento",
-    "resumen": "GLM-5.3 mantiene el mismo modelo base que GLM-5.2, derivando todas sus mejoras exclusivamente de la fase de post-entrenamiento. Esta versión optimiza notablemente el rendimiento en programación compleja y tareas de horizonte largo, ofreciendo además soporte para su despliegue en diversos frameworks.",
+    "titulo_es": "GLM-5.3: Avances en Modelos de Lenguaje Grandes con Post-entrenamiento",
+    "resumen": "GLM-5.3, basado en la misma arquitectura que GLM-5.2, logra mejoras significativas principalmente a través de técnicas de post-entrenamiento. Destaca especialmente en tareas de codificación compleja y de largo horizonte. El modelo es compatible con diversos frameworks para su implementación. Se anima a los investigadores a citar el informe técnico al utilizar GLM-5.3 en sus estudios.",
     "categoria": "IA"
   },
   {
     "id": 49479072,
     "url": "https://geekyschmidt.com/post/2026-08-25-verschlimmbesserung/",
-    "score": 78,
+    "score": 155,
     "time": 1787927433,
-    "titulo_es": "Verschlimmbesserung: Cuando las mejoras empeoran el software",
-    "resumen": "El artículo discute el fenómeno de 'Verschlimmbesserung', una mejora intentada que empeora un producto de software. Se argumenta que esto ocurre cuando las métricas y los incentivos del equipo de ingeniería priorizan las 'point releases' o el simple hecho de 'enviar código' sobre la estabilidad y la mejora real del producto. Se cita a Eliyahu Goldratt para enfatizar que las métricas dirigen el comportamiento, y si las métricas son ilógicas o impulsan acciones negativas (como el churn o el envío indiscriminado), los equipos se comportarán de manera ilógica. Se resalta la importancia de la estabilidad como característica y la disciplina de saber cuándo no enviar actualizaciones, contrastando con la idea de que lo nuevo es siempre mejor. La conclusión es que se debe prestar atención a cómo se miden y se incentivan los equipos de ingeniería para evitar estas 'mejoras' perjudiciales.",
+    "titulo_es": "Verschlimmbesserung: La mejora que empeora las cosas en el desarrollo de software",
+    "resumen": "El artículo discute el concepto de \"Verschlimmbesserung\", una mejora intentada que en realidad empeora las cosas, aplicándolo al desarrollo de software. Se critica la tendencia de realizar actualizaciones en productos SaaS que rompen flujos de trabajo establecidos o introducen cambios innecesarios. Se señala que la causa raíz a menudo reside en la forma en que se miden y se incentiva a los equipos de ingeniería. Si las métricas se centran en lanzar versiones (point releases) o en métricas ilógicas, los equipos optimizarán para esas métricas, lo que puede llevar a \"mejoras\" perjudiciales. Se argumenta que la estabilidad es una característica valiosa y que saber cuándo no lanzar es una disciplina de ingeniería crucial. La clave es alinear las métricas y los incentivos con el valor real del producto y la satisfacción del usuario, en lugar de solo la actividad de desarrollo.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49483020,
-    "url": "https://log.ozgur.works/bye-bye-github.html",
-    "score": 11,
-    "time": 1787944331,
-    "titulo_es": "Abandoné GitHub: Reflexiones sobre la confianza, la privacidad y el desarrollo de software",
-    "resumen": "El autor, un desarrollador de software con experiencia desde 2012, expresa su profunda insatisfacción y desconfianza hacia GitHub. Señala la inestabilidad percibida de la plataforma, contrastándola con la fiabilidad de los lanzamientos de software de épocas anteriores. Critica el modelo de negocio de GitHub, especialmente en lo referente al uso de código de terceros para entrenar IA y las prácticas que considera cuestionables para obtener beneficios. Siente decepción por el retorno recibido tras años de suscripción y cuestiona la validez legal y ética de la 'fair use' en el contexto del entrenamiento de modelos de IA con datos públicos. La decisión de migrar repositorios privados a una instancia de Forgejo autoalojada en su 'homelab' surge de 'serios problemas de confianza' y un deseo de simplicidad y control sobre sus datos y hardware. Mantiene repositorios públicos en GitHub por ahora, pero evita alojarlos en su servidor no accesible públicamente debido a sus persistentes 'problemas de confianza'. El mensaje central del artículo es una advertencia contra la confianza ciega en las grandes empresas tecnológicas, instando a la cautela, la investigación sobre seguridad y privacidad, y a buscar fuentes de información independientes.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49441316,
-    "url": "https://www.wired.com/2015/03/illegal-sand-mining/",
-    "score": 40,
-    "time": 1787695383,
-    "titulo_es": "La guerra por la arena: El recurso natural más consumido del mundo",
-    "resumen": "El artículo narra el asesinato de Paleram Chauhan en la aldea india de Raipur Khadar, víctima de una disputa relacionada con la extracción ilegal de arena por parte de una poderosa organización criminal. Detalla la creciente demanda global de arena, un componente esencial para la construcción (cemento, hormigón) y diversas tecnologías (vidrio, chips de silicio, paneles solares), y su consecuente agotamiento en fuentes naturales como ríos y playas. Se menciona que la arena de desierto no es adecuada para la construcción debido a la forma redondeada de sus granos. La extracción de arena es una industria de miles de millones de dólares impulsada por el auge de la construcción mundial, llevando a escasez y conflictos en diversas partes del mundo, como Dubai y Australia, y destacando la arena como un recurso finito y estratégicamente valioso, a menudo subestimado.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49415923,
-    "url": "https://boyter.org/posts/sloc-cloc-code-hotspots-finding-files-that-need-attention/",
-    "score": 6,
-    "time": 1787553350,
-    "titulo_es": "SCC v4.0.0: Predicción de Bugs Mejorada con Complejidad y Historial de Commits",
-    "resumen": "El artículo anuncia la versión 4.0.0 de scc (sloc cloc code), una herramienta de análisis de código. La novedad principal es una métrica mejorada para identificar \"hotspots\" (áreas problemáticas) en el código, combinando la complejidad intrínseca de los archivos con su historial de commits (churn). A diferencia de enfoques anteriores (como el de Google, que fue descontinuado por ser poco útil), esta nueva métrica no se centra en predecir bugs históricos, sino en identificar archivos que son tanto complejos como frecuentemente modificados. Estos \"hotspots\" sugieren código que es \"difícil de trabajar\" y podría beneficiarse de refactorización o ser descompuesto. La herramienta calcula esta métrica normalizada (complejidad * commit_count) y la presenta en un resumen, demostrando cómo supera a las métricas individuales de complejidad o churn por sí solas, las cuales pueden dar falsos positivos (ej. archivos de test muy complejos pero no críticos, o archivos de configuración/scripts con alto churn pero baja complejidad). Se compara el resultado de scc con análisis puramente por complejidad o por churn para ilustrar la efectividad de la métrica combinada, destacando archivos como `processor/processor.go` y `processor/workers.go` como ejemplos de hotspots reales en el propio codebase de scc.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49479302,
-    "url": "https://www.smithsonianmag.com/science-nature/africa-wild-dogs-most-hated-carnivores-continent-heres-why-conservationists-saving-them-anyway-180989287/",
-    "score": 54,
-    "time": 1787928291,
-    "titulo_es": "Perros salvajes africanos: Esfuerzos de conservación y biología",
-    "resumen": "El artículo detalla los esfuerzos de conservación del Perro Salvaje Africano (Lycaon pictus), una especie en peligro crítico de extinción. Se centra en el programa de expansión de rango del Endangered Wildlife Trust (EWT), que ha logrado aumentar su población introduciendo perros en reservas donde habían desaparecido. Se describe el traslado de tres perras hermanas de Mozambique a Sudáfrica como parte de una estrategia para formar nuevas manadas genéticamente diversas. Se mencionan las características de los perros salvajes africanos, su alta tasa de éxito en la caza, las amenazas que enfrentan por parte de humanos (por depredación de ganado y juegos), y su comportamiento social, incluyendo la juguetona naturaleza de los cachorros y un ritual de \"votación\" antes de las cacerías. Se subraya la importancia de la intervención para asegurar su supervivencia y la formación de manadas cohesivas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49476143,
-    "url": "https://alyssarosenzweig.ca/blog/hilariously-fast-volume-computation-with-the-divergence-theorem.html",
-    "score": 227,
-    "time": 1787907646,
-    "titulo_es": "Un Algoritmo Rápido para el Cálculo del Volumen de una Malla 3D Triangulada Simple y Cerrada",
-    "resumen": "Este artículo presenta un algoritmo eficiente para calcular el volumen de una malla 3D simple, cerrada y triangulada. El método se basa en el Teorema de la Divergencia, aplicándolo a un campo vectorial específico F(x,y,z) = <x,0,0> cuya divergencia es 1. El volumen se calcula como la integral de superficie del campo vectorial F sobre la superficie S de la malla. Esta integral de superficie se descompone en la suma de las integrales sobre cada triángulo individual de la malla. Utilizando una parametrización para cada triángulo y calculando el producto vectorial normal a la superficie, la integral de superficie se transforma en una integral sobre un dominio 2D (un triángulo unitario). La integral resultante de x dA sobre cada triángulo se evalúa explícitamente y se simplifica a 1/6 de la suma de las coordenadas x de sus vértices. Combinando esto con el componente x del producto vectorial de los vectores de los lados del triángulo, se obtiene una fórmula compacta para el volumen total de la malla, que es 1/6 de la suma de los productos de este componente y la suma de las coordenadas x de los vértices para todos los triángulos.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49478340,
-    "url": "https://en.refund4freedom.org/",
-    "score": 573,
-    "time": 1787924560,
-    "titulo_es": "Reclamando el reembolso de la licencia de Windows",
-    "resumen": "El artículo aborda la problemática de que los ordenadores portátiles se venden con licencias de Microsoft Windows preinstaladas y de pago obligatorio, incluso si el usuario no desea utilizar dicho sistema operativo. Se argumenta que los dispositivos de propósito general deberían ser neutrales en cuanto al software que ejecutan y que los fabricantes no deberían imponer sistemas operativos específicos. El texto proporciona una guía detallada sobre cómo los consumidores pueden solicitar el reembolso de la licencia de Windows, incluyendo pasos a seguir, documentación necesaria y ejemplos de casos de éxito y fracaso en países como Italia. Se anima a los usuarios a contactar a los fabricantes, guardar pruebas de la correspondencia y, en caso de no obtener solución, reportar a las autoridades de protección al consumidor como la AGCM en Italia. Se mencionan ejemplos específicos de disputas con fabricantes como Lenovo, Acer, Mediacom y Microsoft Surface, detallando los resultados de los procesos de reembolso y disputas legales.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49483173,
-    "url": "https://github.com/sseshachala/conductai",
-    "score": 6,
-    "time": 1787945360,
-    "titulo_es": "Gobernanza en tiempo de ejecución para agentes de IA",
-    "resumen": "El artículo describe Conduct Guard, una solución de gobernanza para agentes de IA que aplica políticas unificadas en todas las interacciones con LLMs, herramientas de shell y sesiones de IA de compañeros de equipo. A diferencia de los firewalls de runtime que solo reportan la actividad (como Straiker y Lakera), Conduct Guard controla activamente lo que un agente puede hacer mediante pruebas criptográficas. Ofrece una capa de seguridad fundamental con un 'moat' de tres pilares: descubrimiento (modo de solo lectura durante 14 días para visibilidad sin instalación ni costo), políticas (promoción de reglas observadas) y ejecución (firewalls en tres puntos de control). Se integra con SDKs de proveedores a través de un Router o envolviendo ganchos CLI con Guard, aplicando la misma política a sesiones de diversos proveedores como ChatGPT, Copilot, etc. Incluye más de 20 paquetes de cumplimiento predefinidos (OWASP, SOC 2, HIPAA, PCI DSS, EU AI Act, NIST AI RMF, ISO 42001) y más de 22 playbooks para automatizar tareas como la gestión de issues a PRs, revisiones de código y despliegues en producción. El repositorio completo, que incluye CLI, Guard, Router, etc., se distribuye bajo la licencia Apache 2.0. El plano de control alojado en conductai.ai, que proporciona una UI (canvas), gestión de roles y acceso en equipo (RBAC), y un marketplace, es una oferta comercial basada en este repositorio.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49477559,
-    "url": "https://www.nature.com/articles/d41586-026-02506-4",
-    "score": 86,
-    "time": 1787920121,
-    "titulo_es": "Pequeños Reactores Modulares: El Futuro de la Energía Nuclear y la Innovación Tecnológica",
-    "resumen": "El artículo aborda el resurgimiento de la energía nuclear a través del desarrollo de Pequeños Reactores Modulares (SMRs). Estos reactores, que producen hasta 300 MWe, se diferencian de los reactores convencionales por su modularidad, permitiendo la construcción de grandes componentes en fábricas para su posterior ensamblaje en sitio, similar a un enfoque tipo \"Lego\". Esta estrategia busca reducir los costos y tiempos de construcción, que han sido un obstáculo histórico para la energía nuclear. Gobiernos y entidades privadas a nivel mundial están invirtiendo significativamente en el desarrollo de SMRs, impulsados por la creciente demanda de energía limpia, incluyendo la utilizada por centros de datos para sistemas de inteligencia artificial. Empresas como Kairos Power están avanzando en la construcción de reactores de prueba y plantas de demostración, con el objetivo de iniciar operaciones comerciales. A pesar de las preocupaciones sobre la economía y la seguridad planteadas por algunos expertos, el potencial de una construcción más rápida y económica, junto con la necesidad de fuentes de energía sostenibles, posiciona a los SMRs como una tecnología prometedora en el panorama energético. El artículo también menciona el progreso en la aprobación regulatoria de diseños no basados en agua ligera, como el reactor Hermes 1 de Kairos Power, que es el primero aprobado por la NRC en más de 50 años.",
-    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 49477212,
     "url": "https://github.com/openai/openai-python/blob/main/httpx2.md",
-    "score": 171,
+    "score": 204,
     "time": 1787917880,
-    "titulo_es": "Actualización del SDK de Python de OpenAI a HTTPX2",
-    "resumen": "El SDK de Python de OpenAI ha migrado de httpx a httpx2 para sus clientes HTTP síncronos y asíncronos. Aunque las llamadas API principales, los modelos de respuesta, las secuencias de datos, la autenticación, los reintentos y los tiempos de espera numéricos siguen funcionando sin cambios si no se proporciona un cliente HTTP personalizado, esta actualización tiene implicaciones significativas. La principal diferencia radica en el manejo de la verificación de certificados TLS: httpx2 utiliza el almacén de confianza del sistema operativo en lugar del proporcionado por certifi, lo que puede causar problemas en entornos con contenedores mínimos, proxies de inspección TLS corporativos o configuraciones personalizadas de certifi. Se recomienda instalar los certificados CA necesarios en el almacén del sistema operativo o configurar explícitamente un paquete de certificados. Para los desarrolladores que interactúan directamente con la capa HTTP o utilizan clientes HTTP personalizados, es necesario actualizar las importaciones y el código para usar las clases y la configuración de httpx2 (por ejemplo, httpx2.Client, httpx2.AsyncClient, DefaultHttpx2Client, DefaultAsyncHttpx2Client). Las interfaces de transporte y los manejadores de autenticación también deben adaptarse a las clases de httpx2. Los objetos de respuesta nativos del cliente httpx2 pertenecerán a httpx2, y las excepciones del transporte subyacente serán de tipo httpx2. El extra aiohttp del SDK también se basa ahora en httpx2.",
+    "titulo_es": "Actualización del SDK de Python de OpenAI: Transición a HTTPX2",
+    "resumen": "El SDK de Python de OpenAI ha migrado de httpx a httpx2 para sus clientes HTTP síncronos y asíncronos. Esta transición introduce cambios significativos, especialmente en el manejo de la verificación de certificados TLS, que ahora utiliza el almacén de confianza del sistema operativo en lugar de certifi. Las aplicaciones que interactúan directamente con la capa HTTP del SDK o que dependen de httpx instalado transitivamente requerirán ajustes. Se recomienda encarecidamente actualizar las dependencias y las configuraciones de TLS para evitar problemas de verificación de certificados, especialmente en entornos mínimos de contenedores o aquellos con proxies de inspección TLS corporativos. El SDK proporciona clases de cliente y configuración actualizadas (DefaultHttpx2Client, DefaultAsyncHttpx2Client) y continúa admitiendo la construcción directa de clientes httpx2. Las interfaces de transporte, los manejadores de autenticación y las excepciones ahora se basan en objetos de httpx2. Las aplicaciones que utilizan la integración aiohttp también se beneficiarán de una dependencia nativa de httpx2.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49475079,
-    "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
-    "score": 347,
-    "time": 1787898837,
-    "titulo_es": "Plataforma de Creación de Juegos de Código Abierto Luanti Denuncia Notificación DMCA Infundada de Microsoft",
-    "resumen": "El artículo detalla la situación de Luanti, una plataforma de creación de juegos de código abierto, que ha sido eliminada de Google Play Store tras una notificación DMCA presentada por Tracer.AI en nombre de Microsoft. La queja alega infracción de derechos de autor de Minecraft, basándose en el registro US Reg. #TX 8-192-097. Luanti es un proyecto sin ánimo de lucro desarrollado por una comunidad, cuyo código es abierto y permite a los usuarios crear, compartir y jugar juegos basados en bloques. La plataforma no incluye juegos ni activos propietarios por defecto, sino que los usuarios descargan contenido de un catálogo (ContentDB) o se conectan a servidores. Luanti se ha destacado por su uso en educación debido a su flexibilidad. El equipo de Luanti afirma que la notificación es infundada, ya que la aplicación no contiene activos de Minecraft y que ya apelaron con éxito una notificación similar en 2023. Se explica el proceso DMCA y cómo Google Play lo aplica. Se enfatiza que el contenido en ContentDB es revisado por voluntarios, y se están considerando herramientas automatizadas de detección de activos para complementar la revisión humana, asegurando siempre una decisión final humana. Luanti fue anteriormente distribuido con Minetest Game, pero ya no se incluye por defecto.",
+    "id": 49481455,
+    "url": "https://arxiv.org/abs/2608.23691",
+    "score": 111,
+    "time": 1787936472,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y la Colaboración en Nuevas Características de arXiv",
+    "resumen": "El artículo describe arXivLabs, un framework diseñado para permitir a colaboradores (individuos y organizaciones) desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza el compromiso de arXiv con sus valores fundamentales de apertura, comunidad, excelencia y privacidad de datos del usuario, asegurando que solo se colabore con socios que se adhieran a estos principios. El framework promueve la innovación y la adición de valor para la comunidad de arXiv, invitando a los interesados a explorar más sobre arXivLabs y sus posibilidades de proyecto.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49479924,
-    "url": "https://www.osnews.com/story/145883/easyeffects-should-be-part-of-every-linux-distribution-and-desktop-environment-to-massively-improve-laptop-speaker-sound-quality/",
-    "score": 49,
-    "time": 1787930590,
-    "titulo_es": "Mejora del sonido de los altavoces del portátil en Linux con EasyEffects",
-    "resumen": "El artículo aborda la deficiencia común de la calidad del sonido en los altavoces de los portátiles y propone una solución utilizando la aplicación EasyEffects en distribuciones Linux. EasyEffects aprovecha las capacidades avanzadas de procesamiento de audio de PipeWire y permite la aplicación de diversos efectos de sonido a través de plugins (como Calf Studio Gear, MDA.LV2, GStreamer). Estos efectos incluyen ecualizadores, compresores, realzadores de graves y más, tanto para la salida como para la entrada de audio. Si bien la configuración manual requiere experiencia, el artículo destaca la disponibilidad de presets descargables que pueden mejorar significativamente el audio del portátil. Se explica cómo instalar EasyEffects (generalmente empaquetado por la distribución o como Flatpak) y dónde colocar los presets descargados para su uso.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 49478942,
-    "url": "https://www.hanselman.com/blog/debugging-my-new-network-when-10-gigabit-ethernet-runs-at-300-megabits",
-    "score": 52,
-    "time": 1787927007,
-    "titulo_es": "Optimización de rendimiento de red 10GbE en Windows: el caso de Large Send Offload",
-    "resumen": "El artículo detalla un problema de rendimiento de red de 10GbE en un entorno de homelab, donde las transferencias de archivos en Windows a un NAS se veían limitadas a velocidades de 100-200 Mbps. Tras descartar el NAS, el almacenamiento, la caché SSD, SMB e Immich mediante pruebas con iperf3 entre un PC con Windows y un miniPC Linux, se identificó un problema de red subyacente. Las estadísticas del adaptador Intel E610-XT2 mostraron un alto número de paquetes descartados ('ReceivedDiscardedPackets'). El ajuste de los buffers de recepción aumentó el rendimiento, pero el problema principal se resolvió al deshabilitar 'Large Send Offload' (LSO) V2 para IPv4. Esta configuración, que normalmente ayuda a reducir la carga de la CPU al permitir que la NIC segmente paquetes grandes, estaba degradando severamente el rendimiento en esta combinación específica de hardware y software (Windows + Intel E610-XT2). La deshabilitación de LSO V2 para IPv4 multiplicó el rendimiento de iperf3 de 313 Mbps a 7.03 Gbps, y las transferencias de archivos SMB posteriores alcanzaron 350 MB/s (2.8 Gbps). Se enfatiza que este hallazgo es específico de la configuración probada y no es una recomendación general para deshabilitar LSO.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49480220,
-    "url": "https://dactyl.dev/blog/how-dactyl-works/",
-    "score": 62,
-    "time": 1787931724,
-    "titulo_es": "Dactyl: Renderizado multiplataforma de SwiftUI en el navegador y Android",
-    "resumen": "El artículo describe Dactyl, una plataforma de desarrollo de aplicaciones que permite construir aplicaciones nativas sin compromisos. Se enfoca en su renderizador multiplataforma de SwiftUI que utiliza un puerto Wasm de un simulador de iOS, permitiendo previsualizar y ejecutar aplicaciones SwiftUI directamente en el navegador y en Android. Dactyl compila las aplicaciones a Wasm y las enlaza a una implementación de SwiftUI en lugar de la nativa de Apple. El motor emite comandos de dibujo que son interpretados por un host JavaScript (en el navegador) que los dibuja en un Canvas2D, o por un host de Jetpack Compose en Android que utiliza componentes nativos. Se abordan desafíos como el tamaño del motor Wasm y la gestión de la edición en vivo, utilizando un sistema de módulos base y de contenido. En Android, el motor se compila nativamente y se integra a través de JNI, logrando una experiencia de usuario nativa en ambos entornos.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49477600,
-    "url": "https://shkspr.mobi/blog/2026/08/it-works-better-in-the-app/",
-    "score": 601,
-    "time": 1787920336,
-    "titulo_es": "El software de Google solo viene en dos estados: obsoleto y no listo todavía",
-    "resumen": "El artículo critica la calidad y el estado de finalización de las aplicaciones de Google, centrándose en la frustración del usuario al no poder añadir un enlace de calendario a la aplicación nativa de Android. El autor argumenta que Google, y muchas otras empresas, a menudo lanzan aplicaciones incompletas o con funcionalidades limitadas, priorizando métricas de 'engagement' sobre la experiencia del usuario. Se compara la problemática con los desafíos históricos del desarrollo de aplicaciones móviles (Symbian, BlackBerry, Palm Pilot), sugiriendo que la web progresiva o las aplicaciones web bien implementadas podrían ofrecer soluciones más robustas y fáciles de mantener. La crítica subraya la falta de pulido y la persistencia de errores básicos en el software de Google, un problema que trasciende a la empresa y se manifiesta en la tendencia general a priorizar lanzamientos sobre la estabilidad y la funcionalidad completa.",
+    "id": 49478401,
+    "url": "https://2026.stateofthemap.org/",
+    "score": 170,
+    "time": 1787924788,
+    "titulo_es": "Estado del Mapa 2026: Conferencia de OpenStreetMap en París y en línea",
+    "resumen": "El artículo describe la conferencia anual 'State of the Map' (SotM) que se celebrará en París, Francia, y en línea del 28 al 30 de agosto de 2026. El evento es el principal punto de encuentro para la comunidad de OpenStreetMap (OSM), reuniendo a mappers y usuarios para compartir avances, realizar talleres y fomentar colaboraciones. Se destaca el papel de OSM en la combinación de conocimiento local con impacto global y su contribución al ecosistema de mapeo abierto. Se mencionan patrocinadores como TomTom, que apoya el crecimiento del ecosistema OSM, y Michelin, una empresa con una larga trayectoria en materiales avanzados y que contribuye a través de soluciones basadas en datos y IA, además de sus guías. La conferencia busca impulsar la innovación y las asociaciones dentro de la comunidad de mapeo abierto.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49477157,
-    "url": "https://github.com/pydantic/httpx2",
-    "score": 103,
-    "time": 1787917305,
-    "titulo_es": "HTTPX2: Un cliente HTTP de próxima generación para Python",
-    "resumen": "HTTPX2 es una biblioteca cliente HTTP para Python, sucesora de HTTPX, que ofrece soporte para HTTP/1.1 y HTTP/2, APIs síncronas y asíncronas, y un cliente de línea de comandos integrado. Se presenta como una continuación del trabajo de la comunidad HTTPX, con Pydantic asumiendo la dirección para asegurar un mantenimiento fiable y actualizaciones de seguridad. La biblioteca se inspira en la usabilidad de 'requests' y está diseñada para ser una herramienta fundamental en el ecosistema Python. Se integra con Pydantic Logfire para instrumentación de observabilidad (trazas, tiempos, códigos de estado) y está licenciada bajo BSD. La documentación se encuentra en https://httpx2.pydantic.dev/.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49479951,
-    "url": "https://terminalbytes.com/run-qwen-3-8-27b-locally/",
-    "score": 70,
-    "time": 1787930684,
-    "titulo_es": "Qwen3.8 27B en Apple Silicon: Rendimiento y Requisitos de Hardware",
-    "resumen": "El artículo evalúa el rendimiento del modelo de lenguaje grande Qwen3.8 27B, un modelo multimodal con una ventana de contexto de 262k tokens, ejecutándose localmente en un Mac Studio M3 Ultra con 256 GB de memoria unificada. Se compara su velocidad de generación con la de su predecesor (Qwen3.6), observando que, si bien la generación por token es más lenta (14.2 tok/s vs. 28.6 tok/s en la cuantización Q4_K_M), el modelo produce respuestas más concisas, resultando en un tiempo total de respuesta similar (67 seg vs. 72 seg). La inferencia se ejecuta eficientemente en la GPU a través de Metal, con un uso del 100% de los núcleos de GPU y un consumo de energía moderado. Se experimenta también con una cuantización de 1-bit (6.7 GB), que ofrece una velocidad de generación notablemente alta (27.2 tok/s) y un bajo consumo de RAM (menos de 8 GB), aunque con una ligera degradación en la calidad de la respuesta para tareas de razonamiento complejo como la generación de código. El artículo concluye discutiendo los requisitos de hardware necesarios para ejecutar modelos de este tamaño de forma local, destacando el beneficio de la memoria unificada en Apple Silicon.",
+    "id": 49484925,
+    "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
+    "score": 56,
+    "time": 1787955507,
+    "titulo_es": "Uso de IA para detectar cosméticos falsificados",
+    "resumen": "El artículo explora la viabilidad de utilizar modelos de inteligencia artificial, como Google Gemini, para identificar productos cosméticos falsificados. El autor describe un experimento en el que se tomaron fotografías de envases de Rhode Peptide Lip Tint, tanto auténticos como falsos, y se presentaron a Gemini para su análisis. Se evaluaron las respuestas de Gemini, centrándose en su capacidad para detectar inconsistencias y 'banderas rojas' en el empaque y el texto, como errores tipográficos sutiles que evidencian la falsificación. El estudio preliminar sugiere que la IA puede ser una herramienta prometedora para ayudar a los consumidores a verificar la autenticidad de los productos antes de la compra, mitigando así el riesgo de adquirir imitaciones de baja calidad o potencialmente peligrosas.",
     "categoria": "IA"
   }
 ]
