@@ -1,209 +1,164 @@
 [
   {
-    "id": 49487341,
-    "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
-    "score": 156,
-    "time": 1787983611,
-    "titulo_es": "Cómputo en memoria: La arquitectura LPDDR5X-PIM de Samsung",
-    "resumen": "Samsung ha presentado su arquitectura LPDDR5X-PIM (Processing-in-Memory), diseñada para mitigar el cuello de botella de ancho de banda y latencia entre la DRAM y los núcleos de cómputo tradicionales. Al integrar bloques de cálculo con matrices MAC (Multiply-Accumulate) en cada uno de sus 16 bancos de memoria, el chip aprovecha un ancho de banda interno de hasta 614 GB/s frente a los 76.8 GB/s del acceso estándar. La arquitectura soporta formatos de baja precisión como INT8, FP8 y 4 bits para cargas de trabajo de aprendizaje automático, alcanzando hasta 2.4 TOPS por encapsulado. Lo más relevante es que mantiene la compatibilidad con el estándar LPDDR5X mediante el uso de direcciones de fila especiales que funcionan como MMIO para controlar modos y escribir registros de instrucciones y operandos estilo SIMD sin requerir controladores propietarios.",
+    "id": 49498201,
+    "url": "https://github.com/anthropics/claude-code/issues/66504",
+    "score": 71,
+    "time": 1788094254,
+    "titulo_es": "Atribución automática de URL de sesión de Claude Code en mensajes de commit y descripciones de PR",
+    "resumen": "El artículo describe un problema en Claude Code donde las URL de sesión de Claude se incluyen automáticamente en cada mensaje de commit y descripción de PR sin el conocimiento o consentimiento del usuario. Esto resulta en un historial de Git desordenado y una apariencia poco profesional. Se proponen varias soluciones: hacer que la inclusión de la URL sea opcional mediante una solicitud explícita durante la incorporación, hacer que la configuración sea descubrible con una opción de 'no volver a mostrar', o eliminar por completo la atribución y depender solo del campo 'Co-Authored-By: Claude'. La principal preocupación es la falta de transparencia y control del usuario sobre esta atribución automática.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49496543,
+    "url": "https://chipsandcheese.com/p/hot-chips-2026-xcena-and-samsungs",
+    "score": 37,
+    "time": 1788075341,
+    "titulo_es": "XCENA MX1: Un Acelerador de Memoria y Cómputo con RISC-V para Cargas de Trabajo Paralelas",
+    "resumen": "El artículo describe el MX1, un dispositivo de expansión de memoria desarrollado por XCENA en colaboración con Samsung. El MX1 está diseñado para satisfacer la creciente demanda de memoria en modelos de Machine Learning (ML). El dispositivo puede alojar hasta 2 TB de memoria DDR5 y se conecta al host a través de una interfaz PCIe 6/CXL 3.2 x8, ofreciendo un ancho de banda significativo. Una característica destacada es su capacidad para alojar SSDs a través de ocho carriles PCIe 6 adicionales, permitiendo que la DRAM adjunta actúe como caché para el almacenamiento SSD y exponiendo una gran cantidad de capacidad de memoria al host. Sin embargo, la característica más innovadora del MX1 es su capacidad de cómputo integrada, que incluye 3072 núcleos RISC-V distribuidos en 24 subsistemas. Cada subsistema, compuesto por 128 núcleos que comparten cachés L2 y TLBs, puede ejecutar trabajos independientes. El dispositivo utiliza una arquitectura con núcleos de bajo consumo y baja frecuencia, optimizada para cargas de trabajo de procesamiento paralelo, similar a la estrategia de Intel Xeon Phi. La jerarquía de caché está diseñada para minimizar la sobrecarga de traducción de direcciones, con cachés L1 de datos de 4 KB, cachés L2 de datos de 128 KB compartidas por clúster, y cachés de instrucciones de 8 KB compartidas por cuatro núcleos. Las instrucciones se procesan directamente con direcciones físicas para mejorar la eficiencia. El modelo de programación del MX1 se asemeja a OpenCL o CUDA, invocando un kernel múltiples veces con índices para procesar datos, lo que fomenta el código compartido y se alinea con la arquitectura de caché de instrucciones. La aislación de procesos se maneja a nivel de subsistema.",
     "categoria": "Hardware"
   },
   {
-    "id": 49479837,
-    "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-    "score": 898,
-    "time": 1787930229,
-    "titulo_es": "GUIs, TUIs y la navegación basada en teclado",
-    "resumen": "El artículo analiza el debate entre interfaces gráficas de usuario (GUI) e interfaces basadas en terminal (TUI), refutando la idea de que las TUIs son inherentemente superiores solo por ser operables mediante teclado. El autor argumenta que las GUIs tienen la capacidad técnica de ofrecer una navegación completa y fluida por teclado, respaldado por pautas de diseño como las de GNOME, y concluye que habilitar atajos y accesibilidad por teclado en aplicaciones gráficas es una cuestión de voluntad del desarrollador que mejora sustancialmente la experiencia de usuario.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49450782,
-    "url": "https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/",
-    "score": 54,
-    "time": 1787757768,
-    "titulo_es": "Cómo encontramos y corregimos un error en el runtime de Go en sistemas Linux de 32 bits",
-    "resumen": "El artículo detalla la depuración de un fallo crítico y recurrente en aplicaciones Go de larga ejecución sobre arquitecturas Linux de 32 bits (ARM e i386). Tras analizar el subsistema de eventos de red (netpoll) y la interacción con epoll, los ingenieros descubrieron un problema en la disposición en memoria de los punteros etiquetados (tagged pointers) frente a punteros directos en el campo de datos de 8 bytes de epoll_event, lo que generaba interpretaciones erróneas de los descriptores de eventos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49479546,
-    "url": "https://haz.ee/posts/aetheryte-radio.html",
-    "score": 3,
-    "time": 1787929155,
-    "titulo_es": "Recreando el sonido ambiental de FFXIV mediante la Web Audio API",
-    "resumen": "El autor relata el proceso técnico de extracción de assets de audio de Final Fantasy XIV utilizando herramientas de la comunidad y plugins de XIVLauncher para identificar las pistas exactas del juego. Posteriormente, aborda la recreación de un bucle de audio ambiental fluido y sin cortes perceptibles en el navegador mediante la Web Audio API, estructurando un grafo básico de procesamiento con nodos de origen, ganancia y salida.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49477854,
-    "url": "https://www.inventati.org/",
-    "score": 641,
-    "time": 1787921933,
-    "titulo_es": "Autistici/Inventati (A/I): Plataforma y Herramientas para la Autodefensa Digital",
-    "resumen": "A/I (Autistici/Inventati) es un colectivo que nació en 2001 con el objetivo de proporcionar una plataforma y herramientas de autodefensa digital para activistas y otros individuos. Su enfoque principal es ofrecer servicios gratuitos para la comunicación libre, sin control ni comercialización de datos personales, basándose en principios de solidaridad y autoorganización. Las solicitudes de servicio se procesan manualmente y de forma anónima, requiriendo la aceptación de su manifiesto, política y política de privacidad. Su modelo financiero se basa exclusivamente en donaciones voluntarias y sus servicios están destinados a uso estrictamente no comercial, apoyando a grupos con los que sienten afinidad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49486081,
-    "url": "https://github.com/stemdeckapp/stemdeck",
-    "score": 146,
-    "time": 1787966653,
-    "titulo_es": "StemDeck: Herramienta de Separación de Pistas de Audio Local y Gratuita",
-    "resumen": "StemDeck es una aplicación de escritorio gratuita y de código abierto diseñada para la separación de pistas de audio (stems) de archivos locales o URLs de YouTube. Utiliza modelos de IA (Demucs htdemucs_6s) para dividir audio en hasta seis componentes (voces, batería, bajo, guitarra, piano, otro). La aplicación ofrece una interfaz similar a una DAW (Estación de Trabajo de Audio Digital) con un mezclador multitrack que permite mutear, solo, ajustar niveles, hacer zoom en la forma de onda, bucear regiones y exportar pistas individuales o una mezcla personalizada. Todo el procesamiento se realiza localmente en la máquina del usuario, garantizando privacidad y sin necesidad de cuentas, cargas o suscripciones. Incluye funcionalidades como la extracción de subconjuntos de pistas con una pista complementaria para referencia A/B, medidores VU en vivo, análisis de audio (BPM, clave, escala, LUFS, pico), gestión de biblioteca y cancelabilidad de trabajos. Está pensada como una alternativa local a servicios en la nube como Moises y LALAL.AI, enfocándose en el caso de uso principal de estudio personal y privacidad, y no compite directamente con productos comerciales en términos de velocidad, calidad superior o herramientas avanzadas para músicos.",
+    "id": 49492632,
+    "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+    "score": 352,
+    "time": 1788032003,
+    "titulo_es": "Tencent Hy4 Preview: Un Modelo de Lenguaje de Nueva Generación para Productividad Real",
+    "resumen": "Tencent ha lanzado y hecho de código abierto Hy4 preview, un modelo de lenguaje grande (LLM) de nueva generación con 770 mil millones de parámetros totales y 49 mil millones de parámetros activos, y una ventana de contexto que supera 1 millón de tokens. Este modelo está diseñado para tareas de productividad en el mundo real, demostrando capacidades sobresalientes en codificación, trabajo de oficina e investigación científica. Hy4 preview se destaca por su comprensión, planificación, depuración y validación en tareas de desarrollo de software con contexto largo, mejora la calidad visual y la interacción en desarrollo frontend. En entornos de oficina y análisis financiero, muestra una fuerte comprensión de escenarios de trabajo complejos, análisis financiero mejorado, y optimización para análisis de datos y colaboración interdocumental. En el desarrollo de juegos, puede generar prototipos jugables a partir de solicitudes en lenguaje natural. En investigación científica, sobresale en la resolución de problemas complejos en áreas como IA, dinámica molecular, física de la materia condensada y matemáticas fundamentales. Notablemente, Hy4 preview ha participado en su propio desarrollo mediante la optimización automatizada de métodos de entrenamiento, estrategias de datos y marcos de evaluación, estableciendo un bucle de auto-mejora recursiva. También ha optimizado su propio sistema de inferencia, aumentando el rendimiento en un 31.8%. El modelo está disponible globalmente a través de WorkBuddy, CodeBuddy, Yuanbao, ima, y accesible vía API a través de Tencent Cloud TokenHub y OpenRouter.",
     "categoria": "IA"
   },
   {
-    "id": 49485416,
-    "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-    "score": 196,
-    "time": 1787959665,
-    "titulo_es": "Un motor Datalog para LLMs: Mejorando la Memoria y el Razonamiento en Investigación de Vulnerabilidades",
-    "resumen": "El artículo describe un problema recurrente al usar Agentes de Modelos de Lenguaje Grandes (LLMs) en investigación de vulnerabilidades a largo plazo: la pérdida de contexto y la inconsistencia en el razonamiento a medida que la investigación avanza. Las soluciones de memoria tradicionales para LLMs, que almacenan y recuperan observaciones incrustadas, son insuficientes porque no manejan dinámicamente la invalidación de conclusiones basadas en hechos obsoletos. Inspirado en las técnicas de análisis de programas y los sistemas de bases de datos relacionales, el autor propone un enfoque basado en Datalog. Datalog es un lenguaje de programación lógica declarativa que permite definir hechos y reglas para derivar nueva información. Al tratar las observaciones y conclusiones como hechos en un motor Datalog, los cambios en los hechos de entrada pueden propagarse automáticamente, invalidando las conclusiones afectadas en lugar de requerir que el LLM reconstruya todo el conocimiento. Esto permite mantener un estado consistente y actualizado del conocimiento, similar a cómo los sistemas de análisis de programas manejan cambios en los hechos de entrada de manera incremental y eficiente. El texto introduce Datalog con ejemplos simples de hechos y reglas, y destaca su capacidad para invalidar automáticamente conclusiones dependientes cuando un hecho subyacente se vuelve incorrecto, abordando directamente la problemática de la inconsistencia en el razonamiento de los LLMs.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49486334,
-    "url": "https://github.com/kingroryg/turbokv",
-    "score": 134,
-    "time": 1787970217,
-    "titulo_es": "TurboKV: Una Base de Datos Clave-Valor Embebida y Rápida en Rust",
-    "resumen": "TurboKV es una base de datos clave-valor embebida, asíncrona y escrita en Rust, diseñada para ser rápida y eficiente. Ofrece características avanzadas como lotes atómicos, escaneos de rango ordenados, durabilidad configurable, compresión (LZ4 por defecto) y compactación en segundo plano. Soporta la aceleración por hardware AES y SSE2/NEON mediante flags de compilación específicos para x86 y ARM, o `target-cpu=native`. La persistencia utiliza un formato de filtro Bloom persistente. Permite la gestión explícita del ciclo de vida de la base de datos mediante `close()` o `close_with_status()` para un apagado limpio. Las claves y valores son secuencias de bytes arbitrarias, requiriendo codificación por parte del llamador para strings. Las operaciones de escritura y lectura de punto/colección copian o devuelven datos copiados (`Vec<u8>`). Ofrece diferentes modos de durabilidad: `Fast` (sin WAL), `Durable` (WAL sin sincronización por cada ACK) y `Paranoid` (sincronización antes de cada retorno). Las pruebas de rendimiento comparan TurboKV con fjall y redb, destacando su alta tasa de transferencia en escenarios con lotes atómicos y desactivando la caché de páginas del sistema operativo y la compresión para maximizar la comparación de la E/S subyacente. La memoria de la base de datos se configura inicialmente con una memtable de 64 MiB y una caché de bloques de 64 MiB.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49433328,
-    "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
-    "score": 69,
-    "time": 1787663095,
-    "titulo_es": "Migración de EVE Online de Python 2 a Python 3",
-    "resumen": "El artículo detalla la migración técnica del núcleo del juego EVE Online de Python 2.7 a Python 3. Esta transición, impulsada por la iniciativa 'EVE Evolved', busca mejorar el rendimiento, facilitar la corrección de errores, habilitar nuevas características y aprovechar el ecosistema moderno de Python 3 (librerías, herramientas de depuración y profiling). Se aborda el desafío de migrar 2.4 millones de líneas de código Python, gran parte del cual data de versiones anteriores a Python 2.7, manteniendo la operatividad continua del juego (23.75 horas/día). Se mencionan herramientas de la comunidad como Python Futurize y la necesidad de fases cuidadosas y pruebas con jugadores en servidores de staging (Singularity). La experiencia previa con la migración del motor 'Carbon' en 'EVE Frontier' a Python 3 sirve como precedente. El objetivo principal es una transición imperceptible para el jugador, excepto por mejoras en la fluidez.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49480466,
-    "url": "https://anil.recoil.org/notes/rumour-is-the-exploit",
-    "score": 348,
-    "time": 1787932726,
-    "titulo_es": "La obsolescencia de los embargos de seguridad OSS tradicionales y las nuevas estrategias de respuesta para mantenedores",
-    "resumen": "El artículo discute cómo los embargos de seguridad tradicionales en el software de código abierto (OSS) ya no son efectivos debido a la capacidad de las herramientas de IA para descubrir vulnerabilidades rápidamente a partir de información limitada o incluso de la mera mención de un problema. El autor describe una experiencia personal donde una vulnerabilidad en cohttp fue detectada por atacantes automatizados pocos minutos después de abrir una Pull Request, a pesar de que la notificación inicial fue privada. Se resalta que los modelos de lenguaje grandes (LLMs) y otras herramientas de análisis de código, al ser dirigidos a clases de problemas (como 'path normalization'), pueden generar exploits de manera independiente y mucho más rápido de lo que los mantenedores pueden parchear. El tiempo medio para explotar vulnerabilidades se ha reducido drásticamente, incluso precediendo a la publicación del parche (tiempo negativo). El artículo argumenta que la estrategia de seguridad debe invertirse, enfocándose en la capacidad de los mantenedores para validar, priorizar y lanzar fixes de manera más eficiente, en lugar de depender de la secretividad del embargo. La 'bugonomics' se perfila como el cuello de botella en la remediación defensiva, donde la generación de exploits por IA supera la capacidad de respuesta humana.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49435595,
-    "url": "https://docs.python.org/3.16/library/time-complexity.html",
-    "score": 28,
-    "time": 1787670908,
-    "titulo_es": "Complejidad temporal de operaciones en tipos de datos incorporados de CPython",
-    "resumen": "Este artículo detalla la complejidad temporal (usando la notación Big O) de varias operaciones en tipos de datos incorporados en CPython, como listas, tuplas, diccionarios, conjuntos y cadenas. Se enfoca en cómo el tiempo de ejecución de una operación escala con el tamaño de la entrada (denotado por 'n' o 'k'). Se proporcionan explicaciones para listas, destacando los costos de inserción y eliminación cerca del principio, y se recomienda `collections.deque` para operaciones en ambos extremos. Para tuplas, la inmutabilidad resulta en complejidad O(1) para copias. Los diccionarios y conjuntos tienen complejidad promedio O(1) para la mayoría de las operaciones, asumiendo una buena distribución de hashes, pero advierten sobre la complejidad O(n) en el peor caso debido a colisiones. Se mencionan `frozendict` y `frozenset` como sus contrapartes inmutables. Finalmente, se abordan las cadenas (str) y bytes, también inmutables. El análisis es crucial para la optimización de código Python y la elección de estructuras de datos apropiadas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49417298,
-    "url": "https://monzo.com/blog/tolerating-full-cloud-outages-with-monzo-stand-in",
-    "score": 101,
-    "time": 1787563809,
-    "titulo_es": "Monzo Stand-in: Una Infraestructura de Respaldo para la Continuidad del Servicio Bancario",
-    "resumen": "El artículo describe Monzo Stand-in, una infraestructura bancaria de respaldo completamente separada y construida sobre Google Cloud Platform (GCP), diseñada para complementar la plataforma primaria de Monzo en Amazon Web Services (AWS). Su propósito es garantizar la continuidad de los servicios críticos (como transacciones con tarjeta, transferencias bancarias y consultas de saldo) ante incidentes imprevistos en la plataforma principal. A diferencia de los sistemas tradicionales de recuperación ante desastres que se centran en fallos de hardware, Monzo Stand-in se basa en un conjunto independiente de servicios, cada uno con su propia base de datos, colas y mecanismos de bloqueo. Las bases de datos se replican de forma asíncrona, aceptando consistencia eventual para evitar puntos únicos de fallo que sacrificarían la disponibilidad. La aplicación Monzo detecta automáticamente cuándo está activo Monzo Stand-in y presenta una interfaz de usuario simplificada con las funcionalidades esenciales. Este enfoque de construir servicios nuevos desde cero para el respaldo, en lugar de replicar los existentes, evita problemas de consistencia de datos fuertemente acoplada y mejora la resiliencia general del servicio frente a fallos complejos, ya sean causados por el proveedor de la nube o por errores de código propios.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49485532,
-    "url": "https://www.vectorian.be/articles/2026-06-07/sumerian-king-list-paleoclimate-alignment-explorer/",
-    "score": 112,
-    "time": 1787960770,
-    "titulo_es": "Análisis Exploratorio de la Lista Real Sumeria y su Posible Correlación con Eventos Paleoclimáticos",
-    "resumen": "El artículo presenta un análisis exploratorio de la Lista Real Sumeria, específicamente de los ocho reyes antediluvianos y sus enormes y regulares periodos de reinado. Se propone la hipótesis de que estos números, que son múltiplos de 600 y 3,600, podrían representar una memoria distorsionada de prehistoria, codificando eventos climáticos reales, erupciones, impactos o cambios en el nivel del mar. El análisis escala la cronología a un lapso fijo de 241.2 ka y la ancla a 11.6 ka BP (aproximadamente el final del Younger Dryas) para comparar los límites de reinado con eventos geológicos del Cuaternario. Se evalúa la probabilidad de alineaciones aleatorias comparando la secuencia sumeria con otras cronologías antiguas (patriarcas bíblicos, reinados de dioses y semidioses manetonianos, y los primeros gobernantes Kish I). Se utiliza un puntaje de proximidad de kernel Gaussiano (S = Σᵢ Σⱼ exp(-(tᵢ - bⱼ)² / 2σ²)) para medir la cercanía entre las fechas de eventos y los límites de reinado, permitiendo una contribución gradual de los eventos cercanos. Se discuten las condiciones para una alineación creíble, la importancia de fijar el ancla en el final de la secuencia antediluviana, la comparación con otras cronologías como ejemplos de cómo secuencias no relacionadas pueden producir aparentes coincidencias, y la necesidad de que los resultados sean significativos después de considerar los factores de comparación. El análisis principal utiliza un p-valor de permutación exhaustiva y un q-valor ajustado por comparaciones múltiples, con sensibilidades exploradas mediante catálogos amplios y catastróficos, y análisis con ancla deslizante. Los resultados indican que las alineaciones observadas no son estadísticamente significativas después de tener en cuenta las comparaciones realizadas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49419409,
-    "url": "https://sometimes.digital/posts/experiments-with-plotter-art/",
-    "score": 74,
-    "time": 1787577716,
-    "titulo_es": "Modificar una impresora 3D Ender 3 para convertirla en un plotter de dibujo",
-    "resumen": "El artículo describe la modificación de una impresora 3D Ender 3, que normalmente es usada para imprimir objetos tridimensionales, para que funcione como un plotter de dibujo. El autor adhiere magnéticamente un bolígrafo a la carcasa metálica del cabezal de la impresora, con un desfase respecto a la boquilla. Utiliza Inkscape, un editor de gráficos vectoriales, para generar el G-code necesario a partir de trazados vectoriales o fuentes de tipo Hershey, aprovechando una extensión de scripting llamada 'Simple Inkscape Scripting' basada en Python. Esta extensión permite procesar trazados, incluso aquellos dibujados a mano, y aplicarlos para que la impresora dibuje diseños abstractos o texto. La configuración se describe como rápida y sin fricciones, permitiendo al usuario centrarse en la experimentación y el aprendizaje de nuevas técnicas de dibujo mediante la adaptación de algoritmos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49479924,
-    "url": "https://www.osnews.com/story/145883/easyeffects-should-be-part-of-every-linux-distribution-and-desktop-environment-to-massively-improve-laptop-speaker-sound-quality/",
-    "score": 177,
-    "time": 1787930590,
-    "titulo_es": "Mejora el sonido de tu portátil Linux con EasyEffects",
-    "resumen": "El artículo aborda el problema común de la mala calidad del sonido en los altavoces de los portátiles, incluso en modelos caros. Explica que, si bien la física limita el rendimiento de los altavoces pequeños, el software avanzado de procesamiento de audio puede mejorar significativamente la experiencia sonora. Se presenta EasyEffects, una aplicación para distribuciones Linux que utiliza PipeWire para aplicar efectos de audio diversos (ecualizadores, compresores, realzadores de graves, etc.) mediante plugins de terceros. Aunque la configuración manual requiere experiencia, el artículo destaca la disponibilidad de presets descargables diseñados para mejorar el audio de los portátiles. Se menciona que la calidad de audio en portátiles de gama alta como MacBooks y algunos Dell XPS se debe en gran medida a la sintonización de fábrica. Para los usuarios de Linux, se recomienda EasyEffects como una solución accesible para aplicar estas mejoras, facilitando la descarga e instalación de presets en directorios específicos según se use el paquete de la distribución o una versión Flatpak.",
+    "id": 49495372,
+    "url": "https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt",
+    "score": 453,
+    "time": 1788059736,
+    "titulo_es": "California Excluye Sistemas Operativos de Código Abierto de la Ley de Garantía de la Era Digital",
+    "resumen": "La Asamblea de California ha aprobado la AB 1856, modificando la Ley de Garantía de la Era Digital para eximir a los sistemas operativos de código abierto. La enmienda redefine 'proveedor de sistema operativo' para excluir a quienes distribuyen software bajo licencias permisivas (GPL, MIT, BSD, Apache), lo que libera a distribuciones como Debian, Fedora, Ubuntu y SteamOS de la obligación de recopilar datos de edad de los usuarios. Adicionalmente, se excluyen componentes de software no ofrecidos como aplicaciones independientes a través de tiendas de aplicaciones, y las tiendas de extensiones que operan dentro de aplicaciones anfitrionas. La ley también ha sido modificada para corregir una definición defectuosa de 'usuario' que técnicamente clasificaba a todos como niños, y prohíbe solicitar señales de edad a menos que sea legalmente requerido, previniendo abusos potenciales de la API de edad.",
     "categoria": "Distribuciones Linux"
   },
   {
-    "id": 49422743,
-    "url": "https://acko.net/blog/curvature-beziers/",
-    "score": 132,
-    "time": 1787590992,
-    "titulo_es": "Mejorando las Curvas Bézier: Una Perspectiva de Ingeniería de Software",
-    "resumen": "El artículo explora las curvas Bézier, una tecnología fundamental y ubicua en gráficos por computadora y CAD, concebida en la década de 1960. A pesar de su antigüedad y algunas limitaciones inherentes, su simplicidad y adaptabilidad las mantienen como una opción predominante. El autor investiga la posibilidad de mejorar las curvas Bézier sin invalidar la infraestructura existente que depende de ellas. Se detalla el proceso de construcción lineal de las curvas Bézier mediante interpolaciones sucesivas (lerps) y la fórmula generalizada usando coeficientes del triángulo de Pascal. Se aclara que, aunque se pueden definir curvas de cualquier grado, la práctica común se centra en las curvas cúbicas (4 puntos de control) debido a su comportamiento predecible (cruzan el primer y último punto) y la facilidad para construir splines suaves uniendo segmentos cúbicos con tangentes alineadas. Sin embargo, el artículo refuta la intuición común de que la simetría de las tangentes de los puntos de control intermedios es clave para la suavidad. Mediante la demostración de la divisibilidad exacta de las curvas Bézier y el análisis de su curvatura (utilizando un peine de curvatura), se argumenta que la continuidad de la curvatura es el factor crucial, no la simetría de las tangentes. Finalmente, se propone una mejora al tratar las tangentes de forma relativa, haciéndolas proporcionales a la distancia entre puntos, lo que facilita la edición al permitir que los segmentos adyacentes se ajusten de forma natural. No obstante, se señala que esta aproximación tampoco garantiza la preservación de la curvatura continua.",
+    "id": 49494856,
+    "url": "https://freecore.org/",
+    "score": 138,
+    "time": 1788053492,
+    "titulo_es": "TrueNAS CORE - Continuación y Evolución a FreeCORE",
+    "resumen": "El artículo describe la evolución de TrueNAS CORE, un sistema operativo basado en FreeBSD y OpenZFS, hacia un nuevo proyecto independiente llamado FreeCORE. FreeCORE toma la base de TrueNAS CORE 13.3 y la mantiene de forma autónoma sobre FreeBSD. Se menciona que la versión 15.0-U1 es estable y que los sistemas TrueNAS CORE 13.3 pueden actualizarse directamente a la versión 15.0 y continuar recibiendo actualizaciones. Se agradece la contribución de FreeNAS, TrueNAS CORE, FreeBSD y OpenZFS, y se atribuye la autoría original en las cabeceras de licencia del código fuente.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 49415386,
+    "url": "https://zackbartel.com/blog/2026/08/tether/",
+    "score": 490,
+    "time": 1787548163,
+    "titulo_es": "Tether: Sincronizando tu iPhone con Linux para imitar la Continuidad de Apple",
+    "resumen": "El artículo describe la creación de Tether, una herramienta diseñada para replicar la funcionalidad de 'Continuidad' de Apple (sincronización de portapapeles, transferencia de archivos, sincronización de notificaciones, iMessage/SMS y autocompletado de OTP) entre iOS y Linux. El autor, un arquitecto de software senior, detalla los desafíos técnicos enfrentados, como la implementación de la sincronización de portapapeles (el primer objetivo para el flujo de OTP), transferencia de archivos, y la integración con iMessage/SMS a través de ingeniería inversa de protocolos Bluetooth tras el descubrimiento de proyectos como ancs4linux y BlueFerry. Se destaca el uso de mTLS para la seguridad y la implementación de extensiones para WebExtensions (Firefox) y Betterbird (Thunderbird) para el manejo de OTPs, reconociendo la limitación de soporte para otros clientes de correo. El proyecto utiliza la licencia MIT, a diferencia de otros proyectos de interoperabilidad con licencias copyleft. Tether ahora ofrece sincronización de iMessage, SMS, notificaciones y contactos en Linux, además de sus funcionalidades previas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49472216,
-    "url": "https://12factor.net/",
-    "score": 283,
-    "time": 1787870471,
-    "titulo_es": "Metodología de las Doce Factores para Aplicaciones SaaS",
-    "resumen": "El artículo describe la metodología de las Doce Factores, un conjunto de prácticas para construir aplicaciones de software como servicio (SaaS). Se aplica a cualquier lenguaje de programación y combinación de servicios de soporte. El objetivo es mejorar el desarrollo, la operación y el escalado de aplicaciones, abordando problemas sistémicos, facilitando la colaboración entre desarrolladores y mitigando la erosión del software. Se inspira en patrones de arquitectura y refactorización, dirigido a desarrolladores y ingenieros de operaciones.",
+    "id": 49494520,
+    "url": "https://danluu.com/bug-blind/",
+    "score": 317,
+    "time": 1788049300,
+    "titulo_es": "Observar fallos y la \"ceguera a la calidad\" en el desarrollo de software",
+    "resumen": "El artículo describe la experiencia del autor al detectar una cantidad significativamente mayor de errores de software en comparación con la mayoría de las personas. Inicialmente, el autor atribuyó esto a su uso particular de las computadoras, pero llegó a la conclusión de que la mayoría de las personas simplemente no notan los mismos errores o se acostumbran a ellos. El autor, que a menudo es consultado por directores y ejecutivos para evaluar sistemas debido a su aguda percepción de problemas, detalla cómo identifica fallos que van desde leves hasta severos, siendo estos últimos aquellos que hacen que un producto sea prácticamente inutilizable para un usuario normal, a pesar de que internamente se perciba como funcional. El autor reflexiona sobre la discrepancia entre su experiencia y la retroalimentación interna, sugiriendo que su perspectiva no se debe a la activación de casos de esquina inusuales, sino a una evaluación más precisa de la usabilidad real del producto. Se menciona el uso de LLMs para simular usuarios y validar la reproducibilidad de los errores. Finalmente, se presenta un ejemplo de problemas observados en resultados de búsqueda de motores como Google, Bing y Kagi, caracterizándolos como errores moderados a severos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49479878,
-    "url": "https://huggingface.co/zai-org/GLM-5.3",
-    "score": 735,
-    "time": 1787930413,
-    "titulo_es": "GLM-5.3: Avances en Modelos de Lenguaje Grandes con Post-entrenamiento",
-    "resumen": "GLM-5.3, basado en la misma arquitectura que GLM-5.2, logra mejoras significativas principalmente a través de técnicas de post-entrenamiento. Destaca especialmente en tareas de codificación compleja y de largo horizonte. El modelo es compatible con diversos frameworks para su implementación. Se anima a los investigadores a citar el informe técnico al utilizar GLM-5.3 en sus estudios.",
+    "id": 49437117,
+    "url": "https://ampcode.com/notes/orbs-explained",
+    "score": 38,
+    "time": 1787676975,
+    "titulo_es": "Orbs: Más que simples máquinas virtuales para desarrollo remoto",
+    "resumen": "El artículo introduce 'orbs' como una característica fundamental del producto Amp, una plataforma de desarrollo y agente de codificación. Los orbs son agentes de codificación remotos, esencialmente máquinas virtuales o sandboxes efímeras, que se activan cuando se les envía una solicitud y entran en modo de suspensión (sin costo) cuando están inactivos. Permiten a los desarrolladores controlar agentes remotos desde múltiples interfaces (web, móvil, CLI). La característica distintiva de los orbs es su funcionalidad ampliada más allá de las VMs tradicionales: incluyen 'portales' para exponer servicios HTTP localmente, URLs compartibles para la colaboración y revisión, la capacidad de invitar a compañeros para orbes multijugador con chat integrado, acceso a terminal, y la posibilidad de programar el despertar de los orbs o incluso que un agente spawnee otros orbs y se comunique con ellos. Estas capacidades avanzadas justifican la denominación 'orbs' y los posicionan como un entorno de desarrollo colaborativo y dinámico, superando la idea de meros 'agentes remotos'.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49490870,
+    "url": "https://science.nasa.gov/mission/roman-space-telescope/",
+    "score": 239,
+    "time": 1788018482,
+    "titulo_es": "Telescopio Espacial Nancy Grace Roman de la NASA busca el Universo Oscuro",
+    "resumen": "El Telescopio Espacial Nancy Grace Roman (antes WFIRST) es un observatorio espacial de la NASA diseñado para abordar preguntas fundamentales sobre la energía oscura, los exoplanetas y la astrofísica infrarroja. Tendrá un campo de visión al menos 100 veces mayor que el del Telescopio Espacial Hubble, lo que le permitirá medir la luz de mil millones de galaxias a lo largo de su vida útil. Su diseño incluye la capacidad de bloquear la luz estelar para observar directamente exoplanetas y discos de formación planetaria, realizar un censo estadístico de sistemas planetarios en nuestra galaxia y resolver cuestiones clave en la cosmología y la astrofísica. El artículo cubre su construcción, lanzamiento y objetivos científicos, destacando su importancia como un observatorio clave para la próxima década, comparable en impacto científico al Telescopio Espacial James Webb.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49433554,
+    "url": "https://www.muppetlabs.com/~breadbox/software/tiny/teensy.html",
+    "score": 64,
+    "time": 1787664002,
+    "titulo_es": "El Capricho del Columnista: Creación de Ejecutables ELF Pequeños",
+    "resumen": "Este artículo explora técnicas para reducir drásticamente el tamaño de los ejecutables ELF en Linux para arquitecturas x86, partiendo de un simple programa en C que retorna un valor. Se discuten y aplican métodos como el stripping y la optimización del compilador. Al notar las limitaciones de C para la optimización extrema, el enfoque se desplaza a la programación en ensamblador, creando una rutina `_start` personalizada para evitar la sobrecarga de la interfaz `main()` y las librerías de inicio de C, utilizando la opción `-nostartfiles` de GCC. El objetivo final es comprender el formato ELF y los mecanismos de entrada del sistema operativo para generar ejecutables \"teensy\".",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49469786,
+    "url": "https://artificialanalysis.ai/hardware-inference-stack/mobile-phones",
+    "score": 66,
+    "time": 1787857923,
+    "titulo_es": "Benchmarking de Modelos Pequeños en Teléfonos Móviles",
+    "resumen": "Este artículo detalla un estudio de rendimiento de modelos de inteligencia artificial (IA) de tamaño reducido, diseñados para ejecutarse en dispositivos móviles. El análisis se enfoca en modelos que caben dentro de 8 GB de memoria después de la cuantización, incluyendo el KV cache a 8K de contexto. Las pruebas utilizan el framework llama.cpp con modelos cuantizados a 4 bits o menos. El rendimiento se mide principalmente a través del tiempo total de reloj (wall-clock time) necesario para procesar un prompt de 1024 tokens y generar una respuesta de 256 tokens. Se emplean cinco evaluaciones promedio que simulan el uso real en dispositivos móviles, y los datos de inferencia son recopilados directamente en los dispositivos mediante una colaboración con Liquid AI, cuyo proceso de medición ha sido validado independientemente. El estudio también menciona la evaluación de modelos en subconjuntos específicos de índices de inteligencia artificial, como 'Tool calling', 'Instruction following', y razonamiento científico y cuantitativo.",
     "categoria": "IA"
   },
   {
-    "id": 49479072,
-    "url": "https://geekyschmidt.com/post/2026-08-25-verschlimmbesserung/",
-    "score": 155,
-    "time": 1787927433,
-    "titulo_es": "Verschlimmbesserung: La mejora que empeora las cosas en el desarrollo de software",
-    "resumen": "El artículo discute el concepto de \"Verschlimmbesserung\", una mejora intentada que en realidad empeora las cosas, aplicándolo al desarrollo de software. Se critica la tendencia de realizar actualizaciones en productos SaaS que rompen flujos de trabajo establecidos o introducen cambios innecesarios. Se señala que la causa raíz a menudo reside en la forma en que se miden y se incentiva a los equipos de ingeniería. Si las métricas se centran en lanzar versiones (point releases) o en métricas ilógicas, los equipos optimizarán para esas métricas, lo que puede llevar a \"mejoras\" perjudiciales. Se argumenta que la estabilidad es una característica valiosa y que saber cuándo no lanzar es una disciplina de ingeniería crucial. La clave es alinear las métricas y los incentivos con el valor real del producto y la satisfacción del usuario, en lugar de solo la actividad de desarrollo.",
+    "id": 49426995,
+    "url": "https://dgl.cx/2020/06/sqlite-json-support",
+    "score": 226,
+    "time": 1787612410,
+    "titulo_es": "SQLite como Base de Datos de Documentos con Columnas Generadas para JSON",
+    "resumen": "El artículo describe cómo las columnas generadas de SQLite (introducidas en la versión 3.31.0) permiten tratar a SQLite como una base de datos de documentos. Al insertar datos JSON, se pueden extraer y indexar campos específicos utilizando funciones como `json_extract`. Esto valida automáticamente el JSON y permite la aplicación de restricciones `NOT NULL` sobre campos extraídos. Se pueden crear columnas generadas como `VIRTUAL` (para no almacenar datos duplicados) o `STORED` (para caché), y se pueden indexar, incluso las virtuales. La flexibilidad de `ALTER TABLE` permite añadir columnas generadas e indexarlas posteriormente, lo que es útil para escenarios como el procesamiento de webhooks, donde los datos se pueden almacenar inicialmente en una única columna JSON y los campos relevantes se extraen e indexan a medida que se identifican. Esto ofrece una solución ligera para el manejo de datos semi-estructurados en bases de datos embebidas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49477212,
-    "url": "https://github.com/openai/openai-python/blob/main/httpx2.md",
-    "score": 204,
-    "time": 1787917880,
-    "titulo_es": "Actualización del SDK de Python de OpenAI: Transición a HTTPX2",
-    "resumen": "El SDK de Python de OpenAI ha migrado de httpx a httpx2 para sus clientes HTTP síncronos y asíncronos. Esta transición introduce cambios significativos, especialmente en el manejo de la verificación de certificados TLS, que ahora utiliza el almacén de confianza del sistema operativo en lugar de certifi. Las aplicaciones que interactúan directamente con la capa HTTP del SDK o que dependen de httpx instalado transitivamente requerirán ajustes. Se recomienda encarecidamente actualizar las dependencias y las configuraciones de TLS para evitar problemas de verificación de certificados, especialmente en entornos mínimos de contenedores o aquellos con proxies de inspección TLS corporativos. El SDK proporciona clases de cliente y configuración actualizadas (DefaultHttpx2Client, DefaultAsyncHttpx2Client) y continúa admitiendo la construcción directa de clientes httpx2. Las interfaces de transporte, los manejadores de autenticación y las excepciones ahora se basan en objetos de httpx2. Las aplicaciones que utilizan la integración aiohttp también se beneficiarán de una dependencia nativa de httpx2.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49481455,
-    "url": "https://arxiv.org/abs/2608.23691",
-    "score": 111,
-    "time": 1787936472,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y la Colaboración en Nuevas Características de arXiv",
-    "resumen": "El artículo describe arXivLabs, un framework diseñado para permitir a colaboradores (individuos y organizaciones) desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza el compromiso de arXiv con sus valores fundamentales de apertura, comunidad, excelencia y privacidad de datos del usuario, asegurando que solo se colabore con socios que se adhieran a estos principios. El framework promueve la innovación y la adición de valor para la comunidad de arXiv, invitando a los interesados a explorar más sobre arXivLabs y sus posibilidades de proyecto.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49478401,
-    "url": "https://2026.stateofthemap.org/",
-    "score": 170,
-    "time": 1787924788,
-    "titulo_es": "Estado del Mapa 2026: Conferencia de OpenStreetMap en París y en línea",
-    "resumen": "El artículo describe la conferencia anual 'State of the Map' (SotM) que se celebrará en París, Francia, y en línea del 28 al 30 de agosto de 2026. El evento es el principal punto de encuentro para la comunidad de OpenStreetMap (OSM), reuniendo a mappers y usuarios para compartir avances, realizar talleres y fomentar colaboraciones. Se destaca el papel de OSM en la combinación de conocimiento local con impacto global y su contribución al ecosistema de mapeo abierto. Se mencionan patrocinadores como TomTom, que apoya el crecimiento del ecosistema OSM, y Michelin, una empresa con una larga trayectoria en materiales avanzados y que contribuye a través de soluciones basadas en datos y IA, además de sus guías. La conferencia busca impulsar la innovación y las asociaciones dentro de la comunidad de mapeo abierto.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49484925,
-    "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
-    "score": 56,
-    "time": 1787955507,
-    "titulo_es": "Uso de IA para detectar cosméticos falsificados",
-    "resumen": "El artículo explora la viabilidad de utilizar modelos de inteligencia artificial, como Google Gemini, para identificar productos cosméticos falsificados. El autor describe un experimento en el que se tomaron fotografías de envases de Rhode Peptide Lip Tint, tanto auténticos como falsos, y se presentaron a Gemini para su análisis. Se evaluaron las respuestas de Gemini, centrándose en su capacidad para detectar inconsistencias y 'banderas rojas' en el empaque y el texto, como errores tipográficos sutiles que evidencian la falsificación. El estudio preliminar sugiere que la IA puede ser una herramienta prometedora para ayudar a los consumidores a verificar la autenticidad de los productos antes de la compra, mitigando así el riesgo de adquirir imitaciones de baja calidad o potencialmente peligrosas.",
+    "id": 49497357,
+    "url": "https://www.abc.net.au/news/2026-08-29/fair-work-commission-condemns-ai-legal-advice/107089766",
+    "score": 37,
+    "time": 1788085211,
+    "titulo_es": "El uso de IA impulsa el aumento de casos en la Comisión de Trabajo Justo, con advertencias para los litigantes",
+    "resumen": "El artículo detalla un aumento del 40% en los casos presentados ante la Comisión de Trabajo Justo (Fair Work Commission) en Australia, atribuido en parte al uso de Inteligencia Artificial (IA) por parte de los litigantes. Se presenta el caso de un ex empleado de ALDI, Sadnan Khan, quien fue criticado por usar IA como asesor legal para impugnar su despido, resultando en una decisión desfavorable y la imposición de costos legales. A pesar de las advertencias, Khan planea apelar usando múltiples agentes de IA. A partir del 20 de octubre, se requerirá la divulgación del uso de IA y se implementará una plantilla para ayudar a los litigantes dependientes de IA. La Comisión reconoce que la IA puede mejorar el acceso a la justicia para casos legítimos, pero advierte contra su uso como única fuente de asesoramiento. Por otro lado, se destaca el caso exitoso de Gregory Baker, un profesor de informática, quien utilizó IA como una herramienta colaborativa en un proyecto de desarrollo de software para desafiar leyes de empleo casual, logrando una victoria legal. El artículo subraya la importancia de tratar la IA como una herramienta dentro de un proceso crítico, similar a un proyecto de desarrollo de software, en lugar de una fuente de verdad absoluta, y señala las implicaciones para el funcionamiento de las instituciones y sistemas legales.",
     "categoria": "IA"
+  },
+  {
+    "id": 49494571,
+    "url": "https://github.com/mk6i/open-oscar-server",
+    "score": 50,
+    "time": 1788050015,
+    "titulo_es": "Servidor Open OSCAR: Servidor de Mensajería Instantánea de Código Abierto Compatible con AIM y ICQ",
+    "resumen": "Open OSCAR Server es un servidor de mensajería instantánea de código abierto desarrollado en Go, diseñado para ser compatible con clientes clásicos de AIM (AOL Instant Messenger) e ICQ. El proyecto se encuentra en desarrollo activo y da la bienvenida a contribuciones. Ofrece guías de inicio rápido para configurar el servidor y los clientes AIM/ICQ, junto con documentación para la compilación y ejecución. Incluye una API de gestión con especificaciones OpenAPI para la administración del servidor a través de la línea de comandos (PowerShell). El servidor es auto-hospedable y está licenciado bajo la licencia MIT. No está afiliado ni respaldado por AOL.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49497227,
+    "url": "https://github.com/AniketWathore/bolnee-chat",
+    "score": 28,
+    "time": 1788083765,
+    "titulo_es": "Integración de Chatbots en tu Sitio Web Empresarial: Plataforma RAG Autoalojada y Gratuita",
+    "resumen": "Bolnee-Chat es una plataforma RAG (Retrieval-Augmented Generation) autoalojada que permite integrar chatbots en sitios web empresariales. Los usuarios pueden crear un bot, añadir conocimiento a partir de su sitio web y documentos PDF, y conectarse a diversos proveedores compatibles con OpenAI (OpenRouter, OpenAI, Groq, Ollama, vLLM). La solución se destaca por ser gratuita, sin 'vendor lock-in' y sin facturación por mensaje. Se autoaloja en la infraestructura del usuario (servidor, Vercel, Cloudflare Pages) utilizando SQLite para el almacenamiento de datos y conocimiento (incluyendo indexación FTS para texto, PDFs, TXT, MD, DOCX). Las respuestas del chatbot están fundamentadas en las fuentes proporcionadas y citadas. Las conversaciones de los visitantes se agrupan por ID de visitante y fecha, siendo exportables en CSV, JSON o PDF. El sistema permite personalizar la apariencia y el comportamiento del widget del chatbot, incluyendo avatar, colores, tema (claro/oscuro/auto) y mensajes de saludo. La configuración se realiza a través de un panel de control basado en API. El rastreo del sitio web respeta robots.txt y extrae contenido textual relevante. Las claves de API de los proveedores LLM se almacenan cifradas. El widget se incrusta fácilmente mediante un snippet de dos líneas antes de la etiqueta </body>.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49447719,
+    "url": "https://hitogata.neocities.org/POP-2000",
+    "score": 23,
+    "time": 1787746838,
+    "titulo_es": "POP-2000: Un Dialecto de POP-2 para Pequeños Sistemas y Compiladores Ligeros",
+    "resumen": "El artículo detalla el desarrollo de POP-2000 (o POP2K), un dialecto estandarizado del lenguaje de programación POP-2 de los años 70. POP-2, con su naturaleza inherentemente basada en pilas, es ideal para crear \"tiny compilers\" y lenguajes de bajo nivel. Los autores buscan revitalizar POP-2 como una \"lingua franca\" para sistemas pequeños y de recursos limitados, facilitando el aprendizaje para principiantes y la implementación para creadores de sistemas. POP-2000 se enfoca en definir claramente la gramática y añadir soporte para características de nivel de sistema, basándose en los principios de diseño de POP-2, que priorizan la simplicidad de implementación y el control de bajo nivel, alineándose con objetivos como el \"permacomputing\". La implementación se beneficia de la facilidad para escribir intérpretes/compiladores de lenguajes concatenativos y basados en pilas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49491714,
+    "url": "https://tucker.wales/writing/bias-towards-action/",
+    "score": 166,
+    "time": 1788025158,
+    "titulo_es": "El sesgo hacia la acción: un superpoder a aplicar correctamente",
+    "resumen": "El artículo aborda la importancia de un 'sesgo hacia la acción' bien aplicado, especialmente en nuevos entornos profesionales como el desarrollo de software. Contrasta la urgencia natural de demostrar valía rápidamente con la necesidad crítica de construir contexto antes de actuar. Se enfatiza que la acción sin información previa (como un 'sledgehammer' sin 'blueprints') puede ser perjudicial. Se propone que la escucha activa y el análisis deliberado son formas de acción productiva que forman la base para decisiones futuras. La clave es pasar de la recopilación de información a la acción decisiva solo después de haber comprendido el panorama, asegurando que los esfuerzos se dirijan a problemas reales y que requieran intervención, en lugar de precipitaciones ineficaces.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49450248,
+    "url": "https://iafisher.com/2026/08/sigprint",
+    "score": 55,
+    "time": 1787756021,
+    "titulo_es": "Manejo de señales en Python y la reentrada de `print`",
+    "resumen": "El artículo discute las particularidades del manejo de señales en CPython. Explica que, a diferencia de los lenguajes que ejecutan los manejadores de señales directamente desde el manejador de bajo nivel de C (sujeto a restricciones), Python pospone la ejecución del manejador de señales del usuario hasta que el intérprete se encuentra en un estado consistente. Se resalta una característica inesperada: los manejadores de señales en Python son reentrantes. El artículo se enfoca en el escenario de estrés donde un manejador de señales, específicamente una llamada a `print`, es reentrado mientras se ejecuta. Demuestra que bajo circunstancias extremas, esto puede llevar a un fallo del programa. Sin embargo, concluye que este es un caso poco probable en aplicaciones reales y considera que un fallo con una excepción es preferible a los fallos silenciosos o corrupción de datos asociados con manejadores de señales inseguros en C. Se mantiene la recomendación de no realizar operaciones complejas dentro de un manejador de señales.",
+    "categoria": "Desarrollo de Software"
   }
 ]
