@@ -1,173 +1,146 @@
 [
   {
-    "id": 49522884,
-    "url": "https://adfr.io/thoughts/20260831_a_small_telescope_that_surprised_me/",
+    "id": 49505257,
+    "url": "https://www.data-structures-in-practice.com/intrusive-linked-lists/",
     "score": 8,
-    "time": 1788274829,
-    "titulo_es": "Reflexiones sobre los telescopios inteligentes",
-    "resumen": "El artículo analiza la evolución y viabilidad de los telescopios inteligentes compactos, centrándose en dispositivos como el Seestar S50 y Dwarflab. Tras años de escepticismo debido a los altos costos y limitaciones de las primeras generaciones, el autor destaca cómo el hardware actual ofrece sistemas integrados, accesibles y estables que automatizan la alineación, el seguimiento y la captura de imágenes astronómicas, permitiendo además el procesamiento de datos crudos en software especializado.",
+    "time": 1788146912,
+    "titulo_es": "Listas Enlazadas Intrusivas y su Uso en la Gestión de Procesos en Linux",
+    "resumen": "El artículo explora el concepto de listas enlazadas intrusivas, una variante donde los nodos de la lista se incrustan directamente en las estructuras de datos que se enlazan. A diferencia de las listas no intrusivas que requieren una estructura de nodo separada con punteros a datos y al siguiente elemento, las listas intrusivas integran el puntero 'siguiente' dentro del objeto principal. Esto se logra mediante la incrustación de una estructura de lista (con un puntero 'next') en el objeto a enlazar. La recuperación del objeto contenedor a partir de un puntero a la estructura de lista se realiza calculando el desplazamiento de la estructura de lista dentro del objeto. Si bien el artículo menciona un método basado en aritmética de punteros con `void*` en GCC, destaca el uso del macro `offsetof` para una portabilidad y robustez superiores. Las ventajas clave de las listas intrusivas incluyen la reducción de la asignación de memoria (un solo `malloc` en lugar de dos) y una mejor localidad de caché al evitar la desreferencia adicional de un nodo de lista. Posteriormente, el artículo introduce las listas doblemente enlazadas y circulares, describiendo sus características (punteros `prev` y `next`, último nodo apuntando al primero) y beneficios (inserción/eliminación más sencilla, iteración continua). Se menciona explícitamente que Linux utiliza listas doblemente enlazadas circulares para la gestión de procesos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49536375,
+    "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+    "score": 457,
+    "time": 1788357599,
+    "titulo_es": "La mayoría de las fuentes de recomendación de IA basadas en web no se encuentran en sitios web populares y varias están diseñadas para modelos",
+    "resumen": "El artículo analiza las fuentes de datos utilizadas por modelos de IA para generar recomendaciones de productos en 380 categorías de software. Se descubrió que el 59.8% de las fuentes citadas provienen de sitios web clasificados por debajo del puesto 100,000 en la lista Tranco, y el 23.4% ni siquiera están entre los un millón de sitios más visitados. Además, varios de los sitios más citados parecen haber sido creados específicamente para ser leídos por modelos de IA en lugar de humanos, con contenido generado automáticamente y una presencia web reciente (creados después de diciembre de 2023). Se identificaron tres dominios en particular que publicaron un gran número de páginas de \"mejores productos\" generadas por máquinas. Se observó que sitios como guideflow.com, wifitalents.com, worldmetrics.org y gitnux.org, que no son fuentes de reseñas tradicionales, se citaron frecuentemente. El análisis concluye que la capa de recuperación de los modelos de IA está utilizando contenido de fuentes de baja visibilidad y potencialmente optimizado para máquinas, lo que plantea interrogantes sobre la calidad y objetividad de las recomendaciones.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49511493,
+    "url": "https://computer-museum.org/wp/",
+    "score": 63,
+    "time": 1788192937,
+    "titulo_es": "La Preservación Histórica de la Revolución de la Computación en la Universidad Estatal de San Diego",
+    "resumen": "El artículo describe la preservación de la colección del antiguo Computer Museum of America / San Diego Computer Museum, albergada en la Universidad Estatal de San Diego. La colección, que abarca 70 años de innovación tecnológica, incluye hardware de computadoras, revistas, boletines, software, libros y manuales. El objetivo es que sirva como un recurso para que investigadores de diversas disciplinas (sociología, ingeniería, antropología, historia) comprendan y expliquen la magnitud de la Revolución de la Computación y su impacto transformador en la vida humana. Recientemente, la colección ha comenzado a ser indexada gracias a una subvención, y se están llevando a cabo esfuerzos de recaudación de fondos y marketing.",
     "categoria": "Hardware"
   },
   {
-    "id": 49521973,
-    "url": "https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/",
-    "score": 522,
-    "time": 1788270409,
-    "titulo_es": "Bloqueador de Anuncios Integrado para Firefox en iOS",
-    "resumen": "El artículo describe la nueva función 'Ad Blocker' integrada en Firefox para iOS. Esta característica utiliza la tecnología de Bloqueo de Contenido de WebKit de Apple y la lista de filtros EasyList para bloquear anuncios de terceros y rastreadores antes de que se carguen. El objetivo es reducir el desorden y las distracciones en la pantalla del usuario. El bloqueador no interfiere con los anuncios servidos directamente por el sitio web visitado ni con los mostrados en los resultados de búsqueda. Tampoco afecta a los accesos directos patrocinados o contenido patrocinado en la página de nueva pestaña de Firefox. La función está desactivada por defecto y se puede habilitar en la configuración del navegador. Se destaca que esta implementación es necesaria en iOS debido a las limitaciones de las extensiones, a diferencia de las versiones de escritorio y Android que soportan un ecosistema de extensiones de bloqueo de anuncios y privacidad. El bloqueador funciona en conjunto con otras protecciones de privacidad de Firefox, como la Protección Mejorada contra Seguimiento. El artículo también menciona la importancia de la publicidad para financiar la web abierta y la decisión de hacer opcional el bloqueador para dar control al usuario. Se invita a los usuarios a reportar problemas o sugerencias a través de Mozilla Connect.",
+    "id": 49535284,
+    "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
+    "score": 468,
+    "time": 1788352239,
+    "titulo_es": "Control de Usuario sobre el Uso de Datos para Entrenamiento de Modelos de Mistral",
+    "resumen": "El artículo detalla las opciones de exclusión (opt-out) para que los usuarios impidan que sus datos de entrada y salida (conversaciones, documentos, contenido de usuario) se utilicen en los programas de entrenamiento de modelos de Mistral. Se describen procedimientos específicos para diferentes plataformas y servicios, incluyendo Vibe (con diferencias entre usuarios individuales y empresariales), Vibe Enterprise a través del panel de administración, y Mistral Studio/API. Se enfatiza que el control es total y la exclusión es posible en cualquier momento, pero que las opciones de exclusión para Vibe y la API son independientes y deben configurarse por separado. La exclusión predeterminada varía según el servicio.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49548530,
+    "url": "https://chinaonchina.com/article/chen-dawei-returns-enters-the-large-model-sector",
+    "score": 21,
+    "time": 1788433977,
+    "titulo_es": "StartLux-V1.0-27B-Preview: Un Modelo Local Sorprendente Desafía a los Gigantes de IA",
+    "resumen": "El artículo detalla la sorpresiva aparición de StartLux-V1.0-27B-Preview, un modelo de lenguaje grande (LLM) con solo 27 mil millones de parámetros, que ha obtenido el segundo lugar en la prueba especializada MCP de CAICT, quedando a solo 1.3 puntos porcentuales de DeepSeek-V4-Pro (1.6 billones de parámetros). Fundado por Chen Danyan, conocido como el \"padrino\" de los programadores en la era de Internet, StartLux se enfoca en la comercialización de modelos locales \"pequeños y hermosos\" diseñados para ejecutarse en PCs de consumo, sin depender de la nube. Esta estrategia se alinea con la visión de Danyan de que los modelos locales destruirán el mercado de la nube. La prueba MCP-Universe evalúa la capacidad de los Agentes para completar tareas en entornos del mundo real, no solo la calidad de las respuestas. StartLux-V1.0-27B-Preview demostró capacidades de Agente comparables a modelos de billones de parámetros, superando a Qwen 3.6 en un 5.34% con la misma escala de parámetros y liderando en navegación, análisis financiero y automatización de navegadores. Un ejemplo comparativo en análisis financiero mostró una mayor precisión de StartLux sobre Claude Sonnet 4.6.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49541458,
+    "url": "https://github.com/PhiloLabs/fable51-worlds",
+    "score": 285,
+    "time": 1788378541,
+    "titulo_es": "Mundos a través de código: Reconstrucciones nativas del navegador de lugares reales generadas por IA",
+    "resumen": "El artículo describe un sistema innovador para crear reconstrucciones 3D detalladas y navegables de lugares del mundo real utilizando agentes autónomos de IA (Claude Fable 5.1). Estos mundos, como San Francisco y Kioto, se generan completamente a partir de datos abiertos y metraje de referencia. El proceso implica la investigación, modelado y verificación de cada elemento (edificios, señalización, vegetación, etc.) por la IA. El resultado son aplicaciones web nativas que utilizan Three.js, sin motores de juego ni formatos de baldosas propietarios. Los datos de geometría provienen de OpenStreetMap y USGS 3DEP. La renderización en Kioto utiliza un estilo de anime dibujado a mano con Canvas2D para elementos como letreros y linternas. Se enfatiza la precisión de los datos medidos frente a cifras ampliamente repetidas. Todo el código y los activos generados están disponibles públicamente bajo licencias permisivas, permitiendo la replicación del proceso.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49535548,
+    "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds/",
+    "score": 303,
+    "time": 1788353949,
+    "titulo_es": "El Sistema de Memoria del Cerebro Puede Mezclar Recuerdos en Lugares Equivocados en Cerebros Envejecidos",
+    "resumen": "Una nueva investigación con imágenes cerebrales sugiere que el sistema de memoria del cerebro, específicamente el hipocampo, puede funcionar de manera diferente en cerebros envejecidos. En lugar de simplemente debilitar los recuerdos, los cerebros mayores podrían estar mezclando detalles de experiencias no relacionadas y creando falsas conexiones. Mientras que en adultos jóvenes la coincidencia de patrones de actividad cerebral entre el aprendizaje y el recuerdo predice una memoria precisa, en adultos mayores, una mayor superposición de actividad cerebral durante el recuerdo se correlacionó con errores específicos, como confundir elementos entre categorías diferentes (por ejemplo, emparejar una cara con una escena en lugar de un objeto). Esto indica que los cerebros mayores podrían estar recuperando información de manera demasiado amplia, en lugar de no recuperarla en absoluto, lo que lleva a la formación de recuerdos inexactos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49519792,
+    "url": "https://arxiv.org/abs/2504.00506",
+    "score": 94,
+    "time": 1788254839,
+    "titulo_es": "arXivLabs: Un Marco para Desarrollar y Compartir Nuevas Funcionalidades en arXiv",
+    "resumen": "arXivLabs es un marco de trabajo diseñado para facilitar el desarrollo y la colaboración en la creación de nuevas funcionalidades para la plataforma arXiv. Permite a colaboradores individuales y organizaciones externas contribuir directamente al sitio web de arXiv. El marco se basa en los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de los datos del usuario, y solo se colabora con socios que comparten y adhieren a estos principios. Se anima a los interesados con ideas para proyectos que aporten valor a la comunidad de arXiv a informarse sobre arXivLabs.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49521031,
+    "url": "https://wasmi-labs.github.io/blog/posts/wasmi-v2.0/",
+    "score": 117,
+    "time": 1788265513,
+    "titulo_es": "Wasmi 2.0: Un Intérprete WebAssembly 2.2x Más Rápido",
+    "resumen": "Wasmi 2.0 representa una mejora significativa en el intérprete WebAssembly (Wasm), logrando un rendimiento de ejecución aproximadamente 2.2 veces superior a su predecesor en pruebas comparativas. Esta versión introduce optimizaciones en el motor, incluyendo modos de despacho de instrucciones como código enhebrado y despacho directo enhebrado, que mejoran la velocidad sin sacrificar la lógica de ejecución subyacente. Además, Wasmi 2.0 ha reducido su tamaño binario mediante la característica `validate` y ha incorporado funcionalidades solicitadas por la comunidad, como el medidor de combustible estable y el soporte para el perfil determinista de WebAssembly. Su rendimiento de inicio se mantiene competitivo, similar a la versión anterior, consolidando a Wasmi 2.0 como uno de los intérpretes Wasm portátiles más rápidos. El proyecto ha sido patrocinado por la Stellar Development Foundation.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49548952,
+    "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+    "score": 15,
+    "time": 1788437433,
+    "titulo_es": "NVIDIA Adquiere Hugging Face para Escalar la Plataforma de IA Abierta",
+    "resumen": "El artículo anuncia la adquisición de Hugging Face por parte de NVIDIA por 12.930.300.000 USD. El objetivo es escalar la plataforma de Hugging Face, fortalecer su infraestructura y expandir el acceso a la Inteligencia Artificial (IA) para desarrolladores e instituciones a nivel mundial. Hugging Face continuará siendo una plataforma abierta que soporta modelos de código abierto y pesos abiertos de diversos proveedores, permitiendo a los desarrolladores elegir libremente modelos, frameworks, proveedores de nube y servicios de inferencia, sin requerir el cómputo de NVIDIA. La adquisición busca mejorar la fiabilidad de la plataforma, la seguridad, la evaluación de modelos, la inferencia y las capacidades de despliegue, aprovechando la infraestructura, ingeniería y alcance global de NVIDIA para impulsar la innovación y el acceso distribuido a la IA, promoviendo un ecosistema de IA más abierto, capaz y accesible.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49536177,
+    "url": "https://stripeacross.com/posts/poisson-disk-sampling/",
+    "score": 180,
+    "time": 1788356869,
+    "titulo_es": "Algoritmo de Bridson para Distribuciones de Disco de Poisson",
+    "resumen": "El artículo detalla el algoritmo de Bridson, una solución eficiente para el problema de la distribución de puntos aleatorios con una distancia mínima garantizada entre ellos, comúnmente conocido como distribución de disco de Poisson. Se aplica en gráficos por computadora y simulaciones para generar distribuciones como la de árboles en un bosque. El artículo explica el funcionamiento básico del algoritmo, incluyendo cómo generar muestras uniformes en un anillo, y propone dos mejoras significativas: una para 2D que evita muestrear ángulos prohibidos alrededor del punto padre, y otra generalizable a N dimensiones. La mejora 2D se basa en la identificación de un cono de ángulos a evitar, calculado mediante trigonometría y dependiente de la distancia entre el punto actual y su padre, y la distancia mínima requerida 'r'. La mejora general utiliza un enfoque de \"re-muestreo anular\" que reduce la tasa de rechazo al generar puntos candidatos dentro de anillos anidados. El objetivo principal es reducir las iteraciones necesarias para generar la misma cantidad de puntos, optimizando así el rendimiento del algoritmo.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49540415,
+    "url": "https://tweedegolf.nl/en/blog/65/async-rust-vs-rtos-showdown/",
+    "score": 102,
+    "time": 1788373944,
+    "titulo_es": "Comparativa entre Embassy/Rust y FreeRTOS/C en microcontroladores STM32F446",
+    "resumen": "Este artículo compara el uso de Rust con el framework Embassy frente a C con FreeRTOS en un microcontrolador STM32F446. El objetivo es evaluar ambos enfoques en términos de latencia de interrupciones, tamaño del programa, uso de RAM y facilidad de programación. Se explica el funcionamiento de las funciones asíncronas en Rust, los Futures y los Wakers, así como su implementación en Embassy para interactuar con periféricos y gestionar interrupciones de forma asíncrona y cooperativa. Se contrasta este modelo con los sistemas de tiempo real (RTOS) como FreeRTOS, que utilizan hilos preemptivos y requieren la gestión completa del contexto del procesador. El artículo busca proporcionar una comprensión básica de cómo funcionan los RTOS y los ejecutores asíncronos, presentando una comparación justa de dos aplicaciones \"normales\" para ilustrar las diferencias prácticas.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49521909,
+    "url": "https://blog.cloudflare.com/cache-transcoding/",
+    "score": 125,
+    "time": 1788270071,
+    "titulo_es": "Transcodificación de Caché con Zstandard para Expandir la Capacidad Efectiva",
+    "resumen": "El artículo describe la implementación de un sistema llamado 'Cache Transcoding' en Cloudflare para optimizar el uso de la memoria y reducir costos de almacenamiento y ancho de banda. El sistema codifica activos elegibles (principalmente texto no comprimido como HTML, JSON, CSS, JavaScript) utilizando Zstandard (zstd) antes de almacenarlos en caché. Esto reduce drásticamente el tamaño de los datos en disco (aproximadamente a 1/3) y la transferencia entre centros de datos, a costa de un ligero aumento en el uso de CPU durante la codificación. Se destaca que Zstandard ofrece un buen equilibrio entre ratio de compresión y velocidad, siendo más rápido que gzip y produciendo archivos más pequeños que Brotli con un ratio similar. La codificación se realiza una vez al llenar la caché, mientras que el ahorro en almacenamiento y ancho de banda se obtiene cada vez que el activo se reutiliza. La decodificación se realiza antes de servir al cliente. El sistema no comprime medios ya comprimidos (imágenes, video, fuentes), enfocándose en texto comprimeble que representa una porción significativa de las solicitudes pero menor de los bytes. Las pruebas iniciales muestran una mejora sustancial en la capacidad efectiva de caché y eficiencia del uso de hardware.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49536411,
+    "url": "https://github.com/mlc-ai/web-llm",
+    "score": 131,
+    "time": 1788357755,
+    "titulo_es": "WebLLM: Motor de Inferencia LLM de Alto Rendimiento en el Navegador con WebGPU",
+    "resumen": "WebLLM es un motor de inferencia de Modelos de Lenguaje Grandes (LLMs) diseñado para ejecutarse directamente en navegadores web, aprovechando WebGPU para aceleración por hardware. Permite la ejecución de LLMs sin necesidad de servidores backend, ofreciendo compatibilidad total con la API de OpenAI (incluyendo streaming, modo JSON, etc.) y soporte para modelos populares como Llama 3, Phi 3, Mistral y Gemma. Se integra fácilmente en proyectos existentes a través de npm/Yarn o CDN y soporta Web Workers/Service Workers para optimizar el rendimiento y la gestión del ciclo de vida del modelo. Además, permite la creación de extensiones para Chrome y la integración de modelos personalizados en formato MLC.",
     "categoria": "Frontend"
   },
   {
-    "id": 49482099,
-    "url": "https://sonic-pi.net/",
-    "score": 200,
-    "time": 1787939479,
-    "titulo_es": "Sonic Pi: Un Nuevo Instrumento Musical para la Codificación Creativa",
-    "resumen": "Sonic Pi es un entorno de programación y un instrumento musical diseñado para fomentar la codificación creativa, especialmente en contextos educativos y de performance musical. Permite a los usuarios componer y ejecutar música utilizando código simple, abarcando diversos géneros como Clásico, Jazz, Hip Hop y EDM. Está diseñado para ser accesible, incluyendo a personas ciegas o con baja visión, y es gratuito. Creado por Sam Aaron, Sonic Pi se utiliza para lecciones de música y computación, desarrollo de habilidades de programación y performances de \"live coding\". Ha sido desarrollado en colaboración con educadores, integrándose en planes de estudio como el KS3 Computing del Reino Unido. El proyecto cuenta con el apoyo de varias organizaciones y una comunidad activa, y ha sido reconocido y presentado en diversos eventos y medios, incluyendo el International Space Station, BBC Radio, The Big Bang Fair y Google. Su objetivo principal es reducir las barreras de entrada a experiencias creativas con código y música.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49528895,
-    "url": "https://masteranza.github.io/weedout/",
-    "score": 157,
-    "time": 1788300417,
-    "titulo_es": "YouTube etiqueta vídeos como “Hechos con IA” — eliminados discretamente de tu feed",
-    "resumen": "El artículo describe una herramienta o extensión para navegadores (específicamente mencionando Safari y macOS) que identifica y oculta vídeos de YouTube etiquetados por la plataforma como 'Hechos con IA'. La eliminación se aplica de forma discreta en el feed, resultados de búsqueda, vídeos relacionados y Shorts. La detección se basa directamente en la insignia de divulgación 'Made with AI' de YouTube, evitando heurísticas o falsas acusaciones. El alcance actual se limita a vídeos con esta etiqueta explícita, excluyendo contenido no etiquetado.",
+    "id": 49547888,
+    "url": "https://claude.com/blog/claude-for-commerce-agents",
+    "score": 4,
+    "time": 1788428275,
+    "titulo_es": "Anthropic Lanza un Blueprint para Agentes de Comercio con Claude",
+    "resumen": "Anthropic ha lanzado un \"blueprint\" diseñado para facilitar la creación de agentes de comercio impulsados por Claude. Esta iniciativa proporciona a los equipos de ingeniería las herramientas, patrones y salvaguardas necesarias para implementar agentes de compra y de comerciantes en cuestión de días. Los agentes de compra, integrados en sitios web o aplicaciones, permiten a los consumidores buscar, comparar y comprar productos utilizando lenguaje natural, mostrando mejoras significativas en el tamaño de los carritos y las tasas de finalización de compras. Estos agentes están equipados con salvaguardas para asegurar la alineación con los datos del catálogo y evitar prácticas de venta manipuladoras, incluyendo funcionalidades para búsqueda de catálogo, planificación de múltiples artículos, investigación profunda, personalización, atención al cliente y UI conversacional. Los agentes de comerciantes, por su parte, asisten a los equipos de operaciones de tiendas, permitiendo consultas sobre estrategias de descuentos y gestión de inventario, con aprobaciones humanas para cambios proactivos, asegurando el control del comerciante. El blueprint es compatible con diversas plataformas de despliegue como la API de Claude, Amazon Bedrock, Microsoft Foundry y Google Cloud Vertex AI, y cuenta con el respaldo de socios como Accenture, Mastercard y Visa. Incluye implementaciones de referencia y se complementa con el plugin Claude Code para personalización, ofreciendo demos interactivas para cada vertical y un análisis técnico detallado de su construcción, todo ello para optimizar la planificación de la temporada navideña.",
     "categoria": "IA"
   },
   {
-    "id": 49531525,
-    "url": "https://webfpga.io/",
-    "score": 92,
-    "time": 1788321298,
-    "titulo_es": "Plataforma de Programación de FPGA basada en Web",
-    "resumen": "El artículo describe una plataforma que permite a los usuarios programar dispositivos FPGA (Field-Programmable Gate Array) a través de una interfaz web. Se invita a los usuarios a visitar una página de Kickstarter para obtener información sobre el proyecto, comprar una placa de hardware y utilizar un Entorno de Desarrollo Integrado (IDE) basado en web para codificar sus FPGAs. También se proporciona una dirección de correo electrónico para soporte técnico.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49525153,
-    "url": "https://www.norirobotics.com/",
-    "score": 184,
-    "time": 1788284110,
-    "titulo_es": "El robot más capaz por $1,688",
-    "resumen": "El artículo describe Nori, un robot diseñado para asistir en tareas domésticas diarias. Permite el entrenamiento y gestión a través de una aplicación de laptop (Nori Lab). Sus especificaciones técnicas incluyen 7+1 DOF (grados de libertad), 1.5 kg de carga por brazo, un alcance de 12m, frecuencia de escaneo de 8-12Hz con una resolución angular de 0.72° a 10Hz. Cuenta con 4 cámaras RGB de 720p (30 fps) ubicadas en pinzas, cabeza y cuello, un altavoz y micrófono para comandos de voz, y una batería de 6-8 horas de duración. Está ensamblado en San Francisco y su precio es de $1688 sin depósitos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49529898,
-    "url": "https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference/",
-    "score": 133,
-    "time": 1788306485,
-    "titulo_es": "Fronteras Eficientes en Ingeniería de Inferencia: Técnicas para Optimizar el Rendimiento de Modelos LLM",
-    "resumen": "El artículo explora el concepto de 'frontera eficiente' en el contexto de la ingeniería de inferencia para modelos de lenguaje grandes (LLMs). Se distinguen dos tipos de técnicas: aquellas que ajustan un despliegue a lo largo de una frontera existente (optimizando compromisos como latencia vs. throughput o calidad vs. throughput) y aquellas que expanden la frontera completa (logrando mayor eficiencia general). Se discuten técnicas específicas como el batch sizing (tamaño del lote), paralelismo de tensores (TP) para latencia, paralelismo experto (EP) y paralelismo de datos de atención (ADP) para throughput, y cuantización para reducir la precisión y mejorar la eficiencia. Se enfatiza que la optimización en producción a menudo implica encontrar la configuración adecuada para el patrón de tráfico específico y que la frontera eficiente puede ser 'irregular', requiriendo ajustes empíricos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49529132,
-    "url": "https://lws.io/blog/my-local-model-setup/",
-    "score": 244,
-    "time": 1788301852,
-    "titulo_es": "Ejecución de LLMs Locales en Hardware de Consumo para Mayor Control y Privacidad",
-    "resumen": "El artículo detalla la configuración de un servidor de LLM local en un Mac mini M4 Pro con 48 GB de RAM, destacando sus beneficios frente a las APIs en la nube. Los motivos principales son el control sobre los costos y cambios en el servicio, la privacidad de los datos, y la soberanía de la IA ante posibles restricciones gubernamentales. Se explica cómo los modelos Mixture-of-Experts (MoE) son más eficientes en hardware de consumo que los modelos densos, ya que solo activan una fracción de sus parámetros por token. Se provee un ejemplo de cómo interpretar los identificadores de modelos y se calcula el uso de RAM para diferentes configuraciones, demostrando que los modelos MoE permiten ejecutar LLMs más grandes en sistemas con memoria limitada. El enfoque no es reemplazar completamente los modelos de pago, sino cubrir el 80% de las necesidades diarias de forma gratuita y autónoma, manteniendo acceso a modelos cloud potentes cuando sea necesario. La arquitectura descrita incluye un backend de agente (Hermes) corriendo localmente, accesible desde múltiples dispositivos (MacBook, teléfono) a través de apps de escritorio y mensajería como Telegram, compartiendo historial y habilidades entre ellos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49525297,
-    "url": "https://ersc.io/blog/martin-joins-ersc",
-    "score": 251,
-    "time": 1788284781,
-    "titulo_es": "East River Source Control Nombra a Martin von Zweigbergk CTO para Liderar Plataformas de Control de Versiones de Nueva Generación",
-    "resumen": "East River Source Control (ERSC) ha nombrado a Martin von Zweigbergk, creador del sistema de control de versiones Jujutsu (JJ), como su nuevo Director de Tecnología (CTO). Von Zweigbergk liderará el desarrollo de las plataformas de control de versiones de próxima generación de la compañía, diseñadas para abordar las crecientes necesidades de gestión de código fuente y colaboración impulsadas por la inteligencia artificial. Jujutsu, un proyecto de código abierto con más de 30,000 estrellas en GitHub, se enfoca en mejorar la experiencia local del desarrollador dentro del control de versiones. ERSC está construyendo herramientas para la capa de almacenamiento de control de versiones, reconociendo que el modelo actual centrado en Git tiene limitaciones a escala y para la integración con IA. La compañía, respaldada por Amplify Partners y lanzada en 2025, entrará en beta privada de ERSC Storage este mes. Von Zweigbergk continuará como mantenedor principal de Jujutsu.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49527396,
-    "url": "https://simonwillison.net/2026/Sep/1/codex-libreoffice/",
-    "score": 441,
-    "time": 1788293277,
-    "titulo_es": "Descubrimiento de Instalaciones Completas de Software y Binarios Nativos en la Caché de la Aplicación ChatGPT de OpenAI",
-    "resumen": "El artículo detalla el hallazgo de aproximadamente 1.7 GB de datos dentro del directorio de caché de la aplicación de escritorio de OpenAI (anteriormente Codex). Esta caché incluye instalaciones completas de Python y Node.js, junto con binarios nativos para herramientas como Poppler, git y LibreOffice. Se identifica que la estructura de directorios 'plugins/openai-primary-runtime/plugins/documents' contiene 'skills' que instruyen a la aplicación sobre cómo localizar y utilizar estos binarios, sugiriendo una arquitectura que integra dependencias de software externas para funcionalidades de la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49527232,
-    "url": "https://tomverbeure.github.io/2026/08/23/Tektronix-TDS7104-Refurbishing.html",
-    "score": 135,
-    "time": 1788292547,
-    "titulo_es": "Restauración de un Osciloscopio Tektronix TDS7104",
-    "resumen": "El artículo narra la experiencia de adquirir y restaurar un osciloscopio Tektronix TDS7104, un instrumento de alta gama de 1 GHz y 10 Gs/s. Inicialmente, el autor lo compró a bajo precio con la esperanza de repararlo. Tras encenderlo, el dispositivo mostraba una pantalla tenue y, posteriormente, fallaba al arrancar mostrando un error de batería CMOS. El artículo detalla los problemas comunes de estos osciloscopios, incluyendo fallos en la batería de respaldo del PowerPC y la fuente de alimentación. Se describe la arquitectura interna del TDS7104, que incluye una placa base PC con factor de forma NLX (RadiSys SF810) ejecutando Windows 2000 Pro Embedded, un controlador PowerPC con VxWorks y una placa de adquisición. Se mencionan las especificaciones técnicas, como el ancho de banda y la tasa de muestreo, y se comparan con instrumentos modernos de aficionado. También se resalta el uso de conectores BNC estándar y la pantalla LCD táctil resistiva. El autor destaca la importancia de la batería de respaldo del PowerPC y la posible necesidad de actualizar la CPU Celeron original. Se hacen referencias a foros y videos de reparación para guiar en el proceso de solución de problemas.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49534396,
-    "url": "https://chemisting.com/2026/09/02/why-are-there-no-flow-batteries-with-symmetric-ferrocyanide-electrolytes/",
-    "score": 15,
-    "time": 1788345542,
-    "titulo_es": "Por qué las baterías de flujo simétricas no utilizan ferrocianuro",
-    "resumen": "El artículo explica por qué el par redox ferrocianuro/ferricianuro, a pesar de sus buenas propiedades intrínsecas (alta estabilidad redox, cinética, solubilidad y potencial redox adecuado), no se utiliza comúnmente en sistemas de baterías de flujo simétricas. Las razones principales son la formación de precipitados insolubles (como el Azul de Prusia) con cationes de metales pesados y la descomposición del ferrocianuro en el ánodo bajo potenciales reductores, generando hierro metálico y cianuro libre, o la oxidación del cianuro y destrucción del ferrocianuro bajo potenciales oxidantes. Estas reacciones secundarias complican la recuperación del inventario y la estabilidad del sistema, haciendo que el ferrocianuro no sea adecuado para sistemas simétricos donde ambos electrodos operan con el mismo electrolito inicial. Se desaconseja su uso en estos sistemas debido a la inestabilidad y los peligros asociados con la generación de cianuro libre bajo abuso electroquímico.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49528057,
-    "url": "https://hnmatchmaker.com/",
-    "score": 99,
-    "time": 1788296015,
-    "titulo_es": "Ofertas de Empleo Impulsadas por IA para Ingenieros de Software y Especialistas en IA",
-    "resumen": "El artículo detalla múltiples oportunidades de empleo, principalmente centradas en roles de desarrollo de software y específicamente en Inteligencia Artificial (IA). Se mencionan posiciones como ingenieros full-stack, ingenieros de software senior/principal, ingenieros de machine learning, ingenieros de sistemas, investigadores de IA y líderes técnicos. Las empresas buscan talento para construir y mejorar plataformas web, software de robótica, sistemas de edge cloud, bases de conocimiento, herramientas de análisis de datos, sistemas de búsqueda y gráficos de conocimiento, así como infraestructura de aprendizaje interactivo. Muchas de las ofertas destacan el uso o la aplicación de IA, incluyendo LLMs, y se distribuyen geográficamente en ciudades como NY, SF, Londres, Toronto, Ámsterdam, Berlín, Zurich, Denver y Estocolmo, con una proporción significativa de roles remotos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49488224,
-    "url": "https://www.dougbarnesauthor.com/2018/06/how-bicycle-coaster-brakes-work.html",
-    "score": 73,
-    "time": 1787994353,
-    "titulo_es": "Cómo funcionan los frenos de buje de coaster Bendix (y reparaciones)",
-    "resumen": "El artículo describe el funcionamiento interno de los frenos de buje de coaster Bendix, con un enfoque particular en el modelo Bendix 70 introducido en 1970. Se mencionan la importancia de la lubricación (usando grasa de alta temperatura o aceite espeso) y se advierte contra el uso incorrecto de lubricantes, citando un incidente de bloqueo de rueda. Se resalta que la grasa seca es una causa común de mal funcionamiento. El artículo también incluye referencias a diagramas y videos educativos para la reparación y comprensión de estos frenos, lo que ha sido útil para mecánicos de bicicletas aspirantes. Se plantea la curiosidad sobre un buje de 2 velocidades de Bendix de principios de los 60, su estado de patente y producción.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49524447,
-    "url": "https://github.com/carloslfu/slotstream",
-    "score": 220,
-    "time": 1788280966,
-    "titulo_es": "Ejecutar Qwen3.8-Flash-Next en Macs con memoria limitada usando Slotstream",
-    "resumen": "El artículo describe Slotstream, una herramienta que permite ejecutar el modelo de lenguaje grande Qwen3.8-Flash-Next (125B parámetros, ~104 GB) en Macs con Apple Silicon que no tienen suficiente memoria RAM o espacio en disco para cargarlo completamente. Slotstream descarga y transmite los pesos del modelo desde el SSD según sea necesario, ajustándose dinámicamente a la memoria disponible. Se presenta como una única binario Swift sin dependencias de Python, compatible con las APIs de Ollama y OpenAI. El artículo detalla los requisitos del sistema (macOS 14+, Apple Silicon, ~110 GB de disco libre), el proceso de instalación y actualización, la descarga de los pesos del modelo, y la velocidad de descarga según la conexión a internet. También explica cómo Slotstream gestiona la memoria y el tiempo de procesamiento, incluyendo la optimización para conversaciones multi-turno mediante el caché de prompts. Se mencionan las capacidades soportadas (streaming, opciones de muestreo) y las no soportadas (herramientas, imágenes, salida JSON-schema). Finalmente, se proporciona información sobre cómo construir la herramienta desde el código fuente y cómo desinstalarla.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49479909,
-    "url": "https://benholmen.com/blog/halfmoon-chimes/",
-    "score": 58,
-    "time": 1787930511,
-    "titulo_es": "Construcción de un Instrumento Musical/Instalación de Arte Personalizado para el Festival Eaux Claires",
-    "resumen": "El artículo detalla el proceso de diseño y construcción de un instrumento musical personalizado para el festival Eaux Claires, una iniciativa del músico Justin Vernon. El instrumento, basado en un teclado MIDI de 37 notas (C4-C7), utiliza solenoides como martillos para golpear tubos de aluminio afinados como campanas. Se enfatiza la experimentación con materiales (tubos de aluminio, corcho para las almohadillas de los martillos) y el proceso de afinación manual para lograr un tono puro y sostenido. La instalación también incluye una función de grabación que genera un artefacto físico como recibo de la participación del usuario, contribuyendo a la pieza de arte colectiva. El autor describe el aprendizaje sobre la física del sonido de las campanas y los desafíos técnicos, como la consistencia del material y la calibración de los solenoides, culminando en un prototipo funcional que fue aprobado para su exhibición en el festival.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49525160,
-    "url": "https://www.worldlabs.ai/blog/atlas",
-    "score": 235,
-    "time": 1788284162,
-    "titulo_es": "Presentamos Atlas: un modelo omni del mundo para inteligencia espacial",
-    "resumen": "El artículo presenta Atlas, un modelo omni de próxima generación desarrollado por World Labs para inteligencia espacial. Atlas es un modelo autorregresivo de difusión multimodal basado en transformadores, capaz de procesar y generar contenido nativamente en texto, imágenes, video y 3D. Combina todas las entradas en un contexto espacial compartido para generar secuencias coherentes y consistentes en 3D, extrapolando y completando información faltante. Su arquitectura está diseñada para escalar, mejorando el rendimiento con mayor cómputo de entrenamiento. Atlas puede realizar tareas de generación, reconstrucción y simulación de mundos. Se destaca su capacidad para generar nuevas vistas a partir de imágenes de referencia con control preciso sobre la posición y ángulo de la cámara, reconstruir espacios del mundo real a partir de pocas vistas y generar videos largos con trayectorias de cámara definidas. A diferencia de modelos anteriores, Atlas maneja la geometría de cámara precisa como entrada nativa y utiliza un contexto espacial 3D para entrelazar y generar mundos a partir de múltiples referencias, incluso no relacionadas, imaginando transiciones coherentes. Se posiciona como un avance significativo en la síntesis de vistas novedosas a partir de entradas escasas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49508619,
-    "url": "https://mathenchant.wordpress.com/2026/08/19/solving-the-flat-cube/",
-    "score": 41,
-    "time": 1788177721,
-    "titulo_es": "El Cubo Plano: Un Nuevo Rompecabezas Tridimensional Aparente",
-    "resumen": "El artículo introduce el 'Cubo Plano', un rompecabezas que, a pesar de ser físicamente plano, presenta una ilusión tridimensional. Las piezas del rompecabezas son rombos (lozenge) que se unen formando hexágonos. La operación principal es girar un conjunto de tres lozenge alrededor del centro de un hexágono en múltiplos de 60 grados. El desafío consiste en resolver un estado revuelto del Cubo Plano con el mínimo número de giros. Se explora la noción de 'el número de Dios' para este rompecabezas, análogo al del Cubo de Rubik, determinando la cantidad máxima de giros necesarios para resolver cualquier estado revuelto por el 'diablo' en el peor de los casos. El artículo sugiere que este número es al menos 27, utilizando un enfoque de 'añadir una dimensión' donde las caras de los lozenge se interpretan como las caras visibles de cubos tridimensionales apilados, y el giro del rompecabezas se relaciona con la adición o eliminación de estos cubos imaginarios.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49519939,
-    "url": "https://mvakde.github.io/blog/44-on-arc-1/",
-    "score": 629,
-    "time": 1788256365,
-    "titulo_es": "Entrenamiento eficiente de un modelo Transformer desde cero para el benchmark ARC-AGI",
-    "resumen": "Este artículo detalla el desarrollo y entrenamiento de un modelo Transformer optimizado para la eficiencia de datos en el benchmark ARC-AGI. El autor logró entrenar un modelo desde cero en 1.5 horas en una GPU 5090, superando a muchos LLMs y alcanzando puntuaciones comparables a modelos como TRM/HRM. Las mejoras clave incluyen la eliminación del entrenamiento en tokens de entrada (enfoque supervisado en tokens de salida), la adición cuidadosa de tareas de ARC-2 sin filtrado de datos para evitar fugas (lo que duplica el costo de cómputo pero mejora la puntuación de ~40% a 44%), y optimizaciones en la arquitectura como representaciones mejoradas (3D RoPE + embedding por tarea) y el uso del optimizador NorMuon. A pesar de que el entrenamiento supervisado empeoró la pérdida de validación, mejoró las puntuaciones y la estabilidad. El autor enfatiza la importancia de la eficiencia de datos en la IA actual, busca reducir costos para acelerar la iteración y sugiere que el código abierto permitirá a otros mejorar el modelo, con el objetivo de alcanzar el 65% en ARC-AGI. Se exploran futuras optimizaciones de costos (reducción 10x con código GPU hecho a mano) y la eliminación de aumentos de datos, manteniendo bajos los costos de entrenamiento.",
+    "id": 49534132,
+    "url": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
+    "score": 185,
+    "time": 1788343361,
+    "titulo_es": "Quasar 438B: Un Nuevo Referente en IA Europea para Agentes y Codificación Empresarial",
+    "resumen": "El artículo presenta Quasar 438B, el modelo de razonamiento insignia de Multiverse Computing, diseñado para agentes y codificación a escala empresarial. Destaca su rendimiento superior en el Índice de Inteligencia Artificial de Artificial Analysis, superando a modelos europeos comparables en siete de ocho evaluaciones y alcanzando una puntuación de 43.  Se enfatiza su alta eficiencia y velocidad, completando respuestas de 500 tokens en 15.3 segundos, lo que lo posiciona favorablemente frente a competidores en términos de rendimiento y latencia. Quasar sobresale en tareas de razonamiento multietapa, planificación, uso de herramientas, ejecución de código y manejo de contexto extenso (AA-LCR con una puntuación de 75.0), lo que lo hace idóneo para análisis de documentos y flujos de trabajo de agentes.  Si bien muestra un gran potencial en entornos de terminal (Terminal-Bench v2.1 con 69.3), esta área se identifica como objetivo de futuras mejoras. El modelo está disponible a través de la API CompactifAI, facilitando su adopción por equipos sin necesidad de desplegar infraestructura propia. Sus capacidades son particularmente relevantes para el desarrollo de software, copilotos técnicos, sistemas de investigación y automatización de flujos de trabajo empresariales.",
     "categoria": "IA"
   }
 ]
