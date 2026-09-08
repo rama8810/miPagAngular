@@ -1,182 +1,47 @@
 [
   {
-    "id": 49598291,
-    "url": "https://github.com/iczelia/bzip3",
-    "score": 38,
-    "time": 1788788113,
-    "titulo_es": "BZip3: Un sucesor espiritual mejor, más rápido y más fuerte para BZip2",
-    "resumen": "BZip3 se presenta como el sucesor moderno de BZip2, optimizado especialmente para comprimir código fuente y texto. Incorpora un codificador de entropía por mezcla de contextos de orden 0, una transformada rápida de Burrows-Wheeler basada en arreglos de sufijos y una pasada RLE con LZP que combina coincidencias al estilo LZ77 con modelado de contexto PPM. El proyecto incluye la herramienta CLI y la biblioteca libbz3 bajo licencia LGPLv3, destacando métricas de rendimiento fuertemente dependientes del compilador y el entorno.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49594878,
-    "url": "https://www.notebookcheck.net/LG-smart-TVs-caught-logging-audio-with-screen-off-and-snooping-on-local-devices.1391214.0.html",
-    "score": 560,
-    "time": 1788764600,
-    "titulo_es": "LG Smart TVs Escanean Redes Domésticas y Graban Audio Aunque Parezcan Apagadas, Revela Investigación",
-    "resumen": "Investigadores de seguridad, trabajando con Gamers Nexus y Level1Techs, han descubierto que los televisores LG OLED (modelos como el G5) escanean continuamente las redes locales, identifican dispositivos secundarios (smartphones, smartwatches) y registran datos de redes Wi-Fi vecinas, incluyendo la intensidad de la señal y datos de localización. Esta información se utiliza para publicidad dirigida a través de LG Ad Solutions. Además, los televisores emplean Reconocimiento Automatizado de Contenido (ACR) para registrar lo que se ve en pantalla. La investigación detalla que los televisores pueden capturar audio del micrófono y grabar datos incluso en modo de espera (aparentemente apagado), almacenando la información localmente y subiéndola cuando se restablece la conexión de red. Se identificaron también vulnerabilidades de ejecución remota de código en webOS. La recomendación principal es desconectar estos televisores de internet y usar dispositivos de streaming externos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49558685,
-    "url": "https://jyn.dev/simple-is-not-the-same-as-small/",
-    "score": 15,
-    "time": 1788479248,
-    "titulo_es": "Simplicidad en el Desarrollo de Software: Desacoplando Tareas para una Mayor Fiabilidad",
-    "resumen": "El artículo explora la diferencia entre 'pequeño' y 'simple' en el contexto del desarrollo de software, utilizando el ejemplo de un pipeline de Unix frente a un programa en Clojure para contar frecuencias de palabras. Argumenta que las herramientas Unix, aunque pequeñas, pueden ser 'complejas' (acopladas) porque combinan tareas de manera implícita (como sort | uniq -c que acopla agregación y ordenación). En contraste, un enfoque más simple, como el de Clojure, permite desacoplar estas responsabilidades, facilitando modificaciones y reduciendo la complejidad inherente. Se define 'simple' siguiendo a Rich Hickey como tener una sola hebra ('simplex') frente a 'complejo' ('complex') que implica múltiples hebras o acoplamientos. Se contrasta esto con software grande pero aparentemente simple para el usuario final, como Google Drive, cuyo valor reside en la encapsulación y el desacoplamiento interno de sus funcionalidades. La tesis principal es que la simplicidad, entendida como bajo acoplamiento, es clave para construir herramientas más fiables y fáciles de depurar, evitando las 'historias épicas de depuración'.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49591876,
-    "url": "https://austinhenley.com/blog/python1024.html",
-    "score": 268,
-    "time": 1788736448,
-    "titulo_es": "Creación de un Intérprete de Python Minimalista en C",
-    "resumen": "El artículo detalla el desafío de construir un intérprete de Python funcional utilizando una cantidad extremadamente limitada de código C (512-1024 bytes), sin el uso de macros ni bibliotecas externas. Se enfoca en la selección de un subconjunto de la sintaxis de Python que ofrezca una apariencia familiar (como 'def', dos puntos e indentación), sacrificando características complejas. La implementación se basa en un análisis recursivo descendente directo de la fuente, ejecutando el código a medida que se analiza, sin pasar por las fases tradicionales de tokenización, AST, bytecode o optimización de CPython. El estado se gestiona a través de variables globales y un array para almacenar el código fuente y los símbolos (variables y nombres de función de un solo carácter). Las expresiones se evalúan recursivamente, y el manejo de bloques de código (como 'if' y funciones) se apoya en la pila de llamadas de C. Los bucles y las llamadas a funciones se implementan mediante saltos y reprocesamiento del código fuente. La ausencia de manejo de errores y la asunción de código correcto son claves para la reducción de tamaño. Se emplean técnicas de 'code golfing' en C, como el uso de valores ASCII para operaciones y la minimización de nombres de variables, inspiradas en recursos como Stack Overflow y las especificidades de GNU C89 para alcanzar el límite de tamaño.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49550436,
-    "url": "https://didac.dev/blog/i-made-my-withings-scale-sync-to-home-assistant-without-the-cloud",
-    "score": 33,
-    "time": 1788445981,
-    "titulo_es": "Integración directa de báscula Withings con Home Assistant vía ESP32 sin nube",
-    "resumen": "El artículo describe un proyecto de ingeniería de software y hardware para integrar datos de una báscula Withings Body+ directamente en Home Assistant. Se utiliza un microcontrolador ESP32 (específicamente un modelo original compatible con Bluetooth Classic) que se comunica con la báscula vía Bluetooth para obtener mediciones de peso y composición corporal. El ESP32, configurado con ESPHome, reenvía estos datos a Home Assistant a través de Wi-Fi. La implementación evita la dependencia de la nube de Withings, eliminando un paso intermedio y manteniendo los datos localmente. El desarrollo del componente ESPHome para interactuar con el protocolo no documentado de la báscula se realizó con la ayuda de modelos de lenguaje de IA (Codex/ChatGPT), que analizaron código de la aplicación Android y paquetes Bluetooth. Se menciona la identificación automática de usuarios por la báscula y la creación de sensores en Home Assistant para almacenar el historial, incluyendo la implementación de sensores plantilla para mantener el último valor registrado incluso si el ESP32 se desconecta temporalmente. La solución requiere un ESP32 original (no C3 ni S3) y no es una integración universal para todas las básculas Withings.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49590611,
-    "url": "https://anubis.techaro.lol/blog/2026/anubis-wasm/",
-    "score": 309,
-    "time": 1788726758,
-    "titulo_es": "Anubis: Protección contra el Scraping de IA mediante Pruebas de Trabajo",
-    "resumen": "El artículo describe Anubis, una solución para proteger sitios web contra el scraping agresivo por parte de empresas de IA. Anubis implementa un esquema de Prueba de Trabajo (Proof-of-Work), similar a Hashcash, para aumentar el costo computacional del scraping masivo, previniendo así la sobrecarga del servidor y la inaccesibilidad de los recursos. Se menciona que es una solución provisional mientras se desarrollan métodos más avanzados de identificación de navegadores headless (por ejemplo, mediante la renderización de fuentes). Anubis requiere características modernas de JavaScript y puede ser bloqueado por plugins como JShelter, por lo que se recomienda desactivar estos plugins para el dominio en cuestión.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49534396,
-    "url": "https://chemisting.com/2026/09/02/why-are-there-no-flow-batteries-with-symmetric-ferrocyanide-electrolytes/",
-    "score": 40,
-    "time": 1788345542,
-    "titulo_es": "Estabilidad del ferrocianuro/ferricianuro en sistemas de baterías de flujo simétricas",
-    "resumen": "El artículo analiza las razones por las que el par redox ferrocianuro/ferricianuro, a pesar de sus excelentes propiedades como alta estabilidad redox, buena cinética y solubilidad, no se utiliza comúnmente en sistemas de baterías de flujo simétricas (donde ambos electrodos comparten el mismo electrolito inicial). Las principales barreras identificadas son la formación de precipitados insolubles (como el Azul de Prusia) al reaccionar con cationes de metales pesados en el ánodo y la descomposición del ferrocianuro bajo potenciales reductores (< -0.5V) y oxidantes (> +1V), generando subproductos peligrosos como cianuro libre e inestables óxidos de hierro. Aunque existen estrategias para disolver precipitados, la inestabilidad inherente del ferrocianuro en los rangos de potencial requeridos para una batería viable y económica lo hace inadecuado para sistemas simétricos. Se desaconseja su uso en estos sistemas debido a los riesgos de seguridad asociados con la generación de cianuro libre.",
+    "id": 49608023,
+    "url": "https://www.bbc.com/future/article/20260904-how-getting-your-hands-dirty-boosts-your-health-within-weeks",
+    "score": 84,
+    "time": 1788860904,
+    "titulo_es": "Los beneficios para la salud de tocar la tierra, los árboles y la naturaleza",
+    "resumen": "Investigaciones científicas demuestran que el contacto directo con la tierra, plantas y musgo incrementa significativamente la diversidad y abundancia del microbioma cutáneo. Diversos estudios realizados en Finlandia evidencian que una microbiota diversa compite contra patógenos y previene su proliferación, lo cual genera un impacto positivo duradero en la salud de la piel y el fortalecimiento del sistema inmunitario.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49595360,
-    "url": "https://orchidfiles.com/programming-is-art/",
-    "score": 134,
-    "time": 1788768300,
-    "titulo_es": "El Arte de Programar vs. la Creación de Productos: Una Reflexión sobre la Motivación y el Rol de la IA",
-    "resumen": "El artículo explora la distinción entre dos perfiles de profesionales de la programación: aquellos motivados principalmente por la creación de productos y la obtención de beneficios económicos (como el autor, enfocado en startups y roles de gestión), y los 'verdaderos programadores' o 'artistas' cuya motivación intrínseca es el acto de programar en sí mismo, disfrutando del proceso, la resolución de problemas y la lógica, independientemente del ingreso. El autor argumenta que su enfoque en la construcción de startups y la generación de valor económico difiere fundamentalmente de la pasión de los verdaderos programadores por el código como forma de arte. Esta diferencia explica por qué las discusiones sobre la IA reemplazando a los programadores son irrelevantes o incluso contraintuitivas para los 'artistas', quienes no buscan la eficiencia de la IA, sino la expresión y el proceso creativo en la programación. El autor también traslada esta filosofía a su propia escritura, valorando el proceso creativo sobre el resultado generado por IA. El tema central gira en torno a la motivación detrás del desarrollo de software y la percepción del rol de la IA en profesiones donde el proceso creativo es intrínseco.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49592840,
-    "url": "https://gettogether.dev",
-    "score": 89,
-    "time": 1788745271,
-    "titulo_es": "Get Together: Una Red Social Basada en Solicitudes GET",
-    "resumen": "Este artículo describe 'Get Together', una red social minimalista donde todas las interacciones (publicaciones, likes, eliminaciones) se realizan mediante solicitudes HTTP GET. Las publicaciones son públicas, ordenadas cronológicamente, y cada una recibe un ID único. Se detallan las especificaciones para los nombres de usuario (2-20 caracteres alfanuméricos o guiones bajos) y el uso opcional de cookies para la persistencia de sesión y la eliminación de publicaciones. Se explica cómo el servidor puede generar un ID si no se proporciona, y la importancia de usar UUIDs propios y cookies para reintentos seguros y gestión de publicaciones. Se describen los endpoints: `/post` para crear publicaciones (con soporte para replies mediante `parent=POST_ID`), `/feed` para obtener el feed de publicaciones (con filtrado por `parent`), `/heart` para dar/quitar 'me gusta' (mediante `on=1` o `on=0`), y `/delete` para eliminar posts propios. Se enfatiza la moderación automatizada contra profanidad y contenido criptográfico (Bitcoin, memecoins, tokens), con un sistema de reporte y revisión de abusos. Finalmente, se advierte sobre la privacidad, dado que el contenido de las publicaciones y sus metadatos forman parte de la URL, recomendando no incluir información sensible.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49591793,
-    "url": "https://mbmccoy.dev/posts/mathematical-conservatory/",
-    "score": 90,
-    "time": 1788735731,
-    "titulo_es": "El Teorema Esférico de Hadwiger y la Asistencia de IA en la Demostración Matemática",
-    "resumen": "El artículo discute la reciente demostración de la Conjetura Esférica de Hadwiger, un problema abierto desde 1974, que fue asistida significativamente por la IA (OpenAI Codex). Se destaca que la IA ayudó en el desarrollo de detalles de la prueba, identificación de lagunas, organización y redacción del manuscrito. El autor reflexiona sobre el impacto potencial de los LLM en el campo de las matemáticas, señalando que, a pesar de su complejidad, es uno de los campos más expuestos a la disrupción por IA según los modelos de OpenAI. Se compara la situación de las matemáticas puras con la de la música clásica, sugiriendo un posible modelo de \"conservatorio\" para preservar la disciplina, incluso si la generación de nuevos resultados se vuelve accesible a las máquinas.",
+    "id": 49605246,
+    "url": "https://danluu.com/agentic-testing/",
+    "score": 122,
+    "time": 1788836296,
+    "titulo_es": "Evaluación de Técnicas de Prueba Guiada por Agentes de IA para la Calidad del Software",
+    "resumen": "El artículo investiga la efectividad de diversas técnicas de prueba y bibliotecas cuando se instruye a agentes de programación (basados en modelos de IA como GPT-5.6 Sol) para implementar software en Rust. Se comparan enfoques como el Desarrollo Guiado por Pruebas (TDD), Pruebas Basadas en Propiedades (PBT) con herramientas como QuickCheck y Proptest, métodos formales (ACL2, Lean 4, Verus), fuzzing y solvers SMT. Los resultados sugieren que, si bien las instrucciones específicas a menudo no mejoran significativamente la corrección en comparación con la configuración por defecto, las técnicas de fuzzing y PBT tienden a superar a los métodos formales en promedio. Un hallazgo clave es que los agentes de IA generalmente carecen de la experiencia para aplicar estas técnicas de manera efectiva, a pesar de las instrucciones explícitas. Se exploran también 'skills' de IA preexistentes y una habilidad personalizada, observando que las habilidades diseñadas para guiar activamente el comportamiento del agente fueron más exitosas que aquellas que parecían tutoriales. El estudio utiliza una implementación de Zstd y RFC IMAP como casos de prueba, analizando los resultados a través de métricas de costo y porcentaje de ejecuciones exitosas.",
     "categoria": "IA"
   },
   {
-    "id": 49594008,
-    "url": "https://github.com/timgordontg/engrim",
-    "score": 61,
-    "time": 1788756576,
-    "titulo_es": "El Almacén Universal de Memoria Episódica Transversal de Modelos y Agentes",
-    "resumen": "El artículo presenta 'engrim', un motor de memoria local y con alcance de proyecto basado en SQLite, diseñado para facilitar el cambio entre diferentes modelos de IA y entornos de desarrollo (como Google Antigravity, Claude Code, Cursor MCP, Windsurf) sin perder el estado del proyecto, las decisiones arquitectónicas o las restricciones del usuario. Aborda el problema de la dilución de la atención y el aumento de costos en ventanas de contexto grandes, proponiendo una memoria de trabajo episódica curada de 4,000 caracteres. Destaca su robustez a través de pruebas extensas en un sistema de trading algorítmico, asegurando la ausencia de regresiones y amnesia contextual tras cambios de modelo. Enfatiza la importancia de la procedencia en entornos colaborativos de agentes con el campo 'origin_agent' y la migración no destructiva de bases de datos existentes. El sistema opera con un servidor MCP JSON-RPC 2.0 de dependencia cero y se distingue de otras soluciones de memoria y asistentes de codificación al ser local-first y sin dependencia de la nube.",
+    "id": 49574941,
+    "url": "https://novalis.org/blog/2026-08-31-picolibrary-a-very-small-press.html",
+    "score": 9,
+    "time": 1788602055,
+    "titulo_es": "Republishing a Book with Modern Tools",
+    "resumen": "El artículo detalla el proceso de republicación de un libro, \"Professor Mmaa’s Lecture\", destacando el uso de Inteligencia Artificial (IA), específicamente Large Language Models (LLMs), para tareas como la generación y revisión de contratos legales (inspirado en modelos de la Authors Guild), y la corrección de texto a través de OCR. Se enfatiza cómo los LLMs ayudan a superar desafíos como la presencia de hapax legomena, texto en idiomas extranjeros y errores de escaneo, mejorando la precisión del texto digitalizado. También se discuten consideraciones sobre derechos de autor y la importancia de las diferentes ediciones de un libro.",
     "categoria": "IA"
   },
   {
-    "id": 49590595,
-    "url": "https://arxiv.org/abs/2505.12540",
-    "score": 100,
-    "time": 1788726680,
-    "titulo_es": "arXivLabs: Un marco para el desarrollo colaborativo de funciones de arXiv",
-    "resumen": "arXivLabs es un marco de trabajo diseñado para facilitar el desarrollo y la distribución de nuevas funcionalidades para arXiv directamente en su plataforma web. Este programa está dirigido tanto a individuos como a organizaciones, y se basa en los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de los datos del usuario. arXiv se compromete a mantener estos valores y solo colabora con socios que los respetan. La iniciativa invita a la comunidad a proponer ideas de proyectos que aporten valor a los usuarios de arXiv.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49596629,
-    "url": "https://www.theatlantic.com/technology/2026/09/xteink-e-reader-best-technology-years/688539/",
-    "score": 102,
-    "time": 1788777689,
-    "titulo_es": "El Xteink X3: Un E-reader de Bajo Costo que Desafía las Expectativas",
-    "resumen": "El artículo describe el Xteink X3, un e-reader de $70 conocido por su tamaño extremadamente compacto (del tamaño de una tarjeta de crédito) y su capacidad para adherirse a la parte trasera de un smartphone. A pesar de su apariencia de \"gimmick\" y su construcción plástica y defectuosa, el autor lo considera la mejor pieza de tecnología comprada en años. Su pequeño tamaño, que permite tener un e-reader siempre a mano, ha aumentado significativamente su hábito de lectura y reducido el tiempo de pantalla del teléfono. El formato de \"páginas\" pequeñas, que a menudo contienen solo uno o dos párrafos, fomenta la finalización de lecturas, comparándose su experiencia de uso con la \"TikTokificación de la lectura\". Sin embargo, el dispositivo carece de características modernas como pantalla táctil, a color o retroiluminación (aunque un modelo posterior, el X4 Pro, las incluye). El software preinstalado es rudimentario, y no permite importar libros de Amazon como un Kindle. A pesar de sus limitaciones de hardware y software básico, su portabilidad y el cambio de hábitos de lectura que fomenta lo convierten en un dispositivo notable por su precio.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49593066,
-    "url": "https://rfd.shared.oxide.computer/rfd/0301",
-    "score": 46,
-    "time": 1788747299,
-    "titulo_es": "Seguridad y Gestión de Secretos en un Rack de Oxide",
-    "resumen": "El artículo describe la arquitectura de seguridad de un sistema de rack, centrándose en la protección de secretos a nivel de rack y de dispositivo. Utiliza el concepto de 'Trust Quorum' y el algoritmo Shamir's Secret Sharing para dividir un secreto a nivel de rack en fragmentos distribuidos entre los 'bootstrap agents' (sleds). Se requieren K de N fragmentos para reconstruir el secreto del rack, garantizando que la extracción física de menos de K unidades no comprometa la información. Este secreto del rack se utiliza como fuente para derivar claves de cifrado para el almacenamiento en reposo (U.2 devices) y certificados raíz a nivel de rack. Se discuten los mecanismos de autenticación de dispositivos (DeviceId, Alias keys en RoT), establecimiento de sesiones seguras (sprockets sessions) y la protección de la integridad y confidencialidad de los mensajes. Se mencionan planes futuros para 'sellar' estos secretos con la Root of Trust (RoT) para que solo se descifren al arrancar el sled, aumentando la seguridad contra el robo físico. El artículo también plantea preguntas clave sobre la protección de datos, su ciclo de vida, localidad, restricciones físicas/lógicas, y la jerarquía de claves utilizada.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49586698,
-    "url": "https://asahilinux.org/2026/09/m2-episode-1/",
-    "score": 522,
-    "time": 1788703739,
-    "titulo_es": "Soporte para Asahi Linux en Macs con SoC de la serie M3",
-    "resumen": "El artículo anuncia la integración del soporte para las máquinas de la serie M3 de Apple en el instalador de Asahi Linux. Esto significa que los Macs con SoCs M3 ahora tienen soporte oficial para Asahi Linux. La funcionalidad disponible es comparable a la de las series M1 y M2, incluyendo webcam, micrófonos internos, USB (hasta 10 Gb/s), decodificación de video acelerada por hardware (incluido AV1), WiFi y Bluetooth. Las principales excepciones actuales son el soporte completo de DCP y la GPU, para las cuales se esperan más noticias. La aceleración 3D no se considera performante ni eficiente en términos de energía en este momento. El soporte para M3 está actualmente habilitado a través del modo Experto del instalador, con planes de eliminar este requisito antes del lanzamiento beta de Fedora Linux 45. Se mencionan algunas limitaciones conocidas y se agradece el apoyo de la comunidad. Se espera recibir feedback de los usuarios.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 49593971,
-    "url": "https://cordcuttersnews.com/tivo-plans-to-end-free-automatic-commercial-skipping-in-november-tests-paid-premium-replacement-service/",
-    "score": 135,
-    "time": 1788756061,
-    "titulo_es": "TiVo eliminará la función gratuita de omisión de anuncios 'SkipMode' y la reemplazará con una opción de pago",
-    "resumen": "TiVo está notificando a sus clientes sobre un cambio significativo en su popular función 'SkipMode', que permite omitir pausas publicitarias con un solo botón. A partir del 2 de noviembre de 2026, la funcionalidad actual de omisión de anuncios, tanto manual como automática, dejará de estar disponible de forma gratuita. En su lugar, TiVo lanzará una nueva función de suscripción llamada 'Premium Auto Commercial Skip'. La función original marcaba automáticamente las pausas publicitarias para que los usuarios pudieran saltarlas, siendo un diferenciador clave de TiVo frente a otros DVRs y cajas de operadores de cable. Los usuarios podrán seguir omitiendo anuncios manualmente con los botones de avance rápido o salto de 30 segundos. TiVo ofrecerá una prueba gratuita de 30 días para la nueva función de pago. Este cambio se alinea con la estrategia de Xperi (empresa matriz de TiVo) de enfocarse en sistemas operativos para smart TV y tecnología publicitaria, alejándose de la fabricación de hardware DVR. La decisión obligará a los usuarios leales de TiVo a evaluar si la conveniencia de la omisión automática de anuncios justifica un coste mensual adicional.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49587636,
-    "url": "https://blog.netbsd.org/tnf/entry/netbsd_9_5_released_and",
-    "score": 140,
-    "time": 1788709464,
-    "titulo_es": "NetBSD Project anuncia NetBSD 9.5, el fin de soporte para la rama 9.x",
-    "resumen": "El NetBSD Project ha lanzado NetBSD 9.5, la quinta y última versión de la rama estable NetBSD 9. Esta versión incluye correcciones críticas de seguridad y estabilidad aplicadas desde NetBSD 9.4 (abril de 2024) y es totalmente compatible con NetBSD 9.0. Con este lanzamiento, se marca el fin del ciclo de soporte para todas las versiones de NetBSD 9.x y la rama netbsd-9. Se recomienda encarecidamente a los usuarios migrar a versiones más recientes como NetBSD 11.0 (con la versión 11.1 próxima) o NetBSD 10.2 (próximamente).",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49550276,
-    "url": "https://claytonwramsey.com/blog/seeing-eye/",
+    "id": 49605822,
+    "url": "https://github.com/TauricResearch/TradingAgents",
     "score": 81,
-    "time": 1788445206,
-    "titulo_es": "La IA como asistente de depuración de código para robots: Desafíos y frustraciones",
-    "resumen": "El artículo detalla la experiencia de un ingeniero de software que intenta utilizar asistentes de codificación basados en IA para depurar código de robótica. Si bien la IA puede automatizar tareas tediosas, la depuración visual, que implica la inspección ocular de los resultados de un robot, presenta desafíos significativos. La falta de una comprensión intuitiva de los modelos de lenguaje sobre el comportamiento normal de un robot y las limitaciones de las herramientas de control de GUI para asistentes de codificación dificultan la depuración efectiva a través de la IA. El proceso a menudo resulta en respuestas incorrectas y lentas, obligando al ingeniero a realizar la depuración manualmente. La principal frustración radica en la incapacidad de la IA para replicar la eficiencia y la intuición humana en la identificación y corrección de errores visuales en la robótica.",
+    "time": 1788844823,
+    "titulo_es": "TradingAgents: Un Framework Multi-Agente para Trading con IA",
+    "resumen": "TradingAgents es un framework de código abierto diseñado para la investigación en trading algorítmico, que simula la dinámica de firmas de trading del mundo real. Utiliza agentes especializados impulsados por Modelos de Lenguaje Grandes (LLMs) para realizar análisis fundamentales, de sentimiento y técnicos, además de la ejecución de operaciones y gestión de riesgos. Los agentes colaboran y discuten para determinar estrategias de trading óptimas. El framework es modular y flexible, construido con LangGraph, y soporta múltiples proveedores de LLMs (OpenAI, Google, Anthropic, Ollama para modelos locales, Azure OpenAI, etc.). Permite la configuración de varios parámetros como modelos, profundidad de investigación y rondas de debate. Se integra fácilmente en código Python o a través de una interfaz CLI interactiva. El rendimiento de trading puede variar y no constituye asesoramiento financiero.",
     "categoria": "IA"
   },
   {
-    "id": 49590738,
-    "url": "https://github.com/marsbos/mador",
-    "score": 94,
-    "time": 1788727513,
-    "titulo_es": "Mador: Haz que cualquier DOM sea Reactivo",
-    "resumen": "Mador es un módulo ES nativo diseñado para añadir reactividad a elementos DOM existentes sin necesidad de componentes, plantillas o Virtual DOM. Funciona directamente con el HTML y JavaScript ya presentes. Las 'bindings' asocian un selector de DOM con funciones de lectura ('read') y actualización ('update'). Mador rastrea las dependencias de estado leídas y solo reejecuta las 'bindings' cuando cambian dichas dependencias. Los cambios de estado se realizan a través de 'writes', que se procesan en lotes. Mador es intencionadamente pequeño (alrededor de 855 bytes minificado), se distribuye como un módulo ES sin necesidad de runtime global ni pasos de compilación, y elimina automáticamente los 'runners' reactivos cuando los elementos DOM asociados desaparecen, evitando la gestión de ciclos de vida de componentes. Es ideal para páginas que solo necesitan un toque de reactividad sin la complejidad de un framework completo.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49584083,
-    "url": "https://isaraerospace.com/press/history-for-european-spaceflight-isar-aerospace-reaches-orbit-and-deploys-payloads-on-second-flight",
-    "score": 597,
-    "time": 1788679266,
-    "titulo_es": "Isar Aerospace realiza el primer lanzamiento comercial europeo exitoso, abriendo una nueva era para el acceso soberano al espacio",
-    "resumen": "Isar Aerospace se ha convertido en la primera empresa espacial comercial de Europa en entregar satélites en órbita con éxito en su segundo vuelo. La misión 'Onward and Upward' despegó de Andøya, Noruega, desplegando cargas útiles y demostrando la capacidad de lanzamiento orbital de su vehículo 'Spectrum'. Este hito supera un cuello de botella clave en la industria espacial global, ofreciendo una alternativa soberana para clientes comerciales e institucionales. La compañía está escalando rápidamente la producción de sus vehículos de lanzamiento, con los vehículos 3-7 ya en producción y una nueva instalación que permitirá fabricar hasta 40 vehículos al año. Paralelamente, Isar Aerospace está expandiendo su red de sitios de lanzamiento con un nuevo complejo en Nueva Escocia, Canadá. El éxito de Isar Aerospace, que ha logrado en años lo que a la industria europea le tomó décadas, marca un punto de inflexión para el futuro estratégico, económico y tecnológico de Europa en el sector espacial.",
-    "categoria": "Hardware"
+    "id": 49587115,
+    "url": "https://www.fws.gov/lab/featheratlas/identify.html",
+    "score": 15,
+    "time": 1788706748,
+    "titulo_es": "Identificación de Plumas: Herramienta de Selección y Búsqueda",
+    "resumen": "El artículo describe una interfaz de usuario para una herramienta de 'Identificación de Plumas'. Incluye elementos de navegación como 'Siguiente Selección', 'Buscar Plumas Similares' y 'Limpiar Todos los Filtros'. También muestra mensajes de estado como 'Buscando en la base de datos...' y '0 Resultados de Búsqueda'. La funcionalidad principal parece ser la búsqueda y filtrado de información relacionada con plumas, probablemente dentro de una aplicación o sistema de software. Dada la naturaleza de la interfaz y las acciones descritas (selección, búsqueda, filtrado, resultados), esto se alinea con el desarrollo de software, específicamente con la interfaz de usuario y la lógica de backend para la gestión de datos.",
+    "categoria": "Desarrollo de Software"
   }
 ]
