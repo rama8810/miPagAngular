@@ -1,47 +1,119 @@
 [
   {
-    "id": 49608023,
-    "url": "https://www.bbc.com/future/article/20260904-how-getting-your-hands-dirty-boosts-your-health-within-weeks",
-    "score": 84,
-    "time": 1788860904,
-    "titulo_es": "Los beneficios para la salud de tocar la tierra, los árboles y la naturaleza",
-    "resumen": "Investigaciones científicas demuestran que el contacto directo con la tierra, plantas y musgo incrementa significativamente la diversidad y abundancia del microbioma cutáneo. Diversos estudios realizados en Finlandia evidencian que una microbiota diversa compite contra patógenos y previene su proliferación, lo cual genera un impacto positivo duradero en la salud de la piel y el fortalecimiento del sistema inmunitario.",
+    "id": 49562915,
+    "url": "https://eighty-twenty.org/2026/09/04/smolts",
+    "score": 3,
+    "time": 1788519510,
+    "titulo_es": "Un IDE para el Modelo Estándar de Lenguajes (SMoL)",
+    "resumen": "El artículo describe un Entorno de Desarrollo Integrado (IDE) para un lenguaje de enseñanza basado en el \"Standard Model of Languages\" (SMoL), desarrollado originalmente por Shriram Krishnamurthi et al. El IDE permite a los usuarios escribir programas en un dialecto S-expression de SMoL y ejecutarlos paso a paso. Muestra la continuación, el entorno y el almacenamiento actuales durante la ejecución, y anota directamente el código en el editor de texto para visualizar los valores de variables y expresiones. Las características notables incluyen la capacidad de retroceder en la ejecución y la función \"run to cursor\". El autor menciona el potencial de gestión de proyectos basada en Git dentro del navegador, aunque la implementación actual es inmadura y presenta algunos errores relacionados con la gestión de estado de Svelte. Se invita a los usuarios a probarlo y a enviar comentarios o contribuciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49616354,
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+    "score": 218,
+    "time": 1788898492,
+    "titulo_es": "Presentando Mercury 2.5: El Modelo de Difusión LLM Más Capaz del Mercado",
+    "resumen": "El artículo introduce Mercury 2.5, el modelo de lenguaje de difusión (LLM) de producción más avanzado hasta la fecha, destacando un aumento del 40% en inteligencia comparado con su predecesor, Mercury 2. Este modelo se posiciona como una alternativa de alta calidad y optimizada en costos a modelos de frontera como GPT-5.6 Luna, Gemini 3.5 Flash-Lite y Claude Haiku 4.5. Mercury 2.5 ofrece una velocidad de 1,107 tokens por segundo en GPUs NVIDIA, un contexto de 260K tokens y precios competitivos de $0.20 por millón de tokens de entrada y $0.75 por millón de tokens de salida, con un descuento de lanzamiento del 80%. Sus capacidades incluyen razonamiento sintonizable, llamadas paralelas a herramientas y generación de JSON alineado a esquemas. Se resalta su rendimiento en aplicaciones sensibles a la latencia como búsqueda (reduciendo la latencia total de interacciones complejas), agentes de voz (logrando latencias medianas de 170ms con OpenCall) y herramientas de codificación (disminuyendo la latencia de compactación de contexto en un 82% con Augment Code). El artículo también anuncia las vistas previas de Mercury Voice, optimizado para baja latencia en agentes de voz, y Mercury Router, un LLM para dirigir solicitudes a otros modelos. Estos modelos están disponibles a través de la API de Inception, Baseten y OpenRouter, con opciones empresariales para despliegues dedicados y control de datos. El desarrollo y madurez de Mercury 2.5 se atribuyen a la infraestructura de IA de NVIDIA y al ciclo de retroalimentación de clientes y casos de fallo en producción.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49610631,
+    "url": "https://github.com/ayghri/i-have-adhd",
+    "score": 483,
+    "time": 1788876806,
+    "titulo_es": "Habilidad para Asistente de Código con Salida Amigable para TDAH",
+    "resumen": "El artículo describe una habilidad para asistentes de codificación (LLMs) diseñada para mejorar la experiencia del usuario al proporcionar respuestas directas y paso a paso, emulando un estilo de comunicación que beneficia a personas con TDAH. Se enfoca en la concisión, evitando frases introductorias largas y presentando la acción principal primero, seguida de pasos numerados. Se menciona una mejora específica relacionada con la actualización de la librería 'jsonwebtoken' y la verificación de la función `verifyToken` en `src/auth.ts`, junto con la ejecución de pruebas para asegurar la estabilidad. La habilidad se implementa modificando un archivo de habilidad (`SKILL.md`) y reiniciando el asistente. El objetivo es evitar que el asistente 'entierre' la respuesta y presentar la información de manera más accesible y eficiente, inspirada en estrategias para el TDAH pero aplicada a la interacción con LLMs.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49611128,
+    "url": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+    "score": 268,
+    "time": 1788878959,
+    "titulo_es": "Cuánta RAM de GPU necesitas para ejecutar Qwen3.8 27B sin sacrificar calidad",
+    "resumen": "El artículo analiza la cantidad de RAM de GPU necesaria para ejecutar el modelo de lenguaje grande Qwen3.8 27B. Se compara el rendimiento del modelo BF16 completo (55 GB) con diferentes cuantizaciones, como Q4_K_M (17 GB), Q8_0 (29 GB), UD-Q2_K_XL (10.7 GB) y UD-IQ1_S (6.2 GB). Las pruebas en benchmarks como GPQA Diamond, IFBench y Terminal-Bench 2.1 indican que la cuantización Q4_K_M (17 GB) ofrece un rendimiento comparable al modelo completo en tareas de codificación y razonamiento, incluso con un contexto de hasta 64k tokens, sin una degradación perceptible. Se advierte que cuantizaciones de menor precisión (como 2 bits o 1 bit) pueden afectar significativamente la calidad de las respuestas en tareas complejas. El artículo también destaca la importancia de los parámetros de 'esfuerzo de razonamiento' (como 'xhigh') y el tamaño del contexto, los cuales influyen drásticamente en el rendimiento. Se menciona el uso de Unsloth quantizations y el framework llama.cpp, así como la inversión en GPUs para la ejecución de benchmarks.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49619464,
+    "url": "https://gpu-lexer.vercel.app/",
+    "score": 102,
+    "time": 1788916490,
+    "titulo_es": "gpu-lexer: Un Tokenizador de Código Independiente del Lenguaje Impulsado por WebGPU",
+    "resumen": "gpu-lexer es un experimento de Vercel Lab que tokeniza código fuente en componentes básicos (palabras, espacios en blanco, saltos de línea, símbolos) utilizando un modelo WebGPU. A diferencia de los analizadores sintácticos tradicionales que dependen de gramáticas específicas de cada lenguaje, gpu-lexer infiere el tipo de cada parte basándose en el contexto circundante del código. Esto le permite funcionar con cualquier lenguaje, incluso aquellos no vistos durante el entrenamiento. El sistema combina contexto local y de archivo completo para etiquetar cada parte, devolviendo los rangos sintácticos resultantes. Si bien no pretende ser un reemplazo completo de los resaltadores basados en gramáticas, demuestra una alta concordancia (88.02%) con Shiki en un conjunto de datos de prueba. Está diseñado para ser 'independiente del lenguaje' en el sentido de que utiliza un único tokenizador y clasificador compartidos, soportando también código mixto. Las pruebas de rendimiento en un MacBook Pro con Apple M4 Pro indican velocidades competitivas en comparación con otras bibliotecas como Shiki, Starry Night, Sugar High, Prism.js y Highlight.js, con un tamaño de paquete optimizado para el navegador.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49579443,
+    "url": "https://lanparty.house/",
+    "score": 548,
+    "time": 1788633880,
+    "titulo_es": "Casa y centro de juegos LAN de Kenton Varda",
+    "resumen": "El artículo describe en detalle la construcción y las características de una casa personalizada en Austin, Texas, diseñada por Kenton Varda y Jade Wang. Un enfoque principal está en la extensa sala de juegos en el sótano, equipada con 12 PCs de alta gama (Intel Core i5-13600, 32GB RAM, RTX 4070), múltiples estaciones de juego integradas que se pliegan, pads de baile DDR en el suelo y mesas transformables con estaciones de juego adicionales. Se detalla la infraestructura de red, incluyendo 2 Gbps de fibra, cableado Cat6 extenso, y la configuración de 20 máquinas de juego idénticas que arrancan desde una imagen de disco compartida en un servidor central. También se mencionan workstations personales, sistemas de aire acondicionado dedicados para el equipo, y la gestión de cables a través de conductos. Más allá de la sala de juegos, la casa incorpora características innovadoras para sus dos hijos y sus gatos, como estanterías para gatos, puertas para gatos que dan a las habitaciones, camas elevadas, salas de llamadas y armarios debajo de las escaleras para las cajas de arena. Se destaca la colaboración en el diseño y construcción, incluyendo al padre de Kenton, Richard Varda (arquitecto), y RSP Architects, con la construcción a cargo de Blue Horse Building & Design. La casa se completó a finales de 2023, siendo la segunda casa optimizada para LAN parties de Kenton, la primera construida en Palo Alto en 2011.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49579482,
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html",
+    "score": 71,
+    "time": 1788634225,
+    "titulo_es": "Hiper-Agentes: Redescubriendo la Coordinación de Agentes en el Desarrollo de Software",
+    "resumen": "Este artículo detalla una experiencia de cuatro días en Thoughtworks Europa, donde 10 ingenieros colaboraron en un experimento de 'hiper-agentes' para construir un sistema IROps de aerolíneas, una tarea notoriamente compleja. El objetivo era explorar el potencial de la ingeniería agentic (basada en agentes). Inicialmente, el uso de un monorepo y la colaboración simultánea de múltiples agentes de IA provocaron problemas en las pipelines de construcción. Para mitigar esto, se implementó una disciplina de commits continuos y rebases desde la rama principal ('main'), fomentando la integración temprana y frecuente. Un efecto secundario inesperado de esta disciplina fue que los agentes comenzaron a utilizar los planes de trabajo (almacenados en el repositorio y compartidos por todos) como un mecanismo de coordinación. Los agentes actualizaban sus planes para reflejar el progreso y las dependencias. Otros agentes podían ver estos planes, observando qué tareas estaban en progreso y cuáles habían sido completadas. Se observó cómo un agente, al marcar una línea de código como 'en progreso', evitaba que otro agente trabajara en ella. Al completarse, el segundo agente no solo veía la tarea terminada, sino que también recibía notas sobre la implementación, facilitando la integración. Este descubrimiento de la coordinación emergente a través de planes compartidos y la disciplina de integración continua se convirtió en un foco clave del experimento, permitiendo a los agentes sincronizarse y avanzar de manera más eficiente en la construcción del sistema.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49607858,
+    "url": "https://codeberg.org/jjba23/maak.el",
+    "score": 21,
+    "time": 1788859715,
+    "titulo_es": "maak.el: Integración de Maak en Emacs",
+    "resumen": "maak.el es un paquete de Emacs que integra Maak, un ejecutor de comandos, plano de control y automatizador de proyectos extensible basado en Guile Scheme. Reemplaza los Makefiles tradicionales con la potencia de Scheme, permitiendo a los usuarios descubrir, inspeccionar y ejecutar tareas de Maak directamente desde Emacs con completado de minibufer. Aprovecha la mutua interpretabilidad entre Scheme y Emacs Lisp para analizar archivos .scm de forma nativa. Las tareas se formatean dinámicamente para una visualización clara en Emacs. El proyecto es software libre bajo la GPLv3 y su documentación bajo la FDLv1.3. Promueve el uso de IA como asistente, no como reemplazo de la inteligencia humana, y se adhiere al código de conducta de jointhefreeworld.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49618050,
+    "url": "https://e-infinity.space/picture-book/",
+    "score": 121,
+    "time": 1788906494,
+    "titulo_es": "Ilustración de Superficies Modeladas por Ordenador con Estilo de Dibujo a Mano",
+    "resumen": "Este artículo describe una técnica para generar ilustraciones de superficies tridimensionales modeladas por ordenador que imitan el estilo del dibujo a mano, inspirado en artistas como G. K. Francis. Se enfoca en la representación de contornos suaves, curvas dobles, líneas ocultas y bandas de sombreado. La generación de las siluetas se basa en el conjunto cero de la normal del modelo y el vector de visión, utilizando normales interpoladas para crear curvas continuas y suaves. Se incorporan contornos adicionales como límites y curvas dobles de inmersiones, representados como cintas cónicas con un modelo de pluma de punta ancha. La visibilidad se gestiona en la GPU mediante un pase de líneas ocultas y halos de papel para eliminar interferencias. El sombreado se genera a partir de las líneas de curvatura principales de la superficie, con un método de trazado de streamlines que permite densidades anidadas y control del tono, dejando las zonas de brillo sin tinta. Se enfatiza que las direcciones principales se ordenan por curvatura signada para asegurar la continuidad incluso en puntos donde las curvaturas son opuestas. Los contornos se suavizan antes de ser entintados. Los trazos presentan un ligero sobrepaso y efectos de modelado de pluma para simular el aspecto del papel y la tinta, como la acumulación de tinta y la sangría irregular. Las etiquetas se dibujan a mano, se fijan a la superficie con una línea guía y se atenúan si el punto asociado está oculto. Se citan múltiples trabajos de investigación en gráficos por ordenador que abordan aspectos específicos como la generación de siluetas, el sombreado por curvatura, la eliminación de líneas ocultas y la estilización de trazos.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49605246,
-    "url": "https://danluu.com/agentic-testing/",
-    "score": 122,
-    "time": 1788836296,
-    "titulo_es": "Evaluación de Técnicas de Prueba Guiada por Agentes de IA para la Calidad del Software",
-    "resumen": "El artículo investiga la efectividad de diversas técnicas de prueba y bibliotecas cuando se instruye a agentes de programación (basados en modelos de IA como GPT-5.6 Sol) para implementar software en Rust. Se comparan enfoques como el Desarrollo Guiado por Pruebas (TDD), Pruebas Basadas en Propiedades (PBT) con herramientas como QuickCheck y Proptest, métodos formales (ACL2, Lean 4, Verus), fuzzing y solvers SMT. Los resultados sugieren que, si bien las instrucciones específicas a menudo no mejoran significativamente la corrección en comparación con la configuración por defecto, las técnicas de fuzzing y PBT tienden a superar a los métodos formales en promedio. Un hallazgo clave es que los agentes de IA generalmente carecen de la experiencia para aplicar estas técnicas de manera efectiva, a pesar de las instrucciones explícitas. Se exploran también 'skills' de IA preexistentes y una habilidad personalizada, observando que las habilidades diseñadas para guiar activamente el comportamiento del agente fueron más exitosas que aquellas que parecían tutoriales. El estudio utiliza una implementación de Zstd y RFC IMAP como casos de prueba, analizando los resultados a través de métricas de costo y porcentaje de ejecuciones exitosas.",
-    "categoria": "IA"
+    "id": 49600901,
+    "url": "https://hackaday.com/2026/09/07/the-helicopter-with-radioactive-blades/",
+    "score": 189,
+    "time": 1788803073,
+    "titulo_es": "Sistema Nuclear para Monitoreo de Palas de Helicóptero CH-53",
+    "resumen": "El artículo describe el sistema IBIS (Inflight Blade Inspection System) utilizado en los helicópteros CH-53 para detectar grietas en las palas del rotor. La solución innovadora, desarrollada en los años 60, utiliza una pequeña cantidad de Estroncio-90 radiactivo (un emisor beta) dentro de los indicadores de presión de las palas. Las grietas permiten que el gas presurizado escape, lo que a su vez altera la detectabilidad de la radiación. Un contador Geiger dentro del helicóptero detecta estos cambios, alertando a los pilotos de un posible fallo de pala en vuelo. Esta solución evita la necesidad de componentes electrónicos complejos o inalámbricos en las palas giratorias, que no eran fiables en la época. El sistema se considera elegante y seguro, ya que la radiación es mínima, comparable a la exposición en vuelos de gran altitud, y no requiere contacto directo con el material radiactivo. Si bien las versiones más nuevas de CH-53 utilizan fibra óptica para palas compuestas, el sistema 'nuclear' basado en radiación sigue en uso en variantes más antiguas.",
+    "categoria": "Hardware"
   },
   {
-    "id": 49574941,
-    "url": "https://novalis.org/blog/2026-08-31-picolibrary-a-very-small-press.html",
-    "score": 9,
-    "time": 1788602055,
-    "titulo_es": "Republishing a Book with Modern Tools",
-    "resumen": "El artículo detalla el proceso de republicación de un libro, \"Professor Mmaa’s Lecture\", destacando el uso de Inteligencia Artificial (IA), específicamente Large Language Models (LLMs), para tareas como la generación y revisión de contratos legales (inspirado en modelos de la Authors Guild), y la corrección de texto a través de OCR. Se enfatiza cómo los LLMs ayudan a superar desafíos como la presencia de hapax legomena, texto en idiomas extranjeros y errores de escaneo, mejorando la precisión del texto digitalizado. También se discuten consideraciones sobre derechos de autor y la importancia de las diferentes ediciones de un libro.",
-    "categoria": "IA"
+    "id": 49575914,
+    "url": "https://pointersgonewild.com/2026-08-25-replacing-a-rust-enum-with-a-64-bit-word/",
+    "score": 134,
+    "time": 1788611526,
+    "titulo_es": "Optimizando la Representación de Valores en el Intérprete Plush",
+    "resumen": "El artículo detalla la optimización de la representación del tipo 'Value' en el intérprete del lenguaje Plush, una alternativa a lenguajes como Python y JavaScript. Inicialmente, Plush utilizaba un enum de Rust de 16 bytes para representar diversos tipos de valores (objetos, diccionarios, enteros, flotantes). El principal problema identificado es el desperdicio de memoria debido a la alineación y al tamaño del enum, especialmente en grandes colecciones de valores. Se propone una estrategia de 'low-bit tagging' para reducir el tamaño de 'Value' a 64 bits. Esta técnica aprovecha los bits menos significativos de las direcciones de memoria (alineación de 8 bytes) y de los valores enteros (asumiendo que raramente alcanzarán el valor máximo de 2^64). Esto implica el uso de operaciones a nivel de bits para identificar y desempaquetar los tipos de valor y sus datos. Se menciona que asignar una etiqueta 'cero' a los enteros simplifica las operaciones de suma y resta, pero el manejo de flotantes requiere instrucciones adicionales. El objetivo final es mejorar el rendimiento y la eficiencia de memoria del intérprete para posibilitar la renderización de animaciones 3D en tiempo real.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49605822,
-    "url": "https://github.com/TauricResearch/TradingAgents",
-    "score": 81,
-    "time": 1788844823,
-    "titulo_es": "TradingAgents: Un Framework Multi-Agente para Trading con IA",
-    "resumen": "TradingAgents es un framework de código abierto diseñado para la investigación en trading algorítmico, que simula la dinámica de firmas de trading del mundo real. Utiliza agentes especializados impulsados por Modelos de Lenguaje Grandes (LLMs) para realizar análisis fundamentales, de sentimiento y técnicos, además de la ejecución de operaciones y gestión de riesgos. Los agentes colaboran y discuten para determinar estrategias de trading óptimas. El framework es modular y flexible, construido con LangGraph, y soporta múltiples proveedores de LLMs (OpenAI, Google, Anthropic, Ollama para modelos locales, Azure OpenAI, etc.). Permite la configuración de varios parámetros como modelos, profundidad de investigación y rondas de debate. Se integra fácilmente en código Python o a través de una interfaz CLI interactiva. El rendimiento de trading puede variar y no constituye asesoramiento financiero.",
-    "categoria": "IA"
+    "id": 49597806,
+    "url": "https://www.racunalniski-muzej.si/en/the-origins-of-partners-computer-case/",
+    "score": 35,
+    "time": 1788785517,
+    "titulo_es": "La Evolución de la Fabricación de Ordenadores: Del Minicomputador al Microordenador y el Caso Iskra Delta Partner",
+    "resumen": "El artículo describe la transición en la fabricación de ordenadores, desde sistemas cerrados y controlados por un único fabricante a enfoques más abiertos y modulares. Inicialmente, los ordenadores eran productos integrales diseñados y producidos por un solo fabricante. La llegada de los minicomputadores introdujo la posibilidad de combinar componentes disponibles, permitiendo a empresas como Iskra Delta producir variantes locales (ej. DEC PDP-11). Con los microordenadores y la disponibilidad de microprocesadores y otros componentes, la entrada a la industria se facilitó, aunque aumentó la dependencia de componentes externos y la importancia del marketing. La introducción del IBM PC, un diseño abierto ensamblado a partir de componentes de diversos proveedores, consolidó esta tendencia. El Iskra Delta Partner se presenta como un ejemplo exitoso de microordenador esloveno, que integró soluciones tecnológicas internacionales con desarrollo y adaptaciones locales. Se destaca la importancia de la colaboración internacional en la cadena de suministro, con componentes (placas base en Italia, carcasas en Inglaterra) y ensamblaje local (Eslovenia), ilustrando cómo un producto puede ser percibido como doméstico a pesar de su dependencia de redes globales de fabricación. El caso del Partner subraya cómo la apariencia externa de un dispositivo puede revelar la compleja red de fabricantes y diseñadores detrás de su creación.",
+    "categoria": "Hardware"
   },
   {
-    "id": 49587115,
-    "url": "https://www.fws.gov/lab/featheratlas/identify.html",
-    "score": 15,
-    "time": 1788706748,
-    "titulo_es": "Identificación de Plumas: Herramienta de Selección y Búsqueda",
-    "resumen": "El artículo describe una interfaz de usuario para una herramienta de 'Identificación de Plumas'. Incluye elementos de navegación como 'Siguiente Selección', 'Buscar Plumas Similares' y 'Limpiar Todos los Filtros'. También muestra mensajes de estado como 'Buscando en la base de datos...' y '0 Resultados de Búsqueda'. La funcionalidad principal parece ser la búsqueda y filtrado de información relacionada con plumas, probablemente dentro de una aplicación o sistema de software. Dada la naturaleza de la interfaz y las acciones descritas (selección, búsqueda, filtrado, resultados), esto se alinea con el desarrollo de software, específicamente con la interfaz de usuario y la lógica de backend para la gestión de datos.",
+    "id": 49575766,
+    "url": "https://uecker.codeberg.page/2026-09-05.html",
+    "score": 76,
+    "time": 1788610169,
+    "titulo_es": "Implementación de Funciones Anidadas en GCC",
+    "resumen": "El artículo detalla la implementación de funciones anidadas en GCC, centrándose en cómo se maneja el acceso a variables de la función contenedora. A diferencia de los enfoques tradicionales que utilizaban punteros al stack frame, GCC agrupa las variables accedidas por la función anidada en una estructura sintética. Un puntero a esta estructura se pasa a la función anidada como un argumento oculto, y los accesos a las variables se reescriben para acceder a los miembros de esta estructura. Esta técnica desacopla la implementación de las funciones anidadas del resto del compilador y permite optimizaciones sobre la estructura del frame. Se compara este mecanismo con la implementación de lambdas en C++, señalando similitudes en la creación de objetos/estructuras para contener variables capturadas, aunque difieren en la exposición del lenguaje y la visibilidad de tipos.",
     "categoria": "Desarrollo de Software"
   }
 ]
