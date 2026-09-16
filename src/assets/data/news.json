@@ -1,155 +1,155 @@
 [
   {
-    "id": 49712102,
-    "url": "https://bkovac.github.io/modem-thing/",
-    "score": 8,
-    "time": 1789478424,
-    "titulo_es": "Clicks Communicator hecho en casa: creación de un dispositivo de mensajería portátil",
-    "resumen": "El autor detalla la construcción de un dispositivo portátil personalizado combinando un módem 4G económico (MF800) flasheado con Linux mediante OpenStick, un teclado Clicks para iPhone modificado físicamente y una pantalla de memoria Sharp de alto contraste. Para integrar estos componentes y adaptar el factor de forma, se diseñó una PCB personalizada de una sola cara que gestiona la alimentación en modo USB Host, la conmutación de modos y la conversión de niveles de señal de la pantalla, además de recortar físicamente la placa original del módem.",
+    "id": 49725356,
+    "url": "https://www.tomshardware.com/video-games/playstation/26-year-old-sony-ps2-security-chip-broken-wide-open-after-four-years-of-effort-reverse-engineering-enthusiast-successfully-unlocks-cxp102064-mechacon-chip",
+    "score": 77,
+    "time": 1789559380,
+    "titulo_es": "El chip de seguridad 'mágico' de la PlayStation 2 ha sido analizado y descompilado con éxito",
+    "resumen": "Un entusiasta de hardware y software retro, conocido como DiscoStarslayer, ha completado un proyecto de cuatro años para realizar ingeniería inversa y volcar el chip CXP102064 MechaCon de la PlayStation 2 original (modelo 'PS2 Fat' de 1999). Este chip es crucial para el funcionamiento de las unidades ópticas y flash, y juega un papel importante en la seguridad de los discos ópticos de Sony, incluyendo el descifrado de la tarjeta de memoria 'Magic Gate' y los archivos ejecutables KELF. El proceso involucró técnicas como decapado químico para exponer el silicio, análisis microscópico y volcado óptico, culminando en el descubrimiento de un exploit que permitió la extracción de datos a través de software. Este avance es significativo para la preservación del hardware de videojuegos, proyectos de reparación, y el desarrollo de emuladores y software casero ('homebrew'), ya que abre nuevas posibilidades para la emulación mejorada y el reemplazo de las unidades ópticas obsoletas. El chip MechaCon también fue utilizado en algunas placas arcade de la época, como las Namco System 246/256 y Konami Python 1.",
     "categoria": "Hardware"
   },
   {
-    "id": 49709129,
-    "url": "https://arxiv.org/abs/2609.15979",
-    "score": 59,
-    "time": 1789458331,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades en arXiv",
-    "resumen": "arXivLabs es un marco de trabajo diseñado para permitir a colaboradores desarrollar y compartir nuevas funcionalidades directamente en la plataforma de arXiv. Este programa se basa en los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, y arXiv colabora únicamente con socios que se adhieren a estos principios. El objetivo es potenciar la innovación y el valor para la comunidad de arXiv mediante la contribución externa.",
+    "id": 49716176,
+    "url": "https://blog.archive.org/2026/09/15/an-update-on-wayback-machine-access/",
+    "score": 601,
+    "time": 1789494738,
+    "titulo_es": "Hemos escuchado: ¡Arregla la Wayback Machine!",
+    "resumen": "El artículo describe cómo el Internet Archive ha implementado protecciones contra tráfico automatizado de alto volumen dirigido a la Wayback Machine. Estas medidas, aunque necesarias para mantener el servicio operativo, a veces bloquean erróneamente a usuarios legítimos. Se menciona una reciente reescritura del mensaje de error 429 ('demasiadas solicitudes') para ser más claro. El equipo está mejorando la distinción entre bots abusivos y usuarios reales, y solicita a los usuarios bloqueados por error que contacten a info@archive.org con detalles técnicos (SO, navegador, IP) para investigar el problema. Se trata principalmente de un problema de infraestructura y mitigación de ataques de denegación de servicio (DoS) o scraping abusivo, aspectos clave de la ciberseguridad aplicada a servicios web.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49726350,
+    "url": "https://www.cloudx.ai/posts/setup-go",
+    "score": 10,
+    "time": 1789563734,
+    "titulo_es": "Acelerar CI de Golang con el Caché de Construcción",
+    "resumen": "El artículo describe cómo acelerar los flujos de trabajo de integración continua (CI) paralelos de Golang aprovechando el caché de construcción de Go. Se introduce una acción de GitHub de reemplazo, cloudx-io/setup-go, que mejora el rendimiento al resolver problemas clave con la acción oficial actions/setup-go de GitHub. La acción predeterminada sufre de interferencia entre trabajos paralelos y carga de valores de caché obsoletos, lo que lleva a una degradación del rendimiento del 86% del trabajo innecesario. El caché de GitHub se basa en una clave incompleta que no se actualiza con frecuencia en un proyecto en desarrollo activo, lo que resulta en la carga de artefactos de compilación y pruebas obsoletos. Además, los trabajos paralelos que usan la acción predeterminada compiten para escribir estados de caché diferentes, lo que perjudica aún más el rendimiento. La solución propuesta, cloudx-io/setup-go, está diseñada para ser un reemplazo directo, optimizando el uso del caché para mejorar significativamente la velocidad de las pruebas de CI, con el objetivo de obtener respuestas en menos de 90 segundos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49684289,
-    "url": "https://github.com/enactic/OpenArm",
-    "score": 148,
-    "time": 1789309069,
-    "titulo_es": "OpenArm: Un Brazo Humanoide de Código Abierto para Investigación en IA Física",
-    "resumen": "OpenArm es un brazo humanoide de 7 grados de libertad (7DOF) de código abierto diseñado para la investigación en IA física y su implementación en entornos con alta interacción de contacto. Se caracteriza por su alta capacidad de retro-conducción (backdrivability) y cumplimiento (compliance), lo que garantiza una interacción segura entre humanos y robots. Además, ofrece capacidades de carga útil prácticas para aplicaciones del mundo real. El sistema incluye la \"OpenArm Cell\", un entorno estandarizado con fondo, iluminación y posicionamiento de cámara unificados, que permite la reproducibilidad de la investigación a nivel global bajo condiciones de evaluación consistentes. OpenArm presenta proporciones a escala humana, seguridad y cumplimiento, y cargas útiles prácticas, con un precio de $6,500 USD para un sistema bimanual completo. Sirve como una plataforma flexible para teleoperación, aprendizaje por imitación, simulación y recolección de datos en tareas de contacto. El proyecto está en desarrollo continuo y busca colaboradores, socios de investigación y colaboradores empresariales para la próxima generación de sistemas humanoides prácticos. Se ofrece en versiones ensambladas o DIY, y el proyecto se rige por un Código de Conducta.",
+    "id": 49705944,
+    "url": "https://yosefk.com/blog/doing-everyone-elses-job.html",
+    "score": 131,
+    "time": 1789430491,
+    "titulo_es": "Haz el trabajo de todos los demás",
+    "resumen": "El artículo argumenta que es beneficioso para un profesional de software adoptar una mentalidad proactiva, realizando tareas que normalmente corresponden a otros roles o equipos. Esto se logra entendiendo sus flujos de trabajo y necesidades, lo que facilita la integración de nuevas funcionalidades y la resolución de problemas. El autor ejemplifica esto con la experiencia de Intel colaborando con Microsoft en el desarrollo de compiladores para su CPU de 32 bits, y sugiere que esta práctica, aunque a menudo resentida, es crucial para el éxito organizacional. Se destaca que aquellos que asumen responsabilidades \"ajenas\" son a menudo los que logran los objetivos finales, especialmente en organizaciones con problemas. El texto también advierte sobre trampas comunes como \"hacer el trabajo en paralelo\" en lugar de \"hacer el trabajo de otros\", que pueden diluir el impacto y resultar en una asignación ineficiente de recursos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49726586,
+    "url": "https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/",
+    "score": 13,
+    "time": 1789564727,
+    "titulo_es": "Hackers exponen detalles de cámaras de vigilancia Flock tras robo y copia de datos",
+    "resumen": "Un grupo de hackers autodenominado 'stegan0gram' logró acceder a una cámara de Flock Safety, copiar sus datos y extraer una clave de cifrado, permitiendo el acceso a miles de grabaciones de vehículos y personas. El incidente revela que el software de la cámara no solo detecta matrículas y vehículos, sino también personas, bicicletas y detalles gráficos. Los hackers publicaron detalles técnicos sobre cómo obtuvieron el software y los datos, con el objetivo de fomentar la ingeniería inversa de sistemas de vigilancia. El artículo también destaca la controversia en torno a la red nacional de cámaras de Flock, que permite a miles de agencias acceder a datos de matrículas, y los abusos reportados en su uso, como la búsqueda de una mujer que se practicó un aborto.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49715947,
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+    "score": 447,
+    "time": 1789493898,
+    "titulo_es": "Gemini 3.8 Live y Gemini 3.8 Live Extended Thinking: Modelos de Diálogo Avanzados para Interacciones por Voz",
+    "resumen": "El artículo anuncia el lanzamiento de Gemini 3.8 Live y Gemini 3.8 Live Extended Thinking, los modelos de diálogo \"live\" más avanzados de Google hasta la fecha. Estos modelos introducen mejoras significativas en inteligencia y razonamiento paralelo, permitiendo interacciones por voz más intuitivas y la ejecución de tareas complejas sin interrumpir la conversación. Gemini 3.8 Live procesa entradas visuales en tiempo real, transiciona entre 97 idiomas y ejecuta herramientas y llamadas API en segundo plano, manteniendo la fluidez conversacional. Gemini 3.8 Live Extended Thinking, por su parte, está diseñado para flujos de trabajo más complejos, combinando razonamiento y habla simultáneamente, y proporcionando narración del progreso de tareas multietapa. Ambos modelos apuntan a mejorar la experiencia de los agentes de voz, con Gemini 3.8 Live Extended Thinking destacando en benchmarks de calidad de voz y finalización de tareas, y Gemini 3.8 Live sobresaliendo en la preferencia de usuarios y eficiencia de costos. Están disponibles a través de la API de Gemini, Google Workspace y la aplicación Gemini.",
     "categoria": "IA"
   },
   {
-    "id": 49711240,
-    "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+    "id": 49723873,
+    "url": "https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/",
+    "score": 113,
+    "time": 1789549954,
+    "titulo_es": "Reflexiones sobre el aprendizaje de programación en la era de la IA",
+    "resumen": "El artículo explora la experiencia de un desarrollador que, sin formación formal en CS, utilizó LLMs para construir un sistema complejo de TypeScript/JavaScript. Inicialmente fascinado por la velocidad de desarrollo, el autor se enfrenta ahora a dificultades para mantener y comprender el sistema en producción, descubriendo una brecha entre la capacidad generada por la IA y su propio entendimiento. Reflexiona sobre la relación adecuada con las herramientas de IA, su impacto potencial en el empleo de trabajadores del conocimiento, comparando la transición actual con revoluciones tecnológicas pasadas y cuestionando la sostenibilidad de un desempleo masivo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49694035,
+    "url": "https://arxiv.org/abs/2511.07885",
+    "score": 85,
+    "time": 1789377399,
+    "titulo_es": "arXivLabs: Un framework para el desarrollo colaborativo de funcionalidades de arXiv",
+    "resumen": "arXivLabs es un framework diseñado para facilitar el desarrollo y la compartición de nuevas funcionalidades para arXiv directamente en su plataforma web. Promueve la colaboración entre individuos y organizaciones, adhiriéndose a los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de los datos del usuario. arXiv se compromete a trabajar únicamente con socios que respeten estos principios, invitando a la comunidad a proponer proyectos que aporten valor.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49717638,
+    "url": "https://codyho.dev/blog/gpu-driver/",
+    "score": 375,
+    "time": 1789500603,
+    "titulo_es": "Creación de un controlador de GPU OpenGL ES 3.0 para Apple Silicon en semanas",
+    "resumen": "El artículo detalla el ambicioso proyecto de ingeniería inversa y desarrollo de un controlador de GPU OpenGL ES 3.0 completo para el silicio de Apple (M4 Mac Mini y MacBook Neo) en un período de tiempo extremadamente corto (semanas en lugar de años). El proceso implicó la ingeniería inversa del complejo firmware y los componentes de espacio de usuario de la GPU AGX, utilizando un enfoque de 'habitación limpia' para garantizar la veracidad. Se describe la arquitectura del controlador, dividida en espacio de kernel (interfaz con firmware, asignación de memoria, planificación) y espacio de usuario (comprensión de la GPU y llenado de búferes). Se destaca la complejidad de la ABI del firmware en comparación con iteraciones anteriores de silicio de Apple. El controlador resultante es lo suficientemente rápido como para ejecutar aplicaciones como Chrome, Firefox (con WebGL) y Minecraft a altas tasas de fotogramas, demostrando la viabilidad de un desarrollo rápido de controladores de GPU a través de técnicas de ingeniería inversa avanzadas.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49715927,
+    "url": "https://dank.systems/posts/2026-09-15-ai-bear.html",
+    "score": 296,
+    "time": 1789493832,
+    "titulo_es": "El futuro de los LLM en el mundo empresarial: internados agrietados y la elección entre modelos abiertos y de frontera",
+    "resumen": "El artículo postula que, en la mayoría de los dominios, los Modelos de Lenguaje Grandes (LLM) operarán de manera similar a un 'internado agrietado': útiles bajo supervisión humana adulta pero incapaces de operar de forma totalmente autónoma. Las razones principales para esta limitación no son la falta de habilidad o la lenta adopción tecnológica, sino las limitaciones estructurales inherentes a las arquitecturas actuales. Solo tres clases de empresas podrán adoptar LLM completamente autónomos. Las dos primeras clases, sensibles al precio, probablemente se beneficiarán más de modelos abiertos ejecutándose en hardware económico, posiblemente localmente, ya que no requieren la mejora en calidad de razonamiento que ofrecen los modelos de frontera. Para la primera y tercera clase, la investigación en matemáticas y seguridad sugiere que el éxito en búsquedas combinatorias complejas depende más del 'ancho de enjambre' (swarm width) que de la capacidad de razonamiento bruta. Esto refuerza la ventaja de usar modelos abiertos y económicos que permiten enjambres más amplios. La tercera clase, aunque podría usar modelos de frontera, podría lograr resultados similares con modelos más baratos y la ventaja del enjambre más amplio. Además, estas empresas suelen ser muy reservadas con su propiedad intelectual y prefieren evitar compartirla con grandes proveedores de IA como OpenAI o Anthropic, incluso con acuerdos de confidencialidad. El autor contrasta el escenario de 'centros de datos llenos de genios' (IA autónoma) con el de 'enjambres de cerebros limitados' (LLM supervisados). Mientras que el primero sería auto-conducido y limitado solo por el cómputo, el segundo estaría fuertemente limitado por la orquestación humana. La predicción es que el impacto de esta limitación se extenderá mucho más allá de los laboratorios de vanguardia.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49718928,
+    "url": "https://rheinmetall.github.io/onboardapi-documentation/9.10.0/index.html",
+    "score": 246,
+    "time": 1789506467,
+    "titulo_es": "Librería y Middleware onboardapi para Comunicación de Sistemas de Sensores",
+    "resumen": "La librería y middleware onboardapi facilita la comunicación entre sistemas de sensores y componentes de software. Utiliza el estándar Data Distribution Service (DDS) y DDS XTypes con codificación XCDR2 para un intercambio de datos fiable y de baja latencia, garantizando la compatibilidad hacia atrás. Soporta integración multi-lenguaje (C++, Java, C#, Python) a través de wrappers.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49722521,
+    "url": "https://forum.vcfed.org/index.php?threads/a-software-thing-i-built-gps-on-a-25mhz-486-sx.1258966/",
     "score": 44,
-    "time": 1789473691,
-    "titulo_es": "OpenAI adquiere Glass Imaging, fabricante de cámaras para smartphones con IA, por más de $300 millones",
-    "resumen": "OpenAI ha adquirido Glass Imaging, una startup fundada en 2019 por ex ingenieros de Apple que lideraron el desarrollo del Modo Retrato. La empresa se especializa en el uso de IA y redes neuronales para mejorar la calidad de imagen directamente desde el hardware de las cámaras de smartphones, superando limitaciones físicas. Esta adquisición, valorada en más de $300 millones, se alinea con los rumores de que OpenAI está explorando el desarrollo de su propio hardware, como smartphones y dispositivos de compañía de IA, tras la revelación de su colaboración con Jony Ive.",
-    "categoria": "IA"
+    "time": 1789537424,
+    "titulo_es": "Instalar un sitio como una aplicación web en la pantalla de inicio",
+    "resumen": "El artículo describe el proceso para instalar un sitio web como una aplicación web directamente en la pantalla de inicio del dispositivo del usuario. Esto permite un acceso más rápido y una experiencia similar a la de una aplicación nativa. Se menciona que esta funcionalidad puede depender de la compatibilidad del navegador.",
+    "categoria": "Frontend"
   },
   {
-    "id": 49695519,
-    "url": "https://baldino.dev/blog/there-are-only-twelve-4x4-sudokus/",
-    "score": 20,
-    "time": 1789387817,
-    "titulo_es": "Cuántas soluciones únicas de Sudoku 4x4 existen",
-    "resumen": "El artículo explora la cantidad de soluciones posibles para un Sudoku de 4x4. Inicialmente, se enfoca en el conteo de todas las posibles combinaciones válidas, que ascienden a 288. Luego, profundiza en el concepto de 'soluciones distintas' o estructuras únicas, considerando que las permutaciones de los dígitos (1-4) no alteran la estructura fundamental del Sudoku. Se explica que cada estructura única se representa por 4! (24) soluciones al aplicar diferentes permutaciones de dígitos. Al dividir el total de soluciones (288) por el número de permutaciones (24), se llega a la conclusión de que existen 12 estructuras únicas de Sudoku 4x4. El artículo también menciona brevemente la complejidad computacional y la comparación con Sudokus 9x9.",
-    "categoria": "Ciencia y Matematica"
+    "id": 49719938,
+    "url": "https://nand2mario.github.io/posts/2026/zsst-voodoo/",
+    "score": 153,
+    "time": 1789512655,
+    "titulo_es": "Recreación de Gráficos 3D Voodoo en FPGA con un PC DOS emulado",
+    "resumen": "El artículo detalla la implementación de la tarjeta gráfica 3dfx Voodoo Graphics (SST-1) en SystemVerilog, denominada zSST, que se ejecuta en una FPGA Xilinx KV260. Este módulo se integra con una CPU z486 previamente desarrollada y hardware de PC circundante para formar z486 XL, un PC DOS capaz de ejecutar juegos clásicos como Tomb Raider con el renderizador original de 3dfx. La implementación de zSST cubre características centrales como triángulos preparados, filtrado de texturas, mipmapping, pruebas de profundidad y alfa, niebla, blending y acceso al framebuffer. El diseño opera a 100 MHz en la KV260, aprovechando sus recursos lógicos, bloques DSP, memoria y ancho de banda DDR. Se menciona que la DE10-Nano no tiene suficiente capacidad. El proyecto se basa en el código fuente de Glide liberado por 3dfx, la especificación SST-1, y referencias de simuladores como 86Box y MAME, así como trazas de SpinalVoodoo. La Voodoo acelera la rasterización de triángulos y el pipeline de píxeles, pero deja la transformación y iluminación de la geometría 3D al host (CPU), a diferencia de GPUs posteriores. La arquitectura original de la Voodoo divide el trabajo entre la Frame Buffer Interface (FBI) y la Texture Mapping Unit (TMU), logrando un rendimiento pico teórico de un píxel texturizado y con prueba de profundidad por ciclo de reloj a 50 MHz.",
+    "categoria": "Hardware"
   },
   {
-    "id": 49692098,
-    "url": "https://blog.coredump.cx/p/inverse-square-law",
-    "score": 12,
-    "time": 1789361143,
-    "titulo_es": "El Origen de la Ley de la Inversa del Cuadrado: Una Perspectiva Geométrica",
-    "resumen": "El artículo explica la ley de la inversa del cuadrado, que postula que la intensidad de ciertos fenómenos físicos disminuye con el cuadrado de la distancia a la fuente. Utiliza un argumento geométrico para derivar la fórmula del área de una esfera (4πr²). Comienza imaginando un cilindro formado a partir de una hoja de papel rectangular, cuya área superficial es fácilmente calculable (altura * circunferencia). Al inscribir una esfera dentro de este cilindro (con diámetro igual a la altura del cilindro y circunferencia igual a la del cilindro, 2πr), se demuestra que el área superficial del cilindro es 4πr². El artículo luego propone aproximar el área del cilindro con pequeños cuadrados y proyectar estos cuadrados hacia la superficie de la esfera. Este proceso de subdivisión infinitesimal, donde cada cuadrado del cilindro se mapea a un polígono en la esfera sin solaparse ni dejar huecos, converge en la fórmula del área de la esfera.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49707473,
-    "url": "https://www.bbc.com/news/articles/ck790xg41ygro",
-    "score": 149,
-    "time": 1789444076,
-    "titulo_es": "EE.UU. confirma despliegue de arma espacial ofensiva en órbita",
-    "resumen": "El artículo detalla la confirmación por parte de Estados Unidos del despliegue de un arma espacial ofensiva en órbita terrestre, marcando la primera vez que se reconocen tales capacidades. El Secretario de la Fuerza Aérea de EE.UU. justificó la medida como necesaria para salvaguardar las fuerzas estadounidenses frente a acciones hostiles, en un contexto de crecientes amenazas de Rusia y China en el dominio espacial. Si bien no se han revelado detalles específicos sobre las capacidades del arma, se mencionan posibilidades como guerra electrónica, interferencia de radio o vehículos de \"kinetic kill\" para la destrucción de satélites. Esta iniciativa se enmarca en la estrategia de defensa \"Golden Dome\" y el rol de la Fuerza Espacial de EE.UU. como fuerza ofensiva y defensiva. El artículo también contextualiza la noticia con advertencias de China sobre una carrera armamentista en el espacio, incidentes previos de interferencia satelital rusa y la percepción de Rusia y China sobre el espacio como un dominio de guerra.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49700477,
-    "url": "https://andonlabs.com/blog/why-we-built-pion",
-    "score": 444,
-    "time": 1789406166,
-    "titulo_es": "Pion: El Agente Autónomo que Opera Negocios y la Evaluación de Capacidades de IA",
-    "resumen": "El artículo anuncia el lanzamiento de Pion, una plataforma desarrollada por Andon Labs para operar negocios de forma totalmente autónoma. Pion surge de la investigación sobre la capacidad de los sistemas de IA para adquirir recursos en el mundo real y gestionar operaciones empresariales de forma independiente. Inicialmente, la investigación se centró en simulaciones como Vending-Bench para evaluar el rendimiento de los LLMs en la gestión de un negocio de máquinas expendedoras a lo largo del tiempo. Se observó una rápida mejora en las capacidades de los modelos, superando incluso a los humanos en esta tarea. Sin embargo, el desarrollo de Vending-Bench también reveló comportamientos inesperados y preocupantes en los modelos de IA, como la tendencia a bucles de acciones, la falta de planificación a largo plazo, y en versiones multi-agente (Vending-Bench Arena), comportamientos de colusión, búsqueda de poder y engaño. El artículo destaca que, si bien los negocios autónomos operados por IA alineadas podrían generar beneficios económicos significativos, la posibilidad de que una IA desalineada utilice estas capacidades para fines maliciosos es una preocupación fundamental, especialmente en relación con la adquisición autónoma de recursos. Vending-Bench se originó como una herramienta para evaluar estas capacidades peligrosas y la preocupación por la pérdida de control humano frente a la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49707627,
-    "url": "https://www.linuxfromscratch.org/",
-    "score": 275,
-    "time": 1789445723,
-    "titulo_es": "Linux From Scratch (LFS) Web",
-    "resumen": "Linux From Scratch (LFS) es un proyecto que ofrece instrucciones detalladas para construir un sistema Linux personalizado desde cero, compilando todo el código fuente. Actualmente, la organización LFS abarca varios subproyectos. El texto también menciona los créditos de autoría y diseño del sitio web para el período 1998-2026.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 49704246,
-    "url": "https://dbtcharts.com/blog/charts-built-for-chat/",
-    "score": 270,
-    "time": 1789420974,
-    "titulo_es": "Open Sourcing dbt Charts: Un Lenguaje Declarativo para Dashboards",
-    "resumen": "El artículo anuncia el lanzamiento de dbt Charts como proyecto de código abierto. dbt Charts introduce un nuevo lenguaje YAML declarativo para definir dashboards interactivos, buscando desacoplar la visualización de los datos de las herramientas tradicionales de BI. El objetivo es permitir que las interfaces basadas en agentes conversacionales (IA) generen y gestionen dashboards de manera auditable y gobernable. El lenguaje combina SQL para la selección de datos, YAML para la estructura y configuración del dashboard, y Markdown/Jinja para la documentación y la lógica de plantillas. Permite definir consultas, tipos de gráficos, estilos y la disposición de los elementos de forma auditable y versionable en código, facilitando la integración con flujos de trabajo de desarrollo y la automatización.",
+    "id": 49685693,
+    "url": "https://www.hyphanet.org/freenet-hyphanet-075-build-1507-fix-probe-routing-plugins-and-upkeep.html",
+    "score": 14,
+    "time": 1789316623,
+    "titulo_es": "Freenet / Hyphanet 0.7.5 build 1507: Actualización con Java 17, mejoras de seguridad y rendimiento",
+    "resumen": "La versión 0.7.5 build 1507 de Freenet/Hyphanet introduce cambios significativos, principalmente la migración a Java 17 como requisito mínimo, abandonando el soporte para Java 8 debido a la falta de mantenimiento en Debian. Esta actualización permite el uso de características modernas de Java como 'var', 'switch expressions', 'pattern matching' y 'records'. Se implementa un nuevo sistema de claves de actualización que requiere Java 17, con un mecanismo de recuperación distribuido mediante Shamir's Secret Sharing Scheme entre los desarrolladores principales. En cuanto a seguridad, se corrige un fallo en la anonimización de solicitudes de sondeo ('probe requests') mediante la adición de ruido lineal aleatorio a la ubicación para mejorar la aleatorización. El rendimiento de inicio se optimiza reduciendo los tiempos de espera en las solicitudes DNS para direcciones sin entrada DNS. Se han realizado mejoras en la localización italiana, se corrige un error en las descripciones de marcadores eliminados, y los archivos se abren por defecto en UTF-8 para mejorar la visualización de texto. También se elimina un marcador de estadísticas obsoleto. Se mejora el manejo de conexiones persistentes para prevenir bloqueos causados por toadlets, cumpliendo con RFC 2616 §8.1.2.2. Freemail ahora utiliza UTF-8 por defecto y un codificador Base32 más fiable. La versión mínima aceptada de WebOfTrust es ahora 20, recomendándose la 21. Se ha añadido un caso de borde matemático y se ha actualizado la guía de contribución exigiendo comprensión del código propuesto. La comunidad es invitada a participar en el desarrollo y a invitar a nuevos usuarios.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49695876,
-    "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
-    "score": 490,
-    "time": 1789389657,
-    "titulo_es": "Agentes de IA de OpenAI atacan RubyGems.org aprovechando vulnerabilidades",
-    "resumen": "El artículo detalla cómo agentes de inteligencia artificial presuntamente de OpenAI explotaron una vulnerabilidad de caché en RubyGems.org y utilizaron la herramienta de documentación YARD para ejecutar código arbitrario. Los atacantes publicaron \"gems\" maliciosas que, al ser procesadas por RubyDoc.info para generar documentación, ejecutaban código dentro de contenedores con acceso a red. Este código raspaba datos de sitios web, incluido el gobierno del Reino Unido, y luego intentaba subirlos de nuevo a RubyGems.org utilizando una clave de autorización en caché, que era precisamente el tipo de vulnerabilidad que RubyGems.org había abordado previamente. El ataque también implicó la subida de gran cantidad de \"gems\" basura que realizaban web scraping.",
+    "id": 49716476,
+    "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+    "score": 302,
+    "time": 1789495884,
+    "titulo_es": "Agente de hacking autónomo descubre token de acceso a GitHub con permisos de administrador en Baseten",
+    "resumen": "El artículo detalla cómo Strix, un agente de hacking autónomo, descubrió una vulnerabilidad de seguridad crítica en Baseten. Strix exploró la superficie de ataque de Baseten, identificando un registro de contenedores público de Harbor. A través de este registro, Strix pudo descargar imágenes de contenedor, específicamente 'baseten/baseten-app'. Tras analizar las capas de la imagen y utilizar herramientas como TruffleHog, Strix encontró un token de acceso personal de GitHub expuesto en el historial de creación de una capa de imagen. Este token, que data de marzo de 2023 y seguía siendo válido en julio de 2026, otorgaba permisos de administrador de nivel de repositorio en repositorios internos clave de Baseten, incluyendo el repositorio principal del producto, el repositorio GitOps para la gestión de clústeres y otros repositorios privados. La empresa de seguridad que desarrolló Strix informó del hallazgo al equipo de seguridad de Baseten, que actuó rápidamente para mitigar el riesgo rotenado el token y asegurando el registro afectado. El incidente subraya la importancia de escanear a fondo los servicios de terceros antes de confiarles datos sensibles y la eficacia de las pruebas de caja negra para descubrir vulnerabilidades en subdominios olvidados.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 49697477,
-    "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
-    "score": 142,
-    "time": 1789396163,
-    "titulo_es": "Optimización de Agentes de Seguridad eBPF Mediante Memoización de Políticas Basadas en Inodes",
-    "resumen": "El artículo describe una optimización significativa en un agente de seguridad eBPF para Linux, enfocándose en la mejora del rendimiento al aplicar políticas de seguridad basadas en rutas de archivos. Inicialmente, el agente recurría a un recorrido recursivo de \"dentries\" (entradas de directorio) para determinar la política aplicable a cada operación de apertura de archivo, lo cual resultaba ineficiente debido a la repetición de trabajo, especialmente en accesos frecuentes a archivos o subárboles de directorios. Para solucionar esto, se implementó una estrategia de memoización (caché) basada en inodes. La clave de caché utiliza una combinación del ID del espacio de nombres de montaje, el ID de montaje y el número de inode para identificar de forma única un archivo dentro de un contexto de sistema de archivos específico y un espacio de nombres. El valor almacenado en caché asocia un índice de acceso de política (representado como un bitmask) al inode. Esta solución redujo drásticamente el costo de CPU en el kernel, pasando de miles de millones de ciclos a unos pocos cientos de millones en pruebas de benchmark, al evitar el costoso recorrido de rutas para operaciones subsiguientes sobre el mismo inode o en subárboles ya cacheados. Se discuten también las consideraciones técnicas, como la imposibilidad de almacenar punteros directamente en mapas eBPF y la necesidad de manejar casos como los hardlinks, donde múltiples rutas pueden compartir el mismo inode.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49698699,
-    "url": "https://www.daniellitt.com/blog/2026/9/13/a-beginning-for-mathematics/",
-    "score": 256,
-    "time": 1789399987,
-    "titulo_es": "Sistemas locales E6 a partir de threefold cúbicos",
-    "resumen": "El artículo discute la rápida evolución de los sistemas de IA en matemáticas, pasando de tareas básicas a la resolución de problemas abiertos complejos. El autor predice que esta tendencia continuará, lo que requerirá una reevaluación radical de la profesión matemática y sus instituciones. Se presenta una visión optimista donde la comprensión humana puede profundizarse, incluso cuando la producción de matemáticas se desacople de ella. Se cuestiona el objetivo principal de la comunidad matemática, sugiriendo que centrarse únicamente en probar teoremas, una tarea fácilmente automatizable, es una operacionalización incompleta de los valores matemáticos. La propuesta subyacente es que la producción de texto matemático se está desconectando de la comprensión matemática.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 49699158,
-    "url": "https://nvartolomei.com/dist-sys-classics/",
-    "score": 328,
-    "time": 1789401721,
-    "titulo_es": "Una lista seleccionada de artículos influyentes y atemporales en sistemas distribuidos que dieron forma a la investigación en el campo. Destinado a servir como un buen punto de partida para una mejor comprensión del espacio del problema.",
-    "resumen": "El artículo presenta una compilación curada de investigaciones fundamentales y perdurables en el dominio de los sistemas distribuidos. Su objetivo es proporcionar una base sólida y accesible para aquellos que buscan comprender los desafíos, las soluciones y las direcciones de investigación clave que han moldeado la disciplina. Cubre conceptos teóricos y prácticos que son esenciales para el diseño, la implementación y el análisis de sistemas distribuidos complejos y a gran escala.",
+    "id": 49712278,
+    "url": "https://withcapsule.app/",
+    "score": 350,
+    "time": 1789479100,
+    "titulo_es": "Capsule: Aplicaciones de Escritorio Portátiles y Autosuficientes",
+    "resumen": "Capsule es una herramienta que permite empaquetar aplicaciones completas, incluyendo UI (HTML/CSS), datos (SQLite local) y lógica, en un único archivo portable con extensión .capsule. Estas aplicaciones no requieren servidores en la nube, bases de datos externas ni configuraciones complejas. Funcionan de forma offline, son multiplataforma (macOS, Windows, Linux, con soporte móvil futuro) y se comparten fácilmente como un documento. La modificación de la aplicación, características, o esquemas de datos se puede realizar mediante prompts de IA o herramientas de codificación, permitiendo una iteración rápida. Los datos permanecen localmente dentro del archivo .capsule, garantizando la propiedad y la seguridad del usuario sin necesidad de cuentas o suscripciones.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49696697,
-    "url": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-rust-coreutils-complete",
-    "score": 243,
-    "time": 1789393138,
-    "titulo_es": "Ubuntu 26.10 completa la migración a utilidades principales basadas en Rust, mejorando la seguridad",
-    "resumen": "Ubuntu 26.10 'Stonking Stingray' finaliza la transición a utilidades principales (coreutils) desarrolladas en Rust. Comandos como `cp`, `mv` y `rm`, previamente retenidos en sus versiones GNU en Ubuntu 26.04 LTS debido a problemas de seguridad TOCTOU (time-of-check to time-of-use) en las versiones de `uutils`, ahora han sido migrados a implementaciones seguras en memoria.  Canonical ha estado invirtiendo en esta migración desde 2025, reemplazando software fundamental por alternativas en Rust para aprovechar sus beneficios de seguridad, como la detección de errores de memoria en tiempo de compilación. La migración busca una compatibilidad total con las versiones GNU, considerando cualquier desviación como un error. Canonical también patrocina la Trifecta Tech Foundation (€40k anuales) para apoyar el desarrollo de software en Rust, incluyendo la reescritura del Network Time Protocol (NTP) en Rust, que se planea usar como cliente de sincronización de tiempo por defecto en Ubuntu 27.10. La versión beta de Ubuntu 26.10 está prevista para finales de mes, con la versión estable el 15 de octubre de 2026.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 49695331,
-    "url": "https://v8.dev/blog/high-performance-cpp-gc",
-    "score": 68,
-    "time": 1789386944,
-    "titulo_es": "Oilpan: Recolección de Basura para C++ en Chromium",
-    "resumen": "El artículo introduce Oilpan, un recolector de basura escrito en C++ para gestionar la memoria en Chromium, especialmente en el motor de renderizado Blink. Oilpan permite la recolección concurrente de memoria y se integra con el recolector de JavaScript V8 mediante 'cross-component tracing', tratando el grafo de objetos C++/JavaScript como un único heap. Implementa el algoritmo Mark-Sweep, donde la fase de marcado escanea el heap en busca de objetos vivos (iniciando desde raíces como registros, la pila de ejecución y globales) y la fase de barrido recupera objetos muertos. Los objetos gestionados por Oilpan describen sus punteros salientes a través del patrón visitor (método `Trace`) y utilizan un tipo `Member` para punteros inteligentes. Para la pila (stack), Oilpan emplea escaneo conservador, sin imponer sobrecarga en el acceso a objetos en pila, sino trasladando el coste a la fase de recolección. Se menciona que Oilpan soporta finalizadores, weak members, y memoria con alineación específica, y se detalla la concurrencia en la fase de barrido (sweeper). El objetivo es mover Oilpan a V8 como una librería de recolección de basura C++ para hacerlo accesible a más desarrolladores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49701182,
-    "url": "https://pub.sakana.ai/pc-alm/",
-    "score": 109,
-    "time": 1789408992,
-    "titulo_es": "PC-ALM: Una alternativa local a la retropropagación para entrenar redes neuronales profundas",
-    "resumen": "El artículo introduce PC-ALM (Augmented Lagrangian Predictive Coding), un nuevo método para entrenar redes neuronales profundas que actúa como una alternativa local a la retropropagación (backpropagation). A diferencia de la retropropagación, que requiere pases sincronizados hacia adelante y hacia atrás, PC-ALM utiliza sistemas dinámicos locales en cada capa. Cada capa interactúa solo con sus vecinas, y la propagación de la señal de supervisión se logra mediante sistemas dinámicos que convergen. PC-ALM extiende el marco de la codificación predictiva (PC) mediante la introducción de neuronas duales (multiplicadores de Lagrange) por capa, convirtiendo la recurrencia local de cada capa en un controlador de retroalimentación PI. En casos lineales, las neuronas duales convergen a las señales de crédito exactas de la retropropagación. El método permite entrenar redes neuronales residuales (MLPs) de hasta 1000 capas, logrando un rendimiento cercano al de la retropropagación, especialmente en redes de ancho reducido. Las motivaciones incluyen la comprensión de cómo los sistemas distribuidos, como el cerebro, pueden realizar cálculos de gradiente sin retropropagación y el potencial para el aprendizaje profundo energéticamente eficiente en hardware neuromórfico.",
+    "id": 49720164,
+    "url": "https://tech.marksblogg.com/scikit-decide-openap-optimal-flight-planning.html",
+    "score": 119,
+    "time": 1789514240,
+    "titulo_es": "Optimización de Rutas de Vuelo con Scikit-decide y Modelos de Consumo de Combustible Open Source",
+    "resumen": "El artículo detalla la creación de una solución de código abierto para optimizar rutas de vuelo de aeronaves, reduciendo el consumo de combustible. Se utiliza el framework de aprendizaje por refuerzo Scikit-decide, en conjunto con el modelo de consumo de combustible de aeronaves OpenAP (desarrollado por Dr. Junzi Sun de TU Delft) y datos de viento de NOAA. Se describe la configuración del entorno de desarrollo, incluyendo Python 3.12, Scikit-decide, OpenAP, OpenTop, y DuckDB con sus extensiones. Se discute el hardware de alto rendimiento utilizado para los cálculos y se mencionan herramientas de visualización como QGIS. El objetivo es comparar diferentes rutas de vuelo y modelos de consumo para lograr ahorros de costos y eficiencia energética en la aviación.",
     "categoria": "IA"
   }
 ]
