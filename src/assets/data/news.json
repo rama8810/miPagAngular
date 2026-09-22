@@ -1,20 +1,128 @@
 [
   {
-    "id": 49786419,
-    "url": "https://github.com/aru-labs/lossless-memory",
-    "score": 26,
-    "time": 1789993697,
-    "titulo_es": "Memoria a largo plazo sin pérdidas para una IA personal",
-    "resumen": "Este artículo presenta un sistema de memoria a largo plazo (LLL) para asistentes de IA personales que prioriza la conservación de cada línea de conversación con marcas de tiempo precisas, en contraposición a los métodos de resumen o incrustación que pierden detalles cruciales. El sistema almacena cada turno de conversación en un registro JSONL por día, utilizando la marca de tiempo como eje principal para permitir consultas precisas como \"¿qué decidimos el martes pasado?\". Incluye un pequeño índice de marcadores de temas inyectados en el contexto para facilitar la continuidad de la conversación y un demonio que reindexa incrementalmente. El diseño se basa en años de experiencia y aborda la falla de los sistemas de IA al \"olvidar\" la información conversacional vital. El objetivo a largo plazo es crear un compañero de IA para personas que viven solas, con la memoria residiendo en hardware de propiedad del usuario. El proyecto se publica bajo licencia MIT y se centra en la capa de memoria.",
+    "id": 49799965,
+    "url": "https://alexn.org/blog/2026/09/22/ai-has-no-wisdom-and-neither-will-you/",
+    "score": 162,
+    "time": 1790079069,
+    "titulo_es": "El peligro del 'vibe-coding' y la ilusión de la mantenibilidad con IA",
+    "resumen": "El artículo analiza cómo el auge del 'vibe-coding' y la excesiva dependencia de la IA amenazan la arquitectura y mantenibilidad del software a largo plazo. Plantea que la buena arquitectura carece de métricas inmediatas para funciones de recompensa en IA, ya que sus consecuencias tardan meses o años en manifestarse. Además, advierte que los modelos actuales no comprenden el contexto ni la creación de abstracciones reutilizables, y que delegar la lectura y escritura de código frena el desarrollo de la intuición técnica y la maestría en los ingenieros de software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49799577,
+    "url": "https://blog.pwkf.org/2026/09/21/correct-type-punning-in-c.html",
+    "score": 34,
+    "time": 1790076587,
+    "titulo_es": "Type Punning y Aliasing Estricto en C y C++: Por Qué los Casts de Punteros Fallan en -O2",
+    "resumen": "El autor analiza un error sutil originado por 'type punning' al realizar conversiones de punteros que funcionaban en -O0 pero fallaban silenciosamente en -O2 debido a las reglas de aliasing estricto (strict aliasing). En C y C++, el compilador asume que punteros de tipos distintos no apuntan a la misma región de memoria, permitiéndole optimizar u omitir lecturas y escrituras supuestamente redundantes. Aunque el casteo directo de punteros es común, constituye comportamiento indefinido (UB). Para realizar type punning de forma segura y estándar, se recomienda utilizar unions (en C) o memcpy, el cual los compiladores modernos suelen optimizar a nivel de registros sin penalización de rendimiento.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49792342,
+    "url": "https://poloclub.github.io/transformer-explainer/",
+    "score": 496,
+    "time": 1790019829,
+    "titulo_es": "El Mecanismo de Atención y la Arquitectura Transformer en IA",
+    "resumen": "El artículo describe la arquitectura Transformer, fundamental en IA moderna, destacada por su mecanismo de auto-atención para procesar secuencias y capturar dependencias a largo plazo. Explica su aplicación en modelos generativos de texto como GPT, Llama y Gemini, así como en audio, imagen y otras áreas. Detalla el proceso de preparación de la entrada en modelos generativos de texto, incluyendo tokenización, obtención de embeddings de tokens, codificación posicional y la suma de ambos para obtener la representación final. Se utiliza el modelo GPT-2 (pequeño) como ejemplo, con 124 millones de parámetros y un vocabulario de 50,257 tokens, cada uno representado por un vector de 768 dimensiones. Los Transformer consisten en bloques apilados secuencialmente, cada uno conteniendo mecanismos de auto-atención multi-cabeza y una capa Perceptrón Multicapa, que refinan iterativamente la representación de los tokens.",
     "categoria": "IA"
   },
   {
-    "id": 49783932,
-    "url": "https://www.sublimetext.com/blog/articles/sublime-text-4213",
-    "score": 30,
-    "time": 1789974098,
-    "titulo_es": "Sublime Text ahora incluye Python 3.14 y Python 3.3",
-    "resumen": "El artículo anuncia que Sublime Text ha actualizado su soporte de Python, incluyendo ahora Python 3.14. Menciona que Python 3.3 está deshabilitado por defecto y se eliminará en el futuro, pero proporciona una opción de configuración ('disable_plugin_host_3.3': false) para reactivarlo si es necesario para la compatibilidad de plugins. Se incluye información sobre la descarga y la empresa desarrolladora, Sublime HQ Pty Ltd.",
+    "id": 49787436,
+    "url": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
+    "score": 623,
+    "time": 1789999398,
+    "titulo_es": "Lecciones de Sun Microsystems: La importancia de la ejecución operativa y el servicio al cliente",
+    "resumen": "El artículo reflexiona sobre las lecciones aprendidas de la caída de Sun Microsystems, contrastando su misión inspirada en los valores de Scott McNealy con fallos operativos críticos. Se destaca un incidente específico en 2005 donde una startup innovadora en computación en la nube, utilizando OpenSolaris y deseando comprar hardware de Sun, no pudo obtener respuesta ni el producto adecuado por parte de Sun. En contraste, Dell, a través de su ejecutivo de cuenta \"Steve\", ofreció un servicio proactivo y eficiente, facilitando la adquisición de hardware en menos de dos semanas. Esta disparidad en la ejecución operativa se presenta como la causa principal del fracaso de Sun, a pesar de su éxito estratégico inicial. El autor, quien se unió a la startup después de dejar Sun y posteriormente co-fundó Oxide junto con \"Steve\", utiliza este caso como un estudio de caso sobre cómo el \"aburrimiento con la mecánica de dirigir un negocio\" y la falta de atención al cliente pueden ser perjudiciales, incluso para empresas con estrategias sólidas. El artículo concluye que aprender de los errores pasados de compañías como Sun es fundamental para el éxito futuro, honrando su legado al estudiar tanto sus aciertos como sus fallos.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49774161,
+    "url": "https://rohanadwankar.github.io/posts/semfont.html",
+    "score": 46,
+    "time": 1789897096,
+    "titulo_es": "Semfont: Mejora Automática de la Legibilidad del Texto Mediante Tipografía Inteligente",
+    "resumen": "Semfont es una librería de desarrollo de software diseñada para mejorar automáticamente la legibilidad del texto mediante la aplicación de reglas tipográficas. Analiza cada palabra asignándole cuatro puntuaciones: valencia (positividad/negatividad),  salience (importancia/rareza), surprise (giros o cambios de tema) y certainty (certeza del escritor). Estas puntuaciones se mapean a ejes tipográficos como color, peso, realce e inclinación, respectivamente. La librería emplea un enfoque de dos pasadas: una primera pasada con una ventana de análisis limitada a palabras adyacentes, y una segunda pasada que analiza cláusulas completas para una interpretación más profunda del contexto, manejando negaciones y relaciones entre verbos y sus objetos. Está optimizada para integrarse en flujos de streaming de datos, especialmente en sistemas de IA, donde la legibilidad de grandes volúmenes de texto es crucial. Aunque no garantiza una clasificación perfecta, se enfoca en ser suficientemente rápida y efectiva para el propósito de facilitar la lectura, incluso en casos complejos como el sarcasmo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49796660,
+    "url": "https://artificialanalysis.ai/models/mimo-v2-6-pro",
+    "score": 110,
+    "time": 1790049729,
+    "titulo_es": "MiMo-V2.6-Pro: Un Modelo de IA de Peso Abierto con Capacidades Multimodales",
+    "resumen": "MiMo-V2.6-Pro es un modelo de IA de peso abierto lanzado en septiembre de 2026, destacando por su alta inteligencia y precio competitivo frente a otros modelos de tamaño similar. Soporta entradas de texto, imagen, voz y video, y genera salidas de texto con una ventana de contexto de 1 millón de tokens. Obtiene una puntuación de 46 en el Índice de Inteligencia de Análisis Artificial (AAII), significativamente superior a la mediana de 18. A pesar de su velocidad notable de 125 tokens por segundo, tiende a ser verboso, generando 140 millones de tokens durante la evaluación del AAII, lo que resulta en un costo de evaluación de $206.66. El costo por token de entrada es de $0.43 por 1M y por token de salida es de $0.87 por 1M. Las métricas se comparan con modelos de la misma clase, incluyendo evaluaciones específicas como el índice AA-Omniscience para medir la fiabilidad del conocimiento y la tasa de alucinaciones. La versión evaluada es la de razonamiento, y puede existir una variante no de razonamiento.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49798597,
+    "url": "https://verda.com/blog/what-189m-in-funding-unlocks-for-verda-customers",
+    "score": 57,
+    "time": 1790069791,
+    "titulo_es": "Verda se convierte en unicornio europeo, recaudando 189 millones de dólares para su plataforma de computación en la nube de IA",
+    "resumen": "El artículo detalla la ronda de financiación Serie B de Verda, que recaudó 189 millones de dólares, elevando su financiación total a más de 450 millones de dólares. Verda se posiciona como una empresa de computación que construye su propia infraestructura de centros de datos, hardware y plataforma de software para satisfacer las crecientes y cambiantes demandas de las cargas de trabajo de IA, desde el prototipado rápido hasta el entrenamiento fundamental y la inferencia escalable. Se destaca su capacidad para proporcionar infraestructura bajo demanda, baja latencia y alta disponibilidad, crucial para cargas de trabajo de IA modernas como los agentes de IA. La inversión se destinará a expandir la capacidad de los centros de datos, invertir en la plataforma, el Laboratorio de IA y nuevas características. Verda ya potencia cargas de trabajo de IA para organizaciones en más de 50 países, con ejemplos notables como Aleph Alpha, Magnific y Epsilon Health, y está construyendo sus propios compiladores y software de servicio, además de realizar ingeniería de rendimiento y fiabilidad. El objetivo es proporcionar más capacidad de computación y la potencia para ejecutarla, con planes de operar más de 250 MW en 2027.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49794330,
+    "url": "https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/",
+    "score": 810,
+    "time": 1790029841,
+    "titulo_es": "La Frustración con la Escritura Generada por IA en el Desarrollo de Software",
+    "resumen": "El artículo aborda la creciente frustración de los profesionales con el contenido generado por Inteligencia Artificial (IA), particularmente en el ámbito del desarrollo de software. Se describe cómo la IA se utiliza para crear propuestas de diseño, planes de negocio, documentación, tickets, pull requests y resúmenes de reuniones, pero el resultado es a menudo incomprensible, descontextualizado y carente de la perspectiva humana. El autor argumenta que, si bien la IA puede ayudar en la escritura, su uso indiscriminado para generar contenido detallado pero sin alma, despoja a la comunicación de su propósito de construir consenso, fomentar la reflexión y establecer conexiones humanas. Se destaca la preferencia por la escritura auténtica, con sus imperfecciones, sobre las reescrituras artificiales, citando estudios que muestran que los lectores abandonan el contenido percibido como generado por IA. La comunicación efectiva, incluso si imperfecta, se considera crucial para la construcción de relaciones, mientras que la eliminación de la vulnerabilidad y el riesgo en la comunicación mediada por IA la vuelve ineficaz.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49792067,
+    "url": "https://linear.app/now/ci-bottleneck-reworked",
+    "score": 278,
+    "time": 1790018613,
+    "titulo_es": "Optimizando la Integración Continua (CI) en Linear: Reducción de Costos y Tiempos de Espera",
+    "resumen": "El artículo describe las estrategias de optimización implementadas por Linear para mejorar el rendimiento de su pipeline de Integración Continua (CI). Inicialmente, los altos costos y los largos tiempos de espera de la CI se convirtieron en un cuello de botella a pesar de la aceleración del desarrollo. Linear abordó esto en cuatro frentes principales:\n\n1.  **Infraestructura de Runners Mejorada:** Migraron sus cargas de trabajo de GitHub Actions a runners de terceros con CPUs más rápidas, almacenamiento de alto rendimiento y mejor infraestructura de caché. Esto resultó en trabajos que se ejecutaban un 34% más rápido en promedio.\n\n2.  **Modernización del Toolchain:** Adoptaron `tsgo`, el compilador nativo de TypeScript, que redujo el tiempo de verificación de tipos (`tsc`) en un 73%. Reescibieron reglas de linting personalizadas para usar análisis estático del árbol de sintaxis abstracta (AST) en lugar de depender de la información de tipos de TypeScript. Esto permitió eliminar la dependencia de TypeScript en ESLint, reduciendo el tiempo de linting de API en un 68% y el tiempo de linting del repositorio completo en un 55%, además de disminuir significativamente el uso de memoria. Posteriormente, facilitaron la migración a `Oxlint`.\n\n3.  **Optimización de Trabajos Críticos:** Identificaron trabajos pequeños pero críticos al inicio de los pipelines (como la detección de cambios en las rutas modificadas por un PR) que eran desproporcionadamente lentos. Redujeron el `fetch depth` para los `checkout` de código, pasando de 94 segundos a 20 segundos en el caso más lento. Para trabajos que no necesitaban el árbol de trabajo completo, eliminaron el `checkout` por completo, reduciendo el tiempo de 27 segundos a 7 segundos. Para eventos de `commit push` y `merge-queue`, implementaron un `checkout` disperso, sin `blob`, y con historial limitado, ahorrando aproximadamente 11 segundos adicionales.\n\n4.  **Resolución de Problemas de Checkout Post-Migración:** Tras cambiar a runners de terceros, notaron que los tiempos de `checkout` (usando `actions/checkout`) aumentaban y a veces se colgaban debido a que los runners externos a la red de GitHub dependían de una conexión IP directa.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49769561,
+    "url": "https://gabrieloc.com/2026/09/15/perspective.html",
+    "score": 181,
+    "time": 1789846993,
+    "titulo_es": "La Fórmula Que Desmitifica los Gráficos 3D: Matemáticas y Proyección de Cámara",
+    "resumen": "El artículo explora los fundamentos matemáticos detrás de la proyección de cámaras en gráficos 3D. Inicialmente, se presenta un método simple de proyección dividiendo las coordenadas 'x' y 'y' por la coordenada 'z' (profundidad), demostrando cómo los objetos parecen acercarse a un punto de fuga con la distancia. Posteriormente, se introduce la perspectiva de matrices de proyección como una solución más práctica y sofisticada. Se detalla que estas matrices, comúnmente parametrizadas por el campo de visión (FOV), la relación de aspecto y los planos de recorte cercano y lejano, transforman las coordenadas del espacio mundial al espacio de vista y luego al espacio de clip. Este último espacio permite la división perspectiva (dividiendo por el componente 'w' de las coordenadas homogéneas) para obtener coordenadas normalizadas del dispositivo (NDC), que son esenciales para el renderizado eficiente, incluyendo técnicas como el culling de geometría fuera de pantalla. Se menciona que la fórmula de división de profundidad es una forma especial de la matriz de proyección perspectiva.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49786643,
+    "url": "https://fzakaria.com/2026/09/20/a-build-graph-that-rolls-dice",
+    "score": 10,
+    "time": 1789995013,
+    "titulo_es": "La Evolución de Nix: De Sistemas de Compilación Aplicativos a Monádicos con Derivaciones Dinámicas",
+    "resumen": "El artículo explora cómo las derivaciones dinámicas en Nix están transformando el sistema de compilación de un modelo 'applicative' (grafo de compilación conocido de antemano) a uno 'monadic' (grafo definido durante la ejecución). Tradicionalmente, Nix requería que el grafo de compilación completo fuera predefinido, permitiendo la inspección previa a través de herramientas como `nix build --dry-run`. Sin embargo, las derivaciones dinámicas permiten que el grafo se construya a medida que avanza el proceso de compilación, similar a la operación 'bind' en la programación funcional, donde el siguiente paso depende de los resultados intermedios. Si bien la evaluación de Nix ya soportaba esta capacidad de 'bind' a través de `import from derivation` (con riesgos de uso inadecuado), las derivaciones dinámicas extienden esta monadicidad al planificador (scheduler). Esto permite al planificador ejecutar compilaciones en paralelo, distribuirlas remotamente y utilizar cachés de forma más efectiva, ya que el grafo no necesita ser completamente conocido al inicio. El autor contrasta esto con la naturaleza 'applicative' donde todas las dependencias se conocen de antemano (ej. una lista de compras completa antes de ir a la tienda), frente a la naturaleza 'monadic' donde una acción posterior depende de un resultado que solo se conoce durante el proceso (ej. comprar una patata si la comida está demasiado salada). El artículo enfatiza que las derivaciones dinámicas no introducen la operación 'bind', sino que cambian la capa del sistema que la ejecuta, pasando del evaluador al planificador.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 49791997,
+    "url": "https://terrytao.wordpress.com/2026/09/21/advisory-group-on-mathematics-and-artificial-intelligence/",
+    "score": 148,
+    "time": 1790018262,
+    "titulo_es": "Actualizaciones sobre mis investigaciones y artículos expositivos, discusión de problemas abiertos y otros temas relacionados con las matemáticas",
+    "resumen": "Este artículo anuncia la creación del Grupo Consultivo sobre Matemáticas e Inteligencia Artificial (AGMAI), alojado en el Instituto de Estudios Avanzados. El grupo fue formado ante los rápidos avances en IA y su impacto en la investigación matemática, buscando asesorar a empresas de IA sobre sus interacciones con la comunidad matemática, incluyendo la presentación responsable de resultados. Operan de forma independiente y publicarán sus recomendaciones. Actualmente, están abordando el desafío de asesorar a OpenAI sobre cómo coordinar la publicación de un gran número de resultados matemáticos significativos que supuestamente han sido producidos por su modelo de IA. El artículo también incluye comentarios de la comunidad matemática expresando preguntas sobre la naturaleza de estos resultados, el uso de las matemáticas como punto de referencia para la IA y la sugerencia de auditar el corpus matemático utilizado por los modelos de IA.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49789228,
+    "url": "https://spectrum.ieee.org/hermes-shortwave-radio-digital-data",
+    "score": 157,
+    "time": 1790007256,
+    "titulo_es": "HERMES: Comunicación de Datos Cifrados de Largo Alcance con Radios de Onda Corta",
+    "resumen": "El artículo describe HERMES (High-frequency Emergency and Rural Multimedia Exchange System), un sistema de radio de onda corta (HF) y módem digital Mercury desarrollado por Rhizomatica. HERMES permite la transmisión de datos digitales, incluyendo archivos y mensajes, a largas distancias (400-600 km) utilizando la ionosfera como reflector, sin necesidad de satélites ni torres de relevo. A diferencia de las radios de voz convencionales, HERMES opera como un 'tubería de datos' sobre HF, facilitando el envío de información crítica como coordenadas GPS, listas de partes, o imágenes en situaciones de emergencia o para documentar actividades. Una característica clave de HERMES es su capacidad de cifrado opcional, diseñada para proteger la información sensible de socios en áreas remotas. El sistema ha demostrado su utilidad en proyectos piloto, como el rescate de pescadores en Bangladesh que pudieron enviar su posición y un SOS.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49787142,
+    "url": "https://blog.cloudflare.com/python-workers-ga/",
+    "score": 248,
+    "time": 1789997899,
+    "titulo_es": "Python Workers ahora es Generalmente Disponible en Cloudflare",
+    "resumen": "Cloudflare ha anunciado la disponibilidad general (GA) de Python Workers, permitiendo a los desarrolladores ejecutar aplicaciones Python de manera nativa y escalable en su plataforma. Esta integración aprovecha WebAssembly y Pyodide para ejecutar un intérprete Python compilado, facilitando el uso de frameworks populares como FastAPI, Django y Flask. La plataforma ahora soporta bindings para servicios de Cloudflare (R2, D1, Durable Objects, etc.) de forma nativa, eliminando la necesidad de código de conexión explícito entre Python y JavaScript. Esto se logra encapsulando la conversión de tipos dentro del runtime y el SDK de Python. Los conectores `workers.asgi` y `workers.wsgi` actúan como puentes optimizados, traduciendo las solicitudes JavaScript nativas a los estándares WSGI/ASGI esperados por las aplicaciones Python, mientras que la plataforma Cloudflare se encarga del escalado y balanceo de carga.",
     "categoria": "Desarrollo de Software"
   }
 ]
