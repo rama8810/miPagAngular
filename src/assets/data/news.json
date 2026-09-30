@@ -1,173 +1,101 @@
 [
   {
-    "id": 49890051,
-    "url": "https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html",
-    "score": 112,
-    "time": 1790671237,
-    "titulo_es": "Integrando bibliotecas C++ nativas en Godot con godot-cpp y Conan",
-    "resumen": "El artículo explica cómo extender el motor de juegos Godot, escrito en C++, utilizando GDExtension y godot-cpp. GDScript, el lenguaje principal de Godot, no puede llamar a código nativo directamente, pero GDExtension permite integrar bibliotecas C o C++ existentes. El desafío principal reside en la compilación de estas extensiones y sus dependencias para cada plataforma. Se introduce el uso de Conan, un gestor de paquetes de C++, para simplificar la gestión de dependencias y la compilación de godot-cpp y otras bibliotecas (como flecs para simulación de partículas), haciendo que el proceso sea más eficiente al compilar cada combinación de Godot y plataforma una sola vez. Se detallan los componentes de GDExtension, godot-cpp (incluyendo la gestión de versiones y objetivos de compilación) y cómo Conan simplifica la integración como dependencias de C++.",
-    "categoria": "Desarrollo de Software"
+    "id": 49889140,
+    "url": "https://mathigon.org/origami",
+    "score": 50,
+    "time": 1790664346,
+    "titulo_es": "Sólidos platónicos y arquimedianos",
+    "resumen": "El artículo analiza las propiedades geométricas de los sólidos platónicos y arquimedianos. Explica que los sólidos platónicos son los poliedros más regulares existentes, compuestos por caras idénticas de polígonos regulares y vértices uniformes, limitados a solo cinco variedades. Asimismo, introduce los trece sólidos arquimedianos, caracterizados por vértices equivalentes formados por combinaciones de diferentes polígonos regulares, e invita a su visualización mediante modelos 3D.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49869441,
-    "url": "https://bumbershootsoft.wordpress.com/2026/09/26/digital-audio-on-the-zx-spectrums-1-bit-beeper/",
-    "score": 20,
-    "time": 1790533829,
-    "titulo_es": "Audio Digital de Alta Calidad en el ZX Spectrum Usando el Beeper de 1 Bit",
-    "resumen": "Este artículo describe el proceso de obtención de audio digital de alta calidad en el ZX Spectrum utilizando su beeper de 1 bit. El autor detalla las dificultades técnicas encontradas, incluyendo la necesidad de optimización en lenguaje ensamblador debido a restricciones de tiempo y manejo de registros muy estrictas. Se compara la técnica con otros sistemas de sonido de la época y se mencionan implementaciones en hardware y emuladores. Se explican los principios físicos subyacentes al control del sonido mediante la interrupción de señales y se contrasta la facilidad de programación en el PC con la complejidad en el ZX Spectrum y Apple II. El enfoque principal es la ingeniería de bajo nivel para lograr un resultado de audio sorprendente con hardware limitado.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49891550,
-    "url": "https://www.tomshardware.com/software/the-netherlands-is-rolling-alternative-nixos-based-software-ecosystem-after-u-s-sanctions-on-icc-took-microsoft-off-the-table-trial-programs-running-now-first-release-expected-at-end-of-2027",
-    "score": 266,
-    "time": 1790682265,
-    "titulo_es": "Países Bajos crea su propio entorno de trabajo digital para reducir la dependencia de software estadounidense",
-    "resumen": "El artículo detalla el proyecto DAWO (Entorno de Trabajo Autónomo Digital para el Gobierno) de los Países Bajos, una iniciativa para reducir la dependencia del software y servicios estadounidenses. Ante la posibilidad de perder acceso a sistemas críticos debido a sanciones o decisiones políticas, el gobierno neerlandés está migrando hacia una infraestructura tecnológica soberana. La solución se basa en NixOS, un sistema operativo que utiliza el gestor de paquetes Nix para asegurar la inmutabilidad y reproducibilidad de las configuraciones, facilitando su despliegue y mantenimiento en diversas instancias gubernamentales. Se destaca la capacidad de NixOS para compartir hasta el 90% de la configuración entre despliegues y su compatibilidad con hardware menos reciente. Varias municipalidades están participando en programas piloto, con el objetivo de tener la primera versión estable de la plataforma para finales de 2027. Este movimiento refleja una tendencia europea más amplia de buscar alternativas tecnológicas a los proveedores de EE. UU.",
-    "categoria": "Distribuciones Linux"
+    "id": 49899090,
+    "url": "https://postalemployeenetwork.com/news/2026/09/26/u-s-postal-inspectors-shut-down-website-selling-millions-of-counterfeit-postage-labels/",
+    "score": 251,
+    "time": 1790710217,
+    "titulo_es": "Inspectores Postales de EE. UU. Cierran Sitio Web que Vendía Millones de Etiquetas de Franquicia Falsas",
+    "resumen": "El Servicio de Inspección Postal de EE. UU. (U.S. Postal Inspection Service) y agencias federales asociadas han incautado un dominio de internet, acusando a un ciudadano pakistaní de operar un sitio web no autorizado (LabelsBank.com) que presuntamente vendió más de 5.1 millones de etiquetas de franquicia falsificadas del Servicio Postal de EE. UU. (USPS). El esquema, que permitía a los clientes enviar paquetes a precios significativamente reducidos cobrando una tarifa fija de $2 por etiqueta, independientemente del peso, tamaño o destino, resultó en pérdidas superiores a $126 millones para el USPS. El presunto operador, Faheem Akram, de 33 años, se enfrenta a cargos federales que incluyen conspiración para defraudar a los Estados Unidos y para hacer y vender sellos postales falsificados, y fraude electrónico. La operación del sitio web ha sido desmantelada y el dominio incautado.",
+    "categoria": "Ciberseguridad"
   },
   {
     "id": 49880411,
     "url": "https://jagi.studio/posts/phyllotaxis/",
-    "score": 198,
+    "score": 319,
     "time": 1790612337,
-    "titulo_es": "Un patrón natural capturado en luces danzantes",
-    "resumen": "El artículo describe la creación de un objeto físico interactivo inspirado en patrones naturales, específicamente la filotaxis. El proceso involucra la generación de puntos mediante el número áureo y espirales logarítmicas, la aplicación de teselación de Voronoi para definir celdas, y el diseño e impresión 3D de una matriz celular. Cada celda alberga un LED direccionable (neopixel). El hardware se controla con un microcontrolador STM32, utilizando un driver de neopixel programado con SPI. Se desarrolla un framework para escribir shaders en las LEDs, permitiendo patrones visuales dinámicos. Posteriormente, se integra un micrófono I2S (INMP441) y se utiliza la capacidad de procesamiento del STM32 (soporte de punto flotante y DSP ARM) junto con la biblioteca ARM CMSIS para realizar análisis de audio mediante la Transformada de Fourier. Esto permite que la matriz de LEDs reaccione dinámicamente al sonido, creando efectos visuales 'vivos'. Finalmente, se monta sobre una base de bambú para mejorar su presentación y estabilidad.",
+    "titulo_es": "Patrones de la Naturaleza Capturados en Luces Danzantes: Un Proyecto de Hardware y Software",
+    "resumen": "El artículo detalla la creación de un objeto físico interactivo que combina patrones naturales (filotaxis) con tecnología LED y audio-reactividad. Inicialmente, se explora la generación de puntos con el ratio áureo para simular patrones como el de los girasoles. Luego, se utiliza esta información geométrica para diseñar y fabricar un panel LED físico mediante modelado 3D (CadQuery, FreeCAD) y software de diseño asistido por computadora. La fabricación implicó la impresión 3D de celdas, la inserción de LEDs direccionables (Neopixel) y el uso de papel translúcido para la difusión de la luz. El control de los LEDs se implementó en un microcontrolador STM32, utilizando un driver Neopixel basado en SPI y un framework de \"shader\" para generar patrones visuales. La funcionalidad se amplió para incluir audio-reactividad, aprovechando las capacidades de procesamiento del STM32 (soporte de punto flotante, instrucciones DSP ARM) y un micrófono I2S (INMP441) para realizar análisis de audio mediante transformadas de Fourier y procesamiento de señales (biblioteca ARM CMSIS). Finalmente, el proyecto se montó sobre una base de madera (tabla de cortar de bambú) para mejorar su estabilidad y estética, integrando el hardware, el software de control y los patrones inspirados en la naturaleza.",
     "categoria": "Hardware"
   },
   {
-    "id": 49893653,
-    "url": "https://www.theregister.com/os-platforms/2026/09/29/google-ending-chromeos-support-two-years-early/5299674",
-    "score": 24,
-    "time": 1790691135,
-    "titulo_es": "El auge de Googlebook significa que los usuarios de ChromeOS obtienen ocho años de soporte, no una década",
-    "resumen": "Google ha anunciado que el soporte para sus dispositivos ChromeOS, incluidos los nuevos Googlebooks, se extenderá por ocho años en lugar de los diez prometidos anteriormente. Esta política afecta a los dispositivos comprados a partir de ahora. Los Googlebooks, que reemplazan a los Chromebooks, integran el nuevo sistema operativo Googlebook OS con IA Gemini. Aunque la migración a Googlebook OS se prevé para algunos modelos comerciales de Chromebook, los detalles y las rutas de migración aún no están disponibles. Además, se requerirá una nueva licencia para las herramientas de gestión de Googlebook OS, ya que las licencias de ChromeOS no serán compatibles. La compañía busca hacer menos atractiva la continuidad en el uso de los Chromebooks mediante esta reducción del ciclo de soporte.",
+    "id": 49893002,
+    "url": "https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/",
+    "score": 253,
+    "time": 1790688860,
+    "titulo_es": "Estadísticas de Discos Duros de Backblaze, Q2 2026: Inspeccionando la Carga de los Discos de Alta Capacidad",
+    "resumen": "Este artículo de Backblaze presenta los resultados de su informe de Q2 2026 sobre tasas de fallo de discos duros, analizando 354,415 unidades de almacenamiento. Se destaca el rendimiento de los discos Seagate, que tuvieron una tasa de fallo del 0% durante el trimestre. Sin embargo, se identifican tres modelos como 'outliers' (valores atípicos) con tasas de fallo anualizadas (AFR) superiores al 6.95%: un HGST de 8TB (AFR del 8.97%), un Seagate de 10TB (AFR del 7.77%) y un Seagate de 14TB (AFR del 7.24%). Se atribuyen estas altas tasas a la antigüedad de las unidades (HGST y un Seagate de 10TB superando los 7 y 8 años respectivamente) y a un recuento de unidades relativamente bajo para los modelos de mayor capacidad (10TB y 14TB de Seagate), lo que infla su AFR individualmente. El informe también menciona que un número significativo de unidades (10 de 31 modelos analizados) mostraron AFRs superiores al 3.0%, indicando una tendencia hacia tasas de fallo más altas en general, algo a vigilar. Se explica la metodología de exclusión de unidades (discos de arranque y unidades con criterios insuficientes) y se hace hincapié en la relevancia de seguir monitorizando discos de mayor capacidad a medida que se vuelven más cruciales para la infraestructura de almacenamiento.",
     "categoria": "Hardware"
   },
   {
-    "id": 49892120,
-    "url": "https://www.cbc.ca/lite/story/9.7361622",
-    "score": 57,
-    "time": 1790685230,
-    "titulo_es": "Las infecciones causaron 2.3 millones de nuevos casos de cáncer en todo el mundo en 2024",
-    "resumen": "El artículo informa que las infecciones causaron aproximadamente 2.3 millones de nuevos casos de cáncer a nivel mundial en 2024. Se destaca el Virus del Papiloma Humano (VPH) como un importante causante de cáncer, especialmente el cáncer de cuello uterino, y se mencionan los esfuerzos de vacunación y las pruebas de VPH. También se hace referencia a otros virus como el Epstein-Barr, asociado a la leucemia. La información se basa en estimaciones de investigadores y se enfoca en las implicaciones para la salud pública y la prevención de enfermedades oncológicas a través de intervenciones relacionadas con infecciones virales.",
-    "categoria": "Ciencia y Matematica"
+    "id": 49883913,
+    "url": "https://www.mattkeeter.com/blog/2026-08-23-wgpu-facet/",
+    "score": 68,
+    "time": 1790627288,
+    "titulo_es": "Asegurando la Correcta Disposición de Datos entre Rust y WGSL con `facet`",
+    "resumen": "El artículo aborda el desafío de compartir datos de configuración entre código Rust y shaders de cómputo WGSL (WebGPU Shading Language). Las diferencias sutiles en las reglas de disposición (layout) entre Rust y WGSL pueden llevar a errores críticos, como bucles infinitos en la GPU. Inicialmente, se exploró la verificación manual mediante `naga` para comparar la disposición de structs WGSL con las de Rust. Sin embargo, este enfoque es propenso a errores y difícil de mantener. La solución propuesta utiliza la biblioteca `facet` de Rust, que proporciona reflexión en tiempo de ejecución. Al derivar `#[derive(facet::Facet)]` en las estructuras de configuración de Rust, se puede generar un tipo asociado `SHAPE` que permite inspeccionar y verificar automáticamente la compatibilidad de la disposición con la definición WGSL correspondiente. El artículo detalla cómo implementar una función genérica de verificación que compara tamaños totales de objetos, offsets y tamaños de campos individuales, y también valida la ausencia de miembros WGSL que no estén en la contraparte Rust (excepto para arrays de tamaño dinámico en tiempo de ejecución). Esta aproximación automatizada y basada en pruebas garantiza la corrección de la transferencia de datos entre CPU y GPU, reduciendo la dependencia de dependencias externas y la sobrecarga de compilación.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49870376,
-    "url": "https://www.computerworld.com/article/1673071/booted-up-in-1993-this-server-still-runs-but-not-for-much-longer-2.html",
-    "score": 132,
-    "time": 1790540002,
-    "titulo_es": "Servidor Tolerante a Fallos Stratus de 24 Años Aún en Servicio",
-    "resumen": "El artículo narra la historia de un servidor Stratus Technologies tolerante a fallos, operativo desde 1993 en Great Lakes Works. Este servidor, que ejecutaba el sistema operativo propietario VOS de Stratus, ha mantenido una fiabilidad excepcional durante 24 años, con un tiempo de inactividad no planificado prácticamente nulo. A pesar de ser una pieza de hardware antiguo y de haber experimentado reemplazos de componentes menores, su diseño redundante y la gestión experta de Phil Hogan han permitido su longevidad. Si bien se consideró su actualización en varias ocasiones, la estabilidad y la interfaz simple (aunque basada en caracteres) fueron apreciadas por los usuarios. Recientemente adquirido por United States Steel Corp., se ha programado su retirada en abril, marcando el fin de una era para este sistema emblemático en el ámbito de la computación de misión crítica.",
-    "categoria": "Hardware"
+    "id": 49903862,
+    "url": "https://lfm.xiffy.nl/",
+    "score": 105,
+    "time": 1790737205,
+    "titulo_es": "Generador de Feeds RSS y JSON para Last.fm",
+    "resumen": "El artículo describe una herramienta que permite a los usuarios de Last.fm obtener feeds RSS personalizados para sus pistas recientes, pistas favoritas, pistas principales y artistas principales. Estos feeds se pueden generar para diferentes períodos de tiempo (7 días, 1 mes, 3 meses, 6 meses, 12 meses o general). Además, la herramienta admite la inclusión de imágenes grandes como enclosures en los feeds RSS y ofrece soporte para pistas recomendadas en formato RSS y JSON compatible con Soundixx. La funcionalidad principal se centra en la manipulación y presentación de datos a través de APIs y formatos de intercambio, un aspecto clave del desarrollo de software para la integración de servicios.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49890647,
-    "url": "https://github.com/EverMind-AI/Raven",
-    "score": 37,
-    "time": 1790675904,
-    "titulo_es": "Un Superficie, Todos los Agentes: Raven genera DAGs y orquesta múltiples agentes especializados para tareas complejas.",
-    "resumen": "Raven es un sistema de orquestación de agentes diseñado para la ejecución autónoma de tareas complejas. Su arquitectura modular permite la auto-mejora recursiva (RSI) mediante la propuesta, evaluación y adopción de cambios en sus propios mecanismos de planificación y actuación. Utiliza EverOS para mantener memoria y contexto entre sesiones. Incluye agentes especializados como Raven-Research (investigación), Raven-Code (desarrollo de software), Raven-Design (diseño visual) y Raven-Oncall (automatización de flujos de trabajo). Raven ha demostrado su capacidad completando proyectos integrales de forma autónoma, como el desarrollo de un videojuego, la mejora de modelos de IA mediante experimentos y la creación de un kit de lanzamiento de producto. Su arquitectura está pensada para la evolución del propio sistema y la creación de subagentes, con un enfoque en el rendimiento SOTA (State-Of-The-Art) en sus dominios.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49876052,
-    "url": "https://blog.christianperone.com/2026/09/the-systems-that-no-one-will-test/",
-    "score": 111,
-    "time": 1790592706,
-    "titulo_es": "Vulnerabilidad en Sistemas Federales y el Futuro de la IA en Ciberseguridad",
-    "resumen": "El autor relata un incidente de 2020 donde descubrió una vulnerabilidad crítica en un sistema federal brasileño, que exponía datos personales de millones de ciudadanos. A pesar de la gravedad, el incidente se resolvió de manera colaborativa. El artículo reflexiona sobre cómo los avances actuales en Inteligencia Artificial (IA), especialmente en el entrenamiento de modelos con bucles de auto-mejora y entornos de refuerzo, podrían facilitar la replicación y explotación de vulnerabilidades similares. Se plantea la preocupación de que muchos sistemas gubernamentales no reciban las pruebas de penetración necesarias (AI-pentesting) y cómo la IA podría ser utilizada por actores maliciosos para explotar fallos que no requieren una experiencia técnica excepcional, solo atención al detalle.",
+    "id": 49883970,
+    "url": "https://blog.faav.net/how-i-couldve-accessed-17-trillion-microsoft-records",
+    "score": 4,
+    "time": 1790627566,
+    "titulo_es": "Falla de Autenticación en Servicio Interno de Microsoft Expone Trillones de Filas de Datos",
+    "resumen": "Un joven investigador de seguridad, Faav, descubrió una vulnerabilidad crítica en un servicio interno de análisis de Microsoft llamado Titan. La falla residía en la falta de verificación de la firma de los tokens de inicio de sesión JWT, lo que permitía a un atacante autenticarse como administrador sin credenciales válidas. Al explotar un JWT sin firmar, Faav pudo interactuar con la API del servicio, que exponía acceso a aproximadamente 17.3 billones de filas de datos a través de múltiples conjuntos de datos de Microsoft. El atacante podría haber utilizado metadatos y muestras de tablas para comprender el alcance de los datos. El investigador utilizó su bot de IA, Antares, para automatizar parte del proceso de descubrimiento, identificando el endpoint susceptible que aceptaba consultas SQL directas y que carecía de la validación de firma adecuada en su autenticación. Microsoft ha sido notificado y ha abordado la vulnerabilidad.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 49891769,
-    "url": "https://jevstiller.pages.dev/posts/the-guarantee/",
-    "score": 10,
-    "time": 1790683507,
-    "titulo_es": "Jevstiller: Modelos Locales de Baja Latencia para Clasificación de Texto con Garantías de Concordancia",
-    "resumen": "El artículo describe Jevstiller, un sistema diseñado para reducir la latencia de las llamadas a modelos de IA para clasificación de texto. En lugar de depender únicamente de una API externa (Jev) que tarda ~300 ms por llamada, Jevstiller introduce un modelo local ligero (regresión logística multinomial entrenada sobre incrustaciones de un codificador de frases congelado) que puede responder en ~15 ms en CPU para casos en los que está seguro. La clave del sistema es el contrato: el modelo local garantiza devolver la misma etiqueta que Jev en un porcentaje predefinido de solicitudes (por ejemplo, 98%). Esto se logra no solo mediante un umbral de confianza, sino también mediante un puntuador de \"out-of-distribution\" (OOD) y una política de enrutamiento calibrada. El modelo local se entrena con los datos de Jev, se actualiza frecuentemente y se somete a pruebas en producción. El artículo también discute por qué los enfoques habituales de umbral de confianza fallan al garantizar esta concordancia, debido al ruido en las estimaciones de confianza con datos finitos, y presenta una metodología calibrada que cumple consistentemente el presupuesto de desacuerdo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49876467,
-    "url": "https://longcreek.me/blog/2021/chernarus-irl",
-    "score": 6,
-    "time": 1790595353,
-    "titulo_es": "Georreferenciación del mapa de Chernarus para uso en GPS",
-    "resumen": "Este artículo detalla el proceso para crear un archivo KMZ compatible con Garmin, georreferenciando el mapa del país ficticio Chernarus (del juego Arma II) sobre su contraparte del mundo real cerca de Ústí nad Labem, República Checa. El proceso implica descargar tiles de un tileserver (específicamente de iZurvive), unirlos usando ImageMagick para formar un mapa de alta resolución y luego utilizar QGIS y su herramienta Georeferencer para establecer puntos de control terrestres (GCPs) que alinean el mapa del juego con la ubicación real. Esto permite usar el mapa del juego como referencia en dispositivos GPS durante actividades al aire libre.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49866783,
-    "url": "https://enikofox.com/posts/software-rendered-occlusion-culling-in-block-game/",
-    "score": 64,
-    "time": 1790518061,
-    "titulo_es": "Implementación de un Sistema de Oclusión por Software para un Juego de Bloques",
-    "resumen": "El artículo detalla el desarrollo de una solución de oclusión por software para un juego de bloques (Block Game) con el objetivo de optimizar el rendimiento en hardware de gama baja, como la GPU integrada Radeon Vega 8. El autor describe un enfoque simplificado que evita el uso de técnicas avanzadas de GPU o búferes Z jerárquicos. La solución se basa en renderizar cubos en un búfer de profundidad a baja resolución (256x128) en la CPU y luego comparar otros cubos contra este búfer. Se implementa una estructura de 'mipmap' de sub-cubos dentro de cada chunk (16x16x16) para identificar eficientemente qué sub-cubos están ocultos. El sistema procesa primero el nivel más alto (nivel 4), marcando sub-cubos opacos con caras visibles como oclusores, y luego desciende a niveles inferiores. Este método logra una eliminación significativa de geometría (más del 50% de los chunks después del frustum culling, y hasta el 95% en interiores o bajo tierra), resultando en mejoras sustanciales de FPS en hardware modesto. El autor menciona que la solución se ejecuta en la CPU debido a las limitaciones de la biblioteca gráfica (FNA) que no permite lectura asíncrona del búfer de profundidad de la GPU sin provocar bloqueos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49863594,
-    "url": "https://countingfromzero.blog/2026/04/24/four-chi-26-papers-i-wish-i-wrote/",
-    "score": 30,
-    "time": 1790486617,
-    "titulo_es": "Escribir con IA puede reducir el sesgo de género en las evaluaciones de contratación",
-    "resumen": "Este artículo presenta un experimento a gran escala con el objetivo de investigar el impacto de las sugerencias de escritura basadas en IA en la reducción del sesgo de género durante las evaluaciones de currículums. Se compararon las evaluaciones de candidatos masculinos ('John') y femeninos ('Jennifer') cuando los participantes utilizaban una herramienta de escritura con sugerencias de LLM. Las sugerencias contraintuitivas de género para 'Jennifer' aumentaron su competencia percibida y sus ofertas salariales hasta la paridad con 'John', aunque también generaron un 'backlash' de género, haciéndola parecer menos simpática. Los participantes, en su mayoría, no detectaron la manipulación del sesgo de género, centrándose en la utilidad de la herramienta de autocompletado. El estudio explora las implicaciones éticas de usar IA para mitigar sesgos en procesos de contratación, comparándolo con enfoques como las audiciones a ciegas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49858158,
-    "url": "https://streaminglearningcenter.com/articles/optimizing-x264-settings-and-per-title-ladders.html",
-    "score": 19,
-    "time": 1790440603,
-    "titulo_es": "Optimización de codificación H.264 para reducir el ancho de banda y mejorar la calidad",
-    "resumen": "El artículo detalla un proceso de optimización de codificadores x264 y FFmpeg para H.264, enfocado en mejorar la calidad de video (medida por VMAF) y reducir el consumo de ancho de banda. Se exploran parámetros como el preset 'veryslow', GOP de 10 segundos, codificación de dos pasadas, tres frames de referencia y codificación por título ('per-title'). Los resultados indican un aumento de 0.66 puntos VMAF y una reducción del 33% en el ancho de banda (de 4.9 Mbps a 3.27 Mbps) a costa de triplicar el tiempo de codificación. Se justifica la inversión en optimización calculando que los ahorros de ancho de banda superan los costos de codificación a partir de 186 horas de visualización. Se discute la metodología de cálculo de métricas, utilizando una distribución de audiencia 'Top-Heavy' para reflejar de manera más realista el consumo de ancho de banda y calidad percibida, y se señala que más allá de un VMAF de 93, la mejora en calidad no es perceptible para el espectador, lo que puede llevar a desperdicio de recursos con codificaciones no optimizadas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49882781,
-    "url": "https://stateofutopia.com/experiments/microllmlab/",
-    "score": 265,
-    "time": 1790621933,
-    "titulo_es": "Inicialización del motor WebGPU y catálogo de modelos: Ejecuta, compara y obtén certificados de rendimiento de Small Language Models (SLMs) en el navegador con aceleración por hardware",
-    "resumen": "El artículo describe la inicialización de un motor WebGPU para ejecutar y comparar Small Language Models (SLMs) directamente en el navegador del usuario. Utiliza la aceleración de hardware de WebGPU para garantizar un rendimiento rápido, privado y sin costos de servidor. Se enfoca en modelos compactos (25M–360M) como una capa de borde eficiente, contrastándolos con modelos más grandes y costosos como GPT-4 o Claude. La evaluación se basa en pruebas objetivas (coincidencia de expresiones regulares o tokens exactos) y no en la calidad de la escritura. Se miden la velocidad (tokens/segundo) y la precisión (tasa de aprobación en pruebas objetivas), con resultados que permanecen en el dispositivo del usuario. Se ofrece la generación y descarga de certificados de rendimiento verificables que incluyen el hardware del dispositivo y las métricas de velocidad. El editor que evalúa el código se ejecuta en el mismo origen, y las comprobaciones se aplican al texto decodificado por el modelo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49884625,
-    "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
-    "score": 134,
-    "time": 1790630801,
-    "titulo_es": "Motor de inferencia de pipeline distribuido en múltiples ESP32S3 ejecutando modelo de lenguaje BitNet de 1.58 bits",
-    "resumen": "Este proyecto implementa un motor de inferencia de un modelo de lenguaje grande (LLM) de 0.5B parámetros, cuantizado a 1.58 bits (BitNet), distribuido a través de un clúster de 7 microcontroladores ESP32-S3. Un nodo actúa como maestro, encargándose del tokenizador y la capa de incrustación (embedding), mientras que los nodos restantes (nodos esclavos) ejecutan las capas de atención y las redes neuronales multicapa (MLP). La comunicación entre el maestro y los nodos se realiza mediante una interfaz SPI Daisy-Chain de alta velocidad. La inspiración y trabajos relacionados incluyen un clúster de 7 nodos ESP32-S3 ejecutando un LLM de 0.4B a través de cuantización ternaria BitNet de 1.58 bits sobre una cadena SPI.",
+    "id": 49902093,
+    "url": "https://www.bigmessowires.com/2026/09/29/floppy-emu-hardware-failure-analysis-results/",
+    "score": 28,
+    "time": 1790723426,
+    "titulo_es": "Análisis de Fallos de Hardware en Floppy Emus",
+    "resumen": "El artículo detalla un análisis exhaustivo de fallos de hardware en placas Floppy Emu, identificando causas y frecuencias. Las principales causas de fallo incluyen problemas con el cristal del reloj (26 placas sin reloj, 16 con comportamiento errático), fallos en el chip CPLD (causando emulación de disco o cortocircuitos), microcontroladores no programados y problemas de soldadura (puentes de soldadura o uniones insuficientes). Se describen los síntomas de cada fallo y las soluciones aplicadas, como el reemplazo de componentes y la reprogramación de los microcontroladores. El objetivo principal es mejorar el control de calidad y la fiabilidad del producto.",
     "categoria": "Hardware"
   },
   {
-    "id": 49893266,
-    "url": "https://www.noahpinion.blog/p/wheres-the-intelligence-explosion",
-    "score": 12,
-    "time": 1790689869,
-    "titulo_es": "El Debate sobre la Automejora Recursiva de la IA y la Probabilidad de un \"Fast Takeoff\"",
-    "resumen": "El artículo explora el concepto de Automejora Recursiva (RSI) en la Inteligencia Artificial (IA) y su potencial para desencadenar una \"despegue rápido\" (FOOM) hacia la superinteligencia artificial (ASI). El autor del artículo original, Ramez Naam, expresa escepticismo sobre la inminencia de un FOOM al estilo de la ciencia ficción, a pesar de ser un futurista reconocido. Se argumenta que, si bien la IA está mejorando rápidamente y superando las capacidades humanas en muchas áreas, el bucle de automejora actual necesitaría ser entre 5 y 10 veces más fuerte para sostener un crecimiento exponencial descontrolado. Se destacan las dificultades inherentes a la mejora autónoma en el mundo real, los rendimientos decrecientes observados en el progreso de la IA y la falta de evidencia de una aceleración significativa. A pesar del escepticismo sobre el FOOM, se reconoce que la IA del futuro cercano será extraordinariamente avanzada, independientemente de si se alcanza una singularidad tecnológica.",
+    "id": 49891203,
+    "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev",
+    "score": 171,
+    "time": 1790679985,
+    "titulo_es": "Jev AI: Más allá de un simple clasificador de texto",
+    "resumen": "El artículo explora el modelo Jev AI, un reciente fenómeno en comunidades técnicas, destacando su capacidad para realizar tareas de clasificación de texto de manera más rápida y económica que los modelos de lenguaje grandes (LLMs) como GPT, aunque no supere a clasificadores especializados en problemas muy estrechos. Se especula sobre su metodología, comparándola con enfoques históricos de clasificación de texto, desde modelos tradicionales como Naive Bayes y regresión logística con representaciones \"bag-of-words\" hasta redes neuronales y modelos basados en transformadores. El autor contextualiza Jev dentro de la evolución de los modelos de lenguaje para la toma de decisiones, enfatizando su fortaleza en la generalidad frente a modelos específicos, pero manteniendo su funcionalidad principal como clasificador de texto.",
     "categoria": "IA"
   },
   {
-    "id": 49883844,
-    "url": "https://github.com/firelex/jeff",
-    "score": 541,
-    "time": 1790627016,
-    "titulo_es": "Fine-tunes de Qwen3.5 y Gemma 4 para clasificación zero-shot: Modelos de decisión pequeños y rápidos",
-    "resumen": "El artículo describe 'Jeff', un sistema de toma de decisiones rápidas y calibradas basado en fine-tunes de modelos pequeños (Qwen3.5 y Gemma 4) para tareas de clasificación zero-shot. Estos modelos están diseñados para ser integrados fácilmente en código local, operando con un formato de solicitud simple donde se describe una situación y se listan las opciones. Jeff devuelve una probabilidad calibrada para cada opción en una sola pasada, sin generar texto ni requerir parsing. Las latencias son de aproximadamente 22 ms en una RTX PRO 6000 y 28 ms en un Apple M4 Max (MLX). La capacidad zero-shot permite que las opciones sean arbitrarias (colas de soporte, intenciones de usuario, moderación, comandos de voz, movimientos de juego) sin necesidad de que aparezcan en los datos de entrenamiento. Si la precisión zero-shot no es suficiente, se puede realizar un fine-tune rápido con datos propios para mejorar significativamente el rendimiento. Los modelos se entrenaron completamente en hardware local, utilizando modelos abiertos para generar datos sintéticos y evitando el uso de GPUs en la nube o datos de modelos cerrados en el entrenamiento. Jeff se basa en el formato de solicitud de Jev pero es un proyecto independiente. Se presentan modelos de diferentes tamaños (0.8B, 2B) y se comparan sus rendimientos en benchmarks y en juegos para probar su capacidad zero-shot, mostrando que, si bien igualan o superan a modelos grandes en clasificación y grounding, su razonamiento es limitado debido a su tamaño. Se ofrecen enlaces a los modelos en Hugging Face y guías de instalación. Se describen tres tipos de preguntas: choice, noul (sí/no) y score, y la capacidad de responder múltiples preguntas independientes en una sola solicitud.",
-    "categoria": "IA"
+    "id": 49895864,
+    "url": "https://hereticpleb.vercel.app/blog/needed-one-plus-one/",
+    "score": 133,
+    "time": 1790698706,
+    "titulo_es": "De un problema de estructuras de datos a un intérprete completo en C",
+    "resumen": "El artículo narra la evolución de la implementación de un evaluador para expresiones aritméticas representadas como árboles binarios en C. Inicialmente concebido para resolver un problema de estructuras de datos (evaluar '1 + 1 + 1' a 3 usando un árbol binario), el proyecto creció orgánicamente. Se abordó la necesidad de manejar diferentes operaciones (suma, resta, multiplicación, división) unificándolas bajo un tipo de expresión genérico, donde el evaluador solo necesita saber cómo aplicar una operación, no su significado intrínseco. La introducción de variables llevó a la implementación de una tabla hash en C, que a su vez requirió la creación de un gestor de memoria personalizado (un asignador tipo 'arena') debido a la ineficiencia de múltiples asignaciones pequeñas con `malloc`. Finalmente, se discute la representación de funciones como valores, almacenables junto con variables en un entorno (environment), y cómo esto plantea la necesidad de que las funciones definidas por el usuario también sean representables como estructuras de datos (AST) y no solo como punteros a funciones nativas de C.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49879702,
-    "url": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
-    "score": 279,
-    "time": 1790609723,
-    "titulo_es": "Reenrutamiento de transmisiones RTMP de PS5 para compartir pantalla",
-    "resumen": "El artículo describe una solución para compartir la pantalla de PS5 en plataformas no soportadas directamente por la consola, como Discord. La PS5 utiliza el protocolo RTMP para transmitir a servicios como Twitch y YouTube. El autor explotó esto interceptando las solicitudes DNS de la PS5 para redirigir el stream RTMP a un servidor en su Mac. Inicialmente, se intentó con ingest.twitch.tv, pero este punto de entrada usa RTMPS y requiere validación de certificados. Se recurrió a YouTube, que usa RTMP sin TLS, pero la transmisión se detenía por comprobaciones de estado. Finalmente, se descubrió un punto final RTMP directo en Twitch (contribute.live-video.net) que permitía la transmisión sin problemas de certificados ni interrupciones. La solución implica configurar un servidor DNS local (dnsmasq) en la Mac para que resuelva los dominios de ingestión de Twitch a la IP de la Mac, y luego configurar el router para que la PS5 use este servidor DNS. Un servidor nginx-rtmp en la Mac recibe el stream RTMP y lo procesa. El artículo detalla los desafíos técnicos, como la validación de certificados TLS y las comprobaciones de estado de la transmisión, y cómo se superaron mediante la ingeniería inversa del protocolo de transmisión de la PS5.",
-    "categoria": "Hardware"
+    "id": 49894351,
+    "url": "https://frostyard.github.io/nsl/",
+    "score": 146,
+    "time": 1790693496,
+    "titulo_es": "Subsistema NSpawn para Linux",
+    "resumen": "NSpawn Subsystem (nsl) es una herramienta que permite a los desarrolladores instalar y ejecutar entornos Linux (Debian, Fedora, etc.) como contenedores systemd-nspawn dentro de una VM compartida en su máquina host. Cada máquina mantiene su estado y paquetes entre sesiones, y puede acceder a los archivos del host de forma segura. nsl facilita la ejecución de comandos y la apertura de shells dentro de estas máquinas virtuales, integrándose con el sistema de archivos del host y permitiendo el acceso a puertos y ventanas de aplicaciones de forma transparente. Soporta varias distribuciones Linux precompiladas y ofrece un modo aislado para mayor seguridad. Está diseñado para ejecutarse como el usuario del host, requiriendo que las dependencias del host ya estén instaladas.",
+    "categoria": "Desarrollo de Software"
   }
 ]
