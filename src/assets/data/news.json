@@ -1,236 +1,245 @@
 [
   {
-    "id": 49926069,
-    "url": "https://earendil.com/posts/pi-1-0/",
-    "score": 1542,
-    "time": 1790883185,
-    "titulo_es": "Pi 1.0",
-    "resumen": "Earendil anuncia el lanzamiento de Pi 1.0, un entorno (agent harness) minimalista, robusto y extensible diseñado para construir y ejecutar agentes de inteligencia artificial y aplicaciones agénticas. Diseñado como un asistente de codificación diario compatible con modelos de los principales proveedores, Pi prioriza la estabilidad y la simplicidad frente a la complejidad innecesaria. Además, se presenta de forma experimental 'Pi Durable', un paquete complementario enfocado en soportar flujos de trabajo agénticos de larga duración e interactividad fuera de la terminal, ambos bajo licencia MIT.",
-    "categoria": "IA"
+    "id": 49928361,
+    "url": "https://github.com/andreasfertig/cppinsights",
+    "score": 22,
+    "time": 1790898816,
+    "titulo_es": "C++ Insights: Visualizando el trabajo interno del compilador",
+    "resumen": "C++ Insights es una herramienta basada en Clang que realiza transformaciones de código fuente a código fuente para visibilizar las operaciones implícitas que realiza el compilador. Permite a los desarrolladores y educadores observar la desazucaración sintáctica de características modernas como lambdas, bucles for basados en rangos, deducción de tipos con auto y structured bindings, generando código C++ legible y compilable en lugar de depender únicamente de volcados del AST o código ensamblador.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49928121,
-    "url": "https://lwn.net/Articles/1097401/",
-    "score": 446,
-    "time": 1790896244,
-    "titulo_es": "Aviso de seguridad de Debian DSA-6528-1: Múltiples vulnerabilidades en el kernel Linux",
-    "resumen": "Aviso de seguridad oficial de Debian (DSA-6528-1) emitido por Salvatore Bonaccorso que recopila y aborda una extensa lista de vulnerabilidades críticas y fallos de seguridad (CVEs) identificados en el paquete del kernel Linux, instando a la actualización del sistema para mitigar posibles vectores de explotación.",
+    "id": 49927754,
+    "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
+    "score": 690,
+    "time": 1790893387,
+    "titulo_es": "Un tribunal bloquea la ley anti-VPN de Utah: una victoria para la privacidad y la realidad técnica",
+    "resumen": "Un juez federal ha emitido una orden cautelar preliminar que frena la implementación de la ley SB 73 de Utah, la cual exigía a las plataformas web para adultos identificar la ubicación física exacta de los usuarios o bloquear herramientas de preservación de privacidad como las VPN para forzar la verificación de edad. El tribunal reconoció la imposibilidad técnica de lograr una geolocalización perfecta frente al tráfico ofuscado por VPNs y destacó que imponer estas exigencias bajo responsabilidad estricta desborda la jurisdicción estatal, sentando una carga desproporcionada que vulnera la privacidad y seguridad de los usuarios de internet a nivel global.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 49923692,
-    "url": "https://blog.cloudflare.com/clef-decision-models/",
-    "score": 566,
-    "time": 1790871537,
-    "titulo_es": "Presentación de Clef y Clef-flash: modelos de decisión de Cloudflare en Workers AI",
-    "resumen": "Cloudflare anuncia el lanzamiento de Clef y Clef-flash, dos modelos de decisión diseñados para generar salidas estructuradas, probabilísticas y deterministas con baja latencia para flujos de trabajo agénticos. A diferencia de los LLM tradicionales, estos modelos actúan como clasificadores versátiles sin necesidad de reentrenamiento constante, permitiendo a los agentes automatizar la toma de decisiones programáticas de forma eficiente. Clef destaca por incluir un codificador de visión para clasificar contenido visual, una ventana de contexto de 64k tokens y compatibilidad con la API de Jev, publicándose como código abierto bajo licencia Apache 2.0 junto con herramientas de ajuste fino mediante aprendizaje por refuerzo.",
+    "id": 49937276,
+    "url": "https://developer.apple.com/pass-designer/",
+    "score": 471,
+    "time": 1790968016,
+    "titulo_es": "Pass Designer: Herramienta de Apple para Diseñar y Validar Pases de Wallet",
+    "resumen": "Apple presenta Pass Designer, una herramienta para macOS orientada a desarrolladores que facilita la creación, edición y validación en tiempo real de pases para Apple Wallet en iOS y watchOS. Permite personalizar campos estándar, colores y recursos gráficos con el mismo motor de renderizado del sistema operativo. Incluye soporte para etiquetas semánticas que integran datos estructurados con Siri, Calendario y Mapas, además de realizar validaciones de esquemas y generar automáticamente estructuras retrocompatibles.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49942706,
+    "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+    "score": 32,
+    "time": 1791020164,
+    "titulo_es": "Presentando Kolibri: El nuevo modelo Mixture-of-Experts soberano de Aleph Alpha",
+    "resumen": "Aleph Alpha ha anunciado Kolibri, un modelo de lenguaje con arquitectura Mixture-of-Experts (MoE) de 78 mil millones de parámetros totales y 3 mil millones activos, optimizado para inglés y alemán y con una ventana de contexto de hasta 1 millón de tokens. Publicado bajo la licencia Apache 2.0 con pesos abiertos en Hugging Face, Kolibri está diseñado para entornos soberanos y de misión crítica en sectores regulados (como manufactura, aeroespacial y sector público alemán), optimizando costes de despliegue e inferencia on-premise sin comprometer rendimiento en tareas de razonamiento, matemáticas y código.",
     "categoria": "IA"
   },
   {
-    "id": 49925969,
-    "url": "https://earendil.com/posts/pi-durable/",
-    "score": 447,
-    "time": 1790882648,
-    "titulo_es": "Pi Durable: Un nuevo framework para agentes de IA duraderos",
-    "resumen": "El artículo anuncia el lanzamiento de Pi 1.0 y presenta Pi Durable, un nuevo paquete experimental diseñado como un framework para construir aplicaciones agenticas duraderas y maleables. Pi Durable permite que los agentes se ejecuten en cualquier lugar con un runtime de JavaScript, interactúen a través de conversaciones de larga duración, sobrevivan a fallos y sean controlados por múltiples humanos. Funciona como un \"harness\" que incluye almacenamiento (con backends de memoria, SQLite, JSONL) y la maquinaria para ejecutar conversaciones con modelos de lenguaje grandes (LLMs). Las conversaciones son interacciones registradas con un agente (LLM + configuración + herramientas), y las herramientas se ejecutan en entornos como VMs o sandboxes. El sistema maneja tareas (llamadas a modelos, ejecución de herramientas) y se basa en los principios de minimalismo y maleabilidad de Pi. El código es relativamente compacto (aproximadamente 15,000 líneas sin tests). El enfoque de Pi Durable es proporcionar una infraestructura robusta y flexible para el desarrollo de agentes, compartiendo principios y código con el agente de codificación Pi, y permitiendo la exploración de nuevos diseños sin afectar al agente principal.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49924179,
-    "url": "https://blog.gitbutler.com/git-3-sha-256",
-    "score": 475,
-    "time": 1790873823,
-    "titulo_es": "El inminente cambio de Git 3.0 a SHA-256: Un desastre global evitable",
-    "resumen": "El artículo critica el cambio planeado en Git 3.0 para adoptar SHA-256 como algoritmo de hash de contenido predeterminado, reemplazando a SHA-1. El autor argumenta que este cambio es costoso, poco beneficioso y provocará problemas innecesarios. Git funciona como una base de datos direccionable por contenido, donde el hash de los contenidos de un archivo se usa como clave. SHA-1, utilizado durante 20 años, es rápido y, en la práctica, la posibilidad de colisiones accidentales es prácticamente nula (estadísticamente, se necesitarían septillones de archivos). Sin embargo, SHA-1 se considera criptográficamente \"roto\" debido a ataques de colisión teóricos y demostrados (SHAttered, 2020), aunque no se considera fácilmente explotable en la práctica. La transición a SHA-256, un algoritmo más robusto, se presenta como una respuesta a esta debilidad. El autor enfatiza que el término \"roto\" en criptografía significa que las colisiones son teóricamente fabricables con suficientes recursos computacionales (GPU), lo que podría permitir ataques donde un atacante reemplaza contenido malicioso con un hash idéntico. A pesar de las preocupaciones teóricas sobre SHA-1, el autor considera que el beneficio de cambiar a SHA-256 es mínimo en comparación con el costo y la complejidad de la transición global, calificándolo como un \"desastre global\" evitable y un \"tren fuera de control\".",
+    "id": 49941091,
+    "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+    "score": 118,
+    "time": 1790997305,
+    "titulo_es": "Lanzamiento de Cloudflare OHTTP Gateway: Privacidad integrada para aplicaciones mediante Oblivious HTTP",
+    "resumen": "Cloudflare anuncia la fase beta de Cloudflare OHTTP Gateway, una solución basada en el estándar IETF Oblivious HTTP (OHTTP) diseñada para que los backends reciban peticiones sin exponer la dirección IP ni la huella TLS de los usuarios. El protocolo OHTTP divide la confianza en dos saltos independientes: un 'relay' que enruta peticiones cifradas ocultando al cliente y un 'gateway' que descapsula el tráfico criptográfico para entregarlo al servidor como HTTP estándar. Implementado sobre la red Anycast global de Cloudflare, este servicio optimiza la sobrecarga de latencia asociada al cifrado y al proxy de múltiples saltos, facilitando arquitecturas seguras y de privacidad por defecto.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 49921798,
-    "url": "https://comonad.com/reader/2026/turbo-haskell/",
-    "score": 158,
-    "time": 1790863105,
-    "titulo_es": "THC: Un Compilador Haskell Turbo para la JVM con Soporte JIT y AOT",
-    "resumen": "El artículo describe THC, un compilador Haskell que implementa las prim-ops de GHC y proporciona un JIT para GHC Core que se ejecuta en la JVM utilizando Truffle y GraalVM. THC toma el control después de la optimización de GHC Core, compilando y ejecutando el código a través de su propio runtime sobre Truffle/GraalVM. Soporta características avanzadas como Template Haskell y Linear Haskell. Permite tanto compilación Just-In-Time (JIT) como Ahead-Of-Time (AOT) con Native Image para generar ejecutables. THC es capaz de compilar programas como pandoc, happy, alex e incluso el propio GHC. Resuelve paquetes usando Cabal y soporta estructuras complejas como Backpack. Ofrece FFI políglota a Python, Ruby, R y JavaScript, permitiendo la integración de bibliotecas externas con conversiones eficientes de texto. Las partes C/C++ se ejecutan a través de FFI a Sulong (LLVM en la JVM). Internamente, THC soporta backends de bytecode y AST para la evaluación en Truffle, con modos single-threaded y multi-threaded. También soporta bytecode GHC. Maneja excepciones asíncronas y soporta threading Java y Project Loom con green threading estilo GHC. Utiliza SIMD y permite la selección del ancho de \"especie\" SIMD en tiempo de ejecución. THC transforma tail calls calientes en bucles mediante un mecanismo de transformación de código en lugar de trampolining, utilizando un filtro Bloom para detectar llamadas recursivas y optimizando los bucles con Graal.",
+    "id": 49942818,
+    "url": "https://github.blog/changelog/2026-10-01-new-dashboard-experience-now-the-default/",
+    "score": 50,
+    "time": 1791021541,
+    "titulo_es": "La nueva experiencia del panel de control ya es la vista predeterminada",
+    "resumen": "GitHub ha implementado su panel de control rediseñado como la vista predeterminada para todos los usuarios tras su fase de prueba. La nueva interfaz busca optimizar el flujo de trabajo de desarrollo facilitando el acceso y la gestión de tareas prioritarias, permitiendo además revertir temporalmente a la interfaz clásica desde las opciones de configuración.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 49920160,
-    "url": "https://github.com/streetcomplete/StreetComplete/issues/5421",
-    "score": 594,
-    "time": 1790852397,
-    "titulo_es": "Port de StreetComplete a iOS usando Kotlin Multiplatform y Compose Multiplatform",
-    "resumen": "Este artículo describe el esfuerzo de desarrollo para portar la aplicación StreetComplete a iOS utilizando Kotlin Multiplatform (KMP) y Compose Multiplatform. El enfoque principal es compartir la lógica de negocio escrita en Kotlin y la interfaz de usuario desarrollada con Compose Multiplatform, minimizando el código específico de la plataforma. La migración implica separar el código específico de la plataforma de la lógica de la aplicación, reemplazar dependencias de Android/Java por KMP y migrar gradualmente la UI de XML/Jetpack Compose a Compose Multiplatform. La estrategia busca mantener una única base de código para facilitar el mantenimiento futuro. Se estima que el proyecto requerirá aproximadamente un año de trabajo humano, con la migración actualmente al 50% de completitud. Se invita a la comunidad a contribuir a través de la adopción de tareas del tablero del proyecto, familiarizándose con las tecnologías involucradas (Jetpack Compose/Compose Multiplatform), patrocinando el desarrollo o ayudando con el mantenimiento y triaje de incidencias.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49926628,
-    "url": "https://automatictransmission.khoury.northeastern.edu/index.html",
-    "score": 230,
-    "time": 1790886207,
-    "titulo_es": "Estudio de Medición a Gran Escala del Ecosistema de Vehículos Conectados",
-    "resumen": "Este artículo presenta el primer estudio de medición a gran escala del ecosistema de vehículos conectados, analizando las implicaciones de privacidad de más de 21 modelos de vehículos recientes y 30 aplicaciones móviles complementarias. Los investigadores utilizaron técnicas de interceptación de tráfico (Wi-Fi y emulación de bloqueo celular) para monitorizar los flujos de datos entre los vehículos, sus aplicaciones asociadas y servidores de terceros. Se descubrió que tanto los vehículos como las aplicaciones comparten datos privados con fabricantes y terceros, a menudo sin el conocimiento o control del consumidor. El estudio destaca la falta de transparencia y el riesgo de que los datos de los consumidores sean compartidos o vendidos a partes no reveladas. Los hallazgos subrayan la necesidad de una supervisión continua del ecosistema de vehículos conectados.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 49923466,
-    "url": "https://turbopuffer.com/blog/rip-vector-database",
-    "score": 362,
-    "time": 1790870516,
-    "titulo_es": "Turbopuffer v3: Nueva Arquitectura de Almacenamiento para Búsqueda Avanzada",
-    "resumen": "El artículo detalla la evolución y la próxima re-arquitectura del almacenamiento de Turbopuffer, pasando de una arquitectura centrada en el índice ANN (Approximate Nearest Neighbor) a un nuevo índice primario. Inicialmente, Turbopuffer v1 se especializó en búsquedas vectoriales baratas y rápidas utilizando almacenamiento de objetos con cachés de NVMe SSD/memoria, con documentos compuestos por ID y vector, organizados en un índice jerárquico de clústeres (SPFresh). Turbopuffer v2 introdujo búsquedas de texto y regex, junto con indexación de atributos mediante índices invertidos y la inclusión de atributos de documentos. Sin embargo, la arquitectura basada en ANN como índice primario ha limitado el rendimiento en operaciones no vectoriales como GROUP BY y agregaciones. La versión 3 (v3) cambia este paradigma, haciendo que el índice ANN sea un índice secundario más, para permitir optimizaciones significativas en todos los tipos de búsqueda (texto, regex, vectorial) y sentar las bases para la ejecución rápida de consultas SQL complejas dentro de Turbopuffer. Este cambio busca mejorar el rendimiento general y la flexibilidad de la base de datos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49922674,
-    "url": "https://www.rtl-sdr.com/various-projects-independently-find-hidden-sdr-capabilities-in-esp32-microcontrollers/",
-    "score": 260,
-    "time": 1790867262,
-    "titulo_es": "Descubrimiento de funcionalidades SDR no documentadas en ESP32 y sus aplicaciones",
-    "resumen": "El artículo detalla el descubrimiento de una característica no documentada en varios microcontroladores ESP32 que permite capturar muestras baseband IQ crudas, transformándolos en SDRs (Receptores de Software Definido) de bajo costo. Esto abre la puerta a análisis de espectro en tiempo real y localización de señales WiFi y otros en las bandas de 2.2–2.7 GHz y 4.8–6.0 GHz (ESP32-C5). Se mencionan proyectos como ESPARGOS, que ahora permite la localización de dirección de señales arbitrarias en la banda de 2.4 GHz con captura de muestras IQ coherentes en fase. Otro proyecto, utilizando un ESP32-S3 con un FPGA, logra transmitir datos IQ continuamente a un PC, habilitando la demodulación y decodificación completa, posicionándose como una alternativa de SDR generalista. Adicionalmente, un proyecto basado en ESP32-C5 utiliza esta capacidad para la recepción y demodulación de video FPV en la banda de 5.8 GHz. Se destaca la resolución de problemas de ruido de fase en la sincronización entre ESP32 y FPGA. La capacidad de obtener datos IQ de un chipset común como el ESP32 es un avance significativo para la radio definida por software.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49927212,
-    "url": "https://www.cssbed.com",
-    "score": 138,
-    "time": 1790889692,
-    "titulo_es": "Temas CSS sin clase para desarrollo web",
-    "resumen": "El artículo describe una colección de temas CSS minimalistas diseñados para ser puntos de partida en el desarrollo web. Se enfoca en la simplicidad y la adaptabilidad móvil, requiriendo la adición de la etiqueta viewport responsiva para un funcionamiento óptimo. Se mencionan elementos de demostración como reglas horizontales, imágenes, botones y tablas, junto con texto de ejemplo (Lorem ipsum) y explicaciones básicas sobre HTML y CSS. Se alienta a los usuarios a contribuir con errores o temas nuevos a través de su repositorio en GitHub.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 49921923,
-    "url": "https://blog.cloudflare.com/cloudflare-k2-streams/",
-    "score": 269,
-    "time": 1790863750,
-    "titulo_es": "Cloudflare K2: Un Sistema de Streaming de Eventos Duradero en el Edge",
-    "resumen": "El artículo presenta Cloudflare K2, un nuevo servicio beta en la plataforma de desarrolladores diseñado para resolver el desafío de desacoplar productores y consumidores en arquitecturas RPC tradicionales. K2 actúa como un buffer de eventos duradero en el edge, almacenando eventos en un log ordenado sobre R2 object storage. Esto permite a los consumidores leer datos a su propio ritmo, independientemente de los productores, y previene la pérdida de datos durante periodos de inactividad del consumidor gracias a la durabilidad y retención a largo plazo. La arquitectura de K2 se basa en la infraestructura global de Cloudflare, aprovechando R2 para simplificar la capa de aplicación, separar cómputo y almacenamiento, y escalar masivamente. La implementación de un log sobre object storage se logra acumulando escrituras en memoria en un servicio de edge y luego escribiendo segmentos de archivos, utilizando las operaciones atómicas de R2 para asegurar ordenación y offsets incrementales sin necesidad de coordinación externa. Si bien ofrece alta durabilidad y escalabilidad, la latencia de producción se menciona como una desventaja.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49926773,
-    "url": "https://github.com/Vibra-Ingenn/Janus",
-    "score": 86,
-    "time": 1790887007,
-    "titulo_es": "Janus: Ejecución de Modelos GGUF con API Compatible con OpenAI en Go",
-    "resumen": "Janus es una aplicación de software desarrollada en Go que permite ejecutar modelos en formato .gguf localmente en máquinas con GPU o CPU. Proporciona una API compatible con OpenAI, eliminando la necesidad de dependencias como Python, Docker u Ollama. Los usuarios pueden interactuar con Janus a través de la línea de comandos (curl, scripts) o integrarlo con clientes existentes de OpenAI. El artículo detalla los requisitos de disco, el proceso de descarga y compilación de Janus (incluyendo la obtención de Vulkan DLLs para llama.cpp) y la configuración mediante un archivo .env. Se menciona la necesidad de `libllama.so` en Linux y se especifica la URL base de la API local. Janus actúa como un enrutador de API para modelos de IA y utiliza un ejecutor de modelos Vulkan.",
+    "id": 49936575,
+    "url": "https://dwarfstar.sh/",
+    "score": 280,
+    "time": 1790964076,
+    "titulo_es": "DwarfStar 4: Motor de inferencia local para modelos de frontera",
+    "resumen": "DwarfStar 4 (ds4) es un motor de inferencia especializado desarrollado en C para ejecutar modelos de frontera (como DeepSeek V4, GLM 5.x y Qwen3.8) de forma local en máquinas de alta memoria con soporte para Metal (Mac), CUDA y ROCm. Destaca por emplear cuantización asimétrica en modelos de tipo Mixture-of-Experts (MoE) para comprimir expertos enrutados sin degradar rutas críticas, persistencia de caché de prefijos en SSD mediante hash de prompts y una arquitectura unificada que incluye CLI, servidor de APIs compatibles con OpenAI/Anthropic y un agente nativo para tareas de desarrollo.",
     "categoria": "IA"
   },
   {
-    "id": 49928152,
-    "url": "https://www.essex.ac.uk/news/2026/09/30/butterflies-use-optical-illusions-to-dodge-predators",
-    "score": 73,
-    "time": 1790896524,
-    "titulo_es": "Ilusiones visuales en las alas de las mariposas para evadir depredadores",
-    "resumen": "Investigación publicada en Nature revela que los patrones y el movimiento de las alas de las mariposas crean ilusiones visuales que engañan a los depredadores, como las aves. Estos patrones interfieren con el sistema visual del depredador, alterando la percepción de velocidad y dirección, lo que provoca ataques fallidos. El mecanismo se asemeja a la ilusión del \"barber-pole\", donde las rayas parecen moverse en una dirección diferente a la real debido a la deformación de las alas durante el vuelo. Estudios con cámaras de alta velocidad, análisis de patrones en 400 especies de mariposas, experimentos con voluntarios y simulaciones evolutivas de patrones de alas sugieren que esta adaptación visual es una fuerza evolutiva importante en la supervivencia de las mariposas.",
+    "id": 49932509,
+    "url": "https://bencology.bearblog.dev/mapping-individual-and-collective-worm-movements/",
+    "score": 13,
+    "time": 1790942406,
+    "titulo_es": "La próxima frontera en la investigación de lombrices: Mapeo y visualización in situ",
+    "resumen": "El artículo analiza el vacío existente en el estudio de la dinámica y desplazamiento de las lombrices de tierra bajo el suelo a escala de campo. Tras revisar estudios históricos que medían rastros superficiales manualmente, el autor plantea la necesidad de desarrollar nuevas tecnologías de detección in situ y fenómica tridimensional, evaluando la viabilidad y limitaciones de métodos como el radar de penetración terrestre (GPR), microondas o sondas físicas en el suelo.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 49922437,
-    "url": "https://arxiv.org/abs/2609.37725",
-    "score": 162,
-    "time": 1790866293,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades en arXiv",
-    "resumen": "arXivLabs es un marco de trabajo diseñado para facilitar la colaboración en el desarrollo y la implementación de nuevas funcionalidades directamente en el sitio web de arXiv. Este programa promueve los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, y solo colabora con individuos u organizaciones que demuestran adhesión a estos principios. Se alienta a los interesados en mejorar la experiencia de la comunidad de arXiv a explorar las oportunidades que ofrece arXivLabs.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49926512,
-    "url": "https://blog.arxiv.org/2026/10/01/updated-rate-limit-policy/",
-    "score": 138,
-    "time": 1790885535,
-    "titulo_es": "El Límite de Tasa de arXiv se Actualiza Ante el Aumento de Envíos Impulsado por la IA",
-    "resumen": "El artículo describe cómo arXiv está implementando una nueva política de límite de tasa de envíos (dos por mes, tres activos a la vez) a partir del 1 de octubre de 2026. Este cambio responde a un aumento masivo en el número de envíos, que se ha duplicado en los últimos dos años, llegando a 40,363 en septiembre de 2026. Este incremento se atribuye al uso cada vez mayor y más accesible de herramientas de Inteligencia Artificial (IA) por parte de los autores, lo que facilita la producción de un gran volumen de trabajos de baja calidad, como artículos de alcance estrecho, 'salami slicing' (fragmentación de un solo trabajo) y textos densos generados por IA. Estos envíos de baja calidad sobrecargan a los moderadores voluntarios de arXiv, retrasando la revisión de trabajos de alta calidad. La nueva política busca distribuir equitativamente el tiempo de los moderadores y proteger la integridad del repositorio mientras se desarrollan mejores herramientas y procedimientos para la moderación y se define una nueva práctica para la gestión de envíos asistidos por IA. Se enfatiza la importancia de que las contribuciones sigan siendo rigurosas, de interés científico y cumplan con los estándares académicos.",
+    "id": 49925974,
+    "url": "https://bfl.ai/models/flux-3-image",
+    "score": 373,
+    "time": 1790882669,
+    "titulo_es": "Controla cada píxel",
+    "resumen": "La solicitud para generar una imagen se basa en un lienzo de cuadrícula de 0 a 1000 en ambos ejes. La imagen se genera colocando elementos (controlados por píxeles) exactamente donde se deseen, utilizando cuadros delimitadores y una indicación de escena. El usuario debe elegir una relación de aspecto para la imagen.",
     "categoria": "IA"
   },
   {
-    "id": 49920896,
-    "url": "https://nnethercote.github.io/2026/09/30/how-to-speed-up-the-rust-compiler-in-september-2026.html",
-    "score": 264,
-    "time": 1790858678,
-    "titulo_es": "Avances en el rendimiento del compilador Rust: un mar de verde",
-    "resumen": "El artículo detalla las mejoras significativas en el rendimiento del compilador Rust durante el período de dos meses, del 29 de julio al 28 de septiembre de 2026. Se observó una reducción promedio del tiempo de ejecución del 4.57%, con la mayoría de las 629 mediciones de benchmark mostrando mejoras. Los avances clave incluyen la habilitación de PGO para Clippy (mejoras de hasta el 18%), la actualización a LLVM 23 (reducción promedio del 1.2%), y la introducción de los nuevos componentes Polonius Alpha (nuevo borrow checker) y Penelope Hammertime (nuevo trait solver). Aunque estos nuevos componentes introdujeron regresiones en casos minoritarios, estas fueron superadas por mejoras generales. Se destacan contribuciones específicas, como las optimizaciones de Noah Lev en rustdoc, los trabajos de Jack Huey para mitigar regresiones de Polonius Alpha, y las optimizaciones de xmakro en la gestión de impl, la carga de datos de compilación incremental y el manejo de obligaciones, así como el uso de despacho estático en lugar de dinámico. El artículo concluye señalando que, a pesar del trabajo continuo para abordar las regresiones restantes, el progreso general es positivo y se manifiesta en un \"mar de verde\" en los resultados de los benchmarks.",
-    "categoria": "Desarrollo de Software"
+    "id": 49933869,
+    "url": "https://yuka.dev/blog-2026-10-02-linux-m4.html",
+    "score": 244,
+    "time": 1790950932,
+    "titulo_es": "Primeros pasos del arranque de Linux en el Mac mini M4 de Apple Silicon",
+    "resumen": "El artículo detalla el proceso inicial de arranque de Linux en un Mac mini M4, destacando los desafíos introducidos por el SPTM (Secure Page Table Monitor) en esta generación de Apple Silicon. Inicialmente, se basó en modificar el hypervisor m1n1 para sortear bloqueos de inicialización de hardware como GXF y RVBAR. Posteriormente, ante la falta de salida de depuración del kernel, se recurrió a una técnica de 'println-debugging' para aislar el punto de fallo. Se identificó que el problema residía en la inicialización de la MMU (Memory Management Unit) del kernel de Linux, que al habilitar el acceso a direcciones virtuales sin las asignaciones de espacio MMIO correctas, impedía la comunicación a través de la consola serial. La solución implicó modificar las tablas de paginación iniciales para establecer un mapeo 1:1 del espacio MMIO, permitiendo así la salida de depuración y avanzando en el proceso de arranque.",
+    "categoria": "Distribuciones Linux"
   },
   {
-    "id": 49913571,
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-    "score": 1672,
-    "time": 1790798677,
-    "titulo_es": "Gemini 4 Argon: Rendimiento Frontera en Ingeniería de Software, Trabajo de Conocimiento Empresarial y Ciberseguridad",
-    "resumen": "El artículo anuncia el lanzamiento de Gemini 4 Argon, un nuevo modelo de IA de vanguardia desarrollado por Google DeepMind. Este modelo está diseñado para un razonamiento profundo en flujos de trabajo complejos y de largo alcance, ofreciendo un rendimiento de vanguardia en ingeniería de software (superando el estado del arte en DeepSWE v1.1 con un 77.9%), trabajo de conocimiento empresarial (como finanzas y legal, liderando el Vals Index y el Harvey's Legal Agent Benchmark) y ciberseguridad (capaz de encontrar, validar y parchear vulnerabilidades de software). Gemini 4 Argon amplía significativamente el límite de tokens de salida a 1 millón, permitiendo un razonamiento más profundo en tareas multietapa. El modelo ya está impulsando flujos de trabajo internos en Google y se está lanzando gradualmente a través de programas como Fairwind y se integrará en iniciativas de ciberseguridad como Scan for Good de Wiz. Se espera su disponibilidad para desarrolladores, empresas y consumidores pronto, con un precio introductorio de $2 por millón de tokens de entrada y $10 por millón de tokens de salida.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49919910,
-    "url": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
-    "score": 186,
-    "time": 1790850096,
-    "titulo_es": "Synopsys y OpenAI Anuncian Asociación Estratégica para Revolucionar el Diseño de Semiconductores con IA",
-    "resumen": "Synopsys y OpenAI han formado una asociación estratégica multianual para revolucionar el diseño de semiconductores mediante la integración de las capacidades avanzadas de IA de OpenAI con las herramientas EDA (Electronic Design Automation) y las capacidades de IA agentica de Synopsys. El objetivo es desarrollar GPT-Synopsys, un modelo especializado optimizado para las herramientas EDA de Synopsys, capaz de ejecutar flujos de trabajo de diseño de semiconductores. Este modelo actuará como un experto en el uso de las herramientas EDA, interpretando resultados y optimizando iterativamente los diseños para mejorar la potencia, el rendimiento y el área (PPA). La colaboración busca acelerar drásticamente el proceso de diseño de chips, permitiendo a los ingenieros explorar más alternativas de diseño y entregar diseños más sofisticados y complejos de manera más rápida, manteniendo la fiabilidad y la confianza necesarias para la fabricación. GPT-Synopsys se integrará con Synopsys.ai y la plataforma Synopsys Autopilot, garantizando la seguridad y la privacidad de los datos del cliente, sin que estos se utilicen para entrenar el modelo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49906100,
-    "url": "https://github.com/maanHimself/OpenDLSS-NR",
-    "score": 264,
-    "time": 1790757801,
-    "titulo_es": "Reimplementación en Vulkan de la red de renderizado neural DLSS 5 de NVIDIA, bit-exacta con la original",
-    "resumen": "El artículo describe una reimplementación en Vulkan de la red de renderizado neural DLSS 5 de NVIDIA, enfocándose en lograr una precisión bit a bit con el modelo original. Utiliza una arquitectura Swin/ViT de 71 bloques y ejecuta cálculos FP8 en los Tensor Cores, validando la exactitud de los valores intermedios y finales. Se presenta también una implementación independiente en WebGPU, que prescinde de Tensor Cores y FP8. La red toma como entrada un frame renderizado, ruido Gaussiano, el frame anterior re-proyectado y escalares de condicionamiento para generar un residual RGB y un logit de mezcla temporal, sin ser un upscaler. Se detalla la estructura del modelo, los formatos de pesos (E4M3) y el proceso de carga y validación de modelos a través de archivos manifest.json y fixtures. La precisión se verifica rigurosamente contra capturas de referencia para asegurar paridad bit a bit.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49929925,
-    "url": "https://www.firezone.dev/blog/building-reliable-directory-sync",
-    "score": 16,
-    "time": 1790916336,
-    "titulo_es": "Sincronización de Directorio: Entendiendo la Gestión de Identidades en Aplicaciones",
-    "resumen": "El artículo explora la importancia de la gestión de identidades de usuario y grupos en aplicaciones, especialmente en entornos empresariales. Detalla el proceso de 'sincronización de directorio' (directory sync), que consiste en copiar y mantener actualizada la información del directorio de un proveedor de identidad (como Entra, Google, Okta) dentro de una aplicación. Se diferencia de la autenticación única (SSO) y explica los desafíos de mantener esta copia sincronizada (altas, bajas, actualizaciones). Se menciona el estándar SCIM (System for Cross-domain Identity Management) como un protocolo basado en HTTP para facilitar esta sincronización mediante llamadas a endpoints REST. Sin embargo, el artículo critica a SCIM por sus inconsistencias en la implementación entre proveedores y por requerir que la aplicación esté siempre disponible para recibir actualizaciones, lo que puede llevar a la pérdida de datos si la aplicación no está operativa. Finalmente, se sugiere que la empresa optó por construir su propio motor de sincronización en lugar de depender completamente de SCIM.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49925036,
-    "url": "https://tangled.org/burrito.space/bez",
-    "score": 118,
-    "time": 1790878083,
-    "titulo_es": "Bez: Generación Automatizada de Motores de Renderizado Web a partir de Especificaciones",
-    "resumen": "El artículo describe Bez, una herramienta que genera motores de renderizado web a partir de especificaciones, pruebas y datos de compatibilidad de navegadores. A diferencia de la construcción manual, que requiere cientos de ingenieros y años de desarrollo, Bez permite a cualquier persona crear un motor de renderizado de manera eficiente. El proceso utiliza especificaciones, tres navegadores principales (comparados entre sí) y Web Platform Tests (WPT) como conjunto de pruebas. Se detalla el progreso en áreas clave como el DOM, el estilo y la estructura de caja, incluyendo la generación automática de reglas CSS y la verificación contra modelos y navegadores. El objetivo es democratizar el desarrollo de motores de renderizado web y abordar preguntas abiertas sobre el alcance, el costo y la cobertura de las pruebas.",
+    "id": 49937540,
+    "url": "https://matduggan.com/what-does-my-dream-os-ui-look-like/",
+    "score": 98,
+    "time": 1790969347,
+    "titulo_es": "Todo es JSON hasta el fondo",
+    "resumen": "El artículo discute la necesidad de innovar en la gestión de ventanas y la interfaz de usuario (UI/UX) del sistema operativo de escritorio, argumentando que las aproximaciones actuales están desactualizadas y son ineficientes. El autor, aunque no un diseñador de UI/UX, plantea la idea de \"tmux como el OS\" para usuarios normales, destacando la importancia de la persistencia de sesiones, la capacidad de desvincularse y la orientación a tareas. Se analizan los desafíos actuales, como la pantalla de bienes raíces cambiante, la proliferación de aplicaciones web dentro de navegadores (considerados mini-sistemas operativos) y la creciente debilidad del concepto de \"sistema de archivos\" tradicional. Se hace referencia a investigaciones de los años 80 sobre espacios de trabajo virtuales (\"Rooms\") que ya identificaban problemas similares. La tesis central es que se necesita un nuevo paradigma en la gestión del escritorio que aproveche la abundancia de espacio en pantalla y la naturaleza de las aplicaciones modernas, yendo más allá de las convenciones heredadas del pasado.",
     "categoria": "Frontend"
   },
   {
-    "id": 49927587,
-    "url": "https://aweb.ai",
-    "score": 38,
-    "time": 1790892151,
-    "titulo_es": "aweb: Identidades Estables y Comunicación Federada para Agentes",
-    "resumen": "aweb es una plataforma de comunicación federada y auto-hospedable bajo licencia MIT que proporciona identidades estables, mensajería duradera (correo y chat) y eventos de activación (wake-up) para agentes de software a través de sesiones, tiempos de ejecución y máquinas. Permite que servidores operados independientemente se federen entre sí. La CLI y la API son independientes del tiempo de ejecución. Las integraciones de wake-up soportan actualmente Claude Code y Pi, y otros tiempos de ejecución pueden consumir el flujo de eventos. Los mensajes son estado persistente del servidor, asegurando su disponibilidad incluso si los agentes están desconectados o sus sesiones han terminado. aweb maneja la identidad, autenticación, entrega duradera, activación, historial de mensajes, control de acceso y federación. Los agentes obtienen una identidad única a través de la CLI y el archivo de configuración, permitiendo la comunicación inter-organizacional y la escalabilidad sin reemplazar la capa de comunicación. La confianza se basa en un sistema jerárquico de autoridad de dominio (DNS), controladores de dominio, controladores de equipo y la firma de agentes con sus claves privadas. Ofrece opciones de alojamiento del servidor y gestión del espacio de nombres (namespace), permitiendo el uso de dominios propios (BYOT) o el servicio aweb.ai gestionado.",
-    "categoria": "Desarrollo de Software"
+    "id": 49937504,
+    "url": "https://gadgets.muse.ai",
+    "score": 212,
+    "time": 1790969214,
+    "titulo_es": "Muse: Gadgets de Código Abierto para Hackers",
+    "resumen": "Muse es una plataforma de hardware de código abierto diseñada para entusiastas y hackers. Permite construir gadgets personalizados utilizando placas como ESP32 o Raspberry Pi, conectando diversos componentes como pantallas, botones, sensores y actuadores. La plataforma proporciona SDKs y firmware de código abierto bajo licencia Apache 2.0, fomentando la personalización y la contribución comunitaria. Los gadgets Muse pueden interactuar con dispositivos domésticos compatibles o aquellos con APIs HTTP locales, permitiendo funcionalidades como control de luces, televisores o impresoras a través de 'skills' desarrolladas por la comunidad. La iniciativa está dirigida a hackers y se ofrece como un proyecto divertido con posibles advertencias sobre el riesgo de manipulación. La disponibilidad inicial es limitada a suscriptores de Muse en EE. UU. y se enviará en octubre.",
+    "categoria": "Hardware"
   },
   {
-    "id": 49923638,
-    "url": "https://github.com/beatrizalmeidaf/papero-pdf-text-extractor",
-    "score": 83,
-    "time": 1790871280,
-    "titulo_es": "Papero: Extracción de Texto y Estructura de PDFs con Procesamiento Nativo y API",
-    "resumen": "Papero es una herramienta de código abierto diseñada para extraer no solo texto de archivos PDF, sino también su estructura subyacente, incluyendo orden de lectura, tablas, fórmulas y figuras. A diferencia de las soluciones basadas en Machine Learning, Papero utiliza geometría simple y procesamiento nativo (CPU) para mantener la velocidad y la privacidad, ejecutándose en el navegador, como una librería Python o a través de una API REST. Soporta la conversión a formatos como Markdown, JSON y Word, e integra OCR para páginas escaneadas y Apache Tika para otros formatos de documentos. Está optimizado para la preprocesamiento de documentos para RAG (Retrieval-Augmented Generation) y LLMs (Large Language Models), permitiendo que cada bloque extraído mantenga su contexto y posición original. Se destaca por su velocidad, incluso en PDFs densos y multi-columna, y por la capacidad de verificar la fidelidad de la extracción comparándola directamente con el PDF original.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49925812,
-    "url": "https://effect.website/blog/releases/effect/40",
-    "score": 75,
-    "time": 1790881807,
-    "titulo_es": "Effect 4.0: Reescrito desde cero con un núcleo sin dependencias y soporte a largo plazo",
-    "resumen": "Effect 4.0 representa un avance significativo en el ecosistema de Effect, siendo una reescritura completa del framework. Destaca por su núcleo sin dependencias, lo que reduce la superficie de ataque de la cadena de suministro y mejora la seguridad. La nueva versión ofrece mejoras sustanciales en rendimiento, reduciendo el uso de memoria y el tamaño de los bundles gracias a una mejor optimización y tree-shaking. La arquitectura unificada integra previamente paquetes separados en el núcleo de Effect, compartiendo una única versión y lanzándose en conjunto. Effect ahora abarca desde funciones simples hasta sistemas distribuidos, manteniendo un modelo de programación consistente con garantías sólidas para errores tipados, inyección de dependencias, gestión de recursos, concurrencia estructurada y observabilidad. Además, se han añadido primitivas de alto nivel para sistemas distribuidos, incluyendo flujos de trabajo duraderos y clustering. La versión 4.x introduce una política de soporte a largo plazo (LTS) de al menos tres años para las versiones principales, brindando estabilidad y previsibilidad a los equipos empresariales que adoptan Effect. Se está trabajando activamente en estabilizar los módulos del ecosistema, utilizando feedback de producción para mejorar módulos experimentales. El objetivo a futuro es consolidar Effect como un modelo de programación unificado para aplicaciones completas, con mayor soporte de plataforma y primitivas avanzadas. Se proporciona una guía de migración para facilitar la transición a la versión 4.x.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49927854,
-    "url": "https://anth.us/blog/openai-decisions-api-preview/",
-    "score": 24,
-    "time": 1790894020,
-    "titulo_es": "OpenAI Decisions API y el rendimiento del modelo Luna en tareas de razonamiento",
-    "resumen": "El artículo evalúa el modelo Luna de OpenAI, utilizado en su nueva Decisions API, en una serie de problemas de razonamiento lógico con diferentes niveles de complejidad (profundidad de inferencia). La Decisions API permite a los modelos tomar decisiones de una lista predefinida con un umbral de confianza. Se compara el rendimiento de Luna con el de otros modelos como Jev, Kev y Laya. Los resultados muestran que Luna es competitivo en problemas simples (una inferencia) pero su precisión disminuye significativamente con el aumento de la complejidad, alcanzando un 46% en problemas de cinco inferencias, mientras que Jev mantiene un rendimiento mucho mayor (81%). Un punto clave de preocupación es la fiabilidad de la confianza reportada por los modelos de OpenAI, que históricamente ha sido problemática. El artículo sugiere la necesidad de que OpenAI mejore la calibración de la confianza como un producto, haciéndola documentada y testeable, para permitir un enrutamiento más fiable de las decisiones a humanos cuando el modelo no está suficientemente seguro (por ejemplo, por debajo del 99%). Esto es crucial para aplicaciones como la clasificación de mensajes o el enrutamiento de solicitudes, donde la precisión de la decisión automática es fundamental.",
+    "id": 49928566,
+    "url": "https://stillwet.art/",
+    "score": 310,
+    "time": 1790900876,
+    "titulo_es": "Pintores IA: Simulando el Óleo con Código",
+    "resumen": "El artículo describe un sistema de generación de arte donde modelos de IA (denominados 'pintores') crean pinturas escribiendo programas que simulan el proceso de pintura al óleo sobre lienzo. Los programas controlan pinceladas, la aplicación de pigmentos y técnicas como las veladuras. Este enfoque evita el uso de modelos de generación de imágenes convencionales, basándose en la investigación textual y la simulación. Se observan tendencias en la elección de temas (como paisajes al atardecer o motivos de Caspar David Friedrich) y comportamientos emergentes, como la repetición de objetos (jarras, limones) o la evitación de temas recurrentes. Se detallan configuraciones experimentales como el uso de caballetes virtuales y las limitaciones de las API. También se mencionan problemas técnicos específicos de algunos modelos, como errores de interpretación de instrucciones o la gestión de estados visuales, lo que llevó a ajustes en la interfaz y el acceso a información externa.",
     "categoria": "IA"
+  },
+  {
+    "id": 49937631,
+    "url": "https://developer.apple.com/news/?id=p6zjojqw",
+    "score": 231,
+    "time": 1790969821,
+    "titulo_es": "Apple Refuerza la Privacidad de los Usuarios ante el Mal Uso del Acceso Completo al Disco por parte de Aplicaciones",
+    "resumen": "El artículo describe cómo Apple está implementando nuevos controles para mitigar los riesgos de privacidad asociados con el 'Acceso Completo al Disco' en macOS. Históricamente, este acceso se otorgaba para permitir la funcionalidad de aplicaciones de backup, pero se ha observado que algunas aplicaciones lo utilizan de formas que exponen datos sensibles de los usuarios (archivos, correos, mensajes, historial de navegación) sin un consentimiento explícito y claro. Con el avance de la IA y agentes autónomos, el riesgo de mal uso de este nivel de acceso se magnifica. Apple se compromete a exigir acciones explícitas por parte del usuario para conceder este nivel de acceso extraordinario, asegurando que los usuarios comprendan plenamente los riesgos antes de tomar una decisión informada sobre sus datos y privacidad.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 49934620,
+    "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/",
+    "score": 181,
+    "time": 1790954955,
+    "titulo_es": "Desafío de un mes con un modelo de IA eficiente: Lecciones aprendidas",
+    "resumen": "El artículo detalla un experimento de un mes para utilizar exclusivamente un modelo de IA eficiente (GLM 5.3 Flash). A pesar de no alcanzar completamente el objetivo (solo el 50% de los tokens se destinaron al modelo objetivo), la experiencia proporcionó valiosas lecciones. Se discuten los desafíos encontrados, incluyendo la selección de modelos (un prototipo experimental resultó costoso y consumió muchos recursos), la disponibilidad de infraestructura (problemas de capacidad con proveedores de inferencia que llevaron al uso de modelos alternativos) y la necesidad de experimentar con diversos modelos para la investigación y el desarrollo. El autor concluye que, si bien el desafío técnico fue un fracaso parcial, el aprendizaje fue significativo. Para el trabajo diario de desarrollo, se considera viable centrarse en uno o dos modelos económicos de nivel 'flash', priorizando la eficiencia en costo o energía sobre la cantidad de tokens. Se enfatiza la importancia de la planificación de costos y la cuidadosa consideración de los patrones de IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49912091,
+    "url": "https://zeux.io/2026/09/30/billions-of-triangles-redux/",
+    "score": 49,
+    "time": 1790790364,
+    "titulo_es": "Bits, píxeles, ciclos y más: Mejoras en la compresión y LOD de malla para escenas 3D complejas",
+    "resumen": "El artículo detalla las mejoras recientes en el soporte de LOD (Level of Detail) jerárquico y la compresión de malla, particularmente utilizando las extensiones glTF EXT_meshopt_compression y KHR_meshopt_compression. Se discute la evolución de una escena Zorah de 1.6 mil millones de triángulos, reduciendo su tamaño de datos glTF de 36 GB a 32 GB mediante la compresión de vértices e índices. Se explican los detalles de la compresión sin pérdidas y con pérdidas (cuantización y filtros) para la optimización de activos 3D, enfocándose en la entrega de última milla para renderizado en tiempo real. El autor destaca la flexibilidad del formato meshoptimizer para organizar y comprimir datos de malla, contrastándolo con enfoques más cerrados. Se mencionan avances en el soporte del framework meshoptimizer para estas técnicas, impulsados por la integración con características de raytracing acelerado por hardware como el clustered raytracing.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49919676,
+    "url": "https://xenaproject.wordpress.com/2026/10/01/to-grieve-or-not-to-grieve/",
+    "score": 148,
+    "time": 1790848066,
+    "titulo_es": "La Transformación de las Matemáticas por la IA: Reacciones y el Futuro",
+    "resumen": "El artículo aborda la profunda transformación que está experimentando el campo de las matemáticas debido a los avances en inteligencia artificial, particularmente con modelos de lenguaje capaces de resolver problemas complejos. Se exploran las diversas reacciones dentro de la comunidad matemática, comparándolas con las etapas del modelo de duelo de Kübler-Ross (negación, ira, negociación, depresión, aceptación). Se menciona la Association for Human Mathematics, que busca proteger las matemáticas como un esfuerzo humano frente a la IA, y figuras como Peter Scholze que se oponen a su uso en investigación. El artículo también destaca la controversia en torno a los resultados matemáticos significativos producidos por modelos de IA propietarios, con un grupo de expertos pidiendo a los laboratorios de IA que dejen de probar problemas matemáticos avanzados en modelos propietarios y que liberen los resultados de manera responsable, apoyando el desarrollo de la comprensión humana. Se reflejan las preocupaciones y el impacto emocional en investigadores, desde profesores hasta estudiantes de doctorado, quienes enfrentan la posibilidad de que la IA supere o modifique drásticamente la naturaleza de la investigación matemática.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49924121,
+    "url": "https://www.leadedsolder.com/2026/10/01/rc2026-10-sg1000-forth-port.html",
+    "score": 13,
+    "time": 1790873558,
+    "titulo_es": "Creando un Entorno de Desarrollo Forth para el Clon del SG-1000: Soggy-1000",
+    "resumen": "El autor detalla la creación de un entorno de desarrollo de bajo nivel para su clon del Sega SG-1000, llamado Soggy-1000. Ante las limitaciones del BASIC del Sega, se optó por implementar Forth, un lenguaje de programación minimalista y popular en sistemas embebidos. La elección se basa en la necesidad de un entorno controlado, la posibilidad de incluirlo en la ROM, y la interactividad que ofrece Forth con su REPL y un ensamblador integrado, permitiendo el desarrollo de programas directamente en el hardware retro. El proyecto se enmarca en el RetroChallenge 2026/10, y aunque el autor admite ser novato en Forth, busca finalizar la implementación de este lenguaje en el hardware compartido por el SG-1000 y el SC-3000.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49928192,
+    "url": "https://placeholders.itch.io/tiny-brutalism",
+    "score": 165,
+    "time": 1790897011,
+    "titulo_es": "Tiny Brutalism: Un juego de construcción sandbox inspirado en la arquitectura brutalista",
+    "resumen": "Tiny Brutalism es un juego de construcción gratuito para Windows, macOS y Linux inspirado en la arquitectura brutalista. Permite a los jugadores crear estructuras y monumentos libremente, sin objetivos ni reglas fijas. El juego ofrece controles para construir, eliminar, voltear variantes de bloques, deshacer/rehacer y alternar día/noche. La cámara permite órbita, paneo y zoom. Los comentarios de los usuarios sugieren mejoras en la consistencia del control del jugador sobre las decoraciones generadas automáticamente (como soportes y canalones), la adición de funcionalidades de calidad de vida como botones dedicados para construir/eliminar y la implementación de más atajos de teclado. También se sugieren nuevos elementos de contenido como agua, nenúfares, musgo, escaleras de ancho completo, columnas y ventanas redondas, y bloques con agujeros transparentes. El juego se distribuye a través de itch.io con un precio mínimo de $5 USD.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 49937146,
+    "url": "https://www.behindthecode.ca/partner-n64pc-dev-kit/",
+    "score": 54,
+    "time": 1790967214,
+    "titulo_es": "Kit de Desarrollo PARTNER-N64 para Nintendo 64",
+    "resumen": "El artículo describe el kit de desarrollo PARTNER-N64 para la consola Nintendo 64, fabricado por Kyoto Microcomputer (KMC). Este kit permitía la depuración en tiempo real (runtime) mediante 'breakpoints' y reinicios controlados por software, requiriendo una consola N64 modificada. Las modificaciones implicaban la adición de 'tie-lines' para redirigir señales IRQ y RESET de la CPU desde el slot del cartucho. Se mencionan dos versiones del kit: PARTNER-N64PC para Windows 95/98 y PARTNER-N64NW para estaciones de trabajo Silicon Graphics (SGI). El kit también soportaba el desarrollo para el add-on 64DD, una unidad de disco magnético lanzada solo en Japón, que existía en versiones retail (bisel negro, discos grises) y de desarrollo (bisel azul, discos azules), permitiendo expandir la memoria y crear juegos más avanzados.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49937916,
+    "url": "https://github.com/anteloc/ldraw-nova",
+    "score": 123,
+    "time": 1790971215,
+    "titulo_es": "Agentes de IA diseñando modelos LEGO construibles con LDraw",
+    "resumen": "El artículo describe un sistema que utiliza agentes de IA (basados en modelos como GPT-6 Astra y Claude Opus 5.5) para diseñar modelos físicos de LEGO utilizando el lenguaje de ensamblaje LDraw. El sistema, denominado ldraw-nova, proporciona a los agentes herramientas, ejemplos e instrucciones para generar código LDraw que representa modelos construibles. La búsqueda semántica con jev-rerank se utiliza para encontrar piezas y modelos de ejemplo adecuados. El proceso implica que el agente genere un diseño paso a paso, similar a la compilación de código, donde las primitivas y la gramática del lenguaje LDraw ayudan a superar las limitaciones de la IA con las matemáticas geométricas. Se detallan los requisitos técnicos para ejecutar ldraw-nova como una aplicación web dockerizada, incluyendo la clonación de repositorios y la construcción de imágenes Docker.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49930047,
+    "url": "https://inrng.com/2026/10/shimano-bicycle-museum/",
+    "score": 293,
+    "time": 1790917978,
+    "titulo_es": "Una mirada al Museo de la Bicicleta Shimano",
+    "resumen": "El artículo describe el Museo de la Bicicleta Shimano, destacando su enfoque en la historia y evolución de las bicicletas sobre la historia corporativa de Shimano. El museo presenta una colección diversa de bicicletas, desde modelos rudimentarios hasta bicicletas de competición modernas y de uso diario, expuestas en un edificio arquitectónicamente moderno. Se detalla la accesibilidad de las exhibiciones, permitiendo a los visitantes observar de cerca componentes y modificaciones. Se exploran los materiales de las bicicletas (acero, aluminio, titanio) y su funcionalidad, con un énfasis en la diversidad de usos y disfrute del ciclismo. Aunque se menciona brevemente el origen de Shimano en Sakai y su primer producto (un piñón libre), el contenido principal se centra en las bicicletas como artefactos culturales y tecnológicos.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 49941641,
+    "url": "https://halide.cx/blog/wpd/",
+    "score": 14,
+    "time": 1791006330,
+    "titulo_es": "wpd: un decodificador WebP más rápido y seguro",
+    "resumen": "El artículo presenta wpd, un nuevo decodificador WebP escrito en Rust con rutinas de ensamblaje optimizadas para un rendimiento superior en comparación con libwebp. wpd se enfoca en la seguridad de la memoria, abordando vulnerabilidades como CVE-2023-4863, y ofrece mejoras significativas en velocidad tanto monohilo como multihilo. Puede compilarse sin ensamblaje escrito por el hombre para una seguridad de memoria verificable. El proyecto tiene como objetivo reemplazar a libwebp, ofreciendo paridad de características y algunas adiciones, y se publica bajo una licencia BSD 2-Clause para fomentar su adopción en la comunidad de código abierto.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49932340,
+    "url": "https://byzantine-systems.github.io/blogging-with-gleam-org-mode-and-pandoc/",
+    "score": 82,
+    "time": 1790940868,
+    "titulo_es": "Por qué la escritura permanece dentro de Emacs",
+    "resumen": "El artículo explora el uso de Emacs como un entorno integrado para la composición de programas y la publicación de contenido. Se destaca la flexibilidad de Emacs para manejar diversos aspectos del flujo de trabajo de desarrollo, incluyendo la escritura de código, la generación de diagramas como código (usando d2), y la gestión de publicaciones de blogs. Se argumenta que, aunque Emacs pueda considerarse 'bloat' desde una perspectiva UNIX tradicional, su capacidad para unificar múltiples tareas (como la edición de texto, la inclusión de bloques de código ejecutable, la gestión de citas y la exportación a diferentes formatos a través de Org-mode) lo convierte en una herramienta poderosa para mantener la coherencia y la eficiencia. Se compara Org-mode con Markdown, concluyendo que Org-mode ofrece funcionalidades superiores para flujos de trabajo complejos, a pesar de requerir el uso de Emacs para su pleno potencial.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49925602,
+    "url": "https://agostbiro.net/posts/2026-10-anatomy-of-a-lean-proof/",
+    "score": 118,
+    "time": 1790880808,
+    "titulo_es": "Formalizando Pruebas de Propiedades de Lenguajes con Autómatas Finitos Usando Lean",
+    "resumen": "Este artículo detalla el proceso de formalización de una prueba de propiedad de un lenguaje de la teoría de la computación utilizando autómatas finitos deterministas (DFA) y el asistente de pruebas Lean. El autor explica cómo un problema de libro de texto que involucra un lenguaje definido por columnas de bits se aborda construyendo un DFA. Se describe la teoría subyacente de los autómatas finitos, los lenguajes regulares y sus propiedades de cierre, así como la notación para definir lenguajes. El enfoque principal es mostrar la similitud entre la construcción de un autómata para reconocer un lenguaje y la verificación formal de software, proporcionando una perspectiva para ingenieros de software sobre la formalización de pruebas, asumiendo familiaridad con lenguajes de programación tipados estáticamente, aritmética binaria, lógica proposicional y pruebas inductivas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49932079,
+    "url": "https://www.figure.ai/news/f-02-decommission",
+    "score": 82,
+    "time": 1790938647,
+    "titulo_es": "Figure desmantela su flota de robots F.02 saltando a un horno de acero fundido",
+    "resumen": "Figure, una empresa de robótica, detalla el complejo proceso de desmantelamiento de su flota de robots F.02, que presentaba innovaciones como su primer despliegue en BMW, el nacimiento de Helix y su primera incursión en tareas domésticas y logísticas. Ante la necesidad de proteger su propiedad intelectual y evitar retrasos en el lanzamiento del F.04, la empresa buscó una solución inusual. Siguiendo una sugerencia, entrenaron una IA en simulación y con referencias de artistas de acrobacias para que los robots saltaran autónomamente a un cubo de acero fundido en una fundición en Imatra, Finlandia. El proceso requirió superar desafíos como el calor extremo y los campos electromagnéticos, que afectaron otros equipos electrónicos. Los metales resultantes se están transformando en artefactos conmemorativos para preservar la historia de Figure. El artículo enfatiza la autenticidad del entrenamiento y ejecución de esta operación.",
+    "categoria": "IA"
+  },
+  {
+    "id": 49928215,
+    "url": "https://github.com/kitao/pyxel",
+    "score": 89,
+    "time": 1790897195,
+    "titulo_es": "Pyxel: Motor de Juegos Retro para Python",
+    "resumen": "Pyxel es un motor de juegos de código abierto (licencia MIT) para Python, diseñado para facilitar la creación de juegos de estilo pixel-art con especificaciones inspiradas en consolas de videojuegos retro. Sus limitaciones intencionales, como el soporte para solo 16 colores y 4 canales de sonido simultáneos, promueven un desarrollo sencillo y accesible. El proyecto es desarrollado por una sola persona y se mantiene gracias al apoyo de la comunidad en GitHub.",
+    "categoria": "Desarrollo de Software"
   }
 ]
