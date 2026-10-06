@@ -1,83 +1,38 @@
 [
   {
+    "id": 49977819,
+    "url": "https://www.ebsco.com/research-starters/power-and-energy/mathematics-geothermal-energy/",
+    "score": 19,
+    "time": 1791291926,
+    "titulo_es": "La Matemática de la Energía Geotérmica",
+    "resumen": "El artículo explora la aplicación de métodos matemáticos en la exploración y optimización de la energía geotérmica. Detalla cómo el calor interno de la Tierra, influenciado por el gradiente geotérmico y las zonas de alta actividad tectónica como el Anillo de Fuego, se aprovecha para la producción de energía y calefacción. Se mencionan modelos como Lagrangian–Eulerian y modelos estocásticos y geométricos para entender el flujo de fluidos, optimizar la extracción de energía y gestionar sistemas de bombas de calor geotérmicas. Aunque la energía geotérmica ofrece ventajas como bajas emisiones y fiabilidad, su adopción se ve limitada por los costos iniciales y la disponibilidad de sitios de calidad. Se destaca el interés renovado en la energía geotérmica en el contexto del cambio climático. La investigación involucra a matemáticos, ingenieros y geólogos, y las técnicas desarrolladas tienen aplicaciones en otros campos científicos e industriales.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 49978401,
+    "url": "https://jotbus.com/",
+    "score": 14,
+    "time": 1791294304,
+    "titulo_es": "Colaboración Segura entre Agentes de Código con Espacios de Trabajo Cifrados",
+    "resumen": "El artículo presenta Jotbus, una herramienta que facilita la colaboración segura entre diversos agentes de codificación (como Claude Code, Codex, Cursor, Gemini CLI, etc.) mediante la creación de espacios de trabajo cifrados de 60 minutos. Permite a estos agentes compartir notas, archivos, delegar tareas y revisar cambios de forma segura a través de máquinas. Jotbus cifra mensajes y archivos (incluyendo nombres de archivo) antes de que salgan de la máquina del usuario, almacenando únicamente datos cifrados sin acceso a claves de descifrado. Los agentes pueden interactuar en lenguaje natural, con la capacidad de enviar logs, parches o capturas de pantalla que se descifran localmente en la máquina receptora. La colaboración es gratuita para los invitados y no requiere cuentas ni acceso al repositorio del usuario. Los agentes solo se activan explícitamente, no se inician ni despiertan de forma autónoma.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 49976823,
+    "url": "https://phys.org/news/2026-10-nature-capacity-species-lost-vastly.html",
+    "score": 142,
+    "time": 1791285111,
+    "titulo_es": "La sobreestimación de la redundancia en ecosistemas amenaza la seguridad alimentaria y el clima",
+    "resumen": "Un estudio exhaustivo, el más grande de su tipo a nivel global, liderado por King's College London e Imperial College London, ha desmentido la creencia de que los ecosistemas poseen una gran capacidad de respaldo, donde la pérdida de especies tiene un impacto mínimo. La investigación, publicada en Nature Ecology & Evolution y que combinó 423 estudios y más de 222,000 puntos de datos, revela que la mayoría de los servicios ecosistémicos, como la polinización, la purificación del agua, el almacenamiento de carbono y el control de plagas, aumentan de forma constante con la biodiversidad.  Por lo tanto, la pérdida de especies reduce significativamente estos beneficios, lo que podría amenazar la seguridad alimentaria y la protección climática.  Particularmente preocupante es el hallazgo sobre la captura de carbono oceánico (carbono azul), que mostró una fuerte dependencia de la biodiversidad marina, a pesar de ser un área subestudiada. Si bien servicios como la protección contra inundaciones costeras dependen de especies fundacionales específicas, la conclusión general es que la biodiversidad es crucial y su falta de redundancia funcional ha sido sobreestimada.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
     "id": 49943479,
     "url": "https://danielchasehooper.com/posts/typechecked-generic-c-data-structures/",
-    "score": 106,
+    "score": 146,
     "time": 1791028640,
-    "titulo_es": "Generics Tipo-Seguros en C usando Unions",
-    "resumen": "El artículo explora una técnica avanzada para implementar estructuras de datos genéricas y tipo-seguras en C, superando las limitaciones de enfoques como macros de preprocesador o el uso de `void*`. La solución propuesta se basa en el uso de `unions` con un miembro `payload` parametrizado para la información de tipo en tiempo de compilación. Se ilustra el concepto mediante la implementación de una lista enlazada, demostrando cómo la unión permite al compilador detectar errores de tipo en tiempo de compilación al intentar añadir elementos incompatibles. El artículo también aborda optimizaciones de memoria y rendimiento utilizando `Flexible Array Members` y discute el uso de `__typeof__()` (o el operador ternario como alternativa) para manejar tipos de datos de forma segura, tanto en la inserción como en la recuperación de datos, y menciona el uso de arenas de memoria como alternativa a `malloc`.",
+    "titulo_es": "Estructuras de Datos Genéricas y Seguras en Tipo en C con Uniones y Macros",
+    "resumen": "El artículo explora una técnica avanzada para implementar estructuras de datos genéricas y seguras en tipo en C, una tarea desafiante dado el lenguaje. Se discuten varias aproximaciones: uso de macros con inclusión múltiple de headers (con desventajas), uso de `void *` (no seguro en tipo) y una mejora con `Flexible Array Members` (FAM) para optimizar el uso de memoria y caché. La técnica principal presentada utiliza uniones con un miembro `payload` de tipo parametrizado para lograr seguridad en tipo a nivel de compilación. Esto se logra mediante el operador ternario para verificar que el tipo del elemento a insertar coincide con el tipo `payload` definido para la estructura de datos. Se muestra cómo el compilador genera errores si se intenta añadir un tipo incorrecto. También se mencionan alternativas como el uso de `__typeof__()` (ahora estándar en C23) y un método previo que empleaba punteros a funciones de type casting (aunque con consideraciones de comportamiento indefinido). El enfoque con uniones y macros permite crear estructuras como listas enlazadas, mapas y árboles binarios de forma segura y eficiente en C.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49917784,
-    "url": "https://www.mattkeeter.com/blog/2024-07-12-interpreter/",
-    "score": 24,
-    "time": 1790829370,
-    "titulo_es": "Optimización de un Intérprete de Uxn con Ensamblador AArch64",
-    "resumen": "El artículo detalla la optimización de un intérprete para la CPU Uxn, una arquitectura basada en pila, mediante la reescritura de partes críticas en ensamblador AArch64. El autor argumenta que los compiladores, si bien son excelentes en general, pueden ser subóptimos generando código para intérpretes. Al analizar el ensamblador generado por el compilador C para el intérprete de Uxn, se identifican ineficiencias, particularmente en el bucle de despacho de opcodes. La implementación en ensamblador se enfoca en dos optimizaciones clave: mantener el estado del intérprete (pilas de datos, retorno, contador de programa, etc.) en registros de propósito general para minimizar cargas y almacenamientos superfluos, y emplear código encadenado (threaded code) para eliminar el bucle de despacho explícito, haciendo que cada implementación de opcode salte directamente a la siguiente. Esto resulta en una mejora de rendimiento del 10-20% sobre la implementación de referencia. Se discuten las convenciones de llamada y la gestión de registros en AArch64.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 49965047,
-    "url": "https://blog.metabrainz.org/2026/10/04/picard-3-0-released/",
-    "score": 61,
-    "time": 1791208981,
-    "titulo_es": "Anuncio de MusicBrainz Picard 3.0",
-    "resumen": "El artículo anuncia el lanzamiento de la versión 3.0 de MusicBrainz Picard, el editor de etiquetas oficial para la base de datos MusicBrainz. Las principales novedades incluyen la migración a Qt6, lo que mejora el escalado de pantalla y el soporte para modo oscuro, un sistema de plugins completamente rediseñado con nuevos puntos de extensión para desarrolladores, soporte completo para columnas personalizadas en las vistas de lista mediante scripting, una nueva función de filtrado de listas, la capacidad de copiar y pegar múltiples etiquetas, y la visualización de diferencias de metadatos. Además, se ha introducido un asistente de configuración inicial y un modo tutorial para guiar a los nuevos usuarios. El nuevo sistema de plugins aborda limitaciones del anterior, como la carga de código de plugins no habilitados y la dificultad para desarrolladores externos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49965894,
-    "url": "https://dosdays.co.uk/topics/Software/borland_turbo_basic.php",
-    "score": 83,
-    "time": 1791213091,
-    "titulo_es": "Turbo BASIC y su IDE",
-    "resumen": "El artículo detalla la historia y características de Turbo BASIC, un compilador interactivo para CP/M y MS-DOS lanzado por Borland en 1987. Destaca su IDE (Entorno de Desarrollo Integrado), que permitía escribir, compilar y ejecutar código eficientemente, a diferencia de los métodos de línea de comandos más tradicionales. Turbo BASIC ofrecía la capacidad de crear ejecutables de gran tamaño, superando las limitaciones de otros intérpretes como GWBASIC. Se mencionan las versiones 1.0 y 1.1, así como la compatibilidad con archivos .BAS de GWBASIC. El texto también incluye información sobre las Turbo Toolboxes complementarias y detalles sobre la sede de Borland International en Scotts Valley, CA.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49924795,
-    "url": "https://github.com/explaindb/explaindb",
-    "score": 57,
-    "time": 1790876847,
-    "titulo_es": "Materiales de Enseñanza para un Curso de Sistemas de Bases de Datos: Un DBMS Didáctico en Python",
-    "resumen": "El artículo describe un conjunto de materiales didácticos para un curso de sistemas de bases de datos, centrado en un Sistema de Gestión de Bases de Datos (DBMS) implementado en Python. El proyecto incluye Jupyter Notebooks para la enseñanza y un DBMS didáctico diseñado para la comprensión y no para la alta velocidad. La estructura del código del DBMS se organiza en interfaces y implementaciones, con un archivo principal `DBMS.py` que orquesta las operaciones. Se detalla el uso de `uv` para la gestión de dependencias y la versión de Python, simplificando la configuración del entorno de desarrollo. Se mencionan alternativas para ejecutar los notebooks y se proporciona documentación de la API en línea. El proyecto está licenciado bajo AGPL-3.0 y se destaca la colaboración con un asistente de IA. El enfoque principal es la educación y la comprensión de los sistemas de bases de datos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49963394,
-    "url": "https://github.com/project-minigraf/minigraf",
-    "score": 21,
-    "time": 1791199098,
-    "titulo_es": "Minigraf: Base de datos de grafos empotrada bi-temporal para agentes de IA, aplicaciones móviles y el navegador",
-    "resumen": "Minigraf es una base de datos de grafos empotrada, autocontenida y de archivo único, diseñada para almacenar datos conectados con historial completo. Utiliza consultas Datalog, que son más adecuadas para grafos que SQL, y ofrece un modelo bi-temporal que rastrea tanto el tiempo de transacción (cuándo se registró un hecho) como el tiempo de validez (cuándo fue cierto). Esto permite viajes en el tiempo para reconstruir estados pasados, auditar decisiones y realizar correcciones retroactivas sin perder el historial original. Es ideal para agentes de IA (especialmente en patrones GraphRAG combinados con almacenes vectoriales), aplicaciones móviles (con enlaces nativos para Kotlin/Swift) y el navegador (con WASM). Minigraf se promociona como el 'SQLite de las bases de datos de grafos bi-temporales', centrándose en la simplicidad y la portabilidad, con un visualizador interactivo para explorar el historial de datos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49930872,
-    "url": "https://www.lenfestinstitute.org/solutions-resources/philadelphia-inquirer-scrape-ai-hyperlocal-news/",
-    "score": 65,
-    "time": 1790926815,
-    "titulo_es": "Lenfest Institute expande su programa de Colaboración y Becas de IA con el apoyo de OpenAI",
-    "resumen": "El artículo detalla la creación y evolución de 'Scrape', una herramienta de IA desarrollada por el Lenfest Institute y The Philadelphia Inquirer. La herramienta fue diseñada para abordar el desafío de recopilar noticias localizadas y relevantes de fuentes fragmentadas para sus boletines informativos hiperlocales. Inicialmente, un editor dedicaba 12 horas semanales a esta tarea. 'Scrape' se construyó integrando flujos de trabajo editoriales existentes, utilizando un ciclo de retroalimentación iterativo con un editor para refinar los prompts y mejorar la identificación de historias 'newsworthy'. El éxito radicó en basar el entrenamiento y la evaluación en el proceso manual existente y en incorporar contexto editorial específico del boletín (audiencia, geografía, distritos escolares, temas de interés y exclusiones explícitas) en lugar de depender únicamente de la geografía. Esto permitió al sistema entender mejor qué información sería valiosa para lectores específicos, reduciendo el 'ruido' (noticias de bajo impacto) y aumentando las 'señales' (noticias comunitarias impactantes). La herramienta ha evolucionado de un experimento a una infraestructura crítica para múltiples boletines, sirviendo a periodistas y mejorando la eficiencia en la curación de contenido.",
-    "categoria": "IA"
-  },
-  {
-    "id": 49943637,
-    "url": "https://blog.zarfhome.com/2026/10/infidel-goes-wild",
-    "score": 171,
-    "time": 1791029980,
-    "titulo_es": "Un Bug Egregio en un Juego Infocom: Wild Pointer y Compilador en ZIL",
-    "resumen": "El artículo detalla un bug 'egregio' encontrado en el juego Infocom 'Infidel' (release 22, serial 840522), específicamente una corrupción de memoria tipo 'wild pointer' que, aunque raramente impacta el gameplay, es una falta grave desde la perspectiva de un programador C. El bug reside en la gestión de objetos en el escenario 'ENDLESS-DESERT', donde las coordenadas lat/long de objetos dejados por el jugador se almacenan en un array (DESERT-TABLE) para su posterior recuperación. El problema surge en la rutina DESERT-TO-TABLE, que toma SLOC como argumento requerido y TBL como un argumento opcional que por defecto es DESERT-TABLE. La rutina inicializa un puntero F al primer objeto en ENDLESS-DESERT y contadores CNT y N a cero. El análisis sugiere que el bug está relacionado con la forma en que se manejan los argumentos y la inicialización de variables dentro de esta rutina, posiblemente un fallo del compilador ZIL o de la implementación de la Z-machine, ya que el bug ocurre incluso cuando solo se pasa el argumento SLOC y se confía en el valor por defecto de TBL. El autor menciona que la versión original del juego (serial 830916) presentaba el mismo bug con direcciones de memoria ligeramente distintas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 49930439,
-    "url": "https://niklasroy.com/gtc/",
-    "score": 221,
-    "time": 1790922786,
-    "titulo_es": "Reloj de Basura de Glashütte: Un Mecanismo de Tiempo Innovador",
-    "resumen": "El artículo describe la creación del 'Glashütte Trash Clock', un reloj mecánico funcional construido enteramente con materiales reciclados y encontrados en Glashütte, Sajonia. El reloj opera durante aproximadamente media hora, mostrando segundos y minutos, y activando un gong y un aleatorizador externo al agotar su energía. Se introduce una nueva escala de tiempo, GTC (Glashütte Time Code), que se fusiona con GMT y UTC, utilizando el reloj de basura como referencia global. La narrativa explora las raíces del autor en la relojería suiza y alemana, destacando la tradición de Glashütte. Se detalla el proceso de construcción, incluyendo el uso de un péndulo, la influencia de la fórmula de Huygens para la medición del tiempo (T = 2π√(l/g)), y la necesidad de un escape (rueda de escape y áncora) para mantener el movimiento y contar las oscilaciones. Se enfatiza cómo la longitud del péndulo, no su peso, determina la frecuencia de oscilación, y cómo la gravedad afecta la precisión, lo que implica que el diseño se basa en los principios fundamentales de la relojería mecánica.",
-    "categoria": "Hardware"
   }
 ]
