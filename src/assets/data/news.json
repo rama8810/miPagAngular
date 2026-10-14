@@ -1,200 +1,155 @@
 [
   {
-    "id": 50073221,
-    "url": "https://www.sammystraus.com/#i-posted-to-hn-and-then-my-website-was-flooded-with-ai-bot-traffic",
+    "id": 50086165,
+    "url": "https://github.com/timescale/pg_vectorsearch",
+    "score": 64,
+    "time": 1791978473,
+    "titulo_es": "Búsqueda vectorial de alto rendimiento para PostgreSQL",
+    "resumen": "PRISM es una extensión nativa para PostgreSQL implementada en C diseñada para la búsqueda de vecinos más cercanos aproximados (ANN). Utiliza un árbol jerárquico de centroides, particionado avanzado y cuantización RaBitQ con aceleración SIMD, superando en velocidad y eficiencia de memoria a implementaciones populares como IVFFlat y HNSW de pgvector en conjuntos de datos a gran escala.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50086484,
+    "url": "https://aaronsonoracle.com/",
+    "score": 22,
+    "time": 1791980195,
+    "titulo_es": "El Robot que Predice el Futuro: SEER de Hagelbarger y la Máquina de Shannon",
+    "resumen": "El artículo describe el desarrollo temprano de máquinas que jugaban al juego de \"matching pennies\" (cara o cruz, o pares o nones). Inicialmente, David Hagelbarger creó SEER (SEquence Extrapolating Robot) en Bell Telephone Laboratories en la década de 1950. SEER utilizaba una memoria limitada de los últimos dos juegos para predecir el próximo movimiento del oponente, basándose en si había ganado o perdido y si los movimientos anteriores fueron iguales o diferentes. Claude Shannon, inspirado por SEER, construyó su propia máquina que también buscaba patrones. Shannon reconoció que su máquina, aunque superior a la de Hagelbarger en un enfrentamiento directo, era teóricamente vencible con un análisis exhaustivo de su estado de memoria (una ventaja de 3:1 en teoría). Sin embargo, la complejidad de este análisis mental hacía que, en la práctica, la máquina de Shannon fuera efectiva contra oponentes humanos. El artículo destaca la brecha entre la capacidad teórica y la aplicabilidad práctica en tiempo real, un concepto que Shannon identificó.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50077020,
+    "url": "https://guitoro.com/",
+    "score": 495,
+    "time": 1791918708,
+    "titulo_es": "Guitoro: La Guitarra Virtual Más Realista y Completa Online",
+    "resumen": "Guitoro es una aplicación web que simula de forma realista y completa una guitarra virtual, permitiendo a los usuarios tocarla directamente desde su navegador. Ofrece múltiples modos de interacción: teclado del ordenador (mano izquierda en acordes, mano derecha rasgueando) y pantallas táctiles (deslizando los dedos sobre las cuerdas). Soporta diferentes tipos de guitarra (acústica de cuerdas de acero, clásica, eléctrica) y bajo de cuatro cuerdas. La plataforma facilita el aprendizaje de acordes y canciones al reproducir partes reconocibles de canciones, sincronizando visualmente la ejecución con el sonido. Permite ralentizar la reproducción hasta un 20% para observar detalles como la iluminación de cuerdas, el movimiento de la púa y la posición de los dedos en el mástil. Cada nota es una grabación de un instrumento real, garantizando autenticidad sonora. Guitoro se diferencia de otras simulaciones al permitir el rasgueo (strumming) mediante gestos o teclas, y no solo la pulsación de notas individuales. Incluye 15 acordes por tonalidad, arpegios, 'chucks' y 'palm mutes'. La versión para ordenador ofrece un modo 'Solo' donde el teclado se mapea a las cuerdas y trastes, con soporte para bends y vibrato. El aprendizaje se potencia al mostrar visualmente la ejecución exacta en el mástil y las cuerdas, y al permitir la interacción en tiempo real con las canciones, esperando la entrada del usuario en cada cambio de acorde. La aplicación no requiere descarga ni registro.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50053487,
+    "url": "https://www.openculture.com/2026/10/a-900-page-pre-pantone-guide-to-color-from-1692.html",
+    "score": 209,
+    "time": 1791795902,
+    "titulo_es": "Tratado de los colores para la pintura al agua",
+    "resumen": "El artículo describe el 'Traité des couleurs servant à la peinture à l'eau' (Klaer Lichtende Spiegel der Verfkonst), un manual de 900 páginas creado en 1692 por A. Boogert. Este libro, anterior a las teorías modernas del color y a herramientas estandarizadas como Pantone, contiene más de 700 muestras de color y se basa en el sistema aristotélico. Aunque no parece haber tenido una influencia directa significativa en su época, se considera un documento valioso para comprender las técnicas de pintores e ilustradores del siglo XVII, dirigido principalmente a acuarelistas. Su redescubrimiento por el historiador Erik Kwakkel resalta su singularidad como una obra adelantada a su tiempo.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50071466,
+    "url": "https://marcpaul.io/logs/same-job-two-engines-innodb-and-iceberg-internals/",
     "score": 39,
-    "time": 1791905150,
-    "titulo_es": "Cómo el tráfico de bots y scrapers de IA degradó el rendimiento de mi aplicación web",
-    "resumen": "El autor relata cómo su lector de feeds (sprinklz.io), desarrollado como una SPA, experimentó una severa degradación en el rendimiento tras ganar tracción en Hacker News. Al analizar las métricas por endpoint y los logs de NGINX, descubrió que la sobrecarga del servidor no procedía de usuarios reales, sino de scrapers abusivos (destacando un servicio de resúmenes de IA que consultaba el sitio de forma intensiva), rastreadores de IA, indexadores y escáneres de vulnerabilidades. Para solucionarlo, bloqueó al usuario abusivo, implementó límites de tasa (rate limiting), configuró robots.txt y optimizó la infraestructura para mejorar la escalabilidad y soportar mayores QPS.",
+    "time": 1791898303,
+    "titulo_es": "Optimización de una Base de Datos Financiera de OLTP a OLAP con Enfoque en Lakehouse",
+    "resumen": "El artículo detalla la evolución de un repositorio de análisis de acciones, migrando de una arquitectura OLTP a OLAP para mejorar el rendimiento. El autor explica las optimizaciones logradas al adoptar un stack OLAP, centrándose en los beneficios de las estructuras de almacenamiento (columnas juntas para ingesta eficiente) y las desventajas de los índices (ralentizan las escrituras). Se discute el papel del 'undo log' y el Multi-Version Concurrency Control (MVCC) en InnoDB para permitir concurrencia sin bloqueos. La experiencia previa con un diseño de base de datos subóptimo, donde una tabla central de datos financieros contenía todas las columnas y requería joins innecesarios para cálculos de indicadores, se presenta como un caso de estudio. La corrección implicó rediseñar las tablas de indicadores para incluir la fecha, mejorando la eficiencia al poder consultar solo las columnas necesarias, similar a los principios de un data lakehouse y las optimizaciones de lectura en bases de datos OLAP. Se menciona el desafío de refactorizar datos extensos y la necesidad de reestructurar esquemas para manejar grandes volúmenes de datos de manera efectiva.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50069337,
-    "url": "https://pdftomp3.com/connect-ai/",
-    "score": 126,
-    "time": 1791886114,
-    "titulo_es": "Convertir PDF a MP3 y crear audiolibros con un servidor MCP",
-    "resumen": "El artículo describe el proceso de configuración de un servidor MCP (probablemente un servicio de transcripción o síntesis de voz) dentro de la herramienta Codex para convertir documentos PDF en audiolibros utilizando la tecnología de texto a voz de Google o OpenAI. Se detallan los pasos para añadir el servidor HTTP Streamable, autenticar la cuenta y utilizar una clave API para el procesamiento de voz. Se enfatiza la importancia de habilitar la facturación en la consola de Gemini para asegurar la fiabilidad y evitar límites de tasa o errores de alta demanda, explicando que la suscripción cubre el coste del servicio de voz.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50070741,
-    "url": "https://github.com/jeff87654/busy-beaver/blob/main/BB10/1RB0RA_1LC1LF_1RD0LB_1RA1LE_1LI0LC_0RG1LD_1RH1LG_1LC0RG_0LJ0LI_1RZ0LC.md",
-    "score": 45,
-    "time": 1791895204,
-    "titulo_es": "La Máquina n1: Superando al Campeón BB(10) en la Jerarquía de Crecimiento Rápido",
-    "resumen": "El artículo describe una máquina de Turing de 10 estados y 2 símbolos, denominada n1, que supera al campeón actual del problema Busy Beaver en la instancia BB(10). La máquina n1 se basa en una máquina de 8 estados (base machine) que concuerda con el récord BB(8) hasta cierto punto. La n1 modifica la máquina base introduciendo dos estados adicionales (I y J) y reconfigurando una transición de detención. Se detalla la notación utilizada, incluyendo tokens, configuraciones de cinta, unidades, bloqueadores y profundidad, todo ello siguiendo el análisis de Ligocki. La máquina n1 opera utilizando reglas de limpieza similares a las de los campeones BB(7) y BB(8). Un aspecto clave es cómo la limpieza de unidades de tokens a diferentes profundidades afecta el valor (v) a través de la función de crecimiento rápido 2↑^j v. En un punto crucial, después de 6447 pasos, la máquina alcanza una configuración específica ([7, 1^35 | 4]) y procede a limpiar las unidades de un token, resultando en una configuración que requiere T unidades (donde T = 2↑^37 3). A diferencia del récord BB(8) que se detiene en este punto, la n1 inicia una secuencia de eventos especiales (incluyendo la primera lectura de E0) que la llevan a un nuevo nivel de la jerarquía de crecimiento rápido (nivel ω+1), superando así la cota publicada para BB(10) de f_ω(f_ω(25)). La puntuación de la máquina n1 se demuestra formalmente en Coq y se sitúa entre f_(ω+1) de la jerarquía de crecimiento rápido.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50067414,
-    "url": "https://www.thehistoryblog.com/archives/77107",
-    "score": 258,
-    "time": 1791871371,
-    "titulo_es": "Arqueólogos Descubren Archivo Real Hitita con Tablillas Cuneiformes Detallando Epidemia, Logística Militar y Rituales",
-    "resumen": "Un equipo de arqueólogos en Sivas, Turquía, ha descubierto el archivo de documentos en lengua hitita más grande y completo del siglo XXI. Este hallazgo, que incluye 131 tablillas cuneiformes y fragmentos de la época del Rey Tudhaliya II (hace 3.400 años), detalla eventos cruciales como una epidemia de fiebre que afectó a la hija del rey, la logística militar con peticiones de refuerzos desde Anatolia occidental, y complejas prácticas religiosas y de adivinación, incluyendo rituales funerarios y el análisis de augurios aviares. Los textos, escritos en hitita y hurrita, también arrojan luz sobre la importancia política y religiosa de la antigua ciudad de Samuha, su devoción a la diosa Sauska, y proveen información inédita sobre la cultura hitita, su lenguaje y sus prácticas scribales. La correspondencia militar sugiere posibles interacciones con civilizaciones contemporáneas del Egeo, como Ahhiyawa (posiblemente Aqueos/Griegos), y referencias a conflictos y alianzas en la región de Anatolia occidental.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50068036,
-    "url": "https://blog.character.ai/an-update-on-character-ai/",
-    "score": 145,
-    "time": 1791876514,
-    "titulo_es": "Character.ai inicia un proceso de bancarrota voluntaria del Capítulo 11 para facilitar una venta supervisada por el tribunal",
-    "resumen": "Character.ai ha iniciado un proceso de bancarrota voluntaria bajo el Capítulo 11 con el objetivo de buscar una venta supervisada por el tribunal de sus activos. La compañía cita importantes obstáculos legales, regulatorios y operativos como razón principal para esta medida. El proceso busca maximizar el valor para todas las partes interesadas y se espera que concluya a finales de noviembre o principios de diciembre de 2026. Durante el proceso, la plataforma Character.ai seguirá operativa y accesible para los usuarios, manteniendo las suscripciones y la protección de datos. La empresa buscará una propuesta que permita la continuidad de las operaciones; de lo contrario, la plataforma será liquidada. Este proceso se enmarca en un contexto donde la Inteligencia Artificial (IA), especialmente en aplicaciones conversacionales y de creación de personajes, enfrenta un escrutinio regulatorio y legal creciente, además de desafíos operativos en su escalabilidad y sostenibilidad.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50063427,
-    "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
-    "score": 559,
-    "time": 1791841218,
-    "titulo_es": "'IA' No es una Herramienta: Un Análisis sobre la Naturaleza de los LLMs",
-    "resumen": "El artículo refuta el argumento de Rich Hickey de que los Modelos de Lenguaje Grandes (LLMs) no son herramientas sino automatización, argumentando que sí pueden ser manejados por humanos y requieren habilidad para ser utilizados eficazmente. Se compara el uso de LLMs con otras herramientas, enfatizando que su utilidad depende de la pericia del operador. Se destaca que la imprevisibilidad es una limitación, no una descalificación como herramienta. Se argumenta que la automatización puede ser una característica de las herramientas (ej. compiladores, hojas de cálculo) y que los LLMs, al igual que estos, son manejados mediante especificación de entradas, interpretación de resultados y toma de decisiones. Se defiende que el uso de LLMs implica un ciclo de retroalimentación humana, requiriendo conocimiento para preguntar y evaluar respuestas. Si bien se valida la preocupación sobre el uso superficial de resúmenes en lugar de la lectura, se señala que los LLMs también pueden potenciar la comprensión lectora. Se critica el uso de vocabulario antropomórfico en la industria de la IA. La distinción clave se establece entre manejar un instrumento con destreza y delegar trabajo sin supervisión adecuada, una distinción aplicable a los LLMs.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50070302,
-    "url": "https://www.firefox.com/en-US/enterprise/",
-    "score": 317,
-    "time": 1791892842,
-    "titulo_es": "Firefox Enterprise: Privacidad, Independencia y Control para Empresas",
-    "resumen": "Firefox Enterprise se enfoca en la privacidad del cliente, la independencia y el control, posicionándose como una capa crítica para la gobernanza y el cumplimiento en el entorno empresarial donde convergen el trabajo, los datos, la identidad y la IA. Permite el despliegue on-premises para un control total sobre datos y políticas, ofrece prevención de fuga de datos sensibles y acceso seguro basado en identidad sin infraestructura VPN tradicional. Su independencia de motor de navegador promueve la diversidad, reduce el riesgo de fallos compartidos y evita el \"vendor lock-in\", integrándose con el stack de seguridad existente. Próximamente incluirá gestión centralizada de Thunderbird y ofrece soporte directo para resolver incidencias. La consola de gestión se ejecuta en la infraestructura del cliente, el código es open source y se integra con herramientas existentes sin \"ecosystem lock-in\".",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50041866,
-    "url": "https://jsomers.net/e-coli-chemotaxis/",
-    "score": 368,
-    "time": 1791716550,
-    "titulo_es": "Quimiotaxis: La Inteligencia Elemental de E. coli",
-    "resumen": "El artículo describe la quimiotaxis en la bacteria E. coli, un proceso fundamental que demuestra inteligencia a nivel celular. Se detalla cómo la bacteria utiliza receptores químicos (su \"nariz\") y un motor flagelar molecular para navegar en su entorno. La quimiotaxis implica un balance entre \"correr\" (run) para avanzar y \"tropezar\" (tumble) para cambiar de dirección, controlado por la molécula de señalización CheY. Cuando CheY se fosforila (CheY-p) al interactuar con el complejo receptor, provoca que los rotores flagelares inviertan su giro, resultando en un \"tumble\". La detección de un aumento en el atrayente interrumpe esta fosforilación, disminuyendo los \"tumbles\" y aumentando las \"runs\", lo que guía a la bacteria hacia nutrientes. El texto enfatiza la quimiotaxis como un ejemplo de sistemas biológicos complejos, resaltando la relación entre estructura proteica y función, el flujo de información a través de membranas y el uso de modificaciones químicas para el almacenamiento y comunicación de estado.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50055304,
-    "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
-    "score": 835,
-    "time": 1791807402,
-    "titulo_es": "Ciberataque interrumpe sistemas de refrigeración en supermercados europeos",
-    "resumen": "Un ciberataque ha afectado a importantes cadenas de supermercados en Europa, incluyendo Francia, Bélgica y los Países Bajos. El ataque ha comprometido los sistemas de control de refrigeración, específicamente unidades de refrigeración fabricadas por Danfoss, utilizadas por minoristas como Intermarché, Leclerc y Coopérative U en Francia. Los atacantes han configurado los sistemas de descongelación automática para que funcionen de forma continua a 50 grados Celsius, lo que provoca \"una ola de calor\" en refrigeradores y congeladores. Esto no solo está afectando la conservación de productos frescos, sino también las entregas y los precios en tienda, ya que los sistemas de etiquetas electrónicas también se ven impactados. El presidente de Coopérative U, Dominique Schelcher, describió el incidente como \"extremadamente grave\" e \"inaceptable\", confirmando la movilización de equipos para resolver el problema y una investigación en curso. Las pérdidas iniciales se estiman en 300.000 euros, pero podrían ascender a varios millones a nivel nacional.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50063365,
-    "url": "https://www.intel.com/content/www/us/en/products/details/discrete-gpus/data-center-gpu/d-series.html",
-    "score": 288,
-    "time": 1791840935,
-    "titulo_es": "Intel GPU D270: Aceleración de IA para Agentes y Contextos Largos",
-    "resumen": "El artículo describe la GPU Intel D270, diseñada específicamente para la era de la IA de agentes y cargas de trabajo con contextos largos. Destaca su eficiencia en memoria (hasta 480 GB LPDDR5X), potencia y coste, con características como 32 núcleos Xᵉ3P y 256 motores matriciales XMX para acelerar el prefill. La GPU está optimizada para inferencia en centros de datos, soportando modelos grandes, alta concurrencia y flujos de trabajo de recuperación aumentada (RAG) y asistentes de IA empresariales. Se enfatiza su diseño con refrigeración por aire, factor de forma estándar y compatibilidad con infraestructuras y frameworks de IA existentes como PyTorch y vLLM, facilitando la implementación y escalabilidad sin comprometer la eficiencia energética o los costes.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50058528,
-    "url": "https://prophitt.me/writing/a-modern-web-app-in-c",
-    "score": 666,
-    "time": 1791821590,
-    "titulo_es": "Construyendo un Producto Web Moderno con C y CGI en 2026",
-    "resumen": "El artículo describe la experiencia de desarrollar y desplegar un producto web comercial utilizando C y el protocolo CGI en 2026. A pesar de la percepción general de que CGI es obsoleto, el autor argumenta que sigue siendo viable y ventajoso para aplicaciones web modernas. La arquitectura se basa en OpenBSD, C, el servidor web httpd y SQLite (BCHS), eliminando frameworks, lenguajes de plantillas y servidores de bases de datos externos. Cada solicitud genera un nuevo proceso CGI, lo que permite actualizaciones sin tiempo de inactividad al reemplazar un único binario estáticamente enlazado. OpenBSD proporciona herramientas de seguridad como `pledge` y `unveil`, y `httpd` sirve archivos desde un entorno `chroot`. El proyecto solo depende de `libcurl` y `lib જો` para funcionalidades externas, minimizando la superficie de ataque y la complejidad de la cadena de suministro. Los activos estáticos se compilan en el ejecutable y se sirven desde memoria. El autor compara CGI con la arquitectura serverless por su invocación por solicitud y el manejo de datos a través de variables de entorno, pero sin la dependencia de proveedores. Se destaca la simplicidad para depurar y la comprensión fundamental de HTTP que requiere CGI.",
+    "id": 50064673,
+    "url": "http://red-green-blue.com/kid-pix-the-early-years",
+    "score": 56,
+    "time": 1791849149,
+    "titulo_es": "La Historia de Kid Pix y mi Viaje en la Programación",
+    "resumen": "Este artículo narra la evolución personal del autor desde la fotografía hasta la programación de computadoras, destacando su introducción a la programación en 1972, el uso de microcomputadoras como el Atari 400 para proyectos personales y la experimentación con interfaces de usuario y diseño de software. El autor describe cómo su interés en la fotografía se desvaneció ante la fascinación por la exploración de las capacidades gráficas y de sonido de estas máquinas, sentando las bases para su búsqueda de la \"belleza en el diseño de software\" y la influencia de publicaciones como Byte Magazine y Scientific American en su enfoque. Se menciona el impacto del lanzamiento del Macintosh en 1984 como un punto de inflexión.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50068443,
-    "url": "https://www.unsiloed.ai/blog/document-review-unsiloed-typesafe-jev",
-    "score": 38,
-    "time": 1791879891,
-    "titulo_es": "Uso conjunto de Unsiloed y Jev para la validación de extracción de datos",
-    "resumen": "El artículo describe un sistema para mejorar la precisión de la extracción de datos de documentos, combinando la herramienta de extracción estructurada Unsiloed con la herramienta de validación basada en preguntas de TypeSafe llamada Jev. Unsiloed extrae campos de texto y su ubicación en el documento, proporcionando puntuaciones de confianza. Jev evalúa la información extraída mediante preguntas específicas tipificadas (Noul, Choice, Score), sin acceder directamente a la imagen. El flujo de trabajo propuesto utiliza estas dos herramientas para separar lecturas inciertas de valores implausibles, identificando campos que requieren revisión humana. Se detalla cómo construir el estado para Jev, que incluye los datos extraídos por Unsiloed y el contexto necesario, y cómo formular preguntas para evaluar la plausibilidad de los datos extraídos, como dosis y frecuencias de medicamentos, utilizando Jev para determinar la probabilidad de que una afirmación sea verdadera (tipo Noul). El sistema permite automatizar la compra de agentes y manejar pagos, y se enfoca en la validación de la información para prevenir errores de OCR y otros fallos en la extracción.",
+    "id": 50073879,
+    "url": "https://deepmind.google/models/gemini/",
+    "score": 1365,
+    "time": 1791907396,
+    "titulo_es": "Argon: La Nueva Era de Inteligencia Fronteriza de Google",
+    "resumen": "El artículo describe 'Argon', un modelo avanzado de inteligencia artificial desarrollado por Google, diseñado para resolver problemas complejos en diversas áreas. Se destaca su capacidad para transformar video en simulaciones físicas precisas, su resiliencia contra ataques de inyección de prompts y su mejora en la seguridad cibernética (empatando en el primer puesto en CWE-Bench para remediación de vulnerabilidades). En el ámbito del desarrollo de software, Argon ha sido fundamental para refactorizar código masivo en Chromium, optimizar el rendimiento de frameworks como Google's Agent Development Kit (ADK) y acelerar la inferencia de modelos (como Gemma 4 E2B) mediante optimizaciones en vLLM. También se menciona su uso para migrar laboratorios de entrenamiento y mejorar la eficiencia en la predicción de estructuras moleculares en química cuántica (acelerando xTB). Además, Argon demuestra capacidades avanzadas en razonamiento espacial y visualización 3D, creando modelos detallados en Blender y desarrollando juegos interactivos a partir de imágenes del mundo real.",
     "categoria": "IA"
+  },
+  {
+    "id": 50083130,
+    "url": "https://github.com/android/ndk/issues/2260",
+    "score": 372,
+    "time": 1791958681,
+    "titulo_es": "Regresión en wcscspn y wcspbrk en builds de Android 17.0.0 de septiembre de 2026",
+    "resumen": "El artículo detalla una regresión crítica introducida en las builds de Android 17.0.0 de septiembre de 2026, afectando a las funciones de manejo de cadenas anchas `wcscspn()` y `wcspbrk()`. Estas funciones fallan al detenerse en el primer carácter de la cadena que es mayor o igual a U+0100 cuando el conjunto de caracteres a comparar (el 'reject set' en `wcscspn` o el 'break set' en `wcspbrk`) contiene dos o más caracteres todos menores que U+0100. En estos casos, la función reporta un carácter coincidente incorrectamente, incluso si no está en el conjunto especificado. Este comportamiento afecta a cualquier código que busque delimitadores de caracteres anchos (como saltos de línea o comodines) en cadenas que contengan caracteres no ASCII, como emojis, CJK, cirílicos, griegos o latinos extendidos. Se ha identificado que la causa raíz es un cambio en la implementación de `external/llvm-libc` entre las versiones de junio y septiembre de 2026, a diferencia de la versión de junio que es correcta. La regresión se manifiesta en `wcspbrk` porque su implementación depende de la lógica defectuosa de `wcscspn`. Se mencionan casos de impacto real, como Visual Pinball en Android y `FileSystem.MoveFolder`, y la falta de tests adecuados en el AOSP que no cubren entradas no ASCII. Se está trabajando en añadir tests correctos y se evalúa el backporting de la corrección para minimizar el impacto.",
+    "categoria": "Desarrollo de Software"
   },
   {
     "id": 50072994,
     "url": "https://ourworldindata.org/data-insights/electricity-generation-per-person-in-the-united-kingdom-has-fallen-by-a-third-from-its-early-2000s-peak",
-    "score": 18,
+    "score": 362,
     "time": 1791904377,
-    "titulo_es": "Declive del consumo eléctrico en el Reino Unido, progreso contra la pobreza global y la realidad de la contaminación plástica en el océano",
-    "resumen": "El artículo analiza varias tendencias globales y nacionales. En el Reino Unido, la generación de electricidad per cápita ha disminuido significativamente desde 2003, volviendo a niveles de finales de la década de 1960. Esto se atribuye tanto a un aumento en las importaciones netas de electricidad como a una menor demanda, influenciada por la desindustrialización y mejoras en la eficiencia energética (como el cambio a bombillas LED y estándares de electrodomésticos). Paralelamente, se destaca el progreso global en la reducción de la pobreza extrema, ejemplificado por China e Indonesia, donde porcentajes muy altos de la población han salido de la pobreza. Finalmente, el artículo aborda la percepción pública sobre la contaminación plástica, aclarando que solo alrededor del 0.5% de los residuos plásticos generados a nivel mundial terminan en el océano, aunque la mala gestión y el vertido siguen siendo un desafío.",
+    "titulo_es": "Disminución del consumo de electricidad en el Reino Unido y progreso global en la reducción de la pobreza",
+    "resumen": "El artículo analiza la disminución del consumo de electricidad per cápita en el Reino Unido desde 2003, atribuyéndola a la desindustrialización y las mejoras en la eficiencia energética, lo que ha llevado los niveles a los de finales de la década de 1960. También aborda el progreso global en la reducción de la pobreza extrema, destacando los casos de China e Indonesia, y contrasta la percepción pública con la realidad de la contaminación plástica en los océanos, señalando que solo el 0.5% de los residuos plásticos terminan allí. Finalmente, menciona el declive del 73% en las poblaciones de vida silvestre estudiadas desde 1970 según el informe Living Planet Index.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50072229,
-    "url": "https://forbetterscience.com/2026/09/22/a-book-that-will-never-be-read/",
-    "score": 30,
-    "time": 1791901300,
-    "titulo_es": "Por una mejor ciencia: Crítica a la integridad de las publicaciones científicas y el papel de las 'papermills'",
-    "resumen": "El artículo critica la creciente proliferación de publicaciones científicas de baja calidad, a menudo generadas por IA o fabricadas, que son publicadas por editoriales importantes como Springer Nature y Elsevier. Se destaca el trabajo de Michał Wójcik, quien identifica y expone estas 'papermills' y el contenido basura que producen, incluyendo ilustraciones sin sentido y referencias falsas. Se mencionan ejemplos específicos de artículos y capítulos de libros que presentan problemas graves de integridad, a pesar de los supuestos procesos de revisión por pares y las herramientas digitales avanzadas de las editoriales. El autor expresa preocupación por el estado actual de la investigación académica, donde el financiamiento público parece potenciar un 'complejo editorial-papermill'.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50063717,
-    "url": "https://github.com/prabanta-dev/janas",
-    "score": 203,
-    "time": 1791842743,
-    "titulo_es": "Janas-LLM: Ejecución Eficiente de Modelos de Lenguaje Grandes en Hardware Común",
-    "resumen": "El artículo describe Janas-LLM, una herramienta de inteligencia artificial escrita en C puro, diseñada para ejecutar modelos de lenguaje grandes (LLMs) de manera eficiente en hardware de consumo, incluyendo laptops con RAM limitada y sin necesidad de GPUs potentes. Destaca su capacidad para superar a herramientas como llama.cpp en velocidad de inferencia y lectura de prompts en diversos modelos, incluso aquellos que exceden la memoria RAM disponible. Janas-LLM optimiza el uso de recursos al mantener los pesos del modelo en disco y transmitir expertos individualmente según sea necesario, con aquellos usados frecuentemente permaneciendo en memoria. Se detallan configuraciones de hardware (CPU Intel Core Ultra 9 185H con GPU Arc integrada, 32 GB de RAM, SSD NVMe) y benchmarks comparativos bajo Linux y Windows, mostrando mejoras significativas en tokens por segundo. Se enfatiza que es un proyecto experimental, con instrucciones para su uso y contribución.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50061791,
-    "url": "https://lunarwatcher.codeberg.page/til/firefox/resumable-big-downloads.html",
-    "score": 264,
-    "time": 1791833762,
-    "titulo_es": "Solución a problemas de descargas grandes y reanudables en Firefox",
-    "resumen": "El artículo aborda un problema recurrente en versiones modernas de Firefox (28 y posteriores) relacionado con la configuración predeterminada de `network.http.response.timeout` (300 segundos). Esta configuración parece interferir con la reanudación y estabilidad de descargas grandes, incluso cuando el servidor soporta descargas reanudables. Se propone que establecer `network.http.response.timeout` a 0 o un valor muy alto en `about:config` mejora la capacidad de Firefox para reanudar descargas interrumpidas. El autor especula que Firefox podría depender de los tiempos de espera de conexión en lugar de los archivos `.part` para gestionar las reanudaciones, y que la configuración del timeout afecta las reintentos ocultos antes de considerar un fallo. Se menciona que la inestabilidad de las descargas reanudables en Firefox es un problema conocido desde hace tiempo y se sugiere `wget -c` como alternativa viable. No se ha verificado la información con el código fuente de Firefox.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 50063138,
-    "url": "https://purplesyringa.moe/blog/who-is-vfmaddrnd231pd/",
-    "score": 241,
-    "time": 1791839563,
-    "titulo_es": "La misteriosa instrucción VFMADDRND231PD: ¿Un error de documentación de Intel?",
-    "resumen": "El artículo investiga la instrucción VFMADDRND231PD, parte del conjunto de instrucciones FMA de Intel, que supuestamente permitía el control de redondeo por instrucción para operaciones de punto flotante de doble precisión. A pesar de estar detallada en el Manual de Desarrollo de Software (SDM) de Intel con pseudocódigo y tablas específicas, la instrucción no es reconocida por ensambladores como GNU, ni por compiladores como Clang o ICC a través de sus intrínsecos. La investigación revela inconsistencias en el manual, como el campo DDS y la ausencia de variantes comunes en otras instrucciones FMA. Las pruebas en hardware real (CPU Haswell) resultan en una excepción \"Undefined Instruction\" (#UD). Se observa que la instrucción aparece en versiones antiguas del SDM (2024) pero desaparece en versiones más recientes (2026), lo que sugiere un posible error de Intel: la instrucción pudo haber sido planeada para el hardware pero eliminada en el último momento sin una corrección completa de la documentación. El autor busca confirmación de esta hipótesis.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50055593,
-    "url": "https://github.com/h0m3us3r/w1700k-sdr",
-    "score": 400,
-    "time": 1791808918,
-    "titulo_es": "Router Wi-Fi 7 Gemtek W1700K como Receptor de Software Definido de Banda Ancha",
-    "resumen": "El artículo detalla la transformación de un router Wi-Fi 7 Gemtek W1700K en un receptor de radio definido por software (SDR) capaz de capturar datos IQ crudos de 14 bits a velocidades de hasta 320 Msps. Esto se logra ejecutando firmware personalizado en el SoC Airoha AN7581 y el radio MediaTek MT7996, permitiendo la transmisión de los datos a través de Ethernet de 10 GbE a un host Linux. El host procesa estos datos para visualizarlos en un navegador web como un espectro y una cascada en tiempo real, con controles para ajustar parámetros como la frecuencia, tasa de muestreo y ganancia. Se enfatiza que todo el proceso se realiza sin utilizar firmware propietario de MediaTek, sino con código desarrollado desde cero a partir de ingeniería inversa. Se describen los requisitos de hardware, incluyendo el router, un adaptador serie USB, y una NIC de 10 GbE en el host, así como los requisitos de compilación del software, que incluyen compiladores, herramientas de Buildroot, y bibliotecas específicas. Las licencias de los componentes son variadas, incluyendo MIT, GPL y BSD.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50064840,
-    "url": "https://github.com/bherbruck/solidcraft",
-    "score": 114,
-    "time": 1791850264,
-    "titulo_es": "SolidCraft: Aplicación Paramétrica CAD 3D de Código Abierto en Rust",
-    "resumen": "SolidCraft es una aplicación CAD 3D paramétrica de código abierto desarrollada en Rust. Permite a los usuarios diseñar modelos 3D mediante bocetos, restricciones y una línea de tiempo de características paramétricas, donde los cambios en las dimensiones se reflejan automáticamente en el modelo. La aplicación es multiplataforma, ofreciendo versiones de escritorio (Windows, macOS, Linux), web (a través de WebGPU/WebGL2) y acceso a través de un servidor Model Context Protocol (MCP) para automatización y control mediante IA. Soporta la integración con hardware de navegación 3D como 3Dconnexion SpaceNavigator. El artículo detalla su estado de desarrollo (temprano pero utilizable), la verificación de precisión de modelos, la lista de comandos disponibles, la integración con herramientas de línea de comandos para la automatización y la posibilidad de crear diseños complejos como un rover espacial a través del servidor MCP. También se mencionan los detalles de instalación, la construcción desde código fuente y la documentación disponible.",
+    "id": 50079865,
+    "url": "https://www.cphiri.dev/presentations/recreational-programming",
+    "score": 244,
+    "time": 1791930813,
+    "titulo_es": "Recordando la Alegría de Programar Más Allá del Trabajo",
+    "resumen": "El artículo explora la motivación intrínseca de los programadores, destacando la importancia de redescubrir y mantener la pasión por la programación por su propio valor, independientemente de las presiones laborales o financieras. Sugiere que conectar con el 'por qué' inicial de aprender a codificar y fomentar la curiosidad es crucial para mantener la vitalidad en una carrera de desarrollo de software.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50061859,
-    "url": "https://www.markround.com/blog/2026/zx-spectrum-intro",
-    "score": 171,
-    "time": 1791834000,
-    "titulo_es": "Una mirada a las herramientas, técnicas y desafíos de crear una 'crack intro' de estilo retro",
-    "resumen": "El artículo detalla el proceso de creación de una 'crack intro' retro para el ZX Spectrum, emulando las intros de los años 80. El autor, un DevOps architect y músico, describe el uso de ensamblador Z80 y técnicas específicas para lograr efectos como scrolltext con fuentes personalizadas, una banda sonora AY de tres canales, medidores VU dinámicos y un efecto de campo de estrellas parallax. Se abordan los desafíos y aprendizajes técnicos en el desarrollo, comparando la experiencia con la influencia que tuvieron las intros de Amiga en su juventud y la evolución del desarrollo de software en sistemas de 8 bits frente a máquinas más potentes.",
-    "categoria": "Hardware"
+    "id": 50082470,
+    "url": "https://felixrieseberg.com/",
+    "score": 240,
+    "time": 1791952953,
+    "titulo_es": "Perfiles y Experiencia de un Ingeniero de Software con Enfoque en IA y Desarrollo de Escritorio",
+    "resumen": "El artículo describe la trayectoria profesional de un ingeniero de software senior con una amplia experiencia en el desarrollo de aplicaciones de escritorio multiplataforma, especialmente a través de su co-mantenimiento de Electron. Ha ocupado roles de liderazgo en empresas tecnológicas de renombre como Notion, Stripe, Slack y Microsoft, centrándose en la mejora de la productividad del desarrollador y la experiencia del usuario. Su trabajo actual en Anthropic se enfoca en potenciar la inteligencia artificial, liderando la ingeniería de productos como Claude.ai, Cowork y Code Desktop. Es un prolífico contribuidor de proyectos de código abierto, destacando su orgullo por Electron, Language Model Builder y otros proyectos enfocados en la creación de herramientas divertidas y útiles. Anteriormente, fue autor y formador en O'Reilly, con publicaciones sobre Electron y desarrollo de aplicaciones Windows con JavaScript. Su experiencia académica incluye una maestría del Internet Institute de la Universidad de Oxford y roles de evangelista de desarrolladores. Ha liderado equipos y proyectos, contribuyendo significativamente al ecosistema de desarrollo de software, con un fuerte énfasis reciente en la aplicación de IA para la productividad.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50056822,
-    "url": "https://www.nationalgeographic.com/environment/article/balcony-plug-in-solar-panels-renewable-energy",
-    "score": 246,
-    "time": 1791814744,
-    "titulo_es": "La energía solar enchufable está a punto de despegar en EE. UU. con la nueva legislación",
-    "resumen": "El artículo describe el creciente interés y la adopción de sistemas de energía solar enchufable, también conocidos como \"solar de balcón\", en Estados Unidos. Esta tecnología permite a los consumidores generar su propia electricidad utilizando paneles solares pequeños y portátiles que se conectan directamente a una toma de corriente. A diferencia de los sistemas solares de tejado tradicionales, estos son más asequibles, fáciles de instalar y no requieren ser propietario de la vivienda, lo que los hace accesibles para inquilinos y propietarios de apartamentos. La reciente aprobación de leyes en varios estados, incluida California, está eliminando las barreras regulatorias y facilitando la instalación. Estos sistemas, que típicamente constan de uno a tres paneles, pueden generar entre el 10% y el 30% del uso de electricidad de un hogar promedio, lo que se traduce en ahorros significativos en las facturas de energía y una reducción de la dependencia de los combustibles fósiles. El artículo cita la popularidad de esta tecnología en Europa, con IKEA vendiendo kits en Alemania, y predice un rápido crecimiento en EE. UU. a medida que más estados aprueben leyes y la disponibilidad de productos aumente. Se estima que la adopción generalizada podría generar ahorros anuales de miles de millones de dólares en costos de electricidad.",
-    "categoria": "Hardware"
+    "id": 50085302,
+    "url": "https://www.quera.com/blog-posts/holding-the-light-teaching-an-ai-to-lock-and-tune-our-quantum-computers-lasers",
+    "score": 18,
+    "time": 1791973584,
+    "titulo_es": "IA Controla Recuperación de Precisión en Computadoras Cuánticas",
+    "resumen": "El artículo describe cómo QuEra está utilizando inteligencia artificial, específicamente a través del Model Hardware Standard (MHS), para automatizar la recuperación de fallos en sus computadoras cuánticas. Los sistemas cuánticos dependen de láseres mantenidos a frecuencias extremadamente precisas, una tarea sensible a perturbaciones como temperatura y vibración. Históricamente, la recuperación de estos fallos requería expertos humanos con conocimiento intuitivo y secuencias de recuperación específicas. El sistema MHS emplea un agente de IA para controlar hardware de precisión, permitiendo la relocking en segundos incluso para perturbaciones severas, superando el 99% de uptime previamente logrado con relocking automático para fallos comunes. La IA no solo restaura la configuración correcta, sino que también puede afinar el lock a un nuevo nivel de calidad y cambiar a otras longitudes de onda operativas. La analogía de una \"bola en un balancín\" se utiliza para explicar el desafío de mantener la frecuencia del láser dentro de tolerancias muy estrictas (±1 kHz o mejor) y cómo múltiples capas de actuadores trabajan juntas para corregir tanto derivas amplias como vibraciones finas. Se detalla la complejidad del \"tuning knob\" del láser, que presenta modos fijos, y cómo una perturbación grande puede sacar la bola de su modo correcto, requiriendo una intervención específica (como un \"Ti:sapphire mode-hop recovery\") que el agente de IA ahora gestiona autónomamente. La verificación contra una referencia de longitud de onda absoluta asegura que no se confunda un modo incorrecto con el éxito. Este enfoque representa la integración de la IA a nivel fundamental en la operación de las computadoras cuánticas de QuEra, preparándolas para el despliegue escalable de QPUs lógicas.",
+    "categoria": "IA"
   },
   {
-    "id": 50065932,
-    "url": "https://www.argmin.net/p/faster-fourier-transforms",
-    "score": 225,
-    "time": 1791859603,
-    "titulo_es": "Una Transformada de Fourier Más Rápida: Explorando las Afirmaciones de OpenAI",
-    "resumen": "El artículo analiza una publicación de OpenAI que afirma haber desarrollado una Transformada de Fourier Rápida (FFT) más eficiente. La FFT es un algoritmo fundamental en el procesamiento digital de señales que permite extraer el contenido de frecuencia de las señales de manera eficiente, reduciendo la complejidad computacional de O(n^2) a O(n log n). El autor revisa los fundamentos de la FFT, su recursividad y la mejora de rendimiento que ofrece. Se plantea la pregunta sobre los límites teóricos de la velocidad de la FFT y si es posible reducir el factor logarítmico o el prefijo constante en su complejidad. El autor describe un enfoque poco convencional para investigar la afirmación de OpenAI, utilizando un chatbot para extraer información del documento, en lugar de una revisión matemática tradicional. Sin embargo, el análisis preliminar y la interacción con el chatbot sugieren que la supuesta mejora no se materializó y que el \"avance\" podría ser un artefacto de la ambigüedad en la notación matemática y la comunicación, particularmente con el uso y abuso de la notación \"big-O\". El artículo concluye criticando la desconexión entre la teoría matemática aplicada y la realidad práctica cuando el formalismo no se define con suficiente rigor.",
+    "id": 50055632,
+    "url": "https://robotsinplainenglish.com/e/2024-01-21-gold-bug.html",
+    "score": 3,
+    "time": 1791809082,
+    "titulo_es": "El insecto de oro: Cómo Edgar Allan Poe introdujo la criptografía en la ficción y su impacto en la vida moderna",
+    "resumen": "El artículo explora cómo el cuento de Edgar Allan Poe, \"El insecto de oro\", publicado en 1843, introdujo la criptografía en la ficción y sentó las bases para su aplicación moderna. Detalla el uso de la criptografía en la vida cotidiana, desde transacciones bancarias hasta el inicio de la era digital. El cuento presenta un cifrado por sustitución simple, donde la decodificación se logra mediante análisis de frecuencia de caracteres, un método precursor de los modelos matemáticos utilizados en la generación de texto y la teoría de la información. Se mencionan las inconsistencias tipográficas en el cuento original y cómo estas afectaron la decodificación, pero se destaca la importancia de Poe como un racionalista que vio la criptografía como una ciencia lógica y no como magia oculta. La historia inspiró indirectamente a pioneros de la criptografía moderna.",
     "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50084838,
+    "url": "https://www.zetter-zeroday.com/who-is-planting-backdoors-in-ledger-crypto-wallets/",
+    "score": 72,
+    "time": 1791970644,
+    "titulo_es": "Robo de criptomonedas millonario por vulnerabilidad de hardware en wallets Ledger",
+    "resumen": "El artículo detalla un sofisticado ataque a hardware de wallets de criptomonedas Ledger, resultando en el robo de aproximadamente $100 millones. Los atacantes implantaron backdoors de hardware en dispositivos Ledger Nano X, Flex y Stax, distribuidos tanto a través de revendedores autorizados en Asia y Europa como de cadenas de electrónica reconocidas. Inicialmente, las vulnerabilidades fueron descubiertas en dispositivos vendidos por CryptoBilis en el sudeste asiático, pero posteriormente se reportaron hallazgos en dispositivos adquiridos en tiendas como MediaMarkt en Europa. Estos hallazgos sugieren una evolución en las tácticas de los atacantes, pasando de operar a través de vendedores no autorizados a comprometer la cadena de suministro de distribuidores legítimos para obtener mayor alcance y explotar la confianza del cliente. La complejidad de los implantes ha aumentado, dificultando su detección. Ledger ha iniciado investigaciones y ha solicitado a los revendedores afectados que detengan las ventas.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50063104,
+    "url": "https://kristaps.bsd.lv/kcgi/",
+    "score": 56,
+    "time": 1791839348,
+    "titulo_es": "kcgi: Una Biblioteca Segura y Mínima para Desarrollo Web en C/C++",
+    "resumen": "kcgi es una biblioteca de código abierto para C/C++ diseñada para el desarrollo de aplicaciones web CGI y FastCGI. Se destaca por su enfoque en la seguridad, minimalismo y auditabilidad. Implementa características avanzadas como auto-compresión, manejo y validación exhaustiva de entradas HTTP (cadenas de consulta, cookies, cuerpos de solicitud, multipart), autenticación, caché de salida configurable y depuración de solicitudes. Su característica diferenciadora principal es el uso de sandboxing y separación de procesos para aislar el manejo de entradas no confiables, similar a OpenSSH. La biblioteca soporta múltiples plataformas (Linux, BSDs, macOS) y arquitecturas. Su uso requiere un servidor web compatible (Apache, nginx, httpd) y se compila y enlaza utilizando herramientas estándar como `make` y `pkg-config`. La documentación canónica se encuentra en sus manpages (kcgi(3)), complementada por guías de despliegue, uso y ejemplos de código. El análisis de solicitudes HTTP, tanto para CGI como para FastCGI, se centraliza en funciones como `khttp_parse`, `khttp_fcgi_init` y `khttp_fcgi_parse`, con la obligación de liberar los recursos con `khttp_free`. La arquitectura de seguridad aísla el código de análisis y validación en un proceso hijo separado (sandbox) para prevenir que errores explotables afecten al sistema principal, comunicándose mediante sockets. Esto exige un manejo cuidadoso para asegurar que las rutinas de validación dentro del sandbox no accedan a recursos externos o al entorno del sistema.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50061659,
+    "url": "https://news.mit.edu/2026/mit-class-project-turns-into-fda-cleared-treatment-for-tremors-1002",
+    "score": 239,
+    "time": 1791833328,
+    "titulo_es": "Dispositivo de Vibración para Reducir Temblor Transforma una Idea de Clase en una Compañía con Aprobación de la FDA",
+    "resumen": "El artículo narra la evolución de un dispositivo portátil desarrollado por estudiantes del MIT para mitigar temblores causados por el Parkinson y el temblor esencial. Inicialmente concebido como un proyecto de clase (2.009 Product Engineering Processes) en 2017, el prototipo utilizaba vibraciones mecánicas sutiles para enviar señales al cerebro, reduciendo significativamente los temblores de un paciente de prueba. A pesar de las dudas iniciales sobre su viabilidad, la idea, inspirada en principios de control neural de movimiento de robótica, fue seleccionada por el equipo. Tras un viaje de casi una década, que incluyó el uso de recursos de emprendimiento del MIT (Sandbox, FUSE, Venture Mentoring Service) y múltiples iteraciones de hardware y ensayos clínicos, el equipo fundó Encora Therapeutics en 2020. Recientemente, en febrero, la FDA aprobó el dispositivo para adultos con temblor esencial. El éxito del dispositivo destaca la transición exitosa de una idea académica a una solución comercial validada clínicamente, con pacientes reportando beneficios significativos tras su uso continuado.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50046022,
+    "url": "https://eliasebner.com/blog/guides/arena-allocators-in-c/",
+    "score": 65,
+    "time": 1791742076,
+    "titulo_es": "Gestión de memoria con asignadores de arena en C",
+    "resumen": "El artículo introduce y explica el concepto de asignadores de arena (arena allocators) como una solución eficiente y versátil para la gestión de memoria en C. A diferencia de la asignación y liberación individual de pequeñas porciones de memoria con `malloc` y `free`, que es lenta y propensa a fugas de memoria y errores de olvido, los asignadores de arena proponen la asignación de un gran bloque de memoria (arena). Las solicitudes de memoria posteriores se satisfacen avanzando un puntero dentro de esta arena. Cuando toda la memoria de la arena ya no es necesaria, se libera en un solo paso, o la arena puede ser reinicializada para su reutilización. Esto reduce significativamente la sobrecarga de las operaciones de `malloc`/`free` y simplifica la gestión de la vida útil de la memoria, agrupando objetos con ciclos de vida similares. El texto sugiere que la mayoría de los ciclos de vida de la memoria pueden clasificarse en unas pocas categorías, lo que hace que este enfoque sea aplicable y beneficioso para simplificar el desarrollo en C y mejorar el rendimiento y la robustez contra fugas de memoria.",
+    "categoria": "Desarrollo de Software"
   }
 ]
