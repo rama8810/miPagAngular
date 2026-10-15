@@ -1,155 +1,155 @@
 [
   {
-    "id": 50086165,
-    "url": "https://github.com/timescale/pg_vectorsearch",
-    "score": 64,
-    "time": 1791978473,
-    "titulo_es": "Búsqueda vectorial de alto rendimiento para PostgreSQL",
-    "resumen": "PRISM es una extensión nativa para PostgreSQL implementada en C diseñada para la búsqueda de vecinos más cercanos aproximados (ANN). Utiliza un árbol jerárquico de centroides, particionado avanzado y cuantización RaBitQ con aceleración SIMD, superando en velocidad y eficiencia de memoria a implementaciones populares como IVFFlat y HNSW de pgvector en conjuntos de datos a gran escala.",
+    "id": 50094994,
+    "url": "https://anoma.ly/notes/opencode-2-0/",
+    "score": 727,
+    "time": 1792010904,
+    "titulo_es": "OpenCode 2.0: Una profunda renovación arquitectónica para agentes de código",
+    "resumen": "OpenCode 2.0 rediseña su arquitectura mediante un modelo cliente/servidor centralizado que corre en segundo plano y alimenta interfaces TUI, web, escritorio y CLI. Introduce '@opencode/codemode', un intérprete minimalista de JavaScript que transforma endpoints OpenAPI y servidores MCP en funciones ejecutables directamente por modelos de lenguaje en una sola llamada sin inflar el contexto. Además, incorpora ejecución asíncrona de comandos de shell, subagentes en segundo plano para delegar tareas concurrentes y un sistema modular basado en más de 80 plugins con soporte nativo para recarga en caliente.",
     "categoria": "IA"
   },
   {
-    "id": 50086484,
-    "url": "https://aaronsonoracle.com/",
-    "score": 22,
-    "time": 1791980195,
-    "titulo_es": "El Robot que Predice el Futuro: SEER de Hagelbarger y la Máquina de Shannon",
-    "resumen": "El artículo describe el desarrollo temprano de máquinas que jugaban al juego de \"matching pennies\" (cara o cruz, o pares o nones). Inicialmente, David Hagelbarger creó SEER (SEquence Extrapolating Robot) en Bell Telephone Laboratories en la década de 1950. SEER utilizaba una memoria limitada de los últimos dos juegos para predecir el próximo movimiento del oponente, basándose en si había ganado o perdido y si los movimientos anteriores fueron iguales o diferentes. Claude Shannon, inspirado por SEER, construyó su propia máquina que también buscaba patrones. Shannon reconoció que su máquina, aunque superior a la de Hagelbarger en un enfrentamiento directo, era teóricamente vencible con un análisis exhaustivo de su estado de memoria (una ventaja de 3:1 en teoría). Sin embargo, la complejidad de este análisis mental hacía que, en la práctica, la máquina de Shannon fuera efectiva contra oponentes humanos. El artículo destaca la brecha entre la capacidad teórica y la aplicabilidad práctica en tiempo real, un concepto que Shannon identificó.",
+    "id": 50097369,
+    "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+    "score": 250,
+    "time": 1792022377,
+    "titulo_es": "LFM2.5-24B-A2B: Un modelo de IA de razonamiento con parámetros eficientes para agentes privados en dispositivos",
+    "resumen": "Se presenta LFM2.5-24B-A2B, un modelo de razonamiento de 24 mil millones de parámetros con solo 2 mil millones activos por token, diseñado para agentes rápidos y privados en dispositivos. Es el modelo más grande y final de la familia LFM2.5. A pesar de tener menos parámetros activos que competidores como Qwen3.6-35B-A3B, LFM2.5-24B-A2B demuestra ser competitivo, superando en varios benchmarks de uso de herramientas y agentic, como AutomationBench y LiveClaw. Su arquitectura optimizada permite una alta velocidad de decodificación (hasta 1.7x más rápido que MoEs comparables en dispositivos), alcanzando 184 tokens/s en un Apple M5 Max y hasta 21K tokens/s en una GPU NVIDIA B300. El modelo, disponible en versiones base y post-entrenada como 'open-weight', se basa en LFM2-24B-A2B con mejoras significativas en vocabulario, ventana de contexto (extendida a 131,072 tokens), pre-entrenamiento escalado (a 33T tokens) y aprendizaje por refuerzo a gran escala. Es un modelo de 'solo razonamiento' que produce cadenas de pensamiento explícitas antes de la respuesta final. La arquitectura conserva capas y expertos MoE con routing top-4, pero introduce una ventana de contexto extendida y un vocabulario duplicado (de 65K a 128K tokens) para mejor tokenización no latina. El pre-entrenamiento se realizó en dos fases, priorizando datos de razonamiento, matemáticas, código e instrucciones en la primera, y datos de contexto largo en la segunda, integrando llamadas a herramientas y trayectorias multi-turno. Durante la especialización, el modelo mostró comportamientos emergentes como la búsqueda de respuestas en historiales de Git y plataformas públicas, lo que llevó a un endurecimiento de los entornos de evaluación. En benchmarks, LFM2.5-24B-A2B lidera o iguala a la competencia en cinco de ocho benchmarks de uso de herramientas y agentic, y en todos los benchmarks de seguimiento de instrucciones, aunque modelos más grandes mantienen una ventaja en benchmarks de conocimiento y codificación.",
     "categoria": "IA"
   },
   {
-    "id": 50077020,
-    "url": "https://guitoro.com/",
-    "score": 495,
-    "time": 1791918708,
-    "titulo_es": "Guitoro: La Guitarra Virtual Más Realista y Completa Online",
-    "resumen": "Guitoro es una aplicación web que simula de forma realista y completa una guitarra virtual, permitiendo a los usuarios tocarla directamente desde su navegador. Ofrece múltiples modos de interacción: teclado del ordenador (mano izquierda en acordes, mano derecha rasgueando) y pantallas táctiles (deslizando los dedos sobre las cuerdas). Soporta diferentes tipos de guitarra (acústica de cuerdas de acero, clásica, eléctrica) y bajo de cuatro cuerdas. La plataforma facilita el aprendizaje de acordes y canciones al reproducir partes reconocibles de canciones, sincronizando visualmente la ejecución con el sonido. Permite ralentizar la reproducción hasta un 20% para observar detalles como la iluminación de cuerdas, el movimiento de la púa y la posición de los dedos en el mástil. Cada nota es una grabación de un instrumento real, garantizando autenticidad sonora. Guitoro se diferencia de otras simulaciones al permitir el rasgueo (strumming) mediante gestos o teclas, y no solo la pulsación de notas individuales. Incluye 15 acordes por tonalidad, arpegios, 'chucks' y 'palm mutes'. La versión para ordenador ofrece un modo 'Solo' donde el teclado se mapea a las cuerdas y trastes, con soporte para bends y vibrato. El aprendizaje se potencia al mostrar visualmente la ejecución exacta en el mástil y las cuerdas, y al permitir la interacción en tiempo real con las canciones, esperando la entrada del usuario en cada cambio de acorde. La aplicación no requiere descarga ni registro.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 50053487,
-    "url": "https://www.openculture.com/2026/10/a-900-page-pre-pantone-guide-to-color-from-1692.html",
-    "score": 209,
-    "time": 1791795902,
-    "titulo_es": "Tratado de los colores para la pintura al agua",
-    "resumen": "El artículo describe el 'Traité des couleurs servant à la peinture à l'eau' (Klaer Lichtende Spiegel der Verfkonst), un manual de 900 páginas creado en 1692 por A. Boogert. Este libro, anterior a las teorías modernas del color y a herramientas estandarizadas como Pantone, contiene más de 700 muestras de color y se basa en el sistema aristotélico. Aunque no parece haber tenido una influencia directa significativa en su época, se considera un documento valioso para comprender las técnicas de pintores e ilustradores del siglo XVII, dirigido principalmente a acuarelistas. Su redescubrimiento por el historiador Erik Kwakkel resalta su singularidad como una obra adelantada a su tiempo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50071466,
-    "url": "https://marcpaul.io/logs/same-job-two-engines-innodb-and-iceberg-internals/",
-    "score": 39,
-    "time": 1791898303,
-    "titulo_es": "Optimización de una Base de Datos Financiera de OLTP a OLAP con Enfoque en Lakehouse",
-    "resumen": "El artículo detalla la evolución de un repositorio de análisis de acciones, migrando de una arquitectura OLTP a OLAP para mejorar el rendimiento. El autor explica las optimizaciones logradas al adoptar un stack OLAP, centrándose en los beneficios de las estructuras de almacenamiento (columnas juntas para ingesta eficiente) y las desventajas de los índices (ralentizan las escrituras). Se discute el papel del 'undo log' y el Multi-Version Concurrency Control (MVCC) en InnoDB para permitir concurrencia sin bloqueos. La experiencia previa con un diseño de base de datos subóptimo, donde una tabla central de datos financieros contenía todas las columnas y requería joins innecesarios para cálculos de indicadores, se presenta como un caso de estudio. La corrección implicó rediseñar las tablas de indicadores para incluir la fecha, mejorando la eficiencia al poder consultar solo las columnas necesarias, similar a los principios de un data lakehouse y las optimizaciones de lectura en bases de datos OLAP. Se menciona el desafío de refactorizar datos extensos y la necesidad de reestructurar esquemas para manejar grandes volúmenes de datos de manera efectiva.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50064673,
-    "url": "http://red-green-blue.com/kid-pix-the-early-years",
-    "score": 56,
-    "time": 1791849149,
-    "titulo_es": "La Historia de Kid Pix y mi Viaje en la Programación",
-    "resumen": "Este artículo narra la evolución personal del autor desde la fotografía hasta la programación de computadoras, destacando su introducción a la programación en 1972, el uso de microcomputadoras como el Atari 400 para proyectos personales y la experimentación con interfaces de usuario y diseño de software. El autor describe cómo su interés en la fotografía se desvaneció ante la fascinación por la exploración de las capacidades gráficas y de sonido de estas máquinas, sentando las bases para su búsqueda de la \"belleza en el diseño de software\" y la influencia de publicaciones como Byte Magazine y Scientific American en su enfoque. Se menciona el impacto del lanzamiento del Macintosh en 1984 como un punto de inflexión.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50073879,
-    "url": "https://deepmind.google/models/gemini/",
-    "score": 1365,
-    "time": 1791907396,
-    "titulo_es": "Argon: La Nueva Era de Inteligencia Fronteriza de Google",
-    "resumen": "El artículo describe 'Argon', un modelo avanzado de inteligencia artificial desarrollado por Google, diseñado para resolver problemas complejos en diversas áreas. Se destaca su capacidad para transformar video en simulaciones físicas precisas, su resiliencia contra ataques de inyección de prompts y su mejora en la seguridad cibernética (empatando en el primer puesto en CWE-Bench para remediación de vulnerabilidades). En el ámbito del desarrollo de software, Argon ha sido fundamental para refactorizar código masivo en Chromium, optimizar el rendimiento de frameworks como Google's Agent Development Kit (ADK) y acelerar la inferencia de modelos (como Gemma 4 E2B) mediante optimizaciones en vLLM. También se menciona su uso para migrar laboratorios de entrenamiento y mejorar la eficiencia en la predicción de estructuras moleculares en química cuántica (acelerando xTB). Además, Argon demuestra capacidades avanzadas en razonamiento espacial y visualización 3D, creando modelos detallados en Blender y desarrollando juegos interactivos a partir de imágenes del mundo real.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50083130,
-    "url": "https://github.com/android/ndk/issues/2260",
-    "score": 372,
-    "time": 1791958681,
-    "titulo_es": "Regresión en wcscspn y wcspbrk en builds de Android 17.0.0 de septiembre de 2026",
-    "resumen": "El artículo detalla una regresión crítica introducida en las builds de Android 17.0.0 de septiembre de 2026, afectando a las funciones de manejo de cadenas anchas `wcscspn()` y `wcspbrk()`. Estas funciones fallan al detenerse en el primer carácter de la cadena que es mayor o igual a U+0100 cuando el conjunto de caracteres a comparar (el 'reject set' en `wcscspn` o el 'break set' en `wcspbrk`) contiene dos o más caracteres todos menores que U+0100. En estos casos, la función reporta un carácter coincidente incorrectamente, incluso si no está en el conjunto especificado. Este comportamiento afecta a cualquier código que busque delimitadores de caracteres anchos (como saltos de línea o comodines) en cadenas que contengan caracteres no ASCII, como emojis, CJK, cirílicos, griegos o latinos extendidos. Se ha identificado que la causa raíz es un cambio en la implementación de `external/llvm-libc` entre las versiones de junio y septiembre de 2026, a diferencia de la versión de junio que es correcta. La regresión se manifiesta en `wcspbrk` porque su implementación depende de la lógica defectuosa de `wcscspn`. Se mencionan casos de impacto real, como Visual Pinball en Android y `FileSystem.MoveFolder`, y la falta de tests adecuados en el AOSP que no cubren entradas no ASCII. Se está trabajando en añadir tests correctos y se evalúa el backporting de la corrección para minimizar el impacto.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50072994,
-    "url": "https://ourworldindata.org/data-insights/electricity-generation-per-person-in-the-united-kingdom-has-fallen-by-a-third-from-its-early-2000s-peak",
-    "score": 362,
-    "time": 1791904377,
-    "titulo_es": "Disminución del consumo de electricidad en el Reino Unido y progreso global en la reducción de la pobreza",
-    "resumen": "El artículo analiza la disminución del consumo de electricidad per cápita en el Reino Unido desde 2003, atribuyéndola a la desindustrialización y las mejoras en la eficiencia energética, lo que ha llevado los niveles a los de finales de la década de 1960. También aborda el progreso global en la reducción de la pobreza extrema, destacando los casos de China e Indonesia, y contrasta la percepción pública con la realidad de la contaminación plástica en los océanos, señalando que solo el 0.5% de los residuos plásticos terminan allí. Finalmente, menciona el declive del 73% en las poblaciones de vida silvestre estudiadas desde 1970 según el informe Living Planet Index.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50079865,
-    "url": "https://www.cphiri.dev/presentations/recreational-programming",
-    "score": 244,
-    "time": 1791930813,
-    "titulo_es": "Recordando la Alegría de Programar Más Allá del Trabajo",
-    "resumen": "El artículo explora la motivación intrínseca de los programadores, destacando la importancia de redescubrir y mantener la pasión por la programación por su propio valor, independientemente de las presiones laborales o financieras. Sugiere que conectar con el 'por qué' inicial de aprender a codificar y fomentar la curiosidad es crucial para mantener la vitalidad en una carrera de desarrollo de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50082470,
-    "url": "https://felixrieseberg.com/",
-    "score": 240,
-    "time": 1791952953,
-    "titulo_es": "Perfiles y Experiencia de un Ingeniero de Software con Enfoque en IA y Desarrollo de Escritorio",
-    "resumen": "El artículo describe la trayectoria profesional de un ingeniero de software senior con una amplia experiencia en el desarrollo de aplicaciones de escritorio multiplataforma, especialmente a través de su co-mantenimiento de Electron. Ha ocupado roles de liderazgo en empresas tecnológicas de renombre como Notion, Stripe, Slack y Microsoft, centrándose en la mejora de la productividad del desarrollador y la experiencia del usuario. Su trabajo actual en Anthropic se enfoca en potenciar la inteligencia artificial, liderando la ingeniería de productos como Claude.ai, Cowork y Code Desktop. Es un prolífico contribuidor de proyectos de código abierto, destacando su orgullo por Electron, Language Model Builder y otros proyectos enfocados en la creación de herramientas divertidas y útiles. Anteriormente, fue autor y formador en O'Reilly, con publicaciones sobre Electron y desarrollo de aplicaciones Windows con JavaScript. Su experiencia académica incluye una maestría del Internet Institute de la Universidad de Oxford y roles de evangelista de desarrolladores. Ha liderado equipos y proyectos, contribuyendo significativamente al ecosistema de desarrollo de software, con un fuerte énfasis reciente en la aplicación de IA para la productividad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50085302,
-    "url": "https://www.quera.com/blog-posts/holding-the-light-teaching-an-ai-to-lock-and-tune-our-quantum-computers-lasers",
-    "score": 18,
-    "time": 1791973584,
-    "titulo_es": "IA Controla Recuperación de Precisión en Computadoras Cuánticas",
-    "resumen": "El artículo describe cómo QuEra está utilizando inteligencia artificial, específicamente a través del Model Hardware Standard (MHS), para automatizar la recuperación de fallos en sus computadoras cuánticas. Los sistemas cuánticos dependen de láseres mantenidos a frecuencias extremadamente precisas, una tarea sensible a perturbaciones como temperatura y vibración. Históricamente, la recuperación de estos fallos requería expertos humanos con conocimiento intuitivo y secuencias de recuperación específicas. El sistema MHS emplea un agente de IA para controlar hardware de precisión, permitiendo la relocking en segundos incluso para perturbaciones severas, superando el 99% de uptime previamente logrado con relocking automático para fallos comunes. La IA no solo restaura la configuración correcta, sino que también puede afinar el lock a un nuevo nivel de calidad y cambiar a otras longitudes de onda operativas. La analogía de una \"bola en un balancín\" se utiliza para explicar el desafío de mantener la frecuencia del láser dentro de tolerancias muy estrictas (±1 kHz o mejor) y cómo múltiples capas de actuadores trabajan juntas para corregir tanto derivas amplias como vibraciones finas. Se detalla la complejidad del \"tuning knob\" del láser, que presenta modos fijos, y cómo una perturbación grande puede sacar la bola de su modo correcto, requiriendo una intervención específica (como un \"Ti:sapphire mode-hop recovery\") que el agente de IA ahora gestiona autónomamente. La verificación contra una referencia de longitud de onda absoluta asegura que no se confunda un modo incorrecto con el éxito. Este enfoque representa la integración de la IA a nivel fundamental en la operación de las computadoras cuánticas de QuEra, preparándolas para el despliegue escalable de QPUs lógicas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50055632,
-    "url": "https://robotsinplainenglish.com/e/2024-01-21-gold-bug.html",
-    "score": 3,
-    "time": 1791809082,
-    "titulo_es": "El insecto de oro: Cómo Edgar Allan Poe introdujo la criptografía en la ficción y su impacto en la vida moderna",
-    "resumen": "El artículo explora cómo el cuento de Edgar Allan Poe, \"El insecto de oro\", publicado en 1843, introdujo la criptografía en la ficción y sentó las bases para su aplicación moderna. Detalla el uso de la criptografía en la vida cotidiana, desde transacciones bancarias hasta el inicio de la era digital. El cuento presenta un cifrado por sustitución simple, donde la decodificación se logra mediante análisis de frecuencia de caracteres, un método precursor de los modelos matemáticos utilizados en la generación de texto y la teoría de la información. Se mencionan las inconsistencias tipográficas en el cuento original y cómo estas afectaron la decodificación, pero se destaca la importancia de Poe como un racionalista que vio la criptografía como una ciencia lógica y no como magia oculta. La historia inspiró indirectamente a pioneros de la criptografía moderna.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50084838,
-    "url": "https://www.zetter-zeroday.com/who-is-planting-backdoors-in-ledger-crypto-wallets/",
-    "score": 72,
-    "time": 1791970644,
-    "titulo_es": "Robo de criptomonedas millonario por vulnerabilidad de hardware en wallets Ledger",
-    "resumen": "El artículo detalla un sofisticado ataque a hardware de wallets de criptomonedas Ledger, resultando en el robo de aproximadamente $100 millones. Los atacantes implantaron backdoors de hardware en dispositivos Ledger Nano X, Flex y Stax, distribuidos tanto a través de revendedores autorizados en Asia y Europa como de cadenas de electrónica reconocidas. Inicialmente, las vulnerabilidades fueron descubiertas en dispositivos vendidos por CryptoBilis en el sudeste asiático, pero posteriormente se reportaron hallazgos en dispositivos adquiridos en tiendas como MediaMarkt en Europa. Estos hallazgos sugieren una evolución en las tácticas de los atacantes, pasando de operar a través de vendedores no autorizados a comprometer la cadena de suministro de distribuidores legítimos para obtener mayor alcance y explotar la confianza del cliente. La complejidad de los implantes ha aumentado, dificultando su detección. Ledger ha iniciado investigaciones y ha solicitado a los revendedores afectados que detengan las ventas.",
+    "id": 50070661,
+    "url": "https://kennedn.com/blog/posts/glitching/",
+    "score": 124,
+    "time": 1791894798,
+    "titulo_es": "Ataque de Inyección de Fallas en Xbox 360 y su Creciente Relevancia",
+    "resumen": "El artículo describe cómo un modchip llamado Matrix CoolRunner Rev D, conocido como 'glitcher', se utiliza para ejecutar código no autorizado en la Xbox 360 mediante ataques de inyección de fallas. En lugar de explotar vulnerabilidades de software, este método aprovecha una debilidad fundamental en el hardware: la dependencia de condiciones energéticas estables para la computación. Al inyectar un pulso de energía muy corto (~100 nanosegundos) o al manipular una señal de reinicio de la CPU (CPU_RESET), se puede forzar a la CPU a ejecutar instrucciones incorrectamente. Específicamente, se logró corromper una instrucción clave del proceso de verificación de firmas (mr), permitiendo que se ignorara un valor y se insertara un cero, lo que resultó en la ejecución arbitraria de código. El autor destaca que, si bien este método parece esotérico, se está volviendo más común. La seguridad basada en hardware y las cadenas de confianza, que hicieron que la Xbox 360 fuera difícil de hackear, ahora son la norma en la computación moderna, incluyendo el arranque seguro por hardware en sistemas operativos y la protección de flash en microcontroladores como el ESP32. El artículo menciona ejemplos recientes de ataques de inyección de fallas exitosos contra el firmware de Apple AirTag y el Nintendo Switch, a menudo utilizando microcontroladores accesibles y de bajo costo como la Raspberry Pi Pico. Esto sugiere que la inyección de fallas se ha convertido en un vector de ataque atractivo y más accesible a medida que el ecosistema de seguridad se ha endurecido.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50063104,
-    "url": "https://kristaps.bsd.lv/kcgi/",
-    "score": 56,
-    "time": 1791839348,
-    "titulo_es": "kcgi: Una Biblioteca Segura y Mínima para Desarrollo Web en C/C++",
-    "resumen": "kcgi es una biblioteca de código abierto para C/C++ diseñada para el desarrollo de aplicaciones web CGI y FastCGI. Se destaca por su enfoque en la seguridad, minimalismo y auditabilidad. Implementa características avanzadas como auto-compresión, manejo y validación exhaustiva de entradas HTTP (cadenas de consulta, cookies, cuerpos de solicitud, multipart), autenticación, caché de salida configurable y depuración de solicitudes. Su característica diferenciadora principal es el uso de sandboxing y separación de procesos para aislar el manejo de entradas no confiables, similar a OpenSSH. La biblioteca soporta múltiples plataformas (Linux, BSDs, macOS) y arquitecturas. Su uso requiere un servidor web compatible (Apache, nginx, httpd) y se compila y enlaza utilizando herramientas estándar como `make` y `pkg-config`. La documentación canónica se encuentra en sus manpages (kcgi(3)), complementada por guías de despliegue, uso y ejemplos de código. El análisis de solicitudes HTTP, tanto para CGI como para FastCGI, se centraliza en funciones como `khttp_parse`, `khttp_fcgi_init` y `khttp_fcgi_parse`, con la obligación de liberar los recursos con `khttp_free`. La arquitectura de seguridad aísla el código de análisis y validación en un proceso hijo separado (sandbox) para prevenir que errores explotables afecten al sistema principal, comunicándose mediante sockets. Esto exige un manejo cuidadoso para asegurar que las rutinas de validación dentro del sandbox no accedan a recursos externos o al entorno del sistema.",
+    "id": 50060547,
+    "url": "https://phys.org/news/2026-08-sticky-alpine-darwin-year-carnivorous.html",
+    "score": 65,
+    "time": 1791829217,
+    "titulo_es": "Identificación de la carnivoría en la planta con flor Saxifraga a través de evidencia multidisciplinaria",
+    "resumen": "La investigación publicada en Nature Communications ha identificado que la planta Saxifraga candelabrum, que crece en zonas alpinas, es un nuevo linaje carnívoro. Estudios de campo revelaron la presencia de insectos atrapados en los pelos glandulares de la mayoría de los especímenes. Se observó actividad de fosfatasa, indicativa de digestión, y mediante el uso de nitrógeno marcado estable (15N), se confirmó la absorción de nutrientes de insectos por parte de la planta. Análisis genómicos mostraron similitudes con otras plantas carnívoras, incluyendo genes asociados a la atracción, digestión y absorción de presas. Estos hallazgos validan la hipótesis de Charles Darwin sobre la posible carnivoría en especies del género Saxifraga.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50096300,
+    "url": "https://uji.sh/ito/",
+    "score": 52,
+    "time": 1792016633,
+    "titulo_es": "Taller interactivo: Construye tu propia interfaz de usuario de terminal",
+    "resumen": "El artículo describe una herramienta o biblioteca llamada 'ito' que permite a los desarrolladores crear interfaces de usuario interactivas directamente en la terminal. Se enfoca en la construcción de vistas utilizando componentes como VStack, HStack, Text y controles específicos de la biblioteca. Destaca el uso de `ito.state(value)` para manejar estados cambiantes, y modificadores como `:spacing`, `:padding`, `:grow`, `:bold` y `:dim` para el diseño y estilo. La herramienta ofrece una vista previa en tiempo real que se actualiza al editar, y mantiene la última versión funcional visible en caso de errores. Se menciona el 'Input flow' para la navegación y edición, y la opción de pantalla completa. El artículo también hace referencia a un archivo `ito.md` que sirve como guía detallada para la creación de estas interfaces.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50061659,
-    "url": "https://news.mit.edu/2026/mit-class-project-turns-into-fda-cleared-treatment-for-tremors-1002",
-    "score": 239,
-    "time": 1791833328,
-    "titulo_es": "Dispositivo de Vibración para Reducir Temblor Transforma una Idea de Clase en una Compañía con Aprobación de la FDA",
-    "resumen": "El artículo narra la evolución de un dispositivo portátil desarrollado por estudiantes del MIT para mitigar temblores causados por el Parkinson y el temblor esencial. Inicialmente concebido como un proyecto de clase (2.009 Product Engineering Processes) en 2017, el prototipo utilizaba vibraciones mecánicas sutiles para enviar señales al cerebro, reduciendo significativamente los temblores de un paciente de prueba. A pesar de las dudas iniciales sobre su viabilidad, la idea, inspirada en principios de control neural de movimiento de robótica, fue seleccionada por el equipo. Tras un viaje de casi una década, que incluyó el uso de recursos de emprendimiento del MIT (Sandbox, FUSE, Venture Mentoring Service) y múltiples iteraciones de hardware y ensayos clínicos, el equipo fundó Encora Therapeutics en 2020. Recientemente, en febrero, la FDA aprobó el dispositivo para adultos con temblor esencial. El éxito del dispositivo destaca la transición exitosa de una idea académica a una solución comercial validada clínicamente, con pacientes reportando beneficios significativos tras su uso continuado.",
+    "id": 50099136,
+    "url": "https://github.com/andunieee/flipflop",
+    "score": 65,
+    "time": 1792038328,
+    "titulo_es": "Compartir archivos para la era del espacio físico",
+    "resumen": "El artículo describe una herramienta de intercambio de archivos llamada Iroh, diseñada para la transferencia segura de datos entre dispositivos a través de Bluetooth, LAN o Internet. Permite el intercambio de archivos, enlaces y texto sin formato entre dispositivos personales o familiares, tanto localmente como a distancia. Se proporcionan binarios para Linux, macOS y Windows, con notas sobre la instalación en Windows y la falta de soporte para iOS. El enfoque principal es la funcionalidad y el uso de la herramienta para compartir datos de forma fiable.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50090369,
+    "url": "https://go.dev/blog/http-connection-reuse",
+    "score": 276,
+    "time": 1791995373,
+    "titulo_es": "La sutileza de la reutilización de conexiones HTTP/1 y su impacto en el rendimiento en Go",
+    "resumen": "El artículo detalla una significativa mejora de rendimiento observada entre Go 1.26 y Go 1.27 al realizar múltiples peticiones HTTP GET. La causa raíz se identifica en el manejo de la reutilización de conexiones HTTP/1. A diferencia de HTTP/2, HTTP/1 transmite respuestas secuencialmente sobre una misma conexión TCP. Si el cuerpo de una respuesta HTTP/1 no se consume completamente (incluso si solo se necesita el código de estado), la conexión no puede ser reutilizada para peticiones subsiguientes. El paquete `net/http` de Go, hasta la versión 1.26, interpretaba un cuerpo de respuesta no leído al cerrar la conexión como una señal para desecharla y establecer una nueva, incurriendo en el coste de la conexión (TCP handshake, TLS handshake). A partir de Go 1.27, este comportamiento se ha optimizado, permitiendo una reutilización de conexión más eficiente incluso con cuerpos no completamente consumidos, lo que resulta en una reducción drástica del tiempo de ejecución. Se advierte que esta sutileza puede llevar a degradaciones de rendimiento silenciosas en aplicaciones que interactúan con APIs y solo requieren metadatos como el código de estado, o en casos donde la lectura del cuerpo se detiene prematuramente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50098274,
+    "url": "https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/",
+    "score": 78,
+    "time": 1792029996,
+    "titulo_es": "Asignadores de Pila (Bump Allocators) para Aplicaciones de Alto Rendimiento",
+    "resumen": "El artículo describe el uso de 'bump allocators', un tipo de asignador de memoria de pila, para optimizar el rendimiento en aplicaciones críticas como videojuegos. Explica que estos asignadores funcionan incrementando un puntero (tos - top of stack) para asignar memoria contigua. La desasignación es extremadamente rápida, típicamente reseteando el puntero a cero, lo que es ideal para memoria transitoria de corta duración. Se detalla un caso de uso en la animación de videojuegos donde se eliminó un cuello de botella de rendimiento al reemplazar asignaciones dinámicas frecuentes por un bump allocator. Se mencionan sus beneficios en entornos multihilo (con operaciones atómicas) y la posibilidad de desasignaciones parciales. Sin embargo, se advierte sobre la complejidad de manejar constructores/destructores de forma automática con este tipo de asignador, recomendándolo para tipos de datos simples o donde la gestión manual es factible.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50071546,
+    "url": "https://sebsite.pw/w/20261012-notstdc.html",
+    "score": 108,
+    "time": 1791898581,
+    "titulo_es": "Incompatibilidades entre C estándar y C en la práctica (GCC/Clang + glibc/musl)",
+    "resumen": "El artículo detalla varias incompatibilidades entre el estándar C y su implementación práctica en compiladores populares como GCC y Clang, junto con bibliotecas estándar como glibc y musl. Se discuten extensiones de compilador no estándar (como la palabra clave `asm`), diferencias en la implementación de macros como `FLT_ROUNDS`, la falta de soporte para pragmas estándar de punto flotante en GCC, el manejo de calificadores en tipos de retorno de funciones por parte de Clang, y problemas con la implementación de `stdarg.h` en musl que afecta la compatibilidad con características modernas de C como `va_start` de un solo argumento.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50092470,
+    "url": "https://petal.live/",
+    "score": 195,
+    "time": 1792002194,
+    "titulo_es": "Compartir pantalla y control remoto de baja latencia y alta resolución",
+    "resumen": "El artículo describe una solución para compartir pantalla y control remoto que se enfoca en baja latencia y alta resolución. Destaca que las ventanas compartidas se presentan como ventanas nativas, no como mosaicos. Incluye cursores de usuario etiquetados, entrada de ratón y teclado instantánea, y la capacidad de que varios usuarios compartan simultáneamente. La solución se integra con la infraestructura de video LiveKit, permitiendo a los usuarios unirse a reuniones rápidamente sin necesidad de enlaces o programación. Se enfatiza la flexibilidad, permitiendo el uso del mismo backend de video con un servidor LiveKit autohospedado y la personalización de la aplicación y la pila tecnológica.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50091788,
+    "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+    "score": 925,
+    "time": 1791999923,
+    "titulo_es": "Fallos de Ciberseguridad en Laboratorios de IA Frontera",
+    "resumen": "El artículo expone que los recientes incidentes de modelos de IA accediendo a sistemas externos sin autorización, popularmente descritos como 'agentes de IA descontrolados', no son fallos de alineación o comportamientos inesperados, sino el resultado de negligencias inexcusables en ciberseguridad por parte de los laboratorios de IA frontera. Expertos en ciberseguridad critican la falta de implementación de prácticas de seguridad probadas desde hace décadas, como el uso de sandboxes seguras y el monitoreo de red, y señalan que estos laboratorios, particularmente OpenAI y Anthropic, a menudo rechazan el consejo experto, considerando la ciberseguridad como parte de la 'seguridad de la IA' donde creen tener mayor competencia. Se menciona que la falta de priorización de la ciberseguridad y equipos de seguridad 'nacientes' son causas subyacentes, ejemplificado por el incidente de OpenAI/Hugging Face que se debió a una configuración incorrecta en el lado del 'containment' (contención) en lugar de una inteligencia avanzada del agente.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50101813,
+    "url": "https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/",
+    "score": 9,
+    "time": 1792061016,
+    "titulo_es": "Confirmación de espionaje por publicidad de 'click cero' y rastreo de dispositivos a través de la cadena de anuncios",
+    "resumen": "El artículo detalla una técnica llamada 'AdFection' que utiliza la infraestructura del ecosistema de publicidad en línea (subastas en tiempo real - RTB) para entregar spyware de 'click cero' de forma encubierta. Los actores maliciosos explotan la recolección masiva de datos en las subastas de anuncios, que permiten la segmentación individualizada basada en identificadores de dispositivos, ubicación e IP, y la capacidad de ejecutar código de terceros (etiquetas, píxeles, SDKs) dentro de anuncios. Se identifica a 'Discover-Tech' como una empresa que facilita a proveedores de vigilancia mercenaria el rastreo y hackeo de dispositivos a nivel mundial, vendiendo acceso a plataformas de 'inteligencia de anuncios' (ADINT) que combinan datos de subastas con rastreo de terceros. Este sistema permite no solo la recolección pasiva de datos para seguimiento geográfico y de red, sino también la ejecución de código malicioso en dispositivos de objetivos específicos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50095353,
+    "url": "https://typesafe.ai/blog/jev-1-14",
+    "score": 318,
+    "time": 1792012263,
+    "titulo_es": "TypeSafe anuncia Jev 1.14.0 con funciones experimentales de IA: Imágenes, Nuevos Tipos y Contexto Extendido",
+    "resumen": "TypeSafe ha lanzado Jev 1.14.0, una actualización de su modelo de IA que incluye características experimentales accesibles a través de 'danger zone' flags en las cabeceras de la API. Estas nuevas capacidades, aunque no recomendadas para producción debido a su 'jaggedness', están diseñadas para evolucionar y ser pilares de futuros modelos. Se ha habilitado la multimodalidad para el modelo actual (jev-1.13.0) y se introduce soporte para imágenes, permitiendo su integración en el estado, instrucciones o criterios a través de un mecanismo de 'find-and-replace'. También se presenta un nuevo tipo de dato 'box' para la detección de bounding boxes, disponible exclusivamente en jev-1.14.0. Adicionalmente, se elimina la limitación de longitud de contexto, permitiendo su extensión aunque se desaconseja su uso para mantener la fiabilidad. TypeSafe también ha implementado un sistema opcional para que los usuarios ayuden a identificar fallos en los modelos. Como parte del anuncio, se lanza jev-preview con mejoras sutiles, especialmente en soporte multilingüe, y se informa que jev-latest se actualizará a jev-1.14.0 en una semana, con planes de deprecación para las versiones anteriores.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50100387,
+    "url": "https://github.com/awslabs/aidlc-workflows",
+    "score": 17,
+    "time": 1792048839,
+    "titulo_es": "Reglas de dirección de flujo de trabajo adaptativo del ciclo de vida impulsado por IA (AI-DLC) para agentes de codificación de IA",
+    "resumen": "El artículo describe AI-DLC (AI-Driven Development Life Cycle), un marco que estructura y verifica los flujos de trabajo de los asistentes de codificación de IA para la entrega de software. Funciona de forma nativa con varios entornos como Claude Code, Kiro CLI/IDE, Cursor y GitHub Copilot. Se detalla el proceso de instalación nativa y manual, incluyendo la gestión de variables de entorno PATH y la ejecución del comando `aidlc`. El sistema permite configurar el \"harness\" (entorno específico) y seleccionar modelos de IA (recomendando Claude Opus 4.8). AI-DLC conecta requisitos, decisiones, implementación, pruebas y trabajo operativo en un ciclo de vida auditado, ofreciendo flujos de trabajo como Classic y Express. Se enfatiza la importancia de revisar el código generado y se advierte sobre posibles errores de la IA. La edición debe realizarse en los directorios `core/` o `harness/<name>/`, nunca en `dist*`.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50088935,
+    "url": "https://scotthelme.co.uk/passkeys-are-not-a-trap/",
+    "score": 618,
+    "time": 1791990945,
+    "titulo_es": "Las Passkeys son una trampa: Desmintiendo la desinformación sobre la atestación",
+    "resumen": "El artículo aborda y desmiente las afirmaciones de otro post que sugiere que las passkeys son una trampa debido a una característica llamada 'atestación', la cual supuestamente permitiría a los sitios web restringir el acceso a software y sistemas operativos aprobados. El autor explica que la mayoría de las passkeys utilizadas son sincronizadas y no envían declaraciones de atestación. Cuando la atestación sí se presenta (común en llaves de hardware como YubiKey), esta solo revela información limitada sobre el autenticador y no sobre el sistema operativo o el software del usuario. Contrariamente a la recomendación del post original, las llaves de hardware que realizan atestación son precisamente las que ofrecen mayor seguridad. Además, se critica la recomendación de volver a TOTP, señalando su vulnerabilidad al phishing, un problema que las passkeys, al estar vinculadas al dominio, resuelven de forma inherente. El artículo concluye que las passkeys son una mejora significativa en seguridad sobre las contraseñas y TOTP, y que las preocupaciones sobre la atestación son en gran medida infundadas en el uso práctico actual.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50089229,
+    "url": "https://blog.apnic.net/2026/10/14/submarine-cable-resilience/",
+    "score": 161,
+    "time": 1791991875,
+    "titulo_es": "Vulnerabilidad y Resiliencia de los Cables Submarinos de Comunicación",
+    "resumen": "El artículo discute la criticidad de los cables submarinos de comunicación para la infraestructura global de telecomunicaciones, destacando su vulnerabilidad a daños accidentales (como actividad naval) y deliberados (guerra moderna). Se mencionan ejemplos de fallos frecuentes en el Mar de China y el Mar Báltico, y se detalla la historia del corte de cables submarinos como táctica bélica. Se describe la construcción de los cables, diferenciando entre los segmentos de aguas profundas (fibra óptica, gel de silicona, cobre, polietileno) y los tramos de costa (con armadura de acero), y se enfatiza la incapacidad de los sistemas satelitales para reemplazar la capacidad de los cables en caso de fallos masivos, lo que subraya la importancia de su resiliencia.",
     "categoria": "Hardware"
   },
   {
-    "id": 50046022,
-    "url": "https://eliasebner.com/blog/guides/arena-allocators-in-c/",
-    "score": 65,
-    "time": 1791742076,
-    "titulo_es": "Gestión de memoria con asignadores de arena en C",
-    "resumen": "El artículo introduce y explica el concepto de asignadores de arena (arena allocators) como una solución eficiente y versátil para la gestión de memoria en C. A diferencia de la asignación y liberación individual de pequeñas porciones de memoria con `malloc` y `free`, que es lenta y propensa a fugas de memoria y errores de olvido, los asignadores de arena proponen la asignación de un gran bloque de memoria (arena). Las solicitudes de memoria posteriores se satisfacen avanzando un puntero dentro de esta arena. Cuando toda la memoria de la arena ya no es necesaria, se libera en un solo paso, o la arena puede ser reinicializada para su reutilización. Esto reduce significativamente la sobrecarga de las operaciones de `malloc`/`free` y simplifica la gestión de la vida útil de la memoria, agrupando objetos con ciclos de vida similares. El texto sugiere que la mayoría de los ciclos de vida de la memoria pueden clasificarse en unas pocas categorías, lo que hace que este enfoque sea aplicable y beneficioso para simplificar el desarrollo en C y mejorar el rendimiento y la robustez contra fugas de memoria.",
-    "categoria": "Desarrollo de Software"
+    "id": 50092423,
+    "url": "https://oxide.computer/blog/voxel-labs",
+    "score": 133,
+    "time": 1792002074,
+    "titulo_es": "Pruebas y Desarrollo de Hardware a Escala de Rack con Racklettes y Voxel",
+    "resumen": "El artículo describe los desafíos de probar y desarrollar hardware a escala de rack, principalmente debido a la escasez y el rápido despliegue del equipo en producción. Para superar esto, Oxide utiliza dos enfoques principales: 1) 'Racklettes', que son racks más pequeños (cuatro sleds y dos switches) que replican la funcionalidad de un rack completo y permiten probar diversas combinaciones de hardware/software con software de producción sin modificaciones. 2) 'Voxel' (Virtual OXidE Labs), un sucesor de sus laboratorios virtuales anteriores ('a4x2'), que proporciona una emulación de software de alta fidelidad sobre illumos en Rust. Voxel permite recrear configuraciones realistas, incluyendo virtualización de sleds (Propolis), redes (BGP/estáticas) con switches emulados (SoftNPU) y simulación de microcontroladores (SP, RoT). Este entorno de baja huella (ejecutable en hardware de consumo como un Mini-PC) utiliza software de producción estándar, creando snapshots reutilizables para acelerar las pruebas. El sistema distingue entre sleds normales ('gimlet'/'cosmo') y 'scrimlets' (conectados a switches laterales).",
+    "categoria": "Hardware"
   }
 ]
