@@ -1,308 +1,245 @@
 [
   {
-    "id": 50129121,
-    "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-    "score": 253,
-    "time": 1792226266,
-    "titulo_es": "DeepSeek V4.1 Flash 1017: Modelo MoE con Arquitectura Causal Encoder-Decoder",
-    "resumen": "DeepSeek V4.1 Flash 1017 es un modelo sparse Mixture-of-Experts (MoE) con una base de 552 mil millones de parámetros, de los cuales activa 8B en la entrada y 16B en la salida mediante su arquitectura Causal Encoder-Decoder (CED). Cuenta con soporte nativo para visión multimodal, compresión de caché KV para reducir drásticamente el consumo de memoria en cargas de agentes, y ofrece una ventana de contexto de más de un millón de tokens (1,048,576) orientada a tareas de programación y flujos de trabajo prolongados.",
+    "id": 50138531,
+    "url": "https://api-docs.deepseek.com/guides/search/",
+    "score": 287,
+    "time": 1792306236,
+    "titulo_es": "APIs de Búsqueda y Extracción de DeepSeek para Agentes y Aplicaciones RAG",
+    "resumen": "DeepSeek detalla sus nuevas APIs REST de Búsqueda (Search) y Extracción (Fetch), diseñadas para permitir a agentes inteligentes y sistemas de generación aumentada por recuperación (RAG) acceder a contenido web en tiempo real. Ambas interfaces utilizan autenticación Bearer, devuelven respuestas en formato JSON y siguen el estándar de errores compatible con OpenAI. El modelo de facturación se basa exclusivamente en peticiones exitosas con resultados (HTTP 200 no vacío) y no en consumo de tokens. Además, implementan límites de tasa independientes por cuenta a nivel de QPS (y por dominio en Fetch) para evitar sobrecargas.",
     "categoria": "IA"
   },
   {
-    "id": 50106747,
-    "url": "https://www.paperinstruments.com/ultramarine",
-    "score": 273,
-    "time": 1792083961,
-    "titulo_es": "Un modelo abierto para el trabajo profesional",
-    "resumen": "Se presenta Ultramarine 1 Flash, un modelo de lenguaje abierto optimizado para tareas profesionales en finanzas, derecho, consultoría y operaciones. Basado en GLM-5.3 Flash, genera un 6.5% menos de tokens y ofrece un rendimiento competitivo frente a modelos propietarios líderes como Claude y GPT en el benchmark 'PI Knowledge Work', logrando una reducción drástica de costes a 0.13 dólares por tarea.",
-    "categoria": "IA"
+    "id": 50139067,
+    "url": "https://t3.at/blog/2026-10-17-parser-combinators/",
+    "score": 63,
+    "time": 1792311593,
+    "titulo_es": "Introducción a los Parser Combinators: Una alternativa funcional y mantenible a Regex",
+    "resumen": "El artículo presenta los combinadores de análisis sintáctico (parser combinators) como una alternativa equilibrada y mantenible entre la complejidad de bibliotecas como Tree-sitter y la fragilidad de las expresiones regulares complejas. A través de un enfoque puramente funcional, explica cómo construir pequeños analizadores parciales y componerlos mediante funciones de orden superior como pSeq (secuenciación), pMap (transformación mediante mapeo de tipos) y pRepeat (repetición iterativa). Como caso práctico, demuestra la facilidad con la que se puede estructurar la salida textual del comando ping en objetos fuertemente tipados utilizando TypeScript.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50100440,
-    "url": "https://humanpro.co/articles/we-still-use-paper/",
-    "score": 31,
-    "time": 1792049275,
-    "titulo_es": "El lugar de la IA frente a las herramientas tradicionales",
-    "resumen": "El artículo reflexiona sobre la adopción tecnológica y el rol de la inteligencia artificial en los flujos de trabajo actuales. Argumenta que la interfaz básica de chat no es óptima para resolver problemas específicos de dominio, enfatizando la necesidad de evolucionar hacia soluciones más sofisticadas que utilicen llamadas a herramientas (tool calls), entornos de ejecución (harnesses) y la integración de IA en software existente, sin descartar herramientas fundamentales como el papel para determinadas tareas cognitivas.",
-    "categoria": "IA"
+    "id": 50137950,
+    "url": "https://sphinx-six-theta.vercel.app/",
+    "score": 165,
+    "time": 1792298029,
+    "titulo_es": "Sphinx: Hook de Git para desarrollo asistido por agentes",
+    "resumen": "Sphinx es una herramienta integrada como Git hook diseñada para el flujo de trabajo con agentes de IA (como Claude Code, Cursor o Codex). Antes de permitir un push, Sphinx analiza el diff del código generado y formula preguntas técnicas al desarrollador sobre el comportamiento y casos de borde del sistema (por ejemplo, manejo de reintentos e idempotencia en webhooks). De este modo, asegura que el programador comprenda realmente las implicaciones del código generado por IA antes de enviarlo a producción, manteniendo la privacidad de secretos y claves de entorno.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50127979,
-    "url": "https://llmspeed.dev/",
-    "score": 111,
-    "time": 1792211813,
-    "titulo_es": "Estimaciones de rendimiento para prompts cortos en un solo dispositivo",
-    "resumen": "Herramienta y conjunto de datos de código abierto orientados a estimar el rendimiento de inferencia de modelos de lenguaje (LLMs) locales en dispositivos individuales. Las métricas provienen de benchmarks comunitarios como r/LocalLLaMA y localscore.ai, así como de proyecciones basadas en especificaciones técnicas de hardware.",
-    "categoria": "IA"
+    "id": 50140001,
+    "url": "https://github.com/0x23/MicroManipulatorStepper",
+    "score": 12,
+    "time": 1792322182,
+    "titulo_es": "Una plataforma de control de movimiento 3D submicrométrica",
+    "resumen": "El proyecto presenta una plataforma de micromanipulación XYZ motorizada de bajo costo y código abierto diseñada para lograr precisión submicrométrica en tareas como microscopía y alineación óptica. Utiliza una cinemática paralela, motores paso a paso comerciales con control en bucle cerrado a 30 kHz y un sistema de engranaje magnético que mejora la resolución de los codificadores hasta 50 nm. El sistema se controla mediante comandos G-Code sobre USB/serie, incorpora firmware con planificación de movimiento y ofrece una interfaz gráfica y API en Python para control y calibración.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50126253,
+    "url": "https://www.nature.com/articles/d41586-026-03266-x",
+    "score": 481,
+    "time": 1792193907,
+    "titulo_es": "Científicos restauran rápidamente corales blanqueados mediante contacto con fragmentos sanos",
+    "resumen": "Investigadores de la Universidad de Stanford descubrieron un método para revertir rápidamente el blanqueamiento en corales de la especie Pocillopora damicornis mediante el contacto físico directo con fragmentos sanos del mismo individuo genético (genet). A través de microscopía de alta potencia, se demostró la formación de un puente tisular por fusión que facilita la transferencia de algas fotosintéticas simbióticas (Symbiodiniaceae). En los fragmentos en contacto, la población de simbiontes se duplicó cada cuatro días a partir de la segunda semana, permitiendo una recuperación completa en ocho semanas, mientras que una exposición de solo una semana resultó suficiente para que el coral continuara su recuperación de forma autónoma.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50124730,
+    "url": "https://teal-language.org/",
+    "score": 58,
+    "time": 1792184844,
+    "titulo_es": "Teal: Un dialecto de Lua con tipado estático",
+    "resumen": "Teal es un dialecto de Lua con tipado estático que extiende el lenguaje con anotaciones de tipos, interfaces, uniones y genéricos, emulando el rol de TypeScript en el ecosistema JavaScript pero preservando el minimalismo y la portabilidad de Lua. Se implementa mediante el compilador tl, que transpila archivos .tl a .lua estándar, y cuenta con un ecosistema que incluye la herramienta de construcción Cyan, integraciones para editores y soporte vía Language Server Protocol.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50114758,
+    "url": "https://leodemoura.github.io/blog/2026-10-15-lean-now-ships-with-verified-kernels/",
+    "score": 158,
+    "time": 1792131373,
+    "titulo_es": "Fortalecimiento y verificación formal de los kernels en Lean v4.35.0",
+    "resumen": "El equipo del asistente de pruebas Lean ha implementado mejoras críticas en su arquitectura de verificación tras detectarse vulnerabilidades en su kernel. La versión 4.35.0 introduce el comando 'lake check' junto a cuatro nuevos kernels externos (nanoda, lean4lean, con-leche y con-ron) para permitir comprobaciones redundantes y mitigar fallos de runtime o corrupción de memoria. Destaca 'con-leche', un kernel implementado en Lean con consistencia matemática demostrada formalmente, y 'con-ron', una versión traducida a Rust y verificada mediante la herramienta Aeneas para descartar errores del compilador. El informe también detalla renovaciones en el kernel base de C++ y plantea soluciones de escalabilidad ante bases de código que superan las decenas de millones de líneas formalizadas.",
+    "categoria": "Desarrollo de Software"
   },
   {
     "id": 50129045,
     "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-    "score": 230,
+    "score": 889,
     "time": 1792225285,
     "titulo_es": "Informe Técnico: DeepSeek-V4.1-Flash-1017",
-    "resumen": "DeepSeek-V4.1-Flash-1017 es una actualización que introduce mejoras notables en razonamiento, codificación, capacidades agénticas y evaluación visual, reduciendo el tiempo de ejecución y la longitud de las respuestas para optimizar costos. El lanzamiento prescinde de plantillas Jinja e incluye una implementación de referencia en Python (encoding.py) y 'deepseek-recipe', una biblioteca en Rust con bindings para Python destinada a producción que estandariza la codificación de prompts, llamadas a herramientas y contenido multimodal bajo la licencia MIT.",
+    "resumen": "DeepSeek presenta DeepSeek-V4.1-Flash-1017, una actualización que optimiza significativamente las capacidades de razonamiento, programación, benchmarks visuales y tareas de agentes, reduciendo la latencia y longitud de salida para mejorar el costo-rendimiento. El lanzamiento no incluye plantillas Jinja, sino una implementación de referencia en Python para el formateo de tokens y 'deepseek-recipe', una librería en Rust con bindings de Python orientada a producción para codificar peticiones y parsear respuestas, herramientas y contenido multimodal bajo licencia MIT.",
     "categoria": "IA"
   },
   {
-    "id": 50103255,
-    "url": "https://www.lf-lang.org/",
-    "score": 59,
-    "time": 1792070324,
-    "titulo_es": "Lingua Franca: Desarrollo de aplicaciones multihilo y distribuidas deterministas",
-    "resumen": "Lingua Franca proporciona un modelo de programación para crear aplicaciones concurrentes y distribuidas completamente deterministas, eliminando problemas comunes como condiciones de carrera y sincronización compleja de hilos. Al integrar la noción de tiempo directamente en su núcleo, permite ejecutar tareas con restricciones temporales estrictas y facilita la transición fluida de arquitecturas locales a distribuidas con mínimas modificaciones en el código.",
+    "id": 50126312,
+    "url": "https://www.smithsonianmag.com/science-nature/dam-removals-are-bringing-fish-back-across-the-northeastern-united-states-striking-down-one-tiny-barrier-at-a-time-180989679/",
+    "score": 297,
+    "time": 1792194451,
+    "titulo_es": "La eliminación de presas obsoletas y la recuperación de los ecosistemas fluviales en el noreste de Estados Unidos",
+    "resumen": "El artículo analiza el impacto ecológico y biológico derivado de la demolición de presas obsoletas en los ríos de Estados Unidos. A través de una perspectiva histórica que se remonta a los estudios de Henry David Thoreau en el río Concord y datos recientes de reconexión de cuencas fluviales, se detalla cómo el desmantelamiento de barreras artificiales permite restablecer el flujo natural del agua y recuperar hábitats críticos para la migración y desove de especies de peces como el sábalo americano, el salmón y el arenque.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50132193,
+    "url": "https://pele.run/",
+    "score": 473,
+    "time": 1792252509,
+    "titulo_es": "Pele: Renderizador de sintaxis Mermaid a SVG ultrarrápido y ligero",
+    "resumen": "Pele es una biblioteca de código abierto sin dependencias externas diseñada para compilar sintaxis de Mermaid en SVG, ofreciendo un rendimiento hasta 500 veces más rápido y un tamaño 6 veces menor que Mermaid.js. Soporta todos los tipos de diagramas de Mermaid 12.1.0, permite la personalización visual mediante variables CSS en tiempo real sin requerir re-renderizado y proporciona una API sencilla para integrar la generación de gráficos en el frontend.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50098485,
+    "url": "https://brooker.co.za/blog/2026/07/29/lorenz-and-little.html",
+    "score": 6,
+    "time": 1792031977,
+    "titulo_es": "Lorenz y Little",
+    "resumen": "El autor analiza la relación entre la latencia de cola (tail latency), el costo de infraestructura y la capacidad del sistema aplicando la curva de Lorenz empírica y la Ley de Little. Al calcular cuánto contribuyen los percentiles más altos (como p99 o p99.9) a la latencia media, se demuestra que una pequeña fracción de peticiones lentas puede ser responsable de más del 50% al 75% de la concurrencia total (hilos ocupados) del sistema. Como consecuencia, optimizar los extremos de latencia tiene un impacto desproporcionadamente positivo en la reducción de contención de bloqueos, demanda de capacidad y costos operativos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50122431,
-    "url": "https://github.com/cobanov/PS5LM",
-    "score": 305,
-    "time": 1792175555,
-    "titulo_es": "llama.cpp en una PS5 con jailbreak: ejecuta cualquier modelo GGUF de forma nativa en la consola, comenzando con Qwen 3.8",
-    "resumen": "PS5LM permite ejecutar llama.cpp de forma nativa en la GPU de una PlayStation 5 liberada (firmwares 7.00 a 13.60) empleando Vulkan (RADV) sobre Linux. Actúa como un servidor de inferencia de modelos de lenguaje y de decisión local, ofreciendo APIs compatibles con los estándares de OpenAI y Anthropic para servir peticiones a otros dispositivos de la red local sin depender de la nube.",
-    "categoria": "IA"
+    "id": 50110081,
+    "url": "https://nltimes.nl/2026/10/15/world-first-southern-ground-hornbill-gets-3d-printed-beak-prostheses-artis-zoo",
+    "score": 43,
+    "time": 1792097740,
+    "titulo_es": "Un cálao herido en el zoológico Artis recibe un pico impreso en 3D en un procedimiento pionero",
+    "resumen": "Especialistas veterinarios y biomédicos colaboraron para diseñar e implantar con éxito dos prótesis de titanio impresas en 3D en un cálao terrestre del sur, basadas en tomografías computarizadas de las secciones conservadas de su pico. Se trata de un procedimiento pionero a nivel mundial que abre nuevas posibilidades en la bioingeniería y la medicina veterinaria reconstructiva.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50100366,
+    "url": "https://github.com/antirez/c64-hw-simulator",
+    "score": 202,
+    "time": 1792048694,
+    "titulo_es": "Simulador de hardware del Commodore 64",
+    "resumen": "c64-hw-sim es un simulador a nivel de circuito que emula pin a pin la placa base ASSY 250407 del Commodore 64. Diseñado para diagnóstico y comprensión electrónica en lugar de ejecución lúdica a velocidad real, el software modela la netlist completa y el comportamiento eléctrico de los circuitos integrados, permitiendo desconectar componentes, levantar pines o inducir cortocircuitos a tierra o a +5V para observar los fallos resultantes calculados directamente desde el circuito.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50106792,
+    "url": "https://www.davidpriver.com/Fun-Extending-the-C-Preprocessor.html",
+    "score": 33,
+    "time": 1792084106,
+    "titulo_es": "Extendiendo el preprocesador de C con funciones integradas personalizadas",
+    "resumen": "El autor detalla la implementación de extensiones útiles en el preprocesador de su propio compilador e intérprete C2Y. Para superar las limitaciones y la sintaxis críptica de la metaprogramación tradicional en C, introduce macros integradas como __print y __where para depuración y rastreo de definiciones, __map para transformar listas de argumentos linealmente sin recurrir a recursiones simuladas complejas, y __VA_COUNT__ para obtener directamente el número de argumentos variádicos.",
+    "categoria": "Desarrollo de Software"
   },
   {
     "id": 50122878,
     "url": "https://alexwang.ai/posts/associative-memory/",
-    "score": 330,
+    "score": 580,
     "time": 1792177277,
     "titulo_es": "Cada capa es un almacén de memoria",
-    "resumen": "El artículo analiza los modelos de lenguaje profundo desde la perspectiva de sistemas de memoria asociativa, conceptualizando capas lineales, perceptrones multicapa (MLP) y mecanismos de autoatención como almacenes de pares clave-valor. Introduce la relación señal-interferencia como métrica para evaluar la capacidad de retención y la precisión de recuperación, demostrando formalmente cómo las capas lineales acumulan memorias mediante productos externos durante el descenso de gradiente y cómo las restricciones de dimensionalidad limitan la recuperación exacta sin interferencias.",
+    "resumen": "El artículo propone una perspectiva conceptual y matemática en la que las capas de los modelos de lenguaje (mapas lineales, MLPs y autoatención) funcionan como almacenes de memoria asociativa basados en pares clave-valor. A través del análisis de la relación señal-interferencia y el producto externo de vectores, se explora cómo el descenso de gradiente actualiza estas memorias y se demuestran los límites de capacidad y fidelidad de recuperación determinados por la dimensionalidad de las claves y la ortogonalidad.",
     "categoria": "IA"
   },
   {
-    "id": 50104783,
-    "url": "https://docs.openrewrite.org/reference/latest-versions-of-every-openrewrite-module",
-    "score": 17,
-    "time": 1792076812,
-    "titulo_es": "Configuración y Distribución de Módulos de OpenRewrite mediante Code Genome Project",
-    "resumen": "Guía técnica sobre la resolución y gestión de dependencias de OpenRewrite a través del repositorio Code Genome Project. Explica los requisitos de autenticación mediante credenciales y tokens en herramientas de compilación como Maven y Gradle, recomendando el uso de 'rewrite-recipe-bom' para alinear versiones. Asimismo, detalla la configuración de proxies corporativos (Artifactory o Nexus), la coexistencia con Maven Central para dependencias transitivas, y las alternativas de sincronización e instalación de módulos de recetas a través de la CLI de Moderne o entornos aislados (air-gapped).",
+    "id": 50133231,
+    "url": "https://github.com/openai/codex/issues/25921",
+    "score": 143,
+    "time": 1792259108,
+    "titulo_es": "Crecimiento de Archivos de Crashpad en Codex Desktop Causa Uso Descontrolado del Disco",
+    "resumen": "El artículo describe un problema recurrente en la aplicación Codex Desktop donde el componente Crashpad genera continuamente archivos de volcado (.dmp) y metadatos (_sidecar.json) en un directorio pendiente. Estos archivos se acumulan rápidamente, consumiendo varios gigabytes de espacio en disco e incluso alcanzando límites del sistema de archivos, sin que la aplicación principal deje de funcionar. El problema parece estar relacionado con el proceso `browser_crashpad_handler` que podría estar experimentando reinicios en bucle. Las soluciones temporales incluyen la eliminación manual de los archivos pendientes o la configuración del directorio de la base de datos de Crashpad como de solo lectura e inmutable, lo que previene la generación de nuevos informes pero también deshabilita la funcionalidad de reporte de crashes. Se ha observado en diferentes versiones de Codex Desktop y sistemas operativos (macOS). La causa raíz parece estar ligada al comportamiento del navegador integrado o sus procesos asociados.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50117935,
+    "url": "https://purplesyringa.moe/blog/superoptimizing-an-fpu-emulator/",
+    "score": 36,
+    "time": 1792156112,
+    "titulo_es": "Superoptimización automática de código mediante fuerza bruta",
+    "resumen": "El artículo describe un enfoque novedoso para la superoptimización de secuencias de instrucciones sin bucles en compiladores. Ante la dificultad de encontrar automáticamente una solución óptima y sin bifurcaciones para una función específica de manipulación de bits de punto flotante (encontrar el bit menos significativo), el autor recurre a un método de fuerza bruta. Se genera y evalúa sistemáticamente un gran número de fórmulas candidatas, combinando operaciones aritméticas y lógicas con la entrada y constantes predefinidas. Para optimizar el proceso, se emplea una estrategia de construcción inductiva de fórmulas y se realiza una deduplicación basada en los resultados de las pruebas. El proceso se acelera mediante un conjunto de casos de prueba representativos, añadiendo contraejemplos al conjunto si las fórmulas candidatas fallan. Finalmente, este método de fuerza bruta logra descubrir una fórmula de 5 operaciones (que luego se reduce a 4 mediante reutilización de subexpresiones) que resuelve el problema de manera más eficiente que la implementación original con bifurcación. La explicación también aborda las limitaciones del enfoque, como el manejo de la reutilización de subexpresiones y las diferencias sutiles en el comportamiento para casos límite (como potencias de dos).",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50097257,
+    "url": "https://github.com/vacuula/vacuula",
+    "score": 52,
+    "time": 1792021718,
+    "titulo_es": "Servidor personalizado para aspiradoras robot Neato \"no muertas\"",
+    "resumen": "Vacuula es una solución todo en uno diseñada para reparar y controlar aspiradoras robot Neato rotas. Requiere un servidor dedicado que debe estar siempre encendido. Se ofrecen varias opciones de instalación: una para usuarios de Home Assistant a través de un repositorio de App Store, y otra recomendada para usuarios que no usan Home Assistant mediante Docker Compose. También hay disponible un instalador fácil de usar. Los robots Gen3 requieren el puerto 443, el cual también es utilizado por el servidor y la aplicación web de Vacuula para compatibilidad con PWAs. El servidor ha sido probado en arquitecturas ARM 64-bit y x86 64-bit, con planes de añadir soporte para ARM 32-bit y posiblemente x86 32-bit, con el objetivo de permitir su ejecución en SBCs más antiguos. El soporte para el modelo OG BotVac Connected se está desarrollando.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50127979,
+    "url": "https://llmspeed.dev/",
+    "score": 308,
+    "time": 1792211813,
+    "titulo_es": "Estimaciones para prompts cortos en un solo dispositivo",
+    "resumen": "El artículo presenta estimaciones de rendimiento para la ejecución de modelos de lenguaje grandes (LLMs) con prompts cortos en dispositivos individuales. Los datos provienen de benchmarks comunitarios (como los encontrados en r/LocalLLaMA y localscore.ai), así como de proyecciones basadas en configuraciones similares o especificaciones de hardware. Se enfatiza la naturaleza de código abierto de las soluciones, con disponibilidad en GitHub.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50131189,
+    "url": "https://github.com/mikroverk/esp32sim",
+    "score": 180,
+    "time": 1792245068,
+    "titulo_es": "Emulador de ESP32 de Código Abierto",
+    "resumen": "El artículo describe un emulador de ESP32 de código abierto (MIT) que permite ejecutar firmware real de ESP32 en un entorno local o en el navegador sin necesidad de hardware, nube ni suscripciones. Ofrece emulación a nivel de instrucción de cuatro modelos de SoC ESP32 (incluyendo ESP32 clásico, S3, C3 y C6) que abarcan las arquitecturas de CPU LX6 y RISC-V. El emulador arranca el mask ROM, el bootloader de segunda etapa y la imagen de aplicación sin modificar, simulando suficientes componentes del SoC para ejecutar proyectos completos de extremo a extremo. Soporta la emulación de varios tableros (boards) con periféricos específicos como pantallas (ST7789, ST7735, ST7701S, CO5300), botones, LEDs (WS2812), codificadores, cámaras (OV5640) y códecs de audio (ES8311/ES7210). Se detallan las pruebas realizadas, el flujo de CI, y la reutilización de modelos de SoC entre diferentes chips. El emulador emite eventos a nivel de pin y puede interpretar flujos de datos para simular interacciones de hardware. Se proporciona un enlace para probarlo en el navegador y se explican los pasos para configurar y ejecutar firmware de ESP-IDF, mostrando una ejecución hasta 30 veces más rápida que en hardware real.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50138002,
+    "url": "https://eli.thegreenplace.net/2026/notes-on-the-complex-roots-of-unity/",
+    "score": 30,
+    "time": 1792298971,
+    "titulo_es": "Las Raíces de la Unidad y su Geometría en los Números Complejos",
+    "resumen": "El artículo explora las raíces de la unidad, comenzando con la definición básica como soluciones de la ecuación z^n = 1. Inicialmente se discuten las raíces en el dominio de los números reales, donde las soluciones son triviales. Sin embargo, al extender el dominio a los números complejos, las raíces de la unidad revelan propiedades matemáticas y geométricas fascinantes. Se demuestra que las n-ésimas raíces de la unidad se pueden representar de forma general usando la notación polar como e^(i*2*pi*k/n) para k = 0, 1, ..., n-1. Estas raíces están equiespaciadas en el círculo unitario del plano complejo. Al conectar las raíces de la unidad con sus vecinas inmediatas, se forman polígonos regulares, lo cual se demuestra mediante el análisis de los triángulos congruentes formados al unir cada raíz con el origen. Se observa que el recíproco de una raíz de unidad también es una raíz de unidad.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50127572,
+    "url": "https://blog.davidv.dev/posts/first-contact-with-k8s/",
+    "score": 128,
+    "time": 1792206985,
+    "titulo_es": "Entendiendo los Conceptos Fundamentales de Kubernetes: Una Perspectiva desde la Administración de Sistemas",
+    "resumen": "Este artículo profundiza en los conceptos clave de Kubernetes, yendo más allá de las descripciones superficiales para explicar los porqués y los compromisos de diseño. Se centra en dos ideas centrales: la gestión de workloads a través de bucles de control (Controladores) y el concepto de Service para el acceso estable a los Pods. Se detalla cómo los Controladores, como ReplicaSet y Deployment, garantizan el estado deseado de las aplicaciones observando y actuando sobre las variables del sistema. Se explica el funcionamiento de los Services, que proporcionan una abstracción de red con balanceo de carga y descubrimiento de servicios, implementado a través de kube-proxy en cada nodo. Se discute la diferencia entre la creación manual de Pods y el uso de controladores para una orquestación robusta, destacando cómo Deployments facilitan las actualizaciones graduales de las aplicaciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50119315,
+    "url": "https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/",
+    "score": 154,
+    "time": 1792163203,
+    "titulo_es": "Alrededor del Mundo, Parte 34: Mejorando la Iluminación de las Nubes con Múltiples Dispersiones y Luz Indirecta",
+    "resumen": "El artículo describe mejoras iterativas en el sistema de renderizado de nubes para el juego \"Around The World\". Inicialmente, se utilizaba una tabla de consulta (LUT) generada por POV-Ray para simular la dispersión de la luz en las nubes, pero se detectó que POV-Ray no simulaba adecuadamente la dispersión múltiple. Para validar esto, se desarrolló un trazador de rayos Monte Carlo recursivo y multihilo en Rust, confirmando la deficiencia de POV-Ray. La implementación de la simulación de dispersión múltiple resultó en nubes con un aspecto más natural, eliminando un brillo \"metálico\" y mejorando la iluminación en la parte inferior de las nubes. Adicionalmente, se aborda la incorporación de la luz indirecta del cielo en el renderizado de las nubes. En lugar de añadir un color azul fijo, se explora cómo aprovechar el sistema de iluminación indirecta de Godot. La hipótesis es que, al modificar la normal de la superficie de la nube para que apunte hacia arriba (al cielo), se puede hacer que las nubes interactúen con la luz ambiental del cielo, simulando de forma más realista el tinte azulado observado en nubes reales debido a la luz solar indirecta dispersada. Este ajuste, aunque sutil, es crucial para lograr una apariencia más auténtica, especialmente en las partes inferiores de las nubes.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50118098,
+    "url": "https://github.com/Kapendev/parin",
+    "score": 65,
+    "time": 1792156969,
+    "titulo_es": "Parin: Un Motor de Juegos 2D Sencillo para el Lenguaje D",
+    "resumen": "Parin es un motor de juegos 2D para el lenguaje de programación D, diseñado para ser simple, hackeable y fácil de configurar. Se posiciona entre bibliotecas pequeñas como raylib y motores grandes como Godot, ofreciendo más estructura que las bibliotecas pero con menos sobrecarga que los motores completos. Soporta la construcción para web utilizando LDC y Emscripten. Incluye integraciones para Steamworks y ENet, y ofrece soporte para filtrado lineal y trilinear de texturas para optimizar el rendimiento gráfico. Si bien no soporta hot reloading de forma nativa, existen formas de lograrlo con bibliotecas externas. El proyecto fomenta la contribución de la comunidad a través de issues y discusiones en GitHub.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50101649,
+    "url": "https://courk.cc/rp2350-challenge-laser",
+    "score": 62,
+    "time": 1792059856,
+    "titulo_es": "Bypass de la característica de arranque seguro del RP2350 mediante inyección de fallos láser",
+    "resumen": "El artículo detalla el desarrollo de una plataforma personalizada de inyección de fallos láser de bajo costo para superar un desafío de seguridad en el microcontrolador RP2350 de Raspberry Pi. El desafío se centraba en el bypass de la característica de arranque seguro (Secure Boot), que está protegida por el Boot ROM y un coprocesador de redundancia (RCP) diseñado para mitigar ataques de inyección de fallos. El autor explica que, a diferencia de los ataques de inyección de fallos de voltaje que son detectados por los circuitos de detección de fallos del RP2350, la inyección de fallos láser puede dirigirse de manera que evite estos detectores. La plataforma desarrollada utiliza una fuente láser de alta potencia infrarroja (advirtiendo sobre sus peligros) y se basa en lecciones aprendidas de proyectos similares como \"RayV-Lite\". El objetivo principal fue recuperar datos secretos al manipular el proceso de arranque seguro mediante la introducción de un único fallo inducido por láser.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50139873,
+    "url": "https://www.anthropic.com/research/employment-at-anthropic",
+    "score": 73,
+    "time": 1792320566,
+    "titulo_es": "Cómo la IA ha reestructurado el trabajo y el empleo en Anthropic",
+    "resumen": "El artículo analiza el impacto de la inteligencia artificial (IA) en la organización del trabajo, la contratación y la demanda laboral en Anthropic, una empresa pionera en la adopción de IA. Se observa una reducción relativa en la contratación de puestos técnicos junior, un aumento significativo en la productividad de ingenieros y empleados no técnicos gracias a los agentes de codificación, y un cambio en los criterios de contratación hacia la autonomía y el juicio en lugar de la experiencia técnica específica. Los 'agentes' de IA superan en horas de trabajo a los humanos en una proporción de 6:1, asumiendo tareas como la corrección de errores y la participación en grandes proyectos de ingeniería. La empresa está implementando sistemas de alerta temprana para identificar trabajos en riesgo y priorizando la reubicación interna de empleados. A pesar del crecimiento general de la empresa, la contratación por dólar de ingresos es menor que en empresas tecnológicas anteriores, y el porcentaje de empleados en departamentos técnicos ha disminuido, con un crecimiento más rápido en áreas como ventas, finanzas y reclutamiento, lo que sugiere una reconfiguración de la fuerza laboral impulsada por la IA.",
+    "categoria": "IA"
   },
   {
     "id": 50122800,
     "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-    "score": 903,
+    "score": 1041,
     "time": 1792176959,
-    "titulo_es": "«Son solo marcas de tiempo»: se resuelve el misterio de décadas sobre el origen de uno de los estándares criptográficos más populares",
-    "resumen": "El artículo aborda la resolución de una incógnita histórica en la criptografía: la procedencia de las semillas utilizadas por el NIST y la NSA para definir curvas elípticas estándar como P-256 en ECDSA. Durante años existió la sospecha de que estas semillas ocultaban puertas traseras deliberadas. Una investigación asistida por un modelo de Claude reveló que las semillas no provenían de hashes de frases secretas, sino de la salida del generador de números pseudoaleatorios de la biblioteca estándar de C (lrand48) inicializado con marcas de tiempo Unix. Este hallazgo descarta la existencia de vulnerabilidades intencionales en los parámetros de las curvas, reforzando la confianza en la seguridad del estándar sin comprometer su integridad criptográfica.",
+    "titulo_es": "Resuelto el misterio de décadas del origen de los parámetros de las curvas criptográficas NIST",
+    "resumen": "Se ha resuelto el misterio sobre el origen de los parámetros 'seed' utilizados en las curvas elípticas estándar del NIST, como la P-256, adoptadas en el Estándar de Firma Digital FIPS 186-2. Contrariamente a las especulaciones sobre backdoors o motivaciones ocultas por parte de la NSA, la investigación, asistida por un modelo de IA de Anthropic llamado Claude, reveló que los 'seeds' no provienen de algoritmos criptográficos de hash ni de frases ingeniosas. En cambio, se generaron utilizando el generador de números pseudoaleatorios (PRNG) `lrand48` de la biblioteca C estándar, inicializado con un timestamp de Unix. El proceso implicaba tomar bytes del PRNG, alimentado por un timestamp, durante un número específico de iteraciones para cada curva. Por ejemplo, la semilla de la P-256 requirió 1,842 iteraciones. Este descubrimiento aumenta la confianza en la seguridad de estas curvas, ya que su generación se basó en un método reproducible y poco susceptible a la subversión.",
     "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50123580,
-    "url": "https://bfl.ai/blog/flux-3-image-klein",
-    "score": 176,
-    "time": 1792180033,
-    "titulo_es": "Lanzamiento de FLUX 3 Image Klein: Modelo Abierto de 5.6B para Generación y Edición de Imágenes",
-    "resumen": "Se presenta FLUX 3 Image Klein, un modelo de pesos abiertos de 5.6B parámetros diseñado para generación de texto a imagen, edición precisa y generación multirreferencia (hasta 10 imágenes). Incorpora aprendizaje multimodal previo (imagen, video y audio) y ofrece soporte nativo para 4K y control por bounding boxes. El lanzamiento incluye versiones base para fine-tuning (compatible con LoRA mediante Diffusers, AI Toolkit y NeMo de NVIDIA) y versiones destiladas optimizadas para baja latencia en formatos FP8, INT8 y NVFP4, permitiendo su ejecución local en GPUs de consumo con 8GB de VRAM (como RTX 4070/5090 vía ComfyUI). Supera a alternativas de mayor tamaño tanto abiertas como cerradas en benchmarks internos bajo la licencia FLUX Kommunity.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50118320,
-    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
-    "score": 328,
-    "time": 1792158228,
-    "titulo_es": "Inferencia de LLMs grandes local y distribuida con MLX y RDMA en Mac Studio",
-    "resumen": "El artículo analiza el rendimiento de inferencia de modelos de lenguaje de gran escala (LLMs) ejecutados de forma local y distribuida en equipos Mac Studio utilizando el framework de código abierto MLX. Mediante la comparación entre los procesadores M3 Ultra y M5 Ultra, se evalúan modelos como Muse Spark Open (816B MoE), Mistral Medium 3.5 (128B) y Qwen 3.8 (27B). Gracias al uso de memoria unificada de hasta 512 GB por nodo, interconexión RDMA sobre Thunderbolt y los aceleradores neuronales integrados en la GPU del M5 Ultra, se logra reducir drásticamente el tiempo hasta el primer token (TTFT) hasta 4.6 veces y aumentar la tasa de generación a más de 36 tokens por segundo en clústeres de cuatro nodos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50121939,
-    "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-    "score": 151,
-    "time": 1792173618,
-    "titulo_es": "Optimización de circuitos cuánticos mediante Claude",
-    "resumen": "Investigadores de Anthropic y la Universidad de Harvard evaluaron la capacidad del modelo de lenguaje Claude para diseñar y optimizar circuitos cuánticos a partir de especificaciones en lenguaje natural. Apoyado por un entorno de evaluación automatizado, el modelo generó arquitecturas de circuitos en áreas como química y simulación física que superan a los mejores diseños publicados, reduciendo sustancialmente el número de compuertas costosas (como las compuertas Toffoli). Esta optimización algorítmica impulsada por IA disminuye significativamente los recursos físicos necesarios, acelerando la llegada de aplicaciones prácticas en computación cuántica.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50088767,
-    "url": "https://jedrzej.maczan.pl/2025_11_21_dp_knapsack_sliding_hirschberg",
-    "score": 27,
-    "time": 1791990273,
-    "titulo_es": "Optimización del uso de RAM en PyTorch mediante el algoritmo de la mochila con ventana deslizante de Hirschberg",
-    "resumen": "El artículo analiza la optimización del uso de memoria en PyTorch durante la planificación del grafo de cómputo para modelos de aprendizaje automático. Al cambiar el solucionador predeterminado de presupuesto de memoria de activaciones (`activation_memory_budget_solver`) de 'dp' a 'dp_knapsack_sliding_hirschberg', es posible reducir el consumo pico de RAM hasta en un factor de 20. Se explica técnicamente cómo PyTorch modela la decisión de almacenar versus recalcular operaciones intermedias como un problema clásico de la mochila 0/1 (knapsack problem) resuelto mediante programación dinámica.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50120224,
-    "url": "https://jakearchibald.com/2026/jpeg-xl-vs-avif/",
-    "score": 273,
-    "time": 1792167122,
-    "titulo_es": "JPEG XL frente a AVIF: Comparativa de rendimiento y formatos en la web",
-    "resumen": "Análisis técnico y comparativo entre JPEG XL y AVIF tras su integración en los principales navegadores. En la mayoría de los casos de uso web, AVIF supera a JPEG XL al generar archivos entre un 15% y un 25% más pequeños para fotografías con pérdida y significativamente menores en capturas, ilustraciones y elementos con transparencia. Además, AVIF ofrece una decodificación más rápida y mejor soporte para renderizado progresivo y mapas de ganancia HDR, mientras que JPEG XL destaca principalmente en renderizado progresivo a configuraciones de alto esfuerzo y en la recompresión sin pérdida de imágenes JPEG existentes.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 50088748,
-    "url": "https://leangineer.com/blog/realworld-in-lean/",
-    "score": 69,
-    "time": 1791990194,
-    "titulo_es": "Construí RealWorld, la aplicación full-stack de referencia, completamente en Lean 4",
-    "resumen": "El autor detalla la implementación de la aplicación full-stack de referencia 'RealWorld' desarrollada íntegramente en el lenguaje funcional y asistente de pruebas Lean 4. Se describe la arquitectura del sistema, que aprovecha el servidor HTTP nativo de la biblioteca estándar (Std.Http), enrutamiento tipado con lean-routing, persistencia en PostgreSQL mediante leanpostgres y renderizado del lado del servidor con lean-html combinado con Datastar para la reactividad del frontend sin necesidad de herramientas de empaquetado complejas. La solución valida la viabilidad y robustez técnica de Lean 4 para aplicaciones web al superar las suites de pruebas oficiales de API y de interfaz de usuario.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50076089,
-    "url": "https://eli.thegreenplace.net/2026/monte-carlo-simulations/",
-    "score": 131,
-    "time": 1791915106,
-    "titulo_es": "Simulaciones de Monte Carlo: de la estimación de Pi a problemas combinatorios",
-    "resumen": "El artículo introduce los métodos de Monte Carlo, una técnica que aprovecha la aleatoriedad y la ley de los grandes números para resolver problemas complejos de ingeniería y matemáticas. Se ilustran dos aplicaciones principales: la estimación del valor de pi como ejemplo clásico de integración numérica (destacando que el error de muestreo disminuye proporcionalmente a 1/√N) y el cálculo de probabilidades combinatorias complejas utilizando el juego de cartas SET, donde la enumeración exhaustiva resulta computacionalmente intratable.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50121179,
-    "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-    "score": 526,
-    "time": 1792170518,
-    "titulo_es": "Mapa de Benchmarks: Evaluando la cobertura de la IA en los empleos de EE. UU.",
-    "resumen": "El artículo analiza la representatividad de los benchmarks actuales de inteligencia artificial frente al trabajo económicamente valioso en Estados Unidos. Mapeando 29 benchmarks destacados contra 923 ocupaciones de la taxonomía O*NET, el estudio revela que el 90% de las horas laborales corresponden a tareas con poca o nula cobertura en las pruebas actuales. La evaluación técnica, validada mediante jueces LLM y expertos humanos, muestra que los benchmarks se concentran desproporcionadamente en ocupaciones de alta remuneración, dejando de lado una amplia gama de tareas administrativas e intermedias.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50119751,
-    "url": "https://adepts.of0x.cc/eufy-homestation2-firmware/",
-    "score": 52,
-    "time": 1792165108,
-    "titulo_es": "Disección del Eufy HomeBase 2: Extracción de firmware y análisis de seguridad",
-    "resumen": "El artículo describe el proceso de ingeniería inversa física y extracción de firmware de una base Eufy HomeBase 2. Debido a interferencias en placa, los autores desoldaron un chip de memoria flash Winbond WSON8 para leerlo mediante la interfaz SPI de una Raspberry Pi. Con el volcado obtenido y procesado vía Binwalk, el objetivo principal del análisis es auditar la seguridad y estudiar el algoritmo de generación de credenciales de la red Wi-Fi de administración del dispositivo.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50122951,
-    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
-    "score": 372,
-    "time": 1792177487,
-    "titulo_es": "Cómo el equipo Claude Code revisa código generado por agentes de IA a gran volumen",
-    "resumen": "El artículo describe la evolución del flujo de revisión de código en el equipo Claude Code, centrado en manejar el alto volumen de código generado por agentes de IA. Han optimizado el proceso para minimizar el tiempo de revisión humana, trasladando la mayor parte de la lectura y detección de errores a máquinas. Se prioriza la automatización de verificaciones (tests, builds, comparación de UI) que Claude puede ejecutar y verificar por sí mismo antes de que un humano revise el cambio. Esto permite que los humanos se enfoquen en problemas más complejos y de alto nivel. El objetivo es que la mayoría de los pull requests se fusionen con la intervención mínima de un humano, sin aumentar las reversiones o incidentes. La medición del tiempo humano se basa en aprobaciones, comentarios y tiempos de espera de los PR, mientras que las tasas de reversión e incidentes actúan como salvaguardas del sistema.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50118688,
-    "url": "https://starskirmish.com/bench/v0-2/",
-    "score": 226,
-    "time": 1792160324,
-    "titulo_es": "StarSkirmish Bench: Evaluando la Fortaleza de Bots de StarCraft Generados por LLMs",
-    "resumen": "El artículo presenta el StarSkirmish Bench v0.2, una evaluación del rendimiento de Grandes Modelos de Lenguaje (LLMs) en la creación de bots para StarCraft. Se analiza la capacidad de modelos como GPT-6 Astra, GPT-6.1 Sol, Gemini 4 Argon y Claude Opus 5.5 para generar bots de Protoss en C++ utilizando BWAPI 4.4.0 en OpenBW, dentro de un límite de 1 hora. La métrica principal es la tasa de victorias contra una lista de bots humanos competitivos y bots de demostración. GPT-6 Astra lidera la clasificación, seguido de cerca por GPT-6.1 Sol. Gemini 4 Argon, Claude Opus 5.5 y Claude Fable 5.1 muestran un rendimiento similar. Se observa que la práctica contra los bots más fuertes es un predictor clave del éxito, aunque los bots creados por LLMs aún están significativamente por detrás de los mejores bots escritos por humanos. El estudio también considera la relación entre el rendimiento y el costo de la API, así como la variabilidad entre ejecuciones del mismo modelo. Se destaca que el tiempo de razonamiento limitado y las condiciones de juego son factores importantes en la evaluación.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50079280,
-    "url": "https://www.sciencealert.com/a-new-super-ice-is-10-times-stronger-bringing-it-close-to-the-strength-of-concrete",
-    "score": 108,
-    "time": 1791927758,
-    "titulo_es": "BioPykrete: La Evolución del Pykrete para Construcción Sostenible en Zonas Frías",
-    "resumen": "Investigadores de la Universidad Hebrea de Jerusalén han desarrollado BioPykrete, un material compuesto 10 veces más resistente que el hielo regular y con una capacidad de absorción de energía 70 veces mayor. Este material innovador se crea al combinar hielo con nanocristales de celulosa y una proteína a medida (CBM3a-AFPIII) que actúa como un aglutinante molecular entre el hielo y la celulosa. A diferencia del Pykrete original que usaba pulpa de madera, BioPykrete aprovecha las propiedades fortalecedoras de los nanocristales de celulosa y la capacidad de adhesión de la proteína para prevenir la propagación de grietas y permitir una deformación gradual en lugar de una fractura súbita. El objetivo principal de BioPykrete es servir como material de construcción sostenible y biodegradable para proyectos en regiones remotas y frías como el Ártico y la Antártida, ofreciendo una alternativa con baja huella de carbono frente al hormigón y el acero. Aunque actualmente es una prueba de concepto a pequeña escala, la investigación avanza hacia la validación a largo plazo y la exploración de sus mecanismos de fortalecimiento, con potencial para aplicaciones futuras en embalaje y construcción avanzada.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50117746,
-    "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
-    "score": 327,
-    "time": 1792155128,
-    "titulo_es": "El encanto y las ventajas del renderizado por software en juegos de DOS",
-    "resumen": "El artículo explora la experiencia del renderizado por software en videojuegos de DOS, contrastándola con las versiones aceleradas por hardware que surgieron posteriormente. Se destaca cómo el renderizado por software, donde la CPU maneja cada píxel, ofrece una estética particular (texturas nítidas, paletas de 256 colores con bandas de color pronunciadas) que muchos prefieren hoy en día. Aunque las tarjetas 3D introdujeron mejoras visuales como el filtrado bilineal, el renderizado por software preserva la intención original del diseño del juego y una apariencia 'gritty' apreciada. Se menciona que, si bien el hardware moderno puede manejar resoluciones más altas con renderizado por software, algunos juegos pesados aún demandan mucha potencia de CPU. El artículo también aborda las alternativas como los 'source ports' y emuladores (DOSBox), pero enfatiza la preferencia por ejecutar las versiones originales de DOS en hardware real para una experiencia auténtica, aunque señala el desafío del sonido en PCs modernas.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50118977,
-    "url": "https://calif.io/research/big-fish",
-    "score": 188,
-    "time": 1792161842,
-    "titulo_es": "Pez grande. Contador pequeño. Shell raíz.",
-    "resumen": "El artículo detalla una vulnerabilidad de escalada de privilegios locales en OpenBSD, rastreada hasta el código fuente original de BSD hace aproximadamente 37 años. Un desbordamiento de entero en un contador de adjuntos de memoria compartida (shm_nattch), definido como un short con signo de 16 bits, permitía que el contador superara su valor máximo, lo que provocaba un desbordamiento y una condición de carrera. Esto, combinado con una escritura fuera de límites en el kernel, permitía la escalada a root. El exploit se logró sin divulgación de información, utilizando un primitivo de escritura 'write-what-where'. A pesar de la aleatorización del kernel (KARL), los asignadores de memoria del kernel carecen de aleatorización de direcciones base, lo que lleva a ubicaciones de asignación predecibles. El exploit se dirige a manejadores de ioctl, sobrescribiendo uno para el control de flujo y usando otro para restaurar punteros. Se proponen varias soluciones, incluyendo 'safe-unlinking' para verificar invariantes de listas doblemente enlazadas, aleatorización de la asignación del mapa PTE auto-referencial para evitar ubicaciones de decremento atómicas, y la no determinización del asignador del kernel mediante aleatorización de la dirección base y/o del orden de asignación en tiempo de ejecución.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50077225,
-    "url": "https://blog.ikaes.de/yet-another-way-to-invoke-functions-without-parentheses/",
-    "score": 252,
-    "time": 1791919518,
-    "titulo_es": "Invocación de Funciones Arbitrarias en JavaScript sin Paréntesis a Través de prepareStackTrace y Manipulación de toString",
-    "resumen": "El artículo detalla una técnica avanzada para ejecutar código JavaScript arbitrario sin utilizar paréntesis, aprovechando vulnerabilidades en la forma en que JavaScript maneja los errores y las cadenas de texto. La técnica se basa en sobrescribir la función `prepareStackTrace` del objeto `Error`. Esta función, normalmente utilizada para formatear rastreos de pila (stack traces), es invocada cuando se accede al atributo `stack` de un error. La firma de `prepareStackTrace` se asemeja a la del constructor `Function`, permitiendo la generación de funciones si se le proporciona código JavaScript válido. El principal desafío es lograr que la representación de cadena de un array se convierta en el código JavaScript deseado. Esto se consigue manipulando `Array.prototype.toString()`, ya sea sobrescribiéndolo directamente o mediante 'prototype pollution' para inyectar el payload en otra función, como `Object.prototype.message` a través de la manipulación de `Error.prototype.toString()`. Una vez que se puede generar una función arbitraria, se explican métodos para invocarla, como el 'valueOf trick' (sobrescribiendo `valueOf`) o la concatenación con cadenas de texto para forzar la invocación de `toString`. La técnica permite la ejecución de funciones arbitrarias en el navegador, a menudo explotada en contextos de seguridad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50118318,
-    "url": "https://dfarq.homeip.net/what-was-a-token-ring-network/",
-    "score": 114,
-    "time": 1792158210,
-    "titulo_es": "¿Qué era una red Token Ring?",
-    "resumen": "El artículo describe Token Ring, una tecnología de red obsoleta que compitió con Ethernet en las décadas de 1980 y 1990. Aunque IBM la respaldó, fue superada por Ethernet principalmente debido a su menor costo. Token Ring era robusta y evitaba colisiones al pasar un 'token' entre sistemas, pero tenía la debilidad de que todos los nodos debían operar a la misma velocidad. Un error en la velocidad de un nodo podía tumbar toda la red. Ethernet, aunque inicialmente propenso a colisiones, se benefició de ser un estándar abierto, menores costos y una evolución más rápida hacia velocidades más altas (100 megabits, gigabit), lo que finalmente le dio la victoria a través de la escala. El artículo también menciona la dificultad de distinguir físicamente una tarjeta de red Token Ring de una Ethernet y los problemas que surgían al mezclar ambas tecnologías.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50118981,
-    "url": "https://waymo.com/blog/2026/10/waymo-in-toronto/",
-    "score": 314,
-    "time": 1792161857,
-    "titulo_es": "Waymo se expande a Toronto para lanzar su servicio de transporte autónomo en 2028",
-    "resumen": "Waymo, una empresa líder en tecnología de conducción autónoma, ha anunciado su expansión a Toronto, Canadá, con el objetivo de lanzar su servicio de transporte autónomo en 2028. La empresa está invirtiendo en instalaciones locales y creando empleos, comenzando con la recopilación de datos de mapeo de alta definición y pruebas manuales en las calles de Toronto. Waymo se asocia con Element Fleet Management para la gestión integral de la flota y colabora con organizaciones de accesibilidad como BALANCE for Blind Adults, CNIB, Community Living Toronto, Connected Canadians y Epilepsy Ontario. Este movimiento estratégico busca complementar el ecosistema de transporte de Toronto, ofreciendo una opción adicional y segura, respaldada por millones de kilómetros de experiencia en conducción autónoma que demuestran una reducción significativa en las colisiones.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50122736,
-    "url": "https://www.sandordargo.com/blog/2026/09/30/cpp26-debugging",
-    "score": 98,
-    "time": 1792176759,
-    "titulo_es": "Depuración programática en C++26 con el nuevo encabezado <debugging>",
-    "resumen": "El artículo detalla la introducción de un nuevo encabezado `<debugging>` en C++26, propuesto por P2546R5 y P2810R4, que estandariza la depuración programática en C++. Este encabezado proporciona tres funciones: `breakpoint()`, `is_debugger_present()` y `breakpoint_if_debugging()`. `breakpoint()` inserta un punto de interrupción incondicional, invocando al depurador si está presente o terminando el proceso si no. `is_debugger_present()` devuelve un booleano indicando si un depurador está adjunto, con un mecanismo reemplazable para plataformas específicas o sin sistema operativo. `breakpoint_if_debugging()` es una función de conveniencia que solo activa el punto de interrupción si un depurador está presente. La estandarización aborda la necesidad de manejar la depuración de manera uniforme en diferentes proyectos y plataformas, eliminando la duplicación de implementaciones y ofreciendo una solución robusta y adaptable para el desarrollo de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50118828,
-    "url": "https://www.worksinprogress.news/p/porcelain",
-    "score": 148,
-    "time": 1792161103,
-    "titulo_es": "El Renacimiento de la Porcelana: De Tecnología Antigua a Vanguardia en Ciencia de Materiales",
-    "resumen": "El artículo explora la evolución de la porcelana, destacando su dualidad como una tecnología antigua y un material de vanguardia. Detalla cómo la manipulación de la arcilla caolín a altas temperaturas transforma su estructura cristalina, creando materiales excepcionalmente resistentes. Se menciona la invención del Dekton por Cosentino como un ejemplo moderno de esta tecnología, aplicándola en superficies de cocina de alta gama. El texto subraya la importancia de la ciencia de materiales en la transformación del entorno construido, a menudo eclipsada por el auge digital y la inteligencia artificial, pero igualmente crucial para la innovación.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50084790,
-    "url": "https://www.michelecoscia.com/?p=2613",
-    "score": 156,
-    "time": 1791970329,
-    "titulo_es": "La complejidad económica del Imperio Romano inferida de inscripciones latinas",
-    "resumen": "Este artículo detalla un estudio que aplicó el concepto de Complejidad Económica (ECI) al Imperio Romano utilizando el conjunto de datos LIST (Latin Inscriptions in Space and Time). El estudio aprovecha las inscripciones latinas, muchas de las cuales son funerarias o honoríficas, para inferir la presencia de profesiones y, por lo tanto, actividades económicas en ubicaciones geográficas específicas dentro del imperio. Se abordan y se aplican correcciones para varios sesgos inherentes a los datos, como el sesgo de estatus (énfasis en ocupaciones honorables), el sesgo de género (subrepresentación de mujeres), el sesgo de clase social (subrepresentación de agricultores y clases bajas) y el sesgo historiográfico (dependencia de la recuperación y digitalización de inscripciones). El resultado es una estimación de la distribución de ocupaciones por provincia romana. El análisis revela patrones de complejidad económica clásicos, donde la provincia de Lacio (Roma) muestra la mayor ECI. Una innovación destacada es la capacidad de calcular la ECI utilizando divisiones geográficas arbitrarias, como las fronteras de países modernos, para territorios históricos del Imperio Romano.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50118048,
-    "url": "https://www.pinecoder.dev/blog/2026-10-15/my-old-job-is-distant/",
-    "score": 104,
-    "time": 1792156739,
-    "titulo_es": "La Evolución de la Experiencia de Desarrollador con IA: De Asistencia a Programación Agente",
-    "resumen": "El artículo narra la progresiva integración de modelos de lenguaje grandes (LLMs) en el flujo de trabajo de desarrollo de software de un profesional. Inicialmente, ChatGPT se convirtió en un reemplazo de Google para la búsqueda de información, especialmente para lenguajes como Ruby que el autor encontraba tediosos. La siguiente fase implicó el uso de ChatGPT para la generación de código, similar a un autocompletado avanzado, reduciendo el tiempo de escritura de fragmentos de código repetitivos. Posteriormente, la integración con herramientas como Cursor y la función de autocompletado en IDEs (IntelliSense/tab completion) ofrecieron una asistencia más fluida. La etapa más significativa descrita es la aplicación de ChatGPT en un nuevo dominio (visión por computadora en Python), donde la combinación de búsqueda y generación de código permitió un rápido aprendizaje y desarrollo, a pesar de las alucinaciones iniciales que se volvieron útiles para identificar las brechas de conocimiento. Finalmente, el autor transiciona hacia la programación agente (agentic programming), reconociendo y adaptándose a las capacidades y limitaciones de modelos como Claude, aprendiendo a optimizar los prompts para obtener resultados más eficientes. La narrativa enfatiza cómo la IA se ha convertido en una herramienta para mejorar la productividad y el aprendizaje en el desarrollo, más que una amenaza de reemplazo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50118512,
-    "url": "https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/",
-    "score": 85,
-    "time": 1792159313,
-    "titulo_es": "La formalización de las matemáticas: Oportunidades y desafíos en la era de la IA",
-    "resumen": "Este artículo aborda las implicaciones de los recientes avances en IA para la formalización de las matemáticas. Los autores, matemáticos expertos en formalización, expresan optimismo sobre el potencial de la IA para expandir la exploración y el descubrimiento matemático a través de la formalización a gran escala. Sin embargo, también advierten sobre los riesgos de un enfoque apresurado y deficiente, que podría ser un desperdicio de recursos o causar daños duraderos. El texto enfatiza que el valor de las formalizaciones radica no solo en su corrección, sino en su utilidad para realizar más matemáticas, explorar generalizaciones, conexiones y aplicaciones, y mejorar el conocimiento de forma elegante y eficiente. Se critica la generación de código formal por IA que, aunque impresionante en su capacidad, carece de valor práctico si no se integra y utiliza activamente en el quehacer matemático, citando ejemplos como la formalización de Viazovska y el Teorema de Fermat. La visión propuesta es una formalización bien hecha que enriquezca las matemáticas, no solo una recopilación de teoremas verificados.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50085553,
-    "url": "https://github.com/mixelpixx/Konnect",
-    "score": 132,
-    "time": 1791975097,
-    "titulo_es": "Diseño de PCB asistido por IA para KiCAD 10",
-    "resumen": "Konnect es un plugin nativo para KiCAD, desarrollado en Rust como un único binario, que expone 228 herramientas de diseño de PCB (esquemático, layout, enrutamiento, colocación, revisión de diseño y fabricación) a través del Model Context Protocol (MCP). Permite que asistentes de IA, como Claude, interactúen directamente con el software de diseño de KiCAD utilizando la API oficial IPC, reemplazando arquitecturas anteriores basadas en Python y SWIG. Se destaca por su simplicidad, rendimiento mejorado, menor superficie de dependencias y alineación con las futuras direcciones de KiCAD. Incluye un servidor web para investigación en tiempo real (Nimrod) que obtiene datos de disponibilidad de componentes, hojas de datos y erratas, complementando los datos de entrenamiento de la IA. Konnect gestiona ediciones de archivos .kicad_sch de forma atómica y preserva UUIDs, además de integrar la edición en tiempo real con el sistema de deshacer/rehacer de KiCAD.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50118267,
-    "url": "https://anuragbhatia.com/post/2026/06/rfc8950-announce-ipv4-with-ipv6-next-hop/",
-    "score": 106,
-    "time": 1792157905,
-    "titulo_es": "RFC8950: Enrutamiento de IPv4 sobre IPv6 sin túneles",
-    "resumen": "El artículo describe RFC8950, un estándar que permite el enrutamiento de IPv4 sobre una infraestructura IPv6 sin la necesidad de túneles. Técnicamente, extiende las capacidades de MP-BGP para anunciar rutas IPv4 con next-hops IPv6 y viceversa. Esto permite que IPv4 se convierta en una característica opcional sobre redes IPv6, similar a 464XLAT en redes móviles, pero aplicable a redes troncales. El control plane utiliza IPv6 para las decisiones, mientras que el data plane de IPv4 permanece inalterado. Se menciona la amplia compatibilidad de esta tecnología en plataformas de enrutamiento populares y se ilustra con un laboratorio de prueba usando FRR.",
-    "categoria": "Hardware"
   }
 ]
