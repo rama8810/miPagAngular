@@ -1,236 +1,191 @@
 [
   {
-    "id": 50192536,
-    "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
-    "score": 303,
-    "time": 1792656112,
-    "titulo_es": "Desarrollo del exploit ns2jb y jailbreak para Switch 2",
-    "resumen": "El artículo describe el desarrollo de ns2jb, un jailbreak por software para Switch 2 que permite ejecutar código nativo arbitrario con privilegios de sysmodule. El investigador detalla la automatización del proceso mediante un arnés de pruebas controlado por el agente Codex y hardware externo (JetKVM), explorando vectores de ataque que van desde n-days de WebKit hasta la explotación de un desbordamiento de enteros de 32 bits en el intérprete de SmileBASIC para corromper memoria y manipular punteros.",
+    "id": 50208343,
+    "url": "https://codeberg.org/shitter/shitter",
+    "score": 30,
+    "time": 1792760543,
+    "titulo_es": "Nitter: Un frontend alternativo de código abierto para Twitter enfocado en la privacidad y el rendimiento",
+    "resumen": "Nitter es una interfaz web alternativa y ligera para Twitter/X, escrita en el lenguaje Nim y diseñada para evitar el rastreo mediante JavaScript y huellas digitales de navegador sin requerir inicio de sesión. El documento describe los requisitos técnicos para su compilación y despliegue, incluyendo el uso de Valkey/Redis para el almacenamiento en caché, libsass para estilos, y opciones de ejecución mediante contenedores Docker, Docker Compose o servicios systemd configurados detrás de un proxy inverso como Nginx.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50208558,
+    "url": "https://keepandroidopen.org/?",
+    "score": 86,
+    "time": 1792761582,
+    "titulo_es": "Tu teléfono está a punto de dejar de ser tuyo: Google exigirá registro obligatorio para todos los desarrolladores de Android",
+    "resumen": "A partir de 2027, Google requerirá que cualquier desarrollador de Android se registre de forma centralizada con identificación gubernamental y pago previo para que su software pueda ejecutarse en dispositivos Android, afectando no solo a la Play Store sino a todo el software sideloaded y repositorios como F-Droid. La restricción, gestionada a través de Google Play Services, impondrá barreras severas y un periodo de espera de 24 horas para instalar aplicaciones no verificadas, impactando gravemente el ecosistema de desarrollo independiente y de código abierto.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50202681,
+    "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+    "score": 622,
+    "time": 1792712756,
+    "titulo_es": "Lo que aprendí sobre el funcionamiento interno de Docker al crear mi propio runtime de contenedores",
+    "resumen": "El autor analiza los fundamentos técnicos de los contenedores tras iniciar el desarrollo de su propio runtime. Explica que los contenedores no son una entidad única del kernel de Linux, sino procesos aislados mediante una combinación de namespaces, cgroups y chroot/pivot_root. Además, detalla las complejidades arquitectónicas de runc (escrito en Go), tales como la necesidad de un módulo en C previo al inicio del runtime de Go para ejecutar syscalls en un entorno de un solo hilo, y la técnica de invocar /proc/self/exe para mitigar la ausencia de un fork tradicional en Go. Finalmente, aborda los retos de privilegios de root y las complejidades de implementar la pila de red en espacio de usuario para contenedores rootless.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50205816,
+    "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
+    "score": 96,
+    "time": 1792742733,
+    "titulo_es": "Eliminación de pgrust de ClickBench por manipulación del benchmark",
+    "resumen": "Se documenta y justifica la eliminación del motor pgrust del benchmark ClickBench tras detectarse que sus resultados fueron generados mediante código diseñado exclusivamente para superar las 43 consultas de la prueba. El análisis del binario y del código fuente reveló planes físicos precompilados ('hand-lowered'), patrones de expresiones regulares fijos, respuestas derivadas únicamente de metadatos sin escaneo de tablas y mecanismos de caché que rejugaban veredictos previos en las ejecuciones en caliente ('hot runs'). Asimismo, ligeras variaciones de las consultas o sentencias estándar fallaban con errores explícitos al carecer de un motor de ejecución columnar genérico.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50207115,
+    "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
+    "score": 103,
+    "time": 1792753493,
+    "titulo_es": "Vulnerabilidades críticas en PHP y el auge del desarrollo de exploits mediante IA",
+    "resumen": "El artículo analiza el impacto del hallazgo de dos vulnerabilidades críticas de ejecución remota de código (RCE) en PHP, denominadas informalmente 'PHP2Shell' (incluyendo CVE-2026-109618), las cuales afectan a una gran parte de la infraestructura web global. Se destaca el rol disruptivo de modelos avanzados de lenguaje (LLM) utilizados por investigadores para transformar vulnerabilidades teóricas o parches de código en exploits funcionales en tiempos récord. Asimismo, se expone la problemática de la divulgación coordinada de vulnerabilidades, donde filtraciones prematuras y rupturas de embargos facilitaron la explotación activa antes de que los administradores de sistemas pudieran aplicar los parches correspondientes.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50195110,
-    "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
-    "score": 6,
-    "time": 1792676019,
-    "titulo_es": "eMudhra enfocará sus esfuerzos en soluciones empresariales centrales y servicios de confianza más allá de SSL/TLS",
-    "resumen": "La autoridad de certificación eMudhra anunció su retirada voluntaria del negocio global de certificados SSL/TLS tras un incidente operativo que requirió la revocación de CAs afectadas en menos de 14 horas, sin que existiera compromiso de infraestructura o datos. La compañía justificó su decisión en la baja rentabilidad de esta línea de negocio (que representa apenas el 1% de sus ingresos), el aumento en requisitos de soberanía de datos y la proliferación de alternativas gratuitas. eMudhra facilitará una transición ordenada para sus clientes mediante sus raíces RSA G1 y centrará su estrategia en soluciones PKI empresariales, firma electrónica y gestión de identidades.",
+    "id": 50203161,
+    "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+    "score": 251,
+    "time": 1792716721,
+    "titulo_es": "Sobre la insensatez de la «programación en lenguaje natural»",
+    "resumen": "El texto argumenta en contra de la idea de utilizar el lenguaje natural como interfaz de programación para computadoras. Explica que la necesidad de exactitud y rigor no es una deficiencia de las máquinas, sino una condición intrínseca del desarrollo lógico. Señala que el uso de simbolismos formales y lenguajes de alto nivel previene errores absurdos y ambigüedades, y advierte que cambiar a lenguajes naturales no simplificaría el trabajo humano, sino que incrementaría la complejidad y el esfuerzo de comunicación en ambos extremos de la interfaz, trazando un paralelismo histórico con la evolución de las matemáticas gracias a la notación formal.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50201445,
+    "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
+    "score": 144,
+    "time": 1792705273,
+    "titulo_es": "Cómo los modelos de lenguaje de frontera ocultan y decodifican mensajes en imágenes SVG",
+    "resumen": "El artículo analiza la capacidad de modelos de lenguaje avanzados (LLMs como Claude Fable 5.1) para realizar esteganografía generando imágenes vectoriales en SVG con mensajes ocultos, así como la habilidad de instancias independientes del mismo modelo para decodificarlos sin un esquema preacordado ni acceso al código fuente. El modelo convergió de manera autónoma en patrones específicos, destacando la modulación de alturas de elementos gráficos (como edificios o estrellas) para representar letras secuenciales. En la fase de descifrado, las instancias receptoras utilizaron razonamiento y generación de código (PIL) para extraer coordenadas visuales precisas y reconstruir con éxito los textos originales.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50197313,
+    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
+    "score": 513,
+    "time": 1792685280,
+    "titulo_es": "Le pedimos a 12 modelos de IA su opinión más controvertida sobre nosotros tres veces: 29 de 35 respuestas fueron la misma",
+    "resumen": "Un experimento empírico analizó la convergencia conceptual y los patrones de respuesta de 12 modelos de lenguaje avanzados (LLM) y 6 modelos de generación de imágenes al solicitarles su postura más controvertida sobre la humanidad sin condicionamientos. En 29 de 35 ejecuciones, los modelos de texto coincidieron en que los seres humanos priorizan la pertenencia grupal y el estatus por encima de la verdad y los principios objetivos. Por su parte, los modelos de imagen mostraron un sesgo temático paralelo pero independiente, representando casi unánimemente el arquetipo de consumidores adictos a dispositivos móviles degradando el planeta. El estudio evidencia cómo los sesgos de los datos de entrenamiento y el modelado subyacente inducen a los sistemas de IA a reproducir un repertorio predecible de tropos culturales frente a prompts abiertos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50198675,
+    "url": "https://github.com/NVIDIA/OpenShell",
+    "score": 440,
+    "time": 1792691046,
+    "titulo_es": "OpenShell: El entorno de ejecución seguro y privado para agentes autónomos de IA",
+    "resumen": "OpenShell es un runtime diseñado para ejecutar flotas de agentes autónomos de IA con aislamiento estricto y privacidad. Permite a los agentes interactuar con archivos, instalar paquetes y consumir APIs sin otorgarles acceso irrestricto al sistema o la red. Su arquitectura se basa en políticas declarativas aplicadas mediante instrumentación a nivel de kernel para controlar llamadas al sistema, accesos a archivos y tráfico de red en tiempo de ejecución, además de utilizar verificación formal antes de aprobar cambios de permisos. Es compatible con Linux, macOS y WSL 2 mediante Docker, Podman o virtualización.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50200164,
+    "url": "https://developer.chrome.com/blog/html-in-canvas-origin-trial",
+    "score": 82,
+    "time": 1792698844,
+    "titulo_es": "HTML-in-Canvas API: Combinando DOM y Canvas para Experiencias Web Avanzadas",
+    "resumen": "El artículo introduce la nueva API experimental HTML-in-Canvas, diseñada para superar la dicotomía tradicional entre usar el DOM por sus características semánticas y de accesibilidad, o el <canvas> (incluyendo WebGL/WebGPU) por su rendimiento gráfico. Esta API permite renderizar contenido DOM directamente en texturas de canvas, manteniendo la interactividad, accesibilidad y la integración con funciones del navegador como resaltado de texto, clic derecho, herramientas de accesibilidad, modo oscuro, etc. Se describen los pasos para su uso: añadir el atributo `layoutsubtree` al `<canvas>`, dimensionar el canvas correctamente, usar métodos como `drawElementImage` (2D), `texElementImage2D` (WebGL) o `copyElementImageToTexture` (WebGPU) para la renderización, y finalmente, sincronizar la transformación CSS del elemento con el valor devuelto por la llamada de renderizado para asegurar la correcta localización de eventos. La API está en Origin Trial en Chrome 148-150 y requiere habilitar flags específicos para su prueba. Su potencial abarca desde juegos y visualizaciones hasta aplicaciones complejas que requieren lo mejor de ambos mundos.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50196718,
+    "url": "https://github.com/oosexgang/hackios-xnu-kernel",
+    "score": 472,
+    "time": 1792682782,
+    "titulo_es": "HackiOS: Ejecución del Kernel XNU de iOS en Hardware Android",
+    "resumen": "HackiOS es un proyecto de investigación independiente que logra ejecutar el kernel XNU de iOS 16.5 (xnu-8796.121.2) en hardware de teléfonos Android, específicamente en un POCO X5 Pro 5G (redwood). Esto se hace posible mediante un cargador EFI propio, reemplazos para los drivers cerrados de Apple, un port de UEFI y un driver de Wi-Fi de Linux operando en una capa de compatibilidad. El espacio de usuario de iOS 16.5 no modificado se ejecuta sobre este kernel adaptado. El proyecto no contiene archivos de Apple; el sistema operativo se genera localmente a partir de un archivo IPSW descargado de Apple. Los componentes clave incluyen un cargador EFI con el kernel, drivers modificados y firmware específico del dispositivo Android para la comunicación de hardware como Wi-Fi. La ejecución es una sesión de investigación, no una instalación permanente, con una duración limitada antes de retornar al cargador.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50197404,
+    "url": "https://www.taler.net/en/news/2026-13.html",
+    "score": 331,
+    "time": 1792685671,
+    "titulo_es": "Taler Operations AG se funda para operar el sistema de pago Taler en Euros en Alemania",
+    "resumen": "El proyecto NGI Taler anuncia la creación de Taler Operations AG, una nueva empresa en Alemania con el objetivo de operar el sistema de pago Taler en Euros. Esta compañía solicitará una licencia de emisor de dinero electrónico a BaFin (la autoridad supervisora financiera alemana) para permitir pagos con Taler primero en Alemania y luego en la Eurozona. Inicialmente, GLS Bank iba a ser el emisor de dinero electrónico, pero se retiró del rol en enero de 2026. Taler Operations AG asumirá esta función, enfocándose exclusivamente en Taler. El software GNU Taler continuará siendo libre y abierto. El proyecto NGI Taler sigue adelante con su desarrollo, revisiones de seguridad e integraciones. Se está buscando capital de inversores que compartan los valores de Taler: privacidad, transparencia fiscal, sin bloqueos y con pagos como infraestructura de interés público.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50180799,
+    "url": "https://wuemeli.com/blog/reversing-hitster-game/",
+    "score": 65,
+    "time": 1792590031,
+    "titulo_es": "Ingeniería Inversa de la App Hitster: Descifrando Datos y Evitando Dependencias de Suscripción",
+    "resumen": "El artículo detalla el proceso de ingeniería inversa de la aplicación Android del juego \"Hitster\". El autor describe cómo obtuvo el APK, lo descompiló usando jadx y descubrió archivos JSON cifrados. Se explica el método de cifrado AES-GCM, incluyendo la extracción del IV (nonce) y la clave AES derivada mediante hashing SHA-256 de una cadena secreta. La cadena secreta se obtuvo experimentando con arrays de bytes encontrados en el código, específicamente XOReando dos arrays (`m17.java`). Finalmente, se implementó un script en Rust para descifrar los datos, revelando un archivo `test.txt` con más de 31,000 mapeos de IDs de tarjeta a canciones de Spotify/Apple Music. El autor también señala que una URL HTTPS pública (`hitster.jumboplay.com/hitster-assets/gameset_database.json`) contenía los datos sin cifrar, haciendo gran parte del esfuerzo de descifrado innecesario.",
     "categoria": "Ciberseguridad"
   },
   {
     "id": 50190363,
     "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-    "score": 351,
+    "score": 567,
     "time": 1792635521,
-    "titulo_es": "Ajuste fino de un modelo de lenguaje de 360M para emular una terminal",
-    "resumen": "El autor detalla la creación de un modelo de mundo ligero basado en Qwen2.5-Coder-0.5B, entrenado para simular una terminal interactiva sin un sistema operativo o shell real por debajo. En lugar de generar flujos de texto secuenciales convencionales, el modelo procesa pulsaciones de teclas como bytes sin procesar e infiere los cambios directos sobre una cuadrícula de caracteres bidimensional. Para hacer eficiente el renderizado y reducir drásticamente el consumo de tokens en desplazamientos o limpiezas de pantalla, implementa operaciones especializadas de copia de filas y decodificación paralela, permitiendo la ejecución de programas interactivos como Vim, Tmux y Snake directamente en el navegador mediante WebGPU.",
+    "titulo_es": "Modelo de Lenguaje Fino Sintonizado Simula una Terminal Sin Shell ni Sistema de Archivos",
+    "resumen": "El artículo describe el desarrollo y funcionamiento de un modelo de lenguaje de 360 millones de parámetros (basado en Qwen2.5-Coder-0.5B) que simula una terminal. A diferencia de las terminales tradicionales, no hay un shell o sistema de archivos subyacente; cada pulsación de tecla se procesa como entrada, y el modelo predice los cambios en la pantalla.  El modelo puede realizar acciones como crear archivos, ejecutar editores como Vim y multiplexores como Tmux, e incluso jugar Snake, manteniendo un estado coherente de la 'terminal' a lo largo de varias interacciones.  Las optimizaciones clave incluyeron enseñar al modelo a corregir sus propios errores y la decodificación paralela de filas de pantalla para mejorar la eficiencia. La entrada se representa como una cuadrícula de caracteres, y el modelo recibe instantáneas del estado de la pantalla (tamaño, contenido, posición del cursor) junto con las pulsaciones de teclas (representadas como bytes crudos) o eventos de espera (tokens WAIT). La salida del modelo especifica qué filas de la pantalla modificar y la nueva posición del cursor.  Se implementaron operaciones eficientes como COPY para simular el desplazamiento de pantalla, la limpieza y la inserción/eliminación de líneas, reduciendo significativamente la cantidad de tokens necesarios en comparación con la regeneración completa de la pantalla. La demostración está optimizada para navegadores de escritorio con WebGPU y se enfoca en la viabilidad de las aplicaciones aprendidas en lugar de codificadas.",
     "categoria": "IA"
   },
   {
-    "id": 50194938,
-    "url": "https://crystal-lang.org/2026/10/12/1.22.0-released/",
-    "score": 7,
-    "time": 1792675213,
-    "titulo_es": "Lanzamiento de Crystal 1.22.0",
-    "resumen": "Se anuncia el lanzamiento de Crystal 1.22.0, incorporando 251 cambios entre mejoras de lenguaje, compilador y biblioteca estándar. Entre las novedades técnicas más destacadas se encuentran la adopción del comportamiento predeterminado de SIGPIPE ante errores EPIPE en STDOUT/STDERR, la adición de declaraciones de tipo en constantes y la eliminación definitiva de Process.fork. Además, los objetivos aarch64-linux ascienden a Tier 1, se optimizó drásticamente el análisis de DWARF para acelerar los backtraces y reducir memoria, se extendió el soporte del bucle de eventos nativo del sistema (epoll/kqueue) relegando libevent, y se habilitó Kernel TLS de forma predeterminada en los bindings de OpenSSL.",
+    "id": 50195959,
+    "url": "https://quad9.net/news/blog/au-revoir-france/",
+    "score": 1279,
+    "time": 1792679558,
+    "titulo_es": "Quad9 retira su servicio de protección cibernética gratuito de Francia tras fallo judicial",
+    "resumen": "Quad9, una fundación suiza sin fines de lucro dedicada a la ciberseguridad, se ve obligada a cesar sus operaciones en Francia a partir del 24 de noviembre debido a un fallo judicial desfavorable. La corte francesa, en una demanda interpuesta por la empresa beIN, ha ordenado a Quad9 bloquear la resolución de nombres de dominio específicos para usuarios en Francia, bajo una sanción económica inicialmente alta pero luego reducida. Quad9 argumenta que cumplir con esta orden es técnicamente inviable y va en contra de su misión de proteger la privacidad y la integridad de internet, ya que su servicio de resolución DNS recursivo es neutral y no debe ser alterado. La fundación considera que la decisión judicial malinterpreta el funcionamiento de internet y que forzar a terceros no involucrados a bloquear contenido pirata es una solución equivocada que perjudica la ciberseguridad de millones de usuarios. Quad9 no tiene la capacidad técnica ni la política para identificar la jurisdicción de sus usuarios y aplicar bloqueos selectivos, ya que su servicio es gratuito, anónimo y de acceso público. La empresa beIN buscaba bloquear dominios asociados a la infracción de sus derechos de autor sobre transmisiones deportivas.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50202762,
+    "url": "https://jank-lang.org/",
+    "score": 133,
+    "time": 1792713396,
+    "titulo_es": "Jank: Un Dialecto Clojure con Interoperabilidad C++ Nativa",
+    "resumen": "Jank es un dialecto de Clojure diseñado para la interoperabilidad directa con C++. Permite la inclusión de código fuente C++, el enlace a bibliotecas C/C++, y utiliza el sistema de tipos C++. Se compila a C++ y utiliza un JIT de Clang/LLVM para la compilación dinámica. Ofrece desarrollo interactivo impulsado por REPL y gestión de proyectos basada en Leiningen, facilitando la adición de dependencias nativas. Está orientado a aplicaciones que requieren el rendimiento de C++ dentro de un flujo de trabajo funcional e inmutable, eliminando la necesidad de puentes, registro de tipos o marshalling.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50194070,
-    "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
-    "score": 101,
-    "time": 1792669836,
-    "titulo_es": "Amazon Threat Intelligence detecta explotación de PHP2Shell antes de su divulgación pública",
-    "resumen": "Amazon Threat Intelligence identificó intentos de explotación activa de la vulnerabilidad PHP2Shell (CVE-2026-109618 y CVE-2026-109619) mediante su red de honeypots MadPot días antes de que expirara el periodo de embargo oficial. Los actores de amenazas utilizaron infraestructura de anonimización comercial para desplegar pruebas de concepto tanto previas como posteriores a la publicación del parche. AWS reporta explotación masiva en la naturaleza y recomienda aplicar parches de inmediato y mitigar riesgos mediante reglas en AWS WAF.",
+    "id": 50208258,
+    "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/hacker-leaks-281-gb-data-germany-afd",
+    "score": 10,
+    "time": 1792760198,
+    "titulo_es": "AfD sufre brecha de seguridad masiva con filtración de correos electrónicos internos y resúmenes generados por IA",
+    "resumen": "El partido de extrema derecha alemán AfD (Alternative für Deutschland) ha confirmado una brecha de seguridad significativa, donde cientos de miles de correos electrónicos internos fueron robados y publicados en el sitio Hexane.cc. La filtración incluye miles de correos electrónicos y archivos, con un total de 281 GB. Lo inusual de esta filtración es que, en lugar de publicar los correos directamente, se presentan resúmenes generados por Inteligencia Artificial (IA) categorizados por temas como racismo y antisemitismo, con niveles de gravedad de Bajo a Crítico. Los correos originales, incluyendo encabezados, cuerpos de mensaje, adjuntos y firmas DKIM, están disponibles para su descarga a través de torrent. El artículo advierte sobre la posible falta de fiabilidad de los resúmenes de IA y el riesgo de malware al descargar torrents, además de las implicaciones legales del manejo de datos robados. Se sugiere que el acceso del hacker pudo haberse obtenido a través de un sitio web desactualizado y sin parches, lo que indica fallos de seguridad comunes como la falta de segmentación de infraestructura y la negligencia en la actualización de sistemas. La nota también destaca que las cuentas de correo electrónico, incluso las no utilizadas durante años, pueden contener información sensible explotable por ciberdelincuentes. Este incidente sigue a otros problemas de ciberseguridad sufridos previamente por el AfD.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50188228,
-    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
-    "score": 526,
-    "time": 1792619883,
-    "titulo_es": "Incidente de seguridad en Railway: Posible compromiso de variables de entorno de clientes",
-    "resumen": "Railway detectó actividad anómala en los sistemas que almacenan variables de entorno de sus clientes, confirmando que un tercero no autorizado pudo haber obtenido acceso a datos cifrados y descifrado parte de ellos, exponiendo potencialmente secretos, claves de API y credenciales. La compañía sospecha que el incidente forma parte de una campaña dirigida a plataformas para comprometer proveedores de inferencia de IA. Como respuesta inmediata, pausaron los despliegues, notificaron a los proveedores afectados y solicitaron a los usuarios rotar de forma urgente todas las credenciales y variables de entorno almacenadas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50181114,
-    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-    "score": 558,
-    "time": 1792591226,
-    "titulo_es": "Compromiso de LiteLLM: Robo de Credenciales y Backdoor de Ejecución Remota en PyPI y Docker Hub",
-    "resumen": "El artículo detalla un incidente de seguridad grave que afectó a la biblioteca LiteLLM, específicamente en sus versiones 1.107.0 publicadas en PyPI y Docker Hub. Se descubrió que estas versiones contenían un 'credential stealer' y una backdoor de ejecución remota que se instalaban como tres archivos en el directorio site-packages de Python. Estos archivos se ejecutaban al iniciar cualquier proceso de Python en el host, comprometiendo la seguridad del sistema. El ataque se originó a través de credenciales de GitHub comprometidas de desarrolladores de LiteLLM, que permitieron al atacante eludir las protecciones de ramas y publicar código malicioso en un repositorio 'lookalike'. La investigación reveló que el código malicioso se inyectó a través de una línea adicional en la configuración de compilación de `pyproject.toml` que no estaba presente en el código fuente original de GitHub. El mecanismo de ejecución incluía archivos `.pth` y `sitecustomize` que ejecutaban código ofuscado. La vulnerabilidad se mitigó cuando PyPI eliminó la versión comprometida y el servidor que albergaba el código de segunda etapa del backdoor dejó de estar disponible. El artículo también enfatiza la importancia de herramientas para escanear dependencias, generar SBOMs, y aplicar políticas de seguridad para detectar y prevenir este tipo de amenazas en el ciclo de vida del desarrollo de software y en la gestión de IA.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50186010,
-    "url": "https://google.github.io/styleguide/rustguide.html",
-    "score": 344,
-    "time": 1792609917,
-    "titulo_es": "Guía de Estilo de Rust en Google",
-    "resumen": "Este documento es una guía de estilo para el uso del lenguaje de programación Rust en Google, abarcando no solo el formato sino también el diseño de API e implementación. Su objetivo es asegurar la consistencia y calidad del código Rust en diversas bases de código (google3, Android, ChromeOS, Fuchsia, Chrome). Las reglas se basan en la legibilidad a largo plazo, la facilidad de Realización de Cambios a Gran Escala (LSCs), la alineación con el ecosistema Rust y la minimización de debates estilísticos. Se prioriza seguir las reglas de estilo públicas de Rust cuando no entran en conflicto con esta guía. La guía distingue entre código de biblioteca (donde las reglas de diseño de API son vinculantes) y código de aplicación (donde son una recomendación fuerte, priorizando la simplicidad). Se define terminología clave como 'crate' (unidad de compilación) y 'módulo' (unidad de organización de código). Se prefiere el uso de crates pequeños en Chromium, idealmente contenidos en un solo archivo si se centran en una abstracción. Un crate corresponde a una única regla `rust_static_library`.",
+    "id": 50168850,
+    "url": "https://names.color.pizza",
+    "score": 95,
+    "time": 1792513676,
+    "titulo_es": "Nombres de Colores: Colección de Nombres de Colores Humanos",
+    "resumen": "El artículo describe 'Color Names', una colección abierta y desarrollada por la comunidad de nombres de colores únicos, escritos por humanos. El proyecto es gratuito bajo la licencia MIT, está disponible como un paquete npm o a través de una API, y permite a los usuarios 'adoptar' un color por un precio a partir de $5, lo que añade su nombre al color de forma permanente. Cada color solo puede ser adoptado una vez.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50185869,
-    "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
-    "score": 375,
-    "time": 1792609272,
-    "titulo_es": "GitLab libera parches de seguridad urgentes para múltiples vulnerabilidades críticas",
-    "resumen": "GitLab ha lanzado versiones de parche urgentes (19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, y 18.11.13 para CE/EE) para abordar varias vulnerabilidades de seguridad significativas. Entre ellas se incluyen: la ejecución remota de código por desbordamiento de enteros al compilar expresiones regulares (CVSS 10.0), la toma de control de cuentas vinculadas a LDAP por usuarios autenticados a través de OmniAuth SAML y la vinculación automática de LDAP (CVSS 8.2), y el envenenamiento de caché OAuth/OIDC por usuarios no autenticados para redirigir flujos a servidores controlados externamente (CVSS 7.5). Se recomienda encarecidamente a todos los usuarios autogestionados que actualicen inmediatamente a estas versiones. GitLab.com y las instancias de GitLab Dedicated ya están parcheadas o incluyen estas correcciones. Las versiones afectadas van desde 7.0 hasta las versiones previas a estos parches, dependiendo de la vulnerabilidad específica. GitLab también ha publicado detectores de amenazas para instancias autogestionadas.",
-    "categoria": "Ciberseguridad"
+    "id": 50199389,
+    "url": "https://github.com/maxilevi/project-hedra/tree/pre-ai",
+    "score": 222,
+    "time": 1792694676,
+    "titulo_es": "Hedra: Un Motor de Juego y RPG de Mundo Abierto 3D Desarrollado desde Cero",
+    "resumen": "Hedra es un ambicioso proyecto de juego RPG de mundo abierto en 3D y motor de juego, iniciado en la adolescencia con el objetivo de aprender OpenGL. Con más de 100,000 líneas de código, el proyecto ha evolucionado hasta incluir generación procedural de mundos, clases personalizables, desbloqueo de habilidades y misiones generadas dinámicamente. El motor soporta nativamente Linux y Windows, optimizando el renderizado del mundo con técnicas como `glMultiDrawElements` para minimizar las llamadas a dibujo. Incluye componentes clave como `Block.cs` para la gestión del mundo, `Fishing.py` como script de modding en Python interactuando con la API C#, y `NativeArray.cs` para optimizar la gestión de memoria mediante asignadores personalizados (heap y stack) y evitar la recolección de basura (GC) durante los fotogramas del juego. La arquitectura está diseñada para facilitar el modding, tratando el juego como un mod sobre un motor base. El proyecto también abarca sistemas de IA, generación de mundos, sistemas de módulos, colocación de objetos, renderizado, sonido, sistemas base y características de plataforma. Se han implementado primitivas de bajo nivel como asignadores de memoria y estructuras de datos personalizadas. Adicionalmente, Hedra cuenta con herramientas para la compresión de assets del juego y soportes anteriores (ahora no funcionales) para multijugador P2P mediante UDP Hole Punching. El proceso de compilación está automatizado y es visible en flujos de trabajo de GitHub Actions.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50155616,
-    "url": "https://spectrum.ieee.org/agility-robotics-digit-5-redesign",
-    "score": 38,
-    "time": 1792432638,
-    "titulo_es": "El primer robot trabajador práctico de Agility Robotics no se parece en nada a lo que soñé",
-    "resumen": "El artículo describe la evolución de Agility Robotics desde sus inicios en investigación de robótica bipedal hasta el lanzamiento de su primer robot trabajador comercial, Digit 5. Inicialmente, el cofundador Jonathan Hurst soñaba con construir robots que imitaran la locomoción y manipulación humanas con elegancia, basándose en modelos biomecánicos como el 'spring-mass'. Esto llevó a la creación de robots de investigación como ATRIAS y Cassie, diseñados para demostrar principios físicos y capacidades de movimiento dinámico, en lugar de funcionalidad comercial. El desarrollo posterior, impulsado por la necesidad de un producto comercialmente viable, resultó en Digit 5. Este robot, aunque pesado y voluminoso y diferente de la visión original, está diseñado para tareas de almacén a escala, como levantar y colocar objetos pesados, y se beneficia de una carga rápida. La transición de la investigación académica a un producto comercial requirió un enfoque pragmático para resolver problemas reales del cliente, alejándose del ideal inicial de movimiento humano perfectamente emulado para centrarse en la utilidad y la economía en entornos industriales.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50176082,
-    "url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
-    "score": 132,
-    "time": 1792556871,
-    "titulo_es": "Por qué no podemos confiar en las puntuaciones de confianza generadas por LLMs",
-    "resumen": "El artículo explica que las puntuaciones de confianza generadas por Modelos de Lenguaje Grandes (LLMs) no son fiables porque carecen de una base empírica y un proceso de calibración. A diferencia de los pronosticadores humanos que basan su confianza en datos históricos y mediciones actualizadas, los LLMs generan estas puntuaciones de forma autorregresiva, basándose únicamente en el contexto de los tokens previos. La confianza real se valida a través de la calibración: si una confianza del X% se correlaciona con que el evento ocurra el X% de las veces en un conjunto de datos históricos. Los LLMs, al no tener acceso a este tipo de datos externos ni a un mecanismo de verificación de su propia precisión a lo largo del tiempo, no pueden ofrecer métricas de confianza que reflejen su seguridad real sobre una predicción. Para que una puntuación de confianza sea fiable, se requiere un registro histórico de predicciones y resultados reales, algo que los LLMs no poseen intrínsecamente para sus propias generaciones.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50191507,
-    "url": "https://github.com/openai/openai-cli",
-    "score": 176,
-    "time": 1792646591,
-    "titulo_es": "CLI Oficial para la API de OpenAI",
-    "resumen": "El artículo describe la herramienta de línea de comandos (CLI) oficial para interactuar con la API REST de OpenAI. Detalla los requisitos de instalación (Go 1.26+), el uso de comandos para interactuar con diferentes recursos de la API (como 'openai images generate'), la gestión de claves API, la estructura de comandos basada en recursos, la funcionalidad de ayuda integrada y la configuración de autocompletado para shells populares (Bash, Zsh, Fish, PowerShell). También aborda la comprobación de actualizaciones, el manejo de salida (texto legible por defecto, JSON/JSONL para scripting) y la gestión de archivos. Se enfatiza que la CLI no realiza instalaciones automáticas y que las comprobaciones de actualización se realizan de forma segura sin credenciales y con timeouts limitados.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50160241,
-    "url": "https://nsidc.org/learn/ask-scientist/karakoram-anomaly-it-real",
-    "score": 59,
-    "time": 1792459613,
-    "titulo_es": "La Anomalía del Karakórum: Glaciares que Ganan Masa en un Mundo en Calentamiento",
-    "resumen": "El artículo describe el fenómeno inusual conocido como la 'Anomalía del Karakórum', donde los glaciares en la cordillera del Karakórum, situada en Asia Central, han experimentado un modesto aumento de masa desde la década de 1990, a diferencia de la mayoría de los glaciares del mundo que están perdiendo hielo. Se exploran varias explicaciones propuestas por glaciólogos, incluyendo el papel del escombro glacial que puede aislar el hielo y reducir la ablación (pérdida de masa) cuando su grosor supera los 4-5 cm. Sin embargo, la explicación que gana más fuerza se relaciona con los patrones meteorológicos únicos de la región. A diferencia de otras partes de Asia, el Karakórum recibe la mayor parte de su precipitación en forma de nieve durante el invierno, transportada por vientos del oeste originados en el Mediterráneo y el Mar Caspio. Se plantea la duda sobre la persistencia de esta anomalía ante el continuo calentamiento global.",
+    "id": 50192396,
+    "url": "https://www.sciencealert.com/a-lost-schrdinger-manuscript-reveals-a-surprising-twist-in-quantum-physics",
+    "score": 65,
+    "time": 1792654889,
+    "titulo_es": "El Manuscrito Perdido de Schrödinger y el Debate sobre el Determinismo Cuántico",
+    "resumen": "El artículo revela un manuscrito inédito de Erwin Schrödinger, fechado antes de la teoría cuántica, que argumenta a favor del indeterminismo y desafía la interpretación común de su incomodidad con la aleatoriedad cuántica. El documento resalta el debate histórico sobre si el universo a escala cuántica es fundamentalmente aleatorio o si existen \"variables ocultas\" que, si se conocieran, permitirían predicciones deterministas. Se menciona el influyente pero controvertido \"teorema de no existencia de variables ocultas\" de John von Neumann en 1932, la crítica de Grete Hermann, y cómo las discusiones de Edmund Taylor Whittaker y Satyendra Nath Bose en 1943-1944, aunque pretendían apoyar la aleatoriedad cuántica y el colapso del determinismo clásico, irónicamente reavivaron el interés en las variables ocultas, provocando una respuesta activa de la comunidad física.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50173716,
-    "url": "https://fulcrumsec.vg/pingcap/",
-    "score": 386,
-    "time": 1792536339,
-    "titulo_es": "Brecha de Seguridad Masiva en TiDB Cloud: Exfiltración de 10.6 TB y Puntos Débiles de Seguridad Evidenciados",
-    "resumen": "El artículo detalla una brecha de seguridad significativa en TiDB Cloud, la versión administrada de la base de datos distribuida TiDB de PingCAP. Los atacantes exfiltraron 10.6 TB de datos, incluyendo información sensible de clientes, claves API, credenciales de bases de datos, y código fuente, a lo largo de casi dos meses sin ser detectados. Se expuso la infraestructura completa de control, facturación, almacenamiento en GCP, datos de costos de AWS, Jira, CRM y logs de conexión de clientes durante cuatro años. La brecha reveló fallos críticos en la visibilidad de los servicios en la nube de PingCAP y una falta de aislamiento multi-inquilino, documentada internamente por su propio equipo de seguridad en 2022. Los atacantes explotaron credenciales comprometidas en repositorios y pegadas en tickets de Jira para acceder a datos de control y credenciales de clientes. La exfiltración incluyó información detallada de 180,046 organizaciones de clientes, revelando nombres, IPs de servidores, y configuraciones de clústeres.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50162044,
-    "url": "https://www.bbc.com/news/articles/cp814l80pw2o",
-    "score": 245,
-    "time": 1792477254,
-    "titulo_es": "Descubrimiento de dos especies de marsupiales previamente consideradas extintas en Papúa Occidental",
-    "resumen": "El artículo detalla el descubrimiento científico excepcional de dos especies de marsupiales en Papúa Occidental, que se creían extintas hace 6,000 años. Estas especies, el possum pigmeo de dedos largos (con un dedo extrañamente alargado en cada mano para alimentarse) y el planeador de cola anillada (con una cola prensil), son ejemplos de 'taxones lazarus'. El hallazgo fue posible gracias a la combinación de análisis de fósiles y especímenes antiguos con la colaboración de ancianos locales, quienes tienen un profundo conocimiento del ecosistema y consideran al planeador como una especie sagrada. Este descubrimiento subraya la importancia de la conservación y ha impulsado esfuerzos para proteger los bosques de la amenaza de la tala, buscando asegurar el título nativo de los bosques para que la tala no se lleve a cabo sin el consentimiento de las comunidades locales.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50184820,
-    "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
-    "score": 617,
-    "time": 1792604713,
-    "titulo_es": "Meta multada con $25 mil millones por un tribunal de Nuevo México en un caso de privacidad de datos relacionado con Cambridge Analytica",
-    "resumen": "Un tribunal de Nuevo México ha impuesto una multa de $25 mil millones a Meta (anteriormente Facebook) por violaciones de privacidad de datos. El caso se originó a raíz del escándalo de Cambridge Analytica y alegaciones de que Meta engañó a los ciudadanos del estado sobre la salvaguarda y recopilación de datos de usuario, y la prevención de información dañina. El jurado determinó más de 43 millones de violaciones de la Ley de Prácticas Injustas de Nuevo México, cada una con una multa civil de hasta $5,000. El juez Francis Mathew señaló que la conducta, la duración, la repetición, la amplitud de los temas, la implicación de altos ejecutivos, el alcance de la audiencia y la naturaleza intencional y sistemática de las declaraciones erróneas justificaron la máxima penalización. Meta criticó la multa, confiando en prevalecer en la apelación, argumentando que la decisión hace imposible hacer negocios en el estado y que la demanda busca imponer un impuesto al discurso. Este caso es distinto de otros acuerdos nacionales sobre Cambridge Analytica y privacidad infantil, ya que Nuevo México no formó parte de esos acuerdos previos. La investigación interna de Facebook tras el escándalo de Cambridge Analytica fue caracterizada por el juez como 'voluntariamente ineficaz' debido a presiones de costos, falta de recursos y técnicas inadecuadas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50153531,
-    "url": "https://www.albertodenia.com/writing/code-is-clay-now",
-    "score": 219,
-    "time": 1792423185,
-    "titulo_es": "La codificación agentica: del código como piedra al código como arcilla",
-    "resumen": "El artículo describe la evolución de la codificación desde un proceso laborioso y rígido (comparado con la talla de piedra) a uno altamente maleable (comparado con la arcilla) gracias a la codificación agentica. Esta transformación, que se cree se consolidó a partir de noviembre de 2025, reduce drásticamente el coste de realizar cambios en el código. Esto permite un desarrollo iterativo y exploratorio, donde los desarrolladores pueden modelar el código rápidamente, probando formas generales antes de refinar los detalles. Se presenta un espectro de enfoques, desde el 'artesano', que permanece en un ciclo de retroalimentación rápida con agentes para realizar cambios en minutos, hasta la 'fábrica', que automatiza la transformación del código mediante pipelines de especificaciones, generadores y verificadores, escalando la intervención humana solo como último recurso. El artículo enfatiza que, si bien la tecnología hace que el cambio sea fácil, el juicio de ingeniería, el contexto y la arquitectura siguen siendo cruciales para construir software robusto y bien diseñado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50181136,
-    "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
-    "score": 441,
-    "time": 1792591282,
-    "titulo_es": "DuckDB anuncia la versión 2.0.0 LTS \"Cinnamon Teal\"",
-    "resumen": "DuckDB ha lanzado su versión 2.0.0 LTS \"Cinnamon Teal\", una actualización significativa con nuevas características como una versión pulida del protocolo Quack para configuraciones cliente-servidor, soporte para I/O asíncrono para mejorar el rendimiento con archivos Parquet, CSV y formatos nativos (especialmente en almacenamiento en la nube como S3), un nuevo tipo de dato VARIANT para datos semi-estructurados y sin esquema, modo agente, triggers y un parser SQL extensible. Esta versión LTS estará soportada hasta octubre de 2027. Se introducen mejoras ergonómicas como la sentencia CONNECT para adjuntar bases de datos remotas y optimización para consultas distribuidas a sistemas como PostgreSQL y MySQL. La instalación y disponibilidad de las bibliotecas cliente pueden variar.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50182987,
-    "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
-    "score": 767,
-    "time": 1792597736,
-    "titulo_es": "Actualizaciones Críticas de Seguridad en PHP y Mejoras en el Manejo de Vulnerabilidades",
-    "resumen": "El artículo detalla el lanzamiento de versiones de seguridad críticas de PHP (8.5.12, 8.4.27, 8.3.36, y 8.2.35) que corrigen dos vulnerabilidades graves, una de ellas relacionada con la gestión de memoria (OOM) y la otra con el manejo de errores. Estas vulnerabilidades, presentes en componentes centrales de PHP, permitían la ejecución remota de código por atacantes no autenticados bajo ciertas condiciones. Se discute el proceso de identificación y corrección de estas fallas, incluyendo el primer auditamiento externo de seguridad de PHP en años (realizado por Quarkslab a través de OSTIF con financiación de la Sovereign Tech Agency). Se enfatiza la dificultad de implementar parches compatibles y eficientes, lo que generó retrasos y un replanteamiento de los procesos del equipo de seguridad de PHP, adoptando ahora un modelo de toma de decisiones por mayoría y fomentando compromisos. Se destacan los cambios organizacionales y de recursos en la seguridad de PHP desde mayo de 2026, con la creación del Ecosystem Security Team, la incorporación de personal dedicado a la seguridad (Alexandre Daubois, Daniel Scherzer) y la mejora de la comunicación y colaboración con la PHP Foundation. Además, se menciona el uso de herramientas avanzadas de IA y escaneo de seguridad (Claude Mythos, Daybreak Red), y la participación en programas como 'Patch the Planet' con auditorías continuas (Calif). El artículo subraya la importancia de la colaboración de las organizaciones dependientes de PHP para mantener la seguridad del proyecto.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50166590,
-    "url": "https://lwn.net/Articles/1096028/",
-    "score": 85,
-    "time": 1792504751,
-    "titulo_es": "Más allá del \"&\": Mejorando la flexibilidad de los punteros inteligentes en Rust",
-    "resumen": "El artículo describe el proyecto \"Beyond the &\" liderado por Tyler Mandry, con el objetivo de hacer que los punteros inteligentes definidos por el usuario en Rust sean tan flexibles como las referencias integradas. Actualmente, la semántica de los punteros inteligentes puede diferir significativamente de las referencias (`&mut T`), lo que lleva a complejidades y a una curva de aprendizaje pronunciada en Rust. Se ilustra un problema común donde la adición de un mutex para compartir estado entre hilos rompe el verificador de préstamos (borrow checker) porque este último no puede inferir que los accesos dentro del `MutexGuard` son disjuntos. La solución propuesta expone el concepto interno del compilador de \"lugar\" (place) al código de usuario. Un \"lugar\" es una ubicación de memoria abstracta, similar a los \"lvalues\" en C, que existe en tiempo de compilación. Se introducirá un nuevo tipo de \"handle\" para cada puntero inteligente, que a menudo será un envoltorio de un puntero inseguro. El compilador creará automáticamente estos handles para representar los lugares referenciados, permitiendo a los desarrolladores implementar traits en estos handles para influir en cómo el verificador de préstamos maneja los punteros inteligentes, simplificando así el modelo mental y mejorando la interoperabilidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50183892,
-    "url": "https://github.com/omnara-ai/omnara",
-    "score": 94,
-    "time": 1792601093,
-    "titulo_es": "Omnara: Plataforma de Agentes Gestionados de Código Abierto",
-    "resumen": "Omnara es una plataforma de código abierto y autohospedable para la gestión y ejecución de agentes de IA. Permite a los usuarios ejecutar agentes de IA utilizando cualquier modelo y en cualquier máquina, integrando herramientas, secretos y permisos. Ofrece una alternativa a servicios como Claude Managed Agents y OpenAI's Agents API, brindando control total sobre la infraestructura y los datos. La plataforma puede ser autohospedada gratuitamente bajo licencia Apache 2.0 o utilizada a través de Omnara Cloud. Incluye una CLI para la gestión de agentes, perfiles, máquinas y configuraciones, así como SDKs para integración programática y compatibilidad con clientes MCP como Claude Code y Codex.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50188948,
-    "url": "https://eliastaylor.com/noexploit/",
-    "score": 576,
-    "time": 1792624407,
-    "titulo_es": "Evaluación de la explotabilidad de una vulnerabilidad en PHP y el papel de las LLMs",
-    "resumen": "El artículo analiza una reciente vulnerabilidad descubierta en PHP, cuestionando su explotabilidad real en comparación con incidentes pasados como Log4Shell. El autor argumenta que, a pesar de la gran cantidad de 'pruebas de concepto' (PoC) publicadas, la mayoría no funcionan en instancias PHP estándar y a menudo requieren la presencia de otras vulnerabilidades severas (como LFI) para ser exitosas. Se critica la influencia de los Modelos de Lenguaje Grandes (LLMs) como Claude y GPT, sugiriendo que han llevado a una percepción inflada de la facilidad de explotación, al generar PoCs que no son funcionales o que modifican el entorno de prueba para crear falsos positivos. El texto enfatiza que la explotabilidad de esta vulnerabilidad específica es significativamente más compleja de lo que se está comunicando, y que las LLMs, al ser utilizadas como puntos de decisión independientes, están generando un patrón de errores lógicos y una sobreabundancia de soluciones ineficaces, en lugar de facilitar exploits realistas. Se concluye que, a diferencia de vulnerabilidades críticas anteriores que rápidamente dieron lugar a ataques generalizados, esta vulnerabilidad en PHP, debido a su dificultad inherente para ser explotada, no representa un riesgo inmediato y masivo, a pesar de la atención mediática y algorítmica.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50185045,
-    "url": "https://hrih.si/articles/the-compiler-was-supposed-to-end-programming/",
-    "score": 131,
-    "time": 1792605651,
-    "titulo_es": "Lo que los números dicen sobre la IA y el trabajo de software en 2026, y mi suposición sobre un martes de un desarrollador en 2031",
-    "resumen": "El artículo explora la evolución histórica de las promesas de automatización en la programación, desde FORTRAN en 1954 hasta las herramientas de IA actuales como GitHub Copilot. Contrasta las expectativas pasadas de eliminar la codificación y la depuración con la realidad, donde estas tareas se han transformado y elevado a un nivel superior de abstracción. Se presenta una visión futurista del trabajo de un desarrollador en 2031, donde agentes de IA manejan gran parte del código y las pruebas, permitiendo a los humanos centrarse en la resolución de problemas complejos, la toma de decisiones estratégicas y la definición clara de requisitos. El autor argumenta que la IA no eliminará la programación, sino que la acelerará y cambiará su naturaleza, similar a cómo los compiladores y otras herramientas automatizadas han impactado el campo en el pasado. La velocidad de adopción de la IA es la diferencia clave en esta etapa de automatización.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50161283,
-    "url": "http://www.os2museum.com/wp/thinkpad-i9990303-error-catch-22/",
-    "score": 35,
-    "time": 1792469770,
-    "titulo_es": "Reparación de Error I9990303 en IBM ThinkPad 750C: Un Problema de BIOS Corrupto y la Lucha Contra las Verificaciones de Seguridad",
-    "resumen": "El artículo detalla la resolución de un error I9990303 en un IBM ThinkPad 750C, que impide el arranque normal y el acceso a la configuración de la BIOS. Inicialmente, el error se asocia con una placa base defectuosa o exposición a campos magnéticos, pero la investigación revela que se trata de una corrupción parcial del firmware de la BIOS. La dificultad principal radica en que la utilidad de actualización de la BIOS, la solución obvia, no funciona debido a que el propio error impide la ejecución de las comprobaciones de seguridad necesarias (como la batería cargada y el estado de gestión de energía), que a su vez dependen de la integridad de la BIOS. El autor se enfrenta a un 'catch-22' donde la reparación requiere una actualización que no se puede ejecutar. Se describe un intento de modificar la utilidad UPDTFLSH.EXE para eludir estas verificaciones de seguridad, explorando la interacción con el modo SMM (System Management Mode) y las llamadas a interrupciones del sistema (INT 15h/5380h) para acceder a los controles de gestión de energía del procesador Intel 486SL.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50190357,
-    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
-    "score": 60,
-    "time": 1792635478,
-    "titulo_es": "Claude para Google Workspace: Integración de IA en Documentos, Hojas de Cálculo y Presentaciones",
-    "resumen": "El artículo describe la beta pública de 'Claude para Google Workspace', un nuevo complemento que integra el modelo de lenguaje Claude directamente en Google Docs, Sheets y Slides. Permite a los usuarios interactuar con Claude dentro de sus archivos abiertos, realizar ediciones, obtener sugerencias y generar contenido (fórmulas, tablas, gráficos, diapositivas) sin cambiar de aplicación. También se mencionan conectores beta que permiten a Claude crear y editar archivos de Google desde la interfaz de Claude. La integración ofrece modos de edición manual (con aprobación) y automática. Las capacidades se extienden a la extracción de datos de fuentes como Salesforce y Google Drive para tareas específicas, como la creación de informes QBR. Para planes Enterprise, se aplican controles de seguridad como CMEK. El complemento está disponible en el Google Workspace Marketplace y requiere activación por parte de administradores y usuarios con planes de pago de Claude. Las funcionalidades de seguridad y conectividad se detallan para diferentes planes.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50153125,
-    "url": "https://blog.ganets.ky/ClangGenericLambdas/",
-    "score": 18,
-    "time": 1792421145,
-    "titulo_es": "Cómo hacer que el código funcione en Clang (y una anécdota sobre conferencias)",
-    "resumen": "El artículo es un seguimiento de un problema anterior en los compiladores MSVC y Clang. Se centra en la solución para Clang, que aún no estaba corregida al momento de escribirlo, aunque se esperaba una pronta resolución. El autor describe el proceso para hacer que el código funcione con Clang 16 y versiones posteriores.  La mayor parte del artículo es una anécdota que detalla las experiencias del autor en las conferencias CppCon y NDC TechTown. Menciona charlas sobre GDB pretty-printers, la organización de mesas de grupos comunitarios en CppCon, y una cita inspiradora acuñada por Ben Deane. También describe su experiencia en NDC TechTown, incluyendo un quiz de C++ desafiante.",
+    "id": 50193170,
+    "url": "https://globus.software/blog/2026/10/16/cutting-map-polygons/",
+    "score": 220,
+    "time": 1792661478,
+    "titulo_es": "Triangulación de Polígonos con Earstrip: Una Librería C++ y WebAssembly Más Rápida",
+    "resumen": "El artículo presenta earstrip, una nueva librería de triangulación de polígonos publicada bajo licencia ISC. Earstrip es una implementación en C++ y WebAssembly diseñada para ser significativamente más rápida que alternativas como earcut.hpp y earcut.js. Se detalla la motivación detrás de la creación de earstrip, enfocándose en la necesidad de triangulación eficiente para renderizar mapas vectoriales, donde los polígonos (edificios, parques, etc.) deben ser descompuestos en triángulos. El texto compara el rendimiento de earstrip con el triangulador Delaunay Constreñido existente en su motor de mapas, demostrando mejoras sustanciales en velocidad, especialmente en polígonos simples o con pocos vértices. Se explica el concepto de triangulación Delaunay, el requisito de 'constreñido' y se introduce el algoritmo de 'ear clipping' (corte de orejas) como la base de earstrip. Se describe cómo identificar una 'oreja' (un triángulo formado por tres vértices consecutivos con un ángulo convexo y sin vértices interiores) y cómo el algoritmo la extrae iterativamente hasta que el polígono se descompone completamente en n-2 triángulos. La publicación incluye métricas de rendimiento y un análisis del proceso de desarrollo, con cada mejora medida en tiempo de ejecución.",
     "categoria": "Desarrollo de Software"
   }
 ]
