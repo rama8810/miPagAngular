@@ -1,263 +1,272 @@
 [
   {
-    "id": 50212065,
-    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-    "score": 953,
-    "time": 1792774748,
-    "titulo_es": "Presentando Kimi K3.1 Pro: Modelo de pesos abiertos de clase 3T con ventana de contexto de 1 millón de tokens",
-    "resumen": "Se presenta Kimi K3.1 Pro y su variante K3.1 Pro Highspeed, modelos de pesos abiertos con una ventana de contexto de 1 millón de tokens y post-entrenamiento avanzado mediante aprendizaje por refuerzo a gran escala. El modelo muestra un desempeño sobresaliente en tareas agénticas, codificación compleja y generación/modelado 3D paramétrico, compitiendo de cerca con modelos propietarios de vanguardia en pruebas como Terminal-Bench 4.0 y BenchCAD, además de demostrar capacidades autónomas en resolución de problemas iterativos y diseño de simulaciones.",
+    "id": 50230384,
+    "url": "https://github.com/ihhub/fheroes2",
+    "score": 55,
+    "time": 1792926552,
+    "titulo_es": "fheroes2: Recreación del motor de juego de Heroes of Might and Magic II",
+    "resumen": "fheroes2 es un proyecto de código abierto y multiplataforma licenciado bajo GNU GPL v2.0 que recrea desde cero el motor del clásico juego Heroes of Might and Magic II. El proyecto implementa mejoras sustanciales respecto al original, incluyendo soporte para gráficos en alta resolución, optimizaciones en la interfaz de usuario, correcciones de errores y una inteligencia artificial renovada, requiriendo los recursos del juego original para funcionar legítimamente.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50225695,
+    "url": "https://danluu.com/ambitious/",
+    "score": 509,
+    "time": 1792878451,
+    "titulo_es": "Podemos ser más ambiciosos con el software que construimos",
+    "resumen": "El artículo analiza la viabilidad y el rigor técnico en proyectos de reescritura de software a gran escala, utilizando como ejemplo principal a 'pgrust' (una reimplementación de PostgreSQL en Rust liderada por Michael Malis). Frente al escepticismo habitual generado por el código de baja calidad o proyectos inflados asistidos por IA ('vibeslop'), el autor argumenta que el enfoque de pruebas exhaustivas y optimización de rendimiento de pgrust no solo valida el esfuerzo, sino que ha descubierto vulnerabilidades y fallos reales en el propio Postgres (errores de desbordamiento, seguridad de memoria y fallos en SP-GiST). La tesis central sostiene que los avances técnicos contemporáneos permiten a los desarrolladores ser significativamente más ambiciosos al construir sistemas complejos y de alto rendimiento.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50227356,
+    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+    "score": 223,
+    "time": 1792892029,
+    "titulo_es": "Cómo desplegar modelos de billones de parámetros en chips a escala de oblea de Cerebras",
+    "resumen": "El artículo detalla la arquitectura de inferencia para ejecutar modelos frontera multitrillón como Kimi K3 (3 billones de parámetros) en múltiples obleas Cerebras WSE-3T. Al cuantizar a 4 bits y distribuir las 93 capas del modelo (69 de atención lineal y 24 densas) entre 59 obleas, los pesos completos residen directamente en la memoria SRAM on-chip de 44 GB de cada oblea. La ejecución se estructura como un pipeline continuo donde únicamente se transfieren activaciones mediante RDMA sobre Ethernet con latencias de ~2 microsegundos por salto, evitando mover pesos y permitiendo procesar múltiples micro-lotes simultáneos para alcanzar entre 1000 y 2000+ tokens por segundo.",
     "categoria": "IA"
   },
   {
-    "id": 50186450,
-    "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
-    "score": 103,
-    "time": 1792611601,
-    "titulo_es": "Físicos atrapan una sola partícula de antimateria durante un mes",
-    "resumen": "Un equipo de físicos liderado por Gerald Gabrielse en la Universidad Northwestern ha logrado aislar y confinar un único positrón durante un mes en una trampa electromagnética al vacío a casi el cero absoluto. Esta técnica de confinamiento sin paredes permite desacelerar los positrones emitidos por sodio-22 y estudiar sus estados cuánticos y momento magnético con extrema precisión. El objetivo principal es comparar estas mediciones con las del electrón para poner a prueba las predicciones del Modelo Estándar y buscar discrepancias que expliquen la asimetría bariónica del universo (por qué predomina la materia sobre la antimateria).",
+    "id": 50224100,
+    "url": "https://aardappel.github.io/goose/",
+    "score": 457,
+    "time": 1792868815,
+    "titulo_es": "Goose: Un lenguaje de sistemas con seguridad de memoria sin heap ni recolector de basura",
+    "resumen": "Goose es un lenguaje de programación de sistemas que garantiza la seguridad de memoria sin utilizar un asignador de heap, un recolector de basura ni anotaciones manuales de ciclos de vida. En su lugar, utiliza pilas de datos lineales (*data stacks*) con punteros bump gestionados completamente en tiempo de compilación. Este modelo almacena valores dinámicos y estructuras de tamaño variable de forma contigua (*inline*), lo que proporciona referencias estables, optimiza el uso de la memoria caché y permite superar el rendimiento y la eficiencia de memoria de C++ y Rust.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50194645,
+    "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
+    "score": 47,
+    "time": 1792673443,
+    "titulo_es": "De JavaScript a Jai: Superando las limitaciones de memoria y recolección de basura en Polygonjs",
+    "resumen": "El autor analiza los desafíos técnicos tras ocho años desarrollando Polygonjs, una herramienta de geometría procedural basada en JavaScript, TypeScript y Three.js. Destaca los problemas inherentes a la falta de control explícito de memoria en los navegadores y el impacto crítico del recolector de basura (GC), cuyas pausas provocan caídas de frames en aplicaciones interactivas. Asimismo, detalla las dificultades de enlazar bibliotecas nativas como la API de Steam mediante Electron. Para solucionar estas limitaciones de rendimiento y trazabilidad de memoria, optó por migrar componentes clave al lenguaje Jai, aprovechando su control de bajo nivel, asignadores personalizados y capacidad para compilar de forma nativa sin las sobrecargas de un GC.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50229827,
+    "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+    "score": 35,
+    "time": 1792921877,
+    "titulo_es": "Retiran el premio al ganador de un prestigioso concurso de fotografía científica tras determinarse el uso de IA",
+    "resumen": "El Dr. Ning Xu fue despojado de su primer lugar en el concurso 'Small World in Motion' de Nikon luego de que miembros de la comunidad científica detectaran anomalías biológicas, artefactos de generación sintética y una marca de agua en su video de cilios celulares. Aunque Xu afirmó haber utilizado IA exclusivamente para el postprocesamiento y la visualización de características en imágenes de superresolución, Nikon concluyó que se violaron las reglas del certamen y anunció una revisión en sus procedimientos de evaluación ante el avance de contenidos generados por inteligencia artificial.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50224210,
+    "url": "https://www.speedcrunch.org/",
+    "score": 174,
+    "time": 1792869583,
+    "titulo_es": "Una calculadora científica de alta precisión gratuita y de código abierto",
+    "resumen": "Presentación de una calculadora científica de alta precisión, gratuita y de código abierto, orientada a profesionales STEM, docentes y estudiantes. La aplicación es multiplataforma y se encuentra disponible para Windows, macOS y Linux.",
     "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50225674,
+    "url": "https://ratfactor.com/cards/pl-small",
+    "score": 133,
+    "time": 1792878263,
+    "titulo_es": "El atractivo de los programas diminutos",
+    "resumen": "El autor analiza el valor didáctico y técnico del software minimalista y ultracompacto. A través de ejemplos como un intérprete de Forth de 46 bytes, un algoritmo de DOM diffing en 25 líneas, el intérprete incunabular de J escrito por Arthur Whitney en una sola página de C y el sistema operativo kOS, se expone cómo reducir drásticamente el tamaño del código no solo es un ejercicio de 'code golfing', sino una forma de hacer que los sistemas sean más accesibles, comprensibles y significativos en la ingeniería de software.",
+    "categoria": "Desarrollo de Software"
   },
   {
     "id": 50219177,
     "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-    "score": 53,
+    "score": 343,
     "time": 1792829199,
     "titulo_es": "Vulnerabilidad crítica en el decodificador Brotli permite ejecución remota de código (CVE-2026-111497 / Node2Shell)",
-    "resumen": "Se reveló la vulnerabilidad crítica CVE-2026-111497 (CVSS 9.2, conocida como 'Node2Shell') presente en el decodificador Brotli de Google (versiones 1.0.3 a 1.2.0). El fallo consiste en una escritura fuera de límites en la función DecodeBlockTypeAndLength(), permitiendo que un atacante remoto no autenticado envíe flujos comprimidos maliciosos para provocar corrupción de memoria, fuga de información o ejecución arbitraria de código tanto de cliente a servidor como de servidor a cliente. El problema afecta directamente a librerías integradas en plataformas como Node.js y paquetes de Python (brotli y brotlicffi), exigiendo actualizar de inmediato a Brotli 1.2.1 o brotlicffi 1.2.1.0 y reconstruir las imágenes de contenedores afectadas.",
+    "resumen": "Se identificó una vulnerabilidad crítica de escritura fuera de límites (CVSS 9.2) en la biblioteca de compresión Brotli de Google (versiones 1.0.3 a 1.2.0) en la función DecodeBlockTypeAndLength(). El fallo permite a atacantes no autenticados provocar corrupción de memoria, fuga de información o ejecución remota de código (RCE) tanto en clientes como en servidores mediante flujos de datos comprimidos manipulados. El impacto es transversal al ecosistema de software debido a dependencias empaquetadas, afectando directamente a runtimes como Node.js y paquetes de Python como brotlicffi, requests y httpx. La mitigación requiere actualizar de forma inmediata a Brotli 1.2.1 o brotlicffi 1.2.1.0 y reconstruir las imágenes de contenedor afectadas.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50217500,
-    "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
-    "score": 244,
-    "time": 1792804618,
-    "titulo_es": "Ingeniería de software, sistemas distribuidos, bases de datos y los equipos que los construyen",
-    "resumen": "El autor relata la evolución histórica y técnica de rqlite, un sistema iniciado en 2014 que combina SQLite con el algoritmo de consenso Raft para crear una base de datos relacional replicada y tolerante a fallos de tipo CP (Consistencia y Tolerancia a Particiones). El artículo analiza las decisiones de diseño arquitectónicas tomadas a lo largo de los años y contrasta rqlite con otras soluciones del ecosistema de SQLite distribuido, tales como dqlite (motor embebido desarrollado por Canonical), Litestream (replicación del WAL hacia almacenamiento de objetos para recuperación ante desastres) y LiteFS.",
-    "categoria": "Desarrollo de Software"
+    "id": 50226419,
+    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+    "score": 402,
+    "time": 1792883514,
+    "titulo_es": "El impacto de la IA en la clase creativa y la pérdida de empleo en la industria del entretenimiento",
+    "resumen": "El artículo examina el declive del empleo en las industrias creativas de Estados Unidos, donde se han perdido más de 200.000 puestos en cuatro años, coincidiendo con la proliferación de sistemas de IA capaces de generar texto, audio e imágenes. Analiza la dificultad técnica y legal de cuantificar la sustitución laboral directa por IA frente a factores económicos tradicionales, el impacto en sectores como el cine y el diseño gráfico, y compara este fenómeno con disrupciones tecnológicas pasadas como la llegada de Internet y el caso Napster.",
+    "categoria": "IA"
   },
   {
-    "id": 50194536,
-    "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
-    "score": 38,
-    "time": 1792672856,
-    "titulo_es": "¿Te sientes mimado por el hardware moderno? La optimización detrás de la simulación de SimCity",
-    "resumen": "El artículo analiza cómo el SimCity original logró ejecutar una simulación compleja en un procesador Intel 386SX de 16 MHz examinando su código fuente abierto (Micropolis). Se enfoca en la función Simulate() en s_sim.c, destacando una técnica clásica de optimización por distribución temporal (time-slicing): en lugar de actualizar todos los subsistemas (crimen, fuego, impuestos, etc.) en cada fotograma, el motor utiliza un contador modular (mod16) para alternar la ejecución de tareas pesadas a lo largo de 16 fotogramas. Esto reduce sustancialmente el uso de CPU sin comprometer la jugabilidad de un simulador urbano.",
+    "id": 50225663,
+    "url": "https://ratfactor.com/cards/limitations",
+    "score": 91,
+    "time": 1792878167,
+    "titulo_es": "El poder de las limitaciones en la creatividad y el aprendizaje",
+    "resumen": "El artículo argumenta que las limitaciones, en lugar de ser un obstáculo, a menudo potencian la creatividad y el aprendizaje. Se ejemplifica con la experiencia de niños jugando con una herramienta web simple y 'buggy' que resultó más atractiva que una plataforma educativa compleja como Scratch. Las severas limitaciones de la herramienta, como la mala gestión de múltiples instancias, generaron comportamientos inesperados y fomentaron la exploración. El autor postula que un conjunto de herramientas muy simple, fácil de invocar y con pocas opciones iniciales, es más propicio para la experimentación y el descubrimiento que uno sobrecargado de funcionalidades. Se trazan paralelismos con las artes visuales, donde un lienzo en blanco y un conjunto completo de pinturas pueden ser abrumadores, mientras que un papel y un lápiz sencillos invitan al garabato inmediato. Las limitaciones estructurales, como las de una narrativa (ej. estructura de 3 actos), también se presentan como elementos que dan forma y hacen interesantes historias que de otro modo serían caóticas y aburridas. Finalmente, se discute cómo las limitaciones presupuestarias en el cine (bajo presupuesto) obligan a la ingeniosidad y a la creatividad inesperada, mientras que las producciones de gran presupuesto requieren una dirección deliberada y con restricción para lograr resultados sorprendentes y no caer en lo obvio.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50172432,
+    "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
+    "score": 93,
+    "time": 1792529152,
+    "titulo_es": "Construcción de una Placa de Visión Estéreo con el Microprocesador Rockchip RV1103",
+    "resumen": "El artículo detalla la creación de una placa de visión estéreo económica utilizando el microprocesador Rockchip RV1103. Se describe la selección del hardware, incluyendo el SoC RV1103 con 64 MB de RAM DDR2 y un bus MIPI CSI-2, y el diseño de una placa PCB de cuatro capas. Se aborda la configuración del sistema operativo, empleando Buildroot para generar una imagen de sistema (`sdcard.img`) con un bootloader, kernel y drivers necesarios, incluyendo componentes específicos del BSP de Rockchip (drivers MIPI, aceleradores de hardware). La comunicación con el hardware se gestiona a través de la interfaz Linux, utilizando Video4Linux2 (V4L2) para el acceso a las cámaras (/dev/videoX) y control de subdispositivos (/dev/v4l-subdevX). Se destaca la utilización del \"Rockchip Video Engine\" (RVE) y su acelerador de hardware SAD (Sum of Absolute Differences) para el procesamiento de visión estéreo, mediante la librería propietaria `librve.a`. El SAD se aplica para calcular la disparidad entre imágenes capturadas por cámaras estéreo, dividiendo las imágenes en parches y comparando columnas de parches con desplazamientos horizontales para determinar la semejanza.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50169450,
+    "url": "https://www.cambridge.org/core/journals/antiquity/article/social-dynamics-of-toxic-metal-industry-in-medieval-europe-peak-district-lead-production-ad-6001500/34A2A16AC99B1B12E3EB99CEA1DDB829",
+    "score": 61,
+    "time": 1792516008,
+    "titulo_es": "El Distrito de Peak de Derbyshire: Plomo Medieval, Contaminación Ambiental y Dinámicas Sociales",
+    "resumen": "Este artículo investiga la historia temprana de la producción de plomo en el Distrito de Peak de Derbyshire, una región clave en Europa medieval. Utilizando concentraciones de plomo en el esmalte dental infantil, vinculadas a dataciones por radiocarbono, los autores identifican el desarrollo de la fundición de plomo post-romana a partir de mediados del siglo VII. Se evidencia una producción a gran escala y contaminación ambiental alrededor de minas importantes, como Castleton, para mediados del siglo VIII. Los análisis comparativos de las concentraciones de plomo intra e intersitio sugieren dinámicas sociales en las comunidades productoras, proporcionando un punto de referencia para identificar otras comunidades productoras de plomo y plata en la Europa medieval. El estudio aborda la escasez de fuentes textuales detalladas sobre los orígenes de estas industrias y la limitada investigación sobre el impacto de la contaminación por plomo en las comunidades mineras y de fundición. Se destaca la toxicidad del plomo y su deposición en tejidos duros como el esmalte dental, permitiendo diferenciar entre individuos expuestos profesionalmente y la población general. Los hallazgos proporcionan las primeras fechas absolutas para la producción de plomo post-romana en la región y arrojan luz sobre la edad y dinámica de género en la producción de plomo, sugiriendo una asociación entre alta carga de plomo y muerte prematura, especialmente en mujeres. Los resultados se comparan con poblaciones de otros periodos históricos para establecer un patrón de referencia.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50219700,
+    "url": "https://github.com/Zagitta/gpu-unlock",
+    "score": 274,
+    "time": 1792835907,
+    "titulo_es": "Desbloqueo de la tasa de emisión de instrucciones FP/BF16 en tarjetas Nvidia 3000 a sus equivalentes profesionales",
+    "resumen": "Este módulo del kernel de Linux desbloquea la tasa de emisión de instrucciones FP/BF16 en tarjetas gráficas Nvidia de la serie 3000 (GA102, GA103, GA104, GA106) para igualar el rendimiento de las tarjetas profesionales. Utiliza una técnica que combina el desbloqueador CMP (V67/PLM) con la temporización previa al controlador del enfoque UEFI. El módulo se carga temprano en el initramfs, antes de que el controlador NVIDIA se enlace a la tarjeta, aplicando ajustes a los selectores de velocidad (SS0 y SS1) para habilitar la tasa completa de BF16. Esto resulta en una duplicación de la velocidad de emisión de instrucciones para operaciones FMA FP/BF16 a FP32, beneficiando cargas de trabajo intensivas en matrices como LLM prefill, difusión y FlashAttention. No requiere parches manuales de controladores NVIDIA tras cada actualización. La implementación es agnóstica a la distribución Linux, ofreciendo objetivos de compilación para Arch (make arch), Debian/Ubuntu (make deb) y Fedora/RHEL/CentOS (make rpm). Se requiere la adición de `gpu_unlock.targets=all` a la línea de comandos del kernel para activar la funcionalidad. Los informes de usuarios indican ganancias significativas en cargas de trabajo específicas, aunque el límite de potencia de la tarjeta es un factor importante.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50186289,
+    "url": "https://aresluna.org/this-is-a-story-of-a-figma-bug/",
+    "score": 44,
+    "time": 1792611052,
+    "titulo_es": "Un día en Figma: Toma de control de la cuenta de redes sociales",
+    "resumen": "Este artículo es un archivo de un hilo de Twitter de 2021 donde Marcin Wichary, uno de los empleados de Figma, tomó el control de la cuenta de redes sociales de la empresa. El contenido se centra en las experiencias y reflexiones de Wichary durante esta toma de control, que incluyó la publicación de tweets y fotos. Aunque no es un artículo técnico profundo sobre desarrollo de software, se relaciona indirectamente con el ecosistema del desarrollo de software al provenir de una empresa prominente en ese ámbito y ser compartido por una persona dentro de esa industria.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50222525,
+    "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
+    "score": 113,
+    "time": 1792857437,
+    "titulo_es": "LogSync: Un chip neuronal implantable para monitorizar y modular redes cerebrales",
+    "resumen": "Investigadores de la EPFL han desarrollado LogSync, un sistema neuronal implantable en chip (SoC) de bajo consumo (inferior a 200 microwatios) diseñado para monitorizar la actividad cerebral a nivel de red. El sistema registra señales cerebrales, extrae biomarcadores de la fuerza de las oscilaciones y la sincronía entre diferentes regiones cerebrales, y utiliza un algoritmo de aprendizaje automático para identificar estados cognitivos y emocionales en tiempo real. Estos biomarcadores a nivel de red permiten una detección más precisa de estados relevantes para trastornos psiquiátricos, superando las limitaciones de los sistemas de estimulación cerebral profunda (DBS) de bucle abierto o los de bucle cerrado que se basan en señales de una sola región. LogSync co-diseña el hardware y los algoritmos para optimizar el procesamiento y la decodificación de redes neuronales en un solo chip, empleando cálculos logarítmicos para simplificar las operaciones. La tecnología se validó inicialmente en grabaciones cerebrales humanas para tareas cognitivas y estímulos emocionales, y en experimentos con ratas para generar disparadores de estimulación en fases específicas de la actividad cerebral. El objetivo principal es el desarrollo de terapias psiquiátricas más específicas y de menor consumo energético para trastornos del estado de ánimo y de ansiedad.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50186450,
+    "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
+    "score": 318,
+    "time": 1792611601,
+    "titulo_es": "Físicos atrapan una partícula de antimateria durante un mes",
+    "resumen": "Científicos han logrado atrapar una única partícula de antimateria, un positrón, durante un mes utilizando un método innovador. El proceso implica ralentizar los positrones emitidos por la desintegración de átomos de sodio-22 al hacerlos pasar por un cristal de tungsteno frío. Posteriormente, los positrones se guían mediante campos electromagnéticos hasta una trampa de vacío a temperaturas cercanas al cero absoluto, confinada por campos eléctricos y magnéticos. Esta técnica permite aislar y estudiar estados cuánticos de la antimateria, abriendo la puerta a mediciones de alta precisión como el momento magnético del positrón. Comparar este valor con el del electrón podría arrojar luz sobre el desequilibrio entre materia y antimateria en el universo, un enigma fundamental en física.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50176674,
+    "url": "https://pragtical.dev/blog/pragtical-v3140-release",
+    "score": 22,
+    "time": 1792562944,
+    "titulo_es": "Pragtical v3.14.0: Mejoras en la Interfaz, Gestión de Sesiones y Flujos de Trabajo",
+    "resumen": "La versión 3.14.0 de Pragtical introduce mejoras significativas en la interfaz de usuario y la gestión del flujo de trabajo. Se han añadido menús de aplicación (Archivo, Edición, Búsqueda, Ver, Herramientas, Ayuda) para facilitar el descubrimiento de comandos, con soporte para plugins. El modo sin bordes y la barra de menús están habilitados por defecto, permitiendo una mayor área de arrastre de ventana. La posición de la barra de herramientas es ahora configurable (Izquierda, Abajo, Arriba, Derecha). Los prompts de comando son más flexibles, pudiendo ubicarse en la parte inferior (predeterminado), superior o central, flotando sobre el editor. Esto es posible gracias a una nueva API de 'floating views' compartida que unifica el manejo de menús, popups de completado y diálogos. La gestión de sesiones de espacio de trabajo se ha mejorado, permitiendo seleccionar y eliminar sesiones guardadas, con copias de seguridad automáticas de la sesión actual antes de cargar una nueva. La búsqueda global de proyectos también ofrece posiciones configurables (izquierda, derecha, o popup central) y transiciones animadas opcionales. Se ha optimizado el uso de CPU en reposo y se ha refrescado el Plugin Manager. La funcionalidad de recuento de archivos en directorios colapsados del árbol de archivos también se ha añadido.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 50218195,
     "url": "https://rtfeldman.com/fp-vs-c",
-    "score": 151,
+    "score": 273,
     "time": 1792813434,
-    "titulo_es": "Rendimiento en Roc: Acercándose a libdeflate en compresión DEFLATE",
-    "resumen": "El artículo analiza el rendimiento de lenguajes funcionales en tareas intensivas de CPU, tomando como referencia una implementación de DEFLATE en Lean 4 que superó a una biblioteca estándar de Rust, aunque sin alcanzar a la altamente optimizada libdeflate en C. Ante esto, el autor evalúa y optimiza roc-deflate, una biblioteca escrita en Roc (un nuevo lenguaje funcional enfocado en la velocidad en tiempo de ejecución y compilación). Mediante pruebas con el corpus Silesia en arquitecturas x86 (AMD Ryzen) y ARM (Apple Silicon M1), roc-deflate logró posicionarse a solo un 8.9% y 2.6% de diferencia respecto a libdeflate, demostrando la viabilidad de Roc para software de alto rendimiento.",
+    "titulo_es": "Comparativa de rendimiento de compresión DEFLATE: Lean, Rust y Roc frente a C",
+    "resumen": "El artículo compara el rendimiento de bibliotecas de compresión DEFLATE implementadas en diferentes lenguajes de programación. Inicialmente, una biblioteca escrita en Lean 4 (un lenguaje funcional y asistente de pruebas) supera a una popular biblioteca en Rust. Sin embargo, ninguna de ellas iguala a libdeflate, una implementación altamente optimizada en C que utiliza SIMD específico de la arquitectura. Posteriormente, se evalúa roc-deflate, una biblioteca escrita en Roc (un lenguaje funcional enfocado en el rendimiento), que se acerca al rendimiento de libdeflate, aunque sigue siendo un 8.9% más lenta en promedio en arquitecturas x64 y un 2.6% en un M1 MacBook Pro, según pruebas realizadas con el corpus Silesia.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50220204,
-    "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
-    "score": 37,
-    "time": 1792840734,
-    "titulo_es": "Un nuevo artículo académico sobre Z-Library cita un artículo inexistente de TorrentFreak tras el uso de herramientas de IA",
-    "resumen": "Un artículo revisado por pares sobre la biblioteca digital clandestina Z-Library incluyó múltiples referencias bibliográficas plausibles pero completamente inexistentes, afectando al menos a diez fuentes citadas. Los autores reconocieron haber utilizado herramientas de inteligencia artificial, como Consensus AI, para la búsqueda de literatura y extracción de datos, lo que derivó en alucinaciones típicas de los modelos LLM y subraya los riesgos de fiabilidad al emplear IA generativa en la investigación académica sin una verificación rigurosa.",
-    "categoria": "IA"
+    "id": 50194935,
+    "url": "https://hitogata.neocities.org/Rainbows",
+    "score": 28,
+    "time": 1792675204,
+    "titulo_es": "Rainbows: Especificación de Dispositivos para la Máquina Virtual ok",
+    "resumen": "El artículo describe 'rainbows', una especificación diseñada para añadir soporte de dispositivos de entrada/salida (E/S) a la máquina virtual 'ok'. 'ok' por sí sola maneja la evaluación de instrucciones y pilas de datos/retorno básicas. Para interactuar con el mundo exterior (pantalla, consola, teclado, ratón), 'ok' permite mapear dispositivos en memoria mediante funciones definidas por el usuario como `ok_mem_read` y `ok_mem_write`. 'rainbows' estandariza estos mapeos definiendo direcciones de memoria 'mágicas' para una variedad de dispositivos, transformando 'ok' en una 'computadora de fantasía'. Se detalla la implementación y el diseño de `RbConsole` (para entrada/salida estándar, argumentos de línea de comandos) y `RbArith` (para operaciones aritméticas con enteros sin signo de diferentes anchos). Se menciona que el proyecto está en desarrollo activo y las direcciones de memoria pueden cambiar.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50172962,
-    "url": "https://astral.sh/blog/uv-ty-integration",
-    "score": 191,
-    "time": 1792531856,
-    "titulo_es": "Integración experimental entre uv y ty: hacia una suite de herramientas unificada para Python",
-    "resumen": "Astral anuncia la integración experimental entre su gestor de paquetes uv y su verificador de tipos/servidor de lenguaje ty. La unión permite soporte de primer nivel para scripts basados en PEP 723, gestionando entornos y dependencias de forma aislada para ofrecer autocompletado, navegación y verificación de tipos tanto en el editor como en la CLI. Adicionalmente, se introduce el comando 'uv check', que unifica la preparación del entorno y la ejecución del análisis de tipos en proyectos individuales, workspaces y scripts independientes.",
-    "categoria": "Desarrollo de Software"
+    "id": 50224916,
+    "url": "https://stealmybitcoin.com/",
+    "score": 522,
+    "time": 1792873831,
+    "titulo_es": "Llave de Bitcoin Oculta en Servidor Vulnerable",
+    "resumen": "El artículo describe un desafío de seguridad donde una clave privada de Bitcoin, valorada en aproximadamente $500, está oculta en un servidor. El acceso a esta clave se facilita a través de un binario llamado 'print-flag' utilizable por la cuenta de usuario PHP. Se menciona explícitamente que la versión de PHP utilizada es anterior a las vulnerabilidades CVE conocidas como PHP2SHELL, lo que sugiere una ruta de explotación predecible. La competencia está abierta para la primera persona que obtenga la billetera, con una sugerencia para donar los fondos a GiveWell si no se necesitan. Se advierte a los participantes sobre la privacidad, indicando que todo el tráfico es registrado y que la máquina es conocida por ser vulnerable, lo que implica que otros atacantes podrían monitorizar o acceder a la actividad y datos más allá del control de los organizadores. Se desaconseja el envío de información privada.",
+    "categoria": "Ciberseguridad"
   },
   {
     "id": 50171379,
     "url": "https://danielball.com/notes/ai_image_generation.html",
-    "score": 126,
+    "score": 277,
     "time": 1792524159,
-    "titulo_es": "Guía general sobre la generación de imágenes con IA",
-    "resumen": "El artículo analiza los fundamentos técnicos y la evolución de los modelos de generación de imágenes por IA. Explica la mecánica subyacente de los modelos de difusión basada en la eliminación progresiva de ruido y describe cómo se solventaron problemas históricos como la anatomía de las manos y el renderizado de texto mediante conjuntos de datos más curados y modelos 'character-aware'. Además, detalla el cambio arquitectónico hacia modelos multimodales e híbridos (como GPT-4o y Flux) que integran transformers y una comprensión profunda del lenguaje natural para planificar el diseño y guiar la síntesis de píxeles con mayor precisión.",
+    "titulo_es": "Guía General de Generación de Imágenes con IA",
+    "resumen": "El artículo es una guía general sobre la generación de imágenes con IA, explicando su funcionamiento a alto nivel, tipos, historia y cómo integrarla en código y agentes. Detalla la evolución de los modelos, como la mejora en la representación de manos y texto, y explica que la mayoría de los modelos actuales son modelos de difusión que aprenden a eliminar ruido. Se introduce el enfoque más reciente donde la generación de imágenes se integra dentro de modelos multimodales que también entienden el lenguaje, mejorando la obediencia a instrucciones, la renderización de texto y la edición de imágenes. Se menciona que la clave práctica reside en la profundidad con la que el modelo de imagen comprende el lenguaje, en lugar de las matemáticas subyacentes.",
     "categoria": "IA"
   },
   {
-    "id": 50213925,
-    "url": "https://block.xyz/dessa",
-    "score": 411,
-    "time": 1792782594,
-    "titulo_es": "Dessa: Un modelo de habla full-duplex entrenado exclusivamente con audio humano",
-    "resumen": "Se presenta Dessa, un modelo de inteligencia artificial de voz a voz full-duplex entrenado desde cero únicamente con audio de conversaciones humanas, prescindiendo por completo de texto o modelos preentrenados. A diferencia de los sistemas tradicionales que transcriben audio a texto perdiendo matices paralingüísticos, Dessa procesa y genera entonaciones, sarcasmo, risas y pausas de forma nativa en tiempo real. El modelo fue entrenado utilizando un único sistema NVIDIA GB200 NVL72 y puede ejecutar inferencia local en chips como el M4 Max, permitiendo una interacción simultánea y natural sin retrasos perceptibles.",
+    "id": 50212065,
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "score": 1067,
+    "time": 1792774748,
+    "titulo_es": "Presentación de Kimi K3.1 Pro: Un modelo de IA avanzado con ventana de contexto de 1 millón de tokens",
+    "resumen": "El artículo presenta Kimi K3.1 Pro, el primer modelo de la serie K3.1 y el modelo de peso abierto más capaz de clase 3T hasta la fecha, destacando su ventana de contexto de un millón de tokens. Este modelo demuestra mejoras significativas en tareas de codificación, creación 3D, investigación financiera y capacidades de agente. Se lanza también Kimi K3.1 Pro Highspeed, que ofrece una velocidad de 2-3 veces superior. Ambos modelos están disponibles en Kimi.ai, Kimi Work, Kimi Code y vía API, con pesos completos liberados para el 4 de noviembre. Kimi K3.1 Pro es una versión post-entrenada de Kimi K3, optimizada exhaustivamente en su arquitectura (RL, inferencia de contexto largo, eficiencia de entrenamiento, infraestructura de sandbox, etc.) para obtener ganancias consistentes en diversos dominios. En benchmarks de codificación como Terminal-Bench 4.0 y Kimi Code Bench 3.0 Long-horizon, K3.1 Pro iguala o supera a modelos propietarios líderes, mostrando competencia en tareas complejas de codificación, desde correcciones rápidas hasta construcciones de proyectos completos. El modelo también destaca en la creación de experiencias visuales y juegos, integrándose con motores como Unity, Unreal Engine y Godot, y combinando web search con generación 3D. Sus capacidades de codificación de largo alcance se ven reforzadas por aprendizaje por refuerzo a gran escala, como demuestra la construcción de un simulador de dinámica de caminata humana con correcciones iterativas. En creación 3D y razonamiento espacial, K3.1 Pro alcanza un alto rendimiento en BenchCAD, generando modelos 3D a partir de diversas entradas y destacando en modelado paramétrico con herramientas como Blender y software CAD.",
     "categoria": "IA"
   },
   {
-    "id": 50217903,
-    "url": "https://security.apple.com/research-device/",
+    "id": 50223647,
+    "url": "https://arxiv.org/abs/2610.29162",
+    "score": 210,
+    "time": 1792865097,
+    "titulo_es": "arXivLabs: Un marco para el desarrollo y colaboración de nuevas funcionalidades en arXiv",
+    "resumen": "El artículo describe arXivLabs, un marco de trabajo que permite a colaboradores externos, tanto individuos como organizaciones, desarrollar y compartir nuevas funcionalidades para la plataforma arXiv directamente en su sitio web. arXiv enfatiza su compromiso con los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, trabajando únicamente con socios que se adhieren a estos principios. Se invita a los interesados a explorar la posibilidad de contribuir con ideas de proyectos que aporten valor a la comunidad de arXiv.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50211474,
+    "url": "https://blog.calif.io/p/iphone",
+    "score": 1084,
+    "time": 1792772510,
+    "titulo_es": "Demostraciones reveladas en Hexacon",
+    "resumen": "El artículo describe una serie de demostraciones presentadas en Hexacon, París. Se mencionan específicamente 'Signal 1-click', la integración con iMessage, capacidades de iPhone no especificadas y una amenaza persistente de Apple (APT - Apple Persistent Threat). Se indica que todo se liberará en su debido tiempo. La reacción general fue positiva, calificando las demostraciones como 'hermosas e impresionantes'.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50222283,
+    "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+    "score": 48,
+    "time": 1792856117,
+    "titulo_es": "Actualizaciones sobre artículos de investigación y expositivos, discusión de problemas abiertos y otros temas relacionados con las matemáticas",
+    "resumen": "El artículo, escrito como una publicación invitada por Abhinav Nellore, Johannes Schmitt, Soledad Villar y Rachel Ward, discute la dificultad de comprender los escritos matemáticos generados por OpenAI y sus citas incompletas. Se presenta el repositorio mathcommunity.github.io/oai-math-revised/ como un esfuerzo inclusivo de la comunidad matemática (estudiantes, postdocs, profesores y entusiastas) para mejorar estos escritos. Se invita a la comunidad a participar y a postularse como administradores o revisores. Los comentarios al artículo expresan preocupación sobre si la comunidad debe realizar este trabajo de refinamiento para OpenAI de forma gratuita, la falta de obligación moral o legal de OpenAI para hacerlo y la posibilidad de que estos textos refinados se utilicen como datos de entrenamiento para futuros modelos de IA. También se plantea la cuestión de si este esfuerzo valida el enfoque de OpenAI y distrae a los matemáticos de desarrollar su propia autonomía comunitaria, especialmente en lo que respecta al reconocimiento adecuado de las contribuciones y la historia en las matemáticas.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50192975,
+    "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
     "score": 92,
-    "time": 1792809398,
-    "titulo_es": "Programa de Dispositivos de Investigación de Seguridad de Apple para iOS",
-    "resumen": "El artículo describe el Programa de Dispositivos de Investigación de Seguridad (SRD) de Apple, diseñado para facilitar la investigación de seguridad en iOS. Los SRD son iPhones especialmente modificados que permiten a los investigadores acceder a capas internas de seguridad sin necesidad de eludir protecciones. Los participantes obtienen acceso a vistas previas de software, proyectos beta de seguridad, una comunidad de investigación y herramientas especializadas. El programa permite la ejecución de herramientas personalizadas y la modificación del kernel. La investigación es elegible para el programa Apple Security Bounty. Los SRD se prestan bajo un acuerdo de 12 meses renovable, son propiedad de Apple y deben usarse exclusivamente para investigación en entornos controlados. Los hallazgos de vulnerabilidades deben ser reportados a Apple y, si aplica, a terceros. La participación está sujeta a aprobación y a un número limitado de dispositivos disponibles anualmente.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50202114,
-    "url": "https://www.eff.org/deeplinks/2026/10/canadians-are-running-out-time-oppose-dangerous-c-22-surveillance-bill",
-    "score": 437,
-    "time": 1792708999,
-    "titulo_es": "La Ley de Acceso Legal de Canadá Amplía la Vigilancia y Debilita la Privacidad",
-    "resumen": "El artículo detalla la propuesta Ley de Acceso Legal (Bill C-22) en Canadá, la cual expande significativamente los poderes de vigilancia del gobierno. La ley permitiría al Ministro de Seguridad Pública ordenar a las empresas de tecnología (incluyendo proveedores de telecomunicaciones y aplicaciones de mensajería) crear puertas traseras ('backdoors') en sus servicios, incluso si esto debilita la encriptación, siempre y cuando no cause 'inseguridad sistémica'. Además, obliga a retener metadatos de comunicaciones por hasta un año, revelando patrones de contacto y ubicación sin necesidad de sospecha de crimen. La CCLA y Citizen Lab han criticado la ley por sus problemas constitucionales y de ciberseguridad, sugiriendo la retirada completa de la parte que establece el régimen de vigilancia y retención de datos. También se menciona la posibilidad de que la ley facilite el intercambio de datos de canadienses con agencias de aplicación de la ley extranjeras, como EE.UU., sin supervisión judicial canadiense. La legislación está siendo debatida en el Senado canadiense, y se insta a los ciudadanos a oponerse a través de peticiones.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50169499,
-    "url": "https://pudding.cool/2026/10/kevin-bacon/",
-    "score": 328,
-    "time": 1792516205,
-    "titulo_es": "Seis Grados de Samuel L. Jackson: Descubriendo el Centro de Hollywood",
-    "resumen": "El artículo explora el concepto de 'Seis Grados de Kevin Bacon' y revela que Samuel L. Jackson es actualmente el actor más central en Hollywood, con una puntuación de 'lejanía' promedio de 2.09. Se analizan los factores que influyen en esta puntuación: el número total de películas en las que ha participado un actor y la prolificidad promedio de sus co-estrellas. Se destaca la subrepresentación de mujeres en los primeros puestos y se presenta la idea de predecir futuros 'centros de Hollywood' analizando trayectorias de actores jóvenes basándose en estos mismos métricos, utilizando ejemplos históricos para modelar el crecimiento futuro del recuento de películas y la red de co-estrellas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50176544,
-    "url": "https://martinfinkel.com/blog/gaussian-blur-c-vs-csharp/",
-    "score": 101,
-    "time": 1792561692,
-    "titulo_es": "Comparativa de rendimiento: C# con .NET Native AOT vs. C para filtros de video en VLC",
-    "resumen": "El artículo compara el rendimiento de un filtro de desenfoque Gaussiano implementado en C# utilizando .NET Native AOT y en C nativo, dentro del reproductor multimedia VLC. Se describe la portabilidad línea por línea del código C a C#, asegurando la misma lógica y resultados idénticos. Inicialmente, la versión en C# presenta una sobrecarga del 23% debido a optimizaciones del compilador (RyuJIT) que recomputan bucles y conversiones de tipos. Sin embargo, tras dos ajustes clave en el código C# (pre-calcular límites de bucle y usar `nint` para índices), la diferencia se reduce a menos del 8% respecto al código C, superándolo en un caso. Se menciona que aún hay margen de mejora algorítmica antes de considerar optimizaciones como SIMD o paralelismo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50217946,
-    "url": "https://ayoships.com/breakdowns/block-blast",
-    "score": 63,
-    "time": 1792809823,
-    "titulo_es": "Ingeniería Inversa y Tácticas de Monetización en Block Blast: Un Análisis Técnico",
-    "resumen": "El artículo detalla un análisis técnico profundo de la aplicación móvil Block Blast, centrándose en cómo las reglas descargadas del servidor controlan la experiencia del usuario, incluyendo la entrega de anuncios, la dificultad del juego y la puntuación. Se describe el proceso de ingeniería inversa de la aplicación Android (versión 10.8.2), utilizando herramientas como jadx y Ghidra para descompilar el código Java y las bibliotecas nativas de Cocos. Se revela que la configuración del juego se recibe como JavaScript encriptado, permitiendo a los desarrolladores modificar la experiencia sin actualizaciones de la aplicación. Un enfoque clave es el \"RewardHighValueAdHarvestTrait\", una lógica de JavaScript que optimiza la monetización al esperar condiciones específicas (tres anuncios anteriores completados, el anuncio actual es muy valioso y el jugador supera su puntuación máxima) antes de presentar un \"puzzle letal\" diseñado para ser difícil de colocar y, presumiblemente, para maximizar los ingresos por publicidad. Se explican los mecanismos de verificación de estas condiciones, la obtención del valor de los anuncios y la lógica para aumentar la dificultad del juego. El análisis concluye mostrando cómo se activan estas reglas bajo condiciones de prueba específicas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50212507,
-    "url": "https://www.jefftk.com/p/air-purifiers-as-white-noise-machines",
-    "score": 145,
-    "time": 1792776516,
-    "titulo_es": "Purificadores de aire pequeños como alternativa a las máquinas de ruido blanco",
-    "resumen": "El artículo compara el uso de pequeños purificadores de aire con máquinas de ruido blanco tradicionales. Se destaca que, por un costo similar y tamaño comparable, los purificadores de aire no solo emiten ruido, sino que también filtran partículas del aire, como humo y patógenos. Se proporciona un ejemplo de un purificador de $47 con 34 CFM de capacidad de limpieza de aire (CADR) a 45dB, contrastándolo con un modelo más potente y caro (AirFanta 3Pro) que limpia mucho más aire a un nivel de ruido superior. Se argumenta que incluso un purificador de baja capacidad (34 CFM) puede reducir significativamente los niveles de partículas en una habitación típica, mejorando la calidad del aire de forma comparable a bajar de un AQI muy alto a uno moderado. Si bien el artículo menciona brevemente temas de IA, ciberseguridad y LLMs en otros fragmentos, el texto principal se centra en la funcionalidad y beneficios de los purificadores de aire en relación con el ruido blanco y la calidad del aire.",
+    "time": 1792659670,
+    "titulo_es": "TornadoVM 7 Habilita Cargas de Trabajo Nativas de GPU desde Aplicaciones Java",
+    "resumen": "TornadoVM, un framework de programación heterogéneo de GPU de código abierto para Java, ha alcanzado la versión 7.3. Esta versión introduce cambios arquitectónicos significativos, como el uso de la API Foreign Function & Memory (FFM) en lugar de Java Native Interface (JNI) y la eliminación de la dependencia experimental JVM Compiler Interface (JVMCI). La integración con el ecosistema Nvidia se profundiza con un backend CUDA optimizado que soporta el modelo de programación cuTile y permite la llamada directa a bibliotecas CUDA como cuBLAS y CUTLASS. Similarmente, se añade funcionalidad para la biblioteca MXL de Apple. La versión 7 también introduce soporte para ejecución multi-GPU. TornadoVM acelera automáticamente programas Java en CPUs multi-núcleo y GPUs, gestionando la memoria entre el heap de Java y los aceleradores, y compilando código Java a backends OpenCL y Apple Metal, facilitando el desarrollo local y el despliegue en servidores con GPUs Nvidia para cargas de trabajo de ML modernas.",
     "categoria": "Hardware"
-  },
-  {
-    "id": 50214373,
-    "url": "https://corgi.computer/",
-    "score": 96,
-    "time": 1792784798,
-    "titulo_es": "Multiplexor de Terminal para Humanos (y Agentes)",
-    "resumen": "El artículo describe 'Corgi', un multiplexor de terminal diseñado para mejorar la productividad de desarrolladores y agentes de IA. Permite gestionar múltiples agentes y sus procesos en segundo plano, similar a tmux. Ofrece funcionalidades como 'F1 para ponerse al día' para ver la actividad reciente, 'Ctrl-T' para iniciar nuevas tareas o retomar las existentes, y la capacidad de usar cuentas existentes. Detalla la visibilidad del uso de 'tokens' por parte de los agentes, permitiendo inspeccionar su historial de acciones mediante el hover sobre un agente. La herramienta organiza automáticamente los espacios de trabajo y permite la inspección de archivos tocados por un agente. Incluye características avanzadas como el pegado de imágenes (incluso en SSH con Ghostty Nightly) y la posibilidad de deshacer cierres de pestañas (Ctrl-Shift-T). También se menciona la posibilidad de controlar Corgi desde cualquier terminal con comandos como 'corgi --skill' para enseñar a los agentes.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50168075,
-    "url": "https://www.cam.ac.uk/research/news/rise-of-collagen-eating-microbes-may-help-explain-gaps-in-the-fossil-record",
-    "score": 58,
-    "time": 1792510888,
-    "titulo_es": "Descubierta la razón detrás de la preservación de los primeros animales del Ediacárico",
-    "resumen": "Investigadores de la Universidad de Cambridge proponen que la preservación excepcional de los primeros animales del Período Ediacárico (579-539 millones de años atrás), a pesar de su naturaleza blanda y gelatinosa ('bolsas de baba'), se debe a la ausencia de microorganismos capaces de degradar el colágeno. El colágeno, una proteína estructural clave en los tejidos animales, proporciona resistencia y soporte. En ausencia de enzimas colagenasas, el colágeno persiste, permitiendo la fosilización. Los investigadores rastrearon la evolución de los genes de colagenasa en 700 genomas bacterianos y los compararon con una cronología evolutiva. Descubrieron que las colagenasas son más antiguas que los animales y existían inicialmente en microbios anaeróbicos. En el Ediacárico, el oxígeno en los sedimentos permitía la conservación del colágeno, dando tiempo a la fosilización. Sin embargo, en la transición al Período Cámbrico, las colagenasas se propagaron a bacterias aeróbicas, coincidiendo con una drástica disminución en la fosilización de animales de cuerpo blando, ya que la capacidad de degradar el colágeno se extendió a nuevos entornos. Esto implicó que los procesos de fosilización debían ser más rápidos para superar la descomposición.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50211746,
-    "url": "https://alexsci.com/blog/uuidv7-is-weird/",
-    "score": 157,
-    "time": 1792773585,
-    "titulo_es": "UUIDv7: La Frialdad del Timestamp Incrustado y la Precisión del Reloj",
-    "resumen": "El artículo argumenta que, a pesar de las ventajas comúnmente promocionadas de UUIDv7, como la ordenación por tiempo de creación y la eficiencia en operaciones de base de datos, estas propiedades no se cumplen estrictamente. Se detalla cómo las implementaciones pueden alterar el campo de timestamp, lo que lleva a discrepancias significativas con el tiempo real de creación del objeto. Se exploran las implicaciones de las especificaciones RFC 9562 que permiten estas alteraciones, especialmente en escenarios de alta carga donde el contador puede desbordarse o el reloj del sistema salta hacia atrás, causando que el timestamp del UUIDv7 se acelere arbitrariamente. Se presenta un ejemplo con la implementación de Python que demuestra este comportamiento de \"carrera\" del timestamp. Finalmente, se menciona una desventaja menor pero real: la fuga de información sobre el tiempo de creación a través del ID, incluso cuando se intenta ocultar.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50211719,
-    "url": "https://www.henrikkarlsson.xyz/p/music",
-    "score": 142,
-    "time": 1792773497,
-    "titulo_es": "El Poder Psicológico y Cultural de la Música",
-    "resumen": "El artículo explora cómo la música, a través de patrones abstractos de tonos y ritmos, tiene la capacidad de alterar nuestra percepción del mundo, evocar paisajes interiores y generar experiencias emocionales profundas. Se presentan dos perspectivas principales sobre este fenómeno: una visión tradicional que sugiere que la música interactúa con nuestros sistemas perceptuales auditivos innatos, utilizando 'atajos biológicos' para generar estados emocionales y espaciales (similar a cómo reconocemos emociones en la voz), y una perspectiva más matizada que enfatiza la fuerte influencia de la cultura y el contexto musical en la interpretación de la música. Se cita el ejemplo de los Kalash de Pakistán, quienes interpretan acordes mayores y menores de manera opuesta a las expectativas occidentales, lo que demuestra que la experiencia musical no es universalmente determinista y está profundamente moldeada por el aprendizaje cultural y la exposición.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50207115,
-    "url": "https://drew.silcock.dev/blog/is-this-the-new-cyber-normal/",
-    "score": 177,
-    "time": 1792753493,
-    "titulo_es": "Vulnerabilidades Críticas en PHP Impulsadas por IA y la Carrera por los Parches",
-    "resumen": "El artículo detalla una reciente crisis de seguridad en PHP, donde múltiples vulnerabilidades críticas de Ejecución Remota de Código (RCE) fueron descubiertas utilizando modelos avanzados de IA (LLMs). Una de estas vulnerabilidades (CVE-2026-109618) había sido identificada previamente por la PHP Foundation pero ignorada por la dificultad de crear un exploit. Los LLMs demostraron una capacidad excepcional para convertir hallazgos teóricos en exploits funcionales rápidamente. El descubrimiento y la rápida propagación de exploits coincidieron con anuncios de parches, creando una carrera contra el tiempo para la aplicación de actualizaciones. La situación se agravó por filtraciones no intencionadas, como la publicación de un video de un exploit por parte de Calif y la publicación prematura de fixes por parte de Chainguard, lo que permitió a los atacantes superar a los administradores de sistemas. Se estima que estas vulnerabilidades afectan a un gran porcentaje de internet, incluyendo sitios de alta visibilidad. La crisis subraya la nueva dinámica de descubrimiento de vulnerabilidades y la urgencia de los parches en la era de la IA, donde la velocidad de explotación puede superar la de la mitigación.",
-    "categoria": "Ciberseguridad"
   },
   {
     "id": 50190363,
     "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-    "score": 629,
+    "score": 644,
     "time": 1792635521,
-    "titulo_es": "Un modelo de lenguaje de 360M parámetros afinado para actuar como una terminal",
-    "resumen": "El artículo describe la creación y el funcionamiento de un modelo de lenguaje (basado en Qwen2.5-Coder-0.5B) afinado para simular una terminal de computadora. A diferencia de las implementaciones tradicionales, este modelo no interactúa con un shell o sistema de archivos real; en su lugar, cada pulsación de tecla se procesa como entrada y el modelo predice el cambio resultante en la pantalla. Para lograr esto, la terminal se representa como una cuadrícula de caracteres, y el modelo recibe como entrada el estado actual de la pantalla (tamaño, contenido, posición del cursor) y las pulsaciones de teclas en formato de bytes crudos. Las predicciones del modelo consisten en las filas a reescribir y la nueva posición del cursor. Se implementaron optimizaciones como la operación `COPY` para manejar eficientemente el desplazamiento de pantalla y otras operaciones que modifican filas, reduciendo drásticamente la cantidad de tokens necesarios en comparación con la regeneración completa de la pantalla. Estas técnicas permiten al modelo realizar acciones como crear archivos, ejecutar editores (vim) y multiplexores (tmux), e incluso jugar a Snake, manteniendo un estado coherente durante varias interacciones. La demo está diseñada para navegadores de escritorio con WebGPU y destaca la capacidad del modelo para auto-corregir errores y la decodificación paralela de filas de pantalla.",
+    "titulo_es": "Modelo de Lenguaje como Terminal Interactiva",
+    "resumen": "El artículo describe el desarrollo y funcionamiento de un modelo de lenguaje de 360 millones de parámetros, basado en Qwen2.5-Coder-0.5B, que simula una terminal interactiva sin un shell o sistema de archivos real. Cada pulsación de tecla es procesada por el modelo, que predice el cambio en la pantalla del terminal. El sistema puede crear archivos, ejecutar aplicaciones como Vim y Tmux, y jugar Snake, manteniendo un estado consistente a lo largo de las interacciones. Las optimizaciones clave incluyen la capacidad del modelo para corregir sus propios errores y la decodificación paralela de filas de pantalla. El modelo trata el terminal como una cuadrícula de caracteres y predice las actualizaciones de la pantalla, incluyendo la posición del cursor. Se implementaron operaciones eficientes como COPY para manejar desplazamientos de pantalla y ediciones de texto, reduciendo significativamente la cantidad de tokens necesarios. La demo se ejecuta en el navegador a través de WebGPU.",
     "categoria": "IA"
   },
   {
-    "id": 50177554,
-    "url": "https://e360.yale.edu/features/2026-film-contest-second-place-cerrado",
-    "score": 50,
-    "time": 1792570655,
-    "titulo_es": "Donde Hubo Cerrado",
-    "resumen": "El artículo describe la investigación de la historiadora ambiental Natascha Otoya sobre la conversión de la sabana brasileña, el Cerrado, en pastos para ganado y monocultivos de maíz y soja. Otoya viajó en bicicleta por la región para recopilar datos y experiencias empíricas, filmando el paisaje y documentando los cambios. Su trabajo, presentado en un documental que ganó el segundo lugar en el Concurso de Cine de Yale Environment 360, busca crear conciencia sobre el impacto ambiental de la agricultura industrial, la alteración del flujo de agua y la memoria humana del paisaje, abogando por que las políticas públicas y la defensa ambiental se basen en la historia ambiental.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50212124,
-    "url": "https://brooker.co.za/blog/2026/10/23/animations.html",
-    "score": 61,
-    "time": 1792774944,
-    "titulo_es": "Las imágenes bonitas nos ayudan a aprender, ¿quizás?",
-    "resumen": "El artículo explora cómo las animaciones y visualizaciones, generadas a menudo con herramientas como Kiro y KiroCrew, son efectivas para comprender el comportamiento de sistemas complejos. Se utilizan ejemplos concretos de bases de datos como Postgres y sistemas de coordinación como etcd para ilustrar fallos de rendimiento y estados metaestables que surgen bajo cargas de trabajo variables. Se destaca que incluso sistemas robustos y probados en producción pueden exhibir estos comportamientos inesperados, y que la experiencia operativa por sí sola no siempre es suficiente para identificarlos. Las animaciones capturan datos de trazas reales, proporcionando una intuición valiosa sobre cómo y por qué los sistemas funcionan o fallan, especialmente en el contexto de problemas como los cuellos de botella en el acceso a disco, el impacto de la recolección de basura (GC) en el rendimiento y la latencia, y la posibilidad de pérdida de escrituras en clústeres distribuidos debido a fallos en capas de almacenamiento subyacentes.",
+    "id": 50224422,
+    "url": "https://missileer.watch",
+    "score": 179,
+    "time": 1792871007,
+    "titulo_es": "Datos de Muestra: Estado de Aviónica y Archivo",
+    "resumen": "El artículo describe un sistema de desarrollo (dev) que utiliza datos de muestra, no tráfico en vivo. El sistema no utiliza cookies de rastreo. El inicio de sesión es opcional y solo establece una cookie para mantener la sesión. La página lee dos archivos públicos: 'archive.json' y 'status.json'. Cloudflare Web Analytics se utiliza para contar visitas sin cookies. La política de privacidad detalla qué datos se conservan, por qué y cómo eliminarlos. Los tiempos se muestran en UTC. Las grabaciones y decodificaciones se publican bajo CC0 1.0 (dedicación al dominio público), con agradecimiento por la atribución a missileer.watch.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50217683,
-    "url": "https://www.sciencedaily.com/releases/2026/10/261018084421.htm",
-    "score": 110,
-    "time": 1792806790,
-    "titulo_es": "Científicos descubren que las células inmunes del cerebro son la causa principal de los problemas de sueño en el Alzheimer",
-    "resumen": "Investigadores de la Universidad de Kentucky han identificado que la inflamación desencadenada por las células inmunes del cerebro (microglía) en respuesta a las placas amiloides, y no las placas en sí mismas o las neuronas disfuncionales, es la causa principal de los trastornos del sueño en modelos de ratón con cambios cerebrales similares al Alzheimer. Al eliminar temporalmente la mayoría de estas microglías, los ratones experimentaron un aumento significativo en las horas de sueño, incluyendo un mayor tiempo en etapas profundas y reparadoras. Este hallazgo, publicado en Alzheimer's & Dementia, sugiere un nuevo enfoque terapéutico para tratar uno de los síntomas más disruptivos del Alzheimer, desafiando la comprensión previa centrada únicamente en las placas y la degeneración neuronal.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50218743,
-    "url": "https://www.tbray.org/ongoing/When/202x/2026/10/19/The-AI-Temptation",
-    "score": 8,
-    "time": 1792822719,
-    "titulo_es": "Optimización y Extensión de Quamina para Nuevos Formatos de Datos",
-    "resumen": "El artículo discute el desarrollo continuo de Quamina, una herramienta de procesamiento de datos de baja intensidad, enfocándose en su funcionalidad de 'Flattener' que transforma datos de entrada (actualmente JSON) en una lista ordenada de campos para su posterior coincidencia. El autor explora la posibilidad de extender Quamina para soportar otros formatos de datos serializados como Thrift, Protobufs y CBOR. Se detalla la optimización del 'Flattener' de JSON, destacando la importancia de un parser que funcione como tokenizador para permitir la optimización al omitir campos no relevantes para la coincidencia. Se menciona una experiencia previa con un 'Flattener' de Protobufs generado por IA, que resultó defectuoso y difícil de leer. Finalmente, se inicia el desarrollo de un 'Flattener' para CBOR, partiendo de la implementación más simple posible con el procesador Go existente, a pesar de que no sea un tokenizador, evaluando si el rendimiento es suficiente antes de aplicar optimizaciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50220062,
-    "url": "https://itwire.com/it-industry-news/telecoms-and-nbn/telstra-ends-australias-long-rcs-wait-android-from-16-november-iphone-after-decembers-ios-update",
-    "score": 5,
-    "time": 1792839322,
-    "titulo_es": "Telstra Lanza RCS para Mejorar la Experiencia de Mensajería entre Android e iPhone en Australia",
-    "resumen": "El artículo detalla el próximo despliegue de Rich Communication Services (RCS) por parte de Telstra, el principal operador de telecomunicaciones de Australia, para sus clientes de Android a partir del 16 de noviembre de 2026, y para los usuarios de iPhone tras la actualización de iOS de diciembre de 2026. Este lanzamiento, que se completará a finales de 2026, cerrará la brecha de mensajería entre las plataformas, ofreciendo características modernas como fotos y videos de alta resolución, indicadores de escritura, recibos de lectura, reacciones de emojis y respuestas en línea. RCS se habilitará por defecto en todos los servicios de Telstra, sin requerir acciones por parte del usuario, solo una conexión de datos. A pesar del retraso en comparación con otros mercados, los usuarios de iPhone en Australia se beneficiarán de una implementación más madura de RCS (iOS 27) que incluye capacidades mejoradas. Si bien las conversaciones entre iPhone y Android seguirán utilizando las burbujas verdes de iMessage, la experiencia de mensajería se enriquecerá significativamente.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50214983,
-    "url": "https://quantum5.ca/2025/03/22/whirlwind-tour-of-systemd-nspawn-containers/",
-    "score": 48,
-    "time": 1792787832,
-    "titulo_es": "Contenedores systemd-nspawn para LLMs autoalojados y Open WebUI",
-    "resumen": "El artículo detalla el uso de systemd-nspawn, una tecnología de contenedores basada en namespaces de Linux, como alternativa a Docker para aislar aplicaciones como LLMs (Large Language Models) y Open WebUI. A diferencia de Docker, que se enfoca en imágenes preconstruidas y de solo lectura, systemd-nspawn opera con un sistema de archivos raíz escribible, similar a una máquina virtual pero más ligero. Se describe el proceso de creación de rootfs para diferentes distribuciones (Debian con debootstrap, Fedora con dnf/rpm, y Alpine Linux con una versión modificada de alpine-chroot-install llamada alpine-nspawn-install) y su posterior uso dentro de contenedores systemd-nspawn.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 50202681,
-    "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
-    "score": 847,
-    "time": 1792712756,
-    "titulo_es": "Creando mi propio runtime de contenedores: Algunas peculiaridades de Docker",
-    "resumen": "El artículo describe la experiencia de construir un runtime de contenedores personalizado, revelando aspectos sorprendentes de Docker. Se explica que los contenedores son procesos Linux con restricciones aplicadas mediante características del kernel como namespaces y cgroups. Las imágenes se gestionan como directorios que se configuran como la raíz del sistema de archivos del contenedor usando chroot o pivot_root. Se discuten los desafíos de usar Go para el runtime (runc), incluyendo la gestión de llamadas al sistema en un entorno multihilo y la simulación de la operación `fork` mediante exec. También se aborda la complejidad de la seguridad, la ejecución como root y la reimplementación del stack de red en modo rootless. El autor concluye que construir una herramienta propia es una excelente forma de aprender sobre su funcionamiento interno.",
-    "categoria": "Desarrollo de Software"
+    "id": 50171936,
+    "url": "https://github.com/astroautomata/PySR",
+    "score": 69,
+    "time": 1792526855,
+    "titulo_es": "Aprendizaje Simbólico en Python y Julia",
+    "resumen": "PySR es una herramienta de código abierto para Regresión Simbólica, cuyo objetivo es encontrar una expresión simbólica interpretable que optimice un objetivo dado. Está diseñado para ser de alto rendimiento, configurable y fácil de usar. Utiliza SymbolicRegression.jl como motor de búsqueda y se complementa con técnicas como el \"Symbolic Distillation\" de Redes Neuronales para extender su aplicabilidad a problemas de alta dimensionalidad, permitiendo interpretar redes neuronales profundas a través de ecuaciones analíticas. El artículo detalla su instalación vía pip/conda, integración con agentes de codificación, y soluciones a problemas comunes como dependencias de bibliotecas y conflictos de GLIBCXX. Se proporciona un tutorial interactivo y un ejemplo de uso con NumPy, demostrando cómo crear, entrenar y predecir con un modelo PySR, así como acceder a las ecuaciones aprendidas en varios formatos (incluyendo lambdas, SymPy, JAX y PyTorch).",
+    "categoria": "IA"
   }
 ]
