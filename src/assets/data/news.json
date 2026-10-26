@@ -1,272 +1,200 @@
 [
   {
-    "id": 50230384,
-    "url": "https://github.com/ihhub/fheroes2",
-    "score": 55,
-    "time": 1792926552,
-    "titulo_es": "fheroes2: Recreación del motor de juego de Heroes of Might and Magic II",
-    "resumen": "fheroes2 es un proyecto de código abierto y multiplataforma licenciado bajo GNU GPL v2.0 que recrea desde cero el motor del clásico juego Heroes of Might and Magic II. El proyecto implementa mejoras sustanciales respecto al original, incluyendo soporte para gráficos en alta resolución, optimizaciones en la interfaz de usuario, correcciones de errores y una inteligencia artificial renovada, requiriendo los recursos del juego original para funcionar legítimamente.",
+    "id": 50241925,
+    "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
+    "score": 53,
+    "time": 1793013350,
+    "titulo_es": "Lanzamiento de Pharo versión 14",
+    "resumen": "El equipo de Pharo ha anunciado el lanzamiento de Pharo 14, su lenguaje de programación puramente orientado a objetos y entorno dinámico interactivo. Esta versión marca la transición a un nuevo ciclo de lanzamientos anuales fijado en otoño (septiembre-noviembre) e integra 978 pull requests junto con la resolución de 616 incidencias desde la versión 13, destacando el progreso impulsado por su comunidad global de código abierto y consorcios de investigación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50238739,
+    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+    "score": 201,
+    "time": 1792985345,
+    "titulo_es": "PaperPilot: Herramienta local de Rust para la manipulación de documentos y asistentes de IA",
+    "resumen": "PaperPilot es un kit de herramientas de Rust para el procesamiento local de documentos PDF y otros, diseñado para integrarse con asistentes de IA. Elimina la dependencia de navegadores web (Chromium) o tiempos de ejecución C++, asegurando que los archivos permanezcan en la máquina del usuario para mayor seguridad. Ofrece funcionalidades para organizar (fusionar, dividir, rotar, eliminar, reordenar, extraer páginas, imposición de folletos, cuadrícula N-up), optimizar (compresión) y extraer contenido (texto plano, OCR con PaddleOCR en Rust) de documentos. También incluye funciones de seguridad como marcas de agua, validación y eliminación de firmas, escaneo de PII y saneamiento profundo de datos de Office (Excel a JSON/CSV). Se integra con clientes de IA como Codex, Claude Code, Kimi Code y Pi a través de un servidor stdio local. La edición comunitaria, de código abierto bajo Apache 2.0, incluye CLI, servidor MCP, puerta de enlace REST, motor WASM y aplicación de escritorio. Una edición empresarial con características avanzadas de seguridad y administración está en desarrollo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50241664,
+    "url": "https://brennenputh.me/blog/printable-websites/",
+    "score": 151,
+    "time": 1793010734,
+    "titulo_es": "Optimización de la Experiencia de Impresión de Páginas Web con CSS",
+    "resumen": "El artículo aborda los desafíos y soluciones para mejorar la experiencia de impresión de páginas web. El autor relata su experiencia personal al intentar optimizar la impresión de su propio sitio web, encontrando problemas con el tamaño del texto, el diseño de cabeceras y la visibilidad de los enlaces en blanco y negro. Se destaca el uso de selectores CSS específicos para contenido imprimible como una solución efectiva, demostrando con un fragmento de código cómo aplicar estos estilos. A pesar de reconocer que la impresión de páginas web puede no ser una prioridad para muchos, el autor argumenta que facilitar la experiencia de lectura en formatos preferidos por el usuario, como el papel, es un acto de amabilidad del desarrollador hacia el usuario, contribuyendo a la creación de buen software.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50242843,
+    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
+    "score": 50,
+    "time": 1793019507,
+    "titulo_es": "Herramienta interactiva expone la estructura de poder que extrae mano de obra barata de trabajadores de datos en el Sur Global para hacer funcionar los algoritmos de IA cotidianos",
+    "resumen": "El artículo describe la creación de un mapa interactivo por Cunyan Ma, una estudiante de la Universidad de Brown, que visualiza la cadena de valor de la inteligencia artificial, conectando empresas tecnológicas y sus intermediarios con trabajadores de datos en el Sur Global. La herramienta expone cómo la mano de obra de bajo costo, a menudo enfrentando condiciones laborales precarias y contenido perturbador, es fundamental para el entrenamiento y funcionamiento de los algoritmos de IA. Ma busca iluminar esta estructura, a la que denomina 'colonialismo de IA', para mostrar el impacto social y económico de la extracción de trabajo digital, que se mantiene opaco intencionalmente para evitar la rendición de cuentas. El mapa, que vincula empresas de etiquetado de datos, sus clientes corporativos y países con centros de trabajadores, sirve como una herramienta educativa para comprender la arquitectura económica y política detrás de la IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50209278,
+    "url": "https://brashandplucky.com/2026/10/15/growing-trees.html",
+    "score": 151,
+    "time": 1792764462,
+    "titulo_es": "Crecimiento de árboles procedurales basado en modelos de autoorganización",
+    "resumen": "El artículo describe un método para la síntesis de imágenes de árboles utilizando un modelo de crecimiento procedural inspirado en el trabajo de Palubicki et al. (SIGGRAPH 2009). El proceso se basa en la competencia de los 'yemas' (buds) por la luz, donde el árbol distribuye un recurso de crecimiento. Las yemas exitosas generan nuevos 'metámeros' (segmentos de tallo con hoja y yemas), modificando la disponibilidad de luz para las siguientes iteraciones. Se utilizan modelos de luz basados en rejillas de vóxeles y la técnica de colonización espacial. El recurso de crecimiento se distribuye a través de la estructura de ramificación, siguiendo el modelo de Borchert-Honda, con un parámetro (lambda) que ajusta la distribución entre el eje principal y las ramas laterales. Las yemas que reciben suficiente recurso generan nuevos segmentos, mientras que las que reciben menos permanecen inactivas. La dirección de crecimiento de los nuevos segmentos se determina por una combinación ponderada de la dirección previa, la búsqueda de luz, el tropismo (hacia arriba/abajo) y ruido, permitiendo la formación de patrones de ramificación complejos. La filotaxis (disposición de las yemas) y la sombra proyectada influyen en la forma de la copa. Las ramas laterales se podan si su contribución de luz es insuficiente. El grosor de las ramas se calcula posteriormente usando un modelo de tubería, acumulando el radio desde las puntas hacia la raíz. El esqueleto del árbol resultante se utiliza para generar mallas de corteza y para la colocación de 'tarjetas de ramitas' con hojas, mejorando el sombreado y el detalle visual. Se mencionan técnicas de optimización para diferentes niveles de detalle, incluyendo 'impostores direccionales' y la exportación de vistas de campo de profundidad para renderizado de bosques.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50244744,
+    "url": "https://www.theguardian.com/us-news/2026/oct/26/peta-monkey-experiment-video",
+    "score": 12,
+    "time": 1793026250,
+    "titulo_es": "Grupo de derechos de los animales publica video de macacos bebés sufriendo experimentos de laboratorio",
+    "resumen": "El artículo detalla un estudio de seis años (2014-2020) financiado por los NIH en el Centro Nacional de Investigación de Primates de la Universidad de Washington (WaNPRC). El proyecto investigó la neurotoxicidad prenatal del ácido domoico en 28 crías de macaco, que fueron separadas de sus madres al nacer, alimentadas con biberón y alojadas individualmente. Las crías, algunas de tan solo dos días, se sometieron a pruebas neurológicas con electrodos en la cabeza para evaluar el daño cerebral inducido por la exposición prenatal al toxina. El metraje publicado por PETA muestra a los animales angustiados. Expertos en primates y PETA critican la separación materna por ser poco ética y distorsionar los resultados de la investigación. El WaNPRC afirma que prioriza el bienestar animal y cuenta con personal especializado, aunque admite que existen protocolos activos para estudios con animales infantes. PETA argumenta que la crueldad y las consecuencias biológicas de la separación materna invalidan la investigación.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50228115,
+    "url": "https://github.com/notaroomba/keybytes",
+    "score": 228,
+    "time": 1792900076,
+    "titulo_es": "Teclado Modular Verdaderamente Modular",
+    "resumen": "El artículo describe un teclado modular diseñado en KiCad, compuesto por dos PCBs principales apilables (Keybit y Keyword) y unidades individuales de 1u (Keybit). Cada unidad Keybit integra un switch Cherry MX y un microcontrolador CH32V003, con pogo pins para alimentación (3.3V, GND) y comunicación I2C en sus laterales para la interconexión. La placa Keyword está dividida en dos PCBs: una superior con un STM32WB55RGV6, antena y flash, y una inferior con conector USB-C, cargador y conversor buck-boost. Se proporcionan esquemáticos, layouts y vistas 3D. Los casos (carcasas) personalizados están diseñados en Onshape. El proyecto utiliza la licencia MIT.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50197108,
+    "url": "https://charliegerard.dev/blog/overgrown-extension/",
+    "score": 364,
+    "time": 1792684341,
+    "titulo_es": "Extensión de Chrome: Las Pestañas del Navegador se Cubren de Vegetación con el Tiempo",
+    "resumen": "El artículo describe el desarrollo de una extensión de Chrome que simula el crecimiento de plantas en las pestañas del navegador que han sido dejadas sin leer por un período prolongado. Inspirado en la idea de la naturaleza reclamando edificios abandonados en escenarios post-apocalípticos, el proyecto aplica este concepto al entorno digital. La extensión visualiza este \"abandono\" mediante el crecimiento de vegetación (plantas, enredaderas) sobre las pestañas inactivas. Los usuarios pueden interactuar con estas pestañas \"cubiertas de vegetación\" eliminando las plantas para acceder a su contenido. La arquitectura de la extensión se divide en tres componentes principales: un script de fondo (background.js) que gestiona el ciclo de vida de la \"jungla\" en cada pestaña, un script de contenido (content script) que renderiza las plantas y animaciones directamente en las pestañas, y una carpeta de interfaz de usuario (UI) que maneja la configuración (tiempos, selección de \"armas\" para eliminar plantas) y la visualización del estado de las pestañas. El autor menciona que, si bien no garantiza un aumento en la lectura de pestañas, añade un elemento lúdico y gratificante a la gestión de las mismas. Se incluyen recursos visuales como SVGs para plantas y armas, lógica para el crecimiento y posicionamiento de la vegetación, un \"reloj de abandono\" y efectos de sonido. El proyecto se presenta como una forma divertida de retomar la construcción de software.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50243061,
+    "url": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+    "score": 81,
+    "time": 1793020416,
+    "titulo_es": "Apple actualiza el iPad mini con su mayor rediseño, pantalla OLED y chip A20 Pro",
+    "resumen": "Apple ha lanzado el nuevo iPad mini, destacando una pantalla OLED de 8.5 pulgadas con mayor contraste y brillo, un diseño más delgado y ligero (5.4 mm), y resistencia al agua y polvo (IP67). El dispositivo integra el chip A20 Pro con aceleradores neuronales para IA avanzada, una cámara frontal de 12MP con Center Stage en el borde horizontal, y soporte para carga rápida. Viene con iPadOS 27 y las nuevas capacidades de Apple Intelligence y Siri. La pantalla OLED Super Retina XDR ofrece control de iluminación a nivel de píxel, brillo máximo de 1200 nits, y una opción de nano-textura para reducir el deslumbramiento. La pre-venta inicia el 28 de octubre y estará disponible el 6 de noviembre.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50242555,
+    "url": "https://danielmiessler.com/blog/writing-is-closer-to-thought-than-code",
+    "score": 46,
+    "time": 1793017935,
+    "titulo_es": "La Articulación Escrita como Fuente de Verdad en el Desarrollo con IA",
+    "resumen": "El artículo argumenta que en el desarrollo de software asistido por IA, la articulación escrita y detallada de la intención y el 'qué' y 'por qué' del proyecto es el artefacto más importante, superando la primacía del código. Contrasta esta visión con la de quienes priorizan el código como fuente de verdad. El autor sostiene que la escritura es la forma más cercana al pensamiento humano, proporcionando la 'precisión' necesaria para guiar a la IA, mientras que el código, aunque preciso en su ejecución, es una abstracción que puede divergir del objetivo deseado. La comunicación efectiva y la precisión en la definición del objetivo (accuracy) son cruciales para evitar resultados no deseados, siendo la escritura la herramienta principal para lograrlo, más allá de formatos rígidos de especificación.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50237224,
+    "url": "https://arxiv.org/abs/2512.19428",
+    "score": 162,
+    "time": 1792972325,
+    "titulo_es": "arXivLabs: Colaboración y Desarrollo de Nuevas Funcionalidades",
+    "resumen": "El artículo describe arXivLabs, un framework diseñado para permitir que colaboradores externos desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza la adhesión a valores como la apertura, la comunidad, la excelencia y la privacidad de los datos del usuario por parte de los colaboradores. arXiv busca activamente ideas de proyectos que aporten valor a su comunidad y se asocia con entidades que comparten estos principios.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50235017,
+    "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
+    "score": 290,
+    "time": 1792955491,
+    "titulo_es": "El Nacimiento de un Desarrollador a Través de los Cracktros y la Demoscene",
+    "resumen": "El artículo narra la evolución de la pasión por la tecnología de un individuo, comenzando en la infancia en un entorno pre-Internet. Inicialmente, se describe el descubrimiento de la piratería de juegos y la modificación de archivos guardados para obtener ventajas, lo que generaba una sensación de poder divino. La llegada del módem y el acceso a BBS (Bulletin Board Systems) expandió este mundo, conectando al autor con una comunidad digital más amplia. Un punto de inflexión crucial fue la exposición a los 'cracktros', introducciones visuales y auditivas elaboradas que acompañaban a los juegos pirateados, creadas por los 'crackers' que habían roto la protección del software. Estos cracktros, considerados precursores de las demos y de la demoscene, se describen como experiencias sensoriales intensas y 'fuera del cuerpo', que inspiraron al autor a querer crear algo similar: 'demos' capaces de alterar la percepción de la realidad y dejar al espectador asombrado. El artículo se centra en cómo estas experiencias tempranas, especialmente la creatividad y el impacto de los cracktros, moldearon su aspiración a convertirse en un creador de software, utilizando la frase 'I want to code demos' como un ideal de programación que va más allá de la simple funcionalidad para impactar profundamente al usuario.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 50225695,
     "url": "https://danluu.com/ambitious/",
-    "score": 509,
+    "score": 857,
     "time": 1792878451,
-    "titulo_es": "Podemos ser más ambiciosos con el software que construimos",
-    "resumen": "El artículo analiza la viabilidad y el rigor técnico en proyectos de reescritura de software a gran escala, utilizando como ejemplo principal a 'pgrust' (una reimplementación de PostgreSQL en Rust liderada por Michael Malis). Frente al escepticismo habitual generado por el código de baja calidad o proyectos inflados asistidos por IA ('vibeslop'), el autor argumenta que el enfoque de pruebas exhaustivas y optimización de rendimiento de pgrust no solo valida el esfuerzo, sino que ha descubierto vulnerabilidades y fallos reales en el propio Postgres (errores de desbordamiento, seguridad de memoria y fallos en SP-GiST). La tesis central sostiene que los avances técnicos contemporáneos permiten a los desarrolladores ser significativamente más ambiciosos al construir sistemas complejos y de alto rendimiento.",
+    "titulo_es": "Ambiciones en el Desarrollo de Software y el Impacto de pgrust",
+    "resumen": "El artículo discute la creciente ambición en el desarrollo de software, ejemplificada por el proyecto pgrust, que busca mejorar el rendimiento de PostgreSQL mediante una reescritura en Rust. A pesar del escepticismo generalizado hacia proyectos de reescritura, a menudo de baja calidad, pgrust se destaca por la rigurosa estrategia de pruebas de su desarrollador, Michael Malis. Estas pruebas han descubierto múltiples errores en el propio PostgreSQL, lo que sugiere un impacto positivo incluso si pgrust no alcanza el éxito comercial. El enfoque principal de pgrust es el rendimiento, y las optimizaciones desarrolladas podrían ser adoptadas por otros sistemas como Clickhouse. El autor enfatiza que la era actual de avances tecnológicos permite abordar proyectos de software que antes eran inviables. Se mencionan ejemplos personales de mejora de rendimiento, como un motor de expresiones regulares optimizado y una bifurcación de ripgrep, destacando la importancia de las pruebas y la evaluación comparativa para asegurar la calidad del software construido.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50227356,
-    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-    "score": 223,
-    "time": 1792892029,
-    "titulo_es": "Cómo desplegar modelos de billones de parámetros en chips a escala de oblea de Cerebras",
-    "resumen": "El artículo detalla la arquitectura de inferencia para ejecutar modelos frontera multitrillón como Kimi K3 (3 billones de parámetros) en múltiples obleas Cerebras WSE-3T. Al cuantizar a 4 bits y distribuir las 93 capas del modelo (69 de atención lineal y 24 densas) entre 59 obleas, los pesos completos residen directamente en la memoria SRAM on-chip de 44 GB de cada oblea. La ejecución se estructura como un pipeline continuo donde únicamente se transfieren activaciones mediante RDMA sobre Ethernet con latencias de ~2 microsegundos por salto, evitando mover pesos y permitiendo procesar múltiples micro-lotes simultáneos para alcanzar entre 1000 y 2000+ tokens por segundo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50224100,
-    "url": "https://aardappel.github.io/goose/",
-    "score": 457,
-    "time": 1792868815,
-    "titulo_es": "Goose: Un lenguaje de sistemas con seguridad de memoria sin heap ni recolector de basura",
-    "resumen": "Goose es un lenguaje de programación de sistemas que garantiza la seguridad de memoria sin utilizar un asignador de heap, un recolector de basura ni anotaciones manuales de ciclos de vida. En su lugar, utiliza pilas de datos lineales (*data stacks*) con punteros bump gestionados completamente en tiempo de compilación. Este modelo almacena valores dinámicos y estructuras de tamaño variable de forma contigua (*inline*), lo que proporciona referencias estables, optimiza el uso de la memoria caché y permite superar el rendimiento y la eficiencia de memoria de C++ y Rust.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50194645,
-    "url": "https://polygonjs.com/blog/why-i-rewrote-polygon-from-scratch",
-    "score": 47,
-    "time": 1792673443,
-    "titulo_es": "De JavaScript a Jai: Superando las limitaciones de memoria y recolección de basura en Polygonjs",
-    "resumen": "El autor analiza los desafíos técnicos tras ocho años desarrollando Polygonjs, una herramienta de geometría procedural basada en JavaScript, TypeScript y Three.js. Destaca los problemas inherentes a la falta de control explícito de memoria en los navegadores y el impacto crítico del recolector de basura (GC), cuyas pausas provocan caídas de frames en aplicaciones interactivas. Asimismo, detalla las dificultades de enlazar bibliotecas nativas como la API de Steam mediante Electron. Para solucionar estas limitaciones de rendimiento y trazabilidad de memoria, optó por migrar componentes clave al lenguaje Jai, aprovechando su control de bajo nivel, asignadores personalizados y capacidad para compilar de forma nativa sin las sobrecargas de un GC.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50229827,
-    "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
-    "score": 35,
-    "time": 1792921877,
-    "titulo_es": "Retiran el premio al ganador de un prestigioso concurso de fotografía científica tras determinarse el uso de IA",
-    "resumen": "El Dr. Ning Xu fue despojado de su primer lugar en el concurso 'Small World in Motion' de Nikon luego de que miembros de la comunidad científica detectaran anomalías biológicas, artefactos de generación sintética y una marca de agua en su video de cilios celulares. Aunque Xu afirmó haber utilizado IA exclusivamente para el postprocesamiento y la visualización de características en imágenes de superresolución, Nikon concluyó que se violaron las reglas del certamen y anunció una revisión en sus procedimientos de evaluación ante el avance de contenidos generados por inteligencia artificial.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50224210,
-    "url": "https://www.speedcrunch.org/",
-    "score": 174,
-    "time": 1792869583,
-    "titulo_es": "Una calculadora científica de alta precisión gratuita y de código abierto",
-    "resumen": "Presentación de una calculadora científica de alta precisión, gratuita y de código abierto, orientada a profesionales STEM, docentes y estudiantes. La aplicación es multiplataforma y se encuentra disponible para Windows, macOS y Linux.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50225674,
-    "url": "https://ratfactor.com/cards/pl-small",
-    "score": 133,
-    "time": 1792878263,
-    "titulo_es": "El atractivo de los programas diminutos",
-    "resumen": "El autor analiza el valor didáctico y técnico del software minimalista y ultracompacto. A través de ejemplos como un intérprete de Forth de 46 bytes, un algoritmo de DOM diffing en 25 líneas, el intérprete incunabular de J escrito por Arthur Whitney en una sola página de C y el sistema operativo kOS, se expone cómo reducir drásticamente el tamaño del código no solo es un ejercicio de 'code golfing', sino una forma de hacer que los sistemas sean más accesibles, comprensibles y significativos en la ingeniería de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50219177,
-    "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
-    "score": 343,
-    "time": 1792829199,
-    "titulo_es": "Vulnerabilidad crítica en el decodificador Brotli permite ejecución remota de código (CVE-2026-111497 / Node2Shell)",
-    "resumen": "Se identificó una vulnerabilidad crítica de escritura fuera de límites (CVSS 9.2) en la biblioteca de compresión Brotli de Google (versiones 1.0.3 a 1.2.0) en la función DecodeBlockTypeAndLength(). El fallo permite a atacantes no autenticados provocar corrupción de memoria, fuga de información o ejecución remota de código (RCE) tanto en clientes como en servidores mediante flujos de datos comprimidos manipulados. El impacto es transversal al ecosistema de software debido a dependencias empaquetadas, afectando directamente a runtimes como Node.js y paquetes de Python como brotlicffi, requests y httpx. La mitigación requiere actualizar de forma inmediata a Brotli 1.2.1 o brotlicffi 1.2.1.0 y reconstruir las imágenes de contenedor afectadas.",
+    "id": 50237379,
+    "url": "https://github.com/KillaBoi/StealMyBitcoin-PoC",
+    "score": 153,
+    "time": 1792973717,
+    "titulo_es": "Reproducción en Python de la explotación \"Steal My Bitcoin\" usando callbacks PHP",
+    "resumen": "Este artículo detalla un script de Prueba de Concepto (PoC) escrito en Python que reproduce la secuencia de peticiones utilizada en el desafío CTF \"Steal My Bitcoin\". El script utiliza únicamente la biblioteca estándar de Python y se enfoca en explotar una vulnerabilidad de callback PHP en un entorno de laboratorio local simulando la configuración del desafío (Alpine PHP 8.4.26 CLI sobre Docker con nginx). El PoC construye las peticiones HTTP dinámicamente, verifica cada fuga de información (heap y code leak) antes de proceder, y registra los bytes HTTP de la ejecución. La explotación depende de la localización de punteros en el heap y en el código, que varían entre ejecuciones y workers, requiriendo la calibración de offsets específicos para la versión y distribución de PHP utilizada. Se enfatiza la importancia del entorno de construcción de PHP (Alpine vs. Debian) para la correcta alineación de los punteros y el éxito de la explotación.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50226419,
-    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-    "score": 402,
-    "time": 1792883514,
-    "titulo_es": "El impacto de la IA en la clase creativa y la pérdida de empleo en la industria del entretenimiento",
-    "resumen": "El artículo examina el declive del empleo en las industrias creativas de Estados Unidos, donde se han perdido más de 200.000 puestos en cuatro años, coincidiendo con la proliferación de sistemas de IA capaces de generar texto, audio e imágenes. Analiza la dificultad técnica y legal de cuantificar la sustitución laboral directa por IA frente a factores económicos tradicionales, el impacto en sectores como el cine y el diseño gráfico, y compara este fenómeno con disrupciones tecnológicas pasadas como la llegada de Internet y el caso Napster.",
+    "id": 50235780,
+    "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
+    "score": 236,
+    "time": 1792960351,
+    "titulo_es": "Fallas y Soluciones en la Ingeniería de Contexto de IA",
+    "resumen": "El artículo discute la evolución y los desafíos de la \"Ingeniería de Contexto\" en el campo de la Inteligencia Artificial, especialmente con el avance de modelos con ventanas de contexto cada vez más grandes (millones de tokens). Se exploran las fallas comunes que surgen al intentar incluir grandes cantidades de información en el contexto de los modelos de IA, incluyendo el envenenamiento del contexto (context poisoning), la distracción del contexto (context distraction), la confusión del contexto (context confusion) y el choque del contexto (context clash). Se postula que, a pesar de los avances en el tamaño de las ventanas de contexto, la gestión efectiva de la información y la comunicación de instrucciones claras a los modelos de IA seguirá siendo un desafío fundamental, análogo a las dificultades que enfrentamos al comunicarnos con otros humanos, aunque con especificidades propias de la arquitectura y entrenamiento de los modelos de IA.",
     "categoria": "IA"
   },
   {
-    "id": 50225663,
-    "url": "https://ratfactor.com/cards/limitations",
-    "score": 91,
-    "time": 1792878167,
-    "titulo_es": "El poder de las limitaciones en la creatividad y el aprendizaje",
-    "resumen": "El artículo argumenta que las limitaciones, en lugar de ser un obstáculo, a menudo potencian la creatividad y el aprendizaje. Se ejemplifica con la experiencia de niños jugando con una herramienta web simple y 'buggy' que resultó más atractiva que una plataforma educativa compleja como Scratch. Las severas limitaciones de la herramienta, como la mala gestión de múltiples instancias, generaron comportamientos inesperados y fomentaron la exploración. El autor postula que un conjunto de herramientas muy simple, fácil de invocar y con pocas opciones iniciales, es más propicio para la experimentación y el descubrimiento que uno sobrecargado de funcionalidades. Se trazan paralelismos con las artes visuales, donde un lienzo en blanco y un conjunto completo de pinturas pueden ser abrumadores, mientras que un papel y un lápiz sencillos invitan al garabato inmediato. Las limitaciones estructurales, como las de una narrativa (ej. estructura de 3 actos), también se presentan como elementos que dan forma y hacen interesantes historias que de otro modo serían caóticas y aburridas. Finalmente, se discute cómo las limitaciones presupuestarias en el cine (bajo presupuesto) obligan a la ingeniosidad y a la creatividad inesperada, mientras que las producciones de gran presupuesto requieren una dirección deliberada y con restricción para lograr resultados sorprendentes y no caer en lo obvio.",
-    "categoria": "Frontend"
+    "id": 50242308,
+    "url": "https://evancz.dev/why-is-it-so-expensive-to-send-an-email",
+    "score": 7,
+    "time": 1793016392,
+    "titulo_es": "Por qué el envío de correos electrónicos es sorprendentemente complicado",
+    "resumen": "El artículo explora la complejidad subyacente al envío de correos electrónicos, desmitificando la idea errónea de que es tan simple como una solicitud HTTPS. Detalla el protocolo SMTP, sus desafíos históricos de seguridad como la suplantación de identidad y la necesidad de mecanismos de autenticación como DNS TXT records (SPF, DKIM). El autor relata su experiencia implementando el envío de correos desde cero usando Haskell y C, superando obstáculos técnicos para asegurar que los correos lleguen a la bandeja de entrada y no a spam, destacando la complejidad de los filtros antispam de diferentes proveedores de correo electrónico.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50172432,
-    "url": "https://rootkitlabs.com/2026/10/06/i-built-a-stereo-vision-board-for-hardware-hackers/",
-    "score": 93,
-    "time": 1792529152,
-    "titulo_es": "Construcción de una Placa de Visión Estéreo con el Microprocesador Rockchip RV1103",
-    "resumen": "El artículo detalla la creación de una placa de visión estéreo económica utilizando el microprocesador Rockchip RV1103. Se describe la selección del hardware, incluyendo el SoC RV1103 con 64 MB de RAM DDR2 y un bus MIPI CSI-2, y el diseño de una placa PCB de cuatro capas. Se aborda la configuración del sistema operativo, empleando Buildroot para generar una imagen de sistema (`sdcard.img`) con un bootloader, kernel y drivers necesarios, incluyendo componentes específicos del BSP de Rockchip (drivers MIPI, aceleradores de hardware). La comunicación con el hardware se gestiona a través de la interfaz Linux, utilizando Video4Linux2 (V4L2) para el acceso a las cámaras (/dev/videoX) y control de subdispositivos (/dev/v4l-subdevX). Se destaca la utilización del \"Rockchip Video Engine\" (RVE) y su acelerador de hardware SAD (Sum of Absolute Differences) para el procesamiento de visión estéreo, mediante la librería propietaria `librve.a`. El SAD se aplica para calcular la disparidad entre imágenes capturadas por cámaras estéreo, dividiendo las imágenes en parches y comparando columnas de parches con desplazamientos horizontales para determinar la semejanza.",
-    "categoria": "Hardware"
+    "id": 50233779,
+    "url": "https://lynchlab.net/llm-skin-cancer",
+    "score": 633,
+    "time": 1792948538,
+    "titulo_es": "Un modelo CNN de 10 años supera a GPT-6 Astra y Claude Fable 5.1 en el diagnóstico de cáncer de piel",
+    "resumen": "Un dermatólogo comparó la capacidad de diagnóstico de cáncer de piel de los modelos de IA de vanguardia GPT-6 Astra y Claude Fable 5.1 con una red neuronal convolucional (CNN) Inception v3 de 10 años, afinada con imágenes dermatológicas públicas.  El estudio utilizó 200 lesiones de piel confirmadas por biopsia del conjunto de datos MILK10k. La CNN demostró ser superior, identificando correctamente el diagnóstico (de seis posibilidades) en el 62% de los casos (125/200), mientras que GPT-6 Astra y Claude Fable 5.1 lo hicieron en el 42% (84/200 y 85/200, respectivamente).  La CNN tuvo un mejor desempeño en el reconocimiento de lunares y queratosis seborreicas, diagnósticos en los que los LLM fallaron significativamente.  Los LLM mostraron tendencias a diagnósticos erróneos favoritos, mientras que la CNN, a pesar de ser un modelo más antiguo y ajustado con recursos limitados (una GPU H100 durante unos 20 minutos), superó a los modelos avanzados.  La CNN, además, es lo suficientemente pequeña como para ejecutarse en un navegador web móvil a través de WebGPU.",
+    "categoria": "IA"
   },
   {
-    "id": 50169450,
-    "url": "https://www.cambridge.org/core/journals/antiquity/article/social-dynamics-of-toxic-metal-industry-in-medieval-europe-peak-district-lead-production-ad-6001500/34A2A16AC99B1B12E3EB99CEA1DDB829",
-    "score": 61,
-    "time": 1792516008,
-    "titulo_es": "El Distrito de Peak de Derbyshire: Plomo Medieval, Contaminación Ambiental y Dinámicas Sociales",
-    "resumen": "Este artículo investiga la historia temprana de la producción de plomo en el Distrito de Peak de Derbyshire, una región clave en Europa medieval. Utilizando concentraciones de plomo en el esmalte dental infantil, vinculadas a dataciones por radiocarbono, los autores identifican el desarrollo de la fundición de plomo post-romana a partir de mediados del siglo VII. Se evidencia una producción a gran escala y contaminación ambiental alrededor de minas importantes, como Castleton, para mediados del siglo VIII. Los análisis comparativos de las concentraciones de plomo intra e intersitio sugieren dinámicas sociales en las comunidades productoras, proporcionando un punto de referencia para identificar otras comunidades productoras de plomo y plata en la Europa medieval. El estudio aborda la escasez de fuentes textuales detalladas sobre los orígenes de estas industrias y la limitada investigación sobre el impacto de la contaminación por plomo en las comunidades mineras y de fundición. Se destaca la toxicidad del plomo y su deposición en tejidos duros como el esmalte dental, permitiendo diferenciar entre individuos expuestos profesionalmente y la población general. Los hallazgos proporcionan las primeras fechas absolutas para la producción de plomo post-romana en la región y arrojan luz sobre la edad y dinámica de género en la producción de plomo, sugiriendo una asociación entre alta carga de plomo y muerte prematura, especialmente en mujeres. Los resultados se comparan con poblaciones de otros periodos históricos para establecer un patrón de referencia.",
+    "id": 50244735,
+    "url": "https://github.com/HeyPuter/everything",
+    "score": 6,
+    "time": 1793026221,
+    "titulo_es": "El Proyecto Everything: Reconstruyendo y Liberando el Software Mundial desde Cero",
+    "resumen": "El Proyecto Everything busca crear alternativas gratuitas y de código abierto a todo el software propietario existente, desde suites de oficina y herramientas de colaboración hasta software de diseño y productividad. El proyecto se centra en la reconstrucción completa desde cero, reuniendo todas las aplicaciones y herramientas desarrolladas en un único repositorio (monorepository). Requiere Node.js 22.12 o superior y su código, incluyendo sub-proyectos, módulos y componentes, está licenciado bajo MIT, con posibles excepciones para librerías de terceros. El objetivo es democratizar el acceso al software proporcionando versiones de código abierto de aplicaciones comerciales populares como Office, Slack, Photoshop y AutoCAD.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50234879,
+    "url": "https://iosiflazaridis.github.io/battles-of-the-romans/",
+    "score": 135,
+    "time": 1792954694,
+    "titulo_es": "Batallas Terrestres y Marítimas Romanas",
+    "resumen": "El artículo describe una base de datos interactiva de todas las batallas terrestres y marítimas nombradas en las que participaron las fuerzas romanas, desde el Reino de Roma hasta la caída de Teodoro en 1475. Incluye el Reino, la República, el Imperio (incluyendo los tribunales de Occidente y Oriente) y sus estados sucesores posteriores a 1204. La base de datos detalla la ubicación de cada batalla, los oponentes, el resultado (victoria, derrota o empate), y las fuerzas romanas involucradas. Permite a los usuarios explorar las batallas por período de tiempo o arrastrar un control deslizante para ver batallas en un lapso de 25 años. La visualización en el mapa muestra la frecuencia y los oponentes de las batallas en diferentes ubicaciones, con puntos que se fusionan al alejar el zoom y se dividen al acercar. Se proporcionan registros completos de las batallas, incluyendo fechas, lugares, bandos, comandantes, el ejército romano y sus idiomas, fuentes y razones para las entradas dudosas o tradicionales. Las entradas tradicionales se marcan cuando se basan en fuentes antiguas que los historiadores modernos dudan. El conjunto incluye visualizaciones de mapas de varias regiones, tablas de resultados y listas completas de batallas. Se definen criterios claros para qué constituye una batalla romana nombrada, excluyendo escaramuzas sin nombre, masacres, capturas y rendiciones sin lucha, y leyendas. Se enfatiza que los reyes clientes y aliados no se consideran Roma, y los romanos en servicio extranjero no hacen que una batalla sea romana. Las batallas de los reyes y la primera República se incluyen según lo narrado por historiadores antiguos, con un marcado específico para las 94 batallas basadas en tradiciones dudosas.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50219700,
-    "url": "https://github.com/Zagitta/gpu-unlock",
-    "score": 274,
-    "time": 1792835907,
-    "titulo_es": "Desbloqueo de la tasa de emisión de instrucciones FP/BF16 en tarjetas Nvidia 3000 a sus equivalentes profesionales",
-    "resumen": "Este módulo del kernel de Linux desbloquea la tasa de emisión de instrucciones FP/BF16 en tarjetas gráficas Nvidia de la serie 3000 (GA102, GA103, GA104, GA106) para igualar el rendimiento de las tarjetas profesionales. Utiliza una técnica que combina el desbloqueador CMP (V67/PLM) con la temporización previa al controlador del enfoque UEFI. El módulo se carga temprano en el initramfs, antes de que el controlador NVIDIA se enlace a la tarjeta, aplicando ajustes a los selectores de velocidad (SS0 y SS1) para habilitar la tasa completa de BF16. Esto resulta en una duplicación de la velocidad de emisión de instrucciones para operaciones FMA FP/BF16 a FP32, beneficiando cargas de trabajo intensivas en matrices como LLM prefill, difusión y FlashAttention. No requiere parches manuales de controladores NVIDIA tras cada actualización. La implementación es agnóstica a la distribución Linux, ofreciendo objetivos de compilación para Arch (make arch), Debian/Ubuntu (make deb) y Fedora/RHEL/CentOS (make rpm). Se requiere la adición de `gpu_unlock.targets=all` a la línea de comandos del kernel para activar la funcionalidad. Los informes de usuarios indican ganancias significativas en cargas de trabajo específicas, aunque el límite de potencia de la tarjeta es un factor importante.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50186289,
-    "url": "https://aresluna.org/this-is-a-story-of-a-figma-bug/",
-    "score": 44,
-    "time": 1792611052,
-    "titulo_es": "Un día en Figma: Toma de control de la cuenta de redes sociales",
-    "resumen": "Este artículo es un archivo de un hilo de Twitter de 2021 donde Marcin Wichary, uno de los empleados de Figma, tomó el control de la cuenta de redes sociales de la empresa. El contenido se centra en las experiencias y reflexiones de Wichary durante esta toma de control, que incluyó la publicación de tweets y fotos. Aunque no es un artículo técnico profundo sobre desarrollo de software, se relaciona indirectamente con el ecosistema del desarrollo de software al provenir de una empresa prominente en ese ámbito y ser compartido por una persona dentro de esa industria.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 50222525,
-    "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
-    "score": 113,
-    "time": 1792857437,
-    "titulo_es": "LogSync: Un chip neuronal implantable para monitorizar y modular redes cerebrales",
-    "resumen": "Investigadores de la EPFL han desarrollado LogSync, un sistema neuronal implantable en chip (SoC) de bajo consumo (inferior a 200 microwatios) diseñado para monitorizar la actividad cerebral a nivel de red. El sistema registra señales cerebrales, extrae biomarcadores de la fuerza de las oscilaciones y la sincronía entre diferentes regiones cerebrales, y utiliza un algoritmo de aprendizaje automático para identificar estados cognitivos y emocionales en tiempo real. Estos biomarcadores a nivel de red permiten una detección más precisa de estados relevantes para trastornos psiquiátricos, superando las limitaciones de los sistemas de estimulación cerebral profunda (DBS) de bucle abierto o los de bucle cerrado que se basan en señales de una sola región. LogSync co-diseña el hardware y los algoritmos para optimizar el procesamiento y la decodificación de redes neuronales en un solo chip, empleando cálculos logarítmicos para simplificar las operaciones. La tecnología se validó inicialmente en grabaciones cerebrales humanas para tareas cognitivas y estímulos emocionales, y en experimentos con ratas para generar disparadores de estimulación en fases específicas de la actividad cerebral. El objetivo principal es el desarrollo de terapias psiquiátricas más específicas y de menor consumo energético para trastornos del estado de ánimo y de ansiedad.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50186450,
-    "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
-    "score": 318,
-    "time": 1792611601,
-    "titulo_es": "Físicos atrapan una partícula de antimateria durante un mes",
-    "resumen": "Científicos han logrado atrapar una única partícula de antimateria, un positrón, durante un mes utilizando un método innovador. El proceso implica ralentizar los positrones emitidos por la desintegración de átomos de sodio-22 al hacerlos pasar por un cristal de tungsteno frío. Posteriormente, los positrones se guían mediante campos electromagnéticos hasta una trampa de vacío a temperaturas cercanas al cero absoluto, confinada por campos eléctricos y magnéticos. Esta técnica permite aislar y estudiar estados cuánticos de la antimateria, abriendo la puerta a mediciones de alta precisión como el momento magnético del positrón. Comparar este valor con el del electrón podría arrojar luz sobre el desequilibrio entre materia y antimateria en el universo, un enigma fundamental en física.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50176674,
-    "url": "https://pragtical.dev/blog/pragtical-v3140-release",
-    "score": 22,
-    "time": 1792562944,
-    "titulo_es": "Pragtical v3.14.0: Mejoras en la Interfaz, Gestión de Sesiones y Flujos de Trabajo",
-    "resumen": "La versión 3.14.0 de Pragtical introduce mejoras significativas en la interfaz de usuario y la gestión del flujo de trabajo. Se han añadido menús de aplicación (Archivo, Edición, Búsqueda, Ver, Herramientas, Ayuda) para facilitar el descubrimiento de comandos, con soporte para plugins. El modo sin bordes y la barra de menús están habilitados por defecto, permitiendo una mayor área de arrastre de ventana. La posición de la barra de herramientas es ahora configurable (Izquierda, Abajo, Arriba, Derecha). Los prompts de comando son más flexibles, pudiendo ubicarse en la parte inferior (predeterminado), superior o central, flotando sobre el editor. Esto es posible gracias a una nueva API de 'floating views' compartida que unifica el manejo de menús, popups de completado y diálogos. La gestión de sesiones de espacio de trabajo se ha mejorado, permitiendo seleccionar y eliminar sesiones guardadas, con copias de seguridad automáticas de la sesión actual antes de cargar una nueva. La búsqueda global de proyectos también ofrece posiciones configurables (izquierda, derecha, o popup central) y transiciones animadas opcionales. Se ha optimizado el uso de CPU en reposo y se ha refrescado el Plugin Manager. La funcionalidad de recuento de archivos en directorios colapsados del árbol de archivos también se ha añadido.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50218195,
-    "url": "https://rtfeldman.com/fp-vs-c",
-    "score": 273,
-    "time": 1792813434,
-    "titulo_es": "Comparativa de rendimiento de compresión DEFLATE: Lean, Rust y Roc frente a C",
-    "resumen": "El artículo compara el rendimiento de bibliotecas de compresión DEFLATE implementadas en diferentes lenguajes de programación. Inicialmente, una biblioteca escrita en Lean 4 (un lenguaje funcional y asistente de pruebas) supera a una popular biblioteca en Rust. Sin embargo, ninguna de ellas iguala a libdeflate, una implementación altamente optimizada en C que utiliza SIMD específico de la arquitectura. Posteriormente, se evalúa roc-deflate, una biblioteca escrita en Roc (un lenguaje funcional enfocado en el rendimiento), que se acerca al rendimiento de libdeflate, aunque sigue siendo un 8.9% más lenta en promedio en arquitecturas x64 y un 2.6% en un M1 MacBook Pro, según pruebas realizadas con el corpus Silesia.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50194935,
-    "url": "https://hitogata.neocities.org/Rainbows",
-    "score": 28,
-    "time": 1792675204,
-    "titulo_es": "Rainbows: Especificación de Dispositivos para la Máquina Virtual ok",
-    "resumen": "El artículo describe 'rainbows', una especificación diseñada para añadir soporte de dispositivos de entrada/salida (E/S) a la máquina virtual 'ok'. 'ok' por sí sola maneja la evaluación de instrucciones y pilas de datos/retorno básicas. Para interactuar con el mundo exterior (pantalla, consola, teclado, ratón), 'ok' permite mapear dispositivos en memoria mediante funciones definidas por el usuario como `ok_mem_read` y `ok_mem_write`. 'rainbows' estandariza estos mapeos definiendo direcciones de memoria 'mágicas' para una variedad de dispositivos, transformando 'ok' en una 'computadora de fantasía'. Se detalla la implementación y el diseño de `RbConsole` (para entrada/salida estándar, argumentos de línea de comandos) y `RbArith` (para operaciones aritméticas con enteros sin signo de diferentes anchos). Se menciona que el proyecto está en desarrollo activo y las direcciones de memoria pueden cambiar.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50224916,
-    "url": "https://stealmybitcoin.com/",
-    "score": 522,
-    "time": 1792873831,
-    "titulo_es": "Llave de Bitcoin Oculta en Servidor Vulnerable",
-    "resumen": "El artículo describe un desafío de seguridad donde una clave privada de Bitcoin, valorada en aproximadamente $500, está oculta en un servidor. El acceso a esta clave se facilita a través de un binario llamado 'print-flag' utilizable por la cuenta de usuario PHP. Se menciona explícitamente que la versión de PHP utilizada es anterior a las vulnerabilidades CVE conocidas como PHP2SHELL, lo que sugiere una ruta de explotación predecible. La competencia está abierta para la primera persona que obtenga la billetera, con una sugerencia para donar los fondos a GiveWell si no se necesitan. Se advierte a los participantes sobre la privacidad, indicando que todo el tráfico es registrado y que la máquina es conocida por ser vulnerable, lo que implica que otros atacantes podrían monitorizar o acceder a la actividad y datos más allá del control de los organizadores. Se desaconseja el envío de información privada.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50171379,
-    "url": "https://danielball.com/notes/ai_image_generation.html",
-    "score": 277,
-    "time": 1792524159,
-    "titulo_es": "Guía General de Generación de Imágenes con IA",
-    "resumen": "El artículo es una guía general sobre la generación de imágenes con IA, explicando su funcionamiento a alto nivel, tipos, historia y cómo integrarla en código y agentes. Detalla la evolución de los modelos, como la mejora en la representación de manos y texto, y explica que la mayoría de los modelos actuales son modelos de difusión que aprenden a eliminar ruido. Se introduce el enfoque más reciente donde la generación de imágenes se integra dentro de modelos multimodales que también entienden el lenguaje, mejorando la obediencia a instrucciones, la renderización de texto y la edición de imágenes. Se menciona que la clave práctica reside en la profundidad con la que el modelo de imagen comprende el lenguaje, en lugar de las matemáticas subyacentes.",
+    "id": 50238088,
+    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
+    "score": 376,
+    "time": 1792979266,
+    "titulo_es": "IBM ve un gran valor en modelos de IA de código abierto para empresas en sus instalaciones",
+    "resumen": "IBM, a través de su CEO Arvind Krishna, ha destacado el creciente atractivo de los modelos de IA de código abierto (open weight models) para despliegues empresariales en las propias instalaciones (on-premise). Krishna señala que, si bien los modelos cerrados de vanguardia (frontier models) lideraron en rendimiento en el pasado, la brecha de efectividad con los modelos abiertos se ha reducido significativamente, alcanzando ahora hasta el 90% de la capacidad de los modelos punteros. La principal ventaja radica en el coste: los modelos abiertos ofrecen un rendimiento comparable a una fracción del coste (aproximadamente el 10% del coste de token de los modelos cerrados). Krishna argumenta que para la mayoría de las tareas empresariales comunes, como resúmenes de correos, análisis de contratos o atención al cliente, la efectividad del 90% de los modelos abiertos es más que suficiente, justificando la elección por la considerable reducción de costes. IBM está observando un aumento en el interés por la infraestructura de IA on-premise, estimando que muchas empresas podrían desplegarla en solo dos o tres racks. Sin embargo, reconoce que la complejidad de la gestión y operación de esta infraestructura (ingeniería de kernels, optimización de redes y GPUs, caching) es un desafío importante para las empresas. Para abordar esto, IBM planea lanzar software que simplifique estos despliegues. La demanda de IA on-premise también se espera que impulse las ventas de los aceleradores mainframe de IBM, como las tarjetas Spyre. A pesar de una caída en los ingresos de mainframes, la infraestructura de IBM creció un 5% interanual, y el software (impulsado por Red Hat) mostró un crecimiento más sólido del 9%.",
     "categoria": "IA"
   },
   {
-    "id": 50212065,
-    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-    "score": 1067,
-    "time": 1792774748,
-    "titulo_es": "Presentación de Kimi K3.1 Pro: Un modelo de IA avanzado con ventana de contexto de 1 millón de tokens",
-    "resumen": "El artículo presenta Kimi K3.1 Pro, el primer modelo de la serie K3.1 y el modelo de peso abierto más capaz de clase 3T hasta la fecha, destacando su ventana de contexto de un millón de tokens. Este modelo demuestra mejoras significativas en tareas de codificación, creación 3D, investigación financiera y capacidades de agente. Se lanza también Kimi K3.1 Pro Highspeed, que ofrece una velocidad de 2-3 veces superior. Ambos modelos están disponibles en Kimi.ai, Kimi Work, Kimi Code y vía API, con pesos completos liberados para el 4 de noviembre. Kimi K3.1 Pro es una versión post-entrenada de Kimi K3, optimizada exhaustivamente en su arquitectura (RL, inferencia de contexto largo, eficiencia de entrenamiento, infraestructura de sandbox, etc.) para obtener ganancias consistentes en diversos dominios. En benchmarks de codificación como Terminal-Bench 4.0 y Kimi Code Bench 3.0 Long-horizon, K3.1 Pro iguala o supera a modelos propietarios líderes, mostrando competencia en tareas complejas de codificación, desde correcciones rápidas hasta construcciones de proyectos completos. El modelo también destaca en la creación de experiencias visuales y juegos, integrándose con motores como Unity, Unreal Engine y Godot, y combinando web search con generación 3D. Sus capacidades de codificación de largo alcance se ven reforzadas por aprendizaje por refuerzo a gran escala, como demuestra la construcción de un simulador de dinámica de caminata humana con correcciones iterativas. En creación 3D y razonamiento espacial, K3.1 Pro alcanza un alto rendimiento en BenchCAD, generando modelos 3D a partir de diversas entradas y destacando en modelado paramétrico con herramientas como Blender y software CAD.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50223647,
-    "url": "https://arxiv.org/abs/2610.29162",
-    "score": 210,
-    "time": 1792865097,
-    "titulo_es": "arXivLabs: Un marco para el desarrollo y colaboración de nuevas funcionalidades en arXiv",
-    "resumen": "El artículo describe arXivLabs, un marco de trabajo que permite a colaboradores externos, tanto individuos como organizaciones, desarrollar y compartir nuevas funcionalidades para la plataforma arXiv directamente en su sitio web. arXiv enfatiza su compromiso con los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, trabajando únicamente con socios que se adhieren a estos principios. Se invita a los interesados a explorar la posibilidad de contribuir con ideas de proyectos que aporten valor a la comunidad de arXiv.",
+    "id": 50237078,
+    "url": "https://hypnotize.works/gdx-3ds/postmortem/index.html",
+    "score": 147,
+    "time": 1792970850,
+    "titulo_es": "Análisis Post-Mortem de la Portabilidad de G-Diffuser (F-Zero X Decompilation) a Nintendo 3DS",
+    "resumen": "Este artículo documenta el proceso de portabilidad de G-Diffuser, una descompilación del juego F-Zero X, a la consola Nintendo 3DS. Se detallan dos fases de desarrollo: una primera fase de 24 días que permitió ejecutar el juego a 60 fps en 3D en la New 3DS, y una segunda fase de 43 días que añadió soporte para la Old 3DS, un renderizador nativo y el Expansion Kit (añadiendo editor de circuitos y de máquinas). El proyecto se gestionó con un director único y una sesión de Claude actuando como orquestador de múltiples subagentes. El resultado son tres builds independientes desde un único árbol de código fuente: para Old 3DS (con y sin Expansion Kit) y para New 3DS (con y sin Expansion Kit). Todas las builds leen assets de la tarjeta SD, soportan todas las modalidades de juego, audio DSP nativo, 3D estereoscópico, un dashboard en la pantalla inferior, y funciones de suspensión y cierre. La build de New 3DS mantiene el rendimiento de 60 fps, mientras que la de Old 3DS logra un resultado comparable a través de una ruta diferente, utilizando el renderizador nativo por defecto en la versión 1.0.0.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50211474,
-    "url": "https://blog.calif.io/p/iphone",
-    "score": 1084,
-    "time": 1792772510,
-    "titulo_es": "Demostraciones reveladas en Hexacon",
-    "resumen": "El artículo describe una serie de demostraciones presentadas en Hexacon, París. Se mencionan específicamente 'Signal 1-click', la integración con iMessage, capacidades de iPhone no especificadas y una amenaza persistente de Apple (APT - Apple Persistent Threat). Se indica que todo se liberará en su debido tiempo. La reacción general fue positiva, calificando las demostraciones como 'hermosas e impresionantes'.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50222283,
-    "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
-    "score": 48,
-    "time": 1792856117,
-    "titulo_es": "Actualizaciones sobre artículos de investigación y expositivos, discusión de problemas abiertos y otros temas relacionados con las matemáticas",
-    "resumen": "El artículo, escrito como una publicación invitada por Abhinav Nellore, Johannes Schmitt, Soledad Villar y Rachel Ward, discute la dificultad de comprender los escritos matemáticos generados por OpenAI y sus citas incompletas. Se presenta el repositorio mathcommunity.github.io/oai-math-revised/ como un esfuerzo inclusivo de la comunidad matemática (estudiantes, postdocs, profesores y entusiastas) para mejorar estos escritos. Se invita a la comunidad a participar y a postularse como administradores o revisores. Los comentarios al artículo expresan preocupación sobre si la comunidad debe realizar este trabajo de refinamiento para OpenAI de forma gratuita, la falta de obligación moral o legal de OpenAI para hacerlo y la posibilidad de que estos textos refinados se utilicen como datos de entrenamiento para futuros modelos de IA. También se plantea la cuestión de si este esfuerzo valida el enfoque de OpenAI y distrae a los matemáticos de desarrollar su propia autonomía comunitaria, especialmente en lo que respecta al reconocimiento adecuado de las contribuciones y la historia en las matemáticas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50192975,
-    "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
-    "score": 92,
-    "time": 1792659670,
-    "titulo_es": "TornadoVM 7 Habilita Cargas de Trabajo Nativas de GPU desde Aplicaciones Java",
-    "resumen": "TornadoVM, un framework de programación heterogéneo de GPU de código abierto para Java, ha alcanzado la versión 7.3. Esta versión introduce cambios arquitectónicos significativos, como el uso de la API Foreign Function & Memory (FFM) en lugar de Java Native Interface (JNI) y la eliminación de la dependencia experimental JVM Compiler Interface (JVMCI). La integración con el ecosistema Nvidia se profundiza con un backend CUDA optimizado que soporta el modelo de programación cuTile y permite la llamada directa a bibliotecas CUDA como cuBLAS y CUTLASS. Similarmente, se añade funcionalidad para la biblioteca MXL de Apple. La versión 7 también introduce soporte para ejecución multi-GPU. TornadoVM acelera automáticamente programas Java en CPUs multi-núcleo y GPUs, gestionando la memoria entre el heap de Java y los aceleradores, y compilando código Java a backends OpenCL y Apple Metal, facilitando el desarrollo local y el despliegue en servidores con GPUs Nvidia para cargas de trabajo de ML modernas.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50190363,
-    "url": "https://simedw.com/2026/10/21/world-model-terminal/",
-    "score": 644,
-    "time": 1792635521,
-    "titulo_es": "Modelo de Lenguaje como Terminal Interactiva",
-    "resumen": "El artículo describe el desarrollo y funcionamiento de un modelo de lenguaje de 360 millones de parámetros, basado en Qwen2.5-Coder-0.5B, que simula una terminal interactiva sin un shell o sistema de archivos real. Cada pulsación de tecla es procesada por el modelo, que predice el cambio en la pantalla del terminal. El sistema puede crear archivos, ejecutar aplicaciones como Vim y Tmux, y jugar Snake, manteniendo un estado consistente a lo largo de las interacciones. Las optimizaciones clave incluyen la capacidad del modelo para corregir sus propios errores y la decodificación paralela de filas de pantalla. El modelo trata el terminal como una cuadrícula de caracteres y predice las actualizaciones de la pantalla, incluyendo la posición del cursor. Se implementaron operaciones eficientes como COPY para manejar desplazamientos de pantalla y ediciones de texto, reduciendo significativamente la cantidad de tokens necesarios. La demo se ejecuta en el navegador a través de WebGPU.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50224422,
-    "url": "https://missileer.watch",
-    "score": 179,
-    "time": 1792871007,
-    "titulo_es": "Datos de Muestra: Estado de Aviónica y Archivo",
-    "resumen": "El artículo describe un sistema de desarrollo (dev) que utiliza datos de muestra, no tráfico en vivo. El sistema no utiliza cookies de rastreo. El inicio de sesión es opcional y solo establece una cookie para mantener la sesión. La página lee dos archivos públicos: 'archive.json' y 'status.json'. Cloudflare Web Analytics se utiliza para contar visitas sin cookies. La política de privacidad detalla qué datos se conservan, por qué y cómo eliminarlos. Los tiempos se muestran en UTC. Las grabaciones y decodificaciones se publican bajo CC0 1.0 (dedicación al dominio público), con agradecimiento por la atribución a missileer.watch.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50171936,
-    "url": "https://github.com/astroautomata/PySR",
-    "score": 69,
-    "time": 1792526855,
-    "titulo_es": "Aprendizaje Simbólico en Python y Julia",
-    "resumen": "PySR es una herramienta de código abierto para Regresión Simbólica, cuyo objetivo es encontrar una expresión simbólica interpretable que optimice un objetivo dado. Está diseñado para ser de alto rendimiento, configurable y fácil de usar. Utiliza SymbolicRegression.jl como motor de búsqueda y se complementa con técnicas como el \"Symbolic Distillation\" de Redes Neuronales para extender su aplicabilidad a problemas de alta dimensionalidad, permitiendo interpretar redes neuronales profundas a través de ecuaciones analíticas. El artículo detalla su instalación vía pip/conda, integración con agentes de codificación, y soluciones a problemas comunes como dependencias de bibliotecas y conflictos de GLIBCXX. Se proporciona un tutorial interactivo y un ejemplo de uso con NumPy, demostrando cómo crear, entrenar y predecir con un modelo PySR, así como acceder a las ecuaciones aprendidas en varios formatos (incluyendo lambdas, SymPy, JAX y PyTorch).",
+    "id": 50236102,
+    "url": "https://minimaxir.com/2026/10/cheap-llms/",
+    "score": 388,
+    "time": 1792962691,
+    "titulo_es": "Evolución de Modelos LLM: OpenAI vs. Anthropic y la Caída de Precios",
+    "resumen": "El artículo documenta la rápida evolución y competencia entre OpenAI y Anthropic en el desarrollo de Modelos de Lenguaje Grandes (LLMs) durante los últimos meses. Se detalla una cronología de anuncios de modelos como GPT-5.6 Sol, Luna, Terra, y GPT-6 (Astra, Sol, Luna) por parte de OpenAI, y Claude Sonnet 5, Opus 5, Fable 5, Fable 5.1, y Opus 5.5 por parte de Anthropic. Un tema central es la drástica reducción de precios en el uso de estos modelos, especialmente en los costos de lectura de caché, lo cual es crítico para aplicaciones de agentes de codificación. La competencia ha llevado a reducciones significativas en el costo por tarea, haciendo que el uso de LLMs avanzados sea mucho más accesible y eficiente, con mejoras continuas en rendimiento y coste.",
     "categoria": "IA"
   }
 ]
