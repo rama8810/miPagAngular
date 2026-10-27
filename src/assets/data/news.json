@@ -1,200 +1,182 @@
 [
   {
-    "id": 50241925,
-    "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
-    "score": 53,
-    "time": 1793013350,
-    "titulo_es": "Lanzamiento de Pharo versión 14",
-    "resumen": "El equipo de Pharo ha anunciado el lanzamiento de Pharo 14, su lenguaje de programación puramente orientado a objetos y entorno dinámico interactivo. Esta versión marca la transición a un nuevo ciclo de lanzamientos anuales fijado en otoño (septiembre-noviembre) e integra 978 pull requests junto con la resolución de 616 incidencias desde la versión 13, destacando el progreso impulsado por su comunidad global de código abierto y consorcios de investigación.",
+    "id": 50257419,
+    "url": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+    "score": 183,
+    "time": 1793099877,
+    "titulo_es": "El compilador JIT experimental de Python se encamina a su retirada",
+    "resumen": "El compilador Just-In-Time (JIT) experimental incorporado en CPython 3.13 está en proceso de ser retirado de la rama principal tras el abandono del PEP 836. El Consejo Directivo de Python había condicionado la continuidad del proyecto a la aprobación de un PEP formal que detallara garantías de mantenimiento, compatibilidad con herramientas de instrumentación/depuración y métricas claras de éxito. Debido a discrepancias sobre el alcance técnico del documento y su gobernanza, los autores decidieron retirar la propuesta, poniendo fin por ahora a la integración oficial del JIT en CPython.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50238739,
-    "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
-    "score": 201,
-    "time": 1792985345,
-    "titulo_es": "PaperPilot: Herramienta local de Rust para la manipulación de documentos y asistentes de IA",
-    "resumen": "PaperPilot es un kit de herramientas de Rust para el procesamiento local de documentos PDF y otros, diseñado para integrarse con asistentes de IA. Elimina la dependencia de navegadores web (Chromium) o tiempos de ejecución C++, asegurando que los archivos permanezcan en la máquina del usuario para mayor seguridad. Ofrece funcionalidades para organizar (fusionar, dividir, rotar, eliminar, reordenar, extraer páginas, imposición de folletos, cuadrícula N-up), optimizar (compresión) y extraer contenido (texto plano, OCR con PaddleOCR en Rust) de documentos. También incluye funciones de seguridad como marcas de agua, validación y eliminación de firmas, escaneo de PII y saneamiento profundo de datos de Office (Excel a JSON/CSV). Se integra con clientes de IA como Codex, Claude Code, Kimi Code y Pi a través de un servidor stdio local. La edición comunitaria, de código abierto bajo Apache 2.0, incluye CLI, servidor MCP, puerta de enlace REST, motor WASM y aplicación de escritorio. Una edición empresarial con características avanzadas de seguridad y administración está en desarrollo.",
+    "id": 50257548,
+    "url": "https://www.bitlog.com/2026/10/27/software-may-be-getting-worse-but-it-used-to-be-horrible/",
+    "score": 172,
+    "time": 1793100635,
+    "titulo_es": "El software se está degradando a nuestro alrededor",
+    "resumen": "El autor analiza la percepción sobre la calidad del software a lo largo del tiempo, desmintiendo la idea nostálgica de que en el pasado era intrínsecamente mejor. Argumenta que el incremento en el volumen de código producido sin una reducción proporcional en la tasa de errores inevitablemente genera sistemas con más fallos. Rememora la época de los 90 y principios de los 2000, dominada por Windows, destacando problemas críticos como la inestabilidad recurrente por controladores de dispositivos (drivers) defectuosos, las fugas de recursos del sistema operativo que provocaban pantallas azules de la muerte (BSOD), y la falta de mecanismos robustos de persistencia o autoguardado en las aplicaciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50255298,
+    "url": "https://j11g.com/the-mythical-man-month-in-the-age-of-ai",
+    "score": 304,
+    "time": 1793082337,
+    "titulo_es": "La Ley de Brooks en la Era de la IA: ¿Sigue Vigente?",
+    "resumen": "El artículo explora la aplicabilidad de la Ley de Brooks, que postula que 'añadir personal a un proyecto de software retrasado lo retrasa aún más', en el contexto actual de agentes de IA y LLMs. Inicialmente, parece que la IA podría eludir esta ley al eliminar cuellos de botella tradicionales como la incorporación y las reuniones. Sin embargo, el autor argumenta que la ley no ha desaparecido, sino que ha mutado. Los problemas de tareas secuenciales ('El problema del bebé') persisten, y la sobrecarga de gestión se traslada de la supervisión de personas a la de agentes. Sin una orquestación clara, múltiples agentes pueden interferir entre sí, llevando a resultados erróneos más rápidamente. La versión actualizada de la ley propuesta es: 'Añadir agentes a un proyecto con requisitos poco claros te da la respuesta incorrecta más rápido'.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50256952,
+    "url": "https://gforth.org/manual/1.0/NEWS.html",
+    "score": 81,
+    "time": 1793096601,
+    "titulo_es": "Mejoras y Nuevas Funcionalidades en Gforth",
+    "resumen": "El artículo detalla una serie de mejoras y nuevas funcionalidades introducidas en una versión de Gforth, un intérprete y compilador del lenguaje Forth. Las mejoras abarcan características avanzadas de intérprete como 'Smart .' para inspección de pila, una línea de estado mejorada, y soporte para multitarea en sistemas multi-core mediante `newtask`, `thread-deadline`, `lock`, `unlock` y `critical-section`. Se introducen colas de mensajes (`send-event`, `?events`) y se integra Cilk para la distribución de trabajo. La interfaz C se expande con callbacks (`c-callback`, `add-libpath`). La gestión del diccionario se optimiza con secciones independientes, permitiendo asignaciones locales. Se implementan mecanismos de posposición de palabras (`]]...[[`) y campos con sabor a valor y defer (`value:`, `defer:`). Se introduce el concepto de valores y defers por tarea (`uvalue`, `udefer`) y closures para código con datos (`free-closure`, `[:`, `:>`). Se menciona un nuevo diseño de cabecera de palabra que mejora el rendimiento. El artículo también enumera palabras para manejo de memoria, cadenas, caracteres, localización internacional y compilación, incluyendo aspectos de la gestión de memoria automática para cadenas y arrays.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50256985,
+    "url": "https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/",
+    "score": 360,
+    "time": 1793096870,
+    "titulo_es": "Roblox realiza scraping masivo de datos 3D para investigación de IA, ignorando licencias y términos de servicio",
+    "resumen": "Un artículo detalla cómo un rastreador identificado con un user agent de Roblox (trellis2-data-sourcing/1.0) accedió y descargó 145.5 GB de datos de 1,027 proyectos de las plataformas Open3DLab, SFMLab y SmutBase entre el 15 y el 16 de octubre de 2026. El rastreador ignoró robots.txt, los Términos de Servicio que prohíben el scraping y las licencias de creadores, incluyendo aquellas de uso no comercial. La actividad se detectó el 18 de octubre y se bloquearon los intentos posteriores, aunque el rastreador reanudó brevemente el 19 y 20 de octubre antes de cesar. Se especula que esta actividad está relacionada con el desarrollo por parte de Roblox de un modelo fundacional 3D, conocido como Cube, que busca potenciar la inteligencia artificial en 3D y 4D, incluyendo la generación de personajes y avatares. El user agent pertenece a un investigador involucrado en dicho proyecto.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50245138,
+    "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+    "score": 781,
+    "time": 1793027519,
+    "titulo_es": "Construcción de Modelos de Razonamiento (Desde Cero)",
+    "resumen": "El artículo presenta una serie de ocho videos (11 horas de contenido) que detallan la implementación desde cero de modelos de razonamiento en Python y PyTorch, partiendo de un LLM pre-entrenado (Qwen3). Se enfoca en métodos para evaluar y mejorar estos modelos, incluyendo escalado de inferencia, aprendizaje por refuerzo y destilación. Se explica que los modelos de razonamiento son una mejora de los LLMs convencionales, actuando como el 'motor' dentro de un 'agent harness' (un framework que proporciona gestión de contexto y acceso a herramientas) para abordar tareas más complejas, como asistentes personales, programación avanzada o reservas de viajes. Se establecen como requisitos la familiaridad con Python y PyTorch, y se recomienda el contenido previo sobre 'Build a Large Language Model (From Scratch)', aunque no es estrictamente necesario.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50248055,
+    "url": "https://blog.enlyth.com/posts/oldest-windows-gui-app-win-11/",
+    "score": 492,
+    "time": 1793037415,
+    "titulo_es": "La Aplicación con GUI Más Antigua Sigue Funcionando en Windows 11",
+    "resumen": "El artículo explora la compatibilidad retroactiva de Windows 11 con aplicaciones antiguas. Se descubre que FreeCell.exe (22 de febrero de 1993) funciona sin modificaciones, lo que demuestra la robustez de las versiones de 32 bits de Windows. Se investigan aplicaciones aún más antiguas de versiones preliminares de Windows NT 3.1, identificando CDPLAYER.EXE (16 de noviembre de 1992) como una candidata notable que funciona al usar una DLL de emulación de CD-ROM. Se menciona que las aplicaciones de 16 bits ya no son compatibles de forma nativa en sistemas de 64 bits de Windows, pero pueden ejecutarse con emuladores como OTVDM, citando Reversi.exe (15 de noviembre de 1985) de Windows 1.01 como ejemplo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50245385,
+    "url": "https://www.bbc.com/future/article/20261023-how-solar-became-bigger-than-nuclear",
+    "score": 455,
+    "time": 1793028377,
+    "titulo_es": "El Crecimiento Dramático de la Energía Solar la Lleva a Superar a la Nuclear como Fuente Global de Energía",
+    "resumen": "El artículo detalla el crecimiento exponencial y la superación de la energía nuclear por la energía solar como fuente global de electricidad. Se destacan siete razones clave para este éxito: 1) Caída drástica de los costos de los paneles solares, impulsada por la producción masiva en China y la sobrecapacidad, haciéndola la electricidad más barata de la historia. 2) Crecimiento más rápido de nueva electricidad en la historia, satisfaciendo tres cuartas partes del crecimiento de la demanda mundial en 2025. 3) Proyecciones subestimadas consistentemente por organizaciones influyentes como la IEA, que asumieron un crecimiento lineal y una caída de costos más lenta. 4) El aumento de la eficiencia y la reducción de materiales (silicio, plata) en los paneles. 5) Beneficios climáticos y de salud asociados al aumento de la generación eólica y solar. 6) La escala de fabricación masiva, especialmente en China, que ha llevado los precios de los módulos a mínimos históricos. 7) La energía solar se está convirtiendo en el motor de la transición energética global. El artículo menciona que, aunque China es el líder, Estados Unidos e India también están experimentando un auge significativo en la instalación de energía solar, a pesar de políticas proteccionistas en EE.UU., debido a su competitividad económica. La energía solar ha aumentado unas 2.700 veces desde el año 2000, mientras que la generación nuclear se ha mantenido casi constante. La energía solar se considera una tecnología madura, capaz de generar electricidad durante décadas con costos de operación mínimos una vez instalada.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50235449,
+    "url": "https://github.com/google-research/kauldron",
+    "score": 14,
+    "time": 1792958013,
+    "titulo_es": "Biblioteca modular y escalable para entrenar modelos de ML",
+    "resumen": "Kauldron es una biblioteca diseñada para el entrenamiento de modelos de aprendizaje automático (ML), con un enfoque principal en la velocidad de investigación y la modularidad. Su diseño modular permite una fácil adaptación y extensión, facilitando a los investigadores la experimentación rápida con diferentes enfoques y arquitecturas. La escalabilidad de la biblioteca permite manejar conjuntos de datos y modelos de diversos tamaños, lo que la hace adecuada tanto para prototipos rápidos como para entrenamiento a gran escala. El artículo menciona que es útil para publicaciones y proporciona una forma de citar el repositorio si se utiliza en investigaciones.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50245831,
+    "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
+    "score": 525,
+    "time": 1793029883,
+    "titulo_es": "CSS-Tricks recupera la independencia",
+    "resumen": "El artículo anuncia que CSS-Tricks ha vuelto a ser un sitio independiente tras haber sido adquirido por DigitalOcean en 2022. El fundador original, Chris Coyier, retoma la propiedad y la gestión a tiempo completo, con el objetivo de revitalizar la comunidad y hacerla más inclusiva para todos los niveles de aprendizaje en el desarrollo frontend. Se planean cambios, incluyendo un regreso a las raíces publicitarias con enfoques innovadores para la monetización (publicidad, patrocinios, paquetes de anuncios), el lanzamiento de un curso de HTML/CSS para principiantes y la reactivación del boletín. La frecuencia de publicación de artículos se ajustará, centrándose en uno o dos por semana, y se reabrirá la recepción de contribuciones de invitados, aunque con un proceso de revisión más selectivo. El autor expresa su deseo de ceder el protagonismo a la comunidad, actuando más como editor y facilitador, con el objetivo de convertir CSS-Tricks en una plataforma para que otros compartan sus ideas.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50248371,
+    "url": "https://github.com/microsoft/pylance-release/blob/main/docs/tsp/type-server-protocol.md",
+    "score": 258,
+    "time": 1793038489,
+    "titulo_es": "Protocolo Type Server (TSP) para análisis de Python",
+    "resumen": "El Protocolo Type Server (TSP) es un protocolo JSON-RPC diseñado para consultar un 'type server' que mantiene el estado del análisis de tipos en un espacio de trabajo de Python. Responde a solicitudes sobre la versión del protocolo, 'snapshots', rutas de búsqueda de Python, resolución de importaciones y consultas de tipos (calculados, declarados y esperados). TSP reutiliza formas de datos y convenciones del Language Server Protocol (LSP), como 'Position' y 'Range', y representa URIs como cadenas de texto. Los métodos TSP se prefijan con 'typeServer/'. El protocolo utiliza versionado semántico para la compatibilidad cliente/servidor. TSP soporta una conexión principal para operaciones como inicialización, sincronización de documentos y notificaciones que modifican el estado. Opcionalmente, permite conexiones adicionales de solo lectura ('multi-connection mode') para mejorar el rendimiento en tareas concurrentes como consultas de tipos intensivas o workers en segundo plano, sin bloquear la conexión principal. La negociación del modo multiconexión ocurre durante la inicialización de LSP, a través de capacidades específicas. Los transportes para conexiones adicionales, como 'ipc', se negocian por separado de la conexión principal.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50255177,
+    "url": "https://www.unix.dog/~yosh/blog/2026-10-25_pratt-parsing.html",
+    "score": 68,
+    "time": 1793080943,
+    "titulo_es": "Introducción al Análisis de Expresiones con Parsing Pratt",
+    "resumen": "El artículo describe el proceso de creación de un analizador de expresiones C, comparando el algoritmo Pratt con el algoritmo Shunting Yard. El autor explica que Pratt parsing es menos común en los currículos académicos pero es valioso en el desarrollo de compiladores. Se detalla cómo el algoritmo Pratt utiliza la pila de llamadas para manejar la precedencia de operadores y subexpresiones de forma recursiva, a diferencia del enfoque de pila explícita del Shunting Yard. Se destaca la extensibilidad del Pratt parsing para manejar operadores unarios, asociatividad a la derecha y funciones con argumentos variables, mostrando cómo su implementación en C puede simplificarse al eliminar la pila explícita de operadores y aprovechar la pila de llamadas, permitiendo una extensión sencilla para añadir características como paréntesis. La estructura para añadir operadores se basa en definir su poder de enlace y las subrutinas asociadas (prefijo y postfijo) dentro de una estructura de reglas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50259406,
+    "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+    "score": 49,
+    "time": 1793109375,
+    "titulo_es": "Política de Datos para Productos Comerciales de Anthropic",
+    "resumen": "Este artículo detalla la política de uso de datos para los productos comerciales de Anthropic, incluyendo Claude for Work y la API de Anthropic. Por defecto, los datos de entrada y salida de estos productos no se utilizan para entrenar modelos. Sin embargo, los datos proporcionados explícitamente a través de comentarios (botón pulgar arriba/abajo) o cuando el usuario elige permitirlo, sí pueden ser usados para entrenar modelos. Estos comentarios se almacenan hasta por 5 años y se desvinculan de las identidades de usuario. Los datos de conectores (como Google Drive) no se incluyen directamente, a menos que se copien en la conversación. Los administradores de planes de equipo/empresa pueden deshabilitar la función de comentarios para su organización. La información adicional sobre privacidad y términos comerciales se encuentra en el Trust Center y los Términos Comerciales.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50252159,
+    "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+    "score": 160,
+    "time": 1793054508,
+    "titulo_es": "Incidente de aislamiento de inquilinos en el modelo GLM-5.3 de Workers AI",
+    "resumen": "El 8 de septiembre de 2026, se notificó un problema de aislamiento de inquilinos en el modelo GLM-5.3 de Workers AI (@cf/zai-org/glm-5.3), que comenzó el 27 de agosto de 2026. Una investigación reveló que las respuestas a prompts con más de 681,280 tokens podían contener datos de otras sesiones de usuario. El incidente se debió a dos causas principales: una desconfiguración en la inferencia del motor SGLang, donde la caché KV no tenía suficiente espacio para el contexto de 1,048,576 tokens, y un bug en SGLang que, en lugar de rechazar prompts excesivamente largos, generaba una caché KV parcial y la transfería, llevando al nodo de decodificación a usar datos obsoletos. Se remediaron las causas configurando la caché KV para albergar el contexto completo y endureciendo la gestión de errores en SGLang. El modelo fue restaurado el 9 de septiembre, confirmándose que ningún otro modelo resultó afectado.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50243061,
+    "url": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+    "score": 254,
+    "time": 1793020416,
+    "titulo_es": "Apple renueva el iPad mini con su mayor actualización hasta la fecha",
+    "resumen": "Apple ha presentado el nuevo iPad mini, destacando una pantalla OLED más grande de 8.5 pulgadas con mayor contraste y brillo, un diseño aún más delgado y ligero, y resistencia al agua y al polvo. Incorpora el potente chip A20 Pro, que mejora significativamente el rendimiento en IA gracias a sus Neural Accelerators y Dual 16-core Neural Engine. Cuenta con una cámara frontal de 12MP con Center Stage en el borde horizontal, un Acoustic Display para una mejor experiencia de audio, conectividad inalámbrica y celular más rápida, y soporte de carga rápida. El dispositivo viene con iPadOS 27 y las capacidades de Apple Intelligence y Siri, permitiendo al usuario interactuar de forma más contextual. La pre-venta comienza el 28 de octubre y estará disponible el 6 de noviembre. El nuevo diseño tiene 5.4 mm de grosor y estará disponible en acabados medianoche y estrella. La pantalla OLED Super Retina XDR ofrece control de iluminación a nivel de píxel, soporta el gamut de color P3, alcanza picos de brillo de 1200 nits y ofrece una opción de pantalla con nano-textura para reducir el deslumbramiento, siendo ideal para entornos con mucha luz.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50253529,
+    "url": "https://github.com/otya128/winevdm",
+    "score": 117,
+    "time": 1793063704,
+    "titulo_es": "Windows de 16 bits en Windows de 64 bits",
+    "resumen": "El artículo describe una solución para ejecutar aplicaciones de Windows de 16 bits (versiones 1.x, 2.x, 3.0, 3.1, etc.) en sistemas operativos Windows de 64 bits. Utiliza una versión modificada de winevdm, un emulador de 16 bits adaptado para 64 bits. El sistema aprovecha un mecanismo de Windows de 64 bits que inicia instaladores alternativos (no de 16 bits) cuando detecta un instalador de 16 bits. También aborda el problema de programas que intentan guardar configuraciones en el directorio de Windows (%WINDIR%) redirigiéndolos. Adicionalmente, puede ejecutar ejecutables de DOS mediante emulación, aunque se recomienda DOSBox o MS-DOS Player para una mejor compatibilidad. La emulación de DOS es incompleta y se puede configurar la versión de DOS a través de la variable de entorno VDMDOSVER. Se menciona la reinstalación del procedimiento si el registro se inicializa mediante Windows Update y la desinstalación mediante uninstall.reg.",
     "categoria": "Desarrollo de Software"
   },
   {
     "id": 50241664,
     "url": "https://brennenputh.me/blog/printable-websites/",
-    "score": 151,
+    "score": 385,
     "time": 1793010734,
-    "titulo_es": "Optimización de la Experiencia de Impresión de Páginas Web con CSS",
-    "resumen": "El artículo aborda los desafíos y soluciones para mejorar la experiencia de impresión de páginas web. El autor relata su experiencia personal al intentar optimizar la impresión de su propio sitio web, encontrando problemas con el tamaño del texto, el diseño de cabeceras y la visibilidad de los enlaces en blanco y negro. Se destaca el uso de selectores CSS específicos para contenido imprimible como una solución efectiva, demostrando con un fragmento de código cómo aplicar estos estilos. A pesar de reconocer que la impresión de páginas web puede no ser una prioridad para muchos, el autor argumenta que facilitar la experiencia de lectura en formatos preferidos por el usuario, como el papel, es un acto de amabilidad del desarrollador hacia el usuario, contribuyendo a la creación de buen software.",
+    "titulo_es": "Optimización de la Impresión de Páginas Web con CSS",
+    "resumen": "El artículo aborda la problemática de la impresión de páginas web, destacando las deficiencias en el formato por defecto (texto demasiado grande, encabezados mal formateados, enlaces grises en blanco y negro). El autor comparte su experiencia al implementar estilos CSS específicos para la impresión utilizando `@media print`, con el objetivo de mejorar la legibilidad y la presentación de documentos impresos. Explica la utilidad de selectores CSS para adaptar el contenido al medio impreso, permitiendo ocultar elementos no deseados y ajustar el tamaño y color del texto. Aunque reconoce que la impresión de páginas web no es una prioridad para muchos usuarios y que la optimización puede requerir tiempo, enfatiza la importancia de ofrecer esta opción como una cortesía hacia el usuario y para mejorar la experiencia de contenido en su medio preferido. El autor también menciona la retroalimentación recibida y la simplificación de sus hojas de estilo como resultado.",
     "categoria": "Frontend"
   },
   {
-    "id": 50242843,
-    "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
-    "score": 50,
-    "time": 1793019507,
-    "titulo_es": "Herramienta interactiva expone la estructura de poder que extrae mano de obra barata de trabajadores de datos en el Sur Global para hacer funcionar los algoritmos de IA cotidianos",
-    "resumen": "El artículo describe la creación de un mapa interactivo por Cunyan Ma, una estudiante de la Universidad de Brown, que visualiza la cadena de valor de la inteligencia artificial, conectando empresas tecnológicas y sus intermediarios con trabajadores de datos en el Sur Global. La herramienta expone cómo la mano de obra de bajo costo, a menudo enfrentando condiciones laborales precarias y contenido perturbador, es fundamental para el entrenamiento y funcionamiento de los algoritmos de IA. Ma busca iluminar esta estructura, a la que denomina 'colonialismo de IA', para mostrar el impacto social y económico de la extracción de trabajo digital, que se mantiene opaco intencionalmente para evitar la rendición de cuentas. El mapa, que vincula empresas de etiquetado de datos, sus clientes corporativos y países con centros de trabajadores, sirve como una herramienta educativa para comprender la arquitectura económica y política detrás de la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50209278,
-    "url": "https://brashandplucky.com/2026/10/15/growing-trees.html",
-    "score": 151,
-    "time": 1792764462,
-    "titulo_es": "Crecimiento de árboles procedurales basado en modelos de autoorganización",
-    "resumen": "El artículo describe un método para la síntesis de imágenes de árboles utilizando un modelo de crecimiento procedural inspirado en el trabajo de Palubicki et al. (SIGGRAPH 2009). El proceso se basa en la competencia de los 'yemas' (buds) por la luz, donde el árbol distribuye un recurso de crecimiento. Las yemas exitosas generan nuevos 'metámeros' (segmentos de tallo con hoja y yemas), modificando la disponibilidad de luz para las siguientes iteraciones. Se utilizan modelos de luz basados en rejillas de vóxeles y la técnica de colonización espacial. El recurso de crecimiento se distribuye a través de la estructura de ramificación, siguiendo el modelo de Borchert-Honda, con un parámetro (lambda) que ajusta la distribución entre el eje principal y las ramas laterales. Las yemas que reciben suficiente recurso generan nuevos segmentos, mientras que las que reciben menos permanecen inactivas. La dirección de crecimiento de los nuevos segmentos se determina por una combinación ponderada de la dirección previa, la búsqueda de luz, el tropismo (hacia arriba/abajo) y ruido, permitiendo la formación de patrones de ramificación complejos. La filotaxis (disposición de las yemas) y la sombra proyectada influyen en la forma de la copa. Las ramas laterales se podan si su contribución de luz es insuficiente. El grosor de las ramas se calcula posteriormente usando un modelo de tubería, acumulando el radio desde las puntas hacia la raíz. El esqueleto del árbol resultante se utiliza para generar mallas de corteza y para la colocación de 'tarjetas de ramitas' con hojas, mejorando el sombreado y el detalle visual. Se mencionan técnicas de optimización para diferentes niveles de detalle, incluyendo 'impostores direccionales' y la exportación de vistas de campo de profundidad para renderizado de bosques.",
+    "id": 50247928,
+    "url": "http://muratbuffalo.blogspot.com/2026/10/the-man-from-future-why-johnny-cant.html",
+    "score": 205,
+    "time": 1793036995,
+    "titulo_es": "John von Neumann: El Hombre del Futuro y su Legado en Ciencia y Matemáticas",
+    "resumen": "El artículo narra la vida y obra del influyente matemático y científico John von Neumann, destacando su participación en campos tan diversos como la teoría de conjuntos, la mecánica cuántica, las álgebras de operadores, la teoría ergódica, la teoría de juegos, la teoría de la utilidad esperada, el método Monte Carlo, la arquitectura de computadoras de programa almacenado, la predicción numérica del tiempo, la computación tolerante a fallos y los autómatas celulares. Se enfatiza su prodigiosa capacidad intelectual desde la infancia, su dominio de múltiples idiomas y su extraordinaria memoria. El texto también contextualiza el fenómeno de mentes brillantes surgidas en Budapest a principios del siglo XX, como von Neumann, Eugene Wigner, Edward Teller y otros, y reflexiona sobre las influencias familiares y educativas que pudieron haber fomentado su desarrollo intelectual, como las discusiones académicas en la mesa familiar y la importancia de la educación multilingüe.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50244744,
-    "url": "https://www.theguardian.com/us-news/2026/oct/26/peta-monkey-experiment-video",
-    "score": 12,
-    "time": 1793026250,
-    "titulo_es": "Grupo de derechos de los animales publica video de macacos bebés sufriendo experimentos de laboratorio",
-    "resumen": "El artículo detalla un estudio de seis años (2014-2020) financiado por los NIH en el Centro Nacional de Investigación de Primates de la Universidad de Washington (WaNPRC). El proyecto investigó la neurotoxicidad prenatal del ácido domoico en 28 crías de macaco, que fueron separadas de sus madres al nacer, alimentadas con biberón y alojadas individualmente. Las crías, algunas de tan solo dos días, se sometieron a pruebas neurológicas con electrodos en la cabeza para evaluar el daño cerebral inducido por la exposición prenatal al toxina. El metraje publicado por PETA muestra a los animales angustiados. Expertos en primates y PETA critican la separación materna por ser poco ética y distorsionar los resultados de la investigación. El WaNPRC afirma que prioriza el bienestar animal y cuenta con personal especializado, aunque admite que existen protocolos activos para estudios con animales infantes. PETA argumenta que la crueldad y las consecuencias biológicas de la separación materna invalidan la investigación.",
+    "id": 50241925,
+    "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
+    "score": 270,
+    "time": 1793013350,
+    "titulo_es": "Lanzamiento de Pharo 14: Nueva Versión del Entorno de Programación Orientado a Objetos",
+    "resumen": "Pharo ha lanzado su versión 14, una iteración significativa enfocada en simplicidad y retroalimentación inmediata. Los desarrollos principales de esta versión se centraron en tres áreas clave, aunque los detalles específicos no se mencionan en el extracto proporcionado.  Este lanzamiento marca la transición del calendario de versiones de primavera a otoño.  La versión 14 integra 978 Pull Requests en el repositorio principal de Pharo y ha resuelto 616 incidencias desde Pharo 13.  El proyecto cuenta con 432 forks y 1,494 estrellas en GitHub, además de importantes contribuciones a proyectos asociados. Pharo es un proyecto de código abierto desarrollado por una comunidad global, coordinado por el consorcio Pharo y apoyado por diversas instituciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50259271,
+    "url": "https://www.statnews.com/2026/10/27/cancer-vaccines-intismeran-autogene-esmo-results-delivery-access/",
+    "score": 14,
+    "time": 1793108869,
+    "titulo_es": "“¿Cuál es la palabra? Pon a prueba tus conocimientos con nuestro nuevo minicruzado de entre semana”",
+    "resumen": "El artículo discute los avances monumentales en la ciencia del cáncer, específicamente el éxito de una \"vacuna contra el cáncer\" personalizada, intisemran autogene, en un estudio de Fase 3. El estudio demostró una reducción del 42% en el riesgo de recurrencia o muerte en comparación con el pembrolizumab solo. Este es el primer tratamiento de neoantígeno y ARNm en oncología en cumplir su objetivo de Fase 3, lo que indica que las vacunas personalizadas contra el cáncer son viables. El desafío principal ahora es acelerar su desarrollo y mejorar el acceso de los pacientes. El artículo compara esto con la historia de las pruebas genéticas BRCA, donde la ciencia superó la entrega y los costos, lo que provocó retrasos en el acceso. Para las vacunas contra el cáncer, se deben abordar varios desafíos: las vías regulatorias actuales, diseñadas para terapias genéricas, imponen limitaciones y aumentan los costos para las vacunas personalizadas. Se están realizando esfuerzos, como la \"Iniciativa de Vacunas contra el Cáncer Terapéutico\", para construir redes de ensayos clínicos e infraestructura. Se propone un marco para validar los neoantígenos y la fabricación, lo que permite una extensión más rápida a nuevos cánceres con evidencia post-comercialización rigurosa. La IA también se destaca como una herramienta para reducir costos y tiempo en varias etapas, desde el análisis de tejidos hasta el control de calidad de la fabricación. El proceso de producción de vacunas personalizadas, que implica la recolección de muestras, secuenciación, identificación de neoantígenos, fabricación y administración, se describe como complejo y específico para cada paciente.",
     "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50228115,
-    "url": "https://github.com/notaroomba/keybytes",
-    "score": 228,
-    "time": 1792900076,
-    "titulo_es": "Teclado Modular Verdaderamente Modular",
-    "resumen": "El artículo describe un teclado modular diseñado en KiCad, compuesto por dos PCBs principales apilables (Keybit y Keyword) y unidades individuales de 1u (Keybit). Cada unidad Keybit integra un switch Cherry MX y un microcontrolador CH32V003, con pogo pins para alimentación (3.3V, GND) y comunicación I2C en sus laterales para la interconexión. La placa Keyword está dividida en dos PCBs: una superior con un STM32WB55RGV6, antena y flash, y una inferior con conector USB-C, cargador y conversor buck-boost. Se proporcionan esquemáticos, layouts y vistas 3D. Los casos (carcasas) personalizados están diseñados en Onshape. El proyecto utiliza la licencia MIT.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50197108,
-    "url": "https://charliegerard.dev/blog/overgrown-extension/",
-    "score": 364,
-    "time": 1792684341,
-    "titulo_es": "Extensión de Chrome: Las Pestañas del Navegador se Cubren de Vegetación con el Tiempo",
-    "resumen": "El artículo describe el desarrollo de una extensión de Chrome que simula el crecimiento de plantas en las pestañas del navegador que han sido dejadas sin leer por un período prolongado. Inspirado en la idea de la naturaleza reclamando edificios abandonados en escenarios post-apocalípticos, el proyecto aplica este concepto al entorno digital. La extensión visualiza este \"abandono\" mediante el crecimiento de vegetación (plantas, enredaderas) sobre las pestañas inactivas. Los usuarios pueden interactuar con estas pestañas \"cubiertas de vegetación\" eliminando las plantas para acceder a su contenido. La arquitectura de la extensión se divide en tres componentes principales: un script de fondo (background.js) que gestiona el ciclo de vida de la \"jungla\" en cada pestaña, un script de contenido (content script) que renderiza las plantas y animaciones directamente en las pestañas, y una carpeta de interfaz de usuario (UI) que maneja la configuración (tiempos, selección de \"armas\" para eliminar plantas) y la visualización del estado de las pestañas. El autor menciona que, si bien no garantiza un aumento en la lectura de pestañas, añade un elemento lúdico y gratificante a la gestión de las mismas. Se incluyen recursos visuales como SVGs para plantas y armas, lógica para el crecimiento y posicionamiento de la vegetación, un \"reloj de abandono\" y efectos de sonido. El proyecto se presenta como una forma divertida de retomar la construcción de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50243061,
-    "url": "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
-    "score": 81,
-    "time": 1793020416,
-    "titulo_es": "Apple actualiza el iPad mini con su mayor rediseño, pantalla OLED y chip A20 Pro",
-    "resumen": "Apple ha lanzado el nuevo iPad mini, destacando una pantalla OLED de 8.5 pulgadas con mayor contraste y brillo, un diseño más delgado y ligero (5.4 mm), y resistencia al agua y polvo (IP67). El dispositivo integra el chip A20 Pro con aceleradores neuronales para IA avanzada, una cámara frontal de 12MP con Center Stage en el borde horizontal, y soporte para carga rápida. Viene con iPadOS 27 y las nuevas capacidades de Apple Intelligence y Siri. La pantalla OLED Super Retina XDR ofrece control de iluminación a nivel de píxel, brillo máximo de 1200 nits, y una opción de nano-textura para reducir el deslumbramiento. La pre-venta inicia el 28 de octubre y estará disponible el 6 de noviembre.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50242555,
-    "url": "https://danielmiessler.com/blog/writing-is-closer-to-thought-than-code",
-    "score": 46,
-    "time": 1793017935,
-    "titulo_es": "La Articulación Escrita como Fuente de Verdad en el Desarrollo con IA",
-    "resumen": "El artículo argumenta que en el desarrollo de software asistido por IA, la articulación escrita y detallada de la intención y el 'qué' y 'por qué' del proyecto es el artefacto más importante, superando la primacía del código. Contrasta esta visión con la de quienes priorizan el código como fuente de verdad. El autor sostiene que la escritura es la forma más cercana al pensamiento humano, proporcionando la 'precisión' necesaria para guiar a la IA, mientras que el código, aunque preciso en su ejecución, es una abstracción que puede divergir del objetivo deseado. La comunicación efectiva y la precisión en la definición del objetivo (accuracy) son cruciales para evitar resultados no deseados, siendo la escritura la herramienta principal para lograrlo, más allá de formatos rígidos de especificación.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50237224,
-    "url": "https://arxiv.org/abs/2512.19428",
-    "score": 162,
-    "time": 1792972325,
-    "titulo_es": "arXivLabs: Colaboración y Desarrollo de Nuevas Funcionalidades",
-    "resumen": "El artículo describe arXivLabs, un framework diseñado para permitir que colaboradores externos desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza la adhesión a valores como la apertura, la comunidad, la excelencia y la privacidad de los datos del usuario por parte de los colaboradores. arXiv busca activamente ideas de proyectos que aporten valor a su comunidad y se asocia con entidades que comparten estos principios.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50235017,
-    "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
-    "score": 290,
-    "time": 1792955491,
-    "titulo_es": "El Nacimiento de un Desarrollador a Través de los Cracktros y la Demoscene",
-    "resumen": "El artículo narra la evolución de la pasión por la tecnología de un individuo, comenzando en la infancia en un entorno pre-Internet. Inicialmente, se describe el descubrimiento de la piratería de juegos y la modificación de archivos guardados para obtener ventajas, lo que generaba una sensación de poder divino. La llegada del módem y el acceso a BBS (Bulletin Board Systems) expandió este mundo, conectando al autor con una comunidad digital más amplia. Un punto de inflexión crucial fue la exposición a los 'cracktros', introducciones visuales y auditivas elaboradas que acompañaban a los juegos pirateados, creadas por los 'crackers' que habían roto la protección del software. Estos cracktros, considerados precursores de las demos y de la demoscene, se describen como experiencias sensoriales intensas y 'fuera del cuerpo', que inspiraron al autor a querer crear algo similar: 'demos' capaces de alterar la percepción de la realidad y dejar al espectador asombrado. El artículo se centra en cómo estas experiencias tempranas, especialmente la creatividad y el impacto de los cracktros, moldearon su aspiración a convertirse en un creador de software, utilizando la frase 'I want to code demos' como un ideal de programación que va más allá de la simple funcionalidad para impactar profundamente al usuario.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50225695,
-    "url": "https://danluu.com/ambitious/",
-    "score": 857,
-    "time": 1792878451,
-    "titulo_es": "Ambiciones en el Desarrollo de Software y el Impacto de pgrust",
-    "resumen": "El artículo discute la creciente ambición en el desarrollo de software, ejemplificada por el proyecto pgrust, que busca mejorar el rendimiento de PostgreSQL mediante una reescritura en Rust. A pesar del escepticismo generalizado hacia proyectos de reescritura, a menudo de baja calidad, pgrust se destaca por la rigurosa estrategia de pruebas de su desarrollador, Michael Malis. Estas pruebas han descubierto múltiples errores en el propio PostgreSQL, lo que sugiere un impacto positivo incluso si pgrust no alcanza el éxito comercial. El enfoque principal de pgrust es el rendimiento, y las optimizaciones desarrolladas podrían ser adoptadas por otros sistemas como Clickhouse. El autor enfatiza que la era actual de avances tecnológicos permite abordar proyectos de software que antes eran inviables. Se mencionan ejemplos personales de mejora de rendimiento, como un motor de expresiones regulares optimizado y una bifurcación de ripgrep, destacando la importancia de las pruebas y la evaluación comparativa para asegurar la calidad del software construido.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50237379,
-    "url": "https://github.com/KillaBoi/StealMyBitcoin-PoC",
-    "score": 153,
-    "time": 1792973717,
-    "titulo_es": "Reproducción en Python de la explotación \"Steal My Bitcoin\" usando callbacks PHP",
-    "resumen": "Este artículo detalla un script de Prueba de Concepto (PoC) escrito en Python que reproduce la secuencia de peticiones utilizada en el desafío CTF \"Steal My Bitcoin\". El script utiliza únicamente la biblioteca estándar de Python y se enfoca en explotar una vulnerabilidad de callback PHP en un entorno de laboratorio local simulando la configuración del desafío (Alpine PHP 8.4.26 CLI sobre Docker con nginx). El PoC construye las peticiones HTTP dinámicamente, verifica cada fuga de información (heap y code leak) antes de proceder, y registra los bytes HTTP de la ejecución. La explotación depende de la localización de punteros en el heap y en el código, que varían entre ejecuciones y workers, requiriendo la calibración de offsets específicos para la versión y distribución de PHP utilizada. Se enfatiza la importancia del entorno de construcción de PHP (Alpine vs. Debian) para la correcta alineación de los punteros y el éxito de la explotación.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50235780,
-    "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html",
-    "score": 236,
-    "time": 1792960351,
-    "titulo_es": "Fallas y Soluciones en la Ingeniería de Contexto de IA",
-    "resumen": "El artículo discute la evolución y los desafíos de la \"Ingeniería de Contexto\" en el campo de la Inteligencia Artificial, especialmente con el avance de modelos con ventanas de contexto cada vez más grandes (millones de tokens). Se exploran las fallas comunes que surgen al intentar incluir grandes cantidades de información en el contexto de los modelos de IA, incluyendo el envenenamiento del contexto (context poisoning), la distracción del contexto (context distraction), la confusión del contexto (context confusion) y el choque del contexto (context clash). Se postula que, a pesar de los avances en el tamaño de las ventanas de contexto, la gestión efectiva de la información y la comunicación de instrucciones claras a los modelos de IA seguirá siendo un desafío fundamental, análogo a las dificultades que enfrentamos al comunicarnos con otros humanos, aunque con especificidades propias de la arquitectura y entrenamiento de los modelos de IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50242308,
-    "url": "https://evancz.dev/why-is-it-so-expensive-to-send-an-email",
-    "score": 7,
-    "time": 1793016392,
-    "titulo_es": "Por qué el envío de correos electrónicos es sorprendentemente complicado",
-    "resumen": "El artículo explora la complejidad subyacente al envío de correos electrónicos, desmitificando la idea errónea de que es tan simple como una solicitud HTTPS. Detalla el protocolo SMTP, sus desafíos históricos de seguridad como la suplantación de identidad y la necesidad de mecanismos de autenticación como DNS TXT records (SPF, DKIM). El autor relata su experiencia implementando el envío de correos desde cero usando Haskell y C, superando obstáculos técnicos para asegurar que los correos lleguen a la bandeja de entrada y no a spam, destacando la complejidad de los filtros antispam de diferentes proveedores de correo electrónico.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50233779,
-    "url": "https://lynchlab.net/llm-skin-cancer",
-    "score": 633,
-    "time": 1792948538,
-    "titulo_es": "Un modelo CNN de 10 años supera a GPT-6 Astra y Claude Fable 5.1 en el diagnóstico de cáncer de piel",
-    "resumen": "Un dermatólogo comparó la capacidad de diagnóstico de cáncer de piel de los modelos de IA de vanguardia GPT-6 Astra y Claude Fable 5.1 con una red neuronal convolucional (CNN) Inception v3 de 10 años, afinada con imágenes dermatológicas públicas.  El estudio utilizó 200 lesiones de piel confirmadas por biopsia del conjunto de datos MILK10k. La CNN demostró ser superior, identificando correctamente el diagnóstico (de seis posibilidades) en el 62% de los casos (125/200), mientras que GPT-6 Astra y Claude Fable 5.1 lo hicieron en el 42% (84/200 y 85/200, respectivamente).  La CNN tuvo un mejor desempeño en el reconocimiento de lunares y queratosis seborreicas, diagnósticos en los que los LLM fallaron significativamente.  Los LLM mostraron tendencias a diagnósticos erróneos favoritos, mientras que la CNN, a pesar de ser un modelo más antiguo y ajustado con recursos limitados (una GPU H100 durante unos 20 minutos), superó a los modelos avanzados.  La CNN, además, es lo suficientemente pequeña como para ejecutarse en un navegador web móvil a través de WebGPU.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50244735,
-    "url": "https://github.com/HeyPuter/everything",
-    "score": 6,
-    "time": 1793026221,
-    "titulo_es": "El Proyecto Everything: Reconstruyendo y Liberando el Software Mundial desde Cero",
-    "resumen": "El Proyecto Everything busca crear alternativas gratuitas y de código abierto a todo el software propietario existente, desde suites de oficina y herramientas de colaboración hasta software de diseño y productividad. El proyecto se centra en la reconstrucción completa desde cero, reuniendo todas las aplicaciones y herramientas desarrolladas en un único repositorio (monorepository). Requiere Node.js 22.12 o superior y su código, incluyendo sub-proyectos, módulos y componentes, está licenciado bajo MIT, con posibles excepciones para librerías de terceros. El objetivo es democratizar el acceso al software proporcionando versiones de código abierto de aplicaciones comerciales populares como Office, Slack, Photoshop y AutoCAD.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50234879,
-    "url": "https://iosiflazaridis.github.io/battles-of-the-romans/",
-    "score": 135,
-    "time": 1792954694,
-    "titulo_es": "Batallas Terrestres y Marítimas Romanas",
-    "resumen": "El artículo describe una base de datos interactiva de todas las batallas terrestres y marítimas nombradas en las que participaron las fuerzas romanas, desde el Reino de Roma hasta la caída de Teodoro en 1475. Incluye el Reino, la República, el Imperio (incluyendo los tribunales de Occidente y Oriente) y sus estados sucesores posteriores a 1204. La base de datos detalla la ubicación de cada batalla, los oponentes, el resultado (victoria, derrota o empate), y las fuerzas romanas involucradas. Permite a los usuarios explorar las batallas por período de tiempo o arrastrar un control deslizante para ver batallas en un lapso de 25 años. La visualización en el mapa muestra la frecuencia y los oponentes de las batallas en diferentes ubicaciones, con puntos que se fusionan al alejar el zoom y se dividen al acercar. Se proporcionan registros completos de las batallas, incluyendo fechas, lugares, bandos, comandantes, el ejército romano y sus idiomas, fuentes y razones para las entradas dudosas o tradicionales. Las entradas tradicionales se marcan cuando se basan en fuentes antiguas que los historiadores modernos dudan. El conjunto incluye visualizaciones de mapas de varias regiones, tablas de resultados y listas completas de batallas. Se definen criterios claros para qué constituye una batalla romana nombrada, excluyendo escaramuzas sin nombre, masacres, capturas y rendiciones sin lucha, y leyendas. Se enfatiza que los reyes clientes y aliados no se consideran Roma, y los romanos en servicio extranjero no hacen que una batalla sea romana. Las batallas de los reyes y la primera República se incluyen según lo narrado por historiadores antiguos, con un marcado específico para las 94 batallas basadas en tradiciones dudosas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50238088,
-    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
-    "score": 376,
-    "time": 1792979266,
-    "titulo_es": "IBM ve un gran valor en modelos de IA de código abierto para empresas en sus instalaciones",
-    "resumen": "IBM, a través de su CEO Arvind Krishna, ha destacado el creciente atractivo de los modelos de IA de código abierto (open weight models) para despliegues empresariales en las propias instalaciones (on-premise). Krishna señala que, si bien los modelos cerrados de vanguardia (frontier models) lideraron en rendimiento en el pasado, la brecha de efectividad con los modelos abiertos se ha reducido significativamente, alcanzando ahora hasta el 90% de la capacidad de los modelos punteros. La principal ventaja radica en el coste: los modelos abiertos ofrecen un rendimiento comparable a una fracción del coste (aproximadamente el 10% del coste de token de los modelos cerrados). Krishna argumenta que para la mayoría de las tareas empresariales comunes, como resúmenes de correos, análisis de contratos o atención al cliente, la efectividad del 90% de los modelos abiertos es más que suficiente, justificando la elección por la considerable reducción de costes. IBM está observando un aumento en el interés por la infraestructura de IA on-premise, estimando que muchas empresas podrían desplegarla en solo dos o tres racks. Sin embargo, reconoce que la complejidad de la gestión y operación de esta infraestructura (ingeniería de kernels, optimización de redes y GPUs, caching) es un desafío importante para las empresas. Para abordar esto, IBM planea lanzar software que simplifique estos despliegues. La demanda de IA on-premise también se espera que impulse las ventas de los aceleradores mainframe de IBM, como las tarjetas Spyre. A pesar de una caída en los ingresos de mainframes, la infraestructura de IBM creció un 5% interanual, y el software (impulsado por Red Hat) mostró un crecimiento más sólido del 9%.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50237078,
-    "url": "https://hypnotize.works/gdx-3ds/postmortem/index.html",
-    "score": 147,
-    "time": 1792970850,
-    "titulo_es": "Análisis Post-Mortem de la Portabilidad de G-Diffuser (F-Zero X Decompilation) a Nintendo 3DS",
-    "resumen": "Este artículo documenta el proceso de portabilidad de G-Diffuser, una descompilación del juego F-Zero X, a la consola Nintendo 3DS. Se detallan dos fases de desarrollo: una primera fase de 24 días que permitió ejecutar el juego a 60 fps en 3D en la New 3DS, y una segunda fase de 43 días que añadió soporte para la Old 3DS, un renderizador nativo y el Expansion Kit (añadiendo editor de circuitos y de máquinas). El proyecto se gestionó con un director único y una sesión de Claude actuando como orquestador de múltiples subagentes. El resultado son tres builds independientes desde un único árbol de código fuente: para Old 3DS (con y sin Expansion Kit) y para New 3DS (con y sin Expansion Kit). Todas las builds leen assets de la tarjeta SD, soportan todas las modalidades de juego, audio DSP nativo, 3D estereoscópico, un dashboard en la pantalla inferior, y funciones de suspensión y cierre. La build de New 3DS mantiene el rendimiento de 60 fps, mientras que la de Old 3DS logra un resultado comparable a través de una ruta diferente, utilizando el renderizador nativo por defecto en la versión 1.0.0.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50236102,
-    "url": "https://minimaxir.com/2026/10/cheap-llms/",
-    "score": 388,
-    "time": 1792962691,
-    "titulo_es": "Evolución de Modelos LLM: OpenAI vs. Anthropic y la Caída de Precios",
-    "resumen": "El artículo documenta la rápida evolución y competencia entre OpenAI y Anthropic en el desarrollo de Modelos de Lenguaje Grandes (LLMs) durante los últimos meses. Se detalla una cronología de anuncios de modelos como GPT-5.6 Sol, Luna, Terra, y GPT-6 (Astra, Sol, Luna) por parte de OpenAI, y Claude Sonnet 5, Opus 5, Fable 5, Fable 5.1, y Opus 5.5 por parte de Anthropic. Un tema central es la drástica reducción de precios en el uso de estos modelos, especialmente en los costos de lectura de caché, lo cual es crítico para aplicaciones de agentes de codificación. La competencia ha llevado a reducciones significativas en el costo por tarea, haciendo que el uso de LLMs avanzados sea mucho más accesible y eficiente, con mejoras continuas en rendimiento y coste.",
-    "categoria": "IA"
   }
 ]
