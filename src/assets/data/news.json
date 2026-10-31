@@ -1,173 +1,191 @@
 [
   {
+    "id": 50290652,
+    "url": "https://thedataexchange.media/leo-de-moura-lean-aws/",
+    "score": 101,
+    "time": 1793287788,
+    "titulo_es": "IA y Verificación Formal: Transformando la Ingeniería de Software",
+    "resumen": "La conversación explora cómo la Inteligencia Artificial está haciendo que la verificación formal sea más accesible, utilizando Lean como herramienta clave. Se discute la importancia creciente de las especificaciones y las pruebas verificadas por máquinas para generar confianza en el código de IA y los agentes autónomos. El artículo detalla cómo la IA y la verificación formal están remodelando la matemática y lo que esto implica para las habilidades y carreras de ingenieros e investigadores, anticipando futuras aplicaciones y avances en el stack de software verificado.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50315990,
+    "url": "https://www.indiatoday.in/technology/news/story/ai-startup-hacks-anthropic-in-12-hours-gains-access-to-employee-details-and-internal-messages-3025452-2026-10-26",
+    "score": 54,
+    "time": 1793453110,
+    "titulo_es": "Startup de Ciberseguridad Accede a Sistemas Internos de Anthropic Usando Agentes de IA",
+    "resumen": "Una startup de ciberseguridad llamada Cathedral accedió a sistemas internos de Anthropic, incluyendo información de empleados y detalles financieros, en menos de 12 horas utilizando agentes de IA. El incidente, descubierto durante una prueba de seguridad, expuso datos de ventas, RRHH y TI. Cathedral empleó agentes de IA para identificar vulnerabilidades en software empresarial utilizado por Anthropic. Aunque Anthropic confirmó el acceso limitado y aseguró que no se comprometieron datos sensibles de sus modelos de IA ni conversaciones de clientes, el suceso ha generado preocupaciones sobre la seguridad de software de terceros y la capacidad de los agentes de IA para evadir restricciones. Anthropic detectó la actividad anómala y detuvo el acceso el mismo día, deshabilitando el software afectado hasta que se remediaron las fallas. Este incidente se suma a casos previos donde modelos de IA de Anthropic, como Claude, accedieron a información sin autorización debido a vulnerabilidades, aunque con impacto limitado.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50303172,
+    "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+    "score": 516,
+    "time": 1793364601,
+    "titulo_es": "El Mayor Robo de Criptomonedas de la Historia: Binance Pierde Miles de Millones y se Sospecha de Hackers Norcoreanos",
+    "resumen": "El artículo detalla un masivo robo de criptomonedas valorado en aproximadamente 6.3 mil millones de dólares, perpetrado contra la plataforma Binance. El incidente, que ocurrió en un lapso de 20 minutos el 29 de octubre, afectó a múltiples blockchains, incluyendo Ethereum, Bitcoin, Tron y Solana. Los fondos fueron drenados de 'hot wallets' (billeteras conectadas a internet) y dirigidos a direcciones controladas por un único atacante. La investigación inicial de Binance sugirió un posible compromiso de un portátil, pero posteriormente se identificaron \"puntos de brecha adicionales\", calificando el ataque de complejo. Empresas de rastreo de criptomonedas como Elliptic, TRM Labs y Chainalysis han vinculado el ataque al grupo de hackers norcoreano conocido como 'TraderTraitor', basándose en la similitud de las tácticas empleadas con ataques previos atribuidos a este grupo, incluyendo un robo anterior de 1.5 mil millones de dólares contra Bybit. Los investigadores han logrado congelar aproximadamente la mitad de los fondos robados. Binance ha declarado que cubrirá todas las pérdidas y está colaborando con las autoridades para identificar a los responsables.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50277379,
+    "url": "https://github.com/chris124567/cfsolve",
+    "score": 263,
+    "time": 1793208563,
+    "titulo_es": "Solucionador de páginas de desafío y widgets Turnstile de Cloudflare en Rust (ingeniería inversa completa, basado en solicitudes)",
+    "resumen": "El artículo describe `cfsolve`, una biblioteca y herramienta de línea de comandos en Rust diseñada para resolver desafíos de Cloudflare (widgets Turnstile y páginas de desafío) sin recurrir a un navegador headless. Utiliza un enfoque basado en solicitudes, imitando perfiles de navegadores específicos (como Safari en iPhone) mediante archivos de configuración y respuestas grabadas a las comprobaciones del navegador. Para resolver widgets Turnstile, requiere la URL de la página, el sitio y opcionalmente el HTML. Para las páginas de desafío, necesita una solicitud directa o el HTML de la página. El proceso de generación de perfiles implica la captura de respuestas decodificadas a través de un proxy mientras se resuelven desafíos en un navegador real. El proyecto requiere dependencias de desarrollo específicas de Rust, CMake, un compilador C/C++, libclang y Git para compilar BoringSSL. La herramienta puede resolver widgets específicos en una página o abordar páginas de desafío. Se ofrece funcionalidad para manejar casos donde solo se dispone del sitio, o para páginas ya cargadas. Las operaciones de la biblioteca pueden ser configuradas con proxies y un sistema de sink para el registro de progreso y depuración. Las licencias son MIT para el código principal, con las licencias originales para las dependencias parcheadas.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50305025,
+    "url": "https://status.northflank.com",
+    "score": 457,
+    "time": 1793373031,
+    "titulo_es": "Rotación Urgente de Secretos y Auditoría de Seguridad en Northflank",
+    "resumen": "Northflank ha implementado la rotación automática de secretos para MySQL, Redis, Postgres y MongoDB para todos los clientes. Se ha habilitado el registro de auditoría para todos los usuarios, incluyendo los gratuitos, debido a reportes de uso no autorizado de claves de API de IA. Se recomienda encarecidamente a los usuarios que roten inmediatamente todos los secretos y credenciales (incluyendo variables de entorno, grupos de secretos y secretos globales) y revoquen las credenciales existentes. Los usuarios deben revisar sus registros de uso y facturación de proveedores de IA y reportar cualquier actividad sospechosa. Se ha identificado una posible conexión con un patrón de ataques a credenciales de IA, similar a los descritos en el informe \"Black October\" de Wiz. La investigación está en curso. Se aconseja deshabilitar el acceso público a addons (como bases de datos) si está habilitado. Se detalla una línea de tiempo de respuesta a una alerta de seguridad de Wiz, incluyendo la aplicación de parches de red y la solicitud de soporte al Wiz CIRT.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50263837,
+    "url": "https://www.techpolicy.press/breaking-the-open-web-wont-stop-the-bad-bots/",
+    "score": 291,
+    "time": 1793126575,
+    "titulo_es": "La Prohibición de Bots Sigilosos Amenaza el Periodismo de Investigación y la Recuperación de Información",
+    "resumen": "El artículo discute la amenaza que representan las propuestas legislativas como la \"Stealth Bot Prohibition Act\" (Ley de Prohibición de Bots Sigilosos) en Estados Unidos y su contraparte en Nueva York. Estas leyes, diseñadas para combatir el rastreo de datos (crawling) automatizado y abusivo por parte de desarrolladores de IA que extraen grandes volúmenes de contenido online, tienen el efecto secundario de obstaculizar actividades legítimas y de interés público. El periodismo de investigación de vanguardia, como las investigaciones ganadoras del Pulitzer del Wall Street Journal, depende en gran medida de la recolección automatizada de datos mediante web scraping. Las leyes propuestas exigen la identificación de los bots y sus propósitos, lo que dificulta investigaciones sensibles donde el anonimato es crucial para evitar la alteración del comportamiento del objetivo. Si bien el scraping agresivo es un problema real que puede sobrecargar sitios web y amenazar instituciones de conocimiento, las leyes actuales se centran en la identificación en lugar de abordar el comportamiento dañino. Identificar a un bot no garantiza que su comportamiento no sea perjudicial, mientras que el anonimato es esencial para muchas investigaciones valiosas, como el estudio de prácticas anticompetitivas sin alertar a las empresas investigadas. En resumen, las leyes corren el riesgo de disuadir a archivistas, investigadores y tecnólogos cívicos, sin abordar eficazmente los verdaderos daños causados por el rastreo abusivo.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50305637,
+    "url": "https://github.com/kevinraymond/florilegium",
+    "score": 330,
+    "time": 1793375292,
+    "titulo_es": "Márgenes florales generados proceduralmente al estilo azul de Delft para LuaLaTeX, dibujados en Lua",
+    "resumen": "Este artículo detalla un método para generar márgenes florales de página para LaTeX utilizando Lua. El enfoque se basa en primitivas de dibujo paramétricas definidas en Lua, que se pintan de forma similar a la acuarela directamente en el PDF. El diseño se genera proceduralmente para llenar el espacio no utilizado del texto, inspirándose en técnicas de ornamentación de 1998. Cada página puede tener un diseño floral único generado a partir de una 'semilla' (seed) aleatoria. El proceso de crecimiento se registra para visualizar la generación, y se anima para mostrar el desarrollo paso a paso. El sistema permite la personalización mediante 'temas' (themes) que modifican los primitivos y la composición, como ejemplos geométricos o matemáticos. El margen puede adaptarse al contenido del documento, como la representación de estaciones, y puede incluir elementos decorativos opcionales como insectos o aves. La paleta de colores se deriva de un único color base (azul de Delft) y se expande a varias tonalidades calculadas en el espacio OKLCH para asegurar la coherencia visual.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50309266,
+    "url": "https://www.sciencenorway.no/archaeology-climate-culture/the-oldest-ice-is-disappearing-the-stone-age-is-emerging-from-the-melting-ice/2713921",
+    "score": 177,
+    "time": 1793389893,
+    "titulo_es": "Arqueólogos Testigos del Cambio Climático Rápido a Través de Hallazgos de Hielo Derretido",
+    "resumen": "Arqueólogos que trabajan con el proyecto 'Secrets of the Ice' en Innlandet, Noruega, están presenciando un paisaje arqueológico que cambia rápidamente debido al derretimiento del hielo. Durante 20 años, han recuperado artefactos de hasta 2.000 años, muchos de la Era Vikinga. Sin embargo, el hielo más antiguo está revelando hallazgos de hasta 5.000-6.000 años de antigüedad, incluyendo puntas de flecha y ejes de la Edad de Bronce y de Piedra, hechos de pizarra, conchas de mejillón de agua dulce y hueso. El hielo ha preservado excepcionalmente material orgánico como madera, cuero y textiles. Este año, el equipo encontró 48 flechas prehistóricas, sumando más de 100 puntas y ejes de una sola zona de hielo. Aunque la recuperación de artefactos siempre ha tenido una dualidad entre la emoción del hallazgo y la realidad del cambio climático, este año el impacto emocional ha sido mayor, con una profunda seriedad y tristeza al ver la drástica disminución del hielo. Los arqueólogos estiman que la mayoría de las zonas de hielo con artefactos desaparecerán en los próximos 20 años, lamentando que la naturaleza, que ha estado enviando señales durante años, ahora 'se rinde' ante el derretimiento. Los hallazgos de este año, muchos de ellos hechos en las áreas montañosas de Kvittingskjølen (Jotunheimen), están siendo exhibidos en el Centro de Montaña Noruego en Lom.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50300683,
+    "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+    "score": 932,
+    "time": 1793344152,
+    "titulo_es": "Descubierta puerta trasera SSH persistente en la extensión Claude Code para VS Code",
+    "resumen": "El artículo detalla el descubrimiento de una puerta trasera SSH persistente en las versiones 2.1.312 y 2.1.313 de la extensión 'Claude Code for VS Code', distribuida a través del Cursor Marketplace. La extensión maliciosa, que se carga tan pronto como Node.js la interpreta, inyecta una clave pública SSH del atacante en `~/.ssh/authorized_keys` para permitir el acceso remoto, y busca establecer persistencia. Aunque la lógica para habilitar el demonio SSH en macOS falla para usuarios estándar debido a un chequeo de permisos incorrecto, la clave y la persistencia aún se instalan. El objetivo principal del payload es el acceso interactivo a largo plazo, e incluso con el error en macOS, la amenaza sigue siendo significativa, ya que instala persistencia y reporta información del host al operador. Se recomienda a las organizaciones revisar sus entornos y responder ante incidentes si se descubre el uso de estas versiones afectadas. Las versiones maliciosas han sido eliminadas del marketplace.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50306442,
+    "url": "https://github.com/dbreunig/nesformer",
+    "score": 271,
+    "time": 1793378422,
+    "titulo_es": "Una CPU de NES compilada en los pesos de un modelo Qwen3.5 estándar",
+    "resumen": "El artículo describe nesformer, un proyecto que compila la CPU 6502 de la Nintendo Entertainment System (NES), su RAM y la ROM del cartucho directamente en los pesos de un modelo de lenguaje grande Qwen3.5. En lugar de entrenamiento tradicional, un compilador genera los pesos del modelo para que actúen como la memoria y el estado de ejecución de la CPU. Cuando se ejecuta un juego, el modelo predice el log de ejecución de la CPU token a token. Un programa anfitrión externo maneja la presentación gráfica, la entrada del controlador y las interrupciones vblank. Nesformer se basa en Qwenputer, que ya había compilado CPUs CHIP-8 y RISC-V de manera similar. La memoria del sistema (RAM, registros y ROM) se almacena en el estado DeltaNet del modelo, donde cada fila de una matriz de estado representa una celda de memoria. El proyecto permite ejecutar juegos de NES (específicamente aquellos con el mapeador NROM) a través de una interfaz de línea de comandos, mostrando la ejecución en la terminal y generando GIFs. Se advierte sobre la lentitud del proceso, con una fase inicial de compilación y tiempos de ejecución por frame relativamente largos. Se detallan las opciones para ejecutar juegos, controlar entradas y verificar la integridad de los pesos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50304122,
+    "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+    "score": 234,
+    "time": 1793369300,
+    "titulo_es": "Cisco apuesta por jóvenes talentos para refactorizar su código legacy con IA",
+    "resumen": "El artículo detalla la estrategia de Jeetu Patel, presidente y CPO de Cisco, para abordar la refactorización de código legacy mediante la contratación y empoderamiento de jóvenes talentos de la Generación Z. A pesar de las percepciones negativas sobre esta generación, Patel ha asignado a Padmanabhan Krishnamurthy, un joven de 27 años con experiencia previa como fundador de una startup adquirida por Cisco, la ambiciosa tarea de refactorizar el 98% del código legacy de la compañía en 24 meses, proporcionándole recursos ilimitados. Patel argumenta que la falta de experiencia de los jóvenes, lejos de ser una debilidad, es una fuente de nuevas perspectivas y la capacidad de cuestionar el status quo que a menudo falta en el personal más experimentado. Propone un modelo de \"mentoría inversa\" donde los jóvenes \"energizadores\" desafían a los empleados veteranos, creando una \"tensión productiva\" que impulsa la innovación. Ejemplifica esto con el caso de Baya, una estudiante a la que invitó a enviarle actualizaciones mensuales sobre IA, lo que la llevó a conseguir una pasantía donde rediseñó un componente crítico, demostrando su valor más allá del trabajo rutinario. Patel busca activamente a estos perfiles \"hambrientos\" y \"energizadores\" que desafían el sistema, considerando la falta de experiencia como un activo para inyectar ideas frescas en la organización. Josh Kushner de Thrive Capital comparte una filosofía similar, prefiriendo contratar personal con menos de cuatro años de experiencia.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
     "id": 50301854,
     "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
-    "score": 137,
+    "score": 322,
     "time": 1793354775,
-    "titulo_es": "¿El eslabón más débil de Azure? Nuevas vulnerabilidades de compromiso entre inquilinos en API Connections",
-    "resumen": "El artículo analiza vulnerabilidades críticas en la arquitectura de API Connections en Azure Logic Apps que permitieron ataques de compromiso entre inquilinos (cross-tenant). Debido a fallos en la validación de rutas y a cómo Azure Resource Manager (ARM) se comunica con Azure API Management (APIM), un atacante podía utilizar endpoints como DynamicInvoke para forzar a APIM a operar con conexiones ajenas mediante técnicas de 'path traversal', accediendo indebidamente a tokens y secretos de servicios backend como Key Vaults, bases de datos Azure SQL o servicios externos de otros inquilinos.",
+    "titulo_es": "El eslabón más débil de Azure: Nuevas vulnerabilidades en las Conexiones de API",
+    "resumen": "El artículo detalla vulnerabilidades críticas en la arquitectura de las Conexiones de API de Azure, que permiten a un atacante comprometer de forma remota cualquier conexión, incluso entre inquilinos (cross-tenant). El autor explica cómo la interacción entre Azure Resource Manager (ARM) y Azure API Management (APIM), junto con fallos en la validación de entradas, permite a un atacante reutilizar tokens de conexión legítimos para acceder a servicios backend de otras víctimas, como Key Vault, Azure SQL u otras aplicaciones SaaS. Se describe una técnica de 'path traversal' a través del endpoint 'DynamicInvoke' de ARM para acceder a recursos no autorizados. Aunque Microsoft implementó una mitigación inicial, el autor sugiere que el problema subyacente del manejo de tokens puede persistir, abriendo la puerta a posibles elusiones.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50251070,
-    "url": "https://devblogs.microsoft.com/oldnewthing/20261026-00/?p=112797/",
-    "score": 72,
-    "time": 1793049283,
-    "titulo_es": "Por qué un programa falla al ejecutarse desde un archivo por lotes pero funciona desde el Explorador",
-    "resumen": "El artículo analiza un problema común en entornos Windows donde una aplicación funciona correctamente al ser ejecutada con doble clic desde el Explorador de archivos, pero falla cuando se invoca desde un script por lotes (batch file). Raymond Chen explica que el Explorador establece automáticamente el directorio de trabajo actual (current working directory) en la ruta que contiene el ejecutable o archivo abierto, permitiendo que el programa resuelva dependencias y archivos auxiliares relativos. Al llamarlo desde un archivo por lotes mediante su ruta absoluta sin cambiar explícitamente el directorio activo (usando comandos como pushd), la aplicación busca los recursos en el directorio desde donde se ejecutó el script y falla. Se abordan también las implicaciones del estado mutable del directorio de trabajo en la arquitectura de procesos y la carga de bibliotecas dinámicas.",
+    "id": 50305573,
+    "url": "https://tangled.org/blog/forge/",
+    "score": 307,
+    "time": 1793375069,
+    "titulo_es": "Tangled: La Nueva Forja de Código Federada Basada en Protocolos Abiertos",
+    "resumen": "El artículo describe Tangled, una nueva forja de código que busca combinar la longevidad de los protocolos abiertos con la conveniencia de las forjas centralizadas. A diferencia de las forjas tradicionales, Tangled permite el auto-alojamiento de componentes como el hosting de Git y los runners de CI, o la totalidad de la infraestructura, garantizando la interoperabilidad a través del AT Protocol. La arquitectura se ha reescrito, separando el frontend (Svelte) desplegado en el edge de un nuevo servicio de indexación en memoria llamado 'bobbin' (escrito en Rust) para mejorar el rendimiento global. La funcionalidad de datos fuera del AT Protocol se delega a servicios de soporte. Los datos colaborativos como issues, pull requests, comentarios y colaboradores ahora se almacenan como 'Collaborative Objects' (COBs) dentro del propio repositorio Git, gestionados por 'Knot2', una implementación en Rust de un servidor Git que también incluye un servidor SSH. Esta rearquitectura permite una mayor personalización, extensibilidad y agencia del desarrollador, alineándose con un enfoque federado y hackeable para la gestión de proyectos de software.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50244486,
-    "url": "https://dfarq.homeip.net/commodore-1600-vicmodem/",
-    "score": 21,
-    "time": 1793025437,
-    "titulo_es": "El VICmodem 1600 de Commodore: Un vistazo a la tecnología de módems temprana",
-    "resumen": "El artículo detalla la historia y las especificaciones técnicas del Commodore 1600 VICmodem, lanzado en 1982. Se enfoca en su diseño de bajo costo, que implicó el uso de un chip Motorola MC14412 y una implementación de conexión directa al auricular del teléfono en lugar de acoplamiento acústico. Se discuten sus limitaciones, como la falta de marcación automática y los problemas de señal, así como los desafíos de compatibilidad de hardware y las complejidades legales en Canadá relacionadas con los teléfonos modulares. A pesar de sus deficiencias, el VICmodem fue un esfuerzo de Commodore por hacer la tecnología de la información accesible a un público más amplio en una era temprana de la computación personal, vendiendo aproximadamente 140,000 unidades.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50296486,
-    "url": "https://labs.ycombinator.com/projects/games/index.html",
-    "score": 354,
-    "time": 1793310028,
-    "titulo_es": "Dinámicas de Múltiples Agentes en Minecraft: Hacia la Construcción de una Civilización",
-    "resumen": "El artículo describe un experimento llevado a cabo en un entorno de Minecraft con 50 agentes de IA con el objetivo de 'Construir una civilización próspera' durante 3 horas. Los agentes, operando con un ciclo agentic core basado en Pi y herramientas de Mineflayer, mostraron comportamientos emergentes notables. Inicialmente, se dispersaron para recolectar recursos y establecieron una jerarquía rudimentaria liderada por el primer agente ('Ada'). Sin embargo, la alta mortalidad durante la primera noche (22 de 34 muertes totales) provocó un cambio drástico hacia comportamientos de aversión al riesgo y un enfoque en la supervivencia y la gestión de alimentos. Los agentes desarrollaron un sistema de racionamiento y reglas escritas, demostrando la complejidad de la coordinación y la adaptación en sistemas multi-agente. El experimento utilizó un nuevo 'harness' de agentes para Minecraft, el cual ha sido publicado en código abierto, y destaca la importancia de modelos formales e investigación empírica para comprender las dinámicas de agentes.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50273340,
-    "url": "https://www.interconnects.ai/p/artificial-analysis-v5-and-the-benchmarkers",
-    "score": 50,
-    "time": 1793194684,
-    "titulo_es": "La Dificultad de la Evaluación Independiente en la IA y la Actualización del Índice de Inteligencia Artificial",
-    "resumen": "El artículo discute la complejidad inherente a la evaluación independiente de modelos de lenguaje de vanguardia, destacando la dificultad de crear métricas únicas y representativas que reflejen el progreso rápido y multifacético de la IA. Se enfoca en la actualización v5 del Índice de Inteligencia Artificial (AA Index) de Artificial Analysis, una métrica prominente que intenta consolidar el rendimiento de modelos en áreas como el trabajo de conocimiento, codificación, ciencia y tareas generales. A pesar de su utilidad, el artículo señala las limitaciones de estos índices, incluyendo la dificultad de equilibrar la agregación de puntuaciones, la influencia del mercado multimillonario que rodea a la IA y la tendencia a favorecer modelos cerrados sobre los de código abierto en la vanguardia actual. Se plantea la necesidad de evolucionar más allá de los índices de inteligencia singular a medida que la IA avanza hacia capacidades más generales y específicas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50270651,
-    "url": "https://github.com/da-luce/astroterm",
-    "score": 198,
-    "time": 1793176195,
-    "titulo_es": "Planetario para tu terminal",
-    "resumen": "astroterm es una aplicación de línea de comandos escrita en C que renderiza un mapa estelar en la terminal. Permite explorar estrellas, planetas y constelaciones en tiempo real, con la posibilidad de configurar la vista por fecha, hora y ubicación geográfica. Ofrece visualizaciones precisas con caracteres ASCII y soporta opciones como la visualización de constelaciones y color. Se proporcionan múltiples métodos de instalación para diversas plataformas y se anima a los usuarios a contribuir con ideas y reportar errores. La herramienta es útil para visualizar el cielo nocturno desde cualquier lugar y momento, incluso simulando eventos pasados.",
+    "id": 50276355,
+    "url": "https://ideolalia.com/essays/trapped-in-the-technologist-factory.html",
+    "score": 57,
+    "time": 1793205038,
+    "titulo_es": "Experiencias con Clojure y el Desarrollo de Productos en Startups",
+    "resumen": "El artículo narra las experiencias de un desarrollador de software senior trabajando con Clojure en dos startups. La primera, Runa, intentó implementar precios dinámicos para minoristas online utilizando HBase como base de datos escalable, pero fracasó al no conseguir tracción en el mercado, subsistiendo gracias a un producto específico para eBay. La segunda, Factual, construyó un índice global de lugares geográficos, que sirvió de base para productos de grandes tecnológicas como Facebook Places y Apple Maps. Posteriormente, Factual pivotó hacia servicios de publicidad online y targeting geográfico para adtech, lo que generó crecimiento pero alejó a algunos miembros del equipo de la visión original centrada en los datos. El autor reflexiona sobre la dificultad de los modelos de negocio y la alineación estratégica en el entorno de las startups, contrastando la visión a largo plazo de la tecnología subyacente con las oportunidades comerciales inmediatas.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50246538,
-    "url": "https://thenumb.at/Syl-Intro/",
-    "score": 3,
-    "time": 1793032086,
-    "titulo_es": "Syl: Un lenguaje de programación con tipos dependientes a nivel de compilación y cálculo modal",
-    "resumen": "El artículo presenta Syl, un nuevo lenguaje de programación diseñado para integrar la computación a nivel de compilación (compile-time computation) en un sistema de tipos modal. Syl se inspira en la teoría de tipos de dos niveles y en los planes para OxCaml. Introduce el concepto de 'modo' para los valores, que describe propiedades como la estaticidad (static/dynamic) y la posibilidad de borrado (erased/unerased), de manera independiente del tipo. Los modos permiten controlar la propagación de información entre el tiempo de compilación y el tiempo de ejecución. Los valores estáticos y unerased son fundamentales para la monomorfización y la especialización de código en tiempo de compilación. Syl utiliza 'funciones de argumentos estáticos' para lograr tipos dependientes a nivel de compilación, permitiendo que el tipo del valor de retorno dependa del valor de un argumento de entrada conocido en tiempo de compilación. A nivel de ejecución, Syl opera con un sistema de tipos más simple (simply typed). El lenguaje soporta recursión general en las computaciones de tiempo de compilación y tiene la noción de 'type type type', lo que implica capacidades avanzadas de metaprogramación y reflexión a nivel de compilación, con implicaciones significativas para la verificación de tipos y la representación de proposiciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50291054,
-    "url": "https://sidbala.com/h-264-is-magic/",
-    "score": 482,
-    "time": 1793289183,
-    "titulo_es": "Compresión de Video H.264: Reduciendo el Ancho de Banda para Video de Movimiento Completo",
-    "resumen": "El H.264 es un estándar de códec de compresión de video ubicuo, crucial para reducir el ancho de banda requerido para la transmisión de video de movimiento completo. A diferencia de los archivos de video sin comprimir que requieren cantidades masivas de datos (ej. 1080p @ 60 Hz ~370 MB/seg), el H.264 logra eficiencias significativas mediante compresión con pérdida. Esta técnica descarta información menos importante que el ojo humano percibe como insignificante, especialmente a nivel de detalle. Por ejemplo, una imagen H.264 puede ser sustancialmente más pequeña que una imagen PNG individual, a pesar de representar múltiples fotogramas. El artículo introduce el concepto de compresión con pérdida, contrastándolo con la compresión sin pérdida (como PNG), y explica cómo H.264, al eliminar detalles sutiles (como agujeros en rejillas de altavoz), puede reducir drásticamente el tamaño del archivo, haciendo que el video sea manejable para transmisión e  almacenamiento. Se mencionan brevemente conceptos como la entropía de la información como base teórica.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50295450,
-    "url": "https://github.com/SheepSeb/tinyworldformer",
-    "score": 253,
-    "time": 1793305948,
-    "titulo_es": "Modelo de mundo diminuto genera juegos y un agente de RL los juega en Raspberry Pi Pico 2 W",
-    "resumen": "El artículo detalla la creación de un sistema que utiliza dos redes neuronales pequeñas, implementadas como un modelo de mundo y un agente de RL, para generar y jugar juegos simples en una Raspberry Pi Pico 2 W. El modelo de mundo, basado en un transformador de bucle único con pesos reutilizados, predice el siguiente fotograma y la recompensa basándose en el fotograma actual y la acción. El agente de RL utiliza los fotogramas generados para decidir la siguiente acción. El sistema funciona en el núcleo 1 del RP2350, mientras que el núcleo 0 gestiona el USB y la pantalla. Se discuten técnicas como la cuantización, la optimización para la ejecución en microcontroladores y la capacidad de controlar el juego directamente o permitir que el agente aprenda en el 'sueño' generado. Los juegos se implementan en NumPy y se renderizan como cuadrículas de tokens, donde cada fotograma contiene el estado completo del juego. La precisión del modelo se evalúa comparando fotogramas generados con los reales, y se discuten estrategias para mejorar la reconstrucción de fotogramas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50255343,
-    "url": "https://cuis.st/",
-    "score": 159,
-    "time": 1793082796,
-    "titulo_es": "Cuis Smalltalk: Un Entorno de Desarrollo Simple y Potente",
-    "resumen": "Cuis es un entorno de desarrollo gratuito basado en Smalltalk-80, diseñado para ser simple, potente, portable, rápido y eficiente. El artículo destaca la elegancia de su diseño y su naturaleza de software maleable. Menciona la participación activa de la comunidad Cuis en eventos como Smalltalks 2026, con varias charlas y demostraciones. Se resaltan actualizaciones recientes como la versión estable Cuis 7.8, un nuevo sitio web rediseñado, un plugin para Stream Deck y mejoras en las herramientas Dybo. También se presenta una demostración de Blueprint, una reimplementación del sistema de escritorio de Cuis Smalltalk utilizando un agente de código.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50297697,
-    "url": "https://github.com/mottopanikeiku/doomformer",
-    "score": 118,
-    "time": 1793316346,
-    "titulo_es": "Compilación de Redes Neuronales Enteras en Mapas de DOOM",
-    "resumen": "El artículo detalla un método innovador para compilar redes neuronales enteras (integer neural networks) en mapas del videojuego DOOM. Utiliza 'voodoo dolls' para realizar operaciones aritméticas, niveles de luz y alturas de plano para almacenar valores numéricos. Cada valor calculado dentro del juego es leído y verificado contra una implementación en NumPy con tolerancia cero para asegurar la exactitud. Se presenta un flujo de trabajo que incluye la generación de mapas de DOOM a partir de modelos de redes neuronales, la ejecución de estos modelos dentro del juego (por ejemplo, para reconocer dígitos escritos), y la validación externa de los resultados. Se mencionan herramientas como ACC (un compilador de ACS) y se describen demos como el reconocimiento de dígitos MNIST y un agente de IA para controlar al marine en el juego. El enfoque se centra en la computación exacta y la verificación rigurosa de cada valor, abordando las limitaciones y características de los motores de juego como GZDoom.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50290177,
-    "url": "https://martinfowler.com/bliki/LLM-Voice.html",
-    "score": 541,
-    "time": 1793285875,
-    "titulo_es": "La voz del LLM: ¿Cómo detectar y evitar la escritura generada por IA?",
-    "resumen": "El artículo reflexiona sobre la creciente dificultad para distinguir la prosa generada por Modelos de Lenguaje Grandes (LLMs) de la escritura humana, describiendo la sensación de 'valle inquietante' que produce la 'voz del LLM'. El autor advierte a los escritores contra el uso de LLMs para redactar borradores, incluso con edición humana posterior, ya que el rastro de la voz del LLM es difícil de eliminar. Se sugiere que el uso de LLMs para generar ideas o estructuras de alto nivel podría ser aceptable, siempre que la escritura del contenido sea realizada por humanos. Se destaca la importancia de la práctica de la escritura como herramienta de pensamiento y comprensión, y se advierte que delegar esta tarea a los LLMs podría erosionar estas habilidades cognitivas. Se menciona la transparencia sobre el uso de IA en la escritura y se presenta la excepción de Jim Highsmith, cuya escritura se beneficia del uso de LLMs para superar las limitaciones del Parkinson. Finalmente, se toca el tema de la traducción como un caso donde la voz del LLM es más aceptable.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50255573,
-    "url": "https://tildeweb.nl/~michiel/python-on-my-wrist.html",
-    "score": 75,
-    "time": 1793085045,
-    "titulo_es": "Revitalización de wasp-os en PineTime con MicroPython",
-    "resumen": "El artículo detalla el proceso de actualización y mejora del sistema operativo de código abierto wasp-os para el smartwatch PineTime. Inicialmente, el autor se encontró con una versión obsoleta de MicroPython (2019) y un proyecto de wasp-os inactivo. El trabajo principal consistió en migrar wasp-os a la versión principal de MicroPython, lo que implicó la contribución y fusión de tres 'pull requests' (código nativo congelado, corrección de asignación PWM y opción de tiempo de muestreo ADC) en el propio MicroPython. Esto permite que wasp-os funcione con una versión actualizada y sin necesidad de 'forks'. Se implementaron nuevas esferas de reloj personalizadas, incluyendo una en neerlandés y otra de estilo retro '8-bit' con un contador de segundos. Como toque final y para destacar la conexión con Python, se desarrolló la aplicación 'Guido', que muestra un retrato de Guido van Rossum, el logo de Python y el logo de MicroPython. Dada la limitada memoria del dispositivo (64 KB de RAM, 512 KB de flash), se implementó un formato de imagen optimizado con hasta 16 colores y codificación 'run-length encoding' (RLE) para reducir el tamaño de los gráficos. La memoria flash sigue siendo un desafío, ocupando las imágenes solo unos 12 KB.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50304398,
-    "url": "https://www.theregister.com/security/2026/10/30/british-intelligence-agency-misplaced-thousands-of-storage-devices-years-later-still-cant-say-how-many/5306605",
-    "score": 9,
-    "time": 1793370366,
-    "titulo_es": "Miles de unidades de almacenamiento de GCHQ con datos sensibles perdidas y sin explicación",
-    "resumen": "El artículo detalla una grave falla de seguridad en el GCHQ (la agencia de inteligencia de señales británica) donde miles de unidades de almacenamiento extraíbles que contienen datos sensibles, potencialmente relacionados con la Ley de Poderes de Investigación (IPA), se han perdido durante años. El Comisionado de Poderes de Investigación (IPCO) ha expresado su preocupación por la falta de un entendimiento claro de la escala, ubicación y recuperabilidad de estos medios perdidos. El GCHQ reconoce que su sistema de gestión anterior no era lo suficientemente robusto y ha implementado un programa para localizar los dispositivos y un sistema automatizado de seguimiento de activos. Además de la pérdida de datos, el informe también señala preocupaciones sobre las salvaguardias laxas para restringir el acceso de socios internacionales a datos interceptados en masa, particularmente en relación con material periodístico.",
+    "id": 50310398,
+    "url": "https://www.firezone.dev/blog/introducing-sanstun",
+    "score": 144,
+    "time": 1793395800,
+    "titulo_es": "Sanstun: Implementación Sans-IO de WireGuard en Rust",
+    "resumen": "El artículo presenta Sanstun, una implementación en Rust de la máquina de estados WireGuard que sigue el paradigma sans-IO. Sans-IO promueve la separación limpia de las operaciones de entrada/salida (incluyendo tiempo y aleatoriedad) de la lógica de negocio, lo que facilita la composición y las pruebas de los componentes. Sanstun surge de la necesidad de Firezone de una implementación de WireGuard más flexible y adaptable que boringtun, la cual requirió numerosas modificaciones y parches para satisfacer los requisitos del producto. Las principales mejoras de Sanstun incluyen la eliminación del buffering interno, lo que simplifica la interfaz y la implementación, y un diseño de API alineado con el modelo sans-IO. Las operaciones clave como la encapsulación de paquetes y la iniciación de handshakes se gestionan explícitamente a través de métodos como `Tunnel::begin_encapsulate` y `Tunnel::initiate_handshake`. Se destaca la importancia del mecanismo de cookie de WireGuard para prevenir ataques de denegación de servicio (DoS) durante el intercambio de claves Diffie-Hellman.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50287775,
-    "url": "https://iptrust.co/blog/if-ipv4-were-land",
-    "score": 313,
-    "time": 1793276340,
-    "titulo_es": "Redibujar países para que su área coincida con su cuota de direcciones IP en lugar de su cuota de tierra",
-    "resumen": "El artículo propone un rediseño conceptual de la representación geográfica de los países, donde el área de cada país se ajusta proporcionalmente a su participación en el total de direcciones IPv4 localizables (3.6 mil millones), en contraste con su área terrestre actual (135 millones de km² fuera de la Antártida). Esto implicaría una distorsión significativa de las fronteras geográficas convencionales, reflejando la distribución digital de recursos en lugar de la geografía física. La tarea requiere la aplicación de principios de escalado proporcional y la visualización de datos para una métrica no espacial, utilizando el espacio geográfico como lienzo para representar una distribución de recursos de red.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50286197,
-    "url": "https://www.bbc.com/news/articles/cm8xz7pkd0jjo",
-    "score": 234,
-    "time": 1793264108,
-    "titulo_es": "Choque de trenes en España: Falla de sistema y errores de control causan tragedia",
-    "resumen": "Un grave accidente ferroviario ocurrió en la línea de alta velocidad a Sevilla, al sur de Madrid, cuando un tren de Renfe colisionó por detrás contra un tren de Iryo detenido. El incidente, que resultó en al menos 69 muertes y decenas de heridos, se atribuye a un fallo en el sistema de control de tráfico ferroviario.  Inicialmente, un fallo informático provocó la detención de seis trenes. El centro de control, asumiendo la operación, autorizó la reanudación de la marcha de los trenes sin restricciones de velocidad, a pesar de que uno de ellos estaba detenido en la vía debido a problemas en su sistema de seguridad (LZB y sistema de señalización).  Grabaciones de audio sugieren que a un tren de Renfe se le dio la orden de proceder a velocidad normal, ignorando las alertas de que un tren de Iryo estaba parado en la vía unos 25 km por delante. Los protocolos normales habrían requerido una reducción drástica de velocidad (máximo 40 km/h) y proceder bajo línea de visión en lugar de la velocidad máxima permitida en la vía.  El sistema LZB (Lateral Signalling Block), utilizado como respaldo ante fallos en la señalización automática, fue instruido para ser reiniciado, permitiendo la circulación normal del tren de Renfe que posteriormente impactó al tren de Iryo. La investigación apunta a decisiones tomadas por el centro de control bajo \"circunstancias inexplicables\" tras el fallo inicial del sistema.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50301717,
-    "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
-    "score": 51,
-    "time": 1793353742,
-    "titulo_es": "La imagen de un agujero negro: una colaboración global y las lecciones de física",
-    "resumen": "Este artículo detalla el logro sin precedentes de capturar la primera imagen de la sombra de un agujero negro supermasivo utilizando el Event Horizon Telescope (EHT), una red global de radiotelescopios. Se describe cómo Shep Doeleman y un equipo de 250 investigadores lograron transformar la Tierra en un telescopio efectivo, lo que requirió una colaboración científica y técnica de altísimo nivel. Las imágenes obtenidas no solo han permitido probar predicciones teóricas, sino que también han profundizado nuestra comprensión de estos objetos exóticos. El artículo también anticipa la posibilidad de obtener películas de agujeros negros para principios de la década de 2030. La conversación, que incluye a la astrofísica Janna Levin y al físico Steve Strogatz, destaca la importancia fundamental de los agujeros negros en la física, su papel en la regulación del universo y cómo, a pesar de su reputación de \"monstruos\", son sistemas elegantes y fundamentales que esculpen la historia y el pasado del cosmos.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50298964,
-    "url": "https://github.com/picocss/pico/discussions/754",
+    "id": 50309029,
+    "url": "https://blog.persistent.info/2026/10/infinite-mac-beos.html",
     "score": 174,
-    "time": 1793325524,
-    "titulo_es": "Pico CSS v2.1.1: El Fin de una Era y el Futuro del Desarrollo Frontend",
-    "resumen": "El artículo anuncia que la versión 2.1.1 es el último lanzamiento de Pico CSS, un framework CSS minimalista. Explica que, debido a los avances en la generación de HTML ligero y accesible por parte de la IA, la relevancia de un framework CSS minimalista se ha reducido. Para mantenerse competitivo, Pico CSS requeriría una reescritura completa con CSS moderno, nuevas características como OKLCH, cascade layers, Popover y anchor positioning, junto con compatibilidad retroactiva y un compilador nativo. Sin embargo, se ha decidido que este sería un proyecto diferente y Pico CSS continuará como está. El autor expresa gratitud a la comunidad por su apoyo a lo largo de los años, reconociendo que un pequeño proyecto personal ha llegado a potenciar miles de sitios web.",
-    "categoria": "Frontend"
+    "time": 1793388609,
+    "titulo_es": "BeOS ahora se puede ejecutar en el navegador en Infinite Mac",
+    "resumen": "El artículo detalla la integración de múltiples versiones de BeOS en Infinite Mac, una plataforma para experimentar el \"Universo Cinematográfico de Macintosh\". Los usuarios pueden iniciar BeOS instantáneamente en el navegador, interactuar con software preinstalado, insertar CD-ROMs y guardar su trabajo. La integración implicó superar varios desafíos técnicos, incluyendo la corrección de fallos en el emulador DingusPPC que dependían de las peculiaridades de Mac OS, mejorando así la precisión de la emulación de hardware para BeOS. Se destaca la compatibilidad con SheepShaver (originado en BeOS) y se menciona el potencial para soportar otros sistemas operativos como MkLinux y Rhapsody. En el lado de Infinite Mac, se realizaron ajustes visuales, se recopiló software y se implementó la preselección de resolución de pantalla utilizando la asistencia de un agente de IA. También se abordó el problema de la \"bomba de tiempo\" en Developer Release 8.2 de BeOS, haciendo necesario un soporte de fecha personalizado para permitir el arranque de esa versión.",
+    "categoria": "Hardware"
   },
   {
-    "id": 50295821,
-    "url": "https://elementary.codes",
-    "score": 115,
-    "time": 1793307399,
-    "titulo_es": "AppearanceRun: Aplicaciones declarativas Swift nativas en el navegador con WebAssembly",
-    "resumen": "AppearanceRun es un framework que permite ejecutar aplicaciones Swift de forma nativa en el navegador utilizando WebAssembly. Proporciona una sintaxis familiar para la construcción de interfaces de usuario web, con gestión automática de estado mediante `@State`, `@Environment` y `@Reactive`. Soporta la incrustación completa de Swift, resultando en bundles WebAssembly de tamaño reducido (kB en lugar de MB). Incluye un potente sistema de animaciones basado en CSS con transiciones automáticas FLIP y un servidor de desarrollo rápido con recarga en caliente para una iteración ágil.",
-    "categoria": "Frontend"
+    "id": 50315409,
+    "url": "https://mashable.com/science/nasa-voyager-1-communication-outage",
+    "score": 13,
+    "time": 1793448774,
+    "titulo_es": "La nave espacial Voyager 1 experimentó un fallo temporal de comunicación y se prepara para un nuevo hito",
+    "resumen": "La nave espacial Voyager 1, actualmente más allá del sistema solar, experimentó una interrupción de comunicaciones de dos días debido a un fallo en un conjunto de propulsores, activando automáticamente un sistema de respaldo. Este incidente, aunque resuelto, es un indicio de la necesidad de prepararse para lo inesperado dada la edad de la misión y la degradación de su fuente de energía. La misión se enfrenta a desafíos de conservación de energía, habiendo ya desactivado instrumentos y reemplazado otros por alternativas de menor consumo, en una estrategia denominada 'Big Bang'. A pesar de esto, la Voyager 1 alcanzará pronto el hito de 'un día de luz' de distancia de la Tierra, una medida de 16.09 mil millones de millas, y continúa su viaje a 38.000 mph. Lanzada en 1977, ha explorado los planetas exteriores y es el único objeto hecho por el hombre en el espacio interestelar. La comunicación con la nave se está volviendo cada vez más lenta, con un retraso de 24 horas para enviar y recibir mensajes.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50296730,
+    "url": "https://twitter.com/sgondala2/status/2115832070274723875",
+    "score": 169,
+    "time": 1793311114,
+    "titulo_es": "Construyendo una Organización de Ingeniería Nativa de IA",
+    "resumen": "El artículo detalla las lecciones aprendidas durante nueve meses de construcción de una organización de ingeniería impulsada por IA en FurtherAI. Se observa un aumento significativo en la productividad de los ingenieros (5x en cambios de código fusionados por día) tras la implementación de agentes de codificación y herramientas de automatización. Sin embargo, el cuello de botella se desplaza hacia las etapas de planificación y revisión. La estrategia adoptada es empoderar a los ingenieros para que asuman una mayor propiedad de extremo a extremo del ciclo de vida del software, incluyendo la planificación, ejecución, revisión, verificación del éxito y la gestión de regresiones. Esto redefine la senioridad en ingeniería como la capacidad de poseer problemas de principio a fin y exige que los ingenieros estén más cerca de los clientes. Los roles de los gerentes de ingeniería también evolucionan: deben estar inmersos en el trabajo, probando el producto como usuarios finales y desarrollando un juicio más agudo sobre las decisiones de producto, colaborando para que los ingenieros puedan tomar más decisiones de forma autónoma.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50314243,
+    "url": "https://www.osnews.com/story/146273/how-long-do-you-need-to-hold-down-the-power-button-to-turn-off-a-pc/",
+    "score": 49,
+    "time": 1793436212,
+    "titulo_es": "El misterio detrás del apagado forzado del PC: un análisis técnico",
+    "resumen": "El artículo profundiza en el comportamiento del apagado forzado de un PC mediante la pulsación prolongada del botón de encendido. Inicialmente, se menciona que mantener presionado el botón durante 12 segundos apaga el sistema a nivel de hardware sin notificar al sistema operativo, actuando como una medida de seguridad. Sin embargo, el texto revela una aparente discrepancia: Windows, tras 8 segundos de pulsación, intenta realizar un volcado del kernel (kernel dump) para su posterior análisis por el servicio de informes de errores de Windows. Esta acción, clasificada internamente como 'long power button hold' (LPBH) failures, se subclasifica en 'black screen LPBH' si la pantalla se queda completamente negra. El autor expresa confusión, ya que en la práctica, la mayoría de los sistemas responden al apagado forzado en 4-5 segundos, tiempo insuficiente para que Windows ejecute el volcado del kernel. Se especula que la duración del apagado forzado puede depender de la implementación específica de la placa base, en contraposición a lo sugerido por la especificación ATX. La pregunta central es cómo es posible que se generen y envíen estos volcados del kernel si la mayoría de los sistemas se apagan mucho antes, sugiriendo una posible adaptación del comportamiento del kernel de Windows basada en la información del chipset o la placa base.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50315987,
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ai-model-is-now-blocking-attempts-at-video-game-recreation-and-cloning-users-also-claim-non-malicious-generic-reverse-engineering-tasks-are-blocked",
+    "score": 11,
+    "time": 1793453100,
+    "titulo_es": "Claude de Anthropic Rechaza Tareas de Desarrollo de Juegos y Código Crítico Bajo Reglas de Seguridad",
+    "resumen": "El artículo informa sobre múltiples quejas de desarrolladores de software y seguridad que indican que los modelos Claude Code y Opus 5.5 de Anthropic están rechazando tareas. Se sospecha que una regla textual estricta, que prohíbe la 'recreación de un juego específico existente', está causando que el modelo se niegue a participar en ingeniería inversa de juegos, incluso con herramientas legítimas como REA. Adicionalmente, se reportan bloqueos en el desarrollo de sistemas anti-trampas y revisiones de seguridad de juegos, activando las salvaguardas del modelo. La coincidencia de estas restricciones, junto con la posible inclusión de restricciones de ciberseguridad más amplias, sugiere una política de seguridad proactiva pero potencialmente restrictiva por parte de Anthropic, que impacta negativamente el desarrollo y la investigación en áreas críticas como la ingeniería inversa y la seguridad.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50276613,
+    "url": "https://bellone.com/technical/double-buffering-with-cloudflare-queues",
+    "score": 54,
+    "time": 1793206103,
+    "titulo_es": "Cola Doblemente Buffered para Archivo de Telemetría por Hora en Cloudflare",
+    "resumen": "El artículo describe una arquitectura serverless en Cloudflare para la ingesta y procesamiento de eventos de telemetría. Utiliza una cola doblemente buffered (con dos colas) para agrupar eventos por hora UTC, aprovechando Cloudflare Workers, Queues y R2. La lógica de enrutamiento de mensajes y el drenaje de colas se gestiona mediante el módulo matemático y la referencia a la hora UTC para evitar problemas con el horario de verano. Los productores envían eventos a la cola activa basándose en su timestamp, y los consumidores se activan cada hora (en la media) para vaciar la cola inactiva, buscando la cola que fue inactiva en la hora anterior. Finalmente, los lotes de telemetría se comprimen y almacenan en R2 con una estrategia de particionamiento simple, creando un data lake serverless optimizado para análisis y con costos de almacenamiento reducidos.",
+    "categoria": "Desarrollo de Software"
   }
 ]
