@@ -1,182 +1,164 @@
 [
   {
+    "id": 50353386,
+    "url": "https://hissingkitty.com/hacker-churn",
+    "score": 14,
+    "time": 1793720512,
+    "titulo_es": "El Estado del SaaS: Construir vs. Comprar, Octubre 2026",
+    "resumen": "El artículo analiza las opiniones de los comentaristas de Hacker News sobre el software de pago. Identifica las 101 plataformas con más quejas, sumando 1.551 comentarios negativos. Se agrupan las quejas en categorías como brechas de seguridad, actualizaciones disruptivas, rendimiento lento, inflación de precios, bloqueo de proveedor ('lock-in'), baja calidad, IA intrusiva, publicidad no deseada, licencias restrictivas y problemas de flujo de trabajo. El informe también revela que 139 usuarios construyeron sus propias soluciones de reemplazo, lo que indica una tendencia a evitar las limitaciones percibidas en el software comercial.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50349276,
+    "url": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+    "score": 237,
+    "time": 1793692581,
+    "titulo_es": "Deep Blue vs. Kasparov: El Mito del Hardware y el Poder de la Programación en IA de Ajedrez",
+    "resumen": "El artículo analiza la victoria de Deep Blue contra Garry Kasparov en 1996, cuestionando la necesidad de hardware especializado. Contrasta el sistema de IBM, que requirió millones y hardware específico (30 P2SC y 480 co-procesadores VLSI), con la capacidad de un PC de escritorio de 1996 (Pentium Pro a 200 MHz con 64MB RAM) ejecutando un motor moderno como Stockfish para superar la fuerza de Kasparov (Elo ~2800). Se destaca que el progreso en IA de ajedrez se debe mayormente a mejoras en algoritmos y programación (métodos de búsqueda, evaluación de posiciones, redes neuronales) que a incrementos de velocidad del hardware. Experimentos con Crafty demuestran que, si bien el hardware moderno mejora el rendimiento, la optimización del software es el factor principal para el aumento de Elo (+720 sobre +1335), superando las capacidades de los motores de 1996 (Elo ~2300) y el propio Deep Blue (Elo 2700). Se concluye que la mayor parte de la ventaja de los motores modernos proviene de la programación inteligente y no solo de la velocidad del procesador.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50353300,
+    "url": "https://lordtoots.bearblog.dev/ai-is-destroying-my-cs-degree/",
+    "score": 75,
+    "time": 1793720106,
+    "titulo_es": "La Crisis Existencial de la IA en la Educación Universitaria",
+    "resumen": "El artículo describe la experiencia de un estudiante de ciencias de la computación y IA que se enfrenta a la inconsistencia y los problemas derivados de la adopción de la IA por parte de su universidad. La institución ha oscilado entre prohibir y obligar el uso de la IA, implementándola de forma ineficaz en áreas como la evaluación y la creación de contenido. Esto ha resultado en un aumento de la carga de trabajo, breves de evaluación de baja calidad y una experiencia de aprendizaje deficiente. El autor expresa frustración por la falta de un enfoque pedagógico coherente, la presión para \"escalar\" la educación a expensas de la calidad y la desinformación sobre el futuro de la ingeniería de software. A pesar de los desafíos, el estudiante mantiene su pasión por aprender, pero lamenta el impacto negativo de la \"IA hype\" en su experiencia educativa.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50353475,
+    "url": "https://www.quili.ai/",
+    "score": 57,
+    "time": 1793720942,
+    "titulo_es": "Un pueblo chileno se convierte en una IA humana por un día para salvar sus recursos hídricos",
+    "resumen": "La comunidad de Quilicura, Chile, reemplazó temporalmente a la inteligencia artificial con humanos para responder miles de prompts de IA durante un evento de 12 horas. El objetivo principal fue concienciar sobre el consumo de agua de los centros de datos de IA. Más de 40 personas respondieron a más de 25,000 prompts, con chats que duraron un promedio de 11 minutos y 4 segundos, interactuando con usuarios de más de 68 países. La iniciativa logró un alcance global masivo, llegando a más de mil millones de personas, destacando el impacto humano frente a la IA en la protección de recursos vitales como el agua.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50348962,
+    "url": "https://github.com/NVIDIA/auto-ontology",
+    "score": 231,
+    "time": 1793689490,
+    "titulo_es": "Auto Ontology: Framework para Capas de Razonamiento Semántico y Agentes IA",
+    "resumen": "Auto Ontology es un framework de Python diseñado para construir capas de razonamiento semántico y basadas en grafos sobre datos. Su objetivo principal es mejorar la fiabilidad y explicabilidad de flujos de trabajo de Agentes de IA y Modelos de Lenguaje Grandes (LLMs). Proporciona un contexto esencial para los agentes, detallando la ubicación, significado, uso, procedencia y similitud de los datos. La librería expone esta capa semántica a través de interfaces como MCP, CLI y API, integrándose con metadatos empresariales y reconciliando definiciones de datos. Soporta la generación determinista de consultas y se complementa con modelos semánticos existentes. La configuración de los endpoints de inferencia (NVIDIA NIM), modelos y claves de API se realiza mediante variables de entorno. El despliegue es posible en Kubernetes o localmente usando Docker Compose, con configuraciones para bases de datos (Postgres), autenticación (SSO) y almacenamiento seguro de credenciales (Vault).",
+    "categoria": "IA"
+  },
+  {
+    "id": 50352767,
+    "url": "https://floooh.github.io/2018/06/17/handles-vs-pointers.html",
+    "score": 10,
+    "time": 1793717670,
+    "titulo_es": "Gestión de Memoria Dinámica con Handles de Índice en C/C++",
+    "resumen": "El artículo propone un enfoque para la gestión de memoria dinámica en C y C++ que reemplaza los punteros crudos y inteligentes con 'index-handles'. Esta técnica se basa en la experiencia de trabajar con grandes bases de código C++ donde la gestión de memoria mediante punteros inteligentes resulta en un rendimiento lento debido a cache misses constantes y problemas de fragmentación. El autor sugiere minimizar el uso de punteros, especialmente aquellos que son 'dueños' de la memoria, y centralizar la manipulación directa de memoria en sistemas específicos (como renderizado, física, IA). Este enfoque es particularmente adecuado para arquitecturas orientadas a datos, donde sistemas centrales operan sobre arrays de datos compactos, mejorando la depuración y optimización de problemas relacionados con la memoria, y reduciendo la presión sobre el recolector de basura en lenguajes de nivel superior.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50321605,
+    "url": "https://toit.io/blog/toit-v2-0-0/",
+    "score": 183,
+    "time": 1793492704,
+    "titulo_es": "Celebrando Toit v2.0.0 después de más de cuatro años de desarrollo alfa",
+    "resumen": "El artículo anuncia el lanzamiento de Toit v2.0.0, una versión significativa de un lenguaje de programación y plataforma de desarrollo originalmente de código cerrado por Toitware. A pesar de haber sido estable durante un tiempo, el lanzamiento se retrasó por cambios importantes planificados y la inclusión continua de características. Se destaca una refactorización reciente que permite a las APIs de periféricos aceptar números de pines directamente, eliminando la necesidad de objetos gpio.Pin. Se menciona que la espera de que todas las características importantes estén completas es una meta inalcanzable, con nuevas mejoras como formateador, optimizaciones de resolución de compilador y soporte para arquitecturas adicionales aún en desarrollo para futuras versiones. El proyecto se volvió de código abierto y ha continuado evolucionando gracias a contribuciones de voluntarios tras el cierre de Toitware.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50352898,
+    "url": "https://github.com/Muvon/octomind",
+    "score": 32,
+    "time": 1793718178,
+    "titulo_es": "Octomind: Agente de Código de IA de Código Abierto y Entorno de Ejecución",
+    "resumen": "Octomind es un framework de código abierto para agentes de Inteligencia Artificial diseñados para asistir en el desarrollo de software. Proporciona un único binario ejecutable que permite a los Modelos de Lenguaje Grandes (LLMs) interactuar directamente con repositorios de código, ejecutando operaciones como lectura/escritura de archivos, ejecución de comandos shell y búsqueda de código. Soporta múltiples modos de operación (interactivo, stdin, daemon, WebSocket, ACP) y un motor de configuración unificado. Un modelo supervisor planifica y verifica el trabajo del agente, y las políticas de seguridad se definen mediante archivos TOML ('guardrails'), en lugar de prompts. La herramienta está optimizada para operaciones autónomas y puede ser desplegada en entornos de terminal, CI/CD o como un servicio de fondo. Incluye un registro de 'taps' para la distribución de agentes especializados y herramientas, y se integra con proveedores de modelos de IA, ya sea a través de Octomind Cloud o claves de API propias.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50346849,
+    "url": "https://github.com/JiaFeiMiao-K-Cat/DiscImageStudio",
+    "score": 322,
+    "time": 1793669623,
+    "titulo_es": "Disc Image Studio: Herramienta para Generar y Grabar Imágenes Visibles en Discos Ópticos",
+    "resumen": "Disc Image Studio es una herramienta multiplataforma para generar y grabar imágenes visibles en discos ópticos (CD, DVD, Blu-ray de capa simple). Permite convertir imágenes en datos compatibles con las restricciones físicas de los discos, creando patrones visibles tras la grabación. La herramienta ofrece funcionalidades para diseño con capas, ajuste de tono (dithering, gamma, brillo, niveles de gris), previsualización, y exportación de formatos como ISO, RAW, WAV+CUE. Incluye una función experimental de grabación directa y un sofisticado proceso de calibración asistida para mejorar la precisión en la alineación de datos, elevándola de 10^-6 a 10^-14. Se detalla el proceso de construcción, las reglas de versionado, CI/CD, empaquetado MSIX y firma. La herramienta es ejecutable en Windows (win-x64.exe) y está disponible como paquete CLI experimental para Linux (glibc x64/arm64) y macOS (osx-x64/osx-arm64). Las versiones CLI autoejecutables incluyen el runtime de .NET y pueden leer formatos de imagen comunes (PNG, JPEG, BMP, GIF), utilizando la primera imagen en caso de animaciones. El proyecto se basa en especificaciones de estándares ópticos y se inspira en el proyecto CDImage para la generación de pistas de audio CD que forman imágenes visibles. El código fuente se distribuye bajo licencia GPL v3.0 o posterior.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50352257,
+    "url": "https://shkspr.mobi/blog/2026/11/just-a-little-ai-resistance-as-a-treat/",
+    "score": 146,
+    "time": 1793715252,
+    "titulo_es": "Quejas sobre el uso de IA en el servicio al cliente",
+    "resumen": "El autor relata su experiencia al contactar a la empresa Ocado por un problema técnico con las invitaciones de calendario. Tras enviar un informe detallado, recibió una respuesta que identificó como generada por IA, caracterizada por un lenguaje sintético, el uso de em-dashes y una falta de autenticidad. Insatisfecho, calificó negativamente una encuesta de satisfacción, lo que provocó una respuesta personalizada de un empleado real. Este segundo contacto, más humano y receptivo, se debió, según el empleado, a la calidad del diagnóstico técnico proporcionado. El autor argumenta que, si bien la IA puede ser útil para triaje y análisis de métricas en el servicio al cliente, su uso para responder directamente a quejas genuinas es una falta de respeto hacia el tiempo y la experiencia del cliente, y aboga por exigir interacciones humanas en tales casos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50346981,
+    "url": "https://hackertimes.ca/",
+    "score": 415,
+    "time": 1793670814,
+    "titulo_es": "Astra mejora las puntuaciones de Qwen en matemáticas editando pesos",
+    "resumen": "Un equipo del MIT CSAIL ha mejorado significativamente las puntuaciones de Qwen en matemáticas, un modelo de lenguaje grande, aplicando un método llamado Astra. Este método edita los pesos del modelo utilizando Python y se basa en la retroalimentación obtenida de ejecuciones de práctica. Los resultados preliminares muestran un aumento notable en la métrica MATH-500, pasando del 7.9% a un 48.1% en pruebas que permitieron 50 pases hacia adelante. Estos hallazgos son independientes de experimentos anteriores del equipo que solo utilizaron pesos sin procesar en redes neuronales más pequeñas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50337980,
+    "url": "https://themaister.net/blog/2026/10/29/killing-what-cant-be-handled-putting-a-spaghetti-demon-to-eternal-rest/",
+    "score": 23,
+    "time": 1793632729,
+    "titulo_es": "Aventuras Gráficas de Maister: Programación Gráfica de Bajo Nivel y la Evolución de dxil-spirv",
+    "resumen": "El artículo detalla la lucha del autor con la implementación del structurizer en dxil-spirv, una herramienta para convertir DXIL a SPIR-V. La arquitectura original era frágil y difícil de mantener, lo que llevaba a problemas de depuración significativos. Se describe un cambio de enfoque desde la legibilidad humana y la corrección simultánea hacia la priorización de la corrección y el rendimiento, adoptando la implementación 'goto_if' de Mesa, utilizada en OpenCL. Para validar esta nueva aproximación, se implementó una ruta de código en dxil-spirv que deshabilita la estructuración y envía el código 'en bruto' al driver gráfico. Las pruebas en juegos demostraron que el rendimiento era comparable en RADV, lo que sugiere la viabilidad de la nueva estrategia. Además, se desarrolló un conjunto de herramientas para generar descripciones de grafos de control de flujo (CFG) legibles por humanos, que luego se convierten en módulos SPIR-V ejecutables. Esta herramienta se mejoró para permitir la generación de CFG aleatorios y la fuzzing, un proceso que ha permitido descubrir y reportar múltiples errores en Mesa.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50353335,
+    "url": "https://www.nbcnews.com/health/health-news/study-estimates-75-nfl-players-died-15-year-span-may-cte-rcna605975",
+    "score": 15,
+    "time": 1793720284,
+    "titulo_es": "Estudio estima que el 75% de los exjugadores de fútbol profesional fallecidos tenían signos de CTE",
+    "resumen": "Un estudio reciente publicado en JAMA Network Open estima que el 75% de los jugadores profesionales de fútbol fallecidos durante un período de 15 años (2008-2023) mostraron signos de encefalopatía traumática crónica (CTE). Esta cifra es significativamente más alta que estimaciones previas, triplicando la del estudio de agosto anterior (25%). La CTE es una enfermedad neurodegenerativa asociada a traumatismos craneoencefálicos repetitivos, caracterizada por la acumulación de proteína tau en el cerebro. Aunque no todas las personas con signos de CTE experimentan síntomas, el estudio estimó que aproximadamente el 27% de los exjugadores analizados padecieron demencia. El estudio, liderado por Yorghos Tripodis de la Universidad de Boston, intentó mitigar el sesgo inherente a la donación de cerebros para investigación, donde las familias de personas con síntomas cognitivos son más propensas a donar. Para ello, combinaron datos del UNITE Brain Bank (396 cerebros donados con signos de CTE en ~93% de ellos) con registros de defunción nacionales de otros 1.966 exjugadores. Se aplicaron correcciones estadísticas para ajustar la mayor probabilidad de donación de cerebros por parte de familias de jugadores con síntomas cognitivos (aproximadamente 5 veces más probable). El resultado sugiere que de aproximadamente 2.360 exjugadores fallecidos en el período, alrededor de 1.760 (75%) tenían CTE. La NFL, por su parte, afirma continuar mejorando la seguridad del juego. La investigación destaca la dificultad diagnóstica de la CTE en vida, ya que solo se confirma mediante autopsia, y sus cambios microscópicos no son visibles en escáneres cerebrales convencionales.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50334523,
+    "url": "https://erici.eu",
+    "score": 178,
+    "time": 1793609913,
+    "titulo_es": "Llegó el silicio RVA23 de la Iniciativa Europea de Computación Industrial RISC-V",
+    "resumen": "El artículo describe la llegada del silicio RVA23 para computación industrial basado en RISC-V y el esfuerzo de la iniciativa ERICI por crear un stack de software de referencia (desde firmware hasta sistemas operativos en tiempo real y de propósito general) que funcione de manera unificada en hardware RVA23 real. ERICI busca romper el ciclo de espera entre la disponibilidad de hardware y software, abordando las necesidades de los sistemas industriales como la longevidad (15 años), la independencia de un solo proveedor o país, y la capacidad de ejecución aislada de cargas de trabajo en tiempo real y de propósito general mediante un hipervisor. Se enfatiza que las piezas faltantes no son los núcleos RISC-V, sino el hardware industrial circundante y un stack de software abierto y particionado. El stack de referencia es de código abierto y está diseñado para ser mantenible a largo plazo, lo que es crucial para la vida útil de los equipos industriales.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50323123,
+    "url": "https://knlb.dev/essays/surrender",
+    "score": 266,
+    "time": 1793513610,
+    "titulo_es": "Notas de Trabajo: La rendición cognitiva al trabajar con agentes",
+    "resumen": "El artículo explora el concepto de 'rendición cognitiva' al trabajar con agentes de IA, que implica aceptar sus resultados sin una evaluación crítica. El autor destaca la seducción de esta metodología por su velocidad y bajo esfuerzo, pero advierte sobre sus peligros: decisiones subóptimas, acumulación de deuda técnica y reducción de la familiaridad con el sistema. Se discuten factores como la presión de grupo, la confianza aparente de los modelos (posiblemente por RLHF) y la creciente complejidad de los proyectos OSS como impulsores de esta tendencia. La retroalimentación atenuada de la deuda técnica y la influencia del ciclo de hype también se mencionan como agravantes. El autor reflexiona sobre la dificultad de encontrar un equilibrio, reconociendo la necesidad de un uso consciente e intencional de los agentes para mitigar los inconvenientes. Se describe la experiencia de 'amnesia de Gell-Mann', donde se confía ciegamente en los agentes cuando no se tiene experiencia, solo para encontrarlos fallando en tareas básicas. En el estado actual (Oct 2026), el uso máximo de agentes conduce a una explosión de complejidad, con sistemas que funcionan en general pero con casos extremos y errores sorprendentes, lo que requiere herramientas de desarrollo especializadas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50331988,
+    "url": "https://www.psiquantum.com/news-import/psiquantum-unveils-optical-circuit-switch-technology-built-on-advanced-low-loss-silicon-photonics-platform",
+    "score": 35,
+    "time": 1793583256,
+    "titulo_es": "PsiQuantum presenta tecnología de conmutación de circuitos ópticos para superar desafíos de escalabilidad en infraestructura de IA",
+    "resumen": "PsiQuantum ha presentado su tecnología de Conmutación de Circuitos Ópticos (OCS) basada en una plataforma de fotónica de silicio avanzada y de baja pérdida. Esta tecnología busca abordar los crecientes desafíos de escalabilidad en la infraestructura de IA, donde el movimiento eficiente de datos entre grandes grupos de cómputo se ha convertido en un cuello de botella. La plataforma, desarrollada durante casi una década para computación cuántica a escala de servicios públicos, ha demostrado un rendimiento excepcional en pruebas de laboratorio, con una pérdida de inserción típica de 1.2 dB, diafonía de 40 dB y un tiempo de reconfiguración inferior a 3 ms, todo sin necesidad de amplificación. PsiQuantum está compartiendo muestras de su vehículo de demostración 8x8 y avanzando hacia productos comerciales. La compañía destaca la sinergia entre IA y computación cuántica, donde los avances en infraestructura de IA pueden acelerar el desarrollo cuántico y viceversa. La tecnología BTO (titanato de bario) también se menciona como una vía para futuros productos más avanzados, aunque no es necesaria para las ofertas iniciales. Este anuncio sigue a un acuerdo con el Departamento de Comercio de EE. UU. para acelerar la investigación y manufactura de componentes ópticos de alto rendimiento.",
+    "categoria": "Hardware"
+  },
+  {
     "id": 50339913,
     "url": "https://momentic.ai/",
-    "score": 57,
-    "time": 1793639125,
-    "titulo_es": "QA Bench: Mo, Codex, Claude Code y Devin frente a 1.396 errores etiquetados",
-    "resumen": "Presentación de Momentic (Mo), una solución de ingeniería de QA basada en inteligencia artificial para la ejecución de pruebas end-to-end (E2E). La plataforma aborda el cuello de botella de la verificación en flujos de desarrollo acelerados por agentes de código, permitiendo definir pruebas en YAML mediante lenguaje natural, autorreparar selectores de interfaz rotos ('permanent healing'), e integrarse directamente en pipelines de CI/CD vía CLI y entornos de agentes mediante MCP. Se evalúa su rendimiento frente a modelos y agentes como Devin, Claude Code y Codex sobre una base de 1.396 errores etiquetados.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50339494,
-    "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-    "score": 143,
-    "time": 1793637629,
-    "titulo_es": "El valor del uso interno de IA en Anthropic supera el gasto en salarios de sus empleados",
-    "resumen": "Anthropic reveló en su presentación para salida a bolsa que el valor comercial del uso interno de Claude superó los costos mensuales en compensación económica de sus empleados (sin contar acciones). El consumo interno de IA aumentó más de 250 veces entre enero y septiembre, llegando al punto en que más del 90% del nuevo código añadido a su software fue escrito directamente por Claude. Este cambio refleja una tendencia emergente donde los tokens de IA se consideran un componente clave de compensación y apalancamiento operativo, permitiendo un crecimiento acelerado de ingresos sin un aumento proporcional en la plantilla.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50341334,
-    "url": "https://arxiv.org/abs/2610.37741",
-    "score": 4,
-    "time": 1793644258,
-    "titulo_es": "arXivLabs: Colaboración en el Desarrollo de Nuevas Funciones para arXiv",
-    "resumen": "El artículo describe arXivLabs, un marco de colaboración diseñado para permitir que individuos y organizaciones desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza el compromiso de arXiv con los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, trabajando únicamente con socios que se adhieren a estos principios. Se invita a los interesados a aprender más sobre cómo proponer proyectos que aporten valor a la comunidad de arXiv.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50312408,
-    "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
-    "score": 785,
-    "time": 1793410736,
-    "titulo_es": "El Impacto de la IA en el Ciclo de Lanzamiento de PostgreSQL y el Descubrimiento de Errores",
-    "resumen": "El artículo explica por qué el lanzamiento de PostgreSQL 19 se ha retrasado y ha experimentado reversiones tardías de características importantes, como \"UPDATE/DELETE FOR PORTION OF\", \"SQL Property Graph Queries (SQL/PGQ)\" y \"ALTER TABLE … MERGE PARTITION/SPLIT PARTITION\". La causa principal identificada es la influencia de los Modelos de Lenguaje Grandes (LLMs). Los LLMs han facilitado enormemente la detección de errores en la base de código de PostgreSQL, que tiene más de 30 años.  Esto ha llevado a un aumento significativo en la cantidad de commits para corregir errores, no solo en la rama de desarrollo principal sino también en las ramas de versiones estables anteriores.  Aunque los LLMs ayudan a identificar y hasta a redactar correcciones, estas requieren revisión humana, lo que consume tiempo adicional.  Además, el tiempo dedicado a revisar las correcciones en las ramas de soporte se ha desviado de la revisión final de la nueva versión, lo que contribuye al retraso.  A pesar de las preocupaciones a largo plazo sobre el manejo de décadas de errores, el autor considera que el retraso actual no es alarmante y refleja el compromiso del proyecto con la calidad.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50341028,
-    "url": "https://devblogs.microsoft.com/oldnewthing/20261102-00/?p=112818/",
-    "score": 6,
-    "time": 1793643168,
-    "titulo_es": "El lanzamiento de Windows 2000 y un vistazo tras bambalinas",
-    "resumen": "El artículo narra la experiencia del autor durante el lanzamiento de Windows 2000 en San Francisco. Se detalla la preparación del evento, incluyendo la configuración del escenario con una maqueta gigante de un laptop, pantallas, cortinas y áreas de demostración. El autor tuvo la oportunidad de presenciar un ensayo general, donde se reveló que Patrick Stewart sería el presentador, aunque inicialmente un miembro del equipo simuló ser él para pruebas técnicas. Se mencionan demostraciones específicas como el uso de un avión para simular escenarios de computación móvil empresarial, incluyendo el intercambio de archivos por infrarrojos. El autor reflexiona sobre la presencia escénica de Stewart y cómo el presentador, a pesar de no comprender completamente el contenido técnico, logró transmitir entusiasmo por el producto. El artículo también hace referencia a la trayectoria del autor en la evolución de Windows y su popular sitio web 'The Old New Thing'.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50337661,
-    "url": "https://retrogamecoders.com/c64-basic-dungeon-part11/",
-    "score": 22,
-    "time": 1793631381,
-    "titulo_es": "Añadiendo nuevos niveles y sensación de progreso a nuestro juego de mazmorras en C64 BASIC",
-    "resumen": "El artículo describe la implementación de nuevas funcionalidades en un juego de mazmorras desarrollado en C64 BASIC. Se enfoca en añadir una sensación de progreso al juego mediante la introducción de múltiples niveles, la gestión de estadísticas del personaje y la recolección de objetos (cálices) para poder avanzar. Cada nivel genera un nuevo mapa con una cantidad variable de cálices, y el objetivo es recolectarlos todos para poder acceder a las escaleras y pasar al siguiente nivel. El personaje ahora mantiene su progreso (puntos de vida, estadísticas, oro, llaves, magia) entre niveles mientras siga vivo. Se refactoriza el código separando la inicialización del jugador (INITPLAYER) de la generación y construcción de cada nivel (BUILDLEVEL). Se detalla la lógica para la colocación aleatoria de las escaleras en una de las habitaciones de las esquinas, asegurando que sean accesibles y que no bloqueen el movimiento hasta que se cumplan los requisitos del nivel.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50337503,
-    "url": "https://deploymentsafety.openai.com/gpt-rosalind-6",
-    "score": 46,
-    "time": 1793630642,
-    "titulo_es": "GPT-Rosalind-6: Modelo de Razonamiento Fronterizo para Ciencias de la Vida y Descubrimiento de Fármacos",
-    "resumen": "GPT-Rosalind-6 es un modelo de razonamiento avanzado diseñado para aplicaciones en biología, descubrimiento de fármacos y medicina traslacional. Derivado del modelo insignia GPT-6 Astra, comparte sus mismos pesos y arquitectura, pero con un enfoque específico en dominios biológicos. Se ofrece a científicos cualificados, institutos de investigación, empresas y socios gubernamentales bajo un modelo de acceso confiable, que incluye revisiones de uso propuesto, controles de seguridad y prácticas de gobernanza. El modelo presenta una capacidad mejorada para manejar consultas biológicas de doble uso (dual-use) en comparación con su predecesor, GPT-Rosalind-5.5, mientras mantiene salvaguardas para rechazar solicitudes relacionadas con la militarización biológica y otros temas de seguridad.  Las evaluaciones de preparación lo clasifican como de alta capacidad en dominios biológicos y químicos, y de alta criticidad en ciberseguridad. Las pruebas de rendimiento en benchmarks como MedChemBench v7, GeneBench Pro v13 y LifeSciBench Gold demuestran una mejora significativa en la interpretación de estructuras químicas, relaciones estructura-actividad, predicciones de potencia y toxicidad de fármacos, y análisis de datos biológicos cuantitativos en comparación con GPT-Rosalind-5.5. Este modelo se alinea con las políticas de uso de OpenAI para garantizar un uso seguro y responsable de la tecnología de IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50334704,
-    "url": "https://syscall.sh/",
-    "score": 174,
-    "time": 1793611756,
-    "titulo_es": "Tabla de llamadas al sistema de Linux por arquitectura",
-    "resumen": "El artículo describe un recurso que centraliza las tablas de llamadas al sistema (syscalls) de Linux para 27 arquitecturas, cubriendo versiones del kernel desde 3.3 hasta 7.3. Proporciona detalles como el número de llamada, argumentos (ARG0-ARG5), registros y valor de retorno. La información se presenta en archivos JSON para cada arquitectura, indicando el historial de aparición ('since') y eliminación ('removed_in') de cada syscall. El recurso se genera directamente desde el código fuente del kernel, incluyendo convenciones de llamada y descripciones breves extraídas de las páginas man de Linux y liburing para io_uring.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 50335615,
-    "url": "https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack",
-    "score": 257,
-    "time": 1793620213,
-    "titulo_es": "Cadenas de supermercados en siete países sufren ciberataques que elevan la temperatura de las unidades de refrigeración",
-    "resumen": "Múltiples cadenas de supermercados en al menos siete países europeos (Bélgica, Estonia, Irlanda, Finlandia, Luxemburgo, Países Bajos y Suecia) han reportado incidentes en sus sistemas de refrigeración y congelación, con temperaturas elevándose hasta 50°C. Estos eventos, similares a un ciberataque previo en Francia que causó millones en pérdidas, son atribuidos a ataques cibernéticos dirigidos. Las autoridades expresan profunda preocupación por estos ataques coordinados, considerándolos un intento deliberado de interrumpir la cadena de suministro de alimentos y minar la confianza del consumidor. Se destaca la creciente vulnerabilidad de dispositivos de Tecnología Operacional (OT) con conectividad remota, como los sistemas de refrigeración, y la creciente preocupación por ataques híbridos patrocinados por estados, especialmente tras la invasión rusa de Ucrania en 2022. Varios minoristas confirmaron haber sido hackeados, con daños significativos en productos y operaciones, y se están tomando medidas para desconectar y actualizar sistemas expuestos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50336840,
-    "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-    "score": 34,
-    "time": 1793627745,
-    "titulo_es": "Tendencias en la Adopción de IA Corporativa en EE. UU. y Cambios en la Medición Gubernamental",
-    "resumen": "El artículo analiza la evolución de la tasa de adopción de Inteligencia Artificial (IA) en grandes empresas de EE. UU., utilizando datos de la Encuesta de Tendencias y Perspectivas Empresariales (BTOS) de la Oficina del Censo de EE. UU. Inicialmente, se observó una aparente desaceleración en la adopción de IA. Sin embargo, una investigación más profunda revela que la metodología de la encuesta cambió significativamente el 17 de noviembre de 2025. La pregunta sobre el uso de IA se amplió de \"producción de bienes o servicios\" a \"cualquier función empresarial\", lo que llevó a un aumento sustancial en las tasas de respuesta positiva. Posteriormente, el artículo señala un cambio aún más reciente en la terminología de la encuesta, a partir del 19 de octubre de 2026, donde \"Inteligencia Artificial (IA)\" se ha redenominado como \"Super Inteligencia (SI)\" en respuesta a la Orden Ejecutiva 14434. Este cambio de nomenclatura plantea dudas sobre la comparabilidad futura de los datos y la posible confusión de los encuestados, ya que el impacto de esta nueva terminología en los resultados de la encuesta aún está por determinarse.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50332163,
-    "url": "https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/",
-    "score": 199,
-    "time": 1793584778,
-    "titulo_es": "El inicio de BSD Unix",
-    "resumen": "El artículo detalla la génesis y las primeras distribuciones de Berkeley Software Distribution (BSD) a partir del código de AT&T Unix. Inicialmente, BSD no era un sistema operativo independiente, sino una colección de software para instalar sobre un sistema Unix existente, incluyendo el compilador Pascal y el editor 'ex'. Bill Joy lideró estas primeras etapas, empaquetando y distribuyendo las primeras versiones (BSD y 2BSD) a otras universidades. Un hito clave fue la adaptación de Unix para el hardware VAX, integrando virtual memory (gracias al trabajo de Ozalp Babaoglu y el profesor Domenico Ferrari) con el kernel 32/V de Bell Labs. Esta integración, junto con la portabilidad de herramientas como 'vi' y el C shell, dio lugar a 3BSD, que atrajo la atención de DARPA por su potencial para estandarizar el intercambio de software entre instituciones de investigación a través de ARPANET.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50315217,
-    "url": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
-    "score": 246,
-    "time": 1793447627,
-    "titulo_es": "Identifican la causa de los breves picos de demanda eléctrica cada minuto",
-    "resumen": "Un equipo de investigación liderado por Dirk Witthaut del Forschungszentrum Jülich, en colaboración con la Universidad de Colonia y el Instituto de Tecnología de Karlsruhe, ha descubierto que los breves picos de demanda eléctrica observados cada minuto en la red eléctrica europea (y globalmente) son causados por las comprobaciones regulares del estado de carga de los sistemas de almacenamiento de baterías a gran escala. Estos sistemas, cada vez más numerosos, sincronizan sus comprobaciones aproximadamente cada 60 segundos, lo que genera fluctuaciones medibles en el consumo eléctrico. Si bien estos picos no comprometen la seguridad de la red, pueden incrementar el desgaste de componentes como las turbinas. Los investigadores sugieren que otros dispositivos controlados digitalmente, como sistemas de climatización o electrodomésticos, podrían contribuir a patrones similares. Los hallazgos, publicados en Nature Energy, podrían ayudar a mejorar la robustez del suministro eléctrico al comprender mejor estas interacciones.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50331784,
-    "url": "https://trigger.dev/blog/security-incident-nov-2026",
     "score": 158,
-    "time": 1793581756,
-    "titulo_es": "Incidente de seguridad en Trigger.dev",
-    "resumen": "Trigger.dev ha sufrido un incidente de seguridad donde un atacante obtuvo acceso no autorizado a variables de entorno de un subconjunto de organizaciones. El exploit ha sido bloqueado y se ha contactado a los propietarios de cuentas afectadas para mitigar el riesgo. Se proporcionarán actualizaciones en su página de estado y se ofrece soporte para consultas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50319510,
-    "url": "https://karpathy.bearblog.dev/hacker-tube/",
-    "score": 2786,
-    "time": 1793476613,
-    "titulo_es": "Creación de HackerTube: Un Clon de YouTube Impulsado por IA Basado en Recomendaciones de Hacker News",
-    "resumen": "El artículo detalla el proceso de creación de \"HackerTube\", un clon de YouTube desarrollado con la ayuda de una IA avanzada (Opus 5.5 y Claude Code). El autor, insatisfecho con la calidad del contenido de YouTube, utilizó la IA para procesar comentarios de Hacker News, identificar videos recomendados y construir una interfaz de usuario similar a YouTube. El proceso implicó la descarga y filtración de 40,000 comentarios, la ejecución de un flujo de trabajo de IA para eliminar spam y la recopilación de 6,454 videos únicos recomendados en 150 temas entre 2007 y 2026. La IA se encargó de la mayor parte del desarrollo, incluida la obtención de metadatos de YouTube, la configuración de un VPS, la compra de un dominio y la implementación, seguridad, endurecimiento y optimización del código. El autor solo realizó tareas manuales mínimas como la obtención de claves API, el arranque del VPS y la compra del dominio. El proyecto se completó en aproximadamente 2 horas, demostrando la eficiencia de la IA en el desarrollo de software.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50334240,
-    "url": "https://remy.wang/blog/hilbert.html",
-    "score": 50,
-    "time": 1793606840,
-    "titulo_es": "El Legado de Hilbert y la Revolución de la IA en las Matemáticas y la Ciencia de la Computación",
-    "resumen": "El artículo explora el impacto de los teoremas de incompletitud de Gödel y la indecidibilidad de Turing en el programa de Hilbert para establecer fundamentos matemáticos rigurosos y un algoritmo de decisión universal. A pesar de que Gödel y Turing demostraron la imposibilidad de estos objetivos en su forma original, sus trabajos sentaron las bases para la teoría de tipos y la ciencia de la computación. El texto destaca la ironía de que hoy en día, los asistentes de prueba automatizados (como Lean) y la IA están logrando de facto una \"máquina de pruebas\" similar a la que Hilbert soñaba. Si bien esto representa un avance en las matemáticas al permitir la formalización y verificación automática de pruebas, el autor expresa preocupación por su efecto en la comunidad matemática y en la ciencia de la computación. En esta última, se lamenta la tendencia a abandonar la revisión del código generado por IA, renunciando a la capacidad única de la disciplina de comprender completamente el funcionamiento de sus creaciones, lo que considera una \"gran tragedia\" que contradice el espíritu fundamental de la ciencia.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50341293,
-    "url": "https://nltimes.nl/2026/11/02/researchers-face-record-low-chances-getting-grant-partly-due-rise-ai",
-    "score": 3,
-    "time": 1793644126,
-    "titulo_es": "La IA Inunda las Solicitudes de Subvenciones Científicas, Reduciendo las Tasas de Éxito",
-    "resumen": "El artículo describe cómo la inteligencia artificial está facilitando la generación rápida de propuestas de subvenciones científicas pulidas, lo que ha provocado un aumento masivo en el número de solicitudes. Esta afluencia, combinada con un número fijo de subvenciones disponibles, está reduciendo drásticamente las tasas de éxito, haciendo que el sistema sea insostenible. Investigadores señalan que, si bien las propuestas generadas por IA parecen sólidas inicialmente, los candidatos a menudo no pueden defender adecuadamente sus planes de investigación durante las entrevistas, desplazando a candidatos más cualificados. Ejemplos incluyen el Consejo Europeo de Investigación y el programa Marie Curie, con tasas de éxito por debajo del 5% y un aumento del 27% en las solicitudes, respectivamente. La organización holandesa NWO también informa de una caída en las tasas de éxito, que podrían caer por debajo del 10% en algunos casos. Este fenómeno, observado también en proveedores de subvenciones como FWP, sugiere un cambio en la calidad percibida de las solicitudes debido a la IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50299811,
-    "url": "https://github.com/raphlinus/nibnib",
-    "score": 184,
-    "time": 1793333826,
-    "titulo_es": "Compresión de imágenes a 4bpp con velocidad de descompresión extrema",
-    "resumen": "El artículo describe un formato de compresión de imágenes llamado 'nibnib', diseñado para una velocidad de descompresión extremadamente rápida, especialmente en microcontroladores con recursos limitados como el RP2350. Utiliza una paleta donde cada entrada almacena un delta de color en lugar del color absoluto, lo que mejora la calidad en regiones suaves en comparación con las imágenes basadas en paletas tradicionales. El formato comprime a 4 bits por píxel (4bpp) decodificando dos píxeles a la vez a partir de un solo byte de entrada. El proceso de decodificación es simple y determinista: un byte de entrada se utiliza para buscar en la paleta; el valor de 32 bits obtenido se suma al píxel previamente decodificado (duplicado) para generar dos píxeles de 16bpp (RGB 565). La codificación, en cambio, es un proceso asimétrico y computacionalmente intensivo, que implica una búsqueda de parámetros (selección de paleta y selección de codepalabras) para minimizar el error. La paleta incluye un cubo de pequeños valores delta y valores aleatorios, y la codificación aplica una difusión de error similar a Floyd-Steinberg, pero adaptada para generar dos píxeles simultáneamente, ponderando el error para favorecer frecuencias espaciales más bajas. Se menciona que la adaptabilidad de la paleta al contenido de la imagen es una oportunidad de mejora.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50337703,
-    "url": "https://www.nature.com/articles/s44304-026-00290-9",
-    "score": 22,
-    "time": 1793631565,
-    "titulo_es": "Los extremos de calor de 40 °C no son \"implausibles\" en los países nórdicos",
-    "resumen": "El artículo analiza las predicciones de los sistemas de predicción estacional del Centro Europeo de Previsiones Meteorológicas a Plazo Medio (ECMWF), simulando 7308 años de veranos, para evaluar la probabilidad de que se alcancen temperaturas de 40 °C en los países nórdicos (Noruega, Suecia y Finlandia). Estos países, tradicionalmente menos afectados por olas de calor intensas que Europa continental, están experimentando temperaturas excepcionalmente altas. Se estima que la probabilidad anual de alcanzar 40 °C en algún punto de los países nórdicos es del 0.53% en 2025 (con un intervalo de confianza del 95%: 0.38–0.70%), lo que representa un aumento de seis veces desde 1981. La probabilidad anual de superar el récord nacional de temperatura observado hasta la fecha es mayor en Noruega (10.9%) bajo las condiciones climáticas actuales. Estos extremos de calor se atribuyen a la coincidencia de bloqueos en forma de omega (omega blocking) con condiciones de baja humedad del suelo en el norte de Europa. Los hallazgos sugieren que los países nórdicos deben prepararse para temperaturas máximas considerablemente más altas de lo que indica el registro histórico de observaciones, indicando la necesidad de adaptar infraestructuras y poblaciones a un clima más cálido. Los datos utilizados provienen de Copernicus Climate Change Service (NGCD y ERA5) y ECMWF (SEAS5).",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50325253,
-    "url": "https://github.com/ivankovic/omnidiff",
-    "score": 301,
-    "time": 1793538150,
-    "titulo_es": "OmniDiff: Herramienta de Diferencias de Archivos con Enfoque en Rendimiento y Precisión",
-    "resumen": "OmniDiff es una herramienta de comparación de archivos (diffing) diseñada para ser rápida, robusta y precisa, con capacidades de 'content-aware diffing'. Soporta varios tipos de archivos, incluyendo código, PDFs, documentos de OpenDocument, catálogos de traducción e imágenes (estáticas y animadas). Ofrece interfaces interactivas como una TUI (Interfaz de Usuario en Texto) que utiliza colores avanzados (24-bit o 256-color) y temas personalizables, así como un modo headless para scripting y CI que genera diffs en texto plano o JSON. La compilación requiere un compilador C y Rust 1.92+, con precompilados disponibles para Linux, macOS y Windows. Se integra con sistemas de control de versiones como Git y Nix. La TUI proporciona contexto adicional al mostrar la función o estructura contenedora más cercana a los cambios y permite personalizar la cantidad de líneas de contexto. Los códigos de salida siguen la convención de `diff -u`, con una opción `--exit-code` para diferenciar entre diferencias y errores. Está en desarrollo la integración con VS Code, pendiente de una API pública.",
+    "time": 1793639125,
+    "titulo_es": "Momentic: Verificación de Código con Agentes de IA para el Desarrollo de Software",
+    "resumen": "El artículo describe Momentic, una plataforma diseñada para integrarse en el ciclo de desarrollo de software, actuando como un ingeniero de QA de IA. Su función principal es la verificación de aplicaciones mediante la ejecución de pruebas automatizadas basadas en flujos de usuario definidos en lenguaje natural (YAML). Momentic interactúa directamente con la aplicación para verificar flujos críticos, encontrar y corregir bugs, y adaptarse a cambios en la interfaz de usuario a través de un mecanismo de 'sanación permanente'. La plataforma se integra en el proceso de CI/CD para asegurar la calidad antes de fusiones o despliegues. Además, permite construir una base de conocimiento sobre el producto para que los agentes de IA comprendan la terminología, las reglas de negocio y el comportamiento esperado, mejorando así la efectividad de las pruebas y la colaboración con agentes de codificación. Su objetivo es cerrar la brecha entre la velocidad de desarrollo asistido por IA y la necesidad de garantizar la fiabilidad del software.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50299427,
-    "url": "https://www.sciencedaily.com/releases/2026/10/261025073051.htm",
-    "score": 108,
-    "time": 1793329612,
-    "titulo_es": "Científicos desarrollan la primera capa de invisibilidad térmica tridimensional",
-    "resumen": "Investigadores de la Universidad de Illinois Urbana-Champaign y la Universidad Técnica de Dinamarca han creado y probado con éxito la primera capa de invisibilidad térmica tridimensional. Este dispositivo está diseñado para ocultar objetos de cámaras infrarrojas y protegerlos de temperaturas extremas, redirigiendo el flujo de calor a su alrededor en lugar de bloquearlo. Utilizando una nueva estructura de material basada en celosía, fabricada mediante impresión 3D de aluminio y materiales de baja conductividad térmica, la capa puede ocultar objetos con geometrías complejas en cualquier dirección. Las pruebas con cámaras infrarrojas confirmaron que el dispositivo disipa el calor de manera efectiva, haciendo que el objeto oculto parezca inexistente y manteniendo una temperatura interna estable. Las aplicaciones potenciales incluyen la refrigeración de microchips, la protección de electrónica delicada y la prevención de la detección de equipos a través de su firma térmica.",
-    "categoria": "Ciencia y Matematica"
+    "id": 50341174,
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "score": 2887,
+    "time": 1793643688,
+    "titulo_es": "Programación en Espacio de Pesos: LLMs Editando Redes Neuronales Nativamente",
+    "resumen": "El artículo introduce el concepto de 'Programación en Espacio de Pesos' (Weight-Space Programming), donde los Modelos de Lenguaje Grandes (LLMs) de última generación demuestran una capacidad sorprendente para leer, escribir y editar directamente los pesos de redes neuronales, tanto para entender su funcionalidad como para optimizarlos. Se observan resultados prometedores en la mejora del rendimiento de redes neuronales en tareas como juegos y matemáticas, e incluso en la corrección de fallos de razonamiento en modelos de lenguaje complejos, todo ello sin necesidad de reentrenamiento o retroalimentación ambiental explícita. Esta capacidad representa un avance significativo en la optimización e interpretabilidad de modelos de IA, sugiriendo un futuro donde los LLMs podrían ser utilizados para optimizar las redes neuronales de manera nativa, razonando directamente sobre sus pesos.",
+    "categoria": "IA"
   }
 ]
