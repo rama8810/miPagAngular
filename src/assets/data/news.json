@@ -1,227 +1,209 @@
 [
   {
-    "id": 50399933,
-    "url": "https://mitchellh.com/writing/libghostty-1-0",
-    "score": 831,
-    "time": 1794007852,
-    "titulo_es": "libghostty-vt 1.0 ya está disponible",
-    "resumen": "Se anuncia el lanzamiento de libghostty-vt 1.0, una biblioteca de emulación de terminal en C de alto rendimiento y portátil, extraída del núcleo de Ghostty. La versión 1.0 garantiza estabilidad estricta en su ABI y compatibilidad con versionado semántico, facilitando su empaquetado y enlace dinámico. Diseñada con manejadores opacos, getters/setters tipados por enumeraciones y verificación continua mediante libabigail, la biblioteca ya impulsa terminales en herramientas masivas como los IDEs de JetBrains (más de 12.5 millones de usuarios), adopciones en Neovim, Turborepo, OrbStack y soporte WebAssembly.",
+    "id": 50410107,
+    "url": "https://caleb.software/posts/claude-to-pi.html",
+    "score": 490,
+    "time": 1794107508,
+    "titulo_es": "Adiós Claude, hola Pi",
+    "resumen": "El autor expone las razones técnicas por las cuales decidió abandonar Claude Code como su entorno de asistencia de código principal y migrar a Pi. Entre los motivos principales destacan la fricción entre formatos de configuración (CLAUDE.md frente a AGENTS.md), limitaciones en la integración con el IDE en VSCode que impiden gestionar múltiples sesiones simultáneas con contexto activo, inestabilidad e inconsistencia en la extensión GUI oficial, y un ciclo de lanzamiento acelerado con constantes alteraciones al prompt del sistema y a las descripciones de herramientas. Estas modificaciones introducen una sobrecarga innecesaria de tokens y alteran de forma impredecible el comportamiento del modelo frente a convenciones de proyectos existentes.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50406670,
+    "url": "https://blog.bosscher.ch/posts/openstick/",
+    "score": 672,
+    "time": 1794075132,
+    "titulo_es": "Convirtiendo un OpenStick de 10 dólares en un servidor doméstico",
+    "resumen": "El autor analiza la viabilidad de utilizar un OpenStick (dispositivo USB de 10 dólares) como servidor doméstico de bajo consumo y cero ruido tras instalarle Debian. Explica cómo aprovecha la virtualización ligera con Podman y systemd para desplegar servicios eficientes como CastSponsorSkip, AdGuard Home para filtrado DNS, un agente de IA ultraligero llamado Zeroclaw para monitoreo y administración vía Telegram, túneles de Cloudflare para exposición remota segura y Beszel para supervisión de métricas del sistema.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50366902,
+    "url": "https://clj.rs/",
+    "score": 105,
+    "time": 1793805796,
+    "titulo_es": "cljrs: un dialecto experimental de Clojure para el ecosistema Rust",
+    "resumen": "cljrs es un dialecto experimental de Clojure diseñado para integrarse nativamente con Rust. Ofrece un runtime Lisp con estructuras de datos persistentes, sistema de macros hospedado y capacidad de ejecución compilada o interpretada, orientado también a servir como entorno de ejecución para codificación agéntica.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50413822,
+    "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+    "score": 9,
+    "time": 1794149363,
+    "titulo_es": "OpenAI Asegura Financiación Significativa a Valoración Reducida, Impactando a Microsoft y NVIDIA",
+    "resumen": "El artículo detalla una ronda de financiación para OpenAI que recaudó aproximadamente $11 mil millones, parte de una ronda valorada en $1.25 billones pre-money. Aunque la cifra final es menor y la valoración inferior a la solicitada inicialmente ($30 mil millones o más a $1.4 billones), la financiación es crucial para las operaciones de OpenAI. La CFO de OpenAI, Sarah Friar, confirmó la valoración y destacó un crecimiento del 70% trimestre a trimestre en el Q3, con su negocio empresarial duplicado y un run rate de anuncios de $1 mil millones. La empresa reporta 1.2 mil millones de usuarios semanales de ChatGPT. La financiación impacta a inversores clave como Microsoft y NVIDIA. Microsoft verá afectados sus ingresos contables por las ganancias de su participación, mientras que NVIDIA enfrenta una dependencia significativa para cubrir las crecientes necesidades de cómputo de OpenAI (aproximadamente 12 gigavatios comprometidos y planes futuros). La valoración más baja y el ritmo de cierre de la financiación en etapas sugieren una tensión financiera para OpenAI, especialmente ante la competencia de Anthropic, que también planea una cotización pública. La demanda de IA se mantiene alta, pero las valoraciones privadas son volátiles.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50408713,
+    "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+    "score": 172,
+    "time": 1794091138,
+    "titulo_es": "El Divertido Rompecabezas Matemático de Formar Números",
+    "resumen": "El artículo explora un rompecabezas matemático recursivo donde el objetivo es formar números específicos utilizando un número limitado de dígitos y operaciones matemáticas. Se presentan ejemplos que varían en dificultad, desde operaciones básicas para niños de primaria hasta el uso de funciones avanzadas como la función Gamma, números complejos, integrales, fracciones continuas y operadores combinatorios para resolver problemas más complejos. Se discuten técnicas como el uso de raíces cuadradas anidadas y logaritmos de base 2 para generar soluciones generales. Se hace referencia a la historia de este pasatiempo entre matemáticos y cómo Paul Dirac supuestamente encontró una solución general, aunque se señala una curiosidad sobre la cantidad de dígitos utilizados en una fórmula particular y cómo se puede ajustar. El rompecabezas es un ejercicio que fomenta la creatividad y el dominio de diversas herramientas matemáticas.",
+    "categoria": "Ciencia y Matematica"
   },
   {
     "id": 50403097,
     "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-    "score": 308,
+    "score": 782,
     "time": 1794044763,
-    "titulo_es": "El grafo de conocimiento personal oculto en macOS y sus implicaciones de seguridad",
-    "resumen": "Investigadores de seguridad analizan los demonios en segundo plano introducidos en macOS encargados de construir un grafo de conocimiento personal integral mediante el cruce de datos de contactos, correos, mensajes, fotos y telemetría de comportamiento. El sistema almacena esta información en bases de datos SQLite dentro de ~/Library/IntelligencePlatform, protegidas por TCC Full Disk Access, para alimentar sistemas basados en LLM. El análisis examina la arquitectura interna del grafo, presenta la herramienta iKnow para su inspección local y expone los riesgos de ciberseguridad y explotación de este punto único de fallo para la privacidad.",
+    "titulo_es": "El Gráfico de Conocimiento Personal de macOS: Análisis y Seguridad",
+    "resumen": "Este artículo analiza el funcionamiento interno de dos demonios en macOS (desde la versión 13) que construyen un gráfico de conocimiento personal. Este gráfico integra información de Contacts, Calendar, Photos, Messages, Mail, ubicación, Screen Time y señales de comportamiento. Los datos se almacenan en bases de datos SQLite en `~/Library/IntelligencePlatform`, siendo `graph.db` un triple store. El análisis se enfoca en cómo se construye este gráfico, la información que contiene sobre el usuario y sus relaciones, y las implicaciones de seguridad, incluyendo un experimento sobre cómo esta base de conocimiento podría ser explotada si cae en manos equivocadas, especialmente en combinación con LLMs. Se presenta una herramienta de código abierto, iKnow, para visualizar este gráfico en macOS.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50361417,
-    "url": "https://ejfox.com/projects/nbc-big-board",
-    "score": 22,
-    "time": 1793765388,
-    "titulo_es": "Desarrollo de la 'Big Board' de NBC News para la noche de elecciones",
-    "resumen": "El autor relata el desarrollo y puesta en producción de la 'Big Board', una aplicación interactiva de pantalla táctil utilizada en transmisiones en vivo por NBC y MSNBC para visualizar resultados electorales condado por condado. Describe los retos de ingeniería bajo alta presión, la implementación de interacciones táctiles complejas (paneo, zoom, filtros) y un flujo de despliegue en caliente durante la transmisión en directo mediante VPN, SSH, Git y reinicios de procesos con PM2 para responder a cambios de último minuto requeridos en el estudio.",
+    "id": 50380051,
+    "url": "https://github.com/shikokuchuo/pymizu",
+    "score": 49,
+    "time": 1793891344,
+    "titulo_es": "Python asíncrono y paralelo a velocidad de hilo sobre memoria compartida",
+    "resumen": "El artículo describe pymizu, una biblioteca de Python diseñada para comunicación inter-proceso (IPC) de alta velocidad y baja latencia utilizando memoria compartida. pymizu reduce drásticamente la sobrecarga de comunicación en comparación con los métodos tradicionales basados en sockets o pickle, permitiendo la división de tareas tan finamente como con hilos, pero con el aislamiento de procesos. Soporta estructuras de datos comunes como listas, diccionarios, arrays NumPy y tablas Arrow para intercambio de datos sin copias. La biblioteca se basa en libmizu, una biblioteca C para IPC de memoria compartida sin bloqueos, y ofrece enlaces para Python y R. La implementación aborda desafíos como el GIL de CPython y proporciona interfaces compatibles con `concurrent.futures` para facilitar la migración de código existente. Incluye características como grupos de tareas de robo de trabajo, mapas paralelos anidables y una integración fluida con R, permitiendo que procesos Python y R colaboren eficientemente. El proyecto se encuentra en fase experimental, requiriendo Python 3.10+ en plataformas de 64 bits.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50397429,
-    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
-    "score": 527,
-    "time": 1793994531,
-    "titulo_es": "Evaluación de modelos de decisión rápidos y económicos para calificar la resolución de identidades frente a LLMs de frontera",
-    "resumen": "El artículo analiza el uso de modelos de lenguaje y de decisión (como Jev y GPT-6 Luna) frente a modelos de frontera (como Claude Opus) para auditar la precisión en procesos de resolución de identidad (IDR) y detectar errores de sobre-fusión (over-merging). Dado que la validación manual humana es costosa y lenta, los autores demuestran que una arquitectura híbrida que combina el modelo rápido Jev con Claude Opus alcanza una precisión cercana a la del modelo de frontera con una reducción de costos superior a cuatro veces.",
+    "id": 50410249,
+    "url": "https://github.com/dmunozv04/isponsorblocktv",
+    "score": 87,
+    "time": 1794109639,
+    "titulo_es": "Cliente SponsorBlock para todos los clientes de YouTube TV",
+    "resumen": "iSponsorBlockTV es una aplicación autocontenida que se conecta a la aplicación YouTube TV para omitir automáticamente segmentos como patrocinios o introducciones en videos de YouTube utilizando la API de SponsorBlock. También puede silenciar anuncios y presionar el botón 'Omitir anuncio' automáticamente. El proyecto requiere que se ejecute en una computadora con acceso a red, no necesariamente en la misma red que el dispositivo, pero se necesita acceso a youtube.com. El descubrimiento automático requiere que la computadora esté en la misma red que el dispositivo durante la configuración, o el dispositivo puede agregarse manualmente usando un código de YouTube TV encontrado en la configuración de la aplicación. Se advierte sobre cambios en el formato del código de pantalla de la aplicación de YouTube que podrían requerir un nuevo emparejamiento del dispositivo. Shorts no son completamente compatibles debido a limitaciones de YouTube.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50403507,
+    "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
+    "score": 387,
+    "time": 1794049875,
+    "titulo_es": "Discord Rediseña su Cliente con Rust: Mayor Velocidad, Menor Consumo de RAM y Mejor Experiencia de Usuario",
+    "resumen": "El artículo detalla la transición de Discord de una aplicación Electron a una nueva construida en Rust, destacando mejoras significativas en el rendimiento. El nuevo cliente, denominado 'Discord Phoenix', demonstra un tiempo de arranque notablemente inferior, cargando la lista de amigos antes de que la aplicación Electron logre mostrar su interfaz. Se reporta un consumo de RAM de 290.2 MB con dos cuentas activas simultáneamente, lo que representa una optimización considerable frente a la aplicación Electron, que usualmente consume entre 1 y 2 GB en idle. La nueva arquitectura en Rust elimina la necesidad de la pantalla de 'Starting' y las comprobaciones de actualización al iniciar, ya que las actualizaciones se gestionan en segundo plano. Además, el cliente de Rust soporta la ejecución concurrente de hasta cinco cuentas sin necesidad de reiniciar la aplicación entre cambios. A pesar de que la aplicación Electron ha recibido optimizaciones (como la actualización a Electron 42), estas no han logrado igualar la eficiencia y velocidad del nuevo cliente basado en Rust. La arquitectura multi-proceso de Electron, heredada de Chromium, es mencionada como un factor que contribuye a su mayor consumo de recursos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50406222,
+    "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+    "score": 348,
+    "time": 1794071940,
+    "titulo_es": "MaxxBench: Evaluar la Adaptabilidad de Modelos de IA en Tareas de Codificación con Requisitos Modificados",
+    "resumen": "El artículo presenta MaxxBench, un nuevo benchmark diseñado para evaluar la capacidad de los modelos de IA para manejar cambios en los requisitos de tareas de codificación preexistentes. A diferencia de benchmarks tradicionales que pueden ser 'explotados' por modelos que memorizan soluciones a tareas comunes (benchmaxxing), MaxxBench modifica instrucciones o código inicial de tareas de DeepSWE (un benchmark existente) para simular escenarios de desarrollo del mundo real donde los requisitos evolucionan. Se destaca que modelos que obtienen puntuaciones similares en DeepSWE muestran diferencias significativas en MaxxBench, revelando una brecha en su fiabilidad para adaptarse a cambios. Por ejemplo, Claude Opus 5.5 y Gemini 3.8 Flash, con puntuaciones de ~74% en DeepSWE, obtienen 76.4% y 53.4% respectivamente en MaxxBench. La introducción de requisitos como nombres de archivo en minúsculas para informes o el uso de timestamps UTC en rutas FastAPI, incluso con cambios mínimos en el código de referencia (mediana de 17 líneas), expone estas diferencias de adaptación. El estudio subraya la importancia de evaluar no solo la capacidad de un modelo para resolver una tarea dada, sino también su robustez ante la incertidumbre y la modificación de especificaciones.",
     "categoria": "IA"
   },
   {
-    "id": 50377613,
-    "url": "https://github.com/hyphatech/spindle",
-    "score": 21,
-    "time": 1793875528,
-    "titulo_es": "El framework web para el OCaml moderno",
-    "resumen": "Spindle es un framework web para OCaml moderno diseñado para ser rápido, ergonómico y estricto con los estándares RFC. Cuenta con soporte nativo para Eio y concurrencia multinúcleo desde su diseño base. Además, genera automáticamente documentación interactiva de APIs mediante Scalar a partir de las rutas y tipos definidos, exponiendo esquemas detallados y posibles respuestas de error.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50356037,
-    "url": "https://brisk4t.github.io/blog/toothpaste/",
-    "score": 39,
-    "time": 1793730447,
-    "titulo_es": "ToothPaste: Transmisión inalámbrica y cifrada de comandos HID mediante ESP32-S3 y Web-BLE",
-    "resumen": "El artículo presenta ToothPaste, una herramienta de hardware y software diseñada para transmitir comandos de teclado y ratón con cifrado AES-256 a cualquier dispositivo compatible con USB HID sin necesidad de drivers adicionales. Orientado a escenarios como configuraciones de BIOS, sistemas 'air-gapped' o terminales no confiables, utiliza un microcontrolador ESP32-S3, una interfaz basada en Web-BLE para prescindir de aplicaciones cliente nativas y un coprocesador criptográfico (Secure Element) para almacenar claves privadas ECDH de manera segura contra la extracción física.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50402212,
-    "url": "https://www.anthropic.com/research/components-of-agent-memory",
-    "score": 88,
-    "time": 1794033544,
-    "titulo_es": "Diseñando la memoria para agentes de IA",
-    "resumen": "El artículo aborda la arquitectura y diseño de memoria a largo plazo para agentes de inteligencia artificial como Claude, inspirándose en la consolidación biológica del hipocampo y neocórtex. Introduce el concepto de 'soñar' (dreaming) o cómputo en periodos de inactividad (sleep-time compute), donde el agente procesa transcripciones y registros previos para extraer reglas, corregir errores y estructurar conocimiento persistente entre sesiones sin alterar los pesos del modelo. Mediante evaluaciones en benchmarks como CL-Bench 1.0, se demuestra cómo los agentes pueden predecir patrones útiles y gestionar repositorios de notas para resolver tareas de horizonte largo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50403214,
-    "url": "https://uploadyourram.org",
-    "score": 211,
-    "time": 1794046526,
-    "titulo_es": "Tecnología Revolucionaria de Carga de RAM: Dona tu RAM Inactiva",
-    "resumen": "El artículo promociona una tecnología ficticia que permite a los usuarios 'cargar' y donar la memoria RAM inactiva de sus computadoras. Se presenta como una solución para la ineficiencia percibida de tener RAM sin usar, sugiriendo que esta donación puede ser 'para una buena causa' y hacer feliz a 'él' (presumiblemente Sam Altman). Técnicamente, esto es imposible ya que la RAM es un componente de hardware físico y no puede ser transferida o 'cargada' a través de software. La premisa se basa en una malinterpretación o desinformación sobre cómo funciona la memoria RAM y la computación en general.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50397219,
-    "url": "https://pwn.ai/blog/firecracker-escape",
-    "score": 260,
-    "time": 1793993618,
-    "titulo_es": "Escapar de Firecracker: Ejecución de código como root en el host a través de una vulnerabilidad en KVM",
-    "resumen": "El artículo detalla una vulnerabilidad de seguridad en Firecracker, una tecnología utilizada para ejecutar cargas de trabajo aisladas en microVMs. Los investigadores explotaron un fallo en el manejo de la salida de KVM (Kernel-based Virtual Machine) para lograr la ejecución de código como usuario root en el sistema host. El ataque implicó la identificación y modificación de los registros de CPU guardados (pt_regs) dentro del hilo del host asociado a una vCPU del microVM. Al controlar una página de memoria dentro del guest, pudieron encontrar la dirección física del host (HPA) de esa página, luego rastrear las tablas de páginas del host para identificar el proceso Firecracker y, finalmente, redirigir el flujo de ejecución del hilo de la vCPU para ejecutar código arbitrario en el host al regresar de KVM. La técnica se basa en un 'primitivo de memoria del host' previamente descubierto y demuestra una cadena de explotación que culmina en el compromiso total del sistema host.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50369283,
-    "url": "https://trixter.oldskool.org/2014/06/19/8088-domination-post-mortem-part-1/",
-    "score": 36,
-    "time": 1793815574,
-    "titulo_es": "8088 Domination: Video a pantalla completa en un IBM PC de 1981",
-    "resumen": "Este artículo técnico detalla el proceso de creación de '8088 Domination', un programa capaz de mostrar video a pantalla completa en un IBM PC de 1981. El autor, con experiencia previa en video digital y demoscene, aborda el desafío de mostrar FMV (Full Motion Video) en hardware muy limitado. La solución previa, '8088 Corruption', utilizaba el modo de texto 40x25 (2KB de RAM) para permitir actualizaciones completas del frame sin sobrecargar el sistema. Se explica por qué mostrar FMV en modo gráfico CGA era considerado imposible debido a las limitaciones de memoria de video y ancho de banda (240KB/s para CGA frente a 384KB/s necesarios para 24fps). Tras 7 años de reflexión, se llega a la conclusión de que no siempre es necesario actualizar cada píxel; se puede lograr una ilusión de movimiento completo cambiando solo las porciones de la pantalla que realmente lo requieren, o incluso 'engañando' al espectador al no actualizar píxeles que cambian mínimamente. La limitación real no es la cantidad de datos a cambiar (2KB), sino el tiempo necesario para alterarlos, sugiriendo que la clave está en optimizar las actualizaciones dentro de un quantum de tiempo por frame.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50394855,
-    "url": "https://kevinboone.me/efitest_index.html",
-    "score": 234,
-    "time": 1793983829,
-    "titulo_es": "Desarrollo de aplicaciones bare-metal para PC con firmware UEFI usando Linux",
-    "resumen": "El artículo se centra en el desarrollo de aplicaciones bare-metal para ordenadores tipo PC con firmware UEFI, utilizando una estación de trabajo Linux como entorno de desarrollo. Cubre las herramientas necesarias, el proceso de compilación y enlazado, la creación de medios de arranque (DVD o USB) y la gestión de archivos básica a través del Protocolo de Archivos Sencillo. Está diseñado para desarrolladores Linux experimentados y se recomienda leerlo en orden, ya que cada parte se basa en la anterior.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50397099,
-    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-    "score": 175,
-    "time": 1793993061,
-    "titulo_es": "La Nueva Arquitectura de Almacenamiento Git de GitHub",
-    "resumen": "GitHub ha rediseñado su arquitectura de almacenamiento Git para soportar miles de agentes realizando escrituras simultáneas en un solo repositorio. El sistema, denominado \"Rubicon\", se basa en dos principios: minimizar la coordinación y desacoplar el almacenamiento del cómputo. Los objetos Git, inmutables y nombrados por su contenido, permiten escrituras concurrentes sin necesidad de acuerdo. El único punto que requiere consenso son las actualizaciones de referencias, que son mínimas. La arquitectura utiliza Azure Blob Storage para los datos del pack y emplea \"réplicas virtuales\" que apuntan a las referencias. Esto permite escalar el almacenamiento, el servicio de peticiones y el mantenimiento de repositorios de forma independiente. El objetivo es manejar un aumento de dos órdenes de magnitud en el tráfico, anticipando el crecimiento exponencial impulsado por el desarrollo con agentes, mejorando la fiabilidad y la escalabilidad global.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50392118,
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-    "score": 351,
-    "time": 1793972127,
-    "titulo_es": "Gemini Omni 1.2 Flash: Video Nativo de 15 Segundos, Mayor Consistencia y Edición Conversacional",
-    "resumen": "Gemini Omni 1.2 Flash introduce la generación nativa de video de hasta 15 segundos, mejorando la consistencia de personajes, objetos y escenas a través de múltiples tomas y transiciones. Ofrece edición conversacional multi-turno, permitiendo refinar clips existentes (cambiar productos, fondos, etc.) sin regeneración completa. La herramienta reduce costos en un 30% (a $0.07 por segundo para video 720p) mediante flujos de trabajo eficientes como la generación inicial en baja resolución y posterior escalado a 1080p o 4K. Soporta la guía de generación con imágenes de referencia (personajes, productos, estilos), clips de movimiento cortos y audio, manteniendo la fidelidad de los detalles. Además, mejora la generación de audio, incluyendo diálogos más fluidos, sincronización labial y condicionamiento para múltiples hablantes. Estas capacidades están disponibles a través de la API de Gemini, Google Vids y Gemini para empresas, facilitando la producción de contenido de video profesional a escala.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50354097,
-    "url": "https://pivotlake.io/blog/know-your-limit-faster-top-k-aggregation/",
-    "score": 100,
-    "time": 1793723423,
-    "titulo_es": "Optimización de Consultas GROUP BY para Encontrar los K Grupos Principales",
-    "resumen": "El artículo describe una optimización novedosa para consultas GROUP BY que buscan los 'top K' grupos por valor agregado, como 'cuáles son los 10 artículos con más pedidos'. Tradicionalmente, las bases de datos utilizan un enfoque de agregación paralela con múltiples particiones y tablas hash por hilo, seguido de una fase de fusión. Sin embargo, este método puede ser ineficiente cuando no todos los resultados de la agregación son necesarios, como en el caso de 'top K', donde muchas particiones pueden ser procesadas innecesariamente. La optimización propuesta utiliza un enfoque para podar particiones de manera temprana. Al mantener un contador global o agregado por partición (por ejemplo, el número total de pedidos por partición), se puede comparar este total con el agregado mínimo del 'top K' actual. Si el total de la partición es menor, se puede omitir su fusión, ahorrando trabajo computacional. Si es mayor, la partición debe fusionarse para determinar si algún grupo individual dentro de ella califica para el 'top K'. Este método reduce el trabajo redundante en consultas comunes de 'top K'.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50397711,
-    "url": "https://www.crusoe.ai/resources/newsroom/crusoe-wyoming-data-center-campus-update",
-    "score": 96,
-    "time": 1793995754,
-    "titulo_es": "Google adquiere el centro de datos de Crusoe en Wyoming",
-    "resumen": "Crusoe, una empresa de fábricas de IA, ha anunciado que Google ha adquirido su sitio de centro de datos en el sureste de Wyoming. Esta adquisición marca la finalización del trabajo de pre-desarrollo de Crusoe en el proyecto, que incluyó la selección del sitio del centro de datos, aprobaciones gubernamentales y el desarrollo de una estrategia de energía híbrida en colaboración con Tallgrass Energy. La estrategia de energía híbrida combina celdas de combustible, energía de la red y turbinas de gas natural, con planes a futuro para captura de carbono. Crusoe se enfoca en desarrollar infraestructura de energía y centros de datos optimizados para IA, buscando acelerar la disponibilidad de energía e inteligencia para la industria de la IA. Este es el segundo proyecto de este tipo para Crusoe con Google, tras el desarrollo de un campus de centros de datos en Amarillo, Texas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50397017,
-    "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
-    "score": 146,
-    "time": 1793992767,
-    "titulo_es": "Red de Dominios Falsos de Restaurantes Utiliza Ataques de 'Payment-Skimming' y Suplantación de Identidad",
-    "resumen": "Investigadores de InfoHawk han descubierto una red de 820 dominios sospechosos que se hacen pasar por cadenas de restaurantes populares en EE. UU., como Jersey Mike's, Chipotle y Dave's Hot Chicken. Estos sitios emplean técnicas de 'reverse proxy' para mostrar contenido legítimo del sitio web original (menús, precios, flujo de pedidos), pero reemplazan el formulario de pago con uno malicioso. Este formulario no solo captura información de tarjetas de crédito, sino que también solicita a los clientes los códigos de verificación por SMS de sus bancos, una combinación peligrosa que permite autorizar transacciones fraudulentas. La mayoría de estos dominios utilizan el TLD '.delivery', y algunos '.com' o '.shop', a menudo con nombres que son 'typosquats' (errores tipográficos) de las marcas originales. La operación es sofisticada, utilizando Cloudflare para ocultar el servidor real y obtener certificados SSL válidos, lo que hace que los sitios parezcan seguros en el navegador. Los atacantes no necesitan hackear los sitios legítimos; operan en su propia infraestructura, extrayendo contenido del sitio oficial para crear la ilusión de autenticidad, modificando únicamente la etapa de pago.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50395450,
-    "url": "https://devvm.dev/",
-    "score": 170,
-    "time": 1793986222,
-    "titulo_es": "DevVM: Entornos de Desarrollo Aislados con Agentes de Codificación IA",
-    "resumen": "DevVM es una herramienta de código abierto (licencia MIT) diseñada para crear entornos de desarrollo (sandboxes) aislados y reproducibles en macOS y Linux. Permite a los desarrolladores o agentes de codificación de IA (como Claude Code) trabajar dentro de una máquina virtual (VM) preconfigurada con las herramientas y toolchains específicas de un proyecto. La herramienta utiliza Lima para gestionar las VMs, apoyándose en el framework de virtualización de Apple en macOS y QEMU en Linux. DevVM facilita la integración de agentes de IA, permitiendo su ejecución dentro de la VM para asegurar que solo tengan acceso a los recursos de la misma. Soporta la personalización de VMs mediante capas (docker, nix, desktop) y la definición de toolchains específicas para cada proyecto. La instalación se simplifica a través de un script que gestiona dependencias como Lima y QEMU.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50389570,
-    "url": "https://www.norvig.com/chomsky.html",
-    "score": 137,
-    "time": 1793953116,
-    "titulo_es": "Modelos Probabilísticos y Estadísticos en Lingüística Computacional",
-    "resumen": "El artículo discute el éxito y la predominancia de los modelos probabilísticos y estadísticos, particularmente en el campo de la lingüística computacional. Contrasta estos modelos con enfoques basados en reglas lógicas y aborda la necesidad de grandes cantidades de datos y métodos de suavizado para entrenar modelos probabilísticos complejos, como los modelos de Markov para el lenguaje. Se mencionan ejemplos de la física (ley de los gases ideales) y la mecánica newtoniana para ilustrar los principios de los modelos probabilísticos y su capacidad para proporcionar predicciones e insights a pesar de no modelar la realidad completamente. Se destaca la transición de la comunidad de lingüística computacional hacia la adopción de métodos estadísticos, mencionando figuras clave como Claude Shannon, Chris Manning, Gene Charniak y Judea Pearl, y se señala la dificultad de mantener enfoques basados en reglas lógicas frente al dominio de los métodos probabilísticos entrenados.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50378228,
-    "url": "https://sshhole.com",
-    "score": 2940,
-    "time": 1793881142,
-    "titulo_es": "La peculiar vulnerabilidad de OpenSSH en sistemas Musl y el misterio del carácter asterisco",
-    "resumen": "El artículo detalla una vulnerabilidad de seguridad en OpenSSH que afecta a sistemas Linux basados en Musl (como Alpine, OpenWrt, Buildroot, Yocto y muchas imágenes Docker) desde 2016. La falla permite que cuentas que no deberían aceptar contraseñas (como root, usuarios de solo clave o usuarios LDAP) acepten cualquier contraseña de más de 256 caracteres. Esto se origina en la implementación de la función `crypt()` en Musl: históricamente, un asterisco (*) en el campo de la contraseña de `/etc/shadow` indicaba una cuenta bloqueada. Sin embargo, Musl comenzó a devolver un asterisco como resultado de `crypt()` cuando la función fallaba (por ejemplo, si el algoritmo de hash no era compatible o si la contraseña era demasiado larga, como las superiores a 256 bytes en el caso de SHA512). Programas como OpenSSH, que no siempre comprobaban si `crypt()` devolvía NULL (o un carácter especial indicativo de fallo), terminaban tratando este asterisco como una entrada válida o causando errores. La vulnerabilidad se agravó con el tiempo, ya que las correcciones (como la CVE-2016-6210, que implicaba simular la duración de las comprobaciones de autenticación) y las políticas de cuentas (como el bloqueo de root con '!') no siempre abordaban la causa raíz o introducían otros problemas, especialmente en entornos sin PAM. La falta de pruebas exhaustivas en Musl y la dependencia de otros mecanismos de autenticación (como PAM o la ausencia de contraseñas iniciales) contribuyeron a que la vulnerabilidad pasara desapercibida durante años. El artículo también menciona intentos fallidos de mitigarla, como la adopción de comportamientos similares en otras librerías (Glibc, libxcrypt) que terminaron corrigiendo el problema de forma parcial o con soluciones alternativas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50385272,
-    "url": "https://github.com/anthropics/claude-code/issues/107757",
-    "score": 1581,
-    "time": 1793917035,
-    "titulo_es": "Exposición de correo electrónico en el encabezado User-Agent de Claude y preocupaciones de privacidad",
-    "resumen": "El artículo describe un problema de seguridad donde la herramienta de IA Claude supuestamente divulga la dirección de correo electrónico del usuario en el encabezado User-Agent durante las búsquedas web. Los usuarios expresan frustración y desconfianza en Anthropic, citando preocupaciones sobre la privacidad, el spam de estafadores y la falta de protección de datos en el núcleo. Se menciona una solución introducida por Anthropic, un plugin 'cc-plugin-privacy', habilitado por defecto para bloquear este comportamiento. Sin embargo, la discusión subraya la insatisfacción con las soluciones basadas en plugins o configuraciones opcionales, abogando por la eliminación de información personal del encabezado User-Agent a nivel central. El debate también toca la motivación detrás de tales características y la percepción de la ética de Anthropic en cuanto a la privacidad y el uso de datos, comparándolo con un incidente anterior sobre el uso de libros raros.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50379221,
-    "url": "https://github.com/piercefreeman/waymark",
-    "score": 78,
-    "time": 1793887591,
-    "titulo_es": "Waymark: Orquestación de flujos de trabajo de fondo distribuidos y duraderos con Postgres",
-    "resumen": "Waymark es una biblioteca de Python para construir tareas de fondo duraderas y distribuidas que toleran reinicios de servidores, fallos de tareas y trabajos de larga duración, utilizando únicamente Postgres como infraestructura. Permite definir acciones (funciones asíncronas para trabajo distribuido) y flujos de trabajo (control lógico con bucles, condicionales y paralelismo) escritos en Python asíncrono estándar. Los flujos de trabajo se compilan a una representación intermedia (IR) y luego a bytecode que se ejecuta en una máquina virtual duradera. El estado de la VM se guarda en Postgres, permitiendo la reanudación de flujos de trabajo tras fallos sin necesidad de volver a ejecutar el código original. Waymark incluye características como reintentos, timeouts, ejecución paralela, pausas duraderas (sleep) y programación (cron), además de una interfaz web para monitorizar instancias de flujos de trabajo y la carga de los nodos ejecutores. Se diferencia de motores basados en repetición (replay-based) al compilar el flujo de control y ejecutarlo en una VM con persistencia de estado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50393458,
-    "url": "https://maccus.fr/en/ozempic-drugs-trials-beyond-diabetes/",
-    "score": 91,
-    "time": 1793978674,
-    "titulo_es": "La Expansión de los Medicamentos Tipo Ozempic Más Allá de la Diabetes y la Pérdida de Peso",
-    "resumen": "El artículo analiza la notable expansión de los ensayos clínicos para medicamentos de la clase GLP-1 (como Ozempic y Wegovy) en áreas terapéuticas más allá de la diabetes y la pérdida de peso. Inicialmente diseñados para la diabetes, estos fármacos han demostrado efectos prometedores en múltiples sistemas del cuerpo, impulsando la investigación en afecciones como insuficiencia cardíaca, adicción, Alzheimer, enfermedades hepáticas y el envejecimiento biológico. Los datos de ClinicalTrials.gov indican que la proporción de ensayos dirigidos a otras enfermedades, aparte de la diabetes y la obesidad, se ha triplicado en los últimos quince años, representando actualmente una cuarta parte del total. La investigación se ve impulsada tanto por las señales biológicas que sugieren efectos en diversos órganos (páncreas, cerebro, corazón, riñones) como por el gran potencial comercial de estos medicamentos superventas. Se destacan ejemplos concretos de ensayos, como el uso de semaglutida para trastornos por uso de alcohol y la enfermedad de Alzheimer, y el estudio de fármacos relacionados en MASH (enfermedad del hígado graso). Estos avances sugieren un cambio de paradigma, donde una sola clase de medicamento se está explorando para tratar una amplia gama de patologías humanas.",
+    "id": 50411083,
+    "url": "https://github.com/graealex/WaveDudeNext",
+    "score": 40,
+    "time": 1794121742,
+    "titulo_es": "Simulador Interactivo de Óptica Ondulatoria 2D",
+    "resumen": "El artículo describe WaveDude Next, un simulador de óptica ondulatoria 2D para Windows que permite a los usuarios crear escenas interactivas colocando fuentes de luz y componentes ópticos en un lienzo. Permite visualizar la propagación de ondas (campo e intensidad), simular fenómenos como refracción, difracción e interferencia. Ofrece funcionalidades avanzadas como sondas para medir el campo o la intensidad, exportación de vídeo y fotogramas, y manipulación detallada de objetos. Las escenas pueden basarse en imágenes externas donde los colores representan propiedades ópticas. La simulación se acelera mediante GPU (OpenCL) o CPU, con opciones de calidad ajustables para previsualización y exportación. El software es compatible con proyectos de su predecesor, Wave Dude 2D, y se distribuye como ejecutables para Windows 10/11 con o sin el .NET Desktop Runtime incluido.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50397994,
-    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-    "score": 338,
-    "time": 1793996843,
-    "titulo_es": "Informe de METR sobre la aceleración de la I+D de IA en Anthropic",
-    "resumen": "El artículo discute un informe de METR que sugiere que Anthropic ha cruzado el umbral de 'aceleración dramática del progreso debido a la IA' según su Política de Escalado Responsable (RSP). El informe, basado en el índice interno AECI, indica que el progreso de las capacidades de Anthropic entre octubre de 2025 y octubre de 2026 fue aproximadamente el doble de rápido que en el período anterior. Se postula que la automatización de la I+D de IA es el principal impulsor de esta aceleración. Esta observación tiene implicaciones significativas para las líneas de tiempo de desarrollo de la IA y el riesgo asociado, sugiriendo un progreso más rápido de lo proyectado por muchos investigadores externos. El artículo también detalla cómo la automatización de la I+D por IA podría estar acelerando el progreso de las capacidades generales de IA a un ritmo mucho mayor que el de los investigadores humanos, estimando que la tasa de crecimiento de los multiplicadores de cómputo (innovaciones en algoritmos y arquitecturas) y el esfuerzo laboral humano necesario para descubrirlos se han visto significativamente incrementados.",
-    "categoria": "IA"
+    "id": 50408931,
+    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+    "score": 165,
+    "time": 1794092980,
+    "titulo_es": "Nueva página de resumen para Pull Requests en GitHub",
+    "resumen": "GitHub está introduciendo una nueva página de 'Overview' (Resumen) como una vista previa pública opt-in para mejorar la experiencia de los Pull Requests (PR). El objetivo principal es reducir el tiempo que los desarrolladores pasan desplazándose por comentarios y eventos para encontrar información crucial como el estado de fusión y las próximas acciones necesarias. La nueva interfaz presenta un 'readiness summary' compacto en la parte superior que consolida el estado de fusión y las acciones disponibles. El merge box ha sido rediseñado para ocupar menos espacio y mostrar información clave de manera más eficiente. Los usuarios pueden acceder directamente a detalles específicos como comprobaciones fallidas, aprobaciones pendientes o comentarios relevantes. La vista previa también mejora la forma de ponerse al día con la actividad y enfocar las conversaciones, permitiendo marcar borradores como listos para revisión o cerrar PRs desde la cabecera, según los permisos. GitHub busca activamente feedback para refinar esta experiencia, considerando esta vista previa como un punto de partida.",
+    "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50389370,
-    "url": "https://apps.metaebene.me/en/kugelblitz",
-    "score": 255,
-    "time": 1793951258,
-    "titulo_es": "Kugelblitz: Explorador de Geodatos 3D para Mac",
-    "resumen": "Kugelblitz es una aplicación para macOS que ofrece una experiencia inmersiva de globo terráqueo y atlas 3D, visualizando geodatos abiertos sobre terreno real. Permite a los usuarios volar suavemente sobre la Tierra y otros cuerpos celestes, superponiendo imágenes satelitales, mapas de carreteras y mapas topográficos sobre modelos de elevación tridimensionales. La aplicación integra miles de fuentes de geodatos libremente disponibles, incluyendo OpenStreetMap a través de su propio servidor de tiles, eliminando la necesidad de cuentas o descargas extensas. Los datos cacheados pueden ser compartidos en red local. Kugelblitz soporta visualización en Apple Vision Pro, presenta eventos astronómicos y geológicos históricos (eclipses, terremotos) y permite la navegación intuitiva mediante SpaceMouse, teclado y trackpad. Está optimizada para rendimiento en Macs con Apple silicon (M1).",
+    "id": 50410359,
+    "url": "https://imagesco.com/articles/kirlian/kirlian-photography.html",
+    "score": 64,
+    "time": 1794111252,
+    "titulo_es": "Fotografía Kirlian: Equipo y Técnicas",
+    "resumen": "La fotografía Kirlian es un proceso de contacto de alta tensión que registra las descargas de corona producidas por un objeto colocado sobre una placa sensible a la luz. Nombrada en honor a Semyon Kirlian y su esposa Valentina, quienes comenzaron a investigar esta técnica en 1939, se basa en principios de electrofotografía que se remontan al siglo XVIII con Georg Christoph Lichtenberg y Nicola Tesla. El proceso básico implica colocar una película sobre una placa de descarga, el objeto sobre la película y aplicar un alto voltaje. Si el objeto es orgánico o inanimado, se conecta a tierra. Aunque el artículo menciona afirmaciones paranormales asociadas con la fotografía Kirlian, como la predicción de enfermedades o el fenómeno de la \"hoja fantasma\", el autor señala que muchos de estos efectos pueden explicarse por fenómenos físicos conocidos, como la resistencia galvánica de la piel en humanos, sin necesidad de recurrir a conceptos metafísicos. Se discute la falta de replicabilidad de algunos experimentos, como el de la \"hoja fantasma\", y la disponibilidad de dispositivos comerciales en la actualidad.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50360044,
+    "url": "https://blog.master.dev/multi-column-different-speed-scrolling/",
+    "score": 6,
+    "time": 1793751393,
+    "titulo_es": "Animaciones basadas en el scroll con CSS para galerías de imágenes",
+    "resumen": "El artículo explora técnicas avanzadas de CSS para crear efectos de desplazamiento dinámico en galerías de imágenes. Se centra en el uso de Scroll-Driven Animations (animaciones impulsadas por el scroll), específicamente la variedad `scroll()`, para generar ilusiones de desplazamiento a diferentes velocidades entre columnas de imágenes. Se demuestra cómo aplicar transformaciones direccionales (`translateY`) en tiempo real basándose en la posición del scroll de la página, sin necesidad de JavaScript. Adicionalmente, se menciona el uso de `view()` para animaciones individuales de elementos (zoom y movimiento) a medida que aparecen en la vista. Se abordan casos de uso más complejos como la reversión del scroll de una columna y la integración con `position: sticky`, requiriendo cálculos más finos para mantener las animaciones de los elementos individuales. El artículo destaca la capacidad del CSS moderno y las características futuras como `@custom-media` para crear experiencias de usuario interactivas y visualmente atractivas.",
     "categoria": "Frontend"
   },
   {
-    "id": 50355009,
-    "url": "https://github.com/andrewboldi/tmux-restore",
-    "score": 48,
-    "time": 1793726721,
-    "titulo_es": "Tmux a prueba de reinicios: cada sesión, diseño y scrollback regresan, y Claude Code, Codex, Gemini CLI, opencode y pi reabren las conversaciones en las que estaban",
-    "resumen": "Este artículo describe `tmux-restore`, una herramienta diseñada para hacer que las sesiones de tmux sean a prueba de reinicios. Guarda automáticamente el estado de las sesiones de tmux, incluyendo ventanas, diseños y scrollback, cada minuto y antes de un apagado. Al reiniciar, restaura automáticamente estas sesiones. Una característica destacada es su capacidad para reabrir conversaciones exactas dentro de herramientas de agentes de codificación como Claude Code, Codex, Gemini CLI, opencode y pi, asegurando que los desarrolladores puedan continuar su trabajo sin interrupciones. La herramienta se basa en `tmux-resurrect` y `tmux-continuum` y puede instalar dependencias faltantes como tmux y TPM. Se proporciona un mecanismo para adaptar otros agentes de codificación mediante la creación de adaptadores.",
+    "id": 50406292,
+    "url": "https://github.com/hedgerow-dev/coldframe",
+    "score": 261,
+    "time": 1794072450,
+    "titulo_es": "Honeypot de baja interacción para controladores de refrigeración de supermercados",
+    "resumen": "El artículo describe 'coldframe', un honeypot de baja interacción diseñado para simular controladores de refrigeración de supermercados (Danfoss AK-SM 800A y Dixell XWEB 500). El objetivo es atraer y registrar intentos de ataque contra estos dispositivos, que a menudo son vulnerables debido a contraseñas por defecto y firmware desactualizado. El honeypot imita las respuestas y el comportamiento de los controladores reales, incluyendo la presentación de páginas web, manejo de credenciales débiles, y respuestas a exploits conocidos (CVE-2025-41450, CVE-2026-25085). Registra detalladamente las conexiones, intentos de inicio de sesión, y las acciones de los atacantes, pero nunca expone sistemas reales. Incluye dos 'personas': una para Danfoss (con un servidor Nginx, TLS 1.2 y certificado autofirmado) y otra para Dixell (siguiendo el flujo de autenticación real). Opcionalmente, puede emular un servicio Modbus TCP. Se proporcionan instrucciones para su despliegue en un entorno de nube (Ubuntu 24.04) usando contenedores (Podman/Docker) y la configuración de red necesaria para minimizar el riesgo. El sistema registra todos los eventos en formato JSON en la salida estándar y en un archivo `events.jsonl`, y puede generar un informe resumen con `summary.py`.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50406563,
+    "url": "https://hunch.net/?p=13764006",
+    "score": 478,
+    "time": 1794074537,
+    "titulo_es": "Investigación en Aprendizaje Automático y Teoría del Aprendizaje",
+    "resumen": "El artículo detalla la evolución de la investigación en aprendizaje automático dentro de Microsoft Research (MSR), particularmente después del lanzamiento de ChatGPT. Se destaca la necesidad de una organización más estructurada, lo que llevó a la creación de la suborganización AI Frontiers (AIF). AIF se centró en la organización de esfuerzos de investigación coherentes, desarrollando tecnologías como el framework de orquestación Autogen y el agente de uso de computadora Fara. También se exploraron capacidades fundamentales como el Next Latent objective para la extrapolación, Dion3 para optimizar Muon, y el Full Bandwidth Transformer para mejorar la potencia de los modelos mediante recursión. A pesar de los desafíos como la disponibilidad de cómputo y los desacuerdos internos, AIF logró avances significativos con un equipo pequeño. Posteriormente, AIF se fusionó con Microsoft AI (MAI), pero surgieron incompatibilidades filosóficas debido al enfoque de MAI en el escalado masivo de modelos en lugar de la investigación fundamental. El autor argumenta que este enfoque de 'escalado-único' es erróneo y que la investigación sigue siendo crucial para el avance, citando ejemplos como el Full Bandwidth Transformer que ofrece ahorros significativos en entrenamiento e inferencia.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50404599,
+    "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+    "score": 249,
+    "time": 1794060020,
+    "titulo_es": "Diario de Desarrollo: Poniendo en Marcha un Ordenador RISC-V Ox64 con Linux",
+    "resumen": "El artículo documenta el desafiante proceso de configurar y programar el ordenador RISC-V Ox64, destacando la necesidad de utilizar programación UART en lugar de USB. Se detallan varios obstáculos, incluyendo problemas con la herramienta de flasheo Dev Cube en entornos Wayland y la incompatibilidad de dongles USB-UART genéricos. El autor describe una solución que involucra el uso de un RP2040 (como el Raspberry Pi Pico) actuando como puente serial, programado con picoprobe y utilizando la herramienta bflb-mcu-tool modificada. Se aborda la corrección de un error común sobre la programación USB de microcontroladores como el ESP32-C3, que sí soporta programación directa por USB-JTAG. Finalmente, se menciona la necesidad de flashear una imagen adicional (D0) para poder cargar el sistema operativo Linux.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50401867,
+    "url": "https://asahilinux.org/2026/11/progress-report-7-3/",
+    "score": 399,
+    "time": 1794028818,
+    "titulo_es": "Informe de Progreso de Asahi Linux: Soporte para M3 Generalizado y Avances en M4/M5",
+    "resumen": "Este informe de Asahi Linux detalla los avances significativos en el desarrollo del soporte para hardware de Apple Silicon dentro de Linux. Se destaca la inclusión de los drivers macaudio y avd en el kernel principal (upstream), a pesar de la complejidad inherente a la arquitectura de audio de Apple Silicon y el tamaño considerable de estos drivers. Se enfatiza la transición hacia un enfoque 'upstream-first' para el desarrollo, ejemplificado por la rápida integración de nuevos drivers y soporte para Thunderbolt. El soporte para la serie M3 ha pasado de ser experimental a estar disponible de forma general, con mejoras notables como la habilitación de DCP, lo que permite funciones como el modo de suspensión y optimizaciones en el área del notch. Adicionalmente, se presenta el desafío y el progreso en la virtualización de versiones de macOS que utilizan Exclaves (entornos aislados para tareas sensibles) en hardware M5 y superiores, mediante m1n1, lo que facilita la ingeniería inversa de estas versiones de macOS. Finalmente, se menciona que el soporte de GPU para la serie M3 aún está en desarrollo, siguiendo el ciclo de evolución de Apple.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 50406111,
+    "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+    "score": 502,
+    "time": 1794071196,
+    "titulo_es": "Apple restringe más de 100,000 palabras y frases en su autocompletado predictivo",
+    "resumen": "El artículo detalla la investigación de Derik Kauffman que descubrió una lista de \"censura ligera\" de más de 100,000 palabras y frases que Apple restringe en su función de texto predictivo y autocompletado en iPhones. Esta lista incluye términos relacionados con drogas, actos sexuales, política (como \"Dictator Trump\", \"NSA spies\", \"Trayvon Martin\", \"Kashmir dispute\"), y temas culturalmente sensibles o geográficos (como \"Australia is a very bad place\", \"question your sexuality\", \"the occupied territories\" en hebreo, \"the Hamas movement\" en árabe). La investigación sugiere que esta lista, codificada en el sistema operativo, afecta tanto a la escritura predictiva como a la funcionalidad de \"swipe-typing\", a menudo alterando palabras o frases intencionadas. Se menciona que la lista incluye elementos que Apple podría considerar inapropiados u ofensivos, pero también frases políticamente cargadas. El artículo contextualiza esto dentro de la evolución de la tecnología de autocompletado, desde las listas de palabras básicas hasta los sistemas basados en n-gramas y los más recientes \"transformer-based\" similares a LLMs, señalando que esta lista explica un \"misterio de larga data\" en el funcionamiento del autocompletado.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50405782,
+    "url": "https://sheets.works/data-viz/cpu-dies",
+    "score": 139,
+    "time": 1794068496,
+    "titulo_es": "Fotografías de procesadores de silicio: una perspectiva histórica y a escala",
+    "resumen": "El artículo presenta una colección de 356 fotografías de procesadores de silicio, abarcando desde 1972 hasta 2024, capturadas por varios fotógrafos especializados. Detalla el proceso de exposición de los chips de silicio, a menudo ocultos dentro de sus empaquetados, y destaca la diferencia de escala entre los procesadores antiguos y modernos. Se mencionan las fuentes de las fotografías y los datos de tamaño de los chips, así como las licencias individuales de cada imagen. Además, se hace una breve mención a un juego de palabras diario llamado 'Long Story Short'.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50403066,
+    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+    "score": 287,
+    "time": 1794044346,
+    "titulo_es": "Actualización de 2026: Experiencia con Software Libre en un Despacho de Abogados",
+    "resumen": "El autor, Neil Brown, actualiza su experiencia de cinco años utilizando software libre en su despacho de abogados especializado en derecho de Internet, telecomunicaciones y tecnología. Continúa usando Debian con GNOME en su ThinkPad X1 Yoga Gen 6 como máquina principal, aunque considera reemplazarla debido a problemas de hardware con los puertos Thunderbolt/USB-C. Detalla sus herramientas de software libre preferidas: Thunderbird y mutt para correo, LibreOffice Writer, pandoc y typst para producción documental, reveal.js para presentaciones, Nautilus como gestor de archivos, evince y Xournal++ para PDFs, espanso para expansión de texto, Firefox o links como navegador, vimwiki para wiki personal, LUKS para cifrado de disco, Cryptomator para cifrado de archivos antes de sincronizar con Syncthing, Mastodon (con el fork glitch-soc) para Fediverse, Bitwarden con vaultwarden y YubiKeys para gestión de contraseñas, Apostrophe como editor de Markdown, paperless-ngx para escaneo, y una interfaz web FOSS para impresoras de etiquetas. Destaca su preferencia por herramientas de terminal debido a su comodidad, eficiencia y menor distracción, mencionando el uso frecuente de mutt, vim, links, toot y otros TUI. La mayoría de los servicios son autoalojados en Intel NUCs, incluyendo Postfix/Dovecot para MTA, Syncthing para sincronización de archivos, Signal para videoconferencia, InvoicePlane para facturación, Kimai para seguimiento de tiempo, EspoCRM para gestión de casos, WireGuard para VPN, Greenbone/OpenVAS para escaneo de vulnerabilidades, Uptime Kuma para monitorización, Forgejo para repositorios Git, Wazuh para SIEM, y mkdocs con Apache2 para su sitio web estático. Dokuwiki con plugin Markdown se usa para gestión de conocimiento y políticas. DNS se maneja con Unbound y Pi-Hole, y las copias de seguridad con restic y rsync. Para el dispositivo móvil, usa un Pixel con GrapheneOS y F-Droid. La ausencia de edición colaborativa de documentos se menciona explícitamente. El artículo enfatiza un fuerte compromiso con el ecosistema de software libre, tanto en el lado del cliente como en el del servidor, priorizando la auto-hospedación y herramientas eficientes.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 50406319,
+    "url": "https://prog21.dadgum.com/19.html",
+    "score": 125,
+    "time": 1794072649,
+    "titulo_es": "Libros influyentes en el desarrollo de software, más allá de lo obvio",
+    "resumen": "El artículo revisa varios libros técnicos que, si bien no son los clásicos de lectura obligatoria, tuvieron un impacto significativo en la forma de pensar del autor sobre el desarrollo de software. Se destacan 'Zen of Assembly Language' por su enfoque en la optimización y trucos de bajo nivel, 'Scientific Forth' y 'Fractals, Visualization, and J Clifford Reiter' por mostrar cómo lenguajes no convencionales pueden ser herramientas potentes para dominios específicos (computación científica y generación de imágenes, respectivamente), y 'Programmers At Work' por explorar la creatividad y las experiencias de programadores, enfatizando la implementación de ideas sobre la teoría académica. El autor subraya que la tecnología es un medio para implementar ideas, no un fin en sí mismo, y que estos libros ofrecen perspectivas valiosas y menos convencionales que los textos introductorios típicos.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50361657,
+    "url": "https://textjs.org/",
+    "score": 110,
+    "time": 1793768376,
+    "titulo_es": "Aplicaciones React Full-Stack que se renderizan dentro de console.log",
+    "resumen": "El artículo describe Text.js, un framework que permite construir aplicaciones React full-stack que se renderizan directamente en la consola del navegador. Soporta características avanzadas de React como renderizado concurrente, Suspense y límites de error. La estructura de carpetas de la aplicación define las rutas y layouts, con navegación integrada (atrás, adelante, enlaces profundos). Text.js utiliza un reconciliador personalizado y el motor de layout Yoga para optimizar la renderización, repintando solo las filas dañadas. Implementa eficiencias como el agrupamiento de celdas y la no repetición de commits que no cambian el estado. Ofrece renderizado del lado del servidor (export runtime = \"server\") donde un reproductor de frames de 21 kB (gzip) se carga en el navegador en lugar de la aplicación completa. Turbolog, una herramienta asociada, escribe cada frame como spans %c en un único console.log, permitiendo una representación en color verdadero ANSI y la ejecución de handlers de ruta in-process. Se presenta OpenCode Lite, una versión TUI de OpenCode que funciona en la consola del navegador, permitiendo interactuar con agentes y modelos de IA configurados en un servidor OpenCode. Las características adicionales incluyen un panel de inspección de componentes, inspector de frames, línea de tiempo por frame, previsualización de frames junto al código, manejo de errores con enlaces a explicaciones, y la capacidad de pausar, redimensionar y copiar la aplicación desde la consola. También destaca su compatibilidad con el algoritmo Unicode Bidireccional y la generación de salidas similares al binario figlet. Se menciona un curso gratuito de 10 capítulos.",
+    "categoria": "Frontend"
   }
 ]
