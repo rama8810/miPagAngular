@@ -1,128 +1,173 @@
 [
   {
-    "id": 50426207,
-    "url": "https://github.com/ikey4u/zebkit",
-    "score": 89,
-    "time": 1794234840,
-    "titulo_es": "Un motor de navegador multiplataforma y ligero para aplicaciones: Chrome como biblioteca",
-    "resumen": "Zebkit es una biblioteca multiplataforma que empaqueta los componentes centrales de Chromium (Blink, V8, PDFium y FFmpeg) en una biblioteca integrable sin el entorno completo de Chrome ni el runtime de Electron. Diseñado para integrarse en aplicaciones escritas en C, C++, Rust, Python, Go o JavaScript, permite incrustar vistas web, procesar PDFs, reproducir multimedia y gestionar criptografía conservando la ventana nativa y el control del bucle de eventos principal (compatible con Qt, GTK, AppKit, etc.), además de incorporar soporte para sandboxing nativo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50413970,
-    "url": "https://github.com/sshah03/recalc",
-    "score": 4,
-    "time": 1794150727,
-    "titulo_es": "Recalc: Una hoja de cálculo diseñada para colaborar con agentes de IA",
-    "resumen": "Presentación de recalc, una herramienta experimental y de código abierto que reinventa el concepto de hoja de cálculo para la era de la IA agéntica. Permite que cada celda albergue valores, fórmulas, comandos de terminal o instancias de agentes como Claude Code y Codex interactuando mediante el protocolo MCP. La plataforma facilita la orquestación y supervisión en tiempo real de múltiples agentes, ejecución de pruebas automatizadas en celdas contiguas y la edición directa de datos sin interrumpir flujos de trabajo, operando localmente sin servidores externos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50427085,
-    "url": "https://github.com/datareceipts/data-receipts/tree/main/109-gpu-pricing",
-    "score": 130,
-    "time": 1794238741,
-    "titulo_es": "Precios de alquiler de GPU bajo demanda y comparaciones entre proveedores",
-    "resumen": "El artículo analiza los precios de alquiler de GPUs bajo demanda en AWS, Azure y otros proveedores de 'neoclouds', normalizados a dólares por GPU por hora y agrupados por modelo y memoria idénticos. Se observa una variación de hasta 4.57x en el precio para el mismo chip (ej. H100), destacando que diferentes configuraciones (SXM, PCIe) o capacidades de memoria dentro de la misma familia de GPU se comercializan como un solo producto pero tienen costos distintos. La comparación se centra en el menor costo ofrecido por cada proveedor para acceder a una GPU específica, y se explican las diferencias de precio no solo por margen, sino por las características de los servicios asociados, como la interconexión entre nodos, que pueden ser innecesarias o cruciales dependiendo de la escala de la tarea (fine-tuning vs. entrenamiento distribuido).",
-    "categoria": "IA"
-  },
-  {
-    "id": 50413885,
-    "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test/",
-    "score": 62,
-    "time": 1794150042,
-    "titulo_es": "Dron Ornitóptero \"O1\" de Ornadyne Evasión Detección Sensores",
-    "resumen": "El artículo detalla el desarrollo y la demostración exitosa del dron ornitóptero O1 de Ornadyne, un sistema aéreo no tripulado (UAS) que imita el vuelo de las aves mediante el aleteo de sus alas en lugar de hélices. Diseñado para parecerse y moverse como un pájaro, el O1 puede evadir la detección por sensores convencionales de contramedidas no tripuladas (C-UAS), siendo a menudo clasificado erróneamente como un ave real. Durante el ejercicio militar \"Game of Drones\" en la Base de la Fuerza Aérea Edwards, el dron demostró su capacidad de sigilo al no ser detectado por equipos de otras compañías. El O1 pesa aproximadamente 1 libra, tiene una autonomía de vuelo superior a una hora y un alcance de hasta 10 km, pudiendo transportar una pequeña carga útil como una cámara para misiones de vigilancia y reconocimiento. Su tecnología de camuflaje incluye la capacidad de modificar su color, envergadura, proporciones y silueta para mimetizarse con especies de aves nativas de la región. Este avance representa una nueva aproximación a la evasión de detección en drones, centrándose en el mimetismo ambiental en lugar de las técnicas tradicionales de enmascaramiento de firmas electrónicas.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50429031,
-    "url": "https://github.com/preloopdev/loopt",
-    "score": 7,
-    "time": 1794247145,
-    "titulo_es": "Flujos de trabajo de GitHub Actions en cualquier idioma con Loopt",
-    "resumen": "El artículo describe Loopt, una herramienta que permite escribir flujos de trabajo de GitHub Actions utilizando lenguajes como TypeScript, Python, Go y Rust, en lugar de YAML directamente. Loopt genera los archivos `.github/workflows/*.yml` a partir de código fuente (ubicado en `.loopt/workflows/*`), facilitando la edición y el mantenimiento de flujos de trabajo complejos. Soporta la importación de flujos de trabajo YAML existentes y su conversión a código editable. La herramienta ofrece binarios precompilados, simplificando la instalación. Los flujos de trabajo generados siguen buenas prácticas como el uso de tokens de solo lectura y la fijación de versiones de acciones. Loopt también incluye verificaciones de corrección y seguridad nativas para los flujos de trabajo generados, con la opción de integrar `shellcheck`.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50377111,
-    "url": "https://sofiabelen.github.io/projects/pointer-provenance-in-rust-vs-cpp/",
-    "score": 16,
-    "time": 1793871170,
-    "titulo_es": "Explorando la Proveniencia de Punteros en C++ y Rust",
-    "resumen": "El artículo explora el concepto de proveniencia de punteros, una abstracción del compilador que rastrea el origen de un puntero para determinar si puede acceder a una memoria específica. Se detalla cómo esta proveniencia permite optimizaciones en compiladores como Clang y LLVM, donde el compilador puede asumir que un puntero no deriva de una variable si no se creó a partir de su dirección explícita. Se muestra cómo la conversión de un puntero a entero rompe esta garantía de proveniencia, obligando al compilador a desistir de optimizaciones. Finalmente, se introduce la API de proveniencia de Rust como una forma de comunicar intenciones al compilador (inspeccionar la dirección sin reconstruir un puntero válido), preservando así las optimizaciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50389093,
-    "url": "https://www.brendangregg.com/activebenchmarking.html",
-    "score": 35,
-    "time": 1793948596,
-    "titulo_es": "Benchmarking Activo y Pasivo: Mejorando la Precisión en las Pruebas de Rendimiento",
-    "resumen": "El artículo introduce dos enfoques para la ejecución de benchmarks: pasivo y activo. El benchmarking pasivo, que es el método común de \"ejecutar y olvidar\", se centra únicamente en la recolección de datos sin un análisis profundo, lo que a menudo lleva a interpretaciones erróneas o engañosas de los resultados. Por el contrario, el benchmarking activo implica un análisis de rendimiento continuo mientras la prueba se está ejecutando, utilizando herramientas del sistema operativo (como vmstat, iostat, perf, eBPF/DTrace) y metodologías como el método USE. El objetivo del benchmarking activo es validar que la prueba mide lo que se pretende, identificar los verdaderos cuellos de botella (ya sean del sistema o del propio benchmark) y transformar los datos brutos en información útil para tomar decisiones de desarrollo y arquitectura sólidas. Se enfatiza la importancia de verificar la configuración del benchmark, idealmente siendo de código abierto, y de reportar los resultados junto con el factor limitante identificado para asegurar la validez y utilidad de las pruebas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50424757,
-    "url": "https://github.com/IainKay/ram-altman",
-    "score": 19,
-    "time": 1794227807,
-    "titulo_es": "Monitor de RAM que reporta al CEO de OpenAI",
-    "resumen": "El artículo describe un script de Bash diseñado para monitorizar la memoria RAM no utilizada en un sistema Linux. Si la memoria disponible supera el 10%, el script envía un correo electrónico diario a Sam Altman, CEO de OpenAI, para informarle sobre la \"capacidad inutilizada\" de RAM. Esta iniciativa surge de unas declaraciones de Altman sobre la ineficiencia global de tener RAM inactiva en ordenadores personales. El script utiliza métricas como `MemAvailable` (o una estimación para kernels antiguos) para determinar la RAM disponible, incluyendo memoria libre y caché recuperable. Se mencionan los requisitos técnicos (Linux, bash, sendmail/msmtp) y se ofrece una forma de probar el script sin enviar correos reales. El artículo también aclara que la iniciativa es humorística y no una solución real para la escasez de DRAM, aunque la monitorización de memoria en sí es una práctica técnica válida. Se hace una distinción entre la memoria disponible y el tiempo de uso real de la misma, y se menciona una posterior aclaración de Altman sobre sus intenciones respecto a la memoria RAM.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50388335,
-    "url": "https://www.pearcey.org.au/heritage/csirac/how-australia-played-the-worlds-first-music-on-a-computer/",
-    "score": 25,
-    "time": 1793940383,
-    "titulo_es": "La Fascinante Historia de CSIRAC: El Primer Ordenador Australiano en Tocar Música",
-    "resumen": "El artículo narra la historia de CSIRAC (anteriormente CSIR Mark 1), el cuarto ordenador digital del mundo, diseñado y construido en Australia entre 1947 y 1951. Se detalla su arquitectura primitiva: funcionamiento a 1,000 ciclos por segundo, escasa memoria (2KB RAM, 3KB disco), tamaño de una habitación y ausencia de pantalla. La salida principal era cinta de papel, pero utilizaba un altavoz ('hooter') para indicar el progreso del programa. Destaca el trabajo pionero de Geoff Hill, un matemático con oído musical perfecto, quien, a pesar de las limitaciones del hardware (acústicas líneas de retardo de mercurio con tiempos de acceso variables, procesamiento serial), logró programar CSIRAC para reproducir música en 1950 o 1951. Este logro, que requirió una sincronización precisa de pulsos para generar notas musicales, fue un desafío técnico significativo dado el hardware de la época. CSIRAC también se utilizó para cálculos científicos y de ingeniería, como determinar el centro de la galaxia.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50373768,
-    "url": "https://blog.coredump.cx/p/quasi-logarithmic-kitchen-timer",
-    "score": 93,
-    "time": 1793841315,
-    "titulo_es": "Construcción de un Temporizador de Cocina Digital con Pantalla Analógica Personalizada",
-    "resumen": "El artículo describe la creación de un temporizador de cocina digital DIY que combina una pantalla analógica inspirada en diseños antiguos con una interfaz de usuario moderna y fácil de usar. El autor aborda las limitaciones de los temporizadores comerciales (digitales y mecánicos) y propone una solución personalizada. La pantalla utiliza un medidor de panel analógico vintage (Crompton 244-05VG-LS) modificado con una gráfica personalizada. La interfaz de usuario se centra en un botón de activación táctil y un mando giratorio para ajustar el tiempo. La escala del temporizador es una aproximación logarítmica dividida en cuatro secciones lineales con incrementos de tiempo variables para mejorar la usabilidad y legibilidad. El hardware principal incluye un microcontrolador AVR DB, un codificador rotatorio Bourns PEC16-2220F-N0024 y un amplificador operacional AD8531 para la salida de audio. El software controla la pantalla mediante PWM y genera el audio. El diseño del recinto es simple y fácil de limpiar, construido con madera de arce.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50419215,
-    "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
-    "score": 586,
-    "time": 1794183050,
-    "titulo_es": "Análisis de Seguridad de Sistemas de Coches Conectados de un Fabricante Automotriz Mayor",
-    "resumen": "El artículo detalla una investigación de seguridad sobre la plataforma de coches conectados de un importante fabricante automotriz. El análisis se centró en las aplicaciones web e infraestructura expuesta a internet, comenzando con la descompilación de la aplicación móvil para identificar los puntos finales de la API. Se descubrió una infraestructura de telemetría expuesta bajo el dominio *.redacted-telematics.com.au. Un subdominio particularmente interesante, admintool.redacted-telematics.com.au, que albergaba una herramienta de administración, se encontró vulnerable. A pesar de una interfaz de usuario de baja calidad, la herramienta expuso una API rica con claves de API codificadas en el código JavaScript, que permitía el acceso y la manipulación de cuentas de clientes y vehículos de producción con restricciones mínimas. Se demostró la capacidad de buscar cuentas de usuario por dirección de correo electrónico y, más críticamente, de vincular matrículas a números de identificación de vehículo (VIN) a través de sitios de consulta públicos en Australia. Posteriormente, se utilizó una API para obtener el GUID del suscriptor a partir del VIN, lo que permitió recuperar información personal identificable (PII) del usuario, como la dirección de correo electrónico, a través de la plataforma de identidad ForgeRock OpenIDM. Si bien la investigación logró establecer una cadena desde la matrícula hasta los datos del usuario, la capacidad de enviar comandos directamente a los vehículos a través de esta herramienta de administración específica no se confirmó en el extracto proporcionado.",
+    "id": 50426294,
+    "url": "https://ericswpark.com/blog/2026/2026-11-09-ip-camera-pt2/",
+    "score": 50,
+    "time": 1794235242,
+    "titulo_es": "Reingeniería de firmware de cámara IP Tuya para habilitar transmisión ONVIF local",
+    "resumen": "El artículo detalla el proceso de reingeniería de firmware de una cámara IP basada en la plataforma Tuya para habilitar flujos de video locales a través de ONVIF y RTSP. Inicialmente, se intentó modificar directamente el firmware sin éxito, posiblemente debido a la corrupción de checksums. El enfoque posterior involucra la extracción del firmware utilizando `binwalk`, identificando el kernel Linux 3.4.35 y localizando el archivo de configuración de Tuya (`tuya_config.json`). Se examina el script de inicialización (`initrun.sh`) y el ejecutable principal (`ppsapp`) para comprender el proceso de arranque y la lógica interna. El análisis del binario `ppsapp` con Ghidra, buscando cadenas relacionadas con ONVIF, revela la estructura de la URL de transmisión RTSP y la funcionalidad de habilitación de ONVIF, aunque el puerto específico aún necesita ser determinado. Se menciona el uso de un pipeline de Jenkins para la compilación del firmware y la posible negligencia en el soporte post-lanzamiento por parte del fabricante.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50421155,
-    "url": "https://github.com/OmniJev/Flide",
-    "score": 108,
-    "time": 1794199392,
-    "titulo_es": "El motor de inferencia extremadamente rápido para modelos de decisión",
-    "resumen": "Flide es una infraestructura de inferencia rápida para modelos de decisión estilo Jev. Utiliza forking de estado exacto, logrando una velocidad hasta 9.5 veces superior a vLLM y SGLang. Sirve la API Jev /v1/systemone y es compatible con diversos modelos, incluyendo modelos de decisión de Perplexity y modelos de chat. Las comparaciones de latencia se realizan en hardware H200, con opciones de cuantización como fp8 para modelos como KnowLine 35B. Flide se basa en kernels de flash-linear-attention y se distribuye bajo licencia Apache-2.0. Se anima a los investigadores a citar su paper si utilizan Flide.",
+    "id": 50437790,
+    "url": "https://connect.queenslibrary.org/",
+    "score": 143,
+    "time": 1794301479,
+    "titulo_es": "Ataque de Ransomware Causa Interrupción Significativa de la Red en la Biblioteca Pública de Queens",
+    "resumen": "La Biblioteca Pública de Queens (QPL) está experimentando una interrupción significativa de la red en todas sus ubicaciones debido a un ataque de ransomware. Si bien todas las sucursales permanecen abiertas según lo programado, ciertos servicios virtuales y presenciales pueden verse afectados. La capacidad de pedir prestados y devolver libros está operativa, pero las renovaciones no están disponibles temporalmente. La QPL está trabajando para restaurar completamente sus sistemas de red y recomienda a los usuarios consultar su página web o redes sociales para obtener actualizaciones. Se proporciona un número de teléfono para asistencia. La biblioteca enfatiza que la restauración completa de los sistemas llevará tiempo y pide paciencia a sus usuarios.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50429068,
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "score": 801,
+    "time": 1794247270,
+    "titulo_es": "Nuevos modelos Claude Fable 5.2 y Claude Mythos 5.2 para desafíos técnicos complejos",
+    "resumen": "El artículo presenta las nuevas versiones de los modelos de IA Claude Fable 5.2 y Claude Mythos 5.2, diseñados para abordar desafíos técnicos avanzados. Estos modelos demuestran mejoras significativas en codificación, razonamiento y visión, superando las capacidades de modelos anteriores. Se destacan aplicaciones como migraciones de software complejas, diseño de dispositivos electrónicos desde cero, resolución de problemas en física de agujeros negros y progreso en robótica. Claude Fable incluye salvaguardas de ciberseguridad y biología, mientras que Mythos está dirigido a organizaciones que trabajan en investigación biomédica o ciberseguridad. Los modelos ofrecen mayor velocidad de generación de tokens (hasta 30% más rápido que la versión 5.1) y un costo reducido, con un modo rápido opcional que acelera la generación hasta 2.5 veces. Se enfatiza la seguridad y la alineación, con pruebas exhaustivas y salvaguardas mejoradas contra ataques de destilación y desalineación. Se recomiendan para trabajos técnicos ambiciosos y de código abierto, y pueden actuar como 'Advisor' u 'Orchestrator' para otros modelos. En benchmarks, superan a Claude Opus 5.5 en la mayoría de las capacidades evaluadas, y en evaluaciones de esfuerzo y eficiencia, como FrontierCode 2.0, demuestran un rendimiento superior a un costo menor.",
     "categoria": "IA"
   },
   {
-    "id": 50406107,
-    "url": "https://psalm.dev/articles/psalm-7",
+    "id": 50441074,
+    "url": "https://www.newyorker.com/culture/infinite-scroll/the-death-knell-of-digital-search",
+    "score": 24,
+    "time": 1794321696,
+    "titulo_es": "La Crisis de la Búsqueda por Internet y el Auge de la IA",
+    "resumen": "El artículo describe la crisis actual en las funciones de búsqueda de internet, particularmente en Google, debido a la implementación agresiva de inteligencia artificial (IA) que prioriza resúmenes y respuestas generadas por IA sobre los resultados de búsqueda tradicionales y enlaces directos. Esto está afectando negativamente el modelo de negocio de Google, basado en la publicidad en los resultados de búsqueda, ya que la menor cantidad de clics hacia sitios externos reduce la monetización. Paralelamente, se observa un aumento en el uso de chatbots como ChatGPT de OpenAI y Claude de Anthropic, que están captando usuarios y volumen de 'consultas tipo búsqueda' de Google. Estos chatbots, cada vez más capaces de navegar por internet en tiempo real, se están convirtiendo en la principal vía de acceso a la información para muchos usuarios, desviando tráfico de los sitios web. Esto plantea preocupaciones sobre la sostenibilidad del contenido en internet, ya que los creadores de contenido podrían perder el incentivo para publicar si no reciben tráfico. Plataformas como Reddit están respondiendo a esta tendencia implementando experiencias principalmente para usuarios registrados y notando una disminución en las referencias de tráfico web, señalando que la búsqueda web está evolucionando de ser una puerta de entrada a internet a ser un destino impulsado por IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50442202,
+    "url": "https://text.npr.org/nx-s1-6029641",
+    "score": 41,
+    "time": 1794326374,
+    "titulo_es": "Palantir Contrata a Exsenador Jon Tester en Medio del Escrutinio Demócrata",
+    "resumen": "El artículo detalla la contratación del exsenador demócrata Jon Tester por parte de Palantir, una empresa de software e inteligencia artificial. Esta contratación ocurre en un contexto donde las empresas tecnológicas anticipan un mayor escrutinio por parte de los demócratas en el Congreso, especialmente en relación con sus vínculos con la administración Trump. Palantir ha sido criticado por su presunta implicación en la vigilancia masiva, acusaciones que la compañía niega, afirmando que solo desarrolla herramientas para organizar información. Tester, a pesar de haber sido crítico con leyes de vigilancia como la PATRIOT Act, defiende que su acuerdo con Palantir es de asesoría y no de lobbying, y que la empresa se diferencia de las prácticas de vigilancia masiva al no construir grandes bases de datos ni comerciar con datos privados. Sin embargo, legisladores como el senador Ron Wyden continúan exigiendo respuestas sobre los contratos de Palantir con el Departamento de Seguridad Nacional.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50414117,
+    "url": "https://www.ghanastreetgames.com/",
     "score": 75,
-    "time": 1794071178,
-    "titulo_es": "Anuncio del lanzamiento de Psalm 7",
-    "resumen": "Psalm 7, una herramienta de análisis estático para PHP, introduce mejoras significativas en velocidad y funcionalidad. La versión 7 ofrece análisis de seguridad hasta 10 veces más rápido gracias a la optimización del almacenamiento de \"taints\" como bitmasks y la resolución de grafos de taint sobre resúmenes compactos. La funcionalidad de análisis combinado integra comprobación de tipos, análisis de seguridad y detección de código muerto en una sola ejecución, con el análisis de taint activado por defecto. Se introduce un nuevo Modelo de Pureza que reemplaza las anotaciones de pureza con \"capabilities\", permitiendo una declaración más precisa de los efectos secundarios de las funciones. Se ha mejorado la detección de código no utilizado, incluyendo referencias circulares y excepciones creadas pero no lanzadas. Se implementan \"template defaults\" para facilitar la gestión de parámetros de tipo genérico. Se añaden nuevos tipos como decimal-int-string y non-decimal-int-string, y se mejora el soporte para el operador pipe de PHP 8.5 y la aplicación parcial de funciones de PHP 8.6.",
+    "time": 1794151912,
+    "titulo_es": "Juego callejero de fútbol y otros modos multijugador",
+    "resumen": "El artículo describe un juego multijugador accesible a través del navegador, con controles de teclado/ratón o táctiles. Se centra en mecánicas de juego de fútbol callejero y otros modos de juego con turnos en vivo. Destaca las características de juego multijugador, tanto en salas privadas como públicas, la gestión de perfiles de jugador con almacenamiento de puntuaciones online y la posibilidad de descargar claves privadas para la restauración del jugador. Menciona el uso opcional de cookies de Google Analytics para medir visitas y el uso del dispositivo, con énfasis en la privacidad de los datos del jugador (sin nombres ni códigos de sala enviados). También se detalla el sistema de XP y recompensas por partidas completadas, y la funcionalidad de grabar clips de juego. Se requiere conexión a internet para cargar juegos y jugar con amigos.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50431075,
+    "url": "https://hannahilea.com/blog/daylight-clock/",
+    "score": 36,
+    "time": 1794254432,
+    "titulo_es": "Construí un Reloj de Luz Diurna",
+    "resumen": "El artículo describe la construcción de un reloj analógico de 24 horas que muestra la duración de la luz diurna basándose en la latitud y longitud del hogar. Incluye una caja de control que permite ajustar el tiempo (con saltos de una semana por clic, simulando el cambio de horario de verano), la latitud mediante un deslizador en un mapa mundial y la posición relativa dentro de la zona horaria. El autor detalla el uso de un microcontrolador Adafruit Feather RP2040, neopíxeles para la iluminación, diseño en Cuttle.xyz y corte con láser. La motivación surge de la experiencia personal con los cambios en la duración de la luz diurna y la influencia del reloj de un amigo. Se mencionan desafíos de diseño como el espacio para el cableado y se compara con el reloj de su amigo.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50439448,
+    "url": "https://letoverlambda.com/",
+    "score": 41,
+    "time": 1794314127,
+    "titulo_es": "Let Over Lambda",
+    "resumen": "El artículo describe 'Let Over Lambda', un libro centrado en Common Lisp y sus características avanzadas, particularmente macros. Enfatiza cómo los macros permiten abstracciones, productividad, eficiencia y seguridad sin precedentes, permitiendo a los programadores ir más allá de las capacidades de otros lenguajes. El libro, publicado en 2008 para el 50 aniversario de Lisp, se presenta como un tutorial para comprender la esencia de Lisp y la programación en sí, y está disponible gratuitamente en línea. Aunque escrito hace años, se considera que el libro mantiene su relevancia como explicación de la singularidad de Lisp.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50423151,
-    "url": "https://leosmith.wtf/blog/not-so-secure-boot.html",
-    "score": 43,
-    "time": 1794216150,
-    "titulo_es": "Investigación sobre el arranque seguro y su relación con la seguridad física",
-    "resumen": "Este artículo es una continuación de la serie p3ng0s y presenta una investigación sobre el funcionamiento del arranque seguro (secure boot). Inicialmente, el autor pensaba que el arranque seguro era una medida de Microsoft para restringir el sistema operativo, pero descubrió que su propósito principal es asegurar la integridad del sistema operativo en el proceso de arranque, validando las firmas digitales de los sistemas operativos permitidos. Se explica que, aunque Microsoft proporciona claves para algunas distribuciones de Linux, es posible que los usuarios inscriban sus propias claves en la BIOS para firmar sus compilaciones. La investigación se enfoca en cómo el arranque seguro fue diseñado para prevenir específicamente el malware a nivel EFI, considerando que el malware EFI puede ser persistente incluso después de reinicios si las particiones EFI no se borran completamente. El trabajo presentado es un preludio para p3ng0s V2, que buscará mejorar la seguridad física del sistema operativo, y el autor planea enfocar sus esfuerzos en completar la academia de maldev, escribir un paper sobre malware PIC y obtener las certificaciones CRTO 1 y 2 antes de continuar con p3ng0s V2.",
+    "id": 50442225,
+    "url": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+    "score": 29,
+    "time": 1794326487,
+    "titulo_es": "Anuncio de .NET 11: Mejoras en Desarrollo Moderno y Lenguajes",
+    "resumen": "El artículo anuncia el lanzamiento de .NET 11, destacando mejoras significativas para el desarrollo de aplicaciones modernas. Se enfoca en optimizaciones de rendimiento del runtime, herramientas SDK más eficientes y menor sobrecarga en comandos cotidianos. Las novedades clave incluyen C# 15 con características como tipos de unión (union types) para manejo de resultados más seguro y exhaustivo, y jerarquías cerradas (closed hierarchies) para un mejor control de la herencia. También se mencionan mejoras menores en C# como argumentos de expresiones de colección, indexadores de extensión y sentencias break/continue etiquetadas. Para F#, se incluyen mejoras en el uso de memoria y optimizaciones en operaciones de colecciones, junto con soporte para encadenar trabajo asíncrono concurrente y capacidades de preview como Runtime Async para constructores de expresiones de cómputo. El SDK ahora habilita por defecto un host CLI nativo AOT para ejecuciones más rápidas de comandos y mantiene el servidor MSBuild activo. Se reducen el tamaño de los instaladores en Linux/macOS mediante deduplicación de ensamblados y se introduce #:include para la expansión de archivos de código fuente. La CLI ahora soporta la creación y edición de filtros de solución. dotnet watch integra soporte para Aspire, recuperación ante fallos y selección de dispositivos móviles. Para los equipos que usan Microsoft.Testing.Platform, dotnet test introduce timeouts a nivel de ejecución, límites de fallos y mejor reporte de progreso. Finalmente, la publicación de contenedores garantiza la reproducibilidad de los digests de imagen a través de SOURCE_DATE_EPOCH y optimiza la carga de capas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50436410,
+    "url": "https://maurycyz.com/projects/fading/",
+    "score": 232,
+    "time": 1794288285,
+    "titulo_es": "Detección de movimiento y medición de velocidad con receptores de radio",
+    "resumen": "El artículo demuestra cómo un receptor de radio simple, utilizado para capturar señales de TV, puede detectar movimiento y estimar la velocidad. El fenómeno clave es el desvanecimiento selectivo, donde una señal directa se cancela por un reflejo. Cuando el camino de la señal se altera (por ejemplo, al moverse el receptor o una persona), la longitud del camino cambia, causando interferencia destructiva que se manifiesta como patrones de franjas en el espectrograma de la señal. La distancia entre estas franjas está directamente relacionada con la longitud de onda de la señal de radio y el cambio en la longitud del camino. Al medir la frecuencia de estas franjas (basada en la tasa de actualización del espectrograma y el movimiento percibido), se puede calcular la velocidad del objeto en movimiento. Se menciona que esta técnica no se limita a señales de TV, sino que también puede aplicarse a otras señales de radio de banda ancha como WiFi y LTE, aunque estas últimas pueden presentar un espectrograma más complejo.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50437106,
+    "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+    "score": 135,
+    "time": 1794295178,
+    "titulo_es": "Incidente de Seguridad en Fireworks AI Afecta a Datos de Notion AI",
+    "resumen": "El artículo detalla un incidente de seguridad ocurrido en Fireworks AI, un proveedor de infraestructura de IA utilizado por Notion. El incidente resultó en la posible exposición de un subconjunto de transcripciones de chat de Notion AI que no estaban atribuidas a ningún usuario o espacio de trabajo específico. Estos chats, utilizados para la función 'Insights' de Notion, no contenían información sensible como llamadas a herramientas o metadatos identificativos. Notion ha deshabilitado la función 'Insights' y ha interrumpido el uso de Fireworks AI como proveedor de inferencia para modelos de código abierto como medida de precaución. Se contactó a los propietarios de los espacios de trabajo afectados (<1%) para proporcionarles acceso a los datos expuestos para su revisión. Los propietarios pueden ver y descargar los datos afectados dentro de Notion, y opcionalmente compartir un enlace con los miembros afectados para que revisen sus propios datos. Se recomienda tratar los datos expuestos como si hubieran sido comprometidos.",
     "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50441518,
+    "url": "https://tinyvalencia.com/",
+    "score": 9,
+    "time": 1794323536,
+    "titulo_es": "Mapa isométrico pixel-art de València inspirado en SimCity",
+    "resumen": "El artículo describe la creación de un mapa isométrico pixel-art de València, utilizando datos 3D reales de la ciudad renderizados desde una cámara isométrica fija. Un modelo de IA entrenado en un estilo pixel-art específico repinta estas imágenes, tesela por tesela, asegurando la continuidad y la coherencia visual del mapa. Se incluyen elementos geográficos como la huerta, la Albufera y el mar, todos representados en el mismo estilo. La metodología combina datos de fuentes como la Dirección General del Catastro, IGN y OpenStreetMap, y utiliza Google Photorealistic 3D Tiles como referencia 3D.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50412324,
+    "url": "https://djad04.github.io/php2shell-deep-dive/",
+    "score": 7,
+    "time": 1794137124,
+    "titulo_es": "Análisis Técnico Profundo de Vulnerabilidades PHP2Shell",
+    "resumen": "Este artículo presenta un análisis técnico detallado y profundo sobre las vulnerabilidades PHP2Shell, explorando el proceso de explotación y los mecanismos internos. El autor busca ir más allá de explicaciones superficiales, ofreciendo un recorrido completo que explica el 'qué', 'por qué' y 'cómo' de las vulnerabilidades. Se basa en la comprensión del código fuente de PHP, experimentos y investigaciones propias. El objetivo es hacer el contenido accesible a personas con conocimientos básicos de C y experiencia general en programación, sin requerir experiencia previa en explotación de memoria de bajo nivel. Se aclaran conceptos fundamentales de gestión de memoria en C/C++ y cómo PHP, al estar escrito en C, maneja la asignación y reutilización de memoria (stack vs heap, malloc, free). El artículo advierte sobre la naturaleza de la investigación como entendimiento personal y no una referencia infalible, invitando a la corrección y discusión. Está diseñado para ser leído de principio a fin, pero permite saltar secciones para quienes ya conocen los conceptos básicos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50438377,
+    "url": "https://fakedos.com/",
+    "score": 57,
+    "time": 1794306756,
+    "titulo_es": "FakeDOS 2.0: Un salvapantallas para macOS que simula una máquina DOS de los 90",
+    "resumen": "FakeDOS 2.0 es un salvapantallas para macOS que recrea fielmente la experiencia de una máquina DOS de los años 90, incluyendo el arranque de AWARD BIOS, el parpadeo del prompt C:\\>, la simulación de comandos y el comportamiento de un 'ghost writer' que introduce comandos aleatoriamente. A pesar de su realismo visual y auditivo, es una simulación pura; no interactúa con el sistema de archivos real, redes o procesos del Mac. Permite al usuario teclear comandos ficticios como FORMAT C: o DEL *.*, que se ejecutan con salidas simuladas pero sin afectar al sistema anfitrión. La versión 2.0 para macOS, escrita en Swift, revive la nostalgia de los sistemas operativos de antaño para una nueva generación. Incluye configuraciones avanzadas y Easter eggs, como la respuesta a comandos específicos.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50434310,
+    "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+    "score": 287,
+    "time": 1794269446,
+    "titulo_es": "Beep Locator: Un sistema de triangulación de sonido basado en software",
+    "resumen": "El artículo describe la creación de Beep Locator, un sistema de software diseñado para triangular la fuente de un sonido (inicialmente un pitido misterioso) utilizando múltiples dispositivos conectados. El sistema se basa en un servidor web Python que coordina varios dispositivos 'oyentes' conectados a través de WebSockets. Estos oyentes graban audio y utilizan algoritmos como la Transformada Rápida de Fourier (FFT) y filtros de paso alto para detectar pitidos. Para mejorar la precisión de la localización, el sistema induce a un dispositivo a emitir un chirrido corto, y luego solicita a todos los oyentes que suban clips de audio que rodean ese chirrido. La alineación de estos clips permite la triangulación de la fuente del sonido. Se menciona que el proyecto se inspiró en el paper 'BeepBeep: A High-Accuracy Acoustic-Based System for Ranging and Localization Using COTS Devices'. El sistema resultó eficaz, localizando un detector de monóxido de carbono con una precisión de unos 40 cm.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50429734,
+    "url": "https://e-means.github.io/",
+    "score": 472,
+    "time": 1794249943,
+    "titulo_es": "e-means: Un algoritmo K-Means moderno y robusto para Meta FAIR",
+    "resumen": "El artículo presenta e-means, un nuevo algoritmo de k-means de código abierto desarrollado en Meta FAIR, diseñado como un reemplazo moderno y robusto para el algoritmo de Lloyd. e-means logra una mejora de velocidad aproximada de 10 veces tanto en épocas como en tiempo de reloj (wall-clock time) al tiempo que reduce la pérdida (loss). Esto se consigue mediante actualizaciones en mini-lotes con promedios móviles exponenciales, que no requieren ajuste de hiperparámetros gracias a la determinación automática del tamaño del lote y del paso mediante leyes de escala. Además, e-means incorpora una inicialización mejorada, una estrategia de reactivación de clusters inactivos, una tasa de decaimiento con programación coseno y una etapa de finalización para optimizar la pérdida. El algoritmo es altamente paralelizable y utiliza kernels especializados para acelerar el cálculo en GPU y CPU, superando a implementaciones estado del arte como Flash-KMeans y Faiss. A diferencia de otros métodos, e-means combina velocidad y calidad, logrando una pérdida menor que Lloyd en pocas épocas y reduciendo significativamente el tiempo de ejecución.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50392528,
+    "url": "https://prawns.dev/blogs/specula",
+    "score": 19,
+    "time": 1793974536,
+    "titulo_es": "Specula: Un procesador Out-of-Order RV32I dual-issue en Bluespec SystemVerilog",
+    "resumen": "El artículo describe la creación de Specula, un procesador RISC-V de 32 bits, single-issue, Out-of-Order (OoO) y especulativo, implementado en Bluespec SystemVerilog. El autor detalla su motivación para alejarse de los cursos universitarios y explorar el diseño de procesadores, centrándose en la complejidad de los procesadores OoO en comparación con los in-order. Specula evoluciona para incluir renombrado de registros y un reorder buffer para gestionar dependencias y el orden de ejecución. El proyecto también se expande para soportar modos privilegiados, CSRs y manejo de interrupciones para eventualmente ejecutar sistemas operativos como xv6 o Linux, inspirándose en diseños como SonicBOOM de Berkeley.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50435105,
+    "url": "https://broyojo.com/python-formalization/",
+    "score": 115,
+    "time": 1794275808,
+    "titulo_es": "Agentes de IA escriben miles de líneas de código Lean para replicar CPython, identificando cientos de errores.",
+    "resumen": "El artículo detalla un proyecto ambicioso donde agentes de IA generaron 613,318 líneas de código en Lean, replicando internamente la implementación de CPython línea por línea. El objetivo principal fue la verificación formal y la detección de errores. Cada función copiada en Lean fue sometida a pruebas rigurosas contra el comportamiento real de CPython y a la verificación automática de pruebas matemáticas por parte de un comprobador formal. Este proceso resultó en la identificación de 418 informes de errores en CPython, muchos de ellos en casos extremos y no cubiertos por la documentación oficial o las pruebas convencionales. Se enfatiza la importancia de las pruebas formales para exponer ambigüedades y fallos en código complejo y legado, así como la evolución del proceso de revisión para asegurar que las pruebas formalizadas sean significativas y no triviales. El proyecto también aborda la validación de las pruebas formales contra el comportamiento real de Python, descubriendo discrepancias donde las suposiciones en el código formalizado (ej. éxito de asignación de memoria, profundidad de llamadas recursivas, jerarquía de errores, reutilización de memoria) diferían del comportamiento práctico de CPython, llevando a la corrección tanto de las copias en Lean como de la identificación de problemas en el código C original.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50439805,
+    "url": "https://blog.yaros.ae/dont-buy-ar-glasses/",
+    "score": 113,
+    "time": 1794316225,
+    "titulo_es": "El Descenso de la Realidad Aumentada a un Infierno Gamificado y Lleno de Anuncios",
+    "resumen": "El artículo reflexiona sobre cómo la creciente gamificación y saturación de anuncios en aplicaciones como Temu, predicha por la \"hiperrealidad\", está destinada a extenderse a la tecnología de Realidad Aumentada (AR). El autor argumenta que las mismas empresas que han \"enshittificado\" la web y las aplicaciones móviles intentarán replicar estos patrones en las interfaces AR, transformando la experiencia del usuario en una distopía cyberpunk con anuncios constantes incrustados en el mundo real. Se advierte contra la dependencia de dispositivos AR y se fomenta la resistencia, comparando el potencial futuro de las AR con el problema histórico de las ventanas emergentes. Se anticipa la creación de frameworks por parte de gigantes tecnológicos como Apple, Google y Meta para facilitar la inserción de interfaces y anuncios en espacios arbitrarios del mundo real a través de AR.",
+    "categoria": "Hardware"
   }
 ]
