@@ -1,227 +1,191 @@
 [
   {
-    "id": 50453637,
-    "url": "https://blog.atuin.sh/threads-agent-sessions/",
-    "score": 66,
-    "time": 1794406246,
-    "titulo_es": "Atuin Threads: un historial sincronizado y con capacidad de búsqueda para cada sesión de agente en cualquier máquina",
-    "resumen": "Atuin ha lanzado Threads a partir de la versión 18.24, una extensión de su motor de sincronización cifrado de extremo a extremo diseñada para capturar, sincronizar y reanudar sesiones de agentes de código (como Claude Code y Codex) entre distintos entornos y máquinas. La herramienta almacena comandos, salidas e intenciones en un registro seguro y añade compatibilidad con el protocolo MCP (Model Context Protocol), lo que permite a los propios agentes de IA buscar e inferir contexto de intentos, razonamientos y código previo no consolidado.",
+    "id": 50467439,
+    "url": "https://libreagi.com/",
+    "score": 58,
+    "time": 1794492718,
+    "titulo_es": "LibreAGI: Rastreador Privado de BitTorrent para Modelos de IA Abiertos",
+    "resumen": "El artículo describe LibreAGI, un rastreador privado de BitTorrent diseñado para preservar modelos de IA de código abierto. Utiliza un sistema de créditos que recompensa a los miembros por mantener copias de modelos raros o que corren el riesgo de desaparecer. Admite varios formatos de modelo (safetensors, GGUF, ONNX) y licencias (Apache-2.0, MIT, Qwen Community License). Cada modelo es verificado contra su commit de origen y revisado por personal. Un catálogo público con hashes y orígenes permite la reconstrucción de los enjambres de modelos, asegurando su longevidad más allá de la existencia del sitio anfitrión. El acceso al canal público es abierto para hacer preguntas antes de unirse.",
     "categoria": "IA"
   },
   {
-    "id": 50453229,
-    "url": "https://github.com/0xdeadf1sh/AssemblyForNeovim",
-    "score": 34,
-    "time": 1794404064,
-    "titulo_es": "Script en Lua para visualizar código ensamblador en línea en Neovim para C, C++ y Rust",
-    "resumen": "Herramienta ligera desarrollada en Lua para el editor Neovim que permite inspeccionar el código ensamblador generado (arquitecturas x64 y aarch64) para proyectos en C, C++ y Rust mediante una ventana flotante. Requiere contar con los compiladores correspondientes en el PATH del sistema y es capaz de aprovechar archivos compile_commands.json para gestionar las dependencias de compilación.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50445401,
-    "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
-    "score": 533,
-    "time": 1794340246,
-    "titulo_es": "El regreso de Scion: De coches económicos a laboratorio de movilidad de Toyota",
-    "resumen": "Toyota revivirá la marca Scion, pero con un enfoque diferente. 'Scion by Toyota' se lanzará como un laboratorio de innovación (\"freedom lab\") centrado en la movilidad, explorando nuevos conceptos de diseño y vehículos. Su primer producto será el KEI-01, un camión ultracompacto (kei truck) basado en el Toyota Pixis/Daihatsu Hijet Jumbo Cab. Este vehículo, con motor de 660cc y transmisión CVT, cumple con las normativas de vehículos de baja velocidad en EE. UU. (máx. 25 mph), lo que limita su uso como vehículo diario pero lo hace ideal para aplicaciones comerciales y agrícolas debido a su capacidad de carga de 600 libras y su diseño versátil. Se producirá en Indiana y se lanzará inicialmente en un programa piloto de bajo volumen para flotas a finales de 2027. Otros conceptos presentados son el SxS Concept, un vehículo todoterreno de alto rendimiento con modo eléctrico, y el BXE Concept, aunque estos últimos no tienen planes de producción comercial por el momento.",
+    "id": 50468720,
+    "url": "https://doug.sh/posts/gpu-bars-behind-a-pcie-switch/",
+    "score": 21,
+    "time": 1794496492,
+    "titulo_es": "Configuración de Hardware y Software para PCIe con Múltiples GPUs AMD y NVIDIA",
+    "resumen": "El artículo detalla los desafíos y soluciones para configurar un sistema con múltiples GPUs (cuatro AMD Radeon AI PRO R9700 y dos NVIDIA RTX 3090) conectadas a través de un switch Broadcom PEX88096. Se enfoca en la gestión del espacio de direcciones de la BIOS y el Bus Master (BAR), especialmente con la característica Resizable BAR activada para cada GPU. Se discuten los problemas encontrados con el tamaño de las BARs de 32 GB, la intervención del kernel de Linux y la necesidad de módulos personalizados (gpu-rebar-layout) para gestionar la asignación de recursos y evitar conflictos. Se aborda un bug específico en el kernel de Linux relacionado con el cálculo del espacio de memoria para los puentes PCI y se menciona un parche propuesto para solucionarlo. La configuración requiere un orden específico de inicialización y el uso de opciones de arranque del kernel o módulos para asegurar que cada GPU reciba el espacio de memoria necesario para operar en modo peer-to-peer (P2P) sin pasar por la CPU.",
     "categoria": "Hardware"
   },
   {
-    "id": 50453171,
-    "url": "https://machinelearning.apple.com/research/attention-mamba-distillation",
-    "score": 11,
-    "time": 1794403786,
-    "titulo_es": "Atención a Mamba: Una Receta para la Destilación Inter-Arquitectura",
-    "resumen": "Este artículo presenta una técnica de destilación inter-arquitectura para transferir conocimiento de modelos basados en Atención (como los Transformers) a arquitecturas State Space Models (SSMs) como Mamba. A diferencia de métodos previos que fallaban en preservar el rendimiento del modelo profesor, esta investigación propone una inicialización basada en principios para Mamba. El enfoque consta de dos etapas: primero, se destila conocimiento de un Transformer a una versión linealizada de la Atención usando una adaptación del kernel trick. Luego, esta versión linealizada se destila a un modelo Mamba adaptado que no utiliza bloques de Atención. El modelo Mamba resultante mantiene un rendimiento cercano al del Transformer original (Pythia-1B) en términos de perplejidad (14.01 vs 13.86) y en tareas downstream, aunque se observan algunas brechas en tareas que requieren fuerte recuerdo in-context. Se realizaron ablaciones exhaustivas para validar la receta, incluyendo análisis de la arquitectura del secuenciador de secuencias, escalado del tamaño del modelo y de los tokens de destilación, y asignación de tokens entre etapas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50452742,
-    "url": "https://blog.mozilla.org/security/2026/11/10/open-research-stronger-privacy-making-firefox-users-harder-to-fingerprint/",
-    "score": 102,
-    "time": 1794401046,
-    "titulo_es": "Firefox fortalece la protección contra el rastreo de huellas digitales en navegadores",
-    "resumen": "Firefox ha implementado nuevas protecciones contra las técnicas de \"fingerprinting\" que permiten a los rastreadores identificar a los usuarios a través de sitios web, incluso sin el uso de cookies. Estas protecciones reducen la cantidad de detalles distintivos que un navegador expone, haciendo que un mayor número de usuarios de Firefox parezcan similares a los scripts de rastreo y fortaleciendo así la privacidad. La investigación subyacente, aceptada para publicación en CCS 2026, se centró en identificar y mitigar las características del navegador y dispositivo que más contribuyen a la identificación única de los usuarios. Se simularon mediciones de scripts de fingerprinting de proveedores como Fingerprint Pro, Signifyd y Akamai, utilizando datos de 25 millones de usuarios de Firefox con salvaguardas de privacidad mejoradas como OHTTP para el cifrado de solicitudes y la limitación estricta del acceso y retención de datos. Las medidas implementadas incluyen la limitación de la información expuesta por APIs como la resolución de pantalla (ocultando la barra de tareas) y la aleatorización de valores (como el número de procesadores reportados) para homogeneizar la apariencia de los navegadores. El objetivo es reducir las diferencias innecesarias expuestas a los sitios web mientras se preserva la funcionalidad esencial (como la configuración de idioma y zona horaria). Las protecciones, con las versiones más recientes enviadas en Firefox 145, han degradado significativamente la precisión del fingerprinting al disminuir el número de usuarios con huellas digitales únicas y aumentar el tamaño de los grupos de usuarios que comparten una huella digital.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50452224,
-    "url": "https://yaksoy.github.io/PhysicalRelighting/",
-    "score": 44,
-    "time": 1794397123,
-    "titulo_es": "Reiluminación de Fotografías con Control Explícito de Fuentes de Luz",
-    "resumen": "Este artículo presenta un método de reiluminación de fotografías que ofrece control explícito sobre las fuentes de luz, similar a los flujos de trabajo de gráficos por computadora (CG). La técnica permite a los usuarios insertar diferentes tipos de fuentes de luz, como focos, luces puntuales o iluminación ambiental, en una escena. Esto se logra mediante una combinación de visión por computadora de nivel medio, renderizado basado en física y renderizado neuronal. Se introduce una metodología de entrenamiento auto-supervisado que utiliza renderizado diferenciable para entrenar un renderizador neuronal con colecciones de fotografías del mundo real, permitiendo la generalización 'in-the-wild'. El proceso comienza infiriendo una representación de malla coloreada de la escena a partir de estimaciones monoculares de geometría y componentes intrínsecos. Esta representación permite definir configuraciones de iluminación deseadas en 3D. Luego, la escena bajo la nueva iluminación se renderiza utilizando un motor de path-tracing, y este renderizado aproximado se pasa a través de un renderizador neuronal feed-forward para predecir el resultado final de reiluminación fotorrealista. El renderizado diferenciable se usa para reconstruir la iluminación de la escena 'in-the-wild', lo que habilita el entrenamiento auto-supervisado del renderizador neuronal en colecciones de imágenes crudas. El método acerca el control físico explícito de las luces, disponible en herramientas de CG como Blender, a la reiluminación de imágenes del mundo real.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50446246,
-    "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
-    "score": 314,
-    "time": 1794344324,
-    "titulo_es": "Seis Esenciales Matemáticas",
-    "resumen": "El libro 'Six Math Essentials' de Terence Tao introduce seis conceptos matemáticos fundamentales: números, álgebra, geometría, probabilidad, análisis y dinámica. Estos conceptos son presentados como herramientas esenciales para el pensamiento cuantitativo, la abstracción, la navegación en la incertidumbre, el manejo de escalas extremas y la comprensión del cambio, ofreciendo una perspectiva para dar sentido al mundo complejo actual.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50450007,
-    "url": "https://github.com/gmkurtzer/ginux",
-    "score": 109,
-    "time": 1794374754,
-    "titulo_es": "Ginux: Un Kernel de Espacio de Usuario Configurable para Instancias Aisladas de Compatibilidad con Linux",
-    "resumen": "Ginux es un kernel de espacio de usuario configurable que actúa como una interfaz explícita y versionada entre las cargas de trabajo gestionadas y el kernel del host Linux. Originado como un kernel Rust independiente, su desarrollo activo ahora se centra en la funcionalidad de espacio de usuario. Ginux permite la creación de instancias de compatibilidad con Linux con un contrato de sistema de llamadas (syscall) reducido y deliberadamente modificado, a diferencia de la garantía de ABI de espacio de usuario completo de Linux. Esto permite un control granular sobre las capacidades expuestas a las aplicaciones, emulando, mediando o denegando llamadas al sistema según el contrato definido. Es útil para ejecutar cargas de trabajo específicas y también se está probando como una frontera de contención para agentes de IA y software automatizado, limitando su acceso a recursos y operaciones del sistema. El objetivo de investigación es crear un límite verificable que abarque syscalls, ioctls, sistemas de archivos, dispositivos, redes, autoridad de procesos y estado virtual de /proc y /sys, con auditoría de las decisiones del contrato. Ginux se presenta como una solución para la seguridad y el control de entornos de ejecución, más que una implementación completa de Linux o systemd.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50448921,
-    "url": "https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html",
-    "score": 234,
-    "time": 1794362191,
-    "titulo_es": "Optimizaciones de Rendimiento en Videojuegos de la Era de los 8 bits: El Arte de Dibujar Fondos Byte a Byte",
-    "resumen": "El artículo narra una experiencia de optimización de rendimiento en un videojuego de la era de los 8 bits. Ante la lentitud de la CPU y la ausencia de hardware gráfico avanzado (como blitters o texture mappers), el programador debía manipular directamente la memoria de video byte a byte. El problema principal del juego, un side-scroller, residía en la redibujación constante y costosa del fondo. Cada frame requería copiar casi una pantalla completa de 'tiles' (baldosas gráficas) que se desplazaban con la acción. Se detalla la estructura de memoria de un tile (28x28 píxeles, 16 colores, medio byte por píxel) y del buffer de pantalla (320x240 píxeles). La solución implicaba optimizar la copia de estos tiles, utilizando las capacidades del procesador 6809, como registros de 16 bits y modos de direccionamiento con auto-incremento para copiar datos de manera eficiente en bucles anidados (copiar una fila 7 veces, y un tile 28 veces), ajustando cuidadosamente los punteros de origen y destino para lograr una velocidad de juego aceptable.",
+    "id": 50467305,
+    "url": "https://spectrum.ieee.org/electric-ship-batteries",
+    "score": 33,
+    "time": 1794492363,
+    "titulo_es": "Las celdas totalmente inmersas podrían eliminar la fuga térmica",
+    "resumen": "El artículo describe el sistema Immersio CTP de Xing Mobility, que sumerge las celdas de baterías de iones de litio en un líquido refrigerante no conductor pero inflamable para mejorar la densidad energética y la seguridad. A diferencia de los sistemas de enfriamiento convencionales que utilizan placas frías, la inmersión directa elimina capas de transferencia de calor, mejorando significativamente la disipación térmica, especialmente en escenarios de fuga térmica. Xing Mobility afirma que su sistema puede duplicar la densidad energética en comparación con las baterías marinas convencionales, aunque estas afirmaciones se basan principalmente en datos de laboratorio. El sistema CTP (cell-to-pack) optimiza la densidad al eliminar las cajas de módulos metálicos y optimizar la estructura del paquete, integrando el soporte de celdas y el canal de refrigerante. Si bien la tecnología promete avances para la electrificación marina, aún enfrenta desafíos de validación y certificación, particularmente en cuanto a la seguridad del refrigerante inflamable y el rendimiento en condiciones marinas reales.",
     "categoria": "Hardware"
   },
   {
-    "id": 50435962,
-    "url": "https://ianbarber.blog/2026/11/09/make-this-forward-pass-as-fast-as-possible/",
+    "id": 50438261,
+    "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+    "score": 535,
+    "time": 1794305902,
+    "titulo_es": "Tutor Personal Socrático para Maestría de Habilidades",
+    "resumen": "El artículo describe un modelo de tutor personal que utiliza el método socrático (mayéutica) para guiar a un usuario desde su nivel actual hasta la maestría genuina de un tema. El tutor enseña principalmente haciendo preguntas que fomentan el razonamiento, la predicción y la explicación en el usuario, en lugar de dar conferencias. Este enfoque está diseñado para sesiones de enseñanza continuas, no para responder preguntas puntuales. El sistema rastrea el progreso en subhabilidades (niveles 0-5), visualiza el progreso con un mapa ASCII y finaliza el curso con una evaluación mixta cuando todas las subhabilidades alcanzan el nivel objetivo (por defecto 4/5). Si el usuario supera la evaluación, se muestra un mapa final y un resumen de las áreas más débiles; de lo contrario, se reanuda el ciclo de tutoría. Se incluye una opción para que el usuario elija entre una respuesta rápida o un proceso de enseñanza completo si la intención es ambigua.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50425017,
+    "url": "https://codeberg.org/wvhulle/bootvine",
+    "score": 264,
+    "time": 1794229364,
+    "titulo_es": "Visor de trabajos de systemd en tiempo real para la consola de arranque",
+    "resumen": "bootvine es una herramienta que reemplaza las líneas de registro de arranque tradicionales de Linux por una visualización en árbol de las unidades de systemd pendientes. Muestra un resumen en vivo de los trabajos en curso en la consola de arranque, y al completarse o fallar, presenta una línea de tiempo de las unidades más lentas. Ofrece información detallada sobre los fallos de las unidades al mostrar sus últimas líneas del journal y puede interactuar con prompts de contraseña, como desbloqueos de LUKS. La herramienta también monitoriza los procesos de apagado. Se puede probar sin modificar el sistema principal a través de demostraciones en QEMU con NixOS, simulando unidades lentas y fallidas. La licencia es GPL-3.0-or-later.",
+    "categoria": "Distribuciones Linux"
+  },
+  {
+    "id": 50467869,
+    "url": "https://lowkey.party/running-web-sites-makes-me-not-want-to",
     "score": 28,
-    "time": 1794283836,
-    "titulo_es": "El Futuro de los Compiladores de ML: ¿Agentes vs. Compiladores Tradicionales?",
-    "resumen": "El artículo explora la evolución de los compiladores de Machine Learning (ML) y su interacción con agentes de IA. Se discute si los compiladores tradicionales son todavía necesarios o si los agentes de IA pueden optimizar directamente el código de inferencia. Se presentan enfoques como megakerneels y Hyperkernels que buscan generar kernels de alto rendimiento. TVM argumenta que los compiladores de ML siguen siendo cruciales como una base estable de abstracciones y herramientas compartidas, permitiendo a los agentes explorar estrategias de optimización sin reinventar la infraestructura del compilador. La optimización de kernels se ve como un proceso de búsqueda y verificación, donde un IR (Intermediate Representation) formalizado y verificable es clave. Por otro lado, el Together Compiler (TKCC) sugiere que los IRs tradicionales tienen expresividad limitada y que el acceso sin restricciones al código fuente puede desbloquear un mayor rendimiento, aunque también se enfoca en la verificación y la reducción del espacio de búsqueda mediante modelos de costos analíticos y mediciones escalonadas. La tendencia general apunta a una descomposición de los compiladores tradicionales, donde técnicas de inspección e investigación automatizadas ganan importancia, y el uso de IA como Codex para la modificación de código busca eliminar heurísticas e semánticas implícitas en los compiladores, mejorando la predictibilidad y el rendimiento.",
+    "time": 1794493838,
+    "titulo_es": "La fiesta discreta: El fin de la web abierta y el auge del scraping corporativo",
+    "resumen": "El autor, un entusiasta del auto-alojamiento, documenta su frustración con el impacto de los scrapers de IA en su sitio web personal. Describe cómo el tráfico masivo de IPs de grandes proveedores de nube y el uso de SDKs para explotar conexiones residenciales saturan su ancho de banda y recursos. Esto lo ha llevado a considerar la eliminación de su sitio de fotografía y a centrarse en la creación de zines físicos, como una forma de escapar de la \"recopilación corporativa\" de datos. El artículo reflexiona sobre la creciente dificultad para los entusiastas de la tecnología casual de mantener sitios web personales frente a la \"DDOS legal\" generada por estas prácticas, y la falta de alternativas viables más allá de depender de CDNs corporativos.",
     "categoria": "IA"
   },
   {
-    "id": 50443824,
-    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-    "score": 458,
-    "time": 1794333722,
-    "titulo_es": "Desarrollador de Linux se enfrenta a reclamaciones de patentes de Synaptics por intentar mejorar el soporte de DisplayLink",
-    "resumen": "El artículo detalla el intento de Mike Lothian de mejorar el rendimiento del controlador Linux para una estación de acoplamiento DisplayLink, utilizando asistencia de LLM. A pesar de su esfuerzo por contribuir de forma open source a través de su proyecto Vino (un controlador DRM/KMS escrito en Rust) y la publicación de parches, se enfrentó a una respuesta legal por parte de Synaptics (que adquirió DisplayLink) con reclamaciones de infracción de patentes y amenazas legales. Lothian intentó obtener ayuda de los desarrolladores de Synaptics y de la comunidad de código abierto a través de listas de correo y repositorios de GitHub, pero no recibió una solución a su problema de bloqueo técnico y, en cambio, recibió una advertencia legal. La empresa solo proporciona el software DisplayLink Manager (DLM) y su módulo EVDI en formato binario y propietario para plataformas x86, lo que limita la paridad de características para los usuarios de Linux.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50449891,
-    "url": "https://github.com/adrbn/bo2-mac",
-    "score": 105,
-    "time": 1794373007,
-    "titulo_es": "Recompilación Estática de Call of Duty: Black Ops II de x86 Windows a ARM64 macOS Nativo",
-    "resumen": "El artículo describe un proyecto de ingeniería inversa y recompilación para ejecutar Call of Duty: Black Ops II en macOS con Apple Silicon. El proceso implica la traducción estática del código x86 de Windows a código nativo ARM64 para macOS utilizando Remill para generar LLVM IR, un runtime Win32 escrito a mano y la capa de gráficos Direct3D 11 reimplementada con Metal. El proyecto permite compilar el juego directamente en la máquina del usuario a partir de su copia de Steam, sin depender de emuladores como Wine o máquinas virtuales. Se detallan las mejoras de rendimiento en comparación con soluciones previas, la ejecución de las tres modalidades del juego (Campaña, Zombies, Multijugador contra bots) y la gestión de la protección contra copias mediante un intérprete x86 específico. El objetivo es ofrecer una experiencia de juego nativa y optimizada en plataformas Mac.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50427107,
-    "url": "https://happihacking.com/blog/posts/2025/why_I_wrote_theBEAMBook/",
-    "score": 168,
-    "time": 1794238895,
-    "titulo_es": "El Viaje de Construcción de un Libro Sobre BEAM: De la Frustración a la Colaboración Comunitaria",
-    "resumen": "El artículo narra la ardua y prolongada experiencia de un ingeniero de software senior en la creación de 'The BEAM Book', una guía técnica sobre la máquina virtual BEAM (usada por Erlang y Elixir). Inicialmente concebido como un proyecto personal para resolver problemas críticos en sistemas de alto rendimiento (con ejemplos de pausas de 15 ms que afectan millones de pagos), el libro pasó por múltiples fases de desarrollo y revisiones a lo largo de una década. Enfrentó desafíos con herramientas de publicación como DocBook y AsciiDoc, problemas con sistemas de gestión de contenido como Atlas de O'Reilly, y cancelaciones por parte de dos editoriales. La clave del éxito final fue la decisión de hacer el proyecto público en GitHub, lo que permitió la colaboración comunitaria. Las correcciones de typos, la adición de diagramas y la incorporación de licencias abiertas por parte de la comunidad, junto con el apoyo recibido a través de estrellas en el repositorio y menciones, fueron cruciales para mantener la motivación y refinar el contenido. El autor enfatiza la importancia de la persistencia, el establecimiento de límites (como el 'fika' o pausa para el café), y el valor de la retroalimentación comunitaria para crear un manual de referencia confiable, especialmente útil para quienes construyen u operan sistemas Erlang/Elixir a escala.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50443427,
-    "url": "https://blog.val.town/winding-down",
-    "score": 416,
-    "time": 1794331874,
-    "titulo_es": "Val Town Anuncia su Cierre y Migración de Usuarios",
-    "resumen": "El artículo anuncia el cese de operaciones de Val Town, una plataforma de desarrollo, debido a su incapacidad para competir en el mercado de la computación en la nube. Se proporciona información sobre la migración de usuarios a otros proveedores de hosting como Cloudflare, Vercel, Netlify y Render, destacando que las LLMs actuales facilitan este proceso. Se suspende la facturación y se mantendrán los servicios existentes de forma gratuita, con reembolsos parciales para planes anuales prepagados. Se agradece a la comunidad, equipo, inversores y usuarios por su contribución y confianza durante los cuatro años de operación.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50443812,
-    "url": "https://github.com/GoogleChrome/modern-web-guidance",
-    "score": 416,
-    "time": 1794333675,
-    "titulo_es": "Guía Moderna para la Web: Mejorando Agentes de Código con Buenas Prácticas Actualizadas",
-    "resumen": "El artículo presenta Modern Web Guidance, un conjunto de habilidades diseñado para integrar conocimiento experto sobre la plataforma web moderna y sus mejores prácticas directamente en agentes de codificación. Su objetivo principal es contrarrestar la tendencia de estos agentes a generar código obsoleto o ineficiente, influenciada por datos de entrenamiento con código legado. Modern Web Guidance proporciona directrices curadas y actualizadas sobre características recientes de la web, como sistemas de layout modernos (container queries, subgrid), optimizaciones de velocidad (preloading, INP), componentes nativos (Popover API, dialogs), y consideraciones de accesibilidad y usabilidad. La herramienta se actualiza mediante un CLI y se somete a un riguroso sistema de evaluación para asegurar la calidad y eficacia del código generado. Se ofrece configuración a través de un archivo `.mwgrc` y opciones para personalizar las 'skill packs' instaladas. Se menciona la recolección anónima de datos de uso para mejorar la herramienta, con una opción para deshabilitarla.",
-    "categoria": "Frontend"
-  },
-  {
-    "id": 50452394,
-    "url": "https://now-next.nl/en/insights/postgresql-json-vs-jsonb-measured/",
-    "score": 9,
-    "time": 1794398360,
-    "titulo_es": "JSON vs JSONB en PostgreSQL 17 y 18: Rendimiento y Tamaño",
-    "resumen": "El artículo compara el rendimiento y el uso de espacio de los tipos de datos JSON y JSONB en PostgreSQL 17.11 y 18.6, analizando seis formas de documentos, dos de entrada (compacta y con formato) y dos métodos de compresión (pglz y lz4). Las mediciones abarcan el tamaño en disco (incluyendo TOAST y compresión) y la velocidad de lectura de claves específicas sin índices. Los resultados indican que el tamaño de JSONB en comparación con JSON varía significativamente (desde 22.6% más pequeño hasta 40.9% más grande) dependiendo de la estructura y el formato del JSON, la presencia de espacios en blanco y si los documentos son lo suficientemente grandes para ser comprimidos por PostgreSQL. JSONB demostró ser consistentemente más rápido en la lectura de claves individuales (de 2.7 a 10.6 veces más rápido). Además, solo JSONB permite la comparación, agrupación e indexación por contención, lo que lo hace más versátil para consultas analíticas. Se discuten las diferencias en la representación interna (overhead por clave en JSONB) y el impacto de la compresión. Se concluye que, si bien JSONB puede ocupar más espacio para documentos muy pequeños o con mucha indentación, su superioridad en rendimiento de lectura y capacidades de indexación lo convierten en la opción preferida para la mayoría de las aplicaciones SaaS que manejan datos semiestructurados.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50441707,
-    "url": "https://docodethatmatters.com/home-automation-overnight-success/",
-    "score": 1113,
-    "time": 1794324320,
-    "titulo_es": "Automatización del Hogar: Construyendo Sistemas Fiables y Locales",
-    "resumen": "El artículo detalla un enfoque de automatización del hogar centrado en la fiabilidad y la independencia de la nube. El autor prioriza hardware propio (ESP con Tasmota, Raspberry Pi con Node-RED, broker MQTT) para que los sistemas esenciales funcionen incluso sin conexión a Internet, citando fallos de API de Google Nest y errores de certificados TLS como motivaciones. Se discuten varias reglas y filosofías, como mantener la independencia del proveedor, la modularidad a través de MQTT y la adaptación a los cambios en el uso de la casa. Se presentan ejemplos prácticos como un controlador de rociadores, un sistema de control de puerta de garaje y la automatización de la chimenea. Se enfatiza la importancia de comprender dónde se ubican los dispositivos en el triángulo de confianza entre nube, dispositivo y usuario, y la necesidad de soluciones que no requieran cambios de hábitos para los usuarios.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50452313,
-    "url": "https://zellij.dev/news/terminal-inbox-session-previews/",
-    "score": 14,
-    "time": 1794397852,
-    "titulo_es": "Zellij 0.46.0: Un Multiplexor de Terminal que se Convierte en un Entorno de Escritorio Terminal-First",
-    "resumen": "El artículo anuncia el lanzamiento de Zellij 0.46.0, destacando la incorporación de un terminal integrado que ofrece una experiencia de usuario completa sin modificar su naturaleza fundamental como multiplexor de terminal. Este nuevo terminal está optimizado para baja latencia de entrada y desplazamiento de texto, y se integra profundamente con el escritorio a través de un icono de bandeja que permite gestionar sesiones y notificaciones. La versión también introduce la capacidad de ejecutar Zellij como una biblioteca Rust para \"white labelling\", mejoras en la navegación de paneles apilados, la opción de ocultar la interfaz de usuario de Zellij, y la visión de Zellij como un entorno de escritorio terminal-first, permitiendo la ejecución de aplicaciones GUI dentro de paneles TUI. La funcionalidad principal de multiplexor de terminal se mantiene intacta.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50443716,
-    "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
-    "score": 270,
-    "time": 1794333307,
-    "titulo_es": "Claude Lanza Funcionalidades de Pizarras, Hojas de Cálculo y Paneles de Datos para Colaboración en Equipo",
-    "resumen": "El artículo anuncia el lanzamiento beta de Claude Whiteboards y Claude Sheets, y la disponibilidad general de Claude Data (anteriormente Claude Dashboards). Estas nuevas funcionalidades permiten a los equipos colaborar directamente dentro de Claude en procesos de lluvia de ideas, creación y edición de hojas de cálculo, y análisis de datos. Claude Whiteboards facilita la lluvia de ideas y la organización de tareas con Claude actuando como asistente para estructurar planes, asignar propietarios y fechas. Claude Sheets permite la generación y edición de hojas de cálculo con fórmulas, formato y validaciones, exportables a formatos como .xlsx o CSV, o integrables con herramientas como Excel. Claude Data, ahora de disponibilidad general, permite interactuar con datos empresariales de fuentes como Redshift o BigQuery, ofreciendo historias de datos, consultas certificadas y uso compartido en tiempo real. Las herramientas son accesibles en planes de pago y funcionan en web, escritorio y móvil. Se menciona la integración directa de aplicaciones de socios dentro de Claude para un flujo de trabajo unificado. Adicionalmente, se presentan los nuevos modelos Claude Fable 5.2 y Claude Mythos 5.2, y la capacidad de consultar datos financieros directamente en Claude.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50453148,
-    "url": "https://stevekrouse.com/syndicated/alan-kay-lunch",
-    "score": 4,
-    "time": 1794403681,
-    "titulo_es": "Almuerzo de cinco horas con Alan Kay",
-    "resumen": "El artículo narra una extensa conversación de cinco horas entre el autor y Alan Kay, figura destacada en la computación. La charla abarcó una amplia gama de temas, desde ingeniería eléctrica y arquitectura hasta la filosofía de la ciencia, artes visuales, educación y la historia de la computación. Alan Kay, conocido por sus contribuciones a la computación orientada a objetos y la interfaz gráfica de usuario, actuó como mentor, compartiendo su vasta experiencia y conocimiento. Kay enfatizó la importancia de la lectura constante (cientos de libros al año) y la inmersión en comunidades con diversas perspectivas como pilares fundamentales para el avance en el campo. Abogó por la educación formal (universidad y posgrado) como un medio para obtener perspectivas diversas y evitar la insularidad, aunque reconoció que la motivación intrínseca del aprendizaje es clave. Sugirió a los autodidactas imponerse un 'impuesto de aprendizaje' para explorar áreas fuera de sus intereses principales, con el objetivo de evitar la especialización excesiva y fomentar una comprensión más holística y rigurosa.",
+    "id": 50465453,
+    "url": "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/",
+    "score": 77,
+    "time": 1794480380,
+    "titulo_es": "Pulsos de radio misteriosos vinculados a una estrella enana blanca que orbita una estrella similar al Sol",
+    "resumen": "Científicos del International Centre for Radio Astronomy Research (ICRAR) han detectado por primera vez pulsos de radio provenientes de una enana blanca en órbita alrededor de una estrella similar al Sol. El sistema, denominado GPM J071507−114153, presenta una enana blanca que gira rápidamente y una estrella tipo G, similar a nuestro Sol. Estos pulsos, clasificados como \"long-period transients\" (LPTs), se emiten y apagan en intervalos de minutos a horas. La detección ha permitido observar el movimiento orbital de la enana blanca, confirmando que los pulsos se originan cerca o desde la propia enana blanca. Además, los pulsos han permitido detectar llamaradas estelares y eyecciones de plasma ('protuberancias estelares') en la estrella compañera, demostrando la capacidad de la radioastronomía para estudiar fenómenos en estrellas a miles de años luz de distancia. El descubrimiento se realizó utilizando el Murchison Widefield Array (MWA) y el telescopio MeerKAT, con observaciones ópticas de confirmación del W. M. Keck Observatory. Estos observatorios son precursores de los futuros telescopios Square Kilometre Array (SKA), que prometen descubrimientos aún más detallados.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50447074,
-    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
-    "score": 437,
-    "time": 1794349076,
-    "titulo_es": "Análisis de los Siete Meses del Proyecto Glasswing de Anthropic: Resultados y Críticas",
-    "resumen": "El artículo analiza los resultados del Proyecto Glasswing de Anthropic después de siete meses, centrándose en la eficacia y veracidad de sus afirmaciones sobre el descubrimiento de miles de vulnerabilidades de alta y crítica severidad en software de código abierto. El autor ha rastreado 442 CVEs atribuibles a Anthropic, lo que representa solo el 0.5% de los CVEs publicados este año, y solo 2 de ellas han sido explotadas en la naturaleza. Se critica la metodología de Anthropic, señalando una alta tasa de duplicados (19.4%) y retirados en sus hallazgos reportados, superando significativamente el número de vulnerabilidades corregidas (217). Se cuestiona la métrica de 'verdaderos positivos' de Anthropic, sugiriendo que la falta de escalabilidad del triaje humano ha llevado a un cuello de botella, con miles de hallazgos no verificados enviados a mantenedores. La tendencia reciente muestra un aumento drástico en hallazgos con pocas correcciones nuevas, lo que indica que los hallazgos se vuelven obsoletos rápidamente.",
+    "id": 50436363,
+    "url": "https://tylerelton.com/posts/decoding-rexpaint-files-in-odin/",
+    "score": 7,
+    "time": 1794287922,
+    "titulo_es": "Decodificando Archivos .xp de REXPaint",
+    "resumen": "El artículo detalla el proceso de decodificación de archivos .xp, el formato nativo de REXPaint, una herramienta de arte ASCII. Explica la estructura del archivo, que comienza con una cabecera gzipped que contiene metadatos como la versión, el número de capas, el ancho y el alto. Cada capa incluye su propio ancho y alto, seguido de celdas de 10 bytes cada una, organizadas en orden column-major. Se describe el formato de cada celda, incluyendo el carácter (usando la página de códigos CP437) y la información de color, con una mención especial al color de fondo transparente (hot pink). El artículo utiliza el lenguaje de programación Odin para demostrar la implementación de la decodificación, incluyendo el manejo de errores con tipos personalizados (Read_Error, Decode_Error) y el uso de la librería `core:compress/gzip` para la descompresión. Se hace hincapié en el formato little-endian y las particularidades de las celdas vacías y transparentes en la composición de capas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50450488,
+    "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
+    "score": 1365,
+    "time": 1794380597,
+    "titulo_es": "Tim Peters: Un Pilar Fundamental en la Evolución de Python",
+    "resumen": "Este artículo lamenta el fallecimiento de Tim Peters, una figura central en el desarrollo y diseño de Python. Se destaca su rol como co-diseñador y mentor de Guido van Rossum, su contribución a la inclusión de aritmética mixta entre enteros y flotantes, y su legendaria paciencia y humor en las listas de correo de Python, donde se ganó el apodo de 'Timbot'. Peters fue fundamental en las discusiones de diseño del núcleo de Python, aportando un vasto conocimiento matemático y experiencia en compiladores para evitar errores y resolver problemas complejos, sentando las bases para un desarrollo cuidadoso y detallado. Es el creador de Timsort, un algoritmo de ordenación que, además de ser adoptado por Python, también fue integrado en Java y Android. El artículo subraya que la influencia de Peters fue crucial para mantener la simplicidad, legibilidad y evitar la verbosidad excesiva en Python durante sus primeros años, sugiriendo que la complejidad del lenguaje aumentó tras su salida como desarrollador principal. Sus últimas contribuciones reflejan una profunda comprensión de la complejidad del mundo real frente a las abstracciones. Se le reconoce por su enfoque medido, positivo y su habilidad para explicar en profundidad, nunca desestimando las preocupaciones de otros.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50469994,
+    "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep",
+    "score": 27,
+    "time": 1794500953,
+    "titulo_es": "Nintendo intensifica la lucha contra la emulación y los mod chips con solicitudes de DMCA",
+    "resumen": "Nintendo ha emitido varias solicitudes de DMCA a GitHub, dirigidas principalmente a repositorios que alojan firmware para mod chips de Nintendo Switch, como Picofly, que permiten eludir las medidas de protección contra la copia. Estas acciones también afectan a emuladores como Yuzu y Citron Neo. La compañía argumenta que estas medidas protegen sus derechos de autor al impedir la reproducción de juegos piratas y el uso en dispositivos no autorizados. A pesar de la eliminación de numerosos repositorios, el contenido parece seguir circulando en otros lugares. Este movimiento se produce en un contexto de creciente preocupación por la emulación y el desarrollo de IA en videojuegos, incluyendo la aparición de mods y ports generados por IA que han llevado a acciones legales contra desarrolladores de terceros.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50459745,
+    "url": "https://www.mcmillen.dev/sigbovik/",
+    "score": 541,
+    "time": 1794436463,
+    "titulo_es": "¿Es posible pintar la pared sin crear un programa Perl válido?",
+    "resumen": "Este artículo, presentado en SIGBOVIK 2019, investiga empíricamente si es posible generar código Perl válido a partir de salpicaduras de pintura. Utilizando software de Reconocimiento Óptico de Caracteres (OCR), los autores analizaron un conjunto de datos de imágenes de salpicaduras de pintura. Descubrieron que aproximadamente el 93% de estas salpicaduras podían ser interpretadas como programas Perl válidos. El estudio profundiza en las características de estas 'salpicaduras de pintura Perl' y presenta siete ejemplos específicos de salpicaduras que no pudieron ser parseadas como código Perl válido. El trabajo fue reconocido con un 'Unwitting Participation Ribbon' por su contribución a la ciencia abierta y la procrastinación productiva.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50462177,
+    "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+    "score": 324,
+    "time": 1794449471,
+    "titulo_es": "Detectar y mitigar la vulnerabilidad crítica RCE CVE-2026-119618 en Apache HTTP Server",
+    "resumen": "El artículo describe la vulnerabilidad crítica CVE-2026-119618, una condición de carrera de ejecución concurrente en el módulo HTTP/2 (mod_http2) del Apache HTTP Server, específicamente en la función assign_headers(). Esta falla permite a un atacante remoto no autenticado corromper la memoria del heap para lograr la ejecución remota de código (RCE). El 64% de los entornos en la nube tienen recursos vulnerables. Se recomienda actualizar el Apache HTTP Server a la versión 2.4.71 o posterior, o las versiones independientes de mod_h2 a la versión 2.0.42 o posterior. Si la aplicación de parches inmediatos no es posible, se sugiere deshabilitar temporalmente el soporte HTTP/2 modificando la configuración para usar solo HTTP/1.1.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50433216,
-    "url": "https://github.com/microsoft/Procexp-Mac",
-    "score": 228,
-    "time": 1794263441,
-    "titulo_es": "Process Explorer para macOS: Implementación Nativa de Sysinternals",
-    "resumen": "El artículo describe Process Explorer para macOS, una implementación nativa del popular Sysinternals Process Explorer. Desarrollada con Swift, SwiftUI y AppKit, utiliza APIs de macOS como libproc y sysctl para ofrecer un árbol de procesos en vivo, inspección detallada de módulos/handles/hilos, propiedades por proceso, gráficos de rendimiento del sistema, inspección de firmas de código y flujos de trabajo específicos de macOS. Soporta un 'privileged helper' opcional para operaciones que requieren privilegios de root, integrado a través de launchd y XPC, con registro y aprobación explícita del usuario. El artículo detalla el proceso de compilación, instalación (tanto para desarrollo local con certificados auto-firmados como para distribución con Developer ID) y ejecución, incluyendo la gestión de identidades y la validación de la firma. Se proporcionan comandos para generar el proyecto Xcode, compilar y ejecutar la aplicación de depuración, ejecutar pruebas (incluyendo una prueba de humo en vivo y pruebas de red con un fixture TCP) y verificar el estado del 'privileged helper'. El objetivo es replicar la funcionalidad de Process Explorer en Windows para el ecosistema macOS.",
+    "id": 50456631,
+    "url": "https://github.com/aws/aws-emulator",
+    "score": 934,
+    "time": 1794421298,
+    "titulo_es": "Emulador de AWS para Desarrollo y Pruebas Locales",
+    "resumen": "El artículo describe AWS Emulator, una herramienta que emula las APIs de AWS localmente para permitir el desarrollo y las pruebas de software sin necesidad de conectarse a los servicios reales de AWS. Se puede utilizar en máquinas de desarrollo, servidores de desarrollo o en entornos de Integración Continua (CI). No requiere una cuenta de AWS y opera sin costos adicionales, pagando por recursos de AWS solo en producción. El emulador funciona como un programa local que sirve puntos finales de API de AWS, accesible a través de variables de entorno para CLI o SDK de AWS, o en modo embebido donde el cliente HTTP del emulador se integra directamente en el SDK. Se enfatiza su uso para construcción y pruebas, desaconsejando su uso en producción o para pruebas de seguridad. El artículo también detalla la instalación, configuración (incluyendo modo embebido), las puntuaciones de fidelidad por servicio, el seguimiento de incidencias y la compilación desde el código fuente, mencionando requisitos como AWS CLI v2.35.0+. Finalmente, aborda la telemetría, indicando que está activada por defecto pero puede desactivarse mediante opciones de línea de comandos o variables de entorno, y que los datos recopilados son anónimos y no incluyen información sensible.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50443090,
-    "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
-    "score": 252,
-    "time": 1794330152,
-    "titulo_es": "Análisis de la microarquitectura Zen 6 de AMD: Mejoras y cambios respecto a Zen 5",
-    "resumen": "El artículo analiza en profundidad la microarquitectura Zen 6 de AMD, destacando su evolución desde Zen 5. Se observan rediseños significativos en el planificador de enteros, regresando a un diseño similar a Zen 3/4. El predictor de ramas se mantiene y mejora, reduciendo la latencia de predicciones erróneas (3-3.5 ns en Zen 6 vs 3.5-4 ns en Zen 5) y aumentando la capacidad de procesar 2 ramas por ciclo dentro de la caché L1 de instrucciones. Zen 6 hereda el esquema de doble cluster de decodificación de Zen 5, pero ahora un solo hilo puede utilizar ambos clusters. En el motor de ejecución, se recupera el comportamiento de emparejamiento NOP de Zen 4, permitiendo retirar hasta 16 NOPs por ciclo, y se incrementa el rendimiento de sumas de 64 bits (5.96 vs 5.25). Sin embargo, se reduce el número de unidades de multiplicación entera de tres a dos, ya que la unidad adicional no justificaba su coste de área. En el ámbito vectorial, las unidades de punto flotante permanecen sin cambios, pero las unidades VNNI se duplican de dos a cuatro, mejorando significativamente el rendimiento por ciclo (3.88 vs 1.99). Los cargadores vectoriales de 256 bits se incrementan a cuatro por ciclo, mientras que los de 512 bits se mantienen en dos, buscando optimizar el código AVX1/2 común.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50447036,
-    "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
-    "score": 131,
-    "time": 1794348843,
-    "titulo_es": "Tendrils recauda $30 millones para rediseñar la computación de propósito general con procesadores de miles de núcleos y un nuevo lenguaje de programación",
-    "resumen": "Tendrils, una empresa que busca revolucionar la computación de propósito general, ha completado una ronda de financiación de $30 millones liderada por Benchmark. El proyecto aborda las limitaciones de las arquitecturas de CPU contemporáneas, que están ancladas en diseños secuenciales y de un solo núcleo heredados desde la década de 1970, resultando en cuellos de botella por protocolos de coherencia de caché y búferes de reordenamiento complejos. La propuesta de Tendrils es rediseñar la CPU desde cero, enfocándose en arquitecturas con miles de núcleos operando en paralelo. Esto implica superar el paradigma de la memoria mutable compartida y las secuencias de instrucciones lineales. Para facilitar esta transición, Tendrils está desarrollando simultáneamente el lenguaje de código abierto Vine, diseñado específicamente para estas nuevas arquitecturas 'parallel-first'. La financiación se utilizará para apoyar esta visión de colaboración estrecha entre ingenieros de hardware y software.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50453176,
-    "url": "https://github.com/cattlecloud/litesql",
-    "score": 5,
-    "time": 1794403826,
-    "titulo_es": "litesql: Una biblioteca Go para el uso conveniente, fácil y de alto rendimiento de bases de datos SQLite3",
-    "resumen": "litesql es una biblioteca de Go diseñada para simplificar y optimizar la interacción con bases de datos SQLite3. Ofrece una API intuitiva con configuraciones predeterminadas razonables (a través de `litesql.TypicalConfiguration`) que son adecuadas para aplicaciones generales como aplicaciones web, permitiendo ajustes finos según el caso de uso. La biblioteca maneja transacciones de lectura y escritura de manera eficiente. Las transacciones de lectura utilizan un pool de conexiones para permitir concurrencia y están restringidas a operaciones de solo lectura, mientras que las transacciones de escritura emplean una conexión dedicada para garantizar la exclusividad, evitando bloqueos posteriores al completarse. Ambas transacciones deben cerrarse utilizando la función `CloseFunc` devuelta, que se encarga de realizar un rollback si no se han confirmado. litesql también proporciona funciones de conveniencia como `QueryRow` y `QueryRows` para simplificar la lectura de datos, y `ExecID` y `Exec` para operaciones de escritura, con validación de filas modificadas y obtención de ROWID. Incluye utilidades para volcar valores `pragma` (`Pragmas`), crear copias de seguridad en tiempo real (`Snapshot`) con gestión de retención, sanitizar entradas para consultas FTS5 (`SanitizeFTS5`) y realizar mantenimiento de la base de datos como `Optimize` (para rendimiento), `Analyze` (para estadísticas del optimizador) y `Vacuum` (para recuperar espacio y desfragmentar).",
+    "id": 50467297,
+    "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
+    "score": 78,
+    "time": 1794492328,
+    "titulo_es": "La evolución de las entrevistas de software en Jane Street con la llegada de los LLMs",
+    "resumen": "El artículo describe cómo Jane Street está adaptando sus entrevistas técnicas para reflejar el impacto de los Modelos de Lenguaje Grandes (LLMs) en el desarrollo de software. Aunque los LLMs se utilizan internamente para codificar, depurar y revisar código, las entrevistas tradicionales de codificación se mantenían. Reconociendo que el panorama del desarrollo ha cambiado y que la generación de código es más accesible, Jane Street ha comenzado a probar nuevos formatos de entrevista. Estos nuevos formatos se centran menos en la escritura de código y más en el diseño de software de alto nivel, la verificación de la calidad y estructura del código, y el uso estratégico de LLMs en el proceso de desarrollo. El objetivo es evaluar habilidades como el gusto por lo que construir, la elección de abstracciones duraderas y la corrección del código, competencias que ganan importancia a medida que la generación de código se abarata. Los detalles de estos nuevos formatos aún están evolucionando y no se implementan en todas las entrevistas.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50415379,
+    "url": "https://www.buildcores.com",
+    "score": 34,
+    "time": 1794159908,
+    "titulo_es": "Laboratorio de PC de iBUYPOWER: Diseña, Personaliza y Visualiza tu Próxima Construcción de PC",
+    "resumen": "El artículo describe el 'PC Lab' de iBUYPOWER, una herramienta en línea para que los usuarios diseñen y personalicen sus propias computadoras personales. La plataforma permite seleccionar componentes de una base de datos extensa (más de 50k partes), comparar precios en tiempo real de varios minoristas, y verificar automáticamente la compatibilidad entre las partes elegidas (como tamaño de GPU, altura del enfriador, tipos de memoria y coincidencia de socket). Ofrece una vista previa en 3D del ensamblaje, incluyendo la visualización del flujo de aire y configuraciones de iluminación. La herramienta también estima el rendimiento de los juegos (FPS) y permite planificar periféricos y configuraciones de escritorio en 3D. Se promociona la garantía de cobertura de 3 años para las especificaciones creadas. La plataforma es accesible a través de la web y aplicaciones móviles, con una versión gratuita que no requiere cuenta para empezar, y una fecha de lanzamiento de Oct 2026 para una expansión futura con más de 200 partes de configuración.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50431971,
+    "url": "http://blog.nozomi.space/posts/sw2_dock/",
+    "score": 110,
+    "time": 1794257642,
+    "titulo_es": "Ingeniería inversa de la comunicación USB-PD de Nintendo Switch para usar hubs USB-C genéricos",
+    "resumen": "El artículo detalla el proceso de ingeniería inversa de la comunicación USB-PD (Power Delivery) del Nintendo Switch para permitir su uso con hubs USB-C genéricos en lugar del dock oficial. El autor analiza el tráfico USB-PD utilizando un sniffer para identificar las negociaciones propietarias de Nintendo. Mediante la ingeniería inversa del firmware del controlador PD (VL103) y la aplicación de parches personalizados, se logra engañar a la consola para que reconozca un hub USB-C compatible con DisplayPort Alt Mode. Se utilizan herramientas como Ghidra para el desmontaje y análisis del firmware, y se recurre a modelos de IA (Claude, GPT) para asistencia en tareas de programación y análisis. El proyecto resuelve el problema de la portabilidad del dock oficial, permitiendo la salida de video a través de hubs USB-C estándar.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50469123,
+    "url": "https://getvale.org",
+    "score": 6,
+    "time": 1794497754,
+    "titulo_es": "Vale: El CMS ligero y de código abierto que no te obstaculiza",
+    "resumen": "Vale es una plataforma de gestión de contenido (CMS) y comercio electrónico autocontenida y de código abierto. Está diseñada para ser liviana, enfocándose en funcionalidades esenciales como newsletters, seguridad integrada, formularios, sistema de comentarios y una API, todo construido sobre PHP 8.3. Evita la complejidad de los plugins y la sobrecarga innecesaria, proporcionando una solución eficiente para la creación de sitios web y tiendas en línea.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50467763,
+    "url": "https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/",
+    "score": 57,
+    "time": 1794493523,
+    "titulo_es": "PostgreSQL lanza actualizaciones con importantes correcciones de seguridad y errores, y finaliza el soporte para la versión 14",
+    "resumen": "El PostgreSQL Global Development Group ha lanzado actualizaciones acumulativas para todas las versiones soportadas de PostgreSQL (18.7, 17.12, 16.16, 15.20, y 14.25), además del segundo release candidate de PostgreSQL 19. Estas actualizaciones corrigen 52 vulnerabilidades de seguridad y más de 140 bugs. Se destaca que PostgreSQL 14 llega al final de su ciclo de vida (end-of-life) y ya no recibirá soporte. El lanzamiento también actualiza los archivos de datos de zona horaria a tzdata release 2026f, con cambios notables para zonas como America/Inuvik y America/Winnipeg, y el comportamiento del horario de verano en Cuba. Se describen pasos adicionales post-actualización para ciertos escenarios, como reindexar índices GIN o GiST afectados por corrupción o problemas de fragmentación, reindexar tablas con errores de \"missing chunk number\", tomar una nueva copia de seguridad completa para backups incrementales, y manejar restricciones NOT NULL NO INHERIT en tablas particionadas. Se recomienda reindexar índices B-tree en columnas bpchar sin longitud definida. Los usuarios que han omitido versiones anteriores podrían requerir pasos adicionales. PostgreSQL 19 RC 2 es casi idéntico a la versión inicial planeada, incluyendo las correcciones de este lanzamiento.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50456791,
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "score": 530,
+    "time": 1794421962,
+    "titulo_es": "Presentación de la API Gemini Decisions para decisiones rápidas y probabilísticas",
+    "resumen": "La API Gemini Decisions, impulsada por el modelo Gemini Decision 1, permite la evaluación rápida y eficiente de hasta 1,000 preguntas (sí/no, opción múltiple, puntuación por rúbrica) en una única pasada multimodal a través de texto, imágenes, audio, video y PDFs. Diseñada para decisiones cerradas y probabilísticas, ofrece baja latencia (150-250 ms end-to-end) y un costo reducido ($0.10 por 1M tokens de entrada, sin costo por tokens de salida), haciéndola ideal para el enrutamiento de consultas, calificación de contenido, verificación de políticas y selección de herramientas. Gemini Decision 1 procesa las modalidades de forma nativa en una sola pasada, permitiendo combinar diversas fuentes de datos. La API proporciona puntuaciones de confianza para cada respuesta, facilitando el manejo de casos ambiguos y la integración con flujos de trabajo existentes como un plano de control de baja latencia.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50463540,
+    "url": "https://www.getlazarus.org/forums/topic/17/",
+    "score": 105,
+    "time": 1794462574,
+    "titulo_es": "Motor de simulación de pinball FOSS para Linux",
+    "resumen": "El desarrollador sysrpl está trabajando en un motor de simulación de pinball de código abierto (FOSS) para Linux, que incluye mejoras en física, jugabilidad, arte y características de usuario. Recientemente completó varias tareas y planea añadir más funcionalidades como un campo de juego superior, líneas de voz, arte adicional, una guía de creación de mesas y soporte para animaciones de pantalla DMD y sistemas de pantalla dual. El desarrollador está buscando colaboradores para el arte de las mesas. La discusión técnica menciona la transición de un motor de física propio a la librería Jolt y la base en álgebra lineal, comparando la experiencia con simulaciones de billar previas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50469591,
+    "url": "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
+    "score": 6,
+    "time": 1794499377,
+    "titulo_es": "Ring lanza un dron de seguridad interior y un robot de vigilancia para el hogar y empresas",
+    "resumen": "Amazon's Ring ha introducido dos nuevos dispositivos de seguridad robóticos: el Ring Drone Camera, un dron de interior de $250 que ofrece vigilancia móvil para cubrir áreas inaccesibles por cámaras fijas, y el Ring Rover Cam, un robot de $1,000 diseñado para empresas. Ambos dispositivos cuentan con cámaras con amplios ángulos de visión y capacidades de rotación, operan en condiciones de poca luz y están equipados con luces LED indicadoras de grabación. El diseño de los dispositivos incluye elementos sonoros y visuales (hélices audibles, torre de luz brillante, sirena en el Rover) para disuadir intrusos y notificar su presencia. Ring enfatiza las salvaguardias de privacidad, asegurando que las funciones de grabación solo se activan cuando el dispositivo está en operación y que siempre hay indicadores visibles de cuándo se está grabando. Sin embargo, expertos en privacidad y derechos civiles advierten sobre los riesgos de seguridad de datos inherentes a la introducción de dispositivos de grabación dentro de los hogares. Ambos productos requieren una suscripción de $5 al mes o $60 al año.",
+    "categoria": "Hardware"
   }
 ]
