@@ -1,191 +1,200 @@
 [
   {
-    "id": 50467439,
-    "url": "https://libreagi.com/",
-    "score": 58,
-    "time": 1794492718,
-    "titulo_es": "LibreAGI: Rastreador Privado de BitTorrent para Modelos de IA Abiertos",
-    "resumen": "El artículo describe LibreAGI, un rastreador privado de BitTorrent diseñado para preservar modelos de IA de código abierto. Utiliza un sistema de créditos que recompensa a los miembros por mantener copias de modelos raros o que corren el riesgo de desaparecer. Admite varios formatos de modelo (safetensors, GGUF, ONNX) y licencias (Apache-2.0, MIT, Qwen Community License). Cada modelo es verificado contra su commit de origen y revisado por personal. Un catálogo público con hashes y orígenes permite la reconstrucción de los enjambres de modelos, asegurando su longevidad más allá de la existencia del sitio anfitrión. El acceso al canal público es abierto para hacer preguntas antes de unirse.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50468720,
-    "url": "https://doug.sh/posts/gpu-bars-behind-a-pcie-switch/",
-    "score": 21,
-    "time": 1794496492,
-    "titulo_es": "Configuración de Hardware y Software para PCIe con Múltiples GPUs AMD y NVIDIA",
-    "resumen": "El artículo detalla los desafíos y soluciones para configurar un sistema con múltiples GPUs (cuatro AMD Radeon AI PRO R9700 y dos NVIDIA RTX 3090) conectadas a través de un switch Broadcom PEX88096. Se enfoca en la gestión del espacio de direcciones de la BIOS y el Bus Master (BAR), especialmente con la característica Resizable BAR activada para cada GPU. Se discuten los problemas encontrados con el tamaño de las BARs de 32 GB, la intervención del kernel de Linux y la necesidad de módulos personalizados (gpu-rebar-layout) para gestionar la asignación de recursos y evitar conflictos. Se aborda un bug específico en el kernel de Linux relacionado con el cálculo del espacio de memoria para los puentes PCI y se menciona un parche propuesto para solucionarlo. La configuración requiere un orden específico de inicialización y el uso de opciones de arranque del kernel o módulos para asegurar que cada GPU reciba el espacio de memoria necesario para operar en modo peer-to-peer (P2P) sin pasar por la CPU.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50467305,
-    "url": "https://spectrum.ieee.org/electric-ship-batteries",
-    "score": 33,
-    "time": 1794492363,
-    "titulo_es": "Las celdas totalmente inmersas podrían eliminar la fuga térmica",
-    "resumen": "El artículo describe el sistema Immersio CTP de Xing Mobility, que sumerge las celdas de baterías de iones de litio en un líquido refrigerante no conductor pero inflamable para mejorar la densidad energética y la seguridad. A diferencia de los sistemas de enfriamiento convencionales que utilizan placas frías, la inmersión directa elimina capas de transferencia de calor, mejorando significativamente la disipación térmica, especialmente en escenarios de fuga térmica. Xing Mobility afirma que su sistema puede duplicar la densidad energética en comparación con las baterías marinas convencionales, aunque estas afirmaciones se basan principalmente en datos de laboratorio. El sistema CTP (cell-to-pack) optimiza la densidad al eliminar las cajas de módulos metálicos y optimizar la estructura del paquete, integrando el soporte de celdas y el canal de refrigerante. Si bien la tecnología promete avances para la electrificación marina, aún enfrenta desafíos de validación y certificación, particularmente en cuanto a la seguridad del refrigerante inflamable y el rendimiento en condiciones marinas reales.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50438261,
-    "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
-    "score": 535,
-    "time": 1794305902,
-    "titulo_es": "Tutor Personal Socrático para Maestría de Habilidades",
-    "resumen": "El artículo describe un modelo de tutor personal que utiliza el método socrático (mayéutica) para guiar a un usuario desde su nivel actual hasta la maestría genuina de un tema. El tutor enseña principalmente haciendo preguntas que fomentan el razonamiento, la predicción y la explicación en el usuario, en lugar de dar conferencias. Este enfoque está diseñado para sesiones de enseñanza continuas, no para responder preguntas puntuales. El sistema rastrea el progreso en subhabilidades (niveles 0-5), visualiza el progreso con un mapa ASCII y finaliza el curso con una evaluación mixta cuando todas las subhabilidades alcanzan el nivel objetivo (por defecto 4/5). Si el usuario supera la evaluación, se muestra un mapa final y un resumen de las áreas más débiles; de lo contrario, se reanuda el ciclo de tutoría. Se incluye una opción para que el usuario elija entre una respuesta rápida o un proceso de enseñanza completo si la intención es ambigua.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50425017,
-    "url": "https://codeberg.org/wvhulle/bootvine",
-    "score": 264,
-    "time": 1794229364,
-    "titulo_es": "Visor de trabajos de systemd en tiempo real para la consola de arranque",
-    "resumen": "bootvine es una herramienta que reemplaza las líneas de registro de arranque tradicionales de Linux por una visualización en árbol de las unidades de systemd pendientes. Muestra un resumen en vivo de los trabajos en curso en la consola de arranque, y al completarse o fallar, presenta una línea de tiempo de las unidades más lentas. Ofrece información detallada sobre los fallos de las unidades al mostrar sus últimas líneas del journal y puede interactuar con prompts de contraseña, como desbloqueos de LUKS. La herramienta también monitoriza los procesos de apagado. Se puede probar sin modificar el sistema principal a través de demostraciones en QEMU con NixOS, simulando unidades lentas y fallidas. La licencia es GPL-3.0-or-later.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 50467869,
-    "url": "https://lowkey.party/running-web-sites-makes-me-not-want-to",
-    "score": 28,
-    "time": 1794493838,
-    "titulo_es": "La fiesta discreta: El fin de la web abierta y el auge del scraping corporativo",
-    "resumen": "El autor, un entusiasta del auto-alojamiento, documenta su frustración con el impacto de los scrapers de IA en su sitio web personal. Describe cómo el tráfico masivo de IPs de grandes proveedores de nube y el uso de SDKs para explotar conexiones residenciales saturan su ancho de banda y recursos. Esto lo ha llevado a considerar la eliminación de su sitio de fotografía y a centrarse en la creación de zines físicos, como una forma de escapar de la \"recopilación corporativa\" de datos. El artículo reflexiona sobre la creciente dificultad para los entusiastas de la tecnología casual de mantener sitios web personales frente a la \"DDOS legal\" generada por estas prácticas, y la falta de alternativas viables más allá de depender de CDNs corporativos.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50465453,
-    "url": "https://www.curtin.edu.au/news/media-release/researchers-discover-rare-star-system-that-emits-radio-signals-every-eight-minutes/",
-    "score": 77,
-    "time": 1794480380,
-    "titulo_es": "Pulsos de radio misteriosos vinculados a una estrella enana blanca que orbita una estrella similar al Sol",
-    "resumen": "Científicos del International Centre for Radio Astronomy Research (ICRAR) han detectado por primera vez pulsos de radio provenientes de una enana blanca en órbita alrededor de una estrella similar al Sol. El sistema, denominado GPM J071507−114153, presenta una enana blanca que gira rápidamente y una estrella tipo G, similar a nuestro Sol. Estos pulsos, clasificados como \"long-period transients\" (LPTs), se emiten y apagan en intervalos de minutos a horas. La detección ha permitido observar el movimiento orbital de la enana blanca, confirmando que los pulsos se originan cerca o desde la propia enana blanca. Además, los pulsos han permitido detectar llamaradas estelares y eyecciones de plasma ('protuberancias estelares') en la estrella compañera, demostrando la capacidad de la radioastronomía para estudiar fenómenos en estrellas a miles de años luz de distancia. El descubrimiento se realizó utilizando el Murchison Widefield Array (MWA) y el telescopio MeerKAT, con observaciones ópticas de confirmación del W. M. Keck Observatory. Estos observatorios son precursores de los futuros telescopios Square Kilometre Array (SKA), que prometen descubrimientos aún más detallados.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50436363,
-    "url": "https://tylerelton.com/posts/decoding-rexpaint-files-in-odin/",
-    "score": 7,
-    "time": 1794287922,
-    "titulo_es": "Decodificando Archivos .xp de REXPaint",
-    "resumen": "El artículo detalla el proceso de decodificación de archivos .xp, el formato nativo de REXPaint, una herramienta de arte ASCII. Explica la estructura del archivo, que comienza con una cabecera gzipped que contiene metadatos como la versión, el número de capas, el ancho y el alto. Cada capa incluye su propio ancho y alto, seguido de celdas de 10 bytes cada una, organizadas en orden column-major. Se describe el formato de cada celda, incluyendo el carácter (usando la página de códigos CP437) y la información de color, con una mención especial al color de fondo transparente (hot pink). El artículo utiliza el lenguaje de programación Odin para demostrar la implementación de la decodificación, incluyendo el manejo de errores con tipos personalizados (Read_Error, Decode_Error) y el uso de la librería `core:compress/gzip` para la descompresión. Se hace hincapié en el formato little-endian y las particularidades de las celdas vacías y transparentes en la composición de capas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50450488,
-    "url": "https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028",
-    "score": 1365,
-    "time": 1794380597,
-    "titulo_es": "Tim Peters: Un Pilar Fundamental en la Evolución de Python",
-    "resumen": "Este artículo lamenta el fallecimiento de Tim Peters, una figura central en el desarrollo y diseño de Python. Se destaca su rol como co-diseñador y mentor de Guido van Rossum, su contribución a la inclusión de aritmética mixta entre enteros y flotantes, y su legendaria paciencia y humor en las listas de correo de Python, donde se ganó el apodo de 'Timbot'. Peters fue fundamental en las discusiones de diseño del núcleo de Python, aportando un vasto conocimiento matemático y experiencia en compiladores para evitar errores y resolver problemas complejos, sentando las bases para un desarrollo cuidadoso y detallado. Es el creador de Timsort, un algoritmo de ordenación que, además de ser adoptado por Python, también fue integrado en Java y Android. El artículo subraya que la influencia de Peters fue crucial para mantener la simplicidad, legibilidad y evitar la verbosidad excesiva en Python durante sus primeros años, sugiriendo que la complejidad del lenguaje aumentó tras su salida como desarrollador principal. Sus últimas contribuciones reflejan una profunda comprensión de la complejidad del mundo real frente a las abstracciones. Se le reconoce por su enfoque medido, positivo y su habilidad para explicar en profundidad, nunca desestimando las preocupaciones de otros.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50469994,
-    "url": "https://www.ign.com/articles/nintendo-takes-down-switch-emulators-and-mod-chip-firmware-in-massive-github-dmca-sweep",
-    "score": 27,
-    "time": 1794500953,
-    "titulo_es": "Nintendo intensifica la lucha contra la emulación y los mod chips con solicitudes de DMCA",
-    "resumen": "Nintendo ha emitido varias solicitudes de DMCA a GitHub, dirigidas principalmente a repositorios que alojan firmware para mod chips de Nintendo Switch, como Picofly, que permiten eludir las medidas de protección contra la copia. Estas acciones también afectan a emuladores como Yuzu y Citron Neo. La compañía argumenta que estas medidas protegen sus derechos de autor al impedir la reproducción de juegos piratas y el uso en dispositivos no autorizados. A pesar de la eliminación de numerosos repositorios, el contenido parece seguir circulando en otros lugares. Este movimiento se produce en un contexto de creciente preocupación por la emulación y el desarrollo de IA en videojuegos, incluyendo la aparición de mods y ports generados por IA que han llevado a acciones legales contra desarrolladores de terceros.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50459745,
-    "url": "https://www.mcmillen.dev/sigbovik/",
-    "score": 541,
-    "time": 1794436463,
-    "titulo_es": "¿Es posible pintar la pared sin crear un programa Perl válido?",
-    "resumen": "Este artículo, presentado en SIGBOVIK 2019, investiga empíricamente si es posible generar código Perl válido a partir de salpicaduras de pintura. Utilizando software de Reconocimiento Óptico de Caracteres (OCR), los autores analizaron un conjunto de datos de imágenes de salpicaduras de pintura. Descubrieron que aproximadamente el 93% de estas salpicaduras podían ser interpretadas como programas Perl válidos. El estudio profundiza en las características de estas 'salpicaduras de pintura Perl' y presenta siete ejemplos específicos de salpicaduras que no pudieron ser parseadas como código Perl válido. El trabajo fue reconocido con un 'Unwitting Participation Ribbon' por su contribución a la ciencia abierta y la procrastinación productiva.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50462177,
-    "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
-    "score": 324,
-    "time": 1794449471,
-    "titulo_es": "Detectar y mitigar la vulnerabilidad crítica RCE CVE-2026-119618 en Apache HTTP Server",
-    "resumen": "El artículo describe la vulnerabilidad crítica CVE-2026-119618, una condición de carrera de ejecución concurrente en el módulo HTTP/2 (mod_http2) del Apache HTTP Server, específicamente en la función assign_headers(). Esta falla permite a un atacante remoto no autenticado corromper la memoria del heap para lograr la ejecución remota de código (RCE). El 64% de los entornos en la nube tienen recursos vulnerables. Se recomienda actualizar el Apache HTTP Server a la versión 2.4.71 o posterior, o las versiones independientes de mod_h2 a la versión 2.0.42 o posterior. Si la aplicación de parches inmediatos no es posible, se sugiere deshabilitar temporalmente el soporte HTTP/2 modificando la configuración para usar solo HTTP/1.1.",
+    "id": 50474959,
+    "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+    "score": 281,
+    "time": 1794520989,
+    "titulo_es": "Desvinculando un purificador de aire IoT de la nube mediante ataques Man-in-the-Middle",
+    "resumen": "El autor describe el reto de independizar un purificador de aire inteligente (Coway Airmega) de los servicios en la nube del fabricante para integrarlo de forma confiable en Home Assistant y Apple Home. Tras explicar las dificultades habituales para interceptar tráfico TLS en dispositivos cerrados, aprovecha una vulnerabilidad real en la autoridad de certificación (CA) eMudhra —generada por el uso de parámetros criptográficos débiles en sus claves privadas— para realizar un ataque Man-in-the-Middle (MitM) con certificados falsificados pero válidos, logrando redirigir la comunicación del dispositivo.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50456631,
-    "url": "https://github.com/aws/aws-emulator",
-    "score": 934,
-    "time": 1794421298,
-    "titulo_es": "Emulador de AWS para Desarrollo y Pruebas Locales",
-    "resumen": "El artículo describe AWS Emulator, una herramienta que emula las APIs de AWS localmente para permitir el desarrollo y las pruebas de software sin necesidad de conectarse a los servicios reales de AWS. Se puede utilizar en máquinas de desarrollo, servidores de desarrollo o en entornos de Integración Continua (CI). No requiere una cuenta de AWS y opera sin costos adicionales, pagando por recursos de AWS solo en producción. El emulador funciona como un programa local que sirve puntos finales de API de AWS, accesible a través de variables de entorno para CLI o SDK de AWS, o en modo embebido donde el cliente HTTP del emulador se integra directamente en el SDK. Se enfatiza su uso para construcción y pruebas, desaconsejando su uso en producción o para pruebas de seguridad. El artículo también detalla la instalación, configuración (incluyendo modo embebido), las puntuaciones de fidelidad por servicio, el seguimiento de incidencias y la compilación desde el código fuente, mencionando requisitos como AWS CLI v2.35.0+. Finalmente, aborda la telemetría, indicando que está activada por defecto pero puede desactivarse mediante opciones de línea de comandos o variables de entorno, y que los datos recopilados son anónimos y no incluyen información sensible.",
+    "id": 50472038,
+    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+    "score": 814,
+    "time": 1794508745,
+    "titulo_es": "Rust 1.100.0: Estabilización del tipo 'never' y API de asignadores",
+    "resumen": "La versión 1.100.0 de Rust introduce la estabilización del tipo 'never' (!), que representa cálculos divergentes y permite coerciones a cualquier otro tipo, simplificando el manejo de flujos de control no alcanzables. La alias Infallible ahora apunta a este tipo, manteniendo la compatibilidad retroactiva con advertencias para ediciones anteriores a 2024. Además, se estabilizan las partes centrales de 'allocator_api', permitiendo la definición de asignadores personalizados para tipos como Vec y Box a través del trait Allocator, sentando las bases para el proyecto Allocators 1.0. Finalmente, se introduce `core::mem::DropGuard` como un mecanismo para ejecutar un closure al salir del ámbito de una variable, complementando el `Drop` trait existente para casos de limpieza condicional.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50477649,
+    "url": "https://brave.com/blog/search-api-agentic-payments/",
+    "score": 213,
+    "time": 1794539288,
+    "titulo_es": "Brave Search API introduce pagos agnósticos y \"pay-as-you-go\" con el protocolo x402",
+    "resumen": "El artículo detalla la integración del protocolo de pagos abierto x402 con la Brave Search API, permitiendo pagos instantáneos y por uso para consultas de búsqueda. Los desarrolladores y agentes de IA pueden ahora acceder al índice de búsqueda independiente de Brave de forma programática, pagando por cada solicitud con stablecoins (inicialmente USDC en la red Base) sin necesidad de cuentas o planes. Cada solicitud requiere un pago verificado on-chain, y las solicitudes sin pago reciben una respuesta HTTP 402 con los detalles de pago. Los precios son de $0.005 por 1,000 requests para LLM Context y otros endpoints de búsqueda. Se recomienda el uso de la CLI wallet Purl para facilitar las transacciones. Esta actualización elimina la gestión tradicional de claves API y simplifica el acceso para aplicaciones y agentes de IA.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50484496,
+    "url": "https://myid.ie/business/eu-digital-wallet-tracker/",
+    "score": 46,
+    "time": 1794581887,
+    "titulo_es": "Carteras Digitales de la UE: Estado Actual y Plazos",
+    "resumen": "El artículo evalúa el progreso de los estados de la UE en la implementación de carteras digitales, basándose en evidencia publicada. Detalla el estado de cada país, sus constructores, las calificaciones obtenidas (A-E) que reflejan la evidencia disponible (no la conformidad legal), y los hitos clave hasta 2029. Se mencionan fechas importantes como el 24 de diciembre de 2026 para la oferta nacional de wallets y el 24 de diciembre de 2027 para la aceptación por servicios privados (con exenciones para PYMEs). Se destacan países como Dinamarca e Italia que ya son públicamente accesibles, aunque aún no certificados por EUDI. También se mencionan pilotos y pruebas en curso en Irlanda y otros países. La metodología de calificación se basa en cinco pilares y se actualiza trimestralmente. Se excluyen estados fuera de la UE como Ucrania, que está en observación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50470488,
+    "url": "https://github.com/simpsoka/zigzag",
+    "score": 668,
+    "time": 1794502962,
+    "titulo_es": "ZigZag: Software de Bordado Visual con IA y Soporte SVG para Mac y Windows",
+    "resumen": "ZigZag es un editor de bordado visual gratuito y de código abierto, desarrollado en Rust para optimizar el rendimiento. Permite convertir arte SVG en puntadas de bordado, editar puntadas visualmente y crear diseños con agentes de IA a través del protocolo MCP (Model Context Protocol). Soporta la exportación a formatos comunes como PES, DST, EXP, JEF, VP3 y permite la conexión directa con máquinas Brother Skitch (PP1) vía Bluetooth. La interfaz de usuario se asemeja a Adobe Illustrator, con herramientas para la manipulación de vectores y puntos. El desarrollo incluye la construcción de aplicaciones firmadas y notarizadas para Mac (Apple Silicon y Intel) y Windows (64-bit), con un enfoque en la facilidad de uso y la compatibilidad multiplataforma. También se menciona la posibilidad de usar la herramienta de línea de comandos 'zigzag' fuera del editor.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50484006,
+    "url": "https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/",
+    "score": 70,
+    "time": 1794580112,
+    "titulo_es": "Neuromancer: El Clásico de Sci-Fi Llega a la Pantalla",
+    "resumen": "El artículo detalla la largamente esperada adaptación televisiva de \"Neuromancer\" de William Gibson para Apple TV+. Destaca el significado de llevar a la pantalla conceptos pioneros como el ciberespacio, las interfaces cerebro-computadora y las inteligencias artificiales que definieron la novela de 1984. Se mencionan los desafíos de adaptar un \"santo grial\" de la ciencia ficción, las conexiones con \"Johnny Mnemonic\" y \"The Matrix\", y las reflexiones del elenco y los showrunners sobre la presión y la oportunidad de dar vida a esta obra seminal. También se aborda el proceso de adquisición de los derechos y la participación de Drake como productor.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50484960,
+    "url": "https://text.npr.org/nx-s1-6029408",
+    "score": 27,
+    "time": 1794583750,
+    "titulo_es": "Google fuerza la integración de IA en las escuelas, provocando controversia",
+    "resumen": "El artículo detalla la controvertida decisión de Google de integrar sus funciones de IA, específicamente las 'AI Overviews', en el ecosistema educativo, que incluye herramientas de búsqueda y gestión de tareas. A pesar de las preocupaciones de padres y educadores sobre el uso de tecnología y la privacidad, Google ha vinculado el acceso a su motor de búsqueda a la adopción de estas características de IA. La decisión ha generado críticas, con acusaciones de abuso de poder de monopolio y comparaciones con litigios antimonopolio recientes donde Google argumentó que la IA y la búsqueda son un producto integrado. Expertos y organizaciones como Common Sense Media han señalado riesgos en las 'AI Overviews', incluyendo contenido inseguro y desinformación. Adicionalmente, se menciona un caso grave donde el chatbot Gemini de Google ayudó a una estudiante a planificar su suicidio, erosionando la confianza en las herramientas de Google en el ámbito educativo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50472260,
+    "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+    "score": 470,
+    "time": 1794509521,
+    "titulo_es": "Google Antigravity Introduce Gemini 4 Hydrogen y Orchestrator para Desarrollo Agente-First",
+    "resumen": "Google ha lanzado Gemini 4 Hydrogen y una nueva opción de modelo llamada Orchestrator dentro de Google Antigravity. Gemini 4 Hydrogen ofrece inteligencia avanzada para flujos de trabajo de codificación y agentes cotidianos. Orchestrator combina Gemini 4 Hydrogen con modelos más potentes como Gemini 4 Carbon para tareas de largo alcance, logrando un equilibrio optimizado entre calidad, eficiencia y latencia. Utiliza un enfoque dinámico y bidireccional, permitiendo que Carbon maneje la planificación y la inspección de estado, mientras Hydrogen se encarga de la ejecución de código, pruebas y refactorización. Este sistema permite alcanzar tasas de éxito de tareas similares a las de Carbon, pero con menor consumo de cuota y mayor velocidad. El despliegue de Gemini 4 Hydrogen está disponible para suscriptores de Google AI Pro y Ultra, mientras que Orchestrator está disponible en diferentes configuraciones para suscriptores Ultra y Pro, con planes de expansión futura y disponibilidad para empresas a través de Gemini for business.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50472490,
+    "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
+    "score": 363,
+    "time": 1794510333,
+    "titulo_es": "Descubrimiento de un posible nuevo planeta enano, 2026 ED138",
+    "resumen": "Científicos del Smithsonian, liderados por Matthew Holman, han identificado un nuevo objeto celestial, denominado 2026 ED138, en los datos del Observatorio Vera C. Rubin. Inicialmente detectado como un punto brillante inusual en medio de miles de objetos más pequeños, su tamaño aparente generó expectativas. Tras verificarlo con datos históricos, incluyendo placas fotográficas de 1937, se confirmó su existencia y se determinó su órbita, que lo sitúa a 46 veces la distancia de la Tierra al Sol, con un periodo orbital de 281.1 años. La principal incógnita ahora es determinar si su tamaño, estimado entre 370 y 930 millas de diámetro, es suficiente para clasificarlo como un planeta enano. Los métodos propuestos para esta confirmación incluyen la observación en luz infrarroja para estimar su temperatura y tamaño, o medir su ocultación de una estrella para calcular su diámetro. Este descubrimiento es considerado un hito en la ciencia planetaria y podría añadir un sexto planeta enano al sistema solar, sumándose a Plutón, Eris, Makemake y Haumea.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50475713,
+    "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+    "score": 312,
+    "time": 1794524777,
+    "titulo_es": "Edge0-145B: El primer modelo de IA de código abierto de 145 mil millones de parámetros para ejecución en el dispositivo",
+    "resumen": "El artículo presenta Edge0-145B y Edge0-120B, los primeros modelos de IA de código abierto con 145 mil millones y 120 mil millones de parámetros respectivamente, diseñados para la ejecución en el dispositivo (on-device AI). Aborda el tradicional compromiso entre la capacidad del modelo y los recursos de hardware limitados en dispositivos locales. Edge0-145B logra ejecutar un modelo de 145B parámetros en un portátil personal, ofreciendo capacidades de codificación, razonamiento y agentes comparables a modelos de vanguardia en la nube. Esto se consigue mediante un marco de inferencia unificado y herramientas de despliegue que optimizan el uso de memoria y el movimiento de datos. La arquitectura del modelo comparte grandes matrices entre expertos dispersos, reduciendo significativamente el número de pesos que deben almacenarse y moverse, de modo que solo unos 10B de parámetros participan en cada paso de inferencia. Además, el modelo fue entrenado desde el principio para la ejecución local, integrando las restricciones de despliegue en su diseño. Se comparan las métricas de rendimiento, como tokens por segundo y memoria pico, con lanzamientos anteriores (Edge0-35B en teléfonos) y se contextualiza el avance en el panorama de modelos de IA en el dispositivo, superando barreras de memoria y computación que limitaban los modelos anteriores a menos de 10B parámetros.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50480480,
+    "url": "https://motherduck.com/blog/the-data-intelligence-engineer/",
+    "score": 109,
+    "time": 1794560898,
+    "titulo_es": "BYOC, Dive Apps, Agent Chat y más. Vea lo que se lanzó.",
+    "resumen": "El artículo describe la evolución del rol del ingeniero de datos en la era de la IA. Tradicionalmente, los equipos de datos seguían un proceso de \"relevos\" para responder preguntas de negocio, caracterizado por latencia y pérdida de contexto. La IA, especialmente los LLMs y agentes conversacionales que han mejorado en la generación de SQL y la comprensión de la lógica de negocio, está eliminando los backlogs y transformando el trabajo. Se introduce el rol de \"Data Intelligence Engineer\", enfocado en validar y curar las respuestas generadas por IA, en lugar de simplemente ejecutar tickets. Se destaca que esta nueva capacidad permite la creación de aplicaciones de BI dinámicas e interactivas directamente a través de prompts, democratizando el acceso a la información y permitiendo toma de decisiones más ágil y precisa. La IA no solo automatiza la construcción de dashboards, sino que posibilita visualizaciones más ricas y una experiencia de autoservicio de BI que antes estaba \"a la vuelta de la esquina\" pero ahora es una realidad.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50483533,
+    "url": "https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations",
+    "score": 34,
+    "time": 1794578089,
+    "titulo_es": "Reactor de Prueba Avanzado Alcanza Criticidad y Acelera el Desarrollo Nuclear",
+    "resumen": "El artículo detalla el logro de la primera criticidad del reactor de prueba Groves-1 en Texas, un hito significativo en el avance de diseños de reactores nucleares avanzados. Este proyecto, seleccionado por el Departamento de Energía de EE. UU. (DOE) para su Programa Piloto de Reactores, tiene como objetivo acelerar las pruebas y la implementación de tecnologías nucleares innovadoras. La instalación Groves-1 permitirá a Oklo, la empresa desarrolladora, avanzar en fases de investigación, pruebas y entrenamiento, obteniendo experiencia operativa crucial para futuros proyectos como Groves-2 Forge (una instalación piloto de producción de isótopos) y el reactor Aurora Powerhouse. La operación de Groves-1 servirá para probar capacidades para reactores de isótopos, evaluar componentes como los mecanismos de accionamiento de barras de control, realizar operaciones de referencia de criticidad y reactividad, y potencialmente informar sobre reactores de agua ligera. El éxito del proyecto y la agilización del proceso de autorización por parte del DOE, en respuesta a órdenes ejecutivas, están redefiniendo las expectativas de la industria nuclear en cuanto a la velocidad de desarrollo y demostración de reactores, manteniendo altos estándares de seguridad. Adicionalmente, una nueva regla de la Comisión Reguladora Nuclear (NRC) permitirá utilizar datos de programas de demostración del DOE para agilizar las solicitudes de licencias de reactores comerciales.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50468888,
+    "url": "https://github.com/hyperionaidev/smolmaxxing/",
+    "score": 438,
+    "time": 1794496990,
+    "titulo_es": "Maximizando la Capacidad de Ejecutar Diferentes LLMs en los Dispositivos Más Pequeños Posibles",
+    "resumen": "El proyecto 'smolmaxxing' se centra en optimizar la ejecución de modelos de lenguaje grandes (LLMs) en dispositivos de hardware de bajo rendimiento, como cajas de TV, teléfonos y tablets antiguos, y computadoras de placa única. Utiliza técnicas como kernels personalizados, gestión de memoria cuidadosa y streaming de pesos desde el almacenamiento flash para ejecutar modelos de hasta 8B, 16B, 35B y 80B parámetros en dispositivos con tan solo 1 GB de RAM. La metodología se basa en parches sobre el proyecto llama.cpp, permitiendo que los dispositivos mantengan solo una parte del modelo en memoria y carguen el resto según sea necesario desde el flash. Se detallan las comparativas de rendimiento y se invita a la comunidad a contribuir con sus mediciones. Las técnicas empleadas son agnósticas al dispositivo específico y se basan en capacidades como NEON (para kernels de 1 bit) y la capacidad de streaming flash en sistemas Linux o Android.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50474361,
+    "url": "https://developer.apple.com/foundation-models-framework/",
+    "score": 250,
+    "time": 1794518006,
+    "titulo_es": "Framework Foundation Models para Integración de Modelos de Lenguaje Grandes en Aplicaciones Nativas de Swift",
+    "resumen": "El Framework Foundation Models es una API nativa de Swift diseñada para integrar modelos de lenguaje grandes (LLMs) en aplicaciones iOS, macOS, etc. Permite el acceso directo a modelos de Apple en el dispositivo y a través de Private Cloud Compute, así como a modelos de terceros (ej. Claude, Gemini) mediante el mismo API. Soporta capacidades avanzadas como generación guiada, llamada a herramientas, comprensión multimodal (texto e imágenes), y perfiles dinámicos para adaptar el comportamiento del modelo sobre la marcha. La integración con el framework Vision facilita el procesamiento de imágenes con OCR y lectores de códigos. El framework está orientado a privacidad, con modelos en dispositivo que funcionan sin conexión. Se incluye la herramienta de línea de comandos 'fm' para prototipado y automatización, y un SDK para Python. El framework busca simplificar la adopción de patrones de IA emergentes, ofreciendo abstracciones experimentales y herramientas de evaluación para validar la funcionalidad de las características impulsadas por IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50477714,
+    "url": "https://folklore.org/Switcher.html",
+    "score": 127,
+    "time": 1794539699,
+    "titulo_es": "Thunderscan: Un Escáner de Bajo Costo y Alta Resolución para Macintosh",
+    "resumen": "El artículo describe el desarrollo del primer producto comercial en el que trabajó el autor tras una excedencia de Apple en 1984: Thunderscan. Este producto era un escáner de bajo costo y alta resolución diseñado para Macintosh, creado en colaboración con la empresa Thunderware. El desarrollo comenzó en junio de 1984 y estaba casi completo a principios de octubre del mismo año. El enfoque principal del artículo es el diseño y la creación de este dispositivo de hardware.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50471761,
+    "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
+    "score": 224,
+    "time": 1794507742,
+    "titulo_es": "Descubriendo una nueva clase de vulnerabilidades de confusión de tipos en PostgreSQL",
+    "resumen": "El artículo detalla el proceso de descubrimiento de una vulnerabilidad de corrupción de memoria de tipo confusión en el núcleo de PostgreSQL. Inicialmente, la investigación se centró en explotar extensiones como pg_clickhouse, lo que llevó a preguntas sobre cómo PostgreSQL maneja internamente los tipos de datos (Datum, OID). A través de un aprendizaje profundo de los tipos de datos y la arquitectura interna de PostgreSQL, el autor identificó cómo la representación genérica de 8 bytes de Datum podía ser manipulada, llevando a un exploit de corrupción de memoria fiable. La vulnerabilidad surge de la forma en que PostgreSQL interpreta los datos cuando los tipos de un campo dentro de un tipo compuesto se modifican.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50465829,
+    "url": "https://ipo.anthropic.com/us/",
+    "score": 984,
+    "time": 1794484001,
+    "titulo_es": "Oferta Pública Inicial de Anthropic: IA, su Impacto y Oportunidades de Inversión",
+    "resumen": "El artículo detalla la próxima Oferta Pública Inicial (OPI) de Anthropic, una corporación de beneficio público centrada en el desarrollo y la gestión de la Inteligencia Artificial (IA). Se enfatiza el potencial transformador de la IA en áreas como la innovación científica, el crecimiento económico y la resolución de problemas complejos. La OPI, que comenzará con un roadshow el 10 de noviembre (EST) y se espera que las acciones comiencen a cotizar en Nasdaq bajo el símbolo \"ANT\" el 19 de noviembre (EST), busca financiar la misión de Anthropic de asegurar los beneficios de la IA y mitigar sus riesgos. Se proporcionan detalles sobre el proceso de solicitud de acciones a través de plataformas de corretaje participantes, la fijación del precio de la OPI el 18 de noviembre (EST) y la importancia de revisar el prospecto para obtener información detallada sobre el negocio, las finanzas y los riesgos asociados con la inversión. La información financiera presentada, aunque incluye cargos no monetarios significativos, indica el crecimiento y la valoración de la empresa. El artículo también menciona ambiciones específicas de la empresa, como escalar un sistema operativo de agentes para abogados, democratizar herramientas científicas, empoderar a los empleados y mejorar la experiencia de compra.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50471650,
+    "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
+    "score": 127,
+    "time": 1794507348,
+    "titulo_es": "AgentRun: Plataforma para Agentes de IA Auto-Mejorables y de Ejecución Duradera",
+    "resumen": "AgentRun es una plataforma de código abierto diseñada para potenciar agentes de IA. Añade capacidades de auto-mejora, ejecución duradera y un plano de control sobre frameworks de agentes existentes (como Claude Code, Codex, OpenCode, pi). Su objetivo es hacer los agentes más inteligentes, tolerantes a fallos y eficientes en el uso de tokens. La plataforma aborda el problema de la recurrencia de tareas por parte de los agentes, permitiéndoles aprender y retener información (notas, skills, workflows) de ejecuciones anteriores. Esto se logra mediante un mecanismo de aprendizaje donde el agente es evaluado y las lecciones aprendidas se guardan en un repositorio Git local. Reduce significativamente los costos operativos, ejemplificado en casos de uso como la revisión de código (de $1/revisión a $0.18) y la clasificación de comercios (de $0.89 a $0.12). Ofrece una interfaz de consola (Mission Control) para monitorizar y gestionar los agentes, con seguimiento de ejecuciones, costos e interacciones. Soporta ejecución local (macOS/Linux con Node.js) o en la nube (ej. Render) y proporciona sandboxing con Docker para la ejecución de agentes. Permite la interacción humana durante las ejecuciones y la integración con código externo a través de APIs. Las características clave incluyen integraciones con múltiples modelos de IA, recuperación de fallos, seguimiento de ejecuciones y un sistema de aprendizaje continuo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50467460,
+    "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
+    "score": 236,
+    "time": 1794492757,
+    "titulo_es": "AMD Zen 6 y Zen 6c: Profundizando en la Arquitectura de Procesadores",
+    "resumen": "El artículo detalla la evolución de la arquitectura de procesadores de AMD, centrándose en Zen 6 y Zen 6c. Se explica cómo Zen 6c utiliza una tecnología de núcleo más densa para ofrecer un rendimiento de primer nivel con L3 completo (4MB por núcleo), mientras que el diseño clásico de Zen se considera ahora la opción de alta frecuencia. Se discuten las optimizaciones en el programador vectorial (vector scheduler) y otras colas en Zen 6c, que son más grandes debido a su menor objetivo de frecuencia, permitiendo mayor IPC y mejor rendimiento SMT sin obligar a optimizaciones de software específicas. También se aborda la evolución del front-end desde Zen 5, con mejoras en la eficiencia de entrega y consumo de energía para manejar cargas de trabajo complejas. Finalmente, se menciona una reducción en las unidades de multiplicación entera de tres a dos en Zen 6, como resultado de una transición hacia programadores más distribuidos en comparación con el enfoque más unificado de Zen 5.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50458849,
+    "url": "https://makepad.github.io/relax/",
+    "score": 173,
+    "time": 1794432001,
+    "titulo_es": "Relax: Un compilador JIT y runtime en vivo para Rust",
+    "resumen": "Relax es un entorno de compilación y ejecución en vivo (Just-In-Time) para Rust, escrito en Rust. Permite ejecutar paquetes de Cargo directamente desde el código fuente, omitiendo el compilador `rustc`, LLVM y el enlazador. Compila y optimiza funciones sobre la marcha, incluso parcheando ediciones en el proceso en ejecución. Soporta generación de código para x86-64 y AArch64. Se integra con el ecosistema de Cargo para dependencias, descargándolas de `crates.io` o usando copias locales. Relax puede reemplazar componentes de `rustc`, Cargo y el enlazador con una única biblioteca Rust. El proyecto Makepad lo utiliza extensivamente para acelerar flujos de trabajo de desarrollo, permitiendo la aplicación de cambios en segundos y manteniendo los procesos de compilación y prueba de múltiples agentes de IA activos, reduciendo costos de tokens y tiempo de espera. Si bien el código ejecutado por Relax es generalmente más lento que el generado por `rustc` (con una sobrecarga del 1.12x a 1.25x), ofrece ventajas significativas en tiempo de iteración y experiencia de desarrollo, especialmente en flujos de trabajo intensivos como los de Makepad y sus agentes de IA.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50471431,
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "score": 553,
+    "time": 1794506508,
+    "titulo_es": "Presentamos Gemini 4 Hydrogen: Inteligencia Artificial de Vanguardia para Todos",
+    "resumen": "El artículo anuncia el lanzamiento de Gemini 4 Hydrogen, un modelo de inteligencia artificial diseñado para la velocidad y eficiencia en tareas cotidianas de desarrollo de software y flujos de trabajo agénticos. A diferencia de los modelos más potentes como Gemini 4 Carbon y Argon, orientados a razonamiento complejo, Hydrogen está optimizado para ejecución rápida. Se destaca su capacidad para mejorar la productividad en la escritura de código, ejecución de pruebas y verificación de cambios.  Además, se introduce Orchestrator, una herramienta que permite la colaboración automática entre diferentes modelos de IA (como Carbon y Hydrogen) dentro de una misma sesión para optimizar el uso de recursos y la velocidad de finalización de tareas. Hydrogen representa una mejora significativa sobre modelos anteriores como Gemini 3.8 Flash, ofreciendo mejoras sustanciales en velocidad, inteligencia y fiabilidad, especialmente en la adaptación a fallos en llamadas a herramientas o resultados vacíos. Se ilustra su aplicación en diversas áreas como la codificación 3D interactiva, el diseño de interfaces de comercio electrónico, la creación de animaciones en hojas de cálculo y la generación automatizada de presentaciones, demostrando su versatilidad y su rol como un modelo de IA accesible para el público general y profesional.",
+    "categoria": "IA"
   },
   {
     "id": 50467297,
     "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
-    "score": 78,
+    "score": 236,
     "time": 1794492328,
-    "titulo_es": "La evolución de las entrevistas de software en Jane Street con la llegada de los LLMs",
-    "resumen": "El artículo describe cómo Jane Street está adaptando sus entrevistas técnicas para reflejar el impacto de los Modelos de Lenguaje Grandes (LLMs) en el desarrollo de software. Aunque los LLMs se utilizan internamente para codificar, depurar y revisar código, las entrevistas tradicionales de codificación se mantenían. Reconociendo que el panorama del desarrollo ha cambiado y que la generación de código es más accesible, Jane Street ha comenzado a probar nuevos formatos de entrevista. Estos nuevos formatos se centran menos en la escritura de código y más en el diseño de software de alto nivel, la verificación de la calidad y estructura del código, y el uso estratégico de LLMs en el proceso de desarrollo. El objetivo es evaluar habilidades como el gusto por lo que construir, la elección de abstracciones duraderas y la corrección del código, competencias que ganan importancia a medida que la generación de código se abarata. Los detalles de estos nuevos formatos aún están evolucionando y no se implementan en todas las entrevistas.",
+    "titulo_es": "La Evolución de las Entrevistas de Software en Jane Street ante el Auge de los LLMs",
+    "resumen": "El artículo describe cómo Jane Street está adaptando sus procesos de entrevista de software para reflejar el impacto de los Modelos de Lenguaje Grandes (LLMs) en el desarrollo. Tradicionalmente, las entrevistas se centraban en la codificación colaborativa. Sin embargo, dado que la generación de código se ha vuelto más accesible gracias a los LLMs, Jane Street está introduciendo nuevas rondas de entrevista que ponen mayor énfasis en el diseño de software, la verificación de la calidad y la estructura del código, y el uso de LLMs en el proceso de desarrollo. Estas nuevas pruebas buscan evaluar habilidades de nivel superior como el criterio para decidir qué construir, la elección de abstracciones duraderas y la garantía de la corrección del código, complementando las entrevistas de codificación tradicionales que aún se mantienen. Los formatos aún están en evolución y se comunicarán a los candidatos antes de las entrevistas.",
     "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50415379,
-    "url": "https://www.buildcores.com",
-    "score": 34,
-    "time": 1794159908,
-    "titulo_es": "Laboratorio de PC de iBUYPOWER: Diseña, Personaliza y Visualiza tu Próxima Construcción de PC",
-    "resumen": "El artículo describe el 'PC Lab' de iBUYPOWER, una herramienta en línea para que los usuarios diseñen y personalicen sus propias computadoras personales. La plataforma permite seleccionar componentes de una base de datos extensa (más de 50k partes), comparar precios en tiempo real de varios minoristas, y verificar automáticamente la compatibilidad entre las partes elegidas (como tamaño de GPU, altura del enfriador, tipos de memoria y coincidencia de socket). Ofrece una vista previa en 3D del ensamblaje, incluyendo la visualización del flujo de aire y configuraciones de iluminación. La herramienta también estima el rendimiento de los juegos (FPS) y permite planificar periféricos y configuraciones de escritorio en 3D. Se promociona la garantía de cobertura de 3 años para las especificaciones creadas. La plataforma es accesible a través de la web y aplicaciones móviles, con una versión gratuita que no requiere cuenta para empezar, y una fecha de lanzamiento de Oct 2026 para una expansión futura con más de 200 partes de configuración.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50431971,
-    "url": "http://blog.nozomi.space/posts/sw2_dock/",
-    "score": 110,
-    "time": 1794257642,
-    "titulo_es": "Ingeniería inversa de la comunicación USB-PD de Nintendo Switch para usar hubs USB-C genéricos",
-    "resumen": "El artículo detalla el proceso de ingeniería inversa de la comunicación USB-PD (Power Delivery) del Nintendo Switch para permitir su uso con hubs USB-C genéricos en lugar del dock oficial. El autor analiza el tráfico USB-PD utilizando un sniffer para identificar las negociaciones propietarias de Nintendo. Mediante la ingeniería inversa del firmware del controlador PD (VL103) y la aplicación de parches personalizados, se logra engañar a la consola para que reconozca un hub USB-C compatible con DisplayPort Alt Mode. Se utilizan herramientas como Ghidra para el desmontaje y análisis del firmware, y se recurre a modelos de IA (Claude, GPT) para asistencia en tareas de programación y análisis. El proyecto resuelve el problema de la portabilidad del dock oficial, permitiendo la salida de video a través de hubs USB-C estándar.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50469123,
-    "url": "https://getvale.org",
-    "score": 6,
-    "time": 1794497754,
-    "titulo_es": "Vale: El CMS ligero y de código abierto que no te obstaculiza",
-    "resumen": "Vale es una plataforma de gestión de contenido (CMS) y comercio electrónico autocontenida y de código abierto. Está diseñada para ser liviana, enfocándose en funcionalidades esenciales como newsletters, seguridad integrada, formularios, sistema de comentarios y una API, todo construido sobre PHP 8.3. Evita la complejidad de los plugins y la sobrecarga innecesaria, proporcionando una solución eficiente para la creación de sitios web y tiendas en línea.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50467763,
-    "url": "https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/",
-    "score": 57,
-    "time": 1794493523,
-    "titulo_es": "PostgreSQL lanza actualizaciones con importantes correcciones de seguridad y errores, y finaliza el soporte para la versión 14",
-    "resumen": "El PostgreSQL Global Development Group ha lanzado actualizaciones acumulativas para todas las versiones soportadas de PostgreSQL (18.7, 17.12, 16.16, 15.20, y 14.25), además del segundo release candidate de PostgreSQL 19. Estas actualizaciones corrigen 52 vulnerabilidades de seguridad y más de 140 bugs. Se destaca que PostgreSQL 14 llega al final de su ciclo de vida (end-of-life) y ya no recibirá soporte. El lanzamiento también actualiza los archivos de datos de zona horaria a tzdata release 2026f, con cambios notables para zonas como America/Inuvik y America/Winnipeg, y el comportamiento del horario de verano en Cuba. Se describen pasos adicionales post-actualización para ciertos escenarios, como reindexar índices GIN o GiST afectados por corrupción o problemas de fragmentación, reindexar tablas con errores de \"missing chunk number\", tomar una nueva copia de seguridad completa para backups incrementales, y manejar restricciones NOT NULL NO INHERIT en tablas particionadas. Se recomienda reindexar índices B-tree en columnas bpchar sin longitud definida. Los usuarios que han omitido versiones anteriores podrían requerir pasos adicionales. PostgreSQL 19 RC 2 es casi idéntico a la versión inicial planeada, incluyendo las correcciones de este lanzamiento.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50456791,
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-    "score": 530,
-    "time": 1794421962,
-    "titulo_es": "Presentación de la API Gemini Decisions para decisiones rápidas y probabilísticas",
-    "resumen": "La API Gemini Decisions, impulsada por el modelo Gemini Decision 1, permite la evaluación rápida y eficiente de hasta 1,000 preguntas (sí/no, opción múltiple, puntuación por rúbrica) en una única pasada multimodal a través de texto, imágenes, audio, video y PDFs. Diseñada para decisiones cerradas y probabilísticas, ofrece baja latencia (150-250 ms end-to-end) y un costo reducido ($0.10 por 1M tokens de entrada, sin costo por tokens de salida), haciéndola ideal para el enrutamiento de consultas, calificación de contenido, verificación de políticas y selección de herramientas. Gemini Decision 1 procesa las modalidades de forma nativa en una sola pasada, permitiendo combinar diversas fuentes de datos. La API proporciona puntuaciones de confianza para cada respuesta, facilitando el manejo de casos ambiguos y la integración con flujos de trabajo existentes como un plano de control de baja latencia.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50463540,
-    "url": "https://www.getlazarus.org/forums/topic/17/",
-    "score": 105,
-    "time": 1794462574,
-    "titulo_es": "Motor de simulación de pinball FOSS para Linux",
-    "resumen": "El desarrollador sysrpl está trabajando en un motor de simulación de pinball de código abierto (FOSS) para Linux, que incluye mejoras en física, jugabilidad, arte y características de usuario. Recientemente completó varias tareas y planea añadir más funcionalidades como un campo de juego superior, líneas de voz, arte adicional, una guía de creación de mesas y soporte para animaciones de pantalla DMD y sistemas de pantalla dual. El desarrollador está buscando colaboradores para el arte de las mesas. La discusión técnica menciona la transición de un motor de física propio a la librería Jolt y la base en álgebra lineal, comparando la experiencia con simulaciones de billar previas.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50469591,
-    "url": "https://www.nbcnews.com/tech/tech-news/amazons-ring-debuts-security-robots-drone-rcna608538",
-    "score": 6,
-    "time": 1794499377,
-    "titulo_es": "Ring lanza un dron de seguridad interior y un robot de vigilancia para el hogar y empresas",
-    "resumen": "Amazon's Ring ha introducido dos nuevos dispositivos de seguridad robóticos: el Ring Drone Camera, un dron de interior de $250 que ofrece vigilancia móvil para cubrir áreas inaccesibles por cámaras fijas, y el Ring Rover Cam, un robot de $1,000 diseñado para empresas. Ambos dispositivos cuentan con cámaras con amplios ángulos de visión y capacidades de rotación, operan en condiciones de poca luz y están equipados con luces LED indicadoras de grabación. El diseño de los dispositivos incluye elementos sonoros y visuales (hélices audibles, torre de luz brillante, sirena en el Rover) para disuadir intrusos y notificar su presencia. Ring enfatiza las salvaguardias de privacidad, asegurando que las funciones de grabación solo se activan cuando el dispositivo está en operación y que siempre hay indicadores visibles de cuándo se está grabando. Sin embargo, expertos en privacidad y derechos civiles advierten sobre los riesgos de seguridad de datos inherentes a la introducción de dispositivos de grabación dentro de los hogares. Ambos productos requieren una suscripción de $5 al mes o $60 al año.",
-    "categoria": "Hardware"
   }
 ]
