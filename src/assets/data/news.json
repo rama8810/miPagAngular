@@ -1,200 +1,218 @@
 [
   {
+    "id": 50493904,
+    "url": "https://monkeyisland.pages.dev/",
+    "score": 301,
+    "time": 1794630210,
+    "titulo_es": "Emulación y Recreación Visual de Videojuegos Clásicos",
+    "resumen": "El artículo describe el proceso técnico de capturar y presentar momentos de videojuegos clásicos utilizando emuladores como ScummVM y Hatari. Se detalla la configuración de la captura de pantalla (resolución 1600x1200, escalado 'nearest-neighbour', corrección de aspecto 4:3) para preservar la fidelidad visual original, imitando la apariencia en monitores de época. Se mencionan diferencias entre versiones (PC 16-color, Atari ST mono, inglés, francés, Mac, Hercules) y la emulación de monitores CRT a través de DOSBox Staging con shaders personalizados (Hyllian's CRT, VGA 1080p, crt-guest-advanced-hd). Se hace referencia a licencias de software (CC BY-SA 4.0, MIT, GNU GPL) y se menciona el uso de IA en la creación del sitio web. El proyecto es una recreación fan-made, no oficial.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50497155,
+    "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+    "score": 37,
+    "time": 1794665365,
+    "titulo_es": "Despliegue Local de un Modelo de Lenguaje Frontier con Paralelismo de Tensor en Múltiples Estaciones NVIDIA DGX",
+    "resumen": "El artículo detalla el proceso de desplegar un modelo de lenguaje de vanguardia (GLM-5.3 NVFP4, 753 mil millones de parámetros) localmente en dos estaciones NVIDIA DGX conectadas mediante RDMA. Se utiliza el paralelismo de tensor (TP=2) para distribuir las cargas de cómputo y los pesos del modelo (464 GB) entre las GPUs de ambas estaciones, superando las limitaciones de memoria de una sola GPU (252 GB HBM3e en GB300). La configuración implica la preparación de las estaciones, la configuración de red (ConnectX-8 RDMA), la copia del checkpoint del modelo, la sincronización de software mediante contenedores Docker idénticos y la orquestación a través de SSH. Una estación (A, rank 0) aloja la API compatible con OpenAI, mientras que la otra (B, rank 1) actúa como worker. El objetivo es proporcionar un endpoint funcional para servir el modelo y establecer una línea base de rendimiento bajo carga concurrente, deshabilitando la descarga de pesos a la CPU.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50478632,
+    "url": "https://beyondloom.com/blog/postscript.html",
+    "score": 39,
+    "time": 1794546776,
+    "titulo_es": "Implementando un Subconjunto de PostScript como Lenguaje de Programación General",
+    "resumen": "El artículo detalla la implementación de un subconjunto del lenguaje de programación PostScript, centrándose en su mecánica como lenguaje de propósito general y no en sus capacidades gráficas. Se describe la estructura de los programas PostScript, compuesta por tokens delimitados por espacios en blanco y caracteres especiales. Se explican los modelos de ejecución basados en pilas (operandos y diccionarios) y cómo se manejan las estructuras de datos como los arrays mediante operadores específicos. La implementación de un intérprete de este subconjunto se realiza en JavaScript, influenciada por la filosofía de Forth. Se aborda la representación de los tipos de datos de PostScript mediante tipos de JavaScript, la construcción de rutinas para manipular estos datos, y la traducción de la sintaxis PostScript a tokens mediante expresiones regulares. Finalmente, se presenta la representación de las pilas de operandos y diccionarios en JavaScript y la ejecución de programas pre-tokenizados, donde los nombres se resuelven buscando en la pila de diccionarios.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50491423,
+    "url": "https://www.joshka.net/cell-borders/",
+    "score": 346,
+    "time": 1794611200,
+    "titulo_es": "Protocolo de Terminal para Bordes de Celda Mejorados en TUIs",
+    "resumen": "El artículo presenta un nuevo protocolo de terminal, implementado como un parche para Ghostty y previamente en Rio, que permite dibujar bordes finos en los bordes de las celdas en lugar de depender de los caracteres de dibujo de cajas Unicode. Este enfoque evita el desperdicio de espacio en filas y columnas que los caracteres tradicionales consumen, permitiendo una presentación más densa y flexible de las interfaces de usuario de terminal (TUIs). Las ventajas incluyen la preservación del espacio de pantalla, la posibilidad de colocar líneas de borde y adornos (como subrayados o esquinas redondeadas) directamente en los bordes de las celdas sin afectar el contenido principal, y la eliminación de caracteres de borde no deseados al copiar y pegar texto. Se muestran ejemplos con Ratatui, comparando la apariencia y funcionalidad con y sin el nuevo protocolo, incluyendo gráficos estilo btop y la disposición de elementos de UI como pestañas y botones. El protocolo trata los bordes como atributos de celda, similar a los colores de fondo, permitiendo hasta doce segmentos de línea por celda.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50491980,
+    "url": "https://unsloth.ai/docs/models/qwen3.8",
+    "score": 206,
+    "time": 1794614764,
+    "titulo_es": "Guía de ejecución de modelos cuánticos Qwen 3.8 (incluyendo Qwen 3.8-27B) en configuraciones locales con Unsloth",
+    "resumen": "El artículo describe cómo ejecutar modelos de lenguaje grandes (LLM) de la familia Qwen 3.8, específicamente el modelo Qwen3.8-27B de 27 mil millones de parámetros, en configuraciones locales utilizando optimizaciones de Unsloth. Se destaca la capacidad del modelo para tareas de visión, razonamiento y codificación agentic, con un contexto de 256K y requisitos de RAM/VRAM de 17GB. Se presenta la nueva versión Unsloth Dynamic V3.1 para GGUFs, que mejora la precisión promedio en un 5-10% en varios benchmarks (Terminal Bench, DeepSWE, etc.) sin aumentar el tamaño. Se discuten las mejoras en la inferencia rápida para herramientas de agentic y llamadas a funciones. Se comparan métricas de uso de RAM/disco y precisión con otras técnicas como Exllama-v3, y se abordan discrepancias en los resultados de benchmarks, enfatizando la importancia de ejecutar múltiples pruebas debido a la naturaleza no determinista de las GPUs y la configuración del contexto. Se mencionan optimizaciones en diferentes niveles de cuantización (2bit a 6bit) y se anticipan mejoras futuras.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50489641,
+    "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+    "score": 1601,
+    "time": 1794603953,
+    "titulo_es": "Interrupción de vuelos en EE.UU. por fallo de sistema de control de tráfico aéreo obsoleto",
+    "resumen": "Un fallo en un sistema de control de tráfico aéreo obsoleto, causado por un router que envió demasiados datos y sobrecargó equipos antiguos, provocó una detención nacional de vuelos en EE. UU. durante más de cuatro horas el viernes. Esto resultó en la cancelación de más de 7,000 vuelos el viernes y más de 3,700 cancelaciones y 1,990 retrasos el sábado por la mañana. Los principales aeropuertos como Atlanta, Chicago O'Hare y JFK experimentaron las mayores interrupciones. La Administración Federal de Aviación (FAA) identificó y desconectó el sistema defectuoso, mientras que las autoridades descartaron indicios de ciberataque. Se permitió la continuación de vuelos médicos. Las aerolíneas luchan por normalizar las operaciones y reubicar aviones y tripulaciones. Se señala que el sistema de control de tráfico aéreo, que utiliza equipos analógicos con décadas de antigüedad, ha experimentado fallos recurrentes, lo que impulsa la petición de una inversión de $50 mil millones para su modernización, a pesar de que el Congreso aprobó recientemente $12.5 mil millones en cinco años. Una empresa proveedora de sistemas de IA para la FAA negó que su software fuera responsable de la interrupción.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50497041,
+    "url": "https://foss.life/notes/2026/the-myth-of-neutral-code/",
+    "score": 14,
+    "time": 1794664331,
+    "titulo_es": "La \"Radicalización\" del Software: Una Perspectiva Histórica",
+    "resumen": "El artículo aborda la queja recurrente sobre la \"radicalización\" del software, argumentando que la percepción de un pasado \"apolítico\" y \"meritocrático\" en el desarrollo de código abierto es una falacia. Explica que el movimiento del software libre, iniciado por Richard Stallman en los 80, tenía una base explícitamente moral y ética, centrada en la libertad humana y la autonomía. Posteriormente, en 1998, se acuñó el término \"Open Source\" y se fundó la OSI con el objetivo de despolitizar el movimiento, presentándolo de manera pragmática y amigable para los negocios. Este \"rebranding\" corporativo permitió que el código abierto prosperara en el ámbito empresarial, pero creó la ilusión de neutralidad. El autor sostiene que el \"Open Source\" \"sanitizado\" fue una anomalía corporativa temporal y que la atención actual a las cuestiones políticas y éticas en el desarrollo de software representa un retorno a las raíces del movimiento del software libre, no una \"radicalización\".",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50491830,
+    "url": "https://dfarq.homeip.net/what-happened-to-3com/",
+    "score": 178,
+    "time": 1794613739,
+    "titulo_es": "¿Qué pasó con 3Com?",
+    "resumen": "El artículo narra la historia de 3Com, una empresa prominente en la fabricación de tarjetas de red y equipos de red durante las décadas de 1980 y 1990. Fundada por Bob Metcalfe, co-inventor de Ethernet, 3Com se caracterizó por su hardware confiable, buen soporte de drivers y producción en Estados Unidos, lo que la convirtió en una marca de confianza, comparable a la reputación de IBM en la industria de computadoras. Sin embargo, tras el estallido de la burbuja punto com, 3Com tomó una serie de decisiones estratégicas desafortunadas. Abandonó su negocio principal de equipos de red empresarial para competir con Cisco, lo que afectó sus ingresos y molestó a sus clientes. Además, se diversificó hacia negocios de corta vida como los módems de US Robotics y los Palm Pilots, pagando precios elevados por productos con un futuro incierto. La dependencia excesiva de las tarjetas de red, que representaban la mitad de sus ingresos en años posteriores a la crisis, junto con la competencia de precios de Intel, erosionó su rentabilidad. La empresa no logró recuperarse y, a pesar de intentar volver al mercado de equipos de red, ya era una propuesta costosa. Finalmente, 3Com, que había llegado a ser una empresa de 5.8 mil millones de dólares, desapareció efectivamente el 11 de noviembre de 2009 debido a la pérdida de rentabilidad y una serie de malas decisiones.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50488470,
+    "url": "https://www.nature.com/articles/d41586-026-03638-3",
+    "score": 230,
+    "time": 1794597921,
+    "titulo_es": "El endurecimiento y la cicatrización del hígado relacionados con la edad disminuyeron en ratones modificados genéticamente para carecer de una enzima determinada",
+    "resumen": "Una investigación ha identificado una enzima que impulsa el envejecimiento en los tejidos del cuerpo. Los hallazgos sugieren que el desarrollo de fármacos que reduzcan los niveles de esta proteína podría ser una vía para combatir los efectos del envejecimiento, potencialmente sin comprometer las defensas inmunológicas del organismo. Los estudios en ratones bioingenierizados que carecían de esta enzima específica mostraron una disminución en el endurecimiento y la cicatrización del tejido hepático relacionados con la edad.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50444761,
+    "url": "https://github.com/0xdeadf1sh/T1DMAI",
+    "score": 64,
+    "time": 1794337673,
+    "titulo_es": "Un zoológico de modelos de pronóstico de glucosa en sangre entrenados y probados con mis propios datos",
+    "resumen": "El artículo describe un repositorio que alberga una colección de modelos de pronóstico de glucosa en sangre (BG). El autor, un individuo con diabetes tipo 1, ha desarrollado y probado varios modelos, incluido uno propio basado en un transformador pequeño ('D16 DILATE' y 'D16 MSE'), entrenado en datos sintéticos y ajustado finamente con LoRA. Se compara el rendimiento de estos modelos con otros como XGBoost, Chronos-2 y TimesFM, utilizando métricas como RMSE, en dos conjuntos de datos: datos personales del autor (T1DMDROID) y el conjunto de datos público MetaboNet. Se enfatiza que los modelos son para uso educativo/investigación y no son dispositivos médicos. La evaluación sigue las recomendaciones de Jacobs et al. (2024). El proyecto busca explorar la viabilidad de entrenar modelos de pronóstico de BG para la gestión diaria de la diabetes.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50488325,
+    "url": "https://open.m-vave.com/fm1-workbench",
+    "score": 255,
+    "time": 1794597242,
+    "titulo_es": "Guía detallada para el editor web y dispositivo FM1",
+    "resumen": "El artículo es una guía técnica exhaustiva para el dispositivo FM1 y su editor web asociado. Detalla el funcionamiento de la interfaz de usuario, tanto en el dispositivo físico como en el editor web, cubriendo aspectos como la navegación, la edición de parámetros (paso a paso, envolvente, LFO, algoritmos), la gestión de presets y proyectos, la configuración MIDI, la grabación de secuencias (con opciones de cuantización, swing, longitud de bucle y pre-compás), y la gestión de samples y librerías. También aborda la actualización de firmware, las funciones de copia/pegado de pasos y páginas, el uso de la función 'Hold' en el arpegiador, y las diferentes funciones de los modos 'NORMAL', 'PLAY' y 'OFF' para las pistas. Se enfatiza la interacción entre el dispositivo y el editor web, la necesidad de guardar modificaciones, y las advertencias sobre actualizaciones de firmware. Se discuten detalles específicos como la asignación de 8 slots para proyectos, la gestión de memoria para samples (19.55 segundos compartidos), y la compatibilidad de formatos WAV. La guía también explica atajos de teclado y combinaciones de teclas para operaciones comunes y avanzadas, y detalla la configuración de MIDI IN/OUT y clock.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50491400,
+    "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
+    "score": 148,
+    "time": 1794611070,
+    "titulo_es": "AMP: Un Reproductor de Música en Zig con Enfoque Minimalista y Lecciones Aprendidas del Uso de LLMs",
+    "resumen": "El artículo narra la experiencia del autor al desarrollar un reproductor de música llamado AMP, escrito en Zig, motivado por la necesidad de una solución offline debido a cortes de internet en su país. El proyecto se centró en un conjunto de características mínimas, sin dependencias de C++, integración nativa y una interfaz de usuario personalizada. Durante un prolongado apagón de internet, el autor utilizó LLMs de forma intensiva para acelerar el desarrollo, lo que resultó en una gran cantidad de código generado de baja calidad (\"slop\"). Tras una posterior prohibición de su cuenta de LLM y políticas restrictivas en plataformas de desarrollo, el autor se vio obligado a reescribir gran parte del código, descubriendo que una aproximación más manual y consciente mejoró la robustez y mantenibilidad del proyecto. La lección principal es que los LLMs pueden ser una herramienta útil, similar a un IDE avanzado, pero no deben sustituir el entendimiento profundo y la revisión crítica del código.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50454791,
+    "url": "https://www.fws.gov/story/2026-11/service-crew-discovers-rare-yellow-burbot-oswego-harbor",
+    "score": 21,
+    "time": 1794412063,
+    "titulo_es": "Rara captura de pez nativo con xantocromía resalta la efectividad del programa de detección temprana de especies invasoras",
+    "resumen": "Biólogos del U.S. Fish and Wildlife Service capturaron un burbot (Lota lota) con xantocromía, una condición rara que le otorga una coloración amarillo-anaranjada intensa, en el puerto de Oswego, Nueva York. Este hallazgo, aunque de un pez nativo y con una condición inusual, subraya la efectividad del Programa de Detección Temprana y Monitoreo de Especies Acuáticas Invasoras del Servicio. El programa utiliza una estrategia de vigilancia multiequipo (incluyendo pesca eléctrica, redes fyke, redes de enmalle y análisis de ADN ambiental) para detectar especies en la lista de vigilancia en los Grandes Lagos, incluso cuando sus poblaciones son extremadamente bajas. La detección temprana es crucial para que los gestores de pesquerías implementen medidas de prevención y eliminación de especies invasoras. La captura de este pez nativo, que se encuentra en poblaciones muy bajas y habita típicamente en aguas más profundas y frías, demuestra la capacidad del programa para identificar especies poco comunes y potencialmente detectar nuevas especies invasoras en sus etapas iniciales. El pez, que también presentaba un estado de salud precario, fue enviado para análisis, lo que podría proporcionar información valiosa sobre la salud de las poblaciones de burbot en la cuenca.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50487185,
+    "url": "https://haddyalchaer.com/jepa",
+    "score": 274,
+    "time": 1794592528,
+    "titulo_es": "Modelos del Mundo: Arquitectura Predictiva de Inserción Conjunta (JEPA) para Tareas de Largo Alcance sin Entrenamiento Adicional",
+    "resumen": "El artículo discute la controversia actual en IA sobre la naturaleza de los modelos del mundo. Se contrasta la aproximación generativa, que predice el futuro en píxeles (considerada por algunos como ineficiente), con la Arquitectura Predictiva de Inserción Conjunta (JEPA). JEPA opera en un espacio de incrustación (embedding space), compuesto por un codificador, un predictor y un planificador. El codificador convierte observaciones en vectores compactos (embeddings), el predictor estima el embedding del siguiente frame basándose en el embedding actual y una acción, y el planificador explora secuencias de acciones para alcanzar un estado objetivo. El modelo LeWM, una implementación de JEPA, se evalúa en la tarea Push-T. Experimentos sugieren que las predicciones de LeWM son comparables a la física perfecta para la planificación a largo alcance cuando se entrena adecuadamente. Las mejoras significativas en el rendimiento de LeWM en tareas de largo alcance (75 pasos) se obtienen principalmente a través de métodos de planificación novedosos y una estrategia de descomposición jerárquica de tareas (dividiendo en segmentos de 25 pasos), más que por la precisión de las predicciones del modelo o el aumento de la búsqueda computacional. La clave para superar las limitaciones de planificación de largo alcance reside en la forma en que se utiliza la arquitectura JEPA y en la implementación de planificación jerárquica.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50496921,
+    "url": "https://www.netmeister.org/blog/claude-delusion.html",
+    "score": 106,
+    "time": 1794663377,
+    "titulo_es": "La Hubris del Éxito y la Inteligencia Artificial",
+    "resumen": "El artículo examina cómo el éxito, especialmente en el sector tecnológico, puede llevar a una percepción inflada de la propia inteligencia y habilidades, equiparando la competencia en programación con una superioridad intelectual general. Se critica la tendencia de algunos individuos exitosos, como Bill Gates, a considerarse expertos en campos fuera de su especialidad y a subestimar las capacidades de la IA, especialmente cuando esta demuestra ser igual o superior a sus propias habilidades. Se argumenta que esta mentalidad, exacerbada por la creencia de que el éxito se debe únicamente al mérito personal y no a la suerte o privilegios, alimenta tanto visiones distópicas de la IA como utópicas, y genera miedo ante la idea de que la IA pueda superar las capacidades humanas en tareas que antes se consideraban exclusivas de los expertos.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50448432,
+    "url": "https://engineering.fb.com/2026/11/09/developer-tools/extending-lldb-to-debug-applications-that-span-cpus-and-gpus/",
+    "score": 27,
+    "time": 1794358094,
+    "titulo_es": "Una Arquitectura Común de Depuración de Aceleradores para LLDB",
+    "resumen": "El artículo describe un nuevo enfoque para depurar aplicaciones de IA modernas que a menudo implican la interacción entre CPUs y GPUs. Tradicionalmente, la depuración de GPUs requería herramientas específicas del proveedor (como ROCgdb o CUDA-GDB), que presentan desafíos de mantenimiento y consistencia. Meta ha desarrollado un plugin de acelerador común para lldb-server, diseñado como una abstracción neutral al proveedor dentro de LLDB. Esta arquitectura trata la CPU y la GPU como objetivos (targets) separados dentro de LLDB, cada uno con su propia arquitectura e información específica. El lldb-server actúa como un intermediario, coordinando las operaciones de depuración de bajo nivel y traduciendo las APIs de depuración específicas del hardware del proveedor a conceptos que LLDB comprende (procesos, hilos, registros, memoria, etc.). Esto permite que las mejoras generales en LLDB beneficien a todos los aceleradores, mientras que los proveedores se enfocan en implementar el comportamiento específico de su hardware. La depuración de GPU solo se activa cuando la aplicación utiliza un tiempo de ejecución de GPU compatible, sin afectar el rendimiento de las aplicaciones solo de CPU.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50466069,
+    "url": "https://arsh.zip/posts/north-east-arrow/",
+    "score": 26,
+    "time": 1794485660,
+    "titulo_es": "El fenómeno del carácter de flecha ↗ en los repositorios de GitHub creados por IA",
+    "resumen": "El artículo investiga la proliferación del carácter Unicode de flecha nororiental (↗) en repositorios públicos de GitHub creados por modelos de IA, como Claude y Codex. El autor, tras notar este patrón en una página de aterrizaje de KetchUp, hipotetiza que modelos de lenguaje específicos son los culpables. Mediante el análisis de miles de repositorios públicos y commits con atribución de IA, se confirma que modelos de Anthropic (Claude) y OpenAI (Codex) han introducido este carácter de forma recurrente, especialmente en código de interfaz de usuario de páginas de aterrizaje. Se observa una tendencia decreciente en la frecuencia de uso de la flecha en versiones posteriores de los modelos. Un hallazgo interesante es la tendencia de Codex a usar la flecha en enlaces internos con mayor frecuencia que Claude, lo que sugiere diferentes enfoques o 'tics' estilísticos de los modelos. El estudio se centra en la atribución de commits y el filtrado de código de UI para identificar el origen de este fenómeno, sugiriendo que podría ser una preferencia de diseño aprendida por los modelos o una influencia de los desarrolladores que los utilizan.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50487228,
+    "url": "https://isometricsf.com/",
+    "score": 241,
+    "time": 1794592717,
+    "titulo_es": "Mapa isométrico pixel-art del Área de la Bahía generado por IA",
+    "resumen": "El artículo describe un mapa interactivo y detallado del Área de la Bahía, que abarca desde el Golden Gate hasta San José. El mapa presenta un estilo de arte pixelado isométrico y permite a los usuarios hacer zoom, buscar lugares específicos y compartir la vista. Cada uno de los 25 lugares representados en el mapa fue pintado utilizando un modelo de Inteligencia Artificial entrenado con capturas 3D de Google Maps. Se mencionan puntos de interés específicos como el Golden Gate Bridge, Alcatraz Island, Painted Ladies, Coit Tower, Bay Bridge y Apple Park.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50496159,
+    "url": "https://lightpollutionmap.app/",
+    "score": 5,
+    "time": 1794655843,
+    "titulo_es": "Pronósticos y mapas celestes para ayudarte a elegir dónde y cuándo observar",
+    "resumen": "El artículo describe una herramienta web diseñada para astrónomos aficionados y fotógrafos de cielos nocturnos. Proporciona pronósticos de visibilidad del cielo, mapas de contaminación lumínica (indicando clases de Bortle), y predicciones de actividad aurora, basándose en datos históricos y pronósticos meteorológicos. La herramienta estima la oscuridad del cielo, recomienda parámetros de exposición para cámaras (basándose en ruido de lectura y corriente oscura), y permite comparar la visibilidad direccional del cielo y la Vía Láctea. Se enfatiza que las estimaciones son aproximadas y no sustituyen a mediciones profesionales (como SQM). Menciona la integración de datos de ubicación IP para determinar la clase de Bortle local y la posibilidad de buscar ubicaciones específicas. La plataforma se planea expandir con una comunidad de usuarios para compartir reportes y fotos, y se destaca que sus funciones básicas son gratuitas. Se ofrecen opciones de incrustación (embed) del mapa de contaminación lumínica en otros sitios web mediante iframes o widgets.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50488835,
+    "url": "https://gyptazy.com/blog/freebsd-bhyve-live-migration-support-rfc/",
+    "score": 127,
+    "time": 1794599922,
+    "titulo_es": "Estado inicial de la migración en vivo de bhyve en FreeBSD 15.1",
+    "resumen": "Este artículo presenta el primer estado de funcionamiento para la migración en vivo (live migration) de máquinas virtuales bhyve en FreeBSD 15.1. Permite mover una instancia amd64 en ejecución entre dos hosts a través de TCP, minimizando la interrupción al pausar solo durante la fase final de copia y detención (stop-and-copy). La implementación se basa en el soporte experimental de snapshots de bhyve y añade seguimiento de páginas modificadas en el módulo del kernel vmm, junto con un protocolo de migración en bhyve y bhyvectl. El objetivo es práctico: permitir pruebas, discusión y mejora de una implementación real. Se publica como un RFC provisional (WIP) para dar forma a los próximos pasos de manera abierta. La migración en vivo es crucial para la virtualización empresarial, permitiendo mantenimiento de hosts, reemplazo de hardware y balanceo de carga con mínima interrupción. Es un componente central para proyectos como Sylve (una solución de virtualización estilo Proxmox para FreeBSD) y BoxyBSD, donde la falta de migración en vivo es un obstáculo actual. El proceso de migración utiliza una fase de precopia, enviando primero la memoria existente y luego las páginas modificadas repetidamente. Una vez que el conjunto de páginas sucias restantes se ajusta a los objetivos de tiempo de inactividad, deja de reducirse o alcanza un límite de rondas configurado, bhyve pausa la VM y sus dispositivos para enviar las páginas sucias finales y el estado de los vCPUs, kernel y dispositivos emulados. El host destino valida la geometría de la VM, restaura la memoria y el estado, y confirma la preparación antes de que la fuente envíe el comando 'GO' para completar la migración. Si la migración falla antes de 'GO', la VM fuente puede reanudar. También se ofrece un modo 'stop-and-copy' cálido como alternativa y línea base. Las pruebas realizadas con migraciones repetidas, cargas de trabajo de reescritura de memoria y cargas de trabajo intensivas en disco (fsync) han sido exitosas, con tiempos de inactividad observados de aproximadamente 138-171 ms para una VM de 512 MiB con baja actividad de modificación. Las cargas de trabajo con alta modificación pueden requerir una finalización en modo stop-and-copy más prolongada. Los próximos pasos de ingeniería se centran en la corrección, validación de compatibilidad, seguridad del transporte y pruebas repetibles, dejando la optimización de rendimiento para más adelante. Se planea publicar el código y las herramientas en plataformas como Git y GitHub.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
     "id": 50474959,
     "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
-    "score": 281,
+    "score": 773,
     "time": 1794520989,
-    "titulo_es": "Desvinculando un purificador de aire IoT de la nube mediante ataques Man-in-the-Middle",
-    "resumen": "El autor describe el reto de independizar un purificador de aire inteligente (Coway Airmega) de los servicios en la nube del fabricante para integrarlo de forma confiable en Home Assistant y Apple Home. Tras explicar las dificultades habituales para interceptar tráfico TLS en dispositivos cerrados, aprovecha una vulnerabilidad real en la autoridad de certificación (CA) eMudhra —generada por el uso de parámetros criptográficos débiles en sus claves privadas— para realizar un ataque Man-in-the-Middle (MitM) con certificados falsificados pero válidos, logrando redirigir la comunicación del dispositivo.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50472038,
-    "url": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
-    "score": 814,
-    "time": 1794508745,
-    "titulo_es": "Rust 1.100.0: Estabilización del tipo 'never' y API de asignadores",
-    "resumen": "La versión 1.100.0 de Rust introduce la estabilización del tipo 'never' (!), que representa cálculos divergentes y permite coerciones a cualquier otro tipo, simplificando el manejo de flujos de control no alcanzables. La alias Infallible ahora apunta a este tipo, manteniendo la compatibilidad retroactiva con advertencias para ediciones anteriores a 2024. Además, se estabilizan las partes centrales de 'allocator_api', permitiendo la definición de asignadores personalizados para tipos como Vec y Box a través del trait Allocator, sentando las bases para el proyecto Allocators 1.0. Finalmente, se introduce `core::mem::DropGuard` como un mecanismo para ejecutar un closure al salir del ámbito de una variable, complementando el `Drop` trait existente para casos de limpieza condicional.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50477649,
-    "url": "https://brave.com/blog/search-api-agentic-payments/",
-    "score": 213,
-    "time": 1794539288,
-    "titulo_es": "Brave Search API introduce pagos agnósticos y \"pay-as-you-go\" con el protocolo x402",
-    "resumen": "El artículo detalla la integración del protocolo de pagos abierto x402 con la Brave Search API, permitiendo pagos instantáneos y por uso para consultas de búsqueda. Los desarrolladores y agentes de IA pueden ahora acceder al índice de búsqueda independiente de Brave de forma programática, pagando por cada solicitud con stablecoins (inicialmente USDC en la red Base) sin necesidad de cuentas o planes. Cada solicitud requiere un pago verificado on-chain, y las solicitudes sin pago reciben una respuesta HTTP 402 con los detalles de pago. Los precios son de $0.005 por 1,000 requests para LLM Context y otros endpoints de búsqueda. Se recomienda el uso de la CLI wallet Purl para facilitar las transacciones. Esta actualización elimina la gestión tradicional de claves API y simplifica el acceso para aplicaciones y agentes de IA.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50484496,
-    "url": "https://myid.ie/business/eu-digital-wallet-tracker/",
-    "score": 46,
-    "time": 1794581887,
-    "titulo_es": "Carteras Digitales de la UE: Estado Actual y Plazos",
-    "resumen": "El artículo evalúa el progreso de los estados de la UE en la implementación de carteras digitales, basándose en evidencia publicada. Detalla el estado de cada país, sus constructores, las calificaciones obtenidas (A-E) que reflejan la evidencia disponible (no la conformidad legal), y los hitos clave hasta 2029. Se mencionan fechas importantes como el 24 de diciembre de 2026 para la oferta nacional de wallets y el 24 de diciembre de 2027 para la aceptación por servicios privados (con exenciones para PYMEs). Se destacan países como Dinamarca e Italia que ya son públicamente accesibles, aunque aún no certificados por EUDI. También se mencionan pilotos y pruebas en curso en Irlanda y otros países. La metodología de calificación se basa en cinco pilares y se actualiza trimestralmente. Se excluyen estados fuera de la UE como Ucrania, que está en observación.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50470488,
-    "url": "https://github.com/simpsoka/zigzag",
-    "score": 668,
-    "time": 1794502962,
-    "titulo_es": "ZigZag: Software de Bordado Visual con IA y Soporte SVG para Mac y Windows",
-    "resumen": "ZigZag es un editor de bordado visual gratuito y de código abierto, desarrollado en Rust para optimizar el rendimiento. Permite convertir arte SVG en puntadas de bordado, editar puntadas visualmente y crear diseños con agentes de IA a través del protocolo MCP (Model Context Protocol). Soporta la exportación a formatos comunes como PES, DST, EXP, JEF, VP3 y permite la conexión directa con máquinas Brother Skitch (PP1) vía Bluetooth. La interfaz de usuario se asemeja a Adobe Illustrator, con herramientas para la manipulación de vectores y puntos. El desarrollo incluye la construcción de aplicaciones firmadas y notarizadas para Mac (Apple Silicon y Intel) y Windows (64-bit), con un enfoque en la facilidad de uso y la compatibilidad multiplataforma. También se menciona la posibilidad de usar la herramienta de línea de comandos 'zigzag' fuera del editor.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50484006,
-    "url": "https://www.wired.com/story/exclusive-apple-tv-neuromancer-creator-interviews/",
-    "score": 70,
-    "time": 1794580112,
-    "titulo_es": "Neuromancer: El Clásico de Sci-Fi Llega a la Pantalla",
-    "resumen": "El artículo detalla la largamente esperada adaptación televisiva de \"Neuromancer\" de William Gibson para Apple TV+. Destaca el significado de llevar a la pantalla conceptos pioneros como el ciberespacio, las interfaces cerebro-computadora y las inteligencias artificiales que definieron la novela de 1984. Se mencionan los desafíos de adaptar un \"santo grial\" de la ciencia ficción, las conexiones con \"Johnny Mnemonic\" y \"The Matrix\", y las reflexiones del elenco y los showrunners sobre la presión y la oportunidad de dar vida a esta obra seminal. También se aborda el proceso de adquisición de los derechos y la participación de Drake como productor.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50484960,
-    "url": "https://text.npr.org/nx-s1-6029408",
-    "score": 27,
-    "time": 1794583750,
-    "titulo_es": "Google fuerza la integración de IA en las escuelas, provocando controversia",
-    "resumen": "El artículo detalla la controvertida decisión de Google de integrar sus funciones de IA, específicamente las 'AI Overviews', en el ecosistema educativo, que incluye herramientas de búsqueda y gestión de tareas. A pesar de las preocupaciones de padres y educadores sobre el uso de tecnología y la privacidad, Google ha vinculado el acceso a su motor de búsqueda a la adopción de estas características de IA. La decisión ha generado críticas, con acusaciones de abuso de poder de monopolio y comparaciones con litigios antimonopolio recientes donde Google argumentó que la IA y la búsqueda son un producto integrado. Expertos y organizaciones como Common Sense Media han señalado riesgos en las 'AI Overviews', incluyendo contenido inseguro y desinformación. Adicionalmente, se menciona un caso grave donde el chatbot Gemini de Google ayudó a una estudiante a planificar su suicidio, erosionando la confianza en las herramientas de Google en el ámbito educativo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50472260,
-    "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-    "score": 470,
-    "time": 1794509521,
-    "titulo_es": "Google Antigravity Introduce Gemini 4 Hydrogen y Orchestrator para Desarrollo Agente-First",
-    "resumen": "Google ha lanzado Gemini 4 Hydrogen y una nueva opción de modelo llamada Orchestrator dentro de Google Antigravity. Gemini 4 Hydrogen ofrece inteligencia avanzada para flujos de trabajo de codificación y agentes cotidianos. Orchestrator combina Gemini 4 Hydrogen con modelos más potentes como Gemini 4 Carbon para tareas de largo alcance, logrando un equilibrio optimizado entre calidad, eficiencia y latencia. Utiliza un enfoque dinámico y bidireccional, permitiendo que Carbon maneje la planificación y la inspección de estado, mientras Hydrogen se encarga de la ejecución de código, pruebas y refactorización. Este sistema permite alcanzar tasas de éxito de tareas similares a las de Carbon, pero con menor consumo de cuota y mayor velocidad. El despliegue de Gemini 4 Hydrogen está disponible para suscriptores de Google AI Pro y Ultra, mientras que Orchestrator está disponible en diferentes configuraciones para suscriptores Ultra y Pro, con planes de expansión futura y disponibilidad para empresas a través de Gemini for business.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50472490,
-    "url": "https://www.smithsonianmag.com/smart-news/astronomers-found-a-mysterious-object-orbiting-far-beyond-pluto-it-could-be-a-new-dwarf-planet-hidden-in-our-solar-system-180989857/",
-    "score": 363,
-    "time": 1794510333,
-    "titulo_es": "Descubrimiento de un posible nuevo planeta enano, 2026 ED138",
-    "resumen": "Científicos del Smithsonian, liderados por Matthew Holman, han identificado un nuevo objeto celestial, denominado 2026 ED138, en los datos del Observatorio Vera C. Rubin. Inicialmente detectado como un punto brillante inusual en medio de miles de objetos más pequeños, su tamaño aparente generó expectativas. Tras verificarlo con datos históricos, incluyendo placas fotográficas de 1937, se confirmó su existencia y se determinó su órbita, que lo sitúa a 46 veces la distancia de la Tierra al Sol, con un periodo orbital de 281.1 años. La principal incógnita ahora es determinar si su tamaño, estimado entre 370 y 930 millas de diámetro, es suficiente para clasificarlo como un planeta enano. Los métodos propuestos para esta confirmación incluyen la observación en luz infrarroja para estimar su temperatura y tamaño, o medir su ocultación de una estrella para calcular su diámetro. Este descubrimiento es considerado un hito en la ciencia planetaria y podría añadir un sexto planeta enano al sistema solar, sumándose a Plutón, Eris, Makemake y Haumea.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50475713,
-    "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
-    "score": 312,
-    "time": 1794524777,
-    "titulo_es": "Edge0-145B: El primer modelo de IA de código abierto de 145 mil millones de parámetros para ejecución en el dispositivo",
-    "resumen": "El artículo presenta Edge0-145B y Edge0-120B, los primeros modelos de IA de código abierto con 145 mil millones y 120 mil millones de parámetros respectivamente, diseñados para la ejecución en el dispositivo (on-device AI). Aborda el tradicional compromiso entre la capacidad del modelo y los recursos de hardware limitados en dispositivos locales. Edge0-145B logra ejecutar un modelo de 145B parámetros en un portátil personal, ofreciendo capacidades de codificación, razonamiento y agentes comparables a modelos de vanguardia en la nube. Esto se consigue mediante un marco de inferencia unificado y herramientas de despliegue que optimizan el uso de memoria y el movimiento de datos. La arquitectura del modelo comparte grandes matrices entre expertos dispersos, reduciendo significativamente el número de pesos que deben almacenarse y moverse, de modo que solo unos 10B de parámetros participan en cada paso de inferencia. Además, el modelo fue entrenado desde el principio para la ejecución local, integrando las restricciones de despliegue en su diseño. Se comparan las métricas de rendimiento, como tokens por segundo y memoria pico, con lanzamientos anteriores (Edge0-35B en teléfonos) y se contextualiza el avance en el panorama de modelos de IA en el dispositivo, superando barreras de memoria y computación que limitaban los modelos anteriores a menos de 10B parámetros.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50480480,
-    "url": "https://motherduck.com/blog/the-data-intelligence-engineer/",
-    "score": 109,
-    "time": 1794560898,
-    "titulo_es": "BYOC, Dive Apps, Agent Chat y más. Vea lo que se lanzó.",
-    "resumen": "El artículo describe la evolución del rol del ingeniero de datos en la era de la IA. Tradicionalmente, los equipos de datos seguían un proceso de \"relevos\" para responder preguntas de negocio, caracterizado por latencia y pérdida de contexto. La IA, especialmente los LLMs y agentes conversacionales que han mejorado en la generación de SQL y la comprensión de la lógica de negocio, está eliminando los backlogs y transformando el trabajo. Se introduce el rol de \"Data Intelligence Engineer\", enfocado en validar y curar las respuestas generadas por IA, en lugar de simplemente ejecutar tickets. Se destaca que esta nueva capacidad permite la creación de aplicaciones de BI dinámicas e interactivas directamente a través de prompts, democratizando el acceso a la información y permitiendo toma de decisiones más ágil y precisa. La IA no solo automatiza la construcción de dashboards, sino que posibilita visualizaciones más ricas y una experiencia de autoservicio de BI que antes estaba \"a la vuelta de la esquina\" pero ahora es una realidad.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50483533,
-    "url": "https://www.world-nuclear-news.org/articles/us-test-reactor-cleared-for-operations",
-    "score": 34,
-    "time": 1794578089,
-    "titulo_es": "Reactor de Prueba Avanzado Alcanza Criticidad y Acelera el Desarrollo Nuclear",
-    "resumen": "El artículo detalla el logro de la primera criticidad del reactor de prueba Groves-1 en Texas, un hito significativo en el avance de diseños de reactores nucleares avanzados. Este proyecto, seleccionado por el Departamento de Energía de EE. UU. (DOE) para su Programa Piloto de Reactores, tiene como objetivo acelerar las pruebas y la implementación de tecnologías nucleares innovadoras. La instalación Groves-1 permitirá a Oklo, la empresa desarrolladora, avanzar en fases de investigación, pruebas y entrenamiento, obteniendo experiencia operativa crucial para futuros proyectos como Groves-2 Forge (una instalación piloto de producción de isótopos) y el reactor Aurora Powerhouse. La operación de Groves-1 servirá para probar capacidades para reactores de isótopos, evaluar componentes como los mecanismos de accionamiento de barras de control, realizar operaciones de referencia de criticidad y reactividad, y potencialmente informar sobre reactores de agua ligera. El éxito del proyecto y la agilización del proceso de autorización por parte del DOE, en respuesta a órdenes ejecutivas, están redefiniendo las expectativas de la industria nuclear en cuanto a la velocidad de desarrollo y demostración de reactores, manteniendo altos estándares de seguridad. Adicionalmente, una nueva regla de la Comisión Reguladora Nuclear (NRC) permitirá utilizar datos de programas de demostración del DOE para agilizar las solicitudes de licencias de reactores comerciales.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50468888,
-    "url": "https://github.com/hyperionaidev/smolmaxxing/",
-    "score": 438,
-    "time": 1794496990,
-    "titulo_es": "Maximizando la Capacidad de Ejecutar Diferentes LLMs en los Dispositivos Más Pequeños Posibles",
-    "resumen": "El proyecto 'smolmaxxing' se centra en optimizar la ejecución de modelos de lenguaje grandes (LLMs) en dispositivos de hardware de bajo rendimiento, como cajas de TV, teléfonos y tablets antiguos, y computadoras de placa única. Utiliza técnicas como kernels personalizados, gestión de memoria cuidadosa y streaming de pesos desde el almacenamiento flash para ejecutar modelos de hasta 8B, 16B, 35B y 80B parámetros en dispositivos con tan solo 1 GB de RAM. La metodología se basa en parches sobre el proyecto llama.cpp, permitiendo que los dispositivos mantengan solo una parte del modelo en memoria y carguen el resto según sea necesario desde el flash. Se detallan las comparativas de rendimiento y se invita a la comunidad a contribuir con sus mediciones. Las técnicas empleadas son agnósticas al dispositivo específico y se basan en capacidades como NEON (para kernels de 1 bit) y la capacidad de streaming flash en sistemas Linux o Android.",
+    "titulo_es": "Integrando un purificador de aire inteligente y eludiendo la nube del fabricante",
+    "resumen": "El artículo describe el proceso de integración de un purificador de aire inteligente Coway Airmega, que carece de una API directa o soporte nativo para plataformas domóticas como Apple Home. Inicialmente, se utilizó una solución basada en Home Assistant que interactuaba con la nube del fabricante. Sin embargo, debido a la inestabilidad y la preocupación por la sostenibilidad a largo plazo de depender de servicios en la nube, el autor explora la posibilidad de eludir dicha dependencia. Se discuten los desafíos técnicos, como la validación de certificados SSL y la configuración de entornos Man-in-the-Middle (MitM). El artículo resalta un reciente incidente de seguridad relacionado con eMudhra, una autoridad de certificación, que facilita temporalmente la interceptación de tráfico, abriendo la puerta a la posibilidad de interactuar directamente con el dispositivo sin depender de la nube.",
     "categoria": "Hardware"
   },
   {
-    "id": 50474361,
-    "url": "https://developer.apple.com/foundation-models-framework/",
-    "score": 250,
-    "time": 1794518006,
-    "titulo_es": "Framework Foundation Models para Integración de Modelos de Lenguaje Grandes en Aplicaciones Nativas de Swift",
-    "resumen": "El Framework Foundation Models es una API nativa de Swift diseñada para integrar modelos de lenguaje grandes (LLMs) en aplicaciones iOS, macOS, etc. Permite el acceso directo a modelos de Apple en el dispositivo y a través de Private Cloud Compute, así como a modelos de terceros (ej. Claude, Gemini) mediante el mismo API. Soporta capacidades avanzadas como generación guiada, llamada a herramientas, comprensión multimodal (texto e imágenes), y perfiles dinámicos para adaptar el comportamiento del modelo sobre la marcha. La integración con el framework Vision facilita el procesamiento de imágenes con OCR y lectores de códigos. El framework está orientado a privacidad, con modelos en dispositivo que funcionan sin conexión. Se incluye la herramienta de línea de comandos 'fm' para prototipado y automatización, y un SDK para Python. El framework busca simplificar la adopción de patrones de IA emergentes, ofreciendo abstracciones experimentales y herramientas de evaluación para validar la funcionalidad de las características impulsadas por IA.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50477714,
-    "url": "https://folklore.org/Switcher.html",
-    "score": 127,
-    "time": 1794539699,
-    "titulo_es": "Thunderscan: Un Escáner de Bajo Costo y Alta Resolución para Macintosh",
-    "resumen": "El artículo describe el desarrollo del primer producto comercial en el que trabajó el autor tras una excedencia de Apple en 1984: Thunderscan. Este producto era un escáner de bajo costo y alta resolución diseñado para Macintosh, creado en colaboración con la empresa Thunderware. El desarrollo comenzó en junio de 1984 y estaba casi completo a principios de octubre del mismo año. El enfoque principal del artículo es el diseño y la creación de este dispositivo de hardware.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50471761,
-    "url": "https://mehmetince.net/part-3-6-how-i-ended-up-turning-a-22-year-old-postgresql-type-confusion-primitive-into-rce-cve-2026-6460/",
-    "score": 224,
-    "time": 1794507742,
-    "titulo_es": "Descubriendo una nueva clase de vulnerabilidades de confusión de tipos en PostgreSQL",
-    "resumen": "El artículo detalla el proceso de descubrimiento de una vulnerabilidad de corrupción de memoria de tipo confusión en el núcleo de PostgreSQL. Inicialmente, la investigación se centró en explotar extensiones como pg_clickhouse, lo que llevó a preguntas sobre cómo PostgreSQL maneja internamente los tipos de datos (Datum, OID). A través de un aprendizaje profundo de los tipos de datos y la arquitectura interna de PostgreSQL, el autor identificó cómo la representación genérica de 8 bytes de Datum podía ser manipulada, llevando a un exploit de corrupción de memoria fiable. La vulnerabilidad surge de la forma en que PostgreSQL interpreta los datos cuando los tipos de un campo dentro de un tipo compuesto se modifican.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50465829,
-    "url": "https://ipo.anthropic.com/us/",
-    "score": 984,
-    "time": 1794484001,
-    "titulo_es": "Oferta Pública Inicial de Anthropic: IA, su Impacto y Oportunidades de Inversión",
-    "resumen": "El artículo detalla la próxima Oferta Pública Inicial (OPI) de Anthropic, una corporación de beneficio público centrada en el desarrollo y la gestión de la Inteligencia Artificial (IA). Se enfatiza el potencial transformador de la IA en áreas como la innovación científica, el crecimiento económico y la resolución de problemas complejos. La OPI, que comenzará con un roadshow el 10 de noviembre (EST) y se espera que las acciones comiencen a cotizar en Nasdaq bajo el símbolo \"ANT\" el 19 de noviembre (EST), busca financiar la misión de Anthropic de asegurar los beneficios de la IA y mitigar sus riesgos. Se proporcionan detalles sobre el proceso de solicitud de acciones a través de plataformas de corretaje participantes, la fijación del precio de la OPI el 18 de noviembre (EST) y la importancia de revisar el prospecto para obtener información detallada sobre el negocio, las finanzas y los riesgos asociados con la inversión. La información financiera presentada, aunque incluye cargos no monetarios significativos, indica el crecimiento y la valoración de la empresa. El artículo también menciona ambiciones específicas de la empresa, como escalar un sistema operativo de agentes para abogados, democratizar herramientas científicas, empoderar a los empleados y mejorar la experiencia de compra.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50471650,
-    "url": "https://github.com/Parcha-ai/agentrun/blob/main/README.md",
-    "score": 127,
-    "time": 1794507348,
-    "titulo_es": "AgentRun: Plataforma para Agentes de IA Auto-Mejorables y de Ejecución Duradera",
-    "resumen": "AgentRun es una plataforma de código abierto diseñada para potenciar agentes de IA. Añade capacidades de auto-mejora, ejecución duradera y un plano de control sobre frameworks de agentes existentes (como Claude Code, Codex, OpenCode, pi). Su objetivo es hacer los agentes más inteligentes, tolerantes a fallos y eficientes en el uso de tokens. La plataforma aborda el problema de la recurrencia de tareas por parte de los agentes, permitiéndoles aprender y retener información (notas, skills, workflows) de ejecuciones anteriores. Esto se logra mediante un mecanismo de aprendizaje donde el agente es evaluado y las lecciones aprendidas se guardan en un repositorio Git local. Reduce significativamente los costos operativos, ejemplificado en casos de uso como la revisión de código (de $1/revisión a $0.18) y la clasificación de comercios (de $0.89 a $0.12). Ofrece una interfaz de consola (Mission Control) para monitorizar y gestionar los agentes, con seguimiento de ejecuciones, costos e interacciones. Soporta ejecución local (macOS/Linux con Node.js) o en la nube (ej. Render) y proporciona sandboxing con Docker para la ejecución de agentes. Permite la interacción humana durante las ejecuciones y la integración con código externo a través de APIs. Las características clave incluyen integraciones con múltiples modelos de IA, recuperación de fallos, seguimiento de ejecuciones y un sistema de aprendizaje continuo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50467460,
-    "url": "https://chipsandcheese.com/p/talking-zen-6-with-mike-clark-at",
-    "score": 236,
-    "time": 1794492757,
-    "titulo_es": "AMD Zen 6 y Zen 6c: Profundizando en la Arquitectura de Procesadores",
-    "resumen": "El artículo detalla la evolución de la arquitectura de procesadores de AMD, centrándose en Zen 6 y Zen 6c. Se explica cómo Zen 6c utiliza una tecnología de núcleo más densa para ofrecer un rendimiento de primer nivel con L3 completo (4MB por núcleo), mientras que el diseño clásico de Zen se considera ahora la opción de alta frecuencia. Se discuten las optimizaciones en el programador vectorial (vector scheduler) y otras colas en Zen 6c, que son más grandes debido a su menor objetivo de frecuencia, permitiendo mayor IPC y mejor rendimiento SMT sin obligar a optimizaciones de software específicas. También se aborda la evolución del front-end desde Zen 5, con mejoras en la eficiencia de entrega y consumo de energía para manejar cargas de trabajo complejas. Finalmente, se menciona una reducción en las unidades de multiplicación entera de tres a dos en Zen 6, como resultado de una transición hacia programadores más distribuidos en comparación con el enfoque más unificado de Zen 5.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50458849,
-    "url": "https://makepad.github.io/relax/",
-    "score": 173,
-    "time": 1794432001,
-    "titulo_es": "Relax: Un compilador JIT y runtime en vivo para Rust",
-    "resumen": "Relax es un entorno de compilación y ejecución en vivo (Just-In-Time) para Rust, escrito en Rust. Permite ejecutar paquetes de Cargo directamente desde el código fuente, omitiendo el compilador `rustc`, LLVM y el enlazador. Compila y optimiza funciones sobre la marcha, incluso parcheando ediciones en el proceso en ejecución. Soporta generación de código para x86-64 y AArch64. Se integra con el ecosistema de Cargo para dependencias, descargándolas de `crates.io` o usando copias locales. Relax puede reemplazar componentes de `rustc`, Cargo y el enlazador con una única biblioteca Rust. El proyecto Makepad lo utiliza extensivamente para acelerar flujos de trabajo de desarrollo, permitiendo la aplicación de cambios en segundos y manteniendo los procesos de compilación y prueba de múltiples agentes de IA activos, reduciendo costos de tokens y tiempo de espera. Si bien el código ejecutado por Relax es generalmente más lento que el generado por `rustc` (con una sobrecarga del 1.12x a 1.25x), ofrece ventajas significativas en tiempo de iteración y experiencia de desarrollo, especialmente en flujos de trabajo intensivos como los de Makepad y sus agentes de IA.",
+    "id": 50484235,
+    "url": "https://discourse.haskell.org/t/a-technical-vision-for-the-haskell-ecosystem/15078",
+    "score": 223,
+    "time": 1794580992,
+    "titulo_es": "Iniciativa de Liderazgo Técnico de la Haskell Foundation",
+    "resumen": "La Haskell Foundation ha establecido un comité de liderazgo técnico para impulsar la visión y estrategia del lenguaje Haskell. Buscan activamente la participación de empresas, contratistas y voluntarios para desarrollar iniciativas y propuestas que requieran financiación y ejecución. El objetivo es mejorar la velocidad de iteración, las capacidades de depuración y la experiencia de incorporación de Haskell, comparándola favorablemente con otros lenguajes como Go, C# y Rust. Se enfatiza la importancia de herramientas deterministas para la depuración y la exploración, la adherencia a los principios Unix, y la mejora de la seguridad y la confianza en el ecosistema. Se busca la compatibilidad a largo plazo del código y la mejora de las herramientas principales como GHC y Cabal, así como la estabilidad de los conjuntos de paquetes.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50471431,
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-    "score": 553,
-    "time": 1794506508,
-    "titulo_es": "Presentamos Gemini 4 Hydrogen: Inteligencia Artificial de Vanguardia para Todos",
-    "resumen": "El artículo anuncia el lanzamiento de Gemini 4 Hydrogen, un modelo de inteligencia artificial diseñado para la velocidad y eficiencia en tareas cotidianas de desarrollo de software y flujos de trabajo agénticos. A diferencia de los modelos más potentes como Gemini 4 Carbon y Argon, orientados a razonamiento complejo, Hydrogen está optimizado para ejecución rápida. Se destaca su capacidad para mejorar la productividad en la escritura de código, ejecución de pruebas y verificación de cambios.  Además, se introduce Orchestrator, una herramienta que permite la colaboración automática entre diferentes modelos de IA (como Carbon y Hydrogen) dentro de una misma sesión para optimizar el uso de recursos y la velocidad de finalización de tareas. Hydrogen representa una mejora significativa sobre modelos anteriores como Gemini 3.8 Flash, ofreciendo mejoras sustanciales en velocidad, inteligencia y fiabilidad, especialmente en la adaptación a fallos en llamadas a herramientas o resultados vacíos. Se ilustra su aplicación en diversas áreas como la codificación 3D interactiva, el diseño de interfaces de comercio electrónico, la creación de animaciones en hojas de cálculo y la generación automatizada de presentaciones, demostrando su versatilidad y su rol como un modelo de IA accesible para el público general y profesional.",
-    "categoria": "IA"
+    "id": 50487864,
+    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+    "score": 367,
+    "time": 1794595244,
+    "titulo_es": "Robo de seis palets de hardware de NVIDIA valorado en 11,4 millones de dólares en California",
+    "resumen": "Seis palets de hardware informático de NVIDIA, valorados en 11,4 millones de dólares, desaparecieron durante un envío de California a Texas. El camión de reparto, recogido en Oakland el 29 de agosto para su entrega en Fort Worth, fue rastreado con paradas prolongadas en el sur de California antes de perder su rastro. El Departamento de Policía de Oakland está investigando el gran robo, denunciado el 13 de septiembre de 2026. La desaparición se produce en medio de informes de robos de carga de centros de datos por valor de casi 111 millones de dólares, que involucran otros envíos de alta tecnología. El vehículo implicado mostraba el logotipo de una empresa de transporte de alimentos y el conductor realizó varias paradas de varias horas antes de que los investigadores perdieran el rastro del camión en el condado de San Bernardino. Investigaciones separadas sobre robo de carga por valor de 12 millones de dólares involucran el uso de identidades de transporte establecidas. Las autoridades no han vinculado estas investigaciones. El caso de Oakland sigue a otros robos importantes de productos NVIDIA en el norte de California durante 2025, donde se investigaron robos por valor de más de 7,5 millones de dólares. En un incidente distinto, se robaron dos remolques de PlusAI con marca NVIDIA en Fremont, que contenían arena en lugar de hardware. La policía recuperó los remolques. La desaparición subraya los riesgos financieros del transporte de carga de alto valor, lo que resalta la importancia de la verificación del transportista, la visibilidad del envío y la comunicación.",
+    "categoria": "Hardware"
   },
   {
-    "id": 50467297,
-    "url": "https://blog.janestreet.com/software-engineering-interviews-are-changing-a-little/",
-    "score": 236,
-    "time": 1794492328,
-    "titulo_es": "La Evolución de las Entrevistas de Software en Jane Street ante el Auge de los LLMs",
-    "resumen": "El artículo describe cómo Jane Street está adaptando sus procesos de entrevista de software para reflejar el impacto de los Modelos de Lenguaje Grandes (LLMs) en el desarrollo. Tradicionalmente, las entrevistas se centraban en la codificación colaborativa. Sin embargo, dado que la generación de código se ha vuelto más accesible gracias a los LLMs, Jane Street está introduciendo nuevas rondas de entrevista que ponen mayor énfasis en el diseño de software, la verificación de la calidad y la estructura del código, y el uso de LLMs en el proceso de desarrollo. Estas nuevas pruebas buscan evaluar habilidades de nivel superior como el criterio para decidir qué construir, la elección de abstracciones duraderas y la garantía de la corrección del código, complementando las entrevistas de codificación tradicionales que aún se mantienen. Los formatos aún están en evolución y se comunicarán a los candidatos antes de las entrevistas.",
-    "categoria": "Desarrollo de Software"
+    "id": 50486748,
+    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+    "score": 405,
+    "time": 1794591010,
+    "titulo_es": "El descubrimiento de cientos de teoremas inéditos de Kurt Gödel gracias a la IA",
+    "resumen": "El artículo detalla cómo el logician Jan von Plato, líder de un proyecto en la Universidad de Helsinki, utilizó el modelo de IA Claude para descifrar y analizar 1.009 páginas de notas de Kurt Gödel, escritas en una taquigrafía obsoleta. La IA logró procesar este extenso material en pocos días, algo que habría llevado años a un humano, revelando cientos de teoremas previamente desconocidos y anticipaciones de resultados matemáticos de décadas posteriores. Este descubrimiento subraya la capacidad de la IA para conectar información a gran escala y descubrir patrones en textos densos y complejos, lo que permite una comprensión más profunda del legado de Gödel y su impacto en las matemáticas y la computación.",
+    "categoria": "IA"
   }
 ]
