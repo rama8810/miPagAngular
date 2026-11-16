@@ -1,272 +1,164 @@
 [
   {
-    "id": 50507303,
-    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
-    "score": 108,
-    "time": 1794754018,
-    "titulo_es": "Por qué todo el código generado por IA debería ser de código abierto",
-    "resumen": "El autor sostiene que todo el código generado por inteligencia artificial debería publicarse bajo licencias de código abierto o dominio público (CC0). Fundamenta su postura en dos motivos clave: primero, que los modelos fueron entrenados masivamente con repositorios de código abierto y plataformas como Stack Overflow sin atribución adecuada, lo que considera una forma de 'blanqueo de licencias'; y segundo, que el código generado puramente por máquinas carece de autoría humana, por lo que legalmente no debería ser sujeto a derechos de autor, según precedentes jurídicos en Estados Unidos y otras jurisdicciones.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50506894,
-    "url": "https://prog21.dadgum.com/116.html",
-    "score": 56,
-    "time": 1794750256,
-    "titulo_es": "No se trata de la tecnología en sí misma: La asombrosa eficiencia de Turbo Pascal 3",
-    "resumen": "El autor reflexiona sobre la eficiencia del software analizando Turbo Pascal 3.02 (1986), cuyo ejecutable completo —incluyendo compilador, extensiones comerciales y entorno IDE integrado— ocupaba apenas 39.731 bytes y ofrecía velocidades de compilación órdenes de magnitud más rápidas que las herramientas de Microsoft de la época. Para ilustrar el cambio de paradigma y el crecimiento del tamaño del software moderno, se compara su diminuto tamaño con elementos cotidianos del desarrollo en 2011, demostrando ser más pequeño que librerías como jQuery minificado, un encabezado de C (zlib.h) o incluso imágenes web simples.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50506376,
-    "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
-    "score": 77,
-    "time": 1794744846,
-    "titulo_es": "Cómo los LLMs codifican y procesan la información posicional: Métodos clásicos y contemporáneos como RoPE",
-    "resumen": "El artículo analiza en profundidad cómo los modelos de lenguaje (LLMs) representan y procesan la posición de los tokens dentro de las arquitecturas Transformer. Contrasta los enfoques de incrustaciones posicionales absolutas aprendidas (utilizadas en modelos clásicos como GPT-2) con métodos relativos modernos como RoPE (Rotary Position Embedding, empleados en modelos recientes como MiniMax-M3) integrados directamente en el mecanismo de atención, proporcionando una base matemática y conceptual junto a implementaciones en PyTorch.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50506588,
-    "url": "https://lucypero.com/lucynes.html",
-    "score": 42,
-    "time": 1794747107,
-    "titulo_es": "Un emulador de NES escrito en Odin",
-    "resumen": "El autor comparte su experiencia tras desarrollar un emulador de NES en el lenguaje Odin durante siete meses. Explica la complejidad de alcanzar alta precisión debido a la estricta sincronización entre la CPU y la PPU, así como la necesidad de implementar diversos 'mappers' de cartuchos. A nivel de software, destaca las particularidades de Odin, como la ausencia de promoción automática de enteros, el diseño de arquitecturas de gestión de memoria con asignadores de tipo arena y temporales por fotograma, y los retos de serialización usando la biblioteca CBOR.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50499017,
-    "url": "https://www.crissyfield.de/research/lovable-en/",
-    "score": 929,
-    "time": 1794678190,
-    "titulo_es": "La IA facilita la creación de aplicaciones web, pero el manejo de datos sensibles aún requiere especial cuidado",
-    "resumen": "Una investigación técnica sobre 159.041 proyectos generados mediante la plataforma de desarrollo con IA Lovable reveló graves problemas de seguridad y exposición de datos confidenciales. Al analizar aplicaciones que integraban Supabase como backend, se identificó que miles de proyectos exponían registros de bases de datos de forma pública sin requerir autenticación ni políticas de control de acceso adecuadas (como Row Level Security). En aproximadamente el 30% de los sitios analizados a fondo se pudieron extraer datos personales no protegidos, incluidos correos electrónicos, nombres completos y fechas de nacimiento, exponiendo la peligrosa brecha entre la facilidad de creación sin código promovida por herramientas de IA y la responsabilidad real sobre la seguridad de los datos.",
+    "id": 50513160,
+    "url": "https://iter.ca/post/ubo-uxss/",
+    "score": 571,
+    "time": 1794794688,
+    "titulo_es": "Vulnerabilidad XSS Universal en uBlock Origin (MV2 Firefox)",
+    "resumen": "El artículo detalla una vulnerabilidad de Cross-Site Scripting (XSS) universal encontrada en la versión MV2 de uBlock Origin para Firefox. Un sitio web malicioso podía engañar a la extensión para que añadiera filtros de confianza arbitrarios. Estos filtros de confianza permiten la inyección de código JavaScript en páginas web. El ataque se basaba en la explotación de un filtro existente ('lootdest.*##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)') para filtrar la petición XHR interna que la extensión realizaba para obtener su UUID interno. Una vez obtenido el UUID, el atacante podía usar la funcionalidad del selector de elementos (element picker) de uBlock Origin para crear un filtro de confianza inyectando código JavaScript malicioso en el contexto de cualquier sitio web. La vulnerabilidad se remediaba añadiendo una verificación de contraseña secreta entre el script de contenido y la interfaz del selector de elementos.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50502988,
-    "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
-    "score": 347,
-    "time": 1794705516,
-    "titulo_es": "Jueza determina indicios plausibles de conspiración entre fabricantes de DRAM para restringir el suministro y priorizar HBM",
-    "resumen": "Un tribunal federal de California denegó la moción de desestimación en una demanda antimonopolio colectiva contra Samsung, SK Hynix y Micron. Se acusa a las tres compañías, que concentran más del 91% del mercado global, de coordinarse para restringir la producción de memoria DRAM convencional (incluida DDR5) y reorientar su capacidad de obleas hacia memoria de alto ancho de banda (HBM) para aceleradores de IA, provocando aumentos masivos de precios y alterando el suministro de componentes de hardware.",
-    "categoria": "Hardware"
+    "id": 50497746,
+    "url": "https://github.com/tom7/noperts/blob/main/septopert.md",
+    "score": 24,
+    "time": 1794669750,
+    "titulo_es": "El Septopert: Un Poliedro Convexo de Siete Vértices y Mínima Altura en la Familia Nopert",
+    "resumen": "El artículo describe el \"Septopert\", un poliedro convexo de siete vértices que se caracteriza por no ser un \"Rupert\" (un \"nopert\"). Se presenta como el miembro canónico de una familia de noperts, incluyendo variantes como Septopert Classic, SeptopertM18 y SeptopertM12. Se detallan sus coordenadas enteras específicas, que representan la menor altura posible para un nopert dentro de esta familia, con un valor máximo absoluto de las coordenadas de aproximadamente 12.12. La prueba de su propiedad de \"nopert\" ha sido verificada utilizando el asistente de pruebas formales Lean, con detalles sobre los puntos de entrada en el código fuente (proof/Septopert.lean y proof/Septopert/Integer.lean). Se incluye un archivo STL para visualización y se discuten las propiedades geométricas y las longitudes de sus aristas (14 para las aristas del ápice, 14√2 para las aristas de la base y 7√2 para las aristas del triángulo interior). La verificación en Lean involucra datos de certificación como tablas de solución y certificados de \"caps\" (espejo, arco, eje y P), que son validados por el programa \"constructSeptopert\". Se menciona que el Septopert se encuentra en una posición especial dentro de su familia, exhibiendo una esquina cúbica exacta y una \"Triforce\". La demostración general utiliza técnicas aplicadas previamente a otros miembros de la familia, como el SeptopertM18, y aborda regiones de vista problemáticas mediante certificados de \"blow-up\" que mueven la decisión al análisis de segundo orden, donde la holgura es estrictamente negativa, garantizando la existencia del certificado. La definición de altura de un miembro de la familia se basa en el rango de sus cinco valores coordenados definitorios.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50481321,
-    "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
-    "score": 51,
-    "time": 1794565561,
-    "titulo_es": "Experimentos de IA / Geometría de representaciones: Mapeando miles de conversaciones dentro de Qwen para ver cómo toma forma el lenguaje",
-    "resumen": "El artículo describe un experimento de investigación e interpretabilidad sobre el modelo de lenguaje Qwen3-1.7B, enfocado en mapear y visualizar la geometría de sus representaciones vectoriales internas en el espacio del flujo residual (residual stream). Analizando vectores de 2.048 dimensiones a lo largo de 100 temas y múltiples idiomas (incluyendo muestras de código), el autor proyecta mediante PCA global cómo las capas del modelo transforman los embeddings iniciales en trayectorias continuas de estados contextuales, revelando que las conversaciones ocupan estructuras geométricas específicas y de menor dimensión.",
-    "categoria": "IA"
+    "id": 50518068,
+    "url": "https://artemlegotin.com/golden-board/",
+    "score": 19,
+    "time": 1794839934,
+    "titulo_es": "Golden Board: Enseñando Ajedrez a Inteligencias Desconocidas",
+    "resumen": "Golden Board es un mensaje binario de 512 KiB (4,194,304 bits) diseñado para enseñar el juego de ajedrez a una inteligencia desconocida sin lenguaje, cultura o conocimiento previo compartido. El mensaje se organiza en una cuadrícula de 2048x2048. Las primeras 64 filas contienen 32 dibujos de 64x64 celdas cada uno, formando un 'bootstrap' que enseña el formato de decodificación. Este bootstrap es agnóstico al ajedrez y puede ser adaptado para otros mensajes estructurados. El resto del mensaje contiene lecciones visuales de ajedrez, ejercicios con retroalimentación, partidas completas y metadatos para su localización y visualización. La inspiración proviene de mensajes interestelares como el Voyager Golden Record y Lincos. Se eligió el ajedrez por su complejidad emergente a partir de un conjunto simple de reglas y por ofrecer una visión de la mente humana. Se realizaron pruebas con LLMs para validar la recuperación de bytes y la comprensión de las lecciones, identificando ambigüedades y mejorando el diseño. El proyecto incluye código fuente y documentación en GitHub, con herramientas en Python para adaptar el sistema a otros fines educativos y de investigación. La representación visual original de los bits como celdas en blanco y negro se enriquece con colores, guías y etiquetas en la documentación para facilitar la lectura, pero el receptor debe inferir la estructura basándose en metadatos y patrones.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50475759,
-    "url": "https://subalpinecircuits.com/chasing-an-audio-artifact-on-power-loss/",
-    "score": 25,
-    "time": 1794525085,
-    "titulo_es": "Solución del molesto pico de voltaje al apagar el DAC PCM5102A en el sintetizador SA-01",
-    "resumen": "El autor investiga y soluciona un artefacto sonoro (un 'clic' o golpe de audio) que ocurría al apagar o desconectar el sintetizador SA-01, generado en la salida del DAC PCM5102A. A través de mediciones con osciloscopio, descubrió que el pico se producía tras el proceso de silenciamiento (muting) automático del chip debido a que este perdía energía antes de disipar la carga residual de la bomba de carga. Aunque una prueba en protoboard con un condensador electrolítico de 220 µF solucionó el problema, este reapareció en la PCB final porque los condensadores cerámicos multicapa (MLCC) de encapsulado 0805 sufren una degradación de hasta un 50-60% en su capacitancia real bajo sesgo de tensión continua (DC bias effect). La solución definitiva consistió en asegurar suficiente capacitancia masiva mediante un condensador electrolítico para sostener la línea de 3.3VA el tiempo necesario tras el corte de energía.",
-    "categoria": "Hardware"
+    "id": 50515058,
+    "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
+    "score": 234,
+    "time": 1794814699,
+    "titulo_es": "Interpretando la corrección de teoremas verificados en Lean, especialmente con código generado por IA",
+    "resumen": "Este artículo aborda cómo interpretar la validez de teoremas matemáticos formalizados en Lean, un asistente de pruebas interactivo. Se centra en la diferencia entre la declaración de un teorema y su prueba, y cómo el código Lean puede expresar definiciones complejas que requieren miles de líneas para su comprensión. Se advierte que, si bien la verificación en Lean es una señal importante de corrección, esta confianza se ve comprometida cuando el código es generado por IA. En tales casos, es crucial realizar pruebas adicionales para verificar que la declaración del teorema en Lean se corresponde con la del documento original y que las definiciones subyacentes son correctas y no trivialmente verdaderas o falsas debido a convenciones de Lean o incompletudes en las bibliotecas. Se señala que, para muchas de las formalizaciones recientes (como las del conjunto de teoremas de OpenAI), estas pruebas no se han realizado sistemáticamente, aunque no hay impedimentos para llevarlas a cabo.",
+    "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50481056,
-    "url": "https://tsoracle.rs/",
-    "score": 27,
-    "time": 1794564277,
-    "titulo_es": "Marcas de tiempo estrictamente monotónicas y secuencias sin huecos en Rust",
-    "resumen": "El artículo presenta tsoracle, un servicio distribuido de oráculo de marcas de tiempo (TSO) y generador de secuencias contiguas implementado en Rust. Diseñado para bases de datos con MVCC, registros de auditoría y claves subrogadas, garantiza un orden estrictamente monotónico y secuencias densas sin omisiones frente a fallos. Integra persistencia mediante fsync, compatibilidad con motores de consenso como openraft y OmniPaxos, soporte de métricas para Prometheus y la opción de ejecutarse como CLI independiente o biblioteca embebida.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50484234,
-    "url": "https://rorz.io/writing/semicircle-packing",
+    "id": 50517815,
+    "url": "https://infisical.com/blog/active-directory-machine-identity",
     "score": 68,
-    "time": 1794580977,
-    "titulo_es": "Resolviendo el problema de empaquetado de semicírculos de Paradigm",
-    "resumen": "El autor describe su transición desde un concurso de escritura patrocinado por firmas de capital de riesgo hasta la plataforma de acertijos técnicos de Paradigm. El foco central se sitúa en el reto de optimización geométrica 'Pack Semicircles', un problema matemático que consiste en empaquetar de forma óptima 15 semicírculos idénticos dentro del círculo de radio mínimo posible, analizando enfoques de resolución propios antes de recurrir a la asistencia de modelos de IA.",
-    "categoria": "Ciencia y Matematica"
+    "time": 1794838531,
+    "titulo_es": "Active Directory: El Mainframe de la Identidad Corporativa en la Era Cloud",
+    "resumen": "El artículo argumenta que Active Directory (AD), a pesar de su obsolescencia para las arquitecturas cloud modernas, sigue siendo el pilar para la gestión de identidades en muchas empresas. Se describe la arquitectura de AD basada en LDAP y Kerberos, y su rol histórico en la gestión de identidades humanas y la aplicación de políticas a través de Group Policies y Certificate Services. Sin embargo, se señala que AD falla en la gestión de identidades de máquinas en entornos cloud dinámicos, donde la creación y deprecación rápida de recursos (como bases de datos, clústeres Kubernetes, CI runners) hace inviable el registro manual. Las soluciones modernas a menudo implican la delegación de autoridad, lo que puede introducir riesgos de seguridad significativos, especialmente al no comprender la gestión moderna de identidades de máquinas. El artículo critica las malas prácticas de seguridad, como el uso de políticas IAM excesivamente permisivas, como un síntoma de la incapacidad de las organizaciones para gestionar adecuadamente las identidades de máquinas en el desarrollo de software contemporáneo. Se concluye que AD, aunque irremplazable en muchos casos por su arraigo, es una infraestructura de una era pasada que presenta desafíos insuperables para las necesidades de escalabilidad y seguridad de la nube actual, particularmente en lo que respecta a las identidades de las máquinas.",
+    "categoria": "Ciberseguridad"
   },
   {
-    "id": 50452037,
-    "url": "https://www.ardc.net/rhizomaticas-hermes-and-mercury-expand-open-source-hf-communications-for-remote-communities-while-appealing-to-experimenters/",
-    "score": 50,
-    "time": 1794395482,
-    "titulo_es": "Conectando comunidades remotas con HERMES y el módem HF de código abierto Mercury",
-    "resumen": "Rhizomatica ha desarrollado HERMES, un sistema de intercambio de datos sobre radio de alta frecuencia (HF) para transmitir mensajes, correos electrónicos y archivos en zonas aisladas sin cobertura convencional. Para eliminar las barreras de licencias propietarias, crearon Mercury, un módem HF de código abierto optimizado para ejecutarse en hardware compacto y de bajo coste como la Raspberry Pi Zero junto a transceptores zBitx, facilitando despliegues autónomos y mantenidos localmente en comunidades de la Amazonía ecuatoriana.",
+    "id": 50520697,
+    "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
+    "score": 15,
+    "time": 1794852295,
+    "titulo_es": "Centros de Datos Hiperscale en EE. UU. Consumen Electricidad Equivalente a Michigan; Emisiones Impulsadas por la IA",
+    "resumen": "Una investigación reciente de Harvard revela que 400 centros de datos hiperscale en EE. UU. consumieron tanta electricidad como el estado de Michigan en un año. La mayoría de esta energía proviene de combustibles fósiles, y las emisiones de los centros de datos se han triplicado desde el auge de la IA. El estudio, publicado en Nature Sustainability, modeló el uso de energía de 403 centros de datos hiperscale operativos entre mayo de 2024 y abril de 2025, estimando sus emisiones de carbono basándose en la mezcla energética de las redes regionales. Regiones como Virginia, Oregón, Ohio e Iowa representaron más del 50% del consumo energético. La investigación destaca la falta de seguimiento gubernamental específico para los centros de datos y la naturaleza propietaria de su consumo energético, lo que dificulta la evaluación precisa. El estudio, aunque reciente, podría subestimar el consumo actual dada la rápida expansión de la industria, con nuevos desarrollos que proponen campus de cientos o miles de megavatios. Además, no considera la generación de energía 'detrás del medidor' (behind-the-meter), que, si se implementa según los planes actuales (189 GW de capacidad proyectada), podría aumentar las emisiones generales de EE. UU. en un 10%, a menudo mediante turbinas de gas natural ineficientes. La Administración de Información Energética (EIA) ha iniciado encuestas piloto para mejorar el seguimiento de este sector.",
     "categoria": "Hardware"
   },
   {
-    "id": 50504718,
-    "url": "https://nick-black.com/dankwiki/index.php?title=Book_list_for_streetfighting_computer_scientists",
-    "score": 93,
-    "time": 1794726530,
-    "titulo_es": "Libros Esenciales para Programadores (Edición 2025)",
-    "resumen": "El artículo recomienda una lista de libros para programadores en 2025, enfocándose en habilidades prácticas y fundamentales, a diferencia de las listas convencionales. Destaca la importancia de C/C++ como \"lingua franca\" y su rol como API nativa de sistemas operativos. Menciona Rust como una alternativa moderna y menos verbosa. Subraya la necesidad de un conocimiento sólido en matemáticas, incluyendo álgebra lineal, combinatoria, probabilidad y estadística, y cálculo (hasta ecuaciones diferenciales). Se excluyen explícitamente temas como Machine Learning y computación cuántica por considerarlos poco prácticos para \"pelear en las calles\" (una metáfora para aplicar conocimientos en escenarios del mundo real). La ciberseguridad se considera un subcampo de QA. Se mencionan libros sobre algoritmos y redes, pero se señala la falta de cobertura en networking moderno (XDP, io_uring). Se hace una recomendación final sobre \"Hacking the Planet with Notcurses\".",
+    "id": 50520866,
+    "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+    "score": 68,
+    "time": 1794853037,
+    "titulo_es": "Fallos Sistémicos en el Software Moderno: IA, Complejidad y Confiabilidad",
+    "resumen": "El artículo discute una serie de fallos recientes y graves en sistemas de software, incluyendo una interrupción global de Microsoft, una paralización de vuelos de la FAA, una vulnerabilidad crítica en PHP (PHP2Shell) y un compromiso de certificados SSL de eMudhra. Se argumenta que estos incidentes, a pesar de sus causas inmediatas diversas, reflejan un problema sistémico en la forma en que se construye el software. La Inteligencia Artificial (IA) se identifica como un factor contribuyente, tanto en la aceleración del descubrimiento de vulnerabilidades complejas por parte de atacantes como, potencialmente, en la propia arquitectura de sistemas cada vez más complejos. Se critica la gestión de la deuda técnica y la dependencia de soluciones rápidas y automatización en plataformas como Microsoft Azure, lo que resulta en sistemas de baja calidad, difíciles de comprender y mantener. La cadena de dependencias, ejemplificada por el ecosistema de JavaScript (NPM) y el uso de herramientas como GitHub Actions para CI/CD, se señala como un vector de riesgo adicional, donde vulnerabilidades ocultas en componentes de bajo nivel pueden tener efectos devastadores a gran escala. En esencia, el artículo sugiere que la creciente complejidad y la presión por la entrega rápida han erosionado los principios fundamentales de confiabilidad en el desarrollo de software.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50496976,
-    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
-    "score": 537,
-    "time": 1794663808,
-    "titulo_es": "PeerTube no es compatible con tu navegador web",
-    "resumen": "El artículo indica un mensaje de error de PeerTube sugiriendo que la versión del navegador web del usuario no es compatible. Se recomienda actualizar a la última versión de Mozilla Firefox y se solicita reportar el problema si se considera un error. Esto se relaciona directamente con la compatibilidad de software y la experiencia del usuario final en aplicaciones web.",
+    "id": 50486745,
+    "url": "https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch",
+    "score": 170,
+    "time": 1794590989,
+    "titulo_es": "EchoMotion: Rastreo de Cuerpo Completo con un Solo Smartwatch Usando Detección Acústica Activa",
+    "resumen": "EchoMotion es una tecnología desarrollada por Cornell que permite el rastreo de movimiento de cuerpo completo utilizando ondas ultrasónicas, un smartwatch comercial y un modelo ligero de inteligencia artificial. Aprovecha los altavoces y micrófonos integrados en el reloj para crear un sistema de detección similar al sonar. A diferencia de los métodos tradicionales que requieren múltiples dispositivos (como smartphones o VR headsets) y sensores (acelerómetros, giroscopios), o cámaras, EchoMotion ofrece ventajas significativas en privacidad, eficiencia y consumo de datos. Los investigadores entrenaron un modelo de aprendizaje profundo a partir de patrones de eco recogidos de voluntarios, logrando una precisión de predicción de la posición de 12 articulaciones con un error promedio inferior a 4 pulgadas, que se reduce a 2.4 pulgadas tras una calibración de 12 minutos. El sistema es energéticamente eficiente, consumiendo significativamente menos energía que las cámaras portátiles, y está diseñado para una fácil adopción en dispositivos comerciales y sistemas de realidad virtual para aplicaciones como seguimiento de ejercicio, actividades diarias y rehabilitación física.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50512235,
+    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+    "score": 424,
+    "time": 1794786955,
+    "titulo_es": "El Impacto de los CEOs Visionarios en la Innovación Empresarial: Lecciones de Nvidia y Microsoft",
+    "resumen": "El artículo analiza el papel crucial de los CEOs visionarios en la innovación y el éxito a largo plazo de las empresas tecnológicas, utilizando a Nvidia y Apple como ejemplos primordiales de reinvención estratégica. Se destaca cómo líderes como Jensen Huang (Nvidia) y Steve Jobs (Apple) transformaron radicalmente sus compañías mediante la identificación y capitalización de tendencias tecnológicas emergentes, como la computación de propósito general con CUDA, el deep learning y la infraestructura para centros de datos de IA en Nvidia, y la transición de Apple de un nicho de mercado a la compañía más rentable del mundo. Se contrasta esto con el período de ejecución bajo Steve Ballmer en Microsoft, donde la empresa, a pesar del crecimiento en ventas y beneficios, perdió oportunidades clave en áreas como búsqueda, smartphones, móvil y nube. La posterior recuperación de Microsoft bajo Satya Nadella, quien reposicionó la empresa en torno a la nube (Azure) y el software como servicio (Office), se presenta como un caso de éxito tras reemplazar a un líder enfocado en ventas por un experto en producto e ingeniería. El artículo concluye que los CEOs visionarios no solo ejecutan modelos de negocio exitosos, sino que también crean mercados, comprenden profundamente los productos y tienen una visión clara de la dirección futura, a menudo sin depender de comités para tomar decisiones estratégicas. La implicación para Nvidia tras la salida de Jensen Huang es la advertencia de que la innovación podría estancarse, haciendo hincapié en la necesidad de mantener una mentalidad emprendedora y orientada a la innovación.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50511395,
+    "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+    "score": 367,
+    "time": 1794780703,
+    "titulo_es": "Bitly permite la reutilización maliciosa de enlaces antiguos, afectando a marcas y figuras públicas",
+    "resumen": "El artículo detalla una vulnerabilidad en el servicio de acortamiento de enlaces Bitly que permitió a actores maliciosos reutilizar enlaces antiguos e inactivos para redirigir a los usuarios a contenido no relacionado. Se observó que enlaces de cuentas como Burger King, McDonald's, Donald Trump, Bill Gates, Justin Trudeau, Mike Pence, el FBI y el Departamento de Defensa de EE. UU. fueron comprometidos. El problema radicaba en que, al añadir un '+' al final de un enlace Bitly, se revelaba información sobre la creación del enlace y su destino. Si un enlace antiguo se registraba de nuevo con la misma URL corta, la información de creación reflejaba la fecha de registro posterior, no la original. Por ejemplo, un enlace de Burger King de 2011 fue registrado en 2026 y redirigía a una lista de campos de concentración nazis. Bitly ha confirmado el problema, ha suspendido las cuentas involucradas y está deshabilitando los enlaces afectados, además de implementar protecciones contra futuros abusos.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50515182,
+    "url": "https://github.com/ages2001/WINUDF",
+    "score": 73,
+    "time": 1794816013,
+    "titulo_es": "Driver de Sistema de Archivos Instalable UDF para DOS y Windows",
+    "resumen": "WINUDF es un driver de sistema de archivos (IFS) que permite leer y escribir en sistemas de archivos UDF (versiones 1.02 a 2.60) en entornos DOS y Windows (1.0x a ME). Para DOS y Windows 3.x, se utiliza WINUDF.EXE, asignando letras de unidad a los medios UDF. Para Windows 95/98/ME, WINUDF.VXD actúa como un driver de sistema de archivos que soporta nombres largos. El paquete se distribuye en un árbol de directorios (bin/DOS, bin/WIN3X, bin/WIN9X) que debe mantenerse unido durante la instalación. La configuración implica modificar AUTOEXEC.BAT y CONFIG.SYS en DOS/Windows 3.x, y SYSTEM.INI en Windows 95/98/ME. Se proporciona un desinstalador (UNINUDF) y documentación detallada sobre opciones, funcionamiento interno, notas de hardware, interfaz de programación, compilación desde código fuente, pruebas y limitaciones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50509837,
+    "url": "https://bruceroettgers.eu/blog/protomaps/",
+    "score": 449,
+    "time": 1794770782,
+    "titulo_es": "PMTiles: Un Formato de Tile Coste-Efectivo para Mapas Web",
+    "resumen": "El artículo describe PMTiles, un formato de tile para mapas web que se distribuye como un único archivo y utiliza peticiones HTTP Range. Se destaca su portabilidad y facilidad de despliegue en servicios de almacenamiento y CDNs. Se detalla cómo configurarlo, incluyendo el uso de CDNs como Bunny.net, la optimización para la entrega de archivos grandes, la configuración de límites de red para disuadir descargas masivas y la integración con librerías frontend como MapLibre GL. Se compara su coste con APIs comerciales como Mapbox, señalando un potencial ahorro significativo, especialmente para proyectos con alta demanda. Se abordan aspectos técnicos como la compatibilidad con S3, el uso de rclone para la transferencia de datos y la configuración de CORS.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50512441,
+    "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+    "score": 233,
+    "time": 1794788514,
+    "titulo_es": "Actualización de Seguridad Urgente para Tor 0.4.9.17 en Respuesta a Ataques DDoS",
+    "resumen": "La versión 0.4.9.17 de Tor aborda importantes fallos de seguridad, con un énfasis particular en la mitigación de ataques de denegación de servicio (DoS) dirigidos a relays, especialmente aquellos relacionados con el manejo de IPv6. Esta liberación es una respuesta rápida a un ataque DDoS activo que está sobrecargando los relays con un gran volumen de circuitos de clientes. Se están evaluando defensas adicionales y se anticipan futuros lanzamientos. Se insta a los operadores de relays a actualizar lo antes posible. Para los usuarios que ejecutan relays desde Tor Browser (tor.exe), la actualización se realiza actualizando Tor Browser a la última versión.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50518567,
+    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+    "score": 151,
+    "time": 1794842649,
+    "titulo_es": "El Desafío de Nvidia en la Era de la IA: Competidores Emergentes y Cambios en el Mercado de Chips",
+    "resumen": "El artículo analiza el papel crucial de Nvidia en el auge de la inteligencia artificial, impulsado por la visión de su ex CEO Jensen Huang y la inversión temprana en chips para entrenamiento de IA. Sin embargo, la compañía enfrenta una competencia creciente. Gigantes tecnológicos como Google, Amazon y Microsoft están desarrollando sus propios chips especializados para reducir costos y depender menos de Nvidia. Empresas emergentes como Cerebras y Taalas ofrecen soluciones innovadoras, aunque a menudo requieren reescritura de código. El análisis también destaca la creciente importancia de la inferencia (ejecución de modelos entrenados), un área donde Nvidia tiene menos ventaja frente a los hiper-escaladores y startups. La demanda de CPUs de propósito general, donde Nvidia tiene una presencia limitada, también está aumentando. A pesar de su dominio del 80% del mercado de aceleradores de IA, la dependencia de Nvidia de la demanda de entrenamiento de modelos y las restricciones de exportación a China (que ha reducido su cuota de ingresos del 20% al 8%) presentan desafíos significativos. En China, Huawei está desarrollando supercomputadoras propias para el entrenamiento de IA, y empresas como Z.ai utilizan chips locales. La sucesión de Jensen Huang y la necesidad de prever las tendencias tecnológicas a dos o tres años vista son cruciales para el futuro de Nvidia.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50518690,
+    "url": "https://klauria.tech/psychic/",
+    "score": 9,
+    "time": 1794843214,
+    "titulo_es": "Psychic: Un Navegador de Archivos Terminal Rápido con IA que Aprende Patrones de Uso",
+    "resumen": "Psychic es un navegador de archivos basado en terminal diseñado para maximizar la velocidad y la interactividad, actualizándose en menos de 16 ms por pulsación de tecla. Utiliza un modelo de Machine Learning ligero (LightGBM) entrenado localmente con los datos de uso del usuario (directorios visitados, archivos abiertos, interacciones de búsqueda). El modelo predice qué archivos es más probable que abra el usuario basándose en la consulta de búsqueda y los patrones históricos, optimizando así la navegación por el sistema de archivos. Para usuarios nuevos, emplea un modelo simple basado en clics recientes, tiempo de modificación y coincidencia difusa, que gradualmente cede protagonismo al modelo de ML a medida que se acumulan más datos. El modelo se reentrena desde cero cada vez que se inicia Psychic para reflejar los patrones de uso actuales, y la actualización del modelo en uso ocurre de forma discreta para no interrumpir la experiencia del usuario. Psychic integra datos de sqlite con el modelo LightGBM, utilizando el objetivo LambdaRank para tareas de clasificación. La elección de un modelo local se debe a las estrictas restricciones de latencia, descartando soluciones basadas en red y modelos más complejos como LLMs o Transformers.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50517602,
+    "url": "https://jack.cab/blog/siterate",
+    "score": 287,
+    "time": 1794837098,
+    "titulo_es": "No pruebes en producción: Un caso de estudio de métricas de SEO infladas",
+    "resumen": "El artículo detalla una investigación sobre un dominio aparentemente anómalo, w2rt6byl5nf1opmc-a.com, que apareció con un número extraordinariamente alto de backlinks en Majestic Million, a pesar de ser un dominio recién registrado y no resoluble. El autor rastrea el origen de estas métricas infladas hasta experimentación interna en Majestic, donde se olvidaron de implementar un filtro para excluir dominios de pruebas internas de los rankings públicos. Este incidente sirve como una advertencia sobre la importancia de no realizar pruebas en entornos de producción y resalta las posibles fallas en los sistemas de métricas de SEO cuando no se manejan adecuadamente los datos de experimentación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50484998,
+    "url": "https://www.paradedb.com/blog/joins",
+    "score": 113,
+    "time": 1794583910,
+    "titulo_es": "ParadeDB: Búsquedas en Múltiples Tablas Relacionales Revolucionan las Consultas Combinadas",
+    "resumen": "El artículo describe cómo ParadeDB aborda el desafío de realizar búsquedas eficientes en bases de datos relacionales con datos normalizados en múltiples tablas, un problema conocido como 'search join'. Tradicionalmente, las organizaciones debían elegir entre la complejidad y la fragilidad de procesos ETL hacia motores de búsqueda externos como Elasticsearch, o aceptar el rendimiento lento de PostgreSQL para unir y puntuar millones de filas. ParadeDB introduce una solución que trata las búsquedas combinadas como una característica de primera clase, eliminando la necesidad de desnormalizar datos o aceptar latencias elevadas. En pruebas comparativas con el modelo de datos de Stack Overflow (usuarios, posts, comentarios, badges), ParadeDB logra una mejora de hasta 1000x en comparación con PostgreSQL vanilla para consultas de búsqueda combinada Top-K, reduciendo el tiempo de 2 minutos a 100 ms sin infraestructura adicional. Esto se logra repensando cómo PostgreSQL indexa y ejecuta consultas, permitiendo un acceso a datos más eficiente y un procesamiento más rápido de los resultados, especialmente cuando se aplican filtros o límites (Top-K). Se enfatiza cómo las soluciones tradicionales de Elasticsearch complican las uniones relacionales con configuraciones complejas y la necesidad de desnormalización, lo que lleva a un aumento en el almacenamiento y la duplicación de datos. ParadeDB, en cambio, permite ejecutar estas complejas consultas directamente en la base de datos relacional con un rendimiento significativamente mejorado.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50520424,
+    "url": "https://getbootstrap.com/",
+    "score": 5,
+    "time": 1794851110,
+    "titulo_es": "Bootstrap 6: Un toolkit de diseño agnóstico de frameworks para la web moderna",
+    "resumen": "Bootstrap 6 se ha reconstruido para la web actual como un toolkit de diseño agnóstico de frameworks. Permite a cualquier usuario, humano o IA, novato o profesional, construir cualquier cosa utilizando nuevos estándares, componentes actualizados, un diseño visual renovado, temas CSS-first y plugins de JavaScript más potentes. El objetivo es facilitar la creación de interfaces web modernas y personalizables.",
     "categoria": "Frontend"
-  },
-  {
-    "id": 50499038,
-    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
-    "score": 378,
-    "time": 1794678319,
-    "titulo_es": "Árbol genealógico de los títulos de trabajo en ingeniería de software",
-    "resumen": "El artículo presenta un árbol genealógico visual de los títulos de trabajo en ingeniería de software, abarcando desde la década de 1940 hasta la actualidad. Detalla la evolución y las interconexiones entre 104 títulos distintos, organizados por familias (como Desarrollo, Datos y IA, Operaciones) y distribuidos a lo largo del tiempo en intervalos de cinco años. Se explican las relaciones entre títulos a través de flechas (crecimiento directo o influencia/movimiento común) y se destacan hitos importantes. El autor utiliza este árbol para ilustrar patrones como la centralización/distribución en roles (ej. webmaster, web developer), la aparición y eventual absorción de roles especializados (ej. prompt engineer, scrum master) y la divergencia de títulos con el mismo nombre pero orígenes distintos (ej. Systems Engineer). El artículo concluye reflexionando sobre la naturaleza efímera de los títulos y la aparición de nuevos roles como 'AI Agent / Context Engineer'.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50507517,
-    "url": "https://www.nytimes.com/2026/11/15/business/anthropic-ipo-filing-prospectus.html",
-    "score": 8,
-    "time": 1794755886,
-    "titulo_es": "El prospecto de Anthropic: ¿Una apuesta por el futuro de la civilización a través de la IA?",
-    "resumen": "El artículo analiza el prospecto de Oferta Pública Inicial (OPI) de Anthropic, una empresa de inteligencia artificial (IA). El documento, que va más allá de un plan de negocios tradicional para incluir reflexiones filosóficas y de ciencia ficción sobre el futuro de la humanidad, detalla los planes de Anthropic para obtener capital significativo. La compañía busca inversores para financiar su infraestructura de IA (chips, centros de datos, electricidad), con una valoración estimada superior a 1 billón de dólares. El prospecto plantea la posibilidad de que la IA resuelva problemas complejos y aborda el riesgo existencial asociado al desarrollo de esta tecnología, presentándose como una inversión en el futuro de la civilización.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50440709,
-    "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-    "score": 597,
-    "time": 1794320165,
-    "titulo_es": "Reutilización de Smartphones Viejos para Proyectos de Hardware Personalizados",
-    "resumen": "El artículo explora la viabilidad de usar teléfonos inteligentes de segunda mano, como el Redmi 13C 5G y el Huawei Mate 30 5G, como plataformas de hardware para proyectos de electrónica personalizada, en lugar de ensamblar componentes individuales. Estos teléfonos ya integran características clave como cámaras de alta resolución (50MP y 40MP), GPS, almacenamiento, batería, conectividad móvil (5G) y pantallas táctiles, a un costo significativamente menor que las soluciones basadas en Raspberry Pi con módulos adicionales. El autor detalla la comparación de costos con un Raspberry Pi, destacando que los teléfonos ofrecen una solución más integrada y económica. Se discuten los desafíos y beneficios de desbloquear y rootear los teléfonos para controlarlos, incluyendo la programación y prueba de componentes. El artículo también contempla el potencial de esta aproximación para aplicaciones más amplias, como instalaciones de arte digital, donde los teléfonos preconfigurados podrían ser desplegados fácilmente. La principal preocupación para la producción a gran escala es la consistencia y salud de las baterías y cámaras en unidades usadas. Sin embargo, el autor se muestra optimista sobre la posibilidad de dar una segunda vida a estos dispositivos masivamente producidos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50504277,
-    "url": "https://netbsd.org/~nia/disk-encrypt/",
-    "score": 72,
-    "time": 1794720594,
-    "titulo_es": "Protección de Datos en NetBSD Mediante Cifrado de Disco",
-    "resumen": "El artículo aborda el cifrado de disco como solución para proteger datos contra robo o pérdida del dispositivo y para invalidar el acceso en caso de manipulación. Se centra en el primer modelo de amenaza, la confidencialidad de los datos. Se discuten las categorías de datos en NetBSD (archivos del sistema y archivos modificados por el usuario), y se argumenta que los archivos del sistema, como /bin/sh, a menudo no contienen información sensible y podrían ser de solo lectura. Se explora la dificultad del cifrado de disco completo ('full disk encryption') sin hardware especializado, debido a la necesidad de cargar el sistema operativo y obtener claves de cifrado. Se menciona la dependencia de bibliotecas compartidas y la importancia de utilidades en /rescue. Se discute el impacto del rendimiento de los algoritmos criptográficos en software frente a aceleración por hardware (AES) o algoritmos alternativos (Adiantum). Se identifican directorios comúnmente modificados y potencialmente sensibles (/home, /var, /root, /usr/pkg, /usr/local, /etc) y se sugieren estrategias como el cifrado de /home o el uso de cifrado de particiones separadas para /usr y /var. Se menciona el enfoque cgdroot como una alternativa, aunque con modificaciones significativas. Finalmente, se considera el problema de cifrar /etc, necesario para el arranque, y se señala que en sistemas de escritorio, muchos de sus archivos no se modifican con frecuencia.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50482222,
-    "url": "https://www.quantamagazine.org/the-evolving-story-of-how-chemistry-became-biology-20261112/",
-    "score": 78,
-    "time": 1794570919,
-    "titulo_es": "Los científicos se acercan a los orígenes de la vida en la Tierra",
-    "resumen": "El artículo explora la fascinante y compleja pregunta sobre el origen de la vida en la Tierra, abarcando el período desde la formación del planeta hasta la aparición de los primeros ancestros celulares. Detalla las condiciones primitivas de la Tierra, la emergencia gradual de sistemas moleculares auto-reproductores y la evolución temprana de la vida. Se discute la falta de consenso histórico en la investigación, con hipótesis centradas en moléculas específicas como ARN o lípidos, y cómo una nueva generación de investigadores está adoptando un enfoque más holístico y experimental. Estos investigadores se centran en cómo los precursores moleculares se formaron fácilmente en la Tierra primitiva y, crucialmente, cómo estos procesos se estabilizaron en un sistema evolutivo continuo que dio lugar a la biodiversidad actual. Se subraya que el origen de la vida no es un problema puramente químico lineal, sino un fenómeno biológico complejo y multifacético.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50483431,
-    "url": "https://aosabook.org/en/500L/a-3d-modeller.html",
-    "score": 89,
-    "time": 1794577662,
-    "titulo_es": "Diseño de Software para Modeladores 3D: Una Introducción a la Representación y Renderizado de Objetos",
-    "resumen": "El artículo explora los principios fundamentales del diseño de software aplicado a las herramientas de diseño asistido por computadora (CAD) en 3D. Se enfoca en la abstracción del diseño tridimensional a una representación bidimensional para pantallas, detallando tres funcionalidades esenciales: una estructura de datos para representar el objeto, un método para visualizar el diseño en pantalla considerando la percepción humana de la profundidad, y una interfaz para la interacción del usuario. Se menciona la importancia del proceso de renderizado como motor de decisiones de diseño para manejar objetos complejos con lógica de renderizado simple. Se introducen OpenGL y GLUT como herramientas para la comunicación con drivers gráficos y la gestión de ventanas. El artículo anticipa una explicación de cómo implementar estas funcionalidades en Python, destacando la necesidad de estructuras de datos eficientes y técnicas de visualización que permitan el manejo de objetos arbitrariamente complejos con código de renderizado simplificado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50497892,
-    "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
-    "score": 262,
-    "time": 1794670852,
-    "titulo_es": "Actualizaciones de Interfaz de Usuario de PyPI para Mejorar la Seguridad y la Claridad de los Metadatos de Paquetes",
-    "resumen": "El artículo detalla las recientes actualizaciones en la interfaz de usuario de PyPI (Python Package Index) diseñadas para mejorar la forma en que se comunican las señales de seguridad y los detalles de los paquetes. Dada la creciente amenaza de actores maliciosos en el ecosistema Python, PyPI ha introducido nuevas características de seguridad, incluyendo las 'atestaciones digitales' (digital attestations) presentadas en 2024. Estas atestaciones proporcionan un registro verificable del origen (provenance) de los archivos de un lanzamiento, vinculándolos a fuentes o procesos de publicación confiables. La nueva interfaz incluye una pestaña de seguridad dedicada que muestra el estado de procedencia de los archivos (completa con atestaciones o sin ellas) y permite la visualización de metadatos de atestaciones individuales. Se explican los estados de procedencia: 'Completa' (todos los archivos tienen atestaciones, ya sean de PyPI Trusted Publisher o SLSA Build Provenance) y 'Sin procedencia' (ningún archivo tiene atestación, común en releases antiguas o no configuradas). El artículo también aborda las 'advertencias de procedencia', que se activan cuando los metadatos de procedencia son inusuales o inconsistentes con el historial del proyecto, ayudando a los usuarios a identificar posibles riesgos como tomas de control de cuentas o tuberías de publicación comprometidas. Estas advertencias pueden indicar que algunos archivos tienen atestaciones y otros no, que los archivos provienen de diferentes sistemas de compilación o repositorios, o que el origen de los archivos ha cambiado respecto a lanzamientos anteriores. Se recomienda a los usuarios ejercer precaución ante estas advertencias, verificar los metadatos, consultar las notas de lanzamiento o los canales oficiales, y considerar el uso de Trusted Publishing para generar atestaciones en lanzamientos futuros.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50496051,
-    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
-    "score": 296,
-    "time": 1794654797,
-    "titulo_es": "Evolución de la Política de Divulgación de Vulnerabilidades de Project Zero ante el Paisaje de Amenazas Cambiante",
-    "resumen": "El artículo detalla la actualización de la política de divulgación de vulnerabilidades de Project Zero, pasando de un modelo de \"90 + 30\" a \"Full 90\" (con planes de evolucionar a \"Full 60\" y \"Full 30\"). Esta decisión se fundamenta en el impacto de la IA, específicamente los LLMs, que han acelerado drásticamente el descubrimiento, explotación y la ingeniería inversa de vulnerabilidades. La política anterior, que incluía un tiempo de \"remojo\" (soak time) para la implementación de parches, se ha vuelto insuficiente ante la velocidad con la que los atacantes pueden ahora explotar vulnerabilidades, incluso antes de que los usuarios apliquen las correcciones (reduciendo el \"patch gap\"). La IA también ha incrementado el volumen de vulnerabilidades detectadas por Project Zero, haciendo insostenible la gestión de casos especiales y negociaciones. La nueva política busca incentivar a los proveedores a mejorar sus tiempos de remediación de manera escalonada, reconociendo las preocupaciones de los proveedores sobre la implementación y evitando desincentivar los esfuerzos de corrección. Se eliminan la mayoría de los \"casos especiales\" para simplificar el proceso.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50503255,
-    "url": "https://www.eff.org/deeplinks/2026/11/were-asking-appeals-court-require-warrant-alpr-searches",
-    "score": 294,
-    "time": 1794708054,
-    "titulo_es": "Tribunal de Apelaciones de EE. UU. Considera Si los Datos de Lectores de Matrículas Automatizados Constituyen una \"Búsqueda\"",
-    "resumen": "El artículo detalla el caso United States v. Sturdivant, donde la policía utilizó datos de Lectores de Matrículas Automatizados (ALPR) sin una orden judicial para rastrear los movimientos de un sospechoso. Se argumenta que la vasta red interconectada de ALPRs, que registran la ubicación y el momento de cada vehículo, constituye una \"búsqueda\" según la Cuarta Enmienda de la Constitución de EE. UU. El caso se centra en si la recopilación y el análisis de estos datos de vigilancia masiva violan las expectativas razonables de privacidad de los conductores, comparando su alcance con la observación pública de una matrícula individual. Se mencionan casos previos y argumentos legales que sostienen que los ALPRs son una forma de vigilancia masiva indiscriminada que requiere una orden judicial.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50497589,
-    "url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
-    "score": 257,
-    "time": 1794668655,
-    "titulo_es": "DeepSeek V3 en 190 líneas de JAX, entrenado en un MacBook Air",
-    "resumen": "El artículo describe una implementación minimalista del modelo de lenguaje DeepSeek V3, que utiliza una arquitectura Mixture-of-Experts (MoE) y técnicas como MLA, DeepSeekMoE y balanceo aux-loss-free. La implementación está escrita en JAX puro, ocupando solo 190 líneas de código, y se destaca por haber sido entrenada desde cero en un MacBook Air con 24 GB de RAM, utilizando un conjunto de datos de novelas de detectives de dominio público. Se detallan los pasos para reproducir el entrenamiento, incluyendo la preparación de datos, el entrenamiento del modelo y la generación de texto. Se discuten las diferencias en los hashes de los datos debido a actualizaciones en Project Gutenberg y se menciona la posibilidad de ejecutar el modelo en CPUs o backends ROCm. El artículo enfatiza que es una demostración arquitectónica y no un modelo de lenguaje de alto rendimiento.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50496811,
-    "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-    "score": 209,
-    "time": 1794662443,
-    "titulo_es": "Antigravity /teamwork: Mejorando la colaboración Humano-IA para resolver problemas abiertos",
-    "resumen": "El artículo describe los avances recientes de Antigravity /teamwork, un sistema multi-agente que potencia la colaboración humano-IA para abordar problemas complejos en matemáticas, química, software y ingeniería de ML. Utilizando modelos Gemini 4 (Argon, Carbon, Hydrogen) y flujos de trabajo multi-agente, se han logrado innovaciones en teoría de la información, verificaciones formales, descubrimiento de estructuras moleculares y optimización de kernels, además de mejoras en la infraestructura de producción de Google. El sistema está diseñado para superar las limitaciones de los modelos de lenguaje actuales, como la imprevisibilidad y la pérdida de contexto en tareas largas. /teamwork emplea exploración paralela con verificadores (falsificadores) y partición de contexto por construcción para asegurar la corrección y el mantenimiento de detalles. Los flujos de trabajo se expresan como patrones de lenguaje natural declarativos y auto-mejorables, que se adaptan dinámicamente a cada tarea, incluyendo resolución de problemas, revisión de documentos y pruebas de largo alcance. Las herramientas de Antigravity, como /teamwork y /boost, se están haciendo disponibles externamente para investigadores y desarrolladores. Se presentan ejemplos de colaboración exitosa, como la demostración de la conjetura Courtade–Kumar en teoría de la información utilizando el patrón Long Proof.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50505905,
-    "url": "https://wccftech.com/jensen-huang-financed-ai-startups-absorb-excess-silicon/",
-    "score": 43,
-    "time": 1794740030,
-    "titulo_es": "NVIDIA utilizó su balance para financiar startups de IA y centros de datos, creando demanda artificial de chips",
-    "resumen": "El artículo revela que NVIDIA, bajo el liderazgo de Jensen Huang, presuntamente utilizó su balance general para financiar startups de IA y la construcción de centros de datos. El objetivo era absorber el exceso de envíos de semiconductores y memoria solicitados a TSMC, creando una demanda artificial en lugar de enfrentar una caída en los precios debido a un exceso de inventario. Las revelaciones surgen de una confrontación entre Huang y la CFO Colette Kress en agosto de 2026, quien buscó limitar los compromisos de financiación circular de NVIDIA. Se discuten acuerdos de hasta $250 mil millones con OpenAI y otros proveedores de nube, con Kress logrando reducir la garantía a $125 mil millones. Huang admitió internamente que los grandes proveedores de nube estaban migrando hacia chips personalizados, dejando a NVIDIA con un gran volumen de obleas y memoria prepagadas de TSMC. La financiación de la expansión de centros de datos para startups de IA sirvió para mantener los precios de las GPU elevados, contradiciendo la narrativa de escasez orgánica que afectó a los consumidores, especialmente a los gamers.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50448895,
-    "url": "https://www.notesfromtheroad.com/europa/citrus-family-tree.html",
-    "score": 98,
-    "time": 1794361920,
-    "titulo_es": "El Reino de los Cítricos · Epílogo: Cómo cuatro frutas silvestres dieron origen a todos los cítricos sicilianos",
-    "resumen": "Este artículo es el epílogo de una serie sobre la influencia de los cítricos en Sicilia. Detalla las relaciones genéticas entre las diversas frutas cítricas cultivadas en Sicilia, trazando su linaje hasta cuatro frutas silvestres asiáticas. Explica que muchas variedades sicilianas son el resultado de selecciones y mutaciones, como los 'sports' (variaciones genéticas espontáneas) y las mutaciones de la naranja dulce y el limón. El artículo utiliza un gráfico para ilustrar estas relaciones y hace referencia a investigaciones científicas publicadas en Nature y Annals of Botany. No se centra en desarrollo de software, IA, ciberseguridad, distribuciones Linux, hardware ni frontend, sino en botánica, historia agrícola y genética de plantas.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50505312,
-    "url": "https://dkim2.com/",
-    "score": 16,
-    "time": 1794733995,
-    "titulo_es": "DKIM2: Mejora de la autenticidad del correo electrónico mediante la atribución de responsabilidad",
-    "resumen": "DKIM2 es la próxima evolución del estándar DKIM (DomainKeys Identified Mail) enfocado en mejorar la autenticidad y atribución de responsabilidad en el manejo de correos electrónicos. A diferencia de su predecesor, DKIM2 se basa en el principio de que cada sistema que interactúa con un correo electrónico debe firmarlo, registrando así su acción. El objetivo principal es distinguir claramente el correo legítimo del abuso, sacando al correo auténtico de la 'zona gris' donde actualmente se mezcla con el spam o correos maliciosos debido a prácticas como el reenvío, las listas de correo, el uso de Bcc, los rebotes falsificados y las firmas rejugadas. DKIM2 proporciona mecanismos verificables para que estas operaciones legítimas dejen un rastro transparente: los reenviadores firman, las listas de correo registran sus modificaciones, cada copia de Bcc es firmada para el destinatario específico y los rebotes siguen la cadena de origen. La motivación detrás de DKIM2 reside en la falta de autenticación del sobre SMTP (MAIL FROM y RCPT TO). En lugar de centrarse en la confianza, DKIM2 promueve la 'accountability' (responsabilidad), registrando quién realizó qué acción en cada etapa del ciclo de vida del correo. Esto permite que la reputación recaiga sobre el actor responsable de cada acción. El desarrollo se está llevando a cabo en el grupo de trabajo DKIM de la IETF y, aunque es un borrador de Internet activo y los detalles pueden cambiar, se espera que sea adoptado por los principales proveedores de buzones de correo. Ya existen implementaciones operativas e interconectables en sistemas de correo real.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50455732,
-    "url": "https://www.physics.ox.ac.uk/research/group/oxford-molecular-motors/research/bacterial-flagellar-motor",
-    "score": 67,
-    "time": 1794416768,
-    "titulo_es": "El Motor Flagelar Bacteriano: Una Máquina Molecular Rotatoria",
-    "resumen": "El artículo describe el motor flagelar bacteriano, una máquina molecular rotatoria que impulsa la natación de las bacterias. Se detalla su estructura, compuesta por un rotor de proteínas de aproximadamente 45 nm de diámetro y generadores de torque (complejos MotA5MotB2) anclados a la pared celular. Estos generadores de torque giran, empujando el rotor y, por ende, el filamento flagelar, lo que permite la propulsión a cientos de revoluciones por segundo. Se discuten los avances recientes en la visualización de estas estructuras mediante criomicroscopía electrónica y las mediciones ópticas de motores en vivo. Se menciona el intercambio de componentes proteicos del motor con piezas de repuesto en la célula, incluso mientras está en funcionamiento, como una propiedad general de las máquinas moleculares grandes. Además, se explora el complejo proceso de ensamblaje del motor flagelar, incluyendo un nuevo mecanismo de \"polimerización por intercambio de dominios\" y el uso de nanoestructuras de ADN como plantillas artificiales para controlar la formación del rotor. El objetivo es comprender en detalle el funcionamiento y los principios de ensamblaje de esta máquina molecular y de otras similares.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50475692,
-    "url": "https://boldentrance.com/astro-spiral-the-greatest-car-stunt/",
-    "score": 47,
-    "time": 1794524663,
-    "titulo_es": "El Salto del Sacacorchos de James Bond: Ingeniería Detrás de un Stunt Cinematográfico",
-    "resumen": "El artículo detalla la ingeniería y la innovación detrás del icónico salto del sacacorchos del AMC Hornet X en la película de James Bond \"The Man With The Golden Gun\". Aunque el stunt se realizó en la práctica, fue pionero en el uso de modelado por computadora extensivo para su planificación y diseño. Ray McHenry, trabajando en el Cornell Aeronautical Laboratory (CAL) en la década de 1970, utilizó simulaciones por computadora escritas en FORTRAN en mainframes IBM 360 para predecir y optimizar la compleja trayectoria del vehículo, la velocidad y el ángulo de la rampa necesarios para lograr el giro en espiral de 360 grados y un aterrizaje seguro. Esta metodología se basó en trabajos previos de McHenry sobre simulación de choques, utilizando datos de pruebas de vehículos modificados en situaciones de alto riesgo. El stunt, realizado por el piloto Jay Milligan, se convirtió en el primer \"astro spiral\" filmado y merecedor de un récord Guinness, demostrando la aplicación temprana de la ingeniería computacional en la planificación de stunts cinematográficos para garantizar la seguridad y el espectáculo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50474883,
-    "url": "https://unemploymentlabs.com/checkpoint-forensics",
-    "score": 408,
-    "time": 1794520571,
-    "titulo_es": "Análisis Forense de Modelos de IA Revela Uso de GPUs NVIDIA Blackwell por Empresas Chinas",
-    "resumen": "Un análisis forense de modelos de IA públicamente lanzados por Unemployment Labs sugiere que DeepSeek, Moonshot AI, MiniMax y Ant Group han accedido y utilizado GPUs NVIDIA Blackwell para entrenar sus modelos más recientes. La evidencia se basa en patrones numéricos detectados en los pesos publicados de seis modelos lanzados desde abril de 2026, los cuales coinciden con las características del hardware Blackwell, a diferencia de modelos anteriores de las mismas compañías que muestran patrones de la generación Hopper de NVIDIA. Los investigadores encontraron que estos patrones sugieren el uso de hardware Blackwell, y en algunos casos (DeepSeek-V4-Flash y Kimi K3), confirmaron la coincidencia en chips Blackwell físicos. Si bien el estudio proporciona evidencia técnica del acceso a hardware avanzado, no determina la ubicación de los chips, el método de obtención ni la posible violación de controles de exportación. El artículo también estima la escala de los cómputos de entrenamiento, sugiriendo que los modelos más grandes podrían haber requerido entre 8,000 y 9,000 GPUs Blackwell para su entrenamiento final.",
-    "categoria": "IA"
   }
 ]
