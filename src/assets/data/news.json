@@ -1,164 +1,218 @@
 [
   {
-    "id": 50513160,
-    "url": "https://iter.ca/post/ubo-uxss/",
-    "score": 571,
-    "time": 1794794688,
-    "titulo_es": "Vulnerabilidad XSS Universal en uBlock Origin (MV2 Firefox)",
-    "resumen": "El artículo detalla una vulnerabilidad de Cross-Site Scripting (XSS) universal encontrada en la versión MV2 de uBlock Origin para Firefox. Un sitio web malicioso podía engañar a la extensión para que añadiera filtros de confianza arbitrarios. Estos filtros de confianza permiten la inyección de código JavaScript en páginas web. El ataque se basaba en la explotación de un filtro existente ('lootdest.*##+js(no-fetch-if, adsbygoogle, war:googlesyndication_adsbygoogle.js)') para filtrar la petición XHR interna que la extensión realizaba para obtener su UUID interno. Una vez obtenido el UUID, el atacante podía usar la funcionalidad del selector de elementos (element picker) de uBlock Origin para crear un filtro de confianza inyectando código JavaScript malicioso en el contexto de cualquier sitio web. La vulnerabilidad se remediaba añadiendo una verificación de contraseña secreta entre el script de contenido y la interfaz del selector de elementos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50497746,
-    "url": "https://github.com/tom7/noperts/blob/main/septopert.md",
-    "score": 24,
-    "time": 1794669750,
-    "titulo_es": "El Septopert: Un Poliedro Convexo de Siete Vértices y Mínima Altura en la Familia Nopert",
-    "resumen": "El artículo describe el \"Septopert\", un poliedro convexo de siete vértices que se caracteriza por no ser un \"Rupert\" (un \"nopert\"). Se presenta como el miembro canónico de una familia de noperts, incluyendo variantes como Septopert Classic, SeptopertM18 y SeptopertM12. Se detallan sus coordenadas enteras específicas, que representan la menor altura posible para un nopert dentro de esta familia, con un valor máximo absoluto de las coordenadas de aproximadamente 12.12. La prueba de su propiedad de \"nopert\" ha sido verificada utilizando el asistente de pruebas formales Lean, con detalles sobre los puntos de entrada en el código fuente (proof/Septopert.lean y proof/Septopert/Integer.lean). Se incluye un archivo STL para visualización y se discuten las propiedades geométricas y las longitudes de sus aristas (14 para las aristas del ápice, 14√2 para las aristas de la base y 7√2 para las aristas del triángulo interior). La verificación en Lean involucra datos de certificación como tablas de solución y certificados de \"caps\" (espejo, arco, eje y P), que son validados por el programa \"constructSeptopert\". Se menciona que el Septopert se encuentra en una posición especial dentro de su familia, exhibiendo una esquina cúbica exacta y una \"Triforce\". La demostración general utiliza técnicas aplicadas previamente a otros miembros de la familia, como el SeptopertM18, y aborda regiones de vista problemáticas mediante certificados de \"blow-up\" que mueven la decisión al análisis de segundo orden, donde la holgura es estrictamente negativa, garantizando la existencia del certificado. La definición de altura de un miembro de la familia se basa en el rango de sus cinco valores coordenados definitorios.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50518068,
-    "url": "https://artemlegotin.com/golden-board/",
-    "score": 19,
-    "time": 1794839934,
-    "titulo_es": "Golden Board: Enseñando Ajedrez a Inteligencias Desconocidas",
-    "resumen": "Golden Board es un mensaje binario de 512 KiB (4,194,304 bits) diseñado para enseñar el juego de ajedrez a una inteligencia desconocida sin lenguaje, cultura o conocimiento previo compartido. El mensaje se organiza en una cuadrícula de 2048x2048. Las primeras 64 filas contienen 32 dibujos de 64x64 celdas cada uno, formando un 'bootstrap' que enseña el formato de decodificación. Este bootstrap es agnóstico al ajedrez y puede ser adaptado para otros mensajes estructurados. El resto del mensaje contiene lecciones visuales de ajedrez, ejercicios con retroalimentación, partidas completas y metadatos para su localización y visualización. La inspiración proviene de mensajes interestelares como el Voyager Golden Record y Lincos. Se eligió el ajedrez por su complejidad emergente a partir de un conjunto simple de reglas y por ofrecer una visión de la mente humana. Se realizaron pruebas con LLMs para validar la recuperación de bytes y la comprensión de las lecciones, identificando ambigüedades y mejorando el diseño. El proyecto incluye código fuente y documentación en GitHub, con herramientas en Python para adaptar el sistema a otros fines educativos y de investigación. La representación visual original de los bits como celdas en blanco y negro se enriquece con colores, guías y etiquetas en la documentación para facilitar la lectura, pero el receptor debe inferir la estructura basándose en metadatos y patrones.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50515058,
-    "url": "https://xenaproject.wordpress.com/2026/11/12/and-the-proof-is-checked-in-lean/",
-    "score": 234,
-    "time": 1794814699,
-    "titulo_es": "Interpretando la corrección de teoremas verificados en Lean, especialmente con código generado por IA",
-    "resumen": "Este artículo aborda cómo interpretar la validez de teoremas matemáticos formalizados en Lean, un asistente de pruebas interactivo. Se centra en la diferencia entre la declaración de un teorema y su prueba, y cómo el código Lean puede expresar definiciones complejas que requieren miles de líneas para su comprensión. Se advierte que, si bien la verificación en Lean es una señal importante de corrección, esta confianza se ve comprometida cuando el código es generado por IA. En tales casos, es crucial realizar pruebas adicionales para verificar que la declaración del teorema en Lean se corresponde con la del documento original y que las definiciones subyacentes son correctas y no trivialmente verdaderas o falsas debido a convenciones de Lean o incompletudes en las bibliotecas. Se señala que, para muchas de las formalizaciones recientes (como las del conjunto de teoremas de OpenAI), estas pruebas no se han realizado sistemáticamente, aunque no hay impedimentos para llevarlas a cabo.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50517815,
-    "url": "https://infisical.com/blog/active-directory-machine-identity",
-    "score": 68,
-    "time": 1794838531,
-    "titulo_es": "Active Directory: El Mainframe de la Identidad Corporativa en la Era Cloud",
-    "resumen": "El artículo argumenta que Active Directory (AD), a pesar de su obsolescencia para las arquitecturas cloud modernas, sigue siendo el pilar para la gestión de identidades en muchas empresas. Se describe la arquitectura de AD basada en LDAP y Kerberos, y su rol histórico en la gestión de identidades humanas y la aplicación de políticas a través de Group Policies y Certificate Services. Sin embargo, se señala que AD falla en la gestión de identidades de máquinas en entornos cloud dinámicos, donde la creación y deprecación rápida de recursos (como bases de datos, clústeres Kubernetes, CI runners) hace inviable el registro manual. Las soluciones modernas a menudo implican la delegación de autoridad, lo que puede introducir riesgos de seguridad significativos, especialmente al no comprender la gestión moderna de identidades de máquinas. El artículo critica las malas prácticas de seguridad, como el uso de políticas IAM excesivamente permisivas, como un síntoma de la incapacidad de las organizaciones para gestionar adecuadamente las identidades de máquinas en el desarrollo de software contemporáneo. Se concluye que AD, aunque irremplazable en muchos casos por su arraigo, es una infraestructura de una era pasada que presenta desafíos insuperables para las necesidades de escalabilidad y seguridad de la nube actual, particularmente en lo que respecta a las identidades de las máquinas.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50520697,
-    "url": "https://www.wired.com/story/data-centers-use-more-electricity-than-michigan/",
-    "score": 15,
-    "time": 1794852295,
-    "titulo_es": "Centros de Datos Hiperscale en EE. UU. Consumen Electricidad Equivalente a Michigan; Emisiones Impulsadas por la IA",
-    "resumen": "Una investigación reciente de Harvard revela que 400 centros de datos hiperscale en EE. UU. consumieron tanta electricidad como el estado de Michigan en un año. La mayoría de esta energía proviene de combustibles fósiles, y las emisiones de los centros de datos se han triplicado desde el auge de la IA. El estudio, publicado en Nature Sustainability, modeló el uso de energía de 403 centros de datos hiperscale operativos entre mayo de 2024 y abril de 2025, estimando sus emisiones de carbono basándose en la mezcla energética de las redes regionales. Regiones como Virginia, Oregón, Ohio e Iowa representaron más del 50% del consumo energético. La investigación destaca la falta de seguimiento gubernamental específico para los centros de datos y la naturaleza propietaria de su consumo energético, lo que dificulta la evaluación precisa. El estudio, aunque reciente, podría subestimar el consumo actual dada la rápida expansión de la industria, con nuevos desarrollos que proponen campus de cientos o miles de megavatios. Además, no considera la generación de energía 'detrás del medidor' (behind-the-meter), que, si se implementa según los planes actuales (189 GW de capacidad proyectada), podría aumentar las emisiones generales de EE. UU. en un 10%, a menudo mediante turbinas de gas natural ineficientes. La Administración de Información Energética (EIA) ha iniciado encuestas piloto para mejorar el seguimiento de este sector.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50520866,
-    "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
-    "score": 68,
-    "time": 1794853037,
-    "titulo_es": "Fallos Sistémicos en el Software Moderno: IA, Complejidad y Confiabilidad",
-    "resumen": "El artículo discute una serie de fallos recientes y graves en sistemas de software, incluyendo una interrupción global de Microsoft, una paralización de vuelos de la FAA, una vulnerabilidad crítica en PHP (PHP2Shell) y un compromiso de certificados SSL de eMudhra. Se argumenta que estos incidentes, a pesar de sus causas inmediatas diversas, reflejan un problema sistémico en la forma en que se construye el software. La Inteligencia Artificial (IA) se identifica como un factor contribuyente, tanto en la aceleración del descubrimiento de vulnerabilidades complejas por parte de atacantes como, potencialmente, en la propia arquitectura de sistemas cada vez más complejos. Se critica la gestión de la deuda técnica y la dependencia de soluciones rápidas y automatización en plataformas como Microsoft Azure, lo que resulta en sistemas de baja calidad, difíciles de comprender y mantener. La cadena de dependencias, ejemplificada por el ecosistema de JavaScript (NPM) y el uso de herramientas como GitHub Actions para CI/CD, se señala como un vector de riesgo adicional, donde vulnerabilidades ocultas en componentes de bajo nivel pueden tener efectos devastadores a gran escala. En esencia, el artículo sugiere que la creciente complejidad y la presión por la entrega rápida han erosionado los principios fundamentales de confiabilidad en el desarrollo de software.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50486745,
-    "url": "https://news.cornell.edu/stories/2026/11/researchers-track-whole-body-movement-just-smartwatch",
-    "score": 170,
-    "time": 1794590989,
-    "titulo_es": "EchoMotion: Rastreo de Cuerpo Completo con un Solo Smartwatch Usando Detección Acústica Activa",
-    "resumen": "EchoMotion es una tecnología desarrollada por Cornell que permite el rastreo de movimiento de cuerpo completo utilizando ondas ultrasónicas, un smartwatch comercial y un modelo ligero de inteligencia artificial. Aprovecha los altavoces y micrófonos integrados en el reloj para crear un sistema de detección similar al sonar. A diferencia de los métodos tradicionales que requieren múltiples dispositivos (como smartphones o VR headsets) y sensores (acelerómetros, giroscopios), o cámaras, EchoMotion ofrece ventajas significativas en privacidad, eficiencia y consumo de datos. Los investigadores entrenaron un modelo de aprendizaje profundo a partir de patrones de eco recogidos de voluntarios, logrando una precisión de predicción de la posición de 12 articulaciones con un error promedio inferior a 4 pulgadas, que se reduce a 2.4 pulgadas tras una calibración de 12 minutos. El sistema es energéticamente eficiente, consumiendo significativamente menos energía que las cámaras portátiles, y está diseñado para una fácil adopción en dispositivos comerciales y sistemas de realidad virtual para aplicaciones como seguimiento de ejercicio, actividades diarias y rehabilitación física.",
+    "id": 50532191,
+    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+    "score": 175,
+    "time": 1794927223,
+    "titulo_es": "FrontierHarness v1.1: Evaluación y optimización de harnesses según el modelo de lenguaje",
+    "resumen": "En colaboración con Baseten, se presenta un benchmark masivo a escala de 83 mil millones de tokens y más de 27.000 ejecuciones de agentes para analizar el rendimiento y coste de 22 configuraciones de 'harnesses' frente a 5 modelos fundacionales (como GLM-5.3, DeepSeek V4.1 Flash y Kimi-K3). El estudio demuestra que la elección del harness debe adaptarse al modelo utilizado, ya que la eficiencia de costes y la tasa de resolución varían drásticamente entre combinaciones; por ejemplo, Codex CLI es el más rentable con GLM-5.3 pero cae significativamente de rango con Kimi-K3.",
     "categoria": "IA"
   },
   {
-    "id": 50512235,
-    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
-    "score": 424,
-    "time": 1794786955,
-    "titulo_es": "El Impacto de los CEOs Visionarios en la Innovación Empresarial: Lecciones de Nvidia y Microsoft",
-    "resumen": "El artículo analiza el papel crucial de los CEOs visionarios en la innovación y el éxito a largo plazo de las empresas tecnológicas, utilizando a Nvidia y Apple como ejemplos primordiales de reinvención estratégica. Se destaca cómo líderes como Jensen Huang (Nvidia) y Steve Jobs (Apple) transformaron radicalmente sus compañías mediante la identificación y capitalización de tendencias tecnológicas emergentes, como la computación de propósito general con CUDA, el deep learning y la infraestructura para centros de datos de IA en Nvidia, y la transición de Apple de un nicho de mercado a la compañía más rentable del mundo. Se contrasta esto con el período de ejecución bajo Steve Ballmer en Microsoft, donde la empresa, a pesar del crecimiento en ventas y beneficios, perdió oportunidades clave en áreas como búsqueda, smartphones, móvil y nube. La posterior recuperación de Microsoft bajo Satya Nadella, quien reposicionó la empresa en torno a la nube (Azure) y el software como servicio (Office), se presenta como un caso de éxito tras reemplazar a un líder enfocado en ventas por un experto en producto e ingeniería. El artículo concluye que los CEOs visionarios no solo ejecutan modelos de negocio exitosos, sino que también crean mercados, comprenden profundamente los productos y tienen una visión clara de la dirección futura, a menudo sin depender de comités para tomar decisiones estratégicas. La implicación para Nvidia tras la salida de Jensen Huang es la advertencia de que la innovación podría estancarse, haciendo hincapié en la necesidad de mantener una mentalidad emprendedora y orientada a la innovación.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50511395,
-    "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
-    "score": 367,
-    "time": 1794780703,
-    "titulo_es": "Bitly permite la reutilización maliciosa de enlaces antiguos, afectando a marcas y figuras públicas",
-    "resumen": "El artículo detalla una vulnerabilidad en el servicio de acortamiento de enlaces Bitly que permitió a actores maliciosos reutilizar enlaces antiguos e inactivos para redirigir a los usuarios a contenido no relacionado. Se observó que enlaces de cuentas como Burger King, McDonald's, Donald Trump, Bill Gates, Justin Trudeau, Mike Pence, el FBI y el Departamento de Defensa de EE. UU. fueron comprometidos. El problema radicaba en que, al añadir un '+' al final de un enlace Bitly, se revelaba información sobre la creación del enlace y su destino. Si un enlace antiguo se registraba de nuevo con la misma URL corta, la información de creación reflejaba la fecha de registro posterior, no la original. Por ejemplo, un enlace de Burger King de 2011 fue registrado en 2026 y redirigía a una lista de campos de concentración nazis. Bitly ha confirmado el problema, ha suspendido las cuentas involucradas y está deshabilitando los enlaces afectados, además de implementar protecciones contra futuros abusos.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50515182,
-    "url": "https://github.com/ages2001/WINUDF",
-    "score": 73,
-    "time": 1794816013,
-    "titulo_es": "Driver de Sistema de Archivos Instalable UDF para DOS y Windows",
-    "resumen": "WINUDF es un driver de sistema de archivos (IFS) que permite leer y escribir en sistemas de archivos UDF (versiones 1.02 a 2.60) en entornos DOS y Windows (1.0x a ME). Para DOS y Windows 3.x, se utiliza WINUDF.EXE, asignando letras de unidad a los medios UDF. Para Windows 95/98/ME, WINUDF.VXD actúa como un driver de sistema de archivos que soporta nombres largos. El paquete se distribuye en un árbol de directorios (bin/DOS, bin/WIN3X, bin/WIN9X) que debe mantenerse unido durante la instalación. La configuración implica modificar AUTOEXEC.BAT y CONFIG.SYS en DOS/Windows 3.x, y SYSTEM.INI en Windows 95/98/ME. Se proporciona un desinstalador (UNINUDF) y documentación detallada sobre opciones, funcionamiento interno, notas de hardware, interfaz de programación, compilación desde código fuente, pruebas y limitaciones.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50509837,
-    "url": "https://bruceroettgers.eu/blog/protomaps/",
-    "score": 449,
-    "time": 1794770782,
-    "titulo_es": "PMTiles: Un Formato de Tile Coste-Efectivo para Mapas Web",
-    "resumen": "El artículo describe PMTiles, un formato de tile para mapas web que se distribuye como un único archivo y utiliza peticiones HTTP Range. Se destaca su portabilidad y facilidad de despliegue en servicios de almacenamiento y CDNs. Se detalla cómo configurarlo, incluyendo el uso de CDNs como Bunny.net, la optimización para la entrega de archivos grandes, la configuración de límites de red para disuadir descargas masivas y la integración con librerías frontend como MapLibre GL. Se compara su coste con APIs comerciales como Mapbox, señalando un potencial ahorro significativo, especialmente para proyectos con alta demanda. Se abordan aspectos técnicos como la compatibilidad con S3, el uso de rclone para la transferencia de datos y la configuración de CORS.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50512441,
-    "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
-    "score": 233,
-    "time": 1794788514,
-    "titulo_es": "Actualización de Seguridad Urgente para Tor 0.4.9.17 en Respuesta a Ataques DDoS",
-    "resumen": "La versión 0.4.9.17 de Tor aborda importantes fallos de seguridad, con un énfasis particular en la mitigación de ataques de denegación de servicio (DoS) dirigidos a relays, especialmente aquellos relacionados con el manejo de IPv6. Esta liberación es una respuesta rápida a un ataque DDoS activo que está sobrecargando los relays con un gran volumen de circuitos de clientes. Se están evaluando defensas adicionales y se anticipan futuros lanzamientos. Se insta a los operadores de relays a actualizar lo antes posible. Para los usuarios que ejecutan relays desde Tor Browser (tor.exe), la actualización se realiza actualizando Tor Browser a la última versión.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50518567,
-    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
-    "score": 151,
-    "time": 1794842649,
-    "titulo_es": "El Desafío de Nvidia en la Era de la IA: Competidores Emergentes y Cambios en el Mercado de Chips",
-    "resumen": "El artículo analiza el papel crucial de Nvidia en el auge de la inteligencia artificial, impulsado por la visión de su ex CEO Jensen Huang y la inversión temprana en chips para entrenamiento de IA. Sin embargo, la compañía enfrenta una competencia creciente. Gigantes tecnológicos como Google, Amazon y Microsoft están desarrollando sus propios chips especializados para reducir costos y depender menos de Nvidia. Empresas emergentes como Cerebras y Taalas ofrecen soluciones innovadoras, aunque a menudo requieren reescritura de código. El análisis también destaca la creciente importancia de la inferencia (ejecución de modelos entrenados), un área donde Nvidia tiene menos ventaja frente a los hiper-escaladores y startups. La demanda de CPUs de propósito general, donde Nvidia tiene una presencia limitada, también está aumentando. A pesar de su dominio del 80% del mercado de aceleradores de IA, la dependencia de Nvidia de la demanda de entrenamiento de modelos y las restricciones de exportación a China (que ha reducido su cuota de ingresos del 20% al 8%) presentan desafíos significativos. En China, Huawei está desarrollando supercomputadoras propias para el entrenamiento de IA, y empresas como Z.ai utilizan chips locales. La sucesión de Jensen Huang y la necesidad de prever las tendencias tecnológicas a dos o tres años vista son cruciales para el futuro de Nvidia.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50518690,
-    "url": "https://klauria.tech/psychic/",
-    "score": 9,
-    "time": 1794843214,
-    "titulo_es": "Psychic: Un Navegador de Archivos Terminal Rápido con IA que Aprende Patrones de Uso",
-    "resumen": "Psychic es un navegador de archivos basado en terminal diseñado para maximizar la velocidad y la interactividad, actualizándose en menos de 16 ms por pulsación de tecla. Utiliza un modelo de Machine Learning ligero (LightGBM) entrenado localmente con los datos de uso del usuario (directorios visitados, archivos abiertos, interacciones de búsqueda). El modelo predice qué archivos es más probable que abra el usuario basándose en la consulta de búsqueda y los patrones históricos, optimizando así la navegación por el sistema de archivos. Para usuarios nuevos, emplea un modelo simple basado en clics recientes, tiempo de modificación y coincidencia difusa, que gradualmente cede protagonismo al modelo de ML a medida que se acumulan más datos. El modelo se reentrena desde cero cada vez que se inicia Psychic para reflejar los patrones de uso actuales, y la actualización del modelo en uso ocurre de forma discreta para no interrumpir la experiencia del usuario. Psychic integra datos de sqlite con el modelo LightGBM, utilizando el objetivo LambdaRank para tareas de clasificación. La elección de un modelo local se debe a las estrictas restricciones de latencia, descartando soluciones basadas en red y modelos más complejos como LLMs o Transformers.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50517602,
-    "url": "https://jack.cab/blog/siterate",
-    "score": 287,
-    "time": 1794837098,
-    "titulo_es": "No pruebes en producción: Un caso de estudio de métricas de SEO infladas",
-    "resumen": "El artículo detalla una investigación sobre un dominio aparentemente anómalo, w2rt6byl5nf1opmc-a.com, que apareció con un número extraordinariamente alto de backlinks en Majestic Million, a pesar de ser un dominio recién registrado y no resoluble. El autor rastrea el origen de estas métricas infladas hasta experimentación interna en Majestic, donde se olvidaron de implementar un filtro para excluir dominios de pruebas internas de los rankings públicos. Este incidente sirve como una advertencia sobre la importancia de no realizar pruebas en entornos de producción y resalta las posibles fallas en los sistemas de métricas de SEO cuando no se manejan adecuadamente los datos de experimentación.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50484998,
-    "url": "https://www.paradedb.com/blog/joins",
-    "score": 113,
-    "time": 1794583910,
-    "titulo_es": "ParadeDB: Búsquedas en Múltiples Tablas Relacionales Revolucionan las Consultas Combinadas",
-    "resumen": "El artículo describe cómo ParadeDB aborda el desafío de realizar búsquedas eficientes en bases de datos relacionales con datos normalizados en múltiples tablas, un problema conocido como 'search join'. Tradicionalmente, las organizaciones debían elegir entre la complejidad y la fragilidad de procesos ETL hacia motores de búsqueda externos como Elasticsearch, o aceptar el rendimiento lento de PostgreSQL para unir y puntuar millones de filas. ParadeDB introduce una solución que trata las búsquedas combinadas como una característica de primera clase, eliminando la necesidad de desnormalizar datos o aceptar latencias elevadas. En pruebas comparativas con el modelo de datos de Stack Overflow (usuarios, posts, comentarios, badges), ParadeDB logra una mejora de hasta 1000x en comparación con PostgreSQL vanilla para consultas de búsqueda combinada Top-K, reduciendo el tiempo de 2 minutos a 100 ms sin infraestructura adicional. Esto se logra repensando cómo PostgreSQL indexa y ejecuta consultas, permitiendo un acceso a datos más eficiente y un procesamiento más rápido de los resultados, especialmente cuando se aplican filtros o límites (Top-K). Se enfatiza cómo las soluciones tradicionales de Elasticsearch complican las uniones relacionales con configuraciones complejas y la necesidad de desnormalización, lo que lleva a un aumento en el almacenamiento y la duplicación de datos. ParadeDB, en cambio, permite ejecutar estas complejas consultas directamente en la base de datos relacional con un rendimiento significativamente mejorado.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50520424,
-    "url": "https://getbootstrap.com/",
-    "score": 5,
-    "time": 1794851110,
-    "titulo_es": "Bootstrap 6: Un toolkit de diseño agnóstico de frameworks para la web moderna",
-    "resumen": "Bootstrap 6 se ha reconstruido para la web actual como un toolkit de diseño agnóstico de frameworks. Permite a cualquier usuario, humano o IA, novato o profesional, construir cualquier cosa utilizando nuevos estándares, componentes actualizados, un diseño visual renovado, temas CSS-first y plugins de JavaScript más potentes. El objetivo es facilitar la creación de interfaces web modernas y personalizables.",
+    "id": 50532385,
+    "url": "https://alloyhtml.com/example.html",
+    "score": 93,
+    "time": 1794928029,
+    "titulo_es": "Ledger: Demostración en un solo archivo HTML con Alloy CSS",
+    "resumen": "Demostración técnica de una interfaz para una aplicación ficticia de facturación (Ledger), implementada completamente en un único archivo HTML utilizando Alloy CSS y sin dependencias de JavaScript, destacando técnicas de desarrollo frontend minimalista.",
     "categoria": "Frontend"
+  },
+  {
+    "id": 50517375,
+    "url": "https://arxiv.org/abs/2611.18126",
+    "score": 13,
+    "time": 1794835517,
+    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Características de arXiv",
+    "resumen": "El artículo describe arXivLabs, un marco diseñado para permitir que colaboradores externos, tanto individuos como organizaciones, desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza la alineación de los colaboradores con los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de los datos del usuario. arXiv se compromete a trabajar únicamente con socios que respeten estos principios. Se invita a los interesados con ideas para proyectos que aporten valor a la comunidad de arXiv a explorar más sobre arXivLabs y su proceso de colaboración.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50515291,
+    "url": "https://egm.dev/",
+    "score": 15,
+    "time": 1794817408,
+    "titulo_es": "EGM: Un Plugin de Código Abierto para la Colaboración en Planes de Asistentes de IA",
+    "resumen": "El artículo describe EGM, un plugin de código abierto diseñado para mejorar el proceso de desarrollo de planes con asistentes de IA. EGM facilita la creación de planes detallados que consideran el contexto de la conversación con el asistente, el objetivo y el trasfondo del proyecto. Los planes son revisados por pares que no tienen acceso a la conversación completa, permitiéndoles identificar omisiones o ambigüedades. El sistema fomenta un ciclo iterativo donde el autor, los asistentes de IA y los revisores colaboran para refinar el plan. Se menciona que EGM se integra como un plugin en diversas aplicaciones y que el método se inspira en un artículo de Dave Rensin sobre la ingeniería de software moderna. El texto también incluye detalles sobre la instalación y el soporte del plugin, así como información sobre la apertura de un espacio físico el 3 de marzo.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50529612,
+    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+    "score": 166,
+    "time": 1794910840,
+    "titulo_es": "Cómo las pruebas de extremo a extremo, de propiedades y diferenciales permiten a los agentes de codificación verificar su trabajo con evidencia, y qué hace el equipo de Claude Code para mantener honestos a sus verificadores.",
+    "resumen": "El artículo detalla la importancia crítica de los bucles de verificación en el desarrollo de software a gran escala, especialmente cuando el código es generado y revisado por agentes de IA como Claude. Se enfoca en tres tipos principales de pruebas para equipar a estos agentes: pruebas de extremo a extremo (E2E), pruebas de propiedades y pruebas diferenciales. Las pruebas E2E son cruciales porque simulan flujos de usuario reales y son difíciles de engañar, proporcionando criterios definitivos de éxito o fracaso. Las pruebas de propiedades se centran en casos de borde y entradas inesperadas que a menudo pasan desapercibidas en el desarrollo manual, utilizando bibliotecas de generación de entradas para probar la robustez del código. Se enfatiza que las pruebas deben ser rápidas y confiables para evitar que los agentes se acostumbren a volver a ejecutarlas en lugar de corregir el código. La implementación de estas pruebas permite una delegación de trabajo más eficiente a los agentes de IA, mejora la calidad del código y facilita la detección y corrección de errores al cerrar el ciclo de verificación.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50470523,
+    "url": "https://spiraldb.com/blog/rows-vs-columns",
+    "score": 115,
+    "time": 1794503081,
+    "titulo_es": "Introducción al Almacenamiento Columna para Bases de Datos Analíticas",
+    "resumen": "El artículo explica la diferencia fundamental entre el almacenamiento de datos en filas (row store) y en columnas (column store) en bases de datos. Los row stores, como PostgreSQL y MySQL, agrupan los valores de cada registro juntos, siendo eficientes para transacciones en línea (OLTP) donde se accede o modifica un registro completo. En contraste, los column stores, como DuckDB y ClickHouse, agrupan los valores de cada columna juntos. Esta organización es significativamente más eficiente para cargas de trabajo analíticas (OLAP), donde las consultas a menudo solo necesitan acceder a un subconjunto de columnas a través de un gran número de registros. Almacenar los datos por columna permite optimizaciones en lectura, compresión y procesamiento de CPU, lo que resulta en un rendimiento mucho mayor para tareas analíticas complejas que requieren el examen de grandes volúmenes de datos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50524767,
+    "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+    "score": 581,
+    "time": 1794870034,
+    "titulo_es": "Ataque a través de Optimizely Web: Robo de Criptomonedas y Datos de Tarjetas de Crédito",
+    "resumen": "El 16 de noviembre de 2026, un ataque de JavaScript malicioso afectó a 178 organizaciones a través de la plataforma Optimizely Web. El malware, inyectado en el campo 'Project JavaScript' de los snippets de Optimizely, fue diseñado para reemplazar direcciones de billeteras de criptomonedas por las del atacante, robar información de tarjetas de crédito mediante el escaneo de envíos de formularios y peticiones XHR/fetch, sustraer cookies y capturas de pantalla. En dispositivos iOS, también distribuyó kits de exploits como Coruna y DarkSword. El ataque se propagó incluso a través de subdominios personalizados utilizados por los clientes para servir sus snippets, ya que el contenido provenía del mismo proyecto comprometido de Optimizely. Aunque el código malicioso se ha reducido significativamente, el incidente subraya la vulnerabilidad de depender de scripts de terceros, incluso si se sirven desde dominios de confianza y con certificados válidos. La implementación de políticas de Content Security Policy (CSP) en modo de aplicación podría haber mitigado el impacto del ataque al bloquear la ejecución de scripts no autorizados. La causa raíz del acceso no autorizado a los proyectos de Optimizely aún está bajo investigación por parte de la empresa.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50532773,
+    "url": "https://antfly.io/thoughts/how-antfly-learned-to-stop-worrying-and-love-apache-2",
+    "score": 20,
+    "time": 1794929595,
+    "titulo_es": "Antfly cambia de Elastic License 2.0 a Apache 2.0: Por qué lo hicimos y por qué dejó de tener sentido",
+    "resumen": "El artículo detalla la transición de Antfly de la Elastic License 2.0 (ELv2) a la Apache 2.0. Inicialmente, Antfly adoptó ELv2 para protegerse de que los proveedores de nube ofrecieran su servicio sin un modelo de negocio propio, permitiendo la lectura, modificación y ejecución del código pero restringiendo la creación de negocios basados en su reventa. Sin embargo, la percepción de Antfly es que el panorama tecnológico ha cambiado. Con el avance de herramientas como los agentes de desarrollo, los proveedores de nube pueden replicar funcionalidades complejas más rápidamente, haciendo que la protección ofrecida por ELv2 sea menos efectiva. Paralelamente, la comunidad ha expresado un fuerte deseo de licencias de código abierto más permisivas. La migración a Apache 2.0 permite a los usuarios integrar Antfly en sus productos, construir negocios sobre él e incluso competir con Antfly Cloud, el servicio gestionado ofrecido por la empresa. La licencia Apache 2.0 garantiza que todas las versiones futuras mantendrán esos términos. Antfly mantiene su enfoque en ofrecer Antfly Cloud como un servicio de valor añadido para quienes prefieren no autogestionar la base de datos, pero elimina las barreras para el desarrollo y la innovación sobre su tecnología.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50509456,
+    "url": "https://turbo51.com/compiler-design/tpc16-turbo-pascal-compiler-written-in-turbo-pascal",
+    "score": 81,
+    "time": 1794768057,
+    "titulo_es": "Compilador Turbo Pascal 7 de Código Abierto (TPC16)",
+    "resumen": "El artículo presenta TPC16, un compilador de línea de comandos para Turbo Pascal 7 escrito en el propio Turbo Pascal. Aunque no es el código fuente original de Borland, TPC16 es compatible con la sintaxis y genera código ejecutable de 16 bits para x86, idéntico al de TPC.EXE de Borland. Se destaca que el código fuente permite entender el funcionamiento interno de un compilador, sus estructuras de datos y algoritmos, y su naturaleza de \"single pass\". Debido a limitaciones de memoria en DOS, la compilación directa de TPC16 con TPC.EXE no es factible, pero se recomienda usar BPC.EXE como solución. El resultado TPC16.exe genera binarios compatibles con Borland Turbo Pascal 7.0 (TPU o EXE), con la salvedad de que los mapas de símbolos y la información de depuración no están implementados. Se menciona que la versión TPC32, compilable con Delphi 7, elimina las limitaciones de memoria y ofrece mejoras como la gestión de tablas de símbolos y soporte para nombres de archivo largos. El TPC16 está disponible para su adquisición por una \"pequeña compensación\", ofreciendo un aprendizaje práctico en el diseño de compiladores y actuando como bloque de construcción para proyectos propios o extensiones.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50512779,
+    "url": "https://nimony.org/",
+    "score": 154,
+    "time": 1794791122,
+    "titulo_es": "El camino hacia Nim 3: Presentando Nimony",
+    "resumen": "El artículo detalla el desarrollo de Nimony, un nuevo compilador para el lenguaje Nim que introduce características del lenguaje Nim 3 como borrow checking, explicit nilability, sum types y checked generics. Nimony está diseñado para compilaciones incrementales y paralelas desde el inicio. Se destacan mejoras en la sintaxis para variant objects, eliminando la necesidad de discriminadores separados y permitiendo pattern matching más expresivo. Se abordan \"footguns\" comunes del lenguaje, como la mutación de datos prestados, mediante un sistema de \"borrow checking\" que previene modificaciones mientras los datos están en uso. Los generics son verificados en tiempo de definición, no solo en instanciación, y se soportan conceptos para definir interfaces y comportamientos requeridos. Se mencionan casos de uso en desarrollo embebido, de juegos y full-stack, así como el porting de proyectos reales al nuevo compilador. Se hace referencia a la versión 0.6.2 y a la documentación del manual.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50533366,
+    "url": "https://www.businessinsider.com/charles-scwab-website-outage-reports-2026-11",
+    "score": 37,
+    "time": 1794931542,
+    "titulo_es": "Charles Schwab sufre interrupción temporal de su sitio web",
+    "resumen": "El artículo describe un incidente en Charles Schwab donde su sitio web experimentó una interrupción temporal el lunes, mostrando un mensaje de error interno o de  misconfiguración. La incidencia se resolvió rápidamente, afectando solo a una parte de los usuarios. La negociación y el acceso a cuentas a través de la aplicación móvil o la URL de inicio de sesión directa no se vieron afectados. Informes de interrupciones en DownDetector.com aumentaron significativamente durante el incidente. Este evento se produce tras una serie de interrupciones generalizadas en otras grandes empresas tecnológicas y financieras.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50526560,
+    "url": "https://support.apple.com/en-us/149699",
+    "score": 211,
+    "time": 1794881824,
+    "titulo_es": "Control de acceso a disco completo y anulación de protección de sistema en macOS",
+    "resumen": "A partir de macOS 27.3, se introduce un control granular para las aplicaciones que solicitan Acceso Completo a Disco (Full Disk Access) o Anulación de Protección de Sistema y Aplicaciones (System & App Protection Override). En lugar de otorgar acceso ilimitado, los usuarios ahora pueden elegir permitir el acceso solo a carpetas protegidas específicas o a aplicaciones concretas. Esto mejora la privacidad y seguridad al limitar la exposición de datos sensibles, como mensajes, correos electrónicos, fotos, videos y datos de otras cuentas de usuario. Las aplicaciones que tradicionalmente solicitan estos permisos (backup, limpieza de disco, indexación, seguridad) ahora ofrecen la opción de conceder acceso restringido. Si se opta por omitir las protecciones del sistema (Bypass System Protections), las aplicaciones obtienen capacidades mucho más amplias, incluyendo lectura, modificación, eliminación y exportación de todos los datos, control total del sistema y monitoreo de la actividad del usuario (captura de cada pulsación de tecla). Se recomienda a los usuarios consultar las instrucciones del desarrollador de la aplicación y conceder solo los permisos estrictamente necesarios, pudiendo modificar estas configuraciones en cualquier momento. Otorgar acceso ilimitado conlleva el riesgo de exponer información personal a aplicaciones maliciosas o que no se comporten como se espera.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50532086,
+    "url": "https://jordankrueger.com/blog/better-open-source-not-more-apps/",
+    "score": 274,
+    "time": 1794926736,
+    "titulo_es": "La codificación asistida por IA y el futuro del software de código abierto",
+    "resumen": "El artículo discute el auge de la 'vibecoding' o codificación asistida por IA, donde los desarrolladores crean nuevas aplicaciones rápidamente. Sin embargo, el autor argumenta que gran parte de esta energía debería dirigirse a mejorar el software de código abierto existente, que a menudo presenta dificultades en la instalación, el rendimiento y el mantenimiento. Se destaca la importancia del software de código abierto para que las organizaciones puedan mantener la propiedad de sus datos y liberarse de los grandes proveedores tecnológicos. El autor propone que la IA puede ser una herramienta valiosa para abordar estas tareas menos glamurosas pero cruciales, como optimizar el código, mejorar la documentación y simplificar los procesos de instalación y actualización. Se advierte sobre el aumento del volumen de informes de seguridad falsos generados por IA, incluso si son de alta calidad, lo que puede abrumar a los mantenedores. Finalmente, se hace un llamado a la comunidad para que dedique tiempo a mejorar una herramienta de código abierto que utilicen, colaborando con sus mantenedores.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50515603,
+    "url": "https://github.com/plabayo/venndb",
+    "score": 31,
+    "time": 1794820657,
+    "titulo_es": "Base de datos en memoria en Rust para consultar datos como un diagrama de Venn",
+    "resumen": "Venndb es una base de datos en memoria, solo de adición, escrita en Rust, optimizada para casos de uso específicos con datos mayormente estáticos y de solo lectura. Está diseñada para consultas frecuentes utilizando filtros binarios (flags) y mapas de filtros (columnas con valores discretos). Sus puntos fuertes son la velocidad y la compacidad, superando a implementaciones ingenuas y dependencias más pesadas como SQLite en escenarios adecuados. Ideal para filtrar grandes conjuntos de datos estáticos y obtener resultados aleatorios eficientemente, aunque no pretende reemplazar bases de datos tradicionales. Soporta tipos de datos para filtros que implementen `Eq + Hash + Clone`, recomendando el uso de enums o tipos envolventes para garantizar la consistencia. Los filtros pueden ser opcionales envolviendo los tipos con `Option`.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50496787,
+    "url": "https://github.com/ZigaoWang/zigzag",
+    "score": 99,
+    "time": 1794662230,
+    "titulo_es": "Zigzag: Un Navegador Nativo de Mac Ligero y de Código Abierto",
+    "resumen": "Zigzag es un navegador web nativo para macOS, desarrollado en Swift y AppKit utilizando WebKit. Fue creado por un estudiante de secundaria en Shanghái como alternativa al navegador Arc, que estaba programado para cerrar. El navegador se enfoca en ser ligero (aproximadamente 35 MB), gratuito y de código abierto, sin requerir cuenta ni telemetría. Soporta la importación de datos desde otros navegadores, incluyendo configuraciones de Arc, y permite el uso de extensiones de Chrome a través de la Chrome Web Store. Destaca por su arquitectura sin Chromium ni Electron, aprovechando WebKit integrado en macOS para mejorar la eficiencia de batería y memoria, y para recibir actualizaciones de seguridad de forma automática con las actualizaciones del sistema operativo. Zigzag ofrece funcionalidades como pestañas en una barra lateral agrupadas en espacios, gestión de contraseñas integrada con Keychain de iCloud y soporte para gestores de contraseñas como 1Password y Bitwarden. El desarrollo se organiza por funcionalidades y cuenta con más de 2,000 pruebas automatizadas. Los requisitos para compilarlo incluyen macOS 15.4 o posterior y Xcode 26 o posterior.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50519354,
+    "url": "https://trmnl.com/blog/introducing-frame",
+    "score": 513,
+    "time": 1794846202,
+    "titulo_es": "Presentación de \"Frame\": Un Display ePaper a Todo Color con Estructura de Madera Personalizada",
+    "resumen": "El artículo anuncia el lanzamiento de \"Frame\", un display ePaper a todo color de 31.5 pulgadas, presentado en una estructura de madera hecha a mano. Este nuevo producto, que representa la tercera versión de la compañía TRMNL (anteriormente ArtSpot), se basa en la visión de llevar arte a los hogares. \"Frame\" hereda las funcionalidades de otros dispositivos TRMNL e introduce mejoras significativas: Clock Sync para actualizaciones programadas y reducción de parpadeos, Modo Offline con soporte para microSD para uso sin conexión, Opciones de Alimentación Dedicada (USB-C), un motor de conversión de color avanzado llamado \"Lazarus\" para una representación de color superior en pantallas Spectra 6 (con planes de código abierto y expansión a otros dispositivos), y soporte para tres orientaciones (vertical, horizontal) sin hardware adicional. Se menciona también la colaboración con desarrolladores para funcionalidades específicas y un plugin de \"Arte Local\" que permite a los artistas exhibir y vender su trabajo a través de la plataforma TRMNL, rindiendo homenaje a los orígenes de ArtSpot. El artículo contrasta la experiencia previa en software B2B del fundador con los desafíos de la fabricación de productos físicos, destacando la madurez de la empresa tras el envío de 60,000 unidades a 79 países. Las pre-órdenes están abiertas, con envíos planeados para finales de 2026 y la mayoría en 2027.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50517321,
+    "url": "https://www.theregister.com/saas/2026/11/16/microsoft-blames-monster-email-outage-on-software-defect-introduced-in-july-fix/5310026",
+    "score": 432,
+    "time": 1794835102,
+    "titulo_es": "Fallo de Verano en SaaS: un cambio de código de julio causó una caída en otoño y obligó a parchear el parche",
+    "resumen": "Microsoft experimentó una interrupción masiva de Microsoft 365, incluida la caída de Exchange Online, debido a un defecto introducido en julio en los servidores de gateway de red. Este defecto, un problema de contención de bloqueo en un proceso interno de Windows, se exacerbaba en hardware más potente. La caída se desencadenó por una combinación de un aumento de carga en los gateways primarios debido a un failover de Teams y una reducción del 14% en la capacidad del gateway de red. El escenario se convirtió en una falla en cascada, con servidores volviéndose irresponsables a medida que el tráfico se redirigía a otros puntos de conexión afectados. Los procesos de recuperación automatizada y un rollback directo no fueron factibles debido a la antigüedad del defecto. Los ingenieros tuvieron que desarrollar un 'parche para el parche' para restaurar gradualmente el servicio, lo que tomó aproximadamente 15 horas para resolver completamente la crisis, afectando desproporcionadamente a Exchange Online por razones de escalabilidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50519744,
+    "url": "https://burntsushi.net/jiff/",
+    "score": 429,
+    "time": 1794848019,
+    "titulo_es": "Jiff 1.0: Una Biblioteca de Datetime para Rust con Manejo Centralizado de Zonas Horarias",
+    "resumen": "El artículo anuncia el lanzamiento de Jiff 1.0, una biblioteca de manejo de fechas y horas para Rust. Jiff se enfoca en simplificar la complejidad inherente al trabajo con datetimes, especialmente en lo que respecta a zonas horarias y horario de verano, integrando estas funcionalidades directamente en su API. La biblioteca busca guiar a los desarrolladores hacia buenas prácticas y evitar errores comunes. Se destaca su adopción en el ecosistema Rust, mencionando su uso en proyectos populares como uv, Cargo, Starship y Nushell, e incluso como base para una implementación de Temporal en AWS LLRT. El artículo introduce los conceptos clave de Jiff, comparándolos con la noción de tiempo del sistema (Unix time) y el tiempo humano (calendario Gregoriano). Se describe la arquitectura de los tipos de datos de Jiff como una \"cebolla\", partiendo de conceptos más básicos hasta llegar a `ZonedDateTime`. Se proporcionan ejemplos de código que ilustran cómo crear objetos `ZonedDateTime` a partir de datetimes civiles y zonas horarias, o a partir de timestamps y zonas horarias, demostrando la capacidad de la biblioteca para manejar estas conversiones de forma consistente. El lanzamiento de la versión 1.0 implica un compromiso a largo plazo, asegurando estabilidad semántica para su uso como dependencia pública en otros proyectos del ecosistema.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50520182,
+    "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+    "score": 319,
+    "time": 1794850066,
+    "titulo_es": "Pastoreo de ovejas en granjas solares aumenta insectos beneficiosos y ofrece herramienta de apoyo a la toma de decisiones",
+    "resumen": "Dos investigaciones de la Universidad de Cornell exploran la sinergia entre las granjas solares y el pastoreo de ovejas. El primer estudio, publicado en Environmental Research Letters, demuestra que densidades de pastoreo de dos ovejas por hectárea en sistemas agrivoltaicos incrementan significativamente la abundancia de insectos beneficiosos, como abejas silvestres, abejas melíferas y mariquitas, en comparación con el corte de césped.  Específicamente, se observó un aumento del 38% en la abundancia de insectos beneficiosos, impulsado en gran medida por un 83% de aumento en abejas melíferas. Densidades más altas (cuatro u ocho ovejas/hectárea) mostraron resultados variables en el manejo de la vegetación y la salud del rebaño, con una disminución en las abejas melíferas a ocho ovejas/hectárea. El segundo estudio, publicado en Manufacturing & Service Operations Management, presenta una herramienta de apoyo a la toma de decisiones desarrollada para ayudar a los agricultores a gestionar de manera rentable sus rebaños de pastoreo solar. Ambas investigaciones buscan integrar las discusiones sobre desarrollo solar sostenible, pastoreo y hábitat de insectos en un marco único para informar a agricultores y tomadores de decisiones comunitarias.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50534500,
+    "url": "https://www.nytimes.com/2026/11/17/well/us-measles-elimination-status.html",
+    "score": 21,
+    "time": 1794935096,
+    "titulo_es": "El sarampión regresa con fuerza a Estados Unidos tras la caída de las tasas de vacunación",
+    "resumen": "El artículo detalla el resurgimiento del sarampión en Estados Unidos, la pérdida de su estatus de eliminación del virus y las implicaciones de salud pública. Se informa de más de 7.700 casos y 10 muertes desde enero de 2025, con brotes significativos en comunidades menonitas de Texas, así como en Pensilvania, Wisconsin y Nueva York. La caída de las tasas de vacunación se identifica como la causa principal, lo que ha llevado a que el virus se propague sin interrupción durante más de un año. La Organización Panamericana de la Salud (OPS) anunció la pérdida del estatus de eliminación de sarampión para Estados Unidos, Bolivia y México, sumándose a Canadá, que lo perdió el año anterior. Este retroceso tiene profundas implicaciones, marcando el regreso a una era de enfermedades prevenibles, hospitalizaciones y muertes, y afectando negativamente la reputación del país en el control de enfermedades contagiosas. El artículo también menciona el aumento de infecciones en mujeres embarazadas y recién nacidos, grupos de alto riesgo.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50516689,
+    "url": "https://arcentry.com/blog/do-repeat-yourself/",
+    "score": 141,
+    "time": 1794830806,
+    "titulo_es": "La Ineficiencia de la Reimplementación y la Centralización Forzada en Megabank",
+    "resumen": "El artículo describe la situación en Megabank, donde tres equipos (cuentas, banca de inversión, tarjetas de crédito) desarrollan funcionalidades similares (listas, gráficos, exportaciones) utilizando pilas tecnológicas diversas (Go/Svelte, Node/Erlang/React, PHP/Angular). La llegada de un nuevo VP de plataforma, Mike, busca mejorar la eficiencia centralizando el desarrollo en Go para el backend, React para el frontend y Kubernetes para el hosting. Si bien esto simplifica la tecnología para algunos, crea resistencia y desafíos significativos para otros equipos, como el de banca de inversión que requiere Erlang para su arquitectura de red descentralizada y el de tarjetas de crédito que encuentra Go excesivamente complejo. La iniciativa de la plataforma para reutilizar componentes de frontend ahorra tiempo, pero la falta de documentación y soporte para integraciones externas y casos de uso específicos (como gráficos de velas o formatos de datos personalizados) genera cuellos de botella y frustración, a pesar de las buenas intenciones iniciales de la plataforma.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50533023,
+    "url": "https://www.wheresyoured.at/the-nvidia-bubble/",
+    "score": 12,
+    "time": 1794930461,
+    "titulo_es": "La Burbuja de la IA: Deuda, Desigualdad y Controversias en NVIDIA",
+    "resumen": "Este artículo profundiza en las complejidades financieras de la inteligencia artificial, centrándose en la 'burbuja de la IA'. Explora la deuda asociada a la IA, el impacto económico de la IA generativa y el papel de la financiación privada y el capital privado en la infraestructura de IA. Se destacan los casos de NVIDIA y Oracle, detallando la controversia que rodea a Jensen Huang, ex CEO de NVIDIA, y la empresa Megaspeed, presuntamente involucrada en la venta ilegal de GPUs a China. Se cuestiona la transparencia en las ventas de NVIDIA a China, vinculando a Supermicro y su cofundador Wally Liaw a esquemas similares. El texto también menciona la inversión en laboratorios chinos de IA como DeepSeek y la creciente preocupación por la regulación y la prevención de futuras burbujas tecnológicas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50497621,
+    "url": "https://alperenkeles.com/posts/formal-verification-is-not-verifiable/",
+    "score": 154,
+    "time": 1794668868,
+    "titulo_es": "La IA está llevando la verificación formal a la corriente principal",
+    "resumen": "El artículo argumenta que la Inteligencia Artificial (IA) ha impulsado la verificación formal hacia la corriente principal, evidenciado por el auge de startups, la adopción por parte de desarrolladores influyentes y la demostración de valor económico en ciberseguridad. A pesar del optimismo general, el autor señala que la \"verificación formal\" puede ser un término ambiguo. Mientras que las pruebas (testing) son verificables por humanos y fáciles de usar con IA (generando informes de bugs), la verificación formal tradicional se basa en pruebas matemáticas complejas que requieren un alto grado de confianza en los modelos subyacentes y los provers, y que son difíciles de auditar externamente. Los errores en estos componentes de \"confianza\" pueden invalidar las pruebas. Se exploran enfoques como la \"verificación binaria\" para reducir la superficie de confianza, evitando la necesidad de modelar la semántica de lenguajes de alto nivel y la corrección de compiladores, y en su lugar modelando la semántica de la máquina. Sin embargo, esto aún deja una superficie de confianza considerable y no aborda completamente la auditabilidad de los componentes de verificación.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50512576,
+    "url": "https://paleonerdish.wordpress.com/2026/10/30/halloween-special-xiv-the-fossils-that-haunted-lovecraft/",
+    "score": 65,
+    "time": 1794789492,
+    "titulo_es": "El Oviraptor y el Misterio de los Huevos del Gobi",
+    "resumen": "El artículo narra el descubrimiento de nidos de huevos fosilizados en las Colinas Rojas del Gobi en 1923 por las Expediciones Asiáticas Centrales del Museo Americano de Historia Natural. Inicialmente atribuidos al Protoceratops y nombrados por Henry Fairfield Osborn como Oviraptor ('ladrón de huevos') debido a la proximidad de un esqueleto de dinosaurio pequeño y sin dientes, la evidencia posterior, incluyendo el hallazgo de un embrión en 1993, demostró que los huevos eran oviraptóridos y que el Oviraptor era un padre devoto incubando su nidada. El texto también explora la conexión de estos descubrimientos con el escritor H.P. Lovecraft, quien se inspiró en ellos, y critica una historia de la revista Weird Tales por imprecisiones paleontológicas.",
+    "categoria": "Ciencia y Matematica"
   }
 ]
