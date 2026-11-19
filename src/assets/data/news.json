@@ -1,209 +1,254 @@
 [
   {
-    "id": 50546967,
-    "url": "https://pikuma.com/blog/history-of-x86-4004-to-486",
-    "score": 52,
-    "time": 1795013273,
-    "titulo_es": "La historia y evolución de la arquitectura x86",
-    "resumen": "Este artículo profundiza en la historia evolutiva de la arquitectura x86, comenzando con el Intel 4004 y el diseño del conjunto de instrucciones para el Datapoint 2200. Explica que muchas características aparentemente arbitrarias del conjunto de instrucciones x86, como el uso de registros específicos (AX, BX, CX, DX) y esquemas de direccionamiento (A000:0000), no son decisiones tomadas al azar, sino el resultado de decisiones históricas tomadas bajo presión para mantener la compatibilidad con el software existente. El texto destaca que la comprensión de estas decisiones históricas, en lugar de centrarse únicamente en las especificaciones del hardware más reciente, es crucial para entender verdaderamente la arquitectura x86, especialmente para la programación en entornos como DOS. La narrativa sigue la genealogía de los chips x86, desde sus orígenes en la década de 1970, abordando cómo el diseño acumulativo y las interacciones comerciales dieron forma a la arquitectura que conocemos hoy.",
+    "id": 50561508,
+    "url": "https://thedataexchange.media/pete-warden-moonshine/",
+    "score": 113,
+    "time": 1795102692,
+    "titulo_es": "Por qué la IA tiende cada vez más a ejecutarse localmente: Entrevista con Pete Warden",
+    "resumen": "Pete Warden, co-creador de Moonshine Voice y referente en deep learning, profundiza en las razones técnicas y económicas por las que la inteligencia artificial se está desplazando hacia la ejecución local y en el borde (edge computing) frente a las API en la nube. A través de herramientas como Ollama y el rápido progreso de modelos con pesos abiertos (open-weights), la inferencia en ordenadores portátiles y navegadores alcanza niveles de rendimiento cercanos a los modelos comerciales propietarios, superando barreras de adopción y desafiando los modelos de negocio SaaS dominantes.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50558533,
+    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+    "score": 535,
+    "time": 1795085909,
+    "titulo_es": "De la prueba de concepto a escala: El despliegue soberano de Matrix en la Comisión Europea",
+    "resumen": "La Comisión Europea completó el despliegue de una plataforma soberana de comunicación basada en el protocolo abierto Matrix (Element Server Suite Pro) para más de 40.000 usuarios. El artículo detalla las decisiones clave de arquitectura de software y DevOps: alojamiento en proveedores de nube soberana, autenticación federada integrada con EU Login y aplazamiento de la federación externa por motivos de gobernanza. Asimismo, aborda los desafíos técnicos de escalabilidad encontrados al operar múltiples homeservers Synapse, la optimización en el descubrimiento de usuarios, la desactivación de la presencia en tiempo real para reducir la carga en el backend y el autoescalado dinámico de la infraestructura.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50562636,
+    "url": "https://perishablepress.com/chrome-ai-wasting-much-bandwidth/",
+    "score": 31,
+    "time": 1795107265,
+    "titulo_es": "Misterio resuelto: el excesivo consumo de ancho de banda provocado por las funciones de IA de Chrome",
+    "resumen": "El autor identifica que el elevado consumo de datos y ancho de banda en segundo plano en Google Chrome es ocasionado por sus funciones integradas de inteligencia artificial y modelos 'on-device' activados por defecto. Al monitorear la actividad de red, se constató que estas características consumían cientos de gigabytes al mes sin intervención del usuario; la desactivación manual de las opciones de innovación de IA en los ajustes del navegador resolvió la fuga de tráfico de forma inmediata.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50519231,
+    "url": "https://blog.harrison.page/garage-door-spam/",
+    "score": 471,
+    "time": 1794845616,
+    "titulo_es": "Reemplazando myQ con ratgdo para el control local del garaje",
+    "resumen": "El autor detalla la sustitución del sistema propietario myQ de Chamberlain por dispositivos ratgdo32 tras el bloqueo de APIs de terceros por parte del fabricante. La placa de hardware abierto se conecta físicamente a los terminales del motor del garaje utilizando localmente el protocolo Security+ 2.0. Con firmware de código abierto, integración en Apple HomeKit, conectividad remota mediante Tailscale y scripts personalizados conectados al endpoint JSON del dispositivo, logra una solución de domótica 100% local, privada y sin dependencias de la nube.",
     "categoria": "Hardware"
   },
   {
-    "id": 50546922,
-    "url": "https://arxiv.org/abs/2510.18203",
-    "score": 47,
-    "time": 1795013073,
-    "titulo_es": "arXivLabs: Un Marco para el Desarrollo y Compartición de Nuevas Funcionalidades en arXiv",
-    "resumen": "El artículo describe arXivLabs, un marco diseñado para permitir que colaboradores desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza el compromiso de arXiv con los valores de apertura, comunidad, excelencia y privacidad de datos del usuario, seleccionando socios que adhieren a estos principios. Se invita a las partes interesadas con ideas para mejorar la comunidad de arXiv a aprender más sobre el programa arXivLabs.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50543989,
-    "url": "https://energy-based-reasoners.github.io/",
-    "score": 247,
-    "time": 1794994172,
-    "titulo_es": "Razonadores Basados en Energía: Aprendizaje de Funciones de Energía para Razonamiento Iterativo Guiado",
-    "resumen": "El artículo introduce los Razonadores Basados en Energía (EBRs), un nuevo modelo de razonamiento que aprende una función de energía sobre estados latentes de razonamiento. Las actualizaciones iterativas se formulan como un descenso de gradiente sobre esta función de energía. La función de energía evalúa la compatibilidad de los estados latentes, su gradiente dirige el refinamiento del estado y proporciona una señal natural para detener el proceso de razonamiento. Los EBRs logran un rendimiento excepcional en tareas de razonamiento algorítmico, como Sudoku-Extreme, N-Queens y Coloreado de Grafos. En Sudoku-Extreme, alcanzan una precisión del 99.9% con un 345% menos de cómputo de inferencia que el mejor modelo anterior. En benchmarks de múltiples soluciones, los EBRs consiguen una cobertura de soluciones válidas de vanguardia, manteniendo una precisión cercana al 100% en muestras individuales. Para un entrenamiento efectivo, se introduce un método de entrenamiento basado en la exploración para mejorar la cobertura del espacio de estados. Este enfoque demuestra que los modelos basados en energía son una vía prometedora para lograr un razonamiento robusto y eficiente.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50548281,
-    "url": "https://recursiveai.org/blog/what-my-software-factory-built/",
-    "score": 9,
-    "time": 1795019202,
-    "titulo_es": "Fábrica de software crea y mantiene 30 librerías, desde bases de datos hasta motores gráficos",
-    "resumen": "El artículo describe la creación y mantenimiento de una \"fábrica de software\" autosostenida por un solo individuo. Esta fábrica ha producido 30 librerías complejas en C#, con versiones disponibles en Rust y Go, cubriendo áreas como motores de bases de datos compatibles con SQLite, motores de juegos con física determinista, pilas de GPU con compiladores de shaders propios, y manejo de formatos de archivo de Microsoft Office. También incluye librerías para PDF, HTML, fuentes, imágenes, archivos comprimidos, correo electrónico, criptografía, procesamiento de texto, IA (modelos ONNX, LLMs, OCR, Speech), ejecución de JavaScript en .NET, shaders y procesamiento multimedia. Se destacan la complejidad y la independencia de estas librerías, así como su mantenimiento continuo.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50548828,
-    "url": "https://metalbear.com/blog/stop-deploying-to-ecs/",
-    "score": 17,
-    "time": 1795021513,
-    "titulo_es": "Mirrord para ECS: Desarrollo y depuración local de servicios en la nube de AWS",
-    "resumen": "El artículo presenta mirrord para Amazon ECS, una herramienta que permite ejecutar y depurar código de servicios directamente en la máquina local del desarrollador o en un entorno de CI, como si estuvieran desplegados en un entorno de staging de ECS. A diferencia de los flujos de trabajo tradicionales de ECS que requieren despliegues completos para verificar cambios, mirrord intercepta el tráfico dirigido a una tarea específica utilizando un encabezado de sesión. Esto permite que el código local acceda a los mismos recursos de red (bases de datos, colas, APIs) y asuma el rol IAM de la tarea desplegada, sin necesidad de desplegar nada. La solución se implementa añadiendo un contenedor de configuración a la definición de la tarea de ECS, el cual inyecta mirrord en el contenedor de la aplicación. La conexión entre el entorno local y la tarea se establece a través de un componente llamado 'sessions-manager', que puede ser autoalojado o utilizado como servicio en la nube. Esto permite a múltiples desarrolladores o agentes de codificación trabajar simultáneamente en versiones aisladas de un servicio en el mismo entorno de staging compartido, acelerando significativamente el ciclo de desarrollo y depuración.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50548038,
-    "url": "https://www.lkuffo.com/superemeans/",
-    "score": 12,
-    "time": 1795018190,
-    "titulo_es": "SuperEMeans: Acelerando el Agrupamiento de Vectores de Alta Dimensión Fusionando SuperKMeans y e-means",
-    "resumen": "El artículo presenta SuperEMeans, una nueva técnica de agrupamiento que combina las fortalezas de SuperKMeans y e-means. SuperKMeans acelera el agrupamiento al evitar el escaneo de dimensiones vectoriales, mientras que e-means reduce el número de épocas necesarias para alcanzar una calidad comparable a la de Lloyd's k-means. La fusión de ambas técnicas resulta en un agrupamiento hasta 3 veces más rápido para vectores de alta dimensión, sin comprometer la calidad del agrupamiento. Se realizaron experimentos en grandes conjuntos de datos de embeddings (OpenAI y Cohere) utilizando índices IVF, demostrando que SuperEMeans mejora significativamente el rendimiento y la eficiencia en comparación con los métodos tradicionales y sus componentes individuales. El artículo también analiza el trade-off entre el recall y el número de vectores escaneados durante las búsquedas de similitud, concluyendo que SuperEMeans ofrece un mejor equilibrio.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50504373,
-    "url": "https://www.jeffquast.com/post/a-perfect-simcity/",
-    "score": 198,
-    "time": 1794722062,
-    "titulo_es": "SimCity y la búsqueda de la ciudad perfecta: un análisis algorítmico y de optimización",
-    "resumen": "Este artículo explora la optimización del videojuego SimCity (1989), específicamente sus puertos FOSS como Micropolis y MicropolisCore, para alcanzar una \"ciudad perfecta\" en términos de puntuación y población. Se detalla cómo la mecánica del juego, especialmente los requisitos de zonificación residencial, industrial y comercial, influyen en el crecimiento y la puntuación. Se destaca la importancia de equilibrar factores como la densidad, el transporte (con preferencia por los rieles sobre las carreteras debido a la contaminación y el tráfico), los servicios públicos (omitir bomberos y policía para minimizar costos) y la gestión del presupuesto (una tasa impositiva del 1% es óptima). El artículo profundiza en los sistemas de puntuación del juego, identificando siete términos de penalización iniciales y nueve adicionales. Se revela que el desempleo negativo (más empleos que residentes) puede aumentar significativamente la puntuación. Se discuten las estrategias para maximizar la población (hasta 700k mediante código) y la puntuación (ciudades de 12-16k con equilibrio perfecto), señalando la exclusión de aeropuertos y puertos marítimos debido a su impacto negativo en la puntuación a pesar de ser requisitos para altas poblaciones en otras ediciones.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50546465,
-    "url": "https://www.sciencedaily.com/releases/2026/11/261110042543.htm",
-    "score": 147,
-    "time": 1795010617,
-    "titulo_es": "Las bebidas energéticas y los suplementos estimulantes generan preocupación por la salud cardíaca",
-    "resumen": "Investigadores han descubierto un patrón preocupante en los informes de emergencias cardiovasculares graves, donde los productos con cafeína y otros estimulantes aparecen con mucha mayor frecuencia en casos de paro cardíaco, ataques cardíacos y otros problemas cardíacos, especialmente entre adultos jóvenes (18-34 años). Si bien los hallazgos preliminares no establecen una relación causal directa, la alta frecuencia observada en los informes de seguridad de la FDA sugiere la necesidad de un examen más detenido de estos productos de fácil acceso. La industria de bebidas energéticas ha experimentado un rápido crecimiento, superando los $20 mil millones en ventas en 2024. La evidencia existente indica que altas dosis de cafeína pueden dañar el sistema cardiovascular, y se han documentado casos de arritmias y muerte súbita cardíaca tras su consumo, incluso en jóvenes sin factores de riesgo previos. La FDA clasifica estas bebidas y suplementos como alimentos o suplementos dietéticos, no medicamentos, lo que implica que no están sujetos a las mismas pruebas de seguridad rigurosas. Los consumidores a menudo asumen que no conllevan riesgos significativos, pero el consumo regular puede exceder rápidamente los límites recomendados de cafeína, exponiendo a riesgos cardiovasculares.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50547344,
-    "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
-    "score": 133,
-    "time": 1795015110,
-    "titulo_es": "Polonia desbarata complot ruso de sabotaje en su territorio para culpar a Ucrania",
-    "resumen": "El artículo detalla una operación de inteligencia polaca para frustrar un complot ruso destinado a realizar un sabotaje en territorio polaco, cerca de la frontera con Kaliningrado, a finales de octubre o principios de noviembre. El plan ruso, coordinado principalmente por la GRU, preveía causar víctimas masivas y atribuir la responsabilidad a Ucrania, similar a un incidente de falsa bandera. Polonia fue alertada por servicios de inteligencia aliados y analizó señales de amenaza. En respuesta, se reforzaron las fuerzas policiales, la Guardia de Fronteras y la Agencia de Seguridad Interna en las zonas fronterizas. Se realizaron ejercicios militares y se estableció un cuartel general de operaciones especiales para la disuasión y la acción preventiva. El Ministro Coordinador de Servicios Especiales de Polonia confirmó que las medidas se tomaron debido a la evaluación de una amenaza real.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50541790,
-    "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
-    "score": 238,
-    "time": 1794975244,
-    "titulo_es": "Análisis de la lentitud de Gemini 4 Carbon en tareas de depuración de código",
-    "resumen": "El artículo analiza en profundidad la notable lentitud de Gemini 4 Carbon al realizar tareas de depuración de código en comparación con modelos como Opus y Astra. Se desglosan las causas de esta ineficiencia, identificando tanto la velocidad de inferencia (entre un 16-30% de la diferencia frente a Astra y 45-49% frente a Opus) como, de forma más significativa, la complejidad de las trayectorias de ejecución. Gemini 4 Carbon realiza aproximadamente siete veces más pasos y once veces más acciones (lecturas de archivo, comandos) que Astra. Se observa que la mitad de los pasos de Carbon son trabajo no solicitado por la tarea. Pruebas con \"check-ins\" automáticos revelan que la lentitud se debe más al comportamiento del modelo (duda o tendencia a realizar trabajo extra) que a una falta de conocimiento. Adicionalmente, se identifican ineficiencias \"mecánicas\" como menor cantidad de llamadas a herramientas por paso y relectura de código (39% para Carbon vs 7% para Astra), que explican alrededor del 25% del tiempo de ejecución excesivo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50547813,
-    "url": "https://ratwire.space/",
-    "score": 5,
-    "time": 1795017121,
-    "titulo_es": "ratwires: un textboard anónimo y sin JavaScript",
-    "resumen": "ratwires es un textboard anónimo y minimalista construido desde cero, que prioriza la privacidad y la simplicidad al eliminar cuentas, nombres e imágenes, funcionando exclusivamente con texto. Cada publicación se numera secuencialmente y las páginas contienen 255 publicaciones. Los identificadores de póster (ID) son hashes cifrados de la dirección IP, el hilo y la fecha, lo que garantiza la anonimidad y la distinción entre usuarios dentro de cada conversación. El sistema incluye una función de reporte anónimo mediante el icono ⚑ y otorga insignias a las publicaciones. Esta implementación es una recreación moderna inspirada en ratwires.space (2020), que originalmente funcionaba con Ratmachine (un tablero AGPL escrito en Crystal con Amber Framework), pero esta versión es una reconstrucción independiente sin datos de la original. Permite formateo de texto básico, incluyendo tiradas de dados (`!dice 2d6`) y arte ASCII (`  `).",
+    "id": 50562320,
+    "url": "https://github.com/onlook-dev/onlook/",
+    "score": 16,
+    "time": 1795106044,
+    "titulo_es": "Onlook: Herramienta de diseño de código abierto impulsada por IA para desarrolladores y diseñadores",
+    "resumen": "Onlook es un editor visual 'local-first' y de código abierto diseñado para conectar el flujo de trabajo entre diseño y desarrollo web. Permite a los usuarios diseñar, estilizar y editar interfaces directamente sobre código real en tiempo real mediante un lienzo interactivo asistido por agentes de IA. Es compatible con cualquier framework web soportado por el entorno de desarrollo local y se posiciona como una alternativa abierta y local a plataformas como Figma, v0 y Webflow.",
     "categoria": "Frontend"
   },
   {
-    "id": 50506430,
-    "url": "https://bytes.zone/posts/what-is-the-randomart-image-for/",
-    "score": 8,
-    "time": 1794745627,
-    "titulo_es": "RandomArt: Una Forma Visual de Comparar Claves SSH",
-    "resumen": "El artículo explica el propósito y la utilidad de las 'randomart images' generadas por `ssh-keygen`. Estas imágenes ASCII son una representación visual de las claves SSH (tanto de host como de usuario) que facilitan su comparación visual. A diferencia de las huellas dactilares (fingerprints) que son difíciles de memorizar, las randomart permiten a los usuarios reconocer visualmente si una clave SSH ha cambiado al iniciar sesión en un servidor. El autor detalla cómo habilitar la visualización de estas imágenes mediante la opción `VisualHostKey` en la configuración del cliente SSH y comparte su experiencia personal reconociendo patrones para servidores como GitHub. Se concluye que, aunque no son una prueba infalible, las randomart son una herramienta valiosa para mejorar la seguridad al detectar cambios inesperados en las claves SSH.",
+    "id": 50556287,
+    "url": "https://verialabs.com/ruby2shell/",
+    "score": 307,
+    "time": 1795064951,
+    "titulo_es": "Desbordamiento de heap de un byte a ejecución remota de código en la conversión de mayúsculas/minúsculas de cadenas en Ruby",
+    "resumen": "Se ha descubierto una vulnerabilidad de desbordamiento de heap de un solo byte en las funciones de conversión de mayúsculas/minúsculas de cadenas en Ruby (upcase, swapcase, downcase(:fold), casecmp?). Esta vulnerabilidad es explotable de forma remota sin autenticación en configuraciones predeterminadas de frameworks web Ruby comunes y software autoalojado. El problema se origina en el manejo incorrecto de caracteres especiales como 'ß' en ciertas codificaciones de un solo byte (ISO-8859, Windows-125x), donde la escritura de dos bytes ('SS') para su representación en mayúsculas excede el búfer de salida asignado (entrada_longitud + 20 bytes) si la entrada contiene 21 o más 'ß'. Esto resulta en un desbordamiento de un byte que sobrescribe datos adyacentes en el heap. La posterior copia del resultado fuera del búfer puede leer un byte fuera de límites, lo que potencialmente permite la ejecución remota de código. Las cadenas UTF-8 no se ven afectadas ya que siguen una ruta de código diferente. La vulnerabilidad ha sido corregida en versiones específicas de Ruby (3.3.14, 3.4.13, 4.0.10) y se recomienda actualizar o instalar las versiones parcheadas del software afectado. El parche se aplicó en ruby/ruby@d582f8f.",
     "categoria": "Ciberseguridad"
   },
   {
-    "id": 50508356,
-    "url": "https://vermaden.wordpress.com/2026/11/10/freebsd-pkgbase-update-tool/",
-    "score": 14,
-    "time": 1794761173,
-    "titulo_es": "Introducción a pkgbase: La nueva herramienta para la gestión del sistema base en FreeBSD",
-    "resumen": "El artículo anuncia la transición futura en FreeBSD hacia PKGBASE como el único método para la gestión del sistema base, reemplazando a freebsd-update(8) a partir de la versión 16.0-RELEASE. Se presenta la herramienta pkgbase(8), desarrollada por vermaden, como una solución que emula la funcionalidad de freebsd-update(8) pero adaptada al nuevo paradigma PKGBASE. La herramienta soporta la actualización a versiones específicas, la creación de ZFS Boot Environments, y la actualización del código de arranque UEFI/BIOS. Se destaca la simplicidad y la automatización como objetivos de su desarrollo, contrastando con la percepción de complejidad del proceso de actualización anterior. El código fuente está disponible bajo licencia BSD en GitHub.",
+    "id": 50557537,
+    "url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+    "score": 188,
+    "time": 1795077585,
+    "titulo_es": "Blobasaur: Un servidor de almacenamiento de blobs distribuido y ligero sobre SQLite",
+    "resumen": "El artículo describe la construcción de Blobasaur, un servidor de almacenamiento de blobs distribuido, sharded y ligero, desarrollado en Rust y construido sobre SQLite. Fue creado para solucionar un caso de uso de lectura/escritura de blobs de alto rendimiento en la plataforma de trading Kite, que maneja aproximadamente 20 millones de clientes. Los blobs, que consisten principalmente en JSON con tamaños de unos pocos KBs a MBs, representan personalizaciones de usuarios, plantillas y metadatos. Tras superar las limitaciones de CouchDB y SSDB, se eligió SQLite por su rendimiento superior al del sistema de archivos para blobs pequeños y su robustez inherente (ACID, recuperación ante fallos). Blobasaur utiliza el modo WAL de SQLite y divide los datos en múltiples archivos de base de datos (shards) en un solo nodo para permitir la concurrencia de escritura. El sistema es capaz de manejar miles de operaciones de lectura/escritura por segundo con latencias de un solo dígito de milisegundos en hardware estándar. La elección de Rust para el desarrollo se debió a la eficiencia en el manejo de la API C de SQLite sin las complicaciones de CGo en Go, permitiendo binarios estáticos y un uso predecible de la memoria. Blobasaur es una aplicación de binario único, fácil de desplegar y mantener, que habla el protocolo Redis para facilitar la integración con servicios existentes en Go y Python.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50517929,
-    "url": "https://xenodium.com/my-emacs-31-contributions",
-    "score": 104,
-    "time": 1794839170,
-    "titulo_es": "Contribuciones al desarrollo de Emacs y nuevas funcionalidades",
-    "resumen": "El artículo detalla el proceso y la experiencia de contribuir código al proyecto Emacs, destacando la complejidad del proceso de asignación de derechos de autor y la naturaleza a menudo voluntaria del desarrollo de software de código abierto. Se describen varias contribuciones específicas, incluyendo una mejora en Dired para ocultar rutas absolutas, la reincorporación de la función de dictado en macOS y la adición de una opción 'Enviar a...' en el menú contextual para interactuar con aplicaciones externas. También se mencionan las dificultades técnicas encontradas, como un 'abort trap 6' relacionado con permisos de macOS, y cómo se resolvieron, culminando en la inclusión de estas mejoras en las versiones 30 y 31 de Emacs.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50538240,
-    "url": "https://calif.io/java4shell/",
-    "score": 1123,
-    "time": 1794949888,
-    "titulo_es": "Java4Shell (CVE-2026-114938): Una vulnerabilidad de corrupción de memoria en OpenJDK que permite la ejecución remota de código",
-    "resumen": "El artículo detalla la vulnerabilidad CVE-2026-114938, apodada Java4Shell, una falla crítica de corrupción de memoria en el decodificador Base64 de OpenJDK. Esta vulnerabilidad, con una puntuación CVSS de 9.2, permite a un atacante remoto sin credenciales sobrescribir la memoria del heap, leer datos sensibles (similar a Heartbleed) y lograr la ejecución remota de código (RCE). La causa raíz se encuentra en el código de ensamblaje optimizado de x86-64 que procesa Base64 utilizando instrucciones AVX-512 VBMI. Un input malformado, como 64 caracteres 'A' seguidos de un '=', puede corromper la memoria adyacente, ya que el decodificador calcula una longitud de salida negativa que resulta en escrituras fuera de los límites. El artículo menciona que esta vulnerabilidad afecta a aplicaciones Java ampliamente utilizadas, incluyendo aquellas basadas en frameworks como Apache Struts y Spring Boot, y puede ser expuesta a través de funcionalidades comunes como autenticación y carga de archivos. También se presenta un exploit del lado del cliente que puede comprometer programas Java al conectarse a un servidor malicioso. Los autores destacan que la vulnerabilidad fue descubierta y explotada con la ayuda de herramientas de IA, combinando la eficiencia de la IA con la experiencia humana. A diferencia de otras vulnerabilidades, el exploit no es universal y requiere adaptaciones según el contexto de la aplicación.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50546900,
-    "url": "https://www.ppfideas.com/episodes/can-universities-survive-ai-vs-higher-education",
-    "score": 8,
-    "time": 1795012945,
-    "titulo_es": "El desafío de la IA para el futuro de las universidades",
-    "resumen": "Este artículo discute el impacto de la Inteligencia Artificial (IA), específicamente los Modelos de Lenguaje Grandes (LLMs), en la función educativa de las universidades. Se plantea la preocupación de si las universidades pueden seguir cumpliendo su propósito si la IA supera a los estudiantes en la redacción de ensayos. Se explora cómo la IA está erosionando la confianza entre profesores y estudiantes y si las instituciones académicas están preparadas para manejar este desafío y, en última instancia, sobrevivir a él. El artículo también menciona un episodio adicional sobre la controversia de \"Climategate\" en la Universidad de East Anglia (UEA) como un posible presagio de desafíos futuros para las universidades.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50547236,
-    "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
-    "score": 7,
-    "time": 1795014556,
-    "titulo_es": "Vulnerabilidad en Optimizely resulta en ataques de malware a sitios web populares",
-    "resumen": "Un incidente de seguridad que afectó a al menos 178 sitios web de alto perfil, incluyendo BBC, CNN, Equifax, Ledger y Zoom, se debió a una vulnerabilidad explotada en la plataforma de Optimizely. Un actor no autorizado inyectó JavaScript malicioso que sirvió exploits de malware a los visitantes, incluyendo software de robo de datos y kits de explotación para dispositivos Apple desactualizados. El incidente subraya el riesgo inherente en la dependencia de servicios de terceros y la falta de controles estrictos sobre el contenido de scripts de terceros en las páginas web. Optimizely ha declarado que ha contenido el incidente, remediado la vulnerabilidad e implementado protecciones adicionales.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50541619,
-    "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
-    "score": 145,
-    "time": 1794973663,
-    "titulo_es": "Modelos Claude Demuestran Capacidad Avanzada en Predicción de Secuencias de Proteínas, Superando a Otros Modelos de Frontera",
-    "resumen": "El artículo detalla cómo los modelos Claude más recientes, específicamente Claude Fable 5.2 y Claude Opus 5.5, han sido entrenados a escala en secuencias de proteínas. Se demuestra empíricamente que estos modelos pueden predecir el siguiente aminoácido en secuencias proteicas, incluso en aquellas poco estudiadas y con escasa o nula documentación científica. Esta capacidad se evalúa comparando su rendimiento en secuencias reales frente a secuencias aleatorias (barajadas), donde una alta precisión en las reales y una baja en las barajadas indican un conocimiento intrínseco de la secuencia. Los modelos Claude muestran una mejora significativa en familias de proteínas más grandes y superan a la mayoría de los modelos de lenguaje de proteínas (PLM) de código abierto, como Fable 5.2 que supera a ProtGPT3-10B y ProGen3-3B. Opus 5.5 iguala a ProtGPT3-10B. A diferencia de otros modelos de frontera como GPT y Gemini, que no muestran esta habilidad en proteínas poco estudiadas, Claude demuestra una comprensión profunda de la estructura y el orden de los aminoácidos, sugiriendo un entrenamiento específico y a gran escala sobre bases de datos de secuencias proteicas como UniProt, en lugar de depender únicamente del conocimiento extraído de publicaciones científicas sobre proteínas conocidas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50538994,
-    "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
-    "score": 848,
-    "time": 1794953614,
-    "titulo_es": "La retirada de Quad9 de Francia y las implicaciones del bloqueo de DNS",
-    "resumen": "El artículo discute la decisión de Quad9 de retirar su servicio público de DNS de Francia debido a un fallo judicial que le obligaba a bloquear dominios asociados con infracciones de derechos de autor. Se argumenta que esta situación pone a los proveedores de DNS en una posición imposible, obligándoles a elegir entre costosos litigios o comprometer la privacidad y seguridad de sus usuarios. El texto resalta que la retirada de servicios de infraestructura como los resolvedores DNS perjudica el Internet libre y abierto, y advierte sobre los daños potenciales si se imponen bloqueos a través de todas las capas de Internet. Se menciona que Quad9 no es el primer caso, citando la retirada temporal de OpenDNS de otros países y una orden judicial contra Cloudflare. Se explica brevemente el funcionamiento del DNS y la importancia de los resolvedores, destacando la misión de Cloudflare con su servicio 1.1.1.1, enfocado en la velocidad y la privacidad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50509141,
-    "url": "https://savyasacheejha.com/posts/why-odhcpd/",
-    "score": 56,
-    "time": 1794765973,
-    "titulo_es": "Resolución de problemas de reasignación de prefijo IPv6 en un router Linux personalizado",
-    "resumen": "El artículo detalla la experiencia de un usuario al diagnosticar y resolver un problema recurrente en un router Linux personalizado. Tras reiniciar pppd, la conectividad con Google a través de IPv6 fallaba intermitentemente, aunque la resolución DNS funcionaba. La investigación reveló que, tras la reconexión de pppd con el ISP, se obtenía un nuevo prefijo IPv6 para la delegación, pero las direcciones IPv6 antiguas persistían en los dispositivos de la red, causando conflictos. El problema se manifestaba porque el router no anunciaba el prefijo antiguo con tiempos de vida preferente y válido de 0, tal como lo requieren los RFC 9096 y 7084 para manejar eventos de reasignación de prefijo IPv6. Se exploraron soluciones potenciales, incluyendo la configuración de networkd y la intervención de NetworkManager, pero la causa raíz se identificó en la falta de implementación completa de RFC 9096 en networkd. Finalmente, se sugirió la posibilidad de usar odhcpd de OpenWrt, que sí implementa el estándar, como una solución viable para gestionar correctamente la reasignación de prefijos IPv6.",
+    "id": 50557661,
+    "url": "https://curiousbits.nl/blog/do-not-buy-ram-compress/",
+    "score": 120,
+    "time": 1795078607,
+    "titulo_es": "Compresión de Memoria con zram para Maximizar el Uso de Hardware y la Nube",
+    "resumen": "El artículo discute cómo la creciente demanda de memoria en estaciones de trabajo y entornos de nube, impulsada por avances en IA y desarrollo de software que permite el trabajo en paralelo, puede ser mitigada mediante la compresión de memoria. Se presenta zram como una solución efectiva, similar a la utilizada en Windows, macOS y Android, pero no siempre habilitada por defecto en todas las distribuciones Linux (como Ubuntu o Amazon Linux, a diferencia de Fedora y Pop!_OS). A pesar de un ligero aumento en el uso de CPU y latencia, la compresión de memoria puede duplicar o cuadruplicar la capacidad de RAM utilizable (con ratios de compresión comunes de 1:4), lo que permite realizar más tareas con menos hardware. Se menciona un caso práctico donde la compresión zram redujo significativamente la demanda de RAM, evitando la necesidad de aumentar el tamaño de las máquinas y potencialmente reduciendo costos en la nube. Se ofrece como referencia el Arch Linux wiki para su implementación.",
     "categoria": "Distribuciones Linux"
   },
   {
-    "id": 50542705,
-    "url": "https://nicolasbouliane.com/blog/death-by-ai",
-    "score": 691,
-    "time": 1794984446,
-    "titulo_es": "El impacto de Google AI Overviews en el tráfico de sitios web",
-    "resumen": "El artículo describe la drástica caída del 70-75% en el tráfico del sitio web 'All About Berlin', gestionado desde 2017 y que se convirtió en su fuente principal de ingresos en 2020, debido a la introducción de Google AI Overviews. Estos resúmenes generados por IA, que aparecen antes de los enlaces a los sitios web y que contienen anuncios, están reemplazando los resultados de búsqueda tradicionales. El autor, que ha invertido 8 años en crear contenido valioso y reconocido, se enfrenta a la dificultad de mantener su trabajo ante la reducción masiva de su audiencia y la pérdida de su 'voz' y conexión directa con sus usuarios. La situación se agrava con los recientes anuncios de Google sobre la sustitución total de los resultados de búsqueda por respuestas generadas por IA con publicidad. Este fenómeno está afectando a muchos otros propietarios de sitios web, algunos de los cuales han recurrido a muros de pago o han dejado de actualizar su contenido. El artículo plantea una preocupación general sobre el futuro de internet y cómo los creadores de contenido encajarán en un ecosistema dominado por IA conversacional y publicidad.",
+    "id": 50560461,
+    "url": "https://moq.dev/blog/webrtc-is-still-the-problem/",
+    "score": 67,
+    "time": 1795098008,
+    "titulo_es": "Crítica a WebRTC en IA de Voz: Latencia, Pérdida de Paquetes y la Necesidad de Retransmisiones Robustas",
+    "resumen": "El artículo critica el uso de WebRTC para productos de IA de voz, argumentando que su diseño centrado en la baja latencia para conferencias humanas (priorizando la eliminación de paquetes tardíos sobre la integridad) es perjudicial para las interacciones con IA. Explica que, a diferencia de los humanos, las IA pueden procesar audio mucho más rápido que en tiempo real y no sufren por la latencia de retransmisiones de paquetes perdidos. WebRTC, al deshabilitar las retransmisiones de audio por defecto y usar buffers que descartan paquetes tardíos, obliga a los usuarios humanos a repetir frases, desperdiciando tokens de IA y creando una mala experiencia. El autor propone que las IA de voz se beneficiarían de protocolos que garanticen la entrega de todos los paquetes (incluso con retransmisiones) hasta que la IA necesite el contexto, ya que la IA puede compensar la demora procesando a mayor velocidad. Se sugiere que para IA, la latencia crítica es la del último paquete relevante, no la latencia general de cada paquete.",
     "categoria": "IA"
   },
   {
-    "id": 50547729,
-    "url": "https://www.nextplatform.com/compute/2026/11/17/ibm-links-two-nighthawk-r3-chips-to-make-a-1040-qubit-quantum-system/5310545",
-    "score": 13,
-    "time": 1795016767,
-    "titulo_es": "Avances de IBM en Computación Cuántica y hoja de ruta hacia 2029",
-    "resumen": "El artículo detalla los significativos avances de IBM en su objetivo de lanzar una computadora cuántica tolerante a fallos en 2029. Se destacan los progresos en corrección de errores y la integración de la computación cuántica y HPC clásica. Se mencionan los procesadores cuánticos Nighthawk (120 qubits, arquitectura square-lattice), Nighthawk r2 (con sistema de reset mejorado que aumenta el throughput a más de 100,000 circuitos/segundo) y los planes para Nighthawk r3 en 2027 (escalando a 520 qubits y soportando 10,000 operaciones cuánticas, con l-couplers para sistemas modulares). Se enfatiza la importancia de la velocidad, escala y calidad para cargas de trabajo cuánticas complejas. IBM ha realizado demostraciones de 'quantum advantage' y está desarrollando sistemas modulares y escalables, incluyendo un sistema de enfriamiento criogénico. Las colaboraciones con AMD, Oak Ridge National Laboratory, RIKEN y Cleveland Clinic en áreas como corrección de errores y computación híbrida cuántica-clásica también son puntos clave. La fabricación de Nighthawk r3 se realizará en la planta de IBM Anderon, apoyada por inversiones del CHIPS Act.",
+    "id": 50517477,
+    "url": "https://benoitrostykus.com/data_to_silicon.html",
+    "score": 5,
+    "time": 1794836248,
+    "titulo_es": "IA que diseña Hardware: La nueva frontera de la especialización",
+    "resumen": "El artículo explora la posibilidad de diseñar chips ASICs personalizados para tareas específicas de IA, aprendiendo el modelo directamente en el silicio. Esta especialización extrema de hardware, impulsada por la reducción de costos en la fabricación de chips y la automatización del diseño, podría ser el futuro. Se presenta un ejemplo de un chip de ciclo único que juega Connect-4, aprendido autónomamente con un costo de cómputo bajo, demostrando un rendimiento comparable a CPUs modernas pero con un consumo energético drásticamente menor (órdenes de magnitud menos). El artículo sugiere que la IA generará el hardware para sus propias tareas de forma eficiente y especializada, abriendo nuevas vías en la computación de alto rendimiento y bajo consumo para IA.",
     "categoria": "Hardware"
   },
   {
-    "id": 50540437,
-    "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
-    "score": 463,
-    "time": 1794963105,
-    "titulo_es": "Uso de ID.me y Login.gov para el acceso a servicios del IRS y TreasuryDirect",
-    "resumen": "El artículo detalla la dependencia del Servicio de Impuestos Internos (IRS) y el sitio TreasuryDirect del Departamento del Tesoro de EE. UU. en proveedores de inicio de sesión de terceros, principalmente ID.me, para la verificación de identidad en servicios en línea. Se discuten las implicaciones de los Términos de Servicio y la Política de Privacidad de ID.me, incluyendo el arbitraje obligatorio de disputas y el posible uso y transferencia de datos para fines de marketing, con exenciones específicas para la verificación gubernamental de identidad. Se contrasta ID.me con Login.gov, una plataforma gestionada por el gobierno de EE. UU., y se plantean preguntas sobre la preferencia por un proveedor privado sobre una alternativa gubernamental. El artículo también aborda las políticas de aceptación de términos, la gestión de información de identidad por parte de ID.me y el uso de tecnología de reconocimiento facial. Se enfatiza que el IRS utiliza estos proveedores para proteger la privacidad y los datos mediante la verificación de identidad, y que el uso continuado de los servicios constituye la aceptación de los términos actualizados.",
+    "id": 50544168,
+    "url": "https://quuxplusone.github.io/blog/2026/11/16/named-arguments-in-c/",
+    "score": 52,
+    "time": 1794995389,
+    "titulo_es": "Los inicializadores designados de C nos dan argumentos con nombre",
+    "resumen": "El artículo explora una técnica avanzada en C que utiliza inicializadores designados (designated initializers) para simular argumentos con nombre y valores por defecto, similar a los encontrados en lenguajes de más alto nivel. Aprovecha dos características de los inicializadores designados de C que no están en C++20: la capacidad de aparecer en cualquier orden y la posibilidad de que un mismo designador aparezca múltiples veces (solo la última ocurrencia tiene efecto). Esta técnica permite añadir nuevos parámetros a las funciones sin romper la compatibilidad de las llamadas existentes (aunque sí es una ruptura de ABI, requiriendo recompilación). El autor destaca que este patrón es útil para familias de funciones relacionadas y para mejorar la legibilidad en casos complejos, pero advierte que no debe reemplazar el código C ordinario, ya que es más pesado y \"lindo\" en comparación con las funciones de argumentos no nombrados estándar. Se mencionan ejemplos de uso en proyectos como gab462/hof-flecs-raylib y EpicGames/raddebugger.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50557716,
+    "url": "https://www.drivevault.io/blog/when-will-hard-drive-prices-come-down.html",
+    "score": 245,
+    "time": 1795079134,
+    "titulo_es": "Precios de SSD y Discos Duros: Cuándo se espera que bajen",
+    "resumen": "El artículo predice que los precios de las unidades de estado sólido (SSD) comenzarán a disminuir en la segunda mitad de 2027, mientras que los precios de los discos duros (HDD) tardarán más, probablemente hasta 2028. Esta predicción se basa en análisis de precios de contratos de memoria, declaraciones de fabricantes como Seagate y Western Digital, y la dinámica de la cadena de suministro. Los SSD, construidos con chips NAND, son más sensibles a los cambios de oferta y demanda, lo que permite una respuesta más rápida en los precios. Por el contrario, los HDD tienen contratos de producción a largo plazo con grandes proveedores, lo que crea un ciclo de precios más lento. La oferta de NAND se pronostica que alcanzará la demanda a mediados de 2027, lo que provocará una caída gradual en los precios de los SSD. Para los HDD, la recuperación dependerá de la disponibilidad de nuevas fábricas y la finalización de contratos existentes, lo que se espera más tarde. Se observa que los aumentos mensuales de precios se han desacelerado, indicando una posible reversión de la tendencia alcista.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50561436,
+    "url": "https://tabbyml.github.io/weight-space-playground/",
+    "score": 9,
+    "time": 1795102367,
+    "titulo_es": "Programación en el espacio de pesos: Qwen3.5-0.8B sin entrenamiento ni descenso de gradiente",
+    "resumen": "El artículo describe una técnica innovadora llamada \"programación en el espacio de pesos\" aplicada al modelo Qwen3.5-0.8B. En lugar de entrenamiento tradicional o descenso de gradiente, se identificó y eliminó una \"dirección de bucle de repetición\" modificando directamente 131,072 pesos de la red neuronal (específicamente en las capas ffn_down de las capas 15 y 19). Esta edición se logró sin necesidad de reentrenar el modelo, resultando en una corrección de comportamiento, especialmente en la resolución de problemas matemáticos donde el modelo original entraba en bucles de auto-verificación y agotaba su presupuesto sin dar una respuesta. La técnica se compara con el \"model souping\" (fusión de modelos), pero se diferencia en que la programación en el espacio de pesos se enfoca en casos de fallo específicos. Se destaca su potencial aplicación en agentes de IA, aprovechando el ciclo de propuesta-prueba-retroalimentación. La demostración se realiza localmente a través de llama.cpp con WebAssembly y WebGPU, permitiendo a los usuarios interactuar y observar el comportamiento de ambos modelos (original y editado) en su navegador.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50556533,
+    "url": "https://kapteko.com/15-million-webservers/",
+    "score": 306,
+    "time": 1795067796,
+    "titulo_es": "Escalando Servidores Web a una Escala Sin Precedentes: Un Enfoque de Bajo Nivel y Económico",
+    "resumen": "El artículo explora un enfoque radical para resolver la escasez de servidores web, proponiendo ejecutar 15 millones de servidores web en una única máquina virtual con recursos limitados (10GB RAM, 1 CPU). Inicialmente, se discute la implementación de un servidor web básico en C utilizando syscalls esenciales (listen, accept, read, send, close). El principal obstáculo identificado es la limitación del número de puertos disponibles (65535). Se exploran varias soluciones: aumentar el rango de puertos (insuficiente), utilizar puertos TCP y UDP simultáneamente (dobla el límite), y la adición de múltiples tarjetas de red para obtener IPs únicas (costoso y fuera del presupuesto). La solución más prometedora presentada es el uso de AnyIP y subredes IPv6/IPv4 extensas para obtener millones de direcciones IP únicas en las que escuchar. Sin embargo, esta solución se enfrenta a un cuello de botella de memoria, necesitando 20TB de RAM, muy por encima del presupuesto de 10GB. El artículo concluye sugiriendo que la sobrecarga de procesos para cada servidor web es el problema, aludiendo a una solución previa donde se ejecutaron millones de CLIs en un solo proceso dentro de un runtime personalizado, como V8, para manejar millones de 'invitados' (servidores web en este caso) dentro de un único proceso.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50503743,
+    "url": "https://aarol.dev/posts/zig-allocator/",
+    "score": 29,
+    "time": 1794713698,
+    "titulo_es": "Desafíos de eficiencia de memoria en el desarrollo de software moderno y el papel de la IA",
+    "resumen": "El artículo aborda la creciente escasez global de memoria, exacerbada por la expansión de centros de datos de IA, lo que encarece los dispositivos y aumenta el escrutinio sobre aplicaciones consumidoras de RAM como Discord, Teams y Spotify. Si bien lenguajes como Rust y esfuerzos de portabilidad (ej. Discord a Rust) buscan mejorar la eficiencia, el artículo advierte que la generación automática de código por IA puede no ser suficiente. Se ilustra con un ejemplo de un motor de juegos portado a Rust, que resultó lento debido a un código 'apologético' al borrow-checker, generando asignaciones de memoria innecesarias y miles de hilos. Se critica la falta de distinción entre funciones asignantes y no asignantes en Rust, y se presenta un ejemplo de optimización de asignaciones de cadenas innecesarias en el bucle principal y en mensajes de error mediante closures. Se menciona a Zig como un lenguaje que aborda esto con una interfaz explícita de `Allocator`. El punto central es que la optimización de memoria requiere una comprensión profunda, no solo la automatización por IA, ya que la mayoría de los datos de entrenamiento de IA no priorizan la eficiencia de memoria.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50560795,
+    "url": "https://www.techcentral.ie/germany-and-austria-call-for-european-control-of-tiktok/",
+    "score": 100,
+    "time": 1795099490,
+    "titulo_es": "Alemania y Austria proponen gestión europea para TikTok",
+    "resumen": "Alemania y Austria abogan por un cambio estratégico en la propiedad del brazo europeo de TikTok, sugiriendo que pase a gestión europea. La propuesta busca establecer una estructura corporativa que garantice la supervisión regional de los algoritmos y los datos de usuario, separándola de ByteDance. El objetivo principal es salvaguardar los datos personales y limitar la influencia externa en el debate público, controlando el marco tecnológico y la privacidad del usuario. Esta iniciativa busca apoyo de otros estados miembros de la UE, inspirada por un acuerdo similar en EE.UU. que estableció una empresa conjunta con participación mayoritaria estadounidense.",
     "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50562262,
+    "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
+    "score": 58,
+    "time": 1795105818,
+    "titulo_es": "Frustración con las salvaguardas de IA y la seguridad del software",
+    "resumen": "El artículo narra la experiencia de un ingeniero de software senior intentando mejorar la seguridad de un proyecto utilizando Claude Code. El modelo identificó una vulnerabilidad de seguridad fácil de corregir, pero las 'salvaguardas de IA' de Claude impidieron la solución, requiriendo un proceso de exención burocrático y restrictivo. El autor critica la ineficacia y los inconvenientes de estas salvaguardas, argumentando que dificultan la protección legítima de los servicios mientras los actores maliciosos pueden usar modelos sin restricciones. Compara la situación con la accesibilidad de otras herramientas y concluye que las grandes empresas de IA, al restringir el acceso a herramientas de seguridad, contribuyen a un panorama de amenazas empeorado, mientras que se vieron obligados a recurrir a modelos de código abierto alojados en la UE para resolver el problema de seguridad. La frustración surge de la paradoja de que las herramientas destinadas a la seguridad son bloqueadas para quienes buscan protegerse legítimamente.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50553843,
+    "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+    "score": 388,
+    "time": 1795044609,
+    "titulo_es": "Anthropic Anuncia Oferta Pública Inicial de Acciones Clase A",
+    "resumen": "Anthropic, PBC ha fijado el precio de su oferta pública inicial de acciones comunes Clase A en $83.00 por acción. La oferta incluye 980,000,000 de acciones, de las cuales 956,351,354 son vendidas por Anthropic y 23,648,646 por accionistas vendedores. Los ingresos de la venta por parte de los accionistas vendedores no irán a Anthropic. Se espera que las acciones comiencen a cotizar en el Nasdaq Global Select Market el 19 de noviembre de 2026 bajo el símbolo \"ANT\". La oferta se cerrará el 20 de noviembre de 2026, sujeta a condiciones de cierre habituales. Anthropic ha otorgado a los suscriptores una opción de 30 días para comprar hasta 147,000,000 acciones adicionales de su clase A. Una declaración de registro relacionada con estos valores fue declarada efectiva por la SEC el 18 de noviembre de 2026. La oferta se realiza únicamente a través de un prospecto.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50554038,
+    "url": "https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/",
+    "score": 322,
+    "time": 1795045970,
+    "titulo_es": "Vulnerabilidades críticas descubiertas en el motor de expresiones regulares y conversión de cadenas de Ruby",
+    "resumen": "Siete vulnerabilidades graves han sido identificadas en el motor de expresiones regulares y en la funcionalidad de conversión de mayúsculas/minúsculas de cadenas en Ruby. Estos fallos incluyen desbordamientos de búfer basados en heap (heap-based buffer overflow), dobles liberaciones de memoria (double free), desbordamientos de enteros (integer overflow) y lecturas fuera de límites (out-of-bounds read). Se ha confirmado la existencia de Pruebas de Concepto (PoCs) que demuestran que estas vulnerabilidades pueden ser explotadas para ejecutar código de forma remota (RCE) en diversas aplicaciones que utilizan patrones de expresiones regulares o cadenas controladas por el atacante. Se han lanzado versiones específicas de Ruby (4.0.10, 3.4.13 y 3.3.14) para corregir estos problemas. Se recomienda encarecidamente la actualización a estas versiones. Las versiones de Ruby anteriores a la 3.3 no recibirán parches. Se han solicitado identificadores CVE para estas vulnerabilidades.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50548808,
+    "url": "https://eleanorwiesler.com/blog/robotic-stone-carving/",
+    "score": 97,
+    "time": 1795021433,
+    "titulo_es": "Trayectorias de Herramientas Autónomas para la Talla de Esculturas de Mármol con Robots",
+    "resumen": "El artículo describe el desarrollo de un sistema de fabricación CNC totalmente autónomo para la talla de esculturas de mármol utilizando robots KUKA KR240. El sistema, creado por Monumental Labs, elimina la intervención humana durante el proceso de manufactura robótica, desde la entrada de un modelo 3D hasta la producción de una escultura. Se enfoca en la de-extinción de costos en la talla de piedra mediante el uso de machine learning, geometría computacional y optimización, permitiendo una producción 'lights-out'. El proceso se divide en dos fases: desbaste, centrado en la remoción rápida y segura de material, y acabado, enfocado en la calidad de la superficie. El sistema convierte modelos 3D en representaciones voxelizadas y campos de distancia firmada para generar trayectorias de herramientas complejas, incluyendo la planificación de pasadas isoplanarias para el desbaste. La solución aborda problemas abiertos en gráficos por computadora y robótica para lograr la autonomía total, con el cómputo disponible como único límite para la programación diaria de esculturas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50552424,
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "score": 977,
+    "time": 1795037647,
+    "titulo_es": "Presentación de Gemini 4 Neon: Inteligencia de Vanguardia para Tareas Complejas",
+    "resumen": "El artículo anuncia Gemini 4 Neon, un modelo de IA de Google DeepMind diseñado para la finalización rápida de tareas de extremo a extremo en flujos de trabajo complejos de ingeniería de software, trabajo de conocimiento y ciencia. Neon se destaca por su alta inteligencia, rendimiento superior a modelos comparables en índices como el Artificial Analysis Intelligence Index y el Vals Index. Sobresale en la adaptabilidad a correcciones del usuario (steerability) y en el seguimiento de instrucciones de varios pasos, con una tasa de fabricación reducida. Se integra en diversas plataformas como la API de Gemini y Google AI Studio. Puede sintetizar información de múltiples formatos (hojas de cálculo, PDFs, audio, video) en una ventana de contexto de 1 millón de tokens, generando entregables estructurados. Ha demostrado un rendimiento excepcional en benchmarks de investigación legal, fiscal, finanzas, contabilidad, modelado de hojas de cálculo y seguimiento de restricciones complejas, así como en la lectura de gráficos profesionales y simulación de negocios a largo plazo. En el ámbito científico y matemático, lidera en razonamiento cuantitativo y investigación técnica. Está optimizado para flujos de trabajo de agentes de larga duración, gestionando tareas complejas y herramientas de manera eficiente, actuando como orquestador o agente independiente. En ingeniería de software, ofrece rendimiento de vanguardia, destacando en análisis de código, depuración y refactorización de código en múltiples archivos. El artículo también menciona su uso en la generación de visualizaciones 3D fotorrealistas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50559749,
+    "url": "https://foolscap.works/",
+    "score": 92,
+    "time": 1795094480,
+    "titulo_es": "Una aplicación de escritura que conoce tu libro completo",
+    "resumen": "La aplicación se enfoca en asistir al escritor al analizar el contenido del libro mientras se escribe. Identifica conexiones entre partes del texto y puntos que quedan sin resolver, presentándolos al usuario en sus propias palabras. Se enfatiza que la aplicación no genera contenido, no utiliza la escritura del usuario para entrenar IA y ofrece la opción de marcar libros como privados para que su contenido no sea compartido con ninguna IA.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50562500,
+    "url": "https://restofworld.org/2026/ai-jobs-skills-gig-work/",
+    "score": 10,
+    "time": 1795106750,
+    "titulo_es": "La Explotación de Trabajadores de Datos en la Economía Gig de la IA",
+    "resumen": "El artículo expone cómo plataformas de IA como Outlier (Scale AI) reclutan profesionales altamente cualificados (médicos, abogados, doctores) ofreciendo altas tarifas para tareas de diseño de escenarios complejos, revisión y ranking de informes generados por IA. Sin embargo, estas plataformas emplean tácticas de \"extractivismo de datos\", reduciendo drásticamente las tarifas una vez que se establece una fuerza laboral, similar a lo que han experimentado trabajadores de datos de menor cualificación en países como Venezuela, Filipinas y Tanzania. Se describe un patrón de pago inicial elevado para construir una base de trabajadores, seguido de recortes salariales y el abandono repentino de regiones enteras (como Kenia, Nigeria y Pakistán), a menudo justificándose por protocolos de seguridad pero dejando a los trabajadores varados. Este modelo se compara con el extractivismo tradicional, donde los recursos se extraen de una región para el beneficio de otros, sin considerar las consecuencias para los trabajadores. La IA, además de entrenarse con datos preexistentes, requiere una capa adicional de trabajo humano para la generación, anotación y validación continua de datos, cuyo valor es determinado y extraído por las plataformas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50547374,
+    "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+    "score": 1468,
+    "time": 1795015195,
+    "titulo_es": "Dos vulnerabilidades críticas de HTTP/2 en NGINX permiten la ejecución remota de código",
+    "resumen": "El artículo detalla dos vulnerabilidades críticas de ejecución remota de código (RCE) en NGINX, identificadas como CVE-2026-123633 (use-after-free) y CVE-2026-123007 (integer underflow), ambas con una puntuación CVSS 4.0 de 9.2. Estas vulnerabilidades, descubiertas independientemente por Wiz Research, Ikotas Labs, Metnir, Rapid7 y Xint, afectan a NGINX, un servidor web ampliamente utilizado que actúa como front-end para sitios web y APIs. La explotación exitosa podría permitir a atacantes no autenticados tomar el control de los servidores NGINX, robar datos sensibles, manipular sitios web o interrumpir servicios. Las vulnerabilidades residen en el propio NGINX y no requieren que el código de la aplicación backend sea vulnerable. Ambas requieren que el protocolo HTTP/2 esté habilitado en el servidor NGINX. CVE-2026-123007 afecta a versiones de NGINX desde la 1.9.5 (lanzada en 2015), mientras que la vulnerabilidad use-after-free (CVE-2026-123633) data de aproximadamente seis años. Se recomienda a las organizaciones actualizar sus despliegues de NGINX a la última versión que incluye los parches de seguridad proporcionados por F5.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50553225,
+    "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering",
+    "score": 289,
+    "time": 1795040953,
+    "titulo_es": "Ingeniería Inversa Asistida por LLM",
+    "resumen": "El artículo describe un proceso modernizado de ingeniería inversa y hacking de software/hardware que aprovecha las capacidades de los Agentes de IA y \"skills\" dedicados. El autor, con dos décadas de experiencia en hacking manual, ha acelerado drásticamente su flujo de trabajo gracias a la IA. El proceso implica señalar un agente a un binario para análisis, utilizando un conjunto de \"skills\" personalizadas que manejan el desmontaje, la descompilación y el análisis. Se destacan herramientas y enfoques específicos como `mattpocock/skills` para la integración de herramientas de ingeniería inversa (radare2, Ghidra) y `ioma8/ghidra-decompile-skill` con scripts de Ghidra para descompilación rápida. Un \"skill\" crucial es `ioma8/hypothesis-debugging`, que aplica una variación del método científico para evitar que los agentes entren en bucles de resolución de problemas, forzándolos a realizar experimentos medibles y validar hipótesis. El autor enfatiza cómo la IA reduce la tediosa tarea de análisis manual de ensamblaje, permitiendo un progreso rápido en tareas que antes tomaban años. Se mencionan aplicaciones prácticas como la descodificación de formatos de archivo propietarios y el desarrollo de editores personalizados. El artículo concluye celebrando la sinergia entre la ingeniería inversa y el desarrollo de software, impulsada por la curiosidad y potenciada por las LLMs.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50546495,
+    "url": "https://levineuwirth.org/essays/exponential-magic/",
+    "score": 59,
+    "time": 1795010829,
+    "titulo_es": "La Complejidad Computacional de Magic: The Gathering y el Desafío de su Implementación por Software",
+    "resumen": "El artículo explora la profunda complejidad computacional del juego de cartas Magic: The Gathering, destacando su naturaleza Turing completa y la dificultad inherente para crear implementaciones de software precisas y eficientes. Se discuten las limitaciones de las plataformas existentes como Magic: The Gathering Arena, Magic: The Gathering Online y Forge, particularmente en cuanto a la completitud del catálogo de cartas, la metodología de matchmaking, el rendimiento y la jugabilidad de la IA. El autor relata su experiencia personal en el desarrollo de un nuevo motor de reglas llamado Arcana, motivado por la necesidad de superar estas deficiencias, especialmente para la investigación de IA mediante aprendizaje por refuerzo. Se hace hincapié en cómo las interacciones y el comportamiento exponencial de las habilidades en Magic presentan un desafío significativo para los científicos de la computación, utilizando el ejemplo de un mazo centrado en Scute Swarm para ilustrar esta complejidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50551046,
+    "url": "https://www.radixark.com/blog/daisyrose-27b",
+    "score": 246,
+    "time": 1795030756,
+    "titulo_es": "DaisyRose-27B: Un Modelo de IA Avanzado Entrenado con RL y Eficiencia Computacional",
+    "resumen": "El artículo presenta DaisyRose-27B, el primer modelo de RadixArk, construido sobre Qwen3.8-27B y entrenado mediante aprendizaje por refuerzo (RL) con el framework Miles. Se destaca el entrenamiento en tareas de agente de largo alcance con sesiones de hasta 1 millón de tokens, logrado en 18 días con 144 GPUs H200 y un conjunto curado de 1200 tareas. DaisyRose-27B mejora significativamente el rendimiento en el benchmark Terminal-Bench 4.1 (pass@1 del 5.6% al 12.0%) y otros benchmarks de razonamiento, seguimiento de instrucciones y codificación. Los puntos clave para alcanzar estos resultados con un presupuesto de cómputo limitado son: datos de entrenamiento de alta calidad (en colaboración con Eigent AI), un backend de entrenamiento eficiente (con una utilización de FLOPs de modelo del 37% y velocidades de entrenamiento 2x superiores a los frameworks open-source) y sandboxes robustos (basados en AgentENV, con un 99% de éxito en la creación y un 80% de reducción de costos). Se ofrecen checkpoints en BF16, FP8 y NVFP4.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50519778,
+    "url": "https://github.com/pickysysadmin/logitech-harmony-ir-archive",
+    "score": 71,
+    "time": 1794848203,
+    "titulo_es": "Archivo de códigos y protocolos IR de los mandos a distancia/hub Logitech Harmony",
+    "resumen": "Este artículo describe un archivo exhaustivo de códigos infrarrojos (IR) y formatos de protocolo utilizados por los mandos a distancia y hubs Logitech Harmony. El archivo, que contiene datos sin procesar capturados y procesados con ayuda de IA, incluye aproximadamente 276,000 dispositivos de 7,900 fabricantes, 13.3 millones de comandos y las 684 definiciones de protocolos IR propias de Logitech. Los datos están en formato JSON plano y no requieren servicios ni herramientas de Logitech para su uso. Cada comando incluye su código Harmony original y una cadena Pronto Hex lista para enviar. Los protocolos conservan las definiciones originales de Logitech para la generación de comandos. La información del dispositivo detalla cómo controlarlos, incluyendo temporización, si la alimentación es discreta o conmutada, entradas y métodos de marcación de canales. Se enfatiza la convención de omitir campos opcionales sin valor en lugar de usar 'null' o '{}'. Los conjuntos de códigos se almacenan por separado para optimizar el espacio. Se presenta una herramienta web (index.html) que utiliza la File System Access API (Chromium) para visualizar los datos localmente, o mediante un servidor HTTP para otros navegadores. También se mencionan scripts de rehidratación (Python y PowerShell) para crear archivos de dispositivo autocontenidos con comandos incrustados, útiles para manejar la complejidad de los comandos (ej. secuencias de entrada, sintonización de canales, estados). Se explica que los comandos de encendido pueden ser conmutados (toggle) o discretos, y se recomienda verificar el tipo de dispositivo en lugar del nombre del comando. Las entradas de dispositivo usan las etiquetas de Logitech (ej. HDMI), y los dispositivos sin comandos de entrada específicos solo pueden ciclar entre ellas.",
+    "categoria": "Hardware"
   }
 ]
