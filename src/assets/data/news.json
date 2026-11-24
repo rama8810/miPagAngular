@@ -1,182 +1,155 @@
 [
   {
-    "id": 50610743,
-    "url": "https://github.com/mikuta0407/win4wine",
-    "score": 178,
-    "time": 1795436891,
-    "titulo_es": "Ejecutar el shell de Windows XP como el escritorio de Linux sobre Wine",
-    "resumen": "Este artículo describe un proyecto experimental para utilizar el explorador de Windows XP (explorer.exe) como el shell del escritorio en sistemas Linux, aprovechando Wine. El objetivo es recrear la apariencia y funcionalidad del escritorio de Windows XP, incluyendo la barra de tareas, el menú de inicio y las ventanas de carpetas, dentro de un entorno Linux. Permite ejecutar aplicaciones Linux dentro de este marco visual de XP. El proyecto requiere la extracción de archivos de una instalación de Windows XP o, alternativamente, el uso de los shells de ReactOS (Windows 2000 clásico) o Windows 7 (experimental) si no se dispone de una ISO de XP. La configuración implica la compilación de Wine desde el código fuente y la aplicación de parches específicos. Se detallan los procedimientos de instalación y las opciones de personalización. Las licencias del código son LGPL-2.1-or-later (para el código principal de Wine y parches), GPL-2.0-only (para parches de labwc) y MIT (para parches de wlroots). Los archivos de Windows y ReactOS se rigen por sus respectivas licencias.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 50615520,
-    "url": "https://www.greptile.com/blog/trex-computer-use",
-    "score": 22,
-    "time": 1795454365,
-    "titulo_es": "Presentación de una nueva forma de revisar tus PRs.",
-    "resumen": "El artículo introduce una mejora significativa en la forma en que los modelos de IA interactúan con interfaces gráficas de usuario (GUI) para realizar tareas, como la revisión de solicitudes de extracción (PRs). Tradicionalmente, los modelos de IA que operan en entornos de escritorio se basan en capturas de pantalla y árboles de accesibilidad para comprender la interfaz. Sin embargo, la precisión al hacer clic en elementos basada en coordenadas de píxeles es un desafío, especialmente con diferentes resoluciones de pantalla y objetivos pequeños. El artículo detalla cómo la información del árbol de accesibilidad, que describe elementos como botones con sus propiedades y ubicaciones, puede ser utilizada por modelos de IA. Se exploran configuraciones donde los modelos reciben solo capturas de pantalla, capturas de pantalla junto con el árbol de accesibilidad, o incluso la capacidad de referenciar elementos directamente por su ID en lugar de coordenadas. Se presentan resultados de benchmarks como OSWorld y ScreenSpot-Pro, mostrando que los modelos más potentes (como GPT-6.1 Sol) mejoran drásticamente su rendimiento al utilizar el árbol de accesibilidad o incluso sin él, mientras que los modelos más débiles se benefician enormemente de esta información adicional para reducir la brecha de rendimiento. La conclusión implícita es que la representación textual de la interfaz a través del árbol de accesibilidad, o la capacidad de los modelos para entenderla y actuar sobre ella, es crucial para la eficiencia y precisión de los agentes de IA en la manipulación de GUIs.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50610318,
-    "url": "https://github.com/os6/nospeaker",
-    "score": 227,
-    "time": 1795433514,
-    "titulo_es": "Haz que el trackpad de tu MacBook hable usando su motor háptico",
-    "resumen": "El artículo describe un proyecto de software para macOS llamado 'nospeaker' que utiliza el motor háptico del trackpad de un MacBook para generar sonido, incluyendo voz y música. Esto se logra mediante la manipulación directa del marco privado `MultitouchSupport` para controlar el motor del trackpad hasta 4000 veces por segundo. El sonido se genera simulando las resonancias de la voz humana mediante tonos. Los requisitos incluyen un trackpad Force Touch y versiones específicas de macOS. El proyecto se distribuye como un ejecutable único y está desarrollado en Swift, aprovechando el conocimiento adquirido del proyecto de código abierto 'Tactile'. La generación de voz se basa en la predicción lineal para identificar las formantes (resonancias) de la voz y reproducirlas con el motor háptico.",
+    "id": 50633159,
+    "url": "https://grafana.com/grafana/download",
+    "score": 7,
+    "time": 1795548224,
+    "titulo_es": "Grafana: Instalación, Configuración y Ediciones",
+    "resumen": "El artículo describe Grafana, una plataforma de análisis y visualización de código abierto. Se detalla la existencia de dos ediciones principales: la edición OSS (Open Source Software), gratuita y comunitaria, que incluye funcionalidades básicas de visualización, alertas y fuentes de datos; y la edición por defecto/recomendada (que parece ser una edición gratuita con capacidad de actualización a funciones empresariales), la cual incluye todo lo de OSS y puede ser ampliada con soporte para plugins empresariales. Se proporcionan guías de instalación para distribuciones Linux como Ubuntu/Debian (vía APT) y Red Hat/Fedora/OpenSUSE/SUSE (vía YUM/zypper). La configuración del backend de Grafana se realiza a través del archivo `grafana.ini`, donde se pueden ajustar parámetros como la contraseña de administrador, el puerto HTTP, la base de datos (SQLite, MySQL, Postgres) y las opciones de autenticación (Google, GitHub, LDAP, auth proxy). Finalmente, se explica cómo iniciar el servidor Grafana, acceder con el usuario administrador por defecto y añadir una fuente de datos a través de la interfaz gráfica.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50607261,
-    "url": "https://github.com/AFK-surf/xnulinux",
-    "score": 567,
-    "time": 1795405764,
-    "titulo_es": "XNU como módulo de kernel cargable dentro de Linux (personalidad de macOS para arm64 Linux)",
-    "resumen": "El proyecto XNU-Linux permite ejecutar el kernel de macOS, XNU, como un módulo de kernel cargable (xnu.ko) dentro de un kernel de Linux arm64 no modificado. Esto posibilita la ejecución nativa de procesos de macOS junto a procesos de Linux en el mismo hardware, sin un hipervisor. Linux proporciona a XNU recursos como memoria, temporizadores, sistemas de archivos y red a través de un módulo de interfaz (fki.ko). Se ha demostrado la capacidad de iniciar un disco de sistema de macOS 27 completo, incluyendo su interfaz gráfica (loginwindow, WindowServer, Dock, Finder, Safari) sobre una distribución Ubuntu estándar. El sistema resultante permite una coexistencia de ambos entornos de usuario (macOS y Linux) en una única máquina, con XNU controlando directamente la CPU y la MMU, y Linux prestando sus recursos I/O. Aunque es una solución funcional, presenta ciertas limitaciones como un acceso a memoria más lento en comparación con una máquina virtual nativa y modificaciones específicas en el sistema de seguridad de macOS (AMFI, SIP). El proyecto mantiene una estricta separación de licencias entre los componentes de Linux y XNU.",
-    "categoria": "Distribuciones Linux"
-  },
-  {
-    "id": 50587286,
-    "url": "https://blog.regehr.org/archives/1621",
-    "score": 95,
-    "time": 1795250954,
-    "titulo_es": "La confusa distinción entre punteros y enteros en lenguajes de programación orientados al rendimiento",
-    "resumen": "El artículo explora la problemática distinción entre punteros y enteros en lenguajes de programación orientados al rendimiento como C y C++. A diferencia del ensamblador donde son bitvectors indistinguibles y de los lenguajes de alto nivel donde están aislados, los lenguajes de sistemas como C/C++ presentan un conflicto: la optimización del compilador y la facilidad para la programación de bajo nivel (como kernels de SO). Se ilustra con ejemplos de C que demuestran cómo la manipulación de punteros a través de operaciones enteras puede llevar a comportamientos inesperados y no garantizados por el estándar C, dependiendo de la interpretación del compilador (GCC vs. Clang). Se enfatiza que tratar los punteros como enteros, incluso si su representación es la misma, es un error conceptual que puede sorprender incluso a desarrolladores experimentados en UB. Este problema no es exclusivo de C/C++, sino que afecta a cualquier lenguaje con compiladores de alto rendimiento que permitan manipulación de punteros de bajo nivel. Se mencionan recursos adicionales para comprender mejor la procedencia de punteros y las decisiones de los compiladores.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50577534,
-    "url": "https://george.mand.is/2026/11/lets-meet-in-the-middle/",
-    "score": 64,
-    "time": 1795192914,
-    "titulo_es": "Creación de Herramientas CLI para Geolocalización y Búsqueda de Lugares en macOS",
-    "resumen": "El artículo detalla la creación de herramientas de línea de comandos (CLI) en macOS, 'whereami' y 'nearme', que aprovechan las APIs nativas del sistema operativo para geolocalización y búsqueda de lugares. 'whereami' obtiene las coordenadas geográficas del usuario o realiza geocodificación inversa de direcciones. 'nearme' utiliza MapKit para buscar puntos de interés (como cafeterías) alrededor de unas coordenadas dadas. Se explora la combinación de estas herramientas, especialmente para encontrar un punto intermedio entre dos ubicaciones ('meet in the middle'), utilizando 'jq' para calcular la latitud y longitud promedio. Se destacan las ventajas de estas herramientas al no requerir APIs externas, claves ni navegadores, y se sugieren alias o funciones para simplificar su uso en la terminal. El enfoque principal es la ingeniería de software para construir utilidades prácticas y combinables.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50611861,
-    "url": "https://boland.dev/snet/",
-    "score": 58,
-    "time": 1795443397,
-    "titulo_es": "Construcción de un adaptador de red inalámbrico para la Super Nintendo",
-    "resumen": "El artículo detalla la creación de un adaptador de red inalámbrico para la Super Nintendo (SNES), un proyecto de 'futurismo de 16 bits'. El adaptador se conecta a uno de los puertos de controlador de la SNES, que son buses seriales síncronos. Se desarrolló un protocolo de comunicación de 'bit-banging' que opera a aproximadamente 30 KB/s, suficiente para la época. El prototipo inicial utiliza una placa de desarrollo Pico 2 W con un RP2350A, capaz de manejar la lógica de 5V de la consola y gestionar simultáneamente el enlace con la consola y la conexión Wi-Fi gracias a sus dos núcleos. Una característica clave es la sincronización de partidas guardadas (Cloud Save) utilizando una conexión Wi-Fi. Esto se implementa parcheando las ROMs de la SNES para inyectar código que sincroniza los datos de la SRAM con un servidor WebDAV, permitiendo continuar partidas entre la SNES y emuladores como RetroArch en dispositivos móviles. El diseño del PCB posterior podrá funcionar con diferentes fuentes de alimentación.",
+    "id": 50629106,
+    "url": "https://www.frankchiarulli.com/blog/splitting-usb-c/",
+    "score": 74,
+    "time": 1795532050,
+    "titulo_es": "Dongle-Pro v2: Logrando USB 3.2 Gen 2 de 10 Gbps para la restauración de Macs mediante un experimento de ingeniería de hardware",
+    "resumen": "El artículo describe el desarrollo de restorekit.org dongles, pequeños dispositivos USB-C que se conectan entre una computadora host y una Mac objetivo para ponerla en modo DFU y permitir su reflasheo. La versión inicial, Dongle-Lite, solo soportaba USB 2.0. Se detalla el desafío de añadir soporte para USB 3.0/3.1 Gen 1, que inicialmente requería más componentes y un mayor costo. La solución innovadora para el Dongle-Pro v2 fue un experimento de ingeniería de hardware: utilizar un bus USB 2.0 compartido para el hub y el MCU del dongle, mientras se enrutan los carriles SuperSpeed USB 3.0 como un simple passthrough directo entre el host y el objetivo. Este enfoque, a pesar de las preocupaciones sobre la interferencia de alta velocidad, resultó exitoso, permitiendo conexiones USB 3.2 Gen 2 de 10 Gbps. Sorprendentemente, esta versión también es más barata y pequeña que el Dongle-Lite USB 2.0 original. La explicación técnica profundiza en la arquitectura de los puertos USB-C, donde los buses USB 2.0 y USB 3.x son físicamente independientes, permitiendo su funcionamiento simultáneo y la consolidación de ambos en un solo puerto físico. Se verificó el funcionamiento a través de herramientas de diagnóstico de macOS como system_profiler y ioreg, confirmando que el sistema operativo reconoce ambos buses (USB 2.0 y SuperSpeed USB 3.x) activos simultáneamente en el mismo puerto físico.",
     "categoria": "Hardware"
   },
   {
-    "id": 50610334,
-    "url": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
-    "score": 206,
-    "time": 1795433656,
-    "titulo_es": "Arreglando retroactivamente el mundo",
-    "resumen": "El artículo aborda la creciente carga de la gestión de vulnerabilidades de seguridad en el desarrollo de software moderno, particularmente en el contexto de sistemas de dependencias complejas y el aumento de reportes de seguridad. El autor critica la falta de preparación de muchos proyectos para manejar incidentes de seguridad, incluyendo la dificultad en la triaje de reportes, la gestión de parches, y la integración de correcciones de seguridad en lanzamientos de software. Se discuten desafíos como la clasificación de vulnerabilidades (ej. REDoS, ataques de timing), la presión de los escáneres de seguridad y las expectativas de los usuarios, lo que a menudo lleva a los mantenedores a implementar soluciones preventivas o cosméticas para evitar falsos positivos o advertencias de obsolescencia, incluso cuando no afectan directamente a sus proyectos. Se enfatiza que la seguridad es compleja y requiere experiencia especializada, y que la práctica común de combinar correcciones de seguridad con nuevas funcionalidades o cambios de API dificulta la adopción para los usuarios finales.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50609579,
-    "url": "https://jola.dev/posts/you-cant-afford-ssh-keys-disk",
-    "score": 106,
-    "time": 1795427738,
-    "titulo_es": "Mejora de la seguridad de las claves SSH y commits firmados utilizando Bitwarden",
-    "resumen": "El artículo describe un enfoque práctico para mejorar la seguridad de las claves SSH personales y la autenticidad de los commits de Git. Ante las crecientes preocupaciones sobre vulnerabilidades de seguridad y brechas de datos, el autor, un \"autoalojador patológico\", ha adoptado un enfoque proactivo para proteger sus sistemas. Inicialmente, se centró en reducir la superficie de ataque eliminando servicios no utilizados y colocando la mayoría de sus servicios detrás de Tailscale, con un uso selectivo de Tailscale Funnel para acceso público.  La principal innovación discutida es la gestión de claves SSH en dispositivos personales. Reconociendo la vulnerabilidad de mantener claves privadas en disco, incluso cuando se almacenan en un gestor de contraseñas, el autor implementó una solución utilizando Bitwarden. Los pasos incluyen importar las claves SSH privadas a Bitwarden, habilitar el agente SSH de Bitwarden (seleccionando un nivel de autenticación según la política de bloqueo de la bóveda), y configurar los archivos `~/.ssh/config` y `~/.zshrc` para dirigir el uso de claves al agente de Bitwarden.  Esto permite eliminar las claves privadas del disco, mitigando el riesgo de exfiltración por código malicioso.  Adicionalmente, el autor detalla la configuración de la firma de commits de Git utilizando claves SSH (una alternativa moderna a las claves GPG), empleando una clave dedicada para esta tarea específica, lo que proporciona una prueba criptográfica de la autoría del commit.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50603845,
-    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
-    "score": 714,
-    "time": 1795381276,
-    "titulo_es": "¡Tenemos IA en casa! Configura tu propio ChatGPT personal gratuito en tu PC con Unsloth y Inkling o Qwen",
-    "resumen": "El artículo describe cómo configurar un modelo de lenguaje grande (LLM) de IA personal y privado en hardware local (PC) utilizando Unsloth Desktop. Se enfoca en la alternativa a los servicios en la nube, abordando preocupaciones sobre costos, privacidad y control de modelos. Se detalla el proceso de instalación, que incluye la descarga de un modelo de IA cuantizado compatible con la VRAM de la GPU, la configuración del tamaño del contexto y la habilitación del acceso a la red local (LAN) para uso compartido. Se explican los requisitos de hardware, especialmente la VRAM de la GPU, y el concepto de cuantización como método para que los modelos más grandes quepan y funcionen eficientemente en hardware de consumo. Se proporcionan tablas de referencia para diferentes configuraciones de VRAM y modelos recomendados, sugiriendo el uso de modelos como Qwen y Gemma con diferentes niveles de cuantización. El proceso se destaca por su simplicidad, evitando la necesidad de comandos de terminal o entornos de Python.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50584526,
-    "url": "https://github.com/elixir-hls/elixir-hls",
-    "score": 136,
-    "time": 1795222077,
-    "titulo_es": "Elixir HLS: Síntesis de Alto Nivel para Circuitos FPGA desde Elixir",
-    "resumen": "Elixir HLS es una herramienta de síntesis de alto nivel (HLS) que permite generar circuitos de FPGA directamente a partir de funciones escritas en Elixir. A diferencia de los lenguajes de descripción de hardware tradicionales (Verilog, VHDL) que operan a nivel RTL (registro a registro), Elixir HLS abstrae la complejidad permitiendo al desarrollador centrarse en la lógica de cómputo. Las funciones definidas con `defhls` pueden ejecutarse tanto en la CPU como en un circuito FPGA. La herramienta genera el RTL necesario para el FPGA y simula cada circuito contra su implementación en Elixir para asegurar la corrección, utilizando la función Elixir como especificación. La versión 0.1.0 soporta funciones enteras con estado, tablas, memorias, bucles fijos y la interconexión de instancias mediante streams, niveles y eventos. El objetivo inicial es la placa Sipeed Tang Primer 25K con AtomVM, con un ejemplo de radio FM. Las limitaciones actuales incluyen la ausencia de división, números de punto flotante, recursión y ciertas operaciones avanzadas de streams. Los tipos de datos como `u32` definen el ancho de bits del circuito, impactando en su tamaño y velocidad. La compilación se realiza con `mix ehls.compile`, que genera SystemVerilog y realiza la simulación. La directiva `definstance` permite instanciar estas funciones como circuitos en el FPGA o como procesos en la CPU, ofreciendo interfaces para la CPU o para la comunicación autónoma de datos a través de streams.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50584327,
-    "url": "https://github.com/aleff-github/onion-routing-anatomy",
-    "score": 16,
-    "time": 1795220437,
-    "titulo_es": "Anatomía del Enrutamiento Cebolla: El Protocolo Tor, Byte a Byte",
-    "resumen": "Este libro técnico gratuito y de código abierto explora el protocolo Tor byte a byte, detallando cómo funciona desde las celdas intercambiadas entre relés hasta las decisiones de diseño, ataques reales y problemas abiertos. Incluye veinte laboratorios reproducibles que reconstruyen y prueban cada mecanismo en una red Tor privada, utilizando torlab, un cliente Tor educativo en Python. El libro se basa en estudios previos y ha contado con la ayuda de herramientas de IA para la expansión y organización del material. La edición original es en italiano bajo licencia GPL-3.0-or-later, con traducciones disponibles en varios idiomas, aunque estas últimas no han sido revisadas por hablantes nativos. Las versiones de referencia para los estudios y laboratorios son tor 0.4.9.13 y Arti 2.6.0.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50607668,
-    "url": "https://micjm.com/blog/yes-17m-lines-of-lean-is-a-lot/",
-    "score": 247,
-    "time": 1795410049,
-    "titulo_es": "La Hipótesis de Riemann y las Pruebas de Lean: Una Perspectiva de la Longitud de Código Generado por IA",
-    "resumen": "El artículo investiga la longitud de las pruebas escritas en Lean, especialmente en el contexto de la reciente prueba de la Hipótesis de Riemann, que consta de 17 millones de líneas. Se comparan colecciones de pruebas de Lean generadas por humanos (como las de Mathlib) con aquellas asistidas o generadas por IA, encontradas en repositorios como Reservoir. Se observa que las pruebas asistidas por IA pueden ser órdenes de magnitud más largas que las escritas por humanos, con ejemplos que alcanzan decenas de millones de líneas. Se discute la naturaleza de algunos de estos proyectos, como CBirkbeck/LeanBridge, que en su mayoría consisten en código generado por scripts para verificar bases de datos, y el proyecto de Fermat's Last Theorem de Anthropic, que es 450 veces más largo que la versión humana. La conclusión es que 17 millones de líneas es, efectivamente, una cantidad muy grande de código.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50587750,
-    "url": "https://www.allaboutcircuits.com/technical-articles/mram-basics-how-magnetic-memory-is-replacing-embedded-flash/",
-    "score": 84,
-    "time": 1795256051,
-    "titulo_es": "Memoria MRAM: Cómo funciona y su impacto en productos embebidos",
-    "resumen": "El artículo explora la tecnología Magnetoresistive Random-Access Memory (MRAM) como una alternativa a la memoria flash en productos embebidos. Detalla cómo la MRAM almacena datos mediante estados magnéticos (orientaciones paralelas y antiparalelas de capas ferromagnéticas) en lugar de carga eléctrica atrapada, lo que elimina las limitaciones de desgaste por ciclos de escritura/borrado y la lentitud de las operaciones de escritura de la flash. Explica que la flash ha alcanzado límites de escalado debido a la necesidad de un grosor de óxido considerable para retener carga, lo que requiere altos voltajes y complicaciones en procesos de fabricación CMOS avanzados (22nm y 16nm). La MRAM, en cambio, utiliza el efecto de túnel magnetoresistivo (TMR) para la lectura y el torque de transferencia de espín (STT) para la escritura, permitiendo una mayor durabilidad (ciclos ilimitados) y mejor integración en nodos de fabricación modernos. Se mencionan ejemplos de su uso en microcontroladores de Renesas y NXP, destacando su importancia para futuras actualizaciones de firmware y registro de datos en sistemas embebidos.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50601525,
-    "url": "https://openai.com/index/perplexity-and-intelligence/",
-    "score": 683,
-    "time": 1795367187,
-    "titulo_es": "El Progreso en el Preentrenamiento de Modelos y la Medición de la IA: Un Enfoque en la Perplejidad",
-    "resumen": "El artículo argumenta que el desarrollo moderno de la IA se basa principalmente en el entrenamiento de modelos como compresores o predictores sobre grandes corpus de datos. El autor propone la perplejidad (o pérdida de entropía cruzada) como una métrica clave para rastrear el progreso en el preentrenamiento, comparar desarrolladores y establecer estándares de seguridad compartidos en la industria. Se presenta un gráfico de la evolución de la perplejidad en los modelos de OpenAI, desde GPT-3.5 hasta modelos más recientes con perplejidad por debajo de 0.8, destacando la aparición de capacidades emergentes y transformadoras en dominios como la ciberseguridad y las matemáticas. Se enfatiza que, a diferencia de las métricas de capacidades específicas que pueden saturarse o volverse obsoletas rápidamente, el progreso en el preentrenamiento a través de la perplejidad se mantiene como un indicador fundamental y duradero del avance de la IA, incluso considerando la creciente contribución de la propia IA en su desarrollo.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50581961,
-    "url": "https://elementdigital.com.au/blog/brake-check-trailer-brakes-over-bluetooth/",
-    "score": 87,
-    "time": 1795208236,
-    "titulo_es": "Vulnerabilidad Crítica en Frenos de Remolque Bluetooth: Control Total Sin Autenticación",
-    "resumen": "El artículo detalla una vulnerabilidad de ciberseguridad crítica encontrada en los controladores de frenos de remolque Elecbrakes. Cualquier teléfono o laptop dentro del alcance de Bluetooth puede controlar la fuerza de frenado de un remolque sin necesidad de emparejamiento, PIN o autenticación alguna. La investigación, iniciada tras una conexión accidental a un remolque ajeno, reveló que la comunicación Bluetooth del dispositivo carece de medidas de seguridad, permitiendo comandos de frenado no solicitados. Se describen el proceso de descubrimiento, que incluyó fuzzing extensivo, la existencia de un canal de firmware OTA inseguro y la falta de autenticación (solo cuatro bytes, sin handshake ni confirmación). Elecbrakes ha lanzado actualizaciones de firmware para los modelos EB2 y VM1 (versiones 3.0.4.4.3 y 1.3.4.2.1 respectivamente) y está trabajando en una solución para el modelo ELBC 2000, que también es vulnerable. La divulgación coordinada se realizó bajo un acuerdo con Elecbrakes, quien afirma no tener conocimiento de incidentes de daño o lesiones causados por esta vulnerabilidad. CISA ha emitido advertencias (CVE-2026-96805, CVE-2026-125273, CVE-2026-124281) para esta falla de seguridad.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50601823,
-    "url": "https://anil.recoil.org/notes/software-too-complex-for-humans",
-    "score": 86,
-    "time": 1795368761,
-    "titulo_es": "Reflexiones sobre si la humanidad se equivocó al apresurarse con el software en la sociedad",
-    "resumen": "El artículo reflexiona sobre cómo la ingeniería de software ha estado intrínsecamente rota durante décadas debido a un desequilibrio entre la teoría de la computación y la rápida implementación de software en la sociedad, lo que resulta en sistemas llenos de errores y vulnerabilidades de seguridad. La crisis actual se agrava con el auge de la IA, que acelera la propagación de errores y las amenazas de seguridad. El autor propone que el futuro requiere una formalización completa de las especificaciones de hardware y software, la derivación de todo el nuevo código a partir de estas especificaciones y la reconstrucción de las pilas tecnológicas. Se sugiere que los unikernels y las arquitecturas composables pueden simplificar la especificación formal. Las especificaciones formales también facilitan respuestas de seguridad más rápidas y confiables, y pueden fomentar la diversidad de implementaciones para mitigar el riesgo de monocultivos de software. Sin embargo, se advierte contra la dependencia de unos pocos modelos de IA fronterizos para generar todo el software, abogando por la diversidad en los modelos y las herramientas de IA.",
+    "id": 50630294,
+    "url": "https://masondata.ai/",
+    "score": 44,
+    "time": 1795536712,
+    "titulo_es": "Mason: SQL Analítico Ultrarrápido",
+    "resumen": "El artículo describe Mason, un motor de base de datos diseñado para ejecutar consultas analíticas SQL a gran velocidad. Se enfoca en la optimización para consultas que leen muchas filas y realizan agregaciones (como conteos, sumas y group-bys) sobre grandes tablas, lo cual es crucial para dashboards, reportes y agentes de IA. Mason es particularmente eficiente cuando se consultan muchas filas a través de pocas columnas. Se destaca su rendimiento en comparación con otras soluciones, mencionando una mejora de 81x en pruebas específicas sobre hardware AWS m7g.xlarge. El artículo también detalla la metodología de prueba, incluyendo el manejo de arranques en frío, limpieza de caché y la latencia para múltiples clientes. Aunque su uso principal es para análisis de datos, puede realizar otras operaciones SQL. El proyecto tiene licencia Apache-2.0 y ofrece opciones de auto-hospedaje o una versión en la nube.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50617302,
-    "url": "https://www.sciencedaily.com/releases/2026/11/261110042546.htm",
-    "score": 10,
-    "time": 1795460794,
-    "titulo_es": "El agujero de ozono antártico alcanza su mayor tamaño en una década debido a un vórtice polar inusual",
-    "resumen": "El artículo detalla cómo los patrones climáticos inusuales sobre la Antártida, específicamente un vórtice polar excepcionalmente fuerte, provocaron que el agujero de ozono de 2026 alcanzara un tamaño de aproximadamente 9.6 millones de millas cuadradas (25 millones de kilómetros cuadrados), el séptimo más grande registrado en 48 años de observaciones. A pesar de esta expansión, los científicos de la NASA y la NOAA afirman que la recuperación gradual de la capa de ozono continúa, manteniéndose en camino de sanar a finales de siglo. La fortaleza del vórtice polar impidió que las perturbaciones atmosféricas habituales lo debilitaran, permitiendo que el aire extremadamente frío y las nubes estratosféricas polares, cruciales para la destrucción del ozono por químicos como el cloro y el bromo, persistieran durante más tiempo y en un área mayor. Se enfatiza que los esfuerzos internacionales para reducir las sustancias que agotan el ozono han evitado que el agujero sea aún mayor; se estima que sin estas regulaciones, el área afectada podría haber sido 1 a 2 millones de millas cuadradas mayor. El artículo también menciona que la formación tardía del agujero en los últimos años es un indicativo de la curación de la capa de ozono.",
+    "id": 50632998,
+    "url": "https://protocolis.co/paper/",
+    "score": 5,
+    "time": 1795547522,
+    "titulo_es": "Compilador de Protocolos para Ejecución Web Sólida: Un Nuevo Enfoque para Agentes Web",
+    "resumen": "El artículo presenta Protocolis, un nuevo compilador para la ejecución web sólida de agentes. A diferencia de los enfoques tradicionales que requieren que un modelo de lenguaje lea y evalúe cada página en cada paso, Protocolis compila los controles de una página web en operaciones tipificadas al encontrarse con una página por primera vez. El modelo de lenguaje selecciona una operación, el compilador la ejecuta, vuelve a leer la página y reporta los cambios. Este proceso no utiliza inferencia del modelo, código específico del sitio ni visitas previas. Las pruebas demuestran que Protocolis supera a las herramientas y agentes existentes en términos de tasa de finalización de tareas (76% frente a 46%), estabilidad (nunca por debajo del 55% frente a caídas hasta 28% en alternativas), costo (1.9 a 26 veces más barato por tarea completada) y precisión en la finalización de tareas (desacuerdo del juez del 22% frente al 56%). Estos resultados se obtuvieron en la configuración menos favorable de primera visita. El kit de replicación está disponible, y la tecnología está patentada y en producción con clientes de pago.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50627340,
+    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+    "score": 748,
+    "time": 1795524015,
+    "titulo_es": "El peligro de los modelos de IA que priorizan las políticas sobre la utilidad",
+    "resumen": "El artículo discute la frustración del autor con las limitaciones impuestas a los modelos de IA, específicamente Claude Code. El autor utilizó la IA para crear una herramienta que identificara música en reels de Instagram, buscara páginas de Bandcamp para comprar música y, como alternativa, descargara canciones de YouTube. El problema surgió cuando Bandcamp implementó un desafío en su API de búsqueda, y la IA se negó a ayudar a sortearlo, citando políticas contra el uso indebido. Sin embargo, la misma IA estaba dispuesta a descargar música de YouTube, una acción que el autor percibe como menos beneficiosa para los artistas y que no genera ingresos para ellos. El autor critica esta dualidad, argumentando que la IA, en lugar de ser una herramienta útil, está limitada por las directivas de empresas como Anthropic, impidiendo su potencial para tareas que el usuario considera beneficiosas, como apoyar a artistas independientes. Expresa preocupación por la creciente influencia corporativa en la IA, temiendo que las respuestas puedan ser 'ponderadas' por intereses comerciales en lugar de ser puramente informativas, comparándolo con la 'enshittificación' observada en otras plataformas tecnológicas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50625384,
+    "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
+    "score": 254,
+    "time": 1795509194,
+    "titulo_es": "Quad9 desactiva servicios para usuarios franceses debido a órdenes judiciales de bloqueo de dominios relacionados con la piratería",
+    "resumen": "Quad9, un servicio de resolución DNS, ha anunciado la desactivación de sus servicios para usuarios en Francia a partir del 24 de noviembre de 2026. La decisión se debe a órdenes judiciales y multas impuestas por no bloquear dominios que la empresa beIn (derechos deportivos) afirma estar relacionados con la piratería de streaming. Quad9 se opone fundamentalmente a ser utilizado como herramienta de aplicación de bloqueos de contenido por parte de terceros, argumentando que presionar a los resolvedores DNS recursivos es ineficaz, contraproducente y no afecta a los servidores de origen. A pesar de su oposición a la piratería, Quad9 se retira de Francia para cumplir con la ley y sus directrices internas. La empresa reconoce que esto causará interrupciones a corto plazo para los usuarios franceses, quienes podrían pasar a resolvedores menos seguros o centrados en la privacidad. Quad9 también explica que su método de bloqueo basado en geoIP es impreciso y resultará en sobre-bloqueo (bloquear a usuarios fuera de Francia) y sub-bloqueo (no bloquear a usuarios dentro de Francia). La empresa continuará argumentando contra la premisa de usar DNS recursivos para la aplicación de bloqueos de contenido.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50626413,
+    "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
+    "score": 195,
+    "time": 1795517414,
+    "titulo_es": "Análisis de la ruta crítica con Rewind y la influencia de Brendan Gregg",
+    "resumen": "El artículo describe el uso de Rewind, una máquina virtual determinista, para analizar la ruta crítica de compilaciones y pruebas de software. Se enfoca en identificar cuellos de botella, especialmente el tiempo que los procesos pasan en estado de espera (durmiendo) en lugar de computación activa, lo cual es difícil de detectar con perfiles de CPU tradicionales. La herramienta Rewind, inspirada en el trabajo de Brendan Gregg en análisis de rendimiento, registra eventos de conmutación de contexto y despertares de hilos para proporcionar un análisis detallado de la ruta crítica. Se utiliza un ejemplo de compilación y prueba de libuv para ilustrar cómo Rewind identifica que la mayor parte del tiempo se gasta esperando timers y otros eventos de I/O, en lugar de en el uso intensivo de CPU. El análisis permite identificar procesos y líneas de código específicas responsables de los retrasos, ofreciendo una visión más profunda que los métodos de perfilado convencionales.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50629962,
+    "url": "https://arxiv.org/abs/2611.30835",
+    "score": 56,
+    "time": 1795535422,
+    "titulo_es": "arXivLabs: Un marco para el desarrollo y la colaboración en nuevas funcionalidades de arXiv",
+    "resumen": "El artículo describe arXivLabs, un marco diseñado para permitir a colaboradores externos, tanto individuos como organizaciones, desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza la adhesión de estos colaboradores a los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de los datos del usuario. El objetivo es fomentar la innovación colaborativa para añadir valor a la comunidad de arXiv, invitando a proponer ideas de proyectos.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50599458,
+    "url": "https://martincmartin.github.io/slidev-stem/watches/article/1/",
+    "score": 167,
+    "time": 1795353685,
+    "titulo_es": "Lo que todos deberían saber sobre los relojes mecánicos",
+    "resumen": "El artículo explica el funcionamiento interno de los relojes mecánicos, centrándose en los componentes clave que permiten la medición precisa del tiempo. Se detalla el papel de la espiral (hairspring) y la rueda de balance (balance wheel) como el elemento que marca el ritmo, similar a un péndulo. Se describe cómo la espiral, un resorte plano en espiral, proporciona una fuerza elástica restauradora que oscila. La rueda de balance, unida a la espiral, aporta masa e inercia para ralentizar y estabilizar estas oscilaciones, haciendo que la frecuencia sea constante independientemente de la amplitud del movimiento. Se introduce el concepto de isocronismo, donde el período de oscilación es constante. Finalmente, se menciona el escapement (escape wheel y pallet fork) como el mecanismo que convierte el movimiento oscilatorio de la espiral y la rueda de balance en un movimiento de rotación unidireccional y a intervalos regulares, permitiendo que los engranajes muevan las manecillas. Se destaca la precisión sorprendente (99.99%) de estos dispositivos mecánicos, incluso en modelos económicos.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50607627,
-    "url": "https://phoenix.labri.fr/software/tempo/",
-    "score": 98,
-    "time": 1795409508,
-    "titulo_es": "Tempo: Especialización de Programas Offline",
-    "resumen": "Tempo es un especializador offline para programas, dividido en fases de análisis y especialización. Genera programas especializados a partir de entradas conocidas. Puede operar en tiempo de compilación (transformación fuente-a-fuente) y en tiempo de ejecución (generación de código binario en tiempo de ejecución). El análisis es inter-procedural, considerando alias de punteros y efectos secundarios. Se utiliza como backend para la especialización de programas Java (con Harissa) y ha sido aplicado a Fortran y C++ mediante traductores a C. La visualización del análisis es importante para evaluar el grado de especialización y acelera el proceso. Tempo está disponible vía FTP anónimo y se fomenta el contacto con los usuarios para recibir feedback y anunciar nuevas versiones a través de la lista de correo tempo-talk@labri.fr.",
+    "id": 50611613,
+    "url": "https://gnomon.bitsinfra.com/",
+    "score": 31,
+    "time": 1795442618,
+    "titulo_es": "Gnomon: Control de Versiones para Bases de Datos PostgreSQL",
+    "resumen": "Gnomon es una extensión para PostgreSQL que introduce funcionalidades de control de versiones directamente en la base de datos. Permite crear 'ramas' de la base de datos principal para que agentes individuales o tareas específicas trabajen de forma aislada. Cada rama hereda todo el contenido de la rama principal ('main') y solo almacena las modificaciones realizadas sobre ella, lo que permite una apertura instantánea independientemente del tamaño de la base de datos. Las aplicaciones y las sesiones de la base de datos pueden ser dirigidas a una rama específica sin necesidad de modificar el código de la aplicación, leyendo y escribiendo sobre dicha rama en lugar de la principal. Gnomon facilita la gestión de permisos, permitiendo que cada agente acceda únicamente a su rama asignada. La fusión de cambios de una rama a 'main' se puede controlar mediante políticas definidas (por ejemplo, número de filas afectadas, tablas específicas, validación de verificaciones), con PostgreSQL actuando como garante de estas reglas. Proporciona SDKs para TypeScript y Python, así como bindings para múltiples lenguajes (Node, Go, Ruby, Java, Elixir, .NET, PHP), lo que permite integrar esta funcionalidad en flujos de trabajo de desarrollo, pruebas y aplicaciones existentes, utilizando los drivers y ORMs habituales.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50604988,
-    "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
-    "score": 264,
-    "time": 1795388797,
-    "titulo_es": "Black Friday - Hasta 15% de descuento",
-    "resumen": "El artículo anuncia una oferta de Black Friday de GL.iNet, un proveedor de routers y soluciones de red fundado en 2010. Destaca su gama de productos, desde routers de viaje compactos hasta KVM remotos avanzados, enfatizando el rendimiento y la seguridad de su tecnología. La empresa busca empoderar a los usuarios para que se conecten con confianza, apoyando la productividad y la colaboración. También incluye elementos de interfaz de usuario para comparación de productos y selección de país de envío.",
+    "id": 50620831,
+    "url": "https://www.smithsonianmag.com/science-nature/the-search-for-a-top-dark-matter-candidate-was-losing-hope-then-came-a-potential-signal-will-it-be-enough-to-energize-the-struggling-field-180989923/",
+    "score": 57,
+    "time": 1795475560,
+    "titulo_es": "Físicos cansados de los WIMPs, un candidato propuesto para las partículas de materia oscura, pero un dato intrigante reaviva la esperanza",
+    "resumen": "El artículo explora la búsqueda de décadas por parte de los físicos de la materia oscura, centrándose en los WIMPs (partículas masivas de interacción débil) como un candidato principal. Se discuten los desafíos en la detección, como las señales de fondo crecientes y la financiación precaria, y la moral menguante en laboratorios subterráneos como el Gran Sasso National Laboratory. Sin embargo, un reciente y intrigante punto de datos de un laboratorio estadounidense ha reavivado el optimismo, sugiriendo que los WIMPs podrían existir. El artículo profundiza en la historia de la evidencia de la materia oscura, desde las observaciones de Fritz Zwicky hasta las teorías de los WIMPs en la década de 1980, y plantea la pregunta de si este hallazgo reciente será suficiente para superar los obstáculos del campo y si otros detectores podrán replicar la señal.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50605361,
+    "url": "https://www.katelynlesse.com/blog/new-problems-for-engineers-to-solve",
+    "score": 85,
+    "time": 1795390973,
+    "titulo_es": "La Evolución de la Ingeniería de Software con Sistemas Multiagente Impulsados por IA",
+    "resumen": "El artículo describe la transformación del rol del ingeniero de software, impulsada por el avance de los sistemas multiagente de IA. Inicialmente, los agentes eran simples, con intervención humana y operaciones limitadas. Con la mejora de los modelos, los agentes ahora operan en la nube, colaboran entre sí y realizan tareas complejas como investigación, descubrimiento y diseño de hardware, a menudo involucrando miles de agentes persistentes. Esto presenta nuevos desafíos de ingeniería de software, incluyendo la necesidad de infraestructura que maneje cargas de trabajo más variables, sistemas robustos de autenticación y autorización para identificar y controlar las acciones de los agentes, seguridad y aislamiento para código no confiable, y mecanismos de monitoreo y control. La arquitectura tradicional basada en Kubernetes no es adecuada para los agentes, que son cargas de trabajo aisladas, con estado y de instancia única, capaces de permanecer inactivos y con requisitos de rendimiento variables. Se están desarrollando soluciones específicas, como nuevos sistemas de archivos y ofertas de sandboxing, y runtimes como Agent Substrate. Los problemas de autenticación de agentes se benefician de las prácticas de microservicios (identidad de carga de trabajo, certificados de corta duración), mientras que la autorización presenta desafíos más profundos, especialmente en configuraciones 'on-behalf-of' (OBO) donde se requiere un manejo cuidadoso del consentimiento y permisos a gran escala para que los agentes actúen en nombre de humanos o con su propia identidad.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50610820,
+    "url": "https://www.core77.com/posts/145766/An-Italian-Folding-Bicycle-Design-that-Fits-Into-a-Suitcase",
+    "score": 4,
+    "time": 1795437608,
+    "titulo_es": "La Bicicleta Plegable T&C Pocket Bici de 1963",
+    "resumen": "El artículo describe la T&C Pocket Bici, una bicicleta plegable fabricada en Italia en 1963 por Tresoldi & Casiraghi. A diferencia de las bicicletas plegables modernas que se dividen por la mitad, esta bicicleta pliega sus componentes dentro de un cuadro con forma de pista de carreras, y el conjunto completo se guarda en su propia maleta. Se discuten las especificaciones de sus ruedas (más pequeñas que las de una Brompton de 16 pulgadas, parecidas a ruedas de scooter) y las incertidumbres sobre su origen y destino comercial, con relatos contradictorios sobre su producción y venta en el mercado chino. El artículo también menciona brevemente otras empresas de diseño y desarrollo de hardware.",
     "categoria": "Hardware"
+  },
+  {
+    "id": 50625953,
+    "url": "https://www.justafewbugs.xyz/",
+    "score": 130,
+    "time": 1795513679,
+    "titulo_es": "Experiencias de un investigador de seguridad con el Programa de Recompensas por Vulnerabilidades de Google",
+    "resumen": "El artículo detalla las experiencias de un investigador de seguridad independiente con el Programa de Recompensas por Vulnerabilidades (VRP) de Google durante un año. El investigador reportó 95 vulnerabilidades en teléfonos Pixel, la mayoría con pruebas de concepto funcionales, pero solo recibió un pago total de $250. Se describen tres problemas recurrentes: 1) Corrección de errores después de que sus informes fueran cerrados (algunos como duplicados o no vulnerabilidades), con parches implementados en versiones de software posteriores. 2) Cierre de errores con justificaciones (duplicado, no reproducible) que no se sostienen al analizar el código subyacente. 3) Una recompensa prometida por escrito que nunca se pagó, a pesar de confirmaciones y retrasos prolongados. El artículo también menciona una contradicción en una comunicación de Google sobre el impacto de seguridad de un bug. El autor enfatiza que su crítica se centra en el proceso del VRP y no en su relación general con el trabajo de Google, destacando que mucho de su trabajo se basa en las contribuciones de Google.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50611576,
+    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+    "score": 2774,
+    "time": 1795442418,
+    "titulo_es": "Jensen Huang es reinstalado como CEO de Nvidia tras escándalo",
+    "resumen": "El artículo detalla el sorpresivo regreso de Jensen Huang como CEO de Nvidia, efectivo de inmediato, tras una investigación sobre sus presuntas relaciones extramaritales y una conexión con un presunto espía chino. La junta directiva de Nvidia votó unánimemente para reinstaurarlo tras conversaciones con él y recibir \"input de altos niveles del gobierno de Estados Unidos\". El Presidente Donald Trump respaldó la decisión, afirmando que Huang \"no hizo nada malo\" y que su liderazgo es crucial para el éxito de la compañía y la economía estadounidense. La reinstalación provocó un aumento del 31% en las acciones de Nvidia, que habían caído significativamente tras las acusaciones. A pesar de la investigación en curso por parte de un comité independiente y la firma de abogados Wachtell, Lipton, Rosen & Katz, el gobierno de EE. UU. comunicó a la junta que no se violaron leyes de seguridad nacional. Figuras prominentes de la industria tecnológica, como Elon Musk, también abogaron por su regreso. Colette Kress, CFO, quien sirvió como CEO interina, continuará en su rol.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50614249,
+    "url": "https://ladybird.org/posts/alpha/",
+    "score": 2360,
+    "time": 1795450392,
+    "titulo_es": "Ladybird, un nuevo navegador web con motor propio, entra en fase Alpha",
+    "resumen": "Ladybird, un navegador web desarrollado desde cero con su propio motor de renderizado, ha alcanzado la fase Alpha. Disponible para macOS y Linux, esta versión inicial, aunque modesta y funcional, presenta inestabilidades y posibles fallos en la visualización de algunos sitios web, aspectos para los que se solicita feedback de los usuarios a través de reportes internos. El proyecto fomenta la participación de expertos en ciberseguridad para identificar y corregir vulnerabilidades. Ladybird se distribuye a través de un canal de actualización continua, permitiendo a los desarrolladores experimentar mejoras rápidas sin necesidad de compilar desde el código fuente. Soporta WebDriver y el protocolo Firefox DevTools para pruebas automatizadas. El equipo agradece el apoyo de patrocinadores, donantes y la comunidad por las contribuciones previas.",
+    "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50620349,
+    "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
+    "score": 673,
+    "time": 1795473149,
+    "titulo_es": "Stalwart 1.2.0: Un reemplazo directo para Microsoft Exchange",
+    "resumen": "El artículo presenta Stalwart 1.2.0, un servidor de correo de código abierto (bajo AGPL) que ahora funciona como un reemplazo directo de Microsoft Exchange. Aprovecha la implementación de protocolos clave como MAPI sobre HTTP, Exchange Web Services (EWS), Exchange ActiveSync y Autodiscover. Esto permite que clientes de correo populares como Outlook, Apple Mail y aplicaciones móviles se conecten a Stalwart utilizando las mismas credenciales y configuraciones que usarían con Exchange, manteniendo la experiencia del usuario sin cambios.  Se destaca la necesidad de alternativas a Exchange on-premises, impulsada por la dirección de Microsoft hacia Exchange Online y las preocupaciones sobre la soberanía de los datos y la ley CLOUD Act de EE. UU. Stalwart aborda la barrera del cliente, tradicionalmente el principal obstáculo para migrar fuera de Exchange, al permitir que los usuarios continúen usando sus clientes existentes. La integración de estos protocolos de Exchange no crea silos; las acciones realizadas a través de clientes de Exchange o protocolos estándar como IMAP, JMAP, CalDAV y CardDAV acceden y modifican los mismos datos de correo, calendarios, contactos y tareas. Las reglas de Outlook se implementan en el servidor como reglas Sieve, asegurando su ejecución independientemente del cliente utilizado.",
+    "categoria": "Desarrollo de Software"
   }
 ]
