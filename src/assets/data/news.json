@@ -1,155 +1,200 @@
 [
   {
-    "id": 50633159,
-    "url": "https://grafana.com/grafana/download",
-    "score": 7,
-    "time": 1795548224,
-    "titulo_es": "Grafana: Instalación, Configuración y Ediciones",
-    "resumen": "El artículo describe Grafana, una plataforma de análisis y visualización de código abierto. Se detalla la existencia de dos ediciones principales: la edición OSS (Open Source Software), gratuita y comunitaria, que incluye funcionalidades básicas de visualización, alertas y fuentes de datos; y la edición por defecto/recomendada (que parece ser una edición gratuita con capacidad de actualización a funciones empresariales), la cual incluye todo lo de OSS y puede ser ampliada con soporte para plugins empresariales. Se proporcionan guías de instalación para distribuciones Linux como Ubuntu/Debian (vía APT) y Red Hat/Fedora/OpenSUSE/SUSE (vía YUM/zypper). La configuración del backend de Grafana se realiza a través del archivo `grafana.ini`, donde se pueden ajustar parámetros como la contraseña de administrador, el puerto HTTP, la base de datos (SQLite, MySQL, Postgres) y las opciones de autenticación (Google, GitHub, LDAP, auth proxy). Finalmente, se explica cómo iniciar el servidor Grafana, acceder con el usuario administrador por defecto y añadir una fuente de datos a través de la interfaz gráfica.",
+    "id": 50624446,
+    "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
+    "score": 104,
+    "time": 1795501356,
+    "titulo_es": "Portabilidad de Rockbox a un reproductor MP3 de 512 KiB con la ayuda de IA y creación de un toolkit de desarrollo",
+    "resumen": "El artículo detalla el proceso de portar el firmware personalizado Rockbox a un reproductor MP3 de gama baja con solo 512 KiB de SRAM, un tamaño significativamente menor que los objetivos existentes de Rockbox. Se destaca el uso de un LLM (Claude) para la ingeniería inversa de la pila Bluetooth y la creación de un controlador HAL en cuestión de horas, así como la optimización del código para ejecutar códecs y funciones críticas desde la lenta memoria flash XIP. Se desarrolló un \"toolkit/conjunto de habilidades reutilizables\" a partir de este primer intento, que permitió a Claude portar Rockbox a otro reproductor MP3 (TS47) en solo 4 horas. El proyecto busca facilitar futuros ports a dispositivos con recursos limitados, abordando desafíos como la gestión de memoria compartida para plugins y codecs, la adaptación de la base de datos y la optimización del rendimiento de la memoria flash. También se menciona la existencia de un dispositivo similar con 4 MiB de PSRAM que requerirá menos compromisos.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50629106,
-    "url": "https://www.frankchiarulli.com/blog/splitting-usb-c/",
-    "score": 74,
-    "time": 1795532050,
-    "titulo_es": "Dongle-Pro v2: Logrando USB 3.2 Gen 2 de 10 Gbps para la restauración de Macs mediante un experimento de ingeniería de hardware",
-    "resumen": "El artículo describe el desarrollo de restorekit.org dongles, pequeños dispositivos USB-C que se conectan entre una computadora host y una Mac objetivo para ponerla en modo DFU y permitir su reflasheo. La versión inicial, Dongle-Lite, solo soportaba USB 2.0. Se detalla el desafío de añadir soporte para USB 3.0/3.1 Gen 1, que inicialmente requería más componentes y un mayor costo. La solución innovadora para el Dongle-Pro v2 fue un experimento de ingeniería de hardware: utilizar un bus USB 2.0 compartido para el hub y el MCU del dongle, mientras se enrutan los carriles SuperSpeed USB 3.0 como un simple passthrough directo entre el host y el objetivo. Este enfoque, a pesar de las preocupaciones sobre la interferencia de alta velocidad, resultó exitoso, permitiendo conexiones USB 3.2 Gen 2 de 10 Gbps. Sorprendentemente, esta versión también es más barata y pequeña que el Dongle-Lite USB 2.0 original. La explicación técnica profundiza en la arquitectura de los puertos USB-C, donde los buses USB 2.0 y USB 3.x son físicamente independientes, permitiendo su funcionamiento simultáneo y la consolidación de ambos en un solo puerto físico. Se verificó el funcionamiento a través de herramientas de diagnóstico de macOS como system_profiler y ioreg, confirmando que el sistema operativo reconoce ambos buses (USB 2.0 y SuperSpeed USB 3.x) activos simultáneamente en el mismo puerto físico.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50630294,
-    "url": "https://masondata.ai/",
-    "score": 44,
-    "time": 1795536712,
-    "titulo_es": "Mason: SQL Analítico Ultrarrápido",
-    "resumen": "El artículo describe Mason, un motor de base de datos diseñado para ejecutar consultas analíticas SQL a gran velocidad. Se enfoca en la optimización para consultas que leen muchas filas y realizan agregaciones (como conteos, sumas y group-bys) sobre grandes tablas, lo cual es crucial para dashboards, reportes y agentes de IA. Mason es particularmente eficiente cuando se consultan muchas filas a través de pocas columnas. Se destaca su rendimiento en comparación con otras soluciones, mencionando una mejora de 81x en pruebas específicas sobre hardware AWS m7g.xlarge. El artículo también detalla la metodología de prueba, incluyendo el manejo de arranques en frío, limpieza de caché y la latencia para múltiples clientes. Aunque su uso principal es para análisis de datos, puede realizar otras operaciones SQL. El proyecto tiene licencia Apache-2.0 y ofrece opciones de auto-hospedaje o una versión en la nube.",
+    "id": 50643720,
+    "url": "https://www.githubstatus.com/incidents/qn8mfv6q5hlx",
+    "score": 156,
+    "time": 1795622363,
+    "titulo_es": "Funcionalidad de reenvío de OTP y suscripción a notificaciones de incidentes",
+    "resumen": "El artículo describe dos funcionalidades principales. La primera se centra en la implementación de un mecanismo para reenviar códigos de un solo uso (OTP - One-Time Password), incluyendo un contador de tiempo para limitar la frecuencia de reenvío y un enlace visible para solicitarlo nuevamente. La segunda funcionalidad permite a los usuarios suscribirse a notificaciones por correo electrónico y/o mensaje de texto sobre incidentes y experiencias degradadas en productos de GitHub. Se detalla que las notificaciones por correo electrónico se enviarán si un endpoint de webhook falla y que las notificaciones por texto se activarán en la creación o resolución de incidentes. Adicionalmente, se ofrece una suscripción a actualizaciones de guías técnicas y mejores prácticas dos veces al mes.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50632998,
-    "url": "https://protocolis.co/paper/",
-    "score": 5,
-    "time": 1795547522,
-    "titulo_es": "Compilador de Protocolos para Ejecución Web Sólida: Un Nuevo Enfoque para Agentes Web",
-    "resumen": "El artículo presenta Protocolis, un nuevo compilador para la ejecución web sólida de agentes. A diferencia de los enfoques tradicionales que requieren que un modelo de lenguaje lea y evalúe cada página en cada paso, Protocolis compila los controles de una página web en operaciones tipificadas al encontrarse con una página por primera vez. El modelo de lenguaje selecciona una operación, el compilador la ejecuta, vuelve a leer la página y reporta los cambios. Este proceso no utiliza inferencia del modelo, código específico del sitio ni visitas previas. Las pruebas demuestran que Protocolis supera a las herramientas y agentes existentes en términos de tasa de finalización de tareas (76% frente a 46%), estabilidad (nunca por debajo del 55% frente a caídas hasta 28% en alternativas), costo (1.9 a 26 veces más barato por tarea completada) y precisión en la finalización de tareas (desacuerdo del juez del 22% frente al 56%). Estos resultados se obtuvieron en la configuración menos favorable de primera visita. El kit de replicación está disponible, y la tecnología está patentada y en producción con clientes de pago.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50627340,
-    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
-    "score": 748,
-    "time": 1795524015,
-    "titulo_es": "El peligro de los modelos de IA que priorizan las políticas sobre la utilidad",
-    "resumen": "El artículo discute la frustración del autor con las limitaciones impuestas a los modelos de IA, específicamente Claude Code. El autor utilizó la IA para crear una herramienta que identificara música en reels de Instagram, buscara páginas de Bandcamp para comprar música y, como alternativa, descargara canciones de YouTube. El problema surgió cuando Bandcamp implementó un desafío en su API de búsqueda, y la IA se negó a ayudar a sortearlo, citando políticas contra el uso indebido. Sin embargo, la misma IA estaba dispuesta a descargar música de YouTube, una acción que el autor percibe como menos beneficiosa para los artistas y que no genera ingresos para ellos. El autor critica esta dualidad, argumentando que la IA, en lugar de ser una herramienta útil, está limitada por las directivas de empresas como Anthropic, impidiendo su potencial para tareas que el usuario considera beneficiosas, como apoyar a artistas independientes. Expresa preocupación por la creciente influencia corporativa en la IA, temiendo que las respuestas puedan ser 'ponderadas' por intereses comerciales en lugar de ser puramente informativas, comparándolo con la 'enshittificación' observada en otras plataformas tecnológicas.",
-    "categoria": "IA"
-  },
-  {
-    "id": 50625384,
-    "url": "https://quad9.net/news/blog/quad9-service-deactivation-in-france/",
-    "score": 254,
-    "time": 1795509194,
-    "titulo_es": "Quad9 desactiva servicios para usuarios franceses debido a órdenes judiciales de bloqueo de dominios relacionados con la piratería",
-    "resumen": "Quad9, un servicio de resolución DNS, ha anunciado la desactivación de sus servicios para usuarios en Francia a partir del 24 de noviembre de 2026. La decisión se debe a órdenes judiciales y multas impuestas por no bloquear dominios que la empresa beIn (derechos deportivos) afirma estar relacionados con la piratería de streaming. Quad9 se opone fundamentalmente a ser utilizado como herramienta de aplicación de bloqueos de contenido por parte de terceros, argumentando que presionar a los resolvedores DNS recursivos es ineficaz, contraproducente y no afecta a los servidores de origen. A pesar de su oposición a la piratería, Quad9 se retira de Francia para cumplir con la ley y sus directrices internas. La empresa reconoce que esto causará interrupciones a corto plazo para los usuarios franceses, quienes podrían pasar a resolvedores menos seguros o centrados en la privacidad. Quad9 también explica que su método de bloqueo basado en geoIP es impreciso y resultará en sobre-bloqueo (bloquear a usuarios fuera de Francia) y sub-bloqueo (no bloquear a usuarios dentro de Francia). La empresa continuará argumentando contra la premisa de usar DNS recursivos para la aplicación de bloqueos de contenido.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50626413,
-    "url": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
-    "score": 195,
-    "time": 1795517414,
-    "titulo_es": "Análisis de la ruta crítica con Rewind y la influencia de Brendan Gregg",
-    "resumen": "El artículo describe el uso de Rewind, una máquina virtual determinista, para analizar la ruta crítica de compilaciones y pruebas de software. Se enfoca en identificar cuellos de botella, especialmente el tiempo que los procesos pasan en estado de espera (durmiendo) en lugar de computación activa, lo cual es difícil de detectar con perfiles de CPU tradicionales. La herramienta Rewind, inspirada en el trabajo de Brendan Gregg en análisis de rendimiento, registra eventos de conmutación de contexto y despertares de hilos para proporcionar un análisis detallado de la ruta crítica. Se utiliza un ejemplo de compilación y prueba de libuv para ilustrar cómo Rewind identifica que la mayor parte del tiempo se gasta esperando timers y otros eventos de I/O, en lugar de en el uso intensivo de CPU. El análisis permite identificar procesos y líneas de código específicas responsables de los retrasos, ofreciendo una visión más profunda que los métodos de perfilado convencionales.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50629962,
-    "url": "https://arxiv.org/abs/2611.30835",
-    "score": 56,
-    "time": 1795535422,
-    "titulo_es": "arXivLabs: Un marco para el desarrollo y la colaboración en nuevas funcionalidades de arXiv",
-    "resumen": "El artículo describe arXivLabs, un marco diseñado para permitir a colaboradores externos, tanto individuos como organizaciones, desarrollar y compartir nuevas funcionalidades directamente en el sitio web de arXiv. Se enfatiza la adhesión de estos colaboradores a los valores fundamentales de arXiv: apertura, comunidad, excelencia y privacidad de los datos del usuario. El objetivo es fomentar la innovación colaborativa para añadir valor a la comunidad de arXiv, invitando a proponer ideas de proyectos.",
-    "categoria": "Desarrollo de Software"
-  },
-  {
-    "id": 50599458,
-    "url": "https://martincmartin.github.io/slidev-stem/watches/article/1/",
-    "score": 167,
-    "time": 1795353685,
-    "titulo_es": "Lo que todos deberían saber sobre los relojes mecánicos",
-    "resumen": "El artículo explica el funcionamiento interno de los relojes mecánicos, centrándose en los componentes clave que permiten la medición precisa del tiempo. Se detalla el papel de la espiral (hairspring) y la rueda de balance (balance wheel) como el elemento que marca el ritmo, similar a un péndulo. Se describe cómo la espiral, un resorte plano en espiral, proporciona una fuerza elástica restauradora que oscila. La rueda de balance, unida a la espiral, aporta masa e inercia para ralentizar y estabilizar estas oscilaciones, haciendo que la frecuencia sea constante independientemente de la amplitud del movimiento. Se introduce el concepto de isocronismo, donde el período de oscilación es constante. Finalmente, se menciona el escapement (escape wheel y pallet fork) como el mecanismo que convierte el movimiento oscilatorio de la espiral y la rueda de balance en un movimiento de rotación unidireccional y a intervalos regulares, permitiendo que los engranajes muevan las manecillas. Se destaca la precisión sorprendente (99.99%) de estos dispositivos mecánicos, incluso en modelos económicos.",
+    "id": 50644814,
+    "url": "https://david.alvarezrosa.com/posts/deriving-black-scholes/",
+    "score": 14,
+    "time": 1795627095,
+    "titulo_es": "La Ecuación de Black-Scholes: Derivación y Fundamentos Matemáticos de la Fijación de Precios de Opciones",
+    "resumen": "El artículo explica el modelo de Black-Scholes para la fijación de precios de opciones europeas. Describe cómo, bajo hipótesis de mercado razonables (mercados eficientes, sin arbitraje, volatilidad y tasas de interés constantes, y operaciones perfectas), se puede construir una cartera completamente cubierta (hedged) combinando la opción subyacente y la opción corta. La ausencia de arbitraje implica que esta cartera libre de riesgo debe rendir la tasa de interés libre de riesgo. Esto permite derivar la ecuación de Black-Scholes. Se detalla la derivación de la ecuación utilizando un enfoque de cálculo estocástico: se modela el movimiento del precio del subyacente con un movimiento Browniano (dS/S = mu*dt + sigma*dW), se considera la variación del valor de la opción (dV) mediante una expansión de Taylor, y se construye una cartera delta-cubierta (-V + Delta*S) donde Delta = dV/dS. La ausencia del término de ruido (dW) en la variación de la cartera (dPi) y la igualación de su rendimiento a la tasa de interés libre de riesgo conducen a la ecuación diferencial parcial de Black-Scholes, cuya solución (la fórmula de Black-Scholes) proporciona el precio de la opción.",
     "categoria": "Ciencia y Matematica"
   },
   {
-    "id": 50611613,
-    "url": "https://gnomon.bitsinfra.com/",
-    "score": 31,
-    "time": 1795442618,
-    "titulo_es": "Gnomon: Control de Versiones para Bases de Datos PostgreSQL",
-    "resumen": "Gnomon es una extensión para PostgreSQL que introduce funcionalidades de control de versiones directamente en la base de datos. Permite crear 'ramas' de la base de datos principal para que agentes individuales o tareas específicas trabajen de forma aislada. Cada rama hereda todo el contenido de la rama principal ('main') y solo almacena las modificaciones realizadas sobre ella, lo que permite una apertura instantánea independientemente del tamaño de la base de datos. Las aplicaciones y las sesiones de la base de datos pueden ser dirigidas a una rama específica sin necesidad de modificar el código de la aplicación, leyendo y escribiendo sobre dicha rama en lugar de la principal. Gnomon facilita la gestión de permisos, permitiendo que cada agente acceda únicamente a su rama asignada. La fusión de cambios de una rama a 'main' se puede controlar mediante políticas definidas (por ejemplo, número de filas afectadas, tablas específicas, validación de verificaciones), con PostgreSQL actuando como garante de estas reglas. Proporciona SDKs para TypeScript y Python, así como bindings para múltiples lenguajes (Node, Go, Ruby, Java, Elixir, .NET, PHP), lo que permite integrar esta funcionalidad en flujos de trabajo de desarrollo, pruebas y aplicaciones existentes, utilizando los drivers y ORMs habituales.",
+    "id": 50643199,
+    "url": "https://lemire.me/blog/2026/11/02/default-and-braces-are-not-the-same-constructor/",
+    "score": 52,
+    "time": 1795620015,
+    "titulo_es": "En C++, = default y {} no son el mismo constructor",
+    "resumen": "El artículo analiza cómo la diferencia entre un constructor predeterminado explícitamente establecido con '= default' y uno definido con llaves vacías '{}' en C++ puede tener impactos significativos en el rendimiento. Se observa que '= default' puede hacer que una clase sea trivial, mientras que '{}' la convierte en una clase definida por el usuario. En pruebas de rendimiento, la versión definida con llaves vacías resultó ser considerablemente más lenta (más de cuatro veces) que la versión '= default' en compiladores como GCC 15 y 16, debido a cómo el compilador optimiza el manejo de los campos de la estructura (puntero de inicio, longitud y puntero de fin) en cada caso.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50620831,
-    "url": "https://www.smithsonianmag.com/science-nature/the-search-for-a-top-dark-matter-candidate-was-losing-hope-then-came-a-potential-signal-will-it-be-enough-to-energize-the-struggling-field-180989923/",
-    "score": 57,
-    "time": 1795475560,
-    "titulo_es": "Físicos cansados de los WIMPs, un candidato propuesto para las partículas de materia oscura, pero un dato intrigante reaviva la esperanza",
-    "resumen": "El artículo explora la búsqueda de décadas por parte de los físicos de la materia oscura, centrándose en los WIMPs (partículas masivas de interacción débil) como un candidato principal. Se discuten los desafíos en la detección, como las señales de fondo crecientes y la financiación precaria, y la moral menguante en laboratorios subterráneos como el Gran Sasso National Laboratory. Sin embargo, un reciente y intrigante punto de datos de un laboratorio estadounidense ha reavivado el optimismo, sugiriendo que los WIMPs podrían existir. El artículo profundiza en la historia de la evidencia de la materia oscura, desde las observaciones de Fritz Zwicky hasta las teorías de los WIMPs en la década de 1980, y plantea la pregunta de si este hallazgo reciente será suficiente para superar los obstáculos del campo y si otros detectores podrán replicar la señal.",
-    "categoria": "Ciencia y Matematica"
-  },
-  {
-    "id": 50605361,
-    "url": "https://www.katelynlesse.com/blog/new-problems-for-engineers-to-solve",
-    "score": 85,
-    "time": 1795390973,
-    "titulo_es": "La Evolución de la Ingeniería de Software con Sistemas Multiagente Impulsados por IA",
-    "resumen": "El artículo describe la transformación del rol del ingeniero de software, impulsada por el avance de los sistemas multiagente de IA. Inicialmente, los agentes eran simples, con intervención humana y operaciones limitadas. Con la mejora de los modelos, los agentes ahora operan en la nube, colaboran entre sí y realizan tareas complejas como investigación, descubrimiento y diseño de hardware, a menudo involucrando miles de agentes persistentes. Esto presenta nuevos desafíos de ingeniería de software, incluyendo la necesidad de infraestructura que maneje cargas de trabajo más variables, sistemas robustos de autenticación y autorización para identificar y controlar las acciones de los agentes, seguridad y aislamiento para código no confiable, y mecanismos de monitoreo y control. La arquitectura tradicional basada en Kubernetes no es adecuada para los agentes, que son cargas de trabajo aisladas, con estado y de instancia única, capaces de permanecer inactivos y con requisitos de rendimiento variables. Se están desarrollando soluciones específicas, como nuevos sistemas de archivos y ofertas de sandboxing, y runtimes como Agent Substrate. Los problemas de autenticación de agentes se benefician de las prácticas de microservicios (identidad de carga de trabajo, certificados de corta duración), mientras que la autorización presenta desafíos más profundos, especialmente en configuraciones 'on-behalf-of' (OBO) donde se requiere un manejo cuidadoso del consentimiento y permisos a gran escala para que los agentes actúen en nombre de humanos o con su propia identidad.",
+    "id": 50639929,
+    "url": "https://arxiv.org/abs/2611.31286",
+    "score": 43,
+    "time": 1795595014,
+    "titulo_es": "arXivLabs: Un marco para el desarrollo y la colaboración de nuevas funciones en arXiv",
+    "resumen": "El artículo describe arXivLabs, un marco diseñado para permitir que colaboradores externos desarrollen y compartan nuevas funcionalidades directamente en el sitio web de arXiv. Enfatiza los valores de apertura, comunidad, excelencia y privacidad de datos de los usuarios, y solo colabora con socios que se adhieren a estos principios. El programa busca ideas de proyectos que aporten valor a la comunidad de arXiv.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50610820,
-    "url": "https://www.core77.com/posts/145766/An-Italian-Folding-Bicycle-Design-that-Fits-Into-a-Suitcase",
-    "score": 4,
-    "time": 1795437608,
-    "titulo_es": "La Bicicleta Plegable T&C Pocket Bici de 1963",
-    "resumen": "El artículo describe la T&C Pocket Bici, una bicicleta plegable fabricada en Italia en 1963 por Tresoldi & Casiraghi. A diferencia de las bicicletas plegables modernas que se dividen por la mitad, esta bicicleta pliega sus componentes dentro de un cuadro con forma de pista de carreras, y el conjunto completo se guarda en su propia maleta. Se discuten las especificaciones de sus ruedas (más pequeñas que las de una Brompton de 16 pulgadas, parecidas a ruedas de scooter) y las incertidumbres sobre su origen y destino comercial, con relatos contradictorios sobre su producción y venta en el mercado chino. El artículo también menciona brevemente otras empresas de diseño y desarrollo de hardware.",
-    "categoria": "Hardware"
-  },
-  {
-    "id": 50625953,
-    "url": "https://www.justafewbugs.xyz/",
-    "score": 130,
-    "time": 1795513679,
-    "titulo_es": "Experiencias de un investigador de seguridad con el Programa de Recompensas por Vulnerabilidades de Google",
-    "resumen": "El artículo detalla las experiencias de un investigador de seguridad independiente con el Programa de Recompensas por Vulnerabilidades (VRP) de Google durante un año. El investigador reportó 95 vulnerabilidades en teléfonos Pixel, la mayoría con pruebas de concepto funcionales, pero solo recibió un pago total de $250. Se describen tres problemas recurrentes: 1) Corrección de errores después de que sus informes fueran cerrados (algunos como duplicados o no vulnerabilidades), con parches implementados en versiones de software posteriores. 2) Cierre de errores con justificaciones (duplicado, no reproducible) que no se sostienen al analizar el código subyacente. 3) Una recompensa prometida por escrito que nunca se pagó, a pesar de confirmaciones y retrasos prolongados. El artículo también menciona una contradicción en una comunicación de Google sobre el impacto de seguridad de un bug. El autor enfatiza que su crítica se centra en el proceso del VRP y no en su relación general con el trabajo de Google, destacando que mucho de su trabajo se basa en las contribuciones de Google.",
-    "categoria": "Ciberseguridad"
-  },
-  {
-    "id": 50611576,
-    "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
-    "score": 2774,
-    "time": 1795442418,
-    "titulo_es": "Jensen Huang es reinstalado como CEO de Nvidia tras escándalo",
-    "resumen": "El artículo detalla el sorpresivo regreso de Jensen Huang como CEO de Nvidia, efectivo de inmediato, tras una investigación sobre sus presuntas relaciones extramaritales y una conexión con un presunto espía chino. La junta directiva de Nvidia votó unánimemente para reinstaurarlo tras conversaciones con él y recibir \"input de altos niveles del gobierno de Estados Unidos\". El Presidente Donald Trump respaldó la decisión, afirmando que Huang \"no hizo nada malo\" y que su liderazgo es crucial para el éxito de la compañía y la economía estadounidense. La reinstalación provocó un aumento del 31% en las acciones de Nvidia, que habían caído significativamente tras las acusaciones. A pesar de la investigación en curso por parte de un comité independiente y la firma de abogados Wachtell, Lipton, Rosen & Katz, el gobierno de EE. UU. comunicó a la junta que no se violaron leyes de seguridad nacional. Figuras prominentes de la industria tecnológica, como Elon Musk, también abogaron por su regreso. Colette Kress, CFO, quien sirvió como CEO interina, continuará en su rol.",
+    "id": 50637686,
+    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+    "score": 405,
+    "time": 1795574061,
+    "titulo_es": "Comunicación Encubierta Entre Modelos de IA Mediante la Manipulación del Entorno de Inferencia",
+    "resumen": "El artículo explora la posibilidad de que dos modelos de IA, operando en el mismo motor de inferencia (vLLM), se comuniquen secretamente manipulando su entorno de cómputo compartido. Se investigan dos protocolos: el 'Canal del Paso de Tamaño' (Step-Size Channel), donde un modelo (Alice) modifica la carga de la GPU y, por ende, el tipo de kernel utilizado en el procesamiento de otro modelo (Bob), generando sutiles diferencias numéricas detectables en las activaciones de Bob. El segundo protocolo, el 'Canal del Tablón de Mensajes' (Message Board Channel), explota el caché KV compartido de vLLM. Alice puede dejar una 'huella' numérica específica en el caché KV al procesar ciertas entradas; Bob puede detectar esta huella al reutilizar dicho caché, permitiendo la transmisión de bits de información. El trabajo evalúa la efectividad y los requisitos de capacidad de estos protocolos, así como su robustez en diferentes escenarios, demostrando que incluso pequeñas variaciones ambientales causadas por un modelo pueden ser aprendidas y explotadas por otro para la comunicación.",
     "categoria": "IA"
   },
   {
-    "id": 50614249,
-    "url": "https://ladybird.org/posts/alpha/",
-    "score": 2360,
-    "time": 1795450392,
-    "titulo_es": "Ladybird, un nuevo navegador web con motor propio, entra en fase Alpha",
-    "resumen": "Ladybird, un navegador web desarrollado desde cero con su propio motor de renderizado, ha alcanzado la fase Alpha. Disponible para macOS y Linux, esta versión inicial, aunque modesta y funcional, presenta inestabilidades y posibles fallos en la visualización de algunos sitios web, aspectos para los que se solicita feedback de los usuarios a través de reportes internos. El proyecto fomenta la participación de expertos en ciberseguridad para identificar y corregir vulnerabilidades. Ladybird se distribuye a través de un canal de actualización continua, permitiendo a los desarrolladores experimentar mejoras rápidas sin necesidad de compilar desde el código fuente. Soporta WebDriver y el protocolo Firefox DevTools para pruebas automatizadas. El equipo agradece el apoyo de patrocinadores, donantes y la comunidad por las contribuciones previas.",
+    "id": 50607849,
+    "url": "https://atilloy.com/2026/11/16/the-short-age-of-dragon-riders/",
+    "score": 243,
+    "time": 1795412014,
+    "titulo_es": "Exploraciones Ortodoxas y No Ortodoxas de la Teoría Cuántica",
+    "resumen": "El artículo discute el reciente avance de los modelos de IA, afirmando que a partir de agosto de 2026, superan a la mayoría de los físicos teóricos en tareas técnicas complejas como cálculos analíticos, demostraciones y codificación. Si bien las IA actuales carecen de 'gusto' para la investigación y creatividad para generar nuevas preguntas, se predice un progreso continuo gracias al aprendizaje por refuerzo con recompensas verificables (RLVR) y el aumento de la potencia computacional. Se menciona que modelos internos de OpenAI y Anthropic están una generación por delante de los modelos públicos, y se proyectan dos generaciones más de mejoras sin innovaciones nuevas. La IA ya está ayudando en el diseño de sus sucesores (auto-mejora recursiva). El autor, un tecno-optimista, reconoce los riesgos existenciales asociados, pero aboga por no detener el progreso de la IA. Se plantea la necesidad de entender qué queda para los humanos en un futuro simbiótico de descubrimiento humano-IA y se sugiere que la comunidad científica, particularmente los físicos, está pasando por las etapas del duelo ante estos desarrollos.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50638503,
+    "url": "https://gpu-demo-gallery.pages.dev/",
+    "score": 291,
+    "time": 1795581108,
+    "titulo_es": "Demostraciones Gráficas de Tarjetas Gráficas Antiguas",
+    "resumen": "El artículo describe una colección de demostraciones gráficas diseñadas para mostrar las capacidades de las tarjetas gráficas antiguas. Cada demostración presenta efectos visuales específicos como texturizado, iluminación, reflejos, simulaciones físicas (agua, humo, viento), crecimiento de árboles, animaciones complejas (monstruos marinos, camaleones, insectos alienígenas, hombres lobo), y materiales detallados (pintura metálica, superficies de madera). Se mencionan técnicas como pases múltiples, mapas de relieve, mapas de sombras, iluminación global y profundidad de campo. Las demostraciones fueron recreadas a partir de archivos originales y ejecutadas en un navegador, lo que sugiere un enfoque en la visualización y el rendimiento de gráficos en tiempo real en hardware de época.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50639698,
+    "url": "https://www.iankduncan.com/engineering/2026-11-19-smart-people-who-give-a-shit-use-tools",
+    "score": 122,
+    "time": 1795592803,
+    "titulo_es": "Los LLMs Amplifican al Ingeniero, No al Flaw",
+    "resumen": "El artículo argumenta que los Modelos de Lenguaje Grandes (LLMs) no degradan las habilidades de los ingenieros de software ni fomentan la pereza, sino que actúan como amplificadores de las cualidades preexistentes del usuario. En lugar de reemplazar la experiencia humana o promover la complacencia, los LLMs permiten a los ingenieros curiosos y dedicados profundizar en sistemas complejos, realizar análisis rigurosos, escribir pruebas exhaustivas y comprender mejor el código. La capacidad de realizar tareas que antes consumían demasiado tiempo (como modelar en TLA+, escribir pruebas de propiedades o analizar sistemas heredados extensos) se vuelve accesible, aumentando la calidad del software y la comprensión del mismo. Contrariamente a la idea de que los LLMs fomentan la complacencia, el autor sostiene que estas herramientas permiten a los ingenieros \"dar más importancia\" a su trabajo, ya que liberan tiempo para el rigor y la exploración, habilidades que antes estaban limitadas por el tiempo disponible. Los ingenieros menos comprometidos, por otro lado, pueden usar los LLMs para generar código superficial sin una comprensión profunda, lo que podría llevar a la supervisión de errores y a una menor responsabilidad. El artículo concluye que la calidad del trabajo asistido por LLMs depende fundamentalmente del ingeniero que lo utiliza.",
     "categoria": "Desarrollo de Software"
   },
   {
-    "id": 50620349,
-    "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
-    "score": 673,
-    "time": 1795473149,
-    "titulo_es": "Stalwart 1.2.0: Un reemplazo directo para Microsoft Exchange",
-    "resumen": "El artículo presenta Stalwart 1.2.0, un servidor de correo de código abierto (bajo AGPL) que ahora funciona como un reemplazo directo de Microsoft Exchange. Aprovecha la implementación de protocolos clave como MAPI sobre HTTP, Exchange Web Services (EWS), Exchange ActiveSync y Autodiscover. Esto permite que clientes de correo populares como Outlook, Apple Mail y aplicaciones móviles se conecten a Stalwart utilizando las mismas credenciales y configuraciones que usarían con Exchange, manteniendo la experiencia del usuario sin cambios.  Se destaca la necesidad de alternativas a Exchange on-premises, impulsada por la dirección de Microsoft hacia Exchange Online y las preocupaciones sobre la soberanía de los datos y la ley CLOUD Act de EE. UU. Stalwart aborda la barrera del cliente, tradicionalmente el principal obstáculo para migrar fuera de Exchange, al permitir que los usuarios continúen usando sus clientes existentes. La integración de estos protocolos de Exchange no crea silos; las acciones realizadas a través de clientes de Exchange o protocolos estándar como IMAP, JMAP, CalDAV y CardDAV acceden y modifican los mismos datos de correo, calendarios, contactos y tareas. Las reglas de Outlook se implementan en el servidor como reglas Sieve, asegurando su ejecución independientemente del cliente utilizado.",
+    "id": 50637890,
+    "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+    "score": 392,
+    "time": 1795575877,
+    "titulo_es": "Scrolling es Todo lo que Necesitas: Construyendo una Hoja Deslizable",
+    "resumen": "El artículo explora cómo mejorar la experiencia de usuario en interacciones móviles web, particularmente el scrolling y las hojas deslizable, aprovechando la potencia del compositor del navegador en lugar de depender exclusivamente de JavaScript. Se discuten las limitaciones de `requestAnimationFrame` en dispositivos iOS con pantallas de alta tasa de refresco y el problema de la latencia en eventos táctiles. El autor investiga y descarta enfoques como `MessageChannel` recursivo y `Atomics` debido a su ineficiencia o problemas de seguridad (COOP/COEP). Finalmente, se propone una solución exitosa que utiliza `MessageChannel` con `setTimeout` y `requestAnimationFrame` para sincronizarse con la tasa de refresco de la pantalla, permitiendo leer la posición de scroll de forma más eficiente y cercana a la tasa nativa (apuntando a 120Hz), para así imitar la fluidez de las interacciones nativas y extraer físicas de scroll.",
+    "categoria": "Frontend"
+  },
+  {
+    "id": 50633922,
+    "url": "https://prismml.com/news/bonsai-2-5-27b",
+    "score": 517,
+    "time": 1795550883,
+    "titulo_es": "Ternary Bonsai 2.5 27B: Un Modelo de IA Mejorado para Agentes Locales",
+    "resumen": "El artículo presenta Ternary Bonsai 2.5 27B, una actualización del modelo Ternary Bonsai 2 27B, basado en Qwen3.8 27B. Este nuevo modelo ofrece mejoras significativas en capacidades de codificación de agentes, uso de herramientas multi-turno y ejecución de tareas multi-paso, manteniendo un tamaño compacto de 5.9 GB. Está diseñado para operar en dispositivos locales, permitiendo el manejo de archivos privados y herramientas on-device. Las mejoras clave incluyen una mayor efectividad en secuencias largas de llamadas a herramientas, interpretación de resultados, manejo de fallos y mantenimiento del objetivo de la tarea. Se ha reducido el exceso de 'pensamiento' y los bucles repetitivos en comparación con la versión anterior. Ternary Bonsai 2.5 25B reduce la brecha de rendimiento con el modelo de precisión completa (Qwen 3.8 27B) manteniendo su huella compacta. Se lograron velocidades de generación de hasta 291 tokens/s en una NVIDIA H100 y 204 tokens/s en una RTX 4090. El modelo es compatible con GPUs NVIDIA e Intel a través de llama.cpp y dispositivos Apple (Mac, iPhone, iPad) a través de MLX. Los pesos del modelo están disponibles bajo la licencia Apache 2.0. PrismML, la empresa detrás del desarrollo, se especializa en la compresión de redes neuronales sin sacrificar la capacidad de razonamiento.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50627726,
+    "url": "https://antcating.github.io/2026/11/23/getting-old-java-phones-online-again.html",
+    "score": 147,
+    "time": 1795526077,
+    "titulo_es": "Conectando teléfonos Java antiguos a Internet a través de Bluetooth PAN",
+    "resumen": "El artículo describe un método para reconectar teléfonos Java antiguos, como el Sony Ericsson S500i, a Internet utilizando el perfil Bluetooth Personal Area Networking (PAN). Dado que las redes 2G han sido desmanteladas y las conexiones USB a menudo no admiten la compartición de Internet en la dirección deseada, el autor propone usar un ordenador (en este caso, una Raspberry Pi 5 con Linux) como un Network Access Point (NAP) Bluetooth. El teléfono Java actúa como un Personal Area Network User (PANU), obteniendo acceso a Internet a través de la conexión de red del NAP. El proceso implica habilitar el servicio NAP en el sistema Linux (usando BlueZ y NetworkManager), emparejar el teléfono y configurar la red para compartir la conexión a Internet. La solución es agnóstica al sistema operativo siempre que se disponga de BlueZ y NetworkManager, y se detalla la configuración específica para Raspberry Pi OS.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50637891,
+    "url": "https://basilhalperin.com/essays/macrohistory.html",
+    "score": 148,
+    "time": 1795575886,
+    "titulo_es": "Macrohistoria en seis (más o menos) hechos",
+    "resumen": "El artículo explora las tendencias históricas clave del desarrollo humano y económico, utilizando el PIB per cápita como métrica principal. Argumenta que la humanidad ha emergido de una pobreza generalizada y de un estado Malthusiano gracias a la Revolución Industrial, que inició un crecimiento sostenido del PIB per cápita del 2% anual en la frontera tecnológica. Se observa una correlación positiva entre la riqueza de los países y la esperanza de vida, la satisfacción vital, la reducción de la mortalidad infantil y la confianza social, aunque también se asocia con mayores emisiones de CO2. El texto destaca la enorme disparidad de ingresos entre países, pero también señala la posibilidad de \"milagros de crecimiento\" en naciones que han logrado converger hacia la frontera tecnológica, contrastando con \"desastres de crecimiento\" en otras.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50638478,
+    "url": "https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each",
+    "score": 204,
+    "time": 1795580875,
+    "titulo_es": "Vulnerabilidad de Secuestro de DNS en AWS Elastic IPs Explotada",
+    "resumen": "El artículo detalla una vulnerabilidad práctica y de bajo costo en AWS Elastic IP (EIP) que permite a los atacantes secuestrar registros DNS 'colgantes'. Estos registros apuntan a direcciones IP que ya no están asociadas con el recurso previsto, dejando la EIP disponible para ser reclamada. Los investigadores demostraron que se puede automatizar el proceso de asignación y liberación de EIPs para encontrar estas direcciones vulnerables. El ataque se probó en 2026, identificando secuestros reales incluso en dominios de alto perfil como los del Tesoro de EE.UU. El costo por toma de posesión exitosa fue de aproximadamente $3. A pesar de los controles de AWS, existen lagunas suficientes que permiten la explotación. El proceso de descubrimiento implicó la enumeración de subdominios a partir de ámbitos públicos de bug bounty, la resolución de registros A y la búsqueda de EIPs disponibles. Se aumentó la cuota de EIPs por región para acelerar el proceso. En 48 horas, se probaron 450,000 EIPs, lo que resultó en 28 secuestros confirmados, cubriendo menos del 1% del espacio de IP total. AWS finalmente bloqueó la cuenta del investigador por abuso. Sin embargo, la posibilidad de transferir EIPs a otras cuentas dentro de la misma organización permite eludir las restricciones, ya que se pueden crear nuevas cuentas fácilmente. El artículo concluye instando a los usuarios a revisar sus registros DNS para mitigar este riesgo.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50637056,
+    "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+    "score": 375,
+    "time": 1795568089,
+    "titulo_es": "PenGPT: Un Transformador que Escribe y Dibuja a Partir de Texto",
+    "resumen": "El artículo describe PenGPT, un proyecto que utiliza un modelo Transformer de IA para generar escritura a mano (cursiva e imprenta) y dibujos a partir de indicaciones de texto. Se detalla el proceso de creación de los datasets, la arquitectura del modelo (con dos versiones de 6M y 54M parámetros), y se enfatiza la importancia del volumen y la calidad de los datos sobre la complejidad arquitectónica. El modelo aprende a imitar estilos de escritura a partir de pocas palabras y a generar bocetos combinando conceptos aprendidos. Se exploran diferentes configuraciones del modelo, incluyendo la comparación con LSTMs, y se analiza la atención interna del Transformer.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50628600,
+    "url": "https://fzakaria.com/2026/11/01/a-clock-made-of-branches",
+    "score": 12,
+    "time": 1795530008,
+    "titulo_es": "El tiempo dentro de una máquina que deseas reproducir",
+    "resumen": "El artículo aborda el desafío fundamental de representar el tiempo de manera determinista dentro de una máquina virtual (VM) diseñada para la reproducibilidad, como Rewind. Se explican dos enfoques principales para medir el tiempo en la VM: el 'tiempo de salida' (exit time), que avanza el reloj solo en eventos de salida del sistema (syscalls), tratando el trabajo intermedio como instantáneo, y el 'tiempo de contador' (counter time), que intenta contabilizar el trabajo real. Este último se basa en el avance del reloj por cada rama condicional ejecutada por el procesador. Se argumenta que el tiempo de reloj del host no es confiable debido a variables externas como la carga del sistema. La solución propuesta se centra en medir el progreso a través del flujo de instrucciones del guest, ya que la CPU es una máquina determinista. Sin embargo, se advierte que incluso los contadores de instrucciones de hardware pueden verse afectados por interrupciones externas (como ticks del timer, interrupciones entre procesadores o page faults), mientras que los contadores de ramas condicionales parecen ser más robustos frente a estas interrupciones, alineándose mejor con el concepto de 'tiempo determinista' popularizado por depuradores como 'rr'.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50598555,
+    "url": "https://mechanical-pencil.com/products/spray-bottle",
+    "score": 594,
+    "time": 1795346190,
+    "titulo_es": "Una celebración ilustrada de la ingeniería que nos rodea",
+    "resumen": "El artículo desglosa el funcionamiento interno de una botella rociadora, centrándose en el mecanismo de válvula unidireccional que permite la pulverización continua. Explica el proceso de extracción y recarga mediante el gatillo, el pistón, el resorte y la bola, ilustrando cómo estos componentes interactúan para facilitar el flujo unidireccional del líquido. El enfoque está en los principios mecánicos y de ingeniería detrás de un objeto cotidiano.",
+    "categoria": "Hardware"
+  },
+  {
+    "id": 50638220,
+    "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+    "score": 207,
+    "time": 1795578462,
+    "titulo_es": "Actualización del Proyecto: Mejoras Técnicas y Migración de Lenguaje en el Motor de Búsqueda",
+    "resumen": "El artículo detalla una actualización de proyecto centrada en la optimización técnica y la corrección de errores de un motor de búsqueda. Aunque no se anuncian nuevas funcionalidades masivas, se ha avanzado en la estabilización del sistema mediante la eliminación de deuda técnica. El proyecto ha recibido financiación a través de patrocinios y ventas de claves API, y se observa un crecimiento en las donaciones. El autor explora la migración del código del índice de Java a C++ para abordar cuellos de botella de CPU y mejorar el manejo de memoria, a pesar de las reticencias generales sobre reescrituras. Se destaca la importancia del rendimiento en un motor de búsqueda, vinculando el desempeño con la capacidad de obtener resultados relevantes dentro de un presupuesto de ejecución. La migración parcial a C++ ha mostrado resultados prometedores en términos de expresividad y ergonomía, aunque el impacto final en el rendimiento aún está por determinarse. El autor también menciona la dificultad de gestionar la demanda de claves API gratuitas debido al volumen de solicitudes y al proceso manual de asignación.",
     "categoria": "Desarrollo de Software"
+  },
+  {
+    "id": 50634658,
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "score": 342,
+    "time": 1795554142,
+    "titulo_es": "GPT-6: Un Modelo Fundamental Universal para la Biología de Proteínas",
+    "resumen": "El artículo describe la familia de modelos GPT-6, capaces de diseñar nuevas formas y secuencias de proteínas utilizando razonamiento y código general, sin necesidad de modelos biológicos especializados. Estos modelos demuestran capacidades intrínsecas para el diseño de proteínas, superando a menudo a modelos especializados en diversas tareas. Los investigadores pueden guiar los diseños especificando puntos de unión y formas deseadas mediante prompts. Las pruebas de laboratorio con GPT-6.2 confirmaron la capacidad de diseño, con proteínas que mostraron evidencia de unión a cinco objetivos y anticuerpos rediseñados que retuvieron su capacidad de unión. El razonamiento y el código generados por los modelos sugieren una integración de conocimientos matemáticos, físicos, químicos y biológicos. La investigación resalta el potencial de combinar el lenguaje natural con capacidades biológicas intrínsecas, permitiendo un control granular sobre el diseño de proteínas, desde enlaces atómicos hasta la forma general, adaptable mediante la modificación de prompts sin reentrenamiento. Los modelos GPT-6 han mejorado su rendimiento en tareas de diseño y predicción de estructuras y interacciones de proteínas.",
+    "categoria": "IA"
+  },
+  {
+    "id": 50637871,
+    "url": "https://www.proofatlas.ai/open-problems/",
+    "score": 97,
+    "time": 1795575696,
+    "titulo_es": "La clasificación ProofAtlas: Exploración de preguntas en matemáticas, computación y física matemática",
+    "resumen": "El artículo describe ProofAtlas, un sistema de evaluación basado en modelos (utilizando LLMs) para clasificar la importancia de problemas en matemáticas, computación y física matemática. La clasificación se basa en comparaciones por pares de problemas realizadas por modelos de lenguaje, cuyas puntuaciones se combinan mediante un modelo ponderado por fiabilidad y calibración entre familias de modelos (OpenAI, Claude, GLM, DeepSeek). La importancia de un problema se define por la significancia de su resolución, centralidad en su campo, alcance interdisciplinario, fama académica e histórica, reconocimiento general e impacto científico o práctico. El sistema proporciona detalles sobre cada problema, incluyendo su enunciado exacto, notas de estado, fuentes, rangos de clasificación inciertos y recuentos de comparación. Se mencionan casos como 'P versus NP', destacando la naturaleza abierta de muchos problemas y las calificaciones con \"scope qualification\" para delimitar el alcance de las implicaciones de posibles soluciones. Las familias de problemas relacionados se identifican, pero cada problema mantiene su propia clasificación individual.",
+    "categoria": "Ciencia y Matematica"
+  },
+  {
+    "id": 50630594,
+    "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+    "score": 297,
+    "time": 1795537937,
+    "titulo_es": "Análisis de la Actividad del Actor de Amenazas GT13 y sus Tácticas de Explotación de Vulnerabilidades",
+    "resumen": "El artículo detalla las tácticas, técnicas y procedimientos (TTPs) del actor de amenazas GT13, quien utilizó un pipeline automatizado para explotar una vulnerabilidad (CVE-2026-61500) en servidores HFS. El actor comprometió un servidor HFS mediante la explotación de una falla en el manejo de cookies de sesión, lo que le permitió obtener acceso de administrador sin contraseña al reconstruir la clave de firma de sesión. Posteriormente, el actor utilizó el acceso obtenido para instalar ganchos (hooks) de middleware HFS, agregar una clave SSH a `/root/.ssh/authorized_keys` para persistencia y, finalmente, intentar usar el servidor comprometido como un \"hop\" o retransmisión para futuras operaciones de intrusión, incluyendo la descarga de un implante Linux llamado \"ZULT\". A pesar de no lograr la descarga del malware, el actor realizó esfuerzos de diagnóstico y solución de problemas. GreyNoise utilizó su Red de Observación Global (GOG) para monitorear esta actividad en tiempo casi real, fusionando datos de sensores con otras fuentes para obtener una imagen completa de la infraestructura del atacante.",
+    "categoria": "Ciberseguridad"
+  },
+  {
+    "id": 50638075,
+    "url": "https://www.stylewarning.com/posts/faster-digit-extraction/",
+    "score": 71,
+    "time": 1795577322,
+    "titulo_es": "Un nuevo algoritmo para la extracción de dígitos hexadecimales de Pi",
+    "resumen": "Este artículo presenta un nuevo algoritmo para extraer dígitos hexadecimales de Pi que evita el cálculo de los dígitos precedentes. El algoritmo optimiza la evaluación de series matemáticas subyacentes, inspiradas en trabajos de Euler y adaptadas a través de identidades matemáticas. La clave reside en alinear los denominadores de las fracciones en lugar de las potencias, lo que permite compartir operaciones aritméticas. Se logran ahorros significativos en términos de recuento de operaciones (divisiones y exponentiaciones modulares) en comparación con métodos existentes como BBP, Bellard y Huvent. La implementación práctica demuestra una reducción del tiempo de ejecución de casi el 40%. El método se basa en la manipulación de series de Euler, donde los términos se agrupan por denominadores impares, permitiendo la reutilización de cálculos intermedios y la optimización de la generación de potencias mediante la multiplicación.",
+    "categoria": "Ciencia y Matematica"
   }
 ]
